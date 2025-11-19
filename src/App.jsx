@@ -19,7 +19,7 @@ function App() {
           <Route path="/modulo/:moduloId/:topicId" element={<Quiz />} />
         </Routes>
       </main>
-      <Footer />
+     
     </div>
   );
 }
