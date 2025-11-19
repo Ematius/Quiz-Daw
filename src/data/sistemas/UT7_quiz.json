@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT7-Q01",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En una empresa de diseño gráfico en Valencia, un empleado quiere usar un paquete de iconos descargado de Internet para un proyecto comercial. ¿Qué licencia debería evitar para no verse obligado a liberar todo su código?",
+    "contexto": "Proyecto comercial que integra recursos descargados de Internet.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "BSD"
+      },
+      {
+        "clave": "b",
+        "texto": "MIT"
+      },
+      {
+        "clave": "c",
+        "texto": "Apache-2.0"
+      },
+      {
+        "clave": "d",
+        "texto": "GPL"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Las licencias copyleft fuertes como GPL obligan a que cualquier obra derivada que integre código GPL se distribuya también bajo GPL, lo que puede forzar a publicar el código completo del proyecto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "BSD es una licencia permisiva: permite uso comercial y no obliga a liberar el código propio."
+        },
+        {
+          "clave": "b",
+          "motivo": "MIT también es permisiva y permite integrar la obra en proyectos cerrados sin liberar el código."
+        },
+        {
+          "clave": "c",
+          "motivo": "Apache-2.0 es permisiva, añade cláusulas de patentes pero no obliga a hacer público el código del proyecto."
+        }
+      ],
+      "resumen_didactico": "La GPL puede “contagiar” el proyecto y obligar a que el código resultante se publique bajo la misma licencia, mientras que MIT, BSD y Apache-2.0 permiten uso comercial sin esa obligación.",
+      "ejemplo_practico": "Una agencia integra una librería GPL en su aplicación de escritorio: legalmente debería liberar el código de la aplicación completa bajo GPL.",
+      "conclusion_final": "Si quieres mantener tu proyecto comercial cerrado, evita integrar componentes con licencia GPL o copyleft fuerte."
+    }
+  },
+  {
+    "id": "UT7-Q02",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué característica distingue al copyright frente al copyleft?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Copyright permite modificar libremente"
+      },
+      {
+        "clave": "b",
+        "texto": "Copyleft impide redistribuir"
+      },
+      {
+        "clave": "c",
+        "texto": "Copyleft caduca automáticamente a los 5 años"
+      },
+      {
+        "clave": "d",
+        "texto": "El copyright restringe el uso sin permiso expreso"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El copyright implica “todos los derechos reservados”: no puedes usar, copiar ni modificar la obra sin autorización del titular, mientras que el copyleft permite uso y modificación manteniendo la misma licencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El copyright no permite modificar libremente; precisamente restringe la modificación sin permiso."
+        },
+        {
+          "clave": "b",
+          "motivo": "El copyleft no impide redistribuir; la permite siempre que se mantengan las mismas condiciones de licencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las licencias de copyleft no caducan automáticamente a los 5 años; la duración de derechos de autor es mucho mayor."
+        }
+      ],
+      "resumen_didactico": "Copyright restringe el uso por defecto, mientras que copyleft concede libertades amplias pero exige mantener la licencia en las obras derivadas.",
+      "ejemplo_practico": "Un autor publica un libro bajo copyright: no puedes fotocopiarlo ni hacer una edición derivada sin permiso. Bajo copyleft, podrías hacerlo si mantienes la misma licencia y reconoces la autoría.",
+      "conclusion_final": "La idea clave es que el copyright es restrictivo por defecto, mientras que el copyleft es permisivo pero “contagia” su licencia a las obras derivadas."
+    }
+  },
+  {
+    "id": "UT7-Q03",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Una startup de Barcelona necesita elegir una licencia open source que permita usar el software en productos comerciales sin liberar su propio código. ¿Cuál es más adecuada?",
+    "contexto": "La empresa quiere aprovechar software libre pero mantener su aplicación final como código cerrado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "MIT"
+      },
+      {
+        "clave": "b",
+        "texto": "CC-BY-NC"
+      },
+      {
+        "clave": "c",
+        "texto": "GPL"
+      },
+      {
+        "clave": "d",
+        "texto": "Copyleft estricto"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "MIT es una licencia open source permisiva que permite usar, modificar y redistribuir el software, incluso dentro de productos comerciales cerrados, sin obligación de liberar el código del proyecto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "CC-BY-NC prohíbe el uso comercial (No Comercial), por lo que no sirve para productos de pago."
+        },
+        {
+          "clave": "c",
+          "motivo": "GPL obliga a que los proyectos derivados se distribuyan bajo la misma licencia, lo que forzaría a liberar el código."
+        },
+        {
+          "clave": "d",
+          "motivo": "El copyleft estricto implica condiciones similares a GPL: mantener la obra derivada bajo la misma licencia, lo cual choca con la intención de mantener el código cerrado."
+        }
+      ],
+      "resumen_didactico": "Las licencias permisivas como MIT son ideales para integrar en productos comerciales cerrados porque no imponen liberar el código propio.",
+      "ejemplo_practico": "Una startup usa una librería MIT en su API y solo añade una nota de atribución en el README, manteniendo el repositorio privado.",
+      "conclusion_final": "Si quieres combinar open source con un modelo de negocio cerrado, elige licencias permisivas como MIT, BSD o Apache-2.0."
+    }
+  },
+  {
+    "id": "UT7-Q04",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En una oficina, se requiere un programa para calcular gastos de nómina. ¿Qué categoría de software corresponde?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicación de productividad/negocios"
+      },
+      {
+        "clave": "b",
+        "texto": "Sistema operativo"
+      },
+      {
+        "clave": "c",
+        "texto": "Driver"
+      },
+      {
+        "clave": "d",
+        "texto": "Juegos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El software de nóminas forma parte de las aplicaciones de productividad y negocios, orientadas a tareas administrativas, contables y de gestión económica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un sistema operativo proporciona la base para ejecutar aplicaciones, pero no realiza cálculos específicos de nómina."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un driver sirve para controlar hardware, no para gestionar sueldos o cálculos contables."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los juegos están orientados al ocio, no a la gestión de gastos de nómina."
+        }
+      ],
+      "resumen_didactico": "Las aplicaciones de productividad/negocios están diseñadas para automatizar tareas de oficina como contabilidad, facturación o nóminas.",
+      "ejemplo_practico": "Un despacho contable utiliza un programa específico para calcular salarios, retenciones y cotizaciones; ese software es claramente de productividad/negocios.",
+      "conclusion_final": "El software de nóminas entra en la categoría de aplicaciones de productividad y gestión empresarial, no en el software de sistema."
+    }
+  },
+  {
+    "id": "UT7-Q05",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué tipo de aplicación corresponde a un procesador de texto como Microsoft Word?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Herramienta ofimática"
+      },
+      {
+        "clave": "b",
+        "texto": "Navegador web"
+      },
+      {
+        "clave": "c",
+        "texto": "Motor de base de datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Cliente de correo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los procesadores de texto son una pieza central de las herramientas ofimáticas, junto a hojas de cálculo, presentaciones y otros programas de oficina.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un navegador web sirve para acceder a páginas de Internet, no para editar documentos en local como función principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un motor de base de datos gestiona almacenamiento y consultas de datos, no la redacción de documentos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un cliente de correo está pensado para enviar y recibir emails, no para maquetar documentos extensos."
+        }
+      ],
+      "resumen_didactico": "La ofimática agrupa las aplicaciones típicas de oficina; redactar documentos es una de sus tareas principales, cubierta por los procesadores de texto.",
+      "ejemplo_practico": "Escribir un informe, una memoria de prácticas o un contrato en Word o LibreOffice Writer es un uso claro de una herramienta ofimática.",
+      "conclusion_final": "Microsoft Word es un ejemplo clásico de herramienta ofimática, concretamente un procesador de texto."
+    }
+  },
+  {
+    "id": "UT7-Q06",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Un técnico quiere instalar un software en 10 portátiles. Revisa los requisitos publicados por el fabricante. ¿Por qué debe diferenciar entre requisitos mínimos y recomendados?",
+    "contexto": "Se van a desplegar varios equipos y se quiere asegurar que el programa funcione bien en todos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los mínimos incluyen siempre GPU dedicada"
+      },
+      {
+        "clave": "b",
+        "texto": "Los mínimos permiten arrancar; los recomendados aseguran fluidez"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque los mínimos garantizan compatibilidad con Windows XP"
+      },
+      {
+        "clave": "d",
+        "texto": "Los recomendados instalan drivers automáticamente"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los requisitos mínimos marcan el hardware necesario para que la aplicación arranque, mientras que los recomendados indican la configuración con la que funcionará de forma fluida y estable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Muchos programas no necesitan GPU dedicada; no es una característica general de los requisitos mínimos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los requisitos no se definen en función de Windows XP, sino de las versiones soportadas por el fabricante."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ningún requisito garantiza instalación automática de drivers; eso depende del sistema operativo y del instalador."
+        }
+      ],
+      "resumen_didactico": "Diferenciar mínimos y recomendados ayuda a evitar equipos en los que el software funcione lento o inestable, aunque técnicamente se pueda instalar.",
+      "ejemplo_practico": "Un editor de vídeo puede instalarse con 4 GB de RAM (mínimo) pero requerir 16 GB (recomendado) para editar en alta resolución sin cortes.",
+      "conclusion_final": "Los requisitos mínimos solo garantizan que el programa funcione; los recomendados son la referencia real para trabajar con comodidad."
+    }
+  },
+  {
+    "id": "UT7-Q07",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En un call center, la plantilla empieza a trabajar con Windows 11. El administrador revisa la RAM y CPU antes de instalar. ¿Qué está comprobando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Servidores DNS"
+      },
+      {
+        "clave": "b",
+        "texto": "Requisitos de hardware del sistema"
+      },
+      {
+        "clave": "c",
+        "texto": "Copyleft"
+      },
+      {
+        "clave": "d",
+        "texto": "Licencias de uso"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Antes de instalar un sistema operativo como Windows 11 es imprescindible verificar que el hardware (CPU, RAM, disco, etc.) cumple los requisitos mínimos y recomendados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los servidores DNS intervienen en la resolución de nombres en red, no en la capacidad de instalar el sistema operativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "El copyleft se refiere a licencias de software, no a características de hardware."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las licencias de uso son importantes, pero comprobar RAM y CPU está relacionado con compatibilidad técnica, no legal."
+        }
+      ],
+      "resumen_didactico": "Comprobar la RAM y la CPU garantiza que el sistema operativo podrá ejecutarse correctamente y no quedará limitado por falta de recursos.",
+      "ejemplo_practico": "Si un equipo tiene solo 2 GB de RAM, no cumplirá los requisitos de Windows 11 y el instalador puede bloquear la instalación.",
+      "conclusion_final": "Revisar especificaciones como CPU y RAM forma parte de la validación de requisitos de hardware antes de desplegar un sistema operativo."
+    }
+  },
+  {
+    "id": "UT7-Q08",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En un taller de Zaragoza, un empleado debe documentar un proyecto y decide usar Markdown con exportación a PDF. ¿Qué categoría de herramienta está utilizando?",
+    "contexto": "Documentación técnica de un proyecto con posibilidad de exportar a PDF.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cliente FTP"
+      },
+      {
+        "clave": "b",
+        "texto": "Reproductor multimedia"
+      },
+      {
+        "clave": "c",
+        "texto": "Agenda electrónica"
+      },
+      {
+        "clave": "d",
+        "texto": "Procesador de texto"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Aunque Markdown sea un formato ligero y técnico, su uso principal aquí es redactar y maquetar texto, por lo que la herramienta se considera un procesador de texto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un cliente FTP sirve para transferir archivos con un servidor, no para redactar documentación."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un reproductor multimedia está destinado a audio y vídeo, no a edición de texto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una agenda electrónica gestiona citas y tareas, no genera documentos extensos."
+        }
+      ],
+      "resumen_didactico": "Los editores de Markdown utilizados para crear y exportar documentos a PDF encajan funcionalmente en la categoría de procesadores de texto.",
+      "ejemplo_practico": "Redactar un README.md en VS Code y luego exportarlo a PDF para entregar una memoria de proyecto es usar la herramienta como procesador de texto.",
+      "conclusion_final": "Cuando el objetivo es redactar y dar formato a documentos, hablamos de procesadores de texto, aunque el formato sea Markdown en lugar de DOCX."
+    }
+  },
+  {
+    "id": "UT7-Q09",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Un analista quiere importar un CSV de clientes, limpiar datos y cargarlos en una base de datos. ¿Qué herramienta usaría primero?",
+    "contexto": "Tarea de preparación de datos antes de la carga en una base de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hoja de cálculo"
+      },
+      {
+        "clave": "b",
+        "texto": "Cliente de correo"
+      },
+      {
+        "clave": "c",
+        "texto": "Compilador C++"
+      },
+      {
+        "clave": "d",
+        "texto": "Editor de imágenes"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las hojas de cálculo permiten importar archivos CSV, revisar su contenido, aplicar filtros, corregir errores y preparar los datos para su posterior carga en una base de datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un cliente de correo sirve para enviar y recibir mensajes, no para limpiar datos tabulares."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un compilador C++ transforma código fuente en ejecutables, no gestiona archivos CSV directamente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los editores de imágenes están orientados al tratamiento gráfico, no al manejo de datos estructurados."
+        }
+      ],
+      "resumen_didactico": "La hoja de cálculo es la herramienta más directa para inspeccionar, corregir y transformar datos antes de procesos de carga o migración.",
+      "ejemplo_practico": "El analista abre clientes.csv en Excel, corrige formatos de fecha y elimina filas duplicadas antes de importarlo a una tabla MySQL.",
+      "conclusion_final": "En la fase de preparación de datos, la hoja de cálculo es una herramienta muy útil para limpiar y validar información rápidamente."
+    }
+  },
+  {
+    "id": "UT7-Q10",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En una pyme, los empleados acceden a su correo desde el navegador sin instalar software adicional. ¿Qué tipo de cliente usan?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agente SNMP"
+      },
+      {
+        "clave": "b",
+        "texto": "Cliente POP3"
+      },
+      {
+        "clave": "c",
+        "texto": "Cliente local"
+      },
+      {
+        "clave": "d",
+        "texto": "Webmail"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Cuando el correo se consulta directamente desde el navegador, sin instalar una aplicación dedicada, se está usando un cliente de tipo webmail.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "SNMP es un protocolo de monitorización de dispositivos de red, no un cliente de correo."
+        },
+        {
+          "clave": "b",
+          "motivo": "POP3 es un protocolo para descargar correos, no describe por sí mismo un cliente basado en navegador."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un cliente local requiere instalación en el equipo (como Outlook o Thunderbird), cosa que aquí no ocurre."
+        }
+      ],
+      "resumen_didactico": "El webmail permite acceder al correo desde cualquier dispositivo con navegador, manteniendo la gestión centralizada en el servidor.",
+      "ejemplo_practico": "Entrar a Outlook Web o Gmail desde Chrome para leer el correo corporativo es un ejemplo típico de uso de webmail.",
+      "conclusion_final": "Si el usuario solo necesita un navegador para consultar el correo, está utilizando un cliente de tipo webmail."
+    }
+  },
+  {
+    "id": "UT7-Q11",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué protocolo se usa para enviar correos desde un cliente a un servidor?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "IMAP"
+      },
+      {
+        "clave": "b",
+        "texto": "DNS"
+      },
+      {
+        "clave": "c",
+        "texto": "POP3"
+      },
+      {
+        "clave": "d",
+        "texto": "SMTP"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "SMTP (Simple Mail Transfer Protocol) es el protocolo estándar para enviar correos electrónicos desde un cliente hacia el servidor y entre servidores de correo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "IMAP se usa para leer y sincronizar correos manteniéndolos en el servidor, no para enviarlos."
+        },
+        {
+          "clave": "b",
+          "motivo": "DNS resuelve nombres de dominio en direcciones IP, pero no transporta correos."
+        },
+        {
+          "clave": "c",
+          "motivo": "POP3 sirve para descargar correos desde el servidor al cliente, generalmente eliminándolos del servidor."
+        }
+      ],
+      "resumen_didactico": "En el flujo de correo, SMTP cubre la salida de mensajes, mientras que POP3 e IMAP cubren la recepción.",
+      "ejemplo_practico": "Cuando envías un correo desde Outlook, este se entrega al servidor de correo usando SMTP antes de propagarse al destinatario.",
+      "conclusion_final": "SMTP es el protocolo asociado al envío de correo electrónico en la arquitectura clásica de email."
+    }
+  },
+  {
+    "id": "UT7-Q12",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Una clínica quiere que los empleados puedan consultar su buzón de correo desde varios dispositivos sin borrar mensajes del servidor. ¿Qué protocolo debe usar?",
+    "contexto": "Acceso al mismo buzón de correo desde múltiples dispositivos manteniendo los mensajes en el servidor.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SNMP"
+      },
+      {
+        "clave": "b",
+        "texto": "IMAP4"
+      },
+      {
+        "clave": "c",
+        "texto": "SMTP"
+      },
+      {
+        "clave": "d",
+        "texto": "POP3"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "IMAP4 permite consultar el correo manteniendo los mensajes almacenados en el servidor y sincronizados entre varios dispositivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "SNMP se utiliza para monitorización de red, no para acceso a correo."
+        },
+        {
+          "clave": "c",
+          "motivo": "SMTP interviene en el envío de correos, no en su lectura o sincronización."
+        },
+        {
+          "clave": "d",
+          "motivo": "POP3 suele descargar los correos al cliente y, según la configuración, puede eliminarlos del servidor, dificultando la consulta desde varios dispositivos."
+        }
+      ],
+      "resumen_didactico": "IMAP4 es el protocolo adecuado cuando se quiere ver el mismo buzón y estado de mensajes desde diferentes equipos o móviles.",
+      "ejemplo_practico": "Un médico revisa su correo en el ordenador de la consulta, en el móvil y en casa; con IMAP ve las mismas carpetas y correos en todos los dispositivos.",
+      "conclusion_final": "Si se necesita acceso simultáneo y sincronizado al mismo buzón desde varios terminales, el protocolo a usar es IMAP4."
+    }
+  },
+  {
+    "id": "UT7-Q13",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En una pyme, los empleados acceden a su correo desde el navegador sin instalar software adicional. ¿Qué tipo de cliente usan?",
+    "contexto": "Acceso al correo exclusivamente mediante navegador web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agente SNMP"
+      },
+      {
+        "clave": "b",
+        "texto": "Cliente POP3"
+      },
+      {
+        "clave": "c",
+        "texto": "Cliente local"
+      },
+      {
+        "clave": "d",
+        "texto": "Webmail"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Cuando el acceso al correo se realiza íntegramente desde el navegador, hablamos de un cliente de tipo webmail, como Outlook Web o Gmail.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "SNMP es un protocolo de gestión de red, no un cliente de correo."
+        },
+        {
+          "clave": "b",
+          "motivo": "POP3 es un protocolo de descarga de correo, no un tipo de cliente basado en navegador."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un cliente local implica una aplicación instalada, algo que aquí no sucede."
+        }
+      ],
+      "resumen_didactico": "El webmail elimina la necesidad de instalar clientes de correo en cada equipo y facilita el acceso desde cualquier lugar.",
+      "ejemplo_practico": "Entrar en correo.empresa.com desde Firefox y consultar el buzón sin ningún programa extra es uso típico de webmail.",
+      "conclusion_final": "Siempre que el correo se maneja solamente desde el navegador, se está usando un cliente webmail."
+    }
+  },
+  {
+    "id": "UT7-Q14",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Un equipo de marketing quiere organizar videollamadas y chats en tiempo real. ¿Qué tipo de software deben usar?",
+    "contexto": "Necesitan coordinarse mediante reuniones en línea y mensajería al instante.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mensajería instantánea"
+      },
+      {
+        "clave": "b",
+        "texto": "Antivirus"
+      },
+      {
+        "clave": "c",
+        "texto": "Procesador de texto"
+      },
+      {
+        "clave": "d",
+        "texto": "FTP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las aplicaciones de mensajería instantánea permiten comunicación en tiempo real mediante texto, voz y vídeo, cubriendo tanto chats como videollamadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El antivirus protege frente a malware, pero no proporciona funciones de comunicación en tiempo real."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un procesador de texto sirve para redactar documentos, no para organizar reuniones en línea."
+        },
+        {
+          "clave": "d",
+          "motivo": "FTP se usa para transferir archivos entre cliente y servidor, no para chatear ni hacer videollamadas."
+        }
+      ],
+      "resumen_didactico": "La mensajería instantánea es la categoría de software indicada para chats rápidos, videollamadas y colaboración síncrona.",
+      "ejemplo_practico": "El equipo usa Microsoft Teams o Slack para chatear, enviar archivos y reunirse por videollamada con cámara y pantalla compartida.",
+      "conclusion_final": "Para comunicación en tiempo real y colaboración diaria, la solución es un software de mensajería instantánea y reuniones online."
+    }
+  },
+  {
+    "id": "UT7-Q15",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué característica define la comunicación asíncrona en mensajería instantánea?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Siempre es solo por voz"
+      },
+      {
+        "clave": "b",
+        "texto": "Los mensajes se reciben aunque el destinatario no esté conectado"
+      },
+      {
+        "clave": "c",
+        "texto": "Ambos deben estar conectados a la vez"
+      },
+      {
+        "clave": "d",
+        "texto": "Elimina el historial automáticamente"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En la comunicación asíncrona los mensajes pueden ser enviados y almacenados aunque el destinatario no esté conectado, que los recibirá cuando vuelva a conectarse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La asincronía no depende del tipo de contenido (texto, voz, vídeo), sino de la necesidad o no de simultaneidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Si ambos deben estar conectados a la vez hablamos de comunicación síncrona, no asíncrona."
+        },
+        {
+          "clave": "d",
+          "motivo": "La eliminación automática del historial no es una característica definitoria de la comunicación asíncrona."
+        }
+      ],
+      "resumen_didactico": "La clave de la comunicación asíncrona es que no exige que emisor y receptor estén conectados al mismo tiempo.",
+      "ejemplo_practico": "En Telegram o WhatsApp puedes enviar un mensaje a alguien que tiene el móvil apagado; al encenderlo, el mensaje aparece en su bandeja.",
+      "conclusion_final": "Comunicación asíncrona significa que el intercambio de mensajes no requiere coincidencia temporal entre las personas."
+    }
+  },
+  {
+    "id": "UT7-Q16",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Una empresa quiere subir archivos a un servidor remoto de forma cifrada. ¿Qué protocolo conviene?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SFTP"
+      },
+      {
+        "clave": "b",
+        "texto": "POP3"
+      },
+      {
+        "clave": "c",
+        "texto": "FTP"
+      },
+      {
+        "clave": "d",
+        "texto": "Telnet"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SFTP (SSH File Transfer Protocol) permite transferir archivos sobre una conexión SSH cifrada, protegiendo la confidencialidad e integridad de los datos en tránsito.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "POP3 se utiliza para descargar correos electrónicos desde un servidor, no para transferir archivos arbitrarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "FTP transfiere archivos pero sin cifrado por defecto, exponiendo credenciales y contenido."
+        },
+        {
+          "clave": "d",
+          "motivo": "Telnet permite acceso remoto sin cifrado, por lo que es inseguro para cualquier gestión sensible."
+        }
+      ],
+      "resumen_didactico": "Para subir archivos de forma segura a un servidor es preferible usar protocolos cifrados como SFTP o FTPS en lugar de FTP clásico.",
+      "ejemplo_practico": "Una empresa sube backups diarios de su base de datos a un servidor externo usando un script SFTP que viaja sobre SSH.",
+      "conclusion_final": "Si necesitas transferir archivos por red y proteger su contenido, elige un protocolo cifrado como SFTP."
+    }
+  },
+  {
+    "id": "UT7-Q17",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué tipo de red permite el intercambio de archivos entre equipos sin un servidor central?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cloud privado"
+      },
+      {
+        "clave": "b",
+        "texto": "P2P (peer-to-peer)"
+      },
+      {
+        "clave": "c",
+        "texto": "LAN"
+      },
+      {
+        "clave": "d",
+        "texto": "VPN"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En una red P2P (peer-to-peer) los nodos se comunican directamente entre sí y comparten recursos sin depender de un servidor central que almacene todos los datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un cloud privado suele basarse en servidores centralizados que ofrecen servicios a los clientes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una LAN es una red de área local; puede soportar arquitecturas cliente-servidor o P2P, pero por sí sola no describe intercambio sin servidor central."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una VPN crea un túnel seguro entre redes o dispositivos, pero no define cómo se comparten los archivos internamente."
+        }
+      ],
+      "resumen_didactico": "Las redes P2P distribuyen la carga entre los nodos, que actúan simultáneamente como clientes y servidores.",
+      "ejemplo_practico": "Aplicaciones como BitTorrent utilizan arquitecturas P2P para permitir que los usuarios compartan fragmentos de archivos entre sí.",
+      "conclusion_final": "Si lo que se quiere es intercambio directo entre equipos sin un servidor central, la arquitectura es de tipo P2P."
+    }
+  },
+  {
+    "id": "UT7-Q18",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En una universidad, un grupo comparte datos de investigación a través de una red P2P. ¿Qué ventaja técnica tiene este enfoque?",
+    "contexto": "Colaboración distribuida entre varios grupos de trabajo sin un servidor central único.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Requiere siempre un servidor maestro"
+      },
+      {
+        "clave": "b",
+        "texto": "Mayor escalabilidad conforme se suman nodos"
+      },
+      {
+        "clave": "c",
+        "texto": "Menor anonimato"
+      },
+      {
+        "clave": "d",
+        "texto": "Uso exclusivo de cables dedicados"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una de las ventajas técnicas de las redes P2P es su escalabilidad: cuantos más nodos participan aportando recursos, mejor puede funcionar el sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Precisamente una característica de P2P es que no requiere un servidor maestro central."
+        },
+        {
+          "clave": "c",
+          "motivo": "El nivel de anonimato depende del diseño de la red y no es una ventaja intrínseca ni necesariamente menor."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las redes P2P pueden funcionar sobre infraestructuras habituales de red, no exigen cableado dedicado."
+        }
+      ],
+      "resumen_didactico": "En P2P, la incorporación de nuevos nodos puede aportar más ancho de banda disponible y redundancia en el acceso a los datos.",
+      "ejemplo_practico": "Si muchos equipos universitarios comparten los mismos datasets por P2P, cada descarga puede obtener fragmentos de múltiples fuentes simultáneamente.",
+      "conclusion_final": "La arquitectura P2P destaca por escalar bien cuando se añaden nodos, repartiendo carga y mejorando disponibilidad."
+    }
+  },
+  {
+    "id": "UT7-Q19",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En un despacho contable, un empleado instala un software antimalware. ¿Qué característica es esencial en este tipo de programas?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que bloquee todos los puertos"
+      },
+      {
+        "clave": "b",
+        "texto": "Que consuma poca RAM y CPU"
+      },
+      {
+        "clave": "c",
+        "texto": "Que desactive automáticamente los firewalls"
+      },
+      {
+        "clave": "d",
+        "texto": "Que no permita actualizaciones"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario destaca que un buen antimalware debe consumir poca RAM y CPU para no degradar el rendimiento del equipo mientras ofrece protección continua.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Bloquear todos los puertos impediría el funcionamiento normal de muchas aplicaciones legítimas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Desactivar los firewalls reduce la seguridad global; lo correcto es que ambas capas se complementen."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las actualizaciones son críticas para reconocer nuevas amenazas; impedir actualizaciones dejaría el sistema expuesto."
+        }
+      ],
+      "resumen_didactico": "Un antimalware eficaz protege el equipo sin convertirse en una carga excesiva para los recursos del sistema.",
+      "ejemplo_practico": "En un ordenador con un programa de contabilidad y varias hojas de cálculo abiertas, un antimalware ligero no provoca lentitud ni bloqueos al trabajar.",
+      "conclusion_final": "Además de detectar malware, un buen antimalware debe ser eficiente en el uso de recursos para integrarse bien en el entorno de trabajo diario."
+    }
+  },
+  {
+    "id": "UT7-Q20",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué fases básicas incluye el ciclo de un software antimalware?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Descarga, instalación y licencia"
+      },
+      {
+        "clave": "b",
+        "texto": "Hashing, cifrado y firma"
+      },
+      {
+        "clave": "c",
+        "texto": "Prevención, análisis, detección y eliminación"
+      },
+      {
+        "clave": "d",
+        "texto": "Borrado, instalación y bloqueo"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El funcionamiento típico de un antimalware sigue un ciclo de prevención, análisis, detección y eliminación de amenazas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Descarga, instalación y gestión de licencias describen la puesta en marcha de un programa, no su ciclo de protección."
+        },
+        {
+          "clave": "b",
+          "motivo": "Hashing, cifrado y firma son técnicas criptográficas, no las fases de trabajo de un antimalware."
+        },
+        {
+          "clave": "d",
+          "motivo": "Borrado, instalación y bloqueo no reflejan etapas reales de funcionamiento de este tipo de software."
+        }
+      ],
+      "resumen_didactico": "El antimalware primero intenta prevenir infecciones, analiza el sistema, detecta posibles amenazas y finalmente las elimina o aísla.",
+      "ejemplo_practico": "Un antivirus puede bloquear la ejecución de un archivo sospechoso (prevención), escanearlo (análisis), identificarlo como troyano (detección) y moverlo a cuarentena (eliminación).",
+      "conclusion_final": "Pensar en el antimalware como un ciclo ayuda a entender que no solo reacciona, sino que también intenta prevenir problemas antes de que se materialicen."
+    }
+  },
+  {
+    "id": "UT7-Q21",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Una pyme quiere preparar 20 portátiles idénticos para su equipo comercial. ¿Qué técnica debe usar?",
+    "contexto": "Necesitan replicar la misma instalación y configuración en muchos equipos nuevos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hyper-V"
+      },
+      {
+        "clave": "b",
+        "texto": "Clonación de discos"
+      },
+      {
+        "clave": "c",
+        "texto": "Backups incrementales"
+      },
+      {
+        "clave": "d",
+        "texto": "RAID"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La clonación de discos permite copiar de forma exacta el contenido de un disco (sistema, aplicaciones y configuración) a otros discos, creando equipos idénticos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Hyper-V es un hipervisor para crear máquinas virtuales, no una herramienta específica para clonar instalaciones en hardware físico."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las copias incrementales están pensadas para backup de datos, no para desplegar configuraciones idénticas en múltiples equipos."
+        },
+        {
+          "clave": "d",
+          "motivo": "RAID gestiona redundancia y rendimiento del almacenamiento, pero no genera clones de sistemas para diferentes ordenadores."
+        }
+      ],
+      "resumen_didactico": "Clonar un equipo “modelo” es la forma más rápida de preparar muchos portátiles con la misma imagen de trabajo.",
+      "ejemplo_practico": "El técnico configura un portátil con Windows, Office y las aplicaciones corporativas, y luego usa Clonezilla para clonar ese disco en los demás equipos.",
+      "conclusion_final": "Cuando se necesitan muchos equipos con la misma configuración, la solución práctica es realizar una clonación de discos a partir de un equipo base."
+    }
+  },
+  {
+    "id": "UT7-Q22",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué diferencia principal existe entre clonar un disco completo y clonar solo particiones?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La partición clona también el bootloader"
+      },
+      {
+        "clave": "b",
+        "texto": "La clonación de disco siempre falla"
+      },
+      {
+        "clave": "c",
+        "texto": "El disco completo incluye arranque; las particiones no"
+      },
+      {
+        "clave": "d",
+        "texto": "La clonación de particiones es ilegal"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Al clonar un disco completo se copia también la información de arranque (bootloader), mientras que al clonar solo particiones normalmente no se incluye el cargador de arranque.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El bootloader suele residir fuera de las particiones (en el MBR o en la partición EFI), por lo que clonar solo una partición no garantiza copiarlo."
+        },
+        {
+          "clave": "b",
+          "motivo": "La clonación de disco es una técnica estándar y fiable; no tiene por qué fallar si se hace correctamente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Clonar particiones no es ilegal; la legalidad depende del software y licencias, no de la técnica de clonación en sí."
+        }
+      ],
+      "resumen_didactico": "Si quieres que el equipo destino arranque exactamente igual que el origen, lo seguro es clonar el disco completo.",
+      "ejemplo_practico": "Clonar solo C: sin incluir la partición EFI puede provocar un error de “no hay dispositivo de arranque” al intentar iniciar el sistema en el nuevo disco.",
+      "conclusion_final": "La gran diferencia práctica es que la clonación de disco completo reproduce también el entorno de arranque, mientras que clonar solo particiones puede requerir pasos extra para hacer el sistema arrancable."
+    }
+  },
+  {
+    "id": "UT7-Q23",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En un laboratorio, un técnico crea una imagen de disco con Clonezilla para desplegar en varios PCs. ¿Qué tipo de clonación ha usado?",
+    "contexto": "Se prepara una única imagen maestra que luego se restaurará en muchos equipos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Snapshot"
+      },
+      {
+        "clave": "b",
+        "texto": "Clonación por imagen"
+      },
+      {
+        "clave": "c",
+        "texto": "Disco a disco"
+      },
+      {
+        "clave": "d",
+        "texto": "Copia diferencial"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Crear una imagen de disco para reutilizarla en varios equipos corresponde a la clonación por imagen, que en Clonezilla se realiza en modo device-image.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un snapshot es una instantánea típica de máquinas virtuales, no el término que se usa en Clonezilla para generar imágenes reutilizables."
+        },
+        {
+          "clave": "c",
+          "motivo": "La clonación disco a disco copia directamente de un disco físico a otro, sin generar una imagen intermedia para varios equipos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La copia diferencial es un tipo de backup, no un modo de clonación en Clonezilla."
+        }
+      ],
+      "resumen_didactico": "La clonación por imagen permite tener un “modelo” que puede desplegarse en muchos ordenadores sin necesidad de que todos estén conectados a la vez.",
+      "ejemplo_practico": "En el laboratorio, el técnico guarda la imagen del equipo modelo en un servidor y luego arranca Clonezilla en cada PC para restaurar esa misma imagen.",
+      "conclusion_final": "Cuando se pretende reutilizar la misma configuración en múltiples máquinas, la estrategia eficiente es trabajar con imágenes de disco, no con clonaciones directas uno a uno."
+    }
+  },
+  {
+    "id": "UT7-Q24",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué herramienta permite crear un USB booteable a partir de una ISO de sistema operativo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Clonezilla"
+      },
+      {
+        "clave": "b",
+        "texto": "WinRAR"
+      },
+      {
+        "clave": "c",
+        "texto": "VirtualBox"
+      },
+      {
+        "clave": "d",
+        "texto": "Rufus"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Rufus es una utilidad diseñada específicamente para preparar unidades USB arrancables a partir de imágenes ISO de sistemas operativos u otras herramientas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Clonezilla sirve para clonar discos y crear imágenes, pero no para convertir una ISO en un USB booteable de forma directa."
+        },
+        {
+          "clave": "b",
+          "motivo": "WinRAR es un compresor de archivos, no crea medios de arranque."
+        },
+        {
+          "clave": "c",
+          "motivo": "VirtualBox permite ejecutar máquinas virtuales, no preparar pendrives de instalación."
+        }
+      ],
+      "resumen_didactico": "Crear un USB booteable con Rufus es un paso previo habitual para instalar sistemas desde cero en equipos sin lector óptico.",
+      "ejemplo_practico": "El técnico descarga la ISO de Windows 11, abre Rufus, selecciona la ISO y el pendrive, y obtiene un USB desde el que puede arrancar e instalar el sistema.",
+      "conclusion_final": "Si necesitas arrancar un equipo desde un USB para instalar un sistema, herramientas como Rufus son la opción adecuada para preparar el dispositivo."
+    }
+  },
+  {
+    "id": "UT7-Q25",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué protocolo o mecanismo impide la instalación de sistemas no firmados en equipos con arranque seguro?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "PXE"
+      },
+      {
+        "clave": "b",
+        "texto": "BIOS Legacy"
+      },
+      {
+        "clave": "c",
+        "texto": "Secure Boot"
+      },
+      {
+        "clave": "d",
+        "texto": "Fast Boot"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Secure Boot es una característica de UEFI que solo permite arrancar sistemas firmados por entidades de confianza, bloqueando la carga de software no autorizado en el arranque.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "PXE permite arrancar un equipo desde la red, pero no verifica firmas de sistemas."
+        },
+        {
+          "clave": "b",
+          "motivo": "La BIOS Legacy no realiza comprobaciones de firma digital y suele permitir arrancar cualquier sistema compatible."
+        },
+        {
+          "clave": "d",
+          "motivo": "Fast Boot acelera el arranque, pero no añade controles de firma de sistemas."
+        }
+      ],
+      "resumen_didactico": "Secure Boot añade una capa de seguridad al proceso de arranque, evitando que se cargue código malicioso o sistemas no aprobados.",
+      "ejemplo_practico": "Un técnico que intenta instalar una distribución de Linux sin soporte de Secure Boot puede ver bloqueado el arranque hasta que desactive esta opción en la UEFI.",
+      "conclusion_final": "En entornos UEFI modernos, Secure Boot es la pieza que controla qué sistemas pueden arrancar en base a firmas digitales de confianza."
+    }
+  },
+  {
+    "id": "UT7-Q26",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En Windows, ¿qué función acelera el arranque combinando apagado e hibernación?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ReadyBoost"
+      },
+      {
+        "clave": "b",
+        "texto": "Safe Mode"
+      },
+      {
+        "clave": "c",
+        "texto": "Secure Boot"
+      },
+      {
+        "clave": "d",
+        "texto": "Fast Startup (Inicio rápido)"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Fast Startup (Inicio rápido) combina un apagado parcial con la hibernación del kernel y controladores, de forma que el sistema puede arrancar más rápido al reutilizar ese estado guardado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "ReadyBoost utiliza unidades externas como caché para mejorar el rendimiento, pero no está centrado en el arranque."
+        },
+        {
+          "clave": "b",
+          "motivo": "Safe Mode es un modo de arranque reducido para diagnóstico, no una función para acelerar el inicio."
+        },
+        {
+          "clave": "c",
+          "motivo": "Secure Boot verifica firmas de software en el arranque, pero no acorta el tiempo de inicio."
+        }
+      ],
+      "resumen_didactico": "El inicio rápido reduce el tiempo de arranque a costa de no realizar un apagado completo tradicional.",
+      "ejemplo_practico": "Con Fast Startup activado, un portátil puede encenderse en pocos segundos porque parte del sistema ya estaba hibernado en disco.",
+      "conclusion_final": "Fast Startup es la opción específica de Windows que acelera el arranque combinando elementos de apagado e hibernación."
+    }
+  },
+  {
+    "id": "UT7-Q27",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En Clonezilla, ¿qué modo elegirías para clonar directamente un disco a otro sin crear imagen intermedia?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "incremental-backup"
+      },
+      {
+        "clave": "b",
+        "texto": "snapshot"
+      },
+      {
+        "clave": "c",
+        "texto": "device-image"
+      },
+      {
+        "clave": "d",
+        "texto": "device-device"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El modo device-device de Clonezilla está pensado para clonar directamente un disco a otro, copiando el contenido del origen al destino sin crear una imagen intermedia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "incremental-backup no es un modo estándar de Clonezilla; el concepto de incremental pertenece más a estrategias de backup."
+        },
+        {
+          "clave": "b",
+          "motivo": "snapshot se usa para referirse a instantáneas en sistemas virtuales, no es el modo de clonación de Clonezilla."
+        },
+        {
+          "clave": "c",
+          "motivo": "device-image crea una imagen de disco que luego se puede restaurar, pero no realiza clonación directa entre dos discos en una sola operación."
+        }
+      ],
+      "resumen_didactico": "Cuando se tienen ambos discos conectados al mismo equipo y solo se quiere copiar de uno a otro, la opción adecuada es device-device.",
+      "ejemplo_practico": "Un técnico conecta un SSD nuevo junto al disco viejo, arranca Clonezilla y utiliza device-device para transferir todo el sistema al SSD.",
+      "conclusion_final": "Si el objetivo es una copia uno a uno entre dos discos, sin reutilizar en otras máquinas, el modo a usar en Clonezilla es device-device."
+    }
+  },
+  {
+    "id": "UT7-Q28",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Un técnico selecciona por error el disco equivocado al clonar. ¿Qué riesgo principal corre?",
+    "contexto": "Error humano al elegir origen y destino en una operación de clonación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pérdida irreversible de datos del destino"
+      },
+      {
+        "clave": "b",
+        "texto": "Anulación de la licencia"
+      },
+      {
+        "clave": "c",
+        "texto": "Arranque en modo seguro"
+      },
+      {
+        "clave": "d",
+        "texto": "Fallo de red"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Si se elige mal el disco destino, la clonación sobrescribirá su contenido con el del disco origen, provocando la pérdida de todos los datos que había en el destino.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La clonación no anula licencias por sí misma; el problema inmediato es la pérdida de datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El arranque en modo seguro es una opción de Windows, no una consecuencia directa de confundir discos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La clonación local de disco a disco no depende de la red, por lo que un fallo de red no es el riesgo principal aquí."
+        }
+      ],
+      "resumen_didactico": "Elegir correctamente qué disco es el origen y cuál el destino es crítico, porque la sobrescritura del destino habitualmente no se puede deshacer.",
+      "ejemplo_practico": "Si el técnico confunde sda (disco del usuario) con sdb (disco vacío) y clona en sentido contrario, puede borrar todo el trabajo del usuario en segundos.",
+      "conclusion_final": "En procesos de clonación, el mayor peligro de un error de selección es la pérdida total de los datos contenidos en el disco equivocado."
+    }
+  },
+  {
+    "id": "UT7-Q29",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué tipo de copia de seguridad guarda todos los datos cada vez?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diferencial"
+      },
+      {
+        "clave": "b",
+        "texto": "Incremental"
+      },
+      {
+        "clave": "c",
+        "texto": "RAID 1"
+      },
+      {
+        "clave": "d",
+        "texto": "Completa"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La copia completa o total guarda todos los datos seleccionados en cada ejecución, sin importar si han cambiado o no desde la copia anterior.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La copia diferencial guarda solo lo modificado desde la última copia completa, no todos los datos."
+        },
+        {
+          "clave": "b",
+          "motivo": "La copia incremental guarda solo lo nuevo o modificado desde la última copia (completa o incremental)."
+        },
+        {
+          "clave": "c",
+          "motivo": "RAID 1 es un sistema de espejado de discos en tiempo real, no un tipo de copia de seguridad periódica."
+        }
+      ],
+      "resumen_didactico": "Las copias completas son sencillas de entender y de restaurar, pero consumen más espacio y tiempo que las incrementales o diferenciales.",
+      "ejemplo_practico": "Un servidor realiza cada noche una copia completa de una carpeta de 50 GB, generando cada día un backup de tamaño similar.",
+      "conclusion_final": "Si se quiere asegurar que cada backup contenga todo el conjunto de datos sin depender de copias anteriores, se configura una copia completa."
+    }
+  },
+  {
+    "id": "UT7-Q30",
+    "tema": "UT7: Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "En un taller, se configuran copias incrementales a diario tras una completa semanal. ¿Qué ventaja tienen frente a diferenciales?",
+    "contexto": "Estrategia de backup mixto: una copia completa y varias copias parciales posteriores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Restauración más rápida"
+      },
+      {
+        "clave": "b",
+        "texto": "Ahorro de espacio en disco"
+      },
+      {
+        "clave": "c",
+        "texto": "Se eliminan automáticamente"
+      },
+      {
+        "clave": "d",
+        "texto": "Ocupan más memoria"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las copias incrementales guardan solo los cambios desde la última copia (completa o incremental), por lo que suelen ocupar menos espacio que las diferenciales, que acumulan todos los cambios desde la última completa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La restauración suele ser más lenta con incrementales porque hay que aplicar muchas copias en cadena."
+        },
+        {
+          "clave": "c",
+          "motivo": "La eliminación de copias depende de la política de retención, no del tipo de copia."
+        },
+        {
+          "clave": "d",
+          "motivo": "La principal ventaja de las incrementales no es ocupar más memoria, sino precisamente lo contrario: optimizar el espacio."
+        }
+      ],
+      "resumen_didactico": "Las incrementales son ideales cuando se quiere hacer copias frecuentes minimizando el espacio usado en disco.",
+      "ejemplo_practico": "Con una completa semanal de 100 GB y diarias incrementales de 1–2 GB, el espacio crece despacio; con diferenciales, cada día se iría repitiendo mucho contenido.",
+      "conclusion_final": "Las copias incrementales destacan por su eficiencia en espacio al almacenar solo los cambios desde la última copia, lo que las hace muy adecuadas para backups diarios."
+    }
+  }
+]

@@ -1,0 +1,31 @@
+
+@use "../styles/variables" as *;
+
+.home-page {
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Cabecera de la home */
+.home-header {
+  text-align: center;
+
+  .page-title {
+    margin-bottom: 0.4rem;
+  }
+
+  .home-subtitle {
+    margin: 0;
+    font-size: 0.95rem;
+    color: $color-text-muted;
+  }
+}
+
+/* Grid de módulos */
+.home-modules {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+}

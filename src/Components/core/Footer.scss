@@ -1,0 +1,33 @@
+
+@use "../../styles/variables" as *;
+
+.app-footer {
+  margin-top: auto;
+  border-top: 1px solid rgba(15, 23, 42, 1);
+  background: radial-gradient(circle at top, #020617 0, $color-surface-soft 50%);
+}
+
+.app-footer__inner {
+  padding: 1rem 1.5rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: $color-text-muted;
+}
+
+.app-footer__copy {
+  margin: 0;
+}
+
+.app-footer__note {
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Responsive: algo más compacto */
+@media (max-width: 640px) {
+  .app-footer__inner {
+    padding-inline: 1rem;
+  }
+}

@@ -1,0 +1,767 @@
+[
+  {
+    "id": "UT4-Q01",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En una asesoría de Sevilla, un nuevo empleado necesita una cuenta en Linux. Quieren que acceda con su propio directorio personal. ¿Qué comando usarías?",
+    "contexto": "Alta de usuario con carpeta home propia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "useradd -m empleado1" },
+      { "clave": "b", "texto": "groupadd empleado1" },
+      { "clave": "c", "texto": "passwd empleado1" },
+      { "clave": "d", "texto": "chmod 755 /home/empleado1" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "`useradd -m` crea el usuario y su directorio personal copiando los archivos de `/etc/skel`.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Crea grupos, no usuarios." },
+        {
+          "clave": "c",
+          "motivo": "Solo establece la contraseña a un usuario ya existente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cambia permisos, no crea usuarios ni homes."
+        }
+      ],
+      "resumen_didactico": "`useradd` crea usuarios; `-m` asegura el home.",
+      "ejemplo_practico": "sudo useradd -m empleado1 && sudo passwd empleado1",
+      "conclusion_final": "Para crear usuario con home: `useradd -m <usuario>`."
+    }
+  },
+  {
+    "id": "UT4-Q02",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Qué archivo de Linux contiene la información principal de las cuentas de usuario, como UID y shell asignado?",
+    "contexto": "Auditoría de cuentas en un servidor Linux.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "/etc/passwd" },
+      { "clave": "b", "texto": "/etc/profile" },
+      { "clave": "c", "texto": "/etc/shadow" },
+      { "clave": "d", "texto": "/etc/skel" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "`/etc/passwd` almacena login, UID, GID, home y shell.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Configura entorno global, no usuarios." },
+        { "clave": "c", "motivo": "Guarda contraseñas cifradas y caducidad." },
+        { "clave": "d", "motivo": "Plantillas copiadas al home nuevo." }
+      ],
+      "resumen_didactico": "Usuarios: `/etc/passwd`; contraseñas: `/etc/shadow`.",
+      "ejemplo_practico": "grep juan /etc/passwd",
+      "conclusion_final": "`/etc/passwd` es la fuente base de datos de cuentas."
+    }
+  },
+  {
+    "id": "UT4-Q03",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "Has creado un usuario en Linux, pero olvidaste asignarle contraseña. ¿Qué comando usarías para establecerla?",
+    "contexto": "Post-alta de usuario sin password.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "chgrp usuario1" },
+      { "clave": "b", "texto": "passwd usuario1" },
+      { "clave": "c", "texto": "ls -la /home/usuario1" },
+      { "clave": "d", "texto": "chmod 700 usuario1" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`passwd <usuario>` establece o cambia la contraseña (hash en `/etc/shadow`).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Cambia grupo de archivos, no contraseñas." },
+        { "clave": "c", "motivo": "Lista contenidos; no gestiona claves." },
+        { "clave": "d", "motivo": "Permisos de archivo, no contraseñas." }
+      ],
+      "resumen_didactico": "Crear con `useradd`; asegurar con `passwd`.",
+      "ejemplo_practico": "sudo passwd usuario1",
+      "conclusion_final": "Para poner contraseña usa `passwd`."
+    }
+  },
+  {
+    "id": "UT4-Q04",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En un hospital de Zaragoza, el administrador debe añadir a un médico al grupo “historiales”. ¿Qué comando ejecuta?",
+    "contexto": "Asignación de permisos por grupo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "chmod g+rw historiales usuario" },
+      { "clave": "b", "texto": "passwd historiales medico1" },
+      { "clave": "c", "texto": "usermod -aG historiales medico1" },
+      { "clave": "d", "texto": "groupdel historiales usuario" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "`usermod -aG` agrega grupos secundarios sin perder pertenencias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Cambia permisos de archivos, no membresías."
+        },
+        { "clave": "b", "motivo": "Gestiona contraseñas." },
+        { "clave": "d", "motivo": "Eliminaría el grupo, no procede." }
+      ],
+      "resumen_didactico": "Usuarios ↔ grupos: `usermod -aG`.",
+      "ejemplo_practico": "sudo usermod -aG historiales medico1",
+      "conclusion_final": "Añade usuarios a grupos con `usermod -aG`."
+    }
+  },
+  {
+    "id": "UT4-Q05",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Qué archivo en Linux almacena las contraseñas cifradas de los usuarios?",
+    "contexto": "Revisión de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "/etc/default" },
+      { "clave": "b", "texto": "/etc/shadow" },
+      { "clave": "c", "texto": "/etc/passwd" },
+      { "clave": "d", "texto": "/etc/group" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`/etc/shadow` guarda hashes de contraseñas y políticas de caducidad.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Configuración de servicios." },
+        { "clave": "c", "motivo": "Datos de cuenta visibles, no contraseñas." },
+        { "clave": "d", "motivo": "Define grupos y miembros." }
+      ],
+      "resumen_didactico": "Hash y caducidad → `/etc/shadow`.",
+      "ejemplo_practico": "sudo chage -l usuario",
+      "conclusion_final": "Las contraseñas viven en `/etc/shadow`."
+    }
+  },
+  {
+    "id": "UT4-Q06",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "Una empresa quiere forzar a los usuarios de Linux a cambiar la contraseña cada 90 días. ¿Qué utilidad se emplea?",
+    "contexto": "Política de caducidad de contraseñas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "chattr" },
+      { "clave": "b", "texto": "chage" },
+      { "clave": "c", "texto": "tee" },
+      { "clave": "d", "texto": "lsattr" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`chage` gestiona edad de contraseña (mínimo, máximo, avisos).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Atributos de archivos." },
+        { "clave": "c", "motivo": "Redirección de salida." },
+        { "clave": "d", "motivo": "Lista atributos de archivos." }
+      ],
+      "resumen_didactico": "Política de password → `chage`.",
+      "ejemplo_practico": "sudo chage -M 90 -W 7 ana",
+      "conclusion_final": "Usa `chage` para caducidades."
+    }
+  },
+  {
+    "id": "UT4-Q07",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Qué significa que la contraseña de un usuario aparezca como “!” en /etc/shadow?",
+    "contexto": "Diagnóstico de bloqueo de cuenta.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La cuenta está bloqueada" },
+      { "clave": "b", "texto": "El usuario es root" },
+      { "clave": "c", "texto": "El usuario pertenece a varios grupos" },
+      { "clave": "d", "texto": "La contraseña nunca caduca" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Un `!` delante del hash indica cuenta bloqueada (no login por contraseña).",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Root no se identifica por `!`." },
+        { "clave": "c", "motivo": "Grupos se gestionan en `/etc/group`." },
+        {
+          "clave": "d",
+          "motivo": "Caducidad se controla por días máximos, no por `!`."
+        }
+      ],
+      "resumen_didactico": "`!`/`!!` → bloqueada.",
+      "ejemplo_practico": "sudo passwd -l usuario1",
+      "conclusion_final": "“!” en shadow = cuenta bloqueada."
+    }
+  },
+  {
+    "id": "UT4-Q08",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En un taller de informática, un alumno quiere conocer sus grupos de pertenencia en Linux. ¿Qué comando usaría?",
+    "contexto": "Consulta de grupos del usuario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "whoami" },
+      { "clave": "b", "texto": "groups" },
+      { "clave": "c", "texto": "finger" },
+      { "clave": "d", "texto": "ls -l" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`groups` muestra grupo principal y secundarios del usuario.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Solo muestra el nombre del usuario." },
+        { "clave": "c", "motivo": "Info general, no lista grupos." },
+        { "clave": "d", "motivo": "Permisos de archivos, no membresías." }
+      ],
+      "resumen_didactico": "Grupos → `groups` o `id`.",
+      "ejemplo_practico": "groups ana",
+      "conclusion_final": "`groups` es la vía rápida."
+    }
+  },
+  {
+    "id": "UT4-Q09",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Qué directorio en Linux contiene los archivos de configuración que se copian por defecto al crear un nuevo usuario?",
+    "contexto": "Plantilla de perfiles iniciales.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "/etc/default" },
+      { "clave": "b", "texto": "/etc/skel" },
+      { "clave": "c", "texto": "/var/log" },
+      { "clave": "d", "texto": "/etc/profile" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`/etc/skel` contiene las plantillas (p.ej., `.bashrc`) que se copian al home.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Opciones por defecto de servicios." },
+        { "clave": "c", "motivo": "Carpeta de logs." },
+        { "clave": "d", "motivo": "Script global, no se copia por usuario." }
+      ],
+      "resumen_didactico": "Plantillas iniciales → `/etc/skel`.",
+      "ejemplo_practico": "ls -la /etc/skel",
+      "conclusion_final": "Personaliza `/etc/skel` para homogeneizar entornos."
+    }
+  },
+  {
+    "id": "UT4-Q10",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "Una pyme necesita asignar permisos de lectura y escritura a todos los miembros del grupo sobre la carpeta “proyectos”. ¿Qué comando aplicarías?",
+    "contexto": "Permisos de directorio compartido.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "chmod 777 proyectos" },
+      { "clave": "b", "texto": "passwd proyectos" },
+      { "clave": "c", "texto": "chown proyectos" },
+      { "clave": "d", "texto": "chmod 770 proyectos" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "`chmod 770` da rwx a propietario y grupo; sin acceso a otros.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Da acceso total a cualquiera (inseguro)." },
+        { "clave": "b", "motivo": "Gestiona contraseñas." },
+        { "clave": "c", "motivo": "Cambia propietario/grupo, no permisos." }
+      ],
+      "resumen_didactico": "Permisos numéricos: 7=rwx, 6=rw.",
+      "ejemplo_practico": "sudo chown jefe:equipo proyectos && sudo chmod 770 proyectos",
+      "conclusion_final": "Uso típico de compartidos: `770`."
+    }
+  },
+  {
+    "id": "UT4-Q11",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En Windows, ¿qué herramienta gráfica se usa para gestionar usuarios y grupos locales?",
+    "contexto": "Administración local en Windows 10/11 Pro.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "msconfig" },
+      { "clave": "b", "texto": "Editor del registro" },
+      { "clave": "c", "texto": "Administrador de discos" },
+      { "clave": "d", "texto": "lusrmgr.msc" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "`lusrmgr.msc` administra usuarios/grupos locales (crear, bloquear, etc.).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Ajustes de arranque/servicios." },
+        { "clave": "b", "motivo": "Claves del sistema, no usuarios." },
+        { "clave": "c", "motivo": "Particionado y volúmenes." }
+      ],
+      "resumen_didactico": "GUI de cuentas locales: `lusrmgr.msc`.",
+      "ejemplo_practico": "Win+R → lusrmgr.msc",
+      "conclusion_final": "Para cuentas locales, usa `lusrmgr.msc`."
+    }
+  },
+  {
+    "id": "UT4-Q12",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En Windows, ¿qué comando en CMD permite crear un usuario nuevo con contraseña?",
+    "contexto": "Creación rápida desde consola.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "useradd" },
+      { "clave": "b", "texto": "msconfig usuario1" },
+      { "clave": "c", "texto": "net local" },
+      { "clave": "d", "texto": "net user usuario1 clave /add" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "`net user <usuario> <clave> /add` crea usuarios desde CMD/PowerShell.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Comando de Linux." },
+        { "clave": "b", "motivo": "No gestiona usuarios." },
+        { "clave": "c", "motivo": "Comando inexistente." }
+      ],
+      "resumen_didactico": "Usuarios por CLI: `net user`.",
+      "ejemplo_practico": "net user ana Contraseña123 /add",
+      "conclusion_final": "En Windows CLI, usa `net user`."
+    }
+  },
+  {
+    "id": "UT4-Q13",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En una oficina, un empleado perdió su contraseña de Windows. El administrador no quiere eliminar su cuenta, solo restablecerla. ¿Qué comando usaría?",
+    "contexto": "Reset de contraseña sin perder perfil.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "net user empleado *" },
+      { "clave": "b", "texto": "shutdown -r -f" },
+      { "clave": "c", "texto": "ipconfig /renew" },
+      { "clave": "d", "texto": "userdel empleado" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Con `*` solicita nueva contraseña de forma interactiva.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Reinicia el equipo." },
+        { "clave": "c", "motivo": "Renueva IP, no contraseñas." },
+        { "clave": "d", "motivo": "Comando de Linux y elimina la cuenta." }
+      ],
+      "resumen_didactico": "Reset seguro: `net user <u> *`.",
+      "ejemplo_practico": "net user empleado *",
+      "conclusion_final": "Restablece sin borrar con `net user *`."
+    }
+  },
+  {
+    "id": "UT4-Q14",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "Una empresa desea controlar los privilegios de los usuarios cuando un programa requiere permisos de administrador. ¿Qué mecanismo de Windows gestiona esto?",
+    "contexto": "Elevación controlada de privilegios.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Hyper-V" },
+      { "clave": "b", "texto": "Control de cuentas de usuario (UAC)" },
+      { "clave": "c", "texto": "BitLocker" },
+      { "clave": "d", "texto": "Active Directory" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "UAC solicita confirmación/credenciales para cambios elevados.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Virtualización." },
+        { "clave": "c", "motivo": "Cifrado de unidades." },
+        { "clave": "d", "motivo": "Directorio/identidades a nivel dominio." }
+      ],
+      "resumen_didactico": "Privilegios GUI → UAC.",
+      "ejemplo_practico": "Ventana “¿Desea permitir…?” al instalar software.",
+      "conclusion_final": "UAC controla elevaciones en Windows."
+    }
+  },
+  {
+    "id": "UT4-Q15",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Dónde se almacenan los perfiles de usuario en Windows?",
+    "contexto": "Ubicación de datos y configuraciones por usuario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "\\Users (Usuarios)" },
+      { "clave": "b", "texto": "\\Windows\\System32\\Drivers" },
+      { "clave": "c", "texto": "\\Temp" },
+      { "clave": "d", "texto": "\\Windows\\WinSxS" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Perfiles en `C:\\Users\\<usuario>`: Desktop, Documents, AppData, etc.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Controladores del sistema." },
+        { "clave": "c", "motivo": "Temporales." },
+        { "clave": "d", "motivo": "Almacén de componentes." }
+      ],
+      "resumen_didactico": "Perfiles → `C:\\Users`.",
+      "ejemplo_practico": "C:\\Users\\ana",
+      "conclusion_final": "Cada usuario tiene su carpeta en `C:\\Users`."
+    }
+  },
+  {
+    "id": "UT4-Q16",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En un call center de Bilbao, un proceso en Linux consume toda la CPU. ¿Qué comando usarías para ver su PID en tiempo real?",
+    "contexto": "Monitorización de CPU.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "who" },
+      { "clave": "b", "texto": "top" },
+      { "clave": "c", "texto": "free -m" },
+      { "clave": "d", "texto": "cd /proc" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`top` muestra procesos, PID y consumo en tiempo real.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Usuarios conectados." },
+        { "clave": "c", "motivo": "Memoria, no procesos." },
+        { "clave": "d", "motivo": "Explora /proc, no monitoriza." }
+      ],
+      "resumen_didactico": "Tiempo real → `top`/`htop`.",
+      "ejemplo_practico": "top (tecla P para ordenar por CPU)",
+      "conclusion_final": "`top` es la vista en vivo de procesos."
+    }
+  },
+  {
+    "id": "UT4-Q17",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Qué comando en Linux permite terminar un proceso conocido por su PID?",
+    "contexto": "Finalización de procesos colgados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "fg" },
+      { "clave": "b", "texto": "kill -9 PID" },
+      { "clave": "c", "texto": "jobs" },
+      { "clave": "d", "texto": "ps" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`kill -9` envía SIGKILL para terminar inmediatamente (forzado).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Trae al primer plano." },
+        { "clave": "c", "motivo": "Lista trabajos en shell." },
+        { "clave": "d", "motivo": "Muestra procesos, no los mata." }
+      ],
+      "resumen_didactico": "Intenta primero `kill PID` (SIGTERM), luego `-9` si no responde.",
+      "ejemplo_practico": "kill -9 3256",
+      "conclusion_final": "Para forzar, usa `kill -9`."
+    }
+  },
+  {
+    "id": "UT4-Q18",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En Linux, ¿qué indica un proceso con estado “Z”?",
+    "contexto": "Interpretación de estados de procesos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Detenido manualmente" },
+      {
+        "clave": "b",
+        "texto": "Proceso zombi, finalizado pero no recogido por el padre"
+      },
+      { "clave": "c", "texto": "En ejecución" },
+      { "clave": "d", "texto": "En espera" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Estado Z = zombie: terminado pero pendiente de `wait()` del padre.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Estado T (stopped)." },
+        { "clave": "c", "motivo": "Estado R (running)." },
+        { "clave": "d", "motivo": "Estado S/D (sleep)." }
+      ],
+      "resumen_didactico": "Z no consume CPU, pero ocupa entrada en tabla.",
+      "ejemplo_practico": "ps aux | grep '<defunct>'",
+      "conclusion_final": "Z indica mala recolección de hijos."
+    }
+  },
+  {
+    "id": "UT4-Q19",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "Una pyme necesita que un script de copia se ejecute automáticamente todos los días a las 22:00 h en Linux. ¿Qué mecanismo usarías?",
+    "contexto": "Automatización periódica.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "systemctl enable" },
+      { "clave": "b", "texto": "nohup" },
+      { "clave": "c", "texto": "at" },
+      { "clave": "d", "texto": "cron" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "`cron` programa tareas repetitivas; `crontab` define la periodicidad.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Habilita servicios al arranque." },
+        { "clave": "b", "motivo": "Evita hangup; no agenda tareas." },
+        { "clave": "c", "motivo": "Ejecución única en una fecha/hora." }
+      ],
+      "resumen_didactico": "Recurrente → `cron`; puntual → `at`.",
+      "ejemplo_practico": "0 22 * * * /scripts/backup.sh",
+      "conclusion_final": "Usa `cron` para tareas diarias."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Qué archivo contiene las tareas programadas de cada usuario en Linux?",
+    "contexto": "Ubicación de cron jobs por usuario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "/etc/shadow" },
+      { "clave": "b", "texto": "crontab" },
+      { "clave": "c", "texto": "/etc/default" },
+      { "clave": "d", "texto": "/etc/skel" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Cada usuario tiene su `crontab`; el sistema usa `/etc/crontab`.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Contraseñas cifradas." },
+        { "clave": "c", "motivo": "Parámetros por defecto de servicios." },
+        { "clave": "d", "motivo": "Plantillas de homes." }
+      ],
+      "resumen_didactico": "Tareas → `crontab -e`.",
+      "ejemplo_practico": "crontab -l",
+      "conclusion_final": "El planificador lee `crontab` de cada usuario."
+    }
+  },
+  {
+    "id": "UT4-Q21",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En Windows, un técnico quiere finalizar un programa que no responde. ¿Qué herramienta gráfica usará?",
+    "contexto": "Cierre de aplicaciones colgadas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Panel de control" },
+      { "clave": "b", "texto": "Windows Defender" },
+      { "clave": "c", "texto": "Visor de eventos" },
+      { "clave": "d", "texto": "Administrador de tareas" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Task Manager lista procesos y permite 'Finalizar tarea'.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Ajustes del sistema." },
+        { "clave": "b", "motivo": "Antivirus." },
+        { "clave": "c", "motivo": "Registro de eventos, no cierra procesos." }
+      ],
+      "resumen_didactico": "Atajo: Ctrl+Shift+Esc.",
+      "ejemplo_practico": "Seleccionar app → Finalizar tarea",
+      "conclusion_final": "Task Manager es la vía para cerrar apps congeladas."
+    }
+  },
+  {
+    "id": "UT4-Q22",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En Windows, ¿qué pestaña del Administrador de tareas muestra el uso de CPU, memoria, disco y red?",
+    "contexto": "Diagnóstico de rendimiento.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Servicios" },
+      { "clave": "b", "texto": "Usuarios" },
+      { "clave": "c", "texto": "Rendimiento" },
+      { "clave": "d", "texto": "Historial de aplicaciones" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La pestaña 'Rendimiento' muestra gráficos de CPU/RAM/Disco/Red.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Estado de servicios." },
+        { "clave": "b", "motivo": "Consumo por usuario, no vista global." },
+        { "clave": "d", "motivo": "Apps Store, no recursos del sistema." }
+      ],
+      "resumen_didactico": "Global de recursos → Rendimiento.",
+      "ejemplo_practico": "Abrir Task Manager → Rendimiento",
+      "conclusion_final": "Para recursos, usa la pestaña Rendimiento."
+    }
+  },
+  {
+    "id": "UT4-Q23",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En un servidor Linux, necesitas conocer el espacio libre en disco de cada partición. ¿Qué comando usarías?",
+    "contexto": "Control de almacenamiento.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "df -h" },
+      { "clave": "b", "texto": "free -m" },
+      { "clave": "c", "texto": "top" },
+      { "clave": "d", "texto": "ps aux" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "`df -h` muestra uso/espacio libre de sistemas de archivos en formato legible.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Memoria RAM." },
+        { "clave": "c", "motivo": "Procesos/CPU." },
+        { "clave": "d", "motivo": "Lista procesos." }
+      ],
+      "resumen_didactico": "Discos → `df`; directorios → `du`.",
+      "ejemplo_practico": "df -h /home",
+      "conclusion_final": "`df -h` es la visión rápida de particiones."
+    }
+  },
+  {
+    "id": "UT4-Q24",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Qué comando en Linux muestra la memoria RAM libre y usada?",
+    "contexto": "Chequeo de memoria.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "whoami" },
+      { "clave": "b", "texto": "free -m" },
+      { "clave": "c", "texto": "ls -la" },
+      { "clave": "d", "texto": "uname -a" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`free` resume RAM y swap; `-m` en MB.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Usuario actual." },
+        { "clave": "c", "motivo": "Listado de archivos." },
+        { "clave": "d", "motivo": "Info del kernel." }
+      ],
+      "resumen_didactico": "RAM → `free -h/-m`.",
+      "ejemplo_practico": "free -h",
+      "conclusion_final": "Para RAM, usa `free`."
+    }
+  },
+  {
+    "id": "UT4-Q25",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En Linux, ¿dónde se registran la mayoría de eventos y errores del sistema?",
+    "contexto": "Análisis de incidencias.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "/var/log" },
+      { "clave": "b", "texto": "/etc/skel" },
+      { "clave": "c", "texto": "/tmp" },
+      { "clave": "d", "texto": "/proc/meminfo" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "`/var/log` contiene syslog, auth.log, kern.log, etc.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Plantillas de homes." },
+        { "clave": "c", "motivo": "Temporales." },
+        { "clave": "d", "motivo": "Estadísticas de memoria." }
+      ],
+      "resumen_didactico": "Logs del sistema → `/var/log`.",
+      "ejemplo_practico": "sudo tail -f /var/log/syslog",
+      "conclusion_final": "Primera parada de forense: `/var/log`."
+    }
+  },
+  {
+    "id": "UT4-Q26",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En una oficina, un PC con Windows se llena de archivos temporales. ¿Qué herramienta puede liberar espacio automáticamente?",
+    "contexto": "Mantenimiento y limpieza.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "UAC" },
+      { "clave": "b", "texto": "Liberador de espacio en disco" },
+      { "clave": "c", "texto": "Diskpart" },
+      { "clave": "d", "texto": "fsck" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El Liberador elimina temporales, cachés y papelera para recuperar espacio.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Control de privilegios." },
+        { "clave": "c", "motivo": "Gestión de particiones." },
+        { "clave": "d", "motivo": "Herramienta de Linux." }
+      ],
+      "resumen_didactico": "Limpieza rápida → Disk Cleanup.",
+      "ejemplo_practico": "cleanmgr",
+      "conclusion_final": "Usa el Liberador para limpiar temporales."
+    }
+  },
+  {
+    "id": "UT4-Q27",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "¿Qué utilidad de Windows reorganiza los archivos en el disco duro para mejorar el acceso?",
+    "contexto": "Optimización de HDD.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Administrador de dispositivos" },
+      { "clave": "b", "texto": "Restaurar sistema" },
+      { "clave": "c", "texto": "CHKDSK" },
+      { "clave": "d", "texto": "Desfragmentador de disco" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La desfragmentación reordena bloques en HDD para accesos más rápidos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Drivers y hardware." },
+        { "clave": "b", "motivo": "Puntos de restauración." },
+        { "clave": "c", "motivo": "Chequea y repara el sistema de archivos." }
+      ],
+      "resumen_didactico": "HDD: desfragmentar; SSD: TRIM.",
+      "ejemplo_practico": "“Desfragmentar y optimizar unidades”",
+      "conclusion_final": "Optimiza HDD con el desfragmentador."
+    }
+  },
+  {
+    "id": "UT4-Q28",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "Un servidor Linux presenta errores tras un apagón brusco. ¿Qué comando sirve para comprobar y reparar el sistema de archivos?",
+    "contexto": "Recuperación tras caída eléctrica.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "uname" },
+      { "clave": "b", "texto": "fsck" },
+      { "clave": "c", "texto": "mv" },
+      { "clave": "d", "texto": "lsblk" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "`fsck` verifica y repara inconsistencias del sistema de archivos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Información del kernel." },
+        { "clave": "c", "motivo": "Mover/renombrar archivos." },
+        { "clave": "d", "motivo": "Lista dispositivos de bloque." }
+      ],
+      "resumen_didactico": "Errores lógicos → `fsck`.",
+      "ejemplo_practico": "sudo fsck -y /dev/sda1",
+      "conclusion_final": "`fsck` es la herramienta de chequeo/reparación."
+    }
+  },
+  {
+    "id": "UT4-Q29",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "En Linux, ¿qué comando elimina automáticamente dependencias y paquetes no utilizados?",
+    "contexto": "Mantenimiento de paquetes en Debian/Ubuntu.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "apt autoremove" },
+      { "clave": "b", "texto": "rpm -qa" },
+      { "clave": "c", "texto": "dpkg -i" },
+      { "clave": "d", "texto": "apt-get update" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "`apt autoremove` limpia dependencias huérfanas y libera espacio.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Lista paquetes en RPM." },
+        { "clave": "c", "motivo": "Instala un .deb." },
+        { "clave": "d", "motivo": "Actualiza índices, no elimina." }
+      ],
+      "resumen_didactico": "Limpieza APT → `autoremove`.",
+      "ejemplo_practico": "sudo apt autoremove",
+      "conclusion_final": "Mantén el sistema limpio con `autoremove`."
+    }
+  },
+  {
+    "id": "UT4-Q30",
+    "tema": "UT4: Configuración de sistemas operativos",
+    "pregunta": "Una clínica quiere limpiar historiales de navegación y archivos temporales en Linux para mantener la privacidad de sus pacientes. ¿Qué herramienta gráfica recomiendas?",
+    "contexto": "Privacidad y limpieza en estaciones Linux.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "iptables" },
+      { "clave": "b", "texto": "BleachBit" },
+      { "clave": "c", "texto": "UFW" },
+      { "clave": "d", "texto": "CHKDSK" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "BleachBit limpia cachés, temporales y rastros de navegación desde GUI.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Firewall (tables de red)." },
+        { "clave": "c", "motivo": "Frontend de firewall, no limpieza." },
+        { "clave": "d", "motivo": "Herramienta de Windows, no Linux." }
+      ],
+      "resumen_didactico": "Privacidad y limpieza → BleachBit.",
+      "ejemplo_practico": "sudo apt install bleachbit && bleachbit",
+      "conclusion_final": "Para borrar rastros fácilmente, usa BleachBit."
+    }
+  }
+]

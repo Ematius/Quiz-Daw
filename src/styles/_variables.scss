@@ -1,0 +1,32 @@
+
+
+// Paleta base (dark + morado)
+$color-bg: #050816;           // fondo general
+$color-surface: #0b1220;      // tarjetas principales
+$color-surface-alt: #111827;  // variantes de superficie
+$color-surface-soft: #020617; // zonas muy oscuras
+
+$color-primary: #6366f1;           // morado principal
+$color-primary-soft: rgba(99, 102, 241, 0.18);
+
+$color-success: #22c55e;      // verde acierto
+$color-error: #ef4444;        // rojo error
+$color-text: #e5e7eb;         // texto principal
+$color-text-muted: #9ca3af;   // texto secundario
+$color-border-subtle: rgba(148, 163, 184, 0.45);
+
+// Tipografía / tamaños
+$font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  sans-serif;
+
+// Radios y sombras
+$radius-sm: 0.5rem;
+$radius-md: 0.75rem;
+$radius-lg: 1rem;
+$radius-pill: 999px;
+
+$shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.75);
+
+// Transiciones
+$transition-fast: 150ms ease-out;
+$transition-normal: 220ms ease-out;

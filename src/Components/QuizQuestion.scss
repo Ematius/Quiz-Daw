@@ -1,0 +1,197 @@
+
+@use "../styles/variables" as *;
+
+.quiz-question {
+  padding: 1.25rem 1rem 1.5rem;
+  border-radius: $radius-md;
+  background: $color-surface-alt;
+  border: 1px solid $color-primary-soft;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  h2 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* Opciones del quiz */
+.quiz-question form > div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: $radius-sm;
+  background: $color-surface-alt;
+  border: 1px solid transparent;
+  transition: border-color $transition-fast,
+    background-color $transition-fast, transform $transition-fast;
+
+  &:hover {
+    border-color: $color-primary;
+    background: $color-primary-soft;
+    transform: translateY(-1px);
+  }
+
+  input[type="radio"] {
+    accent-color: $color-primary;
+    cursor: pointer;
+  }
+
+  label {
+    cursor: pointer;
+  }
+}
+
+/* Botón comprobar respuesta */
+.quiz-question button[type="submit"] {
+  align-self: flex-start;
+  margin-top: 0.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: $radius-pill;
+  font-weight: 600;
+  font-size: 0.9rem;
+  background: $color-primary;
+  color: white;
+  transition: background-color $transition-fast,
+    transform $transition-fast, box-shadow $transition-fast;
+
+  &:hover:not(:disabled) {
+    background: ($color-primary, 4%);
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px $color-surface;
+  }
+
+  &:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+}
+
+/* Bloque de explicación */
+.card-explication {
+  margin-top: 1rem;
+  padding: 1rem 1rem 1.2rem;
+  border-radius: $radius-md;
+  background: $color-surface;
+  border: 1px solid $color-primary-soft;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.9rem;
+}
+
+/* Cabecera: feedback + frase introductoria */
+.card-explication__feedback {
+  padding-bottom: 0.6rem;
+  border-bottom: 1px dashed $color-text-muted;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-explication__status {
+  margin: 0;
+  font-weight: 600;
+
+}
+
+.card-explication__intro {
+  margin: 0;
+  color: $color-text-muted;
+}
+
+/* Cada opción incorrecta en formato "línea" */
+.analisis-opcion {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.4rem 0.3rem;
+  border-radius: $radius-sm;
+  background: $color-surface-alt;
+}
+
+.analisis-opcion__badge {
+  min-width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  background: $color-primary-soft;
+  color: $color-primary;
+}
+
+.analisis-opcion__text {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Bloque de explicaciones largas */
+.explicacion-detalle {
+  margin-top: 0.4rem;
+  padding: 0.8rem 0.7rem 0.9rem;
+  border-radius: $radius-md;
+  background: $color-surface-alt;
+  border: 1px solid rgba(31, 41, 55, 0.95);
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.explicacion-detalle__title {
+  margin: 0;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $color-text-muted;
+}
+
+/* Grid para temario / resumen / ejemplo / conclusión */
+.explicacion-detalle__grid {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.explicacion-detalle__item {
+  padding: 0.45rem 0.4rem;
+  border-radius: $radius-sm;
+  background: rgba(15, 23, 42, 0.9);
+}
+
+.explicacion-detalle__item h4 {
+  margin: 0 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: $color-text;
+}
+
+.explicacion-detalle__item p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: $color-text-muted;
+  line-height: 1.4;
+}
+
+
+
+@media (max-width: 640px) {
+  .quiz-question {
+    padding-inline: 0.75rem;
+  }
+}

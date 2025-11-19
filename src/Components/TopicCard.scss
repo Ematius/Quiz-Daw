@@ -1,0 +1,77 @@
+
+@use "../styles/variables" as *;
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  position: relative;
+  overflow: hidden;
+
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: $radius-md;
+
+  background: $color-surface-alt;
+  border: 1px solid $color-border-subtle;
+
+  text-decoration: none;
+  color: $color-text;
+
+  cursor: pointer;
+  transition: border-color $transition-fast,
+    background-color $transition-fast, transform $transition-fast;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 55px rgba(15, 23, 42, 1);
+    border-color: $color-primary-soft;
+    background: linear-gradient(
+        135deg,
+        rgba(99, 102, 241, 0.16),
+        rgba(15, 23, 42, 0.98)
+      ),
+      $color-surface;
+  } 
+  
+}
+
+.topic-card::before {
+  content: "";
+  position: absolute;
+  inset: 0%;
+  background: radial-gradient(
+    circle at top right,
+    $color-primary-soft,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity $transition-normal;
+  pointer-events: none;
+ 
+}
+
+.topic-card:hover::before {
+  opacity: 1;
+}
+
+
+.topic-card__badge {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: $color-primary;
+}
+
+.topic-card__title {
+  margin: 0;
+  font-size: 01rem;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+}
+
+.topic-card__meta {
+  margin: 0;
+  font-size: 0.9rem;
+  color: $color-text-muted;
+}

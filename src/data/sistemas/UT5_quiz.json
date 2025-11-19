@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT5-Q01",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué característica distingue a TCP frente a UDP?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UDP siempre cifra los datos"
+      },
+      {
+        "clave": "b",
+        "texto": "TCP es más rápido que UDP"
+      },
+      {
+        "clave": "c",
+        "texto": "UDP fragmenta mensajes en capas"
+      },
+      {
+        "clave": "d",
+        "texto": "TCP establece conexión y garantiza entrega ordenada"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "TCP es un protocolo orientado a conexión: establece sesión, controla errores y garantiza entrega ordenada. UDP es no orientado a conexión y no asegura ni llegada ni orden.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ni TCP ni UDP cifran por sí mismos; el cifrado lo aportan protocolos como TLS o IPsec."
+        },
+        {
+          "clave": "b",
+          "motivo": "Normalmente UDP resulta más rápido al no requerir establecimiento de conexión ni confirmaciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "UDP solo envía datagramas; no se encarga de fragmentar mensajes por capas con control de orden."
+        }
+      ],
+      "resumen_didactico": "TCP prioriza fiabilidad y orden en la comunicación, UDP prioriza sencillez y velocidad.",
+      "ejemplo_practico": "HTTP, FTP o correo usan TCP; DNS o streaming de vídeo en directo suelen usar UDP.",
+      "conclusion_final": "La gran diferencia es que TCP garantiza entrega ordenada mediante conexión establecida; UDP no."
+    }
+  },
+  {
+    "id": "UT5-Q02",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En Linux, quieres ver las interfaces de red y sus direcciones IP. ¿Qué comando usarías?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "uname -a"
+      },
+      {
+        "clave": "b",
+        "texto": "ip addr"
+      },
+      {
+        "clave": "c",
+        "texto": "df -h"
+      },
+      {
+        "clave": "d",
+        "texto": "ps aux"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En Linux el comando moderno para ver interfaces y direcciones IP es ip addr (del paquete iproute2). Muestra IPs, máscaras, estado y MAC de cada interfaz.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "uname -a muestra datos del kernel y sistema, no de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "df -h muestra uso de disco, no configuración de red."
+        },
+        {
+          "clave": "d",
+          "motivo": "ps aux lista procesos, no interfaces de red."
+        }
+      ],
+      "resumen_didactico": "ip addr es el sustituto moderno de ifconfig para listar interfaces y direcciones.",
+      "ejemplo_practico": "Ejecutar ip addr show enp0s3 permite ver la IP 192.168.x.x y su máscara /24.",
+      "conclusion_final": "Para consultar la configuración IP en Linux, ip addr es la herramienta principal."
+    }
+  },
+  {
+    "id": "UT5-Q03",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En un taller de Zaragoza, dos PCs están conectados por switch pero no se comunican. Ambos tienen IP en 192.168.1.0/24. ¿Qué revisarías primero?",
+    "contexto": "Dos ordenadores en la misma red local no logran comunicarse pese a estar conectados por un switch.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Máscara de subred y configuración IP correcta"
+      },
+      {
+        "clave": "b",
+        "texto": "El monitor"
+      },
+      {
+        "clave": "c",
+        "texto": "La impresora compartida"
+      },
+      {
+        "clave": "d",
+        "texto": "El ventilador del PC"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Si dos equipos en la misma LAN no se ven, lo primero es comprobar que IP y máscara los sitúan en la misma subred y que no hay IPs duplicadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El monitor no influye en la conectividad de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "Que la impresora funcione o no no resuelve el problema base entre hosts."
+        },
+        {
+          "clave": "d",
+          "motivo": "El ventilador afecta a la temperatura, no a la configuración IP."
+        }
+      ],
+      "resumen_didactico": "La conectividad IP en red local depende de IP/máscara coherentes dentro del mismo rango.",
+      "ejemplo_practico": "Si un PC tiene 192.168.1.10/24 y otro 192.168.2.5/24, no se comunicarán aunque estén en el mismo switch.",
+      "conclusion_final": "Antes de pensar en fallos de hardware, revisa la configuración de red lógica (IP y máscara)."
+    }
+  },
+  {
+    "id": "UT5-Q04",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué protocolo se usa para pruebas básicas de conectividad mediante eco?",
+    "contexto": "Una empresa realiza pruebas de red enviando mensajes de eco para comprobar si un host responde correctamente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DHCP"
+      },
+      {
+        "clave": "b",
+        "texto": "TCP"
+      },
+      {
+        "clave": "c",
+        "texto": "ARP"
+      },
+      {
+        "clave": "d",
+        "texto": "ICMP"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "ICMP se usa para enviar mensajes de control y diagnóstico, incluyendo las peticiones y respuestas de eco que utilizan herramientas como ping.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DHCP asigna direcciones IP, no realiza pruebas de eco."
+        },
+        {
+          "clave": "b",
+          "motivo": "TCP establece conexiones fiables entre aplicaciones, no se usa para eco de conectividad."
+        },
+        {
+          "clave": "c",
+          "motivo": "ARP traduce IP a MAC en la LAN, no prueba conectividad de extremo a extremo."
+        }
+      ],
+      "resumen_didactico": "Cuando haces ping, realmente estás enviando paquetes ICMP Echo Request y recibiendo Echo Reply.",
+      "ejemplo_practico": "ping 8.8.8.8 envía mensajes ICMP al servidor DNS público de Google para ver si responde.",
+      "conclusion_final": "ICMP es el protocolo de referencia para pruebas básicas de conectividad IP."
+    }
+  },
+  {
+    "id": "UT5-Q05",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "Un técnico debe asignar IP estática a un servidor en Windows. ¿Dónde se configura en la GUI?",
+    "contexto": "Un administrador necesita establecer una dirección IP fija en un servidor Windows para evitar cambios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Centro de redes > Propiedades de TCP/IPv4"
+      },
+      {
+        "clave": "b",
+        "texto": "Firewall avanzado"
+      },
+      {
+        "clave": "c",
+        "texto": "Administrador de dispositivos"
+      },
+      {
+        "clave": "d",
+        "texto": "Panel de control > Sistema"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La configuración de IP estática se realiza en las propiedades de la tarjeta de red, dentro de las opciones de TCP/IPv4.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El firewall gestiona reglas de tráfico, no direcciones IP."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Administrador de dispositivos muestra hardware y drivers, no la IP."
+        },
+        {
+          "clave": "d",
+          "motivo": "El apartado Sistema muestra información general del equipo, no su configuración de red."
+        }
+      ],
+      "resumen_didactico": "Para IP fija en Windows, debes editar la configuración del adaptador de red en el protocolo TCP/IPv4.",
+      "ejemplo_practico": "Ruta típica: Panel de control → Redes e Internet → Centro de redes → Cambiar configuración del adaptador → Propiedades → TCP/IPv4.",
+      "conclusion_final": "La IP estática se establece en las propiedades de la interfaz, nunca desde menús genéricos del sistema."
+    }
+  },
+  {
+    "id": "UT5-Q06",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué comando en Windows muestra la configuración IP actual y las concesiones DHCP?",
+    "contexto": "Un técnico necesita ver la configuración completa de red de un equipo Windows.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "netstat"
+      },
+      {
+        "clave": "b",
+        "texto": "route print"
+      },
+      {
+        "clave": "c",
+        "texto": "ipconfig /all"
+      },
+      {
+        "clave": "d",
+        "texto": "arp -a"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El comando ipconfig /all muestra la configuración de red completa: IP, máscara, gateway, DNS, MAC, estado de DHCP y más.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "netstat muestra conexiones y puertos abiertos, no parámetros IP."
+        },
+        {
+          "clave": "b",
+          "motivo": "route print muestra la tabla de enrutamiento, no la configuración IP detallada."
+        },
+        {
+          "clave": "d",
+          "motivo": "arp -a enseña la tabla ARP (IP↔MAC), no la configuración de la interfaz."
+        }
+      ],
+      "resumen_didactico": "ipconfig /all es la herramienta básica para diagnosticar problemas de IP en Windows.",
+      "ejemplo_practico": "Permite ver si una interfaz está obteniendo la IP por DHCP o si está configurada manualmente.",
+      "conclusion_final": "Para ver toda la configuración de red en Windows, el comando clave es ipconfig /all."
+    }
+  },
+  {
+    "id": "UT5-Q07",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En una clínica de Madrid, la red interna se ralentiza porque un PC envía tráfico anómalo. ¿Qué dispositivo permite segmentar dominios de colisión para reducir el impacto?",
+    "contexto": "Se busca limitar el efecto de un equipo problemático sobre el resto de la LAN.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Switch"
+      },
+      {
+        "clave": "b",
+        "texto": "Hub"
+      },
+      {
+        "clave": "c",
+        "texto": "Repetidor"
+      },
+      {
+        "clave": "d",
+        "texto": "Punto de acceso pasivo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un switch crea dominios de colisión separados por puerto y envía las tramas solo al destino adecuado usando las direcciones MAC.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El hub replica todo el tráfico a todos los puertos, lo que incrementa las colisiones."
+        },
+        {
+          "clave": "c",
+          "motivo": "El repetidor solo amplifica la señal física, no filtra tráfico."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un punto de acceso pasivo no gestiona dominios de colisión en la LAN cableada."
+        }
+      ],
+      "resumen_didactico": "Utilizar switches en lugar de hubs mejora el rendimiento y limita el impacto de equipos problemáticos.",
+      "ejemplo_practico": "Sustituir un viejo hub por un switch suele eliminar colisiones y mejorar la velocidad percibida.",
+      "conclusion_final": "El switch es el dispositivo adecuado para segmentar tráfico y mantener la red estable."
+    }
+  },
+  {
+    "id": "UT5-Q08",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué dispositivo conecta redes diferentes y enruta el tráfico entre ellas?",
+    "contexto": "Una empresa tiene varias subredes y necesita que se comuniquen entre sí.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Switch"
+      },
+      {
+        "clave": "b",
+        "texto": "Hub"
+      },
+      {
+        "clave": "c",
+        "texto": "Patch panel"
+      },
+      {
+        "clave": "d",
+        "texto": "Router"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El router trabaja en la capa 3 del modelo OSI y se encarga de enrutar paquetes entre redes diferentes, usando tablas y protocolos de enrutamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El switch opera principalmente dentro de una sola red local (LAN)."
+        },
+        {
+          "clave": "b",
+          "motivo": "El hub no tiene inteligencia de red, solo repite señales eléctricas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El patch panel es un elemento pasivo de cableado que no toma decisiones de enrutamiento."
+        }
+      ],
+      "resumen_didactico": "Cuando necesitas conectar subredes o una LAN con Internet, el dispositivo clave es el router.",
+      "ejemplo_practico": "El router doméstico conecta tu LAN 192.168.1.x con la red del proveedor y con Internet.",
+      "conclusion_final": "Para comunicación entre redes distintas, siempre pensamos en routers."
+    }
+  },
+  {
+    "id": "UT5-Q09",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En un CPD, los servidores están en estrella con un switch central. ¿Qué topología física es esta?",
+    "contexto": "Todos los servidores están cableados a un punto central único.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bus"
+      },
+      {
+        "clave": "b",
+        "texto": "Malla completa"
+      },
+      {
+        "clave": "c",
+        "texto": "Estrella"
+      },
+      {
+        "clave": "d",
+        "texto": "Anillo"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En la topología en estrella todos los dispositivos se conectan a un nodo central (switch, hub, etc.), que actúa como punto de concentración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En bus todos comparten un único cable troncal."
+        },
+        {
+          "clave": "b",
+          "motivo": "En malla completa cada nodo se conecta con todos los demás, lo que es muy costoso."
+        },
+        {
+          "clave": "d",
+          "motivo": "En anillo cada equipo se conecta con el siguiente formando un círculo."
+        }
+      ],
+      "resumen_didactico": "La topología en estrella es la más utilizada hoy en redes Ethernet por su facilidad de gestión.",
+      "ejemplo_practico": "Una oficina con todos los PCs conectados a un switch central usa topología física en estrella.",
+      "conclusion_final": "Cuando ves un switch en el centro y muchos cables saliendo, estás ante una estrella física."
+    }
+  },
+  {
+    "id": "UT5-Q10",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Cómo se denomina una red que conecta dispositivos personales como móvil, smartwatch y auriculares?",
+    "contexto": "Un usuario sincroniza varios dispositivos que lleva encima.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "PAN"
+      },
+      {
+        "clave": "b",
+        "texto": "WAN"
+      },
+      {
+        "clave": "c",
+        "texto": "LAN"
+      },
+      {
+        "clave": "d",
+        "texto": "MAN"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una Personal Area Network (PAN) conecta dispositivos personales de corto alcance alrededor de una persona, normalmente mediante tecnologías inalámbricas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La WAN conecta redes de gran escala como Internet o redes entre ciudades."
+        },
+        {
+          "clave": "c",
+          "motivo": "La LAN cubre un espacio más amplio, como una oficina o un aula."
+        },
+        {
+          "clave": "d",
+          "motivo": "La MAN se extiende por zonas metropolitanas o ciudades."
+        }
+      ],
+      "resumen_didactico": "Cuando hablamos de móvil, reloj y auriculares conectados juntos, nos movemos en el ámbito de la PAN.",
+      "ejemplo_practico": "Conectar el móvil a unos auriculares Bluetooth es un ejemplo típico de red PAN.",
+      "conclusion_final": "Las redes PAN son la base de la conectividad personal moderna."
+    }
+  },
+  {
+    "id": "UT5-Q11",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué diferencia una LAN de una WAN?",
+    "contexto": "Se comparan redes internas de oficina con redes de mayor alcance.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La WAN no usa routers"
+      },
+      {
+        "clave": "b",
+        "texto": "La LAN solo conecta un dispositivo"
+      },
+      {
+        "clave": "c",
+        "texto": "La LAN siempre usa Wi-Fi"
+      },
+      {
+        "clave": "d",
+        "texto": "La LAN cubre un área reducida y la WAN abarca grandes distancias"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La LAN cubre un área pequeña (oficina, casa, aula) y suele ser propiedad de la organización; la WAN conecta múltiples LAN separadas geográficamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las WAN utilizan routers y otros dispositivos de red para su funcionamiento."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una LAN puede conectar muchos dispositivos, no solo uno."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una LAN puede ser cableada, Wi-Fi o mixta; el medio físico no define el tipo de red."
+        }
+      ],
+      "resumen_didactico": "La diferencia clave entre LAN y WAN es el alcance y la infraestructura necesaria para mantenerlas.",
+      "ejemplo_practico": "La red de tu casa es una LAN; la red del operador que conecta tu ciudad con otras forma parte de una WAN.",
+      "conclusion_final": "LAN y WAN se distinguen principalmente por su escala: local frente a extensa."
+    }
+  },
+  {
+    "id": "UT5-Q12",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En un hogar con fibra óptica, el router del operador conecta la red privada con Internet. ¿Qué tipo de conexión WAN es?",
+    "contexto": "Una vivienda dispone de acceso a Internet mediante fibra directa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Satélite"
+      },
+      {
+        "clave": "b",
+        "texto": "RTC"
+      },
+      {
+        "clave": "c",
+        "texto": "Coaxial"
+      },
+      {
+        "clave": "d",
+        "texto": "FTTH (fibra hasta el hogar)"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "FTTH significa Fiber To The Home: la fibra óptica llega físicamente hasta el domicilio del usuario desde la red del proveedor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Satélite utiliza antena parabólica y sufre mayor latencia."
+        },
+        {
+          "clave": "b",
+          "motivo": "RTC es la red telefónica conmutada clásica, usada para módems antiguos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El coaxial se utiliza en redes híbridas (HFC), no en FTTH puro."
+        }
+      ],
+      "resumen_didactico": "FTTH es el tipo de acceso WAN más común en hogares modernos por su rendimiento.",
+      "ejemplo_practico": "Las ofertas domésticas de fibra simétrica 300Mb/600Mb/1Gb son ejemplos de FTTH.",
+      "conclusion_final": "Si la fibra entra en tu casa hasta el router, estamos ante una conexión FTTH."
+    }
+  },
+  {
+    "id": "UT5-Q13",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En un taller, un cliente quiere instalar Wi-Fi para compartir Internet. ¿Qué dispositivo necesitas?",
+    "contexto": "Se quiere añadir conectividad inalámbrica a una red existente por cable.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Patch panel"
+      },
+      {
+        "clave": "b",
+        "texto": "Punto de acceso inalámbrico"
+      },
+      {
+        "clave": "c",
+        "texto": "Hub"
+      },
+      {
+        "clave": "d",
+        "texto": "Switch gestionable"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El punto de acceso inalámbrico (Access Point) permite que dispositivos Wi-Fi se conecten a la red cableada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El patch panel solo organiza cables; no genera señal Wi-Fi."
+        },
+        {
+          "clave": "c",
+          "motivo": "El hub solo amplifica/replica señales por cable."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un switch gestionable no emite Wi-Fi salvo que incluya radios inalámbricas específicas."
+        }
+      ],
+      "resumen_didactico": "Para ofrecer Wi-Fi en una red Ethernet, se conectan uno o varios puntos de acceso al switch.",
+      "ejemplo_practico": "Colocar un AP en el techo del taller y conectarlo al switch de comunicaciones.",
+      "conclusion_final": "El dispositivo para añadir Wi-Fi es el punto de acceso inalámbrico."
+    }
+  },
+  {
+    "id": "UT5-Q14",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué estándar define las redes Wi-Fi?",
+    "contexto": "Se estudian las normas IEEE que regulan diferentes tipos de redes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "IEEE 802.5"
+      },
+      {
+        "clave": "b",
+        "texto": "IEEE 802.15"
+      },
+      {
+        "clave": "c",
+        "texto": "IEEE 802.11"
+      },
+      {
+        "clave": "d",
+        "texto": "IEEE 802.3"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "IEEE 802.11 es la familia de estándares que definen las redes de área local inalámbricas, es decir, Wi-Fi.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "IEEE 802.5 corresponde a Token Ring, una tecnología ya obsoleta."
+        },
+        {
+          "clave": "b",
+          "motivo": "IEEE 802.15 regula redes personales inalámbricas (PAN), como Bluetooth."
+        },
+        {
+          "clave": "d",
+          "motivo": "IEEE 802.3 define Ethernet cableado, no Wi-Fi."
+        }
+      ],
+      "resumen_didactico": "Todas las variantes de Wi-Fi (b, g, n, ac, ax) derivan del estándar 802.11.",
+      "ejemplo_practico": "Un router Wi-Fi 6 se basa en 802.11ax, que es parte de la familia 802.11.",
+      "conclusion_final": "Cuando hablamos de estándares Wi-Fi, siempre hablamos de IEEE 802.11."
+    }
+  },
+  {
+    "id": "UT5-Q15",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En un despacho de abogados, el Wi-Fi actual WPA2-PSK es inseguro frente a ataques de diccionario. ¿Qué protocolo recomiendas como alternativa más robusta?",
+    "contexto": "Se manejan datos sensibles y se quiere reforzar la protección de la red inalámbrica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "WPA"
+      },
+      {
+        "clave": "b",
+        "texto": "WEP"
+      },
+      {
+        "clave": "c",
+        "texto": "WPA3"
+      },
+      {
+        "clave": "d",
+        "texto": "Telnet"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "WPA3 es la evolución de WPA2 que introduce SAE y un cifrado más robusto, mejorando la resistencia frente a ataques de fuerza bruta y diccionario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "WPA es un estándar anterior y menos seguro que WPA2 y WPA3."
+        },
+        {
+          "clave": "b",
+          "motivo": "WEP está considerado totalmente inseguro y obsoleto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Telnet es un protocolo de acceso remoto en claro, no un mecanismo de cifrado Wi-Fi."
+        }
+      ],
+      "resumen_didactico": "Actualizar a WPA3 mejora notablemente la seguridad de la red inalámbrica frente a ataques sobre la clave.",
+      "ejemplo_practico": "Un router moderno permite seleccionar WPA3-Personal como modo de seguridad en la red Wi-Fi.",
+      "conclusion_final": "En entornos donde la privacidad es crítica, WPA3 es la opción recomendada."
+    }
+  },
+  {
+    "id": "UT5-Q16",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué comando en Windows muestra las conexiones TCP activas y puertos en uso?",
+    "contexto": "Un técnico quiere saber qué puertos está usando el sistema y en qué estado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "netstat -an"
+      },
+      {
+        "clave": "b",
+        "texto": "arp -a"
+      },
+      {
+        "clave": "c",
+        "texto": "ipconfig"
+      },
+      {
+        "clave": "d",
+        "texto": "ping"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "netstat -an muestra las conexiones de red activas y los puertos TCP/UDP en uso, junto con su estado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "arp -a muestra la tabla ARP, no los puertos ni conexiones TCP."
+        },
+        {
+          "clave": "c",
+          "motivo": "ipconfig muestra configuración IP, pero no conexiones activas."
+        },
+        {
+          "clave": "d",
+          "motivo": "ping solo prueba conectividad con ICMP."
+        }
+      ],
+      "resumen_didactico": "netstat es una herramienta clásica para auditar qué servicios están escuchando o conectados.",
+      "ejemplo_practico": "Usar netstat -an | find \"LISTEN\" permite listar servicios a la escucha en el sistema.",
+      "conclusion_final": "Cuando quieres ver qué puertos se están usando en Windows, netstat -an es el comando adecuado."
+    }
+  },
+  {
+    "id": "UT5-Q17",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En Linux, un servidor web no responde. Quieres verificar si el puerto 80 está abierto. ¿Qué comando usarías?",
+    "contexto": "Se sospecha que el servicio HTTP no está escuchando.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ss -tln | grep 80"
+      },
+      {
+        "clave": "b",
+        "texto": "df -h /var/www"
+      },
+      {
+        "clave": "c",
+        "texto": "ps aux | grep apache"
+      },
+      {
+        "clave": "d",
+        "texto": "uname -a"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ss -tln muestra los puertos TCP en escucha sin resolver nombres; al filtrarlo por 80 se comprueba si el servicio HTTP está abierto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "df -h /var/www muestra uso de disco, no puertos en escucha."
+        },
+        {
+          "clave": "c",
+          "motivo": "ps aux | grep apache lista procesos, pero no muestra puertos directamente."
+        },
+        {
+          "clave": "d",
+          "motivo": "uname -a solo muestra información del kernel y sistema."
+        }
+      ],
+      "resumen_didactico": "ss es la alternativa moderna a netstat en Linux para revisar puertos y conexiones.",
+      "ejemplo_practico": "Si ss -tln | grep 80 no devuelve nada, el servidor web no está escuchando en ese puerto.",
+      "conclusion_final": "Para comprobar puertos abiertos en Linux, ss -tln es la primera herramienta a usar."
+    }
+  },
+  {
+    "id": "UT5-Q18",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En una empresa, varios usuarios no acceden a una web interna. El servidor responde al ping pero no al puerto 443. ¿Qué servicio está probablemente afectado?",
+    "contexto": "La resolución de nombre funciona, pero la web segura no carga.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FTP"
+      },
+      {
+        "clave": "b",
+        "texto": "DNS"
+      },
+      {
+        "clave": "c",
+        "texto": "DHCP"
+      },
+      {
+        "clave": "d",
+        "texto": "HTTPS"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El puerto 443 se utiliza por defecto para HTTPS, el protocolo HTTP cifrado con TLS/SSL.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FTP usa los puertos 20 y 21 para transferencia de archivos."
+        },
+        {
+          "clave": "b",
+          "motivo": "DNS utiliza el puerto 53 y ya funciona, pues se puede hacer ping por nombre."
+        },
+        {
+          "clave": "c",
+          "motivo": "DHCP se usa para asignar direcciones IP, no para servir páginas web."
+        }
+      ],
+      "resumen_didactico": "Si el host responde a ping pero no al puerto 443, el problema está en el servicio HTTPS o en el firewall que lo filtra.",
+      "ejemplo_practico": "curl -I https://intranet.empresa.local fallará si el 443 no está disponible.",
+      "conclusion_final": "La incidencia descrita apunta claramente al servicio HTTPS del servidor."
+    }
+  },
+  {
+    "id": "UT5-Q19",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "Una oficina sospecha que un virus genera tráfico saliente inusual. ¿Qué comando básico permite comprobar la puerta de enlace y rutas activas en Windows?",
+    "contexto": "Se quiere revisar si hay rutas extrañas o gateway modificada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "route print"
+      },
+      {
+        "clave": "b",
+        "texto": "arp -s"
+      },
+      {
+        "clave": "c",
+        "texto": "netsh int ipv4"
+      },
+      {
+        "clave": "d",
+        "texto": "ping -t"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "route print muestra la tabla de enrutamiento, incluyendo la puerta de enlace por defecto y redes conocidas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "arp -s sirve para añadir entradas ARP estáticas, no para ver rutas."
+        },
+        {
+          "clave": "c",
+          "motivo": "netsh int ipv4 gestiona configuración, pero no es el comando típico para listar rutas."
+        },
+        {
+          "clave": "d",
+          "motivo": "ping -t solo repite solicitudes ICMP; no muestra gateway ni rutas."
+        }
+      ],
+      "resumen_didactico": "La tabla de rutas permite comprobar por dónde sale el tráfico del sistema.",
+      "ejemplo_practico": "Si aparece una puerta de enlace distinta a la esperada, puede indicar manipulación de configuración por malware.",
+      "conclusion_final": "Para revisar rutas y gateway en Windows el comando clave es route print."
+    }
+  },
+  {
+    "id": "UT5-Q20",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué enfoque busca anticipar y evitar incidencias de red antes de que ocurran?",
+    "contexto": "La empresa quiere ser proactiva en lugar de reaccionar solo cuando la red cae.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Predictivo"
+      },
+      {
+        "clave": "b",
+        "texto": "Reactivo"
+      },
+      {
+        "clave": "c",
+        "texto": "Pasivo"
+      },
+      {
+        "clave": "d",
+        "texto": "Correctivo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El enfoque predictivo se apoya en monitorización y métricas para detectar patrones que anticipan fallos y actuar antes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El enfoque reactivo actúa solo después de que el problema ya ha ocurrido."
+        },
+        {
+          "clave": "c",
+          "motivo": "Lo pasivo implica no intervenir activamente en el estado de la red."
+        },
+        {
+          "clave": "d",
+          "motivo": "Lo correctivo se centra en reparar fallos ya producidos."
+        }
+      ],
+      "resumen_didactico": "El mantenimiento predictivo reduce tiempos de caída mediante actuaciones adelantadas al fallo.",
+      "ejemplo_practico": "Cambiar un switch que muestra errores crecientes de interfaz antes de que deje de funcionar.",
+      "conclusion_final": "La filosofía predictiva es clave en redes críticas donde el tiempo de caída es muy costoso."
+    }
+  },
+  {
+    "id": "UT5-Q21",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En mantenimiento de red, ¿qué significa una acción preventiva?",
+    "contexto": "Se define un plan de mantenimiento periódico para la infraestructura de red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Revisar, actualizar y sustituir equipos antes de fallar"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar diagnósticos forenses"
+      },
+      {
+        "clave": "c",
+        "texto": "Reparar tras la avería"
+      },
+      {
+        "clave": "d",
+        "texto": "Ignorar alertas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El mantenimiento preventivo consiste en realizar tareas programadas para evitar que se produzcan fallos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La forensia se aplica tras un incidente para analizarlo, no para prevenirlo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Reparar tras la avería es mantenimiento correctivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ignorar alertas va en contra de cualquier estrategia de mantenimiento."
+        }
+      ],
+      "resumen_didactico": "Una buena política preventiva reduce la probabilidad de fallos graves en producción.",
+      "ejemplo_practico": "Actualizar firmware de switches en una ventana programada para evitar problemas de seguridad futuros.",
+      "conclusion_final": "La prevención es la base para tener redes estables y predecibles."
+    }
+  },
+  {
+    "id": "UT5-Q22",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En un taller de soporte, un switch deja de funcionar y se reemplaza. ¿Qué tipo de mantenimiento es?",
+    "contexto": "El dispositivo ha fallado y se sustituye para restablecer el servicio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Forzado"
+      },
+      {
+        "clave": "b",
+        "texto": "Correctivo"
+      },
+      {
+        "clave": "c",
+        "texto": "Predictivo"
+      },
+      {
+        "clave": "d",
+        "texto": "Preventivo"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El mantenimiento correctivo se aplica cuando ya ha ocurrido una avería y se repara o sustituye el elemento dañado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Forzado no es una categoría estándar de mantenimiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "El predictivo actúa antes del fallo apoyándose en indicadores."
+        },
+        {
+          "clave": "d",
+          "motivo": "El preventivo se programa para evitar la avería, no después."
+        }
+      ],
+      "resumen_didactico": "El correctivo es inevitable, pero conviene minimizarlo con medidas preventivas y predictivas.",
+      "ejemplo_practico": "Cambiar un switch que ha dejado de encender durante la jornada laboral.",
+      "conclusion_final": "Cuando sustituyes un equipo tras su fallo, estás haciendo mantenimiento correctivo."
+    }
+  },
+  {
+    "id": "UT5-Q23",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "Una empresa necesita evitar que empleados instalen programas no autorizados que abran puertos sin control. ¿Qué política aplicarías?",
+    "contexto": "Se quiere controlar software y puertos en la red corporativa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Política de seguridad de aplicaciones y cortafuegos"
+      },
+      {
+        "clave": "b",
+        "texto": "Reiniciar routers semanalmente"
+      },
+      {
+        "clave": "c",
+        "texto": "Configurar IPv6 automático"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo usar hubs"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las políticas de aplicaciones junto con un firewall corporativo limitan qué software se puede ejecutar y qué puertos pueden abrirse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Reiniciar routers no controla instalaciones ni apertura de puertos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Configurar IPv6 automático no tiene relación con el control de aplicaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los hubs no ofrecen ningún tipo de control ni seguridad."
+        }
+      ],
+      "resumen_didactico": "El control de aplicaciones debe ir de la mano de reglas estrictas de firewall de salida y de entrada.",
+      "ejemplo_practico": "Usar listas blancas de aplicaciones permitidas y bloquear todo tráfico saliente salvo el estrictamente necesario.",
+      "conclusion_final": "La combinación de políticas de aplicaciones y cortafuegos es esencial para evitar software no autorizado."
+    }
+  },
+  {
+    "id": "UT5-Q24",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Cuál es uno de los objetivos principales de la seguridad en las comunicaciones?",
+    "contexto": "Se repasan los principios base de la seguridad de la información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Velocidad máxima"
+      },
+      {
+        "clave": "b",
+        "texto": "Redundancia de hardware"
+      },
+      {
+        "clave": "c",
+        "texto": "Confidencialidad, integridad y disponibilidad"
+      },
+      {
+        "clave": "d",
+        "texto": "Cifrar solo los correos"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La tríada de seguridad clásica se compone de confidencialidad, integridad y disponibilidad (CIA).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La velocidad es un objetivo de rendimiento, no de seguridad."
+        },
+        {
+          "clave": "b",
+          "motivo": "La redundancia ayuda a la disponibilidad, pero es solo un medio, no un objetivo global."
+        },
+        {
+          "clave": "d",
+          "motivo": "Limitar la seguridad a cifrar correos es claramente insuficiente."
+        }
+      ],
+      "resumen_didactico": "La seguridad de la información busca que los datos sean privados, correctos y accesibles cuando se necesitan.",
+      "ejemplo_practico": "Un servidor web seguro usa HTTPS (confidencialidad), firmas de código (integridad) y alta disponibilidad (disponibilidad).",
+      "conclusion_final": "Confidencialidad, integridad y disponibilidad resumen bien los objetivos centrales de la seguridad."
+    }
+  },
+  {
+    "id": "UT5-Q25",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En un cibercafé de Barcelona, los clientes acceden a la red sin autenticación. ¿Qué riesgo de seguridad aumenta?",
+    "contexto": "Se ofrece Wi-Fi abierto a cualquier usuario sin control de acceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Menor latencia"
+      },
+      {
+        "clave": "b",
+        "texto": "Mejor cobertura"
+      },
+      {
+        "clave": "c",
+        "texto": "Más estabilidad en la red"
+      },
+      {
+        "clave": "d",
+        "texto": "Acceso no autorizado y sniffing de tráfico"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En redes abiertas cualquiera puede conectarse y potencialmente esnifar el tráfico no cifrado de otros usuarios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La latencia depende de la infraestructura, no de la autenticación."
+        },
+        {
+          "clave": "b",
+          "motivo": "La cobertura depende de la potencia de los puntos de acceso, no de la autenticación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La estabilidad puede empeorar si se conecta demasiada gente sin control."
+        }
+      ],
+      "resumen_didactico": "Las redes Wi-Fi abiertas son un escenario perfecto para ataques de sniffing y acceso no autorizado.",
+      "ejemplo_practico": "Un atacante podría usar Wireshark en una red abierta para capturar cookies y credenciales no cifradas.",
+      "conclusion_final": "Siempre que sea posible conviene proteger la red con autenticación y cifrado (WPA2/WPA3)."
+    }
+  },
+  {
+    "id": "UT5-Q26",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué ataque busca saturar un servidor con tráfico excesivo?",
+    "contexto": "El servidor deja de responder porque recibe muchas peticiones simultáneas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Phishing"
+      },
+      {
+        "clave": "b",
+        "texto": "SQL Injection"
+      },
+      {
+        "clave": "c",
+        "texto": "Sniffing"
+      },
+      {
+        "clave": "d",
+        "texto": "Denegación de servicio (DoS)"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Los ataques de denegación de servicio (DoS o DDoS) se basan en enviar tráfico masivo para agotar recursos y dejar fuera de servicio al objetivo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El phishing se centra en engañar usuarios con correos o páginas falsas."
+        },
+        {
+          "clave": "b",
+          "motivo": "La inyección SQL ataca bases de datos, no satura el servidor por volumen de tráfico."
+        },
+        {
+          "clave": "c",
+          "motivo": "El sniffing intercepta tráfico, no lo genera en exceso."
+        }
+      ],
+      "resumen_didactico": "Un DoS no busca robar datos, sino impedir que los usuarios legítimos accedan al servicio.",
+      "ejemplo_practico": "Una botnet enviando miles de peticiones por segundo a un servidor web hasta que colapsa.",
+      "conclusion_final": "Los DoS se centran en atacar la disponibilidad, uno de los pilares de la seguridad."
+    }
+  },
+  {
+    "id": "UT5-Q27",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "Una clínica quiere garantizar que sus historiales médicos cifrados no sean modificados por atacantes. ¿Qué principio de seguridad se asegura?",
+    "contexto": "Se busca que los datos médicos sean fiables y no manipulados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Confidencialidad"
+      },
+      {
+        "clave": "b",
+        "texto": "Integridad"
+      },
+      {
+        "clave": "c",
+        "texto": "Autenticidad"
+      },
+      {
+        "clave": "d",
+        "texto": "Disponibilidad"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La integridad garantiza que los datos no han sido modificados de forma no autorizada desde su creación o último estado conocido.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La confidencialidad protege frente a accesos no autorizados, no frente a cambios."
+        },
+        {
+          "clave": "c",
+          "motivo": "La autenticidad se relaciona con verificar identidades, no con la no alteración de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La disponibilidad se refiere a que los datos estén accesibles cuando se necesiten."
+        }
+      ],
+      "resumen_didactico": "En historiales médicos, mantener la integridad es tan crítico como mantener la confidencialidad.",
+      "ejemplo_practico": "Usar firmas digitales y hashes de los archivos clínicos para detectar manipulaciones.",
+      "conclusion_final": "Cuando se quiere evitar que la información sea alterada, el foco está en la integridad."
+    }
+  },
+  {
+    "id": "UT5-Q28",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué tipo de software analiza el tráfico en tiempo real y bloquea actividades sospechosas?",
+    "contexto": "La empresa quiere protección activa perimetral frente a ataques.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Antivirus local"
+      },
+      {
+        "clave": "b",
+        "texto": "Controlador de dominio"
+      },
+      {
+        "clave": "c",
+        "texto": "DHCP server"
+      },
+      {
+        "clave": "d",
+        "texto": "Firewall con inspección profunda (IDS/IPS)"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Los firewalls con IDS/IPS realizan inspección profunda de paquetes y pueden detectar y bloquear tráfico malicioso en tiempo real.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El antivirus local se centra en archivos del sistema, no en tráfico de red perimetral."
+        },
+        {
+          "clave": "b",
+          "motivo": "El controlador de dominio gestiona usuarios y políticas, no inspección de tráfico."
+        },
+        {
+          "clave": "c",
+          "motivo": "El servidor DHCP asigna direcciones IP dinámicas, no analiza tráfico."
+        }
+      ],
+      "resumen_didactico": "Combinar cortafuegos con capacidades IDS/IPS mejora mucho la seguridad de la red frente a ataques en curso.",
+      "ejemplo_practico": "Un firewall con IPS puede bloquear automáticamente intentos de explotación de vulnerabilidades conocidas.",
+      "conclusion_final": "Para análisis y bloqueo en tiempo real del tráfico, se requieren firewalls con inspección profunda e IDS/IPS."
+    }
+  },
+  {
+    "id": "UT5-Q29",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "En un portátil infectado, los logs muestran que un ransomware cifró carpetas de trabajo. ¿Qué medida previa habría minimizado el impacto?",
+    "contexto": "El usuario pierde acceso a sus documentos por cifrado malicioso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Conectar siempre a Wi-Fi público"
+      },
+      {
+        "clave": "b",
+        "texto": "Copia de seguridad periódica y fuera de línea"
+      },
+      {
+        "clave": "c",
+        "texto": "Desfragmentar discos"
+      },
+      {
+        "clave": "d",
+        "texto": "Uso de hubs"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La medida clave contra ransomware es disponer de copias de seguridad actualizadas y aisladas de la máquina comprometida.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Usar Wi-Fi público incrementa riesgos, no los reduce."
+        },
+        {
+          "clave": "c",
+          "motivo": "Desfragmentar solo afecta al rendimiento del disco."
+        },
+        {
+          "clave": "d",
+          "motivo": "El tipo de concentrador (hub/switch) no evita el cifrado local de archivos."
+        }
+      ],
+      "resumen_didactico": "Sin copias de seguridad, un ataque de ransomware puede ser devastador para los datos.",
+      "ejemplo_practico": "Realizar backups en un disco externo desconectado o en un servicio en la nube con control de versiones.",
+      "conclusion_final": "Una buena política de copias de seguridad fuera de línea minimiza el daño del ransomware."
+    }
+  },
+  {
+    "id": "UT5-Q30",
+    "tema": "UT5 - Conexión de sistemas en red",
+    "pregunta": "¿Qué protocolo traduce direcciones IP a direcciones físicas (MAC) en una red local?",
+    "contexto": "Para enviar tramas Ethernet se necesita conocer la MAC de destino asociada a una IP.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ICMP"
+      },
+      {
+        "clave": "b",
+        "texto": "DNS"
+      },
+      {
+        "clave": "c",
+        "texto": "DHCP"
+      },
+      {
+        "clave": "d",
+        "texto": "ARP"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "ARP (Address Resolution Protocol) resuelve direcciones IP a direcciones MAC en una red local.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "ICMP sirve para mensajes de control y ping, no para resolver IP a MAC."
+        },
+        {
+          "clave": "b",
+          "motivo": "DNS resuelve nombres de dominio a direcciones IP, no a direcciones físicas."
+        },
+        {
+          "clave": "c",
+          "motivo": "DHCP asigna direcciones IP, pero no traduce IP a MAC en cada comunicación."
+        }
+      ],
+      "resumen_didactico": "ARP es imprescindible para que una máquina pueda enviar tramas a otra dentro de la misma subred.",
+      "ejemplo_practico": "El comando arp -a muestra la tabla ARP con los pares IP–MAC aprendidos.",
+      "conclusion_final": "Sin ARP, los equipos de una LAN no podrían localizar la MAC de destino para enviar los paquetes."
+    }
+  }
+]

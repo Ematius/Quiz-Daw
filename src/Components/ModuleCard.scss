@@ -1,0 +1,112 @@
+
+@use "../styles/variables" as *;
+
+.module-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1.4rem 1.35rem;
+  border-radius: $radius-md;
+
+  background: linear-gradient(
+      135deg,
+      rgba(148, 163, 184, 0.09),
+      rgba(15, 23, 42, 0.98)
+    ),
+    $color-surface;
+  border: 1px solid $color-border-subtle;
+
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.9);
+
+  text-decoration: none;
+  color: $color-text;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  transition: transform $transition-normal,
+    box-shadow $transition-normal, border-color $transition-fast,
+    background $transition-normal;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 55px rgba(15, 23, 42, 1);
+    border-color: $color-primary-soft;
+    background: linear-gradient(
+        135deg,
+        rgba(99, 102, 241, 0.16),
+        rgba(15, 23, 42, 0.98)
+      ),
+      $color-surface;
+  }
+}
+
+
+.module-card::before {
+  content: "";
+  position: absolute;
+  inset: 0%;
+  background: radial-gradient(
+    circle at top right,
+    $color-primary-soft,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity $transition-normal;
+  pointer-events: none;
+}
+
+.module-card:hover::before {
+  opacity: 1;
+}
+
+/* Contenido principal */
+.module-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.module-card__title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.module-card__subtitle {
+  margin: 0;
+  font-size: 0.88rem;
+  color: $color-text-muted;
+}
+
+
+.module-card__cta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $color-primary;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.1rem;
+  opacity: 0.9;
+  transition: transform $transition-fast, opacity $transition-fast;
+
+  .module-card:hover & {
+    opacity: 1;
+    transform: translateX(2px);
+  }
+}
+
+/* Responsive pequeño */
+@media (max-width: 480px) {
+  .module-card {
+    padding: 1.2rem 1.1rem;
+  }
+
+  .module-card__title {
+    font-size: 1rem;
+  }
+}

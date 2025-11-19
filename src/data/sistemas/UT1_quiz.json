@@ -1,0 +1,908 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 — POST y diagnóstico",
+    "pregunta": "En un taller de Valencia, un PC no arranca y emite tres pitidos cortos. ¿Qué haces primero?",
+    "contexto": "Equipo urgente para facturar en 1 hora",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Reinstalar el sistema desde USB" },
+      { "clave": "b", "texto": "Probar con otra tarjeta gráfica" },
+      { "clave": "c", "texto": "Cambiar la fuente de alimentación" },
+      {
+        "clave": "d",
+        "texto": "Consultar el manual de la BIOS/UEFI y revisar la RAM"
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Los pitidos del POST codifican fallos de hardware. Se consulta la tabla de beep codes del fabricante y se verifica el componente indicado (aquí RAM). ",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El fallo es previo al SO; reinstalar no procede. "
+        },
+        {
+          "clave": "b",
+          "motivo": "3 pitidos cortos señalan RAM (según BIOS), no GPU. "
+        },
+        {
+          "clave": "c",
+          "motivo": "Si hay pitidos, la placa recibe energía; no apunta a PSU. "
+        }
+      ],
+      "resumen_didactico": "POST → pitidos → mirar tabla fabricante → actuar sobre el componente indicado. ",
+      "ejemplo_practico": "Reseat de módulos RAM, nuevo POST correcto. ",
+      "conclusion_final": "Ante pitidos, diagnostica con la tabla de BIOS/UEFI antes de cambiar piezas. "
+    }
+  },
+  {
+    "id": "UT1-Q02",
+    "tema": "UT1 — Almacenamiento",
+    "pregunta": "Para ampliar almacenamiento masivo con máxima velocidad y sin partes móviles, ¿qué priorizas?",
+    "contexto": "Compatibilidad actual",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Cinta magnética" },
+      { "clave": "b", "texto": "CD-RW" },
+      { "clave": "c", "texto": "SSD" },
+      { "clave": "d", "texto": "HDD paralelo PATA" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El SSD usa memoria flash, es muy rápido y plenamente compatible (SATA/NVMe). ",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Muy lenta y orientada a archivado legacy. "
+        },
+        {
+          "clave": "b",
+          "motivo": "Tecnología óptica obsoleta y de baja capacidad. "
+        },
+        {
+          "clave": "d",
+          "motivo": "PATA está obsoleto y muy por debajo de SATA/NVMe. "
+        }
+      ],
+      "resumen_didactico": "SSD = velocidad + fiabilidad (sin partes móviles) + compatibilidad. 1}",
+      "ejemplo_practico": "Copias de imágenes 5× más rápidas que con HDD SATA clásico. 2}",
+      "conclusion_final": "Para rendimiento y compatibilidad hoy, SSD es la opción. 3}"
+    }
+  },
+  {
+    "id": "UT1-Q03",
+    "tema": "UT1 — Sistema operativo",
+    "pregunta": "¿Qué interfaz usan las aplicaciones para solicitar servicios del sistema al hardware?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "BIOS Setup" },
+      { "clave": "b", "texto": "Editor de texto" },
+      { "clave": "c", "texto": "Router NAT" },
+      { "clave": "d", "texto": "API del sistema operativo" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La API del SO expone funciones para acceder a memoria, disco, red… de forma controlada. 4}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es pantalla de configuración previa al SO; no la usan las apps. 5}"
+        },
+        {
+          "clave": "b",
+          "motivo": "Una app de usuario, no una interfaz de programación. 6}"
+        },
+        {
+          "clave": "c",
+          "motivo": "Dispositivo de red externo al SO. 7}"
+        }
+      ],
+      "resumen_didactico": "API del SO = contrato estable para pedir servicios de sistema. 8}",
+      "ejemplo_practico": "WriteFile()/fwrite() para guardar en disco. 9}",
+      "conclusion_final": "La API del SO es la interfaz estándar entre apps y servicios del sistema. "
+    }
+  },
+  {
+    "id": "UT1-Q04",
+    "tema": "UT1 — Hardware (PSU/GPU)",
+    "pregunta": "Tras instalar una GPU potente, el PC se apaga bajo carga y hay alta temperatura. ¿Qué revisas primero?",
+    "contexto": "PC gaming",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Deshabilitar el audio integrado" },
+      { "clave": "b", "texto": "Desinstalar el navegador" },
+      { "clave": "c", "texto": "Activar el modo avión" },
+      { "clave": "d", "texto": "Capacidad de la fuente y TDP soportado" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La PSU debe dimensionarse a la carga total; insuficiencia provoca apagados. 1}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No afecta a apagados por potencia." },
+        { "clave": "b", "motivo": "Irrelevante para estabilidad eléctrica." },
+        { "clave": "c", "motivo": "Sin relación con consumo/PSU." }
+      ],
+      "resumen_didactico": "Verifica potencia y raíles de la PSU frente al TDP del sistema. 2}",
+      "ejemplo_practico": "Cambiar a una PSU de mayor potencia resuelve los apagados.",
+      "conclusion_final": "Compatibiliza GPU↔PSU para evitar fallos bajo carga. 3}"
+    }
+  },
+  {
+    "id": "UT1-Q05",
+    "tema": "UT1 — Memoria",
+    "pregunta": "En un mini-PC con 4 GB de RAM, abres una VM y muchas pestañas; el equipo va muy lento. ¿Qué sucede?",
+    "contexto": "Sin errores visibles",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El SSD deja de ser volátil" },
+      {
+        "clave": "b",
+        "texto": "La memoria virtual intercambia datos con disco y añade latencia"
+      },
+      { "clave": "c", "texto": "El sistema entra en POST continuo" },
+      { "clave": "d", "texto": "El chipset desactiva puertos" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Al agotarse la RAM, el SO usa memoria virtual (swap/paginación), mucho más lenta. 4}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La (no) volatilidad del SSD no cambia en este caso. 5}"
+        },
+        {
+          "clave": "c",
+          "motivo": "El POST solo ocurre al encender. 6}"
+        },
+        {
+          "clave": "d",
+          "motivo": "No corresponde con el síntoma descrito. 7}"
+        }
+      ],
+      "resumen_didactico": "Swapping = latencia por E/S a disco; rendimiento cae. 8}",
+      "ejemplo_practico": "VM 2 GB + 20 pestañas → disco trabajando continuo → lag. 9}",
+      "conclusion_final": "Más RAM o menos carga para evitar swapping sostenido. "
+    }
+  },
+  {
+    "id": "UT1-Q06",
+    "tema": "UT1 — Drivers/GPU",
+    "pregunta": "En Windows, necesitas 4K y CUDA estable. ¿Qué driver priorizas?",
+    "contexto": "Compatibilidad con versión del SO",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Genérico de Microsoft" },
+      { "clave": "b", "texto": "Cualquier versión antigua sin reiniciar" },
+      {
+        "clave": "c",
+        "texto": "Driver DCH del fabricante acorde a la versión del SO"
+      },
+      { "clave": "d", "texto": "Driver para impresoras" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El driver del fabricante habilita características (decodificación, CUDA, perfiles). 1}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Limitado en funciones avanzadas de GPU. 2}"
+        },
+        { "clave": "b", "motivo": "Versiones no alineadas pueden fallar." },
+        { "clave": "d", "motivo": "No es un driver de GPU." }
+      ],
+      "resumen_didactico": "Usa siempre el driver oficial correcto para tu versión de Windows. 3}",
+      "ejemplo_practico": "Instalar NVIDIA/AMD DCH y reiniciar para validar 4K/CUDA.",
+      "conclusion_final": "Driver del fabricante = rendimiento/estabilidad de GPU. 4}"
+    }
+  },
+  {
+    "id": "UT1-Q07",
+    "tema": "UT1 — Periféricos",
+    "pregunta": "¿Qué periférico clasificarías como entrada/salida?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Micrófono" },
+      { "clave": "b", "texto": "Tarjeta de red" },
+      { "clave": "c", "texto": "Altavoz" },
+      { "clave": "d", "texto": "Teclado" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Entrada/salida: intercambian datos en ambos sentidos (tarjeta de red, módem, táctil). 5}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo entrada (captura audio). 6}"
+        },
+        {
+          "clave": "c",
+          "motivo": "Solo salida (reproduce audio). 7}"
+        },
+        {
+          "clave": "d",
+          "motivo": "Solo entrada (pulsaciones). 8}"
+        }
+      ],
+      "resumen_didactico": "I/O = PC ↔ Exterior. Ej.: NIC Ethernet. 9}",
+      "ejemplo_practico": "La NIC envía y recibe paquetes.",
+      "conclusion_final": "Red = periférico bidireccional clásico. "
+    }
+  },
+  {
+    "id": "UT1-Q08",
+    "tema": "UT1 — Arranque",
+    "pregunta": "¿Qué hace el POST durante el arranque?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Formatea el disco" },
+      {
+        "clave": "b",
+        "texto": "Comprueba componentes básicos y reporta errores"
+      },
+      { "clave": "c", "texto": "Actualiza el sistema operativo" },
+      { "clave": "d", "texto": "Optimiza la GPU para juegos" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El POST verifica CPU, RAM, vídeo, teclado, disco y notifica por pantalla/pitidos. 1}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No modifica datos; solo comprueba. 2}"
+        },
+        {
+          "clave": "c",
+          "motivo": "Ocurre antes de cargar el SO. 3}"
+        },
+        {
+          "clave": "d",
+          "motivo": "No realiza optimizaciones de rendimiento. 4}"
+        }
+      ],
+      "resumen_didactico": "POST = prueba de hardware previa al SO. 5}",
+      "ejemplo_practico": "Pitidos al encender = fallo detectado por POST. 6}",
+      "conclusion_final": "Si supera POST, cede control al bootloader. 7}"
+    }
+  },
+  {
+    "id": "UT1-Q09",
+    "tema": "UT1 — Almacenamiento/Drivers",
+    "pregunta": "Conectas un disco externo y no se monta en Ubuntu; lshw lo ve. ¿Qué acción sigue en el flujo de diagnóstico?",
+    "contexto": "Soporte técnico",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Borrar la partición sin verificar" },
+      {
+        "clave": "b",
+        "texto": "Revisar controladores disponibles y probar montaje manual"
+      },
+      { "clave": "c", "texto": "Reinstalar todo el sistema" },
+      { "clave": "d", "texto": "Cambiar la placa base" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Sigue la ruta mínima: comprobar drivers/soporte FS y montar manualmente. 8}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Destructivo y prematuro." },
+        {
+          "clave": "c",
+          "motivo": "Desproporcionado para un fallo de montaje."
+        },
+        {
+          "clave": "d",
+          "motivo": "No procede si el bus detecta el dispositivo."
+        }
+      ],
+      "resumen_didactico": "Diagnóstico escalonado: driver→montaje→logs. 9}",
+      "ejemplo_practico": "Instalar soporte exFAT y montar /dev/sdb1.",
+      "conclusion_final": "Actúa de menor a mayor impacto. "
+    }
+  },
+  {
+    "id": "UT1-Q10",
+    "tema": "UT2 — Virtualización",
+    "pregunta": "En VirtualBox, antes de una actualización mayor del invitado, ¿qué minimiza el riesgo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Borrar la VM" },
+      { "clave": "b", "texto": "Tomar una instantánea (snapshot)" },
+      { "clave": "c", "texto": "Deshabilitar el adaptador de red" },
+      { "clave": "d", "texto": "Subir la resolución del invitado" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Las instantáneas guardan estado completo y permiten volver atrás fácil. 1}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Destruye datos/configuración. 2}"
+        },
+        {
+          "clave": "c",
+          "motivo": "No protege frente a errores de actualización. 3}"
+        },
+        {
+          "clave": "d",
+          "motivo": "Ajuste visual, no de seguridad/rollback. 4}"
+        }
+      ],
+      "resumen_didactico": "Snapshot = punto de restauración de la VM. 5}",
+      "ejemplo_practico": "Snapshot “Antes de actualización” y, si falla, revertir. 6}",
+      "conclusion_final": "Siempre snapshot antes de cambios críticos. 7}"
+    }
+  },
+  {
+    "id": "UT1-Q11",
+    "tema": "UT1 — Fuentes de Alimentación",
+    "pregunta": "¿Qué línea de tensión suele alimentar GPU/CPU/ventiladores/motores?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "1,2 V" },
+      { "clave": "b", "texto": "12 V" },
+      { "clave": "c", "texto": "3,3 V" },
+      { "clave": "d", "texto": "5 V" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Los elementos ‘musculosos’ tiran de 12 V en la PSU. 8}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Nivel interno/reguladores, no rail primario de potencia."
+        },
+        { "clave": "c", "motivo": "3,3 V alimenta lógicas/chipsets." },
+        {
+          "clave": "d",
+          "motivo": "5 V para USB/alguna lógica, no cargas altas."
+        }
+      ],
+      "resumen_didactico": "Rail de 12 V = cargas de alto consumo. 9}",
+      "ejemplo_practico": "Conectores PCIe 6/8 pines entregan 12 V.",
+      "conclusion_final": "Verifica el amperaje disponible en 12 V. "
+    }
+  },
+  {
+    "id": "UT1-Q12",
+    "tema": "UT2 — Virtualización (RAM)",
+    "pregunta": "Para evitar saturar un host con varias VMs, ¿qué política de RAM aplicas?",
+    "contexto": "Host con 8 GB",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Deshabilitar la memoria virtual" },
+      {
+        "clave": "b",
+        "texto": "Asignar RAM a VMs dejando suficiente para el host"
+      },
+      { "clave": "c", "texto": "Desactivar todos los núcleos del host" },
+      { "clave": "d", "texto": "Dar toda la RAM a la primera VM" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El host debe reservar memoria para su SO/hipervisor; el resto se reparte. 1}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Puede causar fallos al agotarse RAM. 2}"
+        },
+        {
+          "clave": "c",
+          "motivo": "Reducir CPU no arregla memoria. 3}"
+        },
+        {
+          "clave": "d",
+          "motivo": "Deja sin RAM al host/otras VMs. 4}"
+        }
+      ],
+      "resumen_didactico": "Host reserva 2 GB (ej.) y reparte el resto. 5}",
+      "ejemplo_practico": "3 VMs × 2 GB con host 8 GB → fluidez. 6}",
+      "conclusion_final": "Equilibrio RAM = estabilidad global. 7}"
+    }
+  },
+  {
+    "id": "UT1-Q13",
+    "tema": "UT1 — Drivers",
+    "pregunta": "¿Qué es un driver?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un antivirus para el kernel" },
+      { "clave": "b", "texto": "Un traductor entre SO y dispositivo hardware" },
+      { "clave": "c", "texto": "Un gestor de copias en la nube" },
+      { "clave": "d", "texto": "El firmware de la fuente de alimentación" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El driver traduce llamadas del SO a comandos del dispositivo. 8}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No describe su función." },
+        { "clave": "c", "motivo": "Servicio externo, no controlador." },
+        {
+          "clave": "d",
+          "motivo": "Firmware ≠ driver. 9}"
+        }
+      ],
+      "resumen_didactico": "Sin driver, el SO no ‘entiende’ al dispositivo. ",
+      "ejemplo_practico": "Impresora detectada pero sin imprimir hasta instalar su driver. 1}",
+      "conclusion_final": "Drivers correctos = dispositivos funcionales."
+    }
+  },
+  {
+    "id": "UT1-Q14",
+    "tema": "UT1 — CPU",
+    "pregunta": "Para estimar rendimiento de CPU, ¿qué dato aporta más?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Tipo de conector de la fuente" },
+      { "clave": "b", "texto": "Tipo de chasis" },
+      { "clave": "c", "texto": "Número de núcleos e hilos" },
+      { "clave": "d", "texto": "Color del disipador" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Hilos/núcleos determinan paralelismo y throughput de CPU. 2}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No refleja rendimiento de CPU." },
+        { "clave": "b", "motivo": "No indica capacidad de proceso." },
+        { "clave": "d", "motivo": "Estético, irrelevante." }
+      ],
+      "resumen_didactico": "Más núcleos/hilos → más tareas simultáneas. 3}",
+      "ejemplo_practico": "Render multiproceso acelera con más hilos.",
+      "conclusion_final": "Cores/threads son clave para workloads paralelos."
+    }
+  },
+  {
+    "id": "UT1-Q15",
+    "tema": "UT1 — BIOS/UEFI",
+    "pregunta": "¿Qué ajuste en BIOS evita que arranque un disco inadecuado?",
+    "contexto": "Varios discos",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Idioma del teclado" },
+      { "clave": "b", "texto": "Salvapantallas" },
+      { "clave": "c", "texto": "Brillo de la pantalla" },
+      { "clave": "d", "texto": "Orden de arranque" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El boot order prioriza el dispositivo correcto. 4}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No afecta al dispositivo de inicio." },
+        { "clave": "b", "motivo": "Función del SO." },
+        { "clave": "c", "motivo": "Visual, no de arranque." }
+      ],
+      "resumen_didactico": "Establece el disco/EFI deseado primero. 5}",
+      "ejemplo_practico": "Elegir el NVMe como 1º evita boots a USB.",
+      "conclusion_final": "El orden de arranque controla el flujo de inicio."
+    }
+  },
+  {
+    "id": "UT1-Q16",
+    "tema": "UT1 — Memorias",
+    "pregunta": "¿Por qué la memoria caché mejora tanto el rendimiento?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Es más lenta y barata" },
+      { "clave": "b", "texto": "No influye en el rendimiento" },
+      { "clave": "c", "texto": "Es más rápida y está muy próxima a la CPU" },
+      { "clave": "d", "texto": "Es no volátil por diseño" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La cercanía (L1/L2/L3) y su velocidad reducen latencias frente a RAM. 6}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es más rápida, no más lenta. 7}"
+        },
+        { "clave": "b", "motivo": "Tiene impacto directo en IPC." },
+        { "clave": "d", "motivo": "La caché es volátil." }
+      ],
+      "resumen_didactico": "Caché = datos ‘a mano’ para la CPU. 8}",
+      "ejemplo_practico": "Cargas repetidas se sirven desde L3.",
+      "conclusion_final": "Más hit-rate de caché → más rendimiento."
+    }
+  },
+  {
+    "id": "UT1-Q17",
+    "tema": "UT1 — Placa base",
+    "pregunta": "¿Qué componente coordina comunicación CPU-memoria-periféricos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Ventilador frontal" },
+      { "clave": "b", "texto": "Disipador" },
+      { "clave": "c", "texto": "Chipset" },
+      { "clave": "d", "texto": "Convertidor de vídeo" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El chipset provee buses/controladores para coordinar componentes. 9}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Refrigeración." },
+        { "clave": "b", "motivo": "Refrigeración." },
+        { "clave": "d", "motivo": "No es el hub de interconexión." }
+      ],
+      "resumen_didactico": "Chipset = ‘centralita’ de la placa. ",
+      "ejemplo_practico": "Líneas PCIe/SATA/USB dependen del chipset.",
+      "conclusion_final": "Elegir chipset condiciona conectividad/soporte."
+    }
+  },
+  {
+    "id": "UT1-Q18",
+    "tema": "UT1 — CPU/Socket",
+    "pregunta": "La interfaz física donde se instala la CPU en la placa se denomina…",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Puerto HDMI" },
+      { "clave": "b", "texto": "Ventilador trasero" },
+      { "clave": "c", "texto": "Socket o zócalo" },
+      { "clave": "d", "texto": "Puerto PS/2" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El zócalo fija el encapsulado y pines/landings compatibles. 1}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Conector de vídeo." },
+        { "clave": "b", "motivo": "Refrigeración." },
+        { "clave": "d", "motivo": "Puerto de teclado/ratón legacy." }
+      ],
+      "resumen_didactico": "CPU↔socket deben ser compatibles.",
+      "ejemplo_practico": "AM5 ≠ LGA1700: no intercambiables.",
+      "conclusion_final": "Comprueba socket antes de comprar CPU/placa. 2}"
+    }
+  },
+  {
+    "id": "UT1-Q19",
+    "tema": "UT1 — Redes/Wi-Fi",
+    "pregunta": "En un portátil sin Wi-Fi tras reinstalar, ¿qué acción es correcta?",
+    "contexto": "Windows detecta el dispositivo pero no conecta",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Quitar la batería de la placa" },
+      {
+        "clave": "b",
+        "texto": "Descargar e instalar el driver Wi-Fi del fabricante (arquitectura correcta)"
+      },
+      { "clave": "c", "texto": "Actualizar la impresora" },
+      { "clave": "d", "texto": "Formatear el SSD" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Sin driver, el SO no opera la NIC inalámbrica. Instala el controlador adecuado. 3}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No soluciona drivers." },
+        { "clave": "c", "motivo": "Irrelevante." },
+        { "clave": "d", "motivo": "Acción destructiva sin causa." }
+      ],
+      "resumen_didactico": "Drivers de red son imprescindibles. 4}",
+      "ejemplo_practico": "Descargar INF/EXE del modelo exacto y reiniciar.",
+      "conclusion_final": "Siempre alinea versión/arquitectura del driver. 5}"
+    }
+  },
+  {
+    "id": "UT1-Q20",
+    "tema": "UT1 — Arquitectura CPU",
+    "pregunta": "¿Qué define que una CPU sea de 64 bits?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Número de ventiladores" },
+      { "clave": "b", "texto": "Cantidad de puertos USB" },
+      { "clave": "c", "texto": "Tipo de conector SATA" },
+      { "clave": "d", "texto": "Tamaño de los registros mayor (64-bit)" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Arquitectura x64 se define por registros/ancho de palabras de 64 bits. 6}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No define ISA." },
+        { "clave": "b", "motivo": "I/O externo." },
+        { "clave": "c", "motivo": "Interfaz de almacenamiento." }
+      ],
+      "resumen_didactico": "Registros de 64-bit → espacio de direcciones mayor.",
+      "ejemplo_practico": "SO/app x64 requieren CPU x64.",
+      "conclusion_final": "La anchura de registro determina la ‘bitness’. 7}"
+    }
+  },
+  {
+    "id": "UT1-Q21",
+    "tema": "UT2 — Virtualización (beneficios)",
+    "pregunta": "¿Ventaja clave de las máquinas virtuales en soporte?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Eliminar la necesidad de backups" },
+      { "clave": "b", "texto": "Sustituir completamente la BIOS" },
+      {
+        "clave": "c",
+        "texto": "Aislar sistemas, crear snapshots y ajustar recursos con flexibilidad"
+      },
+      { "clave": "d", "texto": "Evitar actualizaciones de seguridad" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Las VMs ofrecen aislamiento, snapshots y control de recursos. 8}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Siempre se necesitan copias." },
+        { "clave": "b", "motivo": "La VM no ‘sustituye’ BIOS del host." },
+        { "clave": "d", "motivo": "La seguridad sigue siendo necesaria." }
+      ],
+      "resumen_didactico": "VMs = laboratorio seguro/rollback rápido. 9}",
+      "ejemplo_practico": "Probar parches en VM antes de producción.",
+      "conclusion_final": "Virtualiza para reducir riesgos y tiempos. "
+    }
+  },
+  {
+    "id": "UT1-Q22",
+    "tema": "UT1 — Definición de SO",
+    "pregunta": "¿Cuál de estas define mejor un sistema operativo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "No requiere controladores" },
+      { "clave": "b", "texto": "Es siempre de pago" },
+      {
+        "clave": "c",
+        "texto": "Interactúa con el hardware y ofrece servicios base a las aplicaciones"
+      },
+      { "clave": "d", "texto": "Solo sirve para juegos" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El SO media entre hardware y apps, gestionando recursos. 1}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Necesita drivers para dispositivos. 2}"
+        },
+        { "clave": "b", "motivo": "Hay SO libres/gratuitos." },
+        { "clave": "d", "motivo": "Uso general, no específico." }
+      ],
+      "resumen_didactico": "SO = intermediario + servicios (API, FS, red). 3}",
+      "ejemplo_practico": "Una app guarda en disco vía API del SO. 4}",
+      "conclusion_final": "Sin SO, el hardware no es usable por apps."
+    }
+  },
+  {
+    "id": "UT1-Q23",
+    "tema": "UT1 — RAM/Diagnóstico",
+    "pregunta": "Si el POST indica error de RAM, ¿qué acción técnica inicial es adecuada?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Cambiar el sistema de archivos" },
+      { "clave": "b", "texto": "Reasentar (reseat) los módulos de RAM" },
+      { "clave": "c", "texto": "Desactivar IPv6" },
+      { "clave": "d", "texto": "Quitar el ventilador del procesador" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Ante fallo RAM, reseat/probar módulos/slots antes de sustituir. 5}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No guarda relación con el error." },
+        { "clave": "c", "motivo": "No es un problema de red." },
+        { "clave": "d", "motivo": "Quitar refrigeración es peligroso." }
+      ],
+      "resumen_didactico": "Empieza por lo simple: reseat RAM. 6}",
+      "ejemplo_practico": "Un simple click correcto en el slot soluciona.",
+      "conclusion_final": "Valida RAM con reseat/tests antes de reemplazar."
+    }
+  },
+  {
+    "id": "UT1-Q24",
+    "tema": "UT1 — Dispositivos de E/S",
+    "pregunta": "Sin el driver de impresora, Windows la ‘ve’ pero no imprime. ¿Por qué?",
+    "contexto": "Caso típico de soporte",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El antivirus bloquea la BIOS" },
+      {
+        "clave": "b",
+        "texto": "Falta el traductor (driver) entre SO y dispositivo"
+      },
+      { "clave": "c", "texto": "El router NAT impide USB" },
+      { "clave": "d", "texto": "El firmware de la PSU está corrupto" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Sin controlador, el SO no sabe hablar el ‘lenguaje’ de la impresora. 7}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No tiene relación con BIOS." },
+        { "clave": "c", "motivo": "NAT es de red IP, no USB." },
+        { "clave": "d", "motivo": "La PSU no imprime ni gestiona protocolo." }
+      ],
+      "resumen_didactico": "Driver correcto = funciones disponibles. 8}",
+      "ejemplo_practico": "Instalar driver del fabricante habilita impresión.",
+      "conclusion_final": "Antes de culpar al hardware, valida drivers."
+    }
+  },
+  {
+    "id": "UT1-Q25",
+    "tema": "UT1 — Redes/Periféricos",
+    "pregunta": "¿Qué periférico es de entrada/salida?",
+    "contexto": "Clasificación",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Micrófono" },
+      { "clave": "b", "texto": "Tarjeta de red" },
+      { "clave": "c", "texto": "Altavoz" },
+      { "clave": "d", "texto": "Teclado" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Entrada/salida = flujo bidireccional; NIC envía y recibe. 9}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo entrada. 100}"
+        },
+        {
+          "clave": "c",
+          "motivo": "Solo salida. 101}"
+        },
+        {
+          "clave": "d",
+          "motivo": "Solo entrada. 102}"
+        }
+      ],
+      "resumen_didactico": "PC↔Red = bidireccional.",
+      "ejemplo_practico": "PING y respuestas ICMP.",
+      "conclusion_final": "La NIC es el ejemplo típico. 103}"
+    }
+  },
+  {
+    "id": "UT1-Q26",
+    "tema": "UT1 — GPU/Drivers",
+    "pregunta": "Para vídeo 4K y CUDA en Windows, ¿qué driver instalas?",
+    "contexto": "Estabilidad y rendimiento",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Genérico de Microsoft" },
+      { "clave": "b", "texto": "Cualquiera antiguo sin reiniciar" },
+      {
+        "clave": "c",
+        "texto": "DCH del fabricante compatible con tu versión del SO"
+      },
+      { "clave": "d", "texto": "Driver de impresora" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Solo el driver oficial habilita pipelines, decoders y CUDA. 104}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Limitado." },
+        { "clave": "b", "motivo": "Riesgo de incompatibilidad." },
+        { "clave": "d", "motivo": "No es de GPU." }
+      ],
+      "resumen_didactico": "Driver correcto = features y estabilidad.",
+      "ejemplo_practico": "Instalar NVIDIA Studio DCH.",
+      "conclusion_final": "Alinea versión SO↔driver. 105}"
+    }
+  },
+  {
+    "id": "UT1-Q27",
+    "tema": "UT1 — Arquitectura/Definiciones",
+    "pregunta": "Completa: un sistema operativo…",
+    "contexto": "Definiciones",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "No necesita drivers" },
+      { "clave": "b", "texto": "Solo existe de pago" },
+      {
+        "clave": "c",
+        "texto": "Media con el hardware y proporciona servicios base"
+      },
+      { "clave": "d", "texto": "Solo vale para jugar" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "SO = gestor de recursos + interfaz de servicios (API). 106}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Necesita controladores. 107}"
+        },
+        { "clave": "b", "motivo": "También hay libres/gratis." },
+        { "clave": "d", "motivo": "Uso general." }
+      ],
+      "resumen_didactico": "SO habilita a las apps a usar el hardware. 108}",
+      "ejemplo_practico": "Lectura/escritura vía API.",
+      "conclusion_final": "Sin SO, no hay plataforma de ejecución."
+    }
+  },
+  {
+    "id": "UT1-Q28",
+    "tema": "UT2 — VirtualBox",
+    "pregunta": "Antes de un cambio grande en el invitado, ¿qué haces en VirtualBox?",
+    "contexto": "Buenas prácticas",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Snapshot" },
+      { "clave": "b", "texto": "Deshabilitar red" },
+      { "clave": "c", "texto": "Borrar la VM" },
+      { "clave": "d", "texto": "Subir resolución" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Instantánea = punto de retorno seguro. 109}",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No evita problemas de actualización. 110}"
+        },
+        { "clave": "c", "motivo": "Destruye el entorno." },
+        { "clave": "d", "motivo": "Solo cambia el aspecto." }
+      ],
+      "resumen_didactico": "Siempre snapshot antes de tocar.",
+      "ejemplo_practico": "Restaurar si el patch falla. 111}",
+      "conclusion_final": "Snapshot = práctica esencial de soporte."
+    }
+  },
+  {
+    "id": "UT1-Q29",
+    "tema": "UT3 — Chequeo FS (Linux)",
+    "pregunta": "Tras un apagón, ¿qué herramienta Linux comprobaría y repararía el sistema de archivos?",
+    "contexto": "Recuperación",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "uname" },
+      { "clave": "b", "texto": "fsck" },
+      { "clave": "c", "texto": "lsblk" },
+      { "clave": "d", "texto": "mv" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "fsck/e2fsck revisan y reparan sistemas de archivos. 112}",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Muestra versión del kernel." },
+        { "clave": "c", "motivo": "Lista bloques/discos; no repara." },
+        { "clave": "d", "motivo": "Mover/renombrar." }
+      ],
+      "resumen_didactico": "fsck = verificador/repair tool. 113}",
+      "ejemplo_practico": "fsck -y en arranque de rescate.",
+      "conclusion_final": "Chequea y repara antes de montar. 114}"
+    }
+  },
+  {
+    "id": "UT1-Q30",
+    "tema": "UT3 — RAID",
+    "pregunta": "Necesitas tolerancia a fallo de un disco sin perder servicio, ¿qué RAID simple elegirías?",
+    "contexto": "2 discos",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "RAID (striping)" },
+      { "clave": "b", "texto": "RAID 1 (mirroring)" },
+      { "clave": "c", "texto": "RAID 5 (≥3 discos)" },
+      { "clave": "d", "texto": "RAID 6 (≥4 discos)" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "RAID 1 mantiene dos copias idénticas; si falla un disco, sigues operando. 115}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No tiene redundancia; si falla un disco, se pierde todo. 116}"
+        },
+        {
+          "clave": "c",
+          "motivo": "Requiere al menos 3 discos. 117}"
+        },
+        {
+          "clave": "d",
+          "motivo": "Requiere más discos; foco en paridad doble. 118}"
+        }
+      ],
+      "resumen_didactico": "RAID 1 = espejo simple con tolerancia a 1 disco. 119}",
+      "ejemplo_practico": "Sigue atendiendo mientras reemplazas el disco.",
+      "conclusion_final": "Con 2 discos y resiliencia: RAID 1. 120}"
+    }
+  }
+]

@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT4-Q001",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué sistema de permisos debería verificar el administrador cuando un usuario tiene permiso en red pero no localmente sobre un archivo compartido?",
+    "contexto": "En una empresa de Bilbao, un usuario pierde acceso a un archivo compartido. El administrador revisa y confirma que en red tiene permiso, pero localmente no.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "NTFS"
+      },
+      {
+        "clave": "b",
+        "texto": "FAT32"
+      },
+      {
+        "clave": "c",
+        "texto": "ext4"
+      },
+      {
+        "clave": "d",
+        "texto": "HFS+"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Windows, los permisos NTFS controlan el acceso local a archivos y carpetas. Aunque el recurso esté compartido en red, si los permisos NTFS no permiten el acceso, el usuario no podrá abrir el archivo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "FAT32 no implementa permisos de seguridad por usuario; cualquier usuario con acceso al disco puede leer y escribir."
+        },
+        {
+          "clave": "c",
+          "motivo": "ext4 es un sistema de ficheros típico de Linux, no el usado en un servidor Windows estándar."
+        },
+        {
+          "clave": "d",
+          "motivo": "HFS+ es el sistema de archivos clásico de macOS, no aplicable a la gestión de permisos en Windows."
+        }
+      ],
+      "resumen_didactico": "Los permisos compartidos controlan el acceso por red, pero los permisos NTFS mandan sobre el acceso local y permiten un control más fino.",
+      "ejemplo_practico": "Un usuario accede a \\\\SERVIDOR\\DATOS pero solo puede ver algunos archivos. El administrador revisa la pestaña \"Seguridad\" (NTFS) de esos archivos y descubre que el usuario no tiene permiso de lectura.",
+      "conclusion_final": "Ante problemas de acceso en Windows, conviene revisar tanto los permisos compartidos como los permisos NTFS, ya que estos últimos controlan la seguridad real sobre el archivo."
+    }
+  },
+  {
+    "id": "UT4-Q002",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué información contiene un Security Access Token (SAT) en Windows?",
+    "contexto": "En un dominio de Windows, al iniciar sesión un usuario recibe un SAT que el sistema usa para tomar decisiones de acceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Rutas de red y unidades mapeadas"
+      },
+      {
+        "clave": "b",
+        "texto": "SID de usuario, grupos y privilegios"
+      },
+      {
+        "clave": "c",
+        "texto": "Logs de seguridad generados por el sistema"
+      },
+      {
+        "clave": "d",
+        "texto": "Políticas de dominio aplicadas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El SAT es el 'pase de seguridad' que Windows asocia a cada proceso del usuario. Contiene el SID del usuario, los SIDs de los grupos a los que pertenece y la lista de derechos o privilegios activos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las rutas de red y unidades mapeadas se gestionan en la sesión del usuario, pero no forman parte del SAT."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los logs de seguridad se guardan en el Visor de eventos, no dentro del token de acceso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las políticas de dominio se aplican mediante GPO y afectan a la configuración, pero no se almacenan directamente en el SAT."
+        }
+      ],
+      "resumen_didactico": "El SAT identifica al usuario y sus grupos, y es lo que el sistema consulta para decidir si se permite o no una operación sobre un recurso.",
+      "ejemplo_practico": "Cuando un usuario intenta abrir una carpeta protegida, Windows compara el SAT de ese usuario con la ACL de la carpeta para ver si el SID y sus privilegios tienen permiso.",
+      "conclusion_final": "Entender qué contiene el SAT ayuda a comprender por qué a veces los cambios de grupo no se reflejan hasta que se reinicia sesión."
+    }
+  },
+  {
+    "id": "UT4-Q003",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué regla se aplica al combinar permisos compartidos y permisos NTFS en Windows?",
+    "contexto": "Un técnico configura permisos de recurso compartido en una carpeta y también permisos NTFS sobre el mismo recurso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Prevalece el permiso más restrictivo"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo cuentan los permisos de red"
+      },
+      {
+        "clave": "c",
+        "texto": "Prevalece el permiso menos restrictivo"
+      },
+      {
+        "clave": "d",
+        "texto": "Se suman todos los permisos sin excepción"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Cuando se combinan permisos de recurso compartido y permisos NTFS, el permiso efectivo es siempre el más restrictivo entre ambos, para reforzar la seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los permisos de red no anulan los permisos NTFS; ambos se evalúan conjuntamente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Si prevaleciera el menos restrictivo, se podrían crear brechas de seguridad importantes."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una suma directa; la combinación respeta siempre la restricción más fuerte."
+        }
+      ],
+      "resumen_didactico": "El sistema evalúa simultáneamente los permisos de recurso compartido y los de NTFS, y aplica el resultado más restrictivo para el usuario.",
+      "ejemplo_practico": "Un usuario tiene control total en el recurso compartido pero solo lectura en NTFS: el resultado final es que solo puede leer, no modificar.",
+      "conclusion_final": "Al diseñar permisos, hay que recordar que el permiso más restrictivo será el que realmente determine el acceso del usuario."
+    }
+  },
+  {
+    "id": "UT4-Q004",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué debe hacer un usuario para que se apliquen los nuevos permisos tras cambiarlo de grupo en Active Directory?",
+    "contexto": "En una oficina de Madrid, cambian a un usuario de grupo para darle más permisos sobre una carpeta, pero sigue sin tener acceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ejecutar gpupdate en su equipo"
+      },
+      {
+        "clave": "b",
+        "texto": "Ejecutar chkdsk en el servidor"
+      },
+      {
+        "clave": "c",
+        "texto": "Cerrar sesión y volver a iniciarla"
+      },
+      {
+        "clave": "d",
+        "texto": "Reiniciar todo el dominio"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El SAT se genera cuando el usuario inicia sesión. Si se cambian sus grupos o privilegios, esos cambios no se reflejan hasta que se cierra sesión y se vuelve a iniciar, regenerando el token.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "gpupdate actualiza las políticas de grupo, no el contenido del SAT del usuario."
+        },
+        {
+          "clave": "b",
+          "motivo": "chkdsk comprueba el disco, sin relación con grupos o permisos de usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Reiniciar el dominio es innecesario y desproporcionado; basta con cerrar y abrir sesión."
+        }
+      ],
+      "resumen_didactico": "Los cambios de grupo en AD no se aplican en caliente a la sesión actual del usuario porque su SAT ya está creado.",
+      "ejemplo_practico": "Un usuario pasa del grupo 'Usuarios' al grupo 'Proyectos'. Tras cerrar sesión y volver a entrar, ya puede acceder a la carpeta de proyectos.",
+      "conclusion_final": "Si cambias grupos o privilegios en Active Directory, recuerda indicar al usuario que cierre sesión y vuelva a iniciarla para que Windows regenere su SAT."
+    }
+  },
+  {
+    "id": "UT4-Q005",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué efecto tiene un permiso configurado explícitamente en modo \"Denegar\" sobre un usuario o grupo?",
+    "contexto": "Un administrador marca la casilla \"Denegar\" en el permiso de modificación para un grupo que ya tenía permisos de lectura y escritura.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo afecta a cuentas de administrador"
+      },
+      {
+        "clave": "b",
+        "texto": "No tiene efecto si ya hay un 'Permitir'"
+      },
+      {
+        "clave": "c",
+        "texto": "Bloquea la acción incluso si existe un \"Permitir\""
+      },
+      {
+        "clave": "d",
+        "texto": "Se combina con \"Permitir\" y se promedian"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En Windows, si un mismo usuario o grupo recibe tanto un 'Permitir' como un 'Denegar' sobre una acción concreta, el resultado efectivo es siempre 'Denegar'. El permiso de denegación tiene prioridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los permisos afectan a cualquier cuenta a la que se apliquen, no solo a administradores."
+        },
+        {
+          "clave": "b",
+          "motivo": "El 'Denegar' sobrescribe un 'Permitir' conflictivo, no se ignora."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los permisos no se promedian; ante conflicto, gana la denegación."
+        }
+      ],
+      "resumen_didactico": "Los permisos son acumulativos, pero cuando coinciden 'Permitir' y 'Denegar' sobre la misma acción, el sistema aplica la denegación.",
+      "ejemplo_practico": "Aunque un grupo tenga permiso de escritura sobre una carpeta, si otro grupo al que también pertenece un usuario tiene 'Denegar escritura', el usuario no podrá escribir.",
+      "conclusion_final": "Usa 'Denegar' solo cuando quieras bloquear explícitamente un acceso, sabiendo que tendrá prioridad sobre cualquier permiso de tipo 'Permitir'."
+    }
+  },
+  {
+    "id": "UT4-Q006",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué herramienta de Windows permite crear y gestionar recursos compartidos de forma centralizada en un servidor?",
+    "contexto": "Un instituto quiere compartir carpetas entre alumnos y profesores desde un único servidor de ficheros.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Panel de control → Programas"
+      },
+      {
+        "clave": "b",
+        "texto": "Administrador de tareas"
+      },
+      {
+        "clave": "c",
+        "texto": "Regedit"
+      },
+      {
+        "clave": "d",
+        "texto": "Administración de equipos"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La consola de 'Administración de equipos' permite gestionar recursos compartidos desde el nodo 'Recursos compartidos', creando, modificando y eliminando comparticiones de forma centralizada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El panel 'Programas' se usa para instalar o desinstalar software, no para compartir carpetas."
+        },
+        {
+          "clave": "b",
+          "motivo": "El Administrador de tareas sirve para procesos y rendimiento, no para recursos compartidos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Regedit edita el registro de Windows y no es la herramienta adecuada para gestionar recursos compartidos."
+        }
+      ],
+      "resumen_didactico": "Para entornos con muchos usuarios, es preferible usar 'Administración de equipos' y no solo el menú contextual de las carpetas.",
+      "ejemplo_practico": "El administrador abre 'Administración de equipos', navega a 'Recursos compartidos' y crea la carpeta \\SERVIDOR\\ALUMNOS con los permisos adecuados.",
+      "conclusion_final": "Si gestionas comparticiones en un servidor Windows, hazlo desde 'Administración de equipos' para tener una vista global y ordenada de todos los recursos."
+    }
+  },
+  {
+    "id": "UT4-Q007",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué elementos se comparten automáticamente para poder alcanzar un recurso compartido en una ruta profunda?",
+    "contexto": "En un servidor, se comparte una carpeta anidada en varias subcarpetas, pero los directorios padre no se han compartido manualmente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La carpeta WinSxS"
+      },
+      {
+        "clave": "b",
+        "texto": "La carpeta Drivers"
+      },
+      {
+        "clave": "c",
+        "texto": "La carpeta AppData del sistema"
+      },
+      {
+        "clave": "d",
+        "texto": "Las carpetas padre necesarias en la ruta"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Windows puede crear comparticiones administrativas o internas de las carpetas padre para permitir que el cliente recorra la ruta hasta el recurso compartido.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "WinSxS almacena componentes del sistema, no se comparte automáticamente por este motivo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Drivers contiene controladores, no es una carpeta que se comparta para acceder a recursos."
+        },
+        {
+          "clave": "c",
+          "motivo": "AppData es una carpeta de perfil de usuario, no tiene relación con las rutas de recursos compartidos de servidor."
+        }
+      ],
+      "resumen_didactico": "Aunque solo marques como compartida una carpeta concreta, el sistema resuelve internamente el acceso a los directorios padre para que la ruta sea accesible.",
+      "ejemplo_practico": "Si compartes D:\\Datos\\Proyectos\\2025, el cliente puede llegar a esa ruta aunque no hayas compartido manualmente 'Datos' o 'Proyectos'.",
+      "conclusion_final": "Al compartir rutas profundas, Windows se encarga de exponer los directorios padre necesarios para que el recurso final sea accesible desde la red."
+    }
+  },
+  {
+    "id": "UT4-Q008",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué concepto explica que los permisos de una carpeta se apliquen automáticamente a sus subcarpetas y archivos?",
+    "contexto": "En un despacho, una carpeta principal tiene permisos definidos, y se espera que estos se apliquen a todo su árbol de subcarpetas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Herencia de permisos"
+      },
+      {
+        "clave": "b",
+        "texto": "NAT"
+      },
+      {
+        "clave": "c",
+        "texto": "Auditoría"
+      },
+      {
+        "clave": "d",
+        "texto": "Políticas de grupo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La herencia de permisos en NTFS hace que los permisos definidos en una carpeta principal se propaguen automáticamente a subcarpetas y archivos, salvo que se rompa explícitamente esa herencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "NAT es traducción de direcciones de red, sin relación con permisos NTFS."
+        },
+        {
+          "clave": "c",
+          "motivo": "La auditoría define qué eventos se registran, pero no aplica permisos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las políticas de grupo configuran opciones de sistema, no la herencia de permisos de una carpeta concreta."
+        }
+      ],
+      "resumen_didactico": "La herencia permite mantener una estructura coherente de permisos sin tener que configurar cada recurso por separado.",
+      "ejemplo_practico": "Al dar permiso de lectura al grupo 'Empleados' sobre la carpeta \\Servidor\\Documentos, automáticamente todas las subcarpetas heredan ese permiso.",
+      "conclusion_final": "Si un subdirectorio deja de tener los permisos esperados, revisa si se ha roto o deshabilitado la herencia en sus opciones avanzadas de seguridad."
+    }
+  },
+  {
+    "id": "UT4-Q009",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Cómo se llama la lista que define qué usuarios o grupos pueden acceder a un objeto y con qué permisos?",
+    "contexto": "Un administrador revisa los permisos detallados de un archivo en un volumen NTFS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Token UAC"
+      },
+      {
+        "clave": "b",
+        "texto": "SAT"
+      },
+      {
+        "clave": "c",
+        "texto": "ACL"
+      },
+      {
+        "clave": "d",
+        "texto": "SID"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La ACL (Access Control List) es la lista que contiene entradas de control de acceso (ACE), donde se asocia un SID de usuario o grupo con los permisos concretos que tiene sobre un objeto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El token UAC se relaciona con la elevación de privilegios, no con la lista de permisos del objeto."
+        },
+        {
+          "clave": "b",
+          "motivo": "El SAT identifica al usuario y sus privilegios, pero no define los permisos de cada archivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El SID es solo el identificador de seguridad de un usuario o grupo, no una lista de permisos."
+        }
+      ],
+      "resumen_didactico": "La ACL es el mecanismo que el sistema consulta para decidir qué operaciones están permitidas o denegadas sobre un recurso.",
+      "ejemplo_practico": "Al abrir la pestaña 'Seguridad' de un archivo, se ve la ACL: una lista de usuarios/grupos y los permisos que tiene cada uno.",
+      "conclusion_final": "La ACL es la pieza clave para entender quién puede hacer qué sobre cada archivo o carpeta en un volumen NTFS."
+    }
+  },
+  {
+    "id": "UT4-Q010",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué tipo de ACL define qué acciones se registran en los eventos de seguridad de Windows?",
+    "contexto": "En un servidor, se quiere saber quién modifica o elimina ciertos archivos críticos para poder investigarlo después.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "GPO"
+      },
+      {
+        "clave": "b",
+        "texto": "SACL"
+      },
+      {
+        "clave": "c",
+        "texto": "DACL"
+      },
+      {
+        "clave": "d",
+        "texto": "UAC"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La SACL (System Access Control List) indica qué acciones sobre un objeto deben auditarse, provocando que se generen entradas en el registro de seguridad cuando ocurren.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las GPO son objetos de directiva de grupo, no listas de control de acceso en el objeto."
+        },
+        {
+          "clave": "c",
+          "motivo": "La DACL controla quién tiene permiso para hacer acciones, pero no qué se registra."
+        },
+        {
+          "clave": "d",
+          "motivo": "UAC es el Control de Cuentas de Usuario, relacionado con elevación de privilegios, no con auditoría de accesos."
+        }
+      ],
+      "resumen_didactico": "La SACL no concede ni deniega permisos, sino que define qué actividades se auditan para poder rastrearlas en el Visor de eventos.",
+      "ejemplo_practico": "En una carpeta de finanzas, se configura una SACL para registrar cada eliminación o modificación de archivos, de modo que quede constancia de quién lo hizo y cuándo.",
+      "conclusion_final": "Si necesitas trazabilidad sobre accesos sensibles, configura la SACL adecuada y revisa los eventos de seguridad generados."
+    }
+  },
+  {
+    "id": "UT4-Q011",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué regla explica que un usuario pueda apagar un servidor aunque no tenga permisos NTFS sobre los archivos?",
+    "contexto": "En una clínica, un empleado sin acceso a las carpetas del sistema consigue apagar el servidor desde su sesión.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los derechos tienen prioridad sobre los permisos"
+      },
+      {
+        "clave": "b",
+        "texto": "Los permisos son más fuertes que los privilegios"
+      },
+      {
+        "clave": "c",
+        "texto": "El sistema ignora los SAT si hay conflictos"
+      },
+      {
+        "clave": "d",
+        "texto": "NTFS siempre manda por encima de todo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Windows, los derechos o privilegios de usuario (como apagar el sistema) tienen prioridad sobre los permisos NTFS. Si el usuario tiene el derecho de apagar el equipo, podrá hacerlo aunque no tenga acceso a los archivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "En realidad, cuando chocan derechos y permisos, los derechos tienen prioridad."
+        },
+        {
+          "clave": "c",
+          "motivo": "El sistema sigue utilizando el SAT para evaluar tanto permisos como derechos, no lo ignora."
+        },
+        {
+          "clave": "d",
+          "motivo": "NTFS controla acceso a archivos, pero no operaciones como apagar o reiniciar el sistema."
+        }
+      ],
+      "resumen_didactico": "Los permisos NTFS controlan archivos y carpetas; los derechos controlan acciones globales sobre el sistema operativo.",
+      "ejemplo_practico": "Un usuario sin acceso a C:\\Datos no puede ver archivos, pero si tiene el derecho 'Apagar el sistema', podrá apagar el servidor desde el menú de apagado.",
+      "conclusion_final": "Al configurar seguridad, hay que revisar tanto los permisos de recursos como los derechos de usuario, ya que estos últimos pueden permitir acciones críticas aunque no se tenga acceso a los datos."
+    }
+  },
+  {
+    "id": "UT4-Q012",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué tipo de directiva se aplica a un único equipo Windows que no pertenece a un dominio?",
+    "contexto": "En una pequeña oficina, los PCs no están en un dominio, pero se quieren definir normas básicas de seguridad en cada equipo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Políticas de Azure AD"
+      },
+      {
+        "clave": "b",
+        "texto": "Directiva de seguridad local"
+      },
+      {
+        "clave": "c",
+        "texto": "GPO de unidad organizativa"
+      },
+      {
+        "clave": "d",
+        "texto": "Directiva de dominio"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las directivas de seguridad local se aplican en equipos Windows que no forman parte de un dominio con Active Directory y permiten configurar parámetros de seguridad, derechos de usuario y auditoría.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las políticas de Azure AD se usan en entornos de nube/híbridos, no en PCs aislados."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las GPO de unidad organizativa existen solo en dominios con Active Directory."
+        },
+        {
+          "clave": "d",
+          "motivo": "La directiva de dominio se aplica a todos los equipos del dominio, no a equipos fuera de él."
+        }
+      ],
+      "resumen_didactico": "En equipos sueltos o pequeños entornos sin servidor de dominio, la seguridad se gestiona mediante la consola de directivas de seguridad local.",
+      "ejemplo_practico": "En un PC que no está en dominio, el administrador abre 'secpol.msc' y configura quién puede iniciar sesión localmente o apagar el equipo.",
+      "conclusion_final": "Si tu equipo no está unido a un dominio, las configuraciones de seguridad se controlan mediante la directiva de seguridad local."
+    }
+  },
+  {
+    "id": "UT4-Q013",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué mecanismo se usa en un dominio con Active Directory para aplicar configuraciones comunes a todos los PCs?",
+    "contexto": "Una empresa con Active Directory quiere aplicar la misma política de contraseñas y escritorio a todos los equipos del dominio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Directivas de grupo (GPO)"
+      },
+      {
+        "clave": "b",
+        "texto": "Edición manual del archivo hosts"
+      },
+      {
+        "clave": "c",
+        "texto": "Regedit remoto en cada equipo"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo el registro local"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las Directivas de grupo (GPO) permiten definir configuraciones centralizadas que se aplican automáticamente a usuarios y equipos de un dominio de Active Directory.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El archivo hosts solo resuelve nombres localmente, no establece políticas de seguridad o configuración."
+        },
+        {
+          "clave": "c",
+          "motivo": "Editar el registro remoto en cada equipo sería manual y no escalable."
+        },
+        {
+          "clave": "d",
+          "motivo": "El registro local no ofrece una forma centralizada de aplicar ajustes a todo el dominio."
+        }
+      ],
+      "resumen_didactico": "Las GPO son la herramienta estándar en dominios Windows para desplegar configuraciones de seguridad, software y políticas a gran escala.",
+      "ejemplo_practico": "El administrador crea una GPO que establece una longitud mínima de contraseña y se aplica a todos los equipos del dominio al iniciar sesión.",
+      "conclusion_final": "Si gestionas un dominio Windows, las Directivas de grupo son el mecanismo fundamental para mantener configuraciones coherentes en todos los PCs."
+    }
+  },
+  {
+    "id": "UT4-Q014",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué tipo de directiva afecta específicamente al comportamiento de los controladores de dominio?",
+    "contexto": "En un entorno de Active Directory, se requiere configurar parámetros especiales solo para los controladores de dominio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Directiva de cliente"
+      },
+      {
+        "clave": "b",
+        "texto": "Política de host local"
+      },
+      {
+        "clave": "c",
+        "texto": "Directiva de controlador de dominio"
+      },
+      {
+        "clave": "d",
+        "texto": "Seguridad local estándar"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Las directivas de controlador de dominio son GPO especiales que se aplican únicamente a los controladores de dominio, ajustando su seguridad y comportamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No existe un tipo oficial llamado 'Directiva de cliente' en AD."
+        },
+        {
+          "clave": "b",
+          "motivo": "La 'política de host' no es una categoría de GPO específica para controladores de dominio."
+        },
+        {
+          "clave": "d",
+          "motivo": "La seguridad local estándar se aplica a un solo equipo y no distingue el rol de controlador de dominio."
+        }
+      ],
+      "resumen_didactico": "Separar la directiva de dominio general de la directiva específica de controladores permite endurecer la seguridad de estos servidores críticos.",
+      "ejemplo_practico": "Un administrador endurece las políticas de autenticación y bloqueo de cuenta solo en los controladores de dominio editando la directiva de controlador de dominio.",
+      "conclusion_final": "Para configurar aspectos críticos de Active Directory, es clave usar la directiva de controlador de dominio, sin afectar al resto de PCs del dominio."
+    }
+  },
+  {
+    "id": "UT4-Q015",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué objetivo clave debe cumplir un servidor de ficheros en una pyme además de ofrecer almacenamiento?",
+    "contexto": "En una pequeña empresa, se centralizan los documentos en un servidor de ficheros para que todos los empleados accedan a ellos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo maximizar la velocidad de acceso"
+      },
+      {
+        "clave": "b",
+        "texto": "Limitar los accesos de todos los usuarios"
+      },
+      {
+        "clave": "c",
+        "texto": "Garantizar disponibilidad y escalabilidad"
+      },
+      {
+        "clave": "d",
+        "texto": "Reducir al máximo el consumo eléctrico"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario destaca que todo servidor debe cuidar especialmente la disponibilidad (estar operativo casi siempre) y la escalabilidad (poder crecer si aumenta la carga), además de un buen mantenimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La velocidad es importante, pero no es el único ni el principal objetivo de diseño."
+        },
+        {
+          "clave": "b",
+          "motivo": "Limitar accesos sin criterio no aporta valor; lo correcto es controlarlos según roles."
+        },
+        {
+          "clave": "d",
+          "motivo": "El consumo eléctrico puede optimizarse, pero no es el objetivo principal frente a disponibilidad y escalabilidad."
+        }
+      ],
+      "resumen_didactico": "Un servidor de ficheros debe estar disponible cuando los usuarios lo necesitan y poder ampliarse si crecen los datos o el número de usuarios.",
+      "ejemplo_practico": "Al aumentar la plantilla, se amplía el almacenamiento del servidor de ficheros y se programan mantenimientos en horarios de baja actividad.",
+      "conclusion_final": "En el diseño de un servidor de ficheros, prioriza que esté disponible y pueda crecer con la empresa, sin descuidar el mantenimiento preventivo."
+    }
+  },
+  {
+    "id": "UT4-Q016",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "Al instalar un servidor FTP en Windows Server, ¿qué rol principal debe activarse en el asistente de roles?",
+    "contexto": "Un administrador quiere crear un sitio FTP para compartir archivos con clientes externos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Servidor DHCP"
+      },
+      {
+        "clave": "b",
+        "texto": "Hyper-V"
+      },
+      {
+        "clave": "c",
+        "texto": "Servidor DNS"
+      },
+      {
+        "clave": "d",
+        "texto": "Servidor web (IIS)"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En Windows Server, el FTP se instala como un servicio de rol dentro del rol principal 'Servidor web (IIS)'. Primero se habilita IIS y luego se marcan las opciones del servidor FTP.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DHCP reparte direcciones IP, no sirve para publicar servicios FTP."
+        },
+        {
+          "clave": "b",
+          "motivo": "Hyper-V proporciona virtualización de sistemas, sin relación con FTP."
+        },
+        {
+          "clave": "c",
+          "motivo": "DNS resuelve nombres a direcciones IP, no implementa FTP."
+        }
+      ],
+      "resumen_didactico": "Para disponer de FTP en Windows Server, es necesario tener el rol de servidor web IIS y añadir el servicio de rol de servidor FTP.",
+      "ejemplo_practico": "En el asistente de roles, el administrador selecciona 'Servidor web (IIS)' y dentro de los servicios de rol marca 'Servidor FTP' para poder crear sitios FTP.",
+      "conclusion_final": "Si quieres montar un FTP en Windows Server, recuerda que debes hacerlo a través de IIS, activando primero el rol de 'Servidor web (IIS)'."
+    }
+  },
+  {
+    "id": "UT4-Q017",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué protocolo utiliza por defecto un cliente como FileZilla al conectarse a un servidor de archivos?",
+    "contexto": "Un alumno instala FileZilla para probar la conexión con el servidor FTP del aula.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ICMP"
+      },
+      {
+        "clave": "b",
+        "texto": "FTP en el puerto 21"
+      },
+      {
+        "clave": "c",
+        "texto": "SMB"
+      },
+      {
+        "clave": "d",
+        "texto": "HTTPS"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "FileZilla es un cliente de FTP que, por defecto, usa el protocolo FTP estándar sobre el puerto 21 para conectarse a servidores de archivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "ICMP se utiliza para diagnóstico de red (por ejemplo, con ping), no para transferencia de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "SMB se usa para compartir archivos en redes Windows, no es el protocolo por defecto de FileZilla."
+        },
+        {
+          "clave": "d",
+          "motivo": "HTTPS sirve para navegación web segura, no para conexiones FTP en FileZilla."
+        }
+      ],
+      "resumen_didactico": "FTP es el protocolo clásico de transferencia de archivos y FileZilla lo usa por defecto en el puerto 21, salvo que se especifique FTPS o SFTP.",
+      "ejemplo_practico": "Para conectar a un servidor de prácticas, el alumno introduce la IP del servidor en FileZilla y se conecta por FTP/21 salvo que el profesor configure otra cosa.",
+      "conclusion_final": "Cuando trabajes con FileZilla, asume que el protocolo base será FTP en el puerto 21, a menos que se configure explícitamente un modo seguro como FTPS o SFTP."
+    }
+  },
+  {
+    "id": "UT4-Q018",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué alternativa más segura puede usar una empresa en lugar del FTP clásico para proteger credenciales y datos?",
+    "contexto": "En un taller de diseño, se transfieren ficheros con bocetos confidenciales a clientes externos y se quiere aumentar la seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "NFS"
+      },
+      {
+        "clave": "b",
+        "texto": "SFTP o FTPS"
+      },
+      {
+        "clave": "c",
+        "texto": "SMBv1"
+      },
+      {
+        "clave": "d",
+        "texto": "Telnet"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las variantes seguras SFTP (sobre SSH) y FTPS (FTP sobre TLS/SSL) cifran la comunicación, protegiendo contraseñas y contenido frente a escuchas en la red.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "NFS es un protocolo típico de Unix/Linux para compartición de archivos, pero no está pensado como sustituto directo y seguro de FTP hacia Internet."
+        },
+        {
+          "clave": "c",
+          "motivo": "SMBv1 es obsoleto e inseguro, con vulnerabilidades críticas conocidas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Telnet envía todo en claro, incluidas credenciales, por lo que es muy inseguro."
+        }
+      ],
+      "resumen_didactico": "El FTP clásico envía usuario y contraseña en texto plano; por eso, en entornos reales se opta por SFTP o FTPS para añadir cifrado.",
+      "ejemplo_practico": "La empresa migra de un servidor FTP simple a un servidor SFTP, de manera que los diseñadores suben los ficheros mediante una conexión cifrada.",
+      "conclusion_final": "Siempre que manejes datos sensibles, evita FTP puro y opta por alternativas seguras como SFTP o FTPS para proteger las comunicaciones."
+    }
+  },
+  {
+    "id": "UT4-Q019",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Cómo se llama el servidor que centraliza los trabajos de impresión y reparte la carga entre varias impresoras?",
+    "contexto": "Una empresa usa varias impresoras en red y quiere gestionar todas las colas de impresión desde un único punto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Servidor de impresión"
+      },
+      {
+        "clave": "b",
+        "texto": "Servidor DNS"
+      },
+      {
+        "clave": "c",
+        "texto": "Servidor proxy"
+      },
+      {
+        "clave": "d",
+        "texto": "Servidor web"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un servidor de impresión es el encargado de centralizar las colas de impresión, gestionar las conexiones de los clientes y distribuir los trabajos entre las distintas impresoras disponibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El servidor DNS se ocupa de la resolución de nombres, no de gestionar impresoras."
+        },
+        {
+          "clave": "c",
+          "motivo": "El proxy intermedia en conexiones de red (normalmente HTTP), no en trabajos de impresión."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un servidor web publica páginas y aplicaciones, no colas de impresión."
+        }
+      ],
+      "resumen_didactico": "El servidor de impresión facilita la administración de múltiples impresoras de red, drivers y permisos desde una única consola.",
+      "ejemplo_practico": "En una oficina, todos imprimen en 'IMPRESION_EMPRESA'; el servidor de impresión decide a qué impresora física se envía cada trabajo según disponibilidad.",
+      "conclusion_final": "Si quieres controlar múltiples impresoras en red y sus colas de trabajo, lo adecuado es montar y usar un servidor de impresión."
+    }
+  },
+  {
+    "id": "UT4-Q020",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Desde qué sección del Panel de control de Windows se puede agregar una impresora compartida en red?",
+    "contexto": "Un empleado necesita añadir una impresora de red instalada en el servidor de la empresa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dispositivos e impresoras"
+      },
+      {
+        "clave": "b",
+        "texto": "Programas y características"
+      },
+      {
+        "clave": "c",
+        "texto": "Centro de sincronización"
+      },
+      {
+        "clave": "d",
+        "texto": "Firewall de Windows"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Para agregar una impresora, Windows ofrece el apartado 'Dispositivos e impresoras' dentro del Panel de control, desde donde se lanza el asistente de 'Agregar una impresora'.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esta sección sirve para instalar o desinstalar programas, no para impresoras."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Centro de sincronización está relacionado con archivos sin conexión, no con impresoras."
+        },
+        {
+          "clave": "d",
+          "motivo": "El firewall controla el tráfico de red, pero no se usa para añadir impresoras."
+        }
+      ],
+      "resumen_didactico": "El asistente de impresión se inicia desde 'Dispositivos e impresoras', donde se detectan impresoras locales y de red.",
+      "ejemplo_practico": "El usuario abre Panel de control → Hardware y sonido → Dispositivos e impresoras → Agregar una impresora y selecciona la impresora compartida del servidor.",
+      "conclusion_final": "Cuando necesites instalar una impresora de red en Windows, el camino estándar es pasar por 'Dispositivos e impresoras' y su asistente de agregado."
+    }
+  },
+  {
+    "id": "UT4-Q021",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué función de Windows permite conectarse al escritorio de un servidor remoto para administrarlo sin estar físicamente allí?",
+    "contexto": "En un soporte remoto, un técnico de Zaragoza necesita gestionar un servidor que está en otra ciudad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hyper-V"
+      },
+      {
+        "clave": "b",
+        "texto": "Escritorio remoto"
+      },
+      {
+        "clave": "c",
+        "texto": "Firewall avanzado"
+      },
+      {
+        "clave": "d",
+        "texto": "BIOS"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La función de 'Escritorio remoto' (RDP) permite conectarse al escritorio de un servidor o equipo remoto y trabajar como si se estuviera delante de él.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Hyper-V es una plataforma de virtualización, no una herramienta de acceso remoto a escritorios."
+        },
+        {
+          "clave": "c",
+          "motivo": "El firewall avanzado gestiona reglas de red, pero no ofrece una sesión gráfica remota."
+        },
+        {
+          "clave": "d",
+          "motivo": "La BIOS solo es accesible localmente al arrancar el equipo, no vía Windows."
+        }
+      ],
+      "resumen_didactico": "Escritorio remoto es la herramienta nativa para administración remota gráfica de servidores y equipos Windows.",
+      "ejemplo_practico": "El técnico abre 'Conexión a Escritorio remoto', escribe la IP del servidor, introduce credenciales y administra el equipo como si estuviera frente a su pantalla.",
+      "conclusion_final": "Para tareas de administración gráfica a distancia en Windows, la solución estándar es usar Escritorio remoto (RDP)."
+    }
+  },
+  {
+    "id": "UT4-Q022",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué herramienta de Windows permite que un administrador vea en tiempo real la pantalla de un usuario para ayudarle?",
+    "contexto": "Un usuario tiene problemas con una aplicación y el técnico quiere ver exactamente lo que ocurre en su pantalla.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Netsh"
+      },
+      {
+        "clave": "b",
+        "texto": "SSH"
+      },
+      {
+        "clave": "c",
+        "texto": "Asistencia remota"
+      },
+      {
+        "clave": "d",
+        "texto": "Escritorio remoto (solo)"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La Asistencia remota de Windows está pensada para soporte al usuario, permitiendo ver su escritorio en tiempo real e incluso tomar el control con su permiso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Netsh es una herramienta de línea de comandos para configurar red, no para ver pantallas."
+        },
+        {
+          "clave": "b",
+          "motivo": "SSH proporciona acceso remoto por consola, sin interfaz gráfica compartida."
+        },
+        {
+          "clave": "d",
+          "motivo": "Escritorio remoto sustituye la sesión del usuario; no está diseñado para que ambos vean la misma pantalla simultáneamente como en soporte."
+        }
+      ],
+      "resumen_didactico": "Asistencia remota permite que técnico y usuario vean el mismo escritorio, facilitando la resolución de incidencias paso a paso.",
+      "ejemplo_practico": "El usuario envía una invitación de Asistencia remota al técnico, que acepta y ve exactamente los clics y errores que se producen en la pantalla.",
+      "conclusion_final": "Cuando necesites ayudar a un usuario viendo lo mismo que él, la herramienta adecuada es Asistencia remota y no solo Escritorio remoto."
+    }
+  },
+  {
+    "id": "UT4-Q023",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué servicio de Windows permite que varios usuarios trabajen simultáneamente en sesiones remotas sobre un mismo servidor?",
+    "contexto": "Una pyme quiere que varios empleados se conecten a un servidor para usar una aplicación instalada allí, cada uno con su sesión.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "VPN L2TP"
+      },
+      {
+        "clave": "b",
+        "texto": "Servicios de Escritorio remoto (RDS)"
+      },
+      {
+        "clave": "c",
+        "texto": "AnyDesk"
+      },
+      {
+        "clave": "d",
+        "texto": "NetBIOS"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los Servicios de Escritorio remoto (RDS) convierten un servidor Windows en un host multiusuario, permitiendo múltiples sesiones de escritorio simultáneas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una VPN L2TP solo crea un túnel seguro, pero no ofrece sesiones de escritorio multiusuario por sí misma."
+        },
+        {
+          "clave": "c",
+          "motivo": "AnyDesk es una herramienta de terceros para control remoto, no un entorno de sesiones concurrentes centralizado en el servidor."
+        },
+        {
+          "clave": "d",
+          "motivo": "NetBIOS es un protocolo de nombres y servicios en red antiguo, no un servicio de escritorio remoto."
+        }
+      ],
+      "resumen_didactico": "RDS permite publicar escritorios o aplicaciones para que muchos usuarios trabajen en el mismo servidor como si fuera su equipo.",
+      "ejemplo_practico": "En una gestoría, varios empleados se conectan por RDS al servidor para usar el mismo programa de contabilidad con sus propias credenciales.",
+      "conclusion_final": "Si necesitas que varios usuarios trabajen simultáneamente sobre un servidor Windows, debes desplegar y configurar Servicios de Escritorio remoto (RDS)."
+    }
+  },
+  {
+    "id": "UT4-Q024",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué algoritmo de cifrado simétrico se considera el estándar actual por su seguridad y rendimiento?",
+    "contexto": "Una empresa quiere cifrar sus copias de seguridad con un algoritmo simétrico robusto y ampliamente usado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Blowfish"
+      },
+      {
+        "clave": "b",
+        "texto": "RC2"
+      },
+      {
+        "clave": "c",
+        "texto": "AES"
+      },
+      {
+        "clave": "d",
+        "texto": "DES"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "AES es el estándar de cifrado simétrico moderno, con claves de 128, 192 o 256 bits, y se considera el más usado hoy por su equilibrio entre seguridad y rendimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Blowfish es seguro, pero menos extendido que AES en estándares actuales."
+        },
+        {
+          "clave": "b",
+          "motivo": "RC2 es un algoritmo más antiguo y hoy se considera poco recomendable frente a alternativas modernas."
+        },
+        {
+          "clave": "d",
+          "motivo": "DES tiene una clave demasiado corta y es vulnerable a ataques de fuerza bruta con la tecnología actual."
+        }
+      ],
+      "resumen_didactico": "El cifrado simétrico moderno suele basarse en AES, usado en HTTPS, VPN, discos cifrados y muchas otras aplicaciones.",
+      "ejemplo_practico": "Una compañía configura sus discos cifrados y su VPN corporativa usando AES-256 para proteger la información de clientes.",
+      "conclusion_final": "Si quieres cifrado simétrico robusto hoy en día, AES es la elección estándar y la más soportada en herramientas y protocolos."
+    }
+  },
+  {
+    "id": "UT4-Q025",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué algoritmo de cifrado asimétrico es habitual como base para intercambiar claves seguras en Internet?",
+    "contexto": "Durante el establecimiento de una conexión segura, el navegador y el servidor utilizan cifrado asimétrico para acordar una clave de sesión.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "MD5"
+      },
+      {
+        "clave": "b",
+        "texto": "RSA"
+      },
+      {
+        "clave": "c",
+        "texto": "SHA-1"
+      },
+      {
+        "clave": "d",
+        "texto": "ECC"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "RSA es uno de los algoritmos asimétricos más usados históricamente para intercambio de claves y establecimiento de canales seguros en protocolos como TLS/HTTPS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "MD5 no es un algoritmo de cifrado, sino una función hash hoy considerada insegura."
+        },
+        {
+          "clave": "c",
+          "motivo": "SHA-1 también es una función hash y actualmente está desaconsejada por vulnerabilidades."
+        },
+        {
+          "clave": "d",
+          "motivo": "ECC también se utiliza en cifrado asimétrico moderno, pero el más clásico y extendido en temario es RSA."
+        }
+      ],
+      "resumen_didactico": "En cifrado asimétrico, algoritmos como RSA permiten cifrar una clave simétrica que luego se usará para cifrar el resto de la comunicación.",
+      "ejemplo_practico": "Cuando entras en una web segura, el servidor envía su clave pública RSA para que el navegador pueda cifrar la clave de sesión que usará AES.",
+      "conclusion_final": "Aunque existen alternativas más modernas, RSA sigue siendo el ejemplo típico de cifrado asimétrico para intercambio de claves en muchos entornos."
+    }
+  },
+  {
+    "id": "UT4-Q026",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Cómo se llama el esquema que usa cifrado asimétrico para intercambiar una clave y cifrado simétrico para el resto de la sesión?",
+    "contexto": "En una conexión segura, se usan dos tipos de cifrado: uno al principio para negociar la clave y otro más rápido para los datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hashing"
+      },
+      {
+        "clave": "b",
+        "texto": "Cifrado doble"
+      },
+      {
+        "clave": "c",
+        "texto": "Cifrado híbrido"
+      },
+      {
+        "clave": "d",
+        "texto": "ROT13"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El cifrado híbrido combina cifrado asimétrico para intercambiar de forma segura una clave simétrica y cifrado simétrico para proteger el resto de la comunicación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El hashing genera resúmenes unidireccionales y no permite descifrar datos."
+        },
+        {
+          "clave": "b",
+          "motivo": "El término 'cifrado doble' no describe este patrón estándar de uso combinado."
+        },
+        {
+          "clave": "d",
+          "motivo": "ROT13 es una sustitución muy simple y no se considera cifrado seguro moderno."
+        }
+      ],
+      "resumen_didactico": "En la práctica, casi todos los protocolos seguros emplean cifrado híbrido porque el asimétrico es costoso y el simétrico es mucho más eficiente.",
+      "ejemplo_practico": "En HTTPS, se usa RSA/ECC al inicio para acordar una clave de sesión y luego AES para cifrar todo el tráfico de la sesión.",
+      "conclusion_final": "Recuerda que en seguridad real casi siempre se combinan cifrado asimétrico y simétrico en un esquema híbrido para aprovechar las ventajas de ambos."
+    }
+  },
+  {
+    "id": "UT4-Q027",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "En un firewall, ¿qué cadena controla el tráfico que atraviesa el equipo para ser reenviado hacia otra red?",
+    "contexto": "Un servidor Linux actúa como router entre dos redes y usa iptables o nftables para filtrar el tráfico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "OUTPUT"
+      },
+      {
+        "clave": "b",
+        "texto": "DENY"
+      },
+      {
+        "clave": "c",
+        "texto": "INPUT"
+      },
+      {
+        "clave": "d",
+        "texto": "FORWARD"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La cadena FORWARD se usa para el tráfico que no tiene como destino el propio equipo, sino que lo atraviesa para ser reenviado a otra interfaz.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "OUTPUT controla el tráfico que sale del propio equipo como origen."
+        },
+        {
+          "clave": "b",
+          "motivo": "DENY puede ser una acción o política, pero no es el nombre de una cadena estándar."
+        },
+        {
+          "clave": "c",
+          "motivo": "INPUT controla el tráfico cuyo destino es el equipo local, no el reenviado."
+        }
+      ],
+      "resumen_didactico": "Los firewalls suelen tener cadenas diferenciadas para controlar tráfico entrante, saliente y reenviado.",
+      "ejemplo_practico": "Un router Linux con dos tarjetas de red aplica reglas en FORWARD para decidir qué paquetes pasan de la red interna a Internet.",
+      "conclusion_final": "Si tu equipo actúa como router o firewall de paso, las reglas clave para tráfico entre redes se ponen en la cadena FORWARD."
+    }
+  },
+  {
+    "id": "UT4-Q028",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Cómo se llama la consola integrada de Windows que permite gestionar reglas de entrada y salida avanzadas del firewall?",
+    "contexto": "Un administrador quiere abrir un puerto específico solo para una aplicación concreta en Windows.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Windows Defender Firewall con seguridad avanzada"
+      },
+      {
+        "clave": "b",
+        "texto": "Regedit"
+      },
+      {
+        "clave": "c",
+        "texto": "Netstat"
+      },
+      {
+        "clave": "d",
+        "texto": "Gpedit.msc"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La consola 'Windows Defender Firewall con seguridad avanzada' permite crear y gestionar reglas de entrada, salida y conexión, filtrando por puertos, programas, direcciones IP y perfiles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Regedit edita el registro del sistema, no las reglas de firewall."
+        },
+        {
+          "clave": "c",
+          "motivo": "Netstat muestra conexiones y puertos abiertos, pero no configura el firewall."
+        },
+        {
+          "clave": "d",
+          "motivo": "Gpedit.msc edita políticas de grupo locales, no es la consola específica del firewall."
+        }
+      ],
+      "resumen_didactico": "Windows ofrece una vista básica del firewall y otra avanzada donde se pueden definir reglas muy específicas.",
+      "ejemplo_practico": "El administrador abre la consola avanzada y crea una regla de entrada que permite solo a una aplicación escuchar en un puerto concreto.",
+      "conclusion_final": "Cuando necesites un control granular del tráfico en Windows, usa la consola avanzada del firewall en lugar de la configuración simplificada."
+    }
+  },
+  {
+    "id": "UT4-Q029",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "¿Qué sistema de firewall de software libre, derivado de UNIX, es popular en entornos empresariales?",
+    "contexto": "Una empresa quiere instalar un firewall dedicado basado en software libre con funciones avanzadas de red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mikrotik"
+      },
+      {
+        "clave": "b",
+        "texto": "Squid"
+      },
+      {
+        "clave": "c",
+        "texto": "GPO"
+      },
+      {
+        "clave": "d",
+        "texto": "pfSense"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "pfSense es una distribución de firewall/router basada en FreeBSD (derivado de UNIX), muy usada en entornos profesionales por su potencia y flexibilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Mikrotik usa un sistema operativo propietario (RouterOS), no es software libre."
+        },
+        {
+          "clave": "b",
+          "motivo": "Squid es un proxy caché web, no un firewall completo de propósito general."
+        },
+        {
+          "clave": "c",
+          "motivo": "GPO son directivas de grupo en Windows, no un sistema de firewall."
+        }
+      ],
+      "resumen_didactico": "pfSense permite implementar reglas de firewall, VPN, NAT y otras funciones avanzadas en hardware estándar.",
+      "ejemplo_practico": "Un administrador monta un equipo con pfSense para dividir varias VLAN, aplicar reglas de filtrado y ofrecer acceso VPN a la oficina.",
+      "conclusion_final": "Si buscas un firewall potente y de software libre para redes corporativas, pfSense es una de las opciones más habituales."
+    }
+  },
+  {
+    "id": "UT4-Q030",
+    "tema": "UT6 - Gestión de recursos en una red",
+    "pregunta": "Frente a un posible ataque de denegación de servicio (DoS), ¿qué puede hacer de forma realista un firewall bien configurado?",
+    "contexto": "Una empresa teme que un ataque DoS tire abajo su página web corporativa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Convertir automáticamente todo el tráfico en UDP"
+      },
+      {
+        "clave": "b",
+        "texto": "Bloquear el ataque al 100% en cualquier circunstancia"
+      },
+      {
+        "clave": "c",
+        "texto": "Impedir que los clientes legítimos accedan a la web"
+      },
+      {
+        "clave": "d",
+        "texto": "Mitigar el ataque según las reglas y capacidades configuradas"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que un DoS no se puede evitar al 100%, pero un buen firewall puede mitigarlo aplicando filtrado, limitando conexiones y bloqueando patrones sospechosos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Cambiar el tipo de tráfico no resuelve un ataque de denegación de servicio."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es realista garantizar un bloqueo total de cualquier DoS solo con un firewall."
+        },
+        {
+          "clave": "c",
+          "motivo": "Bloquear a los clientes legítimos no es una defensa útil, solo agrava el problema."
+        }
+      ],
+      "resumen_didactico": "El firewall es una pieza más de la defensa, capaz de reducir el impacto del ataque, pero no una solución mágica.",
+      "ejemplo_practico": "Ante un pico de peticiones sospechosas, el firewall puede limitar conexiones por IP y bloquear rangos maliciosos para que el servidor siga atendiendo a clientes legítimos.",
+      "conclusion_final": "En seguridad de red, asume que un DoS no se puede eliminar por completo, pero sí se puede mitigar con un firewall bien configurado y otras medidas complementarias."
+    }
+  }
+]

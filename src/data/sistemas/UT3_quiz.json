@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT3-Q01",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En una asesoría de Vigo, una tarjeta SD formateada para cámaras 4K debe usarse en Windows y macOS sin límites de 4 GB por archivo. ¿Qué formato eliges para prepararla?",
+    "contexto": "Compatibilidad Mac/PC y vídeos 4K en tarjeta SD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "exFAT"
+      },
+      {
+        "clave": "b",
+        "texto": "NTFS"
+      },
+      {
+        "clave": "c",
+        "texto": "FAT32"
+      },
+      {
+        "clave": "d",
+        "texto": "ext4"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "exFAT elimina el límite de 4 GB de FAT32 y mantiene alta compatibilidad entre Windows y macOS; es el formato recomendado para SD/SSD en flujos 4K.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "NTFS no ofrece escritura nativa en macOS sin drivers."
+        },
+        {
+          "clave": "c",
+          "motivo": "FAT32 limita archivos a 4 GB."
+        },
+        {
+          "clave": "d",
+          "motivo": "ext4 es nativo de Linux y no tiene soporte nativo en Windows/macOS."
+        }
+      ],
+      "resumen_didactico": "Para vídeos grandes y compatibilidad Mac/PC: exFAT.",
+      "ejemplo_practico": "Copiar brutos 4K de la cámara a un SSD exFAT y editarlos en Mac y PC.",
+      "conclusion_final": "Elige exFAT cuando necesites archivos grandes y compatibilidad cruzada."
+    }
+  },
+  {
+    "id": "UT3-Q02",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "¿Cuál es una limitación clave de FAT32?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Requiere cifrado obligatorio"
+      },
+      {
+        "clave": "b",
+        "texto": "No maneja archivos mayores de 4 GB"
+      },
+      {
+        "clave": "c",
+        "texto": "Incompatible con Windows"
+      },
+      {
+        "clave": "d",
+        "texto": "No admite unidades USB"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "FAT32 es muy compatible pero tiene límite de 4 GB por archivo y menor seguridad/rendimiento que sistemas modernos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FAT32 no incorpora cifrado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es totalmente compatible con Windows."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se usa habitualmente en USB y SD."
+        }
+      ],
+      "resumen_didactico": "La barrera de 4 GB hace que FAT32 no sea apto para vídeos/copias grandes.",
+      "ejemplo_practico": "Intentar copiar un archivo de 6 GB a un pendrive FAT32 falla.",
+      "conclusion_final": "Para ficheros grandes, usa exFAT o NTFS."
+    }
+  },
+  {
+    "id": "UT3-Q03",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Debes elegir sistema de archivos en Windows para un despacho con control de permisos por grupos y auditoría de accesos. ¿Cuál encaja mejor?",
+    "contexto": "Entorno corporativo con requisitos de seguridad y trazabilidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "NTFS"
+      },
+      {
+        "clave": "b",
+        "texto": "FAT32"
+      },
+      {
+        "clave": "c",
+        "texto": "ext2"
+      },
+      {
+        "clave": "d",
+        "texto": "APFS"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "NTFS soporta ACL por usuario/grupo, cifrado, compresión y auditoría; es el estándar profesional en Windows.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No tiene permisos ni auditoría."
+        },
+        {
+          "clave": "c",
+          "motivo": "Formato Linux sin soporte nativo en Windows."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sistema de archivos de Apple."
+        }
+      ],
+      "resumen_didactico": "Para seguridad y control en Windows: NTFS.",
+      "ejemplo_practico": "Carpetas con permisos distintos para Contabilidad y Dirección usando NTFS.",
+      "conclusion_final": "NTFS equilibra seguridad, rendimiento y administración en Windows."
+    }
+  },
+  {
+    "id": "UT3-Q04",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En una productora de Madrid comparten brutos de vídeo entre Mac y PC. Buscan compatibilidad y buen rendimiento con SSD. ¿Qué formato recomiendas para los discos externos?",
+    "contexto": "Flujo de edición con archivos muy grandes entre macOS y Windows.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "exFAT"
+      },
+      {
+        "clave": "b",
+        "texto": "HFS+"
+      },
+      {
+        "clave": "c",
+        "texto": "ext3"
+      },
+      {
+        "clave": "d",
+        "texto": "Btrfs"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "exFAT está optimizado para memorias flash/SSD, sin límite de 4 GB por archivo y con soporte en Windows y macOS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "HFS+ no tiene escritura nativa en Windows."
+        },
+        {
+          "clave": "c",
+          "motivo": "Formato Linux sin compatibilidad nativa en Win/macOS."
+        },
+        {
+          "clave": "d",
+          "motivo": "Btrfs es del ecosistema Linux, no multiplataforma nativo."
+        }
+      ],
+      "resumen_didactico": "exFAT = compatibilidad + archivos grandes + buen rendimiento en SSD.",
+      "ejemplo_practico": "Editar 8K en Premiere (PC) y Final Cut (Mac) desde un SSD exFAT.",
+      "conclusion_final": "Para discos externos Mac/PC modernos, exFAT es la opción práctica."
+    }
+  },
+  {
+    "id": "UT3-Q05",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "¿Qué ventaja destaca ext4 frente a ext2/ext3 en Linux para servidores?",
+    "contexto": "Fiabilidad y rendimiento en producción.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Obliga a cifrado por hardware"
+      },
+      {
+        "clave": "b",
+        "texto": "Mejor recuperación y menor fragmentación"
+      },
+      {
+        "clave": "c",
+        "texto": "Compatibilidad nativa con NTFS"
+      },
+      {
+        "clave": "d",
+        "texto": "No soporta journaling"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "ext4 mejora el journaling, reduce fragmentación y soporta tamaños muy grandes, ofreciendo recuperación más eficaz.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El cifrado no es obligatorio; es opcional/externo."
+        },
+        {
+          "clave": "c",
+          "motivo": "NTFS es Windows; no hay compatibilidad nativa."
+        },
+        {
+          "clave": "d",
+          "motivo": "ext4 sí usa journaling mejorado."
+        }
+      ],
+      "resumen_didactico": "ext4 aporta estabilidad, rendimiento y rápida recuperación.",
+      "ejemplo_practico": "Apagón y recuperación ágil del sistema de archivos en ext4.",
+      "conclusion_final": "Para servidores Linux, ext4 es una evolución sólida y eficiente."
+    }
+  },
+  {
+    "id": "UT3-Q06",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un portátil dual (Windows/Linux) un alumno confunde separadores de ruta al documentar procedimientos. ¿Qué recordarías?",
+    "contexto": "Buenas prácticas al escribir rutas multiplataforma.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ambos usan “\\”"
+      },
+      {
+        "clave": "b",
+        "texto": "Depende del idioma del sistema"
+      },
+      {
+        "clave": "c",
+        "texto": "Windows y Linux usan “/”"
+      },
+      {
+        "clave": "d",
+        "texto": "Windows usa “\\” y Linux “/”"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Las rutas en Linux usan “/” y en Windows usan “\\”. Confundirlas genera errores en scripts y documentación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo Windows usa “\\” por defecto."
+        },
+        {
+          "clave": "b",
+          "motivo": "No depende del idioma, sino del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Linux usa “/”, Windows no (por defecto)."
+        }
+      ],
+      "resumen_didactico": "Cada SO tiene su separador: documenta con el correcto.",
+      "ejemplo_practico": "/home/alumno/docs vs C:\\Users\\Alumno\\Docs",
+      "conclusion_final": "Recuerda: Windows “\\”, Linux “/”."
+    }
+  },
+  {
+    "id": "UT3-Q07",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Quieres explicar a un junior qué representa “/etc” en Linux. ¿Qué descripción es correcta?",
+    "contexto": "Orientación sobre estructura de directorios Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Configuración global del sistema"
+      },
+      {
+        "clave": "b",
+        "texto": "Dispositivos físicos"
+      },
+      {
+        "clave": "c",
+        "texto": "Directorio de usuarios"
+      },
+      {
+        "clave": "d",
+        "texto": "Binarios de usuario"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "/etc almacena archivos de configuración global: usuarios, red, servicios, arranque…",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los dispositivos se representan en /dev."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los homes de usuarios están en /home."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los binarios están en /bin, /usr/bin, etc."
+        }
+      ],
+      "resumen_didactico": "/etc es el “panel de control” en texto de Linux.",
+      "ejemplo_practico": "Cambiar nombre del host editando /etc/hostname.",
+      "conclusion_final": "/etc = configuración del sistema."
+    }
+  },
+  {
+    "id": "UT3-Q08",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un aula, un equipo Windows carece de acceso a “C:\\Users\\alumno”. ¿Dónde está conceptualmente dentro de la estructura?",
+    "contexto": "Equivalencias de estructura entre SO.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/home"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc"
+      },
+      {
+        "clave": "c",
+        "texto": "En la raíz de la partición, bajo \\Usuarios (Users)"
+      },
+      {
+        "clave": "d",
+        "texto": "\\Windows\\System32"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En Windows, los perfiles están en C:\\Users (\\Usuarios) en la raíz de la partición del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es la ruta análoga en Linux, no Windows."
+        },
+        {
+          "clave": "b",
+          "motivo": "Directorio de configuración global en Linux."
+        },
+        {
+          "clave": "d",
+          "motivo": "Carpeta del sistema, no perfiles de usuario."
+        }
+      ],
+      "resumen_didactico": "C:\\Users contiene los homes de cada usuario en Windows.",
+      "ejemplo_practico": "C:\\Users\\alumno incluye Escritorio, Documentos, etc.",
+      "conclusion_final": "Los perfiles residen en \\Usuarios (Users) a nivel raíz."
+    }
+  },
+  {
+    "id": "UT3-Q09",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un taller de Zaragoza piden listar, con tamaño legible y ordenado por fecha, el contenido de un directorio en Linux. ¿Qué combinación usarías?",
+    "contexto": "Auditar cambios recientes y tamaños legibles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ls --help"
+      },
+      {
+        "clave": "b",
+        "texto": "ls -R"
+      },
+      {
+        "clave": "c",
+        "texto": "ls -lt -h"
+      },
+      {
+        "clave": "d",
+        "texto": "ls -aS"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "-l listado largo, -t orden por fecha, -h tamaños en KB/MB/GB legibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Muestra ayuda, no lista contenido."
+        },
+        {
+          "clave": "b",
+          "motivo": "Recursivo sin ordenar por fecha ni -h."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ordena por tamaño y muestra ocultos, no por fecha."
+        }
+      ],
+      "resumen_didactico": "ls -lt -h ofrece vista clara y cronológica con tamaños legibles.",
+      "ejemplo_practico": "Revisar /var/log para detectar los logs más recientes.",
+      "conclusion_final": "Combina -l, -t y -h para auditorías rápidas."
+    }
+  },
+  {
+    "id": "UT3-Q10",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Un script elimina sin querer una carpeta con rm. La alumna propone añadir confirmación antes de borrar. ¿Qué opción de rm reduce riesgos en operaciones manuales?",
+    "contexto": "Buenas prácticas al eliminar archivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "-R"
+      },
+      {
+        "clave": "b",
+        "texto": "-i"
+      },
+      {
+        "clave": "c",
+        "texto": "-f"
+      },
+      {
+        "clave": "d",
+        "texto": "--color"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "rm -i solicita confirmación antes de sobrescribir/eliminar cada elemento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Hace la operación recursiva, no más segura."
+        },
+        {
+          "clave": "c",
+          "motivo": "Fuerza sin preguntar; aumenta el riesgo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Afecta al color del listado, no a la seguridad."
+        }
+      ],
+      "resumen_didactico": "Usa -i para hacer borrados interactivos.",
+      "ejemplo_practico": "rm -i *.log pregunta uno por uno antes de borrar.",
+      "conclusion_final": "Interactividad reduce errores humanos al eliminar."
+    }
+  },
+  {
+    "id": "UT3-Q11",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "¿Qué tipo de enlace reutiliza el mismo i-nodo con distintos nombres?",
+    "contexto": "Conceptos de sistema de archivos en Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enlace simbólico"
+      },
+      {
+        "clave": "b",
+        "texto": "Montaje bind"
+      },
+      {
+        "clave": "c",
+        "texto": "Alias de shell"
+      },
+      {
+        "clave": "d",
+        "texto": "Enlace duro"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El enlace duro comparte i-nodo con el archivo original; el simbólico apunta a la ruta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Crea un i-nodo nuevo que referencia una ruta."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es un montaje de rutas, no un enlace a nivel de i-nodo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es un atajo de comandos, no un enlace de FS."
+        }
+      ],
+      "resumen_didactico": "Hard link = mismo contenido (i-nodo) con varios nombres.",
+      "ejemplo_practico": "ln archivo a2 crea otro nombre al mismo i-nodo.",
+      "conclusion_final": "Los enlaces duros duplican nombres, no datos."
+    }
+  },
+  {
+    "id": "UT3-Q12",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Debes copiar recursivamente una carpeta “proyectos” a “/backup/proyectos” pidiendo confirmación ante sobrescritura. ¿Qué comando es coherente?",
+    "contexto": "Copia segura de directorios en Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "cp proyectos /backup"
+      },
+      {
+        "clave": "b",
+        "texto": "mv -iu proyectos /backup/"
+      },
+      {
+        "clave": "c",
+        "texto": "cp -ir proyectos /backup/"
+      },
+      {
+        "clave": "d",
+        "texto": "cp -S proyectos /backup/"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "cp -r copia directorios de forma recursiva y -i solicita confirmación ante sobrescritura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No copia subdirectorios si existen; faltan opciones."
+        },
+        {
+          "clave": "b",
+          "motivo": "mv mueve, no copia (y elimina del origen)."
+        },
+        {
+          "clave": "d",
+          "motivo": "-S solo añade sufijo de backup; no pide confirmación ni copia recursiva."
+        }
+      ],
+      "resumen_didactico": "Para copias seguras: cp -ir.",
+      "ejemplo_practico": "cp -ir proyectos /backup/ pregunta en colisiones.",
+      "conclusion_final": "Combina -r y -i para copia completa y segura."
+    }
+  },
+  {
+    "id": "UT3-Q13",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un repositorio, necesitas mover “datos.csv” a “/srv/tmp” renombrándolo a “datos_2025.csv” sin duplicarlo. ¿Qué usarías?",
+    "contexto": "Movimiento y renombrado atómico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "cp -r"
+      },
+      {
+        "clave": "b",
+        "texto": "cat >>"
+      },
+      {
+        "clave": "c",
+        "texto": "wc -l"
+      },
+      {
+        "clave": "d",
+        "texto": "mv datos.csv /srv/tmp/datos_2025.csv"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "mv mueve y/o renombra en un único paso sin dejar copia en el origen.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "cp copia y deja el original; -r es para directorios."
+        },
+        {
+          "clave": "b",
+          "motivo": "Redirección para añadir texto, no gestiona archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Cuenta líneas/palabras/bytes; no mueve."
+        }
+      ],
+      "resumen_didactico": "mv = mover y renombrar sin duplicar.",
+      "ejemplo_practico": "mv informe.txt /srv/tmp/informe_2025.txt",
+      "conclusion_final": "Usa mv para mover y renombrar de forma segura."
+    }
+  },
+  {
+    "id": "UT3-Q14",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Una técnica quiere visualizar en consola el contenido de “README.txt” y, de paso, crear “copia.txt” con ese mismo contenido sin perder la salida en pantalla. ¿Qué tubería encaja?",
+    "contexto": "Duplicar salida a pantalla y archivo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "more README.txt | wc"
+      },
+      {
+        "clave": "b",
+        "texto": "cat README.txt > copia.txt"
+      },
+      {
+        "clave": "c",
+        "texto": "cat README.txt | tee copia.txt"
+      },
+      {
+        "clave": "d",
+        "texto": "cat README.txt >> copia.txt"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "tee replica la salida estándar a pantalla y a archivo simultáneamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "wc cuenta; no guarda el contenido."
+        },
+        {
+          "clave": "b",
+          "motivo": "Redirige solo a archivo, no muestra en pantalla."
+        },
+        {
+          "clave": "d",
+          "motivo": "Añade al archivo, pero no mantiene la salida en pantalla."
+        }
+      ],
+      "resumen_didactico": "Usa tee para ver y guardar al mismo tiempo.",
+      "ejemplo_practico": "ls -l | tee listado.txt",
+      "conclusion_final": "tee es clave para auditorías y logs interactivos."
+    }
+  },
+  {
+    "id": "UT3-Q15",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "¿Qué muestra wc -l aplicado a un fichero?",
+    "contexto": "Conteo rápido de registros.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bytes"
+      },
+      {
+        "clave": "b",
+        "texto": "Palabras"
+      },
+      {
+        "clave": "c",
+        "texto": "Tamaño en bloques"
+      },
+      {
+        "clave": "d",
+        "texto": "Número de líneas"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "wc -l devuelve el número de líneas de un archivo; -w palabras, -c bytes, -L línea más larga.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los bytes se ven con -c."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las palabras se ven con -w."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es una métrica de wc; usa du/ls para bloques."
+        }
+      ],
+      "resumen_didactico": "wc -l = líneas totales del fichero.",
+      "ejemplo_practico": "wc -l /var/log/syslog",
+      "conclusion_final": "Ideal para validar volúmenes de registros."
+    }
+  },
+  {
+    "id": "UT3-Q16",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un incidente, un log crece y mezcla mensajes normales con errores. Quieres guardar solo los errores en “errores.log”. ¿Qué redirección es adecuada?",
+    "contexto": "Separar stdout de stderr.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "cmd >> errores.log"
+      },
+      {
+        "clave": "b",
+        "texto": "cmd > errores.log"
+      },
+      {
+        "clave": "c",
+        "texto": "cmd 2> errores.log"
+      },
+      {
+        "clave": "d",
+        "texto": "cmd &> salida.log"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "2> redirige solo stderr (errores) a un archivo; stdout sigue en pantalla.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Añade stdout, no los errores."
+        },
+        {
+          "clave": "b",
+          "motivo": "Sobrescribe con stdout, perdiendo errores."
+        },
+        {
+          "clave": "d",
+          "motivo": "Combina stdout y stderr; no separa errores."
+        }
+      ],
+      "resumen_didactico": "Usa 2> para capturar exclusivamente errores.",
+      "ejemplo_practico": "script.sh 2> errores.log",
+      "conclusion_final": "Separar flujos facilita el diagnóstico."
+    }
+  },
+  {
+    "id": "UT3-Q17",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Para ordenar alfabéticamente un fichero “nombres.txt” y ver el resultado en pantalla, ¿qué harías?",
+    "contexto": "Ordenación rápida de texto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "wc -w nombres.txt"
+      },
+      {
+        "clave": "b",
+        "texto": "cut -d, -f2 nombres.txt"
+      },
+      {
+        "clave": "c",
+        "texto": "sort nombres.txt"
+      },
+      {
+        "clave": "d",
+        "texto": "grep -n nombres.txt"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "sort ordena líneas de un archivo (alfabética por defecto) y muestra en stdout.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Cuenta palabras; no ordena."
+        },
+        {
+          "clave": "b",
+          "motivo": "Extrae columnas; no ordena por sí mismo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Busca patrones; no ordena."
+        }
+      ],
+      "resumen_didactico": "sort es la herramienta estándar para ordenación textual.",
+      "ejemplo_practico": "sort clientes.txt > clientes_ordenados.txt",
+      "conclusion_final": "Ordena sin tocar el original salvo que redirijas."
+    }
+  },
+  {
+    "id": "UT3-Q18",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un CSV “clientes.csv” delimitado por “,” quieres extraer solo las columnas 1 y 3. ¿Qué comando es directo?",
+    "contexto": "Filtrado de columnas en CSV.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "mv 1 3 clientes.csv"
+      },
+      {
+        "clave": "b",
+        "texto": "grep -w 1,3 clientes.csv"
+      },
+      {
+        "clave": "c",
+        "texto": "cut -d, -f1,3 clientes.csv"
+      },
+      {
+        "clave": "d",
+        "texto": "ls -lt -h"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "cut con -d DELIMITADOR y -f CAMPOS extrae columnas específicas de un texto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "mv mueve archivos; no opera columnas."
+        },
+        {
+          "clave": "b",
+          "motivo": "grep filtra por patrón; no selecciona columnas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Lista archivos; no procesa CSV."
+        }
+      ],
+      "resumen_didactico": "cut es ideal para CSV simples.",
+      "ejemplo_practico": "cut -d, -f1,4 ventas.csv > id_total.csv",
+      "conclusion_final": "Define delimitador y campos, y listo."
+    }
+  },
+  {
+    "id": "UT3-Q19",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Un comercial pide buscar en Linux todos los .pdf modificados en los últimos 2 días dentro de /documentos. ¿Qué comando cumple?",
+    "contexto": "Búsqueda por nombre y fecha.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "find /documentos -name \"*.pdf\" -mtime -2"
+      },
+      {
+        "clave": "b",
+        "texto": "find /documentos -name *.pdf -mtime +2"
+      },
+      {
+        "clave": "c",
+        "texto": "grep -r \"*.pdf\" /documentos"
+      },
+      {
+        "clave": "d",
+        "texto": "find -size +2 -name \"*.pdf\""
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "find con -name \"*.pdf\" filtra por extensión y -mtime -2 por modificación en menos de 2 días.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Sin comillas y +2 significa más antiguos, no recientes."
+        },
+        {
+          "clave": "c",
+          "motivo": "grep busca texto dentro de archivos, no por metadatos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Filtra por tamaño, no por fecha."
+        }
+      ],
+      "resumen_didactico": "find permite combinar criterios potentes.",
+      "ejemplo_practico": "find ~/docs -name \"*.pdf\" -mtime -1",
+      "conclusion_final": "Cita patrones y elige el operador de tiempo correcto."
+    }
+  },
+  {
+    "id": "UT3-Q20",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Te piden listar solo directorios dentro de /var/www sin bajar más de un nivel. ¿Qué combinación es correcta?",
+    "contexto": "Enumeración de directorios de primer nivel.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ls -R /var/www"
+      },
+      {
+        "clave": "b",
+        "texto": "find /var/www -type f -maxdepth 1"
+      },
+      {
+        "clave": "c",
+        "texto": "grep -d /var/www"
+      },
+      {
+        "clave": "d",
+        "texto": "find /var/www -type d -maxdepth 1"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "-type d restringe a directorios; -maxdepth 1 evita descender.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Lista recursivamente todo, no solo directorios."
+        },
+        {
+          "clave": "b",
+          "motivo": "-type f busca archivos, no directorios."
+        },
+        {
+          "clave": "c",
+          "motivo": "grep no sirve para listar directorios."
+        }
+      ],
+      "resumen_didactico": "find es flexible para filtrar tipos y profundidad.",
+      "ejemplo_practico": "find /etc -type d -maxdepth 1",
+      "conclusion_final": "Controla qué y hasta dónde buscas."
+    }
+  },
+  {
+    "id": "UT3-Q21",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En Windows, un usuario no experto necesita localizar “presupuesto_abril.xlsx” por fecha aproximada y tipo de archivo desde el Explorador. ¿Qué le indicas?",
+    "contexto": "Búsqueda GUI con filtros en Windows.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Abrir CMD y ejecutar find"
+      },
+      {
+        "clave": "b",
+        "texto": "Editar el Registro"
+      },
+      {
+        "clave": "c",
+        "texto": "Usar el cuadro de búsqueda con filtros (tipo: .xlsx y fecha de modificación)"
+      },
+      {
+        "clave": "d",
+        "texto": "Crear un acceso directo oculto"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El Explorador permite filtrar por tipo (extensión) y por fecha desde el cuadro de búsqueda/Herramientas de búsqueda.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "find en CMD busca texto; no archivos por fecha/tipo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El registro no es para estas tareas."
+        },
+        {
+          "clave": "d",
+          "motivo": "No ayuda a localizar archivos."
+        }
+      ],
+      "resumen_didactico": "Búsquedas avanzadas GUI son accesibles a usuarios no técnicos.",
+      "ejemplo_practico": "Escribir: presupuesto tipo:.xlsx fecha:abril",
+      "conclusion_final": "Usa filtros del Explorador para resultados precisos."
+    }
+  },
+  {
+    "id": "UT3-Q22",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Un técnico quiere ir más rápido moviendo y renombrando elementos en Windows. ¿Qué atajo del Explorador le sirve para renombrar?",
+    "contexto": "Productividad con atajos de teclado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Alt + F4"
+      },
+      {
+        "clave": "b",
+        "texto": "F2"
+      },
+      {
+        "clave": "c",
+        "texto": "Ctrl + e"
+      },
+      {
+        "clave": "d",
+        "texto": "Ctrl + d"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "F2 renombra el elemento seleccionado en el Explorador; otros atajos: Ctrl+C/V/X, Ctrl+E, Ctrl+D, etc.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Cierra la ventana."
+        },
+        {
+          "clave": "c",
+          "motivo": "Selecciona todo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eliminar/enviar a papelera."
+        }
+      ],
+      "resumen_didactico": "F2 = renombrar al instante.",
+      "ejemplo_practico": "Seleccionar archivo y pulsar F2 para renombrar.",
+      "conclusion_final": "Dominar atajos acelera flujos cotidianos."
+    }
+  },
+  {
+    "id": "UT3-Q23",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En Linux, montas un disco externo en /mnt/backup y luego deseas desmontarlo de forma segura. ¿Qué orden es coherente?",
+    "contexto": "Cierre seguro antes de desconectar.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "umount /mnt/backup"
+      },
+      {
+        "clave": "b",
+        "texto": "mount /mnt/backup"
+      },
+      {
+        "clave": "c",
+        "texto": "fdisk -l /mnt/backup"
+      },
+      {
+        "clave": "d",
+        "texto": "mkfs /mnt/backup"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "umount <punto_de_montaje> sincroniza y libera el sistema de archivos antes de retirar el dispositivo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "mount monta; no desmonta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Lista particiones; no desmonta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Formatea; borraría datos."
+        }
+      ],
+      "resumen_didactico": "Siempre desmonta antes de retirar hardware.",
+      "ejemplo_practico": "umount /mnt/backup && retirar el USB.",
+      "conclusion_final": "Evita corrupción de datos desmontando primero."
+    }
+  },
+  {
+    "id": "UT3-Q24",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un servidor, necesitas montar todos los sistemas definidos en /etc/fstab tras modificarlos. ¿Qué opción de mount usarías?",
+    "contexto": "Aplicar nueva configuración de fstab.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "-t"
+      },
+      {
+        "clave": "b",
+        "texto": "-a"
+      },
+      {
+        "clave": "c",
+        "texto": "-w"
+      },
+      {
+        "clave": "d",
+        "texto": "-r"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "mount -a monta todas las entradas de /etc/fstab.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Especifica tipo de sistema de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Fuerza modo lectura-escritura; no monta todos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Modo solo lectura; no monta por sí mismo."
+        }
+      ],
+      "resumen_didactico": "Tras editar fstab, usa mount -a.",
+      "ejemplo_practico": "Añadir una partición y activarla con mount -a.",
+      "conclusion_final": "Automatiza el montaje con -a."
+    }
+  },
+  {
+    "id": "UT3-Q25",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Una alumna debe crear una partición primaria nueva con fdisk en /dev/sda. ¿Qué secuencia básica es correcta?",
+    "contexto": "Particionado clásico con fdisk.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "fdisk /dev/sda1 → p → q"
+      },
+      {
+        "clave": "b",
+        "texto": "mkfs /dev/sda → w"
+      },
+      {
+        "clave": "c",
+        "texto": "fdisk -l /dev/sda → y"
+      },
+      {
+        "clave": "d",
+        "texto": "fdisk /dev/sda → n → (primaria) → w"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Abrir el disco con fdisk, crear nueva partición (n), elegir primaria y escribir cambios (w).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Operar sobre /dev/sda1 es sobre una partición, no el disco."
+        },
+        {
+          "clave": "b",
+          "motivo": "mkfs formatea; no particiona."
+        },
+        {
+          "clave": "c",
+          "motivo": "-l solo lista; no crea particiones."
+        }
+      ],
+      "resumen_didactico": "Secuencia: abrir → crear (n) → tipo → guardar (w).",
+      "ejemplo_practico": "fdisk /dev/sda, aceptar valores por defecto y w.",
+      "conclusion_final": "Crea primero la partición; luego ya formatearás."
+    }
+  },
+  {
+    "id": "UT3-Q26",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Tras particionar, quieres formatear /dev/sdb1 como ext4. ¿Qué mandas?",
+    "contexto": "Creación del sistema de archivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "mkfs -t ext4 /dev/sdb1"
+      },
+      {
+        "clave": "b",
+        "texto": "fdisk -t ext4 /dev/sdb1"
+      },
+      {
+        "clave": "c",
+        "texto": "mkfs -t ntfs /dev/sdb1"
+      },
+      {
+        "clave": "d",
+        "texto": "e2fsck -t ext4 /dev/sdb1"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "mkfs crea el sistema de archivos en la partición; -t ext4 define el tipo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "fdisk particiona; no formatea."
+        },
+        {
+          "clave": "c",
+          "motivo": "Formatea NTFS, no ext4."
+        },
+        {
+          "clave": "d",
+          "motivo": "e2fsck verifica/repara; no crea sistemas de archivos."
+        }
+      ],
+      "resumen_didactico": "Particionar (fdisk) y luego formatear (mkfs).",
+      "ejemplo_practico": "mkfs -t ext4 /dev/sdb1; mount /mnt/datos.",
+      "conclusion_final": "Elige el tipo correcto al formatear."
+    }
+  },
+  {
+    "id": "UT3-Q27",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un HDD con Windows, notas que los accesos son lentos tras años de uso. Planteas desfragmentar. ¿Qué matiz añadirías sobre Linux/ext4?",
+    "contexto": "Fragmentación y rendimiento en distintos FS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ext4 obliga a desfragmentar cada semana"
+      },
+      {
+        "clave": "b",
+        "texto": "ext4 no soporta ficheros grandes"
+      },
+      {
+        "clave": "c",
+        "texto": "ext4 suele requerir poca desfragmentación; existe e4defrag para casos concretos"
+      },
+      {
+        "clave": "d",
+        "texto": "ext4 carece de journaling"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "ext4 minimiza la fragmentación; si hay poco espacio/uso intensivo, se puede usar e4defrag para optimizar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es necesario desfragmentar semanalmente."
+        },
+        {
+          "clave": "b",
+          "motivo": "ext4 soporta archivos muy grandes (hasta 16 TB)."
+        },
+        {
+          "clave": "d",
+          "motivo": "ext4 sí dispone de journaling."
+        }
+      ],
+      "resumen_didactico": "Linux/ext4 rara vez requiere desfragmentación manual.",
+      "ejemplo_practico": "e4defrag /home en un sistema con poco espacio libre.",
+      "conclusion_final": "Desfragmentar en ext4 es la excepción, no la norma."
+    }
+  },
+  {
+    "id": "UT3-Q28",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Tras un apagón, un volumen ext4 queda “sucio”. ¿Qué herramienta usarías para chequeo y reparación?",
+    "contexto": "Integridad tras fallo eléctrico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "dnf"
+      },
+      {
+        "clave": "b",
+        "texto": "smartctl -t long"
+      },
+      {
+        "clave": "c",
+        "texto": "ddrescue"
+      },
+      {
+        "clave": "d",
+        "texto": "fsck / e2fsck"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "fsck/e2fsck verifican y reparan la estructura del sistema de archivos (ext2/3/4).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Gestor de paquetes; no repara FS."
+        },
+        {
+          "clave": "b",
+          "motivo": "Prueba S.M.A.R.T. (estado físico), no repara FS."
+        },
+        {
+          "clave": "c",
+          "motivo": "Recuperación de datos sector a sector; no checkea FS."
+        }
+      ],
+      "resumen_didactico": "Ante inconsistencia lógica: fsck/e2fsck.",
+      "ejemplo_practico": "fsck -y /dev/sdb1 tras un corte de luz.",
+      "conclusion_final": "Primero repara la lógica del FS; luego analiza hardware si procede."
+    }
+  },
+  {
+    "id": "UT3-Q29",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "En un NAS pequeño buscan mejorar rendimiento de lectura, aceptando que si un disco falla se pierden datos. ¿Qué RAID proponen?",
+    "contexto": "Rendimiento sobre seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "RAID 6"
+      },
+      {
+        "clave": "b",
+        "texto": "RAID 5"
+      },
+      {
+        "clave": "c",
+        "texto": "RAID 0"
+      },
+      {
+        "clave": "d",
+        "texto": "RAID 1"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "RAID 0 (striping) reparte datos entre discos y maximiza rendimiento, pero sin redundancia: si falla un disco, se pierde todo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "RAID 6 prioriza tolerancia con doble paridad; menor rendimiento de escritura."
+        },
+        {
+          "clave": "b",
+          "motivo": "RAID 5 equilibra y tolera 1 fallo; no se acepta pérdida total."
+        },
+        {
+          "clave": "d",
+          "motivo": "RAID 1 es espejo: prioriza seguridad, no rendimiento máximo."
+        }
+      ],
+      "resumen_didactico": "RAID 0 = velocidad, 0 tolerancia a fallos.",
+      "ejemplo_practico": "Editar vídeo temporalmente en RAID 0 con copias externas aparte.",
+      "conclusion_final": "Si aceptas riesgo por velocidad: RAID 0."
+    }
+  },
+  {
+    "id": "UT3-Q30",
+    "tema": "UT3 — Gestión de la Información",
+    "pregunta": "Una clínica pide tolerancia a fallo de un disco sin perder servicio y con buen equilibrio capacidad/seguridad mínimo de 3 discos. ¿Qué RAID sugiere?",
+    "contexto": "Disponibilidad continua y eficiencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "RAID 50 (siempre con 2 discos)"
+      },
+      {
+        "clave": "b",
+        "texto": "RAID 0"
+      },
+      {
+        "clave": "c",
+        "texto": "JBOD"
+      },
+      {
+        "clave": "d",
+        "texto": "RAID 5"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "RAID 5 requiere al menos 3 discos, distribuye paridad y permite seguir operando si falla 1 disco, con buena relación capacidad/seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "RAID 50 requiere más discos (≥6) y combinación 5+0."
+        },
+        {
+          "clave": "b",
+          "motivo": "RAID 0 no tiene tolerancia a fallos."
+        },
+        {
+          "clave": "c",
+          "motivo": "JBOD no aporta redundancia ni tolerancia."
+        }
+      ],
+      "resumen_didactico": "RAID 5 equilibra rendimiento, capacidad y tolerancia a 1 fallo.",
+      "ejemplo_practico": "3×2 TB en RAID 5 → ~4 TB útiles y servicio activo ante fallo de un disco.",
+      "conclusion_final": "Para disponibilidad con 3+ discos, RAID 5 es la opción estándar."
+    }
+  }
+]

@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT2-Q01",
+    "tema": "Recuperación de sistemas Windows",
+    "pregunta": "En una asesoría de Bilbao, un equipo con Windows 10 queda bloqueado al arrancar tras una actualización nocturna. La gerente necesita enviar nóminas en 30 minutos. ¿Qué harías primero para recuperar operatividad sin perder datos?",
+    "contexto": "Asesoría de Bilbao, fallo de arranque post-actualización",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Iniciar con medio de instalación, acceder a reparación de inicio y revisar puntos de restauración"
+      },
+      {
+        "clave": "b",
+        "texto": "Formatear de inmediato la unidad"
+      },
+      {
+        "clave": "c",
+        "texto": "Forzar apagados sucesivos hasta que arranque"
+      },
+      {
+        "clave": "d",
+        "texto": "Desmontar el disco y pasar a otro equipo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Usar el entorno de recuperación de Windows desde USB/DVD para Reparación de inicio y Restaurar sistema minimiza riesgo y preserva datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Acción destructiva; borra datos y es último recurso."
+        },
+        {
+          "clave": "c",
+          "motivo": "Puede corromper el sistema de archivos y no soluciona la causa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Válido solo como último recurso, no es el primer paso lógico."
+        }
+      ],
+      "resumen_didactico": "Primero se intentan reparaciones lógicas (Startup Repair / Restore) antes de acciones destructivas.",
+      "ejemplo_practico": "Arrancar con USB de Windows, Reparar equipo → Solucionar problemas → Restaurar sistema.",
+      "conclusion_final": "Prioriza recuperación sin pérdida de datos con las herramientas de reparación del instalador."
+    }
+  },
+  {
+    "id": "UT2-Q02",
+    "tema": "Gestión de procesos",
+    "pregunta": "¿Qué función del sistema operativo organiza el acceso ordenado a CPU por parte de procesos e hilos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gestión de la interfaz de usuario"
+      },
+      {
+        "clave": "b",
+        "texto": "Gestión de procesos"
+      },
+      {
+        "clave": "c",
+        "texto": "Gestión de entrada/salida"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestión del almacenamiento secundario"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La gestión de procesos planifica, prioriza y asigna CPU a procesos/hilos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Se ocupa de la interacción con el usuario, no de CPU."
+        },
+        {
+          "clave": "c",
+          "motivo": "Coordina periféricos y colas/búferes, no la CPU."
+        },
+        {
+          "clave": "d",
+          "motivo": "Gestiona discos y archivos, no la planificación del procesador."
+        }
+      ],
+      "resumen_didactico": "El planificador decide qué proceso usa CPU y cuándo.",
+      "ejemplo_practico": "Mientras renderizas vídeo, el SO mantiene fluido el cursor priorizando interactividad.",
+      "conclusion_final": "La gestión de procesos es el 'director de orquesta' de la CPU."
+    }
+  },
+  {
+    "id": "UT2-Q03",
+    "tema": "Virtualización y memoria",
+    "pregunta": "Estás preparando un host con 16 GB de RAM para ejecutar dos VMs de pruebas. ¿Qué decisión de memoria evita swapping excesivo en el host?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir la caché de disco del host a cero"
+      },
+      {
+        "clave": "b",
+        "texto": "Desactivar la memoria virtual en el host"
+      },
+      {
+        "clave": "c",
+        "texto": "Asignar RAM a las VMs dejando margen para el host y habilitar memoria dinámica si procede"
+      },
+      {
+        "clave": "d",
+        "texto": "Asignar 12 GB a cada VM"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La RAM del host limita las VMs; dejar margen y usar memoria dinámica evita swapping.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Perjudica IO y no evita swapping."
+        },
+        {
+          "clave": "b",
+          "motivo": "Riesgoso; el host necesita paginación para estabilidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sobreasigna (24>16 GB), provocando swapping intenso."
+        }
+      ],
+      "resumen_didactico": "Planifica memoria asignando margen al host y usando ballooning/dynamic memory.",
+      "ejemplo_practico": "Host 16 GB: reservar 4 GB al host, VM1 6 GB, VM2 4 GB; activar memoria dinámica.",
+      "conclusion_final": "Nunca asignes toda la RAM a las VMs; deja margen operativo al host."
+    }
+  },
+  {
+    "id": "UT2-Q04",
+    "tema": "Gestión de E/S",
+    "pregunta": "En un aula de Zaragoza, una impresora USB deja de responder cuando varios alumnos lanzan trabajos grandes a la vez. El resto del sistema sigue fluido. ¿Qué explica mejor este comportamiento?",
+    "contexto": "Impresión concurrente en aula",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El sistema de archivos se volvió de solo lectura"
+      },
+      {
+        "clave": "b",
+        "texto": "La RAM se ha fragmentado irreversiblemente"
+      },
+      {
+        "clave": "c",
+        "texto": "El SO gestiona E/S en colas y búferes, sin bloquear la interacción del usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "La GPU detiene la cola de impresión"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El gestor de E/S usa colas y búferes coordinados con drivers; la UI sigue fluida.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Afectaría al almacenamiento, no a impresión exclusivamente."
+        },
+        {
+          "clave": "b",
+          "motivo": "No explica un único periférico; no es causa típica en modernos SO."
+        },
+        {
+          "clave": "d",
+          "motivo": "La GPU no gestiona impresión; lo hace el subsistema de E/S."
+        }
+      ],
+      "resumen_didactico": "La E/S se desacopla de la UI mediante colas/búferes.",
+      "ejemplo_practico": "Varias colas de impresión alimentan al driver mientras el usuario sigue trabajando.",
+      "conclusion_final": "Comportamiento esperado por buena gestión de E/S."
+    }
+  },
+  {
+    "id": "UT2-Q05",
+    "tema": "Tipos de sistemas",
+    "pregunta": "¿Qué característica diferencia a un sistema multiusuario frente a uno monousuario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Soportar más de un núcleo"
+      },
+      {
+        "clave": "b",
+        "texto": "Requerir interfaz gráfica"
+      },
+      {
+        "clave": "c",
+        "texto": "Permitir sesiones concurrentes compartiendo recursos con control de permisos"
+      },
+      {
+        "clave": "d",
+        "texto": "Impedir procesos en segundo plano"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Un sistema multiusuario permite sesiones concurrentes con control de permisos/aislamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es característica de hardware (multinúcleo), no de multiusuario."
+        },
+        {
+          "clave": "b",
+          "motivo": "Puede ser multiusuario sin GUI (p.ej., servidores)."
+        },
+        {
+          "clave": "d",
+          "motivo": "Precisamente soporta servicios y procesos en background."
+        }
+      ],
+      "resumen_didactico": "Multiusuario = concurrencia y seguridad entre cuentas.",
+      "ejemplo_practico": "Servidor Linux con varios usuarios SSH concurrentes.",
+      "conclusion_final": "La clave es compartir recursos con aislamiento y permisos."
+    }
+  },
+  {
+    "id": "UT2-Q06",
+    "tema": "Selección de SO en empresa",
+    "pregunta": "En una pyme de Valencia, dudas entre Windows 10 Pro y una distro GNU/Linux para 10 puestos de oficina. No hay apps específicas de Windows, pero sí necesidad de gestión sencilla y soporte comercial. ¿Qué criterio pesa más en la elección?",
+    "contexto": "Pyme sin apps Windows específicas; busca soporte sencillo",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El número de fuentes instaladas"
+      },
+      {
+        "clave": "b",
+        "texto": "El color del tema por defecto"
+      },
+      {
+        "clave": "c",
+        "texto": "Que el logo del sistema sea más moderno"
+      },
+      {
+        "clave": "d",
+        "texto": "Coste total de propiedad, compatibilidad con flota existente y disponibilidad de soporte comercial"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La decisión se basa en TCO, compatibilidad y soporte disponible (p.ej., Windows Pro vs. Linux con soporte).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Irrelevante para operación y costos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Estético, no operacional."
+        },
+        {
+          "clave": "c",
+          "motivo": "No aporta valor técnico ni económico."
+        }
+      ],
+      "resumen_didactico": "Evalúa TCO, compatibilidad y soporte, no estética.",
+      "ejemplo_practico": "Optar por Windows 10 Pro si la prioridad es soporte y facilidad de gestión; considerar Ubuntu LTS con soporte si procede.",
+      "conclusion_final": "Prioriza TCO+compatibilidad+soporte para estabilidad operativa."
+    }
+  },
+  {
+    "id": "UT2-Q07",
+    "tema": "Arquitecturas de kernel",
+    "pregunta": "Necesitas justificar por qué un microkernel mejora la mantenibilidad. ¿Qué argumento técnico es correcto?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No usa memoria virtual"
+      },
+      {
+        "clave": "b",
+        "texto": "Servicios no críticos corren en modo usuario, reduciendo superficie del núcleo y facilitando aislar fallos"
+      },
+      {
+        "clave": "c",
+        "texto": "No requiere controladores"
+      },
+      {
+        "clave": "d",
+        "texto": "El kernel gestiona también la UI"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El microkernel minimiza código en modo núcleo; servicios/drivers en usuario mejoran aislamiento y mantenimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El uso de memoria virtual no depende del tipo de kernel."
+        },
+        {
+          "clave": "c",
+          "motivo": "Siempre se requieren drivers; cambia su ubicación."
+        },
+        {
+          "clave": "d",
+          "motivo": "La UI no va en el kernel en microkernel."
+        }
+      ],
+      "resumen_didactico": "Menos superficie de kernel = menos fallos críticos y mejor mantenimiento.",
+      "ejemplo_practico": "Reiniciar un driver en usuario sin reiniciar todo el sistema (p.ej., QNX/MINIX).",
+      "conclusion_final": "Aislar servicios fuera del núcleo aumenta estabilidad y mantenibilidad."
+    }
+  },
+  {
+    "id": "UT2-Q08",
+    "tema": "UEFI/Arranque",
+    "pregunta": "En un taller, un portátil con UEFI no detecta el USB de instalación. Ya comprobaste el medio. ¿Qué revisarías en firmware?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Quitar Fast Boot en el sistema operativo"
+      },
+      {
+        "clave": "b",
+        "texto": "Orden de arranque, modo UEFI/Legacy y Secure Boot para permitir el medio"
+      },
+      {
+        "clave": "c",
+        "texto": "Bajar el brillo de pantalla"
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar la batería RTC"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Comprobar Boot Order, modo UEFI/Legacy (CSM) y estado de Secure Boot que puede bloquear el USB.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Fast Boot del SO no gobierna el reconocimiento del USB en firmware."
+        },
+        {
+          "clave": "c",
+          "motivo": "Irrelevante para arranque."
+        },
+        {
+          "clave": "d",
+          "motivo": "Borrar la RTC no es solución y añade riesgos."
+        }
+      ],
+      "resumen_didactico": "El arranque depende de la configuración UEFI adecuada.",
+      "ejemplo_practico": "Desactivar temporalmente Secure Boot y poner USB primero en el orden de arranque.",
+      "conclusion_final": "Ajusta UEFI: Boot Order + CSM/UEFI + Secure Boot para reconocer el medio."
+    }
+  },
+  {
+    "id": "UT2-Q09",
+    "tema": "Particionado GPT/MBR",
+    "pregunta": "¿Cuál es una ventaja clave de GPT frente a MBR?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "GPT no necesita particiones"
+      },
+      {
+        "clave": "b",
+        "texto": "Impide el uso de SSD"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo funciona con BIOS heredado"
+      },
+      {
+        "clave": "d",
+        "texto": "Permite mayor número de particiones y redundancia de la tabla"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "GPT admite más particiones y guarda copias redundantes con verificación de integridad (CRC).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "GPT también usa particiones."
+        },
+        {
+          "clave": "b",
+          "motivo": "Compatible con SSD/HDD por igual."
+        },
+        {
+          "clave": "c",
+          "motivo": "Se diseñó para UEFI; BIOS heredado no es requisito."
+        }
+      ],
+      "resumen_didactico": "GPT supera límites de MBR en número/tamaño y añade fiabilidad.",
+      "ejemplo_practico": "Disco de 4 TB requiere GPT para usar toda su capacidad y múltiples particiones.",
+      "conclusion_final": "Elige GPT por capacidad, flexibilidad y resiliencia."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "Políticas de actualización",
+    "pregunta": "En una clínica de Madrid, la actualización automática del sistema saturó la red a media mañana. ¿Qué medida operativa propones?",
+    "contexto": "Clínica con red saturada por updates",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pasar todas las máquinas a modo avión"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar a cable coaxial"
+      },
+      {
+        "clave": "c",
+        "texto": "Configurar ventanas de mantenimiento y políticas de actualización fuera del horario crítico"
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar para siempre todas las actualizaciones"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Planificar ventanas de mantenimiento y políticas para ejecutar descargas/instalaciones fuera de horas críticas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Interrumpe toda la operativa."
+        },
+        {
+          "clave": "b",
+          "motivo": "No resuelve gestión de tráfico de actualizaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Inseguro; expone a vulnerabilidades."
+        }
+      ],
+      "resumen_didactico": "Las actualizaciones deben programarse y controlarse para no afectar productividad.",
+      "ejemplo_practico": "Horario activo 8–15h; updates nocturnos con WSUS/limitar ancho de banda.",
+      "conclusion_final": "Actualiza fuera de horas pico para equilibrio entre seguridad y disponibilidad."
+    }
+  },
+  {
+    "id": "UT2-Q11",
+    "tema": "Arquitectura por anillos",
+    "pregunta": "¿Qué capa de un sistema con anillos se comunica con hardware y abstrae dispositivos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Núcleo o kernel (con HAL)"
+      },
+      {
+        "clave": "b",
+        "texto": "Interfaz"
+      },
+      {
+        "clave": "c",
+        "texto": "Servicios de usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestor de ventanas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El kernel (anillo 0) coordina hardware y ofrece HAL como capa de abstracción.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es la GUI o CLI; no accede al hardware directo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Procesos de usuario dependen de llamadas al sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Parte de la GUI; no gestiona hardware."
+        }
+      ],
+      "resumen_didactico": "El kernel provee servicios y drivers con acceso privilegiado.",
+      "ejemplo_practico": "Imprimir: app → kernel/HAL → driver → dispositivo.",
+      "conclusion_final": "La abstracción hardware reside en el núcleo y su HAL."
+    }
+  },
+  {
+    "id": "UT2-Q12",
+    "tema": "Despliegue Windows",
+    "pregunta": "Estás creando una imagen de Windows 10 para despliegue masivo. ¿Qué herramienta específica facilita generar el archivo de respuestas?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Disk Cleanup"
+      },
+      {
+        "clave": "b",
+        "texto": "Windows System Image Manager (Windows SIM) dentro de Windows ADK"
+      },
+      {
+        "clave": "c",
+        "texto": "PowerToys"
+      },
+      {
+        "clave": "d",
+        "texto": "Paint 3D"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Windows SIM (ADK) genera autounattend.xml/unattend.xml para instalaciones desatendidas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo limpia temporales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Utilidades varias, no despliegue SO."
+        },
+        {
+          "clave": "d",
+          "motivo": "Edición gráfica; no despliegue."
+        }
+      ],
+      "resumen_didactico": "Automatiza instalaciones con archivos de respuesta XML.",
+      "ejemplo_practico": "Crear autounattend.xml con SIM e incluir clave, idioma, particionado.",
+      "conclusion_final": "Usa Windows SIM (ADK) para plantillas de instalación desatendida."
+    }
+  },
+  {
+    "id": "UT2-Q13",
+    "tema": "Instalación Windows",
+    "pregunta": "Al instalar Windows 10, ¿qué elección de tipo de instalación permite particionado manual y selección de destino?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Personalizada"
+      },
+      {
+        "clave": "b",
+        "texto": "Actualización"
+      },
+      {
+        "clave": "c",
+        "texto": "Reparación"
+      },
+      {
+        "clave": "d",
+        "texto": "Express"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La instalación personalizada permite elegir disco/particiones y formateo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Mantiene datos; no particiona."
+        },
+        {
+          "clave": "c",
+          "motivo": "Recupera/soluciona; no reinstala limpio con particionado."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un tipo de instalación."
+        }
+      ],
+      "resumen_didactico": "Para control de particiones se usa 'Personalizada'.",
+      "ejemplo_practico": "SSD nuevo: 'Personalizada' → crear particiones.",
+      "conclusion_final": "Elige 'Personalizada' para instalación limpia con control de disco."
+    }
+  },
+  {
+    "id": "UT2-Q14",
+    "tema": "Instalación Debian",
+    "pregunta": "En Debian, tras instalar, el equipo no arranca porque no encuentra sistema. ¿Qué paso del asistente revisarías?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Instalación del cargador GRUB en el disco correcto"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar proxy inválido"
+      },
+      {
+        "clave": "c",
+        "texto": "Desactivar la red"
+      },
+      {
+        "clave": "d",
+        "texto": "Crear usuario invitado"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "GRUB debe instalarse en el disco correcto para que el firmware encuentre el cargador.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Afecta a descargas, no al arranque."
+        },
+        {
+          "clave": "c",
+          "motivo": "Sin red aún arranca desde disco."
+        },
+        {
+          "clave": "d",
+          "motivo": "No influye en el arranque."
+        }
+      ],
+      "resumen_didactico": "El gestor de arranque es crítico para iniciar el SO.",
+      "ejemplo_practico": "Reinstalar GRUB en /dev/sda desde el medio de rescate.",
+      "conclusion_final": "Si no arranca, revisa instalación y destino de GRUB."
+    }
+  },
+  {
+    "id": "UT2-Q15",
+    "tema": "Planificación de CPU",
+    "pregunta": "¿Qué política de planificación prioriza interacción fluida del usuario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Orientada a E/S (respuesta rápida)"
+      },
+      {
+        "clave": "b",
+        "texto": "Round-robin sin prioridades"
+      },
+      {
+        "clave": "c",
+        "texto": "Tiempo real estricto en todo"
+      },
+      {
+        "clave": "d",
+        "texto": "Orientada al cálculo intensivo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La política orientada a E/S reduce latencia de interacción para una UI fluida.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Justa pero no prioriza interactividad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Enfocada a deadlines, no a experiencia de escritorio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Maximiza throughput de cómputo; no la respuesta de UI."
+        }
+      ],
+      "resumen_didactico": "Para escritorio se prioriza la entrada/salida percibida por el usuario.",
+      "ejemplo_practico": "Cursor fluido mientras se descarga/compila en segundo plano.",
+      "conclusion_final": "Interactividad = política orientada a E/S."
+    }
+  },
+  {
+    "id": "UT2-Q16",
+    "tema": "Dual boot UEFI",
+    "pregunta": "En una fábrica de Vigo necesitas tener Windows y Debian en el mismo equipo para pruebas. ¿Qué propuesta reduce riesgos de “pisarse” arranques?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Forzar MBR con cuatro primarias"
+      },
+      {
+        "clave": "b",
+        "texto": "Usar UEFI con particiones GPT separadas y verificar gestor de arranque"
+      },
+      {
+        "clave": "c",
+        "texto": "Instalar ambos con Secure Boot deshabilitado y sin ESP"
+      },
+      {
+        "clave": "d",
+        "texto": "Instalar en la misma partición NTFS"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "UEFI+GPT con particiones separadas y ESP permite coexistencia de cargadores (GRUB/Windows Boot Manager).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "MBR es limitado y más propenso a conflictos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Sin ESP no hay arranque UEFI correcto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Linux no se instala en NTFS; riesgo extremo."
+        }
+      ],
+      "resumen_didactico": "Separar particiones y usar ESP facilita dual boot estable.",
+      "ejemplo_practico": "Instalar Windows (UEFI) → instalar Debian agregando GRUB a la ESP.",
+      "conclusion_final": "UEFI+GPT con ESP y verificación del gestor evita conflictos."
+    }
+  },
+  {
+    "id": "UT2-Q17",
+    "tema": "Kernels híbridos",
+    "pregunta": "¿Qué describe correctamente un kernel híbrido actual?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Combina estructura modular estilo microkernel con partes monolíticas por rendimiento"
+      },
+      {
+        "clave": "b",
+        "texto": "No soporta multiproceso"
+      },
+      {
+        "clave": "c",
+        "texto": "Es puramente microkernel"
+      },
+      {
+        "clave": "d",
+        "texto": "No requiere drivers"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El kernel híbrido mezcla modularidad y servicios en usuario con componentes monolíticos críticos para rendimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Sí soporta multiproceso."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es puramente microkernel."
+        },
+        {
+          "clave": "d",
+          "motivo": "Siempre hay drivers; cambia dónde corren."
+        }
+      ],
+      "resumen_didactico": "Híbrido = equilibrio entre rendimiento y mantenibilidad.",
+      "ejemplo_practico": "Windows NT/macOS: servicios en usuario y núcleo con funciones críticas integradas.",
+      "conclusion_final": "Combina lo mejor de microkernel y monolítico."
+    }
+  },
+  {
+    "id": "UT2-Q18",
+    "tema": "Requisitos Debian",
+    "pregunta": "Quieres comprobar requisitos antes de instalar Debian con entorno gráfico. ¿Qué dato mínimo de disco marca la unidad?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "64 GB obligatorios"
+      },
+      {
+        "clave": "b",
+        "texto": "256 MB"
+      },
+      {
+        "clave": "c",
+        "texto": "10 GB para instalación con interfaz gráfica"
+      },
+      {
+        "clave": "d",
+        "texto": "1 GB"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Para escritorio con GUI, Debian requiere al menos ~10 GB (recomendado más).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Excesivo; no es requisito mínimo de Debian."
+        },
+        {
+          "clave": "b",
+          "motivo": "Insuficiente para sistema base actual."
+        },
+        {
+          "clave": "d",
+          "motivo": "Insuficiente para GUI."
+        }
+      ],
+      "resumen_didactico": "El entorno gráfico añade muchos paquetes; el disco debe dimensionarse.",
+      "ejemplo_practico": "Asignar 20–30 GB para un escritorio cómodo.",
+      "conclusion_final": "Planifica mínimo 10 GB para Debian con GUI."
+    }
+  },
+  {
+    "id": "UT2-Q19",
+    "tema": "Subsistema de E/S",
+    "pregunta": "¿Qué componente gestiona entradas/salidas coordinando con drivers y búferes?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Monitor de recursos"
+      },
+      {
+        "clave": "b",
+        "texto": "Gestor de ventanas"
+      },
+      {
+        "clave": "c",
+        "texto": "Planificador de CPU"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestor de E/S del sistema operativo"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El gestor de E/S coordina peticiones, colas y búferes con drivers de dispositivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo monitoriza, no gestiona."
+        },
+        {
+          "clave": "b",
+          "motivo": "Pertenece a la GUI."
+        },
+        {
+          "clave": "c",
+          "motivo": "Orienta CPU, no dispositivos de E/S."
+        }
+      ],
+      "resumen_didactico": "La E/S se desacopla mediante colas/búferes y controladores.",
+      "ejemplo_practico": "Cola de impresión que no bloquea la interfaz.",
+      "conclusion_final": "El gestor de E/S mantiene fluidez y orden en periféricos."
+    }
+  },
+  {
+    "id": "UT2-Q20",
+    "tema": "Buenas prácticas de actualización",
+    "pregunta": "En un call center de Sevilla, 40 equipos reciben parches al mismo tiempo y algunos fallan. ¿Qué práctica reduce impacto y acelera recuperación?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pilotar en anillo, mantener snapshots de VMs y programar reinicios escalonados"
+      },
+      {
+        "clave": "b",
+        "texto": "Deshabilitar el journaling"
+      },
+      {
+        "clave": "c",
+        "texto": "Ejecutar impresoras en modo seguro"
+      },
+      {
+        "clave": "d",
+        "texto": "Forzar reinicios aleatorios"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Despliegue por anillos, snapshots para rollback y reinicios escalonados mitigan riesgos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Compromete integridad de sistema de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Irrelevante para parches de SO."
+        },
+        {
+          "clave": "d",
+          "motivo": "Práctica caótica; aumenta el riesgo."
+        }
+      ],
+      "resumen_didactico": "Probar primero, poder revertir y evitar picos.",
+      "ejemplo_practico": "Grupo piloto de 5 equipos; si OK, expandir; snapshots antes de parchear.",
+      "conclusion_final": "Anillos + snapshots + reinicios escalonados = resiliencia."
+    }
+  },
+  {
+    "id": "UT2-Q21",
+    "tema": "Ediciones Windows Server",
+    "pregunta": "¿Qué edición de Windows Server se orienta a entornos muy virtualizados?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Home"
+      },
+      {
+        "clave": "b",
+        "texto": "Standard"
+      },
+      {
+        "clave": "c",
+        "texto": "Essentials"
+      },
+      {
+        "clave": "d",
+        "texto": "Datacenter"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Datacenter está diseñada para alta densidad de VMs y características avanzadas (clustering, SDN).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Edición doméstica; no es Server."
+        },
+        {
+          "clave": "b",
+          "motivo": "Virtualización limitada (2 VMs por licencia aprox.)."
+        },
+        {
+          "clave": "c",
+          "motivo": "Para microempresas; no para alta virtualización."
+        }
+      ],
+      "resumen_didactico": "La edición se elige por necesidades de virtualización/escalabilidad.",
+      "ejemplo_practico": "Host con decenas de VMs: Windows Server Datacenter.",
+      "conclusion_final": "Para entornos muy virtualizados, elige Datacenter."
+    }
+  },
+  {
+    "id": "UT2-Q22",
+    "tema": "Instalación desatendida Debian",
+    "pregunta": "En un laboratorio, vas a automatizar la instalación de Debian definiendo un archivo de respuestas para que el asistente no pida datos en cada paso. ¿Qué método corresponde a Debian para crear ese archivo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Preseed editado"
+      },
+      {
+        "clave": "b",
+        "texto": "Kickstart"
+      },
+      {
+        "clave": "c",
+        "texto": "Sysprep"
+      },
+      {
+        "clave": "d",
+        "texto": "Autounattend.xml"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Debian usa Preseed (preseed.cfg) para responder al instalador de forma automática.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Método de Red Hat/Fedora/CentOS."
+        },
+        {
+          "clave": "c",
+          "motivo": "Herramienta de preparación de imágenes de Windows."
+        },
+        {
+          "clave": "d",
+          "motivo": "Archivo de respuesta de Windows."
+        }
+      ],
+      "resumen_didactico": "Cada familia de SO tiene su propio método de automatización.",
+      "ejemplo_practico": "Arrancar con 'auto url=http://server/preseed.cfg'.",
+      "conclusion_final": "Para Debian, automatiza con Preseed."
+    }
+  },
+  {
+    "id": "UT2-Q23",
+    "tema": "Arranque múltiple Windows",
+    "pregunta": "En Windows, ¿dónde puedes gestionar el arranque múltiple y opciones de inicio gráficamente?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Registro HKLM\\Run"
+      },
+      {
+        "clave": "b",
+        "texto": "msconfig (pestaña Arranque) respaldado por BCD"
+      },
+      {
+        "clave": "c",
+        "texto": "Editor de Directivas locales"
+      },
+      {
+        "clave": "d",
+        "texto": "Panel de sonido"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "MSCONFIG (Arranque) permite gestionar entradas; los cambios se guardan en el BCD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Controla programas al iniciar sesión, no el arranque."
+        },
+        {
+          "clave": "c",
+          "motivo": "Configura políticas, no BCD/arranque múltiple."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sin relación con arranque."
+        }
+      ],
+      "resumen_didactico": "Interfaz gráfica = msconfig; bajo nivel = bcdedit.",
+      "ejemplo_practico": "Cambiar SO predeterminado y tiempo de menú en msconfig.",
+      "conclusion_final": "Usa msconfig (Arranque) respaldado por BCD para gestionar multiboot."
+    }
+  },
+  {
+    "id": "UT2-Q24",
+    "tema": "Particionado Windows UEFI",
+    "pregunta": "En un portátil UEFI con Windows 10, ¿qué conjunto de particiones esperas tras instalación limpia?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ESP, MSR, partición de Windows y partición de recuperación"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo C:"
+      },
+      {
+        "clave": "c",
+        "texto": "Dos primarias y una extendida"
+      },
+      {
+        "clave": "d",
+        "texto": "Una lógica y una OEM sin ESP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En UEFI+GPT Windows crea ESP, MSR, partición del sistema y recuperación (WinRE).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No en UEFI; faltan ESP/MSR/Recuperación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Modelo MBR; no aplica a GPT."
+        },
+        {
+          "clave": "d",
+          "motivo": "UEFI requiere ESP para arrancar."
+        }
+      ],
+      "resumen_didactico": "UEFI+GPT requiere particiones especiales además de C:.",
+      "ejemplo_practico": "Ver en Administrador de discos: ESP~100-300MB, MSR~16MB, C:, Recovery~500MB.",
+      "conclusion_final": "Estructura estándar UEFI: ESP+MSR+Windows+Recuperación."
+    }
+  },
+  {
+    "id": "UT2-Q25",
+    "tema": "Distribuciones servidor",
+    "pregunta": "En una empresa de hosting en Sevilla buscan sistemas operativos estables y con soporte empresarial para sus servidores. ¿Qué distribuciones de GNU/Linux serían las más adecuadas en este caso?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Tails y Manjaro"
+      },
+      {
+        "clave": "b",
+        "texto": "RHEL, Ubuntu Server, Debian, SLES"
+      },
+      {
+        "clave": "c",
+        "texto": "Haiku y ReactOS"
+      },
+      {
+        "clave": "d",
+        "texto": "Android y iPadOS"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "RHEL, SLES, Ubuntu Server (LTS) y Debian son estándar en servidores por estabilidad y soporte.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Orientadas a privacidad/desktop, no hosting empresarial."
+        },
+        {
+          "clave": "c",
+          "motivo": "Proyectos no orientados a producción en hosting."
+        },
+        {
+          "clave": "d",
+          "motivo": "SO móviles, no de servidor."
+        }
+      ],
+      "resumen_didactico": "En hosting importa estabilidad, ciclo LTS y soporte.",
+      "ejemplo_practico": "RHEL/SLES con soporte comercial; Debian/Ubuntu LTS con comunidad/canonical.",
+      "conclusion_final": "Elige distribuciones con soporte y estabilidad probada."
+    }
+  },
+  {
+    "id": "UT2-Q26",
+    "tema": "Reinstalación Windows",
+    "pregunta": "En una asesoría, necesitas reinstalar Windows 10 sin perder tiempo reconfigurando apps. ¿Qué paso previo es recomendable?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Deshabilitar Hyper-V"
+      },
+      {
+        "clave": "b",
+        "texto": "Hacer copia de seguridad con CloneApp"
+      },
+      {
+        "clave": "c",
+        "texto": "Desactivar UAC"
+      },
+      {
+        "clave": "d",
+        "texto": "Quitar Secure Boot"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "CloneApp guarda configuraciones de aplicaciones para restaurarlas tras reinstalar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Irrelevante para reinstalación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Riesgoso e innecesario."
+        },
+        {
+          "clave": "d",
+          "motivo": "No hace falta para reinstalar y no preserva ajustes."
+        }
+      ],
+      "resumen_didactico": "Respaldar datos y ajustes acelera la vuelta a la normalidad.",
+      "ejemplo_practico": "Exportar settings con CloneApp a un USB y restaurar después.",
+      "conclusion_final": "Antes de reinstalar, respalda configuraciones de las apps."
+    }
+  },
+  {
+    "id": "UT2-Q27",
+    "tema": "Asistente Windows (primeros pasos)",
+    "pregunta": "¿Qué acción inicial en el asistente de Windows define idioma, formato y teclado antes de instalar?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Elegir parámetros regionales y pulsar “Instalar ahora”"
+      },
+      {
+        "clave": "b",
+        "texto": "Crear usuario local"
+      },
+      {
+        "clave": "c",
+        "texto": "Activar Cortana"
+      },
+      {
+        "clave": "d",
+        "texto": "Conectar a dominio"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El primer paso es definir idioma, formato y teclado; luego 'Instalar ahora'.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Se crea más adelante."
+        },
+        {
+          "clave": "c",
+          "motivo": "Se configura tras la instalación (OOBE)."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se realiza en fases posteriores/ediciones Pro/Enterprise."
+        }
+      ],
+      "resumen_didactico": "Los parámetros regionales condicionan idioma y formatos del sistema.",
+      "ejemplo_practico": "Seleccionar Español (España), formato ES y teclado ES antes de instalar.",
+      "conclusion_final": "Primero región/teclado; después iniciar instalación."
+    }
+  },
+  {
+    "id": "UT2-Q28",
+    "tema": "Particionado Debian (guiado)",
+    "pregunta": "Durante la instalación de Debian eliges “Todos los ficheros en la misma partición”. ¿Qué implica?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "RAID 1 automático"
+      },
+      {
+        "clave": "b",
+        "texto": "ESP adicional en MBR"
+      },
+      {
+        "clave": "c",
+        "texto": "/home separado"
+      },
+      {
+        "clave": "d",
+        "texto": "Estructura simple: directorios del sistema en una única partición"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Crea una única partición raíz '/' (más swap si aplica) con todo el sistema y usuarios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "RAID no se activa automáticamente con esa opción."
+        },
+        {
+          "clave": "b",
+          "motivo": "ESP es de UEFI/GPT; MBR no la usa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Justo lo contrario: /home no se separa."
+        }
+      ],
+      "resumen_didactico": "Partición única simplifica admin pero reduce flexibilidad.",
+      "ejemplo_practico": "Instalación rápida para equipos personales o aulas.",
+      "conclusion_final": "Opción básica: todo en '/'; menos complejidad."
+    }
+  },
+  {
+    "id": "UT2-Q29",
+    "tema": "Riesgos de actualización en producción",
+    "pregunta": "En una pyme tecnológica de Madrid, el responsable de sistemas debe aplicar actualizaciones críticas en pleno horario laboral. ¿Qué riesgos operativos podrían presentarse al hacerlo directamente en producción?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pérdida garantizada de licencias"
+      },
+      {
+        "clave": "b",
+        "texto": "Eliminación de la partición de recuperación"
+      },
+      {
+        "clave": "c",
+        "texto": "Incompatibilidades de hardware/software y consumo de ancho de banda"
+      },
+      {
+        "clave": "d",
+        "texto": "Desaparición del BCD"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Actualizar sin plan puede causar incompatibilidades (drivers/apps), saturar la red y requerir reinicios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es un efecto típico de parches."
+        },
+        {
+          "clave": "b",
+          "motivo": "No ocurre en actualizaciones normales."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es riesgo común en parches estándar."
+        }
+      ],
+      "resumen_didactico": "Probar en piloto y planificar ventanas evita interrupciones.",
+      "ejemplo_practico": "WSUS/repo local + anillos + banda limitada durante horario laboral.",
+      "conclusion_final": "Evita parches directos en producción sin pruebas previas."
+    }
+  },
+  {
+    "id": "UT2-Q30",
+    "tema": "VirtualBox – revertir cambios",
+    "pregunta": "En un laboratorio con VirtualBox necesitas volver atrás tras una prueba fallida en el invitado. ¿Qué mecanismo usas?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Instantáneas (snapshots) del invitado"
+      },
+      {
+        "clave": "b",
+        "texto": "Sysinternals ZoomIt"
+      },
+      {
+        "clave": "c",
+        "texto": "Restauración de registro"
+      },
+      {
+        "clave": "d",
+        "texto": "Hibernación del host"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las instantáneas guardan el estado de la VM y permiten revertir rápidamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Herramienta de presentaciones; no virtualización."
+        },
+        {
+          "clave": "c",
+          "motivo": "Solo cubre parte de Windows; no estado completo de VM."
+        },
+        {
+          "clave": "d",
+          "motivo": "No crea puntos de restauración de VMs."
+        }
+      ],
+      "resumen_didactico": "Crear snapshot antes de pruebas arriesgadas acelera rollback.",
+      "ejemplo_practico": "Snapshot 'pre-update'; si falla, revertir a esa instantánea.",
+      "conclusion_final": "Para volver atrás en VMs, usa snapshots."
+    }
+  }
+]
