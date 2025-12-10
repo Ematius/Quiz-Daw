@@ -8,10 +8,12 @@ import UT4_quiz from "../data/sistemas/UT4_quiz.json";
 import UT5_quiz from "../data/sistemas/UT5_quiz.json";
 import UT6_quiz from "../data/sistemas/UT6_quiz.json";
 import UT7_quiz from "../data/sistemas/UT7_quiz.json";
+import UT8_quiz from "../data/sistemas/UT8_quiz.json";
 import { useState } from "react";
 import { QuizQuestion } from "../Components/QuizQuestion";
 import { QuizProgress } from "../Components/QuizProgress";
 import "./Quiz.scss";
+
 
 const QUIZ = {
   UT1: UT1_quiz,
@@ -21,7 +23,10 @@ const QUIZ = {
   UT5: UT5_quiz,
   UT6: UT6_quiz,
   UT7: UT7_quiz,
+  UT8: UT8_quiz,
 };
+
+
 
 export function Quiz() {
   const { moduloId, topicId } = useParams();

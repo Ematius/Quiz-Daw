@@ -1,0 +1,1279 @@
+[
+  {
+    "id": "UT8-Q01",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué comando permite verificar la conectividad paso a paso hasta un servidor remoto?",
+    "contexto": "Un técnico quiere identificar en qué tramo de la red se produce la pérdida de paquetes.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "traceroute / tracert" },
+      { "clave": "b", "texto": "ping" },
+      { "clave": "c", "texto": "arp -a" },
+      { "clave": "d", "texto": "nslookup" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "traceroute/tracert muestra cada salto intermedio hasta el destino, permitiendo localizar en qué tramo de la ruta se pierden los paquetes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "ping solo comprueba conectividad punto a punto mediante eco ICMP, pero no detalla los saltos intermedios."
+        },
+        {
+          "clave": "c",
+          "motivo": "arp -a muestra la tabla ARP local (asociación IP–MAC) y no la ruta hacia un servidor remoto."
+        },
+        {
+          "clave": "d",
+          "motivo": "nslookup se utiliza para consultar servidores DNS y resolver nombres de dominio, no para analizar la ruta de red."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q02",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué malware se propaga aprovechando vulnerabilidades de red sin intervención del usuario?",
+    "contexto": "Se analiza un brote de malware que se extiende rápidamente por toda la red.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Troyano" },
+      { "clave": "b", "texto": "Gusano" },
+      { "clave": "c", "texto": "Spyware" },
+      { "clave": "d", "texto": "Rootkit" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Los gusanos (worms) se propagan automáticamente explotando vulnerabilidades de red, sin necesidad de acción por parte del usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El troyano requiere que el usuario lo ejecute pensando que es un programa legítimo; no se replica solo por la red."
+        },
+        {
+          "clave": "c",
+          "motivo": "El spyware está orientado a espiar y registrar información del usuario, pero no se caracteriza por su auto-propagación masiva."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un rootkit se centra en ocultar la presencia de malware en el sistema, no en propagarse automáticamente por la red."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q03",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué herramienta gráfica permite limpiar historiales de navegación y archivos temporales en Linux?",
+    "contexto": "Una clínica desea mantener la privacidad de sus equipos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "BleachBit" },
+      { "clave": "b", "texto": "htop" },
+      { "clave": "c", "texto": "gparted" },
+      { "clave": "d", "texto": "dconf" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "BleachBit es una herramienta de limpieza que borra archivos temporales, cookies, caché y otros rastros de actividad, ayudando a proteger la privacidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "htop es un monitor de procesos interactivo, no una herramienta de limpieza de historiales y temporales."
+        },
+        {
+          "clave": "c",
+          "motivo": "gparted se utiliza para gestionar particiones de disco, no para limpiar rastros de navegación."
+        },
+        {
+          "clave": "d",
+          "motivo": "dconf se usa para gestionar configuraciones internas del escritorio, no para eliminar archivos temporales o historiales."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q04",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué comando en Linux muestra la memoria RAM libre y usada?",
+    "contexto": "Un técnico analiza el rendimiento del sistema.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "free -m" },
+      { "clave": "b", "texto": "df -h" },
+      { "clave": "c", "texto": "ip addr" },
+      { "clave": "d", "texto": "uname -a" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El comando free -m muestra un resumen de la memoria total, usada, libre y de buffers/caché, expresada en megabytes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "df -h muestra el uso de espacio en disco, no el uso de memoria RAM."
+        },
+        {
+          "clave": "c",
+          "motivo": "ip addr se utiliza para mostrar y configurar interfaces de red, no para ver estadísticas de memoria."
+        },
+        {
+          "clave": "d",
+          "motivo": "uname -a muestra información del kernel y del sistema operativo, no del uso de RAM."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q05",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué herramienta de Windows permite crear un volumen reflejado mediante interfaz gráfica?",
+    "contexto": "Un técnico necesita redundancia sencilla sin usar comandos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Administración de discos" },
+      { "clave": "b", "texto": "Administrador de dispositivos" },
+      { "clave": "c", "texto": "Panel de control" },
+      { "clave": "d", "texto": "NTFS Wizard" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La consola de Administración de discos de Windows permite crear volúmenes reflejados (RAID 1) y otros tipos de volúmenes desde una interfaz gráfica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El Administrador de dispositivos gestiona controladores de hardware, pero no crea volúmenes reflejados."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Panel de control agrupa muchas herramientas, pero la creación de volúmenes se hace concretamente en Administración de discos."
+        },
+        {
+          "clave": "d",
+          "motivo": "NTFS Wizard no es una herramienta estándar de Windows para la gestión de volúmenes reflejados."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q06",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué opción del Panel de Control permite agregar una impresora compartida?",
+    "contexto": "Un empleado debe conectarse a una impresora de red.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Dispositivos e impresoras" },
+      { "clave": "b", "texto": "Firewall de Windows" },
+      { "clave": "c", "texto": "Opciones de energía" },
+      { "clave": "d", "texto": "Centro de sincronización" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La sección Dispositivos e impresoras del Panel de Control es donde se agregan, configuran y gestionan las impresoras, incluidas las compartidas en red.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El Firewall de Windows controla el tráfico de red, pero no se utiliza para agregar impresoras."
+        },
+        {
+          "clave": "c",
+          "motivo": "Opciones de energía gestiona planes de ahorro de energía, no dispositivos de impresión."
+        },
+        {
+          "clave": "d",
+          "motivo": "El Centro de sincronización está orientado a archivos sin conexión y sincronización, no a configuración de impresoras."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q07",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué característica define la comunicación asíncrona en mensajería instantánea?",
+    "contexto": "Se estudian distintos modelos de comunicación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los mensajes se reciben aunque el destinatario no esté conectado"
+      },
+      { "clave": "b", "texto": "Requiere simultaneidad absoluta" },
+      { "clave": "c", "texto": "Se borra el historial al enviar" },
+      { "clave": "d", "texto": "Solo puede incluir voz" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La comunicación asíncrona no exige que emisor y receptor estén conectados al mismo tiempo; los mensajes pueden recibirse más tarde.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La simultaneidad absoluta corresponde a comunicación síncrona, como una llamada en tiempo real."
+        },
+        {
+          "clave": "c",
+          "motivo": "La asíncronía no implica borrar el historial; de hecho, los mensajes suelen quedar guardados."
+        },
+        {
+          "clave": "d",
+          "motivo": "La comunicación asíncrona puede incluir texto, voz, vídeo o adjuntos, no solo voz."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q08",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué riesgo aumenta cuando los clientes acceden sin autenticación a una red Wi-Fi abierta?",
+    "contexto": "Un cibercafé ofrece red sin contraseña.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Sniffing y robo de información" },
+      { "clave": "b", "texto": "Mayor cobertura Wi-Fi" },
+      { "clave": "c", "texto": "Red más rápida" },
+      { "clave": "d", "texto": "Impresión automática" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En una red Wi-Fi abierta sin autenticación, es fácil capturar tráfico no cifrado (sniffing) y robar credenciales o datos sensibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La cobertura depende del hardware y la potencia del punto de acceso, no de la autenticación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una red abierta suele ser más insegura y además puede saturarse, lo que incluso puede ralentizarla."
+        },
+        {
+          "clave": "d",
+          "motivo": "No tiene relación directa el acceso sin contraseña con la impresión automática en red."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q09",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué identificador único usa Windows para distinguir usuarios, grupos y equipos?",
+    "contexto": "Se administran permisos en una red corporativa.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "SID" },
+      { "clave": "b", "texto": "UID" },
+      { "clave": "c", "texto": "RID" },
+      { "clave": "d", "texto": "GID" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Windows utiliza el SID (Security Identifier) como identificador único para usuarios, grupos y equipos, y lo usa en permisos y tokens de seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UID es el identificador de usuario típico de sistemas Unix/Linux, no de Windows."
+        },
+        {
+          "clave": "c",
+          "motivo": "El RID es solo la parte final del SID, pero el identificador completo que se utiliza es el SID."
+        },
+        {
+          "clave": "d",
+          "motivo": "GID es el identificador de grupo en sistemas Unix/Linux, no el identificador de seguridad en Windows."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q10",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué variable del sistema en Linux define permisos predeterminados más restrictivos al crear archivos?",
+    "contexto": "Un administrador desea endurecer políticas de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "umask" },
+      { "clave": "b", "texto": "chmod" },
+      { "clave": "c", "texto": "export" },
+      { "clave": "d", "texto": "bashrc" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La variable umask define la máscara de permisos que se resta a los permisos por defecto al crear archivos y directorios, haciéndolos más o menos restrictivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "chmod se utiliza para cambiar permisos de archivos ya existentes, no para definir permisos por defecto al crearlos."
+        },
+        {
+          "clave": "c",
+          "motivo": "export sirve para exportar variables de entorno, no para fijar la máscara de permisos por defecto."
+        },
+        {
+          "clave": "d",
+          "motivo": "~/.bashrc es un archivo de configuración del shell, pero por sí solo no define la máscara de creación de archivos (aunque puede usarse para configurar la umask)."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q11",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué archivo de Linux define variables globales cargadas al inicio de sesión de todos los usuarios?",
+    "contexto": "Se desea configurar variables comunes del sistema.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "/etc/profile" },
+      { "clave": "b", "texto": "~/.bashrc" },
+      { "clave": "c", "texto": "/etc/passwd" },
+      { "clave": "d", "texto": "/etc/resolv.conf" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "/etc/profile es un archivo de configuración global que se ejecuta al iniciar sesión y define variables de entorno y ajustes para todos los usuarios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "~/.bashrc es un archivo de configuración local que solo afecta al usuario propietario, no a todo el sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "/etc/passwd contiene información de cuentas de usuario, pero no define variables de entorno globales."
+        },
+        {
+          "clave": "d",
+          "motivo": "/etc/resolv.conf almacena la configuración de DNS, no variables de entorno generales del sistema."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q12",
+    "tema": "Examen Final",
+    "pregunta": "¿Cuál es una ventaja clave de GPT frente a MBR?",
+    "contexto": "Se va a particionar un disco de más de 2 TB.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Soporta discos mayores de 2 TB" },
+      { "clave": "b", "texto": "Es compatible con DOS" },
+      { "clave": "c", "texto": "Solo usa 1 partición" },
+      { "clave": "d", "texto": "No requiere firmware" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La tabla de particiones GPT elimina la limitación de 2 TB de MBR, permitiendo gestionar discos de gran capacidad y más particiones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La compatibilidad con DOS es propia de MBR; GPT está pensada para sistemas modernos con UEFI."
+        },
+        {
+          "clave": "c",
+          "motivo": "GPT permite muchas más particiones que MBR, no se limita a una sola."
+        },
+        {
+          "clave": "d",
+          "motivo": "GPT se usa habitualmente junto con firmware UEFI; no es correcto decir que no requiera firmware."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q13",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué edición de Windows Server está orientada a entornos altamente virtualizados?",
+    "contexto": "Una empresa requiere muchas máquinas virtuales por host.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Datacenter" },
+      { "clave": "b", "texto": "Essentials" },
+      { "clave": "c", "texto": "Standard" },
+      { "clave": "d", "texto": "Foundation" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La edición Datacenter de Windows Server está diseñada para entornos con alta densidad de virtualización, permitiendo instancias virtuales prácticamente ilimitadas por host.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Essentials está pensada para pequeñas empresas con necesidades reducidas de virtualización."
+        },
+        {
+          "clave": "c",
+          "motivo": "Standard permite algunas máquinas virtuales, pero no está pensada para una virtualización masiva como Datacenter."
+        },
+        {
+          "clave": "d",
+          "motivo": "Foundation orienta a entornos muy básicos y limitados, no a escenarios de virtualización intensiva."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q14",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué tecnología permite ejecutar varios sistemas operativos en una misma máquina física aislando fallos entre ellos?",
+    "contexto": "Un laboratorio de pruebas necesita múltiples entornos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Virtualización" },
+      { "clave": "b", "texto": "Dual-boot" },
+      { "clave": "c", "texto": "SSH" },
+      { "clave": "d", "texto": "NAS" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La virtualización permite ejecutar varias máquinas virtuales con distintos sistemas operativos sobre un mismo hardware físico, aislando sus fallos y recursos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El dual-boot permite elegir entre sistemas al arrancar, pero no ejecutarlos simultáneamente ni aislarlos como máquinas virtuales."
+        },
+        {
+          "clave": "c",
+          "motivo": "SSH es un protocolo de acceso remoto seguro, no una tecnología para ejecutar múltiples sistemas operativos en una misma máquina."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un NAS es un dispositivo de almacenamiento en red, no una tecnología de ejecución de sistemas operativos aislados."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q15",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué función del sistema operativo evita conflictos al asignar CPU a programas?",
+    "contexto": "Un equipo muestra ralentizaciones por múltiples procesos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Gestión de procesos" },
+      { "clave": "b", "texto": "Gestión de ventanas" },
+      { "clave": "c", "texto": "Gestión de memoria" },
+      { "clave": "d", "texto": "Gestión de usuario" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La gestión de procesos incluye la planificación de la CPU, repartiendo el tiempo de procesador entre tareas para evitar bloqueos y conflictos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La gestión de ventanas se encarga de la interfaz gráfica, no de asignar tiempo de CPU a los procesos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La gestión de memoria se ocupa de la RAM y el espacio de direcciones, no de la planificación directa de CPU."
+        },
+        {
+          "clave": "d",
+          "motivo": "La gestión de usuario abarca cuentas y permisos, pero no el reparto de CPU entre procesos."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q16",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué define mejor el software de aplicación?",
+    "contexto": "Se están clasificando tipos de software.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Programas orientados a tareas del usuario" },
+      { "clave": "b", "texto": "Funciones internas del SO" },
+      { "clave": "c", "texto": "Controladores de hardware" },
+      { "clave": "d", "texto": "Firmware del dispositivo" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El software de aplicación está diseñado para que el usuario realice tareas concretas (ofimática, diseño, gestión, etc.) sobre el sistema operativo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las funciones internas del sistema operativo pertenecen al software de sistema, no al de aplicación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los controladores de hardware (drivers) forman parte del software de sistema para gestionar dispositivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El firmware es software embebido en el propio dispositivo, no aplicaciones que el usuario ejecuta directamente."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q17",
+    "tema": "Examen Final",
+    "pregunta": "Si un PC con SSD y 8 GB empieza a usar excesivamente disco al abrir muchas apps, ¿qué mejora el rendimiento con bajo coste?",
+    "contexto": "Se quiere reducir el uso de memoria virtual.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Aumentar la RAM" },
+      { "clave": "b", "texto": "Cambiar la GPU" },
+      { "clave": "c", "texto": "Usar un HDD" },
+      { "clave": "d", "texto": "Desactivar la caché" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Al añadir más RAM, el sistema depende menos de la memoria virtual en disco y reduce los accesos al SSD, mejorando la fluidez al abrir muchas aplicaciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Cambiar la GPU no soluciona el problema de falta de RAM cuando el cuello de botella está en la memoria principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "Usar un HDD en lugar de SSD empeoraría los tiempos de acceso y el rendimiento general."
+        },
+        {
+          "clave": "d",
+          "motivo": "Desactivar la caché no reduce el uso de memoria virtual y puede perjudicar el rendimiento del sistema."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q18",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué herramienta centraliza la visualización y actualización de controladores en Windows?",
+    "contexto": "Un técnico necesita revisar el estado del hardware.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Administrador de dispositivos" },
+      { "clave": "b", "texto": "Centro de control" },
+      { "clave": "c", "texto": "Panel de redes" },
+      { "clave": "d", "texto": "CMD" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El Administrador de dispositivos muestra el hardware instalado y los controladores asociados, permitiendo actualizar, deshabilitar o desinstalar drivers.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No existe como tal un 'Centro de control' estándar en Windows para gestionar controladores."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Panel de redes se centra en la configuración de adaptadores y conexiones, no en todos los drivers del sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "CMD es la consola de comandos; desde ella pueden lanzarse utilidades, pero no centraliza la gestión de controladores."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q19",
+    "tema": "Examen Final",
+    "pregunta": "¿Dónde se activan o desactivan características de Windows además de desinstalar programas?",
+    "contexto": "Un usuario debe habilitar Hyper-V.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Programas y características" },
+      { "clave": "b", "texto": "Firewall" },
+      { "clave": "c", "texto": "Opciones de accesibilidad" },
+      { "clave": "d", "texto": "Windows Update" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En 'Programas y características' se pueden desinstalar programas y también activar o desactivar características de Windows como Hyper-V.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El Firewall gestiona reglas de red, no la activación de características del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las Opciones de accesibilidad ajustan la experiencia de uso, pero no gestionan características como Hyper-V."
+        },
+        {
+          "clave": "d",
+          "motivo": "Windows Update se ocupa de actualizaciones, no de habilitar módulos opcionales de Windows."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q20",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué herramienta gráfica puede usarse en Debian para gestionar paquetes .deb visualmente?",
+    "contexto": "Un cliente no domina la terminal.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "GDebi" },
+      { "clave": "b", "texto": "nano" },
+      { "clave": "c", "texto": "top" },
+      { "clave": "d", "texto": "systemctl" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "GDebi es una herramienta gráfica que permite instalar paquetes .deb en sistemas basados en Debian de forma sencilla.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "nano es un editor de texto en terminal, no un gestor gráfico de paquetes."
+        },
+        {
+          "clave": "c",
+          "motivo": "top sirve para monitorizar procesos en tiempo real, no para gestionar paquetes .deb."
+        },
+        {
+          "clave": "d",
+          "motivo": "systemctl administra servicios del sistema (systemd), no la instalación de paquetes."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q21",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué componente de la placa coordina el tráfico entre CPU, RAM y dispositivos?",
+    "contexto": "Se estudian elementos de hardware.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Chipset" },
+      { "clave": "b", "texto": "Fuente" },
+      { "clave": "c", "texto": "BIOS" },
+      { "clave": "d", "texto": "Cooler" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El chipset de la placa base se encarga de coordinar la comunicación entre la CPU, la memoria RAM y los dispositivos de entrada/salida.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La fuente alimenta el hardware con energía eléctrica, pero no coordina el tráfico de datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La BIOS/UEFI inicializa el hardware y arranca el sistema, pero la coordinación de tráfico continuo recae en el chipset."
+        },
+        {
+          "clave": "d",
+          "motivo": "El cooler solo se encarga de la refrigeración, no de la comunicación entre componentes."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q22",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué sistema operativo de Apple gestiona ordenadores portátiles y de sobremesa?",
+    "contexto": "Se comparan distintos ecosistemas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "macOS" },
+      { "clave": "b", "texto": "iOS" },
+      { "clave": "c", "texto": "watchOS" },
+      { "clave": "d", "texto": "tvOS" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "macOS es el sistema operativo de escritorio de Apple, utilizado en ordenadores portátiles y de sobremesa como MacBook y iMac.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "iOS está diseñado para dispositivos móviles como iPhone y iPad (ahora iPadOS)."
+        },
+        {
+          "clave": "c",
+          "motivo": "watchOS es el sistema operativo de los Apple Watch."
+        },
+        {
+          "clave": "d",
+          "motivo": "tvOS está pensado para el Apple TV, no para ordenadores."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q23",
+    "tema": "Examen Final",
+    "pregunta": "En un taller de Valencia, un PC no arranca y emite tres pitidos cortos. ¿Qué se revisa primero?",
+    "contexto": "Los pitidos indican fallos hardware.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Memoria RAM" },
+      { "clave": "b", "texto": "Fuente de alimentación" },
+      { "clave": "c", "texto": "Sistema operativo" },
+      { "clave": "d", "texto": "Disco duro" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Los códigos de pitidos al arrancar que indican tres pitidos cortos suelen asociarse a errores en la memoria RAM, por lo que es el primer componente a revisar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Si la fuente fallara gravemente, el equipo probablemente ni siquiera encendería o se apagaría de inmediato, no emitiría un código de pitidos típico de RAM."
+        },
+        {
+          "clave": "c",
+          "motivo": "El sistema operativo aún no ha cargado cuando suenan los pitidos; el problema es de hardware previo al arranque del SO."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un fallo de disco duro suele mostrar mensajes de error posteriores, no guiarse por un patrón típico de pitidos de RAM."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q24",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué regla de copias de seguridad recomienda mantener 3 copias, en 2 soportes distintos y 1 fuera del sitio?",
+    "contexto": "Se diseña un plan de backup.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Regla 3-2-1" },
+      { "clave": "b", "texto": "Regla 1-1-1" },
+      { "clave": "c", "texto": "Backup circular" },
+      { "clave": "d", "texto": "Rotación incremental" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La regla 3-2-1 establece tener 3 copias de los datos, en 2 tipos de soporte diferentes y 1 de ellas fuera del lugar principal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La supuesta 'regla 1-1-1' no corresponde a un estándar de copias de seguridad reconocido."
+        },
+        {
+          "clave": "c",
+          "motivo": "El backup circular describe una rotación de soportes, pero no la estructura 3-2-1 de copias y ubicaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "La rotación incremental se refiere a la estrategia de copias (incrementales), no a la regla de cuántas copias y dónde guardarlas."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q25",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué tipo de copia guarda todos los datos en cada ejecución?",
+    "contexto": "Se comparan estrategias de respaldo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Copia completa" },
+      { "clave": "b", "texto": "Incremental" },
+      { "clave": "c", "texto": "Diferencial" },
+      { "clave": "d", "texto": "Instantánea" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La copia completa (total) copia todos los datos seleccionados cada vez que se ejecuta, sin depender de copias anteriores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La copia incremental solo copia los cambios desde la última copia (completa o incremental)."
+        },
+        {
+          "clave": "c",
+          "motivo": "La copia diferencial copia lo modificado desde la última copia completa, no todos los datos cada vez."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una instantánea (snapshot) captura el estado en un momento, pero no se suele definir como 'copia completa' en el contexto clásico de backup."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q26",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué tipo de copia incluye los cambios realizados desde la última copia completa?",
+    "contexto": "Comparación entre backups diferenciales e incrementales.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diferencial" },
+      { "clave": "b", "texto": "Incremental" },
+      { "clave": "c", "texto": "Completa" },
+      { "clave": "d", "texto": "Mixta" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La copia diferencial copia todos los cambios ocurridos desde la última copia completa, acumulando modificaciones hasta que se haga otra completa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La incremental se basa en la última copia (sea completa o incremental), no exclusivamente en la última completa."
+        },
+        {
+          "clave": "c",
+          "motivo": "La completa copia todos los datos, no solo los cambios desde otra copia."
+        },
+        {
+          "clave": "d",
+          "motivo": "El término 'mixta' no describe un tipo estándar concreto de copia en este contexto."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q27",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué pasos son necesarios para restaurar un sistema usando copias incrementales?",
+    "contexto": "Un servidor sufrió corrupción de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Restaurar la completa y luego todas las incrementales en orden"
+      },
+      { "clave": "b", "texto": "Solo restaurar la última incremental" },
+      { "clave": "c", "texto": "Restaurar cualquier copia aleatoria" },
+      { "clave": "d", "texto": "Restaurar la incremental más antigua" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Para restaurar con copias incrementales, primero se restaura la copia completa y luego todas las copias incrementales en orden cronológico.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Solo la última incremental no incluye los cambios intermedios desde la copia completa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Restaurar una copia aleatoria deja el sistema incoherente; se requiere un orden estricto."
+        },
+        {
+          "clave": "d",
+          "motivo": "La incremental más antigua no contiene los cambios posteriores necesarios para un estado actualizado."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q28",
+    "tema": "Examen Final",
+    "pregunta": "Una empresa teme un ataque DoS contra su web. ¿Qué papel desempeña un firewall?",
+    "contexto": "Se evalúan medidas de protección perimetral.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Filtrar tráfico no deseado" },
+      { "clave": "b", "texto": "Aumentar la velocidad de Internet" },
+      { "clave": "c", "texto": "Eliminar virus locales" },
+      { "clave": "d", "texto": "Formatear discos automáticamente" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Un firewall puede mitigar ataques de denegación de servicio filtrando tráfico sospechoso, limitando conexiones y bloqueando patrones anómalos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El firewall no aumenta la velocidad de la conexión; su función es filtrar y proteger, no acelerar."
+        },
+        {
+          "clave": "c",
+          "motivo": "La eliminación de virus la realiza software antimalware, no el firewall de red."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un firewall no formatea discos; su ámbito es el tráfico de red, no la gestión del almacenamiento local."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q29",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué RAID ofrece tolerancia a fallo con mínimo 3 discos y buen equilibrio entre capacidad y seguridad?",
+    "contexto": "Una clínica necesita disponibilidad continua.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "RAID 5" },
+      { "clave": "b", "texto": "RAID 0" },
+      { "clave": "c", "texto": "RAID 1" },
+      { "clave": "d", "texto": "RAID 10" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "RAID 5 usa paridad distribuida y requiere al menos 3 discos, ofreciendo tolerancia a la caída de un disco y un buen aprovechamiento de la capacidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "RAID 0 no ofrece tolerancia a fallos; la caída de un disco implica pérdida total de los datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "RAID 1 refleja datos en discos espejo, pero desperdicia más capacidad al duplicar la información."
+        },
+        {
+          "clave": "d",
+          "motivo": "RAID 10 ofrece alta tolerancia y rendimiento, pero requiere más discos y suele sacrificar más capacidad útil que RAID 5."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q30",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué nivel RAID admite la caída de dos discos en configuraciones con muchos discos?",
+    "contexto": "Se prioriza la tolerancia a fallos sobre el rendimiento.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "RAID 6" },
+      { "clave": "b", "texto": "RAID 5" },
+      { "clave": "c", "texto": "RAID 0" },
+      { "clave": "d", "texto": "RAID 1" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "RAID 6 utiliza doble paridad, lo que permite soportar la caída simultánea de hasta dos discos sin perder los datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "RAID 5 solo soporta la caída de un disco; si fallan dos, se pierde el volumen."
+        },
+        {
+          "clave": "c",
+          "motivo": "RAID 0 no tiene redundancia; la caída de un solo disco destruye el conjunto."
+        },
+        {
+          "clave": "d",
+          "motivo": "RAID 1 permite fallos dentro del espejo, pero en general se refiere a un par de discos, no al escenario de 'muchos discos' con doble paridad."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q31",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué protocolo traduce direcciones IP a direcciones MAC en una red local?",
+    "contexto": "Un técnico investiga problemas de conectividad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "ARP" },
+      { "clave": "b", "texto": "DNS" },
+      { "clave": "c", "texto": "DHCP" },
+      { "clave": "d", "texto": "HTTP" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "ARP (Address Resolution Protocol) se encarga de resolver direcciones IP a direcciones físicas (MAC) dentro de la red local.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DNS traduce nombres de dominio a direcciones IP, no IP a direcciones MAC."
+        },
+        {
+          "clave": "c",
+          "motivo": "DHCP asigna direcciones IP y parámetros de red, pero no traduce IP a MAC durante el tráfico normal."
+        },
+        {
+          "clave": "d",
+          "motivo": "HTTP es un protocolo de aplicación para transferencia de páginas web, no un protocolo de resolución de direcciones."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q32",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué define mejor a un hipervisor?",
+    "contexto": "Se estudian conceptos de virtualización.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Software que gestiona máquinas virtuales" },
+      { "clave": "b", "texto": "Un antivirus avanzado" },
+      { "clave": "c", "texto": "Una partición de disco" },
+      { "clave": "d", "texto": "Una base de datos local" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Un hipervisor es el software o firmware que crea y administra máquinas virtuales, controlando el acceso de estas al hardware físico.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un antivirus avanzado se centra en detectar y eliminar malware, no en gestionar máquinas virtuales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una partición de disco es una división lógica del almacenamiento, no un gestor de máquinas virtuales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una base de datos local almacena datos estructurados, pero no tiene funciones de virtualización."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q33",
+    "tema": "Examen Final",
+    "pregunta": "Para instalar Windows 10 en 50 equipos idénticos, ¿qué elemento es clave además del archivo de respuesta?",
+    "contexto": "Se automatizan despliegues.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Imagen WIM del sistema" },
+      { "clave": "b", "texto": "Drivers de impresora" },
+      { "clave": "c", "texto": "Fondos de pantalla" },
+      { "clave": "d", "texto": "Instalación manual" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una imagen WIM de Windows contiene el sistema preconfigurado y permite desplegarlo masivamente en varios equipos idénticos junto con un archivo de respuesta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los drivers de impresora no son el elemento central del despliegue masivo del sistema operativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los fondos de pantalla son detalles estéticos y no son esenciales para automatizar instalaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "La instalación manual en 50 equipos es justo lo que se quiere evitar con imágenes y archivos de respuesta."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q34",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué lista controla los permisos efectivos en un archivo NTFS?",
+    "contexto": "Un técnico revisa permisos avanzados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "ACL" },
+      { "clave": "b", "texto": "SID" },
+      { "clave": "c", "texto": "Token UAC" },
+      { "clave": "d", "texto": "SACL" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La ACL (Access Control List), concretamente la DACL, contiene las entradas de control de acceso (ACE) que determinan qué usuarios o grupos pueden hacer qué sobre un archivo NTFS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El SID identifica al usuario o grupo, pero no es la lista de permisos aplicada al archivo."
+        },
+        {
+          "clave": "c",
+          "motivo": "El token UAC se usa para elevar permisos en el contexto de UAC, pero la definición detallada de permisos está en la ACL del objeto."
+        },
+        {
+          "clave": "d",
+          "motivo": "La SACL se usa para auditoría (qué eventos se registran), no para los permisos efectivos de acceso."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q35",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué opción permite cambiar contraseñas obligatoriamente cada 90 días en sistemas Linux?",
+    "contexto": "Una empresa quiere reforzar políticas de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "chage" },
+      { "clave": "b", "texto": "passwd" },
+      { "clave": "c", "texto": "groupadd" },
+      { "clave": "d", "texto": "id" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El comando chage permite configurar la caducidad de contraseñas de usuarios, incluida la obligación de cambiarla cada cierto número de días (por ejemplo, 90).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "passwd cambia contraseñas, pero chage es el que gestiona las fechas de caducidad y políticas de expiración."
+        },
+        {
+          "clave": "c",
+          "motivo": "groupadd se utiliza para crear grupos, no para políticas de contraseñas."
+        },
+        {
+          "clave": "d",
+          "motivo": "id muestra información de usuario y grupos, pero no modifica la caducidad de contraseñas."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q36",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué acción puede realizar un firewall para defender una web ante un ataque de denegación de servicio?",
+    "contexto": "Se intenta evitar saturación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Filtrar tráfico sospechoso" },
+      { "clave": "b", "texto": "Crear usuarios nuevos" },
+      { "clave": "c", "texto": "Desfragmentar discos" },
+      { "clave": "d", "texto": "Cerrar procesos locales" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El firewall puede aplicar reglas para filtrar tráfico sospechoso o excesivo, mitigando parcialmente un ataque de denegación de servicio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La gestión de usuarios no forma parte de la función principal de un firewall de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "La desfragmentación de discos es una tarea de mantenimiento del sistema, no una medida de defensa ante DoS."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cerrar procesos locales corresponde al sistema operativo o al administrador, no a la función del firewall de red."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q37",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué tipo de copia copia solo lo cambiado desde la última copia de cualquier tipo?",
+    "contexto": "Se diseña estrategia de backup ligera.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Incremental" },
+      { "clave": "b", "texto": "Diferencial" },
+      { "clave": "c", "texto": "Completa" },
+      { "clave": "d", "texto": "Reflejo" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La copia incremental guarda únicamente los cambios desde la última copia realizada, sea esta completa o incremental, optimizando espacio y tiempo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La copia diferencial copia los cambios desde la última copia completa, no desde cualquier copia."
+        },
+        {
+          "clave": "c",
+          "motivo": "La copia completa copia todos los datos, no solo lo modificado desde otra copia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una copia reflejo suele referirse a réplicas en tiempo real/RAID, no al concepto de copia incremental."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q38",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué protocolo permite varios dispositivos acceder al mismo buzón sin borrar mensajes del servidor?",
+    "contexto": "Un médico consulta correo desde varios dispositivos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "IMAP" },
+      { "clave": "b", "texto": "POP3" },
+      { "clave": "c", "texto": "SMTP" },
+      { "clave": "d", "texto": "FTP" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "IMAP mantiene los mensajes en el servidor y sincroniza las carpetas, permitiendo el acceso al mismo buzón desde varios dispositivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "POP3 tradicionalmente descarga los correos al cliente y puede borrarlos del servidor, dificultando la sincronización entre dispositivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "SMTP se utiliza para enviar correos, no para acceder y sincronizar buzones."
+        },
+        {
+          "clave": "d",
+          "motivo": "FTP es un protocolo de transferencia de ficheros, no de correo electrónico."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q39",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué licencia debería evitarse si no se quiere liberar el código completo del proyecto?",
+    "contexto": "Una empresa integra recursos externos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "GPL" },
+      { "clave": "b", "texto": "MIT" },
+      { "clave": "c", "texto": "BSD" },
+      { "clave": "d", "texto": "Apache 2.0" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La licencia GPL es de copyleft fuerte y obliga a liberar el código fuente de las obras derivadas si se distribuyen, por lo que no es adecuada si se quiere mantener el código cerrado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "MIT es una licencia permisiva que permite usar, modificar y redistribuir incluso en proyectos privativos."
+        },
+        {
+          "clave": "c",
+          "motivo": "BSD también es permisiva y permite integrar código en proyectos cerrados sin obligación de liberar todo el código."
+        },
+        {
+          "clave": "d",
+          "motivo": "Apache 2.0 es permisiva y compatible con uso comercial y cerrado, siempre que se cumplan sus condiciones de atribución y patentes."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q40",
+    "tema": "Examen Final",
+    "pregunta": "¿Cuál es la diferencia principal entre copyright y copyleft?",
+    "contexto": "Se estudian tipos de licencias.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El copyright restringe uso sin permiso" },
+      { "clave": "b", "texto": "El copyleft prohíbe modificar" },
+      { "clave": "c", "texto": "El copyright obliga a liberar código" },
+      { "clave": "d", "texto": "El copyleft caduca a los 5 años" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El copyright, por defecto, implica 'todos los derechos reservados' y restringe el uso, copia o modificación sin permiso del autor; el copyleft usa el copyright para garantizar libertades de uso y modificación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El copyleft permite modificar y redistribuir, siempre que se mantenga la misma licencia en las obras derivadas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El copyright no obliga a liberar código; más bien lo protege frente a usos no autorizados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las licencias de copyleft no caducan automáticamente a los 5 años; su duración depende de las leyes de propiedad intelectual aplicables."
+        }
+      ]
+    }
+  },
+  {
+    "id": "UT8-Q41",
+    "tema": "Examen Final",
+    "pregunta": "¿Qué herramienta permite inspeccionar y limpiar datos CSV antes de importarlos a una base de datos?",
+    "contexto": "Un analista prepara datos de clientes.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Hoja de cálculo" },
+      { "clave": "b", "texto": "Cliente FTP" },
+      { "clave": "c", "texto": "Compilador" },
+      { "clave": "d", "texto": "Visor de imágenes" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una hoja de cálculo permite abrir archivos CSV, revisar su contenido, corregir errores y formatear datos antes de importarlos a una base de datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un cliente FTP sirve para transferir archivos entre cliente y servidor, no para limpiarlos o transformarlos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un compilador traduce código fuente a ejecutables, no trabaja con datos CSV para análisis."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un visor de imágenes está orientado a archivos gráficos, no a datos tabulares en CSV."
+        }
+      ]
+    }
+  }
+]

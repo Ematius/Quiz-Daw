@@ -1,0 +1,1139 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En una pyme de logística de Zaragoza, el sistema de incidencias se bloquea al iniciar sesión varios usuarios a la vez. El jefe te pide “ver el código” para descartar errores recientes. ¿Qué enfoque ayuda primero a ordenar la investigación?",
+    "contexto": "Bloqueos concurrentes en un sistema interno de incidencias en una pyme de logística.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reiniciar todos los equipos sin registrar nada"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar de lenguaje de programación sin análisis"
+      },
+      {
+        "clave": "c",
+        "texto": "Empezar por comprender ciclo de vida y documentación del software"
+      },
+      { "clave": "d", "texto": "Revisar correos antiguos de la empresa" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Ante incidencias en producción, el enfoque profesional es situar el problema dentro del ciclo de vida del software y revisar la documentación, versiones y cambios recientes antes de tocar el código o el entorno.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Reiniciar sin registrar nada puede ocultar el problema y hace perder información valiosa para el diagnóstico."
+        },
+        {
+          "clave": "b",
+          "motivo": "Cambiar de lenguaje de programación es una decisión extrema que no aborda el origen del fallo ni forma parte de un análisis ordenado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Revisar correos puede ayudar puntualmente, pero no sustituye al análisis formal del ciclo de vida y la documentación técnica."
+        }
+      ],
+      "resumen_didactico": "Antes de modificar el sistema, hay que entender cómo se ha desarrollado, qué versión está en producción y qué cambios se han hecho.",
+      "ejemplo_practico": "Consultar el historial de versiones, revisar el registro de incidencias previas y los requisitos para el uso concurrente antes de depurar código.",
+      "conclusion_final": "La investigación de fallos debe apoyarse primero en el ciclo de vida y la documentación, no en acciones impulsivas."
+    }
+  },
+  {
+    "id": "UT1-Q02",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En la primera reunión con un cliente de una pyme textil de Barcelona, te piden “una solución de software” pero no concretan nada más. Para encauzar el trabajo desde el inicio, ¿qué paso deberías priorizar en esa sesión?",
+    "contexto": "Primera reunión de análisis con un cliente que no ha definido aún sus requisitos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hablar de frameworks de moda y escoger uno en el momento"
+      },
+      {
+        "clave": "b",
+        "texto": "Proponer desarrollar en ensamblador para ganar rendimiento"
+      },
+      {
+        "clave": "c",
+        "texto": "Mostrar ejemplos de interfaces llamativas para decidir colores"
+      },
+      {
+        "clave": "d",
+        "texto": "Aclarar qué problema de negocio quieren resolver y delimitar alcance, distinguiendo si bastará con un programa aislado o una aplicación con varios módulos"
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La fase inicial del ciclo de vida del software es el análisis de requisitos: entender el problema de negocio, los objetivos y el alcance antes de decidir tecnologías, lenguajes o aspectos estéticos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Elegir frameworks sin requisitos claros puede conducir a una solución inadecuada o sobredimensionada."
+        },
+        {
+          "clave": "b",
+          "motivo": "La elección de ensamblador no tiene sentido sin conocer requisitos; además, rara vez es apropiado para soluciones de gestión."
+        },
+        {
+          "clave": "c",
+          "motivo": "Elegir colores o interfaces en la primera reunión ignora el problema de negocio y salta etapas clave del análisis."
+        }
+      ],
+      "resumen_didactico": "El primer paso en un proyecto de software es clarificar el problema y el alcance, no la tecnología ni el diseño visual.",
+      "ejemplo_practico": "Plantear preguntas sobre procesos actuales, problemas concretos y usuarios implicados para decidir si se requiere un programa sencillo o una aplicación modular.",
+      "conclusion_final": "Analizar el problema de negocio y definir el alcance es esencial para orientar correctamente el resto del proyecto."
+    }
+  },
+  {
+    "id": "UT1-Q03",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Estás creando una pequeña calculadora en tu primer día. ¿Qué define mejor un programa informático?",
+    "contexto": "Primer contacto con la noción de programa mientras se desarrolla una calculadora sencilla.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un archivo de imágenes" },
+      { "clave": "b", "texto": "Un manual de usuario bien maquetado" },
+      { "clave": "c", "texto": "Un conjunto de ventanas y botones" },
+      {
+        "clave": "d",
+        "texto": "Una secuencia de instrucciones ejecutadas en un orden concreto para lograr una acción"
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Un programa informático es un conjunto de instrucciones que el ordenador ejecuta en un orden determinado para realizar una tarea específica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un archivo de imágenes es un dato, no un conjunto de instrucciones ejecutables."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un manual de usuario es documentación, no software que el ordenador pueda ejecutar."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las ventanas y botones describen la interfaz gráfica, pero no contienen por sí mismas la lógica del programa."
+        }
+      ],
+      "resumen_didactico": "Programa implica instrucciones, orden de ejecución y objetivo claro; los datos y la documentación no son programas.",
+      "ejemplo_practico": "La calculadora sigue pasos como leer números, aplicar la operación y mostrar el resultado, todo mediante instrucciones codificadas.",
+      "conclusion_final": "Debes asociar programa a secuencia de instrucciones, no a documentos, imágenes o solo interfaces."
+    }
+  },
+  {
+    "id": "UT1-Q04",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Cuál de las siguientes descripciones identifica correctamente el ejemplo típico “Hello World”?",
+    "contexto": "Primera toma de contacto con un nuevo lenguaje de programación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es el primer programa simple para afianzar lógica y sintaxis"
+      },
+      { "clave": "b", "texto": "Es un estándar de interfaz gráfica" },
+      { "clave": "c", "texto": "Es un driver de dispositivo" },
+      { "clave": "d", "texto": "Es un script que cifra datos" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Hello World se utiliza como programa mínimo de ejemplo para comprobar el entorno, entender la estructura básica y la sintaxis de un lenguaje.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No define ninguna interfaz gráfica estándar; suele ejecutarse incluso en consola."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un driver controla hardware, mientras que Hello World solo muestra un mensaje."
+        },
+        {
+          "clave": "d",
+          "motivo": "No realiza operaciones de cifrado ni tareas de seguridad; su función es puramente demostrativa."
+        }
+      ],
+      "resumen_didactico": "Hello World sirve para validar instalación, estructura básica y sintaxis inicial de un lenguaje.",
+      "ejemplo_practico": "En Java, escribir un main que imprime Hello World confirma que el JDK y el editor están bien configurados.",
+      "conclusion_final": "Asocia Hello World con el primer programa sencillo para iniciarse en un lenguaje, no con tareas avanzadas."
+    }
+  },
+  {
+    "id": "UT1-Q05",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Al explicar a un compañero qué diferencia a un programa de un documento PDF, señalas que el programa:",
+    "contexto": "Comparación entre software ejecutable y documentos de datos estáticos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Contiene instrucciones que el ordenador interpreta o compila para realizar tareas"
+      },
+      { "clave": "b", "texto": "No tiene instrucciones" },
+      { "clave": "c", "texto": "Siempre se ejecuta en la nube" },
+      { "clave": "d", "texto": "Es independiente del sistema operativo" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La característica esencial de un programa es que contiene instrucciones que el ordenador puede interpretar o compilar para realizar una o varias tareas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Si no contiene instrucciones, no puede considerarse programa; sería un dato o documento."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un programa puede ejecutarse en local, en servidores o en la nube; la nube no define lo que es un programa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Muchos programas dependen del sistema operativo o de su arquitectura; la independencia no es una propiedad universal."
+        }
+      ],
+      "resumen_didactico": "Programa implica instrucciones ejecutables; un PDF es contenido que un programa muestra, no software en sí.",
+      "ejemplo_practico": "El lector de PDF es el programa; el archivo PDF es el documento que el programa abre y muestra.",
+      "conclusion_final": "Para diferenciar programa de documento, piensa en instrucciones ejecutables frente a datos estáticos."
+    }
+  },
+  {
+    "id": "UT1-Q06",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En una clínica de Madrid necesitan integrar agenda, facturación y correo. El director pide “una única herramienta que lo haga todo y hable con el sistema operativo”. ¿A qué te está apuntando?",
+    "contexto": "Solicitud de una solución integrada de gestión clínica que combine varios módulos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A un único archivo ejecutable sin dependencias"
+      },
+      { "clave": "b", "texto": "A un driver de impresora" },
+      { "clave": "c", "texto": "A una base de datos sin interfaz" },
+      {
+        "clave": "d",
+        "texto": "A una aplicación compuesta por varios programas y librerías"
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Una aplicación real de gestión suele estar formada por varios programas y librerías que integran diferentes funciones y se comunican con el sistema operativo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una solución compleja rara vez se reduce a un único ejecutable sin dependencias; requiere módulos y librerías."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un driver solo sirve de interfaz entre el sistema operativo y un dispositivo, no integra agenda, facturación y correo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La base de datos almacena información, pero no es la herramienta de trabajo para el usuario final."
+        }
+      ],
+      "resumen_didactico": "Una herramienta que integra varias funciones de negocio suele ser una aplicación compuesta por múltiples programas y librerías coordinadas.",
+      "ejemplo_practico": "Un sistema de gestión clínica con módulos de citas, facturación y mensajería que comparten librerías de acceso a datos y a servicios del sistema.",
+      "conclusion_final": "Cuando un cliente pide una única herramienta integral, normalmente alude a una aplicación compuesta y modular, no a un ejecutable aislado."
+    }
+  },
+  {
+    "id": "UT1-Q07",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En una empresa de reparto, el equipo usa Inventario, Ventas y Reportes; se instalan juntos, comparten base de datos y mantienen la misma interfaz. ¿Cómo se describe mejor esa solución?",
+    "contexto": "Suite de gestión con varios módulos funcionales instalados como un conjunto.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un driver de hardware para impresoras" },
+      { "clave": "b", "texto": "Un sistema operativo completo" },
+      {
+        "clave": "c",
+        "texto": "Una aplicación formada por varios programas coordinados que comparten librerías y datos"
+      },
+      { "clave": "d", "texto": "Tres documentos independientes con fórmulas" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Una aplicación empresarial puede estar formada por varios módulos o programas que comparten librerías, base de datos y una interfaz coherente, funcionando como una única solución.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un driver se limita a gestionar un dispositivo, no tres módulos de gestión de negocio coordinados."
+        },
+        {
+          "clave": "b",
+          "motivo": "El sistema operativo es la capa base; aquí se describe una aplicación que corre sobre él, no el propio sistema operativo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Tres documentos con fórmulas no forman una aplicación integrada ni comparten lógica interna de forma estructurada."
+        }
+      ],
+      "resumen_didactico": "Varios módulos instalados juntos, que comparten datos y aspecto, se consideran una única aplicación compuesta.",
+      "ejemplo_practico": "Un ERP con módulos de compras, ventas y contabilidad que comparten base de datos y librerías comunes.",
+      "conclusion_final": "Módulos coordinados que comparten librerías y datos describen una aplicación compuesta, no herramientas aisladas."
+    }
+  },
+  {
+    "id": "UT1-Q08",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Al evaluar alternativas, el equipo sopesa una suite ofimática. ¿Qué característica típica de una suite encaja?",
+    "contexto": "Selección de herramientas ofimáticas para uso corporativo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Componentes aislados que no comparten nada" },
+      { "clave": "b", "texto": "Ausencia total de librerías comunes" },
+      {
+        "clave": "c",
+        "texto": "Ejecución exclusiva en tiempo real sin instalación"
+      },
+      { "clave": "d", "texto": "Programas integrados y compatibles entre sí" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Una suite suele estar compuesta por varios programas (texto, hoja de cálculo, presentaciones) integrados y compatibles entre sí, compartiendo componentes y formatos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La gracia de una suite es precisamente la integración, no la total independencia de sus componentes."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las suites suelen compartir librerías y módulos comunes para interfaz, formatos y funcionalidades."
+        },
+        {
+          "clave": "c",
+          "motivo": "Muchas suites se instalan localmente; la ejecución en la nube no es una característica definitoria."
+        }
+      ],
+      "resumen_didactico": "Suite implica conjunto de programas que cooperan y comparten formatos y elementos comunes.",
+      "ejemplo_practico": "Copiar una tabla de la hoja de cálculo y pegarla en el procesador de textos dentro de la misma suite.",
+      "conclusion_final": "Cuando pienses en suite, piensa en programas integrados y compatibles, no en piezas aisladas."
+    }
+  },
+  {
+    "id": "UT1-Q09",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Una cadena minorista de Bilbao duda entre encargar un ERP a medida o implantar un estándar del mercado. Con un presupuesto ajustado y plazos breves, ¿qué opción suele encajar mejor?",
+    "contexto": "Decisión entre software a medida y producto estándar en un entorno con tiempo y presupuesto limitados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "A medida, por su mayor estabilidad inicial" },
+      { "clave": "b", "texto": "Estándar, por economía de escala y madurez" },
+      { "clave": "c", "texto": "A medida, porque no requiere mantenimiento" },
+      {
+        "clave": "d",
+        "texto": "Estándar, porque siempre cubre el 100% de necesidades sin parametrizar"
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Los productos estándar reparten su coste de desarrollo entre muchos clientes, suelen ser más económicos de implantar, están más probados y permiten parametrización, lo que los hace adecuados con poco presupuesto y plazos cortos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El software a medida suele ser menos estable al principio, al ser nuevo y específico para una sola empresa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Todo software requiere mantenimiento; en el a medida, además, recae íntegramente sobre el cliente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ningún estándar cubre el 100% de necesidades sin parametrización ni ajustes; siempre hay que adaptar algo."
+        }
+      ],
+      "resumen_didactico": "Con poco tiempo y dinero, el estándar maduro y parametrizable suele ser más viable que un desarrollo a medida.",
+      "ejemplo_practico": "Implantar un ERP comercial con módulos ya hechos y configurar impuestos, series y catálogos en lugar de desarrollar todo desde cero.",
+      "conclusion_final": "La economía de escala y la madurez hacen que, en escenarios ajustados, el estándar sea la opción preferente."
+    }
+  },
+  {
+    "id": "UT1-Q10",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En la reunión de presupuesto, te piden anticipar el impacto del desarrollo a medida tras la implantación. ¿Qué rasgo es habitual en este tipo de software?",
+    "contexto": "Negociación sobre costes y mantenimiento de una solución a medida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Suele ser más caro y requiere mantenimiento frecuente"
+      },
+      {
+        "clave": "b",
+        "texto": "Es transferible sin ajustes a cualquier empresa"
+      },
+      { "clave": "c", "texto": "No necesita documentación técnica" },
+      { "clave": "d", "texto": "No puede tener errores iniciales" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El software a medida implica un coste de desarrollo más alto, es específico para una empresa concreta y requiere mantenimiento continuo para corregir errores, adaptarse a cambios y evolucionar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Al estar diseñado para una organización concreta, no se puede trasladar sin ajustes importantes a otra empresa."
+        },
+        {
+          "clave": "c",
+          "motivo": "La documentación técnica es clave para poder mantener y evolucionar cualquier desarrollo, y más aún si es a medida."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es normal que tras la implantación aparezcan errores y ajustes finos; pretender lo contrario no es realista."
+        }
+      ],
+      "resumen_didactico": "Un desarrollo a medida conlleva costes elevados y un ciclo de mantenimiento posterior que hay que prever.",
+      "ejemplo_practico": "Tras desplegar un ERP a medida, el cliente solicita cambios en informes y corrige casos no contemplados, generando nuevas horas de servicio.",
+      "conclusion_final": "Cuando plantees un desarrollo a medida, incluye siempre en el presupuesto el mantenimiento posterior."
+    }
+  },
+  {
+    "id": "UT1-Q11",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En un proyecto nuevo, el cliente pide funciones muy específicas que ningún producto del mercado cubre. ¿Qué decisión técnica tiene más sentido?",
+    "contexto": "Requisitos muy particulares que no encajan en soluciones estándar existentes.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Usar únicamente hojas de cálculo" },
+      { "clave": "b", "texto": "Comprar un estándar y no tocarlo" },
+      {
+        "clave": "c",
+        "texto": "Esperar a que el estándar evolucione sin plazos"
+      },
+      {
+        "clave": "d",
+        "texto": "Desarrollar a medida para ajustar procesos únicos"
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Cuando los requisitos son muy específicos y ningún producto estándar los cubre, la opción coherente es un desarrollo a medida que se adapte exactamente a esos procesos únicos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las hojas de cálculo pueden servir como solución provisional, pero no son adecuadas para un sistema complejo y específico."
+        },
+        {
+          "clave": "b",
+          "motivo": "Comprar un estándar sin modificarlo implica renunciar a cubrir las funciones que el cliente considera críticas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esperar indefinidamente sin plazos no resuelve el problema y no es una decisión técnica viable."
+        }
+      ],
+      "resumen_didactico": "Si ningún producto del mercado cubre tus requisitos clave, el desarrollo a medida se vuelve la opción razonable.",
+      "ejemplo_practico": "Diseñar un sistema de producción con reglas propias que ningún ERP estándar contempla, desarrollándolo específicamente para esa planta.",
+      "conclusion_final": "El software a medida tiene sentido cuando los procesos de negocio son tan particulares que el estándar no llega."
+    }
+  },
+  {
+    "id": "UT1-Q12",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Sobre software estándar, indica lo correcto:",
+    "contexto": "Valoración de ventajas y limitaciones del software estándar frente al a medida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Puede incluir funciones que no se usarán y carecer de otras necesarias"
+      },
+      { "clave": "b", "texto": "No admite parametrización" },
+      {
+        "clave": "c",
+        "texto": "Es más caro que el a medida en casi todos los casos"
+      },
+      {
+        "clave": "d",
+        "texto": "No necesita pruebas porque ya funciona en otras empresas"
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El software estándar está diseñado para muchas organizaciones, por lo que suele incluir funciones que algunas no usarán y puede carecer de otras muy específicas que ciertas empresas necesitan.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una de las fortalezas del estándar es precisamente su capacidad de parametrización y configuración."
+        },
+        {
+          "clave": "c",
+          "motivo": "El estándar suele ser más económico gracias a la economía de escala; lo caro suele ser el desarrollo a medida."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aunque funcione en otras empresas, siempre hay que probarlo en el contexto concreto del nuevo cliente."
+        }
+      ],
+      "resumen_didactico": "El software estándar puede sobrar en unas funciones y quedarse corto en otras, lo que a veces obliga a complementarlo.",
+      "ejemplo_practico": "Un ERP que trae módulos de contabilidad avanzada que una pyme no usa, pero que no incluye un informe muy concreto que la empresa necesita.",
+      "conclusion_final": "Debes asumir que el estándar es genérico: tendrá extras que no usarás y carencias que quizá haya que cubrir."
+    }
+  },
+  {
+    "id": "UT1-Q13",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En un taller de Sevilla quieren automatizar avisos de mantenimiento sin “hablar en 1 y 0”. ¿Qué aporta un lenguaje de programación actual?",
+    "contexto": "Necesidad de expresar reglas de negocio sin trabajar a nivel de código máquina.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite escribir directamente microcódigo del procesador"
+      },
+      { "clave": "b", "texto": "Evita usar librerías" },
+      {
+        "clave": "c",
+        "texto": "Ofrece sintaxis comprensible para expresar reglas y acciones"
+      },
+      { "clave": "d", "texto": "Sustituye la necesidad de lógica" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Los lenguajes de alto nivel ofrecen una sintaxis más cercana al lenguaje humano y a la lógica de negocio, permitiendo expresar condiciones y acciones sin trabajar en binario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El microcódigo o el lenguaje máquina son precisamente lo que se quiere evitar al usar lenguajes de alto nivel."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los lenguajes actuales se apoyan masivamente en librerías para reutilizar código y acelerar el desarrollo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El lenguaje no elimina la necesidad de lógica; solo proporciona herramientas para expresarla mejor."
+        }
+      ],
+      "resumen_didactico": "Un lenguaje moderno permite escribir reglas del tipo si ocurre X entonces haz Y, sin pensar en 1 y 0.",
+      "ejemplo_practico": "Codificar una regla que envíe un aviso si han pasado más de 12 meses desde la última revisión de un vehículo.",
+      "conclusion_final": "La principal aportación de los lenguajes actuales es hacer expresable la lógica de negocio de forma clara y mantenible."
+    }
+  },
+  {
+    "id": "UT1-Q14",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Cuál de las siguientes descripciones identifica correctamente el lenguaje ensamblador?",
+    "contexto": "Clasificación de lenguajes según su cercanía al hardware.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Alto nivel: ligado totalmente al procesador" },
+      {
+        "clave": "b",
+        "texto": "Ensamblador: usa mnemónicos y está cercano al hardware"
+      },
+      { "clave": "c", "texto": "Lenguaje máquina: portable por diseño" },
+      { "clave": "d", "texto": "Lenguaje máquina: parecido al lenguaje humano" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El ensamblador utiliza mnemónicos o códigos simbólicos para representar instrucciones muy cercanas al hardware, manteniendo casi una correspondencia directa con el lenguaje máquina.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los lenguajes de alto nivel buscan abstraerse del procesador y ser más cercanos al lenguaje humano."
+        },
+        {
+          "clave": "c",
+          "motivo": "El lenguaje máquina está fuertemente ligado a la arquitectura concreta, por lo que no es portable por diseño."
+        },
+        {
+          "clave": "d",
+          "motivo": "El lenguaje máquina se compone de bits, siendo el más alejado del lenguaje humano."
+        }
+      ],
+      "resumen_didactico": "Ensamblador es el paso intermedio simbólico entre lenguaje máquina y lenguajes de alto nivel.",
+      "ejemplo_practico": "Una instrucción MOV AX, 1 en ensamblador representa de forma simbólica un patrón binario específico para la CPU.",
+      "conclusion_final": "Identifica ensamblador con mnemónicos cercanos al hardware, no con portabilidad ni legibilidad tipo humano."
+    }
+  },
+  {
+    "id": "UT1-Q15",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Debes decidir la forma de ejecución. Un servicio con máxima velocidad y ejecutable optimizado suele preferir:",
+    "contexto": "Elección del modelo de ejecución según requisitos de rendimiento.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Interpretación línea a línea" },
+      { "clave": "b", "texto": "Bytecode en máquina virtual" },
+      { "clave": "c", "texto": "Macros en hoja de cálculo" },
+      { "clave": "d", "texto": "Compilación a código máquina" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Los lenguajes compilados a código máquina generan ejecutables optimizados y muy rápidos, adecuados para servicios de alto rendimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La interpretación línea a línea es más flexible, pero introduce sobrecarga y reduce el rendimiento."
+        },
+        {
+          "clave": "b",
+          "motivo": "El bytecode en máquina virtual mejora la portabilidad, pero suele ser algo más lento que el código nativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las macros de hoja de cálculo no están pensadas para servicios de alto rendimiento en producción."
+        }
+      ],
+      "resumen_didactico": "Si la prioridad es la velocidad máxima, la compilación a ejecutable nativo es la opción típica.",
+      "ejemplo_practico": "Compilar un módulo crítico en C++ a binario nativo para procesar miles de operaciones por segundo.",
+      "conclusion_final": "Relaciona alto rendimiento con compilación a código máquina, no con interpretación ni entornos de macros."
+    }
+  },
+  {
+    "id": "UT1-Q16",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Una startup de Vigo quiere probar cambios rápidos en scripts y tolera menor rendimiento. ¿Qué enfoque encaja?",
+    "contexto": "Necesidad de iterar muy deprisa en lógica de negocio con scripts.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Escribir en ensamblador" },
+      { "clave": "b", "texto": "Programar solo drivers" },
+      { "clave": "c", "texto": "Interpretar el código en tiempo de ejecución" },
+      { "clave": "d", "texto": "Compilar todo a ejecutable nativo" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La ejecución interpretada permite modificar el script y ejecutarlo al instante sin ciclos de compilación, facilitando cambios rápidos a costa de rendimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El ensamblador es lento de escribir y mantener, y está orientado al bajo nivel, no a iteraciones ágiles."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los drivers están orientados a hardware específico, no a lógica de negocio de una startup web o de servicios."
+        },
+        {
+          "clave": "d",
+          "motivo": "Compilar a ejecutable nativo maximiza rendimiento, pero ralentiza el ciclo de prueba y cambio frecuente."
+        }
+      ],
+      "resumen_didactico": "Interpretar código es ideal cuando importa más la rapidez de iteración que el rendimiento absoluto.",
+      "ejemplo_practico": "Usar Python o JavaScript para scripts que cambian a diario en una prueba de concepto de negocio.",
+      "conclusion_final": "Si se priorizan cambios rápidos, escoge ejecución interpretada; si se prioriza velocidad, escoge compilación nativa."
+    }
+  },
+  {
+    "id": "UT1-Q17",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué opción describe un lenguaje “virtual” como Java?",
+    "contexto": "Descripción del modelo de ejecución de lenguajes que usan máquina virtual.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Requiere herencia múltiple para funcionar" },
+      { "clave": "b", "texto": "No puede ser orientado a objetos" },
+      {
+        "clave": "c",
+        "texto": "Genera bytecode para una máquina virtual, ofreciendo portabilidad"
+      },
+      {
+        "clave": "d",
+        "texto": "Se ejecuta directamente en la CPU sin traducción"
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Java compila el código fuente a bytecode, que se ejecuta sobre la Máquina Virtual de Java, lo que permite portabilidad entre distintos sistemas operativos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Java no requiere ni permite herencia múltiple de clases; limita esta característica para simplificar el modelo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Java es precisamente un lenguaje de alto nivel orientado a objetos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El bytecode se ejecuta en la JVM, no directamente en la CPU sin capa intermedia."
+        }
+      ],
+      "resumen_didactico": "Un lenguaje virtual genera un código intermedio ejecutado por una máquina virtual, facilitando la portabilidad.",
+      "ejemplo_practico": "Compilar un programa Java y ejecutarlo en Windows y Linux sin recompilar, únicamente cambiando la JVM.",
+      "conclusion_final": "Identifica Java con bytecode y máquina virtual, no con ejecución directa en CPU ni con ausencia de orientación a objetos."
+    }
+  },
+  {
+    "id": "UT1-Q18",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Estás valorando Java para back-end bancario. ¿Qué ventaja relevante ofrece?",
+    "contexto": "Selección tecnológica para sistemas corporativos y críticos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Portabilidad mediante JVM y fuerte orientación a objetos"
+      },
+      { "clave": "b", "texto": "Ejecutable exclusivo para un sistema" },
+      { "clave": "c", "texto": "Ausencia de multihilo" },
+      { "clave": "d", "texto": "Herencia múltiple y sobrecarga de operadores" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Java combina una fuerte orientación a objetos con la posibilidad de ejecutarse en múltiples sistemas gracias a la JVM, características muy valoradas en back-end corporativo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El código Java no genera un ejecutable exclusivo para un sistema; su objetivo es precisamente la portabilidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Java soporta multihilo desde su diseño, algo clave en servidores de alto rendimiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Java evita la herencia múltiple de clases y no permite sobrecarga arbitraria de operadores como C++."
+        }
+      ],
+      "resumen_didactico": "Java se mantiene fuerte en entornos bancarios por su modelo orientado a objetos y su portabilidad multiplataforma.",
+      "ejemplo_practico": "Un sistema bancario desarrollado en Java que se despliega tanto on-premise como en la nube sobre distintas plataformas.",
+      "conclusion_final": "Cuando pienses en Java para back-end, resalta su orientación a objetos y su ejecución en distintas plataformas vía JVM."
+    }
+  },
+  {
+    "id": "UT1-Q19",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Te piden un prototipo de IA con iteraciones diarias y pruebas rápidas. ¿Qué encaja con el lenguaje elegido?",
+    "contexto": "Prototipado ágil de soluciones de inteligencia artificial.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "C++ por ser interpretado" },
+      { "clave": "b", "texto": "PHP por su compilación estática" },
+      {
+        "clave": "c",
+        "texto": "Python por su simplicidad y ecosistema de librerías"
+      },
+      { "clave": "d", "texto": "Ensamblador por su visibilidad" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Python es un lenguaje interpretado, sencillo de escribir y con un ecosistema muy amplio de librerías para IA y ciencia de datos, ideal para prototipar y probar cambios frecuentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "C++ es un lenguaje compilado, no interpretado, y su ciclo de desarrollo es menos ágil para prototipos rápidos."
+        },
+        {
+          "clave": "b",
+          "motivo": "PHP está orientado principalmente al desarrollo web del lado servidor y no se caracteriza por su ecosistema de IA."
+        },
+        {
+          "clave": "d",
+          "motivo": "El ensamblador no es práctico para IA ni para iteraciones rápidas; está demasiado cerca del hardware."
+        }
+      ],
+      "resumen_didactico": "Para prototipos de IA que cambian a diario, convienen lenguajes interpretados y con muchas librerías especializadas.",
+      "ejemplo_practico": "Probar distintos modelos de clasificación con scikit-learn en Python, cambiando hiperparámetros cada día.",
+      "conclusion_final": "Si buscas velocidad de iteración y ecosistema de IA, Python es la elección natural frente a lenguajes de más bajo nivel."
+    }
+  },
+  {
+    "id": "UT1-Q20",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Al optimizar un módulo de alto rendimiento, consideras C/C++. ¿Qué rasgo clave valoras?",
+    "contexto": "Optimización de partes críticas del sistema donde el rendimiento es prioritario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "No usan punteros" },
+      { "clave": "b", "texto": "Ejecutables pesados y lentos" },
+      { "clave": "c", "texto": "Control de memoria y binarios ligeros" },
+      { "clave": "d", "texto": "Portabilidad imposible" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "C y C++ permiten gestionar directamente la memoria y generan binarios nativos ligeros y muy eficientes, lo que los hace adecuados para módulos de alto rendimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "C y C++ son conocidos precisamente por su uso intensivo de punteros y gestión manual de memoria."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los ejecutables resultantes suelen ser rápidos y relativamente ligeros, no pesados ni lentos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aunque el binario es específico de una plataforma, el lenguaje en sí es portable a múltiples sistemas mediante recompilación."
+        }
+      ],
+      "resumen_didactico": "C/C++ te dan control fino de recursos y producen binarios eficientes, ideales para secciones críticas.",
+      "ejemplo_practico": "Reescribir en C++ el motor de cálculo de un servicio para reducir al mínimo la latencia.",
+      "conclusion_final": "Si lo crítico es exprimir el hardware, C/C++ ofrecen el control de memoria y la eficiencia necesarios."
+    }
+  },
+  {
+    "id": "UT1-Q21",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En un e-commerce con alto tráfico, el equipo plantea full stack en un solo lenguaje. ¿Qué combinación es coherente?",
+    "contexto": "Búsqueda de un stack unificado para front-end y back-end en una tienda online.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "PHP en front sin HTML" },
+      { "clave": "b", "texto": "Python en front sin transpilar" },
+      {
+        "clave": "c",
+        "texto": "JavaScript en front y Node.js en back para compartir lenguaje"
+      },
+      { "clave": "d", "texto": "JavaScript en back y ensamblador en front" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "JavaScript se ejecuta en el navegador en el lado cliente y, gracias a Node.js, también en el servidor, permitiendo un desarrollo full stack con un único lenguaje.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El front web siempre se basa en HTML, CSS y JavaScript; PHP se ejecuta típicamente en el servidor."
+        },
+        {
+          "clave": "b",
+          "motivo": "Python no se ejecuta de forma nativa en el navegador sin herramientas especiales; no es el lenguaje típico del front."
+        },
+        {
+          "clave": "d",
+          "motivo": "El ensamblador no se usa para interfaces web; está pensado para programación de muy bajo nivel."
+        }
+      ],
+      "resumen_didactico": "JavaScript en el cliente y Node.js en el servidor permiten unificar el lenguaje en todo el stack web.",
+      "ejemplo_practico": "Una SPA en React consumiendo una API REST escrita en Node.js, todo en JavaScript.",
+      "conclusion_final": "Para unificar front y back en web, JavaScript con Node.js es la combinación estándar y coherente."
+    }
+  },
+  {
+    "id": "UT1-Q22",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Debes explicar a negocio por qué JavaScript “se ve” en el navegador. La razón es que:",
+    "contexto": "Explicación a usuarios no técnicos de la visibilidad del código cliente.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Requiere drivers específicos" },
+      {
+        "clave": "b",
+        "texto": "Es interpretado por el navegador y su código cliente es visible"
+      },
+      { "clave": "c", "texto": "Se compila a .exe" },
+      { "clave": "d", "texto": "No tiene librerías" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El navegador descarga el código JavaScript junto con el HTML y CSS, lo interpreta y ejecuta en el lado cliente, por lo que dicho código puede inspeccionarse con las herramientas del navegador.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "JavaScript usa el motor integrado del navegador, no drivers específicos instalados por el usuario."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se compila a ejecutable .exe; el código se entrega como texto y se ejecuta en la sandbox del navegador."
+        },
+        {
+          "clave": "d",
+          "motivo": "JavaScript dispone de multitud de librerías y frameworks; esto no influye en que el código sea visible en el cliente."
+        }
+      ],
+      "resumen_didactico": "El código que llega al navegador forma parte de los recursos del usuario y siempre puede inspeccionarse.",
+      "ejemplo_practico": "Abrir las herramientas de desarrollador de Chrome y ver los archivos .js cargados por una página web.",
+      "conclusion_final": "Cualquier lógica crítica debe protegerse en el servidor, ya que el JavaScript cliente es accesible para el usuario."
+    }
+  },
+  {
+    "id": "UT1-Q23",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Un ayuntamiento desea un portal con CMS popular y despliegue rápido. ¿Qué lenguaje refleja su histórico encaje con WordPress y frameworks como Laravel?",
+    "contexto": "Selección de tecnología para un portal institucional basado en CMS.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "PHP" },
+      { "clave": "b", "texto": "C" },
+      { "clave": "c", "texto": "Kotlin" },
+      { "clave": "d", "texto": "Rust" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "WordPress, uno de los CMS más utilizados, está desarrollado en PHP, y frameworks como Laravel también se basan en este lenguaje, lo que facilita el despliegue rápido de portales web.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "C es un lenguaje de sistemas de bajo nivel, no el habitual para CMS y portales institucionales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Kotlin se centra sobre todo en Android y en back-end sobre JVM, no en CMS como WordPress."
+        },
+        {
+          "clave": "d",
+          "motivo": "Rust es un lenguaje moderno de sistemas, sin el ecosistema de CMS y frameworks web que tiene PHP para este tipo de portales."
+        }
+      ],
+      "resumen_didactico": "Cuando veas WordPress y Laravel, debes pensar inmediatamente en PHP.",
+      "ejemplo_practico": "Montar un portal municipal con WordPress y extenderlo con un backend a medida en Laravel, todo sobre PHP.",
+      "conclusion_final": "Para CMS populares y despliegue rápido de portales, PHP es el lenguaje históricamente dominante."
+    }
+  },
+  {
+    "id": "UT1-Q24",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En una empresa con ecosistema Microsoft, te piden mantener una solución interna con .NET y macros de Office. ¿Qué lenguaje podría encajar en ese contexto?",
+    "contexto": "Entorno corporativo centrado en tecnologías Microsoft y Office.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Go" },
+      { "clave": "b", "texto": "Swift" },
+      { "clave": "c", "texto": "Ruby" },
+      { "clave": "d", "texto": "VB.NET" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "VB.NET forma parte de la plataforma .NET y mantiene continuidad con el estilo de Visual Basic y VBA, usado en macros de Office, encajando bien en entornos Microsoft.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Go no pertenece al ecosistema Microsoft ni se integra de forma natural con Office y .NET."
+        },
+        {
+          "clave": "b",
+          "motivo": "Swift se orienta al ecosistema Apple, no a soluciones basadas en .NET y Office."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ruby se utiliza principalmente en entornos web y no está especialmente ligado a la pila Microsoft corporativa."
+        }
+      ],
+      "resumen_didactico": "Si ya hay .NET y macros de Office, VB.NET ofrece una curva suave y buena integración.",
+      "ejemplo_practico": "Migrar lógica de macros de Excel en VBA a servicios internos escritos en VB.NET dentro de la misma organización.",
+      "conclusion_final": "En un ecosistema Microsoft clásico, VB.NET es una elección coherente junto con .NET y Office."
+    }
+  },
+  {
+    "id": "UT1-Q25",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Al presentar opciones a un comité, necesitas un argumento breve a favor de aprender C/C++ aunque trabajes en full stack moderno:",
+    "contexto": "Justificación de formarse en lenguajes de bajo nivel en un entorno de desarrollo moderno.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Son necesarios para cualquier app móvil" },
+      { "clave": "b", "texto": "No existen alternativas actuales" },
+      {
+        "clave": "c",
+        "texto": "Permiten comprender el funcionamiento de bajo nivel y siguen siendo claves en embebidos y videojuegos"
+      },
+      { "clave": "d", "texto": "Eliminan la necesidad de pruebas" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "C y C++ siguen siendo muy relevantes en sistemas embebidos, motores de videojuegos y componentes de alto rendimiento, y ayudan a entender el funcionamiento de bajo nivel del hardware y la memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Muchas apps móviles se escriben en Kotlin, Java o Swift; C/C++ se usan solo en capas nativas específicas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Existen alternativas modernas como Rust, Go o Java; el valor de C/C++ no es la falta de alternativas sino su papel en bajo nivel."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ningún lenguaje elimina la necesidad de pruebas; en C/C++ los errores de memoria las hacen aún más necesarias."
+        }
+      ],
+      "resumen_didactico": "Aprender C/C++ refuerza la comprensión de cómo funcionan realmente los lenguajes y sistemas de más alto nivel.",
+      "ejemplo_practico": "Un desarrollador full stack que entiende punteros y gestión de memoria puede diagnosticar mejor problemas de rendimiento en cualquier stack.",
+      "conclusion_final": "Aunque programes en alto nivel, C/C++ te dan base sólida y siguen siendo imprescindibles en muchos dominios técnicos."
+    }
+  },
+  {
+    "id": "UT1-Q26",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En un proyecto de Android y servidores empresariales, ¿qué afirmación es válida sobre Java hoy?",
+    "contexto": "Evaluación del papel actual de Java en distintos entornos de producción.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "No soporta redes" },
+      { "clave": "b", "texto": "Ha quedado obsoleto para producción" },
+      { "clave": "c", "texto": "Solo sirve para applets" },
+      {
+        "clave": "d",
+        "texto": "Se mantiene vigente en Android y back-end corporativo, y se ejecuta en múltiples sistemas vía JVM"
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Java sigue siendo uno de los lenguajes más usados en back-end corporativo y ha sido base de desarrollo en Android, apoyándose en la JVM para ofrecer portabilidad entre sistemas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Java dispone de amplias librerías de red y nació con una fuerte orientación a entornos distribuidos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Lejos de estar obsoleto, sigue siendo clave en banca, seguros, grandes empresas y entornos críticos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los applets están prácticamente en desuso; Java se emplea sobre todo en servidores y en el ecosistema Android."
+        }
+      ],
+      "resumen_didactico": "Java permanece como pilar en back-end empresarial y Android gracias a la JVM y a su madurez.",
+      "ejemplo_practico": "Usar Java con Spring en el servidor y Kotlin/Java en Android, compartiendo gran parte del ecosistema.",
+      "conclusion_final": "Cuando evalúes tecnologías para back-end y Android, considera Java como una opción moderna y vigente."
+    }
+  },
+  {
+    "id": "UT1-Q27",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Durante una demo, ejecutas un script en Python y ves el resultado al instante. ¿Qué está ocurriendo?",
+    "contexto": "Demostración rápida de un script en un lenguaje interpretado.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La JVM produce código nativo" },
+      { "clave": "b", "texto": "El enlazador combina objetos" },
+      {
+        "clave": "c",
+        "texto": "El intérprete traduce y ejecuta línea a línea"
+      },
+      { "clave": "d", "texto": "El compilador genera un ejecutable" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Python es un lenguaje interpretado: el intérprete lee el código fuente, lo traduce y lo ejecuta en tiempo real, normalmente línea a línea o bloque a bloque.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La JVM se refiere a la ejecución de bytecode Java, no al comportamiento de un script Python normal."
+        },
+        {
+          "clave": "b",
+          "motivo": "El enlazador actúa en el proceso de compilación para unir objetos, algo típico de C/C++, no de Python al ejecutar un script."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se genera un ejecutable nativo previo; se ejecuta directamente el script con el intérprete."
+        }
+      ],
+      "resumen_didactico": "En lenguajes interpretados, el código se ejecuta sobre la marcha sin crear un ejecutable previo.",
+      "ejemplo_practico": "Lanzar python mi_script.py y obtener resultados inmediatamente tras modificar el código.",
+      "conclusion_final": "Si ves cambios instantáneos al ejecutar un script, probablemente estás trabajando con un lenguaje interpretado como Python."
+    }
+  },
+  {
+    "id": "UT1-Q28",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Para distribuir una utilidad de C++ sin exponer el código fuente, decides:",
+    "contexto": "Distribución de software compilado preservando la confidencialidad del código fuente.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Compilar y entregar el ejecutable final" },
+      { "clave": "b", "texto": "Enviar un README" },
+      { "clave": "c", "texto": "Entregar solo los archivos .cpp" },
+      { "clave": "d", "texto": "Publicar el código objeto" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En lenguajes compilados como C++, el desarrollador puede distribuir el ejecutable resultante de la compilación sin entregar el código fuente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El README solo es documentación y no permite al usuario ejecutar la utilidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Entregar los .cpp implica exponer precisamente el código fuente que se quiere proteger."
+        },
+        {
+          "clave": "d",
+          "motivo": "El código objeto es un resultado intermedio y no siempre es directamente utilizable por el usuario final sin enlazado."
+        }
+      ],
+      "resumen_didactico": "Compilar y entregar el binario permite usar el programa sin revelar su implementación.",
+      "ejemplo_practico": "Distribuir mi_utilidad.exe generado por el compilador, manteniendo los .cpp solo en el repositorio interno.",
+      "conclusion_final": "Si quieres ocultar la lógica interna en C++, entrega el ejecutable, no el código fuente ni los artefactos intermedios."
+    }
+  },
+  {
+    "id": "UT1-Q29",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Al explicar el pipeline de compilación, ¿qué orden es correcto?",
+    "contexto": "Descripción de las fases clásicas del proceso de compilación en C/C++.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ensamblado → Preprocesado → Enlazado → Compilación"
+      },
+      {
+        "clave": "b",
+        "texto": "Preprocesado → Compilación → Ensamblado → Enlazado"
+      },
+      {
+        "clave": "c",
+        "texto": "Enlazado → Preprocesado → Compilación → Ensamblado"
+      },
+      {
+        "clave": "d",
+        "texto": "Compilación → Enlazado → Preprocesado → Ensamblado"
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El flujo clásico de compilación en C/C++ pasa por preprocesado de directivas, compilación a ensamblador, ensamblado a código objeto y, por último, enlazado para generar el ejecutable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El preprocesado debe ocurrir antes de la compilación y el ensamblado, no después."
+        },
+        {
+          "clave": "c",
+          "motivo": "El enlazado es la fase final, no puede ir antes de preprocesar ni de compilar."
+        },
+        {
+          "clave": "d",
+          "motivo": "El orden propuesto ignora que el preprocesado es la primera fase y que el enlazado va al final."
+        }
+      ],
+      "resumen_didactico": "El orden correcto es: preprocesar, compilar, ensamblar y enlazar.",
+      "ejemplo_practico": "g++ primero expande includes y macros, luego compila cada fuente, genera .o y finalmente enlaza los objetos en un solo ejecutable.",
+      "conclusion_final": "Recuerda el pipeline como una cadena: preprocesador → compilador → ensamblador → enlazador."
+    }
+  },
+  {
+    "id": "UT1-Q30",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Diferencia de artefactos en el proceso:",
+    "contexto": "Identificación de los distintos tipos de archivos generados en el ciclo de compilación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Bytecode: siempre binario nativo" },
+      { "clave": "b", "texto": "Código fuente: .exe" },
+      {
+        "clave": "c",
+        "texto": "Código objeto: resultado intermedio de compilación"
+      },
+      { "clave": "d", "texto": "Ejecutable: archivo .py" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El código objeto es el resultado intermedio de la compilación: un archivo binario aún no enlazado que después se combinará con otros objetos y librerías para formar el ejecutable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El bytecode es un código intermedio para máquinas virtuales, no siempre binario nativo para la CPU."
+        },
+        {
+          "clave": "b",
+          "motivo": "El código fuente es lo que escribe el programador y no es un ejecutable .exe."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un archivo .py es código fuente de Python, no un ejecutable nativo del sistema operativo."
+        }
+      ],
+      "resumen_didactico": "En compilación clásica, el código objeto es un paso intermedio necesario antes de generar el ejecutable final.",
+      "ejemplo_practico": "Generar modulo.o desde modulo.cpp y luego enlazarlo con otros .o para producir la aplicación final.",
+      "conclusion_final": "Distingue siempre entre fuente, objeto, bytecode y ejecutable para entender bien el flujo de construcción."
+    }
+  }
+]

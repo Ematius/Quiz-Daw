@@ -41,6 +41,11 @@ const topicsByModule = {
       title: "Explotación de aplicaciones informáticas de propósito general",
       numQuestion: 30,
     },
+    {
+      id:"UT8",
+      title: "Preguntas nuevas, que conviene estudiar",
+      numQuestion: 41,
+    },
   ],
 };
 
