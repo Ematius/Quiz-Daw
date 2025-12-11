@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "UT2-Q01",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un programador experimentado comenta en una reunión que en sus inicios usaba un IDE de Borland que, para la época, compilaba a una velocidad asombrosa, superando incluso a algunas herramientas actuales. Dicho IDE fue pionero y tuvo un gran éxito en los años 80. ¿A qué entorno de desarrollo se está refiriendo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Turbo Pascal." },
+      { "clave": "b", "texto": "Visual Basic 6." },
+      { "clave": "c", "texto": "Visual C++." },
+      { "clave": "d", "texto": "Delphi." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El temario indica que Borland lanzó Turbo Pascal en 1983 y que fue un entorno pionero, famoso por su velocidad de compilación, incluso superior a muchos compiladores modernos de su época. Tuvo un gran éxito en los años 80 y sentó las bases para futuras herramientas de Borland.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Visual Basic 6 es de Microsoft, no de Borland, y es posterior (años 90), asociado al enfoque RAD, no al IDE pionero de los 80."
+        },
+        {
+          "clave": "c",
+          "motivo": "Visual C++ también es de Microsoft y se centra en C/C++ y bibliotecas de Windows, no es el IDE de Borland citado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Delphi sí es de Borland, pero aparece después como evolución de Turbo Pascal para Windows, no como el pionero de los 80."
+        }
+      ],
+      "resumen_didactico": "El IDE de Borland que marcó época en los 80 por compilar rapidísimo y popularizar Pascal fue Turbo Pascal.",
+      "ejemplo_practico": "En clases de programación de los 80–90, era habitual escribir código en Turbo Pascal y obtener el ejecutable casi al instante, facilitando mucho el ciclo escribe–compila–corrige.",
+      "conclusion_final": "Si el enunciado habla de Borland, años 80 y compilación extremadamente rápida, la respuesta correcta es Turbo Pascal."
+    }
+  },
+  {
+    "id": "UT2-Q02",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Cuál fue una de las características más innovadoras que introdujo Turbo Pascal en su momento?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su velocidad de compilación era excepcionalmente alta para la época."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo permitía la programación estructurada, sin orientación a objetos."
+      },
+      {
+        "clave": "c",
+        "texto": "Era un entorno exclusivamente online y colaborativo."
+      },
+      {
+        "clave": "d",
+        "texto": "Requería el uso de un intérprete en lugar de un compilador."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La unidad destaca que Turbo Pascal compilaba rapidísimo, incluso más que muchos compiladores modernos de su época. Esa integración de editor y compilador con una velocidad de compilación muy alta fue una de sus grandes innovaciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El temario indica que Turbo Pascal permitía programación con orientación a objetos, por lo que no se limitaba a la programación estructurada."
+        },
+        {
+          "clave": "c",
+          "motivo": "En los años 80 no existían los IDE online como los actuales; Turbo Pascal era un entorno local, no online ni colaborativo en navegador."
+        },
+        {
+          "clave": "d",
+          "motivo": "Turbo Pascal se presenta como entorno compilado; la innovación fue precisamente su compilador rápido, no el uso de un intérprete."
+        }
+      ],
+      "resumen_didactico": "Turbo Pascal integraba edición y compilación con una velocidad de compilación muy elevada, lo que permitía iterar el código con gran rapidez.",
+      "ejemplo_practico": "Un alumno escribe un programa, pulsa compilar y casi de inmediato ve el ejecutable y los errores, acelerando mucho el aprendizaje.",
+      "conclusion_final": "La idea clave a recordar es que Turbo Pascal destacó por su compilación extremadamente rápida integrada en el IDE."
+    }
+  },
+  {
+    "id": "UT2-Q03",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "En una empresa de software se está debatiendo sobre metodologías de desarrollo. Un gerente recuerda cómo Visual Basic 6 popularizó un paradigma donde primero se creaba una interfaz gráfica de forma rápida, se validaba con el usuario y luego se programaba la lógica. ¿Cómo se conoce este paradigma?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Desarrollo rápido de aplicaciones (RAD)." },
+      { "clave": "b", "texto": "Desarrollo orientado a objetos." },
+      { "clave": "c", "texto": "Desarrollo basado en pruebas (TDD)." },
+      { "clave": "d", "texto": "Desarrollo en cascada." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El temario explica que Visual Basic 6 popularizó el enfoque RAD (Rapid Application Development), basado en prototipar rápidamente la interfaz, validarla con el usuario y después construir la base de datos y la lógica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La orientación a objetos es un paradigma de programación, no una metodología centrada en prototipar primero la interfaz con el usuario."
+        },
+        {
+          "clave": "c",
+          "motivo": "TDD se basa en escribir primero los tests y después el código, no en diseñar primero la interfaz gráfica."
+        },
+        {
+          "clave": "d",
+          "motivo": "El modelo en cascada es secuencial (análisis, diseño, implementación...), no se caracteriza por prototipado rápido de la interfaz con el usuario."
+        }
+      ],
+      "resumen_didactico": "Visual Basic 6 está asociado al enfoque RAD: primero se maqueta la interfaz, se valida con el usuario y luego se implementan la lógica y los datos.",
+      "ejemplo_practico": "Para una app de facturación, el desarrollador crea rápidamente un formulario con campos y botones, el cliente lo prueba, lo ajustan y después se implementa el acceso a base de datos y las reglas de negocio.",
+      "conclusion_final": "Cuando veas Visual Basic 6 + prototipado rápido de la interfaz con el usuario, la etiqueta correcta es RAD."
+    }
+  },
+  {
+    "id": "UT2-Q04",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un administrativo de una empresa utiliza una macro en Excel para automatizar la generación de informes. Sabe que esta macro fue programada utilizando Visual Basic for Applications (VBA). Este lenguaje es un dialecto derivado de un famoso IDE de Microsoft. ¿Cuál es ese IDE?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Visual Basic 6." },
+      { "clave": "b", "texto": "Delphi." },
+      { "clave": "c", "texto": "JBuilder." },
+      { "clave": "d", "texto": "Visual C++." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La unidad indica que Visual Basic 6 sigue presente a través de VBA en las macros de Office. VBA es un dialecto de Visual Basic utilizado dentro de las aplicaciones de Office para automatizar tareas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Delphi es de Borland y está ligado a Pascal, no a las macros de Office ni al origen de VBA."
+        },
+        {
+          "clave": "c",
+          "motivo": "JBuilder es un IDE orientado a Java, no el origen del dialecto VBA utilizado en Office."
+        },
+        {
+          "clave": "d",
+          "motivo": "Visual C++ es el entorno de C/C++ de Microsoft, orientado a bibliotecas de Windows y .NET, no el origen del lenguaje VBA."
+        }
+      ],
+      "resumen_didactico": "VBA (Visual Basic for Applications) es un dialecto de Visual Basic, heredero directo de Visual Basic 6, y se usa para automatizar Office.",
+      "ejemplo_practico": "Una macro en Excel que recorre filas, hace cálculos y genera informes está escrita en VBA, cuya sintaxis recuerda a Visual Basic 6.",
+      "conclusion_final": "Si se habla de macros de Office con VBA, el IDE del que deriva es Visual Basic 6."
+    }
+  },
+  {
+    "id": "UT2-Q05",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué relación existe entre los entornos de desarrollo Delphi y Turbo Pascal, ambos de la empresa Borland?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Eran herramientas competidoras, una para Pascal y otra para C++."
+      },
+      {
+        "clave": "b",
+        "texto": "Delphi fue la continuación de Turbo Pascal, adaptado para el sistema operativo Windows."
+      },
+      {
+        "clave": "c",
+        "texto": "Delphi fue el predecesor de Turbo Pascal para sistemas MS-DOS."
+      },
+      {
+        "clave": "d",
+        "texto": "Turbo Pascal era un plugin para extender las funcionalidades de Delphi."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El temario indica que Borland respondió a la presión de Microsoft con Delphi, una evolución de Turbo Pascal adaptada a Windows. Se considera heredero de Turbo Pascal en entorno gráfico.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ambos están ligados a Pascal; no son herramientas competidoras para lenguajes diferentes, sino evolución una de la otra."
+        },
+        {
+          "clave": "c",
+          "motivo": "Históricamente primero aparece Turbo Pascal y después Delphi; no al revés."
+        },
+        {
+          "clave": "d",
+          "motivo": "Turbo Pascal fue un IDE completo, no un plugin dentro de Delphi."
+        }
+      ],
+      "resumen_didactico": "Turbo Pascal fue el IDE pionero de Borland y Delphi su evolución para Windows, manteniendo la base de Pascal y añadiendo capacidades visuales.",
+      "ejemplo_practico": "Un programador de los 80 programaba en Turbo Pascal en modo texto; en los 90 migró a Delphi para crear aplicaciones Windows con formularios y eventos.",
+      "conclusion_final": "Recuerda: Turbo Pascal ⇒ origen en MS-DOS; Delphi ⇒ evolución para Windows."
+    }
+  },
+  {
+    "id": "UT2-Q06",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un equipo de desarrollo está trabajando en una aplicación que requiere un uso intensivo de las bibliotecas nativas de Windows, como las Microsoft Foundation Classes (MFC), y además se integra con el framework .NET. ¿Qué entorno de desarrollo clásico de Microsoft sería el más adecuado para este proyecto?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Delphi." },
+      { "clave": "b", "texto": "Turbo Pascal." },
+      { "clave": "c", "texto": "Visual Basic 6." },
+      { "clave": "d", "texto": "Visual C++." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La unidad describe Visual C++ como el IDE que permite programar en C y C++ teniendo como gran baza las bibliotecas de Windows, .NET y MFC. Es la opción clásica para trabajar con MFC y el ecosistema nativo de Windows.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Delphi es de Borland y está ligado a Pascal, no es el entorno clásico de Microsoft para MFC y .NET."
+        },
+        {
+          "clave": "b",
+          "motivo": "Turbo Pascal también es de Borland y se asocia a entornos más antiguos; no se vincula en el temario a MFC ni al framework .NET."
+        },
+        {
+          "clave": "c",
+          "motivo": "Visual Basic 6 se relaciona con RAD y formularios, pero no se presenta en la unidad como la herramienta principal para explotar MFC + .NET en C/C++."
+        }
+      ],
+      "resumen_didactico": "Cuando se habla de C/C++, MFC y .NET en el ecosistema clásico de Microsoft, el IDE de referencia es Visual C++.",
+      "ejemplo_practico": "Para una aplicación de escritorio que usa ventanas nativas de Windows, menús MFC y algunos componentes .NET, el stack típico sería C++ con Visual C++.",
+      "conclusion_final": "MFC + .NET + C/C++ ⇒ Visual C++."
+    }
+  },
+  {
+    "id": "UT2-Q07",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un desarrollador de software se ha especializado en crear aplicaciones exclusivamente para dispositivos de Apple, como iPhone y Mac. Para ello, utiliza el entorno de desarrollo oficial proporcionado por la propia compañía. ¿Qué IDE está utilizando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Xcode." },
+      { "clave": "b", "texto": "Eclipse." },
+      { "clave": "c", "texto": "NetBeans." },
+      { "clave": "d", "texto": "Visual Studio." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El temario presenta Xcode como el IDE oficial de Apple para desarrollar aplicaciones nativas para macOS y iOS. Es el entorno recomendado para apps de iPhone y Mac.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eclipse es un IDE open source, muy usado para Java y otros lenguajes, pero no es el entorno oficial de Apple."
+        },
+        {
+          "clave": "c",
+          "motivo": "NetBeans es un IDE multiplataforma y open source, pero tampoco es el IDE oficial para el ecosistema Apple."
+        },
+        {
+          "clave": "d",
+          "motivo": "Visual Studio es el IDE propietario de Microsoft, asociado a Windows y .NET, no a desarrollo nativo para Apple."
+        }
+      ],
+      "resumen_didactico": "El desarrollo nativo para iPhone, iPad y Mac con herramientas oficiales de Apple se realiza con Xcode.",
+      "ejemplo_practico": "Para publicar una app en la App Store, el desarrollador crea el proyecto en Xcode, programa en Swift y usa Xcode para compilar, probar y subir la app.",
+      "conclusion_final": "IDE oficial de Apple para iOS y macOS ⇒ Xcode."
+    }
+  },
+  {
+    "id": "UT2-Q08",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Para poder publicar una aplicación en la App Store, un desarrollador debe registrarse en el programa de desarrolladores de Apple. ¿Qué requisito económico es indispensable para poder subir aplicaciones a la tienda?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La publicación de aplicaciones es completamente gratuita."
+      },
+      {
+        "clave": "b",
+        "texto": "Pagar una comisión por cada descarga de la aplicación."
+      },
+      { "clave": "c", "texto": "Pagar una subscripción anual." },
+      { "clave": "d", "texto": "Comprar una licencia vitalicia del IDE Xcode." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La unidad explica que ser desarrollador de Apple es gratuito, pero se requiere una suscripción anual para poder subir aplicaciones a la App Store.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El registro como desarrollador puede ser gratuito, pero la publicación en la tienda no lo es: exige una suscripción anual."
+        },
+        {
+          "clave": "b",
+          "motivo": "El temario no menciona un pago por descarga como requisito previo para publicar, sino el pago de una suscripción anual."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se habla de comprar una licencia vitalicia de Xcode, sino de un modelo de suscripción anual al programa de desarrolladores."
+        }
+      ],
+      "resumen_didactico": "Desarrollar con Xcode es posible sin coste, pero para publicar en la App Store hay que pagar una suscripción anual al programa de desarrolladores.",
+      "ejemplo_practico": "Un desarrollador puede probar su app en local, pero cuando decide subirla a la App Store debe activar y pagar la cuota anual del Apple Developer Program.",
+      "conclusion_final": "Programa de desarrolladores de Apple + publicación en App Store ⇒ requiere suscripción anual."
+    }
+  },
+  {
+    "id": "UT2-Q09",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un equipo de programadores necesita un IDE que funcione en Windows, Linux y Mac OS X, ya que cada miembro usa un sistema operativo distinto. El proyecto principal es en Java, pero también necesitan soporte para PHP y HTML5. Buscan una solución gratuita y de código abierto. ¿Qué IDE cumple con todos estos requisitos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Xcode." },
+      { "clave": "b", "texto": "NetBeans." },
+      { "clave": "c", "texto": "Visual C++." },
+      { "clave": "d", "texto": "Visual Basic 6." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El temario describe NetBeans como un IDE open source, disponible para Linux, Windows y Mac OS X, escrito en Java, y con soporte para múltiples lenguajes como Java, PHP y HTML5.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Xcode solo funciona en macOS, no es multiplataforma para Windows y Linux."
+        },
+        {
+          "clave": "c",
+          "motivo": "Visual C++ es un entorno de Microsoft orientado a C/C++ y tecnologías Windows/.NET, no un IDE open source con soporte integrado para Java, PHP y HTML5 en varias plataformas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Visual Basic 6 es propietario, centrado en Windows y en el enfoque RAD, y no se ajusta al requisito de ser multiplataforma y de código abierto."
+        }
+      ],
+      "resumen_didactico": "NetBeans es un IDE multiplataforma y open source que soporta Java, PHP y HTML5, por lo que encaja con la combinación de requisitos planteada.",
+      "ejemplo_practico": "El mismo proyecto Java/PHP/HTML5 puede abrirse en NetBeans desde Windows, Ubuntu o macOS sin cambiar de herramienta.",
+      "conclusion_final": "IDE gratis, open source, multiplataforma y con soporte para Java, PHP y HTML5 ⇒ NetBeans."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Una de las características fundamentales de NetBeans es su arquitectura, que permite a los programadores ampliar las capacidades del IDE añadiendo nuevas funcionalidades según sus necesidades específicas. ¿En qué concepto se basa esta arquitectura?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En la ejecución exclusiva de código compilado."
+      },
+      {
+        "clave": "b",
+        "texto": "En un sistema de licencias de pago por funcionalidad."
+      },
+      { "clave": "c", "texto": "En un núcleo propietario y cerrado." },
+      {
+        "clave": "d",
+        "texto": "En la modularidad, permitiendo añadir módulos o plugins."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El temario señala que NetBeans está basado en una arquitectura modular, donde un núcleo puede ampliarse mediante módulos o plugins que añaden nuevas funcionalidades o soporte a otros lenguajes y herramientas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La arquitectura de NetBeans no se define por la ejecución exclusiva de código compilado, sino por la modularidad del IDE."
+        },
+        {
+          "clave": "b",
+          "motivo": "NetBeans es open source y no funciona con un sistema de licencias de pago por funcionalidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Su núcleo no es propietario y cerrado; el IDE es de código abierto y extensible por módulos."
+        }
+      ],
+      "resumen_didactico": "NetBeans se construye como un conjunto de módulos sobre un núcleo, lo que permite ampliar el IDE instalando plugins según las necesidades del proyecto.",
+      "ejemplo_practico": "Un equipo añade un plugin de PHP y otro de Git a un NetBeans inicialmente usado solo para Java, ampliando sus capacidades sin cambiar de IDE.",
+      "conclusion_final": "La palabra clave al hablar de la arquitectura de NetBeans es modularidad: módulos y plugins que extienden el IDE."
+    }
+  },
+  {
+    "id": "UT2-Q11",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Una programadora se une a un proyecto que utiliza un IDE de código abierto muy popular en la comunidad Java. Le comentan que este IDE fue una evolución de un producto anterior de IBM llamado VisualAge y que actualmente es mantenido por una fundación independiente sin ánimo de lucro. ¿De qué IDE se trata?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Xcode." },
+      { "clave": "b", "texto": "JBuilder." },
+      { "clave": "c", "texto": "Eclipse." },
+      { "clave": "d", "texto": "NetBeans." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La UT2 indica que Eclipse es un IDE open source que evolucionó de VisualAge de IBM y que actualmente se desarrolla de forma independiente y sin ánimo de lucro bajo la Eclipse Foundation.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Xcode es el IDE oficial de Apple, no procede de VisualAge ni está gestionado por una fundación independiente sin ánimo de lucro."
+        },
+        {
+          "clave": "b",
+          "motivo": "JBuilder es un IDE comercial vinculado a Borland, no derivado de VisualAge de IBM."
+        },
+        {
+          "clave": "d",
+          "motivo": "NetBeans también es open source, pero su historia no se relaciona con VisualAge; es un proyecto distinto al de Eclipse."
+        }
+      ],
+      "resumen_didactico": "Eclipse es un IDE muy usado en Java, originado como evolución de VisualAge de IBM y actualmente mantenido por la Eclipse Foundation.",
+      "ejemplo_practico": "En una empresa, el equipo migra de herramientas de IBM a Eclipse, aprovechando que mantiene la filosofía de plataforma extensible y open source.",
+      "conclusion_final": "Sucesor de VisualAge + open source + fundación sin ánimo de lucro ⇒ Eclipse."
+    }
+  },
+  {
+    "id": "UT2-Q12",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "En sus inicios, el IDE Eclipse utilizaba la licencia CPL (Common Public License). Sin embargo, con el tiempo, esta fue reemplazada por una nueva licencia para gobernar su distribución y modificación. ¿Cuál es la licencia actual de Eclipse?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CDDL (Common Development and Distribution License)."
+      },
+      { "clave": "b", "texto": "GPL (General Public License)." },
+      { "clave": "c", "texto": "Licencia Propietaria de IBM." },
+      { "clave": "d", "texto": "EPL (Eclipse Public License)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El temario especifica que Eclipse anteriormente se distribuía bajo la licencia CPL, pero que en la actualidad utiliza la licencia EPL (Eclipse Public License).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "CDDL se menciona asociada a NetBeans (CDDL/GPL2), no a Eclipse."
+        },
+        {
+          "clave": "b",
+          "motivo": "Aunque la GPL es una licencia libre conocida, la unidad indica que la licencia específica de Eclipse es la EPL."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eclipse ya no se distribuye bajo una licencia propietaria de IBM; lo gestiona una fundación independiente con licencia EPL."
+        }
+      ],
+      "resumen_didactico": "Históricamente, Eclipse pasó de CPL a EPL; EPL es la licencia libre específica asociada a este IDE.",
+      "ejemplo_practico": "Al revisar la información legal de una descarga de Eclipse, aparece referenciada la Eclipse Public License (EPL) como licencia del producto.",
+      "conclusion_final": "La licencia actual de Eclipse es la EPL, Eclipse Public License."
+    }
+  },
+  {
+    "id": "UT2-Q13",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un equipo de desarrollo distribuido geográficamente necesita trabajar de forma simultánea en el mismo código base. Para evitar problemas con la configuración de entornos locales y facilitar la colaboración, deciden usar una plataforma accesible a través del navegador. ¿Qué tipo de entorno de desarrollo están eligiendo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un IDE específico para un único sistema operativo."
+      },
+      {
+        "clave": "b",
+        "texto": "Un editor de texto simple con un compilador por línea de comandos."
+      },
+      { "clave": "c", "texto": "Un entorno de desarrollo online." },
+      { "clave": "d", "texto": "Un IDE de escritorio propietario." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La unidad describe los entornos de desarrollo online como plataformas accesibles mediante navegador, sin necesidad de instalar un IDE local, pensadas para facilitar la colaboración y el trabajo desde cualquier lugar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un IDE específico de un único sistema operativo complicaría a un equipo que usa varios sistemas, justo lo contrario de lo que se busca."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un editor simple con compilador en consola exige configurar el entorno en cada máquina, lo que no evita los problemas de configuración local."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un IDE de escritorio propietario también requeriría instalación y configuración en cada equipo, sin aprovechar las ventajas de un entorno centralizado en la nube."
+        }
+      ],
+      "resumen_didactico": "Un entorno de desarrollo online centraliza la configuración y permite trabajar desde el navegador, facilitando la colaboración en equipos distribuidos.",
+      "ejemplo_practico": "Varias personas editan el mismo repositorio desde un IDE online, cada una desde su navegador y sistema operativo, sin montar entornos locales complejos.",
+      "conclusion_final": "Si la clave es trabajar desde el navegador y evitar configurar cada equipo, se está usando un entorno de desarrollo online."
+    }
+  },
+  {
+    "id": "UT2-Q14",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un estudiante de informática está buscando un IDE para sus prácticas. Su profesor le recomienda usar una herramienta con licencia libre (EPL o GPL). Al revisar las opciones, encuentra Visual Studio y NetBeans. ¿Cuál de los dos debería elegir para cumplir con la recomendación del profesor?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Visual Studio, porque su versión Community es gratuita."
+      },
+      {
+        "clave": "b",
+        "texto": "NetBeans, ya que se distribuye bajo licencias libres como CDDL/GPL2."
+      },
+      { "clave": "c", "texto": "Visual Studio, porque es de Microsoft." },
+      {
+        "clave": "d",
+        "texto": "Cualquiera de los dos, ya que ambos son de código abierto."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El temario señala que NetBeans es open source y se distribuye bajo licencias libres como CDDL/GPL2. Visual Studio, incluso en su edición Community, se considera software propietario con licencia de Microsoft.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Que una herramienta sea gratuita no implica que tenga licencia libre; Visual Studio Community sigue siendo propietario."
+        },
+        {
+          "clave": "c",
+          "motivo": "El hecho de ser de Microsoft no tiene relación con ser EPL/GPL; Visual Studio no cumple el criterio de licencia libre exigido por el profesor."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es cierto que ambos sean de código abierto: NetBeans sí lo es, pero Visual Studio no."
+        }
+      ],
+      "resumen_didactico": "Cuando se pide usar un IDE con licencia libre, NetBeans cumple el requisito (CDDL/GPL2), mientras que Visual Studio es propietario.",
+      "ejemplo_practico": "En la universidad, un alumno instala NetBeans para poder consultar el código del IDE y adaptarse a las recomendaciones de software libre marcadas por el docente.",
+      "conclusion_final": "Entre Visual Studio y NetBeans, la opción que cumple la condición de licencia libre es NetBeans."
+    }
+  },
+  {
+    "id": "UT2-Q15",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Al comparar diferentes entornos de desarrollo, un programador revisa una tabla de características. Busca específicamente un IDE que sea propietario para un proyecto corporativo que exige este tipo de licencia. Según la información proporcionada, ¿cuál de los siguientes IDEs tiene una licencia propietaria?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "KDevelop." },
+      { "clave": "b", "texto": "NetBeans." },
+      { "clave": "c", "texto": "Eclipse." },
+      { "clave": "d", "texto": "JDeveloper." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En la tabla de entornos libres y propietarios, la unidad identifica a JDeveloper como un IDE propietario, mientras que Eclipse, NetBeans y KDevelop se listan con licencias libres (EPL, CDDL/GPL2, GPL, respectivamente).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "KDevelop se distribuye bajo licencia GPL, por lo que es software libre, no propietario."
+        },
+        {
+          "clave": "b",
+          "motivo": "NetBeans es open source y se distribuye con licencias libres CDDL/GPL2."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eclipse se distribuye bajo EPL, una licencia libre, por lo que tampoco es propietario."
+        }
+      ],
+      "resumen_didactico": "En la comparativa de la UT2, JDeveloper aparece como ejemplo de IDE propietario, frente a Eclipse, NetBeans y KDevelop, que son libres.",
+      "ejemplo_practico": "Una empresa que trabaja con tecnologías Oracle puede optar por JDeveloper como entorno propietario integrado con su ecosistema.",
+      "conclusion_final": "De las opciones dadas, el IDE propietario señalado en la tabla del temario es JDeveloper."
+    }
+  },
+  {
+    "id": "UT2-Q16",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un desarrollador de Java busca un IDE que le ofrezca compatibilidad total en Windows, Linux y Mac OS X, ya que trabaja en las tres plataformas. ¿Cuál de los siguientes IDEs cumple con este requisito de ser multiplataforma?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "JCreator, que solo es para Windows." },
+      {
+        "clave": "b",
+        "texto": "KDevelop, que no está disponible para Windows ni Mac OS X."
+      },
+      {
+        "clave": "c",
+        "texto": "Visual Basic 6, que es específico de Windows."
+      },
+      { "clave": "d", "texto": "Eclipse, que funciona en los tres sistemas." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La tabla del temario indica que Eclipse está disponible para Windows, Linux y Mac OS X, ya que está escrito en Java y es multiplataforma.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "JCreator se indica como un IDE de Java específico para Windows, por lo que no sirve para Linux y Mac OS X."
+        },
+        {
+          "clave": "b",
+          "motivo": "KDevelop está orientado principalmente a entornos Linux/KDE y no cubre las tres plataformas de escritorio mencionadas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Visual Basic 6 es un IDE antiguo de Microsoft, específico de Windows y no pensado para Java."
+        }
+      ],
+      "resumen_didactico": "Eclipse es un IDE de Java multiplataforma que puede ejecutarse en Windows, Linux y Mac OS X.",
+      "ejemplo_practico": "Un desarrollador instala Eclipse en su PC con Windows, en su portátil con Ubuntu y en un Mac del trabajo, usando el mismo IDE en los tres entornos.",
+      "conclusion_final": "Si se busca un IDE Java que funcione en Windows, Linux y Mac OS X, la opción correcta es Eclipse."
+    }
+  },
+  {
+    "id": "UT2-Q17",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Para poder compilar y desarrollar aplicaciones en Java, es imprescindible instalar un paquete de software que incluye el compilador (javac), las librerías estándar y otras herramientas esenciales. ¿Cómo se conoce a este paquete?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "JVM (Java Virtual Machine)." },
+      { "clave": "b", "texto": "JRE (Java Runtime Environment)." },
+      { "clave": "c", "texto": "Javadoc." },
+      { "clave": "d", "texto": "JDK (Java Development Kit)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La unidad explica que el JDK (Java Development Kit) es el conjunto de herramientas de desarrollo e incluye el compilador javac, las librerías estándar y otros utilitarios necesarios para programar en Java.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La JVM es la máquina virtual que ejecuta bytecode, pero no incluye el compilador ni el resto de herramientas de desarrollo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El JRE es el entorno de ejecución; permite correr aplicaciones Java, pero no compilar código fuente porque no incluye javac."
+        },
+        {
+          "clave": "c",
+          "motivo": "Javadoc es la herramienta de generación de documentación a partir de comentarios, no un kit de desarrollo completo."
+        }
+      ],
+      "resumen_didactico": "Para desarrollar y compilar en Java se necesita el JDK, que agrupa compilador, librerías y utilidades de desarrollo.",
+      "ejemplo_practico": "En un sistema recién instalado, tras añadir el JDK, `javac -version` devuelve la versión del compilador, confirmando que hay entorno de desarrollo.",
+      "conclusion_final": "Si la tarea es programar y compilar Java, el paquete imprescindible es el JDK."
+    }
+  },
+  {
+    "id": "UT2-Q18",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un programa Java compilado en un sistema Windows puede ejecutarse en un sistema Linux sin necesidad de volver a compilarlo. Para que esto sea posible, ¿qué componente de software debe estar instalado en la máquina Linux?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El IDE NetBeans." },
+      { "clave": "b", "texto": "El compilador javac." },
+      {
+        "clave": "c",
+        "texto": "La JVM (Java Virtual Machine) específica para Linux."
+      },
+      {
+        "clave": "d",
+        "texto": "El mismo JDK (Java Development Kit) de Windows."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La unidad expone que el código Java se compila a bytecode independiente de la plataforma, que se ejecuta sobre una JVM específica de cada sistema operativo. Para ejecutar en Linux un programa compilado en Windows, basta con disponer de una JVM para Linux.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "NetBeans es un IDE que facilita el desarrollo, pero no es necesario para ejecutar un programa Java ya compilado."
+        },
+        {
+          "clave": "b",
+          "motivo": "El compilador javac se usa para generar el bytecode; si ya tenemos el .class o .jar, no es imprescindible recompilar en Linux."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se puede usar el mismo JDK binario de Windows en Linux; lo que se necesita es la JVM/JRE/JDK compilada para Linux."
+        }
+      ],
+      "resumen_didactico": "La portabilidad de Java se basa en compilar a bytecode y disponer de una JVM adecuada en cada sistema operativo para ejecutarlo.",
+      "ejemplo_practico": "Un .jar generado en Windows se copia a un servidor Linux y se ejecuta con `java -jar app.jar` siempre que haya una JVM para Linux instalada.",
+      "conclusion_final": "Para ejecutar en Linux un programa Java compilado en otra plataforma, es suficiente con tener instalada la JVM para Linux."
+    }
+  },
+  {
+    "id": "UT2-Q19",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un programador necesita confirmar si el Entorno de Ejecución de Java (JRE) está correctamente instalado en su sistema antes de intentar correr una aplicación. ¿Qué comando debe ejecutar para verificar la versión del JRE instalado?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "jdk --version" },
+      { "clave": "b", "texto": "java -version" },
+      { "clave": "c", "texto": "javac -version" },
+      { "clave": "d", "texto": "java --check" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La unidad indica que para comprobar que el entorno de ejecución de Java está instalado y accesible se utiliza el comando `java -version`, que muestra la versión de la JVM/JRE disponible.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No existe un comando estándar `jdk` para consultar la versión; las herramientas se invocan como `java`, `javac`, etc."
+        },
+        {
+          "clave": "c",
+          "motivo": "`javac -version` muestra la versión del compilador (JDK), no comprueba directamente el entorno de ejecución JRE que se usa con `java`."
+        },
+        {
+          "clave": "d",
+          "motivo": "`java --check` no es una opción estándar; el parámetro habitual para ver la versión es `-version`."
+        }
+      ],
+      "resumen_didactico": "Para verificar que el entorno de ejecución de Java está correctamente instalado y en el PATH se utiliza `java -version`.",
+      "ejemplo_practico": "Antes de lanzar una aplicación, el desarrollador ejecuta `java -version` y comprueba que se muestra una versión de Java sin errores de comando no encontrado.",
+      "conclusion_final": "El comando de referencia para comprobar el JRE/JVM instalado es `java -version`."
+    }
+  },
+  {
+    "id": "UT2-Q20",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Durante la instalación de las herramientas de desarrollo de Java en un sistema Ubuntu, un usuario ejecuta el comando sudo apt-get install default-jdk. ¿Cuál es la función principal de este comando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Instalar el equipo de desarrollo de Java, que incluye el compilador."
+      },
+      { "clave": "b", "texto": "Instalar el IDE de NetBeans por defecto." },
+      {
+        "clave": "c",
+        "texto": "Instalar únicamente el entorno de ejecución para correr aplicaciones Java."
+      },
+      { "clave": "d", "texto": "Actualizar la lista de paquetes del sistema." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La UT2 explica que en distribuciones como Ubuntu se puede instalar el JDK por defecto mediante un paquete como default-jdk, que proporciona el entorno de desarrollo completo e incluye el compilador javac.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El paquete default-jdk instala el kit de desarrollo de Java, no un IDE concreto como NetBeans."
+        },
+        {
+          "clave": "c",
+          "motivo": "Para instalar solo el entorno de ejecución se usaría un paquete de tipo default-jre; default-jdk incluye también herramientas de desarrollo como javac."
+        },
+        {
+          "clave": "d",
+          "motivo": "La actualización de la lista de paquetes se realiza con `apt-get update`; `apt-get install` instala el paquete indicado."
+        }
+      ],
+      "resumen_didactico": "En Ubuntu, instalar default-jdk significa instalar el JDK del sistema, con compilador y herramientas de desarrollo, no solo el JRE.",
+      "ejemplo_practico": "Tras `sudo apt-get install default-jdk`, el usuario puede compilar programas con `javac` y ejecutarlos con `java`.",
+      "conclusion_final": "El comando `sudo apt-get install default-jdk` instala el kit de desarrollo de Java (JDK) con el compilador y librerías necesarias."
+    }
+  },
+  {
+    "id": "UT2-Q21",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Antes de proceder con la instalación del JDK y el JRE en un sistema basado en Ubuntu mediante apt-get, se recomienda ejecutar los comandos sudo apt-get update y sudo apt-get upgrade. ¿Cuál es el propósito de realizar estos dos pasos previos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Crear un nuevo proyecto Java por defecto." },
+      {
+        "clave": "b",
+        "texto": "Instalar directamente el compilador y la máquina virtual de Java."
+      },
+      {
+        "clave": "c",
+        "texto": "Desinstalar versiones antiguas de Java que puedan causar conflictos."
+      },
+      {
+        "clave": "d",
+        "texto": "Asegurarse de que la lista de paquetes del sistema y el software instalado estén actualizados."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La unidad indica que antes de instalar Java en sistemas basados en Ubuntu es recomendable ejecutar `apt-get update` y `apt-get upgrade` para actualizar la lista de paquetes disponibles y poner al día los paquetes ya instalados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Estos comandos gestionan paquetes del sistema y no crean proyectos de programación."
+        },
+        {
+          "clave": "b",
+          "motivo": "La instalación de Java se realiza con `apt-get install` sobre paquetes como default-jdk o default-jre; update/upgrade no instalan Java por sí mismos."
+        },
+        {
+          "clave": "c",
+          "motivo": "`apt-get update` y `apt-get upgrade` no están diseñados específicamente para desinstalar versiones antiguas de Java, sino para actualizar paquetes."
+        }
+      ],
+      "resumen_didactico": "Antes de instalar Java con apt-get conviene actualizar el índice de paquetes y el software instalado para minimizar problemas de dependencias.",
+      "ejemplo_practico": "El flujo típico es: `sudo apt-get update`, `sudo apt-get upgrade` y después `sudo apt-get install default-jdk`.",
+      "conclusion_final": "Los comandos update y upgrade preparan el sistema, asegurando que se trabaja con la lista de paquetes y versiones más recientes antes de instalar Java."
+    }
+  },
+  {
+    "id": "UT2-Q22",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un desarrollador está depurando un programa en NetBeans y observa que una variable tiene un valor incorrecto dentro de un bucle. Para analizar el problema, necesita que la ejecución del programa se detenga automáticamente en la primera línea del bucle cada vez que se ejecute. ¿Qué debe hacer?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Establecer un punto de interrupción (breakpoint) en esa línea."
+      },
+      { "clave": "b", "texto": "Añadir un comentario en esa línea de código." },
+      {
+        "clave": "c",
+        "texto": "Pulsar la tecla F7 repetidamente hasta llegar a esa línea."
+      },
+      {
+        "clave": "d",
+        "texto": "Seleccionar la opción \"Ejecutar archivo\" sin depurar."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En la sección de depuración, la unidad explica que se coloca un punto de interrupción en una línea específica para que la ejecución se detenga allí y poder analizar el estado del programa en ese punto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los comentarios no influyen en la ejecución ni activan el depurador; solo documentan el código."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ir avanzando manualmente con F7 hasta el bucle es posible pero no automático; un breakpoint permite parar directamente cada vez que se entra al bucle."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ejecutar sin depurar hace que el programa se ejecute completo sin detenerse, lo opuesto a lo que se necesita para inspeccionar la variable."
+        }
+      ],
+      "resumen_didactico": "Un breakpoint indica al depurador que debe detener la ejecución en una línea concreta para poder inspeccionar variables y flujo.",
+      "ejemplo_practico": "Al poner un punto de interrupción en la primera línea del for, el programa se detiene en cada iteración y el desarrollador puede ver el valor de la variable problemática.",
+      "conclusion_final": "Si quieres que el programa se pare en un punto específico al depurar, coloca un punto de interrupción en esa línea."
+    }
+  },
+  {
+    "id": "UT2-Q23",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Durante una sesión de depuración en NetBeans, el programa se detiene en un punto de interrupción. La línea actual es una llamada a una función. El programador no quiere analizar el interior de esa función, sino simplemente ejecutarla y parar en la línea siguiente. ¿Qué acción de depuración debe utilizar?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Entrar en el código (Step Into), pulsando F7."
+      },
+      { "clave": "b", "texto": "Detener la sesión de depuración." },
+      {
+        "clave": "c",
+        "texto": "Pasar a través del código (Step Over), pulsando F8."
+      },
+      {
+        "clave": "d",
+        "texto": "Continuar la ejecución hasta el siguiente breakpoint."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La unidad diferencia Step Into (F7), que entra en el interior de la función, y Step Over (F8), que ejecuta la llamada completa y continúa en la siguiente línea del mismo método.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Step Into haría justo lo contrario: entrar dentro del código de la función, permitiendo depurarla línea a línea."
+        },
+        {
+          "clave": "b",
+          "motivo": "Detener la depuración finaliza la sesión, no permite seguir avanzando a la siguiente línea del programa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Continuar hasta el siguiente breakpoint hace que el programa siga sin parar en la línea siguiente, salvo que haya otro breakpoint allí."
+        }
+      ],
+      "resumen_didactico": "Step Over (F8) es la acción que ejecuta una llamada de función sin entrar en su interior y detiene la depuración en la siguiente línea.",
+      "ejemplo_practico": "Si estamos en `calcularTotales();` y pulsamos F8, se ejecuta toda la función y el depurador se detiene en la siguiente instrucción del método actual.",
+      "conclusion_final": "Cuando solo quieres ejecutar una función y continuar en la siguiente línea sin entrar en ella, debes usar Step Over (F8)."
+    }
+  },
+  {
+    "id": "UT2-Q24",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Cuál es el objetivo principal al establecer un punto de interrupción en el código fuente de un programa durante la depuración?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Añadir documentación automática al código." },
+      {
+        "clave": "b",
+        "texto": "Marcar el código para que se compile más rápido."
+      },
+      {
+        "clave": "c",
+        "texto": "Detener la ejecución del programa en un punto específico para inspeccionar su estado."
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar permanentemente una línea de código que causa errores."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El temario explica que un punto de interrupción se coloca en una línea concreta para que la ejecución se detenga allí, permitiendo analizar el programa (valores de variables, flujo, pila de llamadas, etc.).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La documentación automática se genera a partir de comentarios y herramientas como Javadoc, no mediante breakpoints."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los puntos de interrupción no afectan al tiempo de compilación; solo influyen en la ejecución bajo el depurador."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un breakpoint no elimina código; simplemente indica dónde debe detenerse la ejecución durante la depuración."
+        }
+      ],
+      "resumen_didactico": "La función básica de un breakpoint es parar el programa en un lugar concreto para poder observar cómo está el sistema en ese instante.",
+      "ejemplo_practico": "Al parar en un breakpoint dentro de un bucle, el programador inspecciona una variable que está tomando valores inesperados.",
+      "conclusion_final": "Piensa en el breakpoint como un semáforo en el código: detiene la ejecución para que puedas mirar alrededor."
+    }
+  },
+  {
+    "id": "UT2-Q25",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "En NetBeans, un depurador está pausado en una línea que invoca una función propia del proyecto (calcularTotal()). Si el programador pulsa la tecla F7 (Step Into), ¿qué ocurrirá a continuación?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El programa finalizará la depuración y se ejecutará normalmente."
+      },
+      {
+        "clave": "b",
+        "texto": "El depurador ignorará la función y continuará hasta el final del programa."
+      },
+      {
+        "clave": "c",
+        "texto": "El depurador saltará a la primera línea de código dentro de la función calcularTotal()."
+      },
+      {
+        "clave": "d",
+        "texto": "La función se ejecutará y la depuración se detendrá en la línea siguiente."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La UT2 indica que Step Into (F7) entra en el interior de la llamada, situando el depurador en la primera línea ejecutable de la función o método llamado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "F7 no finaliza la depuración; simplemente cambia el modo de avanzar en el código."
+        },
+        {
+          "clave": "b",
+          "motivo": "Ignorar la función y ejecutar hasta el final sería más parecido a reanudar hasta el siguiente breakpoint, no a Step Into."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ejecutar la función y detenerse en la siguiente línea corresponde a Step Over (F8), no a Step Into (F7)."
+        }
+      ],
+      "resumen_didactico": "Step Into se utiliza cuando quieres inspeccionar el comportamiento interno de una función, entrando en su código línea a línea.",
+      "ejemplo_practico": "Pulsar F7 en `calcularTotal();` hace que el cursor pase a la primera línea del cuerpo de calcularTotal, permitiendo ver cómo calcula el importe total.",
+      "conclusion_final": "Si en NetBeans pulsas F7 sobre una llamada, el depurador entra en la función y se posiciona en su primera línea ejecutable."
+    }
+  },
+  {
+    "id": "UT2-Q26",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un desarrollador está depurando su código en NetBeans y la ejecución se ha detenido en un punto de interrupción. Para comprobar rápidamente el valor que contiene una variable en ese preciso instante, ¿cuál es la forma más sencilla de hacerlo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Consultar la documentación de Javadoc." },
+      {
+        "clave": "b",
+        "texto": "Colocar el cursor del ratón sobre el nombre de la variable en el editor."
+      },
+      { "clave": "c", "texto": "Abrir la herramienta Profiler." },
+      {
+        "clave": "d",
+        "texto": "Escribir un System.out.println y volver a compilar."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El funcionamiento habitual del depurador en NetBeans permite ver el valor de una variable simplemente pasando el ratón sobre su nombre cuando la ejecución está detenida en un breakpoint, mostrando un tooltip con su valor actual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Javadoc proporciona documentación del código, no muestra valores de variables en tiempo de ejecución."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Profiler está orientado a análisis de rendimiento (CPU/memoria), no es la herramienta más directa para ver el valor de una variable concreta al depurar."
+        },
+        {
+          "clave": "d",
+          "motivo": "Agregar System.out.println obliga a modificar el código, recompilar y ejecutar de nuevo, algo innecesario teniendo el depurador."
+        }
+      ],
+      "resumen_didactico": "La forma más rápida de inspeccionar una variable con el depurador detenido es dejar el ratón sobre su nombre y leer el valor que muestra el tooltip.",
+      "ejemplo_practico": "Con el programa parado en una línea que usa `importe`, el desarrollador pasa el ratón por encima de `importe` y ve al instante su valor actual.",
+      "conclusion_final": "En depuración, antes de añadir prints, aprovecha la inspección rápida pasando el ratón sobre las variables."
+    }
+  },
+  {
+    "id": "UT2-Q27",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un equipo de desarrollo ha finalizado una aplicación, pero antes de entregarla al cliente, necesitan analizar su rendimiento para detectar cuellos de botella y optimizar el consumo de memoria y CPU. NetBeans incluye una herramienta específica para esta tarea. ¿Cómo se llama?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Javadoc." },
+      { "clave": "b", "texto": "Profiler." },
+      { "clave": "c", "texto": "Depurador (Debugger)." },
+      { "clave": "d", "texto": "Constructor de interfaces." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La sección \"Profiler. Análisis de aplicaciones\" de la UT2 presenta el Profiler como la herramienta de NetBeans destinada a analizar rendimiento, consumo de CPU y memoria, y a detectar cuellos de botella.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Javadoc sirve para generar documentación HTML a partir de comentarios, no para medir rendimiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "El depurador (Debugger) se usa para seguir el flujo del programa y ver valores de variables, pero no para análisis detallados de rendimiento global."
+        },
+        {
+          "clave": "d",
+          "motivo": "El constructor de interfaces está orientado al diseño de GUIs, no a la monitorización de CPU o memoria."
+        }
+      ],
+      "resumen_didactico": "Para estudiar el rendimiento de una aplicación en NetBeans, la herramienta indicada es el Profiler, no el depurador ni Javadoc.",
+      "ejemplo_practico": "Un equipo ejecuta la aplicación bajo el Profiler y descubre que un método de acceso a base de datos consume la mayoría del tiempo de CPU.",
+      "conclusion_final": "Cuando la pregunta hable de rendimiento, cuellos de botella, CPU y memoria en NetBeans, la respuesta es Profiler."
+    }
+  },
+  {
+    "id": "UT2-Q28",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Para facilitar el mantenimiento futuro de una aplicación Java, el jefe de proyecto exige que se genere una documentación en formato HTML directamente a partir de los comentarios especiales insertados en el código fuente. ¿Qué herramienta se utiliza para llevar a cabo esta tarea?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El depurador de NetBeans." },
+      { "clave": "b", "texto": "El compilador javac." },
+      { "clave": "c", "texto": "El Profiler." },
+      { "clave": "d", "texto": "Javadoc." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La unidad explica que Javadoc es la herramienta de Java que recoge los comentarios especiales del código y los transforma en documentación HTML, apta para ser consultada en la web.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El depurador se usa para analizar la ejecución paso a paso, no para generar documentación."
+        },
+        {
+          "clave": "b",
+          "motivo": "javac compila código fuente en bytecode, pero no genera documentación HTML a partir de comentarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Profiler se centra en rendimiento y recursos, no en documentar el código."
+        }
+      ],
+      "resumen_didactico": "Javadoc procesa comentarios `/** ... */` en el código Java y produce documentación técnica en formato HTML.",
+      "ejemplo_practico": "Tras documentar clases y métodos con comentarios Javadoc, el equipo ejecuta la herramienta y obtiene un sitio web de referencia de la API interna.",
+      "conclusion_final": "Si el objetivo es generar documentación HTML desde comentarios del código Java, la herramienta correcta es Javadoc."
+    }
+  },
+  {
+    "id": "UT2-Q29",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Un programador añade comentarios con una sintaxis especial (/** ... */) encima de cada método y clase en su código Java. Esta práctica es fundamental para poder utilizar una herramienta que genera automáticamente la documentación técnica del proyecto. ¿Para qué es crucial este tipo de documentación?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para facilitar el mantenimiento del código y la implementación de futuras mejoras."
+      },
+      {
+        "clave": "b",
+        "texto": "Para reducir el tamaño final del archivo ejecutable."
+      },
+      {
+        "clave": "c",
+        "texto": "Para que el depurador pueda establecer puntos de interrupción."
+      },
+      {
+        "clave": "d",
+        "texto": "Para que el compilador genere un código ejecutable más eficiente."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El uso de comentarios Javadoc y la generación de documentación técnica están orientados a que el código sea entendible, mantenible y ampliable con el tiempo, facilitando el trabajo futuro de otros desarrolladores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los comentarios no influyen en el tamaño del ejecutable, el compilador los ignora al generar bytecode."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los breakpoints del depurador se establecen sobre líneas de código ejecutable, no dependen de comentarios de documentación."
+        },
+        {
+          "clave": "d",
+          "motivo": "La eficiencia del código compilado depende de la lógica y del compilador, no de la existencia de comentarios Javadoc."
+        }
+      ],
+      "resumen_didactico": "La documentación generada a partir de comentarios Javadoc describe qué hace cada elemento de la API, ayudando a mantener y extender el sistema sin romper contratos.",
+      "ejemplo_practico": "Un nuevo miembro del equipo consulta la documentación Javadoc en HTML para entender qué parámetros acepta un método y qué devuelve, sin necesidad de leer toda la implementación.",
+      "conclusion_final": "La documentación técnica generada con Javadoc es clave para el mantenimiento y la evolución de la aplicación a largo plazo."
+    }
+  },
+  {
+    "id": "UT2-Q30",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Cuál es el propósito principal de instalar módulos o plugins en un entorno de desarrollo integrado como NetBeans?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Asegurar que el IDE solo pueda compilar código para un único sistema operativo."
+      },
+      { "clave": "b", "texto": "Reducir el consumo de memoria del IDE." },
+      {
+        "clave": "c",
+        "texto": "Simplificar la interfaz gráfica eliminando opciones."
+      },
+      {
+        "clave": "d",
+        "texto": "Aumentar la capacidad de trabajo del IDE, añadiendo soporte para otros lenguajes o herramientas."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La arquitectura modular de NetBeans permite instalar módulos o plugins que amplían sus capacidades, añadiendo soporte para nuevos lenguajes, servidores de aplicaciones, sistemas de control de versiones y otras herramientas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los plugins se usan para ampliar el IDE, no para limitarlo a un único sistema operativo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Instalar más módulos suele aumentar funcionalidades y consumo, no reducirlo; no es su propósito principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "Aunque se pueden desactivar módulos para simplificar, la instalación de nuevos plugins busca añadir, no eliminar, capacidades."
+        }
+      ],
+      "resumen_didactico": "Los módulos/plugins permiten adaptar el IDE a las necesidades del proyecto, añadiendo soporte para distintos lenguajes, frameworks y servicios.",
+      "ejemplo_practico": "Un equipo que empieza con Java SE instala después módulos para Java EE, HTML5/JS y Git, transformando NetBeans en un entorno completo para desarrollo web.",
+      "conclusion_final": "La razón de instalar plugins en un IDE como NetBeans es ampliar su funcionalidad y capacidad de trabajo, no restringirla."
+    }
+  }
+]
