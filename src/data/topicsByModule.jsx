@@ -52,5 +52,10 @@ export const topicsByModule = {
       title: "Instalación y uso de entornos de desarrollo",
       numQuestion: 30,
     },
+    {
+      id:"UT3",
+      title: "DIseño y realización de pruebas",
+      numQuestion: 30,
+    },
   ],
 };

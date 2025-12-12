@@ -1,0 +1,1136 @@
+[
+  {
+    "id": "UT3-Q01",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "El jefe de un proyecto de software está redactando un documento inicial para la fase de pruebas. En él, detalla los módulos que se van a probar, los responsables de cada prueba y los criterios que determinarán si el software es válido. Este documento deberá ser firmado por los interesados antes de comenzar. ¿Cómo se denomina este documento?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Informe de errores." },
+      { "clave": "b", "texto": "Plan de prueba." },
+      { "clave": "c", "texto": "Prueba de regresión." },
+      { "clave": "d", "texto": "Caso de prueba." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Un plan de prueba recoge la descripción del software, los módulos a probar, el enfoque/calendario con responsables, los criterios de validez (qué significa “aprobado”), requisitos del entorno y una aprobación formal antes de iniciar la ejecución.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El informe de errores se genera tras ejecutar pruebas para registrar defectos; no es el documento inicial de planificación con criterios y firmas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La regresión es un tipo de prueba (repetir pruebas tras cambios) y no un documento inicial firmado por interesados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un caso de prueba es una “mini-misión” concreta (entrada/salida esperada). El plan de prueba es el marco global de la fase."
+        }
+      ],
+      "resumen_didactico": "El documento que define qué se prueba, quién lo hace, cuándo y qué significa “válido/aprobado”, y que se aprueba formalmente antes de empezar, es el Plan de Pruebas.",
+      "ejemplo_practico": "Antes de probar una app, el plan enumera módulos (login, pagos), responsables, calendario, entornos/herramientas y criterios de aceptación; los stakeholders lo firman para fijar el “listo para entregar”.",
+      "conclusion_final": "Si es el documento inicial con módulos, responsables, criterios de validez y aprobación formal, es el Plan de Prueba."
+    }
+  },
+  {
+    "id": "UT3-Q02",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Cuál es uno de los objetivos principales de un procedimiento de prueba, más allá de la simple detección de errores?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Documentar únicamente las características que no deben ser probadas."
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar que el rendimiento del software sea aceptable y cumpla con los requisitos."
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que el código fuente esté perfectamente comentado."
+      },
+      {
+        "clave": "d",
+        "texto": "Reducir la cantidad de módulos que componen el software."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El procedimiento de prueba no se limita a “buscar fallos”; también verifica que el software rinde bien (rápido/estable) y que cumple los requisitos acordados. Incluso sin errores, una prueba puede no estar superada si rendimiento/condiciones no alcanzan lo pactado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Definir lo que no se prueba sirve para acotar, pero no es el objetivo principal del procedimiento; el objetivo es comprobar requisitos y condiciones (incluido rendimiento)."
+        },
+        {
+          "clave": "c",
+          "motivo": "Comentarios y estilo del código son prácticas de desarrollo/calidad interna; el objetivo del procedimiento de prueba es validar comportamiento/condiciones, no “perfecta documentación” del código."
+        },
+        {
+          "clave": "d",
+          "motivo": "Reducir módulos es una decisión de diseño/arquitectura, no una finalidad del procedimiento de pruebas."
+        }
+      ],
+      "resumen_didactico": "Probar es validar requisitos: no solo fallos, también rendimiento/condiciones acordadas.",
+      "ejemplo_practico": "Una app puede “funcionar” sin errores visibles, pero si tarda 8 segundos en responder cuando se pactaron 2, el procedimiento de prueba la considera no apta.",
+      "conclusion_final": "Además de detectar errores, el procedimiento de pruebas verifica rendimiento y cumplimiento de requisitos."
+    }
+  },
+  {
+    "id": "UT3-Q03",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Al diseñar los casos de prueba para un módulo de cálculo de impuestos, un tester se asegura de que cada prueba verifique un escenario diferente (ej. un cálculo con IVA reducido, otro con IVA general, otro con exención), evitando repetir la misma lógica en múltiples pruebas. ¿Qué principio clave del diseño de casos de prueba está aplicando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No malgastar tiempo en redundancias y enfocar cada prueba en una parte especial."
+      },
+      {
+        "clave": "b",
+        "texto": "Realizar únicamente pruebas muy sencillas para identificar el origen del fallo."
+      },
+      {
+        "clave": "c",
+        "texto": "Diseñar casos de prueba que busquen fallos aleatorios en todo el sistema."
+      },
+      {
+        "clave": "d",
+        "texto": "Crear pruebas de alta complejidad para encontrar más fallos."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Un caso de prueba debe comprobar algo concreto con entradas y salida esperada. En su diseño se recomienda evitar redundancias (no repetir lo ya cubierto) y crear variantes significativas (válidos/ inválidos/ raros).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El temario pide equilibrio: si es demasiado simple puede no detectar el fallo; no es un principio universal “solo pruebas sencillas”."
+        },
+        {
+          "clave": "c",
+          "motivo": "La idea es planificar y diseñar escenarios representativos, no buscar fallos “aleatorios” sin método."
+        },
+        {
+          "clave": "d",
+          "motivo": "Más complejidad no implica mejor prueba; el temario advierte que un caso muy complejo dificulta localizar dónde está el fallo."
+        }
+      ],
+      "resumen_didactico": "Cada prueba debe aportar cobertura nueva; evita repetir escenarios equivalentes.",
+      "ejemplo_practico": "En impuestos: un test para IVA reducido, otro para IVA general y otro para exención cubren reglas distintas sin duplicar la misma lógica.",
+      "conclusion_final": "El principio aplicado es evitar redundancias y cubrir escenarios diferenciados."
+    }
+  },
+  {
+    "id": "UT3-Q04",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un ingeniero de QA está preparando el entorno necesario para la ejecución de las pruebas de un nuevo sistema de registro. Su tarea consiste en generar conjuntos de datos que incluyen valores válidos, inválidos y algunos completamente fuera de rango, además de instalar las herramientas de monitorización en los servidores de prueba. ¿En qué fase se encuentra?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Codificación y ejecución de las pruebas." },
+      { "clave": "b", "texto": "Pruebas de aceptación." },
+      { "clave": "c", "texto": "Diseño de casos de prueba." },
+      { "clave": "d", "texto": "Planificación de pruebas." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Para ejecutar casos de prueba se prepara la infraestructura (máquinas/recursos/permisos), y se crean sets con entradas válidas, inválidas y fuera de rango; también se documenta para repetir siempre igual. Estas tareas pertenecen a la fase de codificación y ejecución de pruebas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Aceptación/validación evalúa el sistema completo en escenarios alfa/beta; no se centra en preparar datasets e infraestructura operativa de ejecución."
+        },
+        {
+          "clave": "c",
+          "motivo": "Diseñar casos define objetivos, entradas/salidas esperadas; aquí se está montando entorno y datos para ejecutar, no definiendo el caso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Planificación decide qué pruebas se harán y cuándo; el enunciado describe preparación operativa para ejecutar."
+        }
+      ],
+      "resumen_didactico": "Diseño = definir pruebas. Ejecución = montar entorno/datos y correrlas de forma repetible.",
+      "ejemplo_practico": "Antes de ejecutar, QA instala monitorización, prepara base de datos de test y crea usuarios válidos/ inválidos/ extremos para lanzar la batería.",
+      "conclusion_final": "Si estás preparando infraestructura y sets de datos para ejecutar, estás en codificación y ejecución de pruebas."
+    }
+  },
+  {
+    "id": "UT3-Q05",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Durante la preparación de los datos para una prueba, es crucial incluir diferentes tipos de valores para verificar la robustez del sistema. ¿Qué tipo de datos deben contener los \"sets\" de prueba?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Solo datos que se encuentren fuera de rango." },
+      {
+        "clave": "b",
+        "texto": "Exclusivamente datos inválidos para ver si el sistema falla."
+      },
+      {
+        "clave": "c",
+        "texto": "Únicamente datos válidos para confirmar que el sistema funciona."
+      },
+      {
+        "clave": "d",
+        "texto": "Datos válidos, inválidos y datos fuera de rango o disparatados."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Los sets de datos de prueba deben incluir entradas válidas, inválidas y fuera de rango (ejemplo típico: edad −3) para comprobar robustez y evitar falsos positivos, garantizando repetibilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo extremos no cubre el comportamiento normal (válidos) ni errores típicos (inválidos)."
+        },
+        {
+          "clave": "b",
+          "motivo": "Solo inválidos no confirma el funcionamiento correcto en escenarios normales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Solo válidos no valida la robustez ante errores y límites."
+        }
+      ],
+      "resumen_didactico": "Un buen set mezcla: normal (válido), error esperado (inválido) y extremo (fuera de rango).",
+      "ejemplo_practico": "Registro: email correcto (válido), email sin @ (inválido), edad −3 o 9999 (fuera de rango).",
+      "conclusion_final": "Para robustez real, los sets deben contener válidos, inválidos y fuera de rango."
+    }
+  },
+  {
+    "id": "UT3-Q06",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un tester recibe la tarea de verificar si la funcionalidad de \"recuperar contraseña\" de una aplicación web funciona según lo especificado en el documento de requisitos. El tester solo interactúa con la interfaz, introduce un correo y comprueba si recibe el enlace de recuperación, sin tener acceso al código fuente. ¿Qué tipo de prueba está realizando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba de caja blanca." },
+      { "clave": "b", "texto": "Prueba unitaria." },
+      { "clave": "c", "texto": "Prueba funcional." },
+      { "clave": "d", "texto": "Prueba estructural." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Las pruebas funcionales (caja negra) verifican qué hace el sistema según la documentación/requisitos, sin analizar el código interno. El tester opera desde la interfaz y valida el resultado observable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Caja blanca implica ver el interior del programa y diseñar pruebas a partir del código (rutas/condiciones/bucles)."
+        },
+        {
+          "clave": "b",
+          "motivo": "La unitaria prueba una unidad pequeña (clase/método). “Recuperar contraseña” es un flujo funcional observable."
+        },
+        {
+          "clave": "d",
+          "motivo": "Estructural es sinónimo de caja blanca (análisis interno), y aquí no hay acceso al código."
+        }
+      ],
+      "resumen_didactico": "Si validas comportamiento desde fuera, guiado por requisitos, es funcional (caja negra).",
+      "ejemplo_practico": "Introduces un email registrado, solicitas recuperación y compruebas que llega un enlace válido sin revisar implementación.",
+      "conclusion_final": "Es una prueba funcional (caja negra)."
+    }
+  },
+  {
+    "id": "UT3-Q07",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Cuál es el objetivo principal de las pruebas funcionales en el ciclo de vida del software?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Verificar que los componentes del software funcionen de acuerdo con el objetivo de su diseño."
+      },
+      {
+        "clave": "b",
+        "texto": "Comprobar que los cambios recientes no hayan introducido nuevos errores."
+      },
+      {
+        "clave": "c",
+        "texto": "Analizar la arquitectura interna y el código fuente de la aplicación."
+      },
+      {
+        "clave": "d",
+        "texto": "Medir el rendimiento del sistema bajo condiciones de estrés extremo."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las pruebas funcionales (caja negra) verifican qué hace el sistema, no cómo está hecho por dentro: validan el comportamiento externo conforme a documentación y objetivos/requisitos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe pruebas de regresión: repetir pruebas tras cambios para asegurar que lo nuevo no rompe lo anterior."
+        },
+        {
+          "clave": "c",
+          "motivo": "Analizar arquitectura/código corresponde a pruebas estructurales (caja blanca)."
+        },
+        {
+          "clave": "d",
+          "motivo": "Medir estrés/rendimiento es no funcional (caja negra), no funcionalidad de negocio."
+        }
+      ],
+      "resumen_didactico": "Funcional = validar comportamiento y requisitos; no funcional = rendimiento; estructural = código; regresión = tras cambios.",
+      "ejemplo_practico": "En e-commerce, una prueba funcional valida que comprar genera pedido y confirmación, sin importar la arquitectura interna.",
+      "conclusion_final": "El objetivo es comprobar que el sistema cumple su funcionalidad según diseño/requisitos."
+    }
+  },
+  {
+    "id": "UT3-Q08",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Tras una actualización para mejorar el rendimiento de la base de datos, el equipo de desarrollo vuelve a ejecutar un conjunto completo de pruebas automatizadas que cubren todas las funcionalidades existentes de la aplicación. El objetivo es confirmar que la mejora no ha afectado negativamente a otras partes del sistema. ¿Cómo se denomina este tipo de prueba?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba de caja negra." },
+      { "clave": "b", "texto": "Prueba de regresión." },
+      { "clave": "c", "texto": "Prueba de aceptación." },
+      { "clave": "d", "texto": "Prueba de integración." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Las pruebas de regresión repiten pruebas después de cambiar algo para asegurar que lo nuevo no rompe lo que ya funcionaba. Suelen estar automatizadas en “suites” que se ejecutan en cada versión.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Caja negra es un enfoque (entradas/salidas) pero aquí lo definitorio es la repetición tras un cambio: regresión."
+        },
+        {
+          "clave": "c",
+          "motivo": "Aceptación/validación evalúa el sistema completo (incluye escenarios alfa/beta), no específicamente el control de efectos colaterales tras cambios."
+        },
+        {
+          "clave": "d",
+          "motivo": "Integración verifica encaje entre módulos; el enunciado describe re-ejecución completa tras un cambio para detectar impactos."
+        }
+      ],
+      "resumen_didactico": "Si cambias algo y vuelves a pasar pruebas para asegurar que nada se rompe, es regresión.",
+      "ejemplo_practico": "Optimizar consultas SQL y luego ejecutar login, carrito, pago y facturación para confirmar que todo sigue funcionando.",
+      "conclusion_final": "Es una prueba de regresión."
+    }
+  },
+  {
+    "id": "UT3-Q09",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un equipo de calidad está evaluando el rendimiento interno de una aplicación, sometiéndola a un gran número de peticiones simultáneas para medir tiempos de respuesta y consumo de recursos. ¿A qué categoría pertenecen estas pruebas?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Pruebas de clases de equivalencia." },
+      { "clave": "b", "texto": "Pruebas de aceptación del usuario." },
+      { "clave": "c", "texto": "Pruebas no funcionales." },
+      { "clave": "d", "texto": "Pruebas funcionales." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Las pruebas no funcionales (caja negra) miden rendimiento, fiabilidad o resistencia al estrés: se fijan en cómo se comporta el sistema bajo carga (tiempos y recursos), no en la lógica de negocio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Clases de equivalencia es una técnica de diseño de entradas (válidas/no válidas), no una prueba de carga/rendimiento."
+        },
+        {
+          "clave": "b",
+          "motivo": "Aceptación valida el sistema completo en contexto (alfa/beta). Aquí el foco es rendimiento y consumo de recursos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Funcionales validan comportamiento según requisitos; no miden recursos/tiempos bajo concurrencia."
+        }
+      ],
+      "resumen_didactico": "Rendimiento y recursos = no funcional. Lógica de negocio = funcional.",
+      "ejemplo_practico": "Simular 1000 usuarios concurrentes y medir p95 de respuesta y CPU/RAM del servidor.",
+      "conclusion_final": "Son pruebas no funcionales."
+    }
+  },
+  {
+    "id": "UT3-Q10",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Qué distingue principalmente a las pruebas de regresión de las pruebas destinadas a encontrar nuevos fallos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No se usan para descubrir nuevos errores, sino para asegurarse de que los cambios no han afectado al software."
+      },
+      {
+        "clave": "b",
+        "texto": "Se realizan manualmente por usuarios finales sin conocimientos técnicos."
+      },
+      {
+        "clave": "c",
+        "texto": "Su objetivo es analizar el código fuente línea por línea en busca de errores lógicos."
+      },
+      {
+        "clave": "d",
+        "texto": "Se ejecutan una única vez al final del ciclo de desarrollo del proyecto."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Regresión = repetir pruebas tras cambios para asegurar que lo nuevo no rompe lo que ya funcionaba (normalmente en suites por versión). Su foco principal es proteger lo existente frente a efectos colaterales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No se define por ser manual ni por ejecutarla usuarios finales; con frecuencia se automatiza en suites."
+        },
+        {
+          "clave": "c",
+          "motivo": "Analizar código línea a línea corresponde a caja blanca/estructural o revisiones, no a regresión."
+        },
+        {
+          "clave": "d",
+          "motivo": "La regresión se ejecuta repetidamente, típicamente en cada versión o tras cambios, no una sola vez al final."
+        }
+      ],
+      "resumen_didactico": "Regresión protege lo que ya funcionaba cuando hay cambios.",
+      "ejemplo_practico": "Cambias el login y vuelves a ejecutar tests de registro, recuperación de contraseña y compra para asegurar que nada se rompió.",
+      "conclusion_final": "La regresión se distingue por asegurar que los cambios no dañan funcionalidades existentes."
+    }
+  },
+  {
+    "id": "UT3-Q11",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un desarrollador está examinando el código fuente de un nuevo módulo para diseñar pruebas que garanticen que cada bucle y condición se ejecuten al menos una vez. ¿Qué tipo de estrategia de prueba está empleando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba de valores límite." },
+      { "clave": "b", "texto": "Prueba de caja negra." },
+      { "clave": "c", "texto": "Prueba de caja blanca." },
+      { "clave": "d", "texto": "Prueba de aceptación." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Caja blanca significa ver el interior del programa y usar técnicas de análisis del código. Incluye familias como cubrimiento de rutas, condiciones (decisiones/booleanos) y bucles (vuelta 0, 1 y muchas).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Valores límite es caja negra y prueba bordes de rangos de entrada, no cobertura de bucles/condiciones del código."
+        },
+        {
+          "clave": "b",
+          "motivo": "Caja negra no analiza el código; solo entradas/salidas. Aquí el desarrollador diseña desde el código."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aceptación valida el sistema completo en alfa/beta; no se centra en cobertura de bucles y condiciones internas."
+        }
+      ],
+      "resumen_didactico": "Si diseñas pruebas mirando rutas, condiciones y bucles internos, es caja blanca.",
+      "ejemplo_practico": "Probar un bucle con lista vacía (0 vueltas), un elemento (1 vuelta) y muchos elementos (muchas vueltas), y activar ambas ramas de un if/else.",
+      "conclusion_final": "Es una estrategia de caja blanca."
+    }
+  },
+  {
+    "id": "UT3-Q12",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Las pruebas de caja blanca, que se centran en el análisis del código fuente del programa, también son conocidas por otro nombre. ¿Cuál es?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Pruebas funcionales." },
+      { "clave": "b", "texto": "Pruebas de comportamiento." },
+      { "clave": "c", "texto": "Pruebas de caja negra." },
+      { "clave": "d", "texto": "Clear box testing." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El temario vincula caja blanca con pruebas estructurales (análisis interno del código y arquitectura). “Clear box testing” es un nombre equivalente en inglés para el enfoque de caja blanca (ver ‘dentro’ del programa).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Funcionales se asocian a caja negra (verificar qué hace el sistema según documentación), no al análisis interno del código."
+        },
+        {
+          "clave": "b",
+          "motivo": "En esta unidad la distinción principal es funcional (caja negra) vs estructural/caja blanca; ‘comportamiento’ no se usa aquí como sinónimo de caja blanca."
+        },
+        {
+          "clave": "c",
+          "motivo": "Caja negra es lo opuesto: sistema como caja opaca sin analizar código."
+        }
+      ],
+      "resumen_didactico": "Caja blanca = ver por dentro (estructural/clear box). Caja negra = ver desde fuera (funcional/no funcional).",
+      "ejemplo_practico": "Diseñar tests para activar todas las rutas de un módulo y cubrir decisiones booleanas se considera clear/white box.",
+      "conclusion_final": "El otro nombre es ‘Clear box testing’ (equivalente a caja blanca/estructural)."
+    }
+  },
+  {
+    "id": "UT3-Q13",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un sistema de registro online exige que el nombre de usuario contenga únicamente letras y números, sin símbolos. Esta técnica de agrupar datos de entrada en conjuntos válidos e inválidos se denomina:",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba de valores límite." },
+      { "clave": "b", "texto": "Prueba de clases de equivalencia de datos." },
+      { "clave": "c", "texto": "Prueba de interfaces." },
+      { "clave": "d", "texto": "Prueba de regresión." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Una clase de equivalencia agrupa entradas que deberían comportarse igual. Se prueban clases válidas y no válidas para reducir el número de pruebas sin perder cobertura (típico en reglas de usuario/contraseña).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Valores límite se centra en bordes de un rango (mínimo/máximo), no en clasificar entradas por formato alfanumérico/símbolos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Interfaces valida pantallas siguiendo manual; no es una técnica de agrupación de datos de entrada."
+        },
+        {
+          "clave": "d",
+          "motivo": "Regresión es repetir pruebas tras cambios para asegurar que lo anterior no se rompe."
+        }
+      ],
+      "resumen_didactico": "Clases de equivalencia = agrupar entradas por comportamiento esperado (válidas vs no válidas).",
+      "ejemplo_practico": "Válidos: ‘Ana2025’. Inválidos: ‘Ana_2025’, ‘Pepe#1’ si símbolos están prohibidos.",
+      "conclusion_final": "Es una prueba de clases de equivalencia de datos."
+    }
+  },
+  {
+    "id": "UT3-Q14",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Una aplicación de comercio electrónico permite añadir entre 1 y 10 unidades de un producto al carrito. Para verificar esta restricción, un tester diseña pruebas con los valores 0, 1, 10 y 11. ¿Qué técnica está utilizando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba de clases de equivalencia." },
+      { "clave": "b", "texto": "Prueba de usabilidad." },
+      { "clave": "c", "texto": "Prueba estructural." },
+      { "clave": "d", "texto": "Prueba de valores límite." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La prueba de valores límite comprueba que los rangos están bien fijados: los valores del borde (1 y 10) deben funcionar y los inmediatamente fuera (0 y 11) deben rechazarse. Objetivo: confirmar comparaciones correctas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Clases de equivalencia agrupa entradas por comportamiento y elige representantes; aquí se eligen específicamente bordes y adyacentes fuera."
+        },
+        {
+          "clave": "b",
+          "motivo": "Usabilidad evalúa comodidad/facilidad de uso, no límites numéricos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Estructural/caja blanca analiza código interno, no rangos desde entradas/salidas."
+        }
+      ],
+      "resumen_didactico": "Valores límite = mínimo, máximo y justo fuera del rango.",
+      "ejemplo_practico": "Transferencias 1–1000€: probar 1, 1000, 0 y 1001.",
+      "conclusion_final": "Es una prueba de valores límite."
+    }
+  },
+  {
+    "id": "UT3-Q15",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Cuál es el objetivo fundamental de las pruebas de valores límite?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Comprobar el rendimiento de la aplicación con un gran volumen de datos."
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar que los límites se hayan establecido correctamente en las comparaciones del programa."
+      },
+      {
+        "clave": "c",
+        "texto": "Asegurar que la interfaz de usuario sea intuitiva y fácil de usar."
+      },
+      {
+        "clave": "d",
+        "texto": "Analizar la estructura interna del código para encontrar errores lógicos."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Los errores “viven en las esquinas”: las pruebas de valores límite comprueban que los rangos están bien fijados y que las comparaciones (>, >=, <, <=) están correctamente implementadas en los bordes y justo fuera del rango.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso es rendimiento/carga/estrés (no funcional), no validación de rangos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso es usabilidad/interfaz, no límites numéricos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Analizar estructura interna es caja blanca; valores límite es técnica de caja negra (entradas/salidas)."
+        }
+      ],
+      "resumen_didactico": "La meta es validar que el rango y sus comparaciones no dejan pasar valores indebidos.",
+      "ejemplo_practico": "Si el sistema acepta 1–10, 1 y 10 deben pasar; 0 y 11 deben fallar.",
+      "conclusion_final": "El objetivo es confirmar que los límites y comparaciones están bien implementados."
+    }
+  },
+  {
+    "id": "UT3-Q16",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un miembro del equipo de pruebas está verificando la nueva interfaz gráfica de un programa siguiendo el manual de usuario. ¿Qué prueba está ejecutando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba de integración." },
+      { "clave": "b", "texto": "Prueba de interfaces." },
+      { "clave": "c", "texto": "Prueba de caja blanca." },
+      { "clave": "d", "texto": "Prueba de carga." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Probar una interfaz es seguir el manual de usuario con datos reales y verificar que la salida coincide con lo esperado. Además, cerca de producción el test suele ser exhaustivo e incluye revisar usabilidad y accesibilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Integración verifica que módulos encajan y los datos viajan bien entre ellos; aquí se valida la UI siguiendo manual."
+        },
+        {
+          "clave": "c",
+          "motivo": "Caja blanca analiza código interno; el enunciado habla de interfaz y manual, no del código."
+        },
+        {
+          "clave": "d",
+          "motivo": "Carga mide rendimiento bajo usuarios/solicitudes; no corresponde a seguir manual de interfaz."
+        }
+      ],
+      "resumen_didactico": "Si la prueba sigue el manual para validar pantallas y estados, es prueba de interfaces.",
+      "ejemplo_practico": "Abrir la pantalla, introducir datos reales, pulsar botones del flujo y comprobar mensajes/estados esperados.",
+      "conclusion_final": "Es una prueba de interfaces."
+    }
+  },
+  {
+    "id": "UT3-Q17",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Al realizar pruebas de usabilidad, el objetivo es evaluar la experiencia del usuario. ¿Cuál es la finalidad principal?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Medir el consumo de recursos del sistema." },
+      {
+        "clave": "b",
+        "texto": "Verificar que el software no tenga ningún error de programación."
+      },
+      {
+        "clave": "c",
+        "texto": "Comprobar la compatibilidad del software con otros sistemas."
+      },
+      {
+        "clave": "d",
+        "texto": "Asegurar que el usuario se encuentre cómodo en el manejo de la aplicación."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En pruebas de interfaz se revisa usabilidad, formulada como: “¿es fácil y cómodo?”. Su finalidad es asegurar que el usuario pueda manejar la aplicación de forma cómoda y sencilla.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Consumo de recursos corresponde a rendimiento/no funcional, no a experiencia de usuario."
+        },
+        {
+          "clave": "b",
+          "motivo": "Detectar errores de programación es objetivo de pruebas funcionales/estructurales; usabilidad mide comodidad/facilidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Compatibilidad es otro tipo de verificación (p. ej., integración/seguridad/entornos), no la finalidad principal de usabilidad."
+        }
+      ],
+      "resumen_didactico": "Usabilidad = facilidad y comodidad en el uso.",
+      "ejemplo_practico": "Comprobar que un usuario puede completar un formulario sin confusión, con navegación clara y mensajes entendibles.",
+      "conclusion_final": "La finalidad principal es que el usuario esté cómodo y le resulte fácil usar la aplicación."
+    }
+  },
+  {
+    "id": "UT3-Q18",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Durante la fase de diseño, se decide incluir atajos de teclado y autocompletado en formularios. ¿Qué aspecto se está mejorando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La usabilidad del software." },
+      { "clave": "b", "texto": "La seguridad del sistema." },
+      { "clave": "c", "texto": "La tolerancia a errores." },
+      { "clave": "d", "texto": "La modularidad del código." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En pruebas de interfaz se revisan usabilidad y accesibilidad. El temario recomienda mejoras como atajos de teclado y autocompletados porque marcan la diferencia en la consulta: hacen el uso más fácil, cómodo y eficiente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La seguridad trata autenticación, permisos y protección; atajos/autocompletado son mejoras de experiencia de uso."
+        },
+        {
+          "clave": "c",
+          "motivo": "Puede reducir errores de tecleo, pero el objetivo principal descrito es comodidad/eficiencia de uso (usabilidad)."
+        },
+        {
+          "clave": "d",
+          "motivo": "La modularidad es un atributo interno del diseño del código, no una característica de interfaz para el usuario."
+        }
+      ],
+      "resumen_didactico": "Atajos y autocompletado reducen fricción y hacen la app más cómoda de usar: usabilidad.",
+      "ejemplo_practico": "En un formulario, autocompletar datos del paciente y permitir guardar con un atajo acelera el trabajo diario.",
+      "conclusion_final": "Se está mejorando la usabilidad."
+    }
+  },
+  {
+    "id": "UT3-Q19",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Una aplicación debe ser accesible a personas con discapacidad visual. Se contrata una auditoría para verificar que se cumplen los estándares legales. ¿Qué tipo de prueba es?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Pruebas de regresión." },
+      { "clave": "b", "texto": "Pruebas de integración." },
+      { "clave": "c", "texto": "Pruebas de accesibilidad." },
+      { "clave": "d", "texto": "Pruebas de estrés." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Accesibilidad se revisa en pruebas de interfaz: que la pueda usar cualquier persona, incluso con lector de pantalla o solo con teclado. Es común una auditoría de accesibilidad para asegurar un mínimo exigible (cumplimiento).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Regresión es repetir pruebas tras cambios para asegurar que lo anterior no se rompe."
+        },
+        {
+          "clave": "b",
+          "motivo": "Integración verifica encaje entre módulos; no evalúa estándares de accesibilidad para discapacidad visual."
+        },
+        {
+          "clave": "d",
+          "motivo": "Estrés mide resistencia bajo picos crecientes de carga; no trata accesibilidad."
+        }
+      ],
+      "resumen_didactico": "Si el objetivo es cumplir criterios para usuarios con discapacidad (lector de pantalla/teclado), es accesibilidad.",
+      "ejemplo_practico": "Auditoría que comprueba navegación por teclado, etiquetas correctas y compatibilidad con lector de pantalla.",
+      "conclusion_final": "Es una prueba de accesibilidad."
+    }
+  },
+  {
+    "id": "UT3-Q20",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Qué otro aspecto importante incluye el concepto de accesibilidad en software?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A que se ejecute en cualquier sistema sin modificaciones."
+      },
+      {
+        "clave": "b",
+        "texto": "A que los frameworks de test automatizados puedan acceder a sus componentes."
+      },
+      {
+        "clave": "c",
+        "texto": "A que el software sea de código abierto y gratuito."
+      },
+      { "clave": "d", "texto": "A que el manual esté en múltiples idiomas." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El temario entiende accesibilidad como eliminar barreras para que cualquier persona pueda usar el software (incluyendo lector de pantalla y teclado). Entre las opciones, la que mejor representa un “aspecto adicional” orientado a reducir barreras de acceso para distintos usuarios es disponer de documentación/manual en varios idiomas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe portabilidad/independencia de plataforma, no accesibilidad de uso para personas con distintas capacidades."
+        },
+        {
+          "clave": "b",
+          "motivo": "Eso es testabilidad (facilitar automatización), no accesibilidad para usuarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso es licenciamiento/coste, no accesibilidad."
+        }
+      ],
+      "resumen_didactico": "Accesibilidad busca reducir barreras; si no es teclado/lector de pantalla, la opción más alineada es facilitar comprensión/uso para más usuarios.",
+      "ejemplo_practico": "Además de soporte para lector de pantalla, ofrecer guía de uso en varios idiomas evita barreras de comprensión en equipos multiculturales.",
+      "conclusion_final": "Entre las opciones dadas, la accesibilidad se refleja mejor en que el manual esté en múltiples idiomas."
+    }
+  },
+  {
+    "id": "UT3-Q21",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un equipo Java usa JUnit para pruebas automáticas tras cada cambio. ¿Qué tipo de pruebas suelen implementar?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Pruebas de repetición o regresión." },
+      { "clave": "b", "texto": "Pruebas de aceptación con el cliente final." },
+      { "clave": "c", "texto": "Pruebas de usabilidad manuales." },
+      { "clave": "d", "texto": "Pruebas de caja negra exclusivamente." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Si repetimos la misma prueba con frecuencia (p. ej., regresión en cada versión), conviene automatizarla. Regresión consiste en repetir pruebas tras cambios para asegurar que lo nuevo no rompe lo que ya funcionaba; suele ejecutarse como suites por versión.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Aceptación/validación (alfa/beta) implica evaluar el sistema completo con usuarios/clientes; no es lo típico de JUnit tras cada cambio."
+        },
+        {
+          "clave": "c",
+          "motivo": "Usabilidad se evalúa sobre experiencia de interfaz, normalmente manual, no con JUnit."
+        },
+        {
+          "clave": "d",
+          "motivo": "JUnit no implica exclusivamente caja negra; y el enunciado se define por repetición tras cambios (regresión), no por enfoque de caja negra."
+        }
+      ],
+      "resumen_didactico": "JUnit tras cada cambio suele apoyar suites de regresión/repetición para evitar romper funcionalidades previas.",
+      "ejemplo_practico": "Tras modificar un cálculo, JUnit ejecuta toda la batería y detecta si se ha roto el comportamiento esperado en otros módulos.",
+      "conclusion_final": "Son pruebas de repetición o regresión."
+    }
+  },
+  {
+    "id": "UT3-Q22",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Cuándo debe empezar a plantearse qué tipo de pruebas se van a realizar?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Solo cuando el cliente reporta errores." },
+      {
+        "clave": "b",
+        "texto": "Justo después de la codificación y antes de la entrega."
+      },
+      { "clave": "c", "texto": "Únicamente durante la fase de mantenimiento." },
+      {
+        "clave": "d",
+        "texto": "Nada más que se empieza con el diseño del software."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En planificación de pruebas se establece que desde que arranca el proyecto se decide qué pruebas se harán y cuándo; se justifica lo que se hace o se pospone, priorizando por riesgo si es necesario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso sería reaccionar tarde; el temario exige decidir desde el inicio del proyecto."
+        },
+        {
+          "clave": "b",
+          "motivo": "Demasiado tarde: muchas pruebas (como unitarias) empiezan muy pronto y la planificación se define desde el arranque."
+        },
+        {
+          "clave": "c",
+          "motivo": "En mantenimiento se sigue probando, pero el planteamiento de tipos de pruebas comienza desde el inicio."
+        }
+      ],
+      "resumen_didactico": "Las pruebas se planifican desde el inicio, no al final.",
+      "ejemplo_practico": "En fase de diseño ya se decide: unitarias para validaciones, integración para flujos, regresión automatizada por versión y aceptación al final.",
+      "conclusion_final": "Debe plantearse desde que se empieza con el diseño (inicio del proyecto)."
+    }
+  },
+  {
+    "id": "UT3-Q23",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un programador crea una prueba para verificar los métodos de una clase antes de integrarla. ¿Qué tipo de prueba es?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba de integración." },
+      { "clave": "b", "texto": "Prueba beta." },
+      { "clave": "c", "texto": "Prueba unitaria." },
+      { "clave": "d", "texto": "Prueba de sistema." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Las pruebas unitarias empiezan muy pronto y verifican unidades pequeñas (en POO: objetos/clases) antes de integrar librerías o módulos superiores. Si la base está mal, lo superior heredará el problema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Integración verifica el encaje entre módulos; aquí se prueba una clase antes de integrarla."
+        },
+        {
+          "clave": "b",
+          "motivo": "Beta es validación con usuarios finales sin el desarrollador detrás, no una prueba técnica de una clase."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sistema evalúa el conjunto completo, no una unidad aislada."
+        }
+      ],
+      "resumen_didactico": "Clase/método aislado = unitario. Módulos juntos = integración. Conjunto completo = sistema/aceptación.",
+      "ejemplo_practico": "Tests para métodos de `UserValidator` antes de conectarlo al flujo de registro y a la base de datos.",
+      "conclusion_final": "Es una prueba unitaria."
+    }
+  },
+  {
+    "id": "UT3-Q24",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Tras las pruebas unitarias de dos módulos, se verifica el flujo entre ellos. ¿Qué tipo de prueba es?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba unitaria." },
+      { "clave": "b", "texto": "Prueba de validación." },
+      { "clave": "c", "texto": "Prueba de integración." },
+      { "clave": "d", "texto": "Prueba de regresión" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Cuando las piezas funcionan por separado (unitarias), se comprueba que encajan: eso es integración. El objetivo es que el sistema conjunto funcione como un reloj y que los datos viajen sin sorpresas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Unitaria prueba una unidad aislada; aquí se verifica el flujo entre dos módulos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Validación/aceptación evalúa el sistema completo (alfa/beta), no la interacción específica entre dos módulos tras unitarias."
+        },
+        {
+          "clave": "d",
+          "motivo": "Regresión es repetir pruebas tras cambios; el enunciado describe probar interacción tras unitarias, no tras cambios."
+        }
+      ],
+      "resumen_didactico": "Después de unitarias, el siguiente nivel natural es integración: probar conexiones y flujo entre módulos.",
+      "ejemplo_practico": "Módulo ‘Registro’ crea usuario y módulo ‘Email’ envía confirmación: se prueba el flujo completo entre ambos.",
+      "conclusion_final": "Es una prueba de integración."
+    }
+  },
+  {
+    "id": "UT3-Q25",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Cómo se denomina la estrategia de pruebas que comienza por módulos de bajo nivel?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Integración de caja negra." },
+      { "clave": "b", "texto": "Integración descendente." },
+      { "clave": "c", "texto": "Integración aleatoria." },
+      { "clave": "d", "texto": "Integración ascendente." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En integración hay estrategia ascendente (de lo general a lo específico) y descendente (al revés). Si se empieza por módulos de bajo nivel (lo específico) y se sube hacia lo general, se está haciendo la estrategia ‘al revés’ de la ascendente: integración descendente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Caja negra describe enfoque de prueba (entradas/salidas), no el orden de integración de módulos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La unidad distingue ascendente y descendente; ‘aleatoria’ no es la estrategia definida."
+        },
+        {
+          "clave": "d",
+          "motivo": "La ascendente va de lo general a lo específico; comenzar por bajo nivel es lo contrario."
+        }
+      ],
+      "resumen_didactico": "Ascendente = general→específico. Descendente = específico→general.",
+      "ejemplo_practico": "Integrar primero módulos “base” y después conectar capas superiores hasta completar el flujo del sistema.",
+      "conclusion_final": "Comenzar por bajo nivel corresponde a integración descendente."
+    }
+  },
+  {
+    "id": "UT3-Q26",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Antes del lanzamiento, un grupo externo de usuarios prueba el videojuego sin supervisión. ¿Qué fase de pruebas es?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Prueba alfa." },
+      { "clave": "b", "texto": "Prueba unitaria." },
+      { "clave": "c", "texto": "Prueba de regresión." },
+      { "clave": "d", "texto": "Prueba beta." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En validación/aceptación hay dos escenarios típicos: Alfa (entorno controlado) y Beta (usuarios finales sin el desarrollador “detrás”). Grupo externo sin supervisión encaja con Beta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Alfa se hace en entorno controlado (más supervisado/controlado que el descrito)."
+        },
+        {
+          "clave": "b",
+          "motivo": "Unitaria prueba clases/métodos, no un videojuego completo con usuarios externos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Regresión repite pruebas tras cambios; aquí es fase pre-lanzamiento con usuarios externos."
+        }
+      ],
+      "resumen_didactico": "Beta = usuarios reales probando sin supervisión directa del equipo.",
+      "ejemplo_practico": "Publicar una beta cerrada para que jugadores prueben desde casa y reporten errores/experiencia.",
+      "conclusion_final": "Es una prueba beta."
+    }
+  },
+  {
+    "id": "UT3-Q27",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Cuál es la diferencia fundamental entre pruebas Alfa y Beta?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las pruebas Alfa son automatizadas y las Beta manuales."
+      },
+      {
+        "clave": "b",
+        "texto": "Las pruebas Alfa se realizan en entorno controlado, las Beta por usuarios finales sin control del desarrollador."
+      },
+      {
+        "clave": "c",
+        "texto": "Las pruebas Alfa las realiza el cliente y las Beta el equipo de desarrollo."
+      },
+      {
+        "clave": "d",
+        "texto": "Las Alfa comprueban el código fuente y las Beta solo la interfaz."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La unidad diferencia Alfa (en entorno controlado) y Beta (usuarios finales sin el desarrollador detrás). La diferencia clave es el control del entorno y quién ejecuta la prueba en condiciones reales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No se define por automatización/manualidad, sino por entorno controlado vs usuarios finales sin supervisión."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es ‘cliente vs desarrollo’ como regla; lo distintivo es el entorno y el grado de control, especialmente en beta con usuarios finales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso mezcla caja blanca/negra. Alfa/Beta son escenarios de validación, no categorías por análisis de código."
+        }
+      ],
+      "resumen_didactico": "Alfa = controlado. Beta = usuarios finales en condiciones más reales y sin control directo del desarrollador.",
+      "ejemplo_practico": "Alfa en laboratorio con supervisión; beta en casa de jugadores reportando feedback.",
+      "conclusion_final": "La diferencia fundamental es el entorno controlado (alfa) frente a usuarios finales sin control del desarrollador (beta)."
+    }
+  },
+  {
+    "id": "UT3-Q28",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Un equipo automatiza la ejecución nocturna de 500 pruebas de regresión. ¿Qué están implementando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Pruebas de caja blanca." },
+      { "clave": "b", "texto": "Pruebas de usabilidad." },
+      { "clave": "c", "texto": "Automatización de pruebas." },
+      { "clave": "d", "texto": "Pruebas de aceptación." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Si repites la misma prueba con frecuencia (regresión en cada versión), se recomienda automatizarla. Ejecutar nocturnamente una suite grande de regresión es un caso típico de automatización de pruebas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Caja blanca describe diseñar pruebas desde el código; aquí lo determinante es la ejecución programada automática."
+        },
+        {
+          "clave": "b",
+          "motivo": "Usabilidad evalúa experiencia humana; no se ejecuta típicamente como 500 tests nocturnos automatizados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aceptación es alfa/beta con enfoque de validación; no una suite nocturna de regresión."
+        }
+      ],
+      "resumen_didactico": "Ejecución programada y repetible de suites = automatización.",
+      "ejemplo_practico": "Un pipeline CI lanza cada noche 500 tests y genera reporte; si falla alguno, se investiga el cambio que lo provocó.",
+      "conclusion_final": "Están implementando automatización de pruebas."
+    }
+  },
+  {
+    "id": "UT3-Q29",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Qué elemento necesita el equipo para automatizar eficazmente las pruebas?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una documentación bien estructurada sobre las pruebas a realizar."
+      },
+      { "clave": "b", "texto": "Acceso directo al código fuente." },
+      { "clave": "c", "texto": "Usuarios finales para validar resultados." },
+      { "clave": "d", "texto": "Un entorno idéntico al del cliente." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Para automatizar pruebas repetidas con frecuencia se necesita documentación clara: qué datos usar, qué pasos repetir y con qué periodicidad. Esto ahorra tiempo y garantiza consistencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La automatización no exige siempre acceso al código (p. ej., automatización de UI o API puede hacerse como caja negra); el requisito explícito es documentación clara."
+        },
+        {
+          "clave": "c",
+          "motivo": "Usuarios finales encajan más con aceptación/validación (beta). La automatización se apoya en pasos, datos y criterios definidos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El entorno es relevante, pero el temario subraya como condición para automatizar: documentación clara de datos/pasos/periodicidad para repetir siempre igual."
+        }
+      ],
+      "resumen_didactico": "Automatizar bien requiere que la prueba esté definida sin ambigüedades: datos + pasos + frecuencia.",
+      "ejemplo_practico": "Para automatizar ‘recuperar contraseña’ se documentan cuentas de prueba, pasos, verificación de email y periodicidad nocturna.",
+      "conclusion_final": "Lo imprescindible es una documentación bien estructurada de las pruebas a automatizar."
+    }
+  },
+  {
+    "id": "UT3-Q30",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Qué otro aspecto es muy importante para la calidad de un software?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El soporte y mantenimiento que se ofrezca para futuros problemas."
+      },
+      { "clave": "b", "texto": "El lenguaje de programación utilizado." },
+      { "clave": "c", "texto": "El número de líneas de código que contiene." },
+      {
+        "clave": "d",
+        "texto": "La cantidad de características, aunque no sean utilizadas."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La calidad es medible y se nota en la competitividad, el mantenimiento y el soporte. En software complejo importa cómo responde ante incidencias, cómo se mantiene y cómo rinde en la plataforma.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El lenguaje por sí solo no garantiza calidad; la calidad se define con criterios/medidas y se refleja en mantenimiento/soporte/rendimiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "El temario menciona métricas como ‘errores por cada cierto número de líneas’, pero el número de líneas no es un objetivo de calidad en sí mismo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Más funcionalidades no implica mejor calidad; lo importante es cumplir criterios medibles y aportar valor sin degradar mantenibilidad."
+        }
+      ],
+      "resumen_didactico": "Calidad no es solo ‘funciona hoy’; también es mantenible y soportable cuando surgen incidencias.",
+      "ejemplo_practico": "Una app puede funcionar bien en demo, pero si ante un incidente no se puede mantener y dar soporte rápido, la calidad percibida cae.",
+      "conclusion_final": "Un aspecto clave de la calidad es el soporte y mantenimiento para futuros problemas."
+    }
+  }
+]
