@@ -1,4 +1,4 @@
-/** @format */
+
 const quizzes = import.meta.glob("/src/data/**/*.json", { eager: true });
 
 export function getQuiz(folder, topicId) {

@@ -1,6 +1,7 @@
-/** @format */
 
-import { useParams } from "react-router-dom";
+
+import { useParams, useNavigate } from "react-router-dom";
+
 import { getQuiz } from "../data/quizLoader";
 import { useEffect, useState } from "react";
 import { QuizQuestion } from "../Components/QuizQuestion";
@@ -15,8 +16,11 @@ function resolveFolder(moduloId) {
   return map[moduloId] ?? null;
 }
 
-export function Quiz() {
+
+export function Quiz() 
+{
   const { moduloId, topicId } = useParams();
+  const navigate = useNavigate();
 
   const folder = resolveFolder(moduloId);
   const questions = folder ? getQuiz(folder, topicId) : null;
@@ -27,7 +31,7 @@ export function Quiz() {
   const [answerCorrect, setAnswerCorrect] = useState(0);
   const [hasAnsweredCurrent, setHasAnsweredCurrent] = useState(false);
 
-  // IMPORTANTE: resetear todo al cambiar de módulo/tema
+
   useEffect(() => {
     setCurrentIndex(0);
     setSelectedOption(null);
@@ -36,7 +40,7 @@ export function Quiz() {
     setHasAnsweredCurrent(false);
   }, [moduloId, topicId]);
 
-  // IMPORTANTE: no accedas a questions[currentIndex] si questions es null
+
   const currentQuestion = questions?.[currentIndex] ?? null;
 
   function handleOptionChange(optionKey) {
@@ -94,7 +98,7 @@ export function Quiz() {
     setHasAnsweredCurrent(false);
   }
 
-  // Render seguro si no existe módulo o JSON
+
   if (!folder) {
     return <p>Módulo no soportado: {moduloId}</p>;
   }
@@ -150,6 +154,9 @@ export function Quiz() {
             Siguiente
           </button>
         </section>
+        <button type="button" className="btn-back" onClick={() => navigate(-1)}>
+          Volver atrás
+        </button>
       </article>
     </div>
   );

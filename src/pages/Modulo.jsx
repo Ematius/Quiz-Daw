@@ -1,5 +1,5 @@
 
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import { TopicCard } from "../Components/TopicCard";
 import { topicsByModule } from "../data/topicsByModule";
 import "./Modulo.scss"
@@ -8,7 +8,9 @@ import "./Modulo.scss"
 
 
 
+
 export function Modulo() {
+  const navigate = useNavigate();
   const { moduloId } = useParams();
   const topics = topicsByModule[moduloId] || [];
 
@@ -16,7 +18,14 @@ export function Modulo() {
     <div className="page-container">
       <section className="module-page">
         <h1 className="page-title">Módulo: {moduloId}</h1>
-        <p>Tests de los temas con sus explicaciones a cada opcion para repasar y estudiar</p>
+        <p>
+          Tests de los temas con sus explicaciones a cada opcion para repasar y
+          estudiar
+        </p>
+        
+        <button type="button" className="btn-back" onClick={() => navigate(-1)}>
+          Volver atrás
+        </button>
 
         <section className="module-topics">
           {topics.map((topic) => (
