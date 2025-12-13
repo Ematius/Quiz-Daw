@@ -53,8 +53,13 @@ export const topicsByModule = {
       numQuestion: 30,
     },
     {
-      id:"UT3",
-      title: "DIseño y realización de pruebas",
+      id: "UT3",
+      title: "Diseño y realización de pruebas",
+      numQuestion: 30,
+    },
+    {
+      id: "UT4",
+      title: "Optimización y documentación",
       numQuestion: 30,
     },
   ],

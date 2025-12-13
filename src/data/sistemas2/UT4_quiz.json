@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "UT4-Q01",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un desarrollador senior revisa el código de un compañero y, sin añadir ninguna funcionalidad nueva, reestructura varias funciones para que sean más legibles y eficientes. Este proceso de \"limpieza\" interna del código sin alterar su comportamiento externo se conoce como:",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Depuración." },
+      { "clave": "b", "texto": "Compilación." },
+      { "clave": "c", "texto": "Refactorización." },
+      { "clave": "d", "texto": "Documentación." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La refactorización consiste en reestructurar el código internamente para mejorar legibilidad, mantenibilidad o eficiencia sin cambiar su comportamiento externo ni añadir funcionalidades nuevas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La depuración se centra en localizar y corregir errores de funcionamiento, no en reestructurar código manteniendo el mismo comportamiento."
+        },
+        {
+          "clave": "b",
+          "motivo": "La compilación es la traducción del código fuente a ejecutable/bytecode, no una reestructuración del diseño interno."
+        },
+        {
+          "clave": "d",
+          "motivo": "La documentación explica el sistema; no implica modificar la estructura interna del código."
+        }
+      ],
+      "resumen_didactico": "Refactorizar es mejorar el código por dentro sin cambiar lo que hace por fuera.",
+      "ejemplo_practico": "Separar un método largo en varios métodos más claros, manteniendo exactamente el mismo resultado final.",
+      "conclusion_final": "Si se reorganiza el código para hacerlo más limpio sin alterar su comportamiento, es refactorización."
+    }
+  },
+  {
+    "id": "UT4-Q02",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Cuál es una de las ventajas clave que se obtiene al refactorizar el código de una aplicación?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite descubrir errores ocultos y simplificar la lógica del código."
+      },
+      {
+        "clave": "b",
+        "texto": "Elimina la necesidad de realizar pruebas de regresión."
+      },
+      {
+        "clave": "c",
+        "texto": "Añade nuevas características al programa sin necesidad de codificarlas."
+      },
+      {
+        "clave": "d",
+        "texto": "Modifica el comportamiento externo del programa para adaptarlo a nuevos requisitos."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La refactorización mejora la calidad del código: lo hace más claro, reduce duplicidades y puede ayudar a detectar fallos lógicos que antes quedaban ocultos entre complejidad y desorden.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Tras refactorizar se deben mantener pruebas (incluidas regresión) para confirmar que el comportamiento externo no se ha alterado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Refactorizar no añade funcionalidades; solo reorganiza/mejora el código existente."
+        },
+        {
+          "clave": "d",
+          "motivo": "La refactorización, por definición, no debe cambiar el comportamiento externo."
+        }
+      ],
+      "resumen_didactico": "Refactorizar aporta claridad y calidad: simplifica y ayuda a detectar problemas.",
+      "ejemplo_practico": "Renombrar variables confusas y dividir funciones gigantes facilita entender el flujo y descubrir condiciones mal planteadas.",
+      "conclusion_final": "Una ventaja clave es simplificar la lógica y destapar errores ocultos."
+    }
+  },
+  {
+    "id": "UT4-Q03",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un programador encuentra un método de 100 líneas de código que se encarga de validar un formulario, guardar los datos y enviar un correo de confirmación. Para mejorar su claridad, decide dividirlo en tres métodos más pequeños y precisos: validarFormulario(), guardarDatos() y enviarCorreo(). ¿Qué patrón de refactorización está aplicando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Métodos inline o código embebido." },
+      { "clave": "b", "texto": "Cambiar algoritmos." },
+      { "clave": "c", "texto": "Extract method o reducción lógica." },
+      { "clave": "d", "texto": "Mover métodos entre clases." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Extract Method (reducción lógica) consiste en extraer partes de un método grande en métodos más pequeños, cada uno con una única responsabilidad, para mejorar legibilidad y mantenimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Inline suele eliminar métodos demasiado simples integrando su contenido; aquí se hace lo contrario: dividir un método grande."
+        },
+        {
+          "clave": "b",
+          "motivo": "Cambiar algoritmos implica sustituir una estrategia por otra más eficiente, no dividir un método en varios."
+        },
+        {
+          "clave": "d",
+          "motivo": "Mover métodos entre clases redistribuye responsabilidades entre clases; aquí solo se subdivide dentro del mismo contexto."
+        }
+      ],
+      "resumen_didactico": "Si un método hace demasiadas cosas, se divide en métodos pequeños: Extract Method.",
+      "ejemplo_practico": "De procesarPedido() a validarPedido(), calcularTotal() y guardarPedido(), manteniendo el mismo resultado.",
+      "conclusion_final": "Partir un método largo en varios específicos es Extract Method."
+    }
+  },
+  {
+    "id": "UT4-Q04",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "En una función, un programador observa que se utiliza una variable temporal únicamente para almacenar el resultado de una operación antes de devolverlo. Para simplificar, elimina la variable y devuelve directamente el resultado de la operación. Esta técnica, recomendada para hacer el código más conciso, es un ejemplo de:",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Autoencapsular campos." },
+      { "clave": "b", "texto": "Métodos inline o código embebido." },
+      { "clave": "c", "texto": "Variables autoexplicativas." },
+      { "clave": "d", "texto": "Extraer clases." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El enfoque inline/código embebido consiste en eliminar pasos intermedios innecesarios (como temporales que solo sirven de puente) y usar la expresión directamente, manteniendo el mismo resultado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Autoencapsular campos trata de convertir atributos en privados y acceder con getters/setters."
+        },
+        {
+          "clave": "c",
+          "motivo": "Variables autoexplicativas se centra en mejorar nombres; aquí se elimina una variable innecesaria."
+        },
+        {
+          "clave": "d",
+          "motivo": "Extraer clases separa responsabilidades creando nuevas clases; no aplica a una variable temporal."
+        }
+      ],
+      "resumen_didactico": "Si una variable solo sirve para devolver un resultado inmediato, suele sobrar: se puede inlinear.",
+      "ejemplo_practico": "Antes: const total = a*b; return total; Después: return a*b;",
+      "conclusion_final": "Eliminar temporales puente y devolver la expresión directamente encaja con inline/código embebido."
+    }
+  },
+  {
+    "id": "UT4-Q05",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un desarrollador está revisando un código donde las variables se llaman v1, v2 y temp. Decide cambiarles el nombre a precioNeto, impuestoCalculado y precioFinal para que el propósito de cada una sea evidente sin necesidad de comentarios. ¿Qué patrón de refactorización está utilizando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Variables autoexplicativas." },
+      { "clave": "b", "texto": "Empleo de constantes." },
+      { "clave": "c", "texto": "Mal uso de variables temporales." },
+      { "clave": "d", "texto": "Autoencapsular campos." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Usar variables autoexplicativas consiste en renombrar variables para que expresen su propósito y reduzcan la necesidad de comentarios, mejorando la comprensión del código.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Empleo de constantes sustituye valores fijos (números mágicos) por constantes con nombre; aquí solo se renombran variables."
+        },
+        {
+          "clave": "c",
+          "motivo": "Mal uso de temporales describe un problema; el patrón aplicado es renombrado para claridad."
+        },
+        {
+          "clave": "d",
+          "motivo": "Autoencapsular campos afecta a atributos de clase (privados + get/set), no a variables locales."
+        }
+      ],
+      "resumen_didactico": "Nombres claros = código más entendible: variables autoexplicativas.",
+      "ejemplo_practico": "Cambiar temp por impuestoCalculado hace evidente qué representa el valor.",
+      "conclusion_final": "Renombrar para que se entienda sin comentarios es variables autoexplicativas."
+    }
+  },
+  {
+    "id": "UT4-Q06",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un algoritmo existente para ordenar una lista de productos es muy lento. Un desarrollador lo sustituye por un algoritmo de ordenación mucho más eficiente que produce el mismo resultado final. Antes de aplicar el cambio definitivo, se asegura de ejecutar todas las pruebas de regresión para verificar que nada se ha roto. Esta acción corresponde al patrón de:",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Cambiar algoritmos." },
+      { "clave": "b", "texto": "Métodos inline." },
+      { "clave": "c", "texto": "Mover variables miembro entre clases." },
+      { "clave": "d", "texto": "Extraer clases." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Cambiar algoritmos implica sustituir una estrategia por otra más eficiente manteniendo el mismo resultado externo. Es clave apoyarse en pruebas de regresión para confirmar que el comportamiento sigue siendo correcto tras el cambio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Inline elimina métodos simples o temporales innecesarias; no sustituye un algoritmo completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Mover variables miembro redistribuye atributos entre clases; no mejora rendimiento algorítmico de ordenación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Extraer clases separa responsabilidades creando clases nuevas; no describe sustituir el algoritmo de ordenación."
+        }
+      ],
+      "resumen_didactico": "Si cambias la estrategia para hacer lo mismo más rápido, estás cambiando algoritmos.",
+      "ejemplo_practico": "Sustituir un ordenamiento ineficiente por otro más eficiente y validar con tests de regresión.",
+      "conclusion_final": "Reemplazar un algoritmo lento por otro más eficiente, verificando con regresión, es Cambiar algoritmos."
+    }
+  },
+  {
+    "id": "UT4-Q07",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "En una clase Producto, el atributo precio es público y se modifica directamente desde otras partes del código. Para controlar mejor su acceso y añadir lógica de validación en el futuro, un programador lo convierte en privado y crea los métodos getPrecio() y setPrecio(). ¿Qué patrón está aplicando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Mover métodos entre clases." },
+      { "clave": "b", "texto": "Reemplazar valores con objetos." },
+      { "clave": "c", "texto": "Autoencapsular campos (getters y setters)." },
+      { "clave": "d", "texto": "Extraer clases." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Autoencapsular campos consiste en convertir atributos en privados y acceder mediante getters/setters, permitiendo control del acceso y la incorporación de validaciones sin romper el resto del código.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Mover métodos entre clases es redistribuir responsabilidades; aquí se controla el acceso a un campo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Reemplazar valores con objetos crea una clase para un valor; aquí no se crea un objeto nuevo, se encapsula un atributo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Extraer clases divide una clase grande en varias; aquí solo se encapsula un campo."
+        }
+      ],
+      "resumen_didactico": "Privado + get/set = encapsulación controlada del atributo.",
+      "ejemplo_practico": "setPrecio() podría impedir precios negativos en el futuro.",
+      "conclusion_final": "Convertir un atributo público en privado y exponer get/set es autoencapsular campos."
+    }
+  },
+  {
+    "id": "UT4-Q08",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "La clase Cliente ha crecido demasiado y contiene muchos atributos que describen la dirección del cliente (calle, ciudad, país, código postal). Para simplificar la clase Cliente, el programador crea una nueva clase Direccion y traslada todos esos atributos a ella. ¿Cómo se llama esta técnica de refactorización?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Empleo de constantes." },
+      { "clave": "b", "texto": "Reemplazar tipos de objeto con subclases." },
+      { "clave": "c", "texto": "Extraer clases." },
+      { "clave": "d", "texto": "Métodos foráneos." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Extraer clases se aplica cuando una clase acumula demasiadas responsabilidades: se identifica un conjunto coherente de datos/métodos (p. ej., la dirección) y se crea una nueva clase para mejorar cohesión y mantenimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Empleo de constantes sustituye valores fijos por constantes; no reorganiza atributos en nuevas clases."
+        },
+        {
+          "clave": "b",
+          "motivo": "Subclases se usa para polimorfismo según tipo; aquí se separa un bloque de datos, no se crean tipos derivados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Métodos foráneos añaden funcionalidad desde otra clase sin tocar la original; aquí se reestructura creando una nueva clase."
+        }
+      ],
+      "resumen_didactico": "Cuando una clase se vuelve demasiado grande, se extrae una clase para agrupar datos relacionados.",
+      "ejemplo_practico": "Cliente pasa a tener un campo direccion: Direccion, en lugar de muchos campos sueltos.",
+      "conclusion_final": "Mover los datos de dirección a una clase Direccion es Extraer clases."
+    }
+  },
+  {
+    "id": "UT4-Q09",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un equipo de desarrollo se enfrenta a un problema recurrente al diseñar la interacción entre varias clases. En lugar de crear una solución desde cero, consultan un catálogo de soluciones probadas y estandarizadas por la comunidad de ingenieros de software para resolver este tipo de problemas en la programación orientada a objetos. ¿Qué están utilizando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Sistemas de control de versiones." },
+      { "clave": "b", "texto": "Patrones de diseño." },
+      { "clave": "c", "texto": "Refactorización de código." },
+      { "clave": "d", "texto": "Documentación funcional." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Los patrones de diseño son soluciones probadas y estandarizadas para problemas recurrentes de diseño, especialmente en POO, evitando reinventar la rueda y mejorando la calidad del diseño.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un SCV registra versiones y cambios del código; no es un catálogo de soluciones de diseño."
+        },
+        {
+          "clave": "c",
+          "motivo": "Refactorizar mejora el código existente sin cambiar comportamiento; no es un catálogo de soluciones de diseño entre clases."
+        },
+        {
+          "clave": "d",
+          "motivo": "La documentación funcional describe uso y funcionamiento del software; no aporta soluciones de diseño estandarizadas."
+        }
+      ],
+      "resumen_didactico": "Un catálogo de soluciones recurrentes de POO son patrones de diseño.",
+      "ejemplo_practico": "Aplicar Strategy, Observer o Factory para resolver un problema típico sin inventar una solución ad hoc.",
+      "conclusion_final": "Si consultan soluciones probadas para problemas recurrentes, están usando patrones de diseño."
+    }
+  },
+  {
+    "id": "UT4-Q10",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Los patrones de diseño se clasifican en tres grandes grupos según su propósito. ¿Cuáles son estas tres categorías?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Iniciales, intermedios y finales." },
+      { "clave": "b", "texto": "Locales, distribuidos y centralizados." },
+      { "clave": "c", "texto": "De código, de documentación y de pruebas." },
+      {
+        "clave": "d",
+        "texto": "Creacionales, estructurales y de comportamiento."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La clasificación estándar de patrones de diseño se divide en: creacionales (creación de objetos), estructurales (composición y relaciones) y de comportamiento (comunicación y responsabilidades).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es una clasificación reconocida por propósito de patrones."
+        },
+        {
+          "clave": "b",
+          "motivo": "Esto describe modelos de sistemas/arquitecturas, no categorías de patrones de diseño."
+        },
+        {
+          "clave": "c",
+          "motivo": "Documentación y pruebas son ámbitos del proyecto, no categorías de patrones de diseño."
+        }
+      ],
+      "resumen_didactico": "Patrones: crear (creacionales), componer (estructurales), interactuar (comportamiento).",
+      "ejemplo_practico": "Factory (creacional), Adapter (estructural), Observer (comportamiento).",
+      "conclusion_final": "Las tres categorías son creacionales, estructurales y de comportamiento."
+    }
+  },
+  {
+    "id": "UT4-Q11",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un desarrollador necesita diseñar un sistema donde la creación de objetos complejos debe ser independiente de las partes que los utilizan. Para ello, implementa un patrón que permite construir un objeto paso a paso, permitiendo diferentes representaciones del mismo objeto. ¿A qué categoría de patrones de diseño pertenece esta solución?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Patrones de comportamiento." },
+      { "clave": "b", "texto": "Patrones creacionales." },
+      { "clave": "c", "texto": "Patrones de refactorización." },
+      { "clave": "d", "texto": "Patrones estructurales." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La descripción corresponde al patrón Builder, que construye objetos complejos paso a paso y permite distintas representaciones. Builder es un patrón creacional, porque se centra en la creación flexible de objetos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los patrones de comportamiento tratan de comunicación y responsabilidades, no del proceso de creación paso a paso."
+        },
+        {
+          "clave": "c",
+          "motivo": "La refactorización no es una categoría de patrones de diseño; son técnicas de mejora del código."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los estructurales organizan relaciones y composición, no la construcción paso a paso de objetos."
+        }
+      ],
+      "resumen_didactico": "Si el foco es crear objetos complejos de forma flexible, es creacional (Builder).",
+      "ejemplo_practico": "Construir una Factura en pasos (cliente, líneas, impuestos) y generar distintas salidas (PDF/HTML).",
+      "conclusion_final": "Construcción paso a paso con distintas representaciones pertenece a patrones creacionales."
+    }
+  },
+  {
+    "id": "UT4-Q12",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Cuál es la finalidad principal de los patrones de diseño estructurales?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Trabajar en los problemas de relaciones entre objetos, a menudo usando la herencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Mejorar la eficiencia interna del código sin cambiar su estructura."
+      },
+      {
+        "clave": "c",
+        "texto": "Proporcionar mecanismos para la creación de objetos de forma flexible."
+      },
+      {
+        "clave": "d",
+        "texto": "Gestionar algoritmos y la asignación de responsabilidades entre objetos"
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Los patrones estructurales se enfocan en la composición y las relaciones entre clases/objetos para formar estructuras más complejas y flexibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe optimización/refactorización; los estructurales tratan de composición y relaciones, no solo eficiencia interna."
+        },
+        {
+          "clave": "c",
+          "motivo": "Crear objetos de forma flexible corresponde a patrones creacionales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Gestionar comunicación y responsabilidades corresponde a patrones de comportamiento."
+        }
+      ],
+      "resumen_didactico": "Estructurales = cómo se conectan y componen objetos/clases.",
+      "ejemplo_practico": "Adapter permite que dos interfaces incompatibles colaboren sin reescribirlas.",
+      "conclusion_final": "La finalidad principal es resolver relaciones/composición entre objetos: opción a."
+    }
+  },
+  {
+    "id": "UT4-Q13",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un equipo de software necesita definir cómo un conjunto de objetos interactúan y se comunican entre sí para realizar una tarea. Eligen un patrón de diseño que se especializa en identificar y modificar los flujos de comunicación entre objetos. ¿A qué categoría pertenece el patrón que necesitan?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Patrones estructurales." },
+      { "clave": "b", "texto": "Patrones creacionales." },
+      { "clave": "c", "texto": "Patrones de documentación." },
+      { "clave": "d", "texto": "Patrones de comportamiento." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Los patrones de comportamiento se centran en cómo los objetos interactúan, se comunican y se reparten responsabilidades, permitiendo modificar flujos de comunicación sin romper el diseño.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Estructurales tratan de composición/relaciones, no de flujos de comunicación dinámicos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Creacionales tratan de creación de objetos, no de interacción."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe esa categoría como clasificación de patrones de diseño."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta va de interacción y comunicación, es comportamiento.",
+      "ejemplo_practico": "Observer define cómo un sujeto notifica cambios a sus observadores.",
+      "conclusion_final": "Para flujos de comunicación entre objetos, la categoría es comportamiento."
+    }
+  },
+  {
+    "id": "UT4-Q14",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un equipo de programadores trabaja en un proyecto complejo. Para evitar problemas como la pérdida de cambios o la dificultad para identificar qué modificación introdujo un error, deciden usar una herramienta que registra cada cambio en el código y les permite volver a una versión anterior en cualquier momento. ¿Qué tipo de sistema están implementando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Una herramienta de refactorización." },
+      { "clave": "b", "texto": "Un generador automático de documentación." },
+      { "clave": "c", "texto": "Un sistema de control de versiones (SCV)." },
+      { "clave": "d", "texto": "Un entorno de desarrollo integrado (IDE)." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Un sistema de control de versiones registra cambios, mantiene historial y permite volver atrás ante errores, facilitando trazabilidad y trabajo colaborativo (p. ej., Git).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Refactorizar mejora estructura interna del código; no gestiona historial de versiones."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un generador de documentación crea documentación; no permite volver a versiones anteriores del código."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un IDE ayuda a desarrollar; puede integrar Git, pero no es el sistema de versiones en sí."
+        }
+      ],
+      "resumen_didactico": "Historial + volver atrás + saber quién cambió qué = SCV.",
+      "ejemplo_practico": "Revertir un commit que introdujo un bug y recuperar la versión estable previa.",
+      "conclusion_final": "Lo descrito es un sistema de control de versiones."
+    }
+  },
+  {
+    "id": "UT4-Q15",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Cuál es una de las ventajas más significativas de utilizar un sistema de control de versiones como Git en un proyecto de software?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite mantener un registro de todas las versiones y volver a una anterior ante un imprevisto."
+      },
+      {
+        "clave": "b",
+        "texto": "Mejora automáticamente la eficiencia del código sin intervención del programador."
+      },
+      {
+        "clave": "c",
+        "texto": "Elimina la necesidad de escribir documentación técnica."
+      },
+      {
+        "clave": "d",
+        "texto": "Escribe el código del programa de forma automática basándose en los requisitos."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La ventaja clave es el historial completo (tipo “Ctrl+Z infinito”) para revertir cambios ante fallos, además de trazabilidad y soporte al trabajo en equipo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Git no optimiza el código: solo gestiona versiones y cambios."
+        },
+        {
+          "clave": "c",
+          "motivo": "La documentación sigue siendo necesaria; Git no la sustituye."
+        },
+        {
+          "clave": "d",
+          "motivo": "Git no genera código a partir de requisitos; eso no es función de un SCV."
+        }
+      ],
+      "resumen_didactico": "La gran ventaja: registro de versiones y vuelta atrás segura.",
+      "ejemplo_practico": "Si un cambio rompe producción, se revierte a la versión anterior estable.",
+      "conclusion_final": "La ventaja más significativa es mantener versiones y poder volver a una anterior."
+    }
+  },
+  {
+    "id": "UT4-Q16",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Una empresa de desarrollo mantiene todo el código y el historial de sus proyectos en un único servidor central. Los desarrolladores deben conectarse a este servidor para descargar la última versión del código y para subir sus cambios. Este modelo ofrece un alto grado de control administrativo. ¿Qué tipo de sistema de control de versiones están utilizando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Sistema distribuido." },
+      { "clave": "b", "texto": "Sistema de almacenamiento local." },
+      { "clave": "c", "texto": "Sistema centralizado." },
+      { "clave": "d", "texto": "Flujo de trabajo con gestor de integración." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En un SCV centralizado, el repositorio y su historial se almacenan en un servidor único y los desarrolladores se conectan para descargar/subir cambios, con alto control administrativo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En distribuido cada usuario tiene copia completa con historial; aquí todo está en un servidor central."
+        },
+        {
+          "clave": "b",
+          "motivo": "No describe un SCV; el escenario habla de un servidor con historial centralizado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un modelo de trabajo/organización, no el tipo de almacenamiento (centralizado vs distribuido)."
+        }
+      ],
+      "resumen_didactico": "Servidor único con historial central = SCV centralizado.",
+      "ejemplo_practico": "SVN clásico: todos dependen del servidor central para versionar y acceder al historial.",
+      "conclusion_final": "Un único servidor con todo el historial define un sistema centralizado."
+    }
+  },
+  {
+    "id": "UT4-Q17",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué característica principal diferencia a los sistemas de control de versiones distribuidos (como Git) de los centralizados?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Son más rígidos y dificultan el trabajo colaborativo."
+      },
+      {
+        "clave": "b",
+        "texto": "Cada usuario tiene una copia completa del repositorio, lo que otorga mayor seguridad y flexibilidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Almacenan las versiones anteriores con una única numeración secuencial."
+      },
+      {
+        "clave": "d",
+        "texto": "Requieren una conexión a internet permanente para poder trabajar"
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En sistemas distribuidos, cada usuario tiene una copia completa del repositorio y su historial en local, lo que aporta flexibilidad (trabajo offline) y más resiliencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Git suele facilitar colaboración con ramas y merges; no es la característica principal ni lo hace más rígido."
+        },
+        {
+          "clave": "c",
+          "motivo": "La numeración secuencial no es la diferencia esencial entre distribuido y centralizado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Al tener historial local, se puede trabajar sin conexión y sincronizar después."
+        }
+      ],
+      "resumen_didactico": "Distribuido = repo completo en cada máquina.",
+      "ejemplo_practico": "Hacer commits en el portátil sin conexión y luego hacer push cuando haya internet.",
+      "conclusion_final": "La diferencia principal es la copia completa local del repositorio en cada usuario."
+    }
+  },
+  {
+    "id": "UT4-Q18",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un desarrollador está trabajando en un vuelo y no tiene acceso a internet. A pesar de ello, puede seguir realizando \"commits\" de sus cambios, revisar el historial completo del proyecto y crear nuevas ramas. Esto es posible porque su proyecto utiliza un:",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Almacenamiento en un servidor único." },
+      { "clave": "b", "texto": "Flujo de trabajo con dictador y tenientes." },
+      {
+        "clave": "c",
+        "texto": "Sistema de control de versiones centralizado."
+      },
+      { "clave": "d", "texto": "Sistema de control de versiones distribuido." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En un SCV distribuido (Git), cada desarrollador tiene el repositorio completo y el historial en local, por lo que puede hacer commits, consultar historial y crear ramas sin conexión.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Si todo depende de un servidor único, sin conexión no se tendría acceso completo al historial y operaciones clave."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es un workflow jerárquico; no es el motivo técnico que permite trabajar offline."
+        },
+        {
+          "clave": "c",
+          "motivo": "En centralizado dependes del servidor para historial/repositorio; sin conexión, la operativa se limita."
+        }
+      ],
+      "resumen_didactico": "Commits y ramas sin internet = distribuido.",
+      "ejemplo_practico": "Durante el vuelo haces 3 commits y creas una rama feature; al aterrizar sincronizas (push).",
+      "conclusion_final": "La capacidad offline completa indica un sistema distribuido."
+    }
+  },
+  {
+    "id": "UT4-Q19",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "En un proyecto, cuando un desarrollador comienza a modificar un archivo, este se bloquea para que ningún otro miembro del equipo pueda editarlo al mismo tiempo. El archivo se desbloquea solo cuando el primer desarrollador ha subido sus cambios. Este modelo, aunque rígido, evita conflictos de modificación simultánea. ¿Cómo se llama este flujo de trabajo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Flujo de trabajo con dictador y tenientes." },
+      { "clave": "b", "texto": "Flujo de trabajo distribuido." },
+      { "clave": "c", "texto": "Flujo de trabajo centralizado." },
+      { "clave": "d", "texto": "Flujo de trabajo con gestor de integración." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El flujo centralizado con bloqueo exclusivo (trabajo en exclusiva) evita conflictos impidiendo la edición simultánea de archivos: uno bloquea, modifica y luego libera al subir cambios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Dictador y tenientes es jerárquico para proyectos masivos; no describe bloqueo por archivo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Distribuido suele permitir trabajo paralelo con merges; no se basa en bloqueo exclusivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Gestor de integración revisa e integra cambios; no es el mecanismo de bloqueo por archivo."
+        }
+      ],
+      "resumen_didactico": "Bloqueo para evitar conflictos = workflow centralizado rígido.",
+      "ejemplo_practico": "Dev A bloquea facturacion.java, Dev B espera; tras commit/push, se desbloquea.",
+      "conclusion_final": "El bloqueo exclusivo de archivos es típico del flujo centralizado."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Cuál es la principal desventaja de un flujo de trabajo centralizado que emplea el sistema de bloqueo exclusivo de archivos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aumenta el riesgo de conflictos entre modificaciones simultáneas."
+      },
+      {
+        "clave": "b",
+        "texto": "Dificulta conocer la procedencia de las actualizaciones del código."
+      },
+      {
+        "clave": "c",
+        "texto": "Requiere que cada desarrollador revise y apruebe el trabajo de los demás."
+      },
+      {
+        "clave": "d",
+        "texto": "Puede ralentizar el proyecto, ya que los desarrolladores deben esperar su turno para modificar archivos."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El bloqueo exclusivo reduce conflictos, pero introduce esperas: si alguien bloquea un archivo, el resto no puede avanzar en ese archivo hasta que se libere, ralentizando el proyecto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El bloqueo se usa precisamente para evitar conflictos simultáneos."
+        },
+        {
+          "clave": "b",
+          "motivo": "En centralizado suele haber trazabilidad clara de cambios; el problema principal es la espera/bloqueo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La revisión por todos no es un requisito del bloqueo; es otra dinámica (revisiones, integración, etc.)."
+        }
+      ],
+      "resumen_didactico": "Menos conflictos, pero más colas: el equipo espera turnos.",
+      "ejemplo_practico": "Dos devs necesitan el mismo archivo; uno se queda parado hasta que el otro termine.",
+      "conclusion_final": "La desventaja clave es la pérdida de velocidad por esperas."
+    }
+  },
+  {
+    "id": "UT4-Q21",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Para mantener la calidad del repositorio principal de un proyecto, se designa a una persona como la única responsable de revisar y aceptar los cambios propuestos por el resto del equipo. Los demás desarrolladores pueden ver el repositorio, pero no modificarlo directamente. ¿Cómo se denomina este modelo de trabajo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Flujo de trabajo con dictador." },
+      { "clave": "b", "texto": "Flujo de trabajo con gestor de integración." },
+      { "clave": "c", "texto": "Sistema de bloqueo exclusivo." },
+      { "clave": "d", "texto": "Flujo de trabajo centralizado." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el flujo con gestor de integración, los desarrolladores proponen cambios y una persona (o pequeño grupo) es la responsable de revisarlos y decidir qué se integra al repositorio principal para mantener calidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El modelo de dictador aparece dentro de estructuras más específicas (p. ej., dictador y tenientes) y con jerarquías más complejas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El bloqueo exclusivo evita ediciones simultáneas; no define quién revisa/acepta integraciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "El centralizado se asocia a repositorio único y, a veces, bloqueo; no describe el rol formal de integrador que revisa propuestas."
+        }
+      ],
+      "resumen_didactico": "Si solo una persona integra cambios tras revisar, es gestor de integración.",
+      "ejemplo_practico": "Pull requests revisadas por el integrador antes de hacer merge a main.",
+      "conclusion_final": "Un responsable único de revisión/aceptación define el workflow con gestor de integración."
+    }
+  },
+  {
+    "id": "UT4-Q22",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "En el desarrollo del kernel de Linux, se utiliza una estructura jerárquica. Los desarrolladores envían sus cambios a unos responsables de área (\"tenientes\"), quienes, tras revisar y agrupar el trabajo, lo envían al responsable final (\"dictador\") que es el único que lo integra en el repositorio principal. Este modelo se conoce como:",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Flujo de trabajo centralizado." },
+      { "clave": "b", "texto": "Flujo de trabajo con gestor de integración." },
+      { "clave": "c", "texto": "Flujo de trabajo con dictador y tenientes." },
+      { "clave": "d", "texto": "Flujo de trabajo distribuido simple." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El flujo dictador y tenientes es un modelo jerárquico para proyectos masivos: los tenientes revisan por áreas y el dictador integra al repositorio principal como autoridad final.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Centralizado se centra en repositorio único y, a menudo, bloqueo; no en jerarquía de revisión por áreas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Gestor de integración no implica necesariamente la capa intermedia de tenientes por subsistemas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un término genérico; el modelo descrito es específico: dictador y tenientes."
+        }
+      ],
+      "resumen_didactico": "Proyectos enormes: revisiones por áreas (tenientes) y merge final por un dictador.",
+      "ejemplo_practico": "Cambios al subsistema de red pasan por el teniente de red antes de llegar al dictador.",
+      "conclusion_final": "La estructura jerárquica descrita es dictador y tenientes."
+    }
+  },
+  {
+    "id": "UT4-Q23",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "A pesar de su importancia para el mantenimiento y la comprensión de un proyecto, el proceso de documentación a menudo es descuidado por los desarrolladores. ¿Cuál es uno de los riesgos de generar documentación de baja calidad?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La documentación puede convertirse en un trabajo extra o ser inservible."
+      },
+      { "clave": "b", "texto": "El código fuente ocupa más espacio en disco." },
+      { "clave": "c", "texto": "El programa se ejecuta más lentamente." },
+      {
+        "clave": "d",
+        "texto": "El sistema de control de versiones deja de funcionar."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una documentación de baja calidad confunde, se desactualiza o no sirve para guiar al equipo; termina siendo inútil o generando trabajo extra para interpretarla, corregirla o reemplazarla.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La documentación no afecta de forma relevante al tamaño del código fuente ni es el riesgo principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "La documentación no influye en el rendimiento de ejecución del programa."
+        },
+        {
+          "clave": "d",
+          "motivo": "El control de versiones funciona independientemente de la calidad de la documentación."
+        }
+      ],
+      "resumen_didactico": "Documentación mala no ayuda: estorba y hace perder tiempo.",
+      "ejemplo_practico": "Un README desactualizado obliga a nuevos miembros a repetir trabajo o preguntar constantemente.",
+      "conclusion_final": "El riesgo clave es que la documentación sea inservible o genere trabajo extra."
+    }
+  },
+  {
+    "id": "UT4-Q24",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un escritor técnico, antes de empezar a redactar un manual de 500 páginas, crea un índice detallado con todos los capítulos, secciones y apartados. Esta práctica le ayuda a organizar el contenido y a no olvidar ningún punto importante. ¿A qué pauta de escritura de calidad corresponde esta acción?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Empleo de estándares." },
+      { "clave": "b", "texto": "Elaboración de esquemas." },
+      { "clave": "c", "texto": "Claridad." },
+      { "clave": "d", "texto": "Síntesis." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Elaborar esquemas antes de redactar permite ordenar ideas, planificar la estructura y asegurar cobertura de contenidos, evitando olvidos y mejorando coherencia del documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Empleo de estándares es seguir formatos convencionales; aquí se describe planificación por índice/esquema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Claridad se refiere a estilo de redacción comprensible; no es el acto de crear un índice previo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Síntesis se centra en resumir y facilitar acceso rápido; el objetivo descrito es organizar y no olvidar."
+        }
+      ],
+      "resumen_didactico": "Hacer un guion/índice antes de escribir es elaborar esquemas.",
+      "ejemplo_practico": "Crear capítulos y subcapítulos para un manual antes de redactar el contenido.",
+      "conclusion_final": "Planificar con un índice detallado corresponde a elaboración de esquemas."
+    }
+  },
+  {
+    "id": "UT4-Q25",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Al crear la documentación de un proyecto, un desarrollador decide poner la información esencial y de interés general en el cuerpo principal del documento. Los detalles muy técnicos, que solo son relevantes para un pequeño grupo de expertos, los coloca en apéndices al final. ¿Qué principio de buena documentación está aplicando?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Anticipación." },
+      { "clave": "b", "texto": "Empleo de las herramientas adecuadas." },
+      { "clave": "c", "texto": "Clasificar la información." },
+      { "clave": "d", "texto": "Síntesis." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Clasificar la información consiste en organizar el contenido según relevancia y audiencia: lo general en el cuerpo principal y lo especializado en anexos/apéndices para no saturar al lector.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Anticipación es prever dudas y explicarlas; aquí se está ordenando por nivel de detalle y público."
+        },
+        {
+          "clave": "b",
+          "motivo": "Herramientas adecuadas trata de medios/formato para documentar, no de estructuración del contenido general vs experto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Síntesis se enfoca en resumir/índices; aquí el objetivo es segmentar por relevancia y perfil."
+        }
+      ],
+      "resumen_didactico": "General al cuerpo, técnico a anexos: clasificación de la información.",
+      "ejemplo_practico": "Manual: pasos básicos arriba; configuración avanzada y tuning en apéndices.",
+      "conclusion_final": "Separar por relevancia y perfil es clasificar la información."
+    }
+  },
+  {
+    "id": "UT4-Q26",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un equipo redacta la guía de instalación de un software para usuarios no expertos. Evitan deliberadamente el uso de jerga técnica y en su lugar proporcionan instrucciones claras. ¿Qué pauta de calidad están siguiendo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Síntesis de documentos." },
+      { "clave": "b", "texto": "Adaptar el nivel de lenguaje al del usuario." },
+      { "clave": "c", "texto": "Clasificar la información en anexos." },
+      { "clave": "d", "texto": "Empleo de estándares." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Una pauta esencial es adaptar el nivel de lenguaje al destinatario: para usuarios no expertos se evita jerga y se redacta de forma clara y sencilla.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Síntesis se centra en resumir y facilitar localización; aquí se trabaja el nivel de lenguaje."
+        },
+        {
+          "clave": "c",
+          "motivo": "Clasificar en anexos es separar lo avanzado; aquí se habla de estilo y vocabulario accesible."
+        },
+        {
+          "clave": "d",
+          "motivo": "Empleo de estándares trata de formatos; no implica necesariamente evitar jerga."
+        }
+      ],
+      "resumen_didactico": "Documentación para novatos: lenguaje simple y pasos claros.",
+      "ejemplo_practico": "Cambiar “exporta PATH” por instrucciones guiadas en el sistema operativo.",
+      "conclusion_final": "Evitar jerga para no expertos es adaptar el lenguaje al usuario."
+    }
+  },
+  {
+    "id": "UT4-Q27",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "En la gestión de un proyecto de software, se generan dos tipos principales de documentos. Unos describen el funcionamiento y el modo de empleo del programa, mientras que otros detallan la arquitectura, los componentes y las bases de datos. ¿Cómo se clasifican estos dos tipos de documentos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Documentos funcionales y documentos técnicos."
+      },
+      {
+        "clave": "b",
+        "texto": "Documentos de diseño y documentos de pruebas."
+      },
+      {
+        "clave": "c",
+        "texto": "Manuales de usuario y manuales de instalación."
+      },
+      { "clave": "d", "texto": "Documentos iniciales y documentos finales." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La clasificación principal es: documentación funcional (qué hace y cómo se usa) y documentación técnica (arquitectura, componentes, bases de datos, detalles internos).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Diseño y pruebas son tipos por fase, pero no capturan la distinción general de uso vs internals descrita."
+        },
+        {
+          "clave": "c",
+          "motivo": "Son ejemplos de documentos funcionales; no la clasificación general en dos familias."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la clasificación estándar para diferenciar uso del programa vs detalles técnicos internos."
+        }
+      ],
+      "resumen_didactico": "Uso y funcionamiento = funcional; arquitectura y componentes = técnico.",
+      "ejemplo_practico": "Manual de usuario (funcional) vs documento de arquitectura y BD (técnico).",
+      "conclusion_final": "Se clasifican como documentación funcional y documentación técnica."
+    }
+  },
+  {
+    "id": "UT4-Q28",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Al inicio de un nuevo proyecto, cuando aún no se ha escrito ni una línea de código, el equipo directivo elabora una serie de documentos. Estos textos contienen estimaciones de costes, análisis de rentabilidad y los objetivos generales que se esperan alcanzar. ¿Qué caracteriza a la documentación de esta fase inicial?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es de carácter muy técnico y está dirigida a los programadores."
+      },
+      {
+        "clave": "b",
+        "texto": "Contiene los manuales de usuario y de instalación del producto."
+      },
+      {
+        "clave": "c",
+        "texto": "Registra los errores e incidencias reportados por los usuarios finales."
+      },
+      {
+        "clave": "d",
+        "texto": "La información registrada es más hipotética que objetiva."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En la fase inicial predominan planificación y estimaciones (costes, rentabilidad, objetivos). Como aún no hay ejecución real, la información se basa en supuestos: es más hipotética que objetiva.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La documentación muy técnica suele concentrarse en diseño/implementación; al inicio se trata de planificación y viabilidad."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los manuales de usuario/instalación aparecen cuando el producto está definido o construido, no antes de escribir código."
+        },
+        {
+          "clave": "c",
+          "motivo": "Errores e incidencias se registran en explotación/mantenimiento, cuando ya hay usuarios."
+        }
+      ],
+      "resumen_didactico": "Fase inicial: negocio y estimaciones, no datos reales.",
+      "ejemplo_practico": "Un plan de proyecto con ROI estimado y coste previsto antes de tener requisitos cerrados o prototipo.",
+      "conclusion_final": "La documentación inicial se caracteriza por ser más hipotética que objetiva."
+    }
+  },
+  {
+    "id": "UT4-Q29",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Un analista se reúne con el cliente para definir y registrar todos los requisitos que el futuro software debe cumplir. El documento resultante servirá de guía para el equipo de desarrollo y podría tener carácter contractual. ¿En qué fase del proyecto se genera esta documentación?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Análisis." },
+      { "clave": "b", "texto": "Codificación." },
+      { "clave": "c", "texto": "Mantenimiento." },
+      { "clave": "d", "texto": "Fase inicial." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En la fase de Análisis se recopilan, definen y documentan requisitos del cliente. Esta documentación guía el desarrollo y puede tener carácter contractual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "En codificación la documentación es técnica e interna, ligada al código, no un contrato de requisitos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Mantenimiento trata cambios sobre un sistema ya existente, no la definición inicial de requisitos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La fase inicial se centra en viabilidad, objetivos y estimaciones; los requisitos se consolidan en análisis."
+        }
+      ],
+      "resumen_didactico": "Requisitos con cliente y posible contrato = fase de análisis.",
+      "ejemplo_practico": "Documento de requisitos con casos de uso, reglas y restricciones validado por el cliente.",
+      "conclusion_final": "Esa documentación pertenece a la fase de Análisis."
+    }
+  },
+  {
+    "id": "UT4-Q30",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué característica principal tiene la documentación que se genera durante la fase de codificación o implementación de un software?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se centra en los costes y la rentabilidad del proyecto."
+      },
+      {
+        "clave": "b",
+        "texto": "Es de carácter muy técnico, interno y está relacionada con la elaboración del código."
+      },
+      {
+        "clave": "c",
+        "texto": "Está escrita en un lenguaje claro y comprensible para usuarios no expertos."
+      },
+      {
+        "clave": "d",
+        "texto": "Describe los resultados de las pruebas de aceptación realizadas por el cliente."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En implementación, la documentación es principalmente interna y técnica: comentarios, registros de decisiones y detalles que ayudan al equipo a comprender, mantener y evolucionar el código.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Costes y rentabilidad son propios de la fase inicial (viabilidad/planificación)."
+        },
+        {
+          "clave": "c",
+          "motivo": "Lenguaje para no expertos corresponde a documentación funcional (manual de usuario), no a implementación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Resultados de pruebas de aceptación se documentan en la fase de pruebas, no en codificación."
+        }
+      ],
+      "resumen_didactico": "En codificación, la documentación se pega al código: técnica y para el equipo.",
+      "ejemplo_practico": "Comentarios en funciones críticas y un registro de decisiones sobre por qué se eligió una librería.",
+      "conclusion_final": "La documentación de implementación es técnica, interna y ligada al código."
+    }
+  }
+]

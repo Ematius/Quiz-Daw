@@ -17,7 +17,7 @@ function resolveFolder(moduloId) {
 }
 
 
-export function Quiz() 
+export function Quiz()
 {
   const { moduloId, topicId } = useParams();
   const navigate = useNavigate();

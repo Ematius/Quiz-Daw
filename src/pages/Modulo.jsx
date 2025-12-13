@@ -22,10 +22,6 @@ export function Modulo() {
           Tests de los temas con sus explicaciones a cada opcion para repasar y
           estudiar
         </p>
-        
-        <button type="button" className="btn-back" onClick={() => navigate(-1)}>
-          Volver atrás
-        </button>
 
         <section className="module-topics">
           {topics.map((topic) => (
@@ -38,6 +34,10 @@ export function Modulo() {
             />
           ))}
         </section>
+
+        <button type="button" className="btn-back" onClick={() => navigate(-1)}>
+          Volver atrás
+        </button>
       </section>
     </div>
   );
