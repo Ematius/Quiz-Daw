@@ -62,5 +62,10 @@ export const topicsByModule = {
       title: "Optimización y documentación",
       numQuestion: 30,
     },
+    {
+      id: "UT5",
+      title: "Introducción al lenguaje unificado de modelado(UML)",
+      numQuestion: 30,
+    },
   ],
 };

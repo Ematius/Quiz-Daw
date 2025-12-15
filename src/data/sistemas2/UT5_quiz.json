@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "UT5-Q01",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "Un jefe de proyecto necesita comunicar el diseño de un nuevo software a dos audiencias: el equipo de desarrolladores y el comité de dirección, que no tiene conocimientos técnicos. Al usar diagramas UML, logra que ambos grupos entiendan la estructura y el flujo del sistema. ¿Qué característica de UML está aprovechando principalmente?",
+    "contexto": "Comunicación del diseño a desarrolladores y a un comité no técnico mediante diagramas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su capacidad para una documentación sencilla y visualmente clara."
+      },
+      {
+        "clave": "b",
+        "texto": "Su implantación exclusiva en sistemas que no son orientados a objetos."
+      },
+      {
+        "clave": "c",
+        "texto": "Su estandarización, que obliga a usar un único tipo de diagrama."
+      },
+      { "clave": "d", "texto": "Su flexibilidad para modificar elementos." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "UML se utiliza para visualizar y documentar sistemas de forma gráfica. Esa representación visual facilita que públicos técnicos y no técnicos comprendan la estructura y el funcionamiento sin necesidad de leer código.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UML nació vinculado a la orientación a objetos; no es un lenguaje implantado exclusivamente para sistemas no orientados a objetos."
+        },
+        {
+          "clave": "c",
+          "motivo": "UML es un estándar, pero no obliga a un único diagrama: precisamente destaca por disponer de múltiples diagramas para distintas perspectivas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La flexibilidad para modificar elementos es útil, pero el caso plantea sobre todo la comprensión y comunicación a distintas audiencias."
+        }
+      ],
+      "resumen_didactico": "UML actúa como “planos” visuales del sistema que ayudan a explicar el diseño sin entrar en detalles de implementación.",
+      "ejemplo_practico": "Para directivos: casos de uso/actividades para entender funciones y flujos. Para desarrolladores: clases/secuencia para ver estructura e interacciones.",
+      "conclusion_final": "La clave del escenario es la claridad visual de UML como documentación comprensible para perfiles técnicos y no técnicos."
+    }
+  },
+  {
+    "id": "UT5-Q02",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Cuál es la característica más destacada y fundamental de UML?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su limitación a la documentación textual, sin elementos gráficos."
+      },
+      {
+        "clave": "b",
+        "texto": "Su rigidez, que impide la modificación de elementos una vez creados."
+      },
+      {
+        "clave": "c",
+        "texto": "Su capacidad para escribir código ejecutable directamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Su capacidad para generar múltiples tipos de diagramas que representan un sistema."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La característica estrella de UML es su capacidad de diagramación: permite representar un mismo sistema desde distintas perspectivas mediante múltiples tipos de diagramas (estructura y comportamiento).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "UML es un lenguaje gráfico/visual; no se limita a documentación textual."
+        },
+        {
+          "clave": "b",
+          "motivo": "UML se considera flexible para modelar y ajustar diseños; la rigidez no es su rasgo principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "UML no es un lenguaje de programación. Puede apoyar generación parcial (por herramientas), pero no se define por escribir ejecutables directamente."
+        }
+      ],
+      "resumen_didactico": "UML destaca porque ofrece muchos diagramas para describir el sistema de varias formas complementarias.",
+      "ejemplo_practico": "Clases para estructura, actividades para procesos y secuencia para mensajes en el tiempo: todos describen el mismo sistema desde ángulos distintos.",
+      "conclusion_final": "La fortaleza principal de UML es permitir múltiples diagramas para representar un sistema de manera integral."
+    }
+  },
+  {
+    "id": "UT5-Q03",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "Un equipo de desarrollo está construyendo una aplicación utilizando un paradigma de programación puramente procedural, sin el uso de clases ni objetos. Si tuvieran que elegir un lenguaje de modelado, ¿por qué UML no sería la opción más adecuada?",
+    "contexto": "Aplicación desarrollada con paradigma procedural puro (sin clases ni objetos).",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque los diagramas de UML son demasiado complejos para la programación procedural."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque UML es un lenguaje demasiado antiguo para los paradigmas modernos."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque UML solo permite documentar el código una vez que está terminado."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque UML es un lenguaje creado y destinado específicamente para sistemas orientados a objetos."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "UML nació ligado a la orientación a objetos y está pensado para modelar clases, objetos y sus relaciones/interacciones. En un enfoque procedural puro no se aprovecha su orientación principal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es un problema de complejidad, sino de adecuación del lenguaje a los conceptos que se quieren modelar."
+        },
+        {
+          "clave": "b",
+          "motivo": "El temario no presenta UML como obsoleto; se usa ampliamente y ha evolucionado con versiones modernas."
+        },
+        {
+          "clave": "c",
+          "motivo": "UML se utiliza antes de programar para diseñar y comprender; no se limita a documentar al final."
+        }
+      ],
+      "resumen_didactico": "UML encaja mejor cuando el sistema se describe con conceptos OO (clases/objetos).",
+      "ejemplo_practico": "En OO es natural usar diagrama de clases; en procedural puro el diseño suele centrarse en funciones y flujos, no en clases.",
+      "conclusion_final": "UML no es la opción más adecuada en procedural puro porque está concebido principalmente para modelado orientado a objetos."
+    }
+  },
+  {
+    "id": "UT5-Q04",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "En una conferencia sobre historia de la informática, un ponente explica que antes de los años 90, los procesos de diseño orientado a objetos eran un caos. ¿Qué evento clave unificó estos esfuerzos y dio origen a UML?",
+    "contexto": "Origen histórico de UML: unificación de métodos OO en los años 90.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La creación de la primera herramienta CASE por parte de Microsoft."
+      },
+      {
+        "clave": "b",
+        "texto": "El trabajo conjunto de Rumbaugh, Booch y Jacobson en Rational Software para unificar sus procesos."
+      },
+      {
+        "clave": "c",
+        "texto": "La decisión del Object Management Group de crear un lenguaje completamente nuevo desde cero."
+      },
+      {
+        "clave": "d",
+        "texto": "La publicación de la primera versión del lenguaje de programación Java."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La unificación nace del trabajo conjunto de Rumbaugh, Booch y Jacobson en Rational Software para unificar métodos y notaciones de orientación a objetos, dando lugar a UML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El evento clave no fue una herramienta de Microsoft, sino la unificación metodológica en Rational por los principales autores."
+        },
+        {
+          "clave": "c",
+          "motivo": "OMG impulsa la estandarización, pero el origen del lenguaje proviene de la unificación previa de notaciones y métodos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Java es un lenguaje de programación; UML es un lenguaje de modelado. El nacimiento de UML no depende de la primera versión de Java."
+        }
+      ],
+      "resumen_didactico": "UML surge para poner orden: unir notaciones OO dispersas en un lenguaje común.",
+      "ejemplo_practico": "Con un estándar común, equipos distintos pueden leer y crear diagramas con la misma notación sin reinventar símbolos.",
+      "conclusion_final": "El origen de UML está en la unificación de métodos OO realizada por Rumbaugh, Booch y Jacobson en Rational."
+    }
+  },
+  {
+    "id": "UT5-Q05",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué organización sin fines de lucro asumió en 1997 la responsabilidad del mantenimiento y la estandarización del lenguaje UML?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El Object Management Group (OMG)." },
+      { "clave": "b", "texto": "Rational Software Corporation." },
+      { "clave": "c", "texto": "La Free Software Foundation (FSF)." },
+      { "clave": "d", "texto": "El consorcio UML Partners." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En 1997, OMG asume la responsabilidad del mantenimiento y la estandarización de UML como organización sin ánimo de lucro vinculada a estándares de objetos y modelado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Rational fue clave en la unificación inicial, pero la estandarización/mantenimiento formal se atribuye a OMG."
+        },
+        {
+          "clave": "c",
+          "motivo": "FSF no es la organización mencionada en el temario como responsable del estándar UML."
+        },
+        {
+          "clave": "d",
+          "motivo": "UML Partners se menciona como consorcio de empresas, pero quien asume oficialmente el estándar y su evolución es OMG."
+        }
+      ],
+      "resumen_didactico": "Rational impulsa el origen; OMG consolida el estándar y lo mantiene.",
+      "ejemplo_practico": "Gracias a OMG, distintas herramientas y empresas siguen la misma notación UML y evolucionan bajo un estándar común.",
+      "conclusion_final": "La organización sin fines de lucro responsable desde 1997 es OMG."
+    }
+  },
+  {
+    "id": "UT5-Q06",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "Un profesor de ingeniería de software está actualizando su material didáctico con la versión más reciente y estable de UML. ¿Qué versión debería utilizar como referencia?",
+    "contexto": "Selección de versión UML para material actualizado.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "UML 3.1" },
+      { "clave": "b", "texto": "UML 1.1" },
+      { "clave": "c", "texto": "UML 2.1" },
+      { "clave": "d", "texto": "UML 2.5.1." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El temario identifica UML 2.5.1 (2017) como la versión más reciente y estable indicada, aunque se menciona trabajo en UML 3.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El temario menciona que se trabaja en UML 3, pero no la presenta como versión estable de referencia actual."
+        },
+        {
+          "clave": "b",
+          "motivo": "UML 1.1 es una versión histórica temprana, superada por la rama 2.x."
+        },
+        {
+          "clave": "c",
+          "motivo": "UML 2.1 es una versión intermedia; el temario señala 2.5.1 como la más reciente mencionada."
+        }
+      ],
+      "resumen_didactico": "Para “la versión más reciente” según el tema, se toma la última versión citada como vigente.",
+      "ejemplo_practico": "Si preparas apuntes de diagramas UML actuales, referenciar 2.5.1 evita inconsistencias con nomenclatura y alcance de la versión moderna.",
+      "conclusion_final": "La referencia más reciente y estable en el temario es UML 2.5.1."
+    }
+  },
+  {
+    "id": "UT5-Q07",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Cuáles son las dos categorías principales en que se agrupan los diagramas UML?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagramas simples y diagramas complejos." },
+      {
+        "clave": "b",
+        "texto": "Diagramas de usuario y diagramas de desarrollador."
+      },
+      {
+        "clave": "c",
+        "texto": "Diagramas de estructura y diagramas de comportamiento."
+      },
+      { "clave": "d", "texto": "Diagramas lógicos y diagramas físicos." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El temario divide los diagramas UML en dos grandes categorías: estructura (visión estática) y comportamiento (visión dinámica, incluyendo interacción).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El temario no usa esa clasificación; la división principal es estructura vs comportamiento."
+        },
+        {
+          "clave": "b",
+          "motivo": "No se clasifican por audiencias, sino por el tipo de información del sistema (estática/dinámica)."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aunque UML puede representar aspectos físicos, la clasificación principal indicada es estructura/comportamiento."
+        }
+      ],
+      "resumen_didactico": "Estructura = “de qué está hecho”. Comportamiento = “qué hace y cómo cambia/interactúa”.",
+      "ejemplo_practico": "Estructura: clases. Comportamiento: actividades y secuencia.",
+      "conclusion_final": "Las categorías principales son estructura y comportamiento."
+    }
+  },
+  {
+    "id": "UT5-Q08",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué tipo de diagrama UML representa cómo se distribuyen físicamente los componentes de una aplicación en los servidores?",
+    "contexto": "Despliegue en nodos/servidores (distribución física).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de secuencia." },
+      { "clave": "b", "texto": "Diagrama de distribución." },
+      { "clave": "c", "texto": "Diagrama de clases." },
+      { "clave": "d", "texto": "Diagrama de actividades." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El diagrama de distribución se usa para representar la distribución física de elementos del sistema en nodos informáticos (servidores).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Secuencia modela mensajes en el tiempo entre objetos, no despliegue físico."
+        },
+        {
+          "clave": "c",
+          "motivo": "Clases describe estructura lógica (clases/relaciones), no infraestructura física."
+        },
+        {
+          "clave": "d",
+          "motivo": "Actividades describe procesos/flujo de trabajo, no distribución en servidores."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta habla de servidores/nodos, piensa en distribución (despliegue).",
+      "ejemplo_practico": "Nodo servidor web (frontend), nodo servidor API (backend) y nodo servidor BD (base de datos).",
+      "conclusion_final": "Para despliegue físico en servidores, se usa el diagrama de distribución."
+    }
+  },
+  {
+    "id": "UT5-Q09",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama UML representa las funcionalidades del sistema desde la perspectiva del usuario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de componentes." },
+      { "clave": "b", "texto": "Diagrama de estados." },
+      { "clave": "c", "texto": "Diagrama de casos de uso." },
+      { "clave": "d", "texto": "Diagrama de objetos." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El diagrama de casos de uso describe las funcionalidades del sistema y quién las realiza (actores), mostrando el sistema desde el punto de vista del usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Componentes describe piezas del sistema y relaciones, no funcionalidades percibidas por el usuario."
+        },
+        {
+          "clave": "b",
+          "motivo": "Estados modela cambios de estado de un objeto, no catálogo de funcionalidades de usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Objetos representa instancias concretas, no la visión funcional del sistema."
+        }
+      ],
+      "resumen_didactico": "Casos de uso = funcionalidades + actores.",
+      "ejemplo_practico": "Actor: Cliente. Casos de uso: registrarse, iniciar sesión, comprar, pagar.",
+      "conclusion_final": "Para funcionalidad desde la perspectiva del usuario, se usa casos de uso."
+    }
+  },
+  {
+    "id": "UT5-Q10",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Cómo se llama la subcategoría de diagramas de comportamiento que muestra el flujo de control y el tiempo entre objetos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagramas de interacción." },
+      { "clave": "b", "texto": "Diagramas de paquetes." },
+      { "clave": "c", "texto": "Diagramas de estructura." },
+      { "clave": "d", "texto": "Diagramas de implementación." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Dentro de comportamiento, los diagramas de interacción se centran en cómo interactúan objetos y en aspectos temporales (secuencia, tiempos, colaboración).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Paquetes pertenece a estructura y organiza clases; no modela tiempo/flujo entre objetos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Estructura describe lo estático; la pregunta pide tiempo/flujo (dinámica)."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la subcategoría indicada en el temario para interacciones temporales entre objetos."
+        }
+      ],
+      "resumen_didactico": "Comportamiento → interacción cuando hay mensajes y orden temporal entre objetos.",
+      "ejemplo_practico": "Un diagrama secuencial muestra qué objeto llama a cuál y en qué orden.",
+      "conclusion_final": "La subcategoría es diagramas de interacción."
+    }
+  },
+  {
+    "id": "UT5-Q11",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Cuál es el diagrama UML fundamental para mostrar la estructura estática de una aplicación con clases, atributos, métodos y relaciones?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de estados." },
+      { "clave": "b", "texto": "Diagrama de actividades." },
+      { "clave": "c", "texto": "Diagrama de componentes." },
+      { "clave": "d", "texto": "Diagrama de clases." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El diagrama de clases es el diagrama de estructura que visualiza las clases del programa y sus relaciones, reflejando la estructura estática del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Estados representa cambios de estado (dinámica), no estructura estática de clases."
+        },
+        {
+          "clave": "b",
+          "motivo": "Actividades representa procesos y secuencias de acciones, no clases y relaciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "Componentes muestra componentes a nivel más arquitectónico, no el detalle de clases/atributos/métodos."
+        }
+      ],
+      "resumen_didactico": "Para “clases + relaciones”, el diagrama de referencia es el diagrama de clases.",
+      "ejemplo_practico": "Clases Usuario, Pedido y Producto, con relaciones de asociación/composición según el diseño.",
+      "conclusion_final": "La estructura estática basada en clases se representa con el diagrama de clases."
+    }
+  },
+  {
+    "id": "UT5-Q12",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Cuál es el propósito principal de crear un modelo UML antes de construir el sistema real?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reemplazar por completo la necesidad de documentación escrita."
+      },
+      {
+        "clave": "b",
+        "texto": "Asegurar que el sistema no contenga ningún error."
+      },
+      {
+        "clave": "c",
+        "texto": "Generar todo el código fuente de forma automática."
+      },
+      {
+        "clave": "d",
+        "texto": "Facilitar la comprensión del sistema antes de su construcción."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El modelado consiste en construir una abstracción del sistema para entenderlo mejor antes de construirlo, reduciendo complejidad y permitiendo analizar el diseño.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "UML ayuda a documentar, pero no elimina toda documentación escrita."
+        },
+        {
+          "clave": "b",
+          "motivo": "Modelar ayuda a detectar errores temprano, pero no garantiza ausencia total de errores."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las herramientas pueden generar esqueletos, pero el objetivo principal no es generar todo el código automáticamente."
+        }
+      ],
+      "resumen_didactico": "Modelar primero = entender y validar el diseño antes de programar.",
+      "ejemplo_practico": "Hacer casos de uso y clases para detectar incoherencias antes de implementar.",
+      "conclusion_final": "El propósito principal es facilitar comprensión y validación previa del sistema."
+    }
+  },
+  {
+    "id": "UT5-Q13",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Por qué mejora la comunicación presentar al cliente diagramas de casos de uso y de actividades en lugar de código?",
+    "contexto": "Explicar al cliente funcionalidades y flujos sin mostrar código.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque proporcionan una aproximación visual al producto final y reducen la complejidad."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque los diagramas UML son contractuales y legalmente vinculantes."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque UML obliga al cliente a aprender el lenguaje técnico."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque los diagramas garantizan que el presupuesto del proyecto no cambiará."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "UML ofrece una representación visual que facilita la comprensión para no técnicos. Un modelo reduce complejidad al omitir detalles no esenciales y sirve como aproximación al producto final.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El temario presenta UML como lenguaje de modelado/documentación, no como documento legal vinculante por sí mismo."
+        },
+        {
+          "clave": "c",
+          "motivo": "El objetivo es que el cliente entienda sin tener que leer código ni dominar tecnicismos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los diagramas ayudan a aclarar, pero no garantizan que presupuesto o alcance no cambien."
+        }
+      ],
+      "resumen_didactico": "Diagramas (casos de uso/actividades) traducen el sistema a un lenguaje visual entendible.",
+      "ejemplo_practico": "Caso de uso: “Realizar pedido”. Actividad: pasos del pedido con decisiones (stock, pago).",
+      "conclusion_final": "Mejora la comunicación porque aporta visión visual y reduce complejidad frente al código."
+    }
+  },
+  {
+    "id": "UT5-Q14",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Adoptar UML implica usar una metodología específica como Scrum?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No, pero UML solo es compatible con metodologías tradicionales como el modelo en cascada."
+      },
+      {
+        "clave": "b",
+        "texto": "Sí, el OMG obliga a usar una metodología concreta junto con UML."
+      },
+      {
+        "clave": "c",
+        "texto": "No, UML es un lenguaje independiente del proceso de desarrollo que se elija."
+      },
+      {
+        "clave": "d",
+        "texto": "Sí, UML solo puede utilizarse con metodologías ágiles."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "UML es independiente del proceso de desarrollo: sirve para modelar y documentar, pero no impone una metodología (ágil, cascada u otra).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "UML no se limita a cascada; puede usarse con cualquier proceso."
+        },
+        {
+          "clave": "b",
+          "motivo": "OMG estandariza el lenguaje; no obliga a una metodología de gestión/desarrollo."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es exclusivo de metodologías ágiles."
+        }
+      ],
+      "resumen_didactico": "UML = lenguaje. Scrum = metodología. Se combinan, pero no se condicionan.",
+      "ejemplo_practico": "En Scrum puedes usar casos de uso/actividades para aclarar historias; en cascada, para documentar diseño detallado.",
+      "conclusion_final": "UML no obliga a Scrum ni a ninguna metodología: es independiente del proceso."
+    }
+  },
+  {
+    "id": "UT5-Q15",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué es una herramienta CASE en el contexto del desarrollo de software?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un conjunto de programas que asisten a los desarrolladores durante el ciclo de vida de un software."
+      },
+      {
+        "clave": "b",
+        "texto": "Una metodología de gestión de proyectos ágil."
+      },
+      {
+        "clave": "c",
+        "texto": "Un tipo de diagrama UML para modelar casos de prueba."
+      },
+      {
+        "clave": "d",
+        "texto": "Un lenguaje de programación para crear diagramas."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "CASE (Computer-Aided Software Engineering) es un conjunto de herramientas/programas que asisten durante el ciclo de vida del software, automatizando tareas y mejorando productividad y documentación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es una metodología; es software de apoyo al desarrollo."
+        },
+        {
+          "clave": "c",
+          "motivo": "CASE no es un diagrama; es una herramienta que puede soportar UML y ayudar a crear/validar diagramas."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un lenguaje de programación, sino un conjunto de programas."
+        }
+      ],
+      "resumen_didactico": "CASE = “herramientas que ayudan a construir software” (modelar, documentar, validar, generar).",
+      "ejemplo_practico": "Una CASE UML permite dibujar diagramas, comprobar errores y generar esqueletos de código.",
+      "conclusion_final": "CASE es un conjunto de programas de apoyo al ciclo de vida del software."
+    }
+  },
+  {
+    "id": "UT5-Q16",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Cuál fue la motivación original detrás de la creación de la tecnología CASE?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Estandarizar la documentación de los proyectos."
+      },
+      {
+        "clave": "b",
+        "texto": "Facilitar la reutilización de componentes de software."
+      },
+      {
+        "clave": "c",
+        "texto": "Incrementar la velocidad de desarrollo de los sistemas."
+      },
+      {
+        "clave": "d",
+        "texto": "Mejorar la interfaz gráfica de las aplicaciones."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "CASE surge para automatizar y hacer más eficiente el desarrollo, incrementando velocidad y productividad mediante herramientas que apoyan el ciclo de vida del software.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Estandarizar documentación es un objetivo relevante, pero no la motivación principal/original descrita frente a la automatización para mayor eficiencia."
+        },
+        {
+          "clave": "b",
+          "motivo": "La reutilización es un beneficio/objetivo, pero no el motor principal frente a acelerar y automatizar."
+        },
+        {
+          "clave": "d",
+          "motivo": "CASE no se centra en la UI del producto final, sino en el proceso de ingeniería y automatización."
+        }
+      ],
+      "resumen_didactico": "CASE nace para “industrializar” el desarrollo: automatizar tareas para ir más rápido y con más productividad.",
+      "ejemplo_practico": "Generar esqueletos de código y documentación desde diagramas ahorra trabajo repetitivo y acelera entregas.",
+      "conclusion_final": "La motivación original de CASE es aumentar la velocidad/eficiencia del desarrollo mediante automatización."
+    }
+  },
+  {
+    "id": "UT5-Q17",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué actividad puede ser automatizada por una herramienta CASE?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La generación de código y la documentación." },
+      {
+        "clave": "b",
+        "texto": "La contratación de nuevos desarrolladores para el equipo."
+      },
+      {
+        "clave": "c",
+        "texto": "La formación de los usuarios finales en el uso del software."
+      },
+      {
+        "clave": "d",
+        "texto": "La negociación de los requisitos con el cliente."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "CASE automatiza tareas del ciclo de vida como generación de código, documentación y comprobaciones, aumentando productividad y calidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Contratar personal es un proceso de RR. HH., no automatización técnica CASE del desarrollo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Formar usuarios finales no es una tarea de ingeniería automatizable por CASE según el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "La negociación con el cliente es humana/organizativa; CASE puede ayudar a documentar, pero no “negocia” por ti."
+        }
+      ],
+      "resumen_didactico": "CASE automatiza trabajo técnico repetible (código, documentación, validaciones).",
+      "ejemplo_practico": "Desde un diagrama de clases se genera el esqueleto de clases y documentación del modelo.",
+      "conclusion_final": "Una automatización típica CASE es generación de código y documentación."
+    }
+  },
+  {
+    "id": "UT5-Q18",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué componente de una herramienta CASE detecta errores como clases sin nombre o bucles en herencias?",
+    "contexto": "Validación del modelo UML para detectar inconsistencias.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La comprobación de errores." },
+      { "clave": "b", "texto": "El repositorio o diccionario." },
+      { "clave": "c", "texto": "El metamodelo." },
+      { "clave": "d", "texto": "La carga o descarga de datos." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las herramientas CASE incluyen módulos de comprobación de errores que analizan diagramas y avisan de inconsistencias como elementos incompletos o relaciones inválidas (p. ej., herencias cíclicas).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El repositorio almacena información del modelo, pero no es el módulo que valida y detecta inconsistencias."
+        },
+        {
+          "clave": "c",
+          "motivo": "El metamodelo se relaciona con la definición del lenguaje; el detector de errores es una función de validación de la herramienta CASE."
+        },
+        {
+          "clave": "d",
+          "motivo": "Carga/descarga se asocia a importación/exportación (modelo↔código), no a validación lógica del diagrama."
+        }
+      ],
+      "resumen_didactico": "Comprobación de errores = “inspector” del diagrama: revisa y alerta.",
+      "ejemplo_practico": "Si creas una clase sin nombre o una herencia circular, la CASE lo marca como error antes de generar código.",
+      "conclusion_final": "El componente responsable es la comprobación de errores."
+    }
+  },
+  {
+    "id": "UT5-Q19",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué elemento de una herramienta CASE almacena todas las definiciones de diagramas, clases y relaciones?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Generador de código." },
+      { "clave": "b", "texto": "Metamodelo." },
+      { "clave": "c", "texto": "Interfaz de usuario." },
+      { "clave": "d", "texto": "Repositorio (diccionario)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El repositorio (diccionario) es la base de datos central donde se almacena toda la información del modelo: diagramas, clases, relaciones y elementos asociados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El generador de código transforma el modelo en código (normalmente esqueleto), pero no es el almacén central."
+        },
+        {
+          "clave": "b",
+          "motivo": "El metamodelo define el lenguaje, no almacena el modelo concreto del proyecto."
+        },
+        {
+          "clave": "c",
+          "motivo": "La interfaz es el entorno para dibujar/editar; el almacenamiento persistente lo hace el repositorio."
+        }
+      ],
+      "resumen_didactico": "Repositorio = “memoria” central del modelo UML en una CASE.",
+      "ejemplo_practico": "Guardas un diagrama de clases y la CASE registra todas las clases y relaciones en el repositorio para reutilizarlas en otros diagramas.",
+      "conclusion_final": "El elemento que almacena definiciones es el repositorio."
+    }
+  },
+  {
+    "id": "UT5-Q20",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Cuál de los siguientes es un ejemplo de herramienta con soporte para UML?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Eclipse." },
+      { "clave": "b", "texto": "StarUML." },
+      { "clave": "c", "texto": "Git." },
+      { "clave": "d", "texto": "Javadoc." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El temario incluye StarUML como ejemplo de herramienta con soporte para UML dentro de las herramientas CASE/diagramación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eclipse es un entorno de desarrollo; no es el ejemplo señalado en el temario como herramienta UML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Git es control de versiones, no una herramienta de modelado UML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Javadoc es documentación de Java, no una herramienta de diagramación/modelado UML."
+        }
+      ],
+      "resumen_didactico": "Herramienta UML = programa orientado a crear y gestionar diagramas UML.",
+      "ejemplo_practico": "Con StarUML puedes dibujar diagramas de clases o secuencia para documentar un sistema.",
+      "conclusion_final": "El ejemplo correcto de herramienta UML es StarUML."
+    }
+  },
+  {
+    "id": "UT5-Q21",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué tipo de diagrama UML debe usarse para representar flujos de trabajo con acciones, decisiones y paralelismo?",
+    "contexto": "Modelado de workflow con ramas y tareas en paralelo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de actividades." },
+      { "clave": "b", "texto": "Diagrama de estados." },
+      { "clave": "c", "texto": "Diagrama de componentes." },
+      { "clave": "d", "texto": "Diagrama de objetos." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El diagrama de actividades se usa para visualizar procesos y su secuenciación; es el adecuado para flujos con acciones, decisiones y paralelismo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Estados se centra en cambios de estado de un objeto, no en workflows de tareas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Componentes describe estructura del sistema, no flujos de trabajo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Objetos describe instancias concretas, no procesos con decisiones y paralelismo."
+        }
+      ],
+      "resumen_didactico": "Workflow/flujo de trabajo = diagrama de actividades.",
+      "ejemplo_practico": "Proceso de pedido con decisión de stock y preparación en paralelo de factura y paquete.",
+      "conclusion_final": "Para flujos con decisiones y paralelismo, se usa actividades."
+    }
+  },
+  {
+    "id": "UT5-Q22",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama de interacción muestra la secuencia temporal de los mensajes entre objetos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama secuencial." },
+      { "clave": "b", "texto": "Diagrama de paquetes." },
+      { "clave": "c", "texto": "Diagrama de clases." },
+      { "clave": "d", "texto": "Diagrama de distribución." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El diagrama secuencial representa la secuenciación temporal de las interacciones (mensajes) entre objetos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Paquetes organiza clases; no muestra mensajes en el tiempo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Clases es estructura estática; no modela secuencias temporales de mensajes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Distribución es despliegue físico en nodos; no interacción temporal de mensajes."
+        }
+      ],
+      "resumen_didactico": "Mensajes + orden temporal = diagrama secuencial.",
+      "ejemplo_practico": "Login: Usuario → Controlador → Servicio → BD, con respuestas en el orden de ejecución.",
+      "conclusion_final": "El diagrama de interacción para secuencia temporal es el secuencial."
+    }
+  },
+  {
+    "id": "UT5-Q23",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama de estructura permite agrupar clases en paquetes y mostrar sus dependencias?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de componentes." },
+      { "clave": "b", "texto": "Diagrama de casos de uso." },
+      { "clave": "c", "texto": "Diagrama de paquete." },
+      { "clave": "d", "texto": "Diagrama de objetos." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El diagrama de paquete se usa para agrupar clases en paquetes y organizar jerarquías, mostrando dependencias entre paquetes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Componentes agrupa piezas del sistema a nivel de componentes, no clases en paquetes."
+        },
+        {
+          "clave": "b",
+          "motivo": "Casos de uso es comportamiento (funcionalidades/actores), no estructura."
+        },
+        {
+          "clave": "d",
+          "motivo": "Objetos representa instancias; no organiza clases en paquetes."
+        }
+      ],
+      "resumen_didactico": "Paquetes = organización estructural de clases.",
+      "ejemplo_practico": "Paquetes auth, orders y products, con dependencias de orders hacia products.",
+      "conclusion_final": "Para agrupar clases en paquetes, se usa el diagrama de paquete."
+    }
+  },
+  {
+    "id": "UT5-Q24",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama permite visualizar las partes internas de un objeto compuesto y sus conexiones?",
+    "contexto": "Representación de composición interna y conexiones entre partes.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de estructura compositiva." },
+      { "clave": "b", "texto": "Gráfica de perfil." },
+      { "clave": "c", "texto": "Diagrama de distribución." },
+      { "clave": "d", "texto": "Diagrama de clases." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El diagrama de estructura compositiva se orienta a describir estructura interna y relaciones de composición, permitiendo reflejar partes internas y conexiones de elementos compuestos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Gráfica de perfil se centra en estereotipos y condiciones del metamodelo, no en composición interna."
+        },
+        {
+          "clave": "c",
+          "motivo": "Distribución representa despliegue físico en nodos/servidores, no partes internas de un objeto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Clases muestra clases y relaciones a nivel general, pero no está focalizado en la estructura interna de un compuesto."
+        }
+      ],
+      "resumen_didactico": "Cuando la pregunta enfatiza “estructura interna” y “composición”, encaja la estructura compositiva.",
+      "ejemplo_practico": "Un Pedido compuesto por LíneasDePedido conectadas a Producto, mostrando cómo se conectan las partes internas.",
+      "conclusion_final": "Para ver partes internas y conexiones de un compuesto, se usa estructura compositiva."
+    }
+  },
+  {
+    "id": "UT5-Q25",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama se utiliza para modelar los distintos estados de un objeto y las transiciones entre ellos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de actividades." },
+      { "clave": "b", "texto": "Diagrama de tiempos." },
+      { "clave": "c", "texto": "Diagrama de estados." },
+      { "clave": "d", "texto": "Diagrama de colaboración." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El diagrama de estados representa los cambios de estado de un objeto, mostrando estados y transiciones entre ellos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Actividades modela procesos/flujo de trabajo, no estados internos de un objeto."
+        },
+        {
+          "clave": "b",
+          "motivo": "Tiempos visualiza evolución temporal de estados/procesos, pero el diagrama principal para estados y transiciones es el de estados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Colaboración modela interacción/roles, no cambios de estado."
+        }
+      ],
+      "resumen_didactico": "Estados y transiciones = diagrama de estados.",
+      "ejemplo_practico": "Pedido: Creado → Pagado → Enviado → Entregado (transiciones: pagar, enviar, confirmar).",
+      "conclusion_final": "Para estados y transiciones, se usa el diagrama de estados."
+    }
+  },
+  {
+    "id": "UT5-Q26",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama UML representa los componentes físicos como librerías y ejecutables?",
+    "contexto": "Representación de componentes del sistema y sus relaciones.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de componentes." },
+      { "clave": "b", "texto": "Diagrama de clases." },
+      { "clave": "c", "texto": "Diagrama de paquete." },
+      { "clave": "d", "texto": "Diagrama de objetos" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El diagrama de componentes se usa para visualizar los componentes del sistema y sus relaciones, encajando con elementos físicos del software como librerías/módulos/ejecutables.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Clases describe clases/relaciones, no componentes a nivel de módulos o artefactos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Paquete agrupa clases en paquetes y jerarquías, no representa componentes físicos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Objetos describe instancias concretas y valores, no componentes físicos del sistema."
+        }
+      ],
+      "resumen_didactico": "Bloques del sistema (componentes) y dependencias = diagrama de componentes.",
+      "ejemplo_practico": "Componente de pagos depende del componente de autenticación y del componente de facturación.",
+      "conclusion_final": "Para componentes físicos/lógicos a nivel de módulos, se usa el diagrama de componentes."
+    }
+  },
+  {
+    "id": "UT5-Q27",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama de interacción ofrece una visión general integrada de estructura y colaboración?",
+    "contexto": "Necesidad de visión general de un sistema complejo con muchas interacciones.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de estados." },
+      { "clave": "b", "texto": "Diagrama de interacción." },
+      { "clave": "c", "texto": "Gráfica de perfil." },
+      { "clave": "d", "texto": "Diagrama de tiempos." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El temario incluye el diagrama de interacción para la visualización de sistemas complejos mediante elementos interactivos, proporcionando una visión global de interacción/colaboración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Estados se centra en cambios de estado de un objeto, no en una vista global de colaboración."
+        },
+        {
+          "clave": "c",
+          "motivo": "Gráfica de perfil se usa para estereotipos/condiciones del metamodelo, no para visión general de colaboración."
+        },
+        {
+          "clave": "d",
+          "motivo": "Tiempos se centra en evolución temporal de estados/procesos, no en una visión general integrada de colaboración."
+        }
+      ],
+      "resumen_didactico": "Para entender sistemas complejos por interacción a nivel general, se usa el diagrama de interacción.",
+      "ejemplo_practico": "Visión global de cómo se coordinan pagos, stock, facturación y notificaciones sin entrar en cada mensaje individual.",
+      "conclusion_final": "La vista general integrada en interacción corresponde al diagrama de interacción."
+    }
+  },
+  {
+    "id": "UT5-Q28",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama muestra una \"instantánea\" del sistema con objetos específicos y valores en un momento dado?",
+    "contexto": "Capturar instancias concretas con datos en un instante.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de paquete." },
+      { "clave": "b", "texto": "Diagrama de estructura compositiva." },
+      { "clave": "c", "texto": "Diagrama de objetos." },
+      { "clave": "d", "texto": "Diagrama de componentes." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El diagrama de objetos es el “diagrama de clases en una instancia específica”, es decir, muestra objetos concretos (instancias) con valores en un momento determinado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Paquete agrupa clases, no muestra instancias con valores."
+        },
+        {
+          "clave": "b",
+          "motivo": "Estructura compositiva enfatiza composición interna, no una fotografía de instancias con datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Componentes muestra módulos/relaciones, no objetos instanciados y valores."
+        }
+      ],
+      "resumen_didactico": "Clases = plantilla; Objetos = foto real con datos.",
+      "ejemplo_practico": "u1:Usuario {nombre=\"Ana\"} y p1:Pedido {total=29.99} y la relación entre ellos en ese instante.",
+      "conclusion_final": "La instantánea del sistema con instancias y valores se representa con diagrama de objetos."
+    }
+  },
+  {
+    "id": "UT5-Q29",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama se utiliza para visualizar estereotipos y condiciones personalizadas del metamodelo UML?",
+    "contexto": "Extensión/personalización mediante perfiles (estereotipos/condiciones).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Gráfica de perfil." },
+      { "clave": "b", "texto": "Diagrama de distribución." },
+      { "clave": "c", "texto": "Diagrama de paquete." },
+      { "clave": "d", "texto": "Diagrama de colaboración." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La gráfica de perfil se usa para visualizar elementos del metamodelo a través de estereotipos y condiciones, permitiendo personalización del modelado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Distribución es despliegue físico en nodos/servidores, no perfiles/estereotipos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Paquete organiza clases en paquetes; no visualiza estereotipos del metamodelo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Colaboración es interacción/roles, no perfiles del metamodelo."
+        }
+      ],
+      "resumen_didactico": "Metamodelo + estereotipos + condiciones = gráfica de perfil.",
+      "ejemplo_practico": "Definir estereotipos <<Entidad>>, <<Servicio>>, <<Repositorio>> y sus restricciones para un proyecto.",
+      "conclusion_final": "El diagrama para estereotipos/condiciones del metamodelo es la gráfica de perfil."
+    }
+  },
+  {
+    "id": "UT5-Q30",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué diagrama de interacción muestra la evolución de los estados de objetos a lo largo del tiempo?",
+    "contexto": "Evolución temporal de estados (estado vs tiempo).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de tiempos." },
+      { "clave": "b", "texto": "Diagrama de estados." },
+      { "clave": "c", "texto": "Diagrama de actividades." },
+      { "clave": "d", "texto": "Diagrama secuencial." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El diagrama de tiempos es un diagrama de interacción que visualiza temporalmente procesos en relación con cambios de estado, mostrando la evolución de estados a lo largo del tiempo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Estados modela estados y transiciones, pero el diagrama específicamente orientado a evolución temporal es el de tiempos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Actividades modela flujos de trabajo, no la evolución temporal de estados de objetos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Secuencial modela mensajes/interacciones en el tiempo, no evolución de estados como foco principal."
+        }
+      ],
+      "resumen_didactico": "Si la variable clave es “tiempo” y cómo cambian estados, usa diagrama de tiempos.",
+      "ejemplo_practico": "Pedido pasa por Creado (10:00), Pagado (10:05), Enviado (10:20), Entregado (10:50).",
+      "conclusion_final": "Para evolución de estados a lo largo del tiempo, el diagrama correcto es el diagrama de tiempos."
+    }
+  }
+]

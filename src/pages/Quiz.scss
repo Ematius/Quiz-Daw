@@ -21,12 +21,14 @@
 
 /* Cabecera del quiz */
 .quiz-header {
+  text-align: center;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid rgba(148, 163, 184, 0.3);
 
   h1 {
+    color: $color-primary;
     margin: 0 0 0.4rem;
-    font-size: 1.7rem;
+    font-size: 4rem;
     letter-spacing: 0.03em;
   }
 

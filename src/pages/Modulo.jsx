@@ -17,7 +17,7 @@ export function Modulo() {
   return (
     <div className="page-container">
       <section className="module-page">
-        <h1 className="page-title">Módulo: {moduloId}</h1>
+        <h1 className="page-title">Módulo: {moduloId.charAt(0).toUpperCase() + moduloId.slice(1)}</h1>
         <p>
           Tests de los temas con sus explicaciones a cada opcion para repasar y
           estudiar

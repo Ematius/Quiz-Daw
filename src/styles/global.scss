@@ -34,9 +34,12 @@ body {
 
 // Titulares de páginas
 .page-title {
-  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: $color-primary;
+  -webkit-text-stroke: 0.2px whitesmoke;
+
 }
 
 // Pequeño helper para secciones
