@@ -1,0 +1,1124 @@
+[
+  {
+    "id": "UT6-Q01",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un desarrollador junior está modelando un sistema para una tienda online y crea un elemento en el diagrama para representar todos los \"Productos\". Este elemento incluye secciones para su nombre, sus características y las acciones que puede realizar. ¿Cómo se denomina este elemento fundamental del diagrama de clases UML?",
+    "contexto": "Modelado UML de una tienda online: representación general de \"Producto\" con nombre, atributos y métodos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Atributo." },
+      { "clave": "b", "texto": "Objeto." },
+      { "clave": "c", "texto": "Clase." },
+      { "clave": "d", "texto": "Método." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En UML, una clase es el elemento fundamental que representa un tipo (p. ej., Producto) y se dibuja como un rectángulo con compartimentos para nombre, atributos y operaciones/métodos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un atributo es solo una característica dentro de la clase (p. ej., precio, stock), no el contenedor completo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un objeto/instancia es un ejemplar concreto creado a partir de una clase (p. ej., un producto específico con valores reales)."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un método es una acción/operación definida en una clase (p. ej., calcularPrecioFinal()), no el bloque de representación completo."
+        }
+      ],
+      "resumen_didactico": "Si ves un rectángulo UML con Nombre/Atributos/Métodos, estás viendo una CLASE.",
+      "ejemplo_practico": "Clase Producto: atributos nombre, precio, stock; métodos aplicarDescuento(), hayStock().",
+      "conclusion_final": "El elemento que agrupa nombre, características y acciones en UML se denomina Clase."
+    }
+  },
+  {
+    "id": "UT6-Q02",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Cómo se representa gráficamente una clase en un diagrama de clases de UML?",
+    "contexto": "Notación gráfica estándar de clases en UML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un rombo que simboliza una decisión en el sistema."
+      },
+      {
+        "clave": "b",
+        "texto": "Un rectángulo dividido en tres celdas: nombre, atributos y funciones."
+      },
+      { "clave": "c", "texto": "Una flecha que indica el flujo de datos." },
+      {
+        "clave": "d",
+        "texto": "Un círculo con el nombre de la clase en su interior."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Una clase se representa como un rectángulo dividido en compartimentos: nombre (arriba), atributos (centro) y métodos/operaciones (abajo).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En UML de clases, el rombo se usa para agregación/composición, no para decisiones."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una flecha de flujo es típica de otros diagramas (p. ej., actividad), no para representar una clase."
+        },
+        {
+          "clave": "d",
+          "motivo": "La notación estándar de clase no es un círculo; es un rectángulo con compartimentos."
+        }
+      ],
+      "resumen_didactico": "Clase = caja en 3 partes: Nombre / Atributos / Métodos.",
+      "ejemplo_practico": "Producto | (nombre, precio, stock) | (aplicarDescuento(), hayStock()).",
+      "conclusion_final": "La clase se representa como rectángulo dividido en nombre, atributos y métodos."
+    }
+  },
+  {
+    "id": "UT6-Q03",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Una programadora está definiendo la clase Usuario y necesita almacenar la edad del usuario. Este valor siempre será un número entero. ¿Qué tipo de dato UML es el más adecuado para este atributo?",
+    "contexto": "Tipado de atributos en UML (edad como entero).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "String." },
+      { "clave": "b", "texto": "Integer/int." },
+      { "clave": "c", "texto": "Boolean." },
+      { "clave": "d", "texto": "Float." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Los atributos deben declararse con un tipo adecuado; para valores enteros (sin decimales) se usa Integer/int.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "String es texto; la edad es un valor numérico entero."
+        },
+        {
+          "clave": "c",
+          "motivo": "Boolean solo permite verdadero/falso, no un rango de edades."
+        },
+        {
+          "clave": "d",
+          "motivo": "Float es para números con decimales; la edad se maneja como entero."
+        }
+      ],
+      "resumen_didactico": "Entero sin decimales → Integer/int; texto → String; sí/no → Boolean; con decimales → Float.",
+      "ejemplo_practico": "Usuario: edad: Integer, nombre: String, activo: Boolean.",
+      "conclusion_final": "Para edad (entero) el tipo correcto es Integer/int."
+    }
+  },
+  {
+    "id": "UT6-Q04",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un analista está definiendo la clase Factura y necesita que el atributo estado tenga siempre el valor \"Pendiente\" al momento de crear una nueva instancia. ¿Cómo se debe representar este valor por defecto en el diagrama?",
+    "contexto": "Atributos con valor por defecto/valor inicial en UML.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "estado: String [Pendiente]" },
+      { "clave": "b", "texto": "\"Pendiente\"" },
+      { "clave": "c", "texto": "estado: String" },
+      { "clave": "d", "texto": "estado: \"Pendiente\"" },
+      { "clave": "e", "texto": "estado: String" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El atributo debe declararse con su nombre y tipo y puede anotarse un valor por defecto/valor inicial para indicar el estado al crear la instancia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El literal sin el atributo no documenta qué propiedad se inicializa ni su tipo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Declara el atributo pero no indica el valor por defecto solicitado."
+        },
+        {
+          "clave": "d",
+          "motivo": "No expresa correctamente el tipo del atributo; mezcla nombre con literal como si fuera el tipo."
+        },
+        {
+          "clave": "e",
+          "motivo": "No incluye el valor por defecto; además duplica la opción c."
+        }
+      ],
+      "resumen_didactico": "Valor por defecto: declara atributo + tipo y añade el valor inicial como anotación.",
+      "ejemplo_practico": "Factura: estado: String [Pendiente]; Vehiculo: disponible: Boolean [true].",
+      "conclusion_final": "Para reflejar el valor inicial, se indica junto al atributo: estado: String [Pendiente]."
+    }
+  },
+  {
+    "id": "UT6-Q05",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un desarrollador quiere añadir un comentario explicativo a una clase en su diagrama UML para aclarar una regla de negocio compleja al resto del equipo. Este comentario no debe afectar a la generación de código. ¿Qué elemento de UML debería utilizar?",
+    "contexto": "Documentación en UML sin impacto en generación de código.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Una nota adjunta." },
+      { "clave": "b", "texto": "Un atributo adicional." },
+      { "clave": "c", "texto": "Una nueva clase asociada." },
+      { "clave": "d", "texto": "Un método privado." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las notas en UML permiten añadir aclaraciones (tipo 'post-it') al diagrama sin modificar la estructura del modelo ni afectar a la generación de código.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un atributo adicional cambia el modelo y podría trasladarse al código; no es un comentario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Crear una clase asociada altera el diseño; no es una anotación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un método privado es comportamiento del sistema; no es un elemento de documentación externa."
+        }
+      ],
+      "resumen_didactico": "Aclaraciones para humanos sin cambiar el modelo → nota adjunta.",
+      "ejemplo_practico": "Nota: 'El total se recalcula tras aplicar cupones; no se modifica manualmente'.",
+      "conclusion_final": "Para comentarios sin impacto en el código, se usa una nota adjunta."
+    }
+  },
+  {
+    "id": "UT6-Q06",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "En una clase CuentaBancaria, se diseña una operación para calcular y devolver el saldo actual. Esta acción no modifica el estado del objeto, simplemente proporciona un dato. ¿Cómo se denomina esta operación en un diagrama de clases?",
+    "contexto": "Operación que devuelve información (método consultor).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Método." },
+      { "clave": "b", "texto": "Relación." },
+      { "clave": "c", "texto": "Atributo." },
+      { "clave": "d", "texto": "Instancia." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las acciones que una clase puede realizar se modelan como métodos/operaciones; aunque no modifique el estado, sigue siendo una operación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una relación conecta clases entre sí; no describe acciones internas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un atributo es un dato almacenado, no una acción para calcular y devolver."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una instancia es un objeto concreto creado a partir de una clase, no una operación."
+        }
+      ],
+      "resumen_didactico": "Dato = atributo; acción = método. Consultar no cambia que sea método.",
+      "ejemplo_practico": "CuentaBancaria: saldo: Float; obtenerSaldo(): Float.",
+      "conclusion_final": "Calcular y devolver el saldo es un método/operación."
+    }
+  },
+  {
+    "id": "UT6-Q07",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Cuál es el propósito principal de un método u operación dentro de una clase?",
+    "contexto": "Rol de las operaciones en UML.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Establecer una conexión con otra clase." },
+      {
+        "clave": "b",
+        "texto": "Almacenar los datos y características del objeto."
+      },
+      {
+        "clave": "c",
+        "texto": "Definir una acción que la clase puede realizar."
+      },
+      {
+        "clave": "d",
+        "texto": "Representar un objeto específico del mundo real."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Un método/operación define una acción o comportamiento que la clase puede realizar; los atributos almacenan datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las conexiones entre clases se modelan con asociaciones/relaciones, no con métodos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Almacenar datos es función de atributos, no de operaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un objeto específico es una instancia; el método es comportamiento del tipo."
+        }
+      ],
+      "resumen_didactico": "Atributos = lo que tiene; métodos = lo que hace.",
+      "ejemplo_practico": "Pedido: total: Float; calcularTotal(): Float; confirmarPago(): void.",
+      "conclusion_final": "La función principal de una operación es describir acciones de la clase."
+    }
+  },
+  {
+    "id": "UT6-Q08",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "El diagrama de un sistema contiene una clase llamada Vehiculo, que actúa como plantilla general. Un programador necesita representar un coche concreto, un \"Ford Focus con matrícula 1234ABC\". ¿Cómo se denomina esta representación específica en terminología de UML?",
+    "contexto": "Diferencia entre clase (plantilla) e instancia (objeto concreto).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Una superclase." },
+      { "clave": "b", "texto": "Una instancia u objeto." },
+      { "clave": "c", "texto": "Una clase abstracta." },
+      { "clave": "d", "texto": "Una asociación." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Una instancia/objeto es un ejemplar concreto de una clase con valores reales en sus atributos (p. ej., matrícula).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Superclase es la clase padre en herencia, no un caso concreto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una clase abstracta es una plantilla no instanciable; aquí se quiere un objeto concreto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una asociación es una relación entre clases, no un ejemplar."
+        }
+      ],
+      "resumen_didactico": "Clase = molde; objeto/instancia = ejemplar con valores.",
+      "ejemplo_practico": "Vehiculo → instancia: 'Ford Focus 1234ABC, color azul'.",
+      "conclusion_final": "Un coche concreto se modela como instancia/objeto."
+    }
+  },
+  {
+    "id": "UT6-Q09",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un sistema universitario debe reflejar que un Profesor \"imparte\" varias Asignatura. Es una relación fundamental para la lógica del sistema. ¿Cómo se modela esta conexión entre la clase Profesor y la clase Asignatura?",
+    "contexto": "Relación entre entidades del dominio (Profesor imparte Asignatura).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Como una clase abstracta." },
+      { "clave": "b", "texto": "Como una relación de herencia." },
+      { "clave": "c", "texto": "Como una relación de composición." },
+      { "clave": "d", "texto": "Como una relación de asociación." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Una asociación representa una relación entre clases (línea de conexión) y puede nombrarse (p. ej., 'imparte') e incluir multiplicidades.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una clase abstracta es un tipo de clase, no una conexión entre clases."
+        },
+        {
+          "clave": "b",
+          "motivo": "Herencia es 'es un tipo de'; Profesor no es un tipo de Asignatura ni viceversa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Composición implica dependencia fuerte del ciclo de vida; una asignatura no depende de que exista un profesor concreto."
+        }
+      ],
+      "resumen_didactico": "Relación funcional entre clases (imparte, realiza, registra) → asociación.",
+      "ejemplo_practico": "Profesor —imparte— Asignatura con multiplicidad 1 a 0..* según el caso.",
+      "conclusion_final": "La conexión 'imparte' se modela como asociación."
+    }
+  },
+  {
+    "id": "UT6-Q10",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué representa una relación de asociación en un diagrama de clases?",
+    "contexto": "Significado de asociación en UML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que una clase está compuesta por otras clases que no pueden existir por sí solas."
+      },
+      {
+        "clave": "b",
+        "texto": "Que las instancias de una clase están conectadas o relacionadas con las instancias de otra."
+      },
+      {
+        "clave": "c",
+        "texto": "Que una clase es una plantilla que no puede ser instanciada."
+      },
+      {
+        "clave": "d",
+        "texto": "Que una clase hereda las características de otra."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La asociación indica que existe una relación entre clases y que sus instancias se conectan; se representa con una línea y puede incluir nombre, dirección y multiplicidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe composición (dependencia fuerte), no una asociación genérica."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso define una clase abstracta, no una relación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso describe herencia/generalización, no asociación."
+        }
+      ],
+      "resumen_didactico": "Asociación = 'están relacionados' (línea entre clases).",
+      "ejemplo_practico": "Cliente —realiza— Pedido con multiplicidades 1 y 0..*.",
+      "conclusion_final": "Una asociación conecta clases indicando vínculo entre sus instancias."
+    }
+  },
+  {
+    "id": "UT6-Q11",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un diagrama muestra una clase Cliente que puede realizar una asociación llamada \"registra\" con una clase PedidoOnline o con una clase PedidoTelefonico, pero no con ambas a la vez para un mismo registro. ¿Cómo se representa esta restricción de elección exclusiva?",
+    "contexto": "Regla de negocio: elección exclusiva entre dos asociaciones posibles.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Con una flecha de doble sentido." },
+      {
+        "clave": "b",
+        "texto": "Con una línea discontinua y la cláusula {or}."
+      },
+      {
+        "clave": "c",
+        "texto": "Con un rombo negro en el extremo de la asociación."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La asociación se representa con una línea entre clases, y las reglas de negocio pueden expresarse como restricciones anotadas (cláusulas entre llaves) vinculadas a la relación. Para elección exclusiva entre alternativas se usa una restricción del tipo {or}.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La doble flecha no expresa exclusividad; solo sugiere navegabilidad/bidireccionalidad informal."
+        },
+        {
+          "clave": "c",
+          "motivo": "El rombo negro indica composición (dependencia fuerte del ciclo de vida), no una elección exclusiva entre asociaciones."
+        }
+      ],
+      "resumen_didactico": "La exclusividad (A o B pero no ambos) se expresa con una restricción, no con composición ni con flechas.",
+      "ejemplo_practico": "Cliente registra PedidoOnline o PedidoTelefonico, marcado con una restricción {or} para impedir que un mismo registro sea ambos.",
+      "conclusion_final": "Para modelar una elección exclusiva entre asociaciones se usa una restricción {or} vinculada a la relación."
+    }
+  },
+  {
+    "id": "UT6-Q12",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "En un sistema de comercio electrónico, existe una clase general Producto. Para gestionar artículos específicos, se crean las clases Libro y Electronica, que adquieren todos los atributos y métodos de Producto, además de añadir los suyos propios. ¿Cómo se llama este tipo de relación?",
+    "contexto": "Especialización de Producto en Libro y Electronica.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Asociación." },
+      { "clave": "b", "texto": "Composición." },
+      { "clave": "c", "texto": "Agregación." },
+      { "clave": "d", "texto": "Herencia (o generalización)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La herencia/generalización modela 'es un/a': una subclase hereda atributos y métodos de una superclase y puede ampliarlos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La asociación indica vínculo entre clases, pero no implica heredar atributos y métodos."
+        },
+        {
+          "clave": "b",
+          "motivo": "La composición es 'parte de' con dependencia fuerte; no describe especialización."
+        },
+        {
+          "clave": "c",
+          "motivo": "La agregación es 'tiene un/a' con partes independientes; no describe herencia."
+        }
+      ],
+      "resumen_didactico": "Herencia = subclases reutilizan lo común y añaden lo específico.",
+      "ejemplo_practico": "Producto (precio, nombre) → Libro (isbn, autor) / Electronica (garantiaMeses).",
+      "conclusion_final": "Producto→Libro/Electronica es herencia (generalización)."
+    }
+  },
+  {
+    "id": "UT6-Q13",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Cuál es la diferencia fundamental entre una superclase y una subclase en una relación de herencia?",
+    "contexto": "Conceptos de superclase (padre) y subclase (hija).",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La superclase es la clase general (padre) y la subclase es la clase especializada (hija) que hereda de ella."
+      },
+      {
+        "clave": "b",
+        "texto": "La superclase tiene más métodos, mientras que la subclase tiene más atributos."
+      },
+      {
+        "clave": "c",
+        "texto": "La superclase no puede tener instancias, mientras que la subclase sí."
+      },
+      {
+        "clave": "d",
+        "texto": "La superclase es privada, mientras que la subclase es siempre pública."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En herencia, la superclase define lo común y general; la subclase especializa y hereda atributos y métodos de la superclase, pudiendo añadir los suyos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No existe una regla de cantidades; la diferencia es generalidad vs especialización y la herencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "Que una clase no se instancie depende de si es abstracta, no de ser superclase."
+        },
+        {
+          "clave": "d",
+          "motivo": "La visibilidad afecta a miembros (atributos/métodos), no define que una clase padre sea 'privada' y la hija 'pública'."
+        }
+      ],
+      "resumen_didactico": "Superclase = general; subclase = específica que hereda y amplía.",
+      "ejemplo_practico": "Producto (general) → Libro (específica) hereda y añade isbn.",
+      "conclusion_final": "La diferencia clave es padre/general vs hija/especializada que hereda."
+    }
+  },
+  {
+    "id": "UT6-Q14",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "En un diagrama, el nombre de la clase FiguraGeometrica aparece en cursiva. Esta clase sirve como una plantilla para otras como Circulo y Cuadrado, pero nunca se creará un objeto directamente de FiguraGeometrica. ¿Qué indica el nombre en cursiva?",
+    "contexto": "Notación UML: cursiva para abstracción.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Que la clase es privada." },
+      { "clave": "b", "texto": "Que la clase es una instancia." },
+      { "clave": "c", "texto": "Que la clase es estática." },
+      { "clave": "d", "texto": "Que es una clase abstracta." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El nombre en cursiva (o marcado como abstracto) indica clase abstracta: actúa como plantilla y no se instancia directamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La privacidad se indica con símbolos de visibilidad en miembros (+, -, #, ~), no con cursiva del nombre de clase."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una instancia es un objeto concreto; no se indica con cursiva del nombre de clase."
+        },
+        {
+          "clave": "c",
+          "motivo": "Lo estático se indica con subrayado, no con cursiva."
+        }
+      ],
+      "resumen_didactico": "Cursiva = abstracto (no instanciable). Subrayado = static.",
+      "ejemplo_practico": "FiguraGeometrica (abstracta) → Circulo, Cuadrado (instanciables).",
+      "conclusion_final": "Nombre en cursiva implica clase abstracta."
+    }
+  },
+  {
+    "id": "UT6-Q15",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué símbolo se utiliza en un diagrama de clases de UML para indicar que un atributo o método tiene visibilidad \"pública\"?",
+    "contexto": "Símbolos UML de visibilidad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "." },
+      { "clave": "b", "texto": "El símbolo (no especificado)" },
+      { "clave": "c", "texto": "El símbolo (no especificado)" },
+      { "clave": "d", "texto": "El símbolo -." },
+      { "clave": "e", "texto": "El símbolo +." }
+    ],
+    "respuesta_correcta": ["e"],
+    "explicacion": {
+      "temario": "En UML, la visibilidad pública se marca con el símbolo + delante del miembro.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es un símbolo estándar de visibilidad UML."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los símbolos válidos en el temario son +, -, # y ~; el público es +."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los símbolos válidos en el temario son +, -, # y ~; el público es +."
+        },
+        {
+          "clave": "d",
+          "motivo": "El símbolo - representa privado, no público."
+        }
+      ],
+      "resumen_didactico": "+ public, - private, # protected, ~ package.",
+      "ejemplo_practico": "+ getNombre(): String es un método público.",
+      "conclusion_final": "La visibilidad pública se indica con +."
+    }
+  },
+  {
+    "id": "UT6-Q16",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un desarrollador senior está revisando la clase Usuario. Insiste en que el atributo password no debe ser accesible desde ninguna otra clase, y solo debe poder modificarse a través de métodos internos de la propia clase Usuario. ¿Qué nivel de visibilidad se le debe asignar?",
+    "contexto": "Encapsulación de datos sensibles (password).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Público (+)." },
+      { "clave": "b", "texto": "(símbolo no especificado)" },
+      { "clave": "c", "texto": "Protegido (#)." },
+      { "clave": "d", "texto": "Paquete (~)." },
+      { "clave": "e", "texto": "Privado (-)." }
+    ],
+    "respuesta_correcta": ["e"],
+    "explicacion": {
+      "temario": "Privado (-) significa que solo la propia clase puede acceder al miembro, reforzando la encapsulación, especialmente para datos sensibles como password.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Público permite acceso desde cualquier clase, incumpliendo la restricción."
+        },
+        {
+          "clave": "b",
+          "motivo": "La exigencia es 'ninguna otra clase'; el nivel más restrictivo y correcto es privado (-)."
+        },
+        {
+          "clave": "c",
+          "motivo": "Protegido permite acceso también desde subclases; no cumple 'solo la propia clase'."
+        },
+        {
+          "clave": "d",
+          "motivo": "Paquete permite acceso a clases del mismo paquete; no cumple el requisito."
+        }
+      ],
+      "resumen_didactico": "Si nadie fuera de la clase debe tocar el dato → private (-).",
+      "ejemplo_practico": "- password: String; + cambiarPassword(nueva): void (con validaciones).",
+      "conclusion_final": "password debe ser privado (-)."
+    }
+  },
+  {
+    "id": "UT6-Q17",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Una superclase Vehiculo tiene un atributo +color (público), un atributo -numeroBastidor (privado) y un método #revisarMotor() (protegido). La subclase Coche hereda de Vehiculo. ¿Cuáles de estos miembros puede visualizar la clase Coche?",
+    "contexto": "Acceso en herencia según visibilidad: public/protected/private.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Únicamente el método #revisarMotor()." },
+      {
+        "clave": "b",
+        "texto": "El atributo +color y el método #revisarMotor()."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo el atributo +color y el atributo -numeroBastidor."
+      },
+      { "clave": "d", "texto": "Solo el atributo +color." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En herencia, la subclase puede acceder a miembros públicos (+) y protegidos (#), pero no a los privados (-) de la superclase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Además del protegido, también es visible el miembro público +color."
+        },
+        {
+          "clave": "c",
+          "motivo": "El miembro -numeroBastidor es privado y solo lo ve Vehiculo, no Coche."
+        },
+        {
+          "clave": "d",
+          "motivo": "El método protegido #revisarMotor() también es visible para la subclase."
+        }
+      ],
+      "resumen_didactico": "Subclase ve + y #, pero no ve -.",
+      "ejemplo_practico": "Coche puede usar #revisarMotor() internamente, pero no acceder directamente a -numeroBastidor.",
+      "conclusion_final": "Coche visualiza +color y #revisarMotor()."
+    }
+  },
+  {
+    "id": "UT6-Q18",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un equipo de desarrollo decide que el atributo totalConexiones en la clase ConexionBD debe pertenecer a la clase en sí misma, no a un objeto individual, para mantener una cuenta compartida. ¿Cómo se indica en el diagrama que este atributo es estático?",
+    "contexto": "Miembros estáticos en UML (pertenecen a la clase).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Usando el símbolo de paquete (~)." },
+      { "clave": "b", "texto": ") antes del nombre." },
+      { "clave": "c", "texto": "Subrayando el nombre del atributo." },
+      { "clave": "d", "texto": "Poniendo un asterisco (*) antes del nombre." },
+      { "clave": "e", "texto": "Escribiendo su nombre en cursiva." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Los atributos/métodos estáticos (de clase) se representan subrayando su nombre en el diagrama UML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El símbolo ~ indica visibilidad de paquete, no static."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los símbolos delante del nombre se usan para visibilidad (+, -, #, ~), no para static."
+        },
+        {
+          "clave": "d",
+          "motivo": "El asterisco se usa típicamente en multiplicidades (0..*), no para static."
+        },
+        {
+          "clave": "e",
+          "motivo": "La cursiva indica abstracción (abstracto), no miembros estáticos."
+        }
+      ],
+      "resumen_didactico": "Static en UML → subrayado.",
+      "ejemplo_practico": "ConexionBD: _totalConexiones: Integer_ (subrayado).",
+      "conclusion_final": "Se marca como estático subrayando el atributo."
+    }
+  },
+  {
+    "id": "UT6-Q19",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Cuál es la diferencia fundamental entre una relación de agregación y una de composición?",
+    "contexto": "Relaciones todo-parte: independencia vs dependencia de ciclo de vida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La agregación implica una dependencia del ciclo de vida, y la composición no."
+      },
+      {
+        "clave": "b",
+        "texto": "La composición es una suma de clases, mientras que la agregación es una relación de herencia."
+      },
+      {
+        "clave": "c",
+        "texto": "En la agregación las partes pueden existir sin el todo, mientras que en la composición no."
+      },
+      {
+        "clave": "d",
+        "texto": "La agregación se representa con un rombo negro y la composición con uno vacío."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Agregación: relación 'tiene un/a' donde las partes pueden existir independientemente. Composición: relación fuerte 'parte de' (a vida o muerte) donde las partes dependen del ciclo de vida del todo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La dependencia fuerte del ciclo de vida corresponde a composición, no a agregación."
+        },
+        {
+          "clave": "b",
+          "motivo": "Agregación y composición son asociaciones (todo-parte), no herencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es al revés: agregación rombo vacío; composición rombo negro."
+        }
+      ],
+      "resumen_didactico": "Agregación = partes independientes; Composición = partes dependientes del todo.",
+      "ejemplo_practico": "Grupo ◊— Cantante (independiente) vs Automóvil ♦— Motor (dependiente).",
+      "conclusion_final": "La clave es si las partes pueden existir sin el todo."
+    }
+  },
+  {
+    "id": "UT6-Q20",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "En el diagrama de un ordenador, la clase PC se relaciona con Teclado, Monitor y Raton. Estos componentes pueden existir de forma independiente y ser utilizados en otros ordenadores. ¿Qué tipo de relación, representada con un rombo vacío, es esta?",
+    "contexto": "Componentes reutilizables asociados a un PC.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Agregación." },
+      { "clave": "b", "texto": "Asociación simple." },
+      { "clave": "c", "texto": "Herencia." },
+      { "clave": "d", "texto": "Composición." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El rombo vacío indica agregación, donde las partes existen independientemente y pueden reutilizarse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El rombo vacío aporta semántica 'todo-parte' independiente; no es solo asociación simple."
+        },
+        {
+          "clave": "c",
+          "motivo": "Herencia es 'es un tipo de'; Teclado/Monitor/Ratón no son tipos de PC."
+        },
+        {
+          "clave": "d",
+          "motivo": "Composición usa rombo negro e implica dependencia fuerte, pero aquí son independientes."
+        }
+      ],
+      "resumen_didactico": "Rombo vacío = agregación = partes independientes.",
+      "ejemplo_practico": "PC ◊— Teclado: el teclado puede conectarse a otro PC.",
+      "conclusion_final": "Es una agregación."
+    }
+  },
+  {
+    "id": "UT6-Q21",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un desarrollador está modelando una clase Factura, que está formada por varias LineaFactura. Si la Factura se elimina, todas sus líneas deben ser eliminadas también, ya que no tienen sentido por sí solas. ¿Qué tipo de relación fuerte, representada con un rombo relleno, se debe usar?",
+    "contexto": "Dependencia fuerte de ciclo de vida: líneas dependen de factura.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Agregación." },
+      { "clave": "b", "texto": "Composición." },
+      { "clave": "c", "texto": "Asociación." },
+      { "clave": "d", "texto": "Herencia." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La composición se representa con rombo relleno (negro) y expresa dependencia fuerte: si desaparece el todo, desaparecen las partes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Agregación (rombo vacío) permite que las partes existan sin el todo; aquí no."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una asociación simple no expresa la dependencia de ciclo de vida 'a vida o muerte'."
+        },
+        {
+          "clave": "d",
+          "motivo": "Herencia es 'es un tipo de', no relación todo-parte."
+        }
+      ],
+      "resumen_didactico": "Rombo negro = composición = partes no existen sin el todo.",
+      "ejemplo_practico": "Factura ♦— LineaFactura: borrar Factura borra sus líneas.",
+      "conclusion_final": "Se usa composición."
+    }
+  },
+  {
+    "id": "UT6-Q22",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Cómo se representa visualmente una relación de composición en un diagrama de clases UML?",
+    "contexto": "Notación visual de composición.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Con un rombo relleno en el extremo de la clase contenedora."
+      },
+      {
+        "clave": "b",
+        "texto": "Con un rombo vacío en el extremo de la clase contenedora."
+      },
+      { "clave": "c", "texto": "Con una flecha de punta hueca." },
+      { "clave": "d", "texto": "Con una línea discontinua." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La composición se representa con un rombo negro (relleno) en el extremo del 'todo' o clase contenedora.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El rombo vacío corresponde a agregación, no composición."
+        },
+        {
+          "clave": "c",
+          "motivo": "La flecha con triángulo hueco corresponde a herencia/generalización."
+        },
+        {
+          "clave": "d",
+          "motivo": "La composición no se identifica por línea discontinua, sino por rombo relleno."
+        }
+      ],
+      "resumen_didactico": "Composición = rombo negro en el todo.",
+      "ejemplo_practico": "Factura ♦— LineaFactura.",
+      "conclusion_final": "Se dibuja con rombo relleno en la clase contenedora."
+    }
+  },
+  {
+    "id": "UT6-Q23",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un desarrollador necesita una herramienta para crear sus diagramas de clases. Un requisito clave es que, una vez finalizado el diagrama, la herramienta le permita generar automáticamente el esqueleto de las clases en código Java. ¿Qué funcionalidad de una herramienta CASE está buscando?",
+    "contexto": "Uso de CASE para generar código desde UML.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La conversión de diagrama a código." },
+      { "clave": "b", "texto": "La conversión de código a diagrama." },
+      { "clave": "c", "texto": "La inclusión de módulos o plugins." },
+      { "clave": "d", "texto": "La colaboración en tiempo real." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una funcionalidad típica de herramientas CASE es generar el esqueleto de clases en un lenguaje (p. ej., Java) a partir del diagrama: diagrama → código.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Código → diagrama es ingeniería inversa; aquí se pide generar código desde el modelo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los plugins amplían la herramienta, pero no describen la funcionalidad concreta solicitada."
+        },
+        {
+          "clave": "d",
+          "motivo": "La colaboración no implica generación automática del esqueleto de clases."
+        }
+      ],
+      "resumen_didactico": "Si partes del UML y obtienes clases en Java, eso es diagrama → código.",
+      "ejemplo_practico": "UML de Producto/Libro genera class Producto y class Libro extends Producto.",
+      "conclusion_final": "La necesidad es conversión de diagrama a código."
+    }
+  },
+  {
+    "id": "UT6-Q24",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un equipo de desarrollo distribuido geográficamente necesita trabajar sobre el mismo modelo UML. Buscan una herramienta que permita a varios usuarios editar el diagrama al mismo tiempo, reflejando los cambios al instante para evitar conflictos. ¿Qué requisito debe cumplir la herramienta CASE que elijan?",
+    "contexto": "Colaboración simultánea en modelos UML.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Tener una interfaz de usuario intuitiva." },
+      {
+        "clave": "b",
+        "texto": "Ser compatible con múltiples lenguajes de programación."
+      },
+      {
+        "clave": "c",
+        "texto": "Permitir el acceso simultáneo para colaboraciones."
+      },
+      { "clave": "d", "texto": "Adaptarse a las necesidades del usuario." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En herramientas CASE, la necesidad de edición concurrente y visualización de cambios en tiempo real se cubre con colaboración simultánea (acceso multiusuario).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una interfaz intuitiva ayuda, pero no garantiza edición simultánea ni sincronización en tiempo real."
+        },
+        {
+          "clave": "b",
+          "motivo": "Compatibilidad de lenguajes es para generación de código, no para colaboración en tiempo real."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un criterio general; el requisito concreto es acceso simultáneo para colaborar."
+        }
+      ],
+      "resumen_didactico": "Para trabajar varios a la vez en el mismo diagrama: colaboración simultánea.",
+      "ejemplo_practico": "Dos personas editan clases y relaciones y ven cambios al instante sin conflictos.",
+      "conclusion_final": "Se requiere acceso simultáneo para colaboraciones."
+    }
+  },
+  {
+    "id": "UT6-Q25",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué significa el acrónimo CASE en el contexto de las herramientas de software?",
+    "contexto": "Definición de CASE en ingeniería del software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ingeniería de Componentes y Sistemas Expertos."
+      },
+      {
+        "clave": "b",
+        "texto": "Compilación y Arquitectura de Software Estandarizado."
+      },
+      {
+        "clave": "c",
+        "texto": "Ingeniería de Software Asistida por Computadora."
+      },
+      { "clave": "d", "texto": "Creación de Software Asistida por Estándares." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "CASE significa Computer-Aided Software Engineering, es decir, Ingeniería de Software Asistida por Computadora.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No corresponde al significado estándar del acrónimo CASE."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es el significado de CASE en el contexto de herramientas de ingeniería del software."
+        },
+        {
+          "clave": "d",
+          "motivo": "CASE se refiere a asistencia por computadora, no 'por estándares'."
+        }
+      ],
+      "resumen_didactico": "CASE = Computer-Aided Software Engineering.",
+      "ejemplo_practico": "Herramienta que ayuda a modelar UML, documentar y generar código automáticamente.",
+      "conclusion_final": "CASE significa Ingeniería de Software Asistida por Computadora."
+    }
+  },
+  {
+    "id": "UT6-Q26",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un diagrama de una biblioteca necesita especificar que un Socio puede tener prestados entre 0 y 5 Libro simultáneamente. ¿Cómo se representa esta restricción numérica, conocida como multiplicidad, en la línea de asociación junto a la clase Libro?",
+    "contexto": "Multiplicidad en UML (rango mínimo..máximo).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "0..5" },
+      { "clave": "b", "texto": "[0-5]" },
+      { "clave": "c", "texto": "0, 5" },
+      { "clave": "d", "texto": "(0..5)" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La multiplicidad se expresa como mínimo..máximo junto al extremo de la asociación (p. ej., 0..*, 1..*). Para 0 a 5 se usa 0..5.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la notación UML de multiplicidad; se usa min..max."
+        },
+        {
+          "clave": "c",
+          "motivo": "La coma no representa un rango de multiplicidad en UML."
+        },
+        {
+          "clave": "d",
+          "motivo": "La multiplicidad se escribe sin paréntesis; la notación correcta es 0..5."
+        }
+      ],
+      "resumen_didactico": "Multiplicidad en UML: min..max (ej.: 0..1, 0..*, 1..*).",
+      "ejemplo_practico": "Socio —presta— Libro con multiplicidad 0..5 junto a Libro.",
+      "conclusion_final": "La multiplicidad 0 a 5 se escribe 0..5."
+    }
+  },
+  {
+    "id": "UT6-Q27",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "En el modelo de una empresa, la clase Empleado necesita relacionarse consigo misma para indicar que un empleado puede ser el jefe de otros muchos empleados. ¿Qué tipo de asociación se requiere para modelar esta relación jerárquica?",
+    "contexto": "Relación jerárquica dentro de la misma clase (Empleado-jefe).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Asociación de herencia." },
+      { "clave": "b", "texto": "Asociación reflexiva." },
+      { "clave": "c", "texto": "Asociación ternaria." },
+      { "clave": "d", "texto": "Asociación de composición." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Una asociación puede conectar clases para reflejar relaciones entre sus instancias. Cuando una clase se relaciona consigo misma (empleado supervisa empleado), se trata de una autoasociación o asociación reflexiva.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Herencia es 'es un tipo de'; jefe-subordinado es una relación entre instancias, no especialización."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una ternaria implica tres clases distintas en la relación; aquí interviene una sola clase en dos roles."
+        },
+        {
+          "clave": "d",
+          "motivo": "Composición implica dependencia fuerte de ciclo de vida; no aplica a una jerarquía organizativa."
+        }
+      ],
+      "resumen_didactico": "Si una clase se relaciona consigo misma para roles distintos, es una asociación reflexiva.",
+      "ejemplo_practico": "Empleado —supervisa— Empleado (roles: jefe / subordinado) con multiplicidades 0..1 y 0..*.",
+      "conclusion_final": "La relación jefe-subordinado en la misma clase se modela con asociación reflexiva."
+    }
+  },
+  {
+    "id": "UT6-Q28",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "La clase Producto tiene un atributo llamado disponible. Este atributo solo puede tomar uno de dos valores: verdadero o falso. ¿Cuál es el tipo de dato más apropiado para disponible?",
+    "contexto": "Tipo de dato para valores lógicos (true/false).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "String." },
+      { "clave": "b", "texto": "Integer." },
+      { "clave": "c", "texto": "Float." },
+      { "clave": "d", "texto": "Boolean." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Para atributos que solo admiten verdadero/falso, el tipo apropiado es Boolean.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "String es texto; para lógica binaria se usa Boolean."
+        },
+        {
+          "clave": "b",
+          "motivo": "Integer es numérico entero; no es el tipo semántico correcto para verdadero/falso."
+        },
+        {
+          "clave": "c",
+          "motivo": "Float es numérico con decimales; no aplica a valores binarios."
+        }
+      ],
+      "resumen_didactico": "Dos estados (sí/no, true/false) → Boolean.",
+      "ejemplo_practico": "Producto: disponible: Boolean; stock: Integer; precio: Float.",
+      "conclusion_final": "El tipo correcto para disponible es Boolean."
+    }
+  },
+  {
+    "id": "UT6-Q29",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Un programador necesita que un método sea visible para su propia clase y para todas sus clases derivadas (subclases), pero que permanezca oculto para el resto de clases del sistema. ¿Qué modificador de visibilidad, representado por el símbolo #, debe utilizar?",
+    "contexto": "Visibilidad protegida en UML.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Público." },
+      { "clave": "b", "texto": "Protegido." },
+      { "clave": "c", "texto": "Privado." },
+      { "clave": "d", "texto": "Paquete." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El símbolo # en UML representa visibilidad protegida: accesible desde la clase y sus subclases, pero no desde otras clases externas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Público (+) permite acceso desde cualquier clase, no queda oculto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Privado (-) solo permite acceso desde la propia clase, no desde subclases."
+        },
+        {
+          "clave": "d",
+          "motivo": "Paquete (~) permite acceso por pertenencia al mismo paquete, no por herencia."
+        }
+      ],
+      "resumen_didactico": "# protected = clase + subclases.",
+      "ejemplo_practico": "Vehiculo: #revisarMotor(); Coche (subclase) puede usarlo, clase externa no.",
+      "conclusion_final": "Para clase + subclases se usa protegido (#)."
+    }
+  },
+  {
+    "id": "UT6-Q30",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "En una relación de herencia, ¿cuál es el término correcto para la clase general de la cual otras clases más específicas heredan sus atributos y métodos?",
+    "contexto": "Terminología de herencia: superclase vs subclase.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Clase instanciada." },
+      { "clave": "b", "texto": "Superclase." },
+      { "clave": "c", "texto": "Subclase." },
+      { "clave": "d", "texto": "Clase abstracta." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La clase general o 'padre' en herencia se denomina superclase; las clases específicas que heredan son subclases.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Instanciada se refiere a un objeto creado, no al rol de clase general."
+        },
+        {
+          "clave": "c",
+          "motivo": "Subclase es la clase hija, específica, que hereda de la general."
+        },
+        {
+          "clave": "d",
+          "motivo": "Abstracta es una propiedad (no instanciable), no el término para 'clase general' en herencia."
+        }
+      ],
+      "resumen_didactico": "Superclase = padre/general; subclase = hija/específica.",
+      "ejemplo_practico": "Producto (superclase) → Libro (subclase).",
+      "conclusion_final": "La clase general en herencia se llama superclase."
+    }
+  }
+]

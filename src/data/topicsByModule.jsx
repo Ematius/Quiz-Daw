@@ -67,5 +67,10 @@ export const topicsByModule = {
       title: "Introducción al lenguaje unificado de modelado(UML)",
       numQuestion: 30,
     },
+    {
+      id: "UT6",
+      title: "Elaboración de diagramas de clases",
+      numQuestion: 30,
+    },
   ],
 };
