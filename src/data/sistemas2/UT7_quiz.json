@@ -1,0 +1,753 @@
+[
+  {
+    "id": "UT7-Q01",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de diagrama es el más adecuado para representar visualmente cómo un Cliente puede interactuar con un sistema para \"Retirar efectivo\" o \"Consultar saldo\"?",
+    "contexto": "Cajero automático: funcionalidades disponibles para un cliente.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de actividades." },
+      { "clave": "b", "texto": "Diagrama de estados." },
+      { "clave": "c", "texto": "Diagrama de casos de uso." },
+      { "clave": "d", "texto": "Diagrama de secuencia." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El diagrama de casos de uso representa qué funcionalidades ofrece el sistema y quién (actor) interactúa con ellas. Es el diagrama idóneo para mostrar interacciones Cliente–Sistema como “Retirar efectivo” o “Consultar saldo”.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El diagrama de actividades detalla el flujo de pasos de un proceso, no el catálogo de funcionalidades disponibles para un actor." },
+        { "clave": "b", "motivo": "El diagrama de estados modela estados y transiciones de un objeto a lo largo del tiempo, no la interacción actor–funcionalidad." },
+        { "clave": "d", "motivo": "El diagrama de secuencia muestra el intercambio cronológico de mensajes (el “cómo”), no el “qué” funcionalidades existen." }
+      ],
+      "resumen_didactico": "Casos de uso = Actor + funcionalidades del sistema (qué hace el sistema para cada usuario/rol).",
+      "ejemplo_practico": "Actor: Cliente. Casos de uso: Retirar efectivo, Consultar saldo. El cliente se asocia con esos óvalos dentro del límite del sistema.",
+      "conclusion_final": "Para mostrar qué puede hacer un actor con el sistema, usa un diagrama de casos de uso."
+    }
+  },
+  {
+    "id": "UT7-Q02",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué representa el elemento \"actor\" en un diagrama de casos de uso?",
+    "contexto": "Modelado funcional de un sistema desde la perspectiva del usuario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El límite que separa los componentes internos de los externos." },
+      { "clave": "b", "texto": "Una persona o rol que interactúa con el sistema." },
+      { "clave": "c", "texto": "La secuencia de pasos que sigue una operación." },
+      { "clave": "d", "texto": "Una funcionalidad interna del sistema que se va a codificar." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En casos de uso, el actor es una entidad externa (normalmente una persona/rol) que interactúa con el sistema. Representa quién utiliza o se comunica con el sistema.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Eso corresponde al límite del sistema (la caja), no al actor." },
+        { "clave": "c", "motivo": "La secuencia de pasos se modela con actividades o secuencia, no con el concepto de actor." },
+        { "clave": "d", "motivo": "La funcionalidad se representa con el caso de uso (óvalo), no con el actor." }
+      ],
+      "resumen_didactico": "Actor = quién usa el sistema; Caso de uso = qué ofrece el sistema.",
+      "ejemplo_practico": "Actor: Cliente. Caso de uso: Retirar efectivo. El actor está fuera del sistema y se asocia al óvalo de la funcionalidad.",
+      "conclusion_final": "El actor representa el rol externo que interactúa con el sistema."
+    }
+  },
+  {
+    "id": "UT7-Q03",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se debe modelar una relación donde un caso de uso necesita obligatoriamente a otro (por ejemplo, \"Finalizar compra\" incluye \"Realizar pago\")?",
+    "contexto": "Dependencia funcional obligatoria entre casos de uso.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Con una relación de generalización." },
+      { "clave": "b", "texto": "Con una relación <<include>>." },
+      { "clave": "c", "texto": "Con una asociación simple sin etiqueta." },
+      { "clave": "d", "texto": "Con una relación <<extends>>." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La relación <<include>> se utiliza cuando un caso de uso incorpora obligatoriamente la funcionalidad de otro para completarse. Es un comportamiento imprescindible del caso base.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La generalización crea jerarquías (especialización/herencia), no expresa obligatoriedad funcional entre casos de uso." },
+        { "clave": "c", "motivo": "La asociación se usa principalmente entre actor y caso de uso; no modela dependencia obligatoria entre casos de uso." },
+        { "clave": "d", "motivo": "<<extends>> añade comportamiento opcional; no es obligatorio para completar el caso base." }
+      ],
+      "resumen_didactico": "Obligatorio = include. Opcional = extends.",
+      "ejemplo_practico": "Finalizar compra <<include>> Realizar pago, porque sin pago no se completa la compra.",
+      "conclusion_final": "Si un caso de uso requiere otro sí o sí, se modela con <<include>>."
+    }
+  },
+  {
+    "id": "UT7-Q04",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se representa una relación opcional que añade funcionalidad en un caso de uso (como \"Facturar equipaje especial\")?",
+    "contexto": "Funcionalidad extra que solo aplica en ciertos casos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Como una relación de generalización." },
+      { "clave": "b", "texto": "Como una relación <<include>>." },
+      { "clave": "c", "texto": "Como una asociación bidireccional." },
+      { "clave": "d", "texto": "Como una relación <<extends>>." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La relación <<extends>> se emplea para indicar comportamiento opcional que amplía un caso de uso base. El caso base puede ejecutarse sin esa extensión.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La generalización modela jerarquías entre actores o casos de uso, no extensiones opcionales." },
+        { "clave": "b", "motivo": "<<include>> implica obligatoriedad; no encaja con una funcionalidad opcional." },
+        { "clave": "c", "motivo": "La asociación conecta actor–caso de uso; no expresa ampliación opcional entre casos de uso." }
+      ],
+      "resumen_didactico": "Extends = “extra opcional” sobre un caso de uso base.",
+      "ejemplo_practico": "Facturar equipaje <<extends>> Facturar equipaje especial, solo si el pasajero declara equipaje especial.",
+      "conclusion_final": "Si la funcionalidad añade un extra opcional, se modela con <<extends>>."
+    }
+  },
+  {
+    "id": "UT7-Q05",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué representa una relación de \"asociación\" en un diagrama de casos de uso?",
+    "contexto": "Relación básica actor–funcionalidad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La línea que representa la interacción o comunicación entre un actor y un caso de uso." },
+      { "clave": "b", "texto": "La división de un sistema complejo en subsistemas más pequeños." },
+      { "clave": "c", "texto": "La inclusión obligatoria de la funcionalidad de un caso de uso dentro de otro." },
+      { "clave": "d", "texto": "Una relación jerárquica entre dos actores con diferentes niveles de permiso." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La asociación en casos de uso es la línea que conecta un actor con un caso de uso, indicando que el actor participa o interactúa con esa funcionalidad.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Eso describe una descomposición arquitectónica, no la asociación actor–caso de uso." },
+        { "clave": "c", "motivo": "La inclusión obligatoria entre casos de uso se modela con <<include>>." },
+        { "clave": "d", "motivo": "Una jerarquía entre actores se modela con generalización, no con asociación." }
+      ],
+      "resumen_didactico": "Asociación = actor usa esa funcionalidad (actor ↔ caso de uso).",
+      "ejemplo_practico": "Cliente —(asociación)→ Retirar efectivo.",
+      "conclusion_final": "La asociación representa la interacción entre un actor y un caso de uso."
+    }
+  },
+  {
+    "id": "UT7-Q06",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de relación se establece entre Cliente y Usuario cuando se crea un actor genérico para evitar duplicidad?",
+    "contexto": "Reutilización de relaciones comunes entre actores.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Inclusión." },
+      { "clave": "b", "texto": "Extensión." },
+      { "clave": "c", "texto": "Generalización." },
+      { "clave": "d", "texto": "Asociación." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La generalización se usa para crear un actor genérico del que heredan actores específicos, evitando duplicar asociaciones comunes con casos de uso.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La inclusión (<<include>>) es entre casos de uso, no entre actores." },
+        { "clave": "b", "motivo": "La extensión (<<extends>>) es entre casos de uso y es opcional; no define jerarquía de actores." },
+        { "clave": "d", "motivo": "La asociación conecta actor con caso de uso; no indica herencia/especialización entre actores." }
+      ],
+      "resumen_didactico": "Actor genérico para no repetir = generalización.",
+      "ejemplo_practico": "Actor genérico “Usuario” con los casos de uso comunes; “Cliente” hereda esos vínculos mediante generalización.",
+      "conclusion_final": "Para evitar duplicidad creando un actor genérico, se usa generalización."
+    }
+  },
+  {
+    "id": "UT7-Q07",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de diagrama muestra el orden exacto y la duración de cada proceso en una vista cronológica del flujo de mensajes?",
+    "contexto": "Interacciones temporales entre participantes.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de estados." },
+      { "clave": "b", "texto": "Diagrama de secuencia." },
+      { "clave": "c", "texto": "Diagrama de colaboración." },
+      { "clave": "d", "texto": "Diagrama de casos de uso." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El diagrama de secuencia muestra el intercambio de mensajes en orden temporal, con líneas de vida y activaciones que ayudan a visualizar el orden y la duración de las acciones.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El diagrama de estados modela estados y transiciones, no el flujo cronológico de mensajes entre participantes." },
+        { "clave": "c", "motivo": "El diagrama de colaboración es más compacto y se centra en la estructura; el tiempo no se visualiza tan explícitamente." },
+        { "clave": "d", "motivo": "Casos de uso describen el qué (funciones), no el cómo y cuándo de los mensajes." }
+      ],
+      "resumen_didactico": "Tiempo + mensajes = secuencia.",
+      "ejemplo_practico": "Login: Usuario envía credenciales → Sistema valida en BD → BD responde → Sistema devuelve OK/KO, todo en orden cronológico.",
+      "conclusion_final": "Para ver mensajes en una línea temporal, usa diagrama de secuencia."
+    }
+  },
+  {
+    "id": "UT7-Q08",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué representa la línea discontinua vertical en un diagrama de secuencia?",
+    "contexto": "Notación UML en diagramas de secuencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La flecha que indica el envío de un mensaje." },
+      { "clave": "b", "texto": "El actor que inicia la interacción con el sistema." },
+      { "clave": "c", "texto": "El rectángulo vertical que muestra el nombre del objeto." },
+      { "clave": "d", "texto": "La línea de vida que representa el paso del tiempo." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La línea discontinua vertical es la línea de vida del participante, indicando su existencia durante la interacción y el transcurso del tiempo de arriba abajo.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Las flechas horizontales representan los mensajes, no la línea de vida." },
+        { "clave": "b", "motivo": "El actor se representa como participante, pero no como una línea discontinua vertical." },
+        { "clave": "c", "motivo": "El nombre va en la cabecera del participante; el rectángulo vertical estrecho corresponde a activación, no a la línea de vida." }
+      ],
+      "resumen_didactico": "Línea discontinua vertical = vida del objeto en el tiempo.",
+      "ejemplo_practico": "Cajero (línea de vida) mantiene la línea discontinua mientras recibe mensajes del Cliente y del Banco.",
+      "conclusion_final": "La línea discontinua vertical es la línea de vida."
+    }
+  },
+  {
+    "id": "UT7-Q09",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se llama el mensaje en el que un objeto espera una respuesta antes de continuar?",
+    "contexto": "Tipos de mensajes en diagramas de secuencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Mensaje asincrónico." },
+      { "clave": "b", "texto": "Mensaje simple." },
+      { "clave": "c", "texto": "Mensaje recursivo." },
+      { "clave": "d", "texto": "Mensaje sincrónico." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Un mensaje sincrónico bloquea al emisor hasta recibir respuesta del receptor; el flujo no continúa hasta la confirmación/respuesta.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El asincrónico no espera respuesta inmediata; el emisor puede seguir." },
+        { "clave": "b", "motivo": "“Simple” no define explícitamente el comportamiento de espera; la distinción clave es sincrónico/asincrónico." },
+        { "clave": "c", "motivo": "Recursivo es una autollamada (objeto se envía el mensaje a sí mismo)." }
+      ],
+      "resumen_didactico": "Si espera respuesta para seguir → sincrónico.",
+      "ejemplo_practico": "Sistema → PasarelaPago: autorizarPago() y el sistema espera OK/KO para continuar.",
+      "conclusion_final": "Esperar respuesta antes de continuar = mensaje sincrónico."
+    }
+  },
+  {
+    "id": "UT7-Q10",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se representa un mensaje que un objeto se envía a sí mismo en un diagrama de secuencia?",
+    "contexto": "Autollamadas (recursividad) en secuencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Con una flecha curva que sale del objeto y vuelve a entrar en él." },
+      { "clave": "b", "texto": "Con un mensaje simple que no espera respuesta." },
+      { "clave": "c", "texto": "Con un mensaje asincrónico que se ejecuta en paralelo." },
+      { "clave": "d", "texto": "Con una flecha que apunta a otro objeto y luego regresa." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El mensaje recursivo o auto-mensaje se dibuja como una flecha que sale del mismo participante y vuelve a él, indicando una llamada interna del objeto a sí mismo.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No identifica el patrón clave: emisor y receptor son el mismo objeto." },
+        { "clave": "c", "motivo": "Asincronía trata de no esperar respuesta; no define autollamada." },
+        { "clave": "d", "motivo": "Eso describe interacción entre dos objetos distintos, no autollamada." }
+      ],
+      "resumen_didactico": "Autollamada = flecha que vuelve al mismo objeto.",
+      "ejemplo_practico": "Pedido → Pedido: calcularTotal() antes de confirmar el pago.",
+      "conclusion_final": "Un mensaje a sí mismo se representa con una flecha que sale y entra en el mismo objeto."
+    }
+  },
+  {
+    "id": "UT7-Q11",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de diagrama se centra en la estructura de relaciones entre objetos y es más compacto que el de secuencia?",
+    "contexto": "Comparación de diagramas de interacción.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de actividades." },
+      { "clave": "b", "texto": "Diagrama de colaboración." },
+      { "clave": "c", "texto": "Diagrama de estados." },
+      { "clave": "d", "texto": "Diagrama de clases." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El diagrama de colaboración/comunicación se centra en la estructura (quién se relaciona con quién) y representa el orden de mensajes con numeración, siendo más compacto que el diagrama de secuencia.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Actividades modela flujos de trabajo, no relaciones estructurales de interacción entre objetos." },
+        { "clave": "c", "motivo": "Estados modela estados/transiciones de un objeto, no interacción estructurada entre varios objetos." },
+        { "clave": "d", "motivo": "Clases es un diagrama estructural del sistema (atributos/métodos/relaciones), no de interacción dinámica." }
+      ],
+      "resumen_didactico": "Colaboración = estructura compacta + mensajes numerados.",
+      "ejemplo_practico": "Cliente, Cajero, Banco y Cuenta conectados; los mensajes van numerados 1, 2, 3…",
+      "conclusion_final": "Si buscas interacción compacta centrada en relaciones, usa colaboración."
+    }
+  },
+  {
+    "id": "UT7-Q12",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cuál es la principal diferencia de enfoque entre un diagrama de secuencia y uno de colaboración?",
+    "contexto": "Enfoque temporal vs estructural en diagramas de interacción.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El diagrama de secuencia no puede mostrar actores, mientras que el de colaboración sí." },
+      { "clave": "b", "texto": "El diagrama de secuencia se centra en la temporalidad, mientras que el de colaboración en la estructura." },
+      { "clave": "c", "texto": "El diagrama de secuencia no puede mostrar mensajes, solo objetos." },
+      { "clave": "d", "texto": "El diagrama de colaboración utiliza líneas de vida para mostrar el tiempo." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Secuencia prioriza el orden temporal del intercambio de mensajes; colaboración prioriza la estructura de relaciones entre objetos y usa numeración para el orden.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El diagrama de secuencia sí puede incluir participantes como actores/objetos." },
+        { "clave": "c", "motivo": "El diagrama de secuencia precisamente representa mensajes en orden temporal." },
+        { "clave": "d", "motivo": "Las líneas de vida son propias de secuencia; colaboración usa numeración para el orden." }
+      ],
+      "resumen_didactico": "Secuencia = tiempo. Colaboración = estructura.",
+      "ejemplo_practico": "Misma interacción de compra: secuencia la dibuja en vertical (tiempo), colaboración la dibuja como red (estructura).",
+      "conclusion_final": "La diferencia principal es el foco: temporalidad (secuencia) vs estructura (colaboración)."
+    }
+  },
+  {
+    "id": "UT7-Q13",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se indica la secuencia de mensajes en un diagrama de colaboración?",
+    "contexto": "Notación de orden en diagramas de colaboración.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Por la longitud de las flechas que representan los mensajes." },
+      { "clave": "b", "texto": "Mediante la numeración de los mensajes." },
+      { "clave": "c", "texto": "Por el tamaño de los rectángulos de los objetos." },
+      { "clave": "d", "texto": "Por la dirección de las flechas (ascendente o descendente)." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En colaboración, el orden se representa principalmente mediante la numeración de mensajes (1, 2, 3... y subnumeraciones si procede).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La longitud de flechas no tiene significado semántico; depende del dibujo." },
+        { "clave": "c", "motivo": "El tamaño de los elementos no codifica orden de ejecución." },
+        { "clave": "d", "motivo": "La dirección indica emisor→receptor, pero el orden cronológico se marca con numeración." }
+      ],
+      "resumen_didactico": "Colaboración ordena con números.",
+      "ejemplo_practico": "1) Cliente→Cajero, 2) Cajero→Banco, 3) Banco→Cuenta...",
+      "conclusion_final": "La secuencia en colaboración se indica numerando los mensajes."
+    }
+  },
+  {
+    "id": "UT7-Q14",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de diagrama se usa para visualizar los estados de una incidencia y sus transiciones (Abierta, En progreso, Resuelta, Cerrada)?",
+    "contexto": "Ciclo de vida de una incidencia en un sistema de tickets.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de colaboración." },
+      { "clave": "b", "texto": "Diagrama de estados." },
+      { "clave": "c", "texto": "Diagrama de actividades." },
+      { "clave": "d", "texto": "Diagrama de secuencia." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El diagrama de estados modela los estados de un objeto y las transiciones entre ellos provocadas por eventos, ideal para estados como Abierta/En progreso/Resuelta/Cerrada.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Colaboración describe interacción entre objetos, no el ciclo de vida por estados de una entidad." },
+        { "clave": "c", "motivo": "Actividades detalla un flujo de pasos; aquí se pide estados discretos y transiciones." },
+        { "clave": "d", "motivo": "Secuencia modela mensajes en el tiempo entre participantes, no estados de una entidad." }
+      ],
+      "resumen_didactico": "Estados = “en qué estado está” y “qué evento lo cambia”.",
+      "ejemplo_practico": "Incidencia: Abierta → En progreso → Resuelta → Cerrada con eventos como “asignar técnico”, “solución aplicada”, “validación final”.",
+      "conclusion_final": "Para estados y transiciones de una entidad, usa diagrama de estados."
+    }
+  },
+  {
+    "id": "UT7-Q15",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué representa el círculo relleno dentro de otro círculo en un diagrama de estados?",
+    "contexto": "Notación UML de inicio/fin en estados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un punto de decisión." },
+      { "clave": "b", "texto": "El estado final del objeto." },
+      { "clave": "c", "texto": "Un subestado del proceso." },
+      { "clave": "d", "texto": "El estado inicial del objeto." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En diagramas de estados, el fin se representa como un círculo relleno rodeado por otro círculo (doble círculo), indicando el estado final.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Las decisiones se representan con rombo en actividades, no con doble círculo en estados." },
+        { "clave": "c", "motivo": "Un subestado es una descomposición interna, no el símbolo de fin." },
+        { "clave": "d", "motivo": "El estado inicial es un círculo relleno simple, sin círculo exterior." }
+      ],
+      "resumen_didactico": "Doble círculo = fin. Círculo negro simple = inicio.",
+      "ejemplo_practico": "Incidencia: (inicio) → Abierta → ... → Cerrada → (final).",
+      "conclusion_final": "El doble círculo indica el estado final."
+    }
+  },
+  {
+    "id": "UT7-Q16",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué representa una transición automática de un estado a otro provocada por un evento interno del sistema?",
+    "contexto": "Transición por temporizador o condición interna.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Una decisión tomada por el usuario." },
+      { "clave": "b", "texto": "La colaboración entre el teléfono y la red Wi-Fi." },
+      { "clave": "c", "texto": "Un suceso del sistema que provoca un cambio de estado." },
+      { "clave": "d", "texto": "La línea de vida del objeto teléfono." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En diagramas de estados, las transiciones se disparan por sucesos/eventos. Pueden ser acciones del usuario o eventos internos (por ejemplo, paso del tiempo) que provocan el cambio de estado.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Aquí no interviene decisión del usuario; se habla de evento interno automático." },
+        { "clave": "b", "motivo": "La colaboración es un tipo de diagrama de interacción, no un concepto de transición por evento en estados." },
+        { "clave": "d", "motivo": "La línea de vida pertenece a diagramas de secuencia, no a estados." }
+      ],
+      "resumen_didactico": "Transición en estados = evento que cambia de estado (usuario o interno).",
+      "ejemplo_practico": "Factura: Pendiente → Vencida cuando pasa el plazo (evento interno de tiempo).",
+      "conclusion_final": "Una transición automática es un suceso interno del sistema que provoca el cambio de estado."
+    }
+  },
+  {
+    "id": "UT7-Q17",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se denomina el estado de bajo consumo en un portátil que reduce energía tras inactividad?",
+    "contexto": "Gestión de energía: cambio de estado por inactividad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Estado de concurrencia." },
+      { "clave": "b", "texto": "Subestado de ejecución." },
+      { "clave": "c", "texto": "Estado final." },
+      { "clave": "d", "texto": "Estado en reposo o standby." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En términos de diagrama de estados, “standby” o “reposo” representa un estado del sistema al que se llega por un evento interno como la inactividad (paso del tiempo sin interacción).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La concurrencia se representa en diagramas de actividades para acciones paralelas, no como estado de ahorro energético." },
+        { "clave": "b", "motivo": "“Subestado de ejecución” no nombra el modo de bajo consumo; el concepto clave es el estado de reposo/standby." },
+        { "clave": "c", "motivo": "Estado final marca terminación del ciclo de vida; standby es un estado reversible y operativo." }
+      ],
+      "resumen_didactico": "Bajo consumo por inactividad = estado standby/reposo (cambio por evento interno).",
+      "ejemplo_practico": "Activo → Inactivo → Standby tras X minutos sin teclado/ratón.",
+      "conclusion_final": "El modo de bajo consumo tras inactividad se denomina estado en reposo o standby."
+    }
+  },
+  {
+    "id": "UT7-Q18",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cuál es la función principal de un subestado en un diagrama de estados?",
+    "contexto": "Detalle interno de un estado compuesto.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Descomponer un estado complejo en un conjunto de estados más simples y detallados." },
+      { "clave": "b", "texto": "Indicar una decisión que bifurca el flujo del proceso." },
+      { "clave": "c", "texto": "Representar el final del ciclo de vida de un objeto." },
+      { "clave": "d", "texto": "Mostrar la concurrencia de dos estados que ocurren simultáneamente." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En diagramas de estados, un estado puede ser demasiado general. Se puede descomponer en estados internos (subestados) para detallar el comportamiento dentro de ese estado manteniendo el modelo ordenado.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "La bifurcación condicional se modela con rombo en actividades, no como función principal de subestados." },
+        { "clave": "c", "motivo": "El final se representa con el símbolo de estado final (doble círculo), no con subestados." },
+        { "clave": "d", "motivo": "La concurrencia se trabaja típicamente en actividades (barras); no es la función principal de un subestado." }
+      ],
+      "resumen_didactico": "Subestado = “zoom” dentro de un estado grande para describirlo mejor.",
+      "ejemplo_practico": "Estado “En preparación” de un pedido se descompone en: Preparando → Empaquetando → Etiquetando.",
+      "conclusion_final": "Un subestado sirve para descomponer un estado complejo en estados internos más detallados."
+    }
+  },
+  {
+    "id": "UT7-Q19",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de diagrama es el más adecuado para mostrar pasos secuenciales en un flujo de trabajo, desde la recepción hasta la aprobación de una solicitud?",
+    "contexto": "Workflow paso a paso (proceso u operación).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama de secuencia." },
+      { "clave": "b", "texto": "Diagrama de estados." },
+      { "clave": "c", "texto": "Diagrama de actividades." },
+      { "clave": "d", "texto": "Diagrama de colaboración." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El diagrama de actividades es un flowchart del proceso, ideal para representar pasos secuenciales de un flujo de trabajo y sus decisiones, de forma clara y sin información superflua.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Secuencia modela mensajes entre participantes en el tiempo, no un workflow de tareas." },
+        { "clave": "b", "motivo": "Estados modela cambios de estado de un objeto; aquí se pide flujo de actividades del proceso." },
+        { "clave": "d", "motivo": "Colaboración se centra en estructura de interacción entre objetos, no en pasos de workflow." }
+      ],
+      "resumen_didactico": "Flujo de trabajo (pasos) = actividades.",
+      "ejemplo_practico": "Recibir solicitud → Validar datos → Revisar → Aprobar/Rechazar → Notificar.",
+      "conclusion_final": "Para pasos secuenciales de un proceso, usa diagrama de actividades."
+    }
+  },
+  {
+    "id": "UT7-Q20",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué elemento representa una bifurcación condicional en un diagrama de actividades?",
+    "contexto": "Punto de decisión del flujo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Una barra de concurrencia." },
+      { "clave": "b", "texto": "Un estado final." },
+      { "clave": "c", "texto": "Un rombo de decisión." },
+      { "clave": "d", "texto": "Un estado inicial." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En diagramas de actividades, la decisión se representa con un rombo, que bifurca el flujo según una condición (por ejemplo, sí/no).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La barra gruesa se usa para concurrencia (paralelismo), no para elegir una rama condicional." },
+        { "clave": "b", "motivo": "El final marca terminación del flujo; no bifurca." },
+        { "clave": "d", "motivo": "El inicio marca el comienzo del flujo; no bifurca." }
+      ],
+      "resumen_didactico": "Condición “¿sí/no?” = rombo.",
+      "ejemplo_practico": "¿Documentación completa? → (sí) aprobar → (no) solicitar corrección.",
+      "conclusion_final": "La bifurcación condicional se representa con un rombo de decisión."
+    }
+  },
+  {
+    "id": "UT7-Q21",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué elemento se usa para representar acciones paralelas que no dependen entre sí en un diagrama de actividades?",
+    "contexto": "Ejecución simultánea de tareas en un workflow.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un mensaje asincrónico." },
+      { "clave": "b", "texto": "Un subestado." },
+      { "clave": "c", "texto": "Una barra de concurrencia." },
+      { "clave": "d", "texto": "Un rombo de decisión." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En diagramas de actividades, las acciones en paralelo se modelan con una barra de concurrencia (barra gruesa) para dividir y/o sincronizar flujos paralelos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Los mensajes asincrónicos son propios de diagramas de secuencia, no de actividades." },
+        { "clave": "b", "motivo": "Subestados pertenecen al diagrama de estados para descomponer estados, no para paralelismo en actividades." },
+        { "clave": "d", "motivo": "El rombo elige una ruta alternativa, no ejecuta varias a la vez." }
+      ],
+      "resumen_didactico": "Paralelo = barra gruesa (concurrencia).",
+      "ejemplo_practico": "Tras registrar solicitud: enviar email + guardar log + notificar responsable en paralelo.",
+      "conclusion_final": "El paralelismo en actividades se representa con barra de concurrencia."
+    }
+  },
+  {
+    "id": "UT7-Q22",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué notación se utiliza para representar una bifurcación condicional tras comprobar una contraseña?",
+    "contexto": "Validación de credenciales (correcta/incorrecta).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Una barra horizontal gruesa (concurrencia)." },
+      { "clave": "b", "texto": "Un rectángulo con esquinas redondeadas." },
+      { "clave": "c", "texto": "Un círculo con una 'X'." },
+      { "clave": "d", "texto": "Un rombo (decisión)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Tras comprobar contraseña, el flujo se bifurca por condición. En actividades, esa bifurcación se representa con rombo de decisión.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La barra gruesa modela concurrencia (paralelo), no decisión condicional." },
+        { "clave": "b", "motivo": "El rectángulo redondeado representa una acción/actividad, no una bifurcación." },
+        { "clave": "c", "motivo": "No es la notación estándar de decisión en actividades según la notación habitual de UML." }
+      ],
+      "resumen_didactico": "Validación con dos salidas = rombo.",
+      "ejemplo_practico": "Comprobar contraseña → (rombo) [OK] acceder / [KO] error.",
+      "conclusion_final": "La bifurcación condicional se representa con un rombo de decisión."
+    }
+  },
+  {
+    "id": "UT7-Q23",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cuál es la principal utilidad de un diagrama de casos de uso durante la fase de análisis?",
+    "contexto": "Análisis de requisitos y alcance funcional.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Modelar el ciclo de vida y los estados de un objeto." },
+      { "clave": "b", "texto": "Definir la estructura de las clases y sus atributos." },
+      { "clave": "c", "texto": "Establecer la secuencia temporal de las interacciones entre objetos." },
+      { "clave": "d", "texto": "Mostrar una imagen clara de las funciones del sistema a desarrolladores y clientes." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Durante el análisis, casos de uso sirve para aclarar el qué: funcionalidades del sistema y actores, alineando a equipo técnico y cliente sobre el alcance antes de implementar.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Eso corresponde a diagramas de estados." },
+        { "clave": "b", "motivo": "Eso corresponde a diagramas de clases (estructura del sistema)." },
+        { "clave": "c", "motivo": "Eso corresponde a diagramas de secuencia (interacción cronológica)." }
+      ],
+      "resumen_didactico": "Casos de uso en análisis = mapa funcional para todos.",
+      "ejemplo_practico": "En una app, listar “Registrarse”, “Iniciar sesión”, “Comprar”, “Pagar” y quién los usa para validar requisitos con el cliente.",
+      "conclusion_final": "En análisis, casos de uso aporta una visión clara y compartida de las funciones del sistema."
+    }
+  },
+  {
+    "id": "UT7-Q24",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Por qué se busca la máxima sencillez en los diagramas de casos de uso, evitando notas complejas?",
+    "contexto": "Comunicación visual del alcance funcional.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Para que el diagrama mantenga un fuerte impacto visual y sea intuitivamente sencillo." },
+      { "clave": "b", "texto": "Porque la normativa UML prohíbe explícitamente el uso de notas." },
+      { "clave": "c", "texto": "Porque las herramientas CASE no permiten añadir notas." },
+      { "clave": "d", "texto": "Para que el diagrama ocupe menos espacio en la documentación." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El diagrama de casos de uso busca comunicar el qué del sistema de forma rápida y clara. Sobrecargarlo con notas complejas reduce su legibilidad y su impacto como mapa funcional.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "UML no prohíbe notas; el motivo es la claridad, no una prohibición." },
+        { "clave": "c", "motivo": "Las herramientas de modelado suelen permitir anotaciones; no es una limitación técnica general." },
+        { "clave": "d", "motivo": "El objetivo principal no es ahorrar espacio, sino maximizar claridad y comprensión." }
+      ],
+      "resumen_didactico": "Casos de uso debe entenderse de un vistazo.",
+      "ejemplo_practico": "En un sistema de reservas, un diagrama simple con 8–10 casos de uso se entiende mejor que uno con párrafos de reglas en cada óvalo.",
+      "conclusion_final": "La sencillez mantiene el diagrama intuitivo y útil para comunicar el alcance funcional."
+    }
+  },
+  {
+    "id": "UT7-Q25",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de mensaje se representa cuando el remitente no espera una respuesta inmediata del receptor?",
+    "contexto": "Comunicación no bloqueante en diagramas de secuencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Sincrónico." },
+      { "clave": "b", "texto": "Recursivo." },
+      { "clave": "c", "texto": "Asincrónico." },
+      { "clave": "d", "texto": "Simple." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El mensaje asincrónico permite que el emisor continúe sin esperar respuesta inmediata del receptor.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El sincrónico implica esperar respuesta para continuar." },
+        { "clave": "b", "motivo": "Recursivo es autollamada del objeto, no ausencia de espera de respuesta." },
+        { "clave": "d", "motivo": "“Simple” no define el comportamiento clave de no esperar; la categoría correcta es asincrónico." }
+      ],
+      "resumen_didactico": "No espera respuesta = asincrónico.",
+      "ejemplo_practico": "Sistema envía notificación por email y continúa sin bloquear la operación principal.",
+      "conclusion_final": "Si no se espera respuesta inmediata, el mensaje es asincrónico."
+    }
+  },
+  {
+    "id": "UT7-Q26",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de mensaje se representa cuando un objeto espera que otro confirme la operación antes de continuar?",
+    "contexto": "Comunicación bloqueante en secuencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "De retorno." },
+      { "clave": "b", "texto": "Simple." },
+      { "clave": "c", "texto": "Sincrónico." },
+      { "clave": "d", "texto": "Asincrónico." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El mensaje sincrónico implica que el emisor espera confirmación/respuesta antes de continuar. El retorno puede existir como respuesta, pero la categoría de comportamiento es sincrónica.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El retorno es la respuesta en sí; la pregunta pide el tipo de mensaje que requiere esperar confirmación (sincrónico)." },
+        { "clave": "b", "motivo": "“Simple” no especifica la espera; sincrónico sí." },
+        { "clave": "d", "motivo": "Asincrónico no espera respuesta inmediata; es lo contrario." }
+      ],
+      "resumen_didactico": "Esperar confirmación = sincrónico.",
+      "ejemplo_practico": "Autorizar pago: el sistema espera el OK/KO de la pasarela antes de confirmar el pedido.",
+      "conclusion_final": "Si el emisor espera confirmación para seguir, es un mensaje sincrónico."
+    }
+  },
+  {
+    "id": "UT7-Q27",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué información principal se pierde en un diagrama de colaboración comparado con uno de secuencia?",
+    "contexto": "Comparativa de detalle temporal en diagramas de interacción.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La secuencia de los mensajes." },
+      { "clave": "b", "texto": "La temporalidad y duración de las acciones." },
+      { "clave": "c", "texto": "Los objetos que participan en la interacción." },
+      { "clave": "d", "texto": "Los actores que inician el proceso." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El diagrama de colaboración mantiene el orden mediante numeración, pero no muestra tan explícitamente la dimensión temporal (líneas de vida/activaciones) como el diagrama de secuencia, por lo que se pierde la percepción de temporalidad y duración.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La secuencia se conserva con numeración de mensajes." },
+        { "clave": "c", "motivo": "Los objetos participan claramente; de hecho, el foco es la estructura de relaciones." },
+        { "clave": "d", "motivo": "No es el aspecto principal que se pierde; la pérdida clave es la visualización explícita del tiempo." }
+      ],
+      "resumen_didactico": "Colaboración = compacto pero menos “tiempo”.",
+      "ejemplo_practico": "En retiro de efectivo, colaboración muestra objetos conectados y mensajes numerados, pero no activaciones/duración como en secuencia.",
+      "conclusion_final": "Colaboración sacrifica temporalidad/duración frente a secuencia."
+    }
+  },
+  {
+    "id": "UT7-Q28",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué modela un diagrama de estados al representar el ciclo continuo de \"Rojo\", \"Ámbar\" y \"Verde\" en un semáforo?",
+    "contexto": "Ciclo de vida de un semáforo con estados repetitivos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Los cambios de estado del objeto \"Semáforo\" a lo largo del tiempo." },
+      { "clave": "b", "texto": "Las decisiones del conductor." },
+      { "clave": "c", "texto": "Las actividades concurrentes del sistema de tráfico." },
+      { "clave": "d", "texto": "La colaboración entre el semáforo y los coches." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El diagrama de estados modela los estados de un objeto y sus transiciones. El ciclo Rojo/Ámbar/Verde es el comportamiento por estados del objeto Semáforo a lo largo del tiempo.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No se modelan decisiones humanas, sino estados del objeto Semáforo." },
+        { "clave": "c", "motivo": "La concurrencia es un concepto más propio de actividades (paralelismo), no del ciclo de estados del semáforo." },
+        { "clave": "d", "motivo": "La interacción entre objetos se modela con secuencia/colaboración; aquí se pide el ciclo de estados." }
+      ],
+      "resumen_didactico": "Semáforo = estados y transiciones cíclicas.",
+      "ejemplo_practico": "Rojo → Verde → Ámbar → Rojo, con eventos internos de temporizador que disparan transiciones.",
+      "conclusion_final": "Representar Rojo/Ámbar/Verde es modelar cambios de estado del semáforo."
+    }
+  },
+  {
+    "id": "UT7-Q29",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué representa un círculo completamente relleno en un diagrama de estados?",
+    "contexto": "Notación UML de inicio/fin en estados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un punto de decisión." },
+      { "clave": "b", "texto": "El estado inicial." },
+      { "clave": "c", "texto": "Un subestado." },
+      { "clave": "d", "texto": "El estado final." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En diagramas de estados, el círculo completamente relleno representa el estado inicial. El estado final es el doble círculo.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Las decisiones se representan con rombo en actividades, no con círculo relleno en estados." },
+        { "clave": "c", "motivo": "Un subestado es un estado interno, no el símbolo estándar de inicio." },
+        { "clave": "d", "motivo": "El final se representa con círculo relleno rodeado por otro círculo." }
+      ],
+      "resumen_didactico": "Inicio = círculo negro. Fin = doble círculo.",
+      "ejemplo_practico": "(●) → Abierta → En progreso → Resuelta → Cerrada → (◎).",
+      "conclusion_final": "El círculo completamente relleno indica el estado inicial."
+    }
+  },
+  {
+    "id": "UT7-Q30",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se denominan los estados internos dentro de un estado más grande como \"standby\"?",
+    "contexto": "Estado compuesto con detalle interno.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Concurrencias." },
+      { "clave": "b", "texto": "Subestados." },
+      { "clave": "c", "texto": "Sucesos del sistema." },
+      { "clave": "d", "texto": "Decisiones." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Dentro de un estado compuesto (por ejemplo, Standby), los estados internos que lo detallan se denominan subestados. Permiten describir mejor el comportamiento sin perder la visión general del estado principal.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Concurrencia es paralelismo en actividades, no nombre de estados internos dentro de un estado." },
+        { "clave": "c", "motivo": "Un suceso/evento es lo que dispara una transición entre estados, no un estado interno." },
+        { "clave": "d", "motivo": "Las decisiones (rombo) pertenecen a actividades para bifurcar flujos, no para nombrar estados internos." }
+      ],
+      "resumen_didactico": "Estado grande = estado compuesto; dentro = subestados.",
+      "ejemplo_practico": "Standby puede incluir subestados: Pantalla apagada, Suspensión ligera, Hibernación.",
+      "conclusion_final": "Los estados internos dentro de un estado grande se llaman subestados."
+    }
+  }
+]
+

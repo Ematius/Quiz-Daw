@@ -72,5 +72,10 @@ export const topicsByModule = {
       title: "Elaboración de diagramas de clases",
       numQuestion: 30,
     },
+    {
+      id: "UT7",
+      title: "Elaboración de diagramas de comportamiento",
+      numQuestion: 30,
+    },
   ],
 };
