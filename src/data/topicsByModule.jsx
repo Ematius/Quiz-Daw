@@ -78,4 +78,11 @@ export const topicsByModule = {
       numQuestion: 30,
     },
   ],
+  baseDatos: [
+    {
+      id: "UT1",
+      title: "Introducción y almacenamiento de la información",
+      numQuestion: 30,
+    },
+  ],
 };

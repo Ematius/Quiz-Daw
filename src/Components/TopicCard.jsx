@@ -1,4 +1,4 @@
-/** @format */
+
 
 import { Link } from "react-router-dom";
 import "./TopicCard.scss";

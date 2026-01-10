@@ -8,6 +8,11 @@ const modules = [
   { id: "sistemas", title: "Sistemas Informáticos", subtitle: "7 temas" },
   { id: "sistemas2", title: "Sistemas Informáticos2", subtitle: "7 temas" },
   { id: "ingles", title: "Inglés", subtitle: "en progreso" },
+  {
+    id: "baseDatos",
+    title: "Base de datos",
+    subtitle: "7 temas",
+  },
 ];
 
 

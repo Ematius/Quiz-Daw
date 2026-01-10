@@ -12,6 +12,7 @@ function resolveFolder(moduloId) {
   const map = {
     sistemas: "sistemas",
     sistemas2: "sistemas2",
+    baseDatos: "baseDatos",
   };
   return map[moduloId] ?? null;
 }

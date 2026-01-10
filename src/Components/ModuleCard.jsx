@@ -1,5 +1,5 @@
 
-// ModuleCard.jsx
+
 import { Link } from "react-router-dom";
 import "./ModuleCard.scss";
 

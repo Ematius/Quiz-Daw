@@ -1,0 +1,1163 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "En una empresa \"legacy\" que aún no utiliza bases de datos, el departamento de RRHH tiene un archivo con las direcciones de los empleados y Contabilidad tiene otro distinto. Al mudarse un empleado, actualizan RRHH pero olvidan Contabilidad. ¿Qué problema fundamental de los ficheros sueltos se ha producido?",
+    "contexto": "Datos duplicados en ficheros por departamento y actualización parcial.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Aislamiento." },
+      { "clave": "b", "texto": "Concurrencia." },
+      { "clave": "c", "texto": "Bloqueo físico." },
+      { "clave": "d", "texto": "Inconsistencia." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En sistemas basados en ficheros sueltos, el mismo dato suele existir duplicado en varios archivos. Si se actualiza en uno pero no en otro, aparecen versiones distintas del mismo dato: eso es inconsistencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El aislamiento se refiere a que los datos quedan 'encerrados' en sistemas o departamentos y cuesta integrarlos; aquí el fallo clave es que hay dos versiones distintas del mismo dato."
+        },
+        {
+          "clave": "b",
+          "motivo": "La concurrencia trata accesos simultáneos de muchos usuarios/procesos; el caso describe una actualización olvidada, no accesos simultáneos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El bloqueo físico/bloques se relaciona con cómo se transfieren datos entre disco y RAM (rendimiento), no con coherencia entre copias."
+        }
+      ],
+      "resumen_didactico": "Si el mismo dato está repetido en varios archivos y no se actualiza en todos, el sistema se vuelve incoherente: aparece inconsistencia.",
+      "ejemplo_practico": "RRHH actualiza la dirección de un empleado, pero Contabilidad sigue usando la antigua para facturas o nóminas.",
+      "conclusion_final": "El problema fundamental es la inconsistencia provocada por duplicidad de datos y actualizaciones parciales."
+    }
+  },
+  {
+    "id": "UT1-Q02",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Estás en una entrevista técnica para un puesto Junior. El entrevistador te pregunta cuál es la razón clave para usar una Base de Datos en lugar de sistemas de archivos tradicionales. Basándote en la teoría, ¿cuál es la respuesta más precisa?",
+    "contexto": "Pregunta típica de entrevista sobre por qué usar BD en lugar de ficheros.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para garantizar la integridad, evitar la redundancia y permitir la concurrencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Para eliminar la necesidad de un Sistema Operativo intermedio."
+      },
+      {
+        "clave": "c",
+        "texto": "Para ahorrar espacio en disco duro y reducir el coste de licencias."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque permiten usar archivos de texto plano legibles por humanos"
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La motivación clave de una base de datos frente a ficheros sueltos es asegurar integridad/coherencia, reducir redundancia y permitir acceso concurrente de forma controlada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una BD no elimina el sistema operativo; el SGBD opera sobre el almacenamiento del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "El objetivo principal no es ahorrar espacio ni licencias, sino gestionar datos de forma consistente, segura y concurrente."
+        },
+        {
+          "clave": "d",
+          "motivo": "CSV/JSON son texto plano, pero eso no es la razón de usar BD; la BD aporta control, integridad, concurrencia y reducción de redundancia."
+        }
+      ],
+      "resumen_didactico": "Una BD se usa para tener una única fuente fiable de datos: coherente, no redundante y accesible por muchos usuarios sin conflictos.",
+      "ejemplo_practico": "En un e-commerce, cientos de compras simultáneas deben actualizar stock sin duplicar ventas del mismo artículo.",
+      "conclusion_final": "La razón más precisa es integridad + evitar redundancia + permitir concurrencia."
+    }
+  },
+  {
+    "id": "UT1-Q03",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Como programador, debes entender que aunque trabajes en la nube, todo acaba siendo un fichero. ¿Cómo se define un \"registro lógico\" dentro de la anatomía de un fichero?",
+    "contexto": "Conceptos base de ficheros: registro lógico, campos y bloque físico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es la cantidad de datos que se transfiere entre disco y RAM en una operación."
+      },
+      {
+        "clave": "b",
+        "texto": "Es la información completa de un elemento, compuesta por campos."
+      },
+      { "clave": "c", "texto": "Es el byte individual que compone un dato." },
+      {
+        "clave": "d",
+        "texto": "Es el espacio reservado para los índices del sistema."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Un registro lógico es la 'ficha' completa de un elemento (por ejemplo, un cliente), formada por campos (nombre, email, etc.).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe el bloque físico/registro físico (unidad de transferencia disco↔RAM), no el registro lógico."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un byte es una unidad mínima de almacenamiento, no una entidad completa compuesta por campos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El espacio de índices pertenece a estructuras auxiliares; no define qué es un registro lógico."
+        }
+      ],
+      "resumen_didactico": "Registro lógico = información completa de una entidad; bloque físico = cómo se mueve esa información en disco.",
+      "ejemplo_practico": "Registro lógico de empleado: {id, nombre, dirección, teléfono}.",
+      "conclusion_final": "Un registro lógico es la información completa de un elemento, compuesta por campos."
+    }
+  },
+  {
+    "id": "UT1-Q04",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Estás optimizando una aplicación que lee datos del disco. Si sabes que en cada operación de lectura/escritura (bloque físico) caben exactamente 10 fichas de clientes (registros lógicos), ¿cómo se denomina técnicamente a ese número 10?",
+    "contexto": "Rendimiento de E/S: bloques físicos y número de registros por bloque.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Puntero de cabecera." },
+      { "clave": "b", "texto": "Índice de transferencia." },
+      { "clave": "c", "texto": "Factor de bloqueo." },
+      { "clave": "d", "texto": "Área de desbordamiento." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El factor de bloqueo es el número de registros lógicos que caben en un bloque físico (unidad de lectura/escritura disco↔RAM).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los punteros se usan en ficheros encadenados; no nombran cuántos registros caben en un bloque."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es el término técnico del temario; el concepto correcto es factor de bloqueo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Overflow se usa en sistemas indexados para inserciones fuera de orden, no para el tamaño por bloque."
+        }
+      ],
+      "resumen_didactico": "Factor de bloqueo = cuántos registros lógicos viajan juntos en cada bloque físico.",
+      "ejemplo_practico": "Si factor=10, cada lectura del disco puede traer 10 clientes de una vez.",
+      "conclusion_final": "Ese número (10) se llama factor de bloqueo."
+    }
+  },
+  {
+    "id": "UT1-Q05",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Trabajas en un proyecto de Data Science entrenando una IA. Te entregan un dataset enorme en formato .csv o .json. ¿A qué familia de ficheros pertenecen estos archivos?",
+    "contexto": "Clasificación por estructura: texto plano vs binario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Ficheros binarios." },
+      { "clave": "b", "texto": "Ficheros de acceso calculado." },
+      { "clave": "c", "texto": "Ficheros de Texto Plano (Human-Readable)." },
+      { "clave": "d", "texto": "Ficheros de imagen comprimida" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "CSV y JSON se consideran ficheros de texto plano (legibles por humanos), típicos en datasets para IA/ML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Binario es machine-readable (jpg, exe, pdf). CSV/JSON son texto."
+        },
+        {
+          "clave": "b",
+          "motivo": "Acceso calculado/hash es un método de acceso, no una familia por estructura del archivo CSV/JSON."
+        },
+        { "clave": "d", "motivo": "No son imágenes; son formatos de datos." }
+      ],
+      "resumen_didactico": "Si el contenido son caracteres legibles (aunque sea enorme), es texto plano.",
+      "ejemplo_practico": "Abrir un .json en un editor de texto y ver claves/valores legibles.",
+      "conclusion_final": "CSV/JSON pertenecen a ficheros de texto plano."
+    }
+  },
+  {
+    "id": "UT1-Q06",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Intentas abrir un archivo .jpg o un ejecutable .exe con el bloc de notas y solo ves símbolos extraños ininteligibles. ¿Cuál es la razón técnica?",
+    "contexto": "Diferencia texto plano vs binario (machine-readable).",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El archivo está corrupto y necesita reparación."
+      },
+      {
+        "clave": "b",
+        "texto": "El sistema operativo ha bloqueado el acceso por seguridad."
+      },
+      {
+        "clave": "c",
+        "texto": "Son ficheros binarios codificados en binario puro, no en caracteres."
+      },
+      {
+        "clave": "d",
+        "texto": "Son ficheros de texto plano pero con una codificación UTF-16 incorrecta."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Los ficheros binarios no representan texto; están codificados como bytes con significado específico (imagen, ejecutable). Un editor de texto no sabe interpretarlos como caracteres.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ver símbolos raros al abrir un binario con un editor de texto es normal; no implica corrupción."
+        },
+        {
+          "clave": "b",
+          "motivo": "Si estuviese bloqueado por permisos, normalmente verías un error, no contenido ilegible."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un problema de codificación de texto: simplemente no es texto."
+        }
+      ],
+      "resumen_didactico": "Texto plano = legible por humanos; binario = requiere software compatible para interpretarlo.",
+      "ejemplo_practico": "Un .jpg contiene bytes comprimidos de píxeles y metadatos; un .exe contiene instrucciones ejecutables.",
+      "conclusion_final": "La razón es que son ficheros binarios, no texto."
+    }
+  },
+  {
+    "id": "UT1-Q07",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Tienes un sistema antiguo que almacena datos en una cinta magnética. Para leer el registro número 100, el sistema debe pasar obligatoriamente por los 99 anteriores. ¿Qué método de acceso utiliza?",
+    "contexto": "Soportes secuenciales y acceso secuencial (cinta).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Acceso hash." },
+      { "clave": "b", "texto": "Acceso secuencial." },
+      { "clave": "c", "texto": "Acceso aleatorio." },
+      { "clave": "d", "texto": "Acceso directo." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El acceso secuencial obliga a recorrer registros anteriores para llegar a uno posterior, típico de soportes secuenciales como la cinta magnética.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Hash calcula una dirección a partir de la clave; no requiere pasar por registros previos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Acceso aleatorio implica poder saltar a posiciones si conoces la dirección."
+        },
+        {
+          "clave": "d",
+          "motivo": "Acceso directo es equivalente a aleatorio: no exige recorrer los anteriores."
+        }
+      ],
+      "resumen_didactico": "Si debes leer 1..99 antes de llegar al 100, el acceso es secuencial.",
+      "ejemplo_practico": "Restaurar un bloque en cinta requiere avanzar físicamente por la cinta desde el inicio.",
+      "conclusion_final": "El método es acceso secuencial."
+    }
+  },
+  {
+    "id": "UT1-Q08",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Necesitas diseñar un sistema que permita saltar directamente a una posición concreta del archivo si se conoce su dirección, similar a cómo funciona la memoria RAM. ¿Qué tipo de acceso debes implementar?",
+    "contexto": "Acceso directo/aleatorio por dirección.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Acceso secuencial encadenado." },
+      { "clave": "b", "texto": "Acceso por área de desbordamiento." },
+      { "clave": "c", "texto": "Acceso secuencial indexado." },
+      { "clave": "d", "texto": "Acceso directo o aleatorio." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El acceso directo o aleatorio permite ir a una posición concreta si se conoce su dirección, de forma parecida a RAM.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El encadenado usa punteros para mantener orden lógico; no es 'saltar por dirección conocida' como RAM."
+        },
+        {
+          "clave": "b",
+          "motivo": "Overflow es una zona auxiliar para inserciones en sistemas indexados, no un método de acceso principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "El secuencial indexado usa índice (clave→dirección) para acelerar búsquedas, pero la descripción apunta al acceso directo por dirección conocida."
+        }
+      ],
+      "resumen_didactico": "Directo/aleatorio = salto a dirección; secuencial = recorrido; indexado = apoyo con índice.",
+      "ejemplo_practico": "Con registros de tamaño fijo, puedes calcular dirección = base + (n-1)*tamañoRegistro y saltar.",
+      "conclusion_final": "Debes implementar acceso directo o aleatorio."
+    }
+  },
+  {
+    "id": "UT1-Q09",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Analizas una estructura de ficheros donde cada registro contiene un dato extra que indica la dirección del siguiente registro (\"El siguiente está en la dirección X\"). ¿Qué ventaja principal ofrece este método secuencial encadenado?",
+    "contexto": "Ficheros secuenciales encadenados (punteros).",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Si insertas un dato nuevo, no necesitas mover todo el fichero, solo actualizas los punteros."
+      },
+      {
+        "clave": "b",
+        "texto": "Elimina la necesidad de usar memoria RAM para procesar datos."
+      },
+      {
+        "clave": "c",
+        "texto": "Es el método nativo usado por los archivos CSV."
+      },
+      {
+        "clave": "d",
+        "texto": "Permite búsquedas binarias instantáneas sin leer punteros."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En el secuencial encadenado, los registros pueden estar desordenados físicamente, pero enlazados con punteros. Insertar es barato: se coloca el registro donde haya hueco y se ajustan punteros, sin reescribir todo el fichero.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No elimina la RAM: cualquier proceso usa memoria; el método solo cambia la organización/acceso en disco."
+        },
+        {
+          "clave": "c",
+          "motivo": "CSV es un formato de texto plano, no un método de acceso con punteros."
+        },
+        {
+          "clave": "d",
+          "motivo": "La búsqueda binaria requiere acceso por posiciones ordenadas; aquí se recorre siguiendo punteros."
+        }
+      ],
+      "resumen_didactico": "La ventaja del encadenado es evitar mover grandes bloques de datos al insertar: se actualizan enlaces.",
+      "ejemplo_practico": "Añadir un registro entre dos existentes ajustando el puntero del anterior y el del nuevo.",
+      "conclusion_final": "La ventaja principal es insertar sin mover todo el fichero, solo actualizando punteros."
+    }
+  },
+  {
+    "id": "UT1-Q10",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Estás trabajando con ficheros secuenciales indexados, la base de las bases de datos modernas. ¿Qué dos ficheros componen este sistema?",
+    "contexto": "Secuencial indexado: datos ordenados + índice clave-dirección.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Fichero de texto y fichero binario." },
+      {
+        "clave": "b",
+        "texto": "Fichero maestro y fichero de copia de seguridad."
+      },
+      { "clave": "c", "texto": "Fichero de memoria y fichero de disco." },
+      {
+        "clave": "d",
+        "texto": "Fichero de datos (ordenado) y fichero índice (clave-dirección)."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El secuencial indexado se compone de un fichero de datos ordenado y un fichero índice que relaciona clave (ID) con dirección física, acelerando búsquedas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Texto/binario es clasificación por estructura, no componentes del secuencial indexado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Backup no es un componente estructural del método; es una utilidad de protección."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existen esos dos ficheros como componentes del método; el sistema es datos + índice."
+        }
+      ],
+      "resumen_didactico": "Índice = atajo (clave→dirección). Datos = contenido ordenado.",
+      "ejemplo_practico": "Buscar cliente por ID consultando el índice y saltando a la dirección del registro en datos.",
+      "conclusion_final": "Está compuesto por fichero de datos (ordenado) y fichero índice (clave-dirección)."
+    }
+  },
+  {
+    "id": "UT1-Q11",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "En un sistema secuencial indexado-encadenado, ¿qué función cumple el \"área de desbordamiento\" (overflow)?",
+    "contexto": "Overflow en sistemas indexados: inserciones fuera de orden.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Almacenar temporalmente los registros nuevos que no caben en el orden principal."
+      },
+      {
+        "clave": "b",
+        "texto": "Comprimir los datos antiguos para ahorrar espacio."
+      },
+      {
+        "clave": "c",
+        "texto": "Gestionar los permisos de usuario que acceden al sistema."
+      },
+      {
+        "clave": "d",
+        "texto": "Guardar una copia de seguridad de los índices corruptos."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El overflow es una zona temporal donde se guardan registros nuevos que no pueden insertarse en su posición del fichero principal ordenado. Luego se reorganiza/compacta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Overflow no es compresión; es almacenamiento temporal por inserciones fuera de orden."
+        },
+        {
+          "clave": "c",
+          "motivo": "Permisos/seguridad son funciones del SGBD, no del overflow del fichero."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un mecanismo de copia de seguridad; es parte de la organización para inserciones."
+        }
+      ],
+      "resumen_didactico": "Overflow = aparcamiento temporal para inserciones que no caben en el orden principal.",
+      "ejemplo_practico": "Insertar un registro cuyo ID debería ir 'en medio' cuando no hay hueco; se manda a overflow.",
+      "conclusion_final": "El overflow almacena temporalmente registros nuevos que no caben en el orden principal."
+    }
+  },
+  {
+    "id": "UT1-Q12",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Tu jefe te pide explicar la desventaja principal de usar un área de desbordamiento si no se realiza mantenimiento. ¿Qué sucede si esa área crece demasiado?",
+    "contexto": "Mantenimiento/compactación del overflow para no degradar rendimiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El disco duro se bloquea físicamente por exceso de temperatura."
+      },
+      {
+        "clave": "b",
+        "texto": "Los índices dejan de apuntar a la dirección correcta automáticamente."
+      },
+      {
+        "clave": "c",
+        "texto": "Buscar un documento se vuelve un caos lento y es necesaria una compactación."
+      },
+      {
+        "clave": "d",
+        "texto": "Se pierden los datos almacenados en ella permanentemente."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Si el overflow crece y no se compacta/reorganiza, el acceso se degrada: las búsquedas se vuelven lentas y caóticas, por lo que se necesita mantenimiento (compactación).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es un problema físico de temperatura; es un problema lógico de organización y rendimiento."
+        },
+        {
+          "clave": "b",
+          "motivo": "El temario enfatiza degradación de rendimiento; no que el índice 'se rompa automáticamente'."
+        },
+        {
+          "clave": "d",
+          "motivo": "No implica pérdida permanente por sí misma; el riesgo principal es rendimiento y necesidad de compactación."
+        }
+      ],
+      "resumen_didactico": "Overflow sin mantenimiento = cada vez más desorden y más trabajo en búsquedas → se compacta para recuperar rendimiento.",
+      "ejemplo_practico": "Tras meses insertando en overflow, localizar registros recientes tarda mucho más hasta ejecutar una compactación.",
+      "conclusion_final": "Crece la lentitud y el caos en búsquedas; se vuelve necesaria una compactación."
+    }
+  },
+  {
+    "id": "UT1-Q13",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Estás implementando una caché de alto rendimiento tipo Redis. Utilizas un método donde aplicas una fórmula matemática a la clave (ej: DNI) para obtener la dirección exacta del dato. ¿Cómo se llama este método?",
+    "contexto": "Acceso calculado/hash en cachés y diccionarios.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Acceso calculado o hash." },
+      { "clave": "b", "texto": "Acceso jerárquico." },
+      { "clave": "c", "texto": "Acceso por punteros encadenados." },
+      { "clave": "d", "texto": "Acceso secuencial indexado" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El acceso calculado (hash) aplica una función matemática a la clave para obtener la dirección/posición del dato, típico en cachés de alto rendimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Jerárquico es un modelo de BD en árbol, no un método de acceso por cálculo de dirección."
+        },
+        {
+          "clave": "c",
+          "motivo": "Encadenado usa punteros entre registros, no una fórmula hash para dirección."
+        },
+        {
+          "clave": "d",
+          "motivo": "Secuencial indexado usa fichero índice (clave→dirección), no cálculo directo por función hash."
+        }
+      ],
+      "resumen_didactico": "Clave → función hash → posición: acceso casi inmediato (salvo colisiones).",
+      "ejemplo_practico": "Guardar sesiones por sessionId calculando hash(sessionId) para ubicar el valor.",
+      "conclusion_final": "El método se llama acceso calculado o hash."
+    }
+  },
+  {
+    "id": "UT1-Q14",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "En el contexto de acceso hash, ¿qué ocurre cuando la fórmula matemática da el mismo resultado para dos datos diferentes?",
+    "contexto": "Hashing y colisiones.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Se produce una redundancia automática." },
+      {
+        "clave": "b",
+        "texto": "Se crea un nuevo fichero índice automáticamente."
+      },
+      {
+        "clave": "c",
+        "texto": "Se genera un error de \"Colisión\" que hay que gestionar."
+      },
+      {
+        "clave": "d",
+        "texto": "El sistema sobrescribe el primer dato con el segundo."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Cuando dos claves distintas producen el mismo valor hash, se produce una colisión. Es un caso normal que debe gestionarse con técnicas de resolución de colisiones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Redundancia es duplicar datos en varios sitios; aquí el problema es que dos claves caen en la misma posición."
+        },
+        {
+          "clave": "b",
+          "motivo": "Crear un índice nuevo es propio de sistemas indexados; hash se resuelve con estrategias de colisión, no creando un índice nuevo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un sistema correcto no debería sobrescribir silenciosamente; por eso se gestionan colisiones."
+        }
+      ],
+      "resumen_didactico": "Colisión = dos claves distintas con el mismo resultado hash → hay que resolverlo.",
+      "ejemplo_practico": "Dos usuarios distintos terminan en la misma 'casilla' de la tabla hash por la función usada.",
+      "conclusion_final": "Ese caso se llama colisión y debe gestionarse."
+    }
+  },
+  {
+    "id": "UT1-Q15",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "La industria informática evolucionó de los ficheros sueltos a las Bases de Datos. ¿Cuál fue la idea brillante que cambió las reglas del juego en esta transición?",
+    "contexto": "Evolución histórica: separar datos y proceso + repositorio central.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Unir los datos y el proceso en un solo archivo ejecutable."
+      },
+      {
+        "clave": "b",
+        "texto": "Obligar a todas las empresas a usar el mismo software de contabilidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminar el almacenamiento en disco para usar solo memoria RAM."
+      },
+      {
+        "clave": "d",
+        "texto": "Separar los datos del proceso, creando un repositorio central independiente"
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El cambio clave fue separar los datos del proceso: crear un repositorio central independiente para que múltiples aplicaciones accedan a la misma fuente, evitando redundancia e inconsistencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso empeora el problema: vuelve a 'atar' datos a la aplicación en lugar de independizarlos."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es una idea técnica de almacenamiento; es una imposición de herramienta, no un paradigma."
+        },
+        {
+          "clave": "c",
+          "motivo": "La persistencia requiere almacenamiento; usar solo RAM no resuelve necesidades reales."
+        }
+      ],
+      "resumen_didactico": "La BD nace cuando los datos dejan de estar 'por aplicación' y pasan a un repositorio central reutilizable.",
+      "ejemplo_practico": "RRHH, Contabilidad y Ventas consultan el mismo dato del empleado en una BD central.",
+      "conclusion_final": "La idea brillante fue separar datos del proceso y centralizar en un repositorio independiente."
+    }
+  },
+  {
+    "id": "UT1-Q16",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Según la definición teórica, una base de datos es como una biblioteca automatizada. Cuando entras en Amazon y ves \"Tus pedidos\", ¿dónde reside realmente esa información?",
+    "contexto": "Ejemplo Amazon: datos persistentes en BD central y acceso concurrente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En la memoria interna de tu dispositivo móvil."
+      },
+      {
+        "clave": "b",
+        "texto": "En un archivo de texto dentro de tu navegador web."
+      },
+      {
+        "clave": "c",
+        "texto": "En una base de datos centralizada a la que acceden millones de usuarios."
+      },
+      {
+        "clave": "d",
+        "texto": "En un servidor de correo electrónico temporal."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En sistemas como Amazon, la información (pedidos) se almacena en una base de datos del lado servidor, accesible por millones de usuarios de forma controlada; el cliente solo consulta y muestra.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El móvil puede cachear, pero no es la fuente persistente y central del historial de pedidos."
+        },
+        {
+          "clave": "b",
+          "motivo": "El navegador no guarda como fuente de verdad un fichero con tus pedidos; consulta al servidor/BD."
+        },
+        {
+          "clave": "d",
+          "motivo": "El correo notifica, pero no es el repositorio de pedidos ni el sistema de consulta."
+        }
+      ],
+      "resumen_didactico": "Apps masivas guardan la verdad en BD servidor; el cliente solo consume datos.",
+      "ejemplo_practico": "Ver tus pedidos desde móvil y PC con la misma información porque se consulta la misma BD central.",
+      "conclusion_final": "La información reside en una base de datos central (servidor) accesible por millones."
+    }
+  },
+  {
+    "id": "UT1-Q17",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Analizando la historia de las bases de datos, el modelo jerárquico fue muy usado por IBM en los mainframes. ¿Cuál era su principal limitación?",
+    "contexto": "Modelo jerárquico: estructura en árbol y rigidez.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No permitía guardar datos numéricos, solo texto."
+      },
+      {
+        "clave": "b",
+        "texto": "Era demasiado flexible y permitía demasiadas relaciones."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo funcionaba en ordenadores personales, no en servidores."
+      },
+      {
+        "clave": "d",
+        "texto": "Era muy rígido; conectar datos de ramas distintas era muy difícil."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El modelo jerárquico organiza datos como un árbol. Su limitación es la rigidez: relacionar información entre ramas distintas del árbol es difícil.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El problema no es el tipo de dato (numérico/texto), sino la estructura rígida."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es demasiado flexible; precisamente es rígido. El modelo en red surgió para mayor flexibilidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Se asocia a mainframes (servidores grandes), no a PCs."
+        }
+      ],
+      "resumen_didactico": "Jerárquico = árbol: bien si encaja, pero malo para relaciones cruzadas entre ramas.",
+      "ejemplo_practico": "Un empleado trabajando en proyectos de varios departamentos complica el árbol jerárquico.",
+      "conclusion_final": "La limitación principal fue su rigidez para conectar ramas distintas."
+    }
+  },
+  {
+    "id": "UT1-Q18",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "¿Cuál es el modelo de base de datos que domina el mundo desde los años 80, organizando la información en tablas conectadas entre sí?",
+    "contexto": "Modelo relacional: tablas y relaciones.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Modelo Orientado a Grafos." },
+      { "clave": "b", "texto": "Modelo NoSQL." },
+      { "clave": "c", "texto": "Modelo Relacional." },
+      { "clave": "d", "texto": "Modelo Jerárquico." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El modelo relacional domina desde los años 80 y organiza datos en tablas conectadas por relaciones, con enfoque fuerte en integridad y consistencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Grafos es un tipo NoSQL específico para relaciones complejas, no el estándar dominante desde los 80."
+        },
+        {
+          "clave": "b",
+          "motivo": "NoSQL es una familia posterior para casos específicos; no es el modelo dominante histórico desde los 80."
+        },
+        {
+          "clave": "d",
+          "motivo": "Jerárquico es un modelo clásico anterior, rígido y no basado en tablas relacionadas."
+        }
+      ],
+      "resumen_didactico": "Tablas + relaciones + dominio desde los 80 = modelo relacional.",
+      "ejemplo_practico": "Clientes(id) y Pedidos(cliente_id) conectados por clave foránea.",
+      "conclusion_final": "El modelo es el Relacional."
+    }
+  },
+  {
+    "id": "UT1-Q19",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Trabajas con datos complejos de ingeniería (CAD) y video. El modelo de tablas se queda corto. ¿Qué modelo guarda la información con sus atributos y métodos, tal cual están en el código?",
+    "contexto": "Modelo orientado a objetos para datos complejos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Modelo Clave-Valor." },
+      { "clave": "b", "texto": "Modelo Secuencial Indexado." },
+      { "clave": "c", "texto": "Modelo Orientado a Objetos." },
+      { "clave": "d", "texto": "Modelo Relacional puro." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El modelo orientado a objetos permite almacenar la información como objetos, conservando atributos y métodos, útil cuando tablas relacionales se quedan cortas (CAD, video, ingeniería).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Clave-valor es para acceso ultra rápido a valores por clave (cachés), no para objetos con métodos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Secuencial indexado es una estructura de ficheros/método de acceso, no un modelo de BD para objetos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Relacional puro se basa en tablas; la pregunta describe precisamente el caso donde queda corto."
+        }
+      ],
+      "resumen_didactico": "Si quieres persistir 'objetos del código' (atributos+métodos), el modelo natural es el orientado a objetos.",
+      "ejemplo_practico": "Persistir una clase PiezaCAD con geometría, material y métodos de cálculo.",
+      "conclusion_final": "El modelo es Orientado a Objetos."
+    }
+  },
+  {
+    "id": "UT1-Q20",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "PostgreSQL y Oracle son considerados los máximos exponentes de un modelo que fusiona las tablas relacionales con capacidades avanzadas. ¿Cómo se llama este modelo?",
+    "contexto": "Modelo objeto-relacional (relacional + capacidades OO).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Modelo Jerárquico extendido." },
+      { "clave": "b", "texto": "Modelo NoSQL Documental." },
+      { "clave": "c", "texto": "Modelo de Red Neuronal." },
+      { "clave": "d", "texto": "Modelo Objeto-Relacional." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El modelo objeto-relacional fusiona el enfoque relacional (tablas) con capacidades avanzadas inspiradas en orientación a objetos; se citan PostgreSQL y Oracle como exponentes potentes y robustos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El jerárquico es un modelo clásico en árbol; no describe la fusión relacional+OO."
+        },
+        {
+          "clave": "b",
+          "motivo": "Documental (NoSQL) se centra en documentos tipo JSON, no en tablas relacionales con capacidades OO."
+        },
+        {
+          "clave": "c",
+          "motivo": "Red neuronal no es un modelo de base de datos, sino de IA."
+        }
+      ],
+      "resumen_didactico": "Tablas + 'trucos' OO = objeto-relacional.",
+      "ejemplo_practico": "Mantener integridad relacional, pero soportar tipos/estructuras avanzadas en el motor.",
+      "conclusion_final": "Se llama Modelo Objeto-Relacional."
+    }
+  },
+  {
+    "id": "UT1-Q21",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Estás desarrollando una aplicación Web moderna (MERN Stack) y necesitas flexibilidad para guardar documentos JSON sin una estructura rígida de columnas fijas. ¿Qué base de datos es ideal para esto?",
+    "contexto": "NoSQL documental para MERN y JSON flexible.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "MongoDB." },
+      { "clave": "b", "texto": "MySQL." },
+      { "clave": "c", "texto": "Microsoft Access." },
+      { "clave": "d", "texto": "Oracle DB." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Para documentos completos y flexibles (JSON/BSON) sin esquema rígido de columnas, el NoSQL documental es ideal; MongoDB es el ejemplo típico y encaja con MERN.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "MySQL es relacional (tablas y esquema), más rígido para cambios frecuentes de estructura."
+        },
+        {
+          "clave": "c",
+          "motivo": "Access se orienta a entornos pequeños/ofimáticos, no a stacks web modernos tipo MERN."
+        },
+        {
+          "clave": "d",
+          "motivo": "Oracle es corporativo/objeto-relacional; no es la opción típica para documentos JSON sin rigidez."
+        }
+      ],
+      "resumen_didactico": "JSON flexible + desarrollo web moderno → NoSQL documental → MongoDB.",
+      "ejemplo_practico": "Usuarios con campos variables (preferencias, perfiles, redes) sin migrar columnas constantemente.",
+      "conclusion_final": "La opción ideal es MongoDB."
+    }
+  },
+  {
+    "id": "UT1-Q22",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Necesitas un sistema que gestione relaciones complejas tipo red social (\"Tú conoces a X, que conoce a Y\") de forma eficiente. ¿Qué tipo de base de datos NoSQL debes elegir?",
+    "contexto": "Relaciones y recorridos eficientes: grafos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Basada en Grafos (ej: Neo4j)." },
+      { "clave": "b", "texto": "Columnar (ej: HBase)." },
+      { "clave": "c", "texto": "Relacional (ej: SQL Server)." },
+      { "clave": "d", "texto": "Clave-Valor (ej: Redis)." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las bases NoSQL basadas en grafos están diseñadas para modelar y consultar redes de relaciones (nodos y aristas) de forma eficiente; Neo4j es el ejemplo típico para redes sociales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Columnar se orienta a analítica masiva por columnas, no a navegación de relaciones tipo grafo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Relacional puede modelar relaciones, pero la pregunta pide específicamente NoSQL para relaciones tipo red social."
+        },
+        {
+          "clave": "d",
+          "motivo": "Clave-valor es para acceso ultra rápido por clave, no para consultas de caminos y conexiones."
+        }
+      ],
+      "resumen_didactico": "Relaciones tipo 'amigo de amigo' → grafos.",
+      "ejemplo_practico": "Recomendaciones: 'personas a 2 saltos' o 'camino más corto entre dos usuarios'.",
+      "conclusion_final": "Debes elegir una NoSQL basada en grafos (Neo4j)."
+    }
+  },
+  {
+    "id": "UT1-Q23",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Tu empresa necesita realizar \"Inteligencia de Negocios\" (BI) cruzando ventas por año, región y producto rapidísimo. ¿Qué tipo de base de datos especializada organiza los datos en \"cubos\"?",
+    "contexto": "BI y análisis por dimensiones (cubos).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Base de datos Multidimensional." },
+      { "clave": "b", "texto": "Base de datos Jerárquica." },
+      { "clave": "c", "texto": "Base de datos de Texto Plano." },
+      { "clave": "d", "texto": "Base de datos Documental." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las bases de datos multidimensionales se asocian a BI y organizan información en cubos para consultar rápidamente métricas por dimensiones (tiempo, región, producto).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Jerárquica es un árbol para navegación padre-hijo; no está enfocada en cubos BI."
+        },
+        {
+          "clave": "c",
+          "motivo": "Texto plano (CSV/JSON) almacena datos, pero no ofrece consultas BI optimizadas por cubos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Documental guarda documentos flexibles; no es el modelo especializado de cubos BI."
+        }
+      ],
+      "resumen_didactico": "BI rápido por dimensiones = cubos = multidimensional.",
+      "ejemplo_practico": "Consultar ventas 2025 por región y por producto con respuesta casi instantánea.",
+      "conclusion_final": "Se trata de una base de datos multidimensional."
+    }
+  },
+  {
+    "id": "UT1-Q24",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Tienes una aplicación con millones de usuarios y necesitas que la base de datos escale automáticamente sin intervención manual. ¿Qué tipo de base de datos \"Cloud Native\" utilizarías?",
+    "contexto": "Cloud Native: escalado automático (BigQuery/Aurora).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un archivo Excel compartido en la nube." },
+      { "clave": "b", "texto": "Google BigQuery o Amazon Aurora." },
+      { "clave": "c", "texto": "SQLite." },
+      { "clave": "d", "texto": "Microsoft Access." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Las bases Cloud Native están diseñadas para operar en la nube y escalar automáticamente. BigQuery y Aurora se citan como ejemplos de este enfoque.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Excel en la nube sigue siendo un fichero, no una BD cloud-native con escalado automático y control de concurrencia robusto."
+        },
+        {
+          "clave": "c",
+          "motivo": "SQLite es embebida/local, no un servicio cloud-native escalable para millones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Access se orienta a escenarios pequeños y no ofrece escalado automático cloud-native."
+        }
+      ],
+      "resumen_didactico": "Millones de usuarios + escalado automático → Cloud Native (servicios gestionados).",
+      "ejemplo_practico": "Una app pasa de 10k a 1M usuarios y el servicio de BD escala sin redimensionar manualmente servidores.",
+      "conclusion_final": "La opción cloud-native correcta es BigQuery o Aurora."
+    }
+  },
+  {
+    "id": "UT1-Q25",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "¿Cuál es la diferencia principal entre una base de datos centralizada y una distribuida en términos de seguridad ante desastres?",
+    "contexto": "Centralizada vs distribuida: tolerancia a fallos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La centralizada es más segura porque todo está en un sitio."
+      },
+      {
+        "clave": "b",
+        "texto": "La distribuida es más lenta y por tanto menos propensa a errores."
+      },
+      {
+        "clave": "c",
+        "texto": "No hay diferencia, ambas dependen de un solo disco duro."
+      },
+      {
+        "clave": "d",
+        "texto": "La distribuida ofrece tolerancia a fallos; si cae un servidor, otro sigue funcionando."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Una BD centralizada tiene un punto único de fallo. Una distribuida replica/reparte datos y servicio, ofreciendo tolerancia a fallos: si cae un nodo, otro puede seguir.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Centralizar simplifica, pero aumenta el riesgo: si cae el único servidor, cae todo."
+        },
+        {
+          "clave": "b",
+          "motivo": "La velocidad no determina la propensión a errores; la clave aquí es resiliencia ante fallos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Distribuida implica varios nodos/servidores, no un único disco."
+        }
+      ],
+      "resumen_didactico": "Distribuida = resiliencia; centralizada = single point of failure.",
+      "ejemplo_practico": "Si un servidor se cae por una avería, el clúster distribuido sigue atendiendo desde otro nodo.",
+      "conclusion_final": "La distribuida aporta tolerancia a fallos ante desastres."
+    }
+  },
+  {
+    "id": "UT1-Q26",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "¿Qué es exactamente un Sistema Gestor de Bases de Datos (SGBD) según la analogía del almacén?",
+    "contexto": "Analogía almacén: BD = almacén; SGBD = gerente/intermediario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es el software intermediario y \"gerente\" que opera entre el usuario y los datos físicos."
+      },
+      {
+        "clave": "b",
+        "texto": "Es el edificio físico donde se guardan los discos duros."
+      },
+      {
+        "clave": "c",
+        "texto": "Es el conjunto de cables que conectan los servidores."
+      },
+      {
+        "clave": "d",
+        "texto": "Es el lenguaje de programación que usa el cliente (Java o Python)."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El SGBD es el software que gestiona la BD: actúa como intermediario entre usuarios/aplicaciones y los datos físicos, aportando control (acceso, seguridad, integridad, concurrencia, etc.).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso es infraestructura/hardware; el SGBD es software."
+        },
+        {
+          "clave": "c",
+          "motivo": "Cables y red no son el sistema gestor; son parte del entorno físico."
+        },
+        {
+          "clave": "d",
+          "motivo": "Java/Python son lenguajes para construir apps; el SGBD es el motor que administra datos."
+        }
+      ],
+      "resumen_didactico": "SGBD = 'gerente' que organiza y controla el almacén (BD).",
+      "ejemplo_practico": "Tu API consulta PostgreSQL/MySQL; el SGBD localiza datos y aplica reglas de seguridad/integridad.",
+      "conclusion_final": "Un SGBD es el software intermediario que administra el acceso a los datos."
+    }
+  },
+  {
+    "id": "UT1-Q27",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Estás en una entrevista para Backend. Te piden escribir instrucciones para gestionar la información en una base de datos. ¿Qué lenguaje estándar es el \"rey absoluto\" que debes dominar?",
+    "contexto": "Lenguaje estándar para consultar y manipular bases de datos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "HTML (HyperText Markup Language)." },
+      { "clave": "b", "texto": "XML (Extensible Markup Language)." },
+      { "clave": "c", "texto": "SQL (Structured Query Language)." },
+      { "clave": "d", "texto": "JSON (JavaScript Object Notation)." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "SQL es el lenguaje estándar para definir, consultar y manipular datos en bases de datos (especialmente relacionales) a través del SGBD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "HTML estructura páginas web; no es un lenguaje de gestión de BD."
+        },
+        {
+          "clave": "b",
+          "motivo": "XML es un formato de datos, no el lenguaje estándar de consulta/gestión de BD."
+        },
+        {
+          "clave": "d",
+          "motivo": "JSON es un formato de intercambio/almacenamiento, no un lenguaje estándar de consulta en SGBD relacionales."
+        }
+      ],
+      "resumen_didactico": "Para trabajar con BD en backend, la herramienta clave es SQL.",
+      "ejemplo_practico": "SELECT para consultar pedidos, INSERT para crear registros, UPDATE para modificar datos.",
+      "conclusion_final": "El lenguaje estándar a dominar es SQL."
+    }
+  },
+  {
+    "id": "UT1-Q28",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Imagina la venta de entradas de un concierto donde 10.000 personas intentan comprar el último asiento a la vez. ¿Qué función del SGBD evita que se venda el mismo asiento 50 veces?",
+    "contexto": "Acceso simultáneo a los mismos datos (stock/última entrada).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Copia de seguridad incremental." },
+      { "clave": "b", "texto": "Diccionario de datos." },
+      { "clave": "c", "texto": "Interfaz gráfica de usuario." },
+      { "clave": "d", "texto": "Control de concurrencia." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El control de concurrencia coordina accesos simultáneos para evitar inconsistencias (por ejemplo, vender el último asiento varias veces).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un backup protege ante pérdida/recuperación, no resuelve conflictos simultáneos en tiempo real."
+        },
+        {
+          "clave": "b",
+          "motivo": "El diccionario de datos describe metadatos/estructura; no gestiona compras simultáneas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una GUI es una herramienta de administración, no un mecanismo de consistencia concurrente."
+        }
+      ],
+      "resumen_didactico": "Concurrencia = muchos a la vez; el SGBD evita conflictos y duplicidades.",
+      "ejemplo_practico": "Dos compras simultáneas del mismo producto: el SGBD controla que solo una actualice el stock final.",
+      "conclusion_final": "La función clave es el control de concurrencia."
+    }
+  },
+  {
+    "id": "UT1-Q29",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Necesitas elegir un SGBD para una aplicación web. Buscas el \"rey de la web\", gratuito y parte del stack LAMP/MERN. ¿Cuál eliges?",
+    "contexto": "Elección de SGBD común en web, gratuito, stack típico.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Oracle." },
+      { "clave": "b", "texto": "MySQL." },
+      { "clave": "c", "texto": "SAP HANA." },
+      { "clave": "d", "texto": "Microsoft Access." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "MySQL se presenta como SGBD libre/gratuito muy popular en entornos web (clásicamente asociado a LAMP) y recomendado como opción habitual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Oracle es un SGBD comercial corporativo; no encaja con 'gratuito' y enfoque web clásico."
+        },
+        {
+          "clave": "c",
+          "motivo": "SAP HANA es enterprise/comercial, no el 'rey de la web' gratuito."
+        },
+        {
+          "clave": "d",
+          "motivo": "Access se orienta a escenarios pequeños/ofimáticos, no a backend web moderno."
+        }
+      ],
+      "resumen_didactico": "Para web y gratuito, la opción típica es MySQL (muy extendida en hosting y stacks web).",
+      "ejemplo_practico": "Backend PHP/Node con MySQL para usuarios, pedidos y productos en un servidor web estándar.",
+      "conclusion_final": "La elección es MySQL."
+    }
+  },
+  {
+    "id": "UT1-Q30",
+    "tema": "UT1 Introducción y almacenamiento de la información",
+    "pregunta": "Estás desarrollando una app móvil para Android que debe guardar datos localmente en el dispositivo. No necesitas un servidor cliente-servidor, sino una librería ligera. ¿Qué SGBD utilizas?",
+    "contexto": "Base de datos embebida para móvil (local, ligera).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "PostgreSQL." },
+      { "clave": "b", "texto": "MongoDB Enterprise." },
+      { "clave": "c", "texto": "Cassandra." },
+      { "clave": "d", "texto": "SQLite." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "SQLite es una base de datos embebida: funciona como librería dentro de la app, ideal para almacenamiento local en móviles sin arquitectura cliente-servidor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "PostgreSQL suele desplegarse como servidor SGBD; no es la opción embebida ligera típica en Android."
+        },
+        {
+          "clave": "b",
+          "motivo": "MongoDB Enterprise es un despliegue de servidor/infra, no una librería embebida local mínima."
+        },
+        {
+          "clave": "c",
+          "motivo": "Cassandra se orienta a escenarios distribuidos a gran escala, no a persistencia local en móvil."
+        }
+      ],
+      "resumen_didactico": "Móvil + local + ligero + sin servidor = SQLite.",
+      "ejemplo_practico": "Guardar preferencias, favoritos e historial offline de la app en SQLite dentro del dispositivo.",
+      "conclusion_final": "El SGBD adecuado es SQLite."
+    }
+  }
+]
