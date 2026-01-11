@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "UT2-Q01",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Te encuentras analizando sistemas bancarios antiguos de los años 60, donde cruzar datos de un cliente con sus préstamos era una tarea casi imposible debido a los \"silos aislados\". ¿Qué propuesta revolucionaria de Edgar Frank Codd en 1970 solucionó este caos?",
+    "contexto": "Problemas para cruzar datos en sistemas antiguos por uso de silos aislados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un modelo jerárquico basado en árboles genealógicos complejos."
+      },
+      {
+        "clave": "b",
+        "texto": "La eliminación de los SGBD para permitir acceso directo al hardware."
+      },
+      {
+        "clave": "c",
+        "texto": "El modelo relacional, que organiza los datos mediante vínculos lógicos y álgebra."
+      },
+      {
+        "clave": "d",
+        "texto": "La creación de discos duros SSD para acelerar la búsqueda física."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Codd propuso en 1970 el modelo relacional: organizar los datos en relaciones (tablas) conectadas por vínculos lógicos, con una base formal (álgebra relacional) que facilita consultas y cruces entre datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El modelo jerárquico existía, pero es rígido y no es la propuesta de Codd para resolver el problema de los silos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Eliminar el SGBD rompe el control y la independencia; el SGBD es el intermediario que permite acceso seguro y consistente a los datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los SSD son tecnología posterior y, además, la solución de Codd es conceptual/lógica, no un cambio de hardware."
+        }
+      ],
+      "resumen_didactico": "El salto de Codd fue pasar de datos aislados a tablas relacionadas que se pueden consultar de forma lógica.",
+      "ejemplo_practico": "En un banco: Clientes(id) y Prestamos(id_cliente). Con el modelo relacional, puedes obtener los préstamos de un cliente uniendo tablas por id_cliente.",
+      "conclusion_final": "La propuesta clave de 1970 fue el modelo relacional: tablas relacionadas y consultas lógicas para eliminar el caos de los silos."
+    }
+  },
+  {
+    "id": "UT2-Q02",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Estás explicando a un becario la importancia de los SGBD (Sistemas Gestores de Bases de Datos). Si usas la analogía del restaurante mencionada en la unidad, ¿qué rol cumple exactamente el SGBD?",
+    "contexto": "Analogía del restaurante para entender el papel del SGBD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es el camarero que actúa como intermediario seguro entre el usuario y la cocina (datos)."
+      },
+      { "clave": "b", "texto": "Es el menú impreso que ve el cliente." },
+      {
+        "clave": "c",
+        "texto": "Es el dueño del restaurante que define los precios."
+      },
+      { "clave": "d", "texto": "Es el cocinero que prepara los datos." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El SGBD actúa como intermediario: recibe las peticiones del usuario (consultas), las gestiona y devuelve resultados, aplicando control de acceso y protegiendo los datos, igual que un camarero entre cliente y cocina.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El menú solo representa opciones; no ejecuta, valida ni controla accesos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El dueño define políticas, pero no realiza la gestión técnica de peticiones y acceso a datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La cocina serían los datos/almacenamiento; el SGBD no es el dato, sino quien lo gestiona."
+        }
+      ],
+      "resumen_didactico": "Un SGBD recibe consultas, controla permisos y devuelve resultados sin que el usuario toque directamente los datos.",
+      "ejemplo_practico": "Una app ejecuta un SELECT; el SGBD lo interpreta, consulta tablas, aplica permisos y responde con el resultado.",
+      "conclusion_final": "En la analogía, el SGBD es el camarero: intermediario seguro entre usuario y datos."
+    }
+  },
+  {
+    "id": "UT2-Q03",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Una de las grandes ventajas del modelo relacional es que si la empresa cambia sus discos duros viejos por modernos SSDs, tu aplicación Java no se rompe ni se entera. ¿Cómo denominó Codd a este objetivo fundamental?",
+    "contexto": "Cambio de almacenamiento físico sin afectar a la aplicación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Flexibilidad de seguridad." },
+      { "clave": "b", "texto": "Estandarización lógica." },
+      { "clave": "c", "texto": "Independencia lógica y física de los datos." },
+      { "clave": "d", "texto": "Simplicidad jerárquica." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Codd definió como objetivo la independencia de los datos: cambios físicos (como hardware o estructuras internas) no deben afectar a las aplicaciones ni al esquema lógico, y viceversa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La seguridad es importante, pero no describe la independencia frente a cambios de almacenamiento."
+        },
+        {
+          "clave": "b",
+          "motivo": "La estandarización lógica trata de organizar datos en tablas/relaciones, no del aislamiento frente a cambios físicos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El modelo relacional no es jerárquico; esta opción no corresponde al objetivo descrito."
+        }
+      ],
+      "resumen_didactico": "Independencia física: cambias cómo se guarda, sin cambiar cómo se usa; independencia lógica: cambios lógicos con mínimo impacto en vistas/aplicaciones.",
+      "ejemplo_practico": "Migras de HDD a SSD y mantienes el mismo esquema y consultas SQL; el SGBD absorbe el cambio interno.",
+      "conclusion_final": "El objetivo es la independencia lógica y física: separar aplicaciones y modelo lógico de los detalles de almacenamiento."
+    }
+  },
+  {
+    "id": "UT2-Q04",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Siguiendo la metodología de Roger S. Pressman para el análisis de software, estás diseñando una app logística. ¿Qué elemento colocas en el centro de todo el análisis, conectando los diagramas de flujo y de transición?",
+    "contexto": "Metodología de análisis donde varios diagramas se apoyan en una referencia común.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El Diccionario de Datos." },
+      { "clave": "b", "texto": "El código fuente SQL." },
+      { "clave": "c", "texto": "La interfaz de usuario (UI)." },
+      { "clave": "d", "texto": "El presupuesto del proyecto." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En el enfoque de Pressman, el Diccionario de Datos centraliza la definición de los datos (metadatos) y conecta coherentemente los diagramas de flujo de datos y de transición de estados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SQL es propio de implementación; el análisis se centra en modelar y definir datos, no en codificar consultas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La UI no es el artefacto central que garantiza coherencia semántica de los datos en el análisis."
+        },
+        {
+          "clave": "d",
+          "motivo": "El presupuesto es gestión del proyecto, no un artefacto técnico de análisis."
+        }
+      ],
+      "resumen_didactico": "El diccionario de datos es la fuente de verdad sobre qué significan los datos y cómo se describen en el sistema.",
+      "ejemplo_practico": "Si un DFD habla de \"Pedido\" y otro diagrama de \"Orden\", el diccionario aclara si son lo mismo y qué atributos tienen.",
+      "conclusion_final": "En Pressman, el Diccionario de Datos es el núcleo que alinea los diagramas y evita ambigüedades."
+    }
+  },
+  {
+    "id": "UT2-Q05",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Estás en una reunión con un cliente tomando un café y dibujas en una servilleta tres círculos: \"Usuarios\", \"Películas\" y \"Suscripciones\", sin preocuparte por la tecnología. ¿En qué fase de la modelización de datos te encuentras?",
+    "contexto": "Modelado de alto nivel centrado en conceptos del negocio.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Implementación." },
+      { "clave": "b", "texto": "Modelo Físico." },
+      { "clave": "c", "texto": "Modelo Conceptual." },
+      { "clave": "d", "texto": "Modelo Lógico." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El modelo conceptual describe entidades y relaciones del dominio en términos de negocio, sin decisiones tecnológicas ni de almacenamiento; es justo lo que haces al identificar conceptos en una servilleta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Implementación implica construir la BD (DDL/SQL) en un SGBD."
+        },
+        {
+          "clave": "b",
+          "motivo": "El modelo físico entra en tipos concretos, índices y consideraciones del motor/almacenamiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "El lógico traduce el conceptual a una estructura formal (tablas/relaciones) más detallada, ya más cerca de la BD."
+        }
+      ],
+      "resumen_didactico": "Conceptual = qué existe y cómo se relaciona; aún no hay tablas ni tipos.",
+      "ejemplo_practico": "Dibujas Usuario–Suscripción–Película y conversas con el cliente sobre reglas: \"un usuario puede tener varias suscripciones\".",
+      "conclusion_final": "Estás en el modelo conceptual porque estás capturando el dominio sin entrar en tecnología."
+    }
+  },
+  {
+    "id": "UT2-Q06",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Has avanzado en el proyecto y ahora debes decidir si un campo será un VARCHAR(100) o un DATE, y definir índices para optimizar el rendimiento en un software específico como PostgreSQL. ¿En qué modelo estás trabajando?",
+    "contexto": "Decisiones técnicas específicas del motor: tipos e índices.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Modelo Conceptual." },
+      { "clave": "b", "texto": "Modelo de Negocio." },
+      { "clave": "c", "texto": "Modelo Físico." },
+      { "clave": "d", "texto": "Modelo Lógico." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El modelo físico concreta cómo se implementará en un SGBD específico: tipos de datos, índices, optimización y aspectos de almacenamiento/rendimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El conceptual no entra en tipos ni optimización; solo conceptos del negocio."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es una fase formal equivalente aquí; lo descrito es claramente diseño físico."
+        },
+        {
+          "clave": "d",
+          "motivo": "El lógico define tablas, claves y relaciones, pero normalmente sin fijar tipos exactos e índices del motor concreto."
+        }
+      ],
+      "resumen_didactico": "Elegir tipos concretos e índices es diseño físico porque afecta a implementación y rendimiento.",
+      "ejemplo_practico": "Definir fecha_nacimiento DATE, nombre VARCHAR(100) y un índice sobre email en PostgreSQL es propio del modelo físico.",
+      "conclusion_final": "Si decides tipos e índices en un SGBD concreto, estás trabajando en el modelo físico."
+    }
+  },
+  {
+    "id": "UT2-Q07",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Te incorporas a un proyecto con 500 tablas y necesitas saber qué significa el campo estado_usr. Consultas el \"documento de identidad\" de la información que contiene los metadatos (tipo, descripción, restricciones). ¿Qué estás consultando?",
+    "contexto": "Necesidad de metadatos para comprender campos en un sistema grande.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El log de errores del servidor." },
+      { "clave": "b", "texto": "El diagrama de flujo de datos (DFD)." },
+      { "clave": "c", "texto": "El código fuente de la aplicación." },
+      { "clave": "d", "texto": "El Diccionario de Datos" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El Diccionario de Datos es el repositorio de metadatos: define significado, tipo, formato y restricciones de cada dato/campo, especialmente útil en sistemas grandes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los logs registran incidencias de ejecución, no definiciones semánticas de campos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un DFD muestra procesos y flujos, pero se apoya en el diccionario para detallar datos concretos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El código puede usar el campo, pero no es una definición formal y centralizada de significado y restricciones."
+        }
+      ],
+      "resumen_didactico": "Para entender qué representa un dato y qué reglas lo gobiernan, consultás el diccionario de datos.",
+      "ejemplo_practico": "El diccionario puede indicar que estado_usr ∈ {ACTIVO, BLOQUEADO, BAJA} y es NOT NULL con valor por defecto ACTIVO.",
+      "conclusion_final": "Metadatos (significado, tipo y reglas) = Diccionario de Datos."
+    }
+  },
+  {
+    "id": "UT2-Q08",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Según la arquitectura ANSI/SPARC, ¿cómo se denomina al nivel que representa la visión global de la información (el esquema lógico que une todo), independientemente de cómo se guarde físicamente o quién lo mire?",
+    "contexto": "Arquitectura de 3 niveles para separar vistas, lógica global y almacenamiento.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Nivel Externo." },
+      { "clave": "b", "texto": "Nivel Conceptual." },
+      { "clave": "c", "texto": "Nivel de Usuario." },
+      { "clave": "d", "texto": "Nivel Interno." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En ANSI/SPARC, el nivel conceptual describe el esquema lógico global de la base de datos, independiente del almacenamiento físico (interno) y de las vistas particulares (externo).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El externo son vistas específicas por usuario o aplicación, no la visión global."
+        },
+        {
+          "clave": "c",
+          "motivo": "\"Nivel de usuario\" se asocia al externo, pero el nombre formal del esquema global es conceptual."
+        },
+        {
+          "clave": "d",
+          "motivo": "El interno describe detalles físicos de almacenamiento y estructuras internas."
+        }
+      ],
+      "resumen_didactico": "Externo = vistas; Conceptual = esquema lógico global; Interno = almacenamiento físico.",
+      "ejemplo_practico": "Marketing ve una vista parcial, Finanzas otra (externo), pero el esquema conceptual unifica entidades y relaciones del sistema completo.",
+      "conclusion_final": "La visión global lógica corresponde al nivel conceptual."
+    }
+  },
+  {
+    "id": "UT2-Q09",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "En la arquitectura ANSI/SPARC, si decides cambiar la forma de indexar los archivos en el disco duro para ganar velocidad, pero el esquema conceptual no cambia y las vistas de usuario siguen funcionando, ¿qué tipo de independencia has logrado?",
+    "contexto": "Cambio en nivel interno sin afectar a niveles superiores.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Independencia de red." },
+      { "clave": "b", "texto": "Independencia lógica." },
+      { "clave": "c", "texto": "Independencia de usuario." },
+      { "clave": "d", "texto": "Independencia física." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Cambiar índices y organización en disco afecta al nivel interno. Si no impacta al esquema conceptual ni a las vistas, se logra independencia física: los cambios físicos no alteran el uso lógico de los datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es una independencia definida en ANSI/SPARC para este caso."
+        },
+        {
+          "clave": "b",
+          "motivo": "La independencia lógica se refiere a cambios en el esquema conceptual sin afectar vistas externas."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es el término formal; el concepto relevante es independencia física o lógica."
+        }
+      ],
+      "resumen_didactico": "Optimizar almacenamiento/índices sin romper consultas ni vistas es independencia física.",
+      "ejemplo_practico": "Añades un índice B-Tree y las pantallas siguen igual porque la app usa el mismo SELECT y el SGBD gestiona el cambio interno.",
+      "conclusion_final": "Si cambias el almacenamiento/índices sin afectar a usuarios ni esquema, has logrado independencia física."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Sofía, la arquitecta de datos de EcoFood, está en la fase de \"Análisis de requisitos\". ¿Cuál es su objetivo principal en esta primera etapa?",
+    "contexto": "Primera etapa del proceso de diseño: entender necesidades del cliente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Escribir el código SQL para crear las tablas."
+      },
+      {
+        "clave": "b",
+        "texto": "Optimizar los índices para búsquedas rápidas."
+      },
+      {
+        "clave": "c",
+        "texto": "Dibujar el diagrama Entidad/Relación en una pizarra."
+      },
+      {
+        "clave": "d",
+        "texto": "Determinar el propósito, alcance y necesidades del sistema con el cliente."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El análisis de requisitos busca definir propósito, alcance, reglas de negocio y necesidades de información/consultas con el cliente antes de modelar o implementar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "SQL pertenece a implementación, no a requisitos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Índices y rendimiento son diseño físico posterior."
+        },
+        {
+          "clave": "c",
+          "motivo": "El DER es típico del diseño conceptual, que viene tras recopilar requisitos."
+        }
+      ],
+      "resumen_didactico": "Primero se entiende el problema; luego se diseña el modelo y finalmente se implementa.",
+      "ejemplo_practico": "EcoFood define qué datos necesita (productos, lotes, pedidos) y qué consultas hará a diario antes de dibujar el DER.",
+      "conclusion_final": "En requisitos se acuerda qué necesita el sistema y hasta dónde llega, antes de diseñar o codificar."
+    }
+  },
+  {
+    "id": "UT2-Q11",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Durante la fase de \"Diseño lógico\" de una base de datos, ¿qué tarea principal se lleva a cabo?",
+    "contexto": "Traducción del modelo conceptual a una estructura formal para un tipo de BD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se realizan pruebas de estrés para romper la base de datos."
+      },
+      { "clave": "b", "texto": "Se configuran los discos duros del servidor." },
+      {
+        "clave": "c",
+        "texto": "Se transforma el modelo conceptual en una representación específica para un tipo de SGBD (ej: relacional)."
+      },
+      { "clave": "d", "texto": "Se cargan los datos reales de los clientes." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El diseño lógico transforma el modelo conceptual (E/R) en una representación acorde al tipo de SGBD, típicamente el modelo relacional: tablas, claves y relaciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las pruebas de estrés son parte de pruebas/validación, no del diseño lógico."
+        },
+        {
+          "clave": "b",
+          "motivo": "Configurar discos es infraestructura/almacenamiento (interno), no lógica."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cargar datos reales es población/operación, posterior a diseño e implementación."
+        }
+      ],
+      "resumen_didactico": "El lógico convierte el \"qué\" conceptual en una estructura de BD (tablas y claves) lista para implementarse.",
+      "ejemplo_practico": "Usuario–Suscripción se convierte en tablas usuarios y suscripciones con una FK id_usuario.",
+      "conclusion_final": "Diseño lógico = traducir el conceptual a estructura relacional (tablas, claves, relaciones)."
+    }
+  },
+  {
+    "id": "UT2-Q12",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "El equipo de QA (Control de Calidad) está intentando \"hacer trampas\" creando un pedido sin cliente o poniendo precios negativos. ¿En qué etapa del diseño de base de datos se encuentran?",
+    "contexto": "Validación de reglas e integridad intentando introducir datos inválidos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Implementación y población." },
+      { "clave": "b", "texto": "Pruebas y validación." },
+      { "clave": "c", "texto": "Diseño Conceptual." },
+      { "clave": "d", "texto": "Mantenimiento." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Probar casos inválidos (pedido sin cliente, precios negativos) verifica restricciones e integridad. Esa actividad corresponde a pruebas y validación del diseño/implementación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Implementación crea estructuras; aquí se está comprobando su robustez con casos negativos."
+        },
+        {
+          "clave": "c",
+          "motivo": "En conceptual se modelan entidades/relaciones; no se insertan datos para probar constraints."
+        },
+        {
+          "clave": "d",
+          "motivo": "Mantenimiento ocurre tras puesta en marcha, no en la fase inicial de aseguramiento de calidad."
+        }
+      ],
+      "resumen_didactico": "QA intenta romper el sistema para confirmar que las reglas se cumplen y los datos mantienen integridad.",
+      "ejemplo_practico": "Un CHECK (precio>=0) impide precios negativos y una FK + NOT NULL impide pedidos sin cliente.",
+      "conclusion_final": "Intentar introducir datos ilegales es propio de pruebas y validación."
+    }
+  },
+  {
+    "id": "UT2-Q13",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Según la metodología Métrica-3, ¿qué es exactamente un Diagrama Entidad/Relación (E/R)?",
+    "contexto": "Definición de DER en la fase conceptual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una técnica para representar los datos de un sistema independientemente de la tecnología."
+      },
+      {
+        "clave": "b",
+        "texto": "Un gráfico que muestra el flujo de pantallas de la aplicación móvil."
+      },
+      {
+        "clave": "c",
+        "texto": "Una herramienta exclusiva de Oracle para optimizar consultas."
+      },
+      {
+        "clave": "d",
+        "texto": "Un script de código que genera la base de datos automáticamente."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El DER es una técnica de modelado conceptual para representar entidades, atributos y relaciones del sistema, independiente del SGBD o tecnología de implementación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso es navegación/UI, no modelado de datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es exclusiva de ningún fabricante; es una técnica general."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es código; la generación automática corresponde a fases/ herramientas de implementación."
+        }
+      ],
+      "resumen_didactico": "El DER describe el dominio (datos y relaciones) en lenguaje neutral antes de convertirlo en tablas.",
+      "ejemplo_practico": "En streaming: Usuario, Suscripción y Película con cardinalidades, sin hablar de SQL.",
+      "conclusion_final": "Un DER es una técnica conceptual, independiente de tecnología, para modelar datos."
+    }
+  },
+  {
+    "id": "UT2-Q14",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Estás modelando una biblioteca. Tienes la entidad \"Libro\" (título, autor) y la entidad \"Ejemplar\" (las copias físicas). Si eliminas el \"Libro\", los \"Ejemplares\" desaparecen. ¿Qué tipo de entidad es \"Ejemplar\"?",
+    "contexto": "Dependencia de existencia de Ejemplar respecto a Libro.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Entidad Débil." },
+      { "clave": "b", "texto": "Entidad Candidata." },
+      { "clave": "c", "texto": "Entidad Fuerte." },
+      { "clave": "d", "texto": "Entidad Reflexiva." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una entidad débil depende de una entidad fuerte para existir/identificarse. Ejemplar no tiene sentido sin su Libro; al eliminar Libro, desaparecen sus ejemplares.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "\"Candidata\" se aplica a claves, no a tipos de entidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una entidad fuerte puede existir por sí misma; aquí Ejemplar depende de Libro."
+        },
+        {
+          "clave": "d",
+          "motivo": "Reflexiva describe una relación consigo misma, no dependencia de existencia."
+        }
+      ],
+      "resumen_didactico": "Si una entidad no puede existir sin otra, es débil; la que puede existir por sí misma es fuerte.",
+      "ejemplo_practico": "Ejemplar se identifica por (id_libro + num_ejemplar). Sin id_libro, no hay identidad ni sentido.",
+      "conclusion_final": "Ejemplar es entidad débil porque su existencia depende del Libro."
+    }
+  },
+  {
+    "id": "UT2-Q15",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Al definir los atributos de una entidad \"COCHE\", estableces reglas de oro. ¿Cuál de las siguientes es una regla fundamental para los atributos?",
+    "contexto": "Selección de atributos identificativos y unicidad de ocurrencias.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No puede haber dos ocurrencias idénticas (dos coches con misma matrícula y bastidor)."
+      },
+      {
+        "clave": "b",
+        "texto": "Cada ocurrencia debe tener atributos totalmente diferentes a las demás."
+      },
+      {
+        "clave": "c",
+        "texto": "Una entidad no puede tener más de 3 atributos."
+      },
+      {
+        "clave": "d",
+        "texto": "Los atributos deben ser siempre números enteros."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las ocurrencias de una entidad deben ser distinguibles mediante atributos identificativos (claves). Por eso no pueden existir dos coches con el mismo identificador (p.ej., bastidor o matrícula), ya que la identificación debe ser única.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Muchos atributos pueden repetirse (marca, color) y aun así ser coches distintos; no exige que todos los atributos sean diferentes."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe ese límite; el número de atributos depende del análisis del dominio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los atributos pueden ser texto, fecha, códigos, etc.; no tienen que ser enteros."
+        }
+      ],
+      "resumen_didactico": "La regla clave es poder identificar sin ambigüedad cada ocurrencia: unicidad del identificador.",
+      "ejemplo_practico": "Dos coches pueden ser \"Seat Ibiza\" azul, pero no pueden compartir el mismo número de bastidor.",
+      "conclusion_final": "La unicidad del identificador (clave) es la regla fundamental; el resto de restricciones no son correctas."
+    }
+  },
+  {
+    "id": "UT2-Q16",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "En un diagrama E/R, necesitas representar que un alumno es \"delegado\" de otros alumnos. No quieres crear una entidad nueva. ¿Qué tipo de relación utilizas?",
+    "contexto": "Una entidad se relaciona consigo misma con roles distintos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Relación Exclusiva." },
+      { "clave": "b", "texto": "Relación Binaria." },
+      { "clave": "c", "texto": "Relación Ternaria." },
+      { "clave": "d", "texto": "Relación Reflexiva." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Una relación reflexiva (recursiva) se da cuando una entidad se relaciona consigo misma; aquí ALUMNO actúa como delegado y como representado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Exclusiva es una restricción avanzada; no describe el hecho básico de relacionar una entidad consigo misma."
+        },
+        {
+          "clave": "b",
+          "motivo": "Binaria suele referirse a dos entidades distintas; aquí es una misma entidad con dos roles."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ternaria implica tres entidades/roles principales, no aplica aquí."
+        }
+      ],
+      "resumen_didactico": "Si A se relaciona con A (misma entidad, distintos roles), la relación es reflexiva.",
+      "ejemplo_practico": "ALUMNO —(esDelegadoDe)→ ALUMNO, con roles Delegado y Representado.",
+      "conclusion_final": "Para un alumno delegado de otros alumnos, se usa una relación reflexiva."
+    }
+  },
+  {
+    "id": "UT2-Q17",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Estás diseñando un sistema para un instituto donde un \"Alumno\" cursa un \"Módulo\" que pertenece a un \"Ciclo\". La acción afecta a los tres a la vez. ¿Cómo clasificas esta relación según su grado?",
+    "contexto": "Relación que involucra tres entidades en un único hecho.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Relación N-aria recursiva." },
+      { "clave": "b", "texto": "Relación Binaria." },
+      { "clave": "c", "texto": "Relación Reflexiva." },
+      { "clave": "d", "texto": "Relación Ternaria." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El grado de una relación es el número de entidades que participan. Si intervienen Alumno, Módulo y Ciclo simultáneamente, es una relación ternaria (grado 3).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Recursiva implica una entidad consigo misma; aquí son entidades distintas. N-aria sería genérico para 4+ o \"N\", pero el caso es 3."
+        },
+        {
+          "clave": "b",
+          "motivo": "Binaria solo involucra dos entidades; aquí se indica que afecta a tres a la vez."
+        },
+        {
+          "clave": "c",
+          "motivo": "Reflexiva es una entidad relacionada consigo misma; no aplica."
+        }
+      ],
+      "resumen_didactico": "Dos entidades → binaria; tres → ternaria; misma entidad consigo misma → reflexiva.",
+      "ejemplo_practico": "Alumno A cursa Módulo X dentro del Ciclo Y; el hecho completo depende de las tres entidades.",
+      "conclusion_final": "Como participan tres entidades en el mismo hecho, la relación es ternaria."
+    }
+  },
+  {
+    "id": "UT2-Q18",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Analizando la relación entre \"Profesor\" y \"Módulo\", determinas que un módulo es impartido por un solo profesor, pero un profesor puede impartir varios módulos. ¿Cuál es la cardinalidad de esta relación?",
+    "contexto": "Asignación de profesor a módulos con multiplicidad asimétrica.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Uno a Uno (1:1)." },
+      { "clave": "b", "texto": "Cero a Cero (0:0)." },
+      { "clave": "c", "texto": "Muchos a Muchos (M:N)." },
+      { "clave": "d", "texto": "Uno a Muchos (1:N)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Si cada Módulo se asocia con 1 Profesor, pero un Profesor puede asociarse con muchos Módulos, la cardinalidad es 1:N.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "1:1 implicaría que un profesor solo imparte un módulo, lo cual contradice el enunciado."
+        },
+        {
+          "clave": "b",
+          "motivo": "0:0 no describe una relación de negocio válida aquí."
+        },
+        {
+          "clave": "c",
+          "motivo": "M:N permitiría varios profesores por módulo, lo cual se niega en el enunciado."
+        }
+      ],
+      "resumen_didactico": "Cuando un lado es único y el otro múltiple, la relación es 1:N.",
+      "ejemplo_practico": "Profesor Ana imparte Bases de Datos, Programación y Sistemas; cada módulo tiene un profesor asignado.",
+      "conclusion_final": "La cardinalidad correcta es Uno a Muchos (1:N)."
+    }
+  },
+  {
+    "id": "UT2-Q19",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "En la relación \"Cliente - Tarjeta VIP\", determinas que un cliente puede no tener tarjeta o tener una sola. ¿Cómo expresas esta modalidad (mínimos y máximos)?",
+    "contexto": "Participación opcional y máxima 1.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "(1,N)." },
+      { "clave": "b", "texto": "(1,1)." },
+      { "clave": "c", "texto": "(0,1)." },
+      { "clave": "d", "texto": "(0,N)." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La modalidad se expresa como (mín, máx). Si el cliente puede tener 0 tarjetas o como máximo 1, entonces (0,1).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "(1,N) obliga a tener al menos 1 y permite varias."
+        },
+        { "clave": "b", "motivo": "(1,1) obliga exactamente a 1." },
+        {
+          "clave": "d",
+          "motivo": "(0,N) permitiría 0 o muchas, pero el enunciado limita a una sola."
+        }
+      ],
+      "resumen_didactico": "Opcional → mínimo 0; único → máximo 1.",
+      "ejemplo_practico": "Cliente A sin tarjeta: 0; Cliente B con tarjeta: 1; no se permite 2 tarjetas.",
+      "conclusion_final": "La modalidad correcta es (0,1)."
+    }
+  },
+  {
+    "id": "UT2-Q20",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Para definir correctamente la modalidad mínima, el texto recomienda hacerse una \"pregunta clave\". ¿Cuál es esa pregunta en el caso de un usuario y su foto de perfil?",
+    "contexto": "Criterio para decidir si la participación mínima es 0 o 1.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "¿Es la foto un dato numérico o de texto?" },
+      { "clave": "b", "texto": "¿La foto ocupa mucho espacio en disco?" },
+      { "clave": "c", "texto": "¿Cuántas fotos puede tener como máximo?" },
+      {
+        "clave": "d",
+        "texto": "¿Puede existir un usuario sin foto de perfil? (Pregunta del cero)."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Para fijar el mínimo se plantea la \"pregunta del cero\": ¿puede existir la entidad sin participar en la relación? Si un usuario puede existir sin foto, el mínimo es 0; si no, es 1.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El tipo de dato es decisión de diseño físico, no define participación mínima."
+        },
+        {
+          "clave": "b",
+          "motivo": "El espacio en disco es consideración física/rendimiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso ayuda a definir el máximo, no el mínimo."
+        }
+      ],
+      "resumen_didactico": "Para el mínimo, pregúntate si puede existir sin la relación. Si sí, mínimo 0; si no, mínimo 1.",
+      "ejemplo_practico": "Si el registro de usuario se permite sin foto y la foto se sube después, entonces el mínimo en Usuario–Foto es 0.",
+      "conclusion_final": "La modalidad mínima se decide con la \"pregunta del cero\": si puede existir sin foto, es opcional."
+    }
+  },
+  {
+    "id": "UT2-Q21",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Tienes una relación muchos a muchos (M:N) entre \"Empleado\" y \"Curso\". Necesitas guardar la \"Fecha de Inicio\" del curso. ¿Dónde debes colocar este atributo en el diagrama E/R?",
+    "contexto": "Dato que depende de la asociación Empleado–Curso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Colgando de la relación \"Recibe\" (atributo de relación)."
+      },
+      {
+        "clave": "b",
+        "texto": "En una entidad aparte llamada \"Calendario\"."
+      },
+      { "clave": "c", "texto": "En la entidad Curso." },
+      { "clave": "d", "texto": "En la entidad Empleado." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En una M:N, los datos que dependen del vínculo (inscripción/recepción del curso) se modelan como atributos de la relación, porque varían por pareja Empleado–Curso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Solo tendría sentido si Calendario fuera entidad del dominio con identidad propia; para un dato del vínculo, basta atributo de relación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Pondría una única fecha para el curso en general, pero la fecha puede variar por empleado/edición."
+        },
+        {
+          "clave": "d",
+          "motivo": "La fecha depende del curso concreto que recibe; no es atributo intrínseco del empleado."
+        }
+      ],
+      "resumen_didactico": "Si el dato responde a \"para este empleado en este curso\", es atributo de relación.",
+      "ejemplo_practico": "Laura recibe Curso X y empieza el 03/03; Carlos recibe el mismo curso y empieza el 10/04: la fecha pertenece a la relación.",
+      "conclusion_final": "La Fecha de Inicio debe ir en la relación (atributo de relación) en una M:N."
+    }
+  },
+  {
+    "id": "UT2-Q22",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Debes elegir la Clave Primaria (PK) para la entidad \"SOCIO\". ¿Por qué el \"Nombre\" no es una buena opción y se prefiere un \"Código de Socio\"?",
+    "contexto": "Elección de identificador único y estable.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque el nombre ocupa más espacio en memoria."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el nombre no se puede subrayar en el diagrama."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque el nombre no garantiza unicidad (hay muchos \"Pepes\") y la PK debe ser única."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque las claves primarias deben ser siempre numéricas obligatoriamente."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La PK debe identificar de forma única cada ocurrencia. Un nombre puede repetirse; un código de socio se diseña para ser único y evitar ambigüedad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El espacio no es el criterio principal; lo esencial es unicidad y estabilidad del identificador."
+        },
+        {
+          "clave": "b",
+          "motivo": "El subrayado es notación; no determina si un atributo sirve como PK."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una PK no tiene por qué ser numérica; puede ser alfanumérica o compuesta mientras sea única."
+        }
+      ],
+      "resumen_didactico": "Una PK debe ser única; atributos como nombre no lo garantizan.",
+      "ejemplo_practico": "Dos socios llamados \"Juan Pérez\" serían indistinguibles si el nombre fuese PK; con un código S-000123 y S-000987 no hay duda.",
+      "conclusion_final": "Se prefiere un código porque la PK debe ser única y el nombre no lo asegura."
+    }
+  },
+  {
+    "id": "UT2-Q23",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "En la entidad \"CLIENTE\", has elegido el \"Código Cliente\" como clave primaria. Sin embargo, el \"NIF\" también es único para cada persona y podría haber servido. ¿Qué nombre recibe este atributo \"NIF\"?",
+    "contexto": "Atributo alternativo que también identifica de forma única.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Clave Foránea." },
+      { "clave": "b", "texto": "Clave Candidata." },
+      { "clave": "c", "texto": "Clave Compuesta." },
+      { "clave": "d", "texto": "Clave Débil." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Una clave candidata es un atributo (o conjunto) que podría ser clave primaria porque identifica de forma única. Si la PK es Código Cliente pero NIF también es único, NIF es clave candidata.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Foránea referencia a la PK de otra entidad; NIF no está referenciando otra entidad aquí."
+        },
+        {
+          "clave": "c",
+          "motivo": "Compuesta implica varios atributos; NIF es un solo atributo."
+        },
+        {
+          "clave": "d",
+          "motivo": "\"Débil\" se usa para entidades; no es una clasificación estándar de claves en este contexto."
+        }
+      ],
+      "resumen_didactico": "PK = la clave elegida; candidatas = alternativas únicas que podrían haber sido PK.",
+      "ejemplo_practico": "CLIENTE(codigo_cliente PK, nif UNIQUE). El nif podría ser PK, pero se elige otro identificador por diseño.",
+      "conclusion_final": "El NIF es una clave candidata porque también identifica unívocamente al cliente."
+    }
+  },
+  {
+    "id": "UT2-Q24",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "En un sistema de ventas, la relación entre \"Venta\" y \"Producto\" es M:N (muchos a muchos). ¿Qué atributos de relación surgen típicamente en este vínculo específico?",
+    "contexto": "Detalle de líneas de venta en una relación M:N.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cantidad y Precio Unitario (de esa venta concreta)."
+      },
+      { "clave": "b", "texto": "Nombre del producto y Dirección del cliente." },
+      { "clave": "c", "texto": "Fecha de nacimiento y DNI." },
+      {
+        "clave": "d",
+        "texto": "Categoría del producto y Teléfono del cliente."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En una M:N Venta–Producto, los atributos que describen cada línea de venta pertenecen al vínculo: cantidad vendida y precio unitario aplicado en esa venta, que puede diferir del precio general del producto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Nombre del producto es de Producto y dirección es de Cliente; no son del vínculo Venta–Producto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Son datos personales ajenos al detalle de venta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Categoría es de Producto y teléfono de Cliente; no describen la línea de venta."
+        }
+      ],
+      "resumen_didactico": "En M:N, lo que depende de la asociación (línea) va como atributo de relación.",
+      "ejemplo_practico": "Venta #150 incluye Producto Teclado con cantidad 2 y precio unitario 19,90€; esos datos no son del producto en abstracto.",
+      "conclusion_final": "En Venta–Producto, lo típico es modelar cantidad y precio unitario como atributos del vínculo."
+    }
+  },
+  {
+    "id": "UT2-Q25",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Estás modelando una flota de vehículos. Un vehículo puede tener motor para GASOIL o para GASOLINA, pero no ambos a la vez (no hay híbridos en tu modelo). ¿Qué tipo de restricción de exclusividad es esta?",
+    "contexto": "Restricción de exclusividad en E/R extendido: elección única entre alternativas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Disjunta." },
+      { "clave": "b", "texto": "Solapada." },
+      { "clave": "c", "texto": "Reflexiva." },
+      { "clave": "d", "texto": "Inclusiva." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una exclusividad disjunta significa \"una u otra\" alternativa, pero nunca ambas simultáneamente. Si no hay híbridos, el vehículo solo puede estar en GASOIL o en GASOLINA.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Solapada permitiría pertenecer a ambas a la vez (híbrido), lo cual el enunciado descarta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Reflexiva es una relación de una entidad consigo misma, no una exclusividad entre alternativas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Inclusiva expresa dependencia/implicación entre relaciones, no exclusividad \"uno u otro\"."
+        }
+      ],
+      "resumen_didactico": "Disjunta = mutuamente excluyente; solapada = compatible (puede estar en ambas).",
+      "ejemplo_practico": "TipoMotor ∈ {GASOIL, GASOLINA} y solo uno. Un vehículo no puede tener ambos tipos simultáneamente.",
+      "conclusion_final": "Como solo puede ser GASOIL o GASOLINA, la restricción es disjunta."
+    }
+  },
+  {
+    "id": "UT2-Q26",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "En una academia, tienes un PROFESOR y un CURSO. La regla ética dice que un profesor no puede ser alumno del mismo curso que imparte. ¿Qué tipo de restricción aplicas entre las relaciones \"Imparte\" y \"Recibe\"?",
+    "contexto": "Incompatibilidad entre dos relaciones para las mismas ocurrencias.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Generalización." },
+      { "clave": "b", "texto": "Exclusión." },
+      { "clave": "c", "texto": "Agregación." },
+      { "clave": "d", "texto": "Inclusión." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La restricción de exclusión indica que, para el mismo profesor y el mismo curso, no pueden coexistir las relaciones Imparte y Recibe: son mutuamente incompatibles en ese contexto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Generalización es jerarquía supertipo/subtipo, no incompatibilidad entre relaciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "Agregación trata una relación como entidad para relacionarla con otra; no es el caso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Inclusión es una dependencia del tipo \"si A entonces B\"; aquí se prohíbe la coexistencia."
+        }
+      ],
+      "resumen_didactico": "Exclusión = si existe una relación, la otra no puede existir para el mismo par de entidades.",
+      "ejemplo_practico": "Si Marta imparte \"Programación I\", el sistema debe impedir que Marta figure como alumna de \"Programación I\".",
+      "conclusion_final": "La regla \"no puede ser alumno del curso que imparte\" se modela con exclusión entre relaciones."
+    }
+  },
+  {
+    "id": "UT2-Q27",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Para que un PROFESOR pueda \"Impartir\" un curso avanzado, el sistema exige que previamente lo haya \"Recibido\" para formarse. ¿Qué restricción se representa con una flecha discontinua entre las relaciones?",
+    "contexto": "Dependencia/prerrequisito entre relaciones.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Exclusividad disjunta." },
+      { "clave": "b", "texto": "Inclusión." },
+      { "clave": "c", "texto": "Exclusión." },
+      { "clave": "d", "texto": "Totalidad." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La restricción de inclusión expresa que la existencia de una relación implica la existencia previa o simultánea de otra. Aquí, Impartir está condicionado a haber Recibido antes (Impartir ⇒ Recibir).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Disjunta es exclusividad \"uno u otro\", no prerequisito."
+        },
+        {
+          "clave": "c",
+          "motivo": "Exclusión prohíbe coexistencia; aquí se exige una relación como condición."
+        },
+        {
+          "clave": "d",
+          "motivo": "Totalidad se refiere a participación obligatoria en una jerarquía o relación, no a dependencia entre dos relaciones distintas."
+        }
+      ],
+      "resumen_didactico": "Inclusión = prerequisito: para que ocurra A, debe ocurrir B.",
+      "ejemplo_practico": "Solo asignas a un profesor como docente del curso avanzado si hay registro de que lo cursó como alumno previamente.",
+      "conclusion_final": "La flecha discontinua entre relaciones representa inclusión: Impartir requiere haber Recibido."
+    }
+  },
+  {
+    "id": "UT2-Q28",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Utilizas una jerarquía para modelar \"EMPLEADO\" (Supertipo) con dos variantes: \"ASALARIADO\" y \"FREELANCE\" (Subtipos). ¿Qué ventaja principal ofrece este enfoque?",
+    "contexto": "Uso de supertipo/subtipo para organizar atributos comunes y específicos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Convierte todas las relaciones en 1:1." },
+      {
+        "clave": "b",
+        "texto": "Elimina la necesidad de usar claves primarias."
+      },
+      {
+        "clave": "c",
+        "texto": "Evita redundancia al no repetir atributos comunes y organiza mejor la estructura lógica."
+      },
+      {
+        "clave": "d",
+        "texto": "Permite duplicar los datos para mayor seguridad."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La jerarquía supertipo/subtipo centraliza atributos comunes en el supertipo y deja en cada subtipo los específicos, evitando repetición de información y mejorando la claridad del modelo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las cardinalidades no se convierten automáticamente en 1:1 por usar jerarquías."
+        },
+        {
+          "clave": "b",
+          "motivo": "Siguen siendo necesarias claves para identificar entidades; normalmente el identificador del supertipo se usa en los subtipos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Duplicar datos aumenta inconsistencias; el objetivo del modelado es reducir redundancia y mejorar consistencia."
+        }
+      ],
+      "resumen_didactico": "Supertipo/subtipo reduce redundancia y separa lo común de lo específico.",
+      "ejemplo_practico": "EMPLEADO(id, nombre, dni) y luego ASALARIADO(salario) y FREELANCE(tarifa_hora) sin repetir nombre/dni.",
+      "conclusion_final": "La principal ventaja es evitar redundancia y estructurar mejor el modelo lógico."
+    }
+  },
+  {
+    "id": "UT2-Q29",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "En la jerarquía de empleados, defines una restricción \"Total\". ¿Qué implica esto para el supertipo EMPLEADO?",
+    "contexto": "Participación total del supertipo en sus subtipos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que todo empleado debe ser obligatoriamente o Asalariado o Freelance (no puede estar en el limbo)."
+      },
+      {
+        "clave": "b",
+        "texto": "Que un empleado puede no pertenecer a ningún subtipo."
+      },
+      {
+        "clave": "c",
+        "texto": "Que la entidad Empleado se borra y solo quedan los subtipos."
+      },
+      {
+        "clave": "d",
+        "texto": "Que un empleado puede ser Asalariado y Freelance a la vez."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una restricción total significa que toda ocurrencia del supertipo debe pertenecer al menos a un subtipo: no existen empleados sin clasificar en Asalariado o Freelance.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe una jerarquía parcial, no total."
+        },
+        {
+          "clave": "c",
+          "motivo": "El supertipo sigue existiendo para agrupar atributos y relaciones comunes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Pertenecer a ambos depende de disjunta/solapada; \"total\" no implica pertenencia múltiple, solo obligatoriedad de pertenecer a alguno."
+        }
+      ],
+      "resumen_didactico": "Total = no hay instancias del supertipo fuera de los subtipos.",
+      "ejemplo_practico": "Si la empresa solo contrata asalariados o freelancers, cualquier EMPLEADO debe estar en uno de esos subtipos.",
+      "conclusion_final": "Con restricción total, todo EMPLEADO debe pertenecer a algún subtipo (sin empleados \"en el limbo\")."
+    }
+  },
+  {
+    "id": "UT2-Q30",
+    "tema": "UT2 — Bases de datos relacionales",
+    "pregunta": "Tienes una relación \"Entrevista\" entre un empleado y un candidato. De ese hecho surge una \"OFERTA\" de trabajo. Si encierras la relación \"Entrevista\" en un recuadro para conectarla con \"Oferta\", ¿qué técnica estás usando?",
+    "contexto": "Tratar una relación como objeto para relacionarla con otra entidad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Especialización." },
+      { "clave": "b", "texto": "Generalización." },
+      { "clave": "c", "texto": "Reflexividad." },
+      { "clave": "d", "texto": "Agregación." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La agregación permite considerar una relación como una unidad (casi como entidad) para que participe en otra relación. Encerrar \"Entrevista\" en un recuadro y conectarla con \"Oferta\" es agregación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Especialización es dividir un supertipo en subtipos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Generalización es agrupar subtipos en un supertipo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Reflexividad es una entidad relacionada consigo misma; no aplica aquí."
+        }
+      ],
+      "resumen_didactico": "Cuando un hecho (relación) debe relacionarse con otra entidad, se usa agregación para modelarlo.",
+      "ejemplo_practico": "La OFERTA se asocia a la ENTREVISTA concreta (fecha, entrevistador, candidato), no solo al empleado o al candidato por separado.",
+      "conclusion_final": "Encerrar una relación para conectarla con otra entidad es agregación."
+    }
+  }
+]

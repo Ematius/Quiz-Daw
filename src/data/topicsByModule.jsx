@@ -84,5 +84,10 @@ export const topicsByModule = {
       title: "Introducción y almacenamiento de la información",
       numQuestion: 30,
     },
+    {
+      id: "UT2",
+      title: "Bases de datos relacionales",
+      numQuestion: 30,
+    },
   ],
 };

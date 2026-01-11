@@ -1,13 +1,14 @@
+/** @format */
 
 @use "./variables" as *;
 @use "./base";
-
 
 // Layout general
 body {
   display: flex;
   flex-direction: column;
 }
+
 
 #root {
   flex: 1;
@@ -16,12 +17,11 @@ body {
 }
 
 .app-shell {
+  display: flex;
   flex: 1;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
 }
-
 
 // Contenedor principal de páginas
 .page-container {
@@ -39,7 +39,6 @@ body {
   font-size: 5rem;
   color: $color-primary;
   -webkit-text-stroke: 0.2px whitesmoke;
-
 }
 
 // Pequeño helper para secciones
@@ -64,13 +63,11 @@ body {
   border: 1px solid $color-border-subtle;
 
   font-weight: 600;
-  transition: transform $transition-fast,
-    background-color $transition-normal,
-    border-color $transition-normal,
-    box-shadow $transition-normal;
+  transition: transform $transition-fast, background-color $transition-normal,
+    border-color $transition-normal, box-shadow $transition-normal;
 
   &:hover {
-    background: rgba(99, 102, 241, 0.10);
+    background: rgba(99, 102, 241, 0.1);
     border-color: rgba(99, 102, 241, 0.55);
     transform: translateY(-1px);
   }
@@ -84,4 +81,3 @@ body {
     box-shadow: 0 0 0 4px $color-primary-soft;
   }
 }
-
