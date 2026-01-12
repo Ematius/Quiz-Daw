@@ -89,5 +89,10 @@ export const topicsByModule = {
       title: "Bases de datos relacionales",
       numQuestion: 30,
     },
+    {
+      id: "UT3",
+      title: "El modelo relacional. Normalización.",
+      numQuestion:30,
+    },
   ],
 };

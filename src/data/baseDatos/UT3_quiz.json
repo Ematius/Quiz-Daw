@@ -1,0 +1,1444 @@
+
+[
+  {
+    "id": "UT3-Q01",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Entras como desarrollador Junior en DataTech Solutions y te encuentras un caos de datos duplicados y desordenados en archivos de texto. ¿Qué técnica debes aplicar para eliminar redundancias y limpiar la base de datos?",
+    "contexto": "Escenario de datos duplicados y desordenados; se busca un diseño relacional limpio y sin redundancias.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La integridad referencial en cascada."
+      },
+      {
+        "clave": "b",
+        "texto": "La concurrencia optimista."
+      },
+      {
+        "clave": "c",
+        "texto": "La normalización."
+      },
+      {
+        "clave": "d",
+        "texto": "La indexación masiva."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La normalización organiza los datos en tablas correctas (1FN, 2FN, 3FN, etc.) para reducir duplicidad y evitar anomalías de inserción/actualización/borrado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Cascade es una política de borrado/actualización entre tablas (FK), no una técnica para eliminar redundancias estructurales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Concurrencia optimista gestiona accesos simultáneos, no elimina duplicados del modelo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los índices mejoran búsquedas; no corrigen un mal diseño con datos repetidos."
+        }
+      ],
+      "resumen_didactico": "Normalizar es poner cada dato 'en su casa' para evitar que se repita y cause inconsistencias.",
+      "ejemplo_practico": "Separar CLIENTES y PEDIDOS: el nombre/dirección del cliente se guarda una vez en CLIENTES y PEDIDOS solo referencia con ClienteID.",
+      "conclusion_final": "La técnica adecuada para reducir redundancia y ordenar el modelo es la normalización."
+    }
+  },
+  {
+    "id": "UT3-Q02",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En la teoría de bases de datos, el modelo relacional fue definido por un matemático de IBM para superar la rigidez de modelos anteriores. ¿Quién fue?",
+    "contexto": "Pregunta teórica sobre el autor del modelo relacional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Edgar Frank Codd."
+      },
+      {
+        "clave": "b",
+        "texto": "Tim Berners-Lee."
+      },
+      {
+        "clave": "c",
+        "texto": "Roger S. Pressman."
+      },
+      {
+        "clave": "d",
+        "texto": "Alan Turing."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El modelo relacional se atribuye a E. F. Codd (IBM), considerado el visionario que formalizó el paradigma relacional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Berners-Lee está asociado a la Web (WWW), no al modelo relacional."
+        },
+        {
+          "clave": "c",
+          "motivo": "Pressman es referencia en ingeniería del software, no en el origen del modelo relacional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Turing es fundamental en computación teórica, pero no definió el modelo relacional."
+        }
+      ],
+      "resumen_didactico": "El modelo relacional nace con E. F. Codd.",
+      "ejemplo_practico": "Al estudiar 'modelo relacional', el nombre clave histórico es E. F. Codd.",
+      "conclusion_final": "El autor del modelo relacional es Edgar Frank Codd."
+    }
+  },
+  {
+    "id": "UT3-Q03",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En una entrevista técnica te preguntan por el concepto de \"Relación\" en el modelo relacional. En la práctica, ¿con qué término lo equiparas?",
+    "contexto": "Traducción entre concepto teórico (relación) y elemento práctico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Con un diagrama de flujo."
+      },
+      {
+        "clave": "b",
+        "texto": "Con una clave foránea."
+      },
+      {
+        "clave": "c",
+        "texto": "Con una tabla."
+      },
+      {
+        "clave": "d",
+        "texto": "Con una consulta SQL."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En el paradigma relacional, una relación se implementa como una tabla (con filas/tuplas y columnas/atributos).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un diagrama de flujo modela procesos, no datos relacionales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una clave foránea es un mecanismo para relacionar tablas, no la relación (tabla) en sí."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una consulta SQL opera sobre tablas; no es la definición de relación."
+        }
+      ],
+      "resumen_didactico": "Relación (teoría) = tabla (implementación).",
+      "ejemplo_practico": "RELACION EMPLEADOS se materializa como la tabla EMPLEADOS en el SGBD.",
+      "conclusion_final": "Una relación, en la práctica, es una tabla."
+    }
+  },
+  {
+    "id": "UT3-Q04",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En la tabla EMPLEADOS observas la fila completa de \"Laura García\" con todos sus datos (DNI, cargo, teléfono). ¿Qué nombre técnico recibe esta fila en el modelo relacional?",
+    "contexto": "Identificación de elementos: fila vs columna vs esquema vs dominio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dominio."
+      },
+      {
+        "clave": "b",
+        "texto": "Esquema."
+      },
+      {
+        "clave": "c",
+        "texto": "Tupla."
+      },
+      {
+        "clave": "d",
+        "texto": "Atributo."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En una tabla, cada fila es una tupla (una ocurrencia concreta). Las columnas son atributos, y los valores válidos para un atributo forman su dominio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El dominio es el conjunto de valores válidos de un atributo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El esquema es la definición de la tabla (estructura)."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un atributo es una columna, no una fila."
+        }
+      ],
+      "resumen_didactico": "Fila = tupla; columna = atributo.",
+      "ejemplo_practico": "('12345678X','Laura García','Analista','600123123') es una tupla en EMPLEADOS.",
+      "conclusion_final": "Una fila completa de una tabla es una tupla."
+    }
+  },
+  {
+    "id": "UT3-Q05",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Estás definiendo la estructura de una base de datos y debes especificar qué valores son válidos para la columna \"Departamento\" (solo Desarrollo, Marketing o Ventas). ¿Qué concepto estás definiendo?",
+    "contexto": "Restricción de valores permitidos de una columna.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La primera forma normal."
+      },
+      {
+        "clave": "b",
+        "texto": "El dominio."
+      },
+      {
+        "clave": "c",
+        "texto": "La integridad referencial."
+      },
+      {
+        "clave": "d",
+        "texto": "La cardinalidad."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El dominio define el conjunto de valores válidos de un atributo (por tipo de dato y/o lista de valores permitidos).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "1FN trata de atomicidad de valores, no de enumerar valores permitidos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Integridad referencial trata de relaciones PK/FK entre tablas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cardinalidad describe 1:1, 1:N, M:N, no valores permitidos."
+        }
+      ],
+      "resumen_didactico": "Si defines 'qué puede valer' una columna, estás definiendo su dominio.",
+      "ejemplo_practico": "Departamento ∈ {Desarrollo, Marketing, Ventas}.",
+      "conclusion_final": "Limitar valores válidos de una columna es definir su dominio."
+    }
+  },
+  {
+    "id": "UT3-Q06",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Entrenas una IA y falla porque en el campo numérico \"Edad\" alguien escribió \"veinte\" con letras. ¿Qué aspecto del diseño no se ha respetado estrictamente?",
+    "contexto": "Validación y coherencia de tipos/dominios de atributos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La normalización 3FN."
+      },
+      {
+        "clave": "b",
+        "texto": "La concurrencia."
+      },
+      {
+        "clave": "c",
+        "texto": "El tipo de dato (Dominio)."
+      },
+      {
+        "clave": "d",
+        "texto": "La clave primaria."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Si 'Edad' debe ser numérica, su dominio/tipo de dato debe impedir valores no numéricos. Romper el dominio degrada la calidad del dato.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "3FN elimina dependencias transitivas; no controla que un valor sea numérico."
+        },
+        {
+          "clave": "b",
+          "motivo": "Concurrencia es acceso simultáneo, no validación de valores."
+        },
+        {
+          "clave": "d",
+          "motivo": "Clave primaria identifica filas; no define el formato de 'Edad'."
+        }
+      ],
+      "resumen_didactico": "Un tipo de dato/dominio bien definido evita basura como texto en un campo numérico.",
+      "ejemplo_practico": "Edad INT evita guardar 'veinte' y obliga a 20.",
+      "conclusion_final": "El problema es no respetar el tipo de dato (dominio) del campo."
+    }
+  },
+  {
+    "id": "UT3-Q07",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Para explicar NULL a un compañero, usas la analogía de un buzón: si el buzón está completamente vacío, ¿qué representa esto en la base de datos?",
+    "contexto": "Concepto de NULL como ausencia de información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La ausencia total de información (valor desconocido)."
+      },
+      {
+        "clave": "b",
+        "texto": "El número 0."
+      },
+      {
+        "clave": "c",
+        "texto": "Una cadena de texto vacía (\"\")."
+      },
+      {
+        "clave": "d",
+        "texto": "Un error de sintaxis."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "NULL representa ausencia de información (desconocido/no aplica/no proporcionado). No equivale a 0 ni a cadena vacía.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "0 es un valor numérico válido; NULL es 'no hay dato'."
+        },
+        {
+          "clave": "c",
+          "motivo": "\"\" es un valor (texto de longitud 0); NULL no es un texto."
+        },
+        {
+          "clave": "d",
+          "motivo": "NULL es un estado válido, no un error."
+        }
+      ],
+      "resumen_didactico": "NULL = no hay información; es distinto de 0 y de \"\".",
+      "ejemplo_practico": "Telefono = NULL significa 'no consta el teléfono'.",
+      "conclusion_final": "Un buzón vacío equivale a NULL: ausencia de información."
+    }
+  },
+  {
+    "id": "UT3-Q08",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En SQL, si escribes campo = NULL, el resultado es UNKNOWN. ¿Qué lógica especial utiliza el valor NULL?",
+    "contexto": "Evaluación de condiciones con valores desconocidos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Lógica Binaria (True/False)."
+      },
+      {
+        "clave": "b",
+        "texto": "Lógica Ternaria (True/False/Unknown)."
+      },
+      {
+        "clave": "c",
+        "texto": "Lógica Booleana estricta."
+      },
+      {
+        "clave": "d",
+        "texto": "Lógica Difusa."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "SQL trabaja con lógica ternaria: TRUE, FALSE y UNKNOWN, especialmente cuando interviene NULL. Por eso se usa IS NULL/IS NOT NULL.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La binaria no contempla UNKNOWN, clave con NULL."
+        },
+        {
+          "clave": "c",
+          "motivo": "Equivale a binaria; sigue sin UNKNOWN."
+        },
+        {
+          "clave": "d",
+          "motivo": "Lógica difusa usa grados de verdad; no es el caso de NULL en SQL."
+        }
+      ],
+      "resumen_didactico": "Con NULL aparece el tercer estado: UNKNOWN.",
+      "ejemplo_practico": "WHERE campo IS NULL selecciona los registros con valor NULL; campo = NULL no funciona como esperas.",
+      "conclusion_final": "NULL introduce lógica ternaria (TRUE/FALSE/UNKNOWN)."
+    }
+  },
+  {
+    "id": "UT3-Q09",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Al aplicar normalización, se compara con ordenar al estilo \"Marie Kondo\". ¿Cuál es el objetivo principal de pasar las tablas por las formas normales?",
+    "contexto": "Objetivo de formas normales (reducir redundancia y anomalías).",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Simplificar las relaciones y evitar que la información se duplique innecesariamente."
+      },
+      {
+        "clave": "b",
+        "texto": "Que ocupen más espacio en disco para mayor seguridad."
+      },
+      {
+        "clave": "c",
+        "texto": "Convertir todos los datos a formato binario."
+      },
+      {
+        "clave": "d",
+        "texto": "Complicar el diseño para que solo expertos puedan usarla."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las formas normales buscan un modelo consistente: menos redundancia, menos anomalías y relaciones claras mediante claves.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Más espacio no implica más seguridad; normalizar suele reducir repetición."
+        },
+        {
+          "clave": "c",
+          "motivo": "Binario es almacenamiento interno, no objetivo de normalización."
+        },
+        {
+          "clave": "d",
+          "motivo": "La normalización persigue mantenibilidad y coherencia, no complejidad artificial."
+        }
+      ],
+      "resumen_didactico": "Normalizar = reducir duplicados y evitar inconsistencias.",
+      "ejemplo_practico": "Separar CLIENTES y PEDIDOS evita repetir datos del cliente en cada pedido.",
+      "conclusion_final": "El objetivo es evitar duplicidad innecesaria y diseñar un modelo coherente."
+    }
+  },
+  {
+    "id": "UT3-Q10",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En una tabla de empleados, en la celda \"Mentores\" aparece \"Roberto, Ana, Carlos\". ¿Qué regla de la 1FN se está violando?",
+    "contexto": "1FN exige valores atómicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La integridad de entidad."
+      },
+      {
+        "clave": "b",
+        "texto": "La atomicidad (cada celda debe tener un único valor)."
+      },
+      {
+        "clave": "c",
+        "texto": "La dependencia funcional completa."
+      },
+      {
+        "clave": "d",
+        "texto": "La dependencia transitiva."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "1FN exige que cada atributo contenga valores atómicos (un único valor por celda), sin listas ni grupos repetidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Integridad de entidad se asocia a PK no nula; no es el problema descrito."
+        },
+        {
+          "clave": "c",
+          "motivo": "Dependencia funcional completa es criterio de 2FN (claves compuestas)."
+        },
+        {
+          "clave": "d",
+          "motivo": "Dependencia transitiva es criterio de 3FN."
+        }
+      ],
+      "resumen_didactico": "1FN: una celda, un valor.",
+      "ejemplo_practico": "Mentores='Roberto, Ana' rompe 1FN; debe modelarse con filas en otra tabla.",
+      "conclusion_final": "Se viola 1FN por falta de atomicidad."
+    }
+  },
+  {
+    "id": "UT3-Q11",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Para cumplir 1FN y resolver la lista de mentores en una sola celda, ¿cuál es la solución profesional correcta?",
+    "contexto": "Cómo modelar multivalor: tabla intermedia/relación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dejarlo como está y procesar el texto con código Java."
+      },
+      {
+        "clave": "b",
+        "texto": "Crear columnas extra: Mentor1, Mentor2, Mentor3."
+      },
+      {
+        "clave": "c",
+        "texto": "Repetir las filas del empleado tantas veces como mentores tenga."
+      },
+      {
+        "clave": "d",
+        "texto": "Crear una tabla nueva separada para relacionar empleados y mentores."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Cuando un atributo es multivaluado, se modela como relación: se crea una tabla aparte (normalmente intermedia) para representar empleado-mentor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Parsear texto mantiene un diseño no relacional y dificulta consultas/índices/integridad."
+        },
+        {
+          "clave": "b",
+          "motivo": "Columnas Mentor1..MentorN no escala y genera muchos NULL."
+        },
+        {
+          "clave": "c",
+          "motivo": "Duplicar filas repite datos del empleado y genera anomalías."
+        }
+      ],
+      "resumen_didactico": "Multi-valor no va en una celda; va en una relación (tabla aparte).",
+      "ejemplo_practico": "EMPLEADO(id,...) y EMPLEADO_MENTOR(id_empleado,id_mentor) con una fila por mentor.",
+      "conclusion_final": "La solución correcta es crear una tabla separada de relación."
+    }
+  },
+  {
+    "id": "UT3-Q12",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En LINEA_FACTURA con clave compuesta (Num_Factura + Cod_Producto), \"Descripción_Producto\" depende solo de Cod_Producto. ¿Qué forma normal incumple?",
+    "contexto": "Dependencia parcial en clave compuesta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Forma Normal de Boyce-Codd (FNBC)."
+      },
+      {
+        "clave": "b",
+        "texto": "Primera Forma Normal (1FN)."
+      },
+      {
+        "clave": "c",
+        "texto": "Segunda Forma Normal (2FN)."
+      },
+      {
+        "clave": "d",
+        "texto": "Tercera Forma Normal (3FN)."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "2FN exige que los atributos no clave dependan de toda la clave primaria compuesta. Si un atributo depende solo de una parte, hay dependencia parcial y viola 2FN.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FNBC es más estricta que 3FN; aquí el caso es el clásico de 2FN."
+        },
+        {
+          "clave": "b",
+          "motivo": "1FN va de atomicidad, no de dependencias parciales."
+        },
+        {
+          "clave": "d",
+          "motivo": "3FN va de dependencias transitivas; aquí el problema es parcial respecto a clave compuesta."
+        }
+      ],
+      "resumen_didactico": "Clave compuesta + atributo que depende de una parte = NO 2FN.",
+      "ejemplo_practico": "Separar PRODUCTO(Cod_Producto, Descripción) y dejar LINEA_FACTURA(Num_Factura,Cod_Producto,Cantidad).",
+      "conclusion_final": "Incumple 2FN por dependencia parcial."
+    }
+  },
+  {
+    "id": "UT3-Q13",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En una tabla USUARIOS: DNI determina Código Postal y Código Postal determina Ciudad (dependencia transitiva). ¿Qué forma normal aplicas para corregirlo?",
+    "contexto": "Eliminar dependencia transitiva.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cuarta Forma Normal (4FN)."
+      },
+      {
+        "clave": "b",
+        "texto": "Primera Forma Normal (1FN)."
+      },
+      {
+        "clave": "c",
+        "texto": "Segunda Forma Normal (2FN)."
+      },
+      {
+        "clave": "d",
+        "texto": "Tercera Forma Normal (3FN)."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "3FN elimina dependencias transitivas: los atributos no clave deben depender directamente de la clave primaria, no de otro atributo no clave.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "4FN trata dependencias multivaluadas; no es el caso."
+        },
+        {
+          "clave": "b",
+          "motivo": "1FN trata atomicidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "2FN trata dependencias parciales con clave compuesta."
+        }
+      ],
+      "resumen_didactico": "Si hay cadena tipo DNI → CP → Ciudad, necesitas 3FN.",
+      "ejemplo_practico": "Separar CIUDADES(Cod_Postal,Ciudad) y USUARIOS(DNI,...,Cod_Postal).",
+      "conclusion_final": "Para dependencias transitivas se aplica 3FN."
+    }
+  },
+  {
+    "id": "UT3-Q14",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Para alcanzar FNBC (Boyce-Codd) desde 3FN, ¿qué condición extra debe cumplir la tabla?",
+    "contexto": "Definición de FNBC.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Debe tener al menos dos claves foráneas."
+      },
+      {
+        "clave": "b",
+        "texto": "Todo determinante debe ser una clave candidata."
+      },
+      {
+        "clave": "c",
+        "texto": "No debe tener relaciones muchos a muchos."
+      },
+      {
+        "clave": "d",
+        "texto": "No debe tener valores NULL."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "FNBC es una 3FN reforzada: para toda dependencia funcional X → Y, el determinante X debe ser una clave candidata (superclave).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FNBC no depende del número de FKs."
+        },
+        {
+          "clave": "c",
+          "motivo": "M:N se resuelve con tabla intermedia, pero no define FNBC."
+        },
+        {
+          "clave": "d",
+          "motivo": "NULL es opcionalidad; FNBC es sobre dependencias funcionales."
+        }
+      ],
+      "resumen_didactico": "FNBC: si algo determina, debe ser clave candidata.",
+      "ejemplo_practico": "Si 'Nombre_Entrenador → Posición' y Nombre_Entrenador no es clave, toca separar en otra tabla.",
+      "conclusion_final": "En FNBC, todo determinante tiene que ser clave candidata."
+    }
+  },
+  {
+    "id": "UT3-Q15",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En un equipo de fútbol: \"Nombre_Entrenador\" determina \"Posición\", pero el entrenador no es clave candidata. ¿En qué estado queda la tabla?",
+    "contexto": "Caso típico del temario: en 3FN pero no FNBC.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cumple FNBC pero no 3FN."
+      },
+      {
+        "clave": "b",
+        "texto": "Cumple 3FN pero no FNBC."
+      },
+      {
+        "clave": "c",
+        "texto": "No cumple ni 1FN."
+      },
+      {
+        "clave": "d",
+        "texto": "Está totalmente normalizada."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Este es el ejemplo clásico: hay un determinante (Nombre_Entrenador) que no es clave candidata, por lo que falla FNBC aunque podría cumplir 3FN.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FNBC es más estricta que 3FN; no puedes cumplir FNBC y fallar 3FN en este marco."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se describe un problema de atomicidad; 1FN puede cumplirse."
+        },
+        {
+          "clave": "d",
+          "motivo": "Si no cumple FNBC, no está totalmente normalizada según esa exigencia."
+        }
+      ],
+      "resumen_didactico": "Si una columna determina otra y no es clave candidata, no hay FNBC.",
+      "ejemplo_practico": "Separar ENTRENADORES(Nombre_Entrenador, Posición) y JUGADORES(Nombre_Jugador, Nombre_Entrenador).",
+      "conclusion_final": "Cumple 3FN, pero no alcanza FNBC."
+    }
+  },
+  {
+    "id": "UT3-Q16",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Según la \"Piedra Rosetta\" del paso E/R a modelo físico, ¿en qué se convierte una Entidad cuando la implementas en el SGBD?",
+    "contexto": "Traducción E/R → físico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En una Tabla."
+      },
+      {
+        "clave": "b",
+        "texto": "En un Registro."
+      },
+      {
+        "clave": "c",
+        "texto": "En una Vista."
+      },
+      {
+        "clave": "d",
+        "texto": "En un Campo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la transformación al modelo físico, las entidades se convierten en tablas; los atributos en campos y las ocurrencias en registros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Registro equivale a fila/tupla, no a entidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Vista es un objeto derivado de una consulta, no la traducción directa de entidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "Campo es un atributo/columna, no una entidad."
+        }
+      ],
+      "resumen_didactico": "Entidad → tabla.",
+      "ejemplo_practico": "Entidad SOCIOS en E/R se implementa como la tabla SOCIOS(...).",
+      "conclusion_final": "Una entidad del E/R se convierte en una tabla."
+    }
+  },
+  {
+    "id": "UT3-Q17",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Siguiendo la nomenclatura profesional del modelo físico, ¿cómo deberías nombrar la tabla que almacena datos de clientes?",
+    "contexto": "Reglas de nomenclatura de tablas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CLIENTES (en plural y mayúsculas)."
+      },
+      {
+        "clave": "b",
+        "texto": "Tabla_de_clientes."
+      },
+      {
+        "clave": "c",
+        "texto": "cliente."
+      },
+      {
+        "clave": "d",
+        "texto": "Cliente (en singular y mayúscula inicial)."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda nombres de tablas en plural y mayúsculas (ej.: CLIENTES, PEDIDOS) para mantener consistencia y estilo profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Incluye prefijo innecesario y no sigue la convención principal del temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Singular y minúsculas: no sigue plural+mayúsculas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Singular y capitalización tipo título: no sigue plural+mayúsculas."
+        }
+      ],
+      "resumen_didactico": "Tablas: PLURAL + MAYÚSCULAS.",
+      "ejemplo_practico": "CLIENTES, PEDIDOS, LINEA_VENTAS son ejemplos de estilo consistente.",
+      "conclusion_final": "La convención recomendada es CLIENTES."
+    }
+  },
+  {
+    "id": "UT3-Q18",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Relación 1:1 entre CAPATAZ y OBRA, ambas opcionales (0,1). Para evitar muchos NULL, ¿qué estrategia se recomienda?",
+    "contexto": "Transformación 1:1 opcional-opcional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Poner la clave foránea en la tabla Obra."
+      },
+      {
+        "clave": "b",
+        "texto": "Poner la clave foránea en la tabla Capataz."
+      },
+      {
+        "clave": "c",
+        "texto": "Crear una tercera tabla solo para la relación."
+      },
+      {
+        "clave": "d",
+        "texto": "Fusionar ambas tablas en una sola."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En 1:1 (0,1)-(0,1), colocar una FK en una de las tablas suele crear muchos NULL. La solución recomendada es una tabla de relación que solo exista cuando la relación se da.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Si la FK va en OBRA, muchas obras sin capataz tendrían FK NULL."
+        },
+        {
+          "clave": "b",
+          "motivo": "Si la FK va en CAPATAZ, muchos capataces sin obra tendrían FK NULL."
+        },
+        {
+          "clave": "d",
+          "motivo": "Fusionar incrementa campos opcionales y NULLs, justo lo que se quiere evitar."
+        }
+      ],
+      "resumen_didactico": "1:1 opcional por ambos lados: mejor tabla intermedia para no llenar de NULL.",
+      "ejemplo_practico": "CAPATACES(DNI,...) + OBRAS(ObraID,...) + DIRIGE(DNI,ObraID) solo cuando hay asignación.",
+      "conclusion_final": "La estrategia es crear una tabla nueva para la relación."
+    }
+  },
+  {
+    "id": "UT3-Q19",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En una relación 1:N estándar (un Cliente compra muchos Coches), ¿cómo se transforma al modelo físico?",
+    "contexto": "Regla 1:N sin atributos extra.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se propaga la clave primaria del lado 1 (Cliente) hacia la tabla del lado N (Coches)."
+      },
+      {
+        "clave": "b",
+        "texto": "Se ignora la relación en el modelo físico."
+      },
+      {
+        "clave": "c",
+        "texto": "Se duplican los datos del cliente en cada coche."
+      },
+      {
+        "clave": "d",
+        "texto": "Se crea una tabla intermedia siempre."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En 1:N estándar, se pasa la PK del lado 1 como FK al lado N: COCHES incluye ClienteID (FK) apuntando a CLIENTES.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Ignorar la relación rompe el modelo: perderías trazabilidad entre coche y cliente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Duplicar datos introduce redundancia y anomalías."
+        },
+        {
+          "clave": "d",
+          "motivo": "Tabla intermedia es típica de M:N o de 1:N con atributos en la relación/casos especiales."
+        }
+      ],
+      "resumen_didactico": "1:N = FK en el lado N.",
+      "ejemplo_practico": "COCHES(Matricula,Modelo,ClienteID) con ClienteID → CLIENTES(ClienteID).",
+      "conclusion_final": "Se implementa propagando la PK del '1' como FK en el 'N'."
+    }
+  },
+  {
+    "id": "UT3-Q20",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Regla de oro: al transformar una relación Muchos a Muchos (M:N) al modelo físico, ¿qué sucede siempre?",
+    "contexto": "Implementación de M:N.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se convierte en una relación 1:N automáticamente."
+      },
+      {
+        "clave": "b",
+        "texto": "Se elige una de las dos tablas para guardar la clave foránea."
+      },
+      {
+        "clave": "c",
+        "texto": "Se genera siempre una tabla nueva (intermedia) con clave compuesta."
+      },
+      {
+        "clave": "d",
+        "texto": "Se denormaliza la información."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Una relación M:N se rompe con una tabla intermedia que contiene las dos FKs (y normalmente PK compuesta), convirtiéndose en dos relaciones 1:N.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo se convierte en dos 1:N gracias a la tabla intermedia; no ocurre sin ese paso."
+        },
+        {
+          "clave": "b",
+          "motivo": "Poner una sola FK no modela M:N correctamente y fuerza listas o duplicación."
+        },
+        {
+          "clave": "d",
+          "motivo": "El patrón de tabla intermedia es normalización, no denormalización."
+        }
+      ],
+      "resumen_didactico": "M:N siempre requiere tabla intermedia.",
+      "ejemplo_practico": "ALUMNOS, ASIGNATURAS y MATRICULA(alumno_id, asignatura_id).",
+      "conclusion_final": "En M:N siempre creas una tabla intermedia (clave compuesta o unique)."
+    }
+  },
+  {
+    "id": "UT3-Q21",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Jerarquía de EMPLEADOS (Freelance/Asalariado): eliges una tabla única con un campo \"Tipo\". ¿Ventaja y desventaja principal?",
+    "contexto": "Implementación de herencia con tabla única.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es la opción más limpia y académica."
+      },
+      {
+        "clave": "b",
+        "texto": "Elimina la necesidad de claves primarias."
+      },
+      {
+        "clave": "c",
+        "texto": "Ocupa poco espacio pero es lenta de consultar."
+      },
+      {
+        "clave": "d",
+        "texto": "Es muy rápida de consultar (sin JOINs) pero genera muchos valores nulos."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Tabla única evita JOINs (lecturas rápidas), pero mezcla atributos de subtipos y deja muchos campos como NULL para el subtipo al que no aplican.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es la más 'limpia'; suele elegirse por simplicidad/consultas, no por pureza."
+        },
+        {
+          "clave": "b",
+          "motivo": "Sigue siendo necesaria una PK para identificar cada empleado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Suele ser rápida en lectura; el coste típico es proliferación de NULLs."
+        }
+      ],
+      "resumen_didactico": "Tabla única con Tipo: consultas simples; coste: muchos NULL.",
+      "ejemplo_practico": "EMPLEADOS(Tipo, TarifaHora, NSS, ...) donde TarifaHora es NULL para asalariados y NSS es NULL para freelance.",
+      "conclusion_final": "Rápida en lectura sin JOINs, pero llena de NULLs por campos no aplicables."
+    }
+  },
+  {
+    "id": "UT3-Q22",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Usas un índice como el buscador de una biblioteca. ¿Cuál es la principal desventaja de abusar de los índices?",
+    "contexto": "Trade-off lectura vs escritura.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Consumen todo el ancho de banda de la red."
+      },
+      {
+        "clave": "b",
+        "texto": "Hacen que las lecturas sean muy lentas."
+      },
+      {
+        "clave": "c",
+        "texto": "Impiden hacer copias de seguridad."
+      },
+      {
+        "clave": "d",
+        "texto": "La base de datos se vuelve lenta escribiendo (guardar/borrar) porque debe reordenar el índice."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El índice acelera búsquedas, pero en cada INSERT/DELETE/UPDATE el SGBD debe mantener y reordenar la estructura del índice; demasiados índices penalizan escritura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es el efecto principal; el impacto es en I/O y mantenimiento interno."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los índices se usan para acelerar lecturas, no para ralentizarlas."
+        },
+        {
+          "clave": "c",
+          "motivo": "No impiden backups; el problema es el coste de mantenimiento."
+        }
+      ],
+      "resumen_didactico": "Índices: lectura rápida; escritura más cara cuanto más indexas.",
+      "ejemplo_practico": "En Black Friday, muchos INSERT en PEDIDOS pueden ralentizarse si hay demasiados índices en la tabla.",
+      "conclusion_final": "Abusar de índices penaliza operaciones de escritura por mantenimiento del índice."
+    }
+  },
+  {
+    "id": "UT3-Q23",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "El director de Marketing necesita ver clientes VIP sin datos sensibles (contraseñas). ¿Qué objeto de la base de datos creas?",
+    "contexto": "Seguridad y simplificación mediante vistas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una vista."
+      },
+      {
+        "clave": "b",
+        "texto": "Una copia de seguridad."
+      },
+      {
+        "clave": "c",
+        "texto": "Un trigger."
+      },
+      {
+        "clave": "d",
+        "texto": "Un índice secundario."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una vista es una 'tabla virtual' basada en una consulta: permite exponer solo columnas/filas permitidas (p.ej., VIP) ocultando datos sensibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Backup es para recuperación, no control de acceso diario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Trigger ejecuta acciones en eventos; no es un 'filtro' de lectura."
+        },
+        {
+          "clave": "d",
+          "motivo": "Índice mejora rendimiento, no limita columnas visibles."
+        }
+      ],
+      "resumen_didactico": "Vista: muestra una parte controlada de los datos.",
+      "ejemplo_practico": "VISTA_CLIENTES_VIP selecciona nombre/email de clientes VIP y excluye password_hash.",
+      "conclusion_final": "Para compartir datos filtrados y seguros, lo correcto es una vista."
+    }
+  },
+  {
+    "id": "UT3-Q24",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "No quieres que dos usuarios se registren con el mismo email. ¿Qué restricción aplicas al campo Email?",
+    "contexto": "Constraints de unicidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FOREIGN KEY."
+      },
+      {
+        "clave": "b",
+        "texto": "NOT NULL."
+      },
+      {
+        "clave": "c",
+        "texto": "DEFAULT."
+      },
+      {
+        "clave": "d",
+        "texto": "UNIQUE."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "UNIQUE impide valores repetidos en una columna. Es la restricción típica para Email/Nickname cuando deben ser únicos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FOREIGN KEY garantiza integridad entre tablas, no unicidad dentro del campo."
+        },
+        {
+          "clave": "b",
+          "motivo": "NOT NULL obliga a tener valor, pero permite duplicados."
+        },
+        {
+          "clave": "c",
+          "motivo": "DEFAULT rellena un valor por defecto, no evita duplicados."
+        }
+      ],
+      "resumen_didactico": "UNIQUE = no se repite; NOT NULL = no puede faltar.",
+      "ejemplo_practico": "Email UNIQUE: la segunda inserción con el mismo correo falla por violación de restricción.",
+      "conclusion_final": "Para evitar emails duplicados, usa UNIQUE."
+    }
+  },
+  {
+    "id": "UT3-Q25",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Con integridad referencial en política CASCADE entre CLIENTES y PEDIDOS, ¿qué ocurre si borras un cliente?",
+    "contexto": "Acción referencial en borrado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los pedidos pasan a ser propiedad de un cliente genérico."
+      },
+      {
+        "clave": "b",
+        "texto": "Los pedidos se quedan huérfanos con el ID del cliente."
+      },
+      {
+        "clave": "c",
+        "texto": "Se borra el cliente y automáticamente se borran todos sus pedidos asociados."
+      },
+      {
+        "clave": "d",
+        "texto": "La base de datos te impide borrarlo."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "CASCADE propaga el borrado del registro padre a los registros hijo: al borrar un cliente, se borran automáticamente sus pedidos relacionados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso correspondería a SET DEFAULT."
+        },
+        {
+          "clave": "b",
+          "motivo": "Eso sería ausencia de integridad o permitir huérfanos; CASCADE lo evita."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso corresponde a RESTRICT/NO ACTION."
+        }
+      ],
+      "resumen_didactico": "CASCADE: borras padre → borras hijos.",
+      "ejemplo_practico": "Eliminar CLIENTES(ID=5) borra PEDIDOS con ClienteID=5 automáticamente.",
+      "conclusion_final": "Con CASCADE, el borrado del cliente arrastra el borrado de sus pedidos."
+    }
+  },
+  {
+    "id": "UT3-Q26",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Si quieres una política conservadora donde la BD lance error al borrar un cliente con pedidos, ¿qué estrategia usas?",
+    "contexto": "Política restrictiva en integridad referencial.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cascade."
+      },
+      {
+        "clave": "b",
+        "texto": "Restrict (Prohibir la operación)."
+      },
+      {
+        "clave": "c",
+        "texto": "Set Default."
+      },
+      {
+        "clave": "d",
+        "texto": "Set Null."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "RESTRICT prohíbe borrar el registro padre si existen registros hijo que lo referencian; obliga a resolver dependencias antes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "CASCADE borraría también los hijos, no bloquearía."
+        },
+        {
+          "clave": "c",
+          "motivo": "SET DEFAULT reasignaría a un valor por defecto, no bloquearía."
+        },
+        {
+          "clave": "d",
+          "motivo": "SET NULL dejaría la FK en NULL si se permite, no bloquearía."
+        }
+      ],
+      "resumen_didactico": "RESTRICT = seguridad: si hay dependencias, no te deja borrar.",
+      "ejemplo_practico": "DELETE CLIENTES(5) falla si existen PEDIDOS con ClienteID=5.",
+      "conclusion_final": "Para que la BD grite '¡Error!' al borrar, usa RESTRICT."
+    }
+  },
+  {
+    "id": "UT3-Q27",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En seguridad, ¿cuál es la buena práctica para gestionar permisos de usuarios en una empresa tecnológica?",
+    "contexto": "Gestión de privilegios por roles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Crear Roles (perfiles) y asignar los usuarios a esos roles."
+      },
+      {
+        "clave": "b",
+        "texto": "No poner contraseñas en entorno de desarrollo."
+      },
+      {
+        "clave": "c",
+        "texto": "Dar permisos usuario por usuario individualmente."
+      },
+      {
+        "clave": "d",
+        "texto": "Dar a todos permisos de SuperAdmin para evitar bloqueos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La buena práctica es definir roles (perfiles) con permisos y asignar usuarios a roles, en lugar de gestionar permisos individualmente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No describe un modelo de permisos; además, no es una práctica de control de acceso en BBDD."
+        },
+        {
+          "clave": "c",
+          "motivo": "Gestionar usuario a usuario no escala y es difícil de mantener."
+        },
+        {
+          "clave": "d",
+          "motivo": "SuperAdmin para todos viola el principio de mínimo privilegio y aumenta riesgo."
+        }
+      ],
+      "resumen_didactico": "Permisos mantenibles = roles + asignación de usuarios.",
+      "ejemplo_practico": "Rol 'Soporte' con lectura en CLIENTES/PEDIDOS; Rol 'RRHH' lectura limitada en EMPLEADOS.",
+      "conclusion_final": "Lo profesional es crear roles y meter usuarios dentro."
+    }
+  },
+  {
+    "id": "UT3-Q28",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Black Friday: dos usuarios compran la última tarjeta gráfica a la vez y el sistema vende a ambos. ¿Qué problema ha ocurrido?",
+    "contexto": "Accesos concurrentes sin control.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Violación de la 1FN."
+      },
+      {
+        "clave": "b",
+        "texto": "Falta de integridad referencial."
+      },
+      {
+        "clave": "c",
+        "texto": "Fallo en el control de concurrencia."
+      },
+      {
+        "clave": "d",
+        "texto": "Error de redundancia de datos."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Si dos transacciones acceden al mismo stock simultáneamente sin aislamiento/bloqueos adecuados, se producen ventas imposibles: es un fallo de concurrencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "1FN trata atomicidad de valores, no competencia temporal."
+        },
+        {
+          "clave": "b",
+          "motivo": "Integridad referencial es PK/FK; aquí el problema es stock y transacciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Redundancia es duplicidad estructural, no colisión de operaciones simultáneas."
+        }
+      ],
+      "resumen_didactico": "Concurrencia mal gestionada = condición de carrera y datos inconsistentes.",
+      "ejemplo_practico": "Dos lecturas de stock=1 y dos escrituras de venta sin bloqueo → se confirman dos compras.",
+      "conclusion_final": "Es un problema de control de concurrencia."
+    }
+  },
+  {
+    "id": "UT3-Q29",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Para resolver concurrencia, la BD usa candados. Si el admin va a cambiar un precio y nadie debe leer ni escribir hasta terminar, ¿qué bloqueo aplica?",
+    "contexto": "Tipos de locks: shared vs exclusive.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bloqueo exclusivo (Exclusive Lock)."
+      },
+      {
+        "clave": "b",
+        "texto": "Bloqueo compartido (Shared Lock)."
+      },
+      {
+        "clave": "c",
+        "texto": "Bloqueo optimista."
+      },
+      {
+        "clave": "d",
+        "texto": "Bloqueo nulo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El bloqueo exclusivo es el 'candado fuerte': impide lecturas y escrituras por otros mientras dura la actualización, garantizando consistencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Shared Lock permite lecturas concurrentes y bloquea escrituras; no cumple 'nadie lea'."
+        },
+        {
+          "clave": "c",
+          "motivo": "Optimista detecta conflictos al final; no es el candado fuerte descrito."
+        },
+        {
+          "clave": "d",
+          "motivo": "No protege el dato; no es un tipo de bloqueo aplicable."
+        }
+      ],
+      "resumen_didactico": "Exclusive Lock = nadie lee ni escribe; Shared Lock = muchos leen, nadie escribe.",
+      "ejemplo_practico": "Al actualizar PRECIO, se aplica exclusive lock para que nadie vea un precio a medio cambiar.",
+      "conclusion_final": "Para bloquear lectura y escritura durante una actualización, se usa bloqueo exclusivo."
+    }
+  },
+  {
+    "id": "UT3-Q30",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Tras convertir el E/R a tablas con claves foráneas, ¿cómo se representan gráficamente las relaciones en el modelo físico final?",
+    "contexto": "Representación gráfica en modelo físico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Con líneas conectando claves foráneas (FK) con claves primarias (PK)."
+      },
+      {
+        "clave": "b",
+        "texto": "Con círculos concéntricos."
+      },
+      {
+        "clave": "c",
+        "texto": "No se representan gráficamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Con rombos que unen las tablas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el modelo físico, las relaciones se visualizan mediante enlaces FK→PK entre tablas; los rombos son del E/R conceptual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es convención del modelo físico relacional."
+        },
+        {
+          "clave": "c",
+          "motivo": "Sí se representan; se dibujan conexiones FK-PK."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los rombos son del diagrama E/R, no del modelo físico final."
+        }
+      ],
+      "resumen_didactico": "Modelo físico: relaciones = FK apuntando a PK (líneas).",
+      "ejemplo_practico": "PEDIDOS.ClienteID (FK) se conecta a CLIENTES.ClienteID (PK).",
+      "conclusion_final": "En el modelo físico, las relaciones se dibujan como líneas FK→PK."
+    }
+  }
+]
+
