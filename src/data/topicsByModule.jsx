@@ -92,7 +92,12 @@ export const topicsByModule = {
     {
       id: "UT3",
       title: "El modelo relacional. Normalización.",
-      numQuestion:30,
+      numQuestion: 30,
+    },
+    {
+      id: "UT4",
+      title: "El lenguaje SQL (DDL)",
+      numQuestion: 30,
     },
   ],
 };

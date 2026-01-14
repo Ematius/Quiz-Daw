@@ -1,0 +1,754 @@
+
+[
+  {
+    "id": "UT4-Q01",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "Viajando a los orígenes en IBM, ¿cuál es la característica fundamental que define a SQL como un lenguaje \"no procedimental\"?",
+    "contexto": "Comprender cómo se formula una consulta sin indicar el algoritmo interno de ejecución.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Que tú le dices al sistema QUÉ quieres hacer, pero no CÓMO tiene que hacerlo internamente." },
+      { "clave": "b", "texto": "Que utiliza procedimientos almacenados para todas sus operaciones." },
+      { "clave": "c", "texto": "Que requiere definir paso a paso cómo acceder a los datos en el disco duro." },
+      { "clave": "d", "texto": "Que solo permite realizar consultas de lectura, pero no de escritura." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "SQL es declarativo (no procedimental): el usuario expresa el objetivo (qué desea) y el SGBD decide el plan de ejecución interno (cómo lo consigue).",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Los procedimientos almacenados pueden existir, pero no definen a SQL ni son obligatorios para todas las operaciones." },
+        { "clave": "c", "motivo": "Definir el acceso paso a paso describe un enfoque procedimental; SQL evita ese detalle." },
+        { "clave": "d", "motivo": "SQL incluye sublenguajes para lectura y escritura (DML) y para definir estructuras (DDL)." }
+      ],
+      "resumen_didactico": "En SQL dices el resultado esperado; el motor se encarga del plan.",
+      "ejemplo_practico": "Pides “los clientes con más de 100€” y el motor decide si usa índices, escaneo, etc.",
+      "conclusion_final": "La no procedimentalidad de SQL se resume en: QUÉ sí, CÓMO no."
+    }
+  },
+  {
+    "id": "UT4-Q02",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "SQL se divide en sublenguajes según su función. Si estás actuando como un arquitecto que diseña los planos y construye la estructura (tablas) del edificio, ¿qué sublenguaje estás utilizando?",
+    "contexto": "Diseño y construcción de estructuras: bases de datos, tablas, índices.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "TCL (Transaction Control Language)." },
+      { "clave": "b", "texto": "DML (Data Manipulation Language)." },
+      { "clave": "c", "texto": "DCL (Data Control Language)." },
+      { "clave": "d", "texto": "DDL (Data Definition Language)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "DDL define la estructura (objetos) de la BD: CREATE, ALTER, DROP para bases de datos, tablas e índices.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "TCL se asocia al control de transacciones, no a crear tablas." },
+        { "clave": "b", "motivo": "DML manipula registros (filas), no estructuras." },
+        { "clave": "c", "motivo": "DCL gestiona permisos (GRANT/REVOKE), no diseño estructural." }
+      ],
+      "resumen_didactico": "Estructura = DDL; datos = DML; permisos = DCL.",
+      "ejemplo_practico": "CREATE TABLE clientes (...); es DDL.",
+      "conclusion_final": "Si creas/modificas tablas, estás en DDL."
+    }
+  },
+  {
+    "id": "UT4-Q03",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "Como desarrollador Frontend, necesitas insertar un nuevo usuario que se acaba de registrar en la aplicación. ¿Qué tipo de sentencias SQL utilizarás para esta tarea?",
+    "contexto": "Alta de un usuario (nuevo registro) en una tabla existente.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "DDL." },
+      { "clave": "b", "texto": "DCL." },
+      { "clave": "c", "texto": "DML." },
+      { "clave": "d", "texto": "DQL." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "DML es el sublenguaje para manipular datos (registros): INSERT, UPDATE, DELETE y SELECT.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "DDL modifica estructura (tablas/índices), no inserta registros." },
+        { "clave": "b", "motivo": "DCL gestiona permisos, no altas de datos." },
+        { "clave": "d", "motivo": "Aunque a veces se use 'DQL' para consultas, en el esquema del temario la inserción pertenece a DML." }
+      ],
+      "resumen_didactico": "Insertar, actualizar o borrar filas es DML.",
+      "ejemplo_practico": "INSERT INTO users (email, pass_hash) VALUES (...);",
+      "conclusion_final": "Para insertar un usuario: DML (INSERT)."
+    }
+  },
+  {
+    "id": "UT4-Q04",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "El administrador de la base de datos necesita evitar que el becario borre tablas importantes, gestionando los permisos y la seguridad. ¿Qué sublenguaje es el encargado de estas \"tarjetas de acceso\"?",
+    "contexto": "Gestión de permisos: limitar acciones peligrosas como DROP.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "DML." },
+      { "clave": "b", "texto": "DCL." },
+      { "clave": "c", "texto": "SSL." },
+      { "clave": "d", "texto": "DDL." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "DCL controla permisos con sentencias como GRANT y REVOKE, definiendo quién puede hacer qué en la BD.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "DML trata datos (INSERT/UPDATE/DELETE/SELECT), no permisos." },
+        { "clave": "c", "motivo": "SSL es un protocolo de cifrado/comunicación, no un sublenguaje SQL." },
+        { "clave": "d", "motivo": "DDL define estructura; no decide quién tiene permisos para operar." }
+      ],
+      "resumen_didactico": "Permisos y seguridad dentro de SQL se tratan con DCL.",
+      "ejemplo_practico": "REVOKE DROP ON *.* FROM 'becario'@'localhost';",
+      "conclusion_final": "Para permisos: DCL."
+    }
+  },
+  {
+    "id": "UT4-Q05",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "Debes definir un campo para guardar el DNI de los empleados, sabiendo que siempre tendrá exactamente la misma longitud. ¿Qué tipo de dato es el más eficiente?",
+    "contexto": "Modelado de cadenas de longitud fija.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "CHAR." },
+      { "clave": "b", "texto": "VARCHAR." },
+      { "clave": "c", "texto": "TEXT." },
+      { "clave": "d", "texto": "CLOB." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "CHAR se usa para longitudes fijas; VARCHAR para longitudes variables. Si el tamaño es siempre igual, CHAR es la elección natural.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "VARCHAR es útil cuando la longitud varía, como nombres o direcciones." },
+        { "clave": "c", "motivo": "TEXT se reserva para textos más largos; no es necesario para un identificador corto." },
+        { "clave": "d", "motivo": "CLOB es para texto muy grande (p. ej., artículos), no para DNI." }
+      ],
+      "resumen_didactico": "Longitud fija: CHAR. Longitud variable: VARCHAR.",
+      "ejemplo_practico": "dni CHAR(9)",
+      "conclusion_final": "DNI fijo → CHAR."
+    }
+  },
+  {
+    "id": "UT4-Q06",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "Estás creando la tabla de Clientes y defines el campo \"Nombre\" como VARCHAR(60). ¿Cuál es la diferencia clave respecto a usar CHAR(60)?",
+    "contexto": "Comparación de almacenamiento fijo vs variable en cadenas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "VARCHAR rellena con espacios en blanco hasta llegar a 60 caracteres." },
+      { "clave": "b", "texto": "No hay diferencia, son sinónimos." },
+      { "clave": "c", "texto": "VARCHAR solo ocupa el espacio de lo que escribas, no rellena con espacios si el nombre es corto." },
+      { "clave": "d", "texto": "VARCHAR permite guardar números y CHAR no." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "CHAR es longitud fija y puede rellenar; VARCHAR es variable hasta el máximo y guarda solo lo necesario, ideal para nombres de longitud irregular.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El relleno con espacios se asocia a CHAR, no a VARCHAR." },
+        { "clave": "b", "motivo": "No son sinónimos: fijo vs variable es una diferencia funcional." },
+        { "clave": "d", "motivo": "Ambos almacenan caracteres; los dígitos pueden guardarse como texto en ambos." }
+      ],
+      "resumen_didactico": "VARCHAR adapta el tamaño al contenido; CHAR reserva tamaño fijo.",
+      "ejemplo_practico": "Nombre 'Ana' en CHAR(60) implica relleno; en VARCHAR(60) se almacena como longitud real.",
+      "conclusion_final": "La clave es fijo (CHAR) vs variable (VARCHAR)."
+    }
+  },
+  {
+    "id": "UT4-Q07",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "Te piden diseñar una base de datos para noticias donde el cuerpo del artículo puede tener miles de palabras. ¿Qué tipo de dato utilizarías?",
+    "contexto": "Almacenamiento de textos muy extensos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "VARCHAR(255)." },
+      { "clave": "b", "texto": "BLOB (Binary Large Object)." },
+      { "clave": "c", "texto": "CLOB (Character Large Object)." },
+      { "clave": "d", "texto": "SMALLINT." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "CLOB se orienta a grandes volúmenes de texto (caracteres). BLOB es para binario; VARCHAR(255) se queda corto.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "VARCHAR(255) limita el tamaño a 255 caracteres, insuficiente para miles de palabras." },
+        { "clave": "b", "motivo": "BLOB es binario (imágenes/archivos), no texto largo." },
+        { "clave": "d", "motivo": "SMALLINT es numérico entero, no almacena texto." }
+      ],
+      "resumen_didactico": "Texto largo → CLOB. Binario → BLOB.",
+      "ejemplo_practico": "cuerpo_articulo CLOB",
+      "conclusion_final": "Para miles de palabras: CLOB."
+    }
+  },
+  {
+    "id": "UT4-Q08",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Por qué NO debes usar tipos numéricos para guardar números de teléfono?",
+    "contexto": "Modelado correcto de identificadores numéricos no calculables.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Porque los teléfonos pueden contener letras." },
+      { "clave": "b", "texto": "Porque ocupan demasiado espacio en disco." },
+      { "clave": "c", "texto": "Porque si el teléfono empieza por cero, perderías ese dígito y no realizarás operaciones matemáticas con él." },
+      { "clave": "d", "texto": "Porque SQL no permite índices en campos numéricos." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Un teléfono es un identificador; puede tener ceros iniciales y no se usa para cálculos. Guardarlo como número puede alterar su representación (pérdida del 0 inicial).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es la razón principal del modelado: el problema clave es representación (0 inicial) y ausencia de operaciones matemáticas." },
+        { "clave": "b", "motivo": "El criterio no es el espacio, sino mantener el valor tal cual se usa/visualiza." },
+        { "clave": "d", "motivo": "SQL sí permite índices en campos numéricos; no es una limitación." }
+      ],
+      "resumen_didactico": "Teléfono se trata como texto para conservar formato y ceros.",
+      "ejemplo_practico": "telefono VARCHAR(15) en lugar de INT",
+      "conclusion_final": "Teléfonos: texto, no numérico."
+    }
+  },
+  {
+    "id": "UT4-Q09",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "Sabes que la empresa nunca tendrá más de 30.000 clientes. ¿Qué tipo de dato entero elegirías para el ID?",
+    "contexto": "Elegir tipos enteros ajustados al rango para eficiencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "SMALLINT." },
+      { "clave": "b", "texto": "BIGINT." },
+      { "clave": "c", "texto": "INT." },
+      { "clave": "d", "texto": "DECIMAL." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El temario aconseja dimensionar tipos numéricos al rango esperado. Para un máximo de 30.000, un entero pequeño (SMALLINT) es suficiente y más eficiente que tipos mayores.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "BIGINT es para rangos muy grandes; sobredimensiona sin necesidad." },
+        { "clave": "c", "motivo": "INT funcionaría, pero es más grande de lo necesario según el criterio de eficiencia del tema." },
+        { "clave": "d", "motivo": "DECIMAL es para decimales exactos (p. ej., dinero), no para IDs enteros." }
+      ],
+      "resumen_didactico": "Elige el entero más pequeño que cubra tu rango real.",
+      "ejemplo_practico": "id SMALLINT PRIMARY KEY",
+      "conclusion_final": "Con 30.000 registros, SMALLINT encaja."
+    }
+  },
+  {
+    "id": "UT4-Q10",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "En una aplicación financiera donde la precisión es crítica, ¿qué tipo de dato garantiza exactitud decimal?",
+    "contexto": "Modelado de importes: evitar redondeos de coma flotante.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "NUMERIC o DECIMAL." },
+      { "clave": "b", "texto": "FLOAT." },
+      { "clave": "c", "texto": "DOUBLE." },
+      { "clave": "d", "texto": "REAL." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "NUMERIC/DECIMAL son tipos exactos para decimales; están orientados a casos donde el redondeo no es aceptable (finanzas).",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "FLOAT es aproximado y puede introducir redondeos." },
+        { "clave": "c", "motivo": "DOUBLE es aproximado; mejora precisión frente a FLOAT, pero no garantiza exactitud decimal." },
+        { "clave": "d", "motivo": "REAL suele ser coma flotante aproximada; no es exacta para dinero." }
+      ],
+      "resumen_didactico": "Finanzas → DECIMAL/NUMERIC; ciencia → FLOAT/DOUBLE.",
+      "ejemplo_practico": "importe DECIMAL(10,2)",
+      "conclusion_final": "Exactitud crítica → DECIMAL/NUMERIC."
+    }
+  },
+  {
+    "id": "UT4-Q11",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "Para cálculos científicos con grandes rangos pero menor precisión, ¿qué tipo de dato eliges?",
+    "contexto": "Cálculos con tolerancia a aproximación y gran rango.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "DECIMAL." },
+      { "clave": "b", "texto": "FLOAT o DOUBLE." },
+      { "clave": "c", "texto": "SMALLINT." },
+      { "clave": "d", "texto": "INT." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "FLOAT/DOUBLE son tipos aproximados adecuados para rangos grandes y cálculos científicos, aceptando redondeo.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "DECIMAL es exacto y se usa cuando la precisión decimal es crítica (p. ej., dinero)." },
+        { "clave": "c", "motivo": "SMALLINT es entero pequeño: ni decimales ni gran rango científico." },
+        { "clave": "d", "motivo": "INT es entero; no cubre decimales y no es el enfoque de coma flotante." }
+      ],
+      "resumen_didactico": "Si aceptas aproximación y quieres rango: coma flotante.",
+      "ejemplo_practico": "medida DOUBLE",
+      "conclusion_final": "Ciencia con tolerancia → FLOAT/DOUBLE."
+    }
+  },
+  {
+    "id": "UT4-Q12",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "Necesitas registrar fecha y hora exacta de una entrega. ¿Qué tipo de dato usas?",
+    "contexto": "Registro de un instante temporal (fecha + hora).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "YEAR." },
+      { "clave": "b", "texto": "DATE." },
+      { "clave": "c", "texto": "TIMESTAMP." },
+      { "clave": "d", "texto": "TIME." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "TIMESTAMP representa fecha y hora, adecuado para registrar un momento exacto. DATE solo fecha, TIME solo hora.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "YEAR solo guarda el año, no un instante completo." },
+        { "clave": "b", "motivo": "DATE no incluye la hora." },
+        { "clave": "d", "motivo": "TIME no incluye la fecha." }
+      ],
+      "resumen_didactico": "Instante exacto → TIMESTAMP.",
+      "ejemplo_practico": "entrega_at TIMESTAMP",
+      "conclusion_final": "Fecha + hora exactas → TIMESTAMP."
+    }
+  },
+  {
+    "id": "UT4-Q13",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Cuál es la mejor práctica para guardar fotos de perfil en desarrollo web moderno?",
+    "contexto": "Gestión eficiente de archivos (imágenes) en aplicaciones web.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Guardar la imagen en un servidor externo y almacenar solo la URL." },
+      { "clave": "b", "texto": "Guardar la imagen en binario en la base de datos." },
+      { "clave": "c", "texto": "Convertir la imagen a base64 y guardarla en un CLOB." },
+      { "clave": "d", "texto": "No guardar imágenes." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Aunque existe BLOB para binarios, el enfoque web moderno habitual es almacenar el archivo fuera de la BD y guardar en la BD solo la ruta/URL para acceder a él.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Se puede con BLOB, pero no es la práctica preferente indicada; aumenta carga y tamaño de BD." },
+        { "clave": "c", "motivo": "CLOB es para texto; base64 además aumenta tamaño y complica el manejo." },
+        { "clave": "d", "motivo": "Las aplicaciones sí suelen guardar imágenes; la cuestión es dónde y cómo." }
+      ],
+      "resumen_didactico": "Archivo fuera; referencia (URL) dentro de la BD.",
+      "ejemplo_practico": "avatar_url VARCHAR(255) con la ruta al archivo en storage/CDN.",
+      "conclusion_final": "Mejor práctica: guardar URL, no el binario en BD."
+    }
+  },
+  {
+    "id": "UT4-Q14",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué motivó la creación de MariaDB como fork de MySQL?",
+    "contexto": "Historia y razones comunitarias/empresariales del fork.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Incompatibilidad con Linux." },
+      { "clave": "b", "texto": "Cambiar el lenguaje SQL." },
+      { "clave": "c", "texto": "El miedo de la comunidad a que Oracle cerrara el código de MySQL." },
+      { "clave": "d", "texto": "Mejorar el rendimiento técnico." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "MariaDB surge como fork por la preocupación tras la adquisición de MySQL por Oracle: la comunidad temía cambios en el carácter abierto del proyecto.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "MySQL funciona en Linux; no es la razón del fork." },
+        { "clave": "b", "motivo": "MariaDB sigue usando SQL; no nace para cambiar el lenguaje." },
+        { "clave": "d", "motivo": "Puede haber mejoras, pero el motivo fundacional destacado es la preocupación por el futuro del proyecto y su apertura." }
+      ],
+      "resumen_didactico": "Fork = alternativa para asegurar continuidad y apertura del proyecto.",
+      "ejemplo_practico": "Elegir MariaDB para reducir riesgo de dependencia de un único proveedor.",
+      "conclusion_final": "La motivación clave fue la incertidumbre comunitaria tras la compra por Oracle."
+    }
+  },
+  {
+    "id": "UT4-Q15",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Cuál es el puerto por defecto de MySQL?",
+    "contexto": "Configuración de conexión cliente-servidor en MySQL/MariaDB.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "21." },
+      { "clave": "b", "texto": "8080." },
+      { "clave": "c", "texto": "1433." },
+      { "clave": "d", "texto": "3306." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "MySQL/MariaDB usa por defecto el puerto 3306 para conexiones.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "21 es típico de FTP, no MySQL." },
+        { "clave": "b", "motivo": "8080 suele asociarse a HTTP alternativo, no MySQL." },
+        { "clave": "c", "motivo": "1433 es típico de Microsoft SQL Server." }
+      ],
+      "resumen_didactico": "MySQL por defecto escucha en 3306.",
+      "ejemplo_practico": "Configurar la app con host=localhost, port=3306.",
+      "conclusion_final": "Puerto por defecto: 3306."
+    }
+  },
+  {
+    "id": "UT4-Q16",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué caracteriza al usuario root en bases de datos?",
+    "contexto": "Administración del servidor MySQL/MariaDB tras la instalación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Es el usuario con permisos totales." },
+      { "clave": "b", "texto": "Es un usuario invitado." },
+      { "clave": "c", "texto": "Es el usuario de la aplicación web." },
+      { "clave": "d", "texto": "Es exclusivo para conexiones remotas." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "root es el usuario administrativo principal con privilegios completos para gestionar la BD y el servidor.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es invitado; es el administrador." },
+        { "clave": "c", "motivo": "La aplicación web debería usar un usuario con permisos mínimos, no root." },
+        { "clave": "d", "motivo": "No es una característica definitoria; de hecho, por seguridad suele restringirse." }
+      ],
+      "resumen_didactico": "root = administración total.",
+      "ejemplo_practico": "Con root puedes CREATE/DROP DATABASE y gestionar permisos.",
+      "conclusion_final": "root se caracteriza por permisos totales."
+    }
+  },
+  {
+    "id": "UT4-Q17",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué comando DDL crea una base de datos?",
+    "contexto": "Creación de un nuevo esquema en MySQL/MariaDB.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "INIT DATABASE nombre;" },
+      { "clave": "b", "texto": "CREATE DATABASE nombre;" },
+      { "clave": "c", "texto": "NEW DATABASE nombre;" },
+      { "clave": "d", "texto": "CREATE TABLE nombre;" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "DDL usa CREATE para crear objetos. Para bases de datos se usa CREATE DATABASE.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es sintaxis SQL estándar del temario." },
+        { "clave": "c", "motivo": "No es sintaxis SQL válida en este contexto." },
+        { "clave": "d", "motivo": "CREATE TABLE crea una tabla, no una base de datos." }
+      ],
+      "resumen_didactico": "CREATE DATABASE crea el contenedor; luego USE lo activa.",
+      "ejemplo_practico": "CREATE DATABASE empresa;",
+      "conclusion_final": "El comando correcto es CREATE DATABASE."
+    }
+  },
+  {
+    "id": "UT4-Q18",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué comando elimina completamente una base de datos?",
+    "contexto": "Eliminación de un objeto BD (operación destructiva).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "REMOVE DATABASE nombre;" },
+      { "clave": "b", "texto": "DELETE DATABASE nombre;" },
+      { "clave": "c", "texto": "TRUNCATE DATABASE nombre;" },
+      { "clave": "d", "texto": "DROP DATABASE nombre;" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "DROP elimina objetos estructurales. Para borrar una base de datos completa se usa DROP DATABASE.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es sintaxis estándar del temario." },
+        { "clave": "b", "motivo": "DELETE es DML y no se aplica a bases de datos como objeto." },
+        { "clave": "c", "motivo": "TRUNCATE se usa sobre tablas, no sobre bases de datos." }
+      ],
+      "resumen_didactico": "DROP destruye el objeto; TRUNCATE vacía datos pero no borra estructura (solo tablas).",
+      "ejemplo_practico": "DROP DATABASE empresa;",
+      "conclusion_final": "Para eliminar una BD: DROP DATABASE."
+    }
+  },
+  {
+    "id": "UT4-Q19",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué comando selecciona la base de datos activa?",
+    "contexto": "Elegir el esquema sobre el que trabajarán CREATE TABLE y consultas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "USE database;" },
+      { "clave": "b", "texto": "CONNECT database;" },
+      { "clave": "c", "texto": "SELECT database;" },
+      { "clave": "d", "texto": "GO database;" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "USE establece la base de datos activa para la sesión, de modo que las operaciones posteriores se realizan sobre ella.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es el comando del temario para activar una BD en MySQL/MariaDB." },
+        { "clave": "c", "motivo": "SELECT sirve para consultar datos, no para activar una BD." },
+        { "clave": "d", "motivo": "GO es típico de otros entornos (p. ej., SQL Server) como separador de lotes, no para USE." }
+      ],
+      "resumen_didactico": "Primero elige la BD con USE; después crea/consulta tablas.",
+      "ejemplo_practico": "USE empresa;",
+      "conclusion_final": "La BD activa se selecciona con USE."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué restricciones implica una PRIMARY KEY?",
+    "contexto": "Definición de clave primaria para identificar registros de forma unívoca.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Solo la puede consultar el administrador." },
+      { "clave": "b", "texto": "Puede ser NULL pero UNIQUE." },
+      { "clave": "c", "texto": "NOT NULL y UNIQUE." },
+      { "clave": "d", "texto": "Debe ser numérica." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Una PRIMARY KEY identifica un registro de forma única: no puede repetirse (UNIQUE) ni estar vacía (NOT NULL).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La consulta depende de permisos (DCL), no de ser PK." },
+        { "clave": "b", "motivo": "Una PK no puede ser NULL; perdería su función identificadora." },
+        { "clave": "d", "motivo": "Una PK puede ser texto o compuesta; no es obligatorio que sea numérica." }
+      ],
+      "resumen_didactico": "PK = único y obligatorio.",
+      "ejemplo_practico": "id INT PRIMARY KEY",
+      "conclusion_final": "PRIMARY KEY implica NOT NULL + UNIQUE."
+    }
+  },
+  {
+    "id": "UT4-Q21",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Por qué definir un campo teléfono como UNIQUE?",
+    "contexto": "Evitar duplicidades en un dato que se considera identificador de negocio.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Para obligar a 9 dígitos." },
+      { "clave": "b", "texto": "Para acelerar búsquedas." },
+      { "clave": "c", "texto": "Para permitir valores en blanco." },
+      { "clave": "d", "texto": "Para evitar proveedores duplicados con el mismo número." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "UNIQUE garantiza que no existan duplicados en la columna; es una regla de integridad para evitar registros repetidos cuando el dato debe ser único.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "UNIQUE no valida longitud; eso se controla con el tipo/tamaño o validación adicional." },
+        { "clave": "b", "motivo": "Puede ayudar indirectamente, pero el objetivo central de UNIQUE es impedir duplicados." },
+        { "clave": "c", "motivo": "Permitir blancos se relaciona con NULL/NOT NULL, no con UNIQUE." }
+      ],
+      "resumen_didactico": "UNIQUE = no repetición del valor.",
+      "ejemplo_practico": "telefono VARCHAR(15) UNIQUE",
+      "conclusion_final": "Se usa UNIQUE para evitar duplicados en teléfonos si tu negocio lo exige."
+    }
+  },
+  {
+    "id": "UT4-Q22",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué garantiza una FOREIGN KEY?",
+    "contexto": "Integridad referencial entre tabla hija y tabla principal.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Que un proveedor solo tenga un producto." },
+      { "clave": "b", "texto": "Que no se pueda borrar la tabla." },
+      { "clave": "c", "texto": "Que se genere automáticamente." },
+      { "clave": "d", "texto": "Que el valor exista en la tabla principal." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "FOREIGN KEY impone integridad referencial: el valor en la tabla hija debe existir en la tabla padre referenciada.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Eso es una regla de cardinalidad/diseño, no el propósito de una FK." },
+        { "clave": "b", "motivo": "Una FK no prohíbe borrar tablas por definición; establece dependencias y reglas de integridad." },
+        { "clave": "c", "motivo": "Las FK deben declararse en el diseño; no se generan automáticamente por norma." }
+      ],
+      "resumen_didactico": "FK evita referencias huérfanas.",
+      "ejemplo_practico": "pedido(cliente_id) referencia a clientes(id): cliente_id debe existir.",
+      "conclusion_final": "Una FK asegura que el dato referenciado existe en la tabla principal."
+    }
+  },
+  {
+    "id": "UT4-Q23",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué hace ON DELETE CASCADE?",
+    "contexto": "Comportamiento en cascada al borrar registros padre con hijos relacionados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Impide borrar el registro principal." },
+      { "clave": "b", "texto": "Crea una copia de seguridad." },
+      { "clave": "c", "texto": "Pone las claves foráneas a NULL." },
+      { "clave": "d", "texto": "Borra automáticamente los registros relacionados." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "ON DELETE CASCADE propaga el borrado: al eliminar el registro padre, se eliminan automáticamente los registros hijo dependientes.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "CASCADE no bloquea; permite y propaga el borrado." },
+        { "clave": "b", "motivo": "No tiene relación con copias de seguridad." },
+        { "clave": "c", "motivo": "Eso correspondería a un comportamiento tipo SET NULL, no CASCADE." }
+      ],
+      "resumen_didactico": "Borras el padre y el motor limpia los hijos para mantener integridad.",
+      "ejemplo_practico": "Borrar un cliente elimina sus pedidos si la FK tiene ON DELETE CASCADE.",
+      "conclusion_final": "ON DELETE CASCADE borra automáticamente los relacionados."
+    }
+  },
+  {
+    "id": "UT4-Q24",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué comando añade una columna a una tabla existente?",
+    "contexto": "Evolución de esquema: añadir nuevos campos a tablas ya creadas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "ALTER TABLE TProveedor ADD cCorreo..." },
+      { "clave": "b", "texto": "CREATE COLUMN cCorreo..." },
+      { "clave": "c", "texto": "MODIFY TABLE TProveedor INSERT cCorreo..." },
+      { "clave": "d", "texto": "UPDATE TABLE TProveedor ADD cCorreo..." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "ALTER TABLE es DDL para modificar estructura; ADD agrega una nueva columna.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No existe como sentencia estándar del temario para añadir columnas." },
+        { "clave": "c", "motivo": "Mezcla términos: INSERT es para filas; MODIFY se usa dentro de ALTER TABLE." },
+        { "clave": "d", "motivo": "UPDATE modifica datos (DML), no estructura." }
+      ],
+      "resumen_didactico": "Estructura cambia con ALTER TABLE.",
+      "ejemplo_practico": "ALTER TABLE TProveedor ADD cCorreo VARCHAR(100);",
+      "conclusion_final": "Añadir columna → ALTER TABLE ... ADD ..."
+    }
+  },
+  {
+    "id": "UT4-Q25",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué comando modifica el tipo de una columna?",
+    "contexto": "Ajuste de tipo/tamaño de una columna por cambios de requisitos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "UPDATE TABLE ... SET TYPE ..." },
+      { "clave": "b", "texto": "ALTER TABLE ... MODIFY COLUMN ..." },
+      { "clave": "c", "texto": "ALTER TABLE ... CHANGE TYPE ..." },
+      { "clave": "d", "texto": "RENAME COLUMN ..." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Cambios de definición de columna se realizan con ALTER TABLE y operación MODIFY para redefinir tipo/tamaño.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "UPDATE es DML para datos; no cambia tipos." },
+        { "clave": "c", "motivo": "No es la forma trabajada en el temario para cambiar tipos; se usa MODIFY en ALTER TABLE." },
+        { "clave": "d", "motivo": "Renombrar no modifica el tipo; es una operación distinta." }
+      ],
+      "resumen_didactico": "Tipo de columna cambia con ALTER TABLE + MODIFY.",
+      "ejemplo_practico": "ALTER TABLE clientes MODIFY COLUMN telefono VARCHAR(15);",
+      "conclusion_final": "Para cambiar tipo: ALTER TABLE ... MODIFY COLUMN ..."
+    }
+  },
+  {
+    "id": "UT4-Q26",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Cómo eliminas una columna de una tabla?",
+    "contexto": "Limpieza de esquema: eliminar campos obsoletos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "DELETE COLUMN cCorreo;" },
+      { "clave": "b", "texto": "REMOVE cCorreo FROM TProveedor;" },
+      { "clave": "c", "texto": "DROP COLUMN cCorreo FROM TProveedor;" },
+      { "clave": "d", "texto": "ALTER TABLE TProveedor DROP cCorreo;" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Eliminar una columna es un cambio estructural: se hace con ALTER TABLE y operación DROP sobre la columna.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "DELETE es DML para filas; no elimina columnas." },
+        { "clave": "b", "motivo": "No es sintaxis SQL del temario." },
+        { "clave": "c", "motivo": "En el enfoque del temario, la eliminación se realiza bajo ALTER TABLE; no como sentencia independiente con FROM." }
+      ],
+      "resumen_didactico": "Para tocar estructura: ALTER TABLE. Para quitar: DROP.",
+      "ejemplo_practico": "ALTER TABLE TProveedor DROP cCorreo;",
+      "conclusion_final": "Eliminar columna → ALTER TABLE ... DROP ..."
+    }
+  },
+  {
+    "id": "UT4-Q27",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Para qué sirve DESC o DESCRIBE?",
+    "contexto": "Inspección rápida de la definición de una tabla.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Describe el propósito funcional." },
+      { "clave": "b", "texto": "Borra la tabla." },
+      { "clave": "c", "texto": "Muestra la estructura técnica de la tabla." },
+      { "clave": "d", "texto": "Muestra los datos." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "DESC/DESCRIBE muestra columnas, tipos y metadatos de la tabla: estructura, no datos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No documenta funcionalidad; muestra estructura técnica." },
+        { "clave": "b", "motivo": "Borrar tabla es DROP TABLE, no DESC." },
+        { "clave": "d", "motivo": "Ver datos se hace con SELECT, no con DESC." }
+      ],
+      "resumen_didactico": "DESC = ver cómo está definida una tabla.",
+      "ejemplo_practico": "DESC clientes;",
+      "conclusion_final": "DESC sirve para ver estructura técnica."
+    }
+  },
+  {
+    "id": "UT4-Q28",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Cuál es la ventaja y desventaja de un índice?",
+    "contexto": "Optimización de consultas vs coste de mantenimiento en escrituras.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Ahorra espacio." },
+      { "clave": "b", "texto": "Evita duplicados." },
+      { "clave": "c", "texto": "Acelera escrituras pero ralentiza lecturas." },
+      { "clave": "d", "texto": "Acelera SELECT pero ralentiza INSERT y UPDATE." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Un índice acelera búsquedas/SELECT. A cambio, penaliza INSERT/UPDATE porque el índice debe mantenerse actualizado.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Los índices suelen ocupar espacio adicional." },
+        { "clave": "b", "motivo": "Evitar duplicados es rol de UNIQUE; el índice se explica como rendimiento." },
+        { "clave": "c", "motivo": "Es lo contrario: acelera lecturas y puede ralentizar escrituras." }
+      ],
+      "resumen_didactico": "Índice = buscas rápido, escribes más lento (por mantenimiento).",
+      "ejemplo_practico": "INDEX(email) acelera búsquedas por email, pero insertar usuarios exige actualizar el índice.",
+      "conclusion_final": "La ganancia está en SELECT; el coste en escrituras."
+    }
+  },
+  {
+    "id": "UT4-Q29",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué comando borra todos los datos manteniendo la estructura?",
+    "contexto": "Vaciar una tabla sin eliminarla como objeto.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "TRUNCATE TABLE nombre;" },
+      { "clave": "b", "texto": "DROP TABLE nombre;" },
+      { "clave": "c", "texto": "EMPTY TABLE nombre;" },
+      { "clave": "d", "texto": "DELETE FROM nombre;" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "TRUNCATE TABLE elimina todos los registros conservando la estructura. DROP TABLE elimina la tabla completa como objeto.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "DROP TABLE borra estructura y datos (desaparece la tabla)." },
+        { "clave": "c", "motivo": "No es sintaxis SQL estándar del temario." },
+        { "clave": "d", "motivo": "DELETE sin WHERE puede vaciar, pero el temario destaca TRUNCATE como comando específico para vaciar manteniendo estructura." }
+      ],
+      "resumen_didactico": "TRUNCATE vacía; DROP destruye la tabla.",
+      "ejemplo_practico": "TRUNCATE TABLE logs;",
+      "conclusion_final": "Para vaciar manteniendo estructura: TRUNCATE TABLE."
+    }
+  },
+  {
+    "id": "UT4-Q30",
+    "tema": "UT4 — El lenguaje SQL (DDL)",
+    "pregunta": "¿Qué comando muestra la versión del servidor MySQL/MariaDB?",
+    "contexto": "Verificación post-instalación: confirmar la versión del servidor.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "GET VERSION;" },
+      { "clave": "b", "texto": "SELECT VERSION();" },
+      { "clave": "c", "texto": "SHOW VERSION;" },
+      { "clave": "d", "texto": "STATUS;" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Para comprobar la versión del servidor, se usa la función VERSION() consultada con SELECT.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es sintaxis SQL típica del temario para MySQL/MariaDB." },
+        { "clave": "c", "motivo": "No es el comando presentado en el temario para obtener la versión." },
+        { "clave": "d", "motivo": "Puede existir información de estado en ciertos entornos, pero el temario fija SELECT VERSION() como referencia clara." }
+      ],
+      "resumen_didactico": "Información del servidor: usa funciones con SELECT.",
+      "ejemplo_practico": "SELECT VERSION();",
+      "conclusion_final": "La forma estándar del tema es SELECT VERSION()."
+    }
+  }
+]
+
