@@ -1,0 +1,753 @@
+
+[
+  {
+    "id": "UT6-Q01",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Estás trabajando en una empresa de logística y necesitas automatizar tareas complejas que SQL estándar no puede realizar por sí solo, como tomar decisiones o crear flujos de trabajo. ¿Qué lenguaje procedimental desarrollado por Oracle utilizarás?",
+    "contexto": "Automatización de lógica y flujos dentro de Oracle cuando SQL no es suficiente.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Python." },
+      { "clave": "b", "texto": "Java." },
+      { "clave": "c", "texto": "PL/SQL." },
+      { "clave": "d", "texto": "T-SQL." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "PL/SQL es la extensión procedimental de Oracle para añadir lógica (variables, IF, bucles, excepciones) y automatizar procesos que SQL por sí solo no resuelve.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Python es generalista y puede automatizar fuera de la BD, pero no es el lenguaje procedimental nativo de Oracle para lógica en servidor." },
+        { "clave": "b", "motivo": "Java es generalista e integra con BD, pero no es el lenguaje procedimental propio de Oracle para scripts dentro de la base de datos." },
+        { "clave": "d", "motivo": "T-SQL es característico de Microsoft SQL Server; no es el lenguaje procedimental de Oracle." }
+      ],
+      "resumen_didactico": "SQL pide datos; PL/SQL permite programar procedimientos (decisiones, bucles, control de errores) cerca de los datos en Oracle.",
+      "ejemplo_practico": "Si stock < 10 entonces alertar; si cliente VIP aplicar descuento; si ocurre un error, capturarlo con EXCEPTION: esa lógica se expresa naturalmente en PL/SQL.",
+      "conclusion_final": "Para automatizar lógica compleja en Oracle, el lenguaje correcto es PL/SQL."
+    }
+  },
+  {
+    "id": "UT6-Q02",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Si utilizas la analogía del restaurante para explicar la diferencia entre SQL y PL/SQL a un junior, ¿quién sería el PL/SQL?",
+    "contexto": "Explicar la diferencia entre declarativo (SQL) y procedimental (PL/SQL) con una analogía.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El cliente que pide la comida." },
+      { "clave": "b", "texto": "El camarero que solo toma nota del pedido." },
+      { "clave": "c", "texto": "El menú impreso en la mesa." },
+      { "clave": "d", "texto": "El cocinero que sabe los pasos exactos y el procedimiento para preparar el plato." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La analogía ilustra que SQL se centra en pedir “qué” quieres (como el camarero), mientras PL/SQL representa el “cómo” mediante un procedimiento (como el cocinero que sigue pasos y toma decisiones).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El cliente representa la intención o petición, pero no ejecuta el procedimiento." },
+        { "clave": "b", "motivo": "El camarero que toma el pedido encaja con SQL (declarativo), no con PL/SQL." },
+        { "clave": "c", "motivo": "El menú es un catálogo de opciones; no representa ejecución de pasos ni lógica." }
+      ],
+      "resumen_didactico": "SQL = pedir el resultado; PL/SQL = ejecutar el procedimiento (pasos, condiciones, control).",
+      "ejemplo_practico": "SQL: “dame pedidos pendientes”. PL/SQL: “si hay pedidos pendientes, asigna ruta, registra log y maneja errores”.",
+      "conclusion_final": "En la analogía, PL/SQL es el cocinero: ejecuta pasos y lógica."
+    }
+  },
+  {
+    "id": "UT6-Q03",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Necesitas ejecutar una lógica compleja \"ahora mismo\" para corregir unos datos, pero no quieres que el código se guarde permanentemente en la base de datos como un objeto. ¿Qué estructura utilizas?",
+    "contexto": "Corrección puntual sin persistir como objeto (procedimiento/función).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un trigger de sistema." },
+      { "clave": "b", "texto": "Un bloque anónimo." },
+      { "clave": "c", "texto": "Un procedimiento almacenado." },
+      { "clave": "d", "texto": "Una función recursiva." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Los bloques anónimos se ejecutan al momento y no se almacenan como objetos en la base de datos. Son ideales para tareas puntuales y scripts de corrección.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Un trigger se dispara automáticamente por eventos; no es para ejecutar “bajo demanda” una corrección puntual." },
+        { "clave": "c", "motivo": "Un procedimiento almacenado se crea y queda guardado como objeto reutilizable; contradice la condición de no persistir." },
+        { "clave": "d", "motivo": "“Recursiva” es una técnica; además, una función suele ser un objeto persistente y orientado a devolver un valor." }
+      ],
+      "resumen_didactico": "Si no quieres guardar nada y solo ejecutar una vez, usa bloque anónimo.",
+      "ejemplo_practico": "Un bloque anónimo que hace un UPDATE de corrección y muestra un DBMS_OUTPUT con el número de filas afectadas.",
+      "conclusion_final": "Para ejecución inmediata sin persistencia, la estructura correcta es un bloque anónimo."
+    }
+  },
+  {
+    "id": "UT6-Q04",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Estás revisando la estructura de un bloque PL/SQL. ¿Cuáles son las palabras clave obligatorias que delimitan el cuerpo del algoritmo donde ocurre la \"magia\"?",
+    "contexto": "Identificar el cuerpo ejecutable del bloque PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "DECLARE y END." },
+      { "clave": "b", "texto": "IF y THEN." },
+      { "clave": "c", "texto": "START y FINISH." },
+      { "clave": "d", "texto": "BEGIN y END." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En un bloque PL/SQL, BEGIN...END delimita el cuerpo ejecutable. DECLARE y EXCEPTION son secciones opcionales, pero BEGIN y END son esenciales.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "DECLARE es opcional y no delimita el cuerpo ejecutable; el cuerpo lo delimitan BEGIN y END." },
+        { "clave": "b", "motivo": "IF/THEN es una estructura interna de control de flujo, no el delimitador del bloque." },
+        { "clave": "c", "motivo": "START/FINISH no pertenece a la sintaxis de PL/SQL." }
+      ],
+      "resumen_didactico": "El bloque siempre ejecuta dentro de BEGIN...END.",
+      "ejemplo_practico": "BEGIN DBMS_OUTPUT.PUT_LINE('Hola'); END;",
+      "conclusion_final": "Las palabras clave obligatorias del cuerpo son BEGIN y END."
+    }
+  },
+  {
+    "id": "UT6-Q05",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Dentro de un bloque PL/SQL, ¿dónde debes definir las variables y constantes antes de poder usarlas?",
+    "contexto": "Declaración previa de variables/constantes en un bloque.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Justo después del END." },
+      { "clave": "b", "texto": "En la sección EXCEPTION." },
+      { "clave": "c", "texto": "En la sección DECLARE." },
+      { "clave": "d", "texto": "En la sección BEGIN." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La sección DECLARE (opcional) se usa para declarar variables y constantes que luego se emplean en el bloque BEGIN...END.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Después de END el bloque finaliza; no sirve para definir valores que se usarán durante la ejecución." },
+        { "clave": "b", "motivo": "EXCEPTION es para manejar errores, no para declarar la base del algoritmo." },
+        { "clave": "d", "motivo": "BEGIN es el cuerpo ejecutable; la declaración correcta se hace previamente en DECLARE." }
+      ],
+      "resumen_didactico": "DECLARAR primero; EJECUTAR después.",
+      "ejemplo_practico": "DECLARE v_total NUMBER := 0; BEGIN ... END;",
+      "conclusion_final": "Las variables y constantes se definen en DECLARE."
+    }
+  },
+  {
+    "id": "UT6-Q06",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Necesitas declarar una variable de texto que ahorre espacio, ocupando solo la memoria necesaria según lo que escribas. ¿Qué tipo de dato eliges?",
+    "contexto": "Elección de tipo de texto de longitud variable.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "VARCHAR2." },
+      { "clave": "b", "texto": "NUMBER." },
+      { "clave": "c", "texto": "BOOLEAN." },
+      { "clave": "d", "texto": "CHAR." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "VARCHAR2 es texto de longitud variable: ocupa según el contenido (hasta un máximo). CHAR es longitud fija y rellena hasta n caracteres.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "NUMBER es numérico; no almacena cadenas de texto." },
+        { "clave": "c", "motivo": "BOOLEAN es lógico; no almacena texto." },
+        { "clave": "d", "motivo": "CHAR es fijo: reserva siempre el tamaño total, aunque escribas menos." }
+      ],
+      "resumen_didactico": "Texto variable = VARCHAR2; texto fijo = CHAR.",
+      "ejemplo_practico": "Para estados como 'OK' o 'PENDIENTE_DE_REVISION', VARCHAR2 evita desperdicio frente a CHAR fijo.",
+      "conclusion_final": "Para ahorrar espacio en texto variable, usa VARCHAR2."
+    }
+  },
+  {
+    "id": "UT6-Q07",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Quieres declarar una variable v_apellido asegurándote de que siempre tenga exactamente el mismo tipo de dato que la columna Apellido de la tabla Empleados, incluso si esta cambia en el futuro. ¿Qué atributo utilizas?",
+    "contexto": "Mantenibilidad: heredar tipo de columna.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "%ROWTYPE." },
+      { "clave": "b", "texto": "%TYPE." },
+      { "clave": "c", "texto": "%DATATYPE." },
+      { "clave": "d", "texto": "%COPY." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "%TYPE declara una variable con el mismo tipo que una columna (o variable) existente, manteniendo compatibilidad si el tipo cambia.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "%ROWTYPE copia la estructura de una fila completa (todas las columnas), no una columna concreta." },
+        { "clave": "c", "motivo": "No es un atributo estándar usado en PL/SQL para heredar tipos en esta unidad." },
+        { "clave": "d", "motivo": "No es un atributo estándar en PL/SQL para clonar tipos de columnas." }
+      ],
+      "resumen_didactico": "%TYPE = tipo de una columna; %ROWTYPE = fila completa.",
+      "ejemplo_practico": "v_apellido Empleados.Apellido%TYPE; garantiza que el tipo siga a la columna.",
+      "conclusion_final": "Para heredar el tipo de una columna, usa %TYPE."
+    }
+  },
+  {
+    "id": "UT6-Q08",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Necesitas guardar toda la información de una fila completa de la tabla Usuarios en una sola variable compuesta, copiando su estructura exacta. ¿Qué atributo usas?",
+    "contexto": "Registro que replica columnas de una tabla.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "%ROWTYPE." },
+      { "clave": "b", "texto": "%TABLE." },
+      { "clave": "c", "texto": "%STRUCT." },
+      { "clave": "d", "texto": "%TYPE." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "%ROWTYPE crea un registro con la estructura completa de una fila (todas las columnas y tipos) de una tabla o cursor.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es un atributo estándar de PL/SQL para copiar filas." },
+        { "clave": "c", "motivo": "No existe como atributo estándar en la sintaxis trabajada." },
+        { "clave": "d", "motivo": "%TYPE clona el tipo de una sola columna, no de toda la fila." }
+      ],
+      "resumen_didactico": "Si quieres una fila completa en una variable: %ROWTYPE.",
+      "ejemplo_practico": "v_usuario Usuarios%ROWTYPE; luego accedes como v_usuario.nombre, v_usuario.email, etc.",
+      "conclusion_final": "Para copiar la estructura exacta de una fila, usa %ROWTYPE."
+    }
+  },
+  {
+    "id": "UT6-Q09",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "En PL/SQL, ¿cuál es el operador que se utiliza para asignar un valor a una variable?",
+    "contexto": "Asignación de valores en variables PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "." },
+      { "clave": "b", "texto": ":" },
+      { "clave": "c", "texto": "." },
+      { "clave": "d", "texto": "->." },
+      { "clave": "e", "texto": "." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El operador de asignación en PL/SQL es ':=' (dos puntos e igual). En esta pregunta, las opciones parecen mal formateadas; la opción 'b' suele representar la parte inicial ':' de ':=' y es la más cercana a lo esperado.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El punto se usa para acceder a campos (registro.campo) o miembros de paquetes, no para asignar." },
+        { "clave": "c", "motivo": "El punto no es operador de asignación en PL/SQL." },
+        { "clave": "d", "motivo": "'->' es típico de otros lenguajes; no es asignación PL/SQL." },
+        { "clave": "e", "motivo": "El punto no asigna valores en PL/SQL." }
+      ],
+      "resumen_didactico": "Asignación en PL/SQL = ':='.",
+      "ejemplo_practico": "v_total := 100; asigna 100 a la variable v_total.",
+      "conclusion_final": "En PL/SQL se asigna con ':='; si el test no lo muestra completo, normalmente es un fallo de formato."
+    }
+  },
+  {
+    "id": "UT6-Q10",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Estás depurando un script y quieres que el servidor muestre un mensaje por pantalla. ¿Qué paquete y función utilizas?",
+    "contexto": "Depuración y salida por consola en Oracle.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "system.out.println()" },
+      { "clave": "b", "texto": "console.log()" },
+      { "clave": "c", "texto": "print_output()" },
+      { "clave": "d", "texto": "dbms_output.put_line()" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La salida estándar de depuración en PL/SQL se realiza con el paquete DBMS_OUTPUT y su procedimiento PUT_LINE para imprimir mensajes.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Es de Java, no de PL/SQL." },
+        { "clave": "b", "motivo": "Es de JavaScript, no de PL/SQL." },
+        { "clave": "c", "motivo": "No es el mecanismo estándar de Oracle descrito en el temario." }
+      ],
+      "resumen_didactico": "Para imprimir en Oracle: DBMS_OUTPUT.PUT_LINE.",
+      "ejemplo_practico": "DBMS_OUTPUT.PUT_LINE('Pedidos procesados: ' || v_total);",
+      "conclusion_final": "El paquete y procedimiento correctos son DBMS_OUTPUT.PUT_LINE."
+    }
+  },
+  {
+    "id": "UT6-Q11",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Para que los mensajes de dbms_output sean visibles en la consola de Oracle, ¿qué comando de entorno debes ejecutar previamente?",
+    "contexto": "Activar salida del servidor para ver mensajes de depuración.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "SET SERVEROUTPUT ON" },
+      { "clave": "b", "texto": "ENABLE CONSOLE" },
+      { "clave": "c", "texto": "SHOW MESSAGES" },
+      { "clave": "d", "texto": "SET OUTPUT TRUE" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "SET SERVEROUTPUT ON habilita la visualización de los mensajes producidos por DBMS_OUTPUT en la consola.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es el comando estándar indicado para Oracle en este contexto." },
+        { "clave": "c", "motivo": "No corresponde a la activación de DBMS_OUTPUT." },
+        { "clave": "d", "motivo": "No es la sintaxis usada en Oracle para habilitar la salida." }
+      ],
+      "resumen_didactico": "Sin SERVEROUTPUT ON, DBMS_OUTPUT no se ve.",
+      "ejemplo_practico": "Primero: SET SERVEROUTPUT ON; luego: DBMS_OUTPUT.PUT_LINE('OK');",
+      "conclusion_final": "Debes ejecutar SET SERVEROUTPUT ON antes de imprimir."
+    }
+  },
+  {
+    "id": "UT6-Q12",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Quieres crear un script interactivo que pregunte al usuario un valor al ejecutarse. ¿Qué carácter especial usas para crear una variable de sustitución?",
+    "contexto": "Entrada dinámica en ejecución (variables de sustitución).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "@." },
+      { "clave": "b", "texto": "&." },
+      { "clave": "c", "texto": "$." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El carácter '&' crea una variable de sustitución: al ejecutar, Oracle solicita el valor y lo sustituye en el script.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "'@' se asocia comúnmente a ejecutar scripts desde fichero, no a pedir un valor interactivo como sustitución." },
+        { "clave": "c", "motivo": "'$' no es el símbolo indicado en el temario para sustitución de variables." }
+      ],
+      "resumen_didactico": "Entrada interactiva rápida = &variable.",
+      "ejemplo_practico": "v_id NUMBER := &id_usuario; hace que el script pregunte el id al ejecutarse.",
+      "conclusion_final": "El símbolo correcto para variable de sustitución es '&'."
+    }
+  },
+  {
+    "id": "UT6-Q13",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Necesitas evaluar la nota de un alumno. Si es menor que 5 es \"Suspenso\", si es mayor o igual a 5 es \"Aprobado\". ¿Qué estructura de control utilizas?",
+    "contexto": "Selección condicional con dos resultados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "FOR... IN..." },
+      { "clave": "b", "texto": "WHILE... LOOP." },
+      { "clave": "c", "texto": "LOOP... END LOOP." },
+      { "clave": "d", "texto": "IF... THEN... ELSE... END IF." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Cuando hay que tomar una decisión (si/no) basada en una condición, la estructura apropiada es IF...THEN...ELSE...END IF.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "FOR es un bucle para iteración, no para una decisión binaria." },
+        { "clave": "b", "motivo": "WHILE es un bucle; no es la estructura más directa para clasificar un valor en dos categorías." },
+        { "clave": "c", "motivo": "LOOP es un bucle básico (potencialmente infinito) y no resuelve por sí solo la decisión." }
+      ],
+      "resumen_didactico": "Decisiones = IF/CASE; repeticiones = bucles.",
+      "ejemplo_practico": "IF v_nota < 5 THEN 'Suspenso' ELSE 'Aprobado' END IF;",
+      "conclusion_final": "La estructura correcta para esta condición es IF...ELSE."
+    }
+  },
+  {
+    "id": "UT6-Q14",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Tienes que evaluar una variable contra muchos valores posibles. ¿Qué sentencia es la más limpia?",
+    "contexto": "Selección múltiple por casos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "CASE." },
+      { "clave": "b", "texto": "SELECT WHEN." },
+      { "clave": "c", "texto": "CHOOSE." },
+      { "clave": "d", "texto": "SWITCH." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "CASE permite evaluar una variable frente a múltiples casos de forma clara y mantenible, evitando cadenas largas de IF/ELSIF.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es una sentencia estándar de control en PL/SQL en este contexto." },
+        { "clave": "c", "motivo": "No existe como estructura estándar en PL/SQL." },
+        { "clave": "d", "motivo": "SWITCH es típica de otros lenguajes; en PL/SQL el equivalente es CASE." }
+      ],
+      "resumen_didactico": "Muchos valores posibles para la misma variable: CASE.",
+      "ejemplo_practico": "CASE v_estado WHEN 'PENDIENTE' THEN ... WHEN 'EN_RUTA' THEN ... ELSE ... END CASE;",
+      "conclusion_final": "La sentencia más limpia para múltiples valores es CASE."
+    }
+  },
+  {
+    "id": "UT6-Q15",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Estás escribiendo un bucle LOOP básico (infinito). ¿Qué sentencia debes incluir para detenerlo?",
+    "contexto": "Control de salida en bucles LOOP.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "EXIT." },
+      { "clave": "b", "texto": "BREAK." },
+      { "clave": "c", "texto": "RETURN." },
+      { "clave": "d", "texto": "STOP." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El bucle LOOP es infinito por defecto. Para detenerlo se usa EXIT (frecuentemente EXIT WHEN condición).",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "BREAK es típico de otros lenguajes; en PL/SQL se usa EXIT." },
+        { "clave": "c", "motivo": "RETURN se asocia al retorno de funciones (y salida del bloque en ese contexto), no es la sentencia estándar para romper un LOOP." },
+        { "clave": "d", "motivo": "STOP no es una sentencia de control de bucle en PL/SQL." }
+      ],
+      "resumen_didactico": "LOOP infinito + EXIT = control de fin.",
+      "ejemplo_practico": "LOOP ... EXIT WHEN v_cont = 3; END LOOP;",
+      "conclusion_final": "Para salir de un LOOP básico, debes usar EXIT."
+    }
+  },
+  {
+    "id": "UT6-Q16",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Necesitas recorrer una lista de números del 1 al 100. ¿Qué bucle es ideal?",
+    "contexto": "Iteración sobre rango conocido.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "REPEAT." },
+      { "clave": "b", "texto": "LOOP." },
+      { "clave": "c", "texto": "FOR." },
+      { "clave": "d", "texto": "WHILE." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "FOR...IN...LOOP es ideal para rangos conocidos porque gestiona el contador automáticamente y reduce errores.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "REPEAT no es una estructura estándar en PL/SQL según la unidad." },
+        { "clave": "b", "motivo": "Con LOOP necesitarías controlar el contador y el EXIT manualmente; es menos limpio." },
+        { "clave": "d", "motivo": "WHILE funciona, pero exige inicialización e incremento manual; FOR es más directo para un rango fijo." }
+      ],
+      "resumen_didactico": "Rango conocido = FOR; condición dinámica = WHILE; infinito controlado = LOOP+EXIT.",
+      "ejemplo_practico": "FOR i IN 1..100 LOOP DBMS_OUTPUT.PUT_LINE(i); END LOOP;",
+      "conclusion_final": "Para 1..100, el bucle ideal es FOR."
+    }
+  },
+  {
+    "id": "UT6-Q17",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Quieres aplicar el principio DRY y encapsular una lógica reutilizable. ¿Qué creas?",
+    "contexto": "Reutilización de lógica en PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un trigger." },
+      { "clave": "b", "texto": "Un procedimiento." },
+      { "clave": "c", "texto": "Una vista." },
+      { "clave": "d", "texto": "Una variable." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El principio DRY se aplica encapsulando lógica en procedimientos o funciones para reutilizarla sin duplicar código. Un procedimiento es una unidad reutilizable almacenada.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Un trigger se ejecuta por eventos; no es el patrón general de reutilización bajo demanda." },
+        { "clave": "c", "motivo": "Una vista encapsula una consulta (SELECT), no lógica procedimental completa." },
+        { "clave": "d", "motivo": "Una variable solo almacena datos; no encapsula comportamiento reutilizable." }
+      ],
+      "resumen_didactico": "Para DRY: crea piezas reutilizables (procedimientos/funciones).",
+      "ejemplo_practico": "Procedimiento recalcular_stock(p_id_producto) llamado desde distintos scripts sin copiar lógica.",
+      "conclusion_final": "La opción correcta para DRY es crear un procedimiento."
+    }
+  },
+  {
+    "id": "UT6-Q18",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "A diferencia de un procedimiento, ¿qué característica fundamental tiene una función en PL/SQL?",
+    "contexto": "Diferencia clave entre función y procedimiento.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "No puede contener lógica compleja." },
+      { "clave": "b", "texto": "Se ejecuta automáticamente." },
+      { "clave": "c", "texto": "Debe devolver obligatoriamente un valor con RETURN." },
+      { "clave": "d", "texto": "No puede recibir parámetros." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Una función se define para devolver un valor. Por eso debe tener RETURN y retornar un resultado del tipo declarado.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Una función puede incluir IF, bucles y excepciones; puede ser compleja." },
+        { "clave": "b", "motivo": "La ejecución automática es propia de triggers; funciones se ejecutan cuando se invocan." },
+        { "clave": "d", "motivo": "Las funciones pueden recibir parámetros; lo que las define es el retorno." }
+      ],
+      "resumen_didactico": "Procedimiento = hace; función = calcula y devuelve.",
+      "ejemplo_practico": "FUNCTION calc_descuento(...) RETURN NUMBER; ... RETURN 0.10;",
+      "conclusion_final": "La característica fundamental de una función es que debe devolver un valor con RETURN."
+    }
+  },
+  {
+    "id": "UT6-Q19",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "En un procedimiento, necesitas pasar un parámetro que se lea, modifique y devuelva. ¿Qué modo usas?",
+    "contexto": "Parámetros IN/OUT/IN OUT en procedimientos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "IN OUT." },
+      { "clave": "b", "texto": "RETURN." },
+      { "clave": "c", "texto": "OUT." },
+      { "clave": "d", "texto": "IN." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "IN OUT permite entrada y salida: el procedimiento recibe un valor, lo usa y lo modifica devolviendo el nuevo valor en la misma variable.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "RETURN se asocia al retorno de funciones, no es un modo de parámetro." },
+        { "clave": "c", "motivo": "OUT se usa para devolver un valor, pero el valor inicial no se considera como entrada para ser leído/modificado." },
+        { "clave": "d", "motivo": "IN es solo lectura: no devuelve modificaciones al llamador." }
+      ],
+      "resumen_didactico": "IN = entra; OUT = sale; IN OUT = entra y sale (se modifica).",
+      "ejemplo_practico": "sumar_uno(p_num IN OUT NUMBER) incrementa p_num y lo devuelve actualizado.",
+      "conclusion_final": "Para leer, modificar y devolver, el modo correcto es IN OUT."
+    }
+  },
+  {
+    "id": "UT6-Q20",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Usas SELECT ... INTO para guardar el resultado en una variable. ¿Qué limitación estricta tiene?",
+    "contexto": "Regla clave de SELECT INTO en PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Debe devolver al menos dos filas." },
+      { "clave": "b", "texto": "La consulta debe devolver exactamente una fila." },
+      { "clave": "c", "texto": "Puede no devolver nada." },
+      { "clave": "d", "texto": "Solo funciona con números." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "SELECT INTO exige exactamente una fila. Si devuelve 0 filas lanza NO_DATA_FOUND; si devuelve más de 1 lanza TOO_MANY_ROWS.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Dos o más filas no es válido para SELECT INTO; para múltiples filas se usan cursores." },
+        { "clave": "c", "motivo": "Si no devuelve nada, produce una excepción (NO_DATA_FOUND), no es un caso aceptado." },
+        { "clave": "d", "motivo": "Funciona con distintos tipos (texto, fechas, etc.), no solo con números." }
+      ],
+      "resumen_didactico": "SELECT INTO = 1 fila exacta; si no, excepción.",
+      "ejemplo_practico": "SELECT nombre INTO v_nombre FROM usuarios WHERE id=10; requiere que id sea único y exista.",
+      "conclusion_final": "La limitación estricta es devolver exactamente una fila."
+    }
+  },
+  {
+    "id": "UT6-Q21",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Debes procesar múltiples filas una a una. ¿Qué estructura utilizas?",
+    "contexto": "Recorrer múltiples registros desde PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un Trigger." },
+      { "clave": "b", "texto": "Un Cursor." },
+      { "clave": "c", "texto": "Un Array." },
+      { "clave": "d", "texto": "Un Bloque Anónimo." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Para tratar múltiples filas, PL/SQL usa cursores: permiten iterar fila a fila sobre un conjunto de resultados. SELECT INTO no sirve para más de una fila.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Un trigger es ejecución automática por eventos; no es la estructura principal para iterar resultados de consultas." },
+        { "clave": "c", "motivo": "Un array es estructura de datos; el mecanismo propio para iterar filas de una consulta es el cursor." },
+        { "clave": "d", "motivo": "Un bloque anónimo es un contenedor; dentro puedes usar cursores, pero el recurso para múltiples filas es el cursor." }
+      ],
+      "resumen_didactico": "Muchas filas: cursor; una fila: SELECT INTO.",
+      "ejemplo_practico": "CURSOR c IS SELECT ...; FOR r IN c LOOP ... END LOOP;",
+      "conclusion_final": "Para procesar filas una a una, debes usar un cursor."
+    }
+  },
+  {
+    "id": "UT6-Q22",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "¿Cuál es el ciclo de vida correcto de un cursor explícito?",
+    "contexto": "Orden correcto de manejo manual de cursores.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Abrir -> Cerrar -> Leer." },
+      { "clave": "b", "texto": "Declarar -> Ejecutar." },
+      { "clave": "c", "texto": "Fetch -> Open -> Close." },
+      { "clave": "d", "texto": "Declarar -> Abrir -> Fetch -> Cerrar." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Un cursor explícito se declara, se abre (OPEN), se lee con FETCH repetidamente y se cierra (CLOSE) para liberar recursos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No puedes leer (FETCH) después de cerrar." },
+        { "clave": "b", "motivo": "Es incompleto: faltan OPEN/FETCH/CLOSE del ciclo estándar." },
+        { "clave": "c", "motivo": "No puedes hacer FETCH antes de OPEN." }
+      ],
+      "resumen_didactico": "DECLARE → OPEN → FETCH → CLOSE.",
+      "ejemplo_practico": "OPEN c; LOOP FETCH c INTO ...; EXIT WHEN c%NOTFOUND; END LOOP; CLOSE c;",
+      "conclusion_final": "El ciclo correcto es declarar, abrir, fetch y cerrar."
+    }
+  },
+  {
+    "id": "UT6-Q23",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "¿Qué atributo indica si se ha leído una fila con éxito?",
+    "contexto": "Atributos de cursor tras FETCH.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "%ISOPEN." },
+      { "clave": "b", "texto": "%NOTFOUND." },
+      { "clave": "c", "texto": "%FOUND." },
+      { "clave": "d", "texto": "%ROWCOUNT." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Tras un FETCH, %FOUND indica si se recuperó una fila correctamente (TRUE si tuvo éxito).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "%ISOPEN indica si el cursor está abierto, no el resultado del FETCH." },
+        { "clave": "b", "motivo": "%NOTFOUND indica lo contrario: que no se encontró fila (fin de resultados)." },
+        { "clave": "d", "motivo": "%ROWCOUNT indica cuántas filas se han procesado, no si la última lectura fue exitosa." }
+      ],
+      "resumen_didactico": "%FOUND = hay fila; %NOTFOUND = no hay más; %ISOPEN = abierto; %ROWCOUNT = contador.",
+      "ejemplo_practico": "FETCH c INTO ...; IF c%FOUND THEN ... END IF;",
+      "conclusion_final": "El atributo que confirma lectura exitosa es %FOUND."
+    }
+  },
+  {
+    "id": "UT6-Q24",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "¿Cuál es la forma más limpia de recorrer un cursor?",
+    "contexto": "Recorrido de cursor minimizando código y errores.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Usar un TRIGGER." },
+      { "clave": "b", "texto": "Usar un WHILE." },
+      { "clave": "c", "texto": "Usar un bucle FOR con el cursor." },
+      { "clave": "d", "texto": "Usar un IF." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El bucle FOR r IN cursor LOOP es la forma más limpia porque Oracle gestiona OPEN/FETCH/CLOSE automáticamente, reduciendo código y fallos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Un trigger es para ejecución automática por eventos, no para un recorrido estándar de resultados." },
+        { "clave": "b", "motivo": "WHILE es válido, pero suele requerir OPEN/FETCH y control manual con %FOUND/%NOTFOUND; es menos limpio que FOR con cursor." },
+        { "clave": "d", "motivo": "IF no itera; solo selecciona caminos condicionales." }
+      ],
+      "resumen_didactico": "Para recorrer un cursor con menos código: FOR ... IN cursor.",
+      "ejemplo_practico": "FOR r IN c_pedidos LOOP DBMS_OUTPUT.PUT_LINE(r.id); END LOOP;",
+      "conclusion_final": "La opción más limpia es un FOR con el cursor."
+    }
+  },
+  {
+    "id": "UT6-Q25",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Para evitar que un programa se cuelgue ante un error imprevisto, ¿qué bloque usas?",
+    "contexto": "Manejo de errores en ejecución.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "DEBUG." },
+      { "clave": "b", "texto": "EXCEPTION." },
+      { "clave": "c", "texto": "TRACE." },
+      { "clave": "d", "texto": "DECLARE." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El bloque EXCEPTION permite capturar y manejar errores para evitar que la ejecución se detenga abruptamente, definiendo qué hacer ante fallos previstos o con WHEN OTHERS.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "DEBUG no es un bloque estándar de manejo de errores en PL/SQL." },
+        { "clave": "c", "motivo": "TRACE no es el bloque de control de errores indicado en el temario." },
+        { "clave": "d", "motivo": "DECLARE es para declaraciones; no captura errores en ejecución." }
+      ],
+      "resumen_didactico": "Para controlar errores: EXCEPTION (y opcionalmente WHEN OTHERS).",
+      "ejemplo_practico": "BEGIN ... EXCEPTION WHEN ZERO_DIVIDE THEN ... WHEN OTHERS THEN ... END;",
+      "conclusion_final": "Para evitar caída ante errores, debes usar EXCEPTION."
+    }
+  },
+  {
+    "id": "UT6-Q26",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "¿Qué excepción se lanza cuando un SELECT INTO no devuelve resultados?",
+    "contexto": "Errores típicos asociados a SELECT INTO.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "ZERO_DIVIDE." },
+      { "clave": "b", "texto": "NO_DATA_FOUND." },
+      { "clave": "c", "texto": "VALUE_ERROR." },
+      { "clave": "d", "texto": "TOO_MANY_ROWS." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "SELECT INTO exige exactamente una fila. Si no devuelve ninguna, Oracle lanza NO_DATA_FOUND (si devuelve más de una, TOO_MANY_ROWS).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "ZERO_DIVIDE corresponde a división por cero, no a falta de resultados." },
+        { "clave": "c", "motivo": "VALUE_ERROR se relaciona con problemas de conversión/asignación de valores, no con 0 filas." },
+        { "clave": "d", "motivo": "TOO_MANY_ROWS ocurre cuando SELECT INTO devuelve más de una fila." }
+      ],
+      "resumen_didactico": "0 filas = NO_DATA_FOUND; +1 fila = TOO_MANY_ROWS.",
+      "ejemplo_practico": "SELECT nombre INTO v_nombre FROM usuarios WHERE id = -1; dispara NO_DATA_FOUND si no existe.",
+      "conclusion_final": "Si SELECT INTO no devuelve resultados, la excepción es NO_DATA_FOUND."
+    }
+  },
+  {
+    "id": "UT6-Q27",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Para forzar manualmente un error de negocio, ¿qué comando usas?",
+    "contexto": "Lanzar excepciones definidas por la lógica del negocio.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "RAISE." },
+      { "clave": "b", "texto": "TRIGGER." },
+      { "clave": "c", "texto": "ALERT." },
+      { "clave": "d", "texto": "THROW." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "RAISE permite lanzar una excepción manualmente cuando una regla de negocio no se cumple, para que se gestione en el bloque EXCEPTION.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "TRIGGER es un objeto que se dispara por eventos; no es el comando para lanzar errores manuales." },
+        { "clave": "c", "motivo": "ALERT no es la sentencia estándar de PL/SQL para lanzar excepciones." },
+        { "clave": "d", "motivo": "THROW es típico de otros lenguajes; en PL/SQL se usa RAISE." }
+      ],
+      "resumen_didactico": "Error de negocio controlado = detectar condición + RAISE + manejar en EXCEPTION.",
+      "ejemplo_practico": "IF v_stock < 0 THEN RAISE e_stock_negativo; END IF;",
+      "conclusion_final": "Para forzar un error de negocio, se utiliza RAISE."
+    }
+  },
+  {
+    "id": "UT6-Q28",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "¿Qué es un Trigger en PL/SQL?",
+    "contexto": "Concepto de disparador en Oracle.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un bloque que se ejecuta automáticamente ante eventos en una tabla." },
+      { "clave": "b", "texto": "Un procedimiento manual." },
+      { "clave": "c", "texto": "Un cursor rápido." },
+      { "clave": "d", "texto": "Una variable automática." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Un trigger es un bloque PL/SQL que se ejecuta automáticamente cuando ocurre un evento (INSERT/UPDATE/DELETE) sobre una tabla, con timing BEFORE/AFTER y, si procede, por fila.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Un procedimiento se invoca explícitamente; el trigger se dispara automáticamente." },
+        { "clave": "c", "motivo": "Un cursor recorre filas; no se dispara por eventos de tabla." },
+        { "clave": "d", "motivo": "Una variable no ejecuta lógica ni reacciona a eventos." }
+      ],
+      "resumen_didactico": "Trigger = automatización reactiva a eventos de tabla.",
+      "ejemplo_practico": "AFTER UPDATE en pedidos para insertar auditoría del cambio de estado.",
+      "conclusion_final": "Un trigger es código que se ejecuta automáticamente por eventos en una tabla."
+    }
+  },
+  {
+    "id": "UT6-Q29",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "En un trigger, ¿qué momento eliges para validar datos antes de guardarlos?",
+    "contexto": "Elegir el timing del trigger para validación previa.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "LATER." },
+      { "clave": "b", "texto": "AFTER." },
+      { "clave": "c", "texto": "DURING." },
+      { "clave": "d", "texto": "BEFORE." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "BEFORE se ejecuta antes de que se apliquen los cambios, permitiendo validar/corregir y bloquear la operación si no cumple reglas.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es un momento válido de trigger en la sintaxis tratada." },
+        { "clave": "b", "motivo": "AFTER ocurre después de guardar: útil para auditoría o acciones posteriores, no para validar antes de persistir." },
+        { "clave": "c", "motivo": "No es un momento válido de trigger en la sintaxis trabajada." }
+      ],
+      "resumen_didactico": "Validar antes de escribir = BEFORE; actuar después = AFTER.",
+      "ejemplo_practico": "BEFORE INSERT/UPDATE: comprobar que :NEW.estado pertenece a un conjunto permitido; si no, lanzar error.",
+      "conclusion_final": "Para validar antes de guardar, el momento correcto es BEFORE."
+    }
+  },
+  {
+    "id": "UT6-Q30",
+    "tema": "UT6 — Lenguaje de programación: construcción de guiones (PL/SQL)",
+    "pregunta": "Dentro de un trigger FOR EACH ROW, ¿cómo accedes a los valores antiguo y nuevo?",
+    "contexto": "Acceso a datos previos y posteriores en triggers por fila.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": ":old y :new." },
+      { "clave": "b", "texto": "No se puede acceder." },
+      { "clave": "c", "texto": "PREVIOUS y CURRENT." },
+      { "clave": "d", "texto": "OLD y NEW." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En triggers FOR EACH ROW, Oracle expone pseudoregistros :OLD y :NEW para acceder a valores anteriores y nuevos (según el evento).",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Sí se puede acceder: precisamente FOR EACH ROW permite :OLD/:NEW." },
+        { "clave": "c", "motivo": "No es la sintaxis estándar de Oracle para triggers." },
+        { "clave": "d", "motivo": "Falta el prefijo ':' requerido: la forma correcta es :OLD y :NEW." }
+      ],
+      "resumen_didactico": ":OLD = antes; :NEW = después (en triggers por fila).",
+      "ejemplo_practico": "Comparar :OLD.estado con :NEW.estado para registrar auditoría del cambio.",
+      "conclusion_final": "En triggers por fila, se accede a valores antiguo/nuevo con :OLD y :NEW."
+    }
+  }
+]

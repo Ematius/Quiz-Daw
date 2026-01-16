@@ -1,0 +1,754 @@
+
+[
+  {
+    "id": "UT5-Q01",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Acabas de ser contratado como Administrador de Datos de la \"Liga de la Justicia Global\". Tu primera misión implica interactuar con los datos existentes: consultar, insertar o modificar poderes. ¿Qué sublenguaje de SQL debes utilizar para estas tareas?",
+    "contexto": "Elegir el sublenguaje SQL adecuado para consultar e insertar/modificar datos existentes.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "DDL (Data Definition Language)." },
+      { "clave": "b", "texto": "TCL (Transaction Control Language)." },
+      { "clave": "c", "texto": "DCL (Data Control Language)." },
+      { "clave": "d", "texto": "DML (Data Manipulation Language)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "DML (Data Manipulation Language) se usa para trabajar con los datos: consultar (SELECT), insertar (INSERT), modificar (UPDATE) y borrar (DELETE).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "DDL define o modifica la estructura (CREATE/ALTER/DROP), no manipula registros." },
+        { "clave": "b", "motivo": "TCL gestiona transacciones (confirmar o deshacer), no es el sublenguaje principal para consultar/insertar/modificar datos." },
+        { "clave": "c", "motivo": "DCL controla permisos (GRANT/REVOKE), no la manipulación de datos." }
+      ],
+      "resumen_didactico": "Si tocas filas (leer, meter, cambiar o borrar datos), estás usando DML.",
+      "ejemplo_practico": "SELECT poder FROM heroes; INSERT INTO heroes(...); UPDATE heroes SET ...; DELETE FROM heroes WHERE ...;",
+      "conclusion_final": "Para consultar, insertar o modificar datos, se utiliza DML."
+    }
+  },
+  {
+    "id": "UT5-Q02",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Estás utilizando la sentencia SELECT para buscar información. Si la cláusula WHERE actúa como un filtro de seguridad en la entrada, ¿qué función cumple exactamente?",
+    "contexto": "Entender el rol de WHERE en una consulta SELECT.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Ordenar los resultados alfabéticamente." },
+      { "clave": "b", "texto": "Seleccionar qué columnas se mostrarán en el informe." },
+      { "clave": "c", "texto": "Definir la condición que deben cumplir los registros para aparecer en la selección." },
+      { "clave": "d", "texto": "Agrupar los resultados por categorías." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "WHERE filtra filas: solo aparecen los registros que cumplen la condición indicada.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Ordenar corresponde a ORDER BY, no a WHERE." },
+        { "clave": "b", "motivo": "Las columnas se eligen en el SELECT (lista de campos)." },
+        { "clave": "d", "motivo": "Agrupar corresponde a GROUP BY (y filtrar grupos a HAVING)." }
+      ],
+      "resumen_didactico": "SELECT elige columnas; WHERE filtra filas; GROUP BY agrupa; ORDER BY ordena.",
+      "ejemplo_practico": "SELECT alias FROM heroes WHERE fuerza >= 90;",
+      "conclusion_final": "WHERE define la condición para que un registro aparezca en el resultado."
+    }
+  },
+  {
+    "id": "UT5-Q03",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Necesitas buscar héroes que midan entre 1.70 y 2.00 metros. Utilizas el operador BETWEEN 1.70 AND 2.00. ¿Cómo trata SQL los límites de este intervalo?",
+    "contexto": "Interpretación de BETWEEN en filtros numéricos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Es un intervalo cerrado (incluye ambos límites)." },
+      { "clave": "b", "texto": "Solo incluye el límite inferior." },
+      { "clave": "c", "texto": "Solo incluye el límite superior." },
+      { "clave": "d", "texto": "Es un intervalo abierto." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "BETWEEN ... AND ... es inclusivo: equivale a >= límite_inferior y <= límite_superior.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "BETWEEN no excluye el límite superior; lo incluye." },
+        { "clave": "c", "motivo": "BETWEEN no excluye el límite inferior; lo incluye." },
+        { "clave": "d", "motivo": "No es un intervalo abierto; incluye extremos." }
+      ],
+      "resumen_didactico": "BETWEEN incluye los dos extremos: (>= y <=).",
+      "ejemplo_practico": "SELECT alias FROM heroes WHERE altura BETWEEN 1.70 AND 2.00;",
+      "conclusion_final": "BETWEEN define un intervalo cerrado: incluye ambos límites."
+    }
+  },
+  {
+    "id": "UT5-Q04",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Debes filtrar una lista de héroes utilizando operadores lógicos. Si usas el operador AND, ¿qué condición debe cumplirse?",
+    "contexto": "Uso de AND en condiciones de WHERE.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Ninguna de las condiciones debe ser falsa." },
+      { "clave": "b", "texto": "Basta con que una de las condiciones sea verdadera." },
+      { "clave": "c", "texto": "Todas las condiciones unidas por el AND deben ser verdaderas." },
+      { "clave": "d", "texto": "Se invierte el significado de la expresión" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "AND exige que todas las condiciones sean verdaderas para que el registro pase el filtro.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Es una formulación ambigua; la regla clara es: todas deben ser verdaderas." },
+        { "clave": "b", "motivo": "Eso describe OR, no AND." },
+        { "clave": "d", "motivo": "Invertir la expresión corresponde a NOT, no a AND." }
+      ],
+      "resumen_didactico": "AND = cumplir todo; OR = cumplir al menos una; NOT = negar.",
+      "ejemplo_practico": "SELECT alias FROM heroes WHERE equipo='Liga' AND fuerza>=90;",
+      "conclusion_final": "Con AND, todas las condiciones deben ser verdaderas."
+    }
+  },
+  {
+    "id": "UT5-Q05",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "En una consulta compleja combinas AND y OR. Según la jerarquía de operadores en SQL, si no usas paréntesis, ¿cuál es el orden de evaluación?",
+    "contexto": "Precedencia de operadores lógicos en SQL.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El AND siempre se evalúa antes que el OR." },
+      { "clave": "b", "texto": "De derecha a izquierda." },
+      { "clave": "c", "texto": "El OR siempre se evalúa antes que el AND." },
+      { "clave": "d", "texto": "De izquierda a derecha." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Sin paréntesis, SQL evalúa primero AND y luego OR. Por eso es recomendable usar paréntesis cuando se combinan.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es una regla general: lo determinante es la precedencia (AND antes que OR)." },
+        { "clave": "c", "motivo": "Es lo contrario: OR tiene menor prioridad." },
+        { "clave": "d", "motivo": "La precedencia domina sobre el orden izquierda-derecha cuando hay operadores distintos." }
+      ],
+      "resumen_didactico": "Si mezclas AND y OR, usa paréntesis: AND se evalúa antes que OR.",
+      "ejemplo_practico": "WHERE A OR B AND C se interpreta como WHERE A OR (B AND C).",
+      "conclusion_final": "Sin paréntesis, AND se evalúa antes que OR."
+    }
+  },
+  {
+    "id": "UT5-Q06",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "El técnico Sergio necesita imprimir tarjetas uniendo el alias y el equipo en una sola línea. En el estándar SQL universal, ¿qué operador de concatenación debe usar?",
+    "contexto": "Concatenación de strings en SQL estándar.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La función CONCAT()." },
+      { "clave": "b", "texto": "El signo más (+)." },
+      { "clave": "c", "texto": "Las barras verticales (||)." },
+      { "clave": "d", "texto": "El ampersand (&)." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En SQL estándar, el operador de concatenación es || para unir textos en una sola salida.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "CONCAT() existe en varios motores, pero la pregunta pide el operador del estándar universal." },
+        { "clave": "b", "motivo": "+ no es el operador estándar de concatenación; puede variar según SGBD." },
+        { "clave": "d", "motivo": "& no es un operador de concatenación SQL estándar." }
+      ],
+      "resumen_didactico": "Concatenar texto (estándar) = usar ||.",
+      "ejemplo_practico": "SELECT alias || ' - ' || equipo AS tarjeta FROM heroes;",
+      "conclusion_final": "Para concatenación estándar, usa ||."
+    }
+  },
+  {
+    "id": "UT5-Q07",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Un héroe aún no ha pasado su revisión médica y su fuerza no se conoce. ¿Qué valor representa la ausencia total de información?",
+    "contexto": "Significado de NULL en SQL.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "0." },
+      { "clave": "b", "texto": "Una cadena vacía." },
+      { "clave": "c", "texto": "FALSE." },
+      { "clave": "d", "texto": "NULL." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "NULL representa ausencia de valor o dato desconocido. No equivale a 0, cadena vacía ni falso.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "0 es un valor numérico válido, no 'desconocido'." },
+        { "clave": "b", "motivo": "Cadena vacía es un valor existente (texto de longitud 0), no ausencia de información." },
+        { "clave": "c", "motivo": "FALSE es un valor booleano, no 'sin dato'." }
+      ],
+      "resumen_didactico": "NULL = no hay información (usar IS NULL / IS NOT NULL para comprobarlo).",
+      "ejemplo_practico": "SELECT alias FROM heroes WHERE fuerza IS NULL;",
+      "conclusion_final": "La ausencia total de información se representa con NULL."
+    }
+  },
+  {
+    "id": "UT5-Q08",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Buscas un aspirante cuyo alias empieza por \"Super\". ¿Qué operador y comodín utilizas?",
+    "contexto": "Búsqueda por patrón con LIKE.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "\"Super*\"." },
+      { "clave": "b", "texto": "WHERE alias" },
+      { "clave": "c", "texto": "WHERE alias IS \"Super?\"." },
+      { "clave": "d", "texto": "WHERE alias LIKE \"Super_\"." },
+      { "clave": "e", "texto": "WHERE alias LIKE \"Super%\"." }
+    ],
+    "respuesta_correcta": ["e"],
+    "explicacion": {
+      "temario": "LIKE permite patrones. % significa 'cualquier cadena (0 o más caracteres)'. 'Super%' busca textos que empiezan por 'Super'.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "* no es comodín estándar en LIKE." },
+        { "clave": "b", "motivo": "Está incompleto; no define condición." },
+        { "clave": "c", "motivo": "IS se usa típicamente con NULL (IS NULL) y ? no es comodín estándar de LIKE." },
+        { "clave": "d", "motivo": "_ equivale a un solo carácter; 'Super_' solo coincide con 'SuperX'." }
+      ],
+      "resumen_didactico": "% = longitud variable; _ = un carácter. Para 'empieza por', usa prefijo + %.",
+      "ejemplo_practico": "SELECT alias FROM heroes WHERE alias LIKE 'Super%';",
+      "conclusion_final": "Para alias que empiezan por 'Super', usa LIKE con %: 'Super%'."
+    }
+  },
+  {
+    "id": "UT5-Q09",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Para calcular el promedio de fuerza de los reclutas, ¿qué función de agregación utilizas?",
+    "contexto": "Funciones de agregación: promedio.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "COUNT(fuerza)." },
+      { "clave": "b", "texto": "MAX(fuerza)." },
+      { "clave": "c", "texto": "AVG(fuerza)." },
+      { "clave": "d", "texto": "SUM(fuerza)." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "AVG() calcula la media (promedio) de una columna numérica.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "COUNT cuenta valores (normalmente no nulos), no hace media." },
+        { "clave": "b", "motivo": "MAX devuelve el mayor valor, no el promedio." },
+        { "clave": "d", "motivo": "SUM suma valores; no es el promedio por sí mismo." }
+      ],
+      "resumen_didactico": "AVG=promedio, SUM=suma, COUNT=cantidad, MAX/MIN=extremos.",
+      "ejemplo_practico": "SELECT AVG(fuerza) AS fuerza_media FROM reclutas;",
+      "conclusion_final": "El promedio se calcula con AVG()."
+    }
+  },
+  {
+    "id": "UT5-Q10",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Quieres saber cuántos héroes hay por cada tipo de poder, pero solo los que tengan más de 8 héroes. ¿Qué cláusula usas para filtrar los grupos?",
+    "contexto": "Filtrar resultados agregados por grupo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "WHERE." },
+      { "clave": "b", "texto": "GROUP BY." },
+      { "clave": "c", "texto": "HAVING." },
+      { "clave": "d", "texto": "ORDER BY." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "HAVING filtra grupos tras aplicar GROUP BY y agregaciones (como COUNT). WHERE filtra filas antes de agrupar.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "WHERE filtra filas, no grupos agregados." },
+        { "clave": "b", "motivo": "GROUP BY agrupa, pero no filtra." },
+        { "clave": "d", "motivo": "ORDER BY ordena, no filtra." }
+      ],
+      "resumen_didactico": "WHERE=filas; GROUP BY=grupos; HAVING=filtra grupos; ORDER BY=ordena.",
+      "ejemplo_practico": "SELECT tipo_poder, COUNT(*) FROM heroes GROUP BY tipo_poder HAVING COUNT(*) > 8;",
+      "conclusion_final": "Para filtrar grupos agregados, se usa HAVING."
+    }
+  },
+  {
+    "id": "UT5-Q11",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Quieres ver todos los héroes, incluso los que no tienen poderes asignados. ¿Qué tipo de JOIN usas?",
+    "contexto": "JOIN para incluir filas sin correspondencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "LEFT JOIN." },
+      { "clave": "b", "texto": "INNER JOIN." },
+      { "clave": "c", "texto": "EQUI JOIN." },
+      { "clave": "d", "texto": "CROSS JOIN." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "LEFT JOIN incluye todas las filas de la tabla izquierda y, si no hay coincidencia, rellena con NULL los campos de la derecha.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "INNER JOIN solo devuelve filas con coincidencia en ambas tablas; excluiría héroes sin poder." },
+        { "clave": "c", "motivo": "EQUI JOIN suele aludir a unión por igualdad, pero no garantiza incluir no coincidentes; no cumple el requisito." },
+        { "clave": "d", "motivo": "CROSS JOIN hace producto cartesiano; no es lo que se busca." }
+      ],
+      "resumen_didactico": "Si quieres 'todos aunque falte relación', usa OUTER JOIN: aquí, LEFT JOIN.",
+      "ejemplo_practico": "SELECT h.alias, p.poder FROM heroes h LEFT JOIN poderes p ON p.hero_id = h.id;",
+      "conclusion_final": "Para incluir héroes sin poder, usa LEFT JOIN."
+    }
+  },
+  {
+    "id": "UT5-Q12",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Necesitas una lista única de alias combinando dos sedes, sin duplicados. ¿Qué operador usas?",
+    "contexto": "Combinar resultados de dos consultas eliminando duplicados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "UNION." },
+      { "clave": "b", "texto": "UNION ALL." },
+      { "clave": "c", "texto": "MINUS." },
+      { "clave": "d", "texto": "INTERSECT." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "UNION combina resultados y elimina duplicados. UNION ALL conserva duplicados.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "UNION ALL no elimina duplicados." },
+        { "clave": "c", "motivo": "MINUS devuelve A sin B (diferencia), no combinación." },
+        { "clave": "d", "motivo": "INTERSECT devuelve solo comunes, no la unión total." }
+      ],
+      "resumen_didactico": "UNION=combina sin duplicados; UNION ALL=combina con duplicados.",
+      "ejemplo_practico": "SELECT alias FROM sede_a UNION SELECT alias FROM sede_b;",
+      "conclusion_final": "Para una lista única sin duplicados, usa UNION."
+    }
+  },
+  {
+    "id": "UT5-Q13",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Si una subconsulta puede devolver varios valores, ¿qué operador usas?",
+    "contexto": "Operador para comparar contra un conjunto devuelto por subconsulta.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "IN." },
+      { "clave": "b", "texto": "LIKE." },
+      { "clave": "c", "texto": "BETWEEN." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Cuando una subconsulta puede devolver varios valores, se compara contra la lista usando IN.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "LIKE es para patrones de texto, no para listas de valores." },
+        { "clave": "c", "motivo": "BETWEEN es para rangos, no para conjuntos arbitrarios." }
+      ],
+      "resumen_didactico": "Subconsulta con varios resultados → IN. Subconsulta con un resultado → comparación directa (=, >, etc.).",
+      "ejemplo_practico": "WHERE equipo_id IN (SELECT id FROM equipos WHERE categoria='Elite')",
+      "conclusion_final": "Si la subconsulta devuelve varios valores, usa IN."
+    }
+  },
+  {
+    "id": "UT5-Q14",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Para cambiar el nombre de una columna solo en la visualización, ¿qué operador utilizas?",
+    "contexto": "Alias de columna en resultados de SELECT.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "CHANGE." },
+      { "clave": "b", "texto": "MODIFY." },
+      { "clave": "c", "texto": "AS." },
+      { "clave": "d", "texto": "RENAME" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "AS se usa para definir alias (renombrar columnas en la salida sin modificar la estructura real).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es la forma estándar para alias en SELECT; suele asociarse a cambios estructurales en algunos SGBD." },
+        { "clave": "b", "motivo": "MODIFY se relaciona con DDL en algunos motores, no con alias de visualización." },
+        { "clave": "d", "motivo": "RENAME suele usarse en cambios reales (DDL), no para renombrar solo la salida de una consulta." }
+      ],
+      "resumen_didactico": "AS cambia el nombre mostrado en el resultado (alias), no el nombre real en la tabla.",
+      "ejemplo_practico": "SELECT alias AS nombre_publico FROM heroes;",
+      "conclusion_final": "Para renombrar solo en la visualización, usa AS."
+    }
+  },
+  {
+    "id": "UT5-Q15",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Para convertir todos los alias a mayúsculas en la consulta, ¿qué función utilizas?",
+    "contexto": "Funciones de texto para transformación en SELECT.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "UPPER()." },
+      { "clave": "b", "texto": "CAPITALIZE()." },
+      { "clave": "c", "texto": "LOWER()." },
+      { "clave": "d", "texto": "TEXT()" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "UPPER() convierte texto a mayúsculas en el resultado de la consulta.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es una función estándar común en SQL para este objetivo (según el temario)." },
+        { "clave": "c", "motivo": "LOWER() convierte a minúsculas, no a mayúsculas." },
+        { "clave": "d", "motivo": "No es la función estándar de transformación a mayúsculas." }
+      ],
+      "resumen_didactico": "UPPER=mayúsculas, LOWER=minúsculas.",
+      "ejemplo_practico": "SELECT UPPER(alias) AS alias_mayus FROM heroes;",
+      "conclusion_final": "Para pasar a mayúsculas, se usa UPPER()."
+    }
+  },
+  {
+    "id": "UT5-Q16",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Por qué es recomendable usar funciones de transformación directamente en la base de datos?",
+    "contexto": "Ventajas de aplicar funciones integradas en la consulta.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Porque SQL no permite hacerlo de otra forma." },
+      { "clave": "b", "texto": "Porque ahorra memoria y tiempo de procesamiento delegando el trabajo a la BBDD." },
+      { "clave": "c", "texto": "Porque los lenguajes no saben manejar texto." },
+      { "clave": "d", "texto": "Porque evita inyecciones SQL." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Las funciones integradas permiten transformar datos en la propia consulta, devolviendo resultados ya procesados y reduciendo trabajo en la aplicación.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "También se puede transformar en la aplicación; no es la única forma." },
+        { "clave": "c", "motivo": "Los lenguajes sí manejan texto; no es la razón." },
+        { "clave": "d", "motivo": "Las funciones no previenen inyección; eso se aborda con parametrización y buenas prácticas." }
+      ],
+      "resumen_didactico": "Transformar en BD suele ser más eficiente: menos datos y menos procesamiento fuera.",
+      "ejemplo_practico": "SELECT UPPER(alias), CHAR_LENGTH(alias) FROM heroes;",
+      "conclusion_final": "Se recomienda por eficiencia y claridad al delegar el cálculo a la BD."
+    }
+  },
+  {
+    "id": "UT5-Q17",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Por qué es buena práctica especificar siempre los campos en un INSERT?",
+    "contexto": "Robustez y mantenimiento de INSERT.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Porque los datos se guardan en orden aleatorio." },
+      { "clave": "b", "texto": "Porque es más rápido." },
+      { "clave": "c", "texto": "Porque es obligatorio." },
+      { "clave": "d", "texto": "Para evitar errores si cambia la estructura de la tabla." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Indicar columnas hace el INSERT más seguro: no depende del orden de columnas y resiste cambios del esquema (nuevas columnas, defaults, etc.).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No se guardan en orden aleatorio; el riesgo real es depender del orden de columnas si no las indicas." },
+        { "clave": "b", "motivo": "La razón principal es robustez y claridad, no velocidad." },
+        { "clave": "c", "motivo": "No siempre es obligatorio; es una buena práctica." }
+      ],
+      "resumen_didactico": "INSERT con columnas = menos errores y más mantenible.",
+      "ejemplo_practico": "INSERT INTO heroes (alias, equipo, fuerza) VALUES ('Superman','Liga',100);",
+      "conclusion_final": "Especificar campos evita fallos si cambia la tabla."
+    }
+  },
+  {
+    "id": "UT5-Q18",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Para transferir masivamente registros entre tablas, ¿qué sentencia es más eficiente?",
+    "contexto": "Inserción masiva orientada a conjuntos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "VALUES repetido." },
+      { "clave": "b", "texto": "INSERT INTO ... SELECT ..." },
+      { "clave": "c", "texto": "COPY INTO." },
+      { "clave": "d", "texto": "INSERT uno a uno." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "INSERT INTO ... SELECT ... permite insertar de forma masiva el resultado de una consulta en una tabla destino, en una sola operación.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Repetir VALUES puede ser menos práctico para grandes volúmenes que obtener datos desde un SELECT." },
+        { "clave": "c", "motivo": "No es la sentencia estándar del tema para transferencias tabla-a-tabla; depende del SGBD." },
+        { "clave": "d", "motivo": "Insertar uno a uno es menos eficiente y más costoso en operaciones." }
+      ],
+      "resumen_didactico": "Si el origen puede expresarse como SELECT, usa INSERT...SELECT para cargas masivas.",
+      "ejemplo_practico": "INSERT INTO heroes (alias,equipo,fuerza) SELECT alias,equipo,fuerza FROM reclutas WHERE aprobado=1;",
+      "conclusion_final": "La opción más eficiente para transferencias masivas es INSERT INTO ... SELECT ..."
+    }
+  },
+  {
+    "id": "UT5-Q19",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué ocurre si ejecutas un UPDATE sin WHERE?",
+    "contexto": "Riesgo clásico en UPDATE.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Da error." },
+      { "clave": "b", "texto": "Solo se actualiza uno." },
+      { "clave": "c", "texto": "Se bloquea la tabla." },
+      { "clave": "d", "texto": "Se actualizan todos los registros." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Sin WHERE, UPDATE no restringe filas: el cambio aplica a toda la tabla.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Normalmente no da error: ejecuta la actualización sobre todas las filas." },
+        { "clave": "b", "motivo": "No hay criterio para una sola fila; se aplica a todas." },
+        { "clave": "c", "motivo": "Puede haber bloqueos según el motor, pero la consecuencia clave evaluada es que se actualiza todo." }
+      ],
+      "resumen_didactico": "UPDATE sin WHERE = actualizas toda la tabla. Regla: valida con un SELECT antes.",
+      "ejemplo_practico": "UPDATE heroes SET equipo='Reserva'; (afecta a todos)",
+      "conclusion_final": "UPDATE sin WHERE actualiza todos los registros."
+    }
+  },
+  {
+    "id": "UT5-Q20",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué es el borrado lógico?",
+    "contexto": "Alternativa profesional al DELETE físico.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Añadir un campo activo y marcarlo como false." },
+      { "clave": "b", "texto": "Borrar y restaurar backup." },
+      { "clave": "c", "texto": "Mover datos a Excel." },
+      { "clave": "d", "texto": "Encriptar datos." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El borrado lógico no elimina la fila: la marca como inactiva (activo=false, deleted=true) para conservar histórico y control.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Es un método de recuperación, no una técnica de borrado lógico." },
+        { "clave": "c", "motivo": "Es exportación de datos, no borrado." },
+        { "clave": "d", "motivo": "Es seguridad, no borrado." }
+      ],
+      "resumen_didactico": "Borrado físico=DELETE; borrado lógico=marcar como inactivo.",
+      "ejemplo_practico": "UPDATE heroes SET activo=0 WHERE id=10; (y consultar con WHERE activo=1)",
+      "conclusion_final": "Borrado lógico es conservar la fila y marcarla como inactiva."
+    }
+  },
+  {
+    "id": "UT5-Q21",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Para borrar héroes de un equipo disuelto, ¿qué técnica es más profesional?",
+    "contexto": "DELETE controlado usando selección por criterio derivado de otra tabla.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Usar un trigger." },
+      { "clave": "b", "texto": "Borrado manual." },
+      { "clave": "c", "texto": "Usar una subconsulta dentro del DELETE." },
+      { "clave": "d", "texto": "Borrar toda la tabla." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Las subconsultas permiten definir conjuntos de forma precisa. En un DELETE, una subconsulta en el WHERE selecciona exactamente qué filas eliminar (enfoque escalable y reproducible).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Un trigger puede automatizar reglas, pero añade complejidad y no es la técnica base para un borrado puntual y controlado." },
+        { "clave": "b", "motivo": "Manual es propenso a errores, no escalable y difícil de auditar." },
+        { "clave": "d", "motivo": "Borra todo, no solo el equipo disuelto." }
+      ],
+      "resumen_didactico": "Para borrar un subconjunto, define bien el WHERE; si depende de otra tabla, usa subconsulta (IN).",
+      "ejemplo_practico": "DELETE FROM heroes WHERE equipo_id IN (SELECT id FROM equipos WHERE estado='disuelto');",
+      "conclusion_final": "La forma profesional es un DELETE con subconsulta que delimite el conjunto a eliminar."
+    }
+  },
+  {
+    "id": "UT5-Q22",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué es una Vista en SQL?",
+    "contexto": "Concepto de VIEW y su función.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Una tabla temporal." },
+      { "clave": "b", "texto": "Una consulta SELECT guardada que actúa como tabla virtual." },
+      { "clave": "c", "texto": "Una copia física." },
+      { "clave": "d", "texto": "Un gráfico." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Una vista (VIEW) es un SELECT guardado con nombre que se consulta como tabla virtual. Se crea con CREATE VIEW y se elimina con DROP VIEW.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es una tabla temporal; es una definición de consulta reutilizable." },
+        { "clave": "c", "motivo": "No implica copia física de datos (en general, guarda la definición de la consulta)." },
+        { "clave": "d", "motivo": "No tiene relación con representaciones gráficas." }
+      ],
+      "resumen_didactico": "Vista = SELECT con nombre; simplifica consultas y puede ayudar a seguridad.",
+      "ejemplo_practico": "CREATE VIEW heroes_publico AS SELECT alias, equipo FROM heroes;",
+      "conclusion_final": "Una vista es una consulta SELECT guardada que se comporta como tabla virtual."
+    }
+  },
+  {
+    "id": "UT5-Q23",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Cuál es una ventaja de seguridad de las vistas?",
+    "contexto": "Uso de vistas para limitar exposición de datos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Hacen la base de datos inexpugnable." },
+      { "clave": "b", "texto": "Encriptan los datos." },
+      { "clave": "c", "texto": "Ocultan columnas sensibles mostrando solo lo necesario." },
+      { "clave": "d", "texto": "Aceleran escrituras." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Una vista puede exponer solo ciertas columnas/filas. Si concedes acceso a la vista (y no a la tabla), limitas lo que el usuario puede ver.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No vuelve la base de datos 'inexpugnable'; es un control parcial de exposición." },
+        { "clave": "b", "motivo": "No cifra datos; solo define cómo consultarlos." },
+        { "clave": "d", "motivo": "No es una ventaja de seguridad ni está orientada a acelerar escrituras." }
+      ],
+      "resumen_didactico": "Vista = 'ventana' controlada de datos: enseña solo lo que hace falta.",
+      "ejemplo_practico": "CREATE VIEW heroes_publico AS SELECT alias, equipo FROM heroes; (sin columnas sensibles)",
+      "conclusion_final": "La ventaja de seguridad es ocultar datos sensibles mostrando solo lo necesario."
+    }
+  },
+  {
+    "id": "UT5-Q24",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué sublenguaje gestiona permisos y privilegios?",
+    "contexto": "Identificación del sublenguaje orientado a seguridad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "DCL." },
+      { "clave": "b", "texto": "DML." },
+      { "clave": "c", "texto": "DDL." },
+      { "clave": "d", "texto": "HTML." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "DCL (Data Control Language) gestiona permisos y privilegios: GRANT y REVOKE, entre otros.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "DML manipula datos (SELECT/INSERT/UPDATE/DELETE), no permisos." },
+        { "clave": "c", "motivo": "DDL define estructura (CREATE/ALTER/DROP), no privilegios." },
+        { "clave": "d", "motivo": "HTML no es SQL; es lenguaje de marcado web." }
+      ],
+      "resumen_didactico": "Permisos y privilegios = DCL.",
+      "ejemplo_practico": "GRANT SELECT ON heroes_publico TO usuario_consulta; REVOKE SELECT ...;",
+      "conclusion_final": "El sublenguaje de permisos es DCL."
+    }
+  },
+  {
+    "id": "UT5-Q25",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "Tras la identificación, ¿qué paso define qué acciones puede realizar un usuario?",
+    "contexto": "Control de acceso: autenticación, autorización, auditoría.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Encriptación." },
+      { "clave": "b", "texto": "Autorización." },
+      { "clave": "c", "texto": "Autenticación." },
+      { "clave": "d", "texto": "Auditoría." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Tras identificar/verificar al usuario (autenticación), la autorización define qué operaciones puede realizar según permisos (privilegios).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Encriptación protege datos, no define acciones permitidas." },
+        { "clave": "c", "motivo": "Autenticación es el paso de verificar identidad; la pregunta pide el paso posterior que define permisos." },
+        { "clave": "d", "motivo": "Auditoría registra acciones realizadas, no decide permisos." }
+      ],
+      "resumen_didactico": "Autenticación: quién eres. Autorización: qué puedes hacer. Auditoría: qué hiciste.",
+      "ejemplo_practico": "Un usuario autenticado puede hacer SELECT si tiene GRANT SELECT, pero no UPDATE si no se le autorizó.",
+      "conclusion_final": "El paso que define acciones permitidas es la autorización."
+    }
+  },
+  {
+    "id": "UT5-Q26",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué cláusula permite delegar permisos otorgados?",
+    "contexto": "Delegación de privilegios en GRANT.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "ENABLE DELEGATION." },
+      { "clave": "b", "texto": "AS SUPERUSER." },
+      { "clave": "c", "texto": "WITH GRANT OPTION." },
+      { "clave": "d", "texto": "WITH ADMIN POWER." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "WITH GRANT OPTION permite que el usuario que recibe un privilegio pueda concederlo a otros (delegación).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es sintaxis estándar del tema para delegar permisos." },
+        { "clave": "b", "motivo": "No es una cláusula estándar de GRANT en el temario." },
+        { "clave": "d", "motivo": "No es la cláusula indicada para delegación en el tema; la correcta es WITH GRANT OPTION." }
+      ],
+      "resumen_didactico": "Delegar permisos = GRANT ... WITH GRANT OPTION.",
+      "ejemplo_practico": "GRANT SELECT ON heroes_publico TO lider WITH GRANT OPTION;",
+      "conclusion_final": "La cláusula de delegación es WITH GRANT OPTION."
+    }
+  },
+  {
+    "id": "UT5-Q27",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué comando retira permisos?",
+    "contexto": "Revocación de privilegios (DCL).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "REVOKE." },
+      { "clave": "b", "texto": "DENY." },
+      { "clave": "c", "texto": "DELETE PERMISSION." },
+      { "clave": "d", "texto": "BLOCK." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "REVOKE es el comando DCL para retirar privilegios previamente concedidos (complemento de GRANT).",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Puede existir en motores concretos, pero el comando estándar del tema para retirar permisos es REVOKE." },
+        { "clave": "c", "motivo": "No es un comando SQL estándar." },
+        { "clave": "d", "motivo": "No es un comando de gestión de permisos en SQL." }
+      ],
+      "resumen_didactico": "GRANT da permisos; REVOKE los quita.",
+      "ejemplo_practico": "REVOKE SELECT ON heroes_publico FROM usuario_consulta;",
+      "conclusion_final": "Para retirar permisos se usa REVOKE."
+    }
+  },
+  {
+    "id": "UT5-Q28",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué comando recarga los permisos del servidor?",
+    "contexto": "Aplicación inmediata de cambios de privilegios.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "RESTART SERVER;" },
+      { "clave": "b", "texto": "UPDATE PERMISSIONS;" },
+      { "clave": "c", "texto": "FLUSH PRIVILEGES;" },
+      { "clave": "d", "texto": "COMMIT;" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "FLUSH PRIVILEGES recarga/aplica cambios de privilegios en el servidor para que tengan efecto inmediato (según el enfoque del temario).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Reiniciar el servidor no es un comando SQL estándar de permisos; es una acción administrativa externa." },
+        { "clave": "b", "motivo": "No es un comando SQL estándar." },
+        { "clave": "d", "motivo": "COMMIT pertenece a transacciones, no a recarga de privilegios." }
+      ],
+      "resumen_didactico": "Tras cambios de permisos, se puede forzar su recarga con FLUSH PRIVILEGES.",
+      "ejemplo_practico": "CREATE USER ...; GRANT ...; FLUSH PRIVILEGES;",
+      "conclusion_final": "El comando de recarga de permisos es FLUSH PRIVILEGES."
+    }
+  },
+  {
+    "id": "UT5-Q29",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué es el Principio de Menor Privilegio?",
+    "contexto": "Buenas prácticas de seguridad en permisos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Dar acceso total." },
+      { "clave": "b", "texto": "Crear usuarios sin contraseña." },
+      { "clave": "c", "texto": "Dar solo el acceso mínimo necesario." },
+      { "clave": "d", "texto": "No usar root." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El principio de menor privilegio consiste en conceder únicamente los permisos imprescindibles para realizar tareas, reduciendo el riesgo ante errores o compromisos de cuentas.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Es lo contrario al principio: aumenta el riesgo." },
+        { "clave": "b", "motivo": "Es una mala práctica de autenticación, no define el principio." },
+        { "clave": "d", "motivo": "Es una recomendación relacionada, pero el principio define 'permisos mínimos', no solo 'no usar root'." }
+      ],
+      "resumen_didactico": "Menor privilegio = solo lo justo para el rol.",
+      "ejemplo_practico": "GRANT SELECT ON heroes_publico TO usuario_consulta; (sin INSERT/UPDATE/DELETE)",
+      "conclusion_final": "El principio exige dar el mínimo acceso necesario."
+    }
+  },
+  {
+    "id": "UT5-Q30",
+    "tema": "UT5 — El lenguaje SQL: DML y DCL",
+    "pregunta": "¿Qué función extrae las primeras letras de un texto?",
+    "contexto": "Funciones de texto para extraer fragmentos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "EXTRACT." },
+      { "clave": "b", "texto": "SUBSTRING." },
+      { "clave": "c", "texto": "CONCAT." },
+      { "clave": "d", "texto": "TRIM." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "SUBSTRING extrae una parte de un texto indicando posición inicial y longitud; así se obtienen las primeras letras.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "EXTRACT se usa típicamente con fechas/tiempos, no para cortar texto." },
+        { "clave": "c", "motivo": "CONCAT une textos; no extrae." },
+        { "clave": "d", "motivo": "TRIM elimina espacios/caracteres al inicio/fin; no devuelve un prefijo por longitud." }
+      ],
+      "resumen_didactico": "Para 'trocear' texto, usa SUBSTRING(texto, inicio, longitud).",
+      "ejemplo_practico": "SELECT SUBSTRING(alias, 1, 4) AS prefijo FROM heroes;",
+      "conclusion_final": "Para extraer las primeras letras se usa SUBSTRING."
+    }
+  }
+]
+

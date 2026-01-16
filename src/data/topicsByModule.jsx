@@ -99,5 +99,15 @@ export const topicsByModule = {
       title: "El lenguaje SQL (DDL)",
       numQuestion: 30,
     },
+    {
+      id: "UT5",
+      title: "El lenguaje SQL: DML y DCL",
+      numQuestion: 30,
+    },
+    {
+      id: "UT6",
+      title: "Construcción de guiones",
+      numQuestion: 30,
+    },
   ],
 };
