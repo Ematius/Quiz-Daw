@@ -1,0 +1,753 @@
+
+[
+  {
+    "id": "UT7-Q01",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Trabajas como desarrollador Backend en una Fintech de Madrid. Tu código es perfecto, pero un hacker accede a las nóminas o una subida de tensión borra el historial. En este contexto, ¿qué representa la información para la empresa?",
+    "contexto": "Fintech: riesgo de acceso no autorizado a nóminas o pérdida del historial por incidente eléctrico.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un recurso secundario fácilmente reemplazable." },
+      { "clave": "b", "texto": "Un subproducto del software sin valor real." },
+      { "clave": "c", "texto": "Un conjunto de archivos temporales del sistema operativo." },
+      { "clave": "d", "texto": "El \"petróleo digital\" y el activo más valioso que debe ser custodiado." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La unidad remarca que el dato es el activo crítico: si se expone (confidencialidad) o se pierde (disponibilidad/integridad), el impacto en el negocio puede ser devastador aunque el código sea correcto. Por eso la información se trata como activo a custodiar.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es fácilmente reemplazable: su pérdida o filtración tiene impacto económico, legal y reputacional." },
+        { "clave": "b", "motivo": "El valor del sistema reside en la información y su uso; no es un subproducto sin valor." },
+        { "clave": "c", "motivo": "Nóminas e historial son datos de negocio persistentes, no temporales del sistema operativo." }
+      ],
+      "resumen_didactico": "En sistemas reales, el dato es el activo: protegerlo y recuperarlo sostiene el negocio.",
+      "ejemplo_practico": "Si se filtran nóminas se rompe la confidencialidad; si un pico eléctrico borra historiales se rompe la disponibilidad (y puede afectar integridad).",
+      "conclusion_final": "La información es el activo más valioso y debe custodiarse con medidas de seguridad y recuperación."
+    }
+  },
+  {
+    "id": "UT7-Q02",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Dentro del estándar CIDAN, ¿qué norma garantiza que la información solo sea accesible para quien tiene autorización?",
+    "contexto": "Aplicación de los pilares CIDAN para proteger acceso a información.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "No repudio." },
+      { "clave": "b", "texto": "Confidencialidad." },
+      { "clave": "c", "texto": "Integridad." },
+      { "clave": "d", "texto": "Disponibilidad." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En CIDAN, la confidencialidad garantiza que solo usuarios autorizados accedan a la información.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No repudio se centra en que una acción no pueda negarse, no en controlar acceso." },
+        { "clave": "c", "motivo": "Integridad garantiza que los datos no se alteren indebidamente, no quién los ve." },
+        { "clave": "d", "motivo": "Disponibilidad asegura acceso cuando se necesita, no que el acceso sea solo para autorizados." }
+      ],
+      "resumen_didactico": "Confidencialidad = acceso solo para autorizados.",
+      "ejemplo_practico": "Restringir tablas de nóminas para que solo RRHH y perfiles autorizados puedan consultarlas.",
+      "conclusion_final": "El pilar de CIDAN que controla acceso autorizado es la confidencialidad."
+    }
+  },
+  {
+    "id": "UT7-Q03",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Realizas una transferencia bancaria de 50€. Si el sistema evita cambios accidentales o maliciosos en la cifra, ¿qué principio se cumple?",
+    "contexto": "Protección del importe de una transacción ante manipulación o error.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Disponibilidad." },
+      { "clave": "b", "texto": "Autenticación." },
+      { "clave": "c", "texto": "Integridad." },
+      { "clave": "d", "texto": "Confidencialidad." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La integridad asegura que los datos permanezcan correctos y no se modifiquen de forma accidental o maliciosa. Mantener 50€ sin alteración es integridad.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Disponibilidad trata de que el sistema esté operativo, no de evitar cambios en el dato." },
+        { "clave": "b", "motivo": "Autenticación verifica identidad, pero no garantiza por sí misma que el importe no se manipule." },
+        { "clave": "d", "motivo": "Confidencialidad protege contra accesos no autorizados, no contra modificación del dato." }
+      ],
+      "resumen_didactico": "Integridad = el dato no se altera y sigue siendo correcto.",
+      "ejemplo_practico": "Validaciones y controles que impiden pasar de 50€ a 500€ por manipulación de una petición.",
+      "conclusion_final": "Evitar cambios del importe cumple el principio de integridad."
+    }
+  },
+  {
+    "id": "UT7-Q04",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "En Black Friday, la web no responde porque la base de datos se cae. ¿Qué pilar de CIDAN ha fallado?",
+    "contexto": "Caída de base de datos en pico de demanda, servicio inaccesible.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Confidencialidad." },
+      { "clave": "b", "texto": "Disponibilidad." },
+      { "clave": "c", "texto": "Integridad." },
+      { "clave": "d", "texto": "No repudio." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Disponibilidad significa que el sistema y los datos están accesibles cuando se necesitan. Si la BD se cae y la web no responde, falla disponibilidad.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es un acceso indebido, sino una caída del servicio." },
+        { "clave": "c", "motivo": "No se describe alteración del dato, sino indisponibilidad." },
+        { "clave": "d", "motivo": "No repudio se relaciona con evidencias/logs, no con caídas." }
+      ],
+      "resumen_didactico": "Si el sistema no responde cuando se necesita, falla la disponibilidad.",
+      "ejemplo_practico": "Usuarios no pueden comprar porque la BD no acepta conexiones y la web queda inservible.",
+      "conclusion_final": "La caída de la BD en Black Friday implica fallo de disponibilidad."
+    }
+  },
+  {
+    "id": "UT7-Q05",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Los logs prueban que un administrador borró una tabla crítica. ¿Qué principio impide que lo niegue?",
+    "contexto": "Auditoría mediante logs para atribuir acciones en el sistema.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Autenticación." },
+      { "clave": "b", "texto": "Integridad." },
+      { "clave": "c", "texto": "Confidencialidad." },
+      { "clave": "d", "texto": "No repudio." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "No repudio garantiza que una acción no pueda negarse posteriormente porque existe evidencia verificable (logs/registros).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Autenticación verifica identidad al acceder, pero no asegura evidencia detallada de acciones." },
+        { "clave": "b", "motivo": "Integridad protege contra alteraciones, pero aquí el foco es atribución y posibilidad de negar." },
+        { "clave": "c", "motivo": "Confidencialidad controla acceso, no la trazabilidad de acciones." }
+      ],
+      "resumen_didactico": "No repudio = trazabilidad y evidencia para que nadie niegue lo que hizo.",
+      "ejemplo_practico": "Registro de usuario, hora, IP y comando ejecutado que prueba un DROP TABLE.",
+      "conclusion_final": "Si los logs impiden negar una acción, el pilar es no repudio."
+    }
+  },
+  {
+    "id": "UT7-Q06",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "El sistema de refrigeración falla y los servidores se funden físicamente. ¿Qué tipo de fallo es?",
+    "contexto": "Daño por temperatura/infraestructura sobre hardware.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Fallo físico." },
+      { "clave": "b", "texto": "Fallo de diseño." },
+      { "clave": "c", "texto": "Fallo de autenticación." },
+      { "clave": "d", "texto": "Fallo lógico." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Los fallos físicos se relacionan con hardware/infraestructura/entorno (temperatura, energía, discos, servidores). Un sobrecalentamiento que daña servidores es físico.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Puede ser causa subyacente, pero la clasificación por efecto (daño físico del hardware) es fallo físico." },
+        { "clave": "c", "motivo": "Autenticación trata de identidad/acceso, no de refrigeración." },
+        { "clave": "d", "motivo": "Fallo lógico es software/humano/ataque, no destrucción de hardware." }
+      ],
+      "resumen_didactico": "Si afecta a hardware o entorno (calor, electricidad), es fallo físico.",
+      "ejemplo_practico": "Aire acondicionado del CPD se detiene y varios servidores quedan inutilizables.",
+      "conclusion_final": "Una avería de refrigeración con daño al servidor es un fallo físico."
+    }
+  },
+  {
+    "id": "UT7-Q07",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Un DELETE sin WHERE borra toda una tabla. ¿Qué tipo de fallo es?",
+    "contexto": "Error humano en comando SQL que elimina datos masivamente.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Fallo lógico." },
+      { "clave": "b", "texto": "Fallo físico." },
+      { "clave": "c", "texto": "Fallo de red." },
+      { "clave": "d", "texto": "Fallo de hardware." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Un fallo lógico procede de errores humanos/operaciones de software/mala configuración/ataques. Un DELETE sin WHERE es un error lógico de operación.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No hay avería de hardware/entorno; la BD ejecuta el comando." },
+        { "clave": "c", "motivo": "La red no causa el borrado masivo; es la instrucción SQL." },
+        { "clave": "d", "motivo": "El hardware funciona; el problema es la acción ejecutada." }
+      ],
+      "resumen_didactico": "Errores en comandos o configuración = fallos lógicos.",
+      "ejemplo_practico": "Se ejecuta DELETE FROM clientes; por accidente y se requiere restaurar desde backup.",
+      "conclusion_final": "Borrar por DELETE sin WHERE es un fallo lógico."
+    }
+  },
+  {
+    "id": "UT7-Q08",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Un candidato guarda contraseñas en texto plano. ¿Qué medida de seguridad ignoró?",
+    "contexto": "Almacenamiento inseguro de credenciales en base de datos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Creación de índices." },
+      { "clave": "b", "texto": "Normalización de tablas." },
+      { "clave": "c", "texto": "Uso de claves foráneas." },
+      { "clave": "d", "texto": "El cifrado o hasheado de contraseñas." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Guardar contraseñas en texto plano es una mala práctica crítica. Deben almacenarse protegidas (habitualmente mediante hasheado seguro) para que una filtración no exponga credenciales legibles.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Los índices mejoran rendimiento, no protegen contraseñas." },
+        { "clave": "b", "motivo": "La normalización es diseño lógico, no seguridad de credenciales." },
+        { "clave": "c", "motivo": "Las claves foráneas aseguran integridad referencial, no el almacenamiento seguro de contraseñas." }
+      ],
+      "resumen_didactico": "Contraseñas nunca en texto plano: se almacenan hasheadas (y gestionadas con buenas prácticas).",
+      "ejemplo_practico": "Almacenar hash con salt en lugar de 'madrid123' evita exposición directa tras una brecha.",
+      "conclusion_final": "Ignoró la medida esencial: proteger contraseñas mediante hasheado/cifrado."
+    }
+  },
+  {
+    "id": "UT7-Q09",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Tecnología que permite que el sistema siga funcionando aunque muera un disco duro.",
+    "contexto": "Tolerancia a fallos de disco (hardware) sin interrupción del servicio.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Ransomware." },
+      { "clave": "b", "texto": "SQL Injection." },
+      { "clave": "c", "texto": "RAID (Redundant Array of Independent Disks)." },
+      { "clave": "d", "texto": "CDC." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "RAID aporta redundancia de discos y permite mantener el servicio ante la caída de un disco (según nivel RAID), mitigando fallos físicos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Ransomware es un ataque (fallo lógico), no una tecnología de tolerancia a fallos de disco." },
+        { "clave": "b", "motivo": "SQL Injection es una vulnerabilidad/ataque, no redundancia de almacenamiento." },
+        { "clave": "d", "motivo": "CDC es una ubicación secundaria para desastres mayores; no es la solución específica 'muere un disco'." }
+      ],
+      "resumen_didactico": "RAID = redundancia de discos para aguantar la pérdida de uno sin caer.",
+      "ejemplo_practico": "Un disco falla, el sistema continúa y se sustituye el disco para reconstrucción.",
+      "conclusion_final": "La tecnología que mantiene el sistema pese a un disco muerto es RAID."
+    }
+  },
+  {
+    "id": "UT7-Q10",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Ubicación secundaria con hardware replicado para asumir el mando en caso de desastre.",
+    "contexto": "Continuidad de negocio ante caída del CPD principal.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "VPN." },
+      { "clave": "b", "texto": "Entorno de desarrollo." },
+      { "clave": "c", "texto": "Servidor Proxy." },
+      { "clave": "d", "texto": "Centro de Contingencia de Datos (CDC)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El CDC es un centro secundario preparado para asumir operación si el principal falla, clave en recuperación ante desastres y disponibilidad.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "VPN es un canal seguro de conexión, no una ubicación con infraestructura replicada." },
+        { "clave": "b", "motivo": "Un entorno de desarrollo no está diseñado para asumir producción." },
+        { "clave": "c", "motivo": "Un proxy intermedia tráfico; no reemplaza un CPD." }
+      ],
+      "resumen_didactico": "CDC = segunda ubicación lista para tomar el relevo si cae la principal.",
+      "ejemplo_practico": "Incendio en CPD: se conmuta al CDC en otra ciudad para reanudar servicios.",
+      "conclusion_final": "La ubicación secundaria replicada es el CDC."
+    }
+  },
+  {
+    "id": "UT7-Q11",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Técnica de réplica donde un servidor refleja instantáneamente a otro.",
+    "contexto": "Réplica en tiempo real para continuidad del servicio.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Mirroring." },
+      { "clave": "b", "texto": "Compresión ZIP." },
+      { "clave": "c", "texto": "Virtualización." },
+      { "clave": "d", "texto": "Backup incremental." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El mirroring mantiene una réplica (espejo) en tiempo real o casi inmediato, permitiendo reducir caídas y mejorar disponibilidad.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "ZIP comprime archivos, no replica servidores en tiempo real." },
+        { "clave": "c", "motivo": "Virtualización es ejecutar VMs; no implica reflejo instantáneo de datos." },
+        { "clave": "d", "motivo": "Incremental es copia por cambios para restauración posterior, no espejo continuo." }
+      ],
+      "resumen_didactico": "Mirroring = servidor espejo con réplica inmediata.",
+      "ejemplo_practico": "La BD secundaria replica transacciones del primario; si falla, se activa la secundaria.",
+      "conclusion_final": "La técnica de reflejo instantáneo es mirroring."
+    }
+  },
+  {
+    "id": "UT7-Q12",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Limitar al perfil \"Becario\" a solo lectura aplica qué principio?",
+    "contexto": "Gestión de permisos por roles para reducir riesgos de error/abuso.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Principio de mínimo privilegio." },
+      { "clave": "b", "texto": "Principio de puertas abiertas." },
+      { "clave": "c", "texto": "Principio de máxima autoridad." },
+      { "clave": "d", "texto": "Principio de redundancia." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "El mínimo privilegio consiste en dar a cada perfil solo los permisos imprescindibles. Solo lectura reduce la superficie de daño ante fallos lógicos.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es un principio de seguridad; sería lo contrario a controlar accesos." },
+        { "clave": "c", "motivo": "Dar máxima autoridad aumenta riesgos y contradice mínimo privilegio." },
+        { "clave": "d", "motivo": "Redundancia aplica a fallos físicos (RAID/CDC), no a permisos." }
+      ],
+      "resumen_didactico": "Mínimo privilegio = solo lo necesario para el rol.",
+      "ejemplo_practico": "El becario puede consultar datos (SELECT) pero no modificar (UPDATE/DELETE) ni destruir (DROP).",
+      "conclusion_final": "Restringir a lectura aplica el principio de mínimo privilegio."
+    }
+  },
+  {
+    "id": "UT7-Q13",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "¿Quién debe tener permisos para comandos destructivos como DROP TABLE?",
+    "contexto": "Asignación de permisos críticos para evitar destrucción accidental o maliciosa.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Desarrollador Junior." },
+      { "clave": "b", "texto": "DBA (Administrador de Base de Datos)." },
+      { "clave": "c", "texto": "RRHH." },
+      { "clave": "d", "texto": "Cualquier usuario autenticado." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El temario recomienda roles y mínimo privilegio. Comandos destructivos deben limitarse a perfiles administrativos responsables, típicamente el DBA.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Otorgar permisos destructivos a juniors aumenta el riesgo de errores humanos." },
+        { "clave": "c", "motivo": "RRHH no administra infraestructura ni BD; no procede otorgar permisos destructivos." },
+        { "clave": "d", "motivo": "Autenticación no implica autorización; dar DROP a todos es un riesgo inaceptable." }
+      ],
+      "resumen_didactico": "Autenticado no es autorizado: DROP solo para roles administrativos.",
+      "ejemplo_practico": "En producción, solo DBA puede ejecutar DROP bajo procedimiento y con controles.",
+      "conclusion_final": "Los comandos destructivos deben reservarse al DBA."
+    }
+  },
+  {
+    "id": "UT7-Q14",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Atributo que indica si un archivo ha sido modificado recientemente.",
+    "contexto": "Uso de indicadores para estrategias de backup incremental/diferencial.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Flag de Error." },
+      { "clave": "b", "texto": "Timestamp." },
+      { "clave": "c", "texto": "Flag de Modificado (Archive Bit)." },
+      { "clave": "d", "texto": "Checksum." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El Archive Bit (flag de modificado) marca si un archivo cambió y guía qué entra en copias incrementales/diferenciales y si el flag se resetea o no.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es el atributo estándar usado en la lógica de backups del temario." },
+        { "clave": "b", "motivo": "Un timestamp indica fecha/hora, pero el temario identifica un flag específico para selección de copias." },
+        { "clave": "d", "motivo": "Checksum verifica integridad, no es el flag operativo de 'modificado' para backups." }
+      ],
+      "resumen_didactico": "Archive Bit = marca 'este archivo cambió'.",
+      "ejemplo_practico": "Tras editar 3 archivos, quedan marcados y una incremental puede copiarlos.",
+      "conclusion_final": "El indicador de modificación reciente es el Flag de Modificado (Archive Bit)."
+    }
+  },
+  {
+    "id": "UT7-Q15",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Tras una copia completa, ¿qué ocurre con el flag de modificado?",
+    "contexto": "Comportamiento del Archive Bit tras backup total.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Se activa." },
+      { "clave": "b", "texto": "Se borra permanentemente." },
+      { "clave": "c", "texto": "Se ignora." },
+      { "clave": "d", "texto": "Se desactiva." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Tras una copia completa, se considera que los cambios ya están respaldados, por lo que el flag se limpia (se desactiva).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Activarlo indicaría que sigue pendiente de copia, lo cual contradice el backup total." },
+        { "clave": "b", "motivo": "No se borra para siempre; puede reactivarse con futuras modificaciones." },
+        { "clave": "c", "motivo": "No se ignora: el temario lo usa como base para estrategias de copia." }
+      ],
+      "resumen_didactico": "Backup total = todo respaldado, flag reseteado.",
+      "ejemplo_practico": "Domingo total: flag off. Lunes modificas: flag on en esos archivos.",
+      "conclusion_final": "Después de una copia completa, el flag se desactiva."
+    }
+  },
+  {
+    "id": "UT7-Q16",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "¿Qué archivos copia un backup incremental?",
+    "contexto": "Selección de cambios basada en la última copia realizada.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Los modificados desde la última copia." },
+      { "clave": "b", "texto": "Todos los archivos." },
+      { "clave": "c", "texto": "Solo archivos de texto." },
+      { "clave": "d", "texto": "Solo los modificados desde la última copia total." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La incremental copia lo modificado desde la última copia (total o incremental). Se apoya en el flag de modificado y suele resetearlo tras copiar.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Eso es una copia completa, no incremental." },
+        { "clave": "c", "motivo": "El criterio no es el tipo de archivo, sino si fue modificado." },
+        { "clave": "d", "motivo": "Eso describe la diferencial (desde la última total), no la incremental." }
+      ],
+      "resumen_didactico": "Incremental = desde la última copia, sea cual sea.",
+      "ejemplo_practico": "Total domingo, incremental lunes (cambios lunes), incremental martes (cambios desde lunes).",
+      "conclusion_final": "La incremental copia lo modificado desde la última copia."
+    }
+  },
+  {
+    "id": "UT7-Q17",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "En copias diferenciales, ¿qué pasa con el flag de modificado?",
+    "contexto": "Comportamiento del Archive Bit en estrategia diferencial.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Se duplica." },
+      { "clave": "b", "texto": "Se desactiva." },
+      { "clave": "c", "texto": "Se invierte." },
+      { "clave": "d", "texto": "Nunca se desactiva." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La diferencial copia cambios desde la última total y no resetea el flag, por lo que va acumulando cambios hasta la siguiente copia completa.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es un comportamiento descrito para el flag." },
+        { "clave": "b", "motivo": "Desactivar corresponde a la copia total (y típicamente incremental), no a diferencial." },
+        { "clave": "c", "motivo": "No se invierte; se mantiene activo hasta nueva total." }
+      ],
+      "resumen_didactico": "Diferencial = acumulativa desde la última total, no limpia el flag.",
+      "ejemplo_practico": "Lunes diferencial copia cambios; martes diferencial copia lunes + martes.",
+      "conclusion_final": "En diferencial, el flag nunca se desactiva."
+    }
+  },
+  {
+    "id": "UT7-Q18",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Para restaurar usando incrementales, tras la copia total debes:",
+    "contexto": "Procedimiento de restauración con cadena de incrementales.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Restaurar una al azar." },
+      { "clave": "b", "texto": "Restaurarlas en orden inverso." },
+      { "clave": "c", "texto": "Restaurar solo la última incremental." },
+      { "clave": "d", "texto": "Restaurar todas las incrementales en orden cronológico." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Con incrementales, cada copia depende de la anterior. Se restaura la total y luego todas las incrementales en orden cronológico para reconstruir el estado final.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Al azar omite cambios necesarios y rompe consistencia." },
+        { "clave": "b", "motivo": "El orden inverso viola dependencias; hay que aplicar cambios en secuencia." },
+        { "clave": "c", "motivo": "La última incremental no incluye cambios de incrementales anteriores, solo desde la previa." }
+      ],
+      "resumen_didactico": "Incremental = cadena; para restaurar necesitas todas en orden.",
+      "ejemplo_practico": "Total domingo + incremental lunes + incremental martes (en ese orden).",
+      "conclusion_final": "Tras la total, se restauran todas las incrementales en orden cronológico."
+    }
+  },
+  {
+    "id": "UT7-Q19",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Para restaurar con copias diferenciales necesitas:",
+    "contexto": "Restauración con estrategia diferencial (acumulativa desde la total).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Solo la última diferencial." },
+      { "clave": "b", "texto": "Nada más." },
+      { "clave": "c", "texto": "Logs manuales." },
+      { "clave": "d", "texto": "Todas las diferenciales." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La diferencial acumula cambios desde la última copia completa. Por ello, tras restaurar la copia total, basta con aplicar la última diferencial para llegar al estado más reciente.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Siempre se parte de una copia total como base; no es 'nada más' en sentido absoluto." },
+        { "clave": "c", "motivo": "Los logs no sustituyen a una estrategia de copias para restauración." },
+        { "clave": "d", "motivo": "No necesitas todas: la última diferencial ya incluye los cambios desde la total." }
+      ],
+      "resumen_didactico": "Diferencial = acumulativa; restauras base (total) + última diferencial.",
+      "ejemplo_practico": "Total domingo; diferencial martes (incluye lunes+martes). Restauras domingo + martes.",
+      "conclusion_final": "Con diferenciales, tras la base total basta con la última diferencial."
+    }
+  },
+  {
+    "id": "UT7-Q20",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "¿Por qué guardar backups en una ubicación física distinta?",
+    "contexto": "Protección ante desastres que afecten al CPD principal.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Por estética." },
+      { "clave": "b", "texto": "Para evitar que un desastre destruya original y copia." },
+      { "clave": "c", "texto": "Para ir más rápido." },
+      { "clave": "d", "texto": "Ocupan mucho espacio." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Las buenas prácticas recomiendan separar físicamente copias para que un único desastre (incendio, robo, inundación) no destruya original y backup.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es un criterio de seguridad ni continuidad." },
+        { "clave": "c", "motivo": "No garantiza mayor velocidad; a veces es más lento por red." },
+        { "clave": "d", "motivo": "El espacio no justifica la ubicación; el motivo es resiliencia ante desastres." }
+      ],
+      "resumen_didactico": "Si el backup está al lado del original, un desastre puede destruir ambos.",
+      "ejemplo_practico": "Incendio en sala de servidores: se pierde el servidor y el NAS local; con copia externa se recupera.",
+      "conclusion_final": "Se guardan fuera para sobrevivir a desastres que afecten a la ubicación principal."
+    }
+  },
+  {
+    "id": "UT7-Q21",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Buena práctica al nombrar archivos de backup:",
+    "contexto": "Gestión operativa de copias de seguridad para restauración fiable.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Nombres genéricos." },
+      { "clave": "b", "texto": "Nombres descriptivos con fecha y contenido." },
+      { "clave": "c", "texto": "Sin nombre." },
+      { "clave": "d", "texto": "Nombres binarios." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Buenas prácticas: nombres claros para identificar qué contiene cada backup y su fecha, evitando restaurar la copia equivocada.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Nombres genéricos dificultan trazabilidad y aumentan errores en restauración." },
+        { "clave": "c", "motivo": "Sin nombre es inviable para gestión y auditoría." },
+        { "clave": "d", "motivo": "No aporta información útil para administración y aumenta el riesgo operativo." }
+      ],
+      "resumen_didactico": "Si no identificas el backup, restaurar se vuelve peligroso.",
+      "ejemplo_practico": "backup_total_2026-01-19_produccion.sql es más seguro que backup1.sql.",
+      "conclusion_final": "La práctica correcta es usar nombres descriptivos con fecha y contenido."
+    }
+  },
+  {
+    "id": "UT7-Q22",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "¿Qué complica migrar datos entre SGBD?",
+    "contexto": "Transferencia de datos entre distintos motores de base de datos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "PostgreSQL no soporta tablas." },
+      { "clave": "b", "texto": "Oracle no exporta datos." },
+      { "clave": "c", "texto": "SQL no es compatible con la nube." },
+      { "clave": "d", "texto": "Cada motor tiene su propio dialecto y tipos de datos." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Migrar es complejo porque cada SGBD tiene dialecto SQL y tipos de datos propios; hay que mapear equivalencias y validar trampas como booleanos, fechas, tipos propietarios o JSON.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Es falso: PostgreSQL es relacional y soporta tablas." },
+        { "clave": "b", "motivo": "Es falso: Oracle dispone de mecanismos de exportación/importación." },
+        { "clave": "c", "motivo": "Es falso: existen múltiples soluciones SQL en la nube." }
+      ],
+      "resumen_didactico": "Migrar no es copiar y pegar: hay que traducir tipos y sintaxis.",
+      "ejemplo_practico": "BOOLEAN en MySQL como TINYINT, y en otro motor como BOOLEAN nativo: requiere adaptación.",
+      "conclusion_final": "Lo que complica migrar es el dialecto y los tipos de datos propios de cada motor."
+    }
+  },
+  {
+    "id": "UT7-Q23",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "¿A qué motor pertenece el tipo VARCHAR2?",
+    "contexto": "Identificación de tipos propietarios en migraciones entre SGBD.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Oracle." },
+      { "clave": "b", "texto": "MySQL." },
+      { "clave": "c", "texto": "SQL Server." },
+      { "clave": "d", "texto": "PostgreSQL." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "VARCHAR2 es un tipo característico de Oracle y aparece como ejemplo típico de tipo propio del motor al hablar de equivalencias en migración.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "MySQL usa VARCHAR como tipo habitual, no VARCHAR2." },
+        { "clave": "c", "motivo": "SQL Server usa VARCHAR/NVARCHAR; no es el fabricante de VARCHAR2." },
+        { "clave": "d", "motivo": "PostgreSQL usa VARCHAR/TEXT; no emplea VARCHAR2 como tipo nativo." }
+      ],
+      "resumen_didactico": "VARCHAR2 = Oracle; en otros motores suele mapearse a VARCHAR/TEXT.",
+      "ejemplo_practico": "Migración Oracle -> PostgreSQL: VARCHAR2(100) puede transformarse a VARCHAR(100).",
+      "conclusion_final": "VARCHAR2 pertenece a Oracle."
+    }
+  },
+  {
+    "id": "UT7-Q24",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "¿Cómo gestiona MySQL el tipo BOOLEAN?",
+    "contexto": "Diferencias de tipos booleanos entre motores y riesgos en migración.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Como tipo nativo estricto." },
+      { "clave": "b", "texto": "Como texto." },
+      { "clave": "c", "texto": "Como sinónimo de TINYINT." },
+      { "clave": "d", "texto": "No lo soporta." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "MySQL trata BOOLEAN/BOOL como alias de TINYINT(1), por lo que suele materializarse en 0/1. Esto es una trampa típica en migraciones.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es un tipo estrictamente independiente; se implementa como TINYINT." },
+        { "clave": "b", "motivo": "No se almacena como texto por defecto." },
+        { "clave": "d", "motivo": "Sí se soporta, pero como alias numérico." }
+      ],
+      "resumen_didactico": "En MySQL, BOOLEAN existe pero por debajo es TINYINT(1).",
+      "ejemplo_practico": "La app recibe 1/0 en vez de TRUE/FALSE y debe mapear correctamente.",
+      "conclusion_final": "MySQL gestiona BOOLEAN como sinónimo de TINYINT."
+    }
+  },
+  {
+    "id": "UT7-Q25",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Problema común con fechas al migrar desde SQL Server:",
+    "contexto": "Diferencias de tipos fecha/hora y equivalencias en migración.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Tiene muchos tipos de fecha sin equivalente directo." },
+      { "clave": "b", "texto": "Guarda fechas en texto." },
+      { "clave": "c", "texto": "No soporta fechas." },
+      { "clave": "d", "texto": "Usa solo UNIX timestamp." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las fechas/tiempos son una trampa de migración: hay diferencias de precisión, rango y variantes de tipos. SQL Server dispone de varias familias de tipos de fecha/hora y no siempre hay equivalencia 1:1.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "SQL Server usa tipos de fecha/hora; no se caracteriza por guardar fechas en texto." },
+        { "clave": "c", "motivo": "Es falso: soporta múltiples tipos de fecha." },
+        { "clave": "d", "motivo": "Es falso: no se limita a UNIX timestamp." }
+      ],
+      "resumen_didactico": "Fechas son difíciles de migrar por tipos, precisión y reglas diferentes.",
+      "ejemplo_practico": "Al migrar, puedes perder precisión o interpretar mal zona/offset si eliges mal el tipo destino.",
+      "conclusion_final": "El problema común es la falta de equivalencias directas entre tipos de fecha/hora."
+    }
+  },
+  {
+    "id": "UT7-Q26",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "¿Qué SGBD destaca por su soporte nativo de JSON?",
+    "contexto": "Capacidades modernas de tipos semiestructurados y migraciones.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "SQL Server 2000." },
+      { "clave": "b", "texto": "PostgreSQL." },
+      { "clave": "c", "texto": "SQLite." },
+      { "clave": "d", "texto": "Microsoft Access." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Se destaca PostgreSQL por su soporte nativo potente para JSON, usado como referencia en el apartado de migraciones y modernidad.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "SQL Server 2000 se asocia a limitaciones por ser versión antigua, no a soporte JSON destacado." },
+        { "clave": "c", "motivo": "No es el motor que se destaca en el temario como referente de JSON nativo." },
+        { "clave": "d", "motivo": "No se presenta como referente de soporte nativo de JSON." }
+      ],
+      "resumen_didactico": "Si preguntan por JSON nativo destacado, el temario apunta a PostgreSQL.",
+      "ejemplo_practico": "Guardar preferencias de usuario como JSON y consultarlas con soporte específico del motor.",
+      "conclusion_final": "El SGBD destacado por JSON nativo es PostgreSQL."
+    }
+  },
+  {
+    "id": "UT7-Q27",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Riesgo al recibir un \"1\" en lugar de TRUE en la aplicación:",
+    "contexto": "Diferencias de representación booleana entre SGBD y su impacto en la app.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Que la aplicación falle según el lenguaje." },
+      { "clave": "b", "texto": "Ninguno." },
+      { "clave": "c", "texto": "Que se borre la base de datos." },
+      { "clave": "d", "texto": "Que el servidor se apague." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una trampa típica en migración es la representación del booleano (por ejemplo 0/1). Según el lenguaje/ORM/tipado, recibir 1 en vez de TRUE puede romper validaciones o lógica y provocar fallos o comportamientos incorrectos.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Sí hay riesgo: tipado y mapeo pueden fallar si se espera booleano estricto." },
+        { "clave": "c", "motivo": "No es un efecto directo del valor 1/TRUE; borrar BD se relaciona con comandos/ataques." },
+        { "clave": "d", "motivo": "Apagar servidor es fallo físico, no un problema de tipo/representación." }
+      ],
+      "resumen_didactico": "Pequeñas diferencias (1 vs TRUE) pueden romper tipado y lógica en la app.",
+      "ejemplo_practico": "Un DTO espera boolean; llega number 1 y la validación falla o el ORM no mapea correctamente.",
+      "conclusion_final": "El riesgo real es fallo o comportamiento incorrecto de la aplicación por tipado."
+    }
+  },
+  {
+    "id": "UT7-Q28",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "¿A qué fabricante pertenece el tipo MONEY?",
+    "contexto": "Tipos propietarios y dificultades de migración.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "PostgreSQL." },
+      { "clave": "b", "texto": "Oracle." },
+      { "clave": "c", "texto": "Microsoft SQL Server." },
+      { "clave": "d", "texto": "MySQL." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "MONEY (y SMALLMONEY) se usa como ejemplo de tipo propietario en SQL Server y suele requerir conversión a DECIMAL/NUMERIC al migrar a otros motores.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No se identifica como fabricante del tipo propietario MONEY en el temario." },
+        { "clave": "b", "motivo": "Oracle no usa MONEY como tipo nativo propietario equivalente; se mapea a DECIMAL/NUMERIC." },
+        { "clave": "d", "motivo": "MySQL no se presenta como fabricante del tipo MONEY; normalmente se usan DECIMAL/NUMERIC." }
+      ],
+      "resumen_didactico": "MONEY es un tipo propietario de SQL Server; al migrar se convierte a DECIMAL/NUMERIC.",
+      "ejemplo_practico": "precio MONEY en SQL Server -> NUMERIC(10,2) en PostgreSQL para mantener céntimos.",
+      "conclusion_final": "El tipo MONEY pertenece a Microsoft SQL Server."
+    }
+  },
+  {
+    "id": "UT7-Q29",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Según buenas prácticas, un backup que no se prueba:",
+    "contexto": "Fiabilidad real de una copia de seguridad sin simulacro de restauración.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Es cuántico." },
+      { "clave": "b", "texto": "Es seguro." },
+      { "clave": "c", "texto": "Está listo siempre." },
+      { "clave": "d", "texto": "No existe." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El temario indica que los backups deben probarse (simulacros de restauración). Si no se prueba, no hay garantía de que sea restaurable; en la práctica es como si no existiera cuando llega el desastre.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No tiene sentido en el marco del temario." },
+        { "clave": "b", "motivo": "Sin prueba no hay seguridad; puede estar corrupto o incompleto." },
+        { "clave": "c", "motivo": "No se puede afirmar que esté listo si nunca se validó la restauración." }
+      ],
+      "resumen_didactico": "Backup sin prueba = falsa seguridad.",
+      "ejemplo_practico": "Ransomware: intentas restaurar y descubres que el backup está dañado o no corresponde a producción.",
+      "conclusion_final": "Un backup no probado, operativamente, no existe."
+    }
+  },
+  {
+    "id": "UT7-Q30",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Conclusión clave sobre seguridad en bases de datos:",
+    "contexto": "Idea final de la unidad sobre el papel de la seguridad en sistemas de información.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Es responsabilidad del usuario." },
+      { "clave": "b", "texto": "Es un extra opcional." },
+      { "clave": "c", "texto": "Es la base de todo sistema tecnológico." },
+      { "clave": "d", "texto": "Las BBDD modernas son invulnerables." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La unidad enfatiza que la seguridad (CIDAN) y la capacidad de recuperación ante fallos físicos/lógicos son fundamentales. Sin ellas, el sistema no es fiable ni sostenible.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "La responsabilidad recae en la organización, procesos y controles técnicos, no solo en el usuario final." },
+        { "clave": "b", "motivo": "No es opcional: sin seguridad y recuperación el negocio se expone a pérdidas y brechas." },
+        { "clave": "d", "motivo": "El temario asume fallos físicos y lógicos; por eso existen redundancia, backups y planes de contingencia." }
+      ],
+      "resumen_didactico": "Seguridad en BBDD sostiene la confianza del sistema: protege y permite recuperar.",
+      "ejemplo_practico": "Sin permisos y backups: un error o ataque puede tumbar el servicio y perder datos críticos.",
+      "conclusion_final": "La seguridad en bases de datos es la base de un sistema tecnológico fiable."
+    }
+  }
+]

@@ -109,5 +109,10 @@ export const topicsByModule = {
       title: "Construcción de guiones",
       numQuestion: 30,
     },
+    {
+      id: "UT7",
+      title: "Gestión de seguridad",
+      numQuestion: 30,
+    },
   ],
 };
