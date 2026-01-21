@@ -1,0 +1,754 @@
+[
+  {
+    "id": "UT8-Q01",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Viajas mentalmente a los años 90 en el Parque Tecnológico de Málaga. Las empresas guardaban todo en tablas rígidas, pero la programación empezaba a usar \"Objetos\". ¿Qué nueva tecnología surgió para alinear el almacenamiento de datos con este nuevo paradigma?",
+    "contexto": "Transición histórica del modelo puramente relacional hacia el paradigma orientado a objetos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Los SGBDOO (Sistemas Gestores de Bases de Datos Orientados a Objetos)." },
+      { "clave": "b", "texto": "Los archivos de texto plano CSV." },
+      { "clave": "c", "texto": "Los SGBD Jerárquicos." },
+      { "clave": "d", "texto": "Los SGBD Relacionales puros." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Cuando el software comenzó a modelarse como objetos, surgió la necesidad de almacenar información de forma coherente con esa estructura. Los SGBDOO aparecen para persistir datos como objetos, en lugar de descomponerlos exclusivamente en tablas relacionales.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "CSV es un formato de intercambio/almacenamiento simple; no ofrece persistencia orientada a objetos ni modelado con tipos complejos, métodos o herencia." },
+        { "clave": "c", "motivo": "Los modelos jerárquicos son anteriores y no nacen como respuesta a la POO ni a la necesidad de persistir objetos." },
+        { "clave": "d", "motivo": "El modelo relacional puro es el enfoque previo (tablas rígidas) y no resuelve el objetivo de almacenar estructuras tipo objeto de manera nativa." }
+      ],
+      "resumen_didactico": "POO impulsó la idea de guardar información como objetos: así nacen los SGBDOO.",
+      "ejemplo_practico": "Guardar un \"Coche\" como una entidad con atributos y comportamiento, sin tener que fragmentarlo en múltiples tablas para reconstruirlo después.",
+      "conclusion_final": "La tecnología que surge para alinearse con el paradigma OO son los SGBDOO."
+    }
+  },
+  {
+    "id": "UT8-Q02",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Usando la analogía de la mudanza, en el modelo relacional antiguo, si tienes un \"Coche\", ¿qué proceso debías realizar para guardarlo?",
+    "contexto": "Comprender la limitación del modelo relacional clásico para representar objetos complejos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Guardar el coche entero sin tocarlo." },
+      { "clave": "b", "texto": "Comprimir el coche en un ZIP." },
+      { "clave": "c", "texto": "Convertirlo en binario ilegible." },
+      { "clave": "d", "texto": "Desmontarlo pieza a pieza y guardarlas en cajas separadas." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La analogía explica que el relacional clásico obliga a descomponer un objeto complejo en partes (atributos) distribuidas en estructuras planas (tablas/columnas), para luego recomponerlo cuando se consulta.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Guardar el objeto 'entero' es la idea que inspira el enfoque orientado a objetos, no el relacional clásico." },
+        { "clave": "b", "motivo": "Comprimir no describe el problema del relacional: el punto clave es la fragmentación en estructuras planas." },
+        { "clave": "c", "motivo": "No se trata de hacerlo ilegible, sino de dividirlo en piezas para encajarlo en tablas." }
+      ],
+      "resumen_didactico": "Relacional clásico: fragmentas el objeto y luego lo reconstruyes.",
+      "ejemplo_practico": "Un 'Coche' termina repartido en tablas como coches, motores, ruedas y relaciones; para obtenerlo completo se recomponen datos.",
+      "conclusion_final": "En el relacional antiguo debías desmontarlo y guardarlo por partes en estructuras separadas."
+    }
+  },
+  {
+    "id": "UT8-Q03",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Creas un molde reutilizable DIRECCION_T para evitar repetir Calle, Número y CP. ¿Qué concepto aplicas?",
+    "contexto": "Reutilización de estructuras complejas en bases de datos objeto-relacionales.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Tabla anidada." },
+      { "clave": "b", "texto": "UDT (User Defined Type) o Tipo Definido por el Usuario." },
+      { "clave": "c", "texto": "Trigger." },
+      { "clave": "d", "texto": "Clave foránea." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Un UDT permite definir un tipo estructurado (molde) reutilizable, encapsulando varios atributos relacionados (calle, número, CP) para usarlo como columna o parte de una estructura mayor.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Una tabla anidada es una colección; aquí estás definiendo un tipo estructurado reutilizable." },
+        { "clave": "c", "motivo": "Un trigger reacciona a eventos DML; no define estructuras reutilizables." },
+        { "clave": "d", "motivo": "Una clave foránea enlaza tablas; no crea un 'molde' de atributos." }
+      ],
+      "resumen_didactico": "Un 'molde' reutilizable de varios campos es un UDT.",
+      "ejemplo_practico": "Definir DIRECCION_T una vez y reutilizarlo en Cliente, Proveedor y Empleado sin repetir columnas.",
+      "conclusion_final": "Estás aplicando un UDT/tipo definido por el usuario."
+    }
+  },
+  {
+    "id": "UT8-Q04",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "CREATE TYPE Persona_T AS OBJECT (...) ¿Qué has creado?",
+    "contexto": "Diferenciar entre definición de tipo y almacenamiento de instancias.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un molde o plantilla abstracta sin almacenamiento físico." },
+      { "clave": "b", "texto": "Una vista materializada." },
+      { "clave": "c", "texto": "Una tabla física." },
+      { "clave": "d", "texto": "Un procedimiento." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "CREATE TYPE define la estructura (atributos y, si procede, firmas de métodos) de un tipo objeto. No crea datos almacenados por sí mismo; el almacenamiento llega al crear tablas y filas.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Una vista materializada es el resultado almacenado de una consulta, no un tipo." },
+        { "clave": "c", "motivo": "Una tabla almacena filas; aquí solo defines un tipo (plantilla)." },
+        { "clave": "d", "motivo": "Un procedimiento es lógica ejecutable; CREATE TYPE define estructura de datos." }
+      ],
+      "resumen_didactico": "TYPE = definición/plantilla; TABLE = almacenamiento de instancias.",
+      "ejemplo_practico": "Persona_T define campos como dni/nombre; una tabla (Personas) guardaría instancias reales.",
+      "conclusion_final": "Has creado un tipo (plantilla) sin almacenamiento físico por sí mismo."
+    }
+  },
+  {
+    "id": "UT8-Q05",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para almacenar instancias reales de Persona_T, ¿qué comando usas?",
+    "contexto": "Crear una tabla de objetos para persistir instancias de un tipo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "CREATE TABLE Personas OF Persona_T;" },
+      { "clave": "b", "texto": "CREATE TYPE BODY Persona_T..." },
+      { "clave": "c", "texto": "INSERT INTO Persona_T VALUES..." },
+      { "clave": "d", "texto": "ALTER TYPE Persona_T ADD TABLE;" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Para guardar instancias necesitas una tabla. CREATE TABLE ... OF <Tipo> crea una tabla de objetos cuyas filas son instancias del tipo Persona_T.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "TYPE BODY implementa métodos; no crea almacenamiento de instancias." },
+        { "clave": "c", "motivo": "INSERT se realiza sobre tablas; Persona_T es un TYPE, no una tabla." },
+        { "clave": "d", "motivo": "ALTER TYPE modifica la definición; no es el mecanismo estándar para crear la tabla de almacenamiento." }
+      ],
+      "resumen_didactico": "Para persistir instancias: crea una tabla basada en el tipo.",
+      "ejemplo_practico": "Definir Persona_T y luego crear Personas OF Persona_T para insertar filas/objetos reales.",
+      "conclusion_final": "Debes crear una tabla de objetos: CREATE TABLE Personas OF Persona_T."
+    }
+  },
+  {
+    "id": "UT8-Q06",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Diferencia clave entre usar un objeto como columna y una Tabla de Objetos:",
+    "contexto": "Identidad del objeto y almacenamiento independiente.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Ocupa más espacio." },
+      { "clave": "b", "texto": "No permite índices." },
+      { "clave": "c", "texto": "No hay diferencia." },
+      { "clave": "d", "texto": "En Tabla de Objetos cada fila es un objeto con OID propio." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Una tabla de objetos almacena objetos como entidades independientes con identidad (OID). Usar un objeto como columna suele implicar una estructura embebida dentro de una fila, sin el mismo enfoque de identidad/almacenamiento independiente.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El espacio no es la diferencia conceptual principal: lo clave es identidad (OID) y referencia/navegación." },
+        { "clave": "b", "motivo": "La indexación no define la diferencia principal en el modelo; depende del SGBD y del diseño." },
+        { "clave": "c", "motivo": "Sí hay diferencia: tabla de objetos implica identidad propia por fila/objeto (OID) y uso típico con referencias." }
+      ],
+      "resumen_didactico": "Tabla de objetos = filas que son objetos con identidad propia (OID).",
+      "ejemplo_practico": "Guardar Autor como objeto independiente (tabla de objetos) y referenciarlo desde Libros sin duplicarlo.",
+      "conclusion_final": "La diferencia clave es la identidad: en una tabla de objetos cada fila es un objeto con OID."
+    }
+  },
+  {
+    "id": "UT8-Q07",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Cliente con máximo 3 teléfonos y orden importante. ¿Qué colección es mejor?",
+    "contexto": "Selección de colección cuando existe límite fijo pequeño y el orden importa.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Tabla hash." },
+      { "clave": "b", "texto": "VARRAY." },
+      { "clave": "c", "texto": "Tabla Anidada." },
+      { "clave": "d", "texto": "Lista enlazada." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "VARRAY es una colección ordenada con tamaño máximo definido, adecuada para conjuntos pequeños donde el orden es relevante (p. ej., teléfono principal, secundario, tercero).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Una tabla hash prioriza acceso por clave y no es el patrón típico para colecciones ordenadas con límite fijo." },
+        { "clave": "c", "motivo": "La tabla anidada es más adecuada cuando el tamaño es grande o no hay límite fijo claro." },
+        { "clave": "d", "motivo": "Lista enlazada es estructura de programación; no es la opción estándar en SQL objeto-relacional para este caso." }
+      ],
+      "resumen_didactico": "Límite fijo + orden importante => VARRAY.",
+      "ejemplo_practico": "telefonos VARRAY(3) para [principal, secundario, tercero].",
+      "conclusion_final": "La mejor colección es VARRAY."
+    }
+  },
+  {
+    "id": "UT8-Q08",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Paciente con hasta 5.000 visitas sin límite fijo. ¿Qué colección eliges?",
+    "contexto": "Selección de colección cuando el tamaño puede crecer mucho y no es razonable fijar un máximo pequeño.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "INTEGER." },
+      { "clave": "b", "texto": "Texto con comas." },
+      { "clave": "c", "texto": "Tabla Anidada (Nested Table)." },
+      { "clave": "d", "texto": "VARRAY(5)." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Cuando una colección puede crecer mucho y no tiene un límite pequeño fijo, una nested table es más adecuada que un VARRAY acotado. Permite almacenar un conjunto grande y variable de elementos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "INTEGER no modela una colección; solo un valor único." },
+        { "clave": "b", "motivo": "Serializar en texto rompe tipado, consultas e integridad; no es una solución de modelado objeto-relacional." },
+        { "clave": "d", "motivo": "VARRAY(5) impone un máximo de 5, incompatible con miles de visitas." }
+      ],
+      "resumen_didactico": "Colecciones grandes y sin límite fijo => Nested Table.",
+      "ejemplo_practico": "visitas como nested table de objetos Visita_T (fecha, motivo, doctor).",
+      "conclusion_final": "La colección correcta es Tabla Anidada."
+    }
+  },
+  {
+    "id": "UT8-Q09",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para insertar un objeto Direccion_T en una tabla, ¿qué usas?",
+    "contexto": "Creación de instancias de tipos objeto al insertar datos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "La función constructora del tipo." },
+      { "clave": "b", "texto": "TO_OBJECT()." },
+      { "clave": "c", "texto": "NEW()." },
+      { "clave": "d", "texto": "CREATE." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La función constructora del tipo (con el mismo nombre del TYPE) crea e inicializa una instancia del objeto para poder insertarla en una columna de ese tipo.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "No es el mecanismo estándar del modelo para instanciar tipos objeto." },
+        { "clave": "c", "motivo": "No es la forma típica indicada para instanciar tipos objeto en este enfoque." },
+        { "clave": "d", "motivo": "CREATE se usa para definir tipos/tablas, no para insertar instancias." }
+      ],
+      "resumen_didactico": "Para insertar un objeto: primero lo construyes con la constructora del tipo.",
+      "ejemplo_practico": "INSERT ... VALUES (Direccion_T('Calle A', 12, '29001')).",
+      "conclusion_final": "Se usa la función constructora del tipo."
+    }
+  },
+  {
+    "id": "UT8-Q10",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "¿Qué significa que una función sea MEMBER?",
+    "contexto": "Diferenciar métodos de instancia frente a funciones 'sueltas'.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Solo devuelve números." },
+      { "clave": "b", "texto": "Función global." },
+      { "clave": "c", "texto": "Función privada." },
+      { "clave": "d", "texto": "Es un método del objeto con acceso a sus atributos." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "MEMBER indica un método asociado a la instancia del objeto, capaz de operar sobre sus atributos (normalmente mediante SELF) y encapsular comportamiento dentro del tipo.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "MEMBER no restringe el tipo de retorno; define el tipo de método (de instancia)." },
+        { "clave": "b", "motivo": "Una función global no está ligada a una instancia; MEMBER sí lo está." },
+        { "clave": "c", "motivo": "Privacidad/visibilidad es otro concepto; MEMBER no significa 'privado'." }
+      ],
+      "resumen_didactico": "MEMBER = método de instancia que trabaja con los atributos del objeto.",
+      "ejemplo_practico": "Un método MEMBER actualiza SELF.saldo en un objeto Cuenta_T.",
+      "conclusion_final": "MEMBER es un método del objeto con acceso a sus atributos."
+    }
+  },
+  {
+    "id": "UT8-Q11",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "¿Dónde se escribe la lógica de un método (base * altura)?",
+    "contexto": "Separar declaración de tipo y la implementación de métodos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "En CREATE TYPE BODY." },
+      { "clave": "b", "texto": "En CREATE TYPE." },
+      { "clave": "c", "texto": "En un trigger." },
+      { "clave": "d", "texto": "En Java." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La definición del tipo (CREATE TYPE) declara estructura y firmas; la implementación (código) de los métodos se escribe en CREATE TYPE BODY.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "CREATE TYPE define el contrato; la lógica concreta se implementa en el BODY." },
+        { "clave": "c", "motivo": "Un trigger reacciona a DML; no es el lugar natural para implementar el método del tipo." },
+        { "clave": "d", "motivo": "El objetivo es encapsular lógica en la BD mediante métodos del tipo, no en un lenguaje externo." }
+      ],
+      "resumen_didactico": "TYPE declara; TYPE BODY implementa.",
+      "ejemplo_practico": "area() declarada en TYPE y programada en TYPE BODY como base * altura.",
+      "conclusion_final": "La lógica del método se escribe en CREATE TYPE BODY."
+    }
+  },
+  {
+    "id": "UT8-Q12",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para ordenar objetos por nota media, ¿qué método implementas?",
+    "contexto": "Definir criterio de ordenación de objetos mediante métodos de comparación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Constructor." },
+      { "clave": "b", "texto": "ORDER." },
+      { "clave": "c", "texto": "MAP." },
+      { "clave": "d", "texto": "COMPARE." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "MAP permite mapear el objeto a un valor escalar (por ejemplo, nota_media) que el motor puede comparar y usar para ordenar de forma natural.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El constructor crea instancias; no define ordenación." },
+        { "clave": "b", "motivo": "ORDER se usa para comparación objeto-a-objeto; si hay un valor escalar claro (nota media), MAP es la forma directa." },
+        { "clave": "d", "motivo": "COMPARE no es el mecanismo estándar típico en este temario para ordenación de objetos." }
+      ],
+      "resumen_didactico": "Si puedes reducir el objeto a un escalar para ordenar, usa MAP.",
+      "ejemplo_practico": "MAP devuelve nota_media (NUMBER) y el SGBD ordena por ese valor.",
+      "conclusion_final": "Para ordenar por nota media, implementas un método MAP."
+    }
+  },
+  {
+    "id": "UT8-Q13",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para comparar objetos complejos no reducibles a un número, ¿qué método usas?",
+    "contexto": "Comparación definida por lógica objeto-a-objeto.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "SORT." },
+      { "clave": "b", "texto": "ORDER." },
+      { "clave": "c", "texto": "EQUALS." },
+      { "clave": "d", "texto": "MAP." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Cuando no hay un valor escalar único y limpio para mapear, se define la comparación entre dos instancias con ORDER, programando la regla objeto-a-objeto.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "SORT no es el mecanismo estándar de comparación de tipos objeto en este contexto." },
+        { "clave": "c", "motivo": "EQUALS no es el método estándar típico para establecer ordenación total entre objetos." },
+        { "clave": "d", "motivo": "MAP requiere reducir a un escalar; si no es razonable, no es el enfoque adecuado." }
+      ],
+      "resumen_didactico": "Sin escalar claro => compara objeto con objeto usando ORDER.",
+      "ejemplo_practico": "Comparar por (apellidos, nombre, fecha_nacimiento) con una regla programada en ORDER.",
+      "conclusion_final": "Para objetos complejos no reducibles a un escalar, se usa ORDER."
+    }
+  },
+  {
+    "id": "UT8-Q14",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para permitir herencia desde Persona_T, ¿qué palabra clave usas?",
+    "contexto": "Controlar si un tipo puede tener subtipos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "INHERITABLE." },
+      { "clave": "b", "texto": "NOT FINAL." },
+      { "clave": "c", "texto": "FINAL." },
+      { "clave": "d", "texto": "SUPER." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "NOT FINAL deja el tipo abierto para que otros tipos puedan heredar de él. FINAL, en cambio, cierra la jerarquía e impide subtipos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "INHERITABLE no es la palabra clave del temario para habilitar herencia." },
+        { "clave": "c", "motivo": "FINAL prohíbe herencia; hace lo contrario de lo pedido." },
+        { "clave": "d", "motivo": "SUPER es un concepto de POO, no la cláusula indicada para permitir herencia en tipos." }
+      ],
+      "resumen_didactico": "Permitir herencia => NOT FINAL.",
+      "ejemplo_practico": "Persona_T NOT FINAL permite crear Estudiante_T UNDER Persona_T.",
+      "conclusion_final": "La palabra clave es NOT FINAL."
+    }
+  },
+  {
+    "id": "UT8-Q15",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Crear Estudiante_T heredando de Persona_T se hace con:",
+    "contexto": "Sintaxis de herencia de tipos en el modelo objeto-relacional.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "EXTENDS Persona_T" },
+      { "clave": "b", "texto": "FROM Persona_T" },
+      { "clave": "c", "texto": "UNDER Persona_T" },
+      { "clave": "d", "texto": "COPY Persona_T" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La herencia de tipos se expresa con UNDER: el subtipo hereda los atributos del supertipo y puede añadir nuevos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "EXTENDS es típico de lenguajes OO, no la sintaxis de herencia de tipos aquí." },
+        { "clave": "b", "motivo": "FROM se usa en consultas; no define herencia." },
+        { "clave": "d", "motivo": "Copiar no es heredar; herencia evita duplicación y mantiene jerarquía." }
+      ],
+      "resumen_didactico": "Subtipo = TipoHijo UNDER TipoPadre.",
+      "ejemplo_practico": "CREATE TYPE Estudiante_T UNDER Persona_T (...).",
+      "conclusion_final": "Se crea con UNDER Persona_T."
+    }
+  },
+  {
+    "id": "UT8-Q16",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Consultar solo estudiantes en una tabla polimórfica:",
+    "contexto": "Filtrado por subtipo cuando una tabla del supertipo contiene instancias de subtipos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "'Estudiante'" },
+      { "clave": "b", "texto": "SELECT * WHERE CLASS" },
+      { "clave": "c", "texto": "IS_A(Estudiante_T)" },
+      { "clave": "d", "texto": "SELECT * FROM Personas WHERE TYPE IS Estudiante_T" },
+      { "clave": "e", "texto": "SELECT VALUE(p) FROM Personas p WHERE VALUE(p) IS OF (Estudiante_T)" }
+    ],
+    "respuesta_correcta": ["e"],
+    "explicacion": {
+      "temario": "En tablas polimórficas, el filtrado por subtipo se expresa con un predicado de tipo aplicado al valor objeto de la fila. La forma correcta es usar IS OF sobre VALUE(alias).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Es un literal; no es un filtro de tipo ni una consulta válida." },
+        { "clave": "b", "motivo": "No es una sintaxis completa/estándar para filtrar subtipos." },
+        { "clave": "c", "motivo": "No es el predicado estándar típico para este filtrado en el enfoque del temario." },
+        { "clave": "d", "motivo": "No corresponde a la sintaxis esperada para filtrar por tipo en este modelo; se usa VALUE(...) IS OF (...)." }
+      ],
+      "resumen_didactico": "Para quedarte con un subtipo en una tabla polimórfica: VALUE(x) IS OF (Subtipo).",
+      "ejemplo_practico": "Extraer solo Estudiante_T desde una tabla Personas que guarda Persona_T y subtipos.",
+      "conclusion_final": "La forma correcta es la opción e con IS OF sobre VALUE(p)."
+    }
+  },
+  {
+    "id": "UT8-Q17",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para referenciar a un Alumno desde Profesor sin copiar datos, ¿qué tipo usas?",
+    "contexto": "Referencias a objetos para evitar duplicación de información.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "REF." },
+      { "clave": "b", "texto": "Enlace simbólico." },
+      { "clave": "c", "texto": "Foreign Key." },
+      { "clave": "d", "texto": "Puntero C++." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "REF es el tipo objeto-relacional para almacenar una referencia a un objeto almacenado en otra tabla, evitando copiar atributos y permitiendo navegación al objeto real.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "Es un concepto de sistemas de archivos, no del modelo de BD." },
+        { "clave": "c", "motivo": "FK es relacional clásico; aquí se pide el mecanismo OO para referenciar objetos." },
+        { "clave": "d", "motivo": "Un puntero C++ es de lenguaje; en BD el constructo es REF." }
+      ],
+      "resumen_didactico": "Para 'apuntar' a un objeto sin duplicarlo, usas REF.",
+      "ejemplo_practico": "Profesor almacena alumno_ref REF Alumno_T en lugar de repetir nombre/dni del alumno.",
+      "conclusion_final": "El tipo correcto es REF."
+    }
+  },
+  {
+    "id": "UT8-Q18",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Ventaja principal de usar REF:",
+    "contexto": "Efectos de centralizar datos y referenciarlos desde múltiples entidades.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Los cambios en el alumno se reflejan automáticamente." },
+      { "clave": "b", "texto": "Duplica información." },
+      { "clave": "c", "texto": "Permite borrar sin control." },
+      { "clave": "d", "texto": "Es más lento." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "REF evita duplicación: al apuntar a un único objeto fuente, los cambios se consultan desde cualquier referencia sin tener copias inconsistentes.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "REF se usa para evitar duplicación, no para duplicar." },
+        { "clave": "c", "motivo": "Borrado sin control no es una ventaja ni una propiedad del modelo; la integridad depende del diseño/soporte." },
+        { "clave": "d", "motivo": "No es una 'ventaja'; el objetivo es centralización y reutilización de datos." }
+      ],
+      "resumen_didactico": "REF = una sola fuente de verdad; cambios visibles desde todas las referencias.",
+      "ejemplo_practico": "Actualizar el teléfono del alumno una vez y verlo reflejado en todas las tablas/objetos que lo referencian.",
+      "conclusion_final": "La ventaja principal es que los cambios se reflejan automáticamente al no existir copias."
+    }
+  },
+  {
+    "id": "UT8-Q19",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para obtener el puntero REF del alumno Juan:",
+    "contexto": "Obtener una referencia a un objeto para guardarla en otra entidad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "LINK()." },
+      { "clave": "b", "texto": "REF(a)." },
+      { "clave": "c", "texto": "GET_POINTER()." },
+      { "clave": "d", "texto": "ID()." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "REF(alias) devuelve la referencia (puntero) al objeto representado por la fila/alias. Es el mecanismo típico para capturar un REF a partir de una tabla de objetos.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es una función estándar en este modelo para obtener REFs." },
+        { "clave": "c", "motivo": "No corresponde a sintaxis estándar de obtención de REF." },
+        { "clave": "d", "motivo": "ID() alude a un campo de negocio; no es el mecanismo de referencia objeto-relacional." }
+      ],
+      "resumen_didactico": "Si quieres el puntero a un objeto: REF(alias).",
+      "ejemplo_practico": "SELECT REF(a) FROM Alumnos a WHERE a.nombre='Juan';",
+      "conclusion_final": "Para obtener el REF se usa REF(a)."
+    }
+  },
+  {
+    "id": "UT8-Q20",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para acceder al objeto apuntado por un REF:",
+    "contexto": "Desreferenciación para recuperar el objeto real a partir de una referencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "POINTER_TO_VALUE()." },
+      { "clave": "b", "texto": "GET_VALUE()." },
+      { "clave": "c", "texto": "DEREF()." },
+      { "clave": "d", "texto": "UNREF()." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "DEREF(ref) desreferencia la referencia y devuelve la instancia del objeto al que apunta. Es el paso inverso a 'capturar' un REF.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es una función estándar para desreferenciar en este modelo." },
+        { "clave": "b", "motivo": "No corresponde a la operación típica de desreferenciación de REFs." },
+        { "clave": "d", "motivo": "No es el operador estándar para recuperar el objeto desde un REF." }
+      ],
+      "resumen_didactico": "REF apunta; DEREF recupera el objeto apuntado.",
+      "ejemplo_practico": "SELECT DEREF(p.alumno_ref) FROM Profesores p;",
+      "conclusion_final": "Se usa DEREF() para acceder al objeto apuntado por un REF."
+    }
+  },
+  {
+    "id": "UT8-Q21",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Diferencia clave entre REF y Foreign Key:",
+    "contexto": "Comparar el enlace OO (REF) con el enlace relacional clásico (FK).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "REF ocupa más espacio." },
+      { "clave": "b", "texto": "FK permite borrar sin avisar." },
+      { "clave": "c", "texto": "No hay diferencia." },
+      { "clave": "d", "texto": "FK garantiza integridad referencial; REF no por defecto." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La FK es un mecanismo relacional clásico asociado a restricciones de integridad referencial (constraints). REF representa una referencia a un objeto; su comportamiento e integridad pueden requerir soporte/configuración adicional según el SGBD.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "El tamaño no es la diferencia conceptual clave; lo principal es integridad/constraints vs referencia objeto." },
+        { "clave": "b", "motivo": "FK suele impedir borrados inconsistentes (o aplica reglas como RESTRICT/CASCADE); no 'permite borrar sin avisar' como ventaja." },
+        { "clave": "c", "motivo": "Sí hay diferencia: FK impone integridad como regla del modelo relacional, REF es referencia orientada a objeto." }
+      ],
+      "resumen_didactico": "FK = enlace + constraint de integridad; REF = enlace tipo referencia a objeto.",
+      "ejemplo_practico": "Pedidos(cliente_id FK) impide borrar cliente con pedidos; con REF, el comportamiento depende del diseño/soporte.",
+      "conclusion_final": "La diferencia clave es que la FK garantiza integridad referencial; REF no necesariamente por defecto."
+    }
+  },
+  {
+    "id": "UT8-Q22",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Polimorfismo en una columna objeto:",
+    "contexto": "Almacenar instancias del tipo base y subtipos en un mismo campo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Columnas separadas." },
+      { "clave": "b", "texto": "No se permite." },
+      { "clave": "c", "texto": "Puede guardar el tipo base y sus subtipos." },
+      { "clave": "d", "texto": "Texto plano." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Con herencia de tipos, una columna declarada como supertipo puede almacenar instancias del tipo base o de sus subtipos (polimorfismo de almacenamiento).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Separar columnas elimina la idea de polimorfismo en un mismo campo tipado." },
+        { "clave": "b", "motivo": "El modelo objeto-relacional contempla herencia/polimorfismo, por tanto sí se permite." },
+        { "clave": "d", "motivo": "Texto plano perdería tipado, herencia y comportamiento; no es polimorfismo real." }
+      ],
+      "resumen_didactico": "Una columna del tipo base puede guardar también subtipos.",
+      "ejemplo_practico": "persona Persona_T puede almacenar Persona_T o Estudiante_T.",
+      "conclusion_final": "Polimorfismo en columna: guarda tipo base y subtipos."
+    }
+  },
+  {
+    "id": "UT8-Q23",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Desventaja de usar métodos en WHERE masivo:",
+    "contexto": "Impacto de rendimiento al invocar lógica por fila en filtrados grandes.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Solo en Oracle 10g." },
+      { "clave": "b", "texto": "No está permitido." },
+      { "clave": "c", "texto": "Siempre fallan." },
+      { "clave": "d", "texto": "Penalización por cambio de contexto SQL/PLSQL." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Invocar métodos/funciones en un WHERE sobre muchas filas puede provocar múltiples cambios de contexto entre el motor SQL y el entorno procedural (p. ej., PL/SQL), penalizando el rendimiento por llamadas repetidas fila a fila.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es exclusivo de una versión concreta; es un fenómeno general de invocación procedural repetida desde SQL." },
+        { "clave": "b", "motivo": "Sí está permitido, pero puede ser costoso en rendimiento." },
+        { "clave": "c", "motivo": "No 'fallan'; el problema es el coste de ejecución, no la validez." }
+      ],
+      "resumen_didactico": "Métodos en WHERE masivo => muchas invocaciones => coste por cambio de contexto.",
+      "ejemplo_practico": "WHERE obj.esValido() ejecutado sobre 200.000 filas implica 200.000 llamadas.",
+      "conclusion_final": "La desventaja típica es el coste por cambio de contexto SQL/PLSQL."
+    }
+  },
+  {
+    "id": "UT8-Q24",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para tratar una tabla anidada como filas normales:",
+    "contexto": "Aplanar colecciones para consultarlas como conjunto de filas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "UNNEST()." },
+      { "clave": "b", "texto": "FLATTEN()." },
+      { "clave": "c", "texto": "EXPAND()." },
+      { "clave": "d", "texto": "TABLE()." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "TABLE(coleccion) permite exponer una colección (como una nested table) como un conjunto de filas consultable con SQL, tratándola como una 'tabla' en la consulta.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "UNNEST existe en algunos dialectos, pero aquí el operador esperado para nested tables es TABLE()." },
+        { "clave": "b", "motivo": "FLATTEN no es el operador estándar en este contexto." },
+        { "clave": "c", "motivo": "EXPAND no es el operador estándar en este contexto." }
+      ],
+      "resumen_didactico": "Para ver una colección como filas: TABLE().",
+      "ejemplo_practico": "SELECT * FROM TABLE(p.visitas) WHERE ...",
+      "conclusion_final": "La opción correcta es TABLE()."
+    }
+  },
+  {
+    "id": "UT8-Q25",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para sobreescribir un método en un subtipo:",
+    "contexto": "Polimorfismo: redefinir comportamiento heredado.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "CHANGE." },
+      { "clave": "b", "texto": "NEW." },
+      { "clave": "c", "texto": "REPLACE." },
+      { "clave": "d", "texto": "OVERRIDING." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En herencia, un subtipo puede redefinir un método del supertipo. La palabra clave OVERRIDING indica explícitamente que el método del subtipo sobreescribe al heredado.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es la palabra clave estándar para sobrescritura de métodos." },
+        { "clave": "b", "motivo": "NEW se asocia a creación/instanciación, no a sobrescritura." },
+        { "clave": "c", "motivo": "REPLACE se usa en otros contextos (crear o reemplazar objetos), no como marcador de sobrescritura en subtipos." }
+      ],
+      "resumen_didactico": "Sobrescribir método heredado => OVERRIDING.",
+      "ejemplo_practico": "Estudiante_T redefine calcularDescuento() con OVERRIDING para aplicar otra regla.",
+      "conclusion_final": "Para sobreescribir un método se usa OVERRIDING."
+    }
+  },
+  {
+    "id": "UT8-Q26",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Limitación principal de los VARRAY:",
+    "contexto": "Restricciones típicas de colecciones acotadas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Son infinitos." },
+      { "clave": "b", "texto": "Se almacenan inline y tienen tamaño máximo fijo." },
+      { "clave": "c", "texto": "No tienen orden." },
+      { "clave": "d", "texto": "Las Nested son más lentas." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Los VARRAY son colecciones ordenadas con un tamaño máximo definido. Su limitación principal es ese tope fijo (y el enfoque de almacenamiento asociado), lo que los hace idóneos para conjuntos pequeños y previsibles.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Es lo contrario: VARRAY tiene un máximo definido." },
+        { "clave": "c", "motivo": "Los arrays/VARRAY preservan el orden; de hecho se eligen cuando el orden importa." },
+        { "clave": "d", "motivo": "No define una limitación propia de VARRAY; la limitación clave es el tamaño máximo fijo." }
+      ],
+      "resumen_didactico": "VARRAY = ordenado pero acotado por un máximo.",
+      "ejemplo_practico": "VARRAY(3) para teléfonos; no sirve si el conjunto crece sin límite.",
+      "conclusion_final": "La limitación principal es tamaño máximo fijo y almacenamiento asociado."
+    }
+  },
+  {
+    "id": "UT8-Q27",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Un método MAP devuelve:",
+    "contexto": "Definir ordenación/comparación a través de un valor comparable por el motor.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Varios valores." },
+      { "clave": "b", "texto": "Un único valor escalar." },
+      { "clave": "c", "texto": "Un objeto completo." },
+      { "clave": "d", "texto": "Un booleano." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "MAP debe devolver un único valor escalar (número, fecha, texto) para que el SGBD pueda comparar y ordenar objetos a través de ese valor.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "MAP no devuelve múltiples valores; el criterio debe ser un escalar comparable." },
+        { "clave": "c", "motivo": "Devolver un objeto no resuelve la necesidad de un valor simple comparable para ordenación." },
+        { "clave": "d", "motivo": "MAP no se define como booleano; su objetivo es aportar un escalar ordenable." }
+      ],
+      "resumen_didactico": "MAP = objeto → escalar comparable.",
+      "ejemplo_practico": "MAP devuelve nota_media (NUMBER) para ordenar alumnos por su media.",
+      "conclusion_final": "MAP devuelve un único valor escalar."
+    }
+  },
+  {
+    "id": "UT8-Q28",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Para prohibir herencia de un tipo:",
+    "contexto": "Cerrar jerarquías de tipos para impedir subtipos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "FINAL." },
+      { "clave": "b", "texto": "CLOSED." },
+      { "clave": "c", "texto": "PRIVATE." },
+      { "clave": "d", "texto": "STOP." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "FINAL cierra el tipo e impide que se definan subtipos. NOT FINAL, por el contrario, permite herencia.",
+      "analisis_incorrectas": [
+        { "clave": "b", "motivo": "CLOSED no es la palabra clave del temario para este control de herencia." },
+        { "clave": "c", "motivo": "PRIVATE es un concepto de visibilidad, no de cierre de herencia." },
+        { "clave": "d", "motivo": "STOP no es una palabra clave del modelo." }
+      ],
+      "resumen_didactico": "Prohibir herencia => FINAL.",
+      "ejemplo_practico": "Persona_T FINAL impide crear Estudiante_T UNDER Persona_T.",
+      "conclusion_final": "La palabra clave correcta es FINAL."
+    }
+  },
+  {
+    "id": "UT8-Q29",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Los OID en una Tabla de Objetos:",
+    "contexto": "Identidad de objeto para referencias y consistencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Es una secuencia." },
+      { "clave": "b", "texto": "Los crea el usuario." },
+      { "clave": "c", "texto": "Es un DNI." },
+      { "clave": "d", "texto": "Los genera Oracle automáticamente y son inmutables." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En tablas de objetos, cada objeto tiene identidad (OID) gestionada por el SGBD. Esa identidad sirve para referenciar objetos con estabilidad, y se concibe como un identificador interno (no un dato de negocio).",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "Una secuencia es un mecanismo de generación de números; el OID es identidad interna del objeto gestionada por el SGBD." },
+        { "clave": "b", "motivo": "Si lo crea el usuario, se pierde el objetivo de identidad interna controlada y consistente para referencias." },
+        { "clave": "c", "motivo": "El 'DNI' es una analogía; el OID no es un dato real del dominio, es un identificador interno." }
+      ],
+      "resumen_didactico": "OID = identidad interna del objeto, gestionada por el SGBD.",
+      "ejemplo_practico": "Facturas referencian a Clientes por identidad de objeto, sin copiar datos del cliente.",
+      "conclusion_final": "Los OID los genera el SGBD automáticamente y se usan como identidad estable del objeto."
+    }
+  },
+  {
+    "id": "UT8-Q30",
+    "tema": "UT8 — Bases de datos objeto-relacionales",
+    "pregunta": "Conclusión sobre bases objeto-relacionales:",
+    "contexto": "Idea final del tema: convivencia de enfoque relacional con extensiones orientadas a objetos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Solo sirven para vídeos." },
+      { "clave": "b", "texto": "Modelo híbrido potente que convive con el relacional." },
+      { "clave": "c", "texto": "Han sustituido a las relacionales." },
+      { "clave": "d", "texto": "Están obsoletas." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El enfoque objeto-relacional amplía el modelo relacional con tipos complejos, colecciones, métodos, herencia y referencias, para tratar datos más ricos sin abandonar SQL. Por eso se presenta como un modelo híbrido que convive con lo relacional.",
+      "analisis_incorrectas": [
+        { "clave": "a", "motivo": "No es específico de vídeos; se aplica a datos complejos en general." },
+        { "clave": "c", "motivo": "No implica sustitución total: se concibe como extensión/convivencia con el relacional." },
+        { "clave": "d", "motivo": "El temario lo presenta como respuesta técnica útil para modelar complejidad, no como tecnología obsoleta." }
+      ],
+      "resumen_didactico": "Objeto-relacional = SQL + capacidades OO; convive con el relacional.",
+      "ejemplo_practico": "Modelar Direccion_T, herencia Persona→Estudiante y referencias REF manteniendo consultas SQL.",
+      "conclusion_final": "La conclusión correcta es que es un modelo híbrido potente que convive con el relacional."
+    }
+  }
+]

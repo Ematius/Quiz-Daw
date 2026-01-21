@@ -114,5 +114,10 @@ export const topicsByModule = {
       title: "Gestión de seguridad",
       numQuestion: 30,
     },
+    {
+      id: "UT8",
+      title: "Las bases de datos objeto-relacionales",
+      numQuestion: 30,
+    },
   ],
 };
