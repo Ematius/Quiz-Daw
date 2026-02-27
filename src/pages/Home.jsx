@@ -13,6 +13,7 @@ const modules = [
     title: "Base de datos",
     subtitle: "7 temas",
   },
+  { id:"introduccionProgramacion", title: "Introducción a la programación", subtitle: "15 temas"},
 ];
 
 

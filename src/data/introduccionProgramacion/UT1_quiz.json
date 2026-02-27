@@ -1,0 +1,1073 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En una planta de innovación en Madrid, un equipo desarrolla una IA para farmacias. ¿A qué se reduce la creación de estos algoritmos complejos según la introducción de la unidad?",
+    "contexto": "Desarrollo de una plataforma de inteligencia artificial en el sector farmacéutico descrito en la introducción del tema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A la eliminación total de la intervención humana en la logística."
+      },
+      {
+        "clave": "b",
+        "texto": "A la capacidad de procesamiento de los servidores actuales."
+      },
+      {
+        "clave": "c",
+        "texto": "A los cimientos fundamentales de la programación explorados en la unidad."
+      },
+      {
+        "clave": "d",
+        "texto": "Al uso exclusivo de lenguajes de última generación como Python."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En la introducción del tema se explica que, aunque se trate de algoritmos predictivos complejos como los de una IA para farmacias, todo se reduce a los cimientos fundamentales de la programación que se exploran en la unidad. La idea central es que incluso los sistemas más sofisticados se basan en principios básicos de lógica y programación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La introducción no afirma que la IA elimine totalmente la intervención humana, sino que destaca los fundamentos lógicos que sostienen cualquier desarrollo tecnológico."
+        },
+        {
+          "clave": "b",
+          "motivo": "Aunque la capacidad de procesamiento es importante en sistemas reales, el texto enfatiza que la base está en los fundamentos de programación, no en el hardware."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario no atribuye la complejidad al uso de lenguajes modernos específicos, sino a los principios básicos que sustentan cualquier lenguaje."
+        }
+      ],
+      "resumen_didactico": "Incluso los sistemas más avanzados, como una IA logística, se construyen sobre fundamentos básicos de programación. La complejidad se apoya en principios simples bien entendidos.",
+      "ejemplo_practico": "Un algoritmo de predicción de demanda puede parecer complejo, pero en el fondo utiliza estructuras básicas como variables, decisiones y bucles aprendidos en esta unidad.",
+      "conclusion_final": "La base de cualquier sistema avanzado es el dominio de los fundamentos de la programación explicados en esta unidad."
+    }
+  },
+  {
+    "id": "UT1-Q02",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Durante una supervisión en una factoría de Vigo, se menciona que el origen de los procesos automatizados es:",
+    "contexto": "Referencia al ejemplo de la factoría de componentes de automoción en Vigo descrito en el apartado 1.1 del temario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Exclusivamente dependiente del lenguaje máquina."
+      },
+      {
+        "clave": "b",
+        "texto": "Basado en la intuición de los ingenieros de planta."
+      },
+      { "clave": "c", "texto": "Puramente matemático." },
+      { "clave": "d", "texto": "Puramente mecánico y eléctrico." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el apartado 1.1 se indica que los procesos automatizados que parecen mágicos tienen un origen puramente matemático. La programación se define como el proceso de diseñar y codificar instrucciones para implementar un algoritmo específico, cuyo fundamento es matemático.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El lenguaje máquina es una forma de comunicación con el hardware, pero el origen conceptual de la automatización no es el binario, sino la base matemática de los algoritmos."
+        },
+        {
+          "clave": "b",
+          "motivo": "El texto no atribuye el origen a la intuición, sino a fundamentos matemáticos estructurados en forma de algoritmos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aunque los sistemas físicos tengan componentes mecánicos y eléctricos, el origen lógico de su automatización es matemático, no meramente físico."
+        }
+      ],
+      "resumen_didactico": "La automatización no nace de la máquina en sí, sino de la lógica matemática que define los algoritmos que la máquina ejecuta.",
+      "ejemplo_practico": "Un robot industrial que coloca piezas sigue instrucciones basadas en cálculos matemáticos y condiciones lógicas previamente diseñadas por programadores.",
+      "conclusion_final": "El fundamento real de cualquier proceso automatizado es matemático, ya que se basa en algoritmos estructurados."
+    }
+  },
+  {
+    "id": "UT1-Q03",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Un desarrollador necesita definir el proceso de agrupar, diseñar y codificar instrucciones para implementar un algoritmo. ¿Qué término está definiendo?",
+    "contexto": "Definición formal presentada en el apartado 1.1 sobre qué es la programación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Programación." },
+      { "clave": "b", "texto": "Pseudocódigo." },
+      { "clave": "c", "texto": "Compilación." },
+      { "clave": "d", "texto": "Hardware." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En el apartado 1.1 se define la programación como el proceso de agrupar, diseñar y codificar instrucciones para implementar un algoritmo específico. Es la actividad completa que transforma la lógica en código ejecutable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El pseudocódigo es una herramienta para diseñar algoritmos de forma estructurada antes de codificarlos, pero no implica directamente la implementación en un lenguaje de programación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compilación es el proceso de traducir código fuente a un lenguaje que la máquina pueda ejecutar, pero no incluye el diseño ni la agrupación de instrucciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "El hardware se refiere a los componentes físicos del sistema informático y no al proceso lógico de diseñar e implementar algoritmos."
+        }
+      ],
+      "resumen_didactico": "Programar no es solo escribir código: implica diseñar, estructurar y codificar instrucciones para implementar un algoritmo.",
+      "ejemplo_practico": "Si diseñas los pasos para validar un usuario y luego los escribes en Java, estás realizando el proceso completo de programación.",
+      "conclusion_final": "El término correcto para describir el proceso de diseñar e implementar instrucciones que ejecutan un algoritmo es programación."
+    }
+  },
+  {
+    "id": "UT1-Q04",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Aunque el camino comenzó en 1822 con la máquina de diferencias, ¿quién creó años más tarde el primer algoritmo informático para la máquina analítica?",
+    "contexto": "Referencia histórica al origen de la programación y al diseño de la máquina analítica en el siglo XIX.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Alan Turing." },
+      { "clave": "b", "texto": "Ada Lovelace (Augusta Ada Byron)." },
+      { "clave": "c", "texto": "Grace Hopper." },
+      { "clave": "d", "texto": "Charles Babbage." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el apartado 1.1 se explica que, aunque Charles Babbage diseñó la máquina analítica, fue Augusta Ada Byron, conocida como Ada Lovelace, quien creó el primer algoritmo informático para dicha máquina, convirtiéndose en la primera programadora de la historia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Alan Turing fue una figura clave en la computación moderna del siglo XX, pero no creó el primer algoritmo para la máquina analítica."
+        },
+        {
+          "clave": "c",
+          "motivo": "Grace Hopper fue pionera en lenguajes de programación y compiladores en el siglo XX, pero no participó en la máquina analítica del siglo XIX."
+        },
+        {
+          "clave": "d",
+          "motivo": "Charles Babbage diseñó la máquina analítica, pero el primer algoritmo para ella fue desarrollado por Ada Lovelace."
+        }
+      ],
+      "resumen_didactico": "Babbage diseñó la máquina analítica, pero Ada Lovelace escribió el primer algoritmo, convirtiéndose en la primera programadora de la historia.",
+      "ejemplo_practico": "Si Babbage construyó el 'ordenador', Ada Lovelace escribió las primeras instrucciones lógicas para que esa máquina realizara cálculos automáticamente.",
+      "conclusion_final": "La primera persona en crear un algoritmo informático para la máquina analítica fue Ada Lovelace."
+    }
+  },
+  {
+    "id": "UT1-Q05",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Un técnico trabaja con un sistema donde todas las instrucciones son binarias (0 y 1). ¿En qué etapa de la evolución de los lenguajes se encuentra?",
+    "contexto": "Referencia a la evolución de los lenguajes de programación descrita en el apartado 1.1 del temario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Lenguaje ensamblador." },
+      { "clave": "b", "texto": "Lenguaje máquina." },
+      { "clave": "c", "texto": "Lenguaje modular." },
+      { "clave": "d", "texto": "Lenguaje de alto nivel." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En la evolución de los lenguajes se indica que al principio todo era binario (0 y 1). Esa etapa corresponde al lenguaje máquina, el nivel más bajo de programación, directamente entendido por el hardware.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El lenguaje ensamblador sustituye los ceros y unos por palabras o mnemónicos más comprensibles, aunque sigue estando muy cerca del hardware."
+        },
+        {
+          "clave": "c",
+          "motivo": "La modularidad es un paradigma de organización del código, no una etapa en la evolución de los lenguajes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los lenguajes de alto nivel utilizan sintaxis cercana al lenguaje humano y requieren compiladores o intérpretes; no se escriben en binario."
+        }
+      ],
+      "resumen_didactico": "Cuando se programa directamente en 0 y 1, se está trabajando en lenguaje máquina, el nivel más básico y cercano al hardware.",
+      "ejemplo_practico": "Si una instrucción se expresa como una secuencia binaria que la CPU interpreta directamente, el técnico está utilizando lenguaje máquina.",
+      "conclusion_final": "Trabajar exclusivamente con instrucciones binarias corresponde a la etapa de lenguaje máquina."
+    }
+  },
+  {
+    "id": "UT1-Q06",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Carlos explica a un cliente que un programa es:",
+    "contexto": "Explicación del concepto de programa en el apartado 1.2 Conceptos fundamentales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un conjunto de instrucciones escritas en un lenguaje específico para ser ejecutadas por una computadora."
+      },
+      {
+        "clave": "b",
+        "texto": "Una secuencia de pasos ordenados para resolver un problema de cocina."
+      },
+      {
+        "clave": "c",
+        "texto": "El diseño previo que se hace en papel antes de usar un ordenador."
+      },
+      {
+        "clave": "d",
+        "texto": "Una aplicación que se descarga sin necesidad de instrucciones."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En el apartado 1.2 se indica que un programa no es simplemente una aplicación descargada, sino un conjunto de instrucciones escritas en un lenguaje específico para ser ejecutadas por una computadora. Se diferencia claramente de algoritmo, que es la secuencia lógica previa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esa definición corresponde a un algoritmo, que puede ser una secuencia de pasos ordenados para resolver un problema, incluso fuera del ámbito informático."
+        },
+        {
+          "clave": "c",
+          "motivo": "El diseño previo en papel se refiere al algoritmo o pseudocódigo, no al programa ejecutable."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario enfatiza que un programa no es simplemente una aplicación descargada, sino instrucciones ejecutables escritas en un lenguaje formal."
+        }
+      ],
+      "resumen_didactico": "Un programa es la implementación técnica de un algoritmo en un lenguaje que la computadora puede ejecutar.",
+      "ejemplo_practico": "Si escribes en Java las instrucciones que validan un usuario y gestionan una reserva, eso es un programa.",
+      "conclusion_final": "Un programa es un conjunto de instrucciones escritas en un lenguaje de programación para ser ejecutadas por una computadora."
+    }
+  },
+  {
+    "id": "UT1-Q07",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Cuál es la principal diferencia técnica entre un algoritmo y un programa?",
+    "contexto": "Diferenciación conceptual explicada en el apartado 1.2 sobre algoritmo y programa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El algoritmo es la receta (pasos ordenados) y el programa es su ejecución técnica mediante un lenguaje."
+      },
+      {
+        "clave": "b",
+        "texto": "El algoritmo es la ejecución técnica y el programa es la receta."
+      },
+      {
+        "clave": "c",
+        "texto": "Los algoritmos solo los ejecutan personas y los programas solo máquinas."
+      },
+      { "clave": "d", "texto": "No existe diferencia; son términos sinónimos." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En el apartado 1.2 se explica que un algoritmo es la secuencia de pasos ordenados y finitos para resolver un problema (la receta), mientras que el programa es la implementación técnica de ese algoritmo mediante un lenguaje de programación para que pueda ser ejecutado por una computadora.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Invierte los conceptos: el algoritmo no es la ejecución técnica, sino el diseño lógico previo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un algoritmo puede ejecutarlo una persona o una máquina; no es exclusivo de humanos. El programa sí está pensado para ser ejecutado por una máquina, pero esta opción simplifica incorrectamente la diferencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario insiste en que no deben confundirse: algoritmo y programa no son sinónimos."
+        }
+      ],
+      "resumen_didactico": "Primero se diseña la lógica (algoritmo) y después se implementa en un lenguaje concreto (programa).",
+      "ejemplo_practico": "Escribir en papel los pasos para validar un PIN es el algoritmo; programarlo en Java con variables y condicionales es el programa.",
+      "conclusion_final": "La diferencia clave es que el algoritmo es la lógica o receta, y el programa es su implementación técnica en un lenguaje de programación."
+    }
+  },
+  {
+    "id": "UT1-Q08",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Según el \"Tip profesional\" de la unidad, ¿qué porcentaje de tiempo debería dedicar un programador al diseño del algoritmo?",
+    "contexto": "Referencia al Tip profesional del apartado 1.2 sobre la importancia del diseño del algoritmo antes de programar.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "100% al código." },
+      { "clave": "b", "texto": "50% al diseño y 50% al código." },
+      { "clave": "c", "texto": "20% al diseño y 80% al código." },
+      { "clave": "d", "texto": "80% al diseño y 20% al código." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El Tip profesional indica que en el trabajo real se debe dedicar aproximadamente el 80% del tiempo al diseño del algoritmo y el 20% a escribir el código. Se enfatiza que un error lógico en el diseño es mucho más difícil de corregir que un error de sintaxis.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El temario no prioriza únicamente el código; al contrario, destaca que el diseño lógico es más importante."
+        },
+        {
+          "clave": "b",
+          "motivo": "No se plantea una división equilibrada; el énfasis está claramente en dedicar más tiempo al diseño."
+        },
+        {
+          "clave": "c",
+          "motivo": "Invierte los porcentajes indicados en el Tip profesional."
+        }
+      ],
+      "resumen_didactico": "En programación profesional, pensar y diseñar bien la solución es mucho más importante que escribir rápido el código.",
+      "ejemplo_practico": "Antes de programar un sistema de reservas, se define toda la lógica de validación, decisiones y flujo. Una vez clara, el código se escribe con mayor rapidez y menos errores.",
+      "conclusion_final": "El programador debe dedicar aproximadamente el 80% del tiempo al diseño del algoritmo y el 20% al código."
+    }
+  },
+  {
+    "id": "UT1-Q09",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Para representar un algoritmo antes de codificarlo, ¿qué herramientas se suelen utilizar?",
+    "contexto": "Herramientas de diseño previo mencionadas en el apartado 1.2 y desarrolladas en los apartados 1.5 y 1.6.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Lenguaje ensamblador." },
+      { "clave": "b", "texto": "Solo diagramas circulares." },
+      { "clave": "c", "texto": "Manuales de usuario." },
+      { "clave": "d", "texto": "Pseudocódigo y diagramas de flujo." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El temario indica que antes de codificar un algoritmo se utilizan herramientas de representación como el pseudocódigo y los diagramas de flujo. El pseudocódigo permite describir la lógica paso a paso en lenguaje estructurado, y los diagramas de flujo representan gráficamente el proceso mediante símbolos estandarizados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El lenguaje ensamblador es un lenguaje de programación de bajo nivel, no una herramienta de diseño previo del algoritmo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El temario no menciona diagramas circulares como herramienta formal; los diagramas utilizados son diagramas de flujo con simbología específica."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los manuales de usuario documentan el uso de una aplicación, pero no sirven para diseñar la lógica interna del algoritmo."
+        }
+      ],
+      "resumen_didactico": "Antes de programar, se diseña la lógica usando pseudocódigo (texto estructurado) y diagramas de flujo (representación gráfica).",
+      "ejemplo_practico": "Antes de crear un sistema de retirada de efectivo, se redacta el pseudocódigo con condiciones y bucles, y se dibuja el diagrama de flujo con decisiones y repeticiones.",
+      "conclusion_final": "Las herramientas habituales para representar un algoritmo antes de codificarlo son el pseudocódigo y los diagramas de flujo."
+    }
+  },
+  {
+    "id": "UT1-Q10",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Un sistema formal con sintaxis y reglas gramaticales precisas para comunicarse con máquinas se define como:",
+    "contexto": "Definición presentada en el apartado 1.3 sobre los lenguajes de programación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Protocolo de red." },
+      { "clave": "b", "texto": "Algoritmo natural." },
+      { "clave": "c", "texto": "Lenguaje de programación." },
+      { "clave": "d", "texto": "Sistema operativo." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el apartado 1.3 se define un lenguaje de programación como un sistema formal con sintaxis y reglas gramaticales precisas que permite comunicarse con las máquinas. Dependiendo de su nivel, puede estar más cerca del hardware o del lenguaje humano.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un protocolo de red define reglas de comunicación entre dispositivos en una red, no un sistema formal para programar instrucciones ejecutables."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un algoritmo puede describirse en lenguaje natural, pero no constituye un sistema formal con sintaxis técnica para que la máquina lo ejecute."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un sistema operativo gestiona recursos del hardware y software, pero no es el lenguaje con el que se escriben las instrucciones del programa."
+        }
+      ],
+      "resumen_didactico": "Un lenguaje de programación es el medio formal que permite escribir instrucciones siguiendo reglas precisas para que la computadora pueda interpretarlas.",
+      "ejemplo_practico": "Cuando escribes código en Java o Python siguiendo una sintaxis concreta, estás utilizando un lenguaje de programación.",
+      "conclusion_final": "La definición corresponde a un lenguaje de programación, ya que es el sistema formal utilizado para comunicarse con las máquinas."
+    }
+  },
+  {
+    "id": "UT1-Q11",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Un ingeniero programa firmware directamente sobre el hardware. ¿Qué tipo de lenguaje usa?",
+    "contexto": "Clasificación de lenguajes según su nivel de cercanía al hardware explicada en el apartado 1.3.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Lenguaje de alto nivel." },
+      { "clave": "b", "texto": "Lenguaje de medio nivel." },
+      { "clave": "c", "texto": "Lenguaje estructurado." },
+      { "clave": "d", "texto": "Lenguaje de bajo nivel (ensamblador)." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En el apartado 1.3 se indica que los lenguajes de bajo nivel, como el ensamblador, operan directamente sobre el hardware y se utilizan cuando se necesita control absoluto del procesador, como ocurre en el firmware de dispositivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los lenguajes de alto nivel están más cerca del lenguaje humano y requieren compiladores o intérpretes; no se usan para programar directamente el hardware."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los lenguajes de medio nivel, como C o C++, permiten manipular memoria y aspectos del sistema, pero el ejemplo concreto del firmware en el temario se asocia al bajo nivel."
+        },
+        {
+          "clave": "c",
+          "motivo": "La programación estructurada es un paradigma o estilo de programación, no una clasificación por nivel de cercanía al hardware."
+        }
+      ],
+      "resumen_didactico": "Cuando se necesita control directo del procesador y del hardware, se utilizan lenguajes de bajo nivel como el ensamblador.",
+      "ejemplo_practico": "Programar el firmware de un sensor industrial que controla directamente registros de la CPU requiere ensamblador, no Java o Python.",
+      "conclusion_final": "El firmware programado directamente sobre el hardware se desarrolla con lenguajes de bajo nivel, como el ensamblador."
+    }
+  },
+  {
+    "id": "UT1-Q12",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Si un programador usa instrucciones como \"li\" o \"bgez\", ¿qué lenguaje emplea?",
+    "contexto": "Ejemplo de código mostrado en el apartado 1.3 sobre lenguajes de bajo nivel, específicamente ensamblador MIPS.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Python." },
+      { "clave": "b", "texto": "Ensamblador (MIPS)." },
+      { "clave": "c", "texto": "Java." },
+      { "clave": "d", "texto": "C++." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el apartado 1.3, dentro de los lenguajes de bajo nivel, se muestra un ejemplo en ensamblador MIPS donde aparecen instrucciones como \"li\" (load immediate) y \"bgez\" (branch if greater or equal to zero). Estas instrucciones son propias del lenguaje ensamblador.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Python es un lenguaje de alto nivel con sintaxis cercana al lenguaje humano y no utiliza instrucciones como \"li\" o \"bgez\"."
+        },
+        {
+          "clave": "c",
+          "motivo": "Java es un lenguaje de alto nivel orientado a objetos y no emplea mnemónicos propios del ensamblador."
+        },
+        {
+          "clave": "d",
+          "motivo": "C++ es un lenguaje de medio nivel con sintaxis estructurada y orientada a objetos, pero no utiliza directamente instrucciones como \"li\" o \"bgez\"."
+        }
+      ],
+      "resumen_didactico": "Las instrucciones abreviadas como \"li\" o \"bgez\" son mnemónicos propios del ensamblador, un lenguaje de bajo nivel cercano al hardware.",
+      "ejemplo_practico": "Si ves código que mueve datos entre registros como \"$t0\" y usa saltos condicionales como \"bgez\", estás trabajando en ensamblador.",
+      "conclusion_final": "El uso de instrucciones como \"li\" o \"bgez\" indica que se está empleando ensamblador, concretamente en este caso MIPS."
+    }
+  },
+  {
+    "id": "UT1-Q13",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Lenguajes como C o C++ se clasifican como:",
+    "contexto": "Clasificación de lenguajes según su nivel de abstracción explicada en el apartado 1.3.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Lenguajes de alto nivel orientados a objetos."
+      },
+      { "clave": "b", "texto": "Lenguajes naturales." },
+      { "clave": "c", "texto": "Lenguajes de bajo nivel puro." },
+      { "clave": "d", "texto": "Lenguajes de medio nivel." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En el apartado 1.3 se indica que los lenguajes de medio nivel aplican una capa de abstracción pero permiten manipular aspectos críticos del sistema, como la memoria. Se menciona explícitamente que C y C++ son los representantes principales de esta categoría.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Aunque C++ soporta orientación a objetos, en la clasificación del temario no se categoriza como alto nivel, sino como medio nivel."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los lenguajes naturales son idiomas humanos como el español o el inglés, no lenguajes de programación."
+        },
+        {
+          "clave": "c",
+          "motivo": "El bajo nivel puro corresponde al lenguaje máquina o ensamblador, que operan directamente sobre el hardware sin apenas abstracción."
+        }
+      ],
+      "resumen_didactico": "C y C++ tienen más abstracción que el ensamblador, pero aún permiten controlar memoria y hardware, por eso se consideran de medio nivel.",
+      "ejemplo_practico": "Con C puedes gestionar memoria manualmente usando punteros, algo que no es propio de lenguajes de alto nivel como Java o Python.",
+      "conclusion_final": "Según la clasificación del temario, C y C++ son lenguajes de medio nivel."
+    }
+  },
+  {
+    "id": "UT1-Q14",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Por qué Java se considera de alto nivel?",
+    "contexto": "Clasificación de lenguajes según su nivel de abstracción explicada en el apartado 1.3.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque es cercano al lenguaje humano y permite centrarse en la solución."
+      },
+      { "clave": "b", "texto": "Porque manipula directamente registros CPU." },
+      { "clave": "c", "texto": "Porque es el más antiguo." },
+      { "clave": "d", "texto": "Porque no necesita compilador." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En el apartado 1.3 se explica que los lenguajes de alto nivel, como Java, son los más cercanos al lenguaje humano y permiten centrarse en la solución del problema sin preocuparse por los detalles técnicos del hardware. Además, necesitan traductores o compiladores para que la máquina los entienda.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Manipular directamente registros de la CPU es propio de lenguajes de bajo nivel como el ensamblador, no de Java."
+        },
+        {
+          "clave": "c",
+          "motivo": "La antigüedad no determina el nivel del lenguaje; la clasificación depende del grado de abstracción respecto al hardware."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario indica que los lenguajes de alto nivel necesitan compiladores o traductores para ser ejecutados."
+        }
+      ],
+      "resumen_didactico": "Un lenguaje de alto nivel abstrae los detalles técnicos del hardware y permite enfocarse en la lógica del problema.",
+      "ejemplo_practico": "En Java puedes calcular un valor absoluto usando una función como Math.abs(), sin preocuparte por cómo se gestionan los registros internos del procesador.",
+      "conclusion_final": "Java es de alto nivel porque su sintaxis es cercana al lenguaje humano y permite centrarse en la solución del problema en lugar del hardware."
+    }
+  },
+  {
+    "id": "UT1-Q15",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Aprender el primer lenguaje es como aprender a construir oraciones porque:",
+    "contexto": "Referencia al Tip de empleabilidad del apartado 1.3 sobre el aprendizaje de lenguajes de programación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Lo más difícil es memorizar vocabulario." },
+      { "clave": "b", "texto": "Todos usan las mismas palabras." },
+      {
+        "clave": "c",
+        "texto": "Si se entiende la lógica, la sintaxis es lo de menos."
+      },
+      { "clave": "d", "texto": "No requiere matemáticas." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el Tip de empleabilidad del apartado 1.3 se explica que aprender el primer lenguaje es como aprender a construir oraciones en un idioma: una vez que entiendes la lógica (sujeto, verbo, predicado), aprender otro idioma es cuestión de vocabulario. En programación, si entiendes la lógica, la sintaxis es secundaria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El temario no destaca la memorización como lo más difícil, sino la comprensión de la lógica."
+        },
+        {
+          "clave": "b",
+          "motivo": "Cada lenguaje tiene su propia sintaxis y palabras clave; no utilizan exactamente las mismas palabras."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario no afirma que no requiera matemáticas; al contrario, en los orígenes se menciona que la programación tiene base matemática."
+        }
+      ],
+      "resumen_didactico": "Lo importante no es memorizar sintaxis, sino comprender la lógica que hay detrás de los programas.",
+      "ejemplo_practico": "Si sabes qué es una condición o un bucle en Java, podrás entender fácilmente cómo funcionan en Python, aunque cambie la sintaxis.",
+      "conclusion_final": "Aprender el primer lenguaje es fundamental porque, una vez comprendida la lógica, cambiar de sintaxis es relativamente sencillo."
+    }
+  },
+  {
+    "id": "UT1-Q16",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "El \"estilo\" o \"filosofía\" de construcción de una plataforma se refiere a:",
+    "contexto": "Definición de paradigma explicada en el apartado 1.4 Paradigmas de programación.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Compilación modular." },
+      { "clave": "b", "texto": "Paradigma de programación." },
+      { "clave": "c", "texto": "Algoritmo de flujo." },
+      { "clave": "d", "texto": "Sintaxis de bajo nivel." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el apartado 1.4 se explica que un paradigma de programación es un enfoque particular o metodología para resolver problemas y estructurar el código. Se describe como el \"estilo\" o \"filosofía\" de construcción del software, comparable a un estilo arquitectónico en la construcción de un edificio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La compilación es el proceso de traducción del código, no un estilo o filosofía de diseño del software."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un algoritmo de flujo describe la lógica paso a paso, pero no define el enfoque general o estilo de organización del código."
+        },
+        {
+          "clave": "d",
+          "motivo": "La sintaxis de bajo nivel se refiere a la forma de escribir instrucciones cercanas al hardware, no a una filosofía de construcción del programa."
+        }
+      ],
+      "resumen_didactico": "Un paradigma es la forma o enfoque con el que decidimos organizar y construir nuestro software.",
+      "ejemplo_practico": "Elegir programación estructurada, modular u orientada a objetos es decidir el paradigma que guiará el diseño de toda la plataforma.",
+      "conclusion_final": "El estilo o filosofía de construcción del software corresponde al paradigma de programación."
+    }
+  },
+  {
+    "id": "UT1-Q17",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "El paradigma basado en secuencia, selección y repetición es:",
+    "contexto": "Descripción del paradigma estructurado en el apartado 1.4.1 del temario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Programación de bajo nivel." },
+      { "clave": "b", "texto": "Programación estructurada." },
+      { "clave": "c", "texto": "Programación modular." },
+      { "clave": "d", "texto": "Programación orientada a objetos." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el apartado 1.4.1 se explica que la programación estructurada se basa en un flujo claro de arriba abajo utilizando tres estructuras fundamentales: secuencia, selección (decisiones) y repetición (bucles). Este paradigma surgió para evitar el llamado \"código espagueti\".",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El bajo nivel se refiere a la cercanía al hardware, no a un paradigma basado en estructuras de control."
+        },
+        {
+          "clave": "c",
+          "motivo": "La programación modular se basa en dividir el programa en módulos o funciones, no en las tres estructuras básicas del flujo."
+        },
+        {
+          "clave": "d",
+          "motivo": "La programación orientada a objetos organiza el código en clases y objetos, no se define por secuencia, selección y repetición como base conceptual."
+        }
+      ],
+      "resumen_didactico": "Secuencia, selección y repetición son las tres estructuras fundamentales del paradigma estructurado.",
+      "ejemplo_practico": "Un programa que primero lee datos (secuencia), luego evalúa una condición (selección) y finalmente repite una acción con un bucle (repetición) está siguiendo programación estructurada.",
+      "conclusion_final": "El paradigma que se basa en secuencia, selección y repetición es la programación estructurada."
+    }
+  },
+  {
+    "id": "UT1-Q18",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Seguir paso 1, si falla ir a 1b y repetir aplica:",
+    "contexto": "Ejemplo explicado en el apartado 1.4.1 sobre programación estructurada y flujo claro de ejecución.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Lógica ensamblador." },
+      { "clave": "b", "texto": "Lógica estructurada." },
+      { "clave": "c", "texto": "Microservicios." },
+      { "clave": "d", "texto": "Lógica modular." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el apartado 1.4.1 se describe la programación estructurada como un flujo claro de arriba abajo utilizando secuencia, selección y repetición. El ejemplo del técnico que sigue el paso 1, si algo falla va al paso 1b y repite el proceso, ilustra precisamente la lógica estructurada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El ensamblador es un lenguaje de bajo nivel, no una descripción del estilo lógico del flujo del programa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los microservicios son una arquitectura basada en servicios independientes, no un patrón básico de flujo lógico paso a paso."
+        },
+        {
+          "clave": "d",
+          "motivo": "La lógica modular divide el programa en módulos independientes, pero la descripción dada se centra en el flujo secuencial con decisiones y repetición."
+        }
+      ],
+      "resumen_didactico": "Cuando un proceso sigue pasos ordenados, toma decisiones y repite acciones si es necesario, está aplicando lógica estructurada.",
+      "ejemplo_practico": "Un programa que valida un formulario: primero revisa campos, si hay error vuelve al paso anterior y repite hasta que todo sea correcto, sigue programación estructurada.",
+      "conclusion_final": "Seguir pasos ordenados con decisiones y repetición corresponde a lógica estructurada."
+    }
+  },
+  {
+    "id": "UT1-Q19",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Dividir un e-commerce en \"Pagos\", \"Inventario\" y \"Usuarios\" aplica:",
+    "contexto": "Ejemplo del apartado 1.4.2 donde se explica la programación modular con el caso de un e-commerce.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Programación binaria." },
+      { "clave": "b", "texto": "Programación modular." },
+      { "clave": "c", "texto": "Programación estructurada básica." },
+      { "clave": "d", "texto": "Flujo único." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el apartado 1.4.2 se explica que la programación modular consiste en dividir un programa grande en partes más pequeñas y manejables llamadas módulos o funciones. El ejemplo del e-commerce dividido en \"Pagos\", \"Inventario\" y \"Usuarios\" ilustra claramente este enfoque.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La programación binaria no es un paradigma de organización del software; el binario corresponde al lenguaje máquina."
+        },
+        {
+          "clave": "c",
+          "motivo": "La programación estructurada se basa en secuencia, selección y repetición, pero no implica necesariamente dividir el sistema en módulos independientes."
+        },
+        {
+          "clave": "d",
+          "motivo": "El flujo único describe un programa con un solo punto de entrada y salida, no la división en componentes independientes."
+        }
+      ],
+      "resumen_didactico": "Dividir un sistema grande en partes independientes y especializadas es aplicar programación modular.",
+      "ejemplo_practico": "Un módulo gestiona los pagos con tarjeta, otro controla el stock y otro administra los perfiles de usuario; cada uno funciona de manera autónoma pero coordinada.",
+      "conclusion_final": "Dividir un e-commerce en áreas funcionales independientes corresponde a la programación modular."
+    }
+  },
+  {
+    "id": "UT1-Q20",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Ventaja principal de la programación modular:",
+    "contexto": "Beneficios de la programación modular descritos en el apartado 1.4.2.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "No usar funciones." },
+      { "clave": "b", "texto": "Código más largo." },
+      { "clave": "c", "texto": "Facilita mantenimiento y reutilización." },
+      { "clave": "d", "texto": "Eliminar diseño de algoritmos." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el apartado 1.4.2 se indica que la programación modular divide el programa en partes más pequeñas y manejables (módulos), lo que facilita enormemente el mantenimiento y la reutilización del código. Si un módulo falla, los demás pueden seguir funcionando.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La programación modular precisamente se basa en el uso de funciones o módulos independientes."
+        },
+        {
+          "clave": "b",
+          "motivo": "El objetivo no es hacer el código más largo, sino más organizado y mantenible."
+        },
+        {
+          "clave": "d",
+          "motivo": "La programación modular no elimina el diseño de algoritmos; al contrario, exige una buena planificación para dividir correctamente el sistema."
+        }
+      ],
+      "resumen_didactico": "La modularidad permite dividir el sistema en partes independientes, lo que facilita corregir errores y reutilizar componentes en otros proyectos.",
+      "ejemplo_practico": "Un módulo de notificaciones puede reutilizarse en otra aplicación sin reescribir todo el sistema.",
+      "conclusion_final": "La principal ventaja de la programación modular es que facilita el mantenimiento y la reutilización del código."
+    }
+  },
+  {
+    "id": "UT1-Q21",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Escribir un borrador técnico en lenguaje natural estructurado es:",
+    "contexto": "Definición y función del pseudocódigo explicadas en el apartado 1.5.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Diagrama ISO." },
+      { "clave": "b", "texto": "Manual hardware." },
+      { "clave": "c", "texto": "Pseudocódigo." },
+      { "clave": "d", "texto": "Programa Java." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el apartado 1.5 se define el pseudocódigo como un lenguaje de descripción de algoritmos que utiliza una estructura similar al lenguaje natural pero con lógica técnica de programación. Es el borrador oficial del programa antes de codificarlo en un lenguaje como Java.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un diagrama ISO se refiere a la simbología estandarizada de los diagramas de flujo, no a un borrador en lenguaje natural estructurado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un manual de hardware documenta componentes físicos, no describe la lógica de un algoritmo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un programa Java es la implementación técnica del algoritmo, no el borrador previo en lenguaje estructurado."
+        }
+      ],
+      "resumen_didactico": "El pseudocódigo permite diseñar la lógica paso a paso usando lenguaje natural estructurado antes de escribir código real.",
+      "ejemplo_practico": "Antes de programar un sistema de pedidos, se redacta: \"Inicio → Leer pedido → Calcular precio → Imprimir ticket → Fin\". Eso es pseudocódigo.",
+      "conclusion_final": "Un borrador técnico en lenguaje natural estructurado corresponde al pseudocódigo."
+    }
+  },
+  {
+    "id": "UT1-Q22",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Operador de asignación en pseudocódigo:",
+    "contexto": "Tabla de operadores mostrada en el apartado 1.5.1 del temario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "==" },
+      { "clave": "b", "texto": "=" },
+      { "clave": "c", "texto": "<>" },
+      { "clave": "d", "texto": "<-" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En la tabla de operadores del apartado 1.5.1 se especifica que el operador especial de asignación en pseudocódigo es \"<-\". Se utiliza para indicar que un valor se guarda en una variable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "\"==\" se usa habitualmente como operador de comparación en muchos lenguajes, no como asignación en pseudocódigo."
+        },
+        {
+          "clave": "b",
+          "motivo": "\"=\" aparece en la tabla como operador relacional de igualdad, no como operador de asignación."
+        },
+        {
+          "clave": "c",
+          "motivo": "\"<>\" es el operador relacional de distinto, no sirve para asignar valores."
+        }
+      ],
+      "resumen_didactico": "En pseudocódigo, la asignación no se hace con \"=\" sino con \"<-\", que indica que el valor de la derecha se guarda en la variable de la izquierda.",
+      "ejemplo_practico": "Entero contador <- 5 significa que la variable contador recibe el valor 5.",
+      "conclusion_final": "El operador correcto de asignación en pseudocódigo es \"<-\"."
+    }
+  },
+  {
+    "id": "UT1-Q23",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Guardar cantidad sin decimales requiere tipo:",
+    "contexto": "Clasificación de tipos de datos explicada en el apartado 1.5.1.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Entero." },
+      { "clave": "b", "texto": "Real." },
+      { "clave": "c", "texto": "Carácter." },
+      { "clave": "d", "texto": "Booleano." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En el apartado 1.5.1 se indica que el tipo Entero se utiliza para números sin decimales (por ejemplo, 12 cruasanes). El tipo Real se reserva para números con decimales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El tipo Real se usa para números con decimales, no para cantidades enteras."
+        },
+        {
+          "clave": "c",
+          "motivo": "El tipo Carácter representa un único símbolo, como 'A', no cantidades numéricas."
+        },
+        {
+          "clave": "d",
+          "motivo": "El tipo Booleano solo puede almacenar Verdadero o Falso, no valores numéricos."
+        }
+      ],
+      "resumen_didactico": "Si el número no tiene decimales, el tipo correcto es Entero.",
+      "ejemplo_practico": "Si una tienda vende 15 productos, la variable que almacena esa cantidad debe ser de tipo Entero.",
+      "conclusion_final": "Para guardar una cantidad sin decimales se utiliza el tipo Entero."
+    }
+  },
+  {
+    "id": "UT1-Q24",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Variable que guarda Verdadero/Falso es tipo:",
+    "contexto": "Tipos de datos explicados en el apartado 1.5.1 del temario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Cadena." },
+      { "clave": "b", "texto": "Booleano." },
+      { "clave": "c", "texto": "Relacional." },
+      { "clave": "d", "texto": "Entero." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En la tabla de tipos de datos del apartado 1.5.1 se indica que el tipo Booleano almacena valores de verdadero o falso. Se utiliza en condiciones y estructuras de control.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una Cadena almacena texto, no valores lógicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Relacional no es un tipo de dato, sino una categoría de operadores de comparación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Entero almacena números sin decimales, no valores lógicos."
+        }
+      ],
+      "resumen_didactico": "Cuando una variable solo puede tener dos estados (Verdadero o Falso), su tipo es Booleano.",
+      "ejemplo_practico": "Booleano accesoConcedido <- Falso indica que la variable puede cambiar entre Verdadero y Falso según la lógica del programa.",
+      "conclusion_final": "Una variable que guarda Verdadero/Falso es de tipo Booleano."
+    }
+  },
+  {
+    "id": "UT1-Q25",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Cómo se representan constantes?",
+    "contexto": "Explicación sobre variables y constantes en el apartado 1.5.2 del temario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "En minúsculas." },
+      { "clave": "b", "texto": "En MAYÚSCULAS." },
+      { "clave": "c", "texto": "Entre comillas." },
+      { "clave": "d", "texto": "Con símbolo $." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el apartado 1.5.2 se indica que las constantes son valores que permanecen inmutables durante todo el programa y que se escriben en MAYÚSCULAS para que cualquier programador identifique que no deben modificarse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las minúsculas no identifican específicamente constantes; el temario recomienda MAYÚSCULAS."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las comillas se usan para cadenas de texto, no para indicar que una variable es constante."
+        },
+        {
+          "clave": "d",
+          "motivo": "El símbolo $ no se menciona en el temario como convención para constantes."
+        }
+      ],
+      "resumen_didactico": "Las constantes no cambian durante la ejecución y se escriben en MAYÚSCULAS para diferenciarlas claramente.",
+      "ejemplo_practico": "Constante PIN_CORRECTO <- 1234 indica que ese valor no debe modificarse en el programa.",
+      "conclusion_final": "Las constantes se representan escribiéndolas en MAYÚSCULAS."
+    }
+  },
+  {
+    "id": "UT1-Q26",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Ejecutar instrucciones una tras otra es estructura:",
+    "contexto": "Estructuras de control explicadas en el apartado 1.5.3 del temario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Alternativa múltiple." },
+      { "clave": "b", "texto": "Secuencial." },
+      { "clave": "c", "texto": "Iterativa." },
+      { "clave": "d", "texto": "Modular." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el apartado 1.5.3 se explica que la estructura secuencial es la más sencilla: las instrucciones se ejecutan una tras otra, sin saltos ni bifurcaciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La alternativa múltiple (Según) se usa cuando hay varias posibles decisiones, no cuando las instrucciones se ejecutan en línea recta."
+        },
+        {
+          "clave": "c",
+          "motivo": "La estructura iterativa implica repetir un bloque de instrucciones mediante un bucle."
+        },
+        {
+          "clave": "d",
+          "motivo": "La modularidad se refiere a dividir el programa en módulos independientes, no al orden de ejecución de instrucciones."
+        }
+      ],
+      "resumen_didactico": "Cuando el programa sigue un flujo lineal, ejecutando cada instrucción en orden, se trata de estructura secuencial.",
+      "ejemplo_practico": "Leer pedido → Calcular precio → Imprimir ticket es un ejemplo claro de ejecución secuencial.",
+      "conclusion_final": "Ejecutar instrucciones una tras otra corresponde a una estructura secuencial."
+    }
+  },
+  {
+    "id": "UT1-Q27",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Si coincide abre puerta, si no activa alarma. Usa:",
+    "contexto": "Estructuras alternativas explicadas en el apartado 1.5.3 del temario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Bucle Mientras." },
+      { "clave": "b", "texto": "Secuencial." },
+      { "clave": "c", "texto": "Alternativa doble (Si/Sino)." },
+      { "clave": "d", "texto": "Alternativa simple." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el apartado 1.5.3 se describe la alternativa doble como una estructura de decisión donde, si se cumple una condición, se ejecuta una acción; si no, se ejecuta otra distinta. El ejemplo \"Si coincide abre puerta, si no activa alarma\" corresponde exactamente a un Si/Sino.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un bucle Mientras repite instrucciones mientras se cumpla una condición; aquí no hay repetición, solo una decisión."
+        },
+        {
+          "clave": "b",
+          "motivo": "La estructura secuencial ejecuta instrucciones en línea recta sin bifurcación."
+        },
+        {
+          "clave": "d",
+          "motivo": "La alternativa simple solo ejecuta una acción si se cumple la condición, pero no contempla explícitamente qué ocurre en caso contrario."
+        }
+      ],
+      "resumen_didactico": "Cuando una condición tiene dos posibles caminos claramente definidos (sí o no), se utiliza una alternativa doble (Si/Sino).",
+      "ejemplo_practico": "Si usuarioValido Entonces permitirAcceso Sino mostrarError es una alternativa doble.",
+      "conclusion_final": "La estructura utilizada es una alternativa doble (Si/Sino)."
+    }
+  },
+  {
+    "id": "UT1-Q28",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Símbolo ISO para decisión en diagrama de flujo:",
+    "contexto": "Simbología estandarizada de diagramas de flujo explicada en el apartado 1.6.1.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Rectángulo." },
+      { "clave": "b", "texto": "Paralelogramo." },
+      { "clave": "c", "texto": "Rombo." },
+      { "clave": "d", "texto": "Óvalo." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el apartado 1.6.1 se indica que el símbolo ISO para representar una decisión en un diagrama de flujo es el rombo. Este símbolo se utiliza cuando el proceso requiere evaluar una condición y bifurcar el flujo (Sí/No).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El rectángulo representa un proceso u operación interna, no una decisión."
+        },
+        {
+          "clave": "b",
+          "motivo": "El paralelogramo se utiliza para entrada o salida de datos, como leer o imprimir información."
+        },
+        {
+          "clave": "d",
+          "motivo": "El óvalo indica el inicio o fin del proceso, no una bifurcación lógica."
+        }
+      ],
+      "resumen_didactico": "En los diagramas de flujo, las decisiones se representan con un rombo porque simboliza una bifurcación del camino.",
+      "ejemplo_practico": "En un diagrama, la pregunta \"¿PIN correcto?\" se coloca dentro de un rombo, con una flecha para Sí y otra para No.",
+      "conclusion_final": "El símbolo ISO para una decisión en un diagrama de flujo es el rombo."
+    }
+  },
+  {
+    "id": "UT1-Q29",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Por qué usar estructura \"Mientras\" en cajero automático?",
+    "contexto": "Caso práctico del sistema de retirada de efectivo explicado en el apartado 1.7 del temario.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Calcular IVA." },
+      { "clave": "b", "texto": "Definir saldo inicial." },
+      { "clave": "c", "texto": "Controlar bucle de intentos PIN." },
+      { "clave": "d", "texto": "Imprimir ticket." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el apartado 1.7 se muestra el algoritmo del cajero automático donde se utiliza la estructura \"Mientras\" para permitir hasta tres intentos de introducción del PIN. El bucle controla que, mientras no se conceda acceso y no se superen los intentos, el sistema siga solicitando el PIN.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El cálculo de IVA sería una operación secuencial o matemática, no requiere una estructura iterativa."
+        },
+        {
+          "clave": "b",
+          "motivo": "Definir el saldo inicial es una asignación de variable, no una repetición controlada."
+        },
+        {
+          "clave": "d",
+          "motivo": "Imprimir un ticket es una acción puntual de salida, no un proceso repetitivo condicionado."
+        }
+      ],
+      "resumen_didactico": "La estructura \"Mientras\" se usa cuando necesitamos repetir una acción mientras se cumpla una condición.",
+      "ejemplo_practico": "Mientras intentos < 3 Y accesoConcedido = Falso Hacer → pedir PIN nuevamente.",
+      "conclusion_final": "La estructura \"Mientras\" se utiliza para controlar el bucle de intentos del PIN en el cajero automático."
+    }
+  },
+  {
+    "id": "UT1-Q30",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Dominar el flujo intento-error-bloqueo permite:",
+    "contexto": "Tip de empleabilidad final del apartado 1.7 sobre validación y seguridad en sistemas críticos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Eliminar constantes." },
+      {
+        "clave": "b",
+        "texto": "Trabajar en sistemas críticos y ciberseguridad."
+      },
+      { "clave": "c", "texto": "Saltarse diseño." },
+      { "clave": "d", "texto": "Escribir código sin pensar." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el Tip de empleabilidad final del apartado 1.7 se explica que los algoritmos de validación y estado, como el flujo intento-error-bloqueo, son la base del desarrollo Back-end y preparan para trabajar en sistemas críticos donde la seguridad es prioritaria, como el sector bancario o la ciberseguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El flujo intento-error-bloqueo no tiene relación con eliminar constantes; se centra en validación y control de acceso."
+        },
+        {
+          "clave": "c",
+          "motivo": "El temario insiste en la importancia del diseño del algoritmo, no en omitirlo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El enfoque profesional exige pensar y diseñar la lógica cuidadosamente, especialmente en sistemas críticos."
+        }
+      ],
+      "resumen_didactico": "Controlar intentos, errores y bloqueos es fundamental en sistemas donde la seguridad es clave.",
+      "ejemplo_practico": "Un sistema bancario que bloquea la tarjeta tras tres intentos fallidos de PIN aplica este flujo para proteger al usuario.",
+      "conclusion_final": "Dominar el flujo intento-error-bloqueo prepara para trabajar en sistemas críticos y entornos de ciberseguridad."
+    }
+  }
+]

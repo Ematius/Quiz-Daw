@@ -37,7 +37,7 @@ export const topicsByModule = {
     },
     {
       id: "UT8",
-      title: "Preguntas nuevas, que conviene estudiar",
+      title: "Preguntas nuevas y mini repaso por todo",
       numQuestion: 41,
     },
   ],
@@ -117,6 +117,13 @@ export const topicsByModule = {
     {
       id: "UT8",
       title: "Las bases de datos objeto-relacionales",
+      numQuestion: 30,
+    },
+  ],
+  introduccionProgramacion: [
+    {
+      id: "UT1",
+      title: "Introducción a la programación",
       numQuestion: 30,
     },
   ],
