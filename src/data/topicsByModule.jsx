@@ -151,5 +151,10 @@ export const topicsByModule = {
       title: "Clases y utilización de objetos",
       numQuestion: 30,
     },
+    {
+      id: "UT7",
+      title: "Clases avanzadas y utilización de objetos",
+      numQuestion: 30,
+    },
   ],
 };
