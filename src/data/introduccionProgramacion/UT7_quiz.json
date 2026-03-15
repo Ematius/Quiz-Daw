@@ -1,0 +1,1247 @@
+[
+  {
+    "id": "UT7-Q01",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cómo se denomina la relación en la que dos clases tienen un enlace conceptual pero pueden existir de forma totalmente independiente la una de la otra?",
+    "contexto": "Se pregunta por el tipo de relación entre clases en la que hay vínculo conceptual, pero no dependencia de existencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Agregación" },
+      { "clave": "b", "texto": "Asociación" },
+      { "clave": "c", "texto": "Composición" },
+      { "clave": "d", "texto": "Herencia" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "El temario define la asociación como la relación en la que dos clases tienen un enlace conceptual, pero pueden existir de forma totalmente independiente la una de la otra. También resume esta relación como 'enlace conceptual, independencia total'. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La agregación también permite existencia separada, pero no es independencia total: una clase contiene a la otra como una pertenencia débil. El temario la define como una asociación donde una clase contiene a la otra en su interior. :contentReference[oaicite:1]{index=1}"
+        },
+        {
+          "clave": "c",
+          "motivo": "La composición no implica independencia, sino dependencia absoluta. Si desaparece el objeto principal, sus componentes también dejan de tener sentido. :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}"
+        },
+        {
+          "clave": "d",
+          "motivo": "La herencia no describe un simple enlace conceptual entre dos clases independientes, sino una jerarquía entre clase padre y clase hija, donde una hereda características de la otra. :contentReference[oaicite:4]{index=4}"
+        }
+      ],
+      "resumen_didactico": "Si dos clases están relacionadas, pero ninguna necesita a la otra para existir, estamos ante una asociación. Es la relación más simple y más débil entre clases.",
+      "ejemplo_practico": "En el PDF aparece el ejemplo de un Conductor y un Vehículo: están asociados, pero el vehículo puede existir sin conductor en el garaje y el conductor puede existir sin vehículo en su casa. :contentReference[oaicite:5]{index=5}",
+      "conclusion_final": "La respuesta correcta es asociación, porque expresa exactamente una relación conceptual con independencia total entre ambas clases."
+    }
+  },
+  {
+    "id": "UT7-Q02",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "En una relación de agregación, ¿qué sucede con los objetos contenidos si la clase principal o \"contenedor\" desaparece?",
+    "contexto": "Se pregunta por el comportamiento del ciclo de vida de los objetos en una relación de agregación dentro de la programación orientada a objetos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El programa lanza un error de compilación inmediato."
+      },
+      {
+        "clave": "b",
+        "texto": "Los objetos contenidos siguen existiendo de forma independiente."
+      },
+      {
+        "clave": "c",
+        "texto": "Los objetos contenidos se destruyen automáticamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Los objetos contenidos pierden todos sus métodos estáticos."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La agregación es una relación entre clases en la que un objeto contiene o utiliza a otros, pero estos pueden existir de forma independiente. A diferencia de la composición, la vida del objeto contenido no depende de la vida del objeto contenedor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La agregación es un concepto de diseño entre clases, no provoca errores de compilación. El compilador no genera errores por eliminar un objeto contenedor."
+        },
+        {
+          "clave": "c",
+          "motivo": "La destrucción automática de los objetos contenidos ocurre en la composición, donde los componentes dependen completamente del objeto principal."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los métodos estáticos pertenecen a la clase y no a instancias concretas. La desaparición de un objeto no afecta a los métodos estáticos."
+        }
+      ],
+      "resumen_didactico": "La agregación representa una relación 'tiene un' (has-a) débil. El objeto principal utiliza o contiene otros objetos, pero estos no dependen de él para existir.",
+      "ejemplo_practico": "Una clase Equipo puede contener varios objetos Jugador. Si el objeto Equipo desaparece, los objetos Jugador siguen existiendo porque pueden pertenecer a otro equipo o existir por separado.",
+      "conclusion_final": "En agregación los objetos contenidos mantienen su ciclo de vida independiente, por lo que siguen existiendo aunque el objeto contenedor desaparezca."
+    }
+  },
+  {
+    "id": "UT7-Q03",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cuál es la característica principal de la relación de composición en comparación con la agregación?",
+    "contexto": "Se compara la relación de composición con la agregación dentro del diseño orientado a objetos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se define siempre mediante el uso de la palabra clave \"extends\"."
+      },
+      {
+        "clave": "b",
+        "texto": "No permite el uso de constructores personalizados."
+      },
+      {
+        "clave": "c",
+        "texto": "Es una relación de dependencia absoluta donde los componentes mueren con el objeto principal."
+      },
+      {
+        "clave": "d",
+        "texto": "Permite que una clase hija tenga múltiples padres biológicos."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La composición es una relación fuerte entre clases en la que los objetos componentes dependen completamente del objeto principal. Si el objeto contenedor desaparece, los objetos que forman parte de él también desaparecen, ya que su ciclo de vida está ligado al objeto principal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La palabra clave \"extends\" se utiliza para herencia en Java, no para composición."
+        },
+        {
+          "clave": "b",
+          "motivo": "La composición no limita el uso de constructores. Las clases pueden tener constructores personalizados independientemente de la relación entre objetos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Esto describe herencia múltiple. En Java no existe herencia múltiple entre clases, y además no tiene relación con la composición."
+        }
+      ],
+      "resumen_didactico": "La diferencia clave es el ciclo de vida de los objetos: en agregación los objetos pueden vivir por separado, mientras que en composición dependen totalmente del objeto principal.",
+      "ejemplo_practico": "Una clase Casa puede tener objetos Habitación. Si la Casa se destruye, las Habitaciones dejan de existir como parte del sistema porque forman parte inseparable de la casa.",
+      "conclusion_final": "La composición se caracteriza por una dependencia absoluta entre el objeto contenedor y sus componentes."
+    }
+  },
+  {
+    "id": "UT7-Q04",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué pilar de la programación orientada a objetos permite generalizar conceptos en una superclase y especializarlos en subclases?",
+    "contexto": "Se pregunta por el mecanismo de la POO que permite definir características comunes en una clase base y reutilizarlas o especializarlas en clases derivadas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Abstracción simple" },
+      { "clave": "b", "texto": "Polimorfismo" },
+      { "clave": "c", "texto": "Herencia" },
+      { "clave": "d", "texto": "Encapsulación" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La herencia es uno de los pilares fundamentales de la programación orientada a objetos. Permite crear nuevas clases (subclases) a partir de una clase existente (superclase), heredando sus atributos y métodos. De esta forma se pueden definir características generales en la clase base y luego especializarlas o ampliarlas en las clases derivadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La abstracción se centra en representar únicamente las características relevantes de un objeto para el sistema, simplificando la realidad, pero no describe el mecanismo de reutilización entre clases."
+        },
+        {
+          "clave": "b",
+          "motivo": "El polimorfismo permite que un mismo método tenga diferentes comportamientos según el objeto que lo ejecute, pero no se encarga de generalizar y especializar clases."
+        },
+        {
+          "clave": "d",
+          "motivo": "La encapsulación consiste en proteger los datos de una clase mediante modificadores de acceso y métodos públicos (getters/setters), pero no establece jerarquías entre clases."
+        }
+      ],
+      "resumen_didactico": "La herencia permite crear jerarquías de clases donde una clase general define características comunes y otras clases más específicas las reutilizan y especializan.",
+      "ejemplo_practico": "Podemos tener una clase Vehiculo con atributos como velocidad y métodos como acelerar(). Luego crear subclases Coche y Moto que hereden esos elementos y añadan comportamientos específicos.",
+      "conclusion_final": "La respuesta correcta es herencia, ya que es el mecanismo de la POO que permite generalizar en una superclase y especializar en subclases."
+    }
+  },
+  {
+    "id": "UT7-Q05",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "En el lenguaje Java, ¿cuál es la restricción principal respecto a la jerarquía de herencia de clases?",
+    "contexto": "Se pregunta por la limitación estructural que Java impone al sistema de herencia entre clases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una clase puede heredar de un número ilimitado de padres."
+      },
+      {
+        "clave": "b",
+        "texto": "No se permite que una clase hija acceda a métodos protegidos."
+      },
+      {
+        "clave": "c",
+        "texto": "Las clases hijas no pueden tener sus propios atributos."
+      },
+      {
+        "clave": "d",
+        "texto": "Una clase solo puede tener un padre directo (herencia simple)."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En Java, el modelo de herencia entre clases es de tipo simple. Esto significa que una clase solo puede heredar directamente de una única superclase mediante la palabra clave 'extends'. Esta restricción evita ambigüedades en la jerarquía de herencia y simplifica el diseño del lenguaje. Si se necesitan comportamientos de múltiples fuentes, Java utiliza interfaces en lugar de herencia múltiple de clases.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esto describe herencia múltiple, característica de otros lenguajes como C++, pero Java no permite que una clase herede de varios padres."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los métodos protegidos sí pueden ser accedidos por clases hijas. De hecho, el modificador 'protected' está diseñado precisamente para permitir acceso dentro de la jerarquía de herencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las subclases pueden definir sus propios atributos y métodos además de los heredados. Esto es precisamente lo que permite especializar la superclase."
+        }
+      ],
+      "resumen_didactico": "Java utiliza herencia simple: cada clase puede tener un solo padre directo. Para reutilizar comportamiento múltiple se utilizan interfaces.",
+      "ejemplo_practico": "class Animal {}\nclass Perro extends Animal {}\n\nPerro hereda de Animal. Pero no podríamos escribir: class Perro extends Animal, Mascota {} porque Java no permite herencia múltiple.",
+      "conclusion_final": "La restricción fundamental en Java es que una clase solo puede tener una superclase directa, es decir, utiliza herencia simple."
+    }
+  },
+  {
+    "id": "UT7-Q06",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué elementos de la clase padre no son heredados por las clases hijas en Java?",
+    "contexto": "Se analiza qué miembros de una superclase no forman parte de la herencia directa en Java dentro de una jerarquía de clases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los atributos de instancia marcados como \"protected\"."
+      },
+      { "clave": "b", "texto": "Los métodos públicos y protegidos." },
+      { "clave": "c", "texto": "Las constantes definidas en la clase raíz." },
+      { "clave": "d", "texto": "Los miembros privados y los constructores." }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En Java, las clases hijas heredan los atributos y métodos accesibles de la superclase, es decir, los miembros public y protected. Sin embargo, los miembros private no son accesibles directamente desde la subclase y los constructores tampoco se heredan, ya que cada clase debe definir su propio constructor. Aunque la subclase puede invocar el constructor de la clase padre mediante super(), este no forma parte de la herencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los atributos protected sí son heredados por las subclases y pueden ser utilizados directamente dentro de ellas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los métodos public y protected sí forman parte de la herencia y pueden ser utilizados o sobrescritos por la clase hija."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las constantes (normalmente static final) definidas en la superclase sí pueden ser heredadas y utilizadas por las subclases."
+        }
+      ],
+      "resumen_didactico": "En la herencia de Java, lo que realmente no se hereda son los miembros privados y los constructores. El resto de miembros accesibles sí se transmiten a las subclases.",
+      "ejemplo_practico": "class Animal {\n  private int edad;\n  public Animal() {}\n  public void comer() {}\n}\n\nclass Perro extends Animal {}\n\nPerro hereda el método comer(), pero no puede acceder directamente a edad ni hereda el constructor Animal().",
+      "conclusion_final": "La respuesta correcta es que los miembros privados y los constructores no se heredan en Java."
+    }
+  },
+  {
+    "id": "UT7-Q07",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué palabra clave se utiliza en la declaración de una clase para indicar que hereda de otra?",
+    "contexto": "Se pregunta por la palabra clave del lenguaje Java utilizada para establecer una relación de herencia entre clases.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "final" },
+      { "clave": "b", "texto": "super" },
+      { "clave": "c", "texto": "implements" },
+      { "clave": "d", "texto": "extends" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En Java, la palabra clave 'extends' se utiliza en la declaración de una clase para indicar que esta hereda de otra. La clase que hereda se denomina subclase o clase hija, mientras que la clase de la que se hereda se denomina superclase o clase padre. Gracias a 'extends', la subclase puede reutilizar atributos y métodos definidos en la superclase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La palabra clave 'final' se utiliza para impedir que una clase sea heredada o que un método sea sobrescrito, no para crear una relación de herencia."
+        },
+        {
+          "clave": "b",
+          "motivo": "La palabra clave 'super' se utiliza dentro de una subclase para acceder a métodos o constructores de la clase padre, pero no sirve para declarar la herencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "'implements' se utiliza cuando una clase implementa una interfaz, no cuando hereda de otra clase."
+        }
+      ],
+      "resumen_didactico": "En Java, la herencia entre clases se declara con la palabra clave 'extends', que conecta una subclase con su superclase.",
+      "ejemplo_practico": "class Animal {\n  void comer() {}\n}\n\nclass Perro extends Animal {\n  void ladrar() {}\n}\n\nPerro hereda el método comer() de Animal gracias a la palabra clave extends.",
+      "conclusion_final": "La palabra clave que permite establecer herencia entre clases en Java es 'extends'."
+    }
+  },
+  {
+    "id": "UT7-Q08",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cuál es la finalidad de declarar una clase como \"final\" en el diseño de un sistema?",
+    "contexto": "Se analiza el uso del modificador final en la declaración de clases dentro del lenguaje Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Indicar que la clase no puede contener métodos con cuerpo."
+      },
+      {
+        "clave": "b",
+        "texto": "Impedir por seguridad o diseño que cualquier otra clase pueda heredar de ella."
+      },
+      {
+        "clave": "c",
+        "texto": "Permitir que la clase se instancie sin usar la palabra \"new\"."
+      },
+      {
+        "clave": "d",
+        "texto": "Obligar a que todas las clases del proyecto hereden de ella."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En Java, el modificador final aplicado a una clase indica que esa clase no puede ser extendida por ninguna otra. Es decir, ninguna subclase puede heredar de ella. Esto se utiliza por motivos de seguridad, diseño o para evitar modificaciones del comportamiento previsto de la clase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las clases sin métodos con cuerpo corresponden a interfaces o clases abstractas con métodos abstractos, no a clases declaradas como final."
+        },
+        {
+          "clave": "c",
+          "motivo": "El modificador final no afecta a la forma de instanciar objetos. Las instancias de una clase siguen creándose con la palabra clave new."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una clase final no obliga a otras clases a heredar de ella; de hecho, ocurre lo contrario: ninguna clase puede heredar de una clase final."
+        }
+      ],
+      "resumen_didactico": "Una clase final es una clase que no puede ser extendida. Su diseño queda cerrado para evitar herencia o modificaciones del comportamiento.",
+      "ejemplo_practico": "final class Utilidades {\n  static void imprimir() {\n    System.out.println(\"Hola\");\n  }\n}\n\nclass Test extends Utilidades {} // ERROR: no se puede heredar de una clase final.",
+      "conclusion_final": "Declarar una clase como final sirve para impedir que otras clases puedan heredar de ella."
+    }
+  },
+  {
+    "id": "UT7-Q09",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "Al crear un objeto de una subclase, ¿cuál es el orden de ejecución de los constructores en la memoria?",
+    "contexto": "Se analiza el orden en que se ejecutan los constructores cuando se instancia una clase hija en una jerarquía de herencia en Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo se ejecuta el constructor de la clase hija, ignorando al padre."
+      },
+      {
+        "clave": "b",
+        "texto": "Primero debe ejecutarse el constructor de la clase padre y luego el de la hija."
+      },
+      {
+        "clave": "c",
+        "texto": "Primero se ejecuta el constructor de la clase hija y luego el del padre."
+      },
+      {
+        "clave": "d",
+        "texto": "Se ejecutan ambos de forma simultánea mediante hilos de ejecución."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En Java, cuando se crea un objeto de una subclase, el constructor de la superclase se ejecuta primero. Esto ocurre porque la subclase necesita inicializar primero la parte del objeto que pertenece a la clase padre antes de completar la inicialización de sus propios atributos. Esta llamada suele realizarse mediante la palabra clave super(), que invoca el constructor de la clase padre.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El constructor de la clase padre nunca se ignora. Siempre se ejecuta primero para inicializar la parte heredada del objeto."
+        },
+        {
+          "clave": "c",
+          "motivo": "La ejecución no comienza con el constructor de la subclase. Primero debe construirse la parte del objeto correspondiente a la superclase."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los constructores no se ejecutan en paralelo mediante hilos. Se ejecutan secuencialmente siguiendo la jerarquía de herencia."
+        }
+      ],
+      "resumen_didactico": "Cuando se crea un objeto de una subclase, Java primero construye la parte heredada (clase padre) y después inicializa la parte específica de la subclase.",
+      "ejemplo_practico": "class Animal {\n  Animal() {\n    System.out.println(\"Constructor Animal\");\n  }\n}\n\nclass Perro extends Animal {\n  Perro() {\n    System.out.println(\"Constructor Perro\");\n  }\n}\n\nnew Perro();\n\nSalida:\nConstructor Animal\nConstructor Perro",
+      "conclusion_final": "El orden correcto es primero el constructor de la clase padre y después el constructor de la clase hija."
+    }
+  },
+  {
+    "id": "UT7-Q10",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué instrucción se utiliza dentro de un constructor de una subclase para invocar manualmente al constructor de su superclase?",
+    "contexto": "Se analiza la instrucción que permite llamar explícitamente al constructor de la clase padre desde el constructor de una subclase en Java.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "super()" },
+      { "clave": "b", "texto": "parent()" },
+      { "clave": "c", "texto": "this()" },
+      { "clave": "d", "texto": "extends()" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En Java, la instrucción super() se utiliza dentro del constructor de una subclase para invocar explícitamente al constructor de la superclase. Esta llamada permite inicializar correctamente la parte del objeto que pertenece a la clase padre. Si no se escribe explícitamente, el compilador intenta insertar automáticamente una llamada a super() sin parámetros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "parent() no es una instrucción válida en Java para invocar constructores de la clase padre."
+        },
+        {
+          "clave": "c",
+          "motivo": "this() se utiliza para llamar a otro constructor de la misma clase, no al de la superclase."
+        },
+        {
+          "clave": "d",
+          "motivo": "extends es una palabra clave utilizada en la declaración de la clase para establecer herencia, no para invocar constructores."
+        }
+      ],
+      "resumen_didactico": "super() permite que una subclase ejecute el constructor de su clase padre para inicializar correctamente los atributos heredados.",
+      "ejemplo_practico": "class Animal {\n  Animal(String nombre) {\n    System.out.println(\"Animal: \" + nombre);\n  }\n}\n\nclass Perro extends Animal {\n  Perro() {\n    super(\"Firulais\");\n    System.out.println(\"Constructor Perro\");\n  }\n}",
+      "conclusion_final": "La instrucción correcta para invocar el constructor de la superclase desde una subclase es super()."
+    }
+  },
+  {
+    "id": "UT7-Q11",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cuál es la regla de posición obligatoria para la llamada a super() dentro de un constructor?",
+    "contexto": "Se analiza la posición que debe ocupar la llamada al constructor de la superclase dentro del constructor de una subclase en Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Puede situarse en cualquier lugar siempre que el método sea público."
+      },
+      {
+        "clave": "b",
+        "texto": "Debe ser estrictamente la primera instrucción del constructor."
+      },
+      {
+        "clave": "c",
+        "texto": "Debe ser siempre la última línea antes del cierre de llaves."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo es obligatoria si la clase padre es abstracta."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En Java, cuando se invoca explícitamente al constructor de la superclase mediante super(), esta llamada debe colocarse obligatoriamente como la primera instrucción dentro del constructor de la subclase. Esto se debe a que el sistema necesita inicializar primero la parte del objeto que pertenece a la clase padre antes de continuar con la inicialización de la subclase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "super() no puede colocarse en cualquier posición. Java exige que sea la primera instrucción del constructor."
+        },
+        {
+          "clave": "c",
+          "motivo": "super() no puede colocarse al final del constructor. Debe ejecutarse antes que cualquier otra instrucción."
+        },
+        {
+          "clave": "d",
+          "motivo": "La regla no depende de que la clase padre sea abstracta o no. La posición obligatoria de super() es siempre la misma."
+        }
+      ],
+      "resumen_didactico": "La llamada a super() debe ser siempre la primera instrucción del constructor para inicializar primero la parte heredada del objeto.",
+      "ejemplo_practico": "class Animal {\n  Animal() {\n    System.out.println(\"Animal creado\");\n  }\n}\n\nclass Perro extends Animal {\n  Perro() {\n    super();\n    System.out.println(\"Perro creado\");\n  }\n}",
+      "conclusion_final": "La regla obligatoria es que super() debe ser siempre la primera instrucción dentro del constructor de la subclase."
+    }
+  },
+  {
+    "id": "UT7-Q12",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué ocurre si una clase hija no incluye una llamada a super() y la clase padre no dispone de un constructor vacío?",
+    "contexto": "Se analiza el comportamiento del compilador cuando una subclase no invoca explícitamente al constructor de la superclase y esta no posee un constructor sin parámetros.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Se produce un error de compilación." },
+      {
+        "clave": "b",
+        "texto": "El objeto nace con visibilidad privada por defecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Java inserta un constructor vacío en el padre automáticamente."
+      },
+      {
+        "clave": "d",
+        "texto": "El programa se ejecuta pero el saldo del objeto será nulo."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Cuando se crea una subclase en Java, el compilador intenta insertar automáticamente una llamada a super() sin parámetros si el constructor de la subclase no la incluye. Sin embargo, si la superclase no tiene un constructor vacío (sin parámetros), esa llamada automática no puede resolverse y el compilador genera un error de compilación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La visibilidad de un objeto no depende de la ausencia de super(). Los modificadores de acceso se definen explícitamente en la clase o sus miembros."
+        },
+        {
+          "clave": "c",
+          "motivo": "Java no inserta constructores automáticamente en la clase padre. Solo intenta llamar a un constructor existente."
+        },
+        {
+          "clave": "d",
+          "motivo": "El programa ni siquiera llega a ejecutarse porque el compilador detecta el problema antes de generar el bytecode."
+        }
+      ],
+      "resumen_didactico": "Si la subclase no llama a super(), Java intenta hacerlo automáticamente. Si el constructor vacío no existe en la superclase, el compilador no puede resolver la llamada y se produce un error.",
+      "ejemplo_practico": "class Animal {\n  Animal(String nombre) {}\n}\n\nclass Perro extends Animal {\n  Perro() {}\n}\n\n// Error: el compilador intenta super() pero Animal no tiene constructor vacío.",
+      "conclusion_final": "Si la superclase no tiene constructor vacío y la subclase no llama explícitamente a super(...), se produce un error de compilación."
+    }
+  },
+  {
+    "id": "UT7-Q13",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cómo se denomina el fenómeno que ocurre cuando una clase hija declara un atributo con el mismo nombre exacto que uno de la clase padre?",
+    "contexto": "Se pregunta por el concepto que describe la situación en la que una subclase define un atributo con el mismo nombre que uno existente en la superclase.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Encriptación de atributos" },
+      { "clave": "b", "texto": "Ocultación de campos (Shadowing)" },
+      { "clave": "c", "texto": "Polimorfismo de datos" },
+      { "clave": "d", "texto": "Sobrecarga de campos" }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Cuando una subclase declara un atributo con el mismo nombre que uno existente en la superclase, se produce un fenómeno llamado ocultación de campos o shadowing. En este caso, el atributo de la subclase oculta al atributo de la clase padre cuando se accede desde la subclase, aunque ambos existen en memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La encriptación de atributos no es un concepto de la programación orientada a objetos. La encriptación pertenece al ámbito de la seguridad informática."
+        },
+        {
+          "clave": "c",
+          "motivo": "El polimorfismo se refiere a la capacidad de que un mismo método tenga diferentes comportamientos según el objeto que lo invoque, no al uso de atributos con el mismo nombre."
+        },
+        {
+          "clave": "d",
+          "motivo": "La sobrecarga se aplica a métodos (mismo nombre pero diferentes parámetros), no a atributos."
+        }
+      ],
+      "resumen_didactico": "Si una subclase declara un atributo con el mismo nombre que uno de la superclase, el nuevo atributo oculta al anterior dentro del contexto de la subclase.",
+      "ejemplo_practico": "class Animal {\n  String nombre = \"Animal\";\n}\n\nclass Perro extends Animal {\n  String nombre = \"Perro\";\n}\n\nPerro p = new Perro();\nSystem.out.println(p.nombre); // imprime \"Perro\"",
+      "conclusion_final": "Este fenómeno se denomina ocultación de campos o shadowing."
+    }
+  },
+  {
+    "id": "UT7-Q14",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "Si una clase hija oculta un atributo del padre, ¿cómo puede acceder específicamente al valor almacenado en la superclase?",
+    "contexto": "Se analiza cómo acceder a un atributo de la clase padre cuando la subclase ha declarado un atributo con el mismo nombre (shadowing).",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Usando la referencia super.nombre" },
+      { "clave": "b", "texto": "Usando la referencia this.nombre" },
+      { "clave": "c", "texto": "Llamando al método finalize()" },
+      { "clave": "d", "texto": "Realizando un casting a tipo String" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Cuando una subclase declara un atributo con el mismo nombre que uno de la superclase, se produce ocultación de campos (shadowing). En ese caso, para acceder específicamente al atributo de la clase padre se utiliza la referencia super.nombre, que permite acceder al miembro definido en la superclase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "this.nombre hace referencia al atributo definido en la clase actual (la subclase), no al atributo de la superclase."
+        },
+        {
+          "clave": "c",
+          "motivo": "finalize() es un método relacionado con el ciclo de vida de los objetos y el recolector de basura, no con el acceso a atributos de la superclase."
+        },
+        {
+          "clave": "d",
+          "motivo": "Realizar un casting no permite acceder a atributos ocultos de la superclase; el acceso correcto se realiza mediante la palabra clave super."
+        }
+      ],
+      "resumen_didactico": "Cuando un atributo de la subclase oculta uno de la superclase, se utiliza super.atributo para acceder al valor original definido en la clase padre.",
+      "ejemplo_practico": "class Animal {\n  String nombre = \"Animal\";\n}\n\nclass Perro extends Animal {\n  String nombre = \"Perro\";\n\n  void mostrar() {\n    System.out.println(nombre);       // atributo de Perro\n    System.out.println(super.nombre); // atributo de Animal\n  }\n}",
+      "conclusion_final": "Para acceder al atributo oculto de la superclase se utiliza la referencia super.nombre."
+    }
+  },
+  {
+    "id": "UT7-Q15",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué utilidad profesional tiene invocar un método de la superclase mediante super.metodo() desde una subclase?",
+    "contexto": "Se analiza el uso de super.metodo() cuando una subclase sobrescribe un método y quiere reutilizar parte del comportamiento definido en la clase padre.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Convertir el método en una función estática."
+      },
+      {
+        "clave": "b",
+        "texto": "Reutilizar la lógica base ya programada en el padre y añadir funcionalidades extra."
+      },
+      {
+        "clave": "c",
+        "texto": "Borrar la implementación del padre para ahorrar memoria."
+      },
+      {
+        "clave": "d",
+        "texto": "Evitar que el Garbage Collector elimine al padre."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "Cuando una subclase sobrescribe un método de la superclase (override), puede seguir utilizando la implementación original del padre mediante super.metodo(). Esto permite reutilizar la lógica base ya existente y extenderla con comportamiento adicional en la subclase, manteniendo un diseño reutilizable y modular.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Invocar super.metodo() no cambia el tipo del método ni lo convierte en estático. Los métodos estáticos se definen con la palabra clave static."
+        },
+        {
+          "clave": "c",
+          "motivo": "La llamada a super.metodo() no elimina ni reemplaza la implementación del padre; al contrario, la reutiliza."
+        },
+        {
+          "clave": "d",
+          "motivo": "El Garbage Collector gestiona memoria automáticamente y no tiene relación con la invocación de métodos mediante super."
+        }
+      ],
+      "resumen_didactico": "super.metodo() permite usar la lógica original de la clase padre y añadir comportamiento adicional en la subclase.",
+      "ejemplo_practico": "class Animal {\n  void moverse() {\n    System.out.println(\"El animal se mueve\");\n  }\n}\n\nclass Perro extends Animal {\n  void moverse() {\n    super.moverse();\n    System.out.println(\"El perro corre\");\n  }\n}",
+      "conclusion_final": "El uso profesional de super.metodo() consiste en reutilizar la lógica base del método del padre y ampliarla con comportamiento adicional en la subclase."
+    }
+  },
+  {
+    "id": "UT7-Q16",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿En qué consiste la sobreescritura de métodos (Override) en la jerarquía de clases?",
+    "contexto": "Se pregunta por el concepto de sobrescritura de métodos dentro de una relación de herencia en programación orientada a objetos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En crear un método con el mismo nombre pero distintos parámetros."
+      },
+      {
+        "clave": "b",
+        "texto": "En cambiar el nombre del método en la clase hija para que sea más descriptivo."
+      },
+      {
+        "clave": "c",
+        "texto": "En eliminar el acceso al método del padre desde otras clases del paquete."
+      },
+      {
+        "clave": "d",
+        "texto": "En redefinir un método heredado en la subclase manteniendo la misma firma (nombre, parámetros y retorno)."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La sobreescritura de métodos (method overriding) ocurre cuando una subclase redefine un método que ya existe en la superclase, manteniendo exactamente la misma firma del método: mismo nombre, mismos parámetros y mismo tipo de retorno. Esto permite modificar o especializar el comportamiento del método heredado en la subclase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esto describe la sobrecarga de métodos (overloading), donde un método tiene el mismo nombre pero diferentes parámetros."
+        },
+        {
+          "clave": "b",
+          "motivo": "Cambiar el nombre del método crea un método completamente nuevo y no tiene relación con la sobreescritura."
+        },
+        {
+          "clave": "c",
+          "motivo": "La sobreescritura no elimina accesos al método original; simplemente redefine su comportamiento en la subclase."
+        }
+      ],
+      "resumen_didactico": "Override significa que la subclase redefine un método heredado manteniendo la misma firma para cambiar su comportamiento.",
+      "ejemplo_practico": "class Animal {\n  void hacerSonido() {\n    System.out.println(\"El animal hace un sonido\");\n  }\n}\n\nclass Perro extends Animal {\n  @Override\n  void hacerSonido() {\n    System.out.println(\"El perro ladra\");\n  }\n}",
+      "conclusion_final": "La sobreescritura consiste en redefinir un método heredado manteniendo exactamente la misma firma."
+    }
+  },
+  {
+    "id": "UT7-Q17",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cuál es la función de la etiqueta @Override en el código de una subclase?",
+    "contexto": "Se analiza el uso de la anotación @Override en métodos de una subclase dentro de una jerarquía de herencia en Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aumenta la velocidad de ejecución del método en tiempo de ejecución."
+      },
+      {
+        "clave": "b",
+        "texto": "Sirve para que el compilador verifique que realmente existe un método igual en el padre, evitando errores tipográficos."
+      },
+      {
+        "clave": "c",
+        "texto": "Convierte el método en una clase final automáticamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Es obligatoria para que el código pueda compilarse."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La anotación @Override se utiliza para indicar al compilador que un método de la subclase está sobrescribiendo (override) un método existente en la superclase. El compilador verifica que el método realmente exista con la misma firma en la clase padre. Si hay un error en el nombre o en los parámetros, el compilador generará un error, ayudando a detectar fallos de programación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La anotación @Override no afecta al rendimiento ni a la velocidad de ejecución del programa."
+        },
+        {
+          "clave": "c",
+          "motivo": "@Override no convierte métodos en final. El modificador final es independiente y debe declararse explícitamente."
+        },
+        {
+          "clave": "d",
+          "motivo": "@Override no es obligatoria para compilar el código. Es una ayuda para el programador y para el compilador, pero el programa puede compilar sin ella."
+        }
+      ],
+      "resumen_didactico": "La anotación @Override sirve como mecanismo de seguridad para confirmar que un método está sobrescribiendo correctamente uno de la superclase.",
+      "ejemplo_practico": "class Animal {\n  void hacerSonido() {}\n}\n\nclass Perro extends Animal {\n  @Override\n  void hacerSonido() {}\n}\n\nSi se escribiera mal el nombre del método (por ejemplo 'hacerSondio'), el compilador detectaría el error gracias a @Override.",
+      "conclusion_final": "La función de @Override es permitir que el compilador verifique que el método realmente sobrescribe uno existente en la superclase."
+    }
+  },
+  {
+    "id": "UT7-Q18",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué característica define a una clase abstracta en Java?",
+    "contexto": "Se analiza el concepto de clase abstracta dentro del diseño orientado a objetos y su papel en las jerarquías de herencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es una clase que no puede ser instanciada y sirve solo como base para la herencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Es una clase que solo puede contener métodos estáticos y finales."
+      },
+      {
+        "clave": "c",
+        "texto": "Es el nivel más bajo de la jerarquía de objetos."
+      },
+      {
+        "clave": "d",
+        "texto": "Es una clase que se borra automáticamente de la memoria tras su primer uso."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Una clase abstracta en Java es una clase que no puede ser instanciada directamente. Su objetivo es servir como base para otras clases (subclases) dentro de una jerarquía de herencia. Puede contener métodos abstractos (sin implementación) que las subclases deben implementar, así como métodos con implementación normal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las clases abstractas no están limitadas a métodos estáticos o finales. De hecho, suelen contener métodos abstractos que deben ser implementados por las subclases."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una clase abstracta suele estar en niveles superiores de la jerarquía de clases, no en el nivel más bajo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El borrado automático de memoria está relacionado con el Garbage Collector, no con el concepto de clases abstractas."
+        }
+      ],
+      "resumen_didactico": "Una clase abstracta es una plantilla para otras clases. No se puede crear directamente un objeto de ella, sino que sirve como base para que otras clases hereden su estructura.",
+      "ejemplo_practico": "abstract class Animal {\n  abstract void hacerSonido();\n}\n\nclass Perro extends Animal {\n  void hacerSonido() {\n    System.out.println(\"Ladrar\");\n  }\n}\n\nAnimal a = new Animal(); // ERROR\nPerro p = new Perro(); // Correcto",
+      "conclusion_final": "Una clase abstracta se caracteriza porque no puede ser instanciada y se utiliza como base para que otras clases hereden de ella."
+    }
+  },
+  {
+    "id": "UT7-Q19",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué obligación impone un método abstracto a las subclases que no sean también abstractas?",
+    "contexto": "Se analiza la responsabilidad que adquieren las subclases cuando heredan un método abstracto dentro de una jerarquía de clases en Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Obliga a implementar (escribir el código) de dicho método de forma obligatoria."
+      },
+      {
+        "clave": "b",
+        "texto": "Impide que la subclase pueda tener constructores propios."
+      },
+      {
+        "clave": "c",
+        "texto": "Obliga a declarar todos los atributos como protegidos."
+      },
+      {
+        "clave": "d",
+        "texto": "Fuerza a que la subclase sea marcada como final."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Un método abstracto es un método declarado sin implementación (sin cuerpo). Cuando una subclase hereda de una clase que contiene métodos abstractos, esa subclase debe implementar obligatoriamente dichos métodos, a menos que también sea declarada como abstracta. Esto garantiza que todas las clases concretas proporcionen una implementación del comportamiento definido en la clase base.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las subclases pueden tener constructores propios aunque hereden métodos abstractos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La existencia de métodos abstractos no impone ninguna restricción sobre los modificadores de acceso de los atributos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La subclase no está obligada a ser final; simplemente debe implementar el método abstracto o declararse también como abstracta."
+        }
+      ],
+      "resumen_didactico": "Si una clase hereda un método abstracto, debe implementar ese método obligatoriamente para convertirse en una clase concreta.",
+      "ejemplo_practico": "abstract class Animal {\n  abstract void hacerSonido();\n}\n\nclass Perro extends Animal {\n  void hacerSonido() {\n    System.out.println(\"Ladrar\");\n  }\n}",
+      "conclusion_final": "Un método abstracto obliga a las subclases concretas a implementar obligatoriamente ese método."
+    }
+  },
+  {
+    "id": "UT7-Q20",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cuál es la diferencia fundamental entre una clase abstracta y una interfaz pura?",
+    "contexto": "Se compara el papel de las clases abstractas y las interfaces dentro del diseño orientado a objetos en Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las clases abstractas se declaran con la palabra clave \"implements\"."
+      },
+      {
+        "clave": "b",
+        "texto": "Las clases abstractas pueden contener código real (métodos implementados), mientras que las interfaces puras solo definen firmas."
+      },
+      {
+        "clave": "c",
+        "texto": "Las interfaces no permiten la herencia múltiple."
+      },
+      {
+        "clave": "d",
+        "texto": "Las interfaces no pueden tener variables constantes."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "La diferencia fundamental es que una clase abstracta puede contener tanto métodos abstractos como métodos con implementación (código real). En cambio, una interfaz pura se utiliza para definir un contrato de comportamiento y normalmente solo declara las firmas de los métodos que las clases implementadoras deben desarrollar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las clases abstractas se declaran con la palabra clave abstract, no con implements. La palabra implements se usa cuando una clase implementa una interfaz."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las interfaces sí permiten herencia múltiple, ya que una clase puede implementar varias interfaces."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las interfaces sí pueden tener variables constantes. De hecho, todos los atributos definidos en una interfaz son implícitamente public, static y final."
+        }
+      ],
+      "resumen_didactico": "Una clase abstracta puede tener lógica implementada, mientras que una interfaz pura define solo el contrato que las clases deben cumplir.",
+      "ejemplo_practico": "abstract class Animal {\n  void dormir() {\n    System.out.println(\"El animal duerme\");\n  }\n  abstract void hacerSonido();\n}\n\ninterface Volador {\n  void volar();\n}",
+      "conclusion_final": "La diferencia clave es que las clases abstractas pueden contener código implementado, mientras que las interfaces puras definen principalmente firmas de métodos."
+    }
+  },
+  {
+    "id": "UT7-Q21",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué modificador se debe aplicar a un método para permitir la herencia de su clase pero prohibir que sea sobrescrito por las subclases?",
+    "contexto": "Se analiza qué modificador en Java permite que un método sea heredado pero impide que una subclase lo redefina.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "abstract" },
+      { "clave": "b", "texto": "static" },
+      { "clave": "c", "texto": "final" },
+      { "clave": "d", "texto": "protected" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En Java, el modificador final aplicado a un método indica que ese método puede ser heredado por las subclases, pero no puede ser sobrescrito (override). Esto se utiliza cuando el diseñador de la clase quiere asegurar que el comportamiento del método permanezca exactamente igual en toda la jerarquía de clases.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un método abstract obliga a las subclases a implementarlo, por lo que ocurre exactamente lo contrario: debe ser sobrescrito."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los métodos static pertenecen a la clase y no al objeto. No participan en la sobrescritura de métodos en la jerarquía de herencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "El modificador protected controla la visibilidad del método, permitiendo acceso a subclases y clases del mismo paquete, pero no impide que sea sobrescrito."
+        }
+      ],
+      "resumen_didactico": "Un método final puede heredarse, pero su implementación no puede cambiar en las subclases.",
+      "ejemplo_practico": "class Animal {\n  final void respirar() {\n    System.out.println(\"Respirando...\");\n  }\n}\n\nclass Perro extends Animal {\n  // void respirar() {} // ERROR: no se puede sobrescribir un método final\n}",
+      "conclusion_final": "El modificador correcto es final, ya que permite heredar el método pero impide que las subclases lo sobrescriban."
+    }
+  },
+  {
+    "id": "UT7-Q22",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "En el diseño de sistemas, ¿qué palabra clave permite a una clase \"firmar un contrato\" e implementar una interfaz?",
+    "contexto": "Se analiza la palabra clave que se utiliza en Java para indicar que una clase implementa una interfaz y debe cumplir el contrato definido por ella.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "extends" },
+      { "clave": "b", "texto": "super" },
+      { "clave": "c", "texto": "implements" },
+      { "clave": "d", "texto": "interface" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En Java, la palabra clave implements se utiliza para indicar que una clase implementa una interfaz. Esto significa que la clase se compromete a proporcionar la implementación de todos los métodos definidos en la interfaz. Por este motivo se dice que la clase 'firma un contrato', ya que debe cumplir con las reglas establecidas por la interfaz.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "extends se utiliza para heredar de una clase o para extender otra interfaz, pero no para implementar una interfaz desde una clase."
+        },
+        {
+          "clave": "b",
+          "motivo": "super se utiliza dentro de una subclase para acceder a miembros de la superclase, no para implementar interfaces."
+        },
+        {
+          "clave": "d",
+          "motivo": "interface se utiliza para declarar una interfaz, no para que una clase la implemente."
+        }
+      ],
+      "resumen_didactico": "Cuando una clase quiere comprometerse a implementar los métodos definidos por una interfaz, utiliza la palabra clave implements.",
+      "ejemplo_practico": "interface Volador {\n  void volar();\n}\n\nclass Pajaro implements Volador {\n  public void volar() {\n    System.out.println(\"El pájaro vuela\");\n  }\n}",
+      "conclusion_final": "La palabra clave que permite a una clase implementar una interfaz es implements."
+    }
+  },
+  {
+    "id": "UT7-Q23",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cómo soluciona Java la ausencia de herencia múltiple de clases?",
+    "contexto": "Se analiza cómo el lenguaje Java permite reutilizar comportamientos múltiples sin permitir herencia múltiple entre clases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usando el operador instanceof en todos los métodos."
+      },
+      {
+        "clave": "b",
+        "texto": "Permitiendo el uso de la instrucción super.super."
+      },
+      {
+        "clave": "c",
+        "texto": "Permitiendo que una clase implemente múltiples interfaces de forma simultánea."
+      },
+      { "clave": "d", "texto": "Declarando todas las clases como públicas." }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Java no permite que una clase herede directamente de varias clases (herencia múltiple). Para resolver esta limitación y permitir reutilización de comportamientos, Java permite que una clase implemente múltiples interfaces mediante la palabra clave implements. De esta forma una clase puede comprometerse a cumplir varios contratos de comportamiento al mismo tiempo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "instanceof es un operador que permite comprobar el tipo de un objeto en tiempo de ejecución, pero no tiene relación con la herencia múltiple."
+        },
+        {
+          "clave": "b",
+          "motivo": "La instrucción super.super no existe en Java y no forma parte del lenguaje."
+        },
+        {
+          "clave": "d",
+          "motivo": "Declarar clases como públicas solo afecta a la visibilidad del código, no a la herencia múltiple."
+        }
+      ],
+      "resumen_didactico": "Java evita la herencia múltiple de clases, pero permite que una clase implemente varias interfaces para combinar distintos comportamientos.",
+      "ejemplo_practico": "interface Volador {\n  void volar();\n}\n\ninterface Nadador {\n  void nadar();\n}\n\nclass Pato implements Volador, Nadador {\n  public void volar() {}\n  public void nadar() {}\n}",
+      "conclusion_final": "Java soluciona la ausencia de herencia múltiple permitiendo que una clase implemente múltiples interfaces."
+    }
+  },
+  {
+    "id": "UT7-Q24",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué concepto se define como la capacidad de un objeto de una jerarquía para adoptar diferentes formas en tiempo de ejecución?",
+    "contexto": "Se pregunta por el concepto de programación orientada a objetos que permite que un mismo método o referencia pueda comportarse de forma distinta según el tipo real del objeto.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Shadowing" },
+      { "clave": "b", "texto": "Encapsulación" },
+      { "clave": "c", "texto": "Herencia simple" },
+      { "clave": "d", "texto": "Polimorfismo" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El polimorfismo es uno de los pilares de la programación orientada a objetos. Se refiere a la capacidad de un objeto de adoptar diferentes comportamientos o 'formas' en tiempo de ejecución dependiendo del tipo real del objeto. Esto ocurre principalmente cuando una referencia de una superclase apunta a objetos de distintas subclases que implementan métodos de forma diferente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Shadowing se refiere a la ocultación de atributos o variables cuando una subclase declara un campo con el mismo nombre que en la superclase."
+        },
+        {
+          "clave": "b",
+          "motivo": "La encapsulación consiste en proteger los datos de una clase y controlar su acceso mediante modificadores y métodos públicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La herencia simple describe la estructura jerárquica donde una clase hereda de una sola superclase, pero no describe comportamientos variables en tiempo de ejecución."
+        }
+      ],
+      "resumen_didactico": "El polimorfismo permite que una misma referencia o método pueda comportarse de diferentes maneras dependiendo del tipo real del objeto en ejecución.",
+      "ejemplo_practico": "class Animal {\n  void hacerSonido() {\n    System.out.println(\"Sonido genérico\");\n  }\n}\n\nclass Perro extends Animal {\n  void hacerSonido() {\n    System.out.println(\"Ladrar\");\n  }\n}\n\nAnimal a = new Perro();\na.hacerSonido(); // ejecuta el método de Perro",
+      "conclusion_final": "El concepto que describe la capacidad de adoptar diferentes comportamientos en tiempo de ejecución es el polimorfismo."
+    }
+  },
+  {
+    "id": "UT7-Q25",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Cuál es la \"regla de oro\" de la asignación polimorfa en Java?",
+    "contexto": "Se analiza la regla fundamental que permite utilizar polimorfismo mediante referencias de la superclase que apuntan a objetos de subclases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una variable de tipo padre puede guardar un objeto de tipo hija."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo se pueden asignar objetos del mismo tipo exacto que la variable."
+      },
+      {
+        "clave": "c",
+        "texto": "El polimorfismo solo funciona con tipos de datos primitivos."
+      },
+      {
+        "clave": "d",
+        "texto": "Una variable de tipo hija puede guardar un objeto de tipo padre."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La regla fundamental del polimorfismo en Java establece que una referencia de tipo superclase puede apuntar a un objeto de cualquiera de sus subclases. Esto permite tratar distintos objetos de forma uniforme y aprovechar el polimorfismo en tiempo de ejecución.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esto impediría el polimorfismo. En Java sí se pueden asignar objetos de subclases a referencias de la superclase."
+        },
+        {
+          "clave": "c",
+          "motivo": "El polimorfismo pertenece a la programación orientada a objetos y se aplica a objetos y clases, no a tipos primitivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una referencia de tipo hija no puede almacenar directamente un objeto de tipo padre, ya que el objeto podría no contener los métodos o atributos específicos de la subclase."
+        }
+      ],
+      "resumen_didactico": "El polimorfismo permite que una variable del tipo de la superclase apunte a objetos de distintas subclases.",
+      "ejemplo_practico": "class Animal {}\nclass Perro extends Animal {}\n\nAnimal a = new Perro(); // válido\nPerro p = new Animal(); // error",
+      "conclusion_final": "La regla de oro del polimorfismo es que una variable de tipo padre puede referenciar un objeto de tipo hija."
+    }
+  },
+  {
+    "id": "UT7-Q26",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "Si tratamos a un Analista como un Empleado (polimorfismo), ¿qué sucede con los métodos exclusivos del Analista que no están en la clase Empleado?",
+    "contexto": "Se analiza qué ocurre cuando una referencia de tipo padre apunta a un objeto de una subclase y se intenta acceder a métodos que solo existen en la subclase.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se ejecutan automáticamente al llamar al sueldo base."
+      },
+      {
+        "clave": "b",
+        "texto": "Se borran de la memoria para optimizar el sistema."
+      },
+      {
+        "clave": "c",
+        "texto": "Pasan a ser métodos finales de forma temporal."
+      },
+      {
+        "clave": "d",
+        "texto": "El compilador no permite llamarlos directamente porque solo ve la etiqueta \"Empleado\"."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En Java, cuando una referencia de tipo padre apunta a un objeto de una subclase (polimorfismo), el compilador solo permite acceder a los métodos definidos en el tipo de la referencia (la clase padre). Aunque el objeto real tenga más métodos, el compilador no permite invocarlos directamente porque la variable está tipada como la superclase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los métodos exclusivos de la subclase no se ejecutan automáticamente; solo se ejecutan si se llaman explícitamente."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los métodos de la subclase no desaparecen de la memoria. El objeto sigue teniendo todos sus métodos, pero la referencia no permite acceder a ellos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los métodos no cambian su modificador a final ni temporalmente. El acceso depende del tipo de referencia, no del tipo real del objeto."
+        }
+      ],
+      "resumen_didactico": "Cuando usamos polimorfismo, el compilador solo permite acceder a los métodos que existen en el tipo de la variable, aunque el objeto real tenga más funcionalidades.",
+      "ejemplo_practico": "class Empleado {\n  void trabajar() {}\n}\n\nclass Analista extends Empleado {\n  void analizarDatos() {}\n}\n\nEmpleado e = new Analista();\ne.trabajar();      // correcto\n// e.analizarDatos(); // ERROR: el compilador solo ve Empleado",
+      "conclusion_final": "El compilador no permite llamar a métodos exclusivos de la subclase si la referencia está declarada como la clase padre."
+    }
+  },
+  {
+    "id": "UT7-Q27",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Para qué se utiliza el operador \"instanceof\" en el contexto del polimorfismo?",
+    "contexto": "Se analiza el uso del operador instanceof cuando una referencia de tipo padre puede contener objetos de diferentes subclases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para forzar la ejecución del Garbage Collector."
+      },
+      {
+        "clave": "b",
+        "texto": "Para comparar si dos constantes tienen el mismo valor numérico."
+      },
+      {
+        "clave": "c",
+        "texto": "Para verificar si el objeto real dentro de una referencia es de un tipo específico."
+      },
+      {
+        "clave": "d",
+        "texto": "Para crear una nueva instancia de una clase abstracta."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El operador instanceof se utiliza en Java para comprobar si un objeto es instancia de una clase concreta o de una de sus subclases. En contextos de polimorfismo, donde una referencia de tipo padre puede contener distintos tipos de objetos, instanceof permite verificar el tipo real del objeto antes de realizar operaciones específicas o un casting.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El Garbage Collector se ejecuta automáticamente en Java y no se controla mediante el operador instanceof."
+        },
+        {
+          "clave": "b",
+          "motivo": "instanceof no compara valores numéricos ni constantes; se utiliza para comprobar tipos de objetos."
+        },
+        {
+          "clave": "d",
+          "motivo": "instanceof no crea objetos ni instancias. Solo verifica el tipo de un objeto ya existente."
+        }
+      ],
+      "resumen_didactico": "instanceof sirve para saber de qué tipo real es un objeto cuando se está utilizando polimorfismo.",
+      "ejemplo_practico": "class Animal {}\nclass Perro extends Animal {}\n\nAnimal a = new Perro();\n\nif (a instanceof Perro) {\n  System.out.println(\"El objeto es un Perro\");\n}",
+      "conclusion_final": "El operador instanceof se utiliza para comprobar si el objeto real dentro de una referencia pertenece a un tipo específico."
+    }
+  },
+  {
+    "id": "UT7-Q28",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué es el \"Casting descendente\" (Downcasting) en la manipulación de objetos?",
+    "contexto": "Se analiza el concepto de downcasting dentro del polimorfismo en Java cuando se trabaja con referencias de tipo padre que contienen objetos de subclases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cambiar el tipo de retorno de un método abstracto."
+      },
+      {
+        "clave": "b",
+        "texto": "Convertir un objeto de una subclase a una superclase."
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminar la herencia de una clase en tiempo de ejecución."
+      },
+      {
+        "clave": "d",
+        "texto": "Transformar una referencia genérica en una específica para acceder a métodos exclusivos de la subclase."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El downcasting consiste en convertir una referencia de tipo superclase en una referencia de tipo subclase. Se utiliza cuando una variable declarada como la clase padre contiene realmente un objeto de una subclase y necesitamos acceder a métodos específicos que solo existen en esa subclase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Cambiar el tipo de retorno de un método no tiene relación con el casting de objetos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Convertir un objeto de subclase a superclase se denomina upcasting y normalmente ocurre automáticamente en Java."
+        },
+        {
+          "clave": "c",
+          "motivo": "El casting no elimina la herencia ni modifica la estructura de clases en tiempo de ejecución."
+        }
+      ],
+      "resumen_didactico": "El downcasting permite pasar de una referencia general (padre) a una referencia más específica (hija) para usar funcionalidades exclusivas de la subclase.",
+      "ejemplo_practico": "class Animal {}\nclass Perro extends Animal {\n  void ladrar() {}\n}\n\nAnimal a = new Perro();\nPerro p = (Perro) a;\np.ladrar();",
+      "conclusion_final": "El downcasting consiste en convertir una referencia general en una referencia específica para acceder a métodos exclusivos de la subclase."
+    }
+  },
+  {
+    "id": "UT7-Q29",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "¿Qué error de ejecución (Exception) se produce si intentamos realizar un casting a un tipo que el objeto realmente no posee?",
+    "contexto": "Se analiza qué ocurre cuando se realiza un casting descendente (downcasting) incorrecto en Java.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "ArithmeticException" },
+      { "clave": "b", "texto": "ArrayIndexOutOfBoundsException" },
+      { "clave": "c", "texto": "ClassCastException" },
+      { "clave": "d", "texto": "NullPointerException" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En Java, cuando se realiza un casting de una referencia a un tipo incompatible con el objeto real que contiene, el programa compila correctamente pero falla en tiempo de ejecución lanzando una ClassCastException. Esto ocurre porque el objeto no pertenece al tipo al que se intenta convertir.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "ArithmeticException se produce cuando ocurre un error aritmético, como dividir entre cero."
+        },
+        {
+          "clave": "b",
+          "motivo": "ArrayIndexOutOfBoundsException ocurre cuando se intenta acceder a una posición de un array fuera de sus límites."
+        },
+        {
+          "clave": "d",
+          "motivo": "NullPointerException ocurre cuando se intenta usar un objeto que tiene valor null."
+        }
+      ],
+      "resumen_didactico": "Si se intenta convertir un objeto a un tipo que realmente no es, el programa lanzará una ClassCastException en tiempo de ejecución.",
+      "ejemplo_practico": "class Animal {}\nclass Perro extends Animal {}\n\nAnimal a = new Animal();\nPerro p = (Perro) a; // ERROR en ejecución: ClassCastException",
+      "conclusion_final": "Cuando el casting se realiza hacia un tipo incompatible, Java lanza la excepción ClassCastException."
+    }
+  },
+  {
+    "id": "UT7-Q30",
+    "tema": "UT7 Clases avanzadas y utilización de objetos",
+    "pregunta": "En la arquitectura de software, ¿cuál es la ventaja principal de programar usando interfaces y polimorfismo?",
+    "contexto": "Se analiza la ventaja de diseñar sistemas utilizando interfaces y polimorfismo dentro de la programación orientada a objetos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El código es más rígido y difícil de modificar por terceros."
+      },
+      {
+        "clave": "b",
+        "texto": "Reduce el número de clases necesarias en el proyecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Permite escribir código genérico y flexible que funciona con múltiples implementaciones distintas."
+      },
+      {
+        "clave": "d",
+        "texto": "Elimina la necesidad de usar modificadores de acceso como private."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "El uso de interfaces y polimorfismo permite desacoplar el código de las implementaciones concretas. Esto significa que el sistema puede trabajar con diferentes clases que implementen la misma interfaz, permitiendo sustituir o ampliar funcionalidades sin modificar el código principal. Este enfoque es clave en arquitecturas escalables y mantenibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ocurre lo contrario: el uso de interfaces hace que el código sea más flexible y fácil de modificar o extender."
+        },
+        {
+          "clave": "b",
+          "motivo": "El uso de interfaces no necesariamente reduce el número de clases; de hecho, suele aumentar las implementaciones posibles."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los modificadores de acceso siguen siendo necesarios para controlar la visibilidad y encapsulación del código."
+        }
+      ],
+      "resumen_didactico": "Las interfaces permiten programar contra contratos en lugar de implementaciones concretas, lo que hace el sistema más flexible y extensible.",
+      "ejemplo_practico": "interface Pago {\n  void procesar();\n}\n\nclass PagoTarjeta implements Pago {\n  public void procesar() {}\n}\n\nclass PagoPaypal implements Pago {\n  public void procesar() {}\n}\n\nvoid cobrar(Pago metodo) {\n  metodo.procesar();\n}",
+      "conclusion_final": "La principal ventaja es que permite crear código genérico, flexible y reutilizable que funciona con múltiples implementaciones."
+    }
+  }
+]

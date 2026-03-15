@@ -1,0 +1,1214 @@
+[
+    {
+      "id": "UT4-Q01",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "En el desarrollo de software a gran escala, ¿qué concepto funciona como el \"archivador maestro\" que permite agrupar y gestionar varios proyectos relacionados entre sí?",
+      "contexto": "Organización de proyectos en entornos profesionales donde se desarrollan múltiples módulos o aplicaciones dentro de una misma solución.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Clase principal" },
+        { "clave": "b", "texto": "Proyecto único" },
+        { "clave": "c", "texto": "Solución o Grupo de Proyectos" },
+        { "clave": "d", "texto": "Paquete" }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "En proyectos profesionales grandes se utiliza una solución o grupo de proyectos como contenedor principal que organiza varios proyectos relacionados. Cada proyecto puede tener su propio código, dependencias y configuración, pero todos se gestionan desde ese \"archivador maestro\" para mantener el sistema ordenado y modular.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La clase principal es simplemente una clase que contiene el método main() para iniciar la ejecución del programa, no sirve para agrupar proyectos."
+          },
+          {
+            "clave": "b",
+            "motivo": "Un proyecto único contiene código y recursos de una aplicación concreta, pero no está diseñado para agrupar varios proyectos relacionados."
+          },
+          {
+            "clave": "d",
+            "motivo": "Un paquete organiza clases dentro de un mismo proyecto para evitar colisiones de nombres, pero no agrupa proyectos completos."
+          }
+        ],
+        "resumen_didactico": "En arquitectura de software, una solución o grupo de proyectos actúa como el contenedor superior que permite organizar varios proyectos dentro de un mismo sistema.",
+        "ejemplo_practico": "Una aplicación bancaria puede tener varios proyectos: backend, API, módulo de pagos y módulo de seguridad. Todos ellos se agrupan dentro de una solución que permite gestionarlos juntos.",
+        "conclusion_final": "El concepto que actúa como \"archivador maestro\" para agrupar varios proyectos relacionados es la solución o grupo de proyectos."
+      }
+    },
+    {
+      "id": "UT4-Q02",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "Al asignar nombres a variables o métodos en Java, ¿cuál de las siguientes reglas sobre identificadores es de obligado cumplimiento para que el código sea legal?",
+      "contexto": "Definición de identificadores válidos en Java al nombrar variables, métodos o clases.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Deben tener una longitud máxima de 10 caracteres."
+        },
+        { "clave": "b", "texto": "Nunca pueden empezar por un número." },
+        {
+          "clave": "c",
+          "texto": "Pueden empezar por un número si van seguidos de una letra."
+        },
+        {
+          "clave": "d",
+          "texto": "Solo pueden contener letras del alfabeto español, incluyendo la eñe."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En Java, los identificadores (nombres de variables, métodos o clases) deben seguir ciertas reglas sintácticas para que el código sea válido. Una de las reglas fundamentales es que no pueden comenzar por un número. Pueden contener números, pero nunca en la primera posición.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Java no establece un límite máximo de longitud para los identificadores; pueden ser tan largos como se necesite."
+          },
+          {
+            "clave": "c",
+            "motivo": "En Java un identificador nunca puede comenzar con un número, incluso si después aparece una letra."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los identificadores pueden contener letras de distintos alfabetos, números y algunos símbolos como _ o $, no solo letras del alfabeto español."
+          }
+        ],
+        "resumen_didactico": "Las reglas básicas de los identificadores en Java indican que pueden contener letras y números, pero nunca pueden comenzar por un número.",
+        "ejemplo_practico": "Correcto: saldoCliente, total1, _contador. Incorrecto: 1saldo, 2024Total.",
+        "conclusion_final": "Para que un identificador sea válido en Java, una regla obligatoria es que nunca puede comenzar por un número."
+      }
+    },
+    {
+      "id": "UT4-Q03",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "Si trabajas en una empresa de tecnología financiera y necesitas nombrar una variable que almacene el saldo actual de un cliente, ¿cuál es la convención de estilo profesional recomendada?",
+      "contexto": "Aplicación de convenciones de nomenclatura en Java para mantener código limpio y profesional en proyectos empresariales.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "saldo_actual" },
+        { "clave": "b", "texto": "SALDOACTUAL" },
+        { "clave": "c", "texto": "saldoActual" },
+        { "clave": "d", "texto": "SaldoActual" }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "En Java se utiliza la convención camelCase para nombrar variables y métodos. Esto significa que el nombre comienza en minúscula y cada palabra posterior empieza con mayúscula. Esta convención mejora la legibilidad del código y es estándar en proyectos profesionales.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El uso de guiones bajos (snake_case) es más común en otros lenguajes como Python, pero no es la convención estándar para variables en Java."
+          },
+          {
+            "clave": "b",
+            "motivo": "Las mayúsculas completas se utilizan normalmente para constantes (por ejemplo: IVA_GENERAL o LIMITE_DIARIO), no para variables normales."
+          },
+          {
+            "clave": "d",
+            "motivo": "Comenzar con mayúscula corresponde a la convención PascalCase, que se utiliza para nombres de clases, no para variables."
+          }
+        ],
+        "resumen_didactico": "Las variables en Java siguen la convención camelCase: empiezan en minúscula y las palabras siguientes comienzan en mayúscula.",
+        "ejemplo_practico": "Ejemplos correctos: saldoActual, numeroTransacciones, fechaPago. Ejemplos incorrectos: SALDOACTUAL, saldo_actual o SaldoActual.",
+        "conclusion_final": "La convención profesional recomendada para nombrar variables en Java es camelCase, como en saldoActual."
+      }
+    },
+    {
+      "id": "UT4-Q04",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Qué estilo de escritura se debe aplicar específicamente al nombrar Clases en Java para seguir los estándares del mercado laboral?",
+      "contexto": "Aplicación de convenciones de nomenclatura en Java al definir clases dentro de un proyecto profesional.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "PascalCase" },
+        { "clave": "b", "texto": "camelCase" },
+        { "clave": "c", "texto": "lowercase" },
+        { "clave": "d", "texto": "SNAKE_CASE" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En Java, las clases se nombran siguiendo la convención PascalCase: cada palabra comienza con mayúscula y no se usan guiones bajos. Esta convención facilita identificar rápidamente qué elementos del código son clases. Por ejemplo, en el temario aparece la clase ProcesadorPagos, que sigue exactamente este estilo. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "camelCase se utiliza para variables y métodos, donde el nombre comienza en minúscula y las palabras siguientes en mayúscula."
+          },
+          {
+            "clave": "c",
+            "motivo": "lowercase se utiliza normalmente para nombres de paquetes (por ejemplo: com.securepay.pagos), no para clases."
+          },
+          {
+            "clave": "d",
+            "motivo": "SNAKE_CASE en mayúsculas se utiliza principalmente para constantes (por ejemplo: IVA_GENERAL o LIMITE_DIARIO)."
+          }
+        ],
+        "resumen_didactico": "En Java cada tipo de elemento tiene una convención distinta: paquetes en minúsculas, variables en camelCase, clases en PascalCase y constantes en SNAKE_CASE.",
+        "ejemplo_practico": "Ejemplos correctos de clases: ProcesadorPagos, CuentaBancaria, GestorTransacciones. Ejemplos incorrectos: procesadorPagos, PROCESADOR_PAGOS o procesador_pagos.",
+        "conclusion_final": "El estilo estándar para nombrar clases en Java es PascalCase."
+      }
+    },
+    {
+      "id": "UT4-Q05",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Por qué el compilador de Java rechaza el uso de términos como \"class\", \"if\" o \"public\" como nombres de variables personales?",
+      "contexto": "Restricciones del lenguaje Java al definir identificadores dentro del código.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Porque son palabras demasiado cortas para ser identificadores."
+        },
+        {
+          "clave": "b",
+          "texto": "Porque son palabras reservadas para uso interno y exclusivo del lenguaje."
+        },
+        {
+          "clave": "c",
+          "texto": "Porque el sistema operativo las utiliza para gestionar la memoria RAM."
+        },
+        {
+          "clave": "d",
+          "texto": "Porque esas palabras solo pueden usarse en archivos de configuración."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En Java existen palabras reservadas (keywords) que forman parte de la gramática del lenguaje. Estas palabras tienen un significado específico para el compilador y se utilizan para definir estructuras del programa, como clases, condiciones o modificadores de acceso. Por este motivo, el compilador prohíbe utilizarlas como nombres de variables, métodos o clases.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La longitud de una palabra no determina si puede ser un identificador; en Java se pueden usar identificadores cortos o largos."
+          },
+          {
+            "clave": "c",
+            "motivo": "El sistema operativo no tiene relación con las palabras reservadas del lenguaje Java; estas pertenecen al propio compilador y a la sintaxis del lenguaje."
+          },
+          {
+            "clave": "d",
+            "motivo": "Las palabras reservadas no están limitadas a archivos de configuración; simplemente no pueden utilizarse como identificadores dentro del código."
+          }
+        ],
+        "resumen_didactico": "Las palabras reservadas de Java son términos que el lenguaje utiliza para su propia sintaxis y estructura. Por ello no pueden emplearse como nombres de variables, clases o métodos.",
+        "ejemplo_practico": "Código incorrecto: int class = 5; o boolean if = true;. El compilador genera error porque \"class\" e \"if\" son palabras reservadas.",
+        "conclusion_final": "El compilador rechaza esos nombres porque son palabras reservadas que pertenecen a la sintaxis interna del lenguaje Java."
+      }
+    },
+    {
+      "id": "UT4-Q06",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "En la estructura de una aplicación Java, ¿cuál es la función técnica del método \"main\"?",
+      "contexto": "Funcionamiento interno de la ejecución de programas Java y el punto de entrada que utiliza la JVM para iniciar una aplicación.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Actuar como el punto de partida o entrada donde la JVM inicia la ejecución."
+        },
+        {
+          "clave": "b",
+          "texto": "Servir como contenedor para guardar todas las constantes del programa."
+        },
+        {
+          "clave": "c",
+          "texto": "Definir la visibilidad privada de los paquetes del sistema."
+        },
+        {
+          "clave": "d",
+          "texto": "Realizar la limpieza automática de la memoria mediante el Garbage Collector."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En Java, el método main actúa como el punto de entrada de una aplicación. La Máquina Virtual de Java (JVM) comienza la ejecución del programa llamando a este método. Por eso debe tener la firma específica public static void main(String[] args), que indica al sistema dónde debe arrancar la ejecución del programa. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Las constantes del programa se declaran normalmente usando static final, pero no tienen relación con el método main."
+          },
+          {
+            "clave": "c",
+            "motivo": "La visibilidad de clases, métodos o paquetes se define mediante modificadores de acceso como public, private o protected, no mediante el método main."
+          },
+          {
+            "clave": "d",
+            "motivo": "La gestión automática de memoria la realiza el Garbage Collector de la JVM, no el método main."
+          }
+        ],
+        "resumen_didactico": "El método main es el punto inicial desde el que la JVM comienza a ejecutar cualquier programa Java.",
+        "ejemplo_practico": "Cuando ejecutamos un programa Java, la JVM busca la clase con el método public static void main(String[] args) y comienza la ejecución desde ahí.",
+        "conclusion_final": "La función técnica del método main es actuar como punto de entrada donde la JVM inicia la ejecución del programa."
+      }
+    },
+    {
+      "id": "UT4-Q07",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Qué características técnicas debe tener obligatoriamente la firma del método principal para que el programa pueda arrancar?",
+      "contexto": "Requisitos que exige la JVM para reconocer el método principal de una aplicación Java.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "public static void" },
+        { "clave": "b", "texto": "protected abstract string" },
+        { "clave": "c", "texto": "private static int" },
+        { "clave": "d", "texto": "public final boolean" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Para que una aplicación Java pueda ejecutarse, la JVM busca un método con la firma exacta public static void main(String[] args). Las palabras clave public, static y void son obligatorias: public para que sea accesible desde la JVM, static para poder ejecutarlo sin crear un objeto de la clase, y void porque no devuelve ningún valor. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "protected abstract string no corresponde a la firma del método main ni cumple con la estructura requerida por la JVM."
+          },
+          {
+            "clave": "c",
+            "motivo": "private static int impediría que la JVM accediera al método y además cambiaría el tipo de retorno, lo cual no es válido para el método principal."
+          },
+          {
+            "clave": "d",
+            "motivo": "public final boolean no corresponde al método principal y cambiaría el tipo de retorno requerido por la JVM."
+          }
+        ],
+        "resumen_didactico": "El método principal de Java debe ser accesible públicamente, estático y no devolver ningún valor, por lo que la firma obligatoria incluye public static void.",
+        "ejemplo_practico": "Ejemplo correcto: public static void main(String[] args) { System.out.println(\"Programa iniciado\"); }",
+        "conclusion_final": "La firma mínima necesaria para que el programa arranque debe incluir public static void."
+      }
+    },
+    {
+      "id": "UT4-Q08",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Cuál es la utilidad primordial de utilizar paquetes (packages) en el desarrollo de aplicaciones empresariales?",
+      "contexto": "Organización del código en proyectos grandes donde múltiples clases deben mantenerse ordenadas y evitar conflictos de nombres.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Permitir que las variables locales sean visibles en todo el proyecto."
+        },
+        {
+          "clave": "b",
+          "texto": "Aumentar la velocidad de procesamiento de los cálculos matemáticos."
+        },
+        {
+          "clave": "c",
+          "texto": "Forzar al compilador a ignorar los errores de sintaxis."
+        },
+        {
+          "clave": "d",
+          "texto": "Evitar conflictos de nombres y organizar clases por funcionalidad."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En Java los paquetes se utilizan para organizar clases relacionadas dentro de un mismo espacio lógico y evitar colisiones de nombres entre clases de diferentes módulos. En proyectos profesionales se emplea una convención basada en el dominio inverso (por ejemplo: com.securepay.pagos), lo que permite estructurar grandes aplicaciones de forma clara y mantenible. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Las variables locales tienen un ámbito limitado al método donde se declaran; los paquetes no modifican la visibilidad de variables locales."
+          },
+          {
+            "clave": "b",
+            "motivo": "Los paquetes organizan el código, pero no influyen en la velocidad de ejecución de operaciones matemáticas."
+          },
+          {
+            "clave": "c",
+            "motivo": "El compilador nunca ignora errores de sintaxis; los paquetes no tienen ninguna función relacionada con la validación del código."
+          }
+        ],
+        "resumen_didactico": "Los paquetes funcionan como carpetas lógicas que organizan clases relacionadas y evitan que dos clases con el mismo nombre entren en conflicto dentro de un proyecto grande.",
+        "ejemplo_practico": "Una aplicación bancaria puede tener paquetes como: com.banco.pagos, com.banco.clientes y com.banco.seguridad. Cada uno agrupa clases relacionadas con esa funcionalidad.",
+        "conclusion_final": "La utilidad principal de los paquetes es organizar las clases del proyecto y evitar conflictos de nombres."
+      }
+    },
+    {
+      "id": "UT4-Q09",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "Al declarar un paquete profesional, ¿cuál es la convención mundialmente aceptada para garantizar que el nombre sea único?",
+      "contexto": "Convenciones de nomenclatura en Java para evitar conflictos entre paquetes en proyectos empresariales y librerías distribuidas globalmente.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Usar el nombre del programador seguido de la fecha."
+        },
+        {
+          "clave": "b",
+          "texto": "Usar el dominio de la empresa en orden inverso (ej. com.empresa)."
+        },
+        {
+          "clave": "c",
+          "texto": "Escribir el nombre del paquete siempre en MAYÚSCULAS."
+        },
+        {
+          "clave": "d",
+          "texto": "Utilizar números aleatorios al final de cada nombre de clase."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En Java, la convención profesional para nombrar paquetes es utilizar el dominio de la empresa en orden inverso. Esto garantiza que el nombre sea prácticamente único a nivel mundial. Por ejemplo, si la empresa tiene el dominio securepay.com, el paquete puede declararse como com.securepay.pagos. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Usar el nombre del programador y la fecha no garantiza unicidad global ni sigue los estándares de la industria."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los paquetes en Java se escriben en minúsculas por convención, no en mayúsculas."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los números aleatorios en nombres de clases no forman parte de ninguna convención profesional para paquetes."
+          }
+        ],
+        "resumen_didactico": "Para evitar conflictos entre librerías y proyectos de diferentes empresas, Java utiliza la convención de dominio inverso para nombrar paquetes.",
+        "ejemplo_practico": "Si la web de la empresa es securepay.com, el paquete puede ser com.securepay.pagos o com.securepay.transacciones.",
+        "conclusion_final": "La convención estándar para nombrar paquetes en Java es utilizar el dominio de la empresa en orden inverso."
+      }
+    },
+    {
+      "id": "UT4-Q10",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "Java es un lenguaje \"fuertemente tipado\". ¿Qué implica esto para un desarrollador al declarar una variable?",
+      "contexto": "Concepto de tipado fuerte en lenguajes de programación y su impacto al definir variables en Java.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Que es obligatorio especificar el tipo de dato que la variable va a contener."
+        },
+        {
+          "clave": "b",
+          "texto": "Que todas las variables deben ser globales para que el programa funcione."
+        },
+        {
+          "clave": "c",
+          "texto": "Que no es necesario inicializar las variables con un valor."
+        },
+        {
+          "clave": "d",
+          "texto": "Que se pueden cambiar los tipos de datos en cualquier momento sin avisar."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Java es un lenguaje fuertemente tipado, lo que significa que cada variable debe declararse con un tipo de dato específico antes de usarse. Este tipo determina qué valores puede almacenar la variable y qué operaciones se pueden realizar con ella. Elegir correctamente el tipo de dato es fundamental para evitar errores y garantizar precisión en el sistema, como se muestra en el ejemplo del temario al declarar variables como long, double, char o boolean para distintos datos de una transacción. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Las variables no tienen que ser globales; pueden tener distintos ámbitos como local, de instancia o de clase."
+          },
+          {
+            "clave": "c",
+            "motivo": "Aunque algunas variables pueden declararse sin inicializarse inmediatamente, esto no define el concepto de tipado fuerte."
+          },
+          {
+            "clave": "d",
+            "motivo": "En Java el tipo de una variable no puede cambiar después de declararse; el tipado fuerte impide ese tipo de conversión implícita."
+          }
+        ],
+        "resumen_didactico": "El tipado fuerte significa que cada variable tiene un tipo definido desde el momento de su declaración.",
+        "ejemplo_practico": "Correcto: double saldo = 1500.99; Incorrecto: declarar una variable sin tipo o cambiar su tipo después de declararla.",
+        "conclusion_final": "En Java, el tipado fuerte obliga al desarrollador a especificar el tipo de dato que contendrá cada variable."
+      }
+    },
+    {
+      "id": "UT4-Q11",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Cómo se define el \"ámbito\" o \"scope\" de una variable en el código?",
+      "contexto": "Comprensión del concepto de ámbito (scope) en programación para controlar dónde una variable puede ser utilizada dentro del código.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "El tiempo que tarda el compilador en procesar dicha variable."
+        },
+        {
+          "clave": "b",
+          "texto": "La cantidad de memoria física que ocupa en el disco duro."
+        },
+        {
+          "clave": "c",
+          "texto": "La zona del código donde la variable es accesible y está activa."
+        },
+        {
+          "clave": "d",
+          "texto": "El nombre asignado a la variable dentro de un paquete."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El ámbito o scope de una variable se refiere al área del programa donde esa variable existe y puede ser utilizada. Dependiendo de dónde se declare (dentro de un método, una clase o un bloque), su accesibilidad cambia. Este concepto es clave para controlar el acceso a datos sensibles y mantener el código organizado, tal como se explica al hablar del ámbito de variables y constantes dentro del sistema financiero del ejemplo del temario. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El tiempo que tarda el compilador en procesar una variable no tiene relación con su ámbito."
+          },
+          {
+            "clave": "b",
+            "motivo": "El ámbito no describe cuánto espacio ocupa una variable en memoria o en disco."
+          },
+          {
+            "clave": "d",
+            "motivo": "El nombre de la variable pertenece al concepto de identificador, no al de ámbito."
+          }
+        ],
+        "resumen_didactico": "El scope indica en qué parte del código una variable puede ser utilizada.",
+        "ejemplo_practico": "Una variable declarada dentro de un método solo puede usarse dentro de ese método; fuera de él ya no existe.",
+        "conclusion_final": "El ámbito de una variable es la zona del código donde dicha variable está activa y puede utilizarse."
+      }
+    },
+    {
+      "id": "UT4-Q12",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "En una estructura de bloques anidados con llaves {}, ¿cuál es la regla de visibilidad para las variables?",
+      "contexto": "Comprensión del ámbito (scope) de variables dentro de bloques de código anidados en Java.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Las variables nacen al principio del método y nunca mueren."
+        },
+        {
+          "clave": "b",
+          "texto": "Todas las variables son visibles en cualquier punto del archivo .java."
+        },
+        {
+          "clave": "c",
+          "texto": "Un bloque interno no puede acceder a las variables de sus bloques padres."
+        },
+        {
+          "clave": "d",
+          "texto": "Un bloque externo no puede ver las variables declaradas en sus bloques internos."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En Java, una variable solo es visible dentro del bloque donde se declara y en los bloques internos que dependan de él. Esto significa que los bloques internos sí pueden acceder a variables declaradas en bloques externos, pero lo contrario no es posible: un bloque externo no puede acceder a variables definidas dentro de un bloque interno. Este comportamiento forma parte del control de ámbito (scope) que organiza el acceso a variables dentro del código. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Las variables no viven todo el método necesariamente; si se declaran dentro de un bloque (por ejemplo dentro de un if), solo existen dentro de ese bloque."
+          },
+          {
+            "clave": "b",
+            "motivo": "Las variables no son visibles en todo el archivo; su visibilidad depende del bloque donde se declaren."
+          },
+          {
+            "clave": "c",
+            "motivo": "Es incorrecto: un bloque interno sí puede acceder a las variables declaradas en bloques padres."
+          }
+        ],
+        "resumen_didactico": "El scope funciona como cajas dentro de cajas: los bloques internos pueden ver variables externas, pero los bloques externos no pueden ver variables internas.",
+        "ejemplo_practico": "Si declaras int x = 5; fuera de un if, el if puede usar x. Pero si declaras int y = 10; dentro del if, fuera del if la variable y no existe.",
+        "conclusion_final": "La regla correcta es que un bloque externo no puede acceder a variables declaradas dentro de un bloque interno."
+      }
+    },
+    {
+      "id": "UT4-Q13",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Cuál es la diferencia fundamental entre una variable estándar y una constante en Java?",
+      "contexto": "Uso de constantes en aplicaciones empresariales para proteger valores que no deben cambiar durante la ejecución del programa.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Las variables estándar deben escribirse siempre en mayúsculas."
+        },
+        {
+          "clave": "b",
+          "texto": "Las constantes ocupan menos espacio en la memoria RAM."
+        },
+        {
+          "clave": "c",
+          "texto": "El valor de una constante no puede modificarse una vez asignado."
+        },
+        {
+          "clave": "d",
+          "texto": "Las constantes solo pueden almacenar números decimales de alta precisión."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "En Java, una constante es una variable cuyo valor no puede modificarse después de su inicialización. Se declara normalmente utilizando los modificadores static final. Este mecanismo se utiliza para proteger valores críticos del sistema, como tasas o límites financieros, evitando cambios accidentales en el código. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Las variables estándar no se escriben en mayúsculas; la convención de mayúsculas (SNAKE_CASE) se utiliza para constantes, no para variables normales."
+          },
+          {
+            "clave": "b",
+            "motivo": "El uso de constantes no está relacionado con el consumo de memoria RAM, sino con la inmutabilidad del valor."
+          },
+          {
+            "clave": "d",
+            "motivo": "Las constantes pueden almacenar cualquier tipo de dato válido (int, double, String, boolean, etc.), no solo números decimales."
+          }
+        ],
+        "resumen_didactico": "Una constante es un valor fijo del programa que no puede cambiar una vez definido.",
+        "ejemplo_practico": "static final int IVA_GENERAL = 21; Una vez declarado, Java no permitirá cambiar ese valor durante la ejecución del programa.",
+        "conclusion_final": "La diferencia fundamental es que el valor de una constante no puede modificarse después de ser asignado."
+      }
+    },
+    {
+      "id": "UT4-Q14",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "Para declarar una constante de forma correcta y profesional, ¿qué modificadores deben acompañar al tipo de dato?",
+      "contexto": "Uso de constantes en aplicaciones empresariales para proteger valores críticos del sistema como tasas, límites o configuraciones fijas.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "public abstract" },
+        { "clave": "b", "texto": "volatile transient" },
+        { "clave": "c", "texto": "static final" },
+        { "clave": "d", "texto": "private dynamic" }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "En Java las constantes se declaran utilizando los modificadores static final. El modificador final impide que el valor sea modificado después de su inicialización, mientras que static permite que el valor pertenezca a la clase y no a una instancia concreta. En aplicaciones críticas, como en sistemas financieros, se utilizan para definir valores fijos como tasas de IVA o límites de transacción. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "abstract se usa para clases o métodos que deben implementarse en subclases, no para declarar constantes."
+          },
+          {
+            "clave": "b",
+            "motivo": "volatile y transient están relacionados con concurrencia y serialización, no con la definición de constantes."
+          },
+          {
+            "clave": "d",
+            "motivo": "dynamic no es un modificador válido en Java para declarar variables o constantes."
+          }
+        ],
+        "resumen_didactico": "Una constante en Java es una variable cuyo valor no puede cambiar, y se declara utilizando static final.",
+        "ejemplo_practico": "static final int IVA_GENERAL = 21; static final double LIMITE_DIARIO = 10000.0;",
+        "conclusion_final": "Para declarar una constante correctamente en Java se utilizan los modificadores static final."
+      }
+    },
+    {
+      "id": "UT4-Q15",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Cuál es el nombre técnico de los componentes básicos de Java que se almacenan directamente en la pila de memoria (Stack) para ganar velocidad?",
+      "contexto": "Gestión de memoria en Java y diferencia entre tipos simples y objetos dentro de la arquitectura de ejecución.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Tipos primitivos" },
+        { "clave": "b", "texto": "Identificadores de sistema" },
+        { "clave": "c", "texto": "Clases envoltorio" },
+        { "clave": "d", "texto": "Objetos complejos" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En Java, los tipos primitivos (int, long, double, boolean, char, etc.) son los componentes básicos del lenguaje y se almacenan directamente en la pila de memoria (Stack), lo que permite un acceso rápido y eficiente. Por esta razón se utilizan cuando se busca rendimiento y bajo consumo de memoria en operaciones simples. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Los identificadores de sistema no son un tipo de dato en Java ni un concepto relacionado con la gestión de memoria."
+          },
+          {
+            "clave": "c",
+            "motivo": "Las clases envoltorio (como Integer o Double) son objetos y se gestionan en el Heap, no directamente en el Stack."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los objetos complejos se almacenan normalmente en el Heap y se accede a ellos mediante referencias."
+          }
+        ],
+        "resumen_didactico": "Los tipos primitivos son los tipos de datos básicos de Java y se almacenan directamente en el Stack para ser más rápidos y eficientes.",
+        "ejemplo_practico": "Ejemplos de tipos primitivos: int edad = 30; double saldo = 1500.99; boolean activo = true;",
+        "conclusion_final": "Los componentes básicos que se almacenan directamente en el Stack para mayor velocidad son los tipos primitivos."
+      }
+    },
+    {
+      "id": "UT4-Q16",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "Si necesitas almacenar un número entero estándar que no supere los 2.000 millones, ¿qué tipo de dato es el más eficiente en los procesadores actuales?",
+      "contexto": "Selección del tipo de dato más adecuado en Java para almacenar valores enteros dentro de rangos comunes en aplicaciones.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "int" },
+        { "clave": "b", "texto": "byte" },
+        { "clave": "c", "texto": "long" },
+        { "clave": "d", "texto": "short" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El tipo int es el tipo de dato entero más utilizado y eficiente en Java para valores que no superan aproximadamente los 2.147.483.647. Este tipo ocupa 32 bits y está optimizado para los procesadores actuales, por lo que suele ser la opción recomendada para números enteros estándar. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "byte tiene un rango muy pequeño (-128 a 127), por lo que no sirve para almacenar números cercanos a los miles o millones."
+          },
+          {
+            "clave": "c",
+            "motivo": "long permite almacenar números mucho más grandes, pero ocupa más memoria (64 bits) y es innecesario si el valor cabe dentro de un int."
+          },
+          {
+            "clave": "d",
+            "motivo": "short tiene un rango limitado (-32.768 a 32.767), insuficiente para números grandes dentro del rango de millones."
+          }
+        ],
+        "resumen_didactico": "Cuando el número entero está dentro del rango estándar de Java, el tipo int es el más eficiente y común.",
+        "ejemplo_practico": "int numeroClientes = 1500000; Este valor cabe perfectamente dentro del rango de int.",
+        "conclusion_final": "El tipo de dato más eficiente para almacenar enteros estándar de hasta unos 2.000 millones es int."
+      }
+    },
+    {
+      "id": "UT4-Q17",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Qué tipo de dato primitivo es el adecuado para representar valores con alta precisión decimal (15-16 dígitos)?",
+      "contexto": "Selección del tipo de dato numérico adecuado para manejar valores decimales con mayor precisión en aplicaciones Java.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "boolean" },
+        { "clave": "b", "texto": "char" },
+        { "clave": "c", "texto": "float" },
+        { "clave": "d", "texto": "double" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "El tipo double en Java utiliza 64 bits y permite representar números decimales con una precisión aproximada de 15 a 16 dígitos significativos. Por esta razón se utiliza cuando se necesita mayor precisión que la que ofrece float. En el temario se menciona su uso para almacenar valores como saldos o cálculos financieros básicos. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "boolean solo puede almacenar valores true o false, por lo que no sirve para representar números."
+          },
+          {
+            "clave": "b",
+            "motivo": "char se utiliza para representar un solo carácter Unicode, no valores numéricos con decimales."
+          },
+          {
+            "clave": "c",
+            "motivo": "float utiliza 32 bits y ofrece menor precisión decimal (aproximadamente 6-7 dígitos), por lo que no alcanza los 15-16 dígitos requeridos."
+          }
+        ],
+        "resumen_didactico": "Para números decimales con mayor precisión en Java se utiliza double, que tiene el doble de tamaño que float.",
+        "ejemplo_practico": "double saldo = 1500.99; Este tipo permite almacenar valores decimales con mayor precisión.",
+        "conclusion_final": "El tipo de dato primitivo adecuado para representar números decimales con 15-16 dígitos de precisión es double."
+      }
+    },
+    {
+      "id": "UT4-Q18",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Cuál es el valor por defecto que Java asigna a una variable de tipo boolean si no se inicializa manualmente?",
+      "contexto": "Comportamiento de inicialización automática de variables en Java dentro de atributos de clase.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "null" },
+        { "clave": "b", "texto": "false" },
+        { "clave": "c", "texto": "true" },
+        { "clave": "d", "texto": "0" }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En Java, cuando una variable de tipo boolean se declara como atributo de una clase y no se inicializa manualmente, el lenguaje le asigna automáticamente el valor false. Esto forma parte del sistema de inicialización por defecto de los tipos primitivos del lenguaje.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "null solo se utiliza como valor por defecto para referencias a objetos, no para tipos primitivos como boolean."
+          },
+          {
+            "clave": "c",
+            "motivo": "true no es el valor por defecto asignado por Java a variables boolean."
+          },
+          {
+            "clave": "d",
+            "motivo": "0 se utiliza como valor por defecto para algunos tipos numéricos primitivos, pero no para boolean."
+          }
+        ],
+        "resumen_didactico": "Las variables boolean en Java tienen un valor por defecto de false cuando no se inicializan explícitamente.",
+        "ejemplo_practico": "boolean cuentaActiva; Si es un atributo de clase y no se inicializa, Java lo considerará automáticamente como false.",
+        "conclusion_final": "El valor por defecto de una variable boolean en Java es false."
+      }
+    },
+    {
+      "id": "UT4-Q19",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "El proceso de transferir el valor de una variable de un tipo de dato a otro se conoce técnicamente como:",
+      "contexto": "Conversión de tipos de datos en Java cuando se necesita transformar un valor para que sea compatible con otro tipo.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Identificación" },
+        { "clave": "b", "texto": "Modulación" },
+        { "clave": "c", "texto": "Encapsulación" },
+        { "clave": "d", "texto": "Casting" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "El casting es el proceso mediante el cual se convierte el valor de una variable de un tipo de dato a otro. En Java puede ser implícito (automático) cuando no hay pérdida de información, o explícito cuando el programador fuerza la conversión. En el temario se muestra el ejemplo de convertir un double a int para enviar un valor a un sistema antiguo, lo que puede provocar pérdida de decimales. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Identificación no es un término relacionado con la conversión de tipos en programación."
+          },
+          {
+            "clave": "b",
+            "motivo": "Modulación no describe la conversión de tipos de datos dentro del lenguaje Java."
+          },
+          {
+            "clave": "c",
+            "motivo": "Encapsulación es un principio de la programación orientada a objetos relacionado con el control del acceso a datos."
+          }
+        ],
+        "resumen_didactico": "El casting permite convertir un valor de un tipo de dato a otro cuando el programa lo necesita.",
+        "ejemplo_practico": "double comision = 7.50495; int comisionEntera = (int) comision; Aquí se realiza un casting explícito de double a int.",
+        "conclusion_final": "La conversión de un tipo de dato a otro en Java se denomina casting."
+      }
+    },
+    {
+      "id": "UT4-Q20",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿En qué situación se produce una conversión implícita (automática) en Java?",
+      "contexto": "Conversión de tipos de datos en Java cuando el compilador puede garantizar que no habrá pérdida de información.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Al pasar un dato de una variable pequeña a una más grande (sin riesgo de pérdida)."
+        },
+        {
+          "clave": "b",
+          "texto": "Al pasar un dato de una variable grande a una más pequeña."
+        },
+        {
+          "clave": "c",
+          "texto": "Al convertir cualquier objeto en un tipo primitivo int."
+        },
+        {
+          "clave": "d",
+          "texto": "Solo cuando el programador usa paréntesis para forzar la operación."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En Java, una conversión implícita ocurre cuando se convierte un tipo de dato más pequeño a otro más grande y el compilador sabe que no habrá pérdida de información. Por ejemplo, convertir un int a double o un byte a int. Este proceso lo realiza automáticamente el compilador porque la capacidad del tipo destino es mayor. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Cuando se pasa de un tipo grande a uno más pequeño existe riesgo de pérdida de información, por lo que Java exige casting explícito."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los objetos no se convierten automáticamente a tipos primitivos como int; esto requiere otras operaciones o métodos."
+          },
+          {
+            "clave": "d",
+            "motivo": "El uso de paréntesis para forzar la conversión corresponde al casting explícito, no a la conversión automática."
+          }
+        ],
+        "resumen_didactico": "La conversión implícita ocurre cuando el tipo destino tiene mayor capacidad que el tipo original y no existe riesgo de pérdida de datos.",
+        "ejemplo_practico": "int numero = 10; double valor = numero; Aquí Java convierte automáticamente el int en double.",
+        "conclusion_final": "La conversión implícita se produce cuando se pasa un dato de un tipo más pequeño a otro más grande sin riesgo de pérdida de información."
+      }
+    },
+    {
+      "id": "UT4-Q21",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Qué ocurre técnicamente cuando se realiza un cast explícito de un número decimal (double) a un entero (int)?",
+      "contexto": "Conversión explícita de tipos numéricos en Java cuando se reduce la precisión del dato.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "El número se redondea al entero más cercano."
+        },
+        {
+          "clave": "b",
+          "texto": "La parte decimal se trunca (se pierde por completo)."
+        },
+        {
+          "clave": "c",
+          "texto": "El valor se convierte automáticamente en cero."
+        },
+        {
+          "clave": "d",
+          "texto": "El programa lanza un error y se detiene inmediatamente."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Cuando se realiza un casting explícito de double a int en Java, la parte decimal del número se elimina completamente (truncamiento). No se realiza ningún redondeo. Por ejemplo, 7.50495 convertido a int pasa a ser 7. Este comportamiento se utiliza cuando un sistema necesita valores enteros, aunque implique pérdida de precisión. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Java no redondea automáticamente en un cast a int; simplemente elimina la parte decimal."
+          },
+          {
+            "clave": "c",
+            "motivo": "El valor no se convierte en cero; se conserva la parte entera del número."
+          },
+          {
+            "clave": "d",
+            "motivo": "El programa no genera un error porque el casting explícito indica que el programador acepta la pérdida de precisión."
+          }
+        ],
+        "resumen_didactico": "El casting de double a int elimina los decimales sin redondear.",
+        "ejemplo_practico": "double valor = 7.50495; int resultado = (int) valor; resultado será 7.",
+        "conclusion_final": "Al convertir un double a int mediante casting explícito, la parte decimal se pierde por truncamiento."
+      }
+    },
+    {
+      "id": "UT4-Q22",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Por qué la clase String se escribe con mayúscula inicial a diferencia de int o char?",
+      "contexto": "Diferencia entre tipos primitivos y clases en Java al declarar variables en el código.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Porque solo puede almacenar un único carácter Unicode."
+        },
+        {
+          "clave": "b",
+          "texto": "Porque es una palabra reservada del sistema operativo."
+        },
+        {
+          "clave": "c",
+          "texto": "Porque no es un tipo primitivo, sino un objeto con métodos propios."
+        },
+        {
+          "clave": "d",
+          "texto": "Porque es una constante universal que no puede cambiarse."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "En Java, String no es un tipo primitivo como int, char o boolean. Es una clase (un objeto) que pertenece a la biblioteca estándar del lenguaje y ofrece numerosos métodos para manipular texto, como concatenar, comparar o transformar cadenas. Por eso sigue la convención de las clases (PascalCase) y se escribe con mayúscula inicial. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Un único carácter Unicode se almacena en un tipo char, no en un String."
+          },
+          {
+            "clave": "b",
+            "motivo": "String no es una palabra reservada del sistema operativo; es una clase del propio lenguaje Java."
+          },
+          {
+            "clave": "d",
+            "motivo": "Aunque los objetos String son inmutables, no se consideran constantes universales ni esa es la razón de su escritura con mayúscula."
+          }
+        ],
+        "resumen_didactico": "Los tipos primitivos se escriben en minúsculas, mientras que las clases en Java siguen PascalCase y comienzan con mayúscula.",
+        "ejemplo_practico": "int edad = 30; char letra = 'A'; String nombre = \"Ana\"; Aquí String es una clase con métodos como length() o toUpperCase().",
+        "conclusion_final": "String se escribe con mayúscula porque es una clase (objeto) y no un tipo primitivo."
+      }
+    },
+    {
+      "id": "UT4-Q22",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Por qué la clase String se escribe con mayúscula inicial a diferencia de int o char?",
+      "contexto": "Diferencia entre tipos primitivos y clases en Java al declarar variables en el código.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Porque solo puede almacenar un único carácter Unicode."
+        },
+        {
+          "clave": "b",
+          "texto": "Porque es una palabra reservada del sistema operativo."
+        },
+        {
+          "clave": "c",
+          "texto": "Porque no es un tipo primitivo, sino un objeto con métodos propios."
+        },
+        {
+          "clave": "d",
+          "texto": "Porque es una constante universal que no puede cambiarse."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "En Java, String no es un tipo primitivo como int, char o boolean. Es una clase (un objeto) que pertenece a la biblioteca estándar del lenguaje y ofrece numerosos métodos para manipular texto, como concatenar, comparar o transformar cadenas. Por eso sigue la convención de las clases (PascalCase) y se escribe con mayúscula inicial.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Un único carácter Unicode se almacena en un tipo char, no en un String."
+          },
+          {
+            "clave": "b",
+            "motivo": "String no es una palabra reservada del sistema operativo; es una clase del propio lenguaje Java."
+          },
+          {
+            "clave": "d",
+            "motivo": "Aunque los objetos String son inmutables, no se consideran constantes universales ni esa es la razón de su escritura con mayúscula."
+          }
+        ],
+        "resumen_didactico": "Los tipos primitivos se escriben en minúsculas, mientras que las clases en Java siguen PascalCase y comienzan con mayúscula.",
+        "ejemplo_practico": "int edad = 30; char letra = 'A'; String nombre = \"Ana\"; Aquí String es una clase con métodos como length() o toUpperCase().",
+        "conclusion_final": "String se escribe con mayúscula porque es una clase (objeto) y no un tipo primitivo."
+      }
+    },
+    {
+      "id": "UT4-Q24",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Cuál es el propósito de las Clases Envoltorio (Wrapper Classes) como Integer o Boolean?",
+      "contexto": "Uso de clases envoltorio en Java para integrar tipos primitivos dentro del modelo orientado a objetos.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Evitar que el programador tenga que usar el punto y coma."
+        },
+        {
+          "clave": "b",
+          "texto": "Traducir el código Java a lenguaje C++ automáticamente."
+        },
+        {
+          "clave": "c",
+          "texto": "Permitir tratar datos primitivos como si fueran objetos."
+        },
+        {
+          "clave": "d",
+          "texto": "Reducir el consumo de memoria de los números enteros."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "Las Wrapper Classes (clases envoltorio) en Java permiten convertir tipos primitivos como int, double o boolean en objetos. Esto es útil cuando se necesita trabajar con estructuras que requieren objetos, como colecciones (ArrayList, HashMap), o cuando se quiere utilizar métodos asociados a esos valores. Ejemplos comunes son Integer para int, Double para double y Boolean para boolean.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El punto y coma es parte obligatoria de la sintaxis de Java y no tiene relación con las clases envoltorio."
+          },
+          {
+            "clave": "b",
+            "motivo": "Java no utiliza las clases envoltorio para traducir código a C++ ni a otros lenguajes."
+          },
+          {
+            "clave": "d",
+            "motivo": "Las clases envoltorio suelen consumir más memoria que los tipos primitivos porque son objetos."
+          }
+        ],
+        "resumen_didactico": "Las Wrapper Classes convierten tipos primitivos en objetos para poder usarlos dentro del modelo de programación orientado a objetos de Java.",
+        "ejemplo_practico": "ArrayList<Integer> numeros = new ArrayList<>(); Aquí se usa Integer en lugar de int porque las colecciones solo pueden almacenar objetos.",
+        "conclusion_final": "Las clases envoltorio permiten tratar datos primitivos como objetos dentro del lenguaje Java."
+      }
+    },
+    {
+      "id": "UT4-Q25",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "El proceso mediante el cual Java convierte automáticamente un tipo primitivo en su correspondiente objeto Wrapper se denomina:",
+      "contexto": "Conversión automática entre tipos primitivos y sus clases envoltorio en Java.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Unboxing" },
+        { "clave": "b", "texto": "Polimorfismo" },
+        { "clave": "c", "texto": "Casting implícito" },
+        { "clave": "d", "texto": "Autoboxing" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "Autoboxing es el proceso mediante el cual Java convierte automáticamente un tipo primitivo (como int o boolean) en su correspondiente objeto Wrapper (Integer, Boolean, etc.). Este mecanismo facilita trabajar con colecciones y APIs que requieren objetos en lugar de tipos primitivos.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Unboxing es el proceso inverso: convertir un objeto Wrapper en su tipo primitivo correspondiente."
+          },
+          {
+            "clave": "b",
+            "motivo": "El polimorfismo es un concepto de programación orientada a objetos que permite que un mismo método se comporte de diferentes maneras según el objeto."
+          },
+          {
+            "clave": "c",
+            "motivo": "El casting implícito se refiere a la conversión automática entre tipos numéricos compatibles, no entre primitivos y objetos."
+          }
+        ],
+        "resumen_didactico": "Autoboxing convierte automáticamente tipos primitivos en objetos Wrapper.",
+        "ejemplo_practico": "Integer numero = 10; Aquí Java convierte automáticamente el int 10 en un objeto Integer.",
+        "conclusion_final": "La conversión automática de un tipo primitivo a su objeto Wrapper se denomina Autoboxing."
+      }
+    },
+    {
+      "id": "UT4-Q26",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Qué utilidad tiene el método \"compareTo\" presente en las clases envoltorio?",
+      "contexto": "Uso de métodos de comparación en las clases Wrapper de Java para comparar valores numéricos u objetos.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Determinar si un objeto es mayor, menor o igual a otro."
+        },
+        {
+          "clave": "b",
+          "texto": "Cambiar la visibilidad de un paquete de public a private."
+        },
+        { "clave": "c", "texto": "Borrar el objeto de la memoria RAM." },
+        {
+          "clave": "d",
+          "texto": "Convertir un texto en un número entero de forma segura."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El método compareTo se utiliza en muchas clases de Java, incluidas las Wrapper Classes como Integer o Double, para comparar dos objetos del mismo tipo. Este método devuelve un número negativo si el primer valor es menor, cero si son iguales, y un número positivo si el primero es mayor. Es fundamental para ordenar datos y realizar comparaciones en colecciones.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "La visibilidad de paquetes se define mediante modificadores de acceso como public o private, no mediante el método compareTo."
+          },
+          {
+            "clave": "c",
+            "motivo": "La eliminación de objetos de memoria es gestionada automáticamente por el Garbage Collector, no por métodos de comparación."
+          },
+          {
+            "clave": "d",
+            "motivo": "La conversión de texto a número se realiza con métodos como Integer.parseInt(), no con compareTo."
+          }
+        ],
+        "resumen_didactico": "compareTo es un método utilizado para comparar dos objetos y determinar su orden relativo.",
+        "ejemplo_practico": "Integer a = 10; Integer b = 20; int resultado = a.compareTo(b); resultado será negativo porque 10 es menor que 20.",
+        "conclusion_final": "El método compareTo permite determinar si un objeto es mayor, menor o igual que otro."
+      }
+    },
+    {
+      "id": "UT4-Q27",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "En el formateo de textos, ¿qué función cumple la secuencia de escape \"\\n\"?",
+      "contexto": "Uso de secuencias de escape en Java para formatear texto dentro de cadenas.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Provoca un salto de línea (nueva línea)." },
+        { "clave": "b", "texto": "Borra el carácter inmediatamente anterior." },
+        {
+          "clave": "c",
+          "texto": "Permite escribir una comilla doble dentro de un texto."
+        },
+        {
+          "clave": "d",
+          "texto": "Inserta una tabulación para alinear columnas."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En Java, la secuencia de escape \\n se utiliza dentro de cadenas de texto para indicar un salto de línea. Esto permite dividir el texto en varias líneas cuando se muestra en consola u otros sistemas de salida.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Borrar el carácter anterior corresponde a la secuencia de escape \\b (backspace), no a \\n."
+          },
+          {
+            "clave": "c",
+            "motivo": "Para escribir una comilla doble dentro de una cadena se utiliza la secuencia \\\"."
+          },
+          {
+            "clave": "d",
+            "motivo": "La tabulación se representa con la secuencia de escape \\t."
+          }
+        ],
+        "resumen_didactico": "Las secuencias de escape permiten representar caracteres especiales dentro de un texto.",
+        "ejemplo_practico": "System.out.println(\"Hola\\nMundo\"); Esto mostrará \"Hola\" en una línea y \"Mundo\" en la siguiente.",
+        "conclusion_final": "La secuencia de escape \\n sirve para provocar un salto de línea en el texto."
+      }
+    },
+    {
+      "id": "UT4-Q28",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Para qué sirve la secuencia de escape \"\\\\\" en una cadena de texto?",
+      "contexto": "Uso de secuencias de escape en Java para representar caracteres especiales dentro de una cadena.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Para representar e imprimir una barra invertida literal."
+        },
+        {
+          "clave": "b",
+          "texto": "Para comentar una línea de código y que el compilador la ignore."
+        },
+        {
+          "clave": "c",
+          "texto": "Para cerrar el programa de forma repentina."
+        },
+        {
+          "clave": "d",
+          "texto": "Para indicar que el texto es una constante numérica."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En Java, la barra invertida (\\) es un carácter especial que se utiliza para iniciar secuencias de escape dentro de las cadenas de texto. Para imprimir una barra invertida literal es necesario escribir \\\\ dentro del string, ya que la primera barra indica al compilador que se trata de un carácter especial.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Para comentar una línea se utiliza // o /* */ en Java, no la barra invertida."
+          },
+          {
+            "clave": "c",
+            "motivo": "La barra invertida no tiene ninguna función relacionada con finalizar programas."
+          },
+          {
+            "clave": "d",
+            "motivo": "Las constantes numéricas se representan directamente con números o sufijos de tipo, no mediante secuencias de escape."
+          }
+        ],
+        "resumen_didactico": "La barra invertida es el carácter que inicia secuencias de escape en cadenas de texto.",
+        "ejemplo_practico": "System.out.println(\"C:\\\\Usuarios\\\\Ana\"); Esto mostrará en pantalla: C:\\Usuarios\\Ana.",
+        "conclusion_final": "La secuencia \\\\ se utiliza para imprimir una barra invertida literal dentro de un texto."
+      }
+    },
+    {
+      "id": "UT4-Q29",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "¿Qué tipo de comentario se utiliza para generar automáticamente documentación técnica en formato web (Javadoc)?",
+      "contexto": "Uso de comentarios especiales en Java para generar documentación automática mediante la herramienta Javadoc.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "# Comentario" },
+        { "clave": "b", "texto": "// Comentario" },
+        { "clave": "c", "texto": "/* Comentario */" },
+        { "clave": "d", "texto": "/** Comentario */" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En Java, los comentarios que comienzan con /** y terminan con */ se denominan comentarios Javadoc. Estos comentarios son interpretados por la herramienta Javadoc para generar documentación técnica automática en formato HTML, muy utilizada en proyectos profesionales para describir clases, métodos y parámetros.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El símbolo # no se utiliza para comentarios en Java; es común en otros lenguajes como Python o scripts de shell."
+          },
+          {
+            "clave": "b",
+            "motivo": "// se utiliza para comentarios de una sola línea, pero no genera documentación automática."
+          },
+          {
+            "clave": "c",
+            "motivo": "/* */ se utiliza para comentarios multilínea, pero no es interpretado por la herramienta Javadoc."
+          }
+        ],
+        "resumen_didactico": "Javadoc usa comentarios especiales que comienzan con /** para generar documentación técnica automáticamente.",
+        "ejemplo_practico": "/**\n * Calcula el saldo final del cliente.\n * @param saldoInicial saldo antes de la operación\n * @return saldo actualizado\n */",
+        "conclusion_final": "Los comentarios que permiten generar documentación automática en Java son los comentarios Javadoc: /** comentario */."
+      }
+    },
+    {
+      "id": "UT4-Q30",
+      "tema": "UT4 Arquitectura de datos y estructura de proyectos",
+      "pregunta": "Según la jerarquía de precedencia de operadores, ¿cuál de estas operaciones se evalúa con mayor prioridad?",
+      "contexto": "Comprensión de la precedencia de operadores en Java al evaluar expresiones lógicas y matemáticas.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "OR Lógico (||)" },
+        { "clave": "b", "texto": "Asignación (=)" },
+        { "clave": "c", "texto": "Suma y resta (+, -)" },
+        { "clave": "d", "texto": "Operaciones dentro de paréntesis ()" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En Java, los paréntesis tienen la máxima prioridad en la evaluación de expresiones. Esto significa que cualquier operación dentro de () se ejecutará antes que otras operaciones como suma, operadores lógicos o asignaciones. Los paréntesis se utilizan precisamente para controlar el orden de evaluación de las expresiones.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El operador OR lógico tiene una precedencia baja en Java y normalmente se evalúa después de operadores aritméticos o relacionales."
+          },
+          {
+            "clave": "b",
+            "motivo": "El operador de asignación tiene una de las precedencias más bajas en la jerarquía de operadores."
+          },
+          {
+            "clave": "c",
+            "motivo": "La suma y la resta tienen prioridad media, pero siempre se evalúan después de las operaciones que están dentro de paréntesis."
+          }
+        ],
+        "resumen_didactico": "Los paréntesis se utilizan para controlar el orden de ejecución de las operaciones y siempre se evalúan primero.",
+        "ejemplo_practico": "int resultado = (2 + 3) * 4; Primero se calcula 2 + 3 = 5, luego 5 * 4 = 20.",
+        "conclusion_final": "Las operaciones dentro de paréntesis tienen la mayor prioridad en la precedencia de operadores."
+      }
+    }
+]

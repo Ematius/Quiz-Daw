@@ -1,0 +1,1382 @@
+[
+    {
+      "id": "UT3-Q01",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "En una oficina de coworking en Madrid, varios desarrolladores trabajan en proyectos distintos. ¿Qué tienen en común todos ellos?",
+      "contexto": "Profesionales trabajando en distintos proyectos tecnológicos dentro de un espacio de coworking.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Todos diseñan aplicaciones móviles sin utilizar lenguajes de programación."
+        },
+        {
+          "clave": "b",
+          "texto": "Todos están dándole instrucciones a una máquina para que realice tareas por ellos."
+        },
+        {
+          "clave": "c",
+          "texto": "Todos utilizan exclusivamente el sistema operativo Windows para sus tareas."
+        },
+        {
+          "clave": "d",
+          "texto": "Todos trabajan en la configuración de sistemas de pago para tiendas físicas."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Los lenguajes de programación son el medio mediante el cual los desarrolladores dan instrucciones a un ordenador para que ejecute tareas específicas. Aunque los proyectos sean diferentes (apps, análisis de datos o sistemas de pago), todos los desarrolladores están programando instrucciones que la máquina ejecutará. Esto se explica en la introducción del tema, donde se indica que el desarrollo de software consiste en dar instrucciones a una máquina para automatizar tareas.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Es incorrecta porque el desarrollo de aplicaciones móviles requiere necesariamente el uso de lenguajes de programación. Además, no todos los desarrolladores trabajan en apps móviles."
+          },
+          {
+            "clave": "c",
+            "motivo": "Es incorrecta porque los desarrolladores pueden trabajar en distintos sistemas operativos como Windows, Linux o macOS; el sistema operativo no es el elemento común."
+          },
+          {
+            "clave": "d",
+            "motivo": "Es incorrecta porque solo algunos desarrolladores podrían estar trabajando en sistemas de pago; el escenario menciona proyectos diferentes."
+          }
+        ],
+        "resumen_didactico": "Programar significa dar instrucciones a una máquina mediante un lenguaje de programación para que realice tareas automáticamente.",
+        "ejemplo_practico": "Un desarrollador escribe código en Java para procesar pagos online, otro programa en Python para analizar datos y otro desarrolla una app móvil. Aunque los proyectos son distintos, todos están escribiendo instrucciones que ejecutará un ordenador.",
+        "conclusion_final": "La característica común de todos los desarrolladores es que están programando instrucciones para que una máquina ejecute tareas."
+      }
+    },
+    {
+      "id": "UT3-Q02",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Un lenguaje de programación se define técnicamente como:",
+      "contexto": "Definición técnica del concepto de lenguaje de programación dentro del temario de programación.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Un manual de usuario escrito en español para operar robots industriales."
+        },
+        {
+          "clave": "b",
+          "texto": "Un editor de texto simple que no permite la compilación de código."
+        },
+        {
+          "clave": "c",
+          "texto": "Un dispositivo de hardware que conecta el ordenador con la red eléctrica."
+        },
+        {
+          "clave": "d",
+          "texto": "Un conjunto de símbolos y reglas gramaticales para construir instrucciones para un ordenador."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "Un lenguaje de programación se define como un conjunto de símbolos y reglas gramaticales que permiten construir instrucciones que un ordenador puede ejecutar. Estas instrucciones indican a la máquina qué operaciones debe realizar, permitiendo automatizar tareas y resolver problemas mediante software.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Un lenguaje de programación no es un manual de usuario. Un manual explica cómo usar un sistema, mientras que un lenguaje de programación sirve para crear instrucciones que ejecutará el ordenador."
+          },
+          {
+            "clave": "b",
+            "motivo": "Un editor de texto es solo una herramienta para escribir código. No define el lenguaje ni sus reglas."
+          },
+          {
+            "clave": "c",
+            "motivo": "Esto describe un componente de hardware o infraestructura eléctrica, no un lenguaje de programación."
+          }
+        ],
+        "resumen_didactico": "Un lenguaje de programación es el idioma que usamos para comunicarnos con un ordenador mediante reglas y símbolos que permiten crear instrucciones ejecutables.",
+        "ejemplo_practico": "Cuando escribes en Java: if (edad >= 18) { System.out.println(\"Mayor de edad\"); } estás usando las reglas y símbolos del lenguaje para indicar al ordenador qué hacer.",
+        "conclusion_final": "La definición correcta de lenguaje de programación es un conjunto de símbolos y reglas que permiten crear instrucciones que un ordenador puede ejecutar."
+      }
+    },
+    {
+      "id": "UT3-Q03",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Un programador junior en una fábrica de Vigo utiliza palabras similares al inglés como if o while. ¿Con qué tipo de lenguaje está trabajando?",
+      "contexto": "Uso de palabras clave similares al inglés en un lenguaje de programación.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Lenguaje de bajo nivel."
+        },
+        {
+          "clave": "b",
+          "texto": "Lenguaje de circuitos eléctricos."
+        },
+        {
+          "clave": "c",
+          "texto": "Lenguaje de alto nivel."
+        },
+        {
+          "clave": "d",
+          "texto": "Código binario de 0 y 1."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "Los lenguajes de alto nivel utilizan palabras y estructuras similares al lenguaje humano, normalmente en inglés, como if, while, print o class. Esto permite a los programadores centrarse en resolver problemas sin preocuparse por los detalles internos del hardware. Ejemplos de estos lenguajes son Java, Python o C#.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Los lenguajes de bajo nivel están más cerca del hardware y no utilizan palabras comprensibles como if o while, sino instrucciones más cercanas al procesador."
+          },
+          {
+            "clave": "b",
+            "motivo": "No existe una categoría de lenguaje llamada 'lenguaje de circuitos eléctricos'; los lenguajes de programación se clasifican normalmente en alto nivel o bajo nivel."
+          },
+          {
+            "clave": "d",
+            "motivo": "El código binario está compuesto exclusivamente por 0 y 1, y no utiliza palabras clave como if o while."
+          }
+        ],
+        "resumen_didactico": "Los lenguajes de alto nivel utilizan palabras similares al inglés para que el código sea más fácil de escribir y entender.",
+        "ejemplo_practico": "En Java se puede escribir: if (edad >= 18) { System.out.println(\"Acceso permitido\"); }. Las palabras if y println son propias de los lenguajes de alto nivel.",
+        "conclusion_final": "Si el programador utiliza palabras como if o while, está trabajando con un lenguaje de programación de alto nivel."
+      }
+    },
+    {
+      "id": "UT3-Q04",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Por qué es útil para un desarrollador junior entender que su código acabará convirtiéndose en ceros y unos?",
+      "contexto": "Comprensión de cómo los lenguajes de alto nivel se transforman finalmente en instrucciones que la máquina puede ejecutar.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Porque le ayudará a escribir software mucho más optimizado y eficiente."
+        },
+        {
+          "clave": "b",
+          "texto": "Porque deberá programar en binario diariamente en su puesto de trabajo."
+        },
+        {
+          "clave": "c",
+          "texto": "Porque es la única forma de detectar errores de sintaxis en el código fuente."
+        },
+        {
+          "clave": "d",
+          "texto": "Porque así no necesitará utilizar lenguajes de alto nivel como Java."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Aunque los desarrolladores trabajen con lenguajes de alto nivel como Java o Python, el código finalmente se traduce a instrucciones de bajo nivel que el procesador ejecuta en forma de ceros y unos. Comprender este proceso ayuda a los programadores a escribir software más eficiente y optimizado, ya que entienden mejor cómo el hardware ejecuta sus instrucciones.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Los desarrolladores modernos no programan directamente en binario; utilizan lenguajes de alto nivel que luego se traducen automáticamente."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los errores de sintaxis se detectan mediante el compilador o el intérprete del lenguaje, no mediante la comprensión del código binario."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los lenguajes de alto nivel como Java son herramientas fundamentales para el desarrollo moderno y no se sustituyen por programar directamente en binario."
+          }
+        ],
+        "resumen_didactico": "El código de alto nivel siempre termina convirtiéndose en instrucciones de máquina. Entender esto ayuda a escribir programas más eficientes.",
+        "ejemplo_practico": "Un programador que entiende cómo se ejecuta el código en la máquina puede evitar crear bucles innecesarios o consumir demasiada memoria, mejorando el rendimiento de su programa.",
+        "conclusion_final": "Comprender que el código termina convirtiéndose en ceros y unos permite a los desarrolladores escribir software más optimizado y eficiente."
+      }
+    },
+    {
+      "id": "UT3-Q05",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Cuál es la filosofía revolucionaria bajo la cual nació la tecnología Java?",
+      "contexto": "Principio fundamental de portabilidad del lenguaje Java dentro de su ecosistema tecnológico.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Compila para Intel, ejecuta para AMD."
+        },
+        {
+          "clave": "b",
+          "texto": "Escribe muchas veces, ejecútalo en un solo procesador."
+        },
+        {
+          "clave": "c",
+          "texto": "Diseña en papel, programa en binario."
+        },
+        {
+          "clave": "d",
+          "texto": "Escribe una vez, ejecútalo en cualquier lugar."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "La tecnología Java nació con la filosofía \"Write Once, Run Anywhere\" (Escribe una vez, ejecútalo en cualquier lugar). Esto significa que el código Java se compila a un formato intermedio llamado bytecode que puede ejecutarse en cualquier sistema que tenga una Máquina Virtual de Java (JVM), independientemente del sistema operativo o del hardware.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Java no compila directamente para procesadores específicos como Intel o AMD. Compila a bytecode que es ejecutado por la JVM."
+          },
+          {
+            "clave": "b",
+            "motivo": "Esta frase contradice el objetivo principal de Java, que es permitir que el mismo programa se ejecute en múltiples sistemas."
+          },
+          {
+            "clave": "c",
+            "motivo": "Diseñar en papel puede formar parte del proceso de desarrollo, pero no define la filosofía tecnológica de Java."
+          }
+        ],
+        "resumen_didactico": "Java se diseñó para que un mismo programa pueda ejecutarse en diferentes sistemas sin modificar el código.",
+        "ejemplo_practico": "Un programa Java desarrollado en un ordenador con Windows puede ejecutarse también en Linux o macOS siempre que tengan instalada la JVM.",
+        "conclusion_final": "La filosofía clave de Java es la portabilidad del software: escribir el código una vez y ejecutarlo en cualquier sistema compatible con la JVM."
+      }
+    },
+    {
+      "id": "UT3-Q06",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "En una startup en Barcelona, un equipo desarrolla software para dispositivos médicos. ¿Por qué eligen Java para que el código funcione en un servidor y en una tablet sin reescribirlo?",
+      "contexto": "Portabilidad del código Java gracias a la JVM y al bytecode.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Porque utiliza archivos de extensión exe que son universales."
+        },
+        {
+          "clave": "b",
+          "texto": "Porque el código se compila para una máquina imaginaria llamada JVM."
+        },
+        {
+          "clave": "c",
+          "texto": "Porque Java se compila para un procesador específico como Intel."
+        },
+        {
+          "clave": "d",
+          "texto": "Porque Java no requiere de un proceso de compilación previo."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Java no se compila directamente para un procesador concreto. En su lugar, el código fuente (.java) se compila a bytecode (.class), que está diseñado para ejecutarse en la Máquina Virtual de Java (JVM). Cada sistema operativo tiene su propia JVM que traduce ese bytecode al lenguaje que entiende el hardware, lo que permite ejecutar el mismo programa en diferentes dispositivos sin modificar el código.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Los archivos .exe son ejecutables específicos de Windows y no forman parte del modelo de ejecución de Java."
+          },
+          {
+            "clave": "c",
+            "motivo": "Java precisamente evita compilar para un procesador específico; su objetivo es la portabilidad entre plataformas."
+          },
+          {
+            "clave": "d",
+            "motivo": "Java sí requiere compilación: el código .java se compila a bytecode antes de ejecutarse."
+          }
+        ],
+        "resumen_didactico": "Java compila el código a bytecode que se ejecuta en la JVM, permitiendo que el mismo programa funcione en distintos sistemas.",
+        "ejemplo_practico": "Un programa Java compilado en un ordenador con Windows puede ejecutarse en un servidor Linux o en una tablet Android siempre que exista una JVM compatible.",
+        "conclusion_final": "Java permite ejecutar el mismo código en diferentes dispositivos porque se compila para la Máquina Virtual de Java (JVM) y no para un hardware específico."
+      }
+    },
+    {
+      "id": "UT3-Q07",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Cómo se denomina el lenguaje intermedio que el compilador de Java genera a partir de los archivos java?",
+      "contexto": "Proceso de compilación de Java y generación de código intermedio para la JVM.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Bytecode."
+        },
+        {
+          "clave": "b",
+          "texto": "Código fuente."
+        },
+        {
+          "clave": "c",
+          "texto": "Script de consola."
+        },
+        {
+          "clave": "d",
+          "texto": "Texto plano."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Cuando se compila un archivo .java, el compilador de Java (javac) lo transforma en un lenguaje intermedio llamado bytecode. Este bytecode se guarda en archivos con extensión .class y es ejecutado posteriormente por la Máquina Virtual de Java (JVM), que lo traduce a instrucciones que el hardware puede ejecutar.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "El código fuente es el programa original escrito por el desarrollador en archivos .java antes de la compilación."
+          },
+          {
+            "clave": "c",
+            "motivo": "Un script de consola es un tipo de script ejecutado en una terminal, pero no corresponde al formato generado por el compilador de Java."
+          },
+          {
+            "clave": "d",
+            "motivo": "Aunque los archivos .java son texto plano, el resultado de la compilación no es texto plano sino bytecode."
+          }
+        ],
+        "resumen_didactico": "El compilador de Java transforma el código fuente (.java) en bytecode (.class), que puede ejecutarse en cualquier sistema que tenga una JVM.",
+        "ejemplo_practico": "Si escribes un archivo HolaMundo.java y lo compilas con el comando javac HolaMundo.java, el resultado será un archivo HolaMundo.class que contiene el bytecode.",
+        "conclusion_final": "El lenguaje intermedio generado por el compilador de Java se llama bytecode."
+      }
+    },
+    {
+      "id": "UT3-Q08",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Si en una empresa en Bilbao te piden montar un entorno de trabajo nuevo para crear y empaquetar programas Java, ¿qué es lo primero que debes instalar?",
+      "contexto": "Preparación de un entorno de desarrollo para crear, compilar y empaquetar aplicaciones Java.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "JRE Java Runtime Environment."
+        },
+        {
+          "clave": "b",
+          "texto": "Solo la Máquina Virtual de Java."
+        },
+        {
+          "clave": "c",
+          "texto": "JDK Java Development Kit."
+        },
+        {
+          "clave": "d",
+          "texto": "Un editor de texto como el Bloc de notas."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El Java Development Kit (JDK) es el conjunto completo de herramientas necesarias para desarrollar aplicaciones Java. Incluye el compilador (javac), herramientas de depuración, utilidades para crear archivos .jar y el entorno de ejecución JRE. Sin el JDK no es posible compilar ni empaquetar programas Java.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El JRE solo permite ejecutar programas Java ya compilados, pero no crear ni compilar nuevos programas."
+          },
+          {
+            "clave": "b",
+            "motivo": "La JVM es solo el motor que ejecuta el bytecode, pero no incluye herramientas de desarrollo como el compilador."
+          },
+          {
+            "clave": "d",
+            "motivo": "Un editor de texto permite escribir código, pero no proporciona las herramientas necesarias para compilar y empaquetar programas Java."
+          }
+        ],
+        "resumen_didactico": "Para desarrollar aplicaciones Java se necesita el JDK, ya que incluye todas las herramientas necesarias para crear, compilar y ejecutar programas.",
+        "ejemplo_practico": "Si un desarrollador instala el JDK en su ordenador, podrá escribir un archivo HolaMundo.java, compilarlo con javac y ejecutar el programa generado.",
+        "conclusion_final": "Para crear y empaquetar programas Java es imprescindible instalar el JDK."
+      }
+    },
+    {
+      "id": "UT3-Q09",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Un cliente final de tu software en Sevilla solo necesita ejecutar la aplicación, pero no desarrollarla. ¿Qué componente de Java es suficiente para él?",
+      "contexto": "Diferencia entre herramientas de desarrollo y entorno de ejecución en el ecosistema Java.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "El JDK completo."
+        },
+        {
+          "clave": "b",
+          "texto": "El JRE Java Runtime Environment."
+        },
+        {
+          "clave": "c",
+          "texto": "Las herramientas de depuración y bibliotecas de desarrollo."
+        },
+        {
+          "clave": "d",
+          "texto": "El compilador javac."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El JRE (Java Runtime Environment) es el entorno necesario para ejecutar aplicaciones Java. Incluye la JVM y las bibliotecas necesarias para que un programa funcione, pero no contiene herramientas de desarrollo como el compilador. Por eso los usuarios finales solo necesitan el JRE, mientras que los desarrolladores necesitan el JDK.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El JDK está pensado para desarrolladores, ya que incluye herramientas para compilar, depurar y crear programas Java."
+          },
+          {
+            "clave": "c",
+            "motivo": "Las herramientas de depuración y bibliotecas de desarrollo forman parte del entorno de desarrollo, no del entorno mínimo necesario para ejecutar un programa."
+          },
+          {
+            "clave": "d",
+            "motivo": "El compilador javac sirve para convertir código fuente (.java) en bytecode (.class), pero no es necesario para ejecutar aplicaciones ya compiladas."
+          }
+        ],
+        "resumen_didactico": "El JRE permite ejecutar aplicaciones Java, mientras que el JDK se utiliza para desarrollarlas.",
+        "ejemplo_practico": "Un usuario descarga una aplicación Java en su ordenador. Para ejecutarla solo necesita tener instalado el JRE; no necesita las herramientas de desarrollo del JDK.",
+        "conclusion_final": "Si una persona solo necesita ejecutar aplicaciones Java y no desarrollarlas, el componente suficiente es el JRE."
+      }
+    },
+    {
+      "id": "UT3-Q10",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Cuál es la relación jerárquica entre el JDK y el JRE para un desarrollador profesional?",
+      "contexto": "Estructura del ecosistema Java y relación entre sus componentes principales.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "El JDK solo sirve para Windows y el JRE solo para Linux."
+        },
+        {
+          "clave": "b",
+          "texto": "El JDK incluye al JRE en su interior."
+        },
+        {
+          "clave": "c",
+          "texto": "Son dos herramientas totalmente independientes que nunca se mezclan."
+        },
+        {
+          "clave": "d",
+          "texto": "El JRE incluye al JDK en su interior."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El JDK (Java Development Kit) es el paquete completo que utilizan los desarrolladores para crear aplicaciones Java. Dentro del JDK se incluye el JRE (Java Runtime Environment), que a su vez contiene la JVM y las bibliotecas necesarias para ejecutar programas Java. Por eso los desarrolladores instalan el JDK, ya que incluye todo lo necesario para desarrollar y ejecutar aplicaciones.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Tanto el JDK como el JRE son multiplataforma y pueden instalarse en distintos sistemas operativos como Windows, Linux o macOS."
+          },
+          {
+            "clave": "c",
+            "motivo": "No son herramientas independientes; el JRE forma parte del JDK."
+          },
+          {
+            "clave": "d",
+            "motivo": "La relación es al revés: el JDK contiene al JRE, no el JRE al JDK."
+          }
+        ],
+        "resumen_didactico": "El JDK es el kit completo para desarrollar en Java y contiene dentro de él el JRE, que sirve para ejecutar programas.",
+        "ejemplo_practico": "Cuando un desarrollador instala el JDK en su ordenador, automáticamente obtiene también el JRE y puede tanto compilar como ejecutar aplicaciones Java.",
+        "conclusion_final": "La relación jerárquica correcta es que el JDK incluye al JRE en su interior."
+      }
+    },
+    {
+      "id": "UT3-Q11",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Un administrador de sistemas necesita que el comando javac sea reconocido desde cualquier carpeta en la consola. ¿Qué variable de entorno debe configurar?",
+      "contexto": "Configuración de variables de entorno en sistemas operativos para poder ejecutar herramientas de Java desde cualquier ubicación.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "CLASSPATH."
+        },
+        {
+          "clave": "b",
+          "texto": "BIN_FOLDER."
+        },
+        {
+          "clave": "c",
+          "texto": "JAVA_HOME_LIB."
+        },
+        {
+          "clave": "d",
+          "texto": "PATH."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "La variable de entorno PATH indica al sistema operativo en qué carpetas debe buscar los ejecutables cuando se introduce un comando en la consola. Si se añade la carpeta bin del JDK al PATH, comandos como javac o java pueden ejecutarse desde cualquier directorio sin necesidad de escribir la ruta completa.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "CLASSPATH se utiliza para indicar a Java dónde encontrar clases y bibliotecas externas, no para localizar comandos del sistema."
+          },
+          {
+            "clave": "b",
+            "motivo": "BIN_FOLDER no es una variable estándar del sistema utilizada para localizar ejecutables."
+          },
+          {
+            "clave": "c",
+            "motivo": "JAVA_HOME_LIB no es una variable de entorno estándar relacionada con la ejecución de comandos Java."
+          }
+        ],
+        "resumen_didactico": "La variable PATH permite ejecutar comandos de programas instalados sin tener que escribir su ruta completa.",
+        "ejemplo_practico": "Si el JDK está instalado en C:\\Program Files\\Java\\jdk\\bin y esa ruta está en el PATH, puedes escribir simplemente javac HolaMundo.java desde cualquier carpeta.",
+        "conclusion_final": "Para que el comando javac sea reconocido desde cualquier ubicación en la consola, se debe configurar la variable de entorno PATH."
+      }
+    },
+    {
+      "id": "UT3-Q12",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Para qué sirve la variable de entorno CLASSPATH en el ecosistema Java?",
+      "contexto": "Configuración de rutas que Java utiliza para localizar clases y bibliotecas externas necesarias para ejecutar o compilar programas.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Para decirle al sistema operativo dónde está el ejecutable del navegador."
+        },
+        {
+          "clave": "b",
+          "texto": "Para cambiar el idioma de la interfaz del editor de texto."
+        },
+        {
+          "clave": "c",
+          "texto": "Para decirle a Java dónde están las bibliotecas o clases externas necesarias."
+        },
+        {
+          "clave": "d",
+          "texto": "Para borrar automáticamente los archivos temporales de la RAM."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "La variable de entorno CLASSPATH indica a Java dónde debe buscar las clases y bibliotecas externas necesarias para ejecutar o compilar un programa. Esto permite que la JVM localice dependencias que no están en el directorio actual, facilitando el uso de librerías externas en proyectos Java.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La variable CLASSPATH no se utiliza para localizar ejecutables del sistema operativo ni aplicaciones como navegadores."
+          },
+          {
+            "clave": "b",
+            "motivo": "El idioma de un editor de texto no se configura mediante CLASSPATH; esta variable solo se relaciona con la búsqueda de clases Java."
+          },
+          {
+            "clave": "d",
+            "motivo": "La limpieza de memoria o archivos temporales no está relacionada con CLASSPATH; esa función está más relacionada con el Garbage Collector."
+          }
+        ],
+        "resumen_didactico": "CLASSPATH indica a Java dónde encontrar clases y bibliotecas externas necesarias para ejecutar un programa.",
+        "ejemplo_practico": "Si un programa Java utiliza una librería externa llamada utilidades.jar, se puede añadir su ruta al CLASSPATH para que la JVM pueda encontrarla y usarla correctamente.",
+        "conclusion_final": "CLASSPATH sirve para indicar a Java dónde están las clases y bibliotecas necesarias para ejecutar o compilar un programa."
+      }
+    },
+    {
+      "id": "UT3-Q13",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Trabajas en Sevilla y acabas de compilar tu código fuente. ¿Qué extensión tendrá el archivo que la máquina puede entender?",
+      "contexto": "Proceso de compilación en Java y generación de archivos ejecutables por la JVM.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "jar"
+        },
+        {
+          "clave": "b",
+          "texto": "class"
+        },
+        {
+          "clave": "c",
+          "texto": "java"
+        },
+        {
+          "clave": "d",
+          "texto": "txt"
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Cuando se compila un archivo de código fuente Java (.java) utilizando el compilador javac, el resultado es un archivo con extensión .class. Este archivo contiene bytecode, que es el formato intermedio que la Máquina Virtual de Java (JVM) puede interpretar y ejecutar.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Un archivo .jar es un paquete comprimido que puede contener múltiples archivos .class y recursos, pero no es el resultado directo de la compilación."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los archivos .java contienen el código fuente escrito por el programador antes de ser compilado."
+          },
+          {
+            "clave": "d",
+            "motivo": "Un archivo .txt es simplemente texto plano y no representa código compilado ejecutable por la JVM."
+          }
+        ],
+        "resumen_didactico": "En Java, el código fuente (.java) se compila en bytecode guardado en archivos .class, que son los que ejecuta la JVM.",
+        "ejemplo_practico": "Si escribes el archivo HolaMundo.java y ejecutas el comando javac HolaMundo.java, se generará un archivo llamado HolaMundo.class que podrá ejecutarse con el comando java HolaMundo.",
+        "conclusion_final": "Después de compilar código Java, el archivo que entiende la máquina (a través de la JVM) tiene extensión .class."
+      }
+    },
+    {
+      "id": "UT3-Q14",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Qué es un archivo jar en el contexto de la entrega de software a un cliente?",
+      "contexto": "Formato de empaquetado utilizado en Java para distribuir aplicaciones.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Un comando de la terminal para instalar el JDK."
+        },
+        {
+          "clave": "b",
+          "texto": "El código fuente original que el cliente debe editar."
+        },
+        {
+          "clave": "c",
+          "texto": "Una carpeta temporal que el Garbage Collector borra al instante."
+        },
+        {
+          "clave": "d",
+          "texto": "Un archivo comprimido que agrupa muchos archivos class y recursos."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "Un archivo JAR (Java ARchive) es un formato de archivo comprimido utilizado para empaquetar aplicaciones Java. Dentro de él se incluyen múltiples archivos .class (bytecode), bibliotecas y recursos como imágenes o configuraciones. Esto facilita distribuir el software como un único archivo que puede ejecutarse o instalarse fácilmente en otros sistemas.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "JAR no es un comando de instalación del JDK; es un formato de archivo para empaquetar aplicaciones Java."
+          },
+          {
+            "clave": "b",
+            "motivo": "El código fuente original se encuentra en archivos .java y normalmente no se entrega al cliente final."
+          },
+          {
+            "clave": "c",
+            "motivo": "El Garbage Collector gestiona memoria en tiempo de ejecución, pero no borra carpetas ni archivos JAR."
+          }
+        ],
+        "resumen_didactico": "Un archivo JAR es un paquete comprimido que contiene las clases compiladas y recursos necesarios para ejecutar una aplicación Java.",
+        "ejemplo_practico": "Un desarrollador compila su proyecto Java generando muchos archivos .class y luego los empaqueta en una aplicación llamada aplicacion.jar para enviarla al cliente.",
+        "conclusion_final": "Un archivo JAR permite distribuir una aplicación Java como un único archivo que contiene todas las clases y recursos necesarios."
+      }
+    },
+    {
+      "id": "UT3-Q15",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "El Garbage Collector de la JVM tiene como función principal:",
+      "contexto": "Gestión automática de memoria dentro de la Máquina Virtual de Java.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Detectar errores de ortografía en los comentarios del programador."
+        },
+        {
+          "clave": "b",
+          "texto": "Traducir el código de alto nivel a lenguaje ensamblador."
+        },
+        {
+          "clave": "c",
+          "texto": "Gestionar la memoria destruyendo objetos no utilizados para liberar RAM."
+        },
+        {
+          "clave": "d",
+          "texto": "Empaquetar los archivos en formato jar automáticamente."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El Garbage Collector es un componente de la JVM encargado de la gestión automática de memoria. Su función es identificar objetos que ya no están siendo utilizados por el programa y liberar el espacio de memoria que ocupan. Esto evita fugas de memoria y simplifica el trabajo del programador, ya que no necesita liberar memoria manualmente como ocurre en otros lenguajes.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El Garbage Collector no analiza comentarios ni revisa ortografía; su función está relacionada exclusivamente con la gestión de memoria."
+          },
+          {
+            "clave": "b",
+            "motivo": "La traducción de código se realiza durante la compilación o mediante el motor de ejecución de la JVM, no por el Garbage Collector."
+          },
+          {
+            "clave": "d",
+            "motivo": "El empaquetado de archivos .jar se realiza con herramientas de desarrollo del JDK, no con el Garbage Collector."
+          }
+        ],
+        "resumen_didactico": "El Garbage Collector se encarga de liberar automáticamente la memoria ocupada por objetos que ya no se utilizan.",
+        "ejemplo_practico": "Si un programa crea muchos objetos temporales durante su ejecución, el Garbage Collector detecta cuáles ya no tienen referencias y libera la memoria que ocupaban para que pueda reutilizarse.",
+        "conclusion_final": "La función principal del Garbage Collector es gestionar la memoria eliminando objetos que ya no se utilizan para liberar RAM."
+      }
+    },
+    {
+      "id": "UT3-Q16",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "En lenguajes antiguos como C++, el programador debía borrar manualmente los objetos de la memoria. ¿Qué ventaja ofrece Java en este aspecto?",
+      "contexto": "Comparación entre gestión manual de memoria en lenguajes como C++ y gestión automática en Java.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Java permite que la memoria RAM sea infinita."
+        },
+        {
+          "clave": "b",
+          "texto": "Java no utiliza la memoria RAM para ejecutar programas."
+        },
+        {
+          "clave": "c",
+          "texto": "El programador debe escribir el comando delete cada 5 líneas."
+        },
+        {
+          "clave": "d",
+          "texto": "El Garbage Collector quita ese peso de encima de forma automática."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En lenguajes como C o C++, el programador debe gestionar manualmente la memoria utilizando instrucciones como delete o free para liberar espacio ocupado por objetos. Java introduce un sistema automático llamado Garbage Collector, que detecta los objetos que ya no se utilizan y libera la memoria que ocupan. Esto reduce errores como fugas de memoria y simplifica el desarrollo.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La memoria RAM nunca es infinita; Java simplemente gestiona mejor la memoria disponible."
+          },
+          {
+            "clave": "b",
+            "motivo": "Todos los programas que se ejecutan utilizan memoria RAM; Java no es una excepción."
+          },
+          {
+            "clave": "c",
+            "motivo": "Java no requiere que el programador escriba delete para liberar memoria; esa tarea la realiza automáticamente el Garbage Collector."
+          }
+        ],
+        "resumen_didactico": "Java gestiona automáticamente la memoria mediante el Garbage Collector, evitando que el programador tenga que liberar memoria manualmente.",
+        "ejemplo_practico": "En C++ un programador debe escribir delete objeto; para liberar memoria. En Java, cuando un objeto deja de tener referencias, el Garbage Collector lo elimina automáticamente.",
+        "conclusion_final": "La ventaja de Java es que el Garbage Collector gestiona la memoria automáticamente, liberando al programador de hacerlo manualmente."
+      }
+    },
+    {
+      "id": "UT3-Q17",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Te encuentras en una planta industrial en Eindhoven reparando un script sin interfaz gráfica. ¿Qué significa programar sin un IDE?",
+      "contexto": "Trabajo de desarrollo utilizando herramientas básicas en lugar de un entorno de desarrollo integrado.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Programar sin necesidad de tener instalado el JDK."
+        },
+        {
+          "clave": "b",
+          "texto": "Usar herramientas automáticas que completan el código por ti."
+        },
+        {
+          "clave": "c",
+          "texto": "Escribir el código en un editor simple y realizar manualmente la compilación y ejecución."
+        },
+        {
+          "clave": "d",
+          "texto": "Utilizar únicamente iconos y menús visuales para crear el software."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "Programar sin un IDE significa trabajar sin un entorno de desarrollo integrado que automatice tareas. En este caso, el programador escribe el código en un editor de texto simple y utiliza comandos manuales en la consola para compilar y ejecutar el programa. Este método refleja el proceso básico del desarrollo de software: edición del código, compilación y ejecución.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Aunque no se utilice un IDE, sigue siendo necesario tener instalado el JDK para poder compilar y ejecutar programas Java."
+          },
+          {
+            "clave": "b",
+            "motivo": "Las herramientas de autocompletado son características típicas de los IDE, no de la programación sin IDE."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los iconos y menús visuales son precisamente características de los entornos gráficos de desarrollo como los IDE."
+          }
+        ],
+        "resumen_didactico": "Programar sin IDE implica escribir el código en un editor simple y usar comandos manuales para compilar y ejecutar el programa.",
+        "ejemplo_practico": "Un programador escribe el archivo HolaMundo.java en un editor como Notepad o Vim, luego abre la terminal y ejecuta javac HolaMundo.java para compilarlo y java HolaMundo para ejecutarlo.",
+        "conclusion_final": "Programar sin IDE significa realizar manualmente las tareas de edición, compilación y ejecución usando herramientas básicas."
+      }
+    },
+    {
+      "id": "UT3-Q18",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Elena, una desarrolladora en Zaragoza, escribe una clase pública llamada HolaMundo. ¿Cómo debe llamarse el archivo de texto obligatoriamente?",
+      "contexto": "Regla de nomenclatura en Java que exige que el nombre del archivo coincida con el de la clase pública.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Main.java"
+        },
+        {
+          "clave": "b",
+          "texto": "HolaMundo.java"
+        },
+        {
+          "clave": "c",
+          "texto": "Programa.class"
+        },
+        {
+          "clave": "d",
+          "texto": "hola_mundo.txt"
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En Java, cuando una clase se declara como pública (public class), el nombre del archivo debe coincidir exactamente con el nombre de la clase. Esto significa que si la clase se llama HolaMundo, el archivo debe llamarse HolaMundo.java. Esta regla es obligatoria para que el compilador de Java pueda localizar correctamente la clase principal.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Main.java sería correcto solo si la clase pública se llamara Main."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los archivos .class se generan después de compilar el código y contienen bytecode, no el código fuente."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los archivos .txt no son reconocidos como archivos fuente de Java y además el nombre no coincide con la clase."
+          }
+        ],
+        "resumen_didactico": "En Java, el archivo .java debe tener exactamente el mismo nombre que la clase pública que contiene.",
+        "ejemplo_practico": "Si escribes: public class HolaMundo { public static void main(String[] args) {} } el archivo obligatoriamente debe llamarse HolaMundo.java para poder compilarlo con javac.",
+        "conclusion_final": "Cuando una clase es pública, el archivo debe tener exactamente el mismo nombre que la clase, en este caso HolaMundo.java."
+      }
+    },
+    {
+      "id": "UT3-Q19",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Para traducir manualmente el archivo de Elena a Bytecode desde la terminal, ¿qué comando se debe utilizar?",
+      "contexto": "Proceso de compilación manual de un archivo Java desde la línea de comandos.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "jar cf HolaMundo.jar"
+        },
+        {
+          "clave": "b",
+          "texto": "compile HolaMundo"
+        },
+        {
+          "clave": "c",
+          "texto": "java HolaMundo"
+        },
+        {
+          "clave": "d",
+          "texto": "javac HolaMundo.java"
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "El comando javac es el compilador de Java incluido en el JDK. Se utiliza para convertir el código fuente escrito en archivos .java en bytecode, generando archivos .class que posteriormente pueden ser ejecutados por la JVM.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Este comando se utiliza para crear un archivo .jar que empaqueta clases y recursos, no para compilar código fuente."
+          },
+          {
+            "clave": "b",
+            "motivo": "compile no es un comando válido en Java para compilar programas."
+          },
+          {
+            "clave": "c",
+            "motivo": "El comando java se utiliza para ejecutar un programa ya compilado (.class), no para traducir el código fuente."
+          }
+        ],
+        "resumen_didactico": "El comando javac convierte archivos .java en archivos .class (bytecode) que la JVM puede ejecutar.",
+        "ejemplo_practico": "Si tienes el archivo HolaMundo.java en una carpeta, puedes abrir la terminal y ejecutar: javac HolaMundo.java. Esto generará el archivo HolaMundo.class.",
+        "conclusion_final": "Para traducir código fuente Java a bytecode desde la terminal se utiliza el comando javac."
+      }
+    },
+    {
+      "id": "UT3-Q20",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Elena quiere enviar su aplicación empaquetada a un cliente. ¿Qué comando usará para crear un archivo JAR con todos sus archivos class?",
+      "contexto": "Empaquetado de clases compiladas de Java en un archivo distribuible.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "jar cf miAplicacion.jar *.class"
+        },
+        {
+          "clave": "b",
+          "texto": "java -jar miAplicacion.java"
+        },
+        {
+          "clave": "c",
+          "texto": "make jar miAplicacion"
+        },
+        {
+          "clave": "d",
+          "texto": "javac -pack miAplicacion.jar"
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El comando jar es una herramienta incluida en el JDK que permite crear archivos JAR (Java ARchive). La opción cf indica que se va a crear (c) un archivo y especificar su nombre (f). Con jar cf miAplicacion.jar *.class se empaquetan todos los archivos .class en un único archivo JAR que puede distribuirse fácilmente.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Este comando intenta ejecutar un archivo JAR, pero además hace referencia a un archivo .java, lo cual no es correcto."
+          },
+          {
+            "clave": "c",
+            "motivo": "make es una herramienta de automatización de compilación en algunos sistemas, pero no es el comando estándar de Java para crear archivos JAR."
+          },
+          {
+            "clave": "d",
+            "motivo": "javac se utiliza para compilar código fuente .java a .class, no para empaquetar archivos en formato JAR."
+          }
+        ],
+        "resumen_didactico": "El comando jar permite empaquetar múltiples archivos .class y recursos en un único archivo .jar para distribuir la aplicación.",
+        "ejemplo_practico": "Después de compilar varias clases como HolaMundo.class y Utilidades.class, un desarrollador puede ejecutar jar cf miAplicacion.jar *.class para crear un solo archivo distribuible.",
+        "conclusion_final": "El comando correcto para crear un archivo JAR con las clases compiladas es jar cf miAplicacion.jar *.class."
+      }
+    },
+    {
+      "id": "UT3-Q21",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Una vez generado el archivo HolaMundo.class, ¿cuál es el comando correcto para ejecutarlo en la consola de Madrid?",
+      "contexto": "Ejecución de un programa Java compilado desde la línea de comandos.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "java HolaMundo"
+        },
+        {
+          "clave": "b",
+          "texto": "java HolaMundo.class"
+        },
+        {
+          "clave": "c",
+          "texto": "run HolaMundo"
+        },
+        {
+          "clave": "d",
+          "texto": "javac HolaMundo"
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Después de compilar un archivo Java con javac, se genera un archivo .class que contiene bytecode. Para ejecutarlo se utiliza el comando java seguido del nombre de la clase, sin escribir la extensión .class. La JVM buscará automáticamente el archivo correspondiente y lo ejecutará.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "El comando java no requiere la extensión .class; solo se indica el nombre de la clase."
+          },
+          {
+            "clave": "c",
+            "motivo": "run no es un comando válido para ejecutar programas Java desde la terminal."
+          },
+          {
+            "clave": "d",
+            "motivo": "javac se utiliza para compilar el código fuente, no para ejecutar el programa."
+          }
+        ],
+        "resumen_didactico": "Para ejecutar un programa Java compilado se utiliza el comando java seguido del nombre de la clase, sin la extensión .class.",
+        "ejemplo_practico": "Si tienes el archivo HolaMundo.class en una carpeta, puedes ejecutarlo desde la terminal escribiendo: java HolaMundo.",
+        "conclusion_final": "El comando correcto para ejecutar un programa Java compilado es java seguido del nombre de la clase."
+      }
+    },
+    {
+      "id": "UT3-Q22",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Durante la jornada laboral, Carlos escribe systen en lugar de System. ¿Qué tipo de error se producirá?",
+      "contexto": "Errores cometidos durante la escritura del código que son detectados por el compilador.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Excepción en tiempo de ejecución."
+        },
+        {
+          "clave": "b",
+          "texto": "Error de lógica de negocio."
+        },
+        {
+          "clave": "c",
+          "texto": "El programa se ejecutará pero no mostrará nada."
+        },
+        {
+          "clave": "d",
+          "texto": "Error de sintaxis detectado por el compilador."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "Los errores de sintaxis se producen cuando el código no sigue correctamente las reglas del lenguaje de programación. Si un programador escribe una palabra incorrecta como systen en lugar de System, el compilador de Java no reconocerá ese identificador y mostrará un error durante la compilación, impidiendo que el programa se ejecute.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Las excepciones en tiempo de ejecución ocurren cuando el programa ya está ejecutándose, no durante la compilación."
+          },
+          {
+            "clave": "b",
+            "motivo": "Un error de lógica ocurre cuando el programa compila correctamente pero produce resultados incorrectos."
+          },
+          {
+            "clave": "c",
+            "motivo": "El programa ni siquiera se ejecutará, porque el compilador detectará el error antes de generar el bytecode."
+          }
+        ],
+        "resumen_didactico": "Los errores de sintaxis ocurren cuando el código no respeta las reglas del lenguaje y el compilador los detecta antes de ejecutar el programa.",
+        "ejemplo_practico": "Si escribes System.out.println(\"Hola\"); pero por error pones systen.out.println(\"Hola\"); el compilador mostrará un error indicando que no reconoce ese identificador.",
+        "conclusion_final": "Es un error de sintaxis que el compilador detectará durante el proceso de compilación."
+      }
+    },
+    {
+      "id": "UT3-Q23",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Un programa de calculadora en Valencia intenta dividir un número por cero. El código compila bien, pero el programa falla al funcionar. Esto es:",
+      "contexto": "Errores que ocurren durante la ejecución del programa aunque el código haya compilado correctamente.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Un problema en la configuración del PATH."
+        },
+        {
+          "clave": "b",
+          "texto": "Una excepción error en tiempo de ejecución."
+        },
+        {
+          "clave": "c",
+          "texto": "Un fallo del Garbage Collector."
+        },
+        {
+          "clave": "d",
+          "texto": "Un error de sintaxis gramatical."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Cuando el código compila correctamente pero ocurre un problema durante la ejecución del programa, se produce una excepción en tiempo de ejecución. Un ejemplo típico es intentar dividir un número entre cero, lo que provoca una excepción como ArithmeticException en Java.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La variable PATH está relacionada con la localización de ejecutables en el sistema, no con errores de cálculo dentro del programa."
+          },
+          {
+            "clave": "c",
+            "motivo": "El Garbage Collector gestiona la memoria de objetos, pero no tiene relación con operaciones matemáticas como divisiones."
+          },
+          {
+            "clave": "d",
+            "motivo": "Un error de sintaxis se detecta durante la compilación. En este caso el programa compila correctamente."
+          }
+        ],
+        "resumen_didactico": "Si el programa compila pero falla al ejecutarse, se trata de un error en tiempo de ejecución o excepción.",
+        "ejemplo_practico": "Si un programa ejecuta la operación 10 / 0 en Java, el compilador no detecta el problema, pero durante la ejecución se lanzará una excepción ArithmeticException.",
+        "conclusion_final": "Cuando un programa compila correctamente pero falla al ejecutarse por una operación inválida, se produce una excepción en tiempo de ejecución."
+      }
+    },
+    {
+      "id": "UT3-Q24",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Qué es un Entorno de Desarrollo Integrado IDE?",
+      "contexto": "Herramientas utilizadas por los programadores para desarrollar software de forma más eficiente.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Un sistema operativo diseñado exclusivamente para programadores."
+        },
+        {
+          "clave": "b",
+          "texto": "Un lenguaje de programación de bajo nivel muy rápido."
+        },
+        {
+          "clave": "c",
+          "texto": "Un servidor en la nube donde se guardan los archivos jar."
+        },
+        {
+          "clave": "d",
+          "texto": "Una aplicación que combina todas las herramientas de desarrollo en una única interfaz."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "Un IDE (Integrated Development Environment) es una aplicación que reúne en una sola interfaz varias herramientas necesarias para el desarrollo de software. Normalmente incluye editor de código, compilador, depurador, gestor de proyectos y otras utilidades que facilitan el trabajo del programador.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Un IDE no es un sistema operativo; es una aplicación que se ejecuta sobre un sistema operativo."
+          },
+          {
+            "clave": "b",
+            "motivo": "Un IDE no es un lenguaje de programación; es una herramienta para escribir y gestionar programas."
+          },
+          {
+            "clave": "c",
+            "motivo": "Un IDE no es un servidor ni un servicio de almacenamiento en la nube."
+          }
+        ],
+        "resumen_didactico": "Un IDE es un programa que reúne editor, compilador, depurador y otras herramientas para facilitar el desarrollo de software.",
+        "ejemplo_practico": "Programas como IntelliJ IDEA, Eclipse o Visual Studio Code permiten escribir código, compilarlo, ejecutarlo y depurarlo desde una misma aplicación.",
+        "conclusion_final": "Un IDE es una aplicación que integra todas las herramientas necesarias para desarrollar software en una única interfaz."
+      }
+    },
+    {
+      "id": "UT3-Q25",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Trabajas en Bilbao y tu IDE resalta la sintaxis con colores y te avisa de errores antes de compilar. ¿Cómo se llama esta característica?",
+      "contexto": "Funcionalidades avanzadas de los editores dentro de los entornos de desarrollo integrados.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Depurador Debugger."
+        },
+        {
+          "clave": "b",
+          "texto": "Editor de código inteligente."
+        },
+        {
+          "clave": "c",
+          "texto": "Gestión jerárquica de archivos."
+        },
+        {
+          "clave": "d",
+          "texto": "Compilación manual por terminal."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Los IDE modernos incluyen un editor de código inteligente que proporciona funcionalidades como resaltado de sintaxis, autocompletado, detección temprana de errores y sugerencias mientras el programador escribe. Esto ayuda a detectar problemas antes de la compilación y mejora la productividad del desarrollador.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El depurador (debugger) sirve para analizar el comportamiento del programa durante su ejecución paso a paso, no para resaltar sintaxis ni detectar errores mientras se escribe el código."
+          },
+          {
+            "clave": "c",
+            "motivo": "La gestión jerárquica de archivos se refiere a la organización de carpetas y archivos dentro de un proyecto, no al análisis del código mientras se escribe."
+          },
+          {
+            "clave": "d",
+            "motivo": "La compilación manual por terminal implica ejecutar comandos manualmente y no está relacionada con el resaltado de sintaxis ni la detección temprana de errores."
+          }
+        ],
+        "resumen_didactico": "Los IDE incluyen editores inteligentes que ayudan al programador resaltando el código y detectando errores mientras se escribe.",
+        "ejemplo_practico": "En un IDE como IntelliJ o VS Code, si escribes systen.out.println en lugar de System.out.println, el editor subraya el error inmediatamente antes de compilar.",
+        "conclusion_final": "La característica que resalta sintaxis y detecta errores mientras se escribe se llama editor de código inteligente."
+      }
+    },
+    {
+      "id": "UT3-Q26",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Para qué sirve el Depurador Debugger incluido en los IDEs profesionales?",
+      "contexto": "Herramienta de análisis de ejecución incluida en los entornos de desarrollo para encontrar errores en el código.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Para comprimir el código y enviarlo por correo."
+        },
+        {
+          "clave": "b",
+          "texto": "Para instalar actualizaciones del sistema operativo Windows."
+        },
+        {
+          "clave": "c",
+          "texto": "Para traducir el código de Java a Python automáticamente."
+        },
+        {
+          "clave": "d",
+          "texto": "Para ejecutar el programa paso a paso y localizar fallos internos."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "El depurador (Debugger) es una herramienta incluida en los IDE que permite ejecutar un programa paso a paso, detener su ejecución en puntos específicos (breakpoints), inspeccionar variables y analizar el flujo del programa. Esto ayuda a identificar errores de lógica o comportamientos inesperados durante la ejecución.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La compresión de archivos es una tarea relacionada con herramientas de empaquetado o compresión, no con la depuración de código."
+          },
+          {
+            "clave": "b",
+            "motivo": "La instalación de actualizaciones del sistema operativo no está relacionada con el desarrollo de software ni con los IDE."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los depuradores no traducen código entre lenguajes; su función es analizar el comportamiento del programa mientras se ejecuta."
+          }
+        ],
+        "resumen_didactico": "El debugger permite ejecutar el programa paso a paso, observar variables y encontrar dónde ocurre un error.",
+        "ejemplo_practico": "Un desarrollador coloca un breakpoint en una línea de código dentro de un bucle y ejecuta el programa en modo depuración para ver cómo cambian los valores de las variables en cada iteración.",
+        "conclusion_final": "El depurador sirve para analizar la ejecución del programa paso a paso y localizar errores internos."
+      }
+    },
+    {
+      "id": "UT3-Q27",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "Al instalar un IDE en tu puesto de trabajo, debes conectarlo con el motor de Java. ¿Qué debes configurar en el apartado Project Structure?",
+      "contexto": "Configuración inicial de un entorno de desarrollo para poder compilar y ejecutar proyectos Java.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "La ubicación del JDK."
+        },
+        {
+          "clave": "b",
+          "texto": "La ruta del navegador web."
+        },
+        {
+          "clave": "c",
+          "texto": "El nombre del usuario de la computadora."
+        },
+        {
+          "clave": "d",
+          "texto": "La velocidad de la conexión a internet."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Para que un IDE pueda compilar y ejecutar programas Java necesita saber dónde está instalado el JDK (Java Development Kit). En la configuración del proyecto, normalmente dentro de 'Project Structure', se indica la ruta del JDK para que el IDE pueda utilizar el compilador javac, la JVM y las bibliotecas necesarias.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "La ruta del navegador web no tiene relación con la compilación ni ejecución de programas Java."
+          },
+          {
+            "clave": "c",
+            "motivo": "El nombre del usuario del sistema no afecta al funcionamiento del entorno de desarrollo."
+          },
+          {
+            "clave": "d",
+            "motivo": "La velocidad de internet no es una configuración necesaria para ejecutar programas Java en el IDE."
+          }
+        ],
+        "resumen_didactico": "Para trabajar con Java en un IDE es necesario indicar dónde está instalado el JDK.",
+        "ejemplo_practico": "En IntelliJ IDEA o Eclipse, al crear un proyecto Java se selecciona la ruta del JDK instalado en el sistema para que el IDE pueda compilar y ejecutar el código.",
+        "conclusion_final": "Para conectar un IDE con el motor de Java es necesario configurar la ubicación del JDK."
+      }
+    },
+    {
+      "id": "UT3-Q28",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "En la estructura estándar de un proyecto en un IDE, ¿qué contiene la carpeta src?",
+      "contexto": "Organización típica de los archivos dentro de un proyecto de programación en un entorno de desarrollo.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Los archivos java con el código fuente."
+        },
+        {
+          "clave": "b",
+          "texto": "Las librerías externas descargadas de internet."
+        },
+        {
+          "clave": "c",
+          "texto": "Las imágenes y vídeos del proyecto."
+        },
+        {
+          "clave": "d",
+          "texto": "Los archivos class compilados."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En la estructura estándar de un proyecto Java dentro de un IDE, la carpeta src (source) contiene los archivos de código fuente escritos por el programador, normalmente con extensión .java. A partir de estos archivos, el compilador genera los archivos .class con el bytecode que ejecutará la JVM.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Las librerías externas suelen colocarse en carpetas como lib o se gestionan mediante sistemas de dependencias como Maven o Gradle."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los recursos multimedia normalmente se guardan en carpetas de recursos como resources o assets, no en src."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los archivos .class son el resultado de la compilación y normalmente se guardan en carpetas como bin, out o build."
+          }
+        ],
+        "resumen_didactico": "La carpeta src contiene el código fuente del programa, es decir, los archivos .java escritos por el programador.",
+        "ejemplo_practico": "En un proyecto Java típico, dentro de src se encuentra el archivo HolaMundo.java, que luego será compilado para generar HolaMundo.class.",
+        "conclusion_final": "La carpeta src contiene los archivos de código fuente del proyecto."
+      }
+    },
+    {
+      "id": "UT3-Q29",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Qué sucede en un IDE cuando el programador pulsa el icono del triángulo verde Play?",
+      "contexto": "Acciones automáticas que realiza un entorno de desarrollo integrado al ejecutar un programa.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "El programa se envía automáticamente al cliente final por correo."
+        },
+        {
+          "clave": "b",
+          "texto": "El IDE guarda, compila y ejecuta el programa en un solo paso."
+        },
+        {
+          "clave": "c",
+          "texto": "El IDE borra todo el proyecto para liberar espacio."
+        },
+        {
+          "clave": "d",
+          "texto": "Se abre un manual de ayuda en formato PDF."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Cuando el programador pulsa el botón Play en un IDE, el entorno automatiza varias tareas: guarda los cambios del archivo, compila el código fuente para generar el bytecode correspondiente y ejecuta el programa usando la JVM. Esta automatización es una de las principales ventajas de los IDE frente al uso manual de la terminal.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El IDE no envía automáticamente el programa al cliente; la distribución del software es un proceso independiente."
+          },
+          {
+            "clave": "c",
+            "motivo": "El IDE no elimina el proyecto al ejecutar el programa."
+          },
+          {
+            "clave": "d",
+            "motivo": "El botón Play está asociado a la ejecución del programa, no a abrir documentación."
+          }
+        ],
+        "resumen_didactico": "El botón Play de un IDE automatiza el proceso de guardar, compilar y ejecutar el programa.",
+        "ejemplo_practico": "En IntelliJ IDEA o Eclipse, al pulsar el botón Play el IDE compila automáticamente los archivos .java y ejecuta la clase principal sin que el programador tenga que escribir comandos en la terminal.",
+        "conclusion_final": "El botón Play de un IDE guarda, compila y ejecuta el programa automáticamente."
+      }
+    },
+    {
+      "id": "UT3-Q30",
+      "tema": "UT3 Lenguajes de programación y entornos de desarrollo integrado",
+      "pregunta": "¿Por qué es valioso que un programador junior sepa cómo funciona Java por dentro sin usar un IDE?",
+      "contexto": "Importancia de comprender el funcionamiento interno de las herramientas de programación más allá de las interfaces automáticas.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Porque los IDEs van a dejar de existir en el futuro cercano."
+        },
+        {
+          "clave": "b",
+          "texto": "Porque programar con terminal es la única forma de crear archivos jar."
+        },
+        {
+          "clave": "c",
+          "texto": "Porque así no necesita aprender a utilizar el Garbage Collector."
+        },
+        {
+          "clave": "d",
+          "texto": "Porque le da una base técnica superior para configurar servidores o depurar errores complejos."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "Comprender cómo funciona Java sin depender de un IDE permite al programador entender el proceso real de compilación, ejecución y configuración del entorno. Este conocimiento es fundamental cuando se trabaja con servidores, entornos de producción o cuando aparecen errores complejos que no se pueden resolver solo con las herramientas visuales del IDE.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Los IDE son herramientas fundamentales en el desarrollo moderno y no se espera que desaparezcan."
+          },
+          {
+            "clave": "b",
+            "motivo": "Los archivos JAR también pueden crearse desde herramientas de build o desde los propios IDE."
+          },
+          {
+            "clave": "c",
+            "motivo": "El funcionamiento del Garbage Collector es parte del conocimiento de Java y no desaparece por usar o no un IDE."
+          }
+        ],
+        "resumen_didactico": "Entender cómo funciona Java sin un IDE ayuda a comprender el proceso real de compilación y ejecución del programa.",
+        "ejemplo_practico": "Si un programa Java falla al desplegarse en un servidor Linux, un desarrollador que entiende cómo compilar y ejecutar desde la terminal podrá diagnosticar el problema más fácilmente.",
+        "conclusion_final": "Conocer cómo funciona Java internamente proporciona una base técnica más sólida para resolver problemas complejos."
+      }
+    }
+]

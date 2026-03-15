@@ -1,0 +1,1187 @@
+[
+    {
+      "id": "UT5-Q01",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cómo se denomina técnicamente a las herramientas que permiten romper la ejecución secuencial de un programa para tomar decisiones o repetir tareas?",
+      "contexto": "Concepto fundamental de control de flujo en programación.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Estructuras de control" },
+        { "clave": "b", "texto": "Argumentos de línea de comandos" },
+        { "clave": "c", "texto": "Variables de entorno" },
+        { "clave": "d", "texto": "Métodos de entrada" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En programación, las estructuras de control permiten modificar el flujo normal de ejecución de un programa. Por defecto, las instrucciones se ejecutan de forma secuencial (una detrás de otra), pero mediante estructuras como if, switch o bucles se pueden tomar decisiones o repetir acciones. Estas herramientas rompen la linealidad del programa y permiten crear lógica compleja.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Los argumentos de línea de comandos sirven para pasar datos al programa cuando se ejecuta, normalmente mediante el parámetro args del método main, pero no controlan el flujo del programa."
+          },
+          {
+            "clave": "c",
+            "motivo": "Las variables de entorno almacenan configuraciones del sistema o del entorno de ejecución, pero no afectan directamente a la estructura lógica del programa."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los métodos de entrada permiten recibir información del usuario o del sistema (por ejemplo con Scanner o System.in), pero no controlan decisiones ni repeticiones del flujo del programa."
+          }
+        ],
+        "resumen_didactico": "Las estructuras de control son las herramientas que permiten a un programa tomar decisiones o repetir acciones, rompiendo la ejecución lineal del código.",
+        "ejemplo_practico": "Un programa que valida una contraseña puede usar una estructura if para comprobar si la contraseña es correcta. Si lo es, permite el acceso; si no, muestra un mensaje de error.",
+        "conclusion_final": "Las estructuras de control son el mecanismo fundamental que permite a los programas tomar decisiones y repetir tareas, convirtiendo un programa secuencial en uno con lógica inteligente."
+      }
+    },
+    {
+      "id": "UT5-Q02",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "En el desarrollo de scripts para servidores o tareas de DevOps, ¿qué recurso del método main se utiliza para recibir datos justo en el momento de arrancar el programa?",
+      "contexto": "Entrada de datos al iniciar un programa mediante argumentos de línea de comandos.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "El método nextLine() de Scanner" },
+        { "clave": "b", "texto": "El canal System.err" },
+        { "clave": "c", "texto": "El objeto System.in" },
+        { "clave": "d", "texto": "El parámetro String[] args" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En Java, cuando un programa arranca puede recibir información directamente desde la línea de comandos mediante el parámetro String[] args del método main. Estos argumentos se utilizan mucho en scripts de servidores, herramientas de administración o tareas de DevOps, donde el usuario pasa datos al programa al ejecutarlo. Los valores enviados desde la consola se almacenan dentro del array args y el programa puede utilizarlos desde el inicio de la ejecución. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "nextLine() pertenece a la clase Scanner y se usa para leer datos introducidos por el usuario durante la ejecución del programa, no en el momento de arrancarlo."
+          },
+          {
+            "clave": "b",
+            "motivo": "System.err es el canal de salida de errores del programa. Se utiliza para mostrar mensajes de fallo o advertencia, no para recibir datos al inicio."
+          },
+          {
+            "clave": "c",
+            "motivo": "System.in es el flujo de entrada estándar del programa (normalmente el teclado), pero requiere herramientas como Scanner para leer datos durante la ejecución, no al arrancar el programa."
+          }
+        ],
+        "resumen_didactico": "Cuando un programa necesita recibir parámetros justo al arrancar (por ejemplo en scripts de servidores), Java utiliza el array de argumentos String[] args del método main.",
+        "ejemplo_practico": "Si ejecutas en consola: java DespliegueApp produccion, el valor \"produccion\" llegará al programa dentro de args[0]. El programa puede usar ese dato para decidir en qué entorno desplegar la aplicación.",
+        "conclusion_final": "La forma estándar de recibir datos en el momento de iniciar un programa en Java es mediante el parámetro String[] args del método main."
+      }
+    },
+    {
+      "id": "UT5-Q03",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es el nombre técnico que recibe el intercambio de información entre un programa y el mundo exterior (entrada y salida)?",
+      "contexto": "Comunicación entre un programa y el usuario o sistema mediante entrada y salida de datos.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Iteración" },
+        { "clave": "b", "texto": "I/O (Input/Output)" },
+        { "clave": "c", "texto": "Bifurcación" },
+        { "clave": "d", "texto": "Debugging" }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El intercambio de datos entre un programa y su entorno se denomina I/O (Input/Output). Esto incluye tanto la entrada de información (input), como datos introducidos por el usuario o recibidos desde archivos o argumentos, como la salida de información (output), que muestra resultados o mensajes al usuario. En Java, este intercambio se realiza mediante flujos como System.in para entrada y System.out para salida. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La iteración se refiere a la repetición de un bloque de código mediante bucles como for, while o do...while, no al intercambio de datos con el exterior."
+          },
+          {
+            "clave": "c",
+            "motivo": "La bifurcación describe estructuras de decisión como if o switch que permiten elegir entre distintos caminos lógicos en el programa."
+          },
+          {
+            "clave": "d",
+            "motivo": "El debugging es el proceso de detectar y corregir errores (bugs) en un programa, no el intercambio de datos con el usuario."
+          }
+        ],
+        "resumen_didactico": "El concepto I/O (Input/Output) describe cómo un programa recibe datos del exterior y devuelve resultados al usuario o al sistema.",
+        "ejemplo_practico": "Un programa que pide al usuario su nombre mediante teclado (entrada) y luego muestra un saludo en pantalla (salida) está realizando operaciones de I/O.",
+        "conclusion_final": "El intercambio de información entre un programa y el mundo exterior se denomina técnicamente I/O (Input/Output)."
+      }
+    },
+    {
+      "id": "UT5-Q04",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "Java utiliza flujos de datos para la comunicación con el usuario. ¿A qué dispositivo está conectado por defecto el canal de entrada estándar (System.in)?",
+      "contexto": "Flujos de entrada y salida estándar en Java.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Al disco duro" },
+        { "clave": "b", "texto": "Al monitor" },
+        { "clave": "c", "texto": "A la impresora" },
+        { "clave": "d", "texto": "Al teclado" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En Java, la entrada estándar (System.in) es el canal por el que el programa recibe datos del usuario. Por defecto está conectado al teclado, de modo que cuando el usuario escribe información en la consola y pulsa Enter, esos datos llegan al programa a través de System.in. Este flujo suele combinarse con la clase Scanner para leer fácilmente cadenas o números introducidos por el usuario. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El disco duro se utiliza para almacenamiento de archivos, no como canal de entrada estándar interactivo del programa."
+          },
+          {
+            "clave": "b",
+            "motivo": "El monitor está asociado a la salida estándar (System.out), donde el programa muestra información al usuario."
+          },
+          {
+            "clave": "c",
+            "motivo": "La impresora es un dispositivo de salida física, pero no forma parte del flujo estándar de entrada de un programa."
+          }
+        ],
+        "resumen_didactico": "System.in es el flujo de entrada estándar de Java y normalmente está conectado al teclado del usuario.",
+        "ejemplo_practico": "Cuando un programa usa Scanner para pedir un número al usuario, el usuario lo escribe con el teclado y el programa lo recibe a través de System.in.",
+        "conclusion_final": "El canal de entrada estándar System.in está conectado por defecto al teclado, permitiendo que el usuario introduzca datos desde la consola."
+      }
+    },
+    {
+      "id": "UT5-Q05",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es la función principal del canal de salida de error estándar (System.err) en un entorno de desarrollo profesional?",
+      "contexto": "Uso de los flujos estándar de salida en Java para separar mensajes normales de errores.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Leer frases completas introducidas por el usuario."
+        },
+        {
+          "clave": "b",
+          "texto": "Mostrar resultados normales de operaciones matemáticas."
+        },
+        {
+          "clave": "c",
+          "texto": "Almacenar datos en una base de datos externa."
+        },
+        {
+          "clave": "d",
+          "texto": "Destacar avisos prioritarios y errores de forma separada a la salida normal."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En Java existen tres flujos estándar: System.in (entrada), System.out (salida normal) y System.err (salida de errores). El flujo System.err se utiliza para mostrar mensajes de error o avisos críticos separados de la salida normal del programa. En entornos de desarrollo o IDEs, estos mensajes suelen aparecer resaltados, por ejemplo en color rojo, para que el programador detecte rápidamente problemas o fallos en la ejecución. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Leer frases introducidas por el usuario corresponde al flujo de entrada estándar (System.in) normalmente usado con la clase Scanner."
+          },
+          {
+            "clave": "b",
+            "motivo": "Mostrar resultados normales del programa se hace mediante System.out, que es el canal de salida estándar."
+          },
+          {
+            "clave": "c",
+            "motivo": "El almacenamiento en bases de datos se realiza mediante APIs o librerías de acceso a datos, no mediante los flujos estándar de salida."
+          }
+        ],
+        "resumen_didactico": "System.err es un canal especial de salida destinado a mostrar errores o advertencias importantes separados de la salida normal del programa.",
+        "ejemplo_practico": "Si un programa intenta abrir un archivo que no existe, puede mostrar el mensaje \"Archivo no encontrado\" usando System.err para que el error destaque frente a los mensajes normales.",
+        "conclusion_final": "System.err se utiliza para mostrar errores y avisos críticos de forma separada y visible respecto a la salida estándar del programa."
+      }
+    },
+    {
+      "id": "UT5-Q06",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Por qué se considera recomendable el uso de la clase Scanner en lugar de leer directamente desde System.in?",
+      "contexto": "Uso de la clase Scanner para facilitar la lectura de datos desde la entrada estándar.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Porque Scanner es el único método que permite imprimir texto en color rojo."
+        },
+        {
+          "clave": "b",
+          "texto": "Porque permite ejecutar programas sin necesidad de instalar el JDK."
+        },
+        {
+          "clave": "c",
+          "texto": "Porque actúa como un intérprete que traduce bytes crudos a tipos de datos listos para usar (int, String)."
+        },
+        {
+          "clave": "d",
+          "texto": "Porque Scanner cierra automáticamente todos los puertos del ordenador."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "Leer directamente desde System.in devuelve datos en forma de bytes, lo que resulta complejo de manejar. La clase Scanner se utiliza como una herramienta que interpreta esos bytes y los convierte en tipos de datos útiles para el programador, como String, int o double. Esto facilita enormemente la lectura de datos introducidos por el usuario desde la consola. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El color rojo en consola suele estar asociado a la salida de error (System.err) en los IDEs, no al uso de la clase Scanner."
+          },
+          {
+            "clave": "b",
+            "motivo": "Scanner no tiene relación con la instalación del JDK ni con la ejecución del programa; simplemente facilita la lectura de datos."
+          },
+          {
+            "clave": "d",
+            "motivo": "Scanner no gestiona puertos del sistema ni funciones de red; únicamente sirve para leer datos de una fuente de entrada como System.in."
+          }
+        ],
+        "resumen_didactico": "Scanner simplifica la lectura de datos desde el teclado convirtiendo los bytes de entrada en tipos de datos que Java puede usar directamente.",
+        "ejemplo_practico": "Con Scanner puedes leer un número introducido por el usuario usando scanner.nextInt(), mientras que leyendo directamente desde System.in tendrías que procesar manualmente los bytes recibidos.",
+        "conclusion_final": "Scanner es recomendable porque convierte la entrada cruda de System.in en tipos de datos utilizables como String o int de forma sencilla."
+      }
+    },
+    {
+      "id": "UT5-Q07",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Qué método de la clase Scanner debe utilizarse para capturar una frase completa que contenga espacios en blanco?",
+      "contexto": "Lectura de texto completo desde la consola usando la clase Scanner.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "next()" },
+        { "clave": "b", "texto": "nextLine()" },
+        { "clave": "c", "texto": "nextInt()" },
+        { "clave": "d", "texto": "hasNext()" }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El método nextLine() de la clase Scanner permite leer una línea completa de texto hasta que el usuario pulsa Enter. Esto incluye espacios en blanco dentro de la frase. Por ello es el método adecuado cuando se desea capturar frases completas introducidas por el usuario. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "next() solo lee una palabra hasta el primer espacio en blanco, por lo que no captura frases completas."
+          },
+          {
+            "clave": "c",
+            "motivo": "nextInt() se utiliza para leer números enteros, no texto."
+          },
+          {
+            "clave": "d",
+            "motivo": "hasNext() no lee datos; únicamente comprueba si existe más información disponible en la entrada."
+          }
+        ],
+        "resumen_didactico": "Cuando quieres leer una frase completa introducida por el usuario (con espacios incluidos), debes usar nextLine().",
+        "ejemplo_practico": "Si un programa pide el nombre completo de una persona como \"Juan Pérez García\", nextLine() permite leer toda la frase en una sola variable.",
+        "conclusion_final": "El método correcto para capturar una línea completa de texto con espacios en Scanner es nextLine()."
+      }
+    },
+    {
+      "id": "UT5-Q08",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "Al trabajar con la clase Scanner, ¿cuál es una buena práctica de gestión de recursos que debe realizarse cuando el objeto ya no sea necesario?",
+      "contexto": "Buenas prácticas al usar flujos de entrada en Java.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Borrar el archivo .class generado." },
+        { "clave": "b", "texto": "Cambiar el nombre de la variable." },
+        {
+          "clave": "c",
+          "texto": "Llamar al método .close() para liberar el flujo de datos."
+        },
+        { "clave": "d", "texto": "Reiniciar el ordenador." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "Cuando se utiliza la clase Scanner conectada a System.in u otro flujo de datos, es una buena práctica cerrar el recurso cuando ya no se necesita mediante el método close(). Esto libera el flujo de datos y evita mantener recursos del sistema abiertos innecesariamente. En el ejemplo del temario, después de leer los datos del usuario se indica explícitamente cerrar el Scanner con lector.close(). :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Los archivos .class son el resultado de la compilación del programa y no tienen relación con la gestión de recursos del objeto Scanner."
+          },
+          {
+            "clave": "b",
+            "motivo": "Cambiar el nombre de la variable no afecta al flujo de entrada ni libera recursos del sistema."
+          },
+          {
+            "clave": "d",
+            "motivo": "Reiniciar el ordenador no forma parte de la gestión de recursos de un programa ni tiene relación con el uso de Scanner."
+          }
+        ],
+        "resumen_didactico": "Cuando utilizas Scanner u otros flujos de entrada, es importante cerrar el recurso con .close() cuando termines de usarlo.",
+        "ejemplo_practico": "Scanner scanner = new Scanner(System.in);\nString nombre = scanner.nextLine();\nscanner.close();",
+        "conclusion_final": "La práctica correcta es cerrar el objeto Scanner con .close() para liberar el flujo de datos y los recursos asociados."
+      }
+    },
+    {
+      "id": "UT5-Q09",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es la estructura de selección básica que evalúa una condición y solo ejecuta un bloque de código si dicha condición es verdadera (true)?",
+      "contexto": "Estructuras de selección para la toma de decisiones en programación.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "if simple" },
+        { "clave": "b", "texto": "for" },
+        { "clave": "c", "texto": "switch" },
+        { "clave": "d", "texto": "break" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "La sentencia if es la estructura de selección básica en programación. Evalúa una condición lógica y, si el resultado es verdadero (true), ejecuta el bloque de código asociado. Si la condición es falsa, el bloque se ignora. Esta estructura constituye la forma más simple de tomar decisiones dentro de un programa. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "for es una estructura de repetición (bucle) utilizada para ejecutar código varias veces, no para evaluar una condición simple de decisión."
+          },
+          {
+            "clave": "c",
+            "motivo": "switch también es una estructura de selección, pero se usa para comparar una variable con múltiples valores posibles, no para una única condición lógica simple."
+          },
+          {
+            "clave": "d",
+            "motivo": "break es una instrucción de salto que se usa para salir de un bucle o de un bloque switch, pero no evalúa condiciones por sí misma."
+          }
+        ],
+        "resumen_didactico": "La estructura if simple permite ejecutar un bloque de código únicamente cuando una condición lógica se cumple.",
+        "ejemplo_practico": "if (edad >= 18) {\n  System.out.println(\"Puede acceder al sistema\");\n}",
+        "conclusion_final": "La estructura de selección básica que ejecuta código solo cuando la condición es verdadera es el if simple."
+      }
+    },
+    {
+      "id": "UT5-Q10",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "En lógica de programación, ¿cuál es la función de la sentencia \"else\" dentro de una estructura de selección?",
+      "contexto": "Uso de estructuras de selección if-else para controlar el flujo de ejecución.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Ejecutar un camino alternativo cuando la condición del \"if\" es falsa."
+        },
+        {
+          "clave": "b",
+          "texto": "Definir una variable global para todo el paquete."
+        },
+        {
+          "clave": "c",
+          "texto": "Repetir el código hasta que el usuario pulse una tecla."
+        },
+        {
+          "clave": "d",
+          "texto": "Salir inmediatamente del programa con un error."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Dentro de una estructura de selección, la sentencia else define el bloque de código que se ejecutará cuando la condición evaluada en el if sea falsa. De esta forma el programa puede seguir un camino alternativo según el resultado de la condición lógica. Las estructuras if-else permiten tomar decisiones y controlar el flujo del programa dependiendo de diferentes situaciones. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "La definición de variables globales pertenece al diseño de variables y alcance del programa, no al funcionamiento de la sentencia else."
+          },
+          {
+            "clave": "c",
+            "motivo": "Repetir código corresponde a estructuras iterativas como while, do...while o for, no a una estructura de selección."
+          },
+          {
+            "clave": "d",
+            "motivo": "Salir del programa con error no es función de else; para eso se usarían excepciones, System.exit() u otros mecanismos."
+          }
+        ],
+        "resumen_didactico": "La sentencia else permite definir qué ocurre cuando la condición del if no se cumple.",
+        "ejemplo_practico": "if (saldo >= 100) {\n  System.out.println(\"Compra aprobada\");\n} else {\n  System.out.println(\"Saldo insuficiente\");\n}",
+        "conclusion_final": "La función del else es ejecutar un camino alternativo cuando la condición evaluada en el if resulta falsa."
+      }
+    },
+    {
+      "id": "UT5-Q11",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Qué operador permite escribir una estructura de decisión simple de tipo \"if-else\" en una sola línea de código?",
+      "contexto": "Uso del operador ternario para simplificar estructuras condicionales.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Operador ternario (?)" },
+        { "clave": "b", "texto": "Operador módulo (%)" },
+        { "clave": "c", "texto": "Operador relacional (= =)" },
+        { "clave": "d", "texto": "Operador de incremento (++)" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El operador ternario permite escribir una estructura condicional equivalente a un if-else en una sola línea. Su sintaxis general es: condición ? valorSiVerdadero : valorSiFalso. Es una forma compacta de expresar decisiones simples dentro del código. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "El operador módulo (%) se utiliza para obtener el resto de una división, no para tomar decisiones condicionales."
+          },
+          {
+            "clave": "c",
+            "motivo": "El operador relacional (==) sirve para comparar valores y devolver true o false, pero no permite escribir una estructura completa de decisión."
+          },
+          {
+            "clave": "d",
+            "motivo": "El operador de incremento (++) se usa para aumentar el valor de una variable en una unidad, normalmente dentro de bucles o contadores."
+          }
+        ],
+        "resumen_didactico": "El operador ternario permite simplificar un if-else cuando la decisión es muy simple y puede expresarse en una sola línea.",
+        "ejemplo_practico": "int descuento = (vip) ? 20 : 0;",
+        "conclusion_final": "El operador ternario (?) permite escribir una decisión equivalente a un if-else de forma compacta en una sola línea."
+      }
+    },
+    {
+      "id": "UT5-Q12",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es la principal ventaja técnica de utilizar una estructura \"switch\" en lugar de múltiples \"if-else\" anidados?",
+      "contexto": "Comparación entre estructuras de selección para organizar decisiones múltiples.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Evita que el programa consuma memoria RAM." },
+        {
+          "clave": "b",
+          "texto": "Es la única estructura que permite comparar números decimales de alta precisión."
+        },
+        {
+          "clave": "c",
+          "texto": "Ofrece una mayor legibilidad cuando se evalúa una misma variable contra muchos casos posibles."
+        },
+        {
+          "clave": "d",
+          "texto": "Permite ejecutar código más rápido en procesadores antiguos."
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "La estructura switch se utiliza cuando una misma variable debe compararse contra múltiples valores posibles. En lugar de escribir muchas condiciones if-else encadenadas, switch organiza los casos mediante bloques case, lo que mejora considerablemente la legibilidad y organización del código. Por este motivo se usa habitualmente en menús de opciones o máquinas de estados dentro de programas. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El uso de switch no elimina el consumo de memoria RAM; todas las estructuras de control utilizan recursos similares."
+          },
+          {
+            "clave": "b",
+            "motivo": "switch no se utiliza para comparar números decimales de alta precisión; normalmente trabaja con tipos como int, char, String o enums."
+          },
+          {
+            "clave": "d",
+            "motivo": "La finalidad principal de switch no es mejorar el rendimiento en procesadores antiguos, sino organizar mejor el código cuando hay muchos casos posibles."
+          }
+        ],
+        "resumen_didactico": "switch se utiliza cuando una misma variable debe compararse con muchos valores distintos, ya que hace el código más claro y fácil de mantener.",
+        "ejemplo_practico": "switch(opcionMenu) {\n  case 1: System.out.println(\"Consultar saldo\"); break;\n  case 2: System.out.println(\"Retirar dinero\"); break;\n  case 3: System.out.println(\"Salir\"); break;\n}",
+        "conclusion_final": "La ventaja principal de switch frente a múltiples if-else es que mejora la legibilidad cuando se evalúa una misma variable contra muchos casos posibles."
+      }
+    },
+    {
+      "id": "UT5-Q13",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Qué sucede en una estructura \"switch\" si se omite la sentencia \"break\" al final de un caso (case)?",
+      "contexto": "Comportamiento de la estructura switch cuando no se utiliza la instrucción break.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "El compilador borra automáticamente el código erróneo."
+        },
+        {
+          "clave": "b",
+          "texto": "El programa lanza una excepción y se detiene."
+        },
+        {
+          "clave": "c",
+          "texto": "El programa vuelve al principio del método main."
+        },
+        {
+          "clave": "d",
+          "texto": "Se produce un efecto cascada, ejecutando los casos siguientes aunque no coincidan."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "En una estructura switch, la instrucción break se utiliza para detener la ejecución cuando se ha encontrado un caso coincidente. Si se omite break, el programa continúa ejecutando los bloques de los siguientes case aunque no coincidan con la condición inicial. Este comportamiento se conoce como efecto cascada o fall-through. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El compilador no elimina código automáticamente; el comportamiento está definido por el lenguaje y el programa se ejecuta normalmente."
+          },
+          {
+            "clave": "b",
+            "motivo": "La ausencia de break no genera una excepción; el programa simplemente continúa ejecutando los siguientes casos."
+          },
+          {
+            "clave": "c",
+            "motivo": "El flujo del programa no vuelve al inicio del método main; simplemente sigue ejecutando los bloques case siguientes dentro del mismo switch."
+          }
+        ],
+        "resumen_didactico": "Si no se usa break en un case de switch, el programa seguirá ejecutando los siguientes casos aunque no coincidan.",
+        "ejemplo_practico": "switch(opcion) {\n  case 1:\n    System.out.println(\"Uno\");\n  case 2:\n    System.out.println(\"Dos\");\n}\n\nSi opcion vale 1, se imprimirá \"Uno\" y también \"Dos\" porque no hay break.",
+        "conclusion_final": "Omitir break en un switch provoca un efecto cascada donde se ejecutan los casos siguientes aunque no coincidan con la condición."
+      }
+    },
+    {
+      "id": "UT5-Q14",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "Dentro de un \"switch\", ¿para qué sirve la sección denominada \"default\"?",
+      "contexto": "Uso del bloque default dentro de una estructura switch.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Para establecer la conexión inicial con el teclado."
+        },
+        {
+          "clave": "b",
+          "texto": "Para ejecutar un bloque de código si ninguna de las opciones anteriores coincide."
+        },
+        {
+          "clave": "c",
+          "texto": "Para obligar al usuario a introducir un número entero."
+        },
+        { "clave": "d", "texto": "Para declarar las constantes de la clase." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En una estructura switch, el bloque default actúa como un caso por defecto. Se ejecuta cuando el valor evaluado no coincide con ninguno de los case definidos anteriormente. Se utiliza como una especie de \"cajón de sastre\" para manejar situaciones inesperadas o valores no contemplados dentro de la lógica del programa. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La conexión con el teclado corresponde al flujo de entrada estándar System.in, no al bloque default del switch."
+          },
+          {
+            "clave": "c",
+            "motivo": "La validación o lectura de números enteros se realiza mediante herramientas como Scanner.nextInt(), no mediante el bloque default."
+          },
+          {
+            "clave": "d",
+            "motivo": "Las constantes se declaran mediante palabras clave como final o static final, no dentro de la estructura switch."
+          }
+        ],
+        "resumen_didactico": "El bloque default se ejecuta cuando ningún case del switch coincide con el valor evaluado.",
+        "ejemplo_practico": "switch(opcion) {\n  case 1: System.out.println(\"Consultar saldo\"); break;\n  case 2: System.out.println(\"Retirar dinero\"); break;\n  default: System.out.println(\"Opción no válida\");\n}",
+        "conclusion_final": "El bloque default sirve para ejecutar código cuando ningún caso definido en el switch coincide con el valor evaluado."
+      }
+    },
+    {
+      "id": "UT5-Q15",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cómo se denominan técnicamente las estructuras de repetición que permiten ejecutar un bloque de código múltiples veces?",
+      "contexto": "Concepto de estructuras iterativas dentro del control de flujo de un programa.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Canales de salida" },
+        { "clave": "b", "texto": "Bifurcaciones" },
+        { "clave": "c", "texto": "Argumentos" },
+        { "clave": "d", "texto": "Bucles o estructuras iterativas" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "Las estructuras de repetición se denominan técnicamente bucles o estructuras iterativas. Permiten ejecutar un mismo bloque de código múltiples veces mientras se cumpla una condición o durante un número determinado de iteraciones. Ejemplos comunes en Java son los bucles for, while y do...while. Estas estructuras se utilizan para automatizar tareas repetitivas dentro de un programa. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Los canales de salida (como System.out o System.err) sirven para mostrar información del programa, no para repetir código."
+          },
+          {
+            "clave": "b",
+            "motivo": "Las bifurcaciones corresponden a estructuras de decisión como if o switch, que permiten elegir entre distintos caminos de ejecución."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los argumentos son datos que se pasan al programa al iniciarlo (por ejemplo mediante String[] args), pero no repiten instrucciones."
+          }
+        ],
+        "resumen_didactico": "Las estructuras iterativas o bucles permiten repetir automáticamente un bloque de código varias veces.",
+        "ejemplo_practico": "for(int i = 0; i < 5; i++) {\n  System.out.println(\"Procesando elemento \" + i);\n}",
+        "conclusion_final": "Las estructuras que permiten ejecutar código repetidamente se denominan bucles o estructuras iterativas."
+      }
+    },
+    {
+      "id": "UT5-Q16",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es la estructura de repetición más adecuada cuando se conoce de antemano el número exacto de veces que se debe ejecutar una tarea?",
+      "contexto": "Selección del tipo de bucle adecuado según el control de iteraciones.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "for" },
+        { "clave": "b", "texto": "do-while" },
+        { "clave": "c", "texto": "while" },
+        { "clave": "d", "texto": "if-else if" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El bucle for es el más adecuado cuando se conoce previamente el número exacto de repeticiones que debe realizar una tarea. Su estructura incluye tres partes: inicialización de la variable de control, condición de continuación y actualización del contador. Esto permite controlar con precisión cuántas veces se ejecutará el bloque de código. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "do-while se utiliza cuando se quiere asegurar que el código se ejecute al menos una vez, independientemente de la condición inicial."
+          },
+          {
+            "clave": "c",
+            "motivo": "while se usa cuando no se sabe cuántas veces se repetirá el bucle, pero sí se conoce la condición que debe cumplirse para continuar."
+          },
+          {
+            "clave": "d",
+            "motivo": "if-else if es una estructura de selección para tomar decisiones, no una estructura de repetición."
+          }
+        ],
+        "resumen_didactico": "Cuando sabes exactamente cuántas veces debe repetirse una tarea, el bucle más adecuado es for.",
+        "ejemplo_practico": "for(int i = 1; i <= 10; i++) {\n  System.out.println(\"Procesando registro \" + i);\n}",
+        "conclusion_final": "El bucle for es la estructura ideal cuando el número de repeticiones está definido desde el inicio."
+      }
+    },
+    {
+      "id": "UT5-Q17",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuáles son las tres partes, separadas por puntos y coma, que componen la declaración de un bucle \"for\" estándar?",
+      "contexto": "Estructura sintáctica del bucle for en programación.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Clase, método y variable." },
+        { "clave": "b", "texto": "Inicialización, condición y actualización." },
+        { "clave": "c", "texto": "Entrada, proceso y salida." },
+        { "clave": "d", "texto": "Nombre, tipo y valor." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El bucle for estándar en Java se compone de tres partes separadas por puntos y coma dentro de los paréntesis: inicialización (donde se crea o inicializa la variable de control), condición (que determina si el bucle continúa ejecutándose) y actualización (que modifica la variable de control después de cada iteración). Esta estructura permite controlar de forma precisa el número de repeticiones del bucle. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Clase, método y variable son conceptos de programación orientada a objetos, no partes de la sintaxis del bucle for."
+          },
+          {
+            "clave": "c",
+            "motivo": "Entrada, proceso y salida es un modelo conceptual de programación, pero no forma parte de la sintaxis específica del bucle for."
+          },
+          {
+            "clave": "d",
+            "motivo": "Nombre, tipo y valor son características de una variable, no de la estructura del bucle for."
+          }
+        ],
+        "resumen_didactico": "El bucle for se estructura en tres partes: inicialización del contador, condición para continuar y actualización del contador.",
+        "ejemplo_practico": "for (int i = 0; i < 10; i++) {\n  System.out.println(\"Iteración \" + i);\n}",
+        "conclusion_final": "La declaración de un bucle for estándar se compone de inicialización, condición y actualización."
+      }
+    },
+    {
+      "id": "UT5-Q18",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿En qué situación es preferible utilizar un bucle \"while\" en lugar de un bucle \"for\"?",
+      "contexto": "Selección del tipo de bucle adecuado según el control de la repetición.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Cuando se quieren comparar dos cadenas de texto (String)."
+        },
+        {
+          "clave": "b",
+          "texto": "Cuando el programa debe ejecutarse obligatoriamente en modo gráfico."
+        },
+        {
+          "clave": "c",
+          "texto": "Cuando no se sabe cuántas veces se repetirá la acción, pero sí la condición que debe cumplirse."
+        },
+        {
+          "clave": "d",
+          "texto": "Cuando se necesita recorrer una lista con un número fijo de elementos"
+        }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El bucle while se utiliza cuando no se conoce de antemano el número exacto de repeticiones que se realizarán, pero sí se conoce la condición que debe mantenerse para que el bucle continúe ejecutándose. Mientras la condición sea verdadera, el código se repetirá. Este tipo de bucle es común en situaciones donde el programa depende de eventos externos o verificaciones continuas. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Comparar cadenas de texto se realiza mediante métodos como equals() o compareTo(), no mediante un tipo específico de bucle."
+          },
+          {
+            "clave": "b",
+            "motivo": "El modo gráfico o de consola de un programa no determina el tipo de bucle que se debe usar."
+          },
+          {
+            "clave": "d",
+            "motivo": "Cuando se conoce el número exacto de elementos a recorrer, el bucle más adecuado suele ser for."
+          }
+        ],
+        "resumen_didactico": "El bucle while es útil cuando no sabes cuántas veces se repetirá una acción, pero sí sabes qué condición debe cumplirse para seguir ejecutándola.",
+        "ejemplo_practico": "while (!conectado && intentos < 5) {\n  System.out.println(\"Intentando conectar al servidor...\");\n  intentos++;\n}",
+        "conclusion_final": "El bucle while se utiliza cuando la repetición depende de una condición y no de un número fijo de iteraciones."
+      }
+    },
+    {
+      "id": "UT5-Q19",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es la diferencia fundamental entre el bucle \"while\" y el bucle \"do-while\"?",
+      "contexto": "Comparación entre estructuras de repetición basadas en condición.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "El \"while\" solo funciona con números y el \"do-while\" con letras."
+        },
+        {
+          "clave": "b",
+          "texto": "El \"do-while\" garantiza que el código se ejecutará al menos una vez, ya que la condición se evalúa al final."
+        },
+        {
+          "clave": "c",
+          "texto": "El \"do-while\" no permite el uso de la sentencia \"break\"."
+        },
+        {
+          "clave": "d",
+          "texto": "El \"while\" es más rápido porque no requiere el uso de llaves."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "La diferencia fundamental entre while y do-while está en el momento en que se evalúa la condición. En el bucle while la condición se evalúa al principio, por lo que el código puede no ejecutarse ninguna vez si la condición es falsa desde el inicio. En cambio, en el bucle do-while la condición se evalúa al final, lo que garantiza que el bloque de código se ejecutará al menos una vez antes de comprobar la condición. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Ambos bucles pueden trabajar con cualquier tipo de condición lógica; no están limitados a números o letras."
+          },
+          {
+            "clave": "c",
+            "motivo": "La sentencia break puede utilizarse tanto en bucles while como en do-while para salir del bucle antes de tiempo."
+          },
+          {
+            "clave": "d",
+            "motivo": "La velocidad de ejecución no depende de las llaves ni del tipo de bucle; además, las llaves se utilizan en ambos bucles cuando hay más de una instrucción."
+          }
+        ],
+        "resumen_didactico": "El bucle while evalúa la condición antes de ejecutar el código, mientras que do-while la evalúa después.",
+        "ejemplo_practico": "do {\n  System.out.println(\"Mostrando menú\");\n} while(opcion != 0);",
+        "conclusion_final": "El bucle do-while garantiza al menos una ejecución del bloque de código porque la condición se evalúa al final."
+      }
+    },
+    {
+      "id": "UT5-Q20",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es el efecto de la instrucción \"break\" cuando se ejecuta dentro de un bucle (for, while o do-while)?",
+      "contexto": "Uso de sentencias de salto para controlar la ejecución de bucles.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Detiene el bucle por completo y sale de él inmediatamente."
+        },
+        {
+          "clave": "b",
+          "texto": "Salta a la siguiente iteración ignorando el código restante del bloque."
+        },
+        { "clave": "c", "texto": "Pausa el programa durante 10 segundos." },
+        { "clave": "d", "texto": "Reinicia el bucle desde el valor inicial." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "La instrucción break se utiliza para interrumpir inmediatamente la ejecución de un bucle o de un bloque switch. Cuando el programa encuentra un break dentro de un bucle, abandona el bucle por completo y continúa ejecutando el código que se encuentra después de él. Se utiliza normalmente cuando se ha encontrado el resultado deseado y no es necesario seguir iterando. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Saltar a la siguiente iteración corresponde a la instrucción continue, no a break."
+          },
+          {
+            "clave": "c",
+            "motivo": "La instrucción break no pausa el programa ni introduce retrasos en la ejecución."
+          },
+          {
+            "clave": "d",
+            "motivo": "break no reinicia el bucle; lo finaliza completamente y continúa con el código posterior."
+          }
+        ],
+        "resumen_didactico": "break sirve para salir inmediatamente de un bucle o de un switch cuando ya no es necesario continuar.",
+        "ejemplo_practico": "for(int i = 0; i < 10; i++) {\n  if(i == 5) {\n    break;\n  }\n  System.out.println(i);\n}\n// El bucle se detiene cuando i vale 5.",
+        "conclusion_final": "La instrucción break finaliza inmediatamente el bucle en el que se encuentra y continúa la ejecución del programa fuera de él."
+      }
+    },
+    {
+      "id": "UT5-Q21",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Qué acción realiza la instrucción \"continue\" al ser detectada en una iteración de un bucle?",
+      "contexto": "Uso de instrucciones de salto para controlar el flujo dentro de bucles.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Borra todas las variables locales del método."
+        },
+        { "clave": "b", "texto": "Abre una nueva ventana de consola." },
+        { "clave": "c", "texto": "Finaliza el programa con éxito." },
+        {
+          "clave": "d",
+          "texto": "Detiene la vuelta actual y salta directamente a la siguiente iteración."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "La instrucción continue se utiliza dentro de bucles como for, while o do-while para interrumpir la iteración actual. Cuando el programa encuentra continue, se omite el resto del código que quedaba en esa vuelta del bucle y se pasa directamente a la siguiente iteración. Esto permite ignorar ciertos casos dentro de un bucle sin detenerlo completamente. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "continue no afecta a las variables del método ni las elimina; solo modifica el flujo del bucle."
+          },
+          {
+            "clave": "b",
+            "motivo": "La apertura de ventanas de consola depende del entorno de ejecución o del sistema operativo, no de la instrucción continue."
+          },
+          {
+            "clave": "c",
+            "motivo": "continue no finaliza el programa; simplemente continúa con la siguiente iteración del bucle."
+          }
+        ],
+        "resumen_didactico": "continue sirve para saltar la iteración actual de un bucle y pasar directamente a la siguiente.",
+        "ejemplo_practico": "for(int i = 0; i < 5; i++) {\n  if(i == 2) {\n    continue;\n  }\n  System.out.println(i);\n}\n// El número 2 no se imprime porque se salta esa iteración.",
+        "conclusion_final": "La instrucción continue detiene la iteración actual de un bucle y pasa directamente a la siguiente."
+      }
+    },
+    {
+      "id": "UT5-Q22",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Qué son los bucles anidados en programación?",
+      "contexto": "Concepto de estructuras iterativas dentro de otras estructuras iterativas.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Una estructura de repetición contenida dentro de otra estructura de repetición."
+        },
+        {
+          "clave": "b",
+          "texto": "Un conjunto de sentencias \"if\" colocadas al final del programa."
+        },
+        {
+          "clave": "c",
+          "texto": "Bucles que solo funcionan si el ordenador está conectado a internet."
+        },
+        {
+          "clave": "d",
+          "texto": "Bucles que nunca llegan a ejecutarse por un error de lógica."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Los bucles anidados son estructuras de repetición en las que un bucle se encuentra completamente dentro de otro. El bucle interior se ejecuta todas las veces que el bucle exterior realiza una iteración. Este tipo de estructuras se utilizan frecuentemente para trabajar con datos bidimensionales como matrices, tablas o combinaciones de elementos. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Las sentencias if pertenecen a estructuras de selección, no a estructuras de repetición ni a bucles anidados."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los bucles no dependen de la conexión a internet; son estructuras internas del lenguaje de programación."
+          },
+          {
+            "clave": "d",
+            "motivo": "Un bucle que nunca se ejecuta sería un error lógico, pero no define el concepto de bucle anidado."
+          }
+        ],
+        "resumen_didactico": "Un bucle anidado es un bucle que se encuentra dentro de otro bucle y se ejecuta repetidamente dentro de cada iteración del bucle exterior.",
+        "ejemplo_practico": "for(int fila = 0; fila < 3; fila++) {\n  for(int columna = 0; columna < 3; columna++) {\n    System.out.println(\"Fila \" + fila + \" Columna \" + columna);\n  }\n}",
+        "conclusion_final": "Los bucles anidados son estructuras de repetición en las que un bucle se encuentra dentro de otro para realizar tareas repetitivas más complejas."
+      }
+    },
+    {
+      "id": "UT5-Q23",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Para qué se utilizan las \"Etiquetas\" (Labels) junto con las sentencias de salto \"break\" o \"continue\"?",
+      "contexto": "Uso de etiquetas para controlar el flujo en bucles anidados.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Para cambiar el tipo de dato de una variable de int a String."
+        },
+        {
+          "clave": "b",
+          "texto": "Para poder salir o saltar de varios bucles anidados a la vez identificando el bucle específico."
+        },
+        {
+          "clave": "c",
+          "texto": "Para documentar el código y generar páginas web automáticamente."
+        },
+        {
+          "clave": "d",
+          "texto": "Para ponerle un nombre comercial al software."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Las etiquetas (labels) se utilizan junto con break o continue para identificar un bucle específico dentro de estructuras de bucles anidados. De esta manera, es posible salir directamente de un bucle externo o continuar en él sin limitarse al bucle más interno. Esto resulta útil cuando se trabaja con varios niveles de repetición y se necesita controlar exactamente hasta qué punto debe saltar la ejecución del programa. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Las etiquetas no modifican tipos de datos; su función es controlar el flujo de ejecución en bucles."
+          },
+          {
+            "clave": "c",
+            "motivo": "La generación automática de documentación corresponde a herramientas como Javadoc, no al uso de etiquetas en bucles."
+          },
+          {
+            "clave": "d",
+            "motivo": "Las etiquetas no tienen relación con el nombre del software; solo sirven para identificar estructuras de control."
+          }
+        ],
+        "resumen_didactico": "Las etiquetas permiten indicar exactamente a qué bucle debe aplicarse una instrucción break o continue cuando existen bucles anidados.",
+        "ejemplo_practico": "externo:\nfor(int i = 0; i < 3; i++) {\n  for(int j = 0; j < 3; j++) {\n    if(j == 1) {\n      break externo;\n    }\n  }\n}",
+        "conclusion_final": "Las etiquetas se utilizan para controlar el salto de ejecución en bucles anidados, permitiendo salir o continuar en un bucle específico."
+      }
+    },
+    {
+      "id": "UT5-Q24",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es el término profesional utilizado para referirse a un fallo o error en un programa informático?",
+      "contexto": "Terminología profesional en el desarrollo y depuración de software.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Bug" },
+        { "clave": "b", "texto": "I/O" },
+        { "clave": "c", "texto": "Stream" },
+        { "clave": "d", "texto": "Script" }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En el desarrollo de software, un fallo o error en el funcionamiento de un programa se denomina bug. Este término se utiliza profesionalmente para referirse a cualquier problema que provoca que el programa no funcione como se esperaba. El proceso de localizar y corregir estos errores se conoce como debugging o depuración. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "I/O (Input/Output) se refiere al intercambio de datos entre un programa y el exterior, no a errores del programa."
+          },
+          {
+            "clave": "c",
+            "motivo": "Un stream es un flujo de datos utilizado para la entrada o salida de información en un programa."
+          },
+          {
+            "clave": "d",
+            "motivo": "Un script es un pequeño programa o conjunto de instrucciones automatizadas, pero no significa error."
+          }
+        ],
+        "resumen_didactico": "En programación, a los errores o fallos de un programa se les denomina bugs.",
+        "ejemplo_practico": "Si un programa de cálculo devuelve resultados incorrectos porque una variable no se inicializó correctamente, ese fallo se considera un bug.",
+        "conclusion_final": "El término profesional utilizado para referirse a un error en un programa informático es bug."
+      }
+    },
+    {
+      "id": "UT5-Q25",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cómo se denomina el proceso de buscar, aislar y eliminar errores en el software?",
+      "contexto": "Proceso de corrección de fallos durante el desarrollo de programas.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Compilación" },
+        { "clave": "b", "texto": "Depuración (Debugging)" },
+        { "clave": "c", "texto": "Instanciación" },
+        { "clave": "d", "texto": "Encapsulación" }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El proceso de localizar, analizar y corregir errores dentro de un programa se denomina depuración o debugging. Durante esta fase del desarrollo, el programador actúa como un detective que busca el origen del fallo (bug), lo aísla y lo corrige para que el software funcione correctamente. La depuración es una parte fundamental del desarrollo profesional de software. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La compilación es el proceso mediante el cual el código fuente se transforma en código ejecutable, pero no implica encontrar ni corregir errores lógicos del programa."
+          },
+          {
+            "clave": "c",
+            "motivo": "La instanciación pertenece a la programación orientada a objetos y se refiere a crear objetos a partir de una clase."
+          },
+          {
+            "clave": "d",
+            "motivo": "La encapsulación es un principio de la programación orientada a objetos que consiste en proteger los datos dentro de una clase."
+          }
+        ],
+        "resumen_didactico": "Depurar o hacer debugging significa buscar y corregir los errores de un programa.",
+        "ejemplo_practico": "Si un programa debería sumar dos números pero devuelve un resultado incorrecto, el programador revisa el código, detecta el error en la operación y lo corrige: ese proceso es debugging.",
+        "conclusion_final": "El proceso de encontrar y eliminar errores en un programa se denomina depuración o debugging."
+      }
+    },
+    {
+      "id": "UT5-Q26",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿En qué consiste la técnica de \"Inspección y pronóstico\" (Code Walkthrough) durante el control de calidad?",
+      "contexto": "Técnicas de verificación de código dentro del proceso de calidad del software.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "En leer el código línea a línea simulando mentalmente su ejecución para verificar la lógica."
+        },
+        {
+          "clave": "b",
+          "texto": "En traducir el código a otro lenguaje de programación."
+        },
+        {
+          "clave": "c",
+          "texto": "En pedirle al cliente que busque los fallos por sí mismo."
+        },
+        {
+          "clave": "d",
+          "texto": "En ejecutar el programa en el servidor más potente disponible."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "La técnica de Inspección y pronóstico (Code Walkthrough) consiste en revisar el código de forma detallada, línea por línea, simulando mentalmente cómo se ejecutará el programa. El objetivo es detectar errores lógicos o inconsistencias antes de ejecutar el software. Esta técnica forma parte de los protocolos de calidad utilizados en el desarrollo profesional para prevenir fallos desde las primeras fases del desarrollo. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Traducir código a otro lenguaje corresponde a procesos de portabilidad o reescritura del software, no a una técnica de revisión lógica."
+          },
+          {
+            "clave": "c",
+            "motivo": "El cliente no forma parte del proceso técnico de revisión de código; el control de calidad lo realizan los desarrolladores o el equipo de QA."
+          },
+          {
+            "clave": "d",
+            "motivo": "Ejecutar el programa en servidores potentes no forma parte de la inspección del código ni del análisis lógico previo."
+          }
+        ],
+        "resumen_didactico": "El Code Walkthrough consiste en revisar el código manualmente para prever cómo se ejecutará y detectar posibles errores antes de ejecutarlo.",
+        "ejemplo_practico": "Un programador revisa un método que calcula impuestos y sigue mentalmente cada línea para comprobar si el resultado coincide con lo esperado antes de ejecutar el programa.",
+        "conclusion_final": "La inspección y pronóstico es una revisión lógica del código línea a línea para anticipar errores antes de ejecutar el software."
+      }
+    },
+    {
+      "id": "UT5-Q27",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Cuál es el objetivo de realizar una \"Batería de pruebas\" (Stress Testing) a un programa?",
+      "contexto": "Pruebas de calidad para verificar la robustez del software ante situaciones extremas.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Comprobar únicamente que el código compila sin errores."
+        },
+        {
+          "clave": "b",
+          "texto": "Medir cuántas líneas de código es capaz de escribir el programador por hora."
+        },
+        {
+          "clave": "c",
+          "texto": "Verificar que el nombre de las variables sigue las convenciones."
+        },
+        {
+          "clave": "d",
+          "texto": "Someter al programa a casos extremos y entradas erróneas para asegurar su robustez."
+        }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "Las baterías de pruebas o stress testing consisten en someter el programa a situaciones extremas, datos incorrectos o casos límite para comprobar si el software sigue funcionando correctamente. Este tipo de pruebas permite detectar fallos que podrían aparecer en condiciones reales de uso y asegurar que el sistema es robusto y estable ante errores de entrada o cargas elevadas. :contentReference[oaicite:0]{index=0}",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Comprobar que el código compila solo verifica errores de sintaxis, pero no prueba el comportamiento real del programa."
+          },
+          {
+            "clave": "b",
+            "motivo": "La productividad del programador no tiene relación con las pruebas de calidad del software."
+          },
+          {
+            "clave": "c",
+            "motivo": "Las convenciones de nombres pertenecen a buenas prácticas de estilo de código, no a pruebas de robustez del sistema."
+          }
+        ],
+        "resumen_didactico": "Las baterías de pruebas ponen el programa bajo condiciones extremas o con datos incorrectos para comprobar si el sistema resiste sin fallar.",
+        "ejemplo_practico": "Un programa que pide la edad del usuario se prueba introduciendo valores como -5, 200 o texto en lugar de números para comprobar que el sistema no se bloquea.",
+        "conclusion_final": "El stress testing se utiliza para comprobar la robustez del programa sometiéndolo a casos extremos y entradas erróneas."
+      }
+    },
+    {
+      "id": "UT5-Q28",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Qué metodología propone probar cada pieza o módulo del sistema de forma aislada para asegurar que funciona correctamente antes de integrarlo?",
+      "contexto": "Metodologías de pruebas de software durante el desarrollo.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Pruebas de regresión" },
+        { "clave": "b", "texto": "Pruebas unitarias (Unit Testing)" },
+        { "clave": "c", "texto": "Entrada por argumentos" },
+        { "clave": "d", "texto": "Salida de error estándar" }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Las pruebas unitarias (Unit Testing) consisten en verificar cada componente o módulo del software de manera aislada para asegurarse de que funciona correctamente antes de integrarlo con el resto del sistema. Este enfoque permite detectar errores de forma temprana, facilitar el mantenimiento del código y garantizar que cada parte del programa cumple su función correctamente.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Las pruebas de regresión se realizan para comprobar que cambios recientes en el código no han roto funcionalidades que ya funcionaban."
+          },
+          {
+            "clave": "c",
+            "motivo": "La entrada por argumentos se refiere a los parámetros que recibe el método main al iniciar el programa, no a una metodología de pruebas."
+          },
+          {
+            "clave": "d",
+            "motivo": "La salida de error estándar (System.err) es un canal para mostrar mensajes de error, no una técnica de testing."
+          }
+        ],
+        "resumen_didactico": "El Unit Testing prueba cada pieza del programa por separado para asegurar que funciona correctamente antes de unirla con el resto.",
+        "ejemplo_practico": "En una aplicación bancaria se prueba primero el método calcularInteres() de forma aislada con distintos valores antes de integrarlo en el sistema completo de cuentas.",
+        "conclusion_final": "La metodología que propone probar cada módulo de forma independiente antes de integrarlo es el Unit Testing o pruebas unitarias."
+      }
+    },
+    {
+      "id": "UT5-Q29",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Qué nombre recibe la herramienta estándar en el ecosistema Java para realizar pruebas unitarias?",
+      "contexto": "Herramientas de testing utilizadas en el desarrollo profesional con Java.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Javadoc" },
+        { "clave": "b", "texto": "JRE" },
+        { "clave": "c", "texto": "Scanner" },
+        { "clave": "d", "texto": "JUnit" }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "JUnit es el framework estándar utilizado en el ecosistema Java para realizar pruebas unitarias. Permite escribir y ejecutar tests automatizados para verificar que los métodos y componentes del programa funcionan correctamente de forma aislada. Con JUnit se definen casos de prueba, se comparan resultados esperados con resultados reales y se automatiza la validación del comportamiento del software.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Javadoc es una herramienta para generar documentación técnica automática a partir de comentarios especiales en el código, no para realizar pruebas."
+          },
+          {
+            "clave": "b",
+            "motivo": "El JRE (Java Runtime Environment) es el entorno necesario para ejecutar aplicaciones Java, pero no es una herramienta de testing."
+          },
+          {
+            "clave": "c",
+            "motivo": "Scanner es una clase de Java utilizada para leer datos de entrada desde teclado u otras fuentes, no para realizar pruebas unitarias."
+          }
+        ],
+        "resumen_didactico": "JUnit es el framework más utilizado en Java para escribir y ejecutar pruebas unitarias automatizadas.",
+        "ejemplo_practico": "Un desarrollador crea un test con JUnit para comprobar que el método sumar(2,3) devuelve 5 y no otro resultado.",
+        "conclusion_final": "La herramienta estándar del ecosistema Java para realizar pruebas unitarias es JUnit."
+      }
+    },
+    {
+      "id": "UT5-Q30",
+      "tema": "UT5 Estructura de control",
+      "pregunta": "¿Qué es una \"Prueba de regresión\" en el contexto del mantenimiento de software?",
+      "contexto": "Proceso de control de calidad tras realizar cambios o correcciones en el código.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Volver a pasar todos los tests tras corregir un error para asegurar que no se han creado fallos nuevos."
+        },
+        {
+          "clave": "b",
+          "texto": "Traducir el manual de usuario a varios idiomas."
+        },
+        {
+          "clave": "c",
+          "texto": "Cambiar la versión de Java por una más antigua."
+        },
+        {
+          "clave": "d",
+          "texto": "Borrar el código antiguo y empezar el proyecto desde cero."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Las pruebas de regresión consisten en volver a ejecutar el conjunto de pruebas del sistema después de realizar cambios en el código, como correcciones de errores o nuevas funcionalidades. El objetivo es comprobar que las modificaciones no han provocado fallos en partes del programa que antes funcionaban correctamente. Este tipo de pruebas es fundamental en el mantenimiento del software y en procesos de integración continua.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "La traducción del manual pertenece a la documentación del software, no al proceso de pruebas."
+          },
+          {
+            "clave": "c",
+            "motivo": "Cambiar la versión de Java es una decisión de compatibilidad o mantenimiento del entorno, no una prueba de regresión."
+          },
+          {
+            "clave": "d",
+            "motivo": "Eliminar el código y empezar desde cero no forma parte de una metodología de pruebas."
+          }
+        ],
+        "resumen_didactico": "Las pruebas de regresión verifican que cambios recientes en el código no han roto funcionalidades que antes funcionaban.",
+        "ejemplo_practico": "Si se corrige un error en el cálculo de impuestos de una aplicación, se vuelven a ejecutar todos los tests del sistema para asegurar que otras funciones como facturación o descuentos siguen funcionando correctamente.",
+        "conclusion_final": "Una prueba de regresión consiste en ejecutar nuevamente los tests del sistema tras cambios en el código para asegurar que no se han introducido nuevos errores."
+      }
+    }
+]

@@ -1,0 +1,1120 @@
+[
+  {
+    "id": "UT6-Q01",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué concepto técnico actúa como una plantilla o molde abstracto que define la estructura y el comportamiento de una entidad en el software?",
+    "contexto": "Conceptos fundamentales de programación orientada a objetos y modelado de entidades en software.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Método de negocio" },
+      { "clave": "b", "texto": "Variable de instancia" },
+      { "clave": "c", "texto": "Objeto" },
+      { "clave": "d", "texto": "Clase" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Una clase es una plantilla o molde abstracto que define la estructura y el comportamiento de una entidad del mundo real dentro del software. Funciona como el plano de un arquitecto: establece qué atributos (campos) y acciones (métodos) tendrá el objeto, pero no representa una instancia concreta hasta que se crea con la palabra clave new. Este concepto es la base de la programación orientada a objetos. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un método de negocio es una función dentro de una clase que define una acción o comportamiento específico (por ejemplo calcularCosteEmpresa), pero no define la estructura completa de una entidad."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una variable de instancia (campo) es un dato almacenado dentro de un objeto o clase que representa su estado, como nombre o edad, pero no define la plantilla completa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un objeto es la instancia concreta creada a partir de una clase. Es el resultado de usar el molde, no el molde en sí."
+        }
+      ],
+      "resumen_didactico": "En programación orientada a objetos, la clase es el plano o molde. A partir de ella se crean los objetos que representan entidades reales dentro del programa.",
+      "ejemplo_practico": "En un sistema de gestión de empleados, la clase Empleado define los campos nombre, sueldo e id. Después se pueden crear objetos concretos como 'Laura Martínez' o 'Carlos Ruiz', cada uno con sus propios valores.",
+      "conclusion_final": "El concepto que funciona como plantilla o molde abstracto en el software es la clase, ya que define la estructura y comportamiento que tendrán los objetos."
+    }
+  },
+  {
+    "id": "UT6-Q02",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "Al crear una instancia concreta a partir de una clase en la memoria del ordenador, ¿qué elemento estamos generando realmente?",
+    "contexto": "Proceso de instanciación en programación orientada a objetos al usar una clase para crear una entidad concreta en memoria.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Un campo estático" },
+      { "clave": "b", "texto": "Una interfaz" },
+      { "clave": "c", "texto": "Un objeto" },
+      { "clave": "d", "texto": "Una superclase" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Un objeto es la instancia concreta creada a partir de una clase. Mientras que la clase es el plano o molde, el objeto es la entidad real creada en memoria usando ese molde. Cada objeto tiene sus propios valores para los campos definidos en la clase y se crea normalmente mediante la palabra clave new, que reserva memoria y ejecuta el constructor. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un campo estático es una variable compartida por todos los objetos de una clase. No se crea al instanciar un objeto, ya que pertenece a la clase, no a cada instancia."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una interfaz es una estructura que define métodos que una clase debe implementar, pero no representa una instancia concreta creada en memoria."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una superclase es una clase padre en una relación de herencia. No es el resultado de crear una instancia."
+        }
+      ],
+      "resumen_didactico": "Cuando utilizas una clase para crear algo concreto en memoria con new, lo que realmente aparece es un objeto. La clase es el molde; el objeto es la pieza fabricada.",
+      "ejemplo_practico": "Si tienes la clase Usuario y escribes: Usuario u = new Usuario(\"ana@email.com\"); el programa reserva memoria y crea un objeto concreto llamado u con sus propios datos.",
+      "conclusion_final": "Al instanciar una clase en memoria, el elemento que se genera realmente es un objeto."
+    }
+  },
+  {
+    "id": "UT6-Q03",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "Dentro de la anatomía de una clase, ¿cómo se denominan los miembros encargados de almacenar el estado o los datos de la entidad?",
+    "contexto": "Estructura interna de una clase en programación orientada a objetos y tipos de miembros que la componen.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Campos o atributos" },
+      { "clave": "b", "texto": "Paquetes" },
+      { "clave": "c", "texto": "Métodos" },
+      { "clave": "d", "texto": "Constructores" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Los campos (también llamados atributos o variables de instancia) son las variables que viven dentro de una clase y almacenan la información específica de cada objeto. Representan el estado del objeto, como por ejemplo nombre, edad o salario. Forman parte de los miembros fundamentales de una clase junto con los métodos. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los paquetes sirven para organizar clases en estructuras jerárquicas dentro de un proyecto, pero no almacenan datos de un objeto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los métodos definen el comportamiento o las acciones que puede realizar un objeto, pero no almacenan su estado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los constructores son métodos especiales que se ejecutan al crear un objeto para inicializar sus datos, pero no almacenan la información permanentemente."
+        }
+      ],
+      "resumen_didactico": "En una clase, los campos o atributos representan los datos que describen el estado de un objeto.",
+      "ejemplo_practico": "En una clase Empleado podríamos tener campos como: String nombre, int idEmpleado o double salario. Cada objeto Empleado tendrá sus propios valores para esos campos.",
+      "conclusion_final": "Los miembros de una clase encargados de almacenar los datos o el estado de una entidad se llaman campos o atributos."
+    }
+  },
+  {
+    "id": "UT6-Q04",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Cuál es la función principal de los métodos dentro de una clase profesional?",
+    "contexto": "Estructura interna de una clase en programación orientada a objetos y el papel de los métodos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Reservar espacio físico en el disco duro." },
+      {
+        "clave": "b",
+        "texto": "Organizar jerárquicamente las carpetas del proyecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Almacenar valores constantes en la memoria RAM."
+      },
+      {
+        "clave": "d",
+        "texto": "Definir el comportamiento o las acciones que puede realizar el objeto."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Los métodos son funciones dentro de una clase que definen qué acciones puede realizar un objeto y cómo interactúa con sus datos internos. Mientras que los campos almacenan información, los métodos representan el comportamiento del objeto, como calcular, guardar o enviar información. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Reservar espacio físico en disco es una tarea del sistema operativo o del sistema de almacenamiento, no una función propia de los métodos de una clase."
+        },
+        {
+          "clave": "b",
+          "motivo": "La organización jerárquica del proyecto corresponde a paquetes o estructuras de carpetas, no a los métodos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los valores constantes o datos se almacenan en variables o campos, no en métodos."
+        }
+      ],
+      "resumen_didactico": "En programación orientada a objetos, los métodos representan las acciones o comportamientos que un objeto puede realizar utilizando sus datos.",
+      "ejemplo_practico": "En una clase CuentaBancaria, los campos podrían ser saldo y titular, mientras que los métodos serían ingresar(), retirar() o consultarSaldo(), que definen lo que el objeto puede hacer.",
+      "conclusion_final": "Los métodos existen para definir el comportamiento del objeto y las acciones que puede ejecutar dentro del programa."
+    }
+  },
+  {
+    "id": "UT6-Q05",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué palabra clave se utiliza para definir un campo que debe ser compartido por todos los objetos de una misma clase?",
+    "contexto": "Uso de campos estáticos en programación orientada a objetos para compartir datos entre todas las instancias de una clase.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "private" },
+      { "clave": "b", "texto": "this" },
+      { "clave": "c", "texto": "static" },
+      { "clave": "d", "texto": "new" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La palabra clave static se utiliza para declarar campos que pertenecen a la clase y no a cada objeto individual. Esto significa que todos los objetos de esa clase comparten el mismo valor. Si el valor cambia, el cambio se refleja en todas las instancias porque el campo es único para la clase. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "private es un modificador de visibilidad que restringe el acceso a un campo o método para que solo sea accesible desde la misma clase."
+        },
+        {
+          "clave": "b",
+          "motivo": "this es una referencia al objeto actual que se usa dentro de los métodos para acceder a los atributos o métodos de ese objeto."
+        },
+        {
+          "clave": "d",
+          "motivo": "new es la palabra clave utilizada para crear o instanciar un objeto en memoria, no para definir campos compartidos."
+        }
+      ],
+      "resumen_didactico": "Un campo static pertenece a la clase y no a cada objeto. Por eso todos los objetos comparten el mismo valor.",
+      "ejemplo_practico": "Si una clase Empleado tiene static double salarioMinimo, todos los objetos Empleado usarán el mismo salario mínimo. Si ese valor cambia, cambia para todos los empleados.",
+      "conclusion_final": "La palabra clave que permite que un campo sea compartido por todos los objetos de una clase es static."
+    }
+  },
+  {
+    "id": "UT6-Q06",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "En el desarrollo profesional, ¿qué nombre reciben los métodos públicos diseñados específicamente para leer el valor de un campo privado?",
+    "contexto": "Encapsulación en programación orientada a objetos y uso de métodos para acceder a campos privados.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Setters" },
+      { "clave": "b", "texto": "Constructores" },
+      { "clave": "c", "texto": "Getters" },
+      { "clave": "d", "texto": "Destructores" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Los getters (observadores) son métodos públicos diseñados para leer el valor de un campo privado de una clase. Se utilizan para mantener la encapsulación, permitiendo acceder a los datos internos de forma controlada sin exponer directamente los atributos. Por ejemplo, un método getNombre() permite consultar el valor del campo nombre sin modificarlo. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los setters son métodos utilizados para modificar el valor de un campo privado, no para leerlo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los constructores son métodos especiales que se ejecutan al crear un objeto y sirven para inicializar sus datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los destructores se relacionan con la liberación de memoria, aunque en Java esta tarea la gestiona automáticamente el Garbage Collector."
+        }
+      ],
+      "resumen_didactico": "Para mantener la encapsulación, los campos suelen ser privados y se accede a ellos mediante métodos públicos. Si el método sirve para leer el valor, se llama getter.",
+      "ejemplo_practico": "Si una clase Usuario tiene un campo privado String nombre, el método public String getNombre() permite obtener ese valor desde otras partes del programa sin exponer directamente la variable.",
+      "conclusion_final": "Los métodos públicos diseñados para leer el valor de un campo privado se llaman getters."
+    }
+  },
+  {
+    "id": "UT6-Q07",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Para qué se utiliza el método setter en la arquitectura de una clase?",
+    "contexto": "Uso de métodos setters dentro del principio de encapsulación en programación orientada a objetos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Para heredar atributos de una superclase." },
+      {
+        "clave": "b",
+        "texto": "Para permitir la lectura de una constante global."
+      },
+      { "clave": "c", "texto": "Para eliminar un objeto de la memoria." },
+      {
+        "clave": "d",
+        "texto": "Para cambiar el valor de un campo privado, permitiendo validaciones previas."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Los setters (modificadores) son métodos públicos que permiten modificar el valor de un campo privado de una clase. Se utilizan para mantener la encapsulación y permitir que el cambio del dato pase por una lógica de control o validación antes de guardarse. De esta manera se protege la integridad de los datos internos del objeto. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La herencia de atributos pertenece al concepto de herencia entre clases (extends), no al uso de setters."
+        },
+        {
+          "clave": "b",
+          "motivo": "La lectura de valores corresponde normalmente a los métodos getters, no a los setters."
+        },
+        {
+          "clave": "c",
+          "motivo": "La eliminación de objetos de memoria en Java no la realiza el programador directamente, sino el Garbage Collector."
+        }
+      ],
+      "resumen_didactico": "Un setter es un método que permite modificar un atributo privado de forma controlada, manteniendo el principio de encapsulación.",
+      "ejemplo_practico": "Si una clase Persona tiene un campo privado edad, el método setEdad(int edad) puede comprobar que la edad no sea negativa antes de guardarla.",
+      "conclusion_final": "El setter se utiliza para cambiar el valor de un campo privado aplicando validaciones o reglas antes de actualizar el dato."
+    }
+  },
+  {
+    "id": "UT6-Q08",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué referencia interna permite a Java distinguir entre un campo de la clase y un parámetro de un método cuando ambos tienen el mismo nombre?",
+    "contexto": "Uso de referencias internas dentro de una clase para evitar el ocultamiento de variables cuando un parámetro tiene el mismo nombre que un atributo.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "this" },
+      { "clave": "b", "texto": "static" },
+      { "clave": "c", "texto": "null" },
+      { "clave": "d", "texto": "supe" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La palabra clave this es una referencia al objeto actual. Se utiliza para acceder explícitamente a los campos o métodos del propio objeto. Cuando un parámetro de un método tiene el mismo nombre que un atributo de la clase, Java puede confundirse (ocultamiento de variables). En ese caso se usa this para indicar que nos referimos al atributo del objeto. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "static se utiliza para declarar miembros que pertenecen a la clase y no a cada objeto, pero no sirve para distinguir entre un parámetro y un atributo."
+        },
+        {
+          "clave": "c",
+          "motivo": "null representa la ausencia de referencia a un objeto en Java, no se utiliza para identificar atributos dentro de una clase."
+        },
+        {
+          "clave": "d",
+          "motivo": "La opción 'supe' no es una palabra clave válida en Java (probablemente intenta referirse a super, que se usa para acceder a miembros de la clase padre)."
+        }
+      ],
+      "resumen_didactico": "Cuando un parámetro y un atributo tienen el mismo nombre, this permite indicar que nos referimos al atributo del objeto actual.",
+      "ejemplo_practico": "public void setNombre(String nombre) { this.nombre = nombre; } Aquí nombre (sin this) es el parámetro del método y this.nombre es el atributo del objeto.",
+      "conclusion_final": "La referencia interna que permite distinguir entre el campo de la clase y un parámetro con el mismo nombre es this."
+    }
+  },
+  {
+    "id": "UT6-Q10",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Cuál es la misión principal de un constructor en Java?",
+    "contexto": "Creación de objetos e inicialización de datos en programación orientada a objetos con Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Inicializar los datos de un objeto en el momento de su creación."
+      },
+      { "clave": "b", "texto": "Importar librerías externas al proyecto." },
+      {
+        "clave": "c",
+        "texto": "Liberar la memoria RAM cuando el programa termina."
+      },
+      { "clave": "d", "texto": "Cifrar la información sensible del usuario." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Un constructor es un método especial que se ejecuta automáticamente cuando se crea un objeto con la palabra clave new. Su función principal es inicializar los datos del objeto para que no nazca vacío o en un estado inválido. El constructor tiene el mismo nombre que la clase y no devuelve ningún valor. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las librerías externas se importan mediante la palabra clave import, no mediante constructores."
+        },
+        {
+          "clave": "c",
+          "motivo": "La liberación de memoria en Java la gestiona automáticamente el Garbage Collector, no los constructores."
+        },
+        {
+          "clave": "d",
+          "motivo": "El cifrado de información es una tarea relacionada con librerías de seguridad, no con los constructores."
+        }
+      ],
+      "resumen_didactico": "El constructor es el método que se ejecuta cuando un objeto se crea y sirve para preparar sus datos iniciales.",
+      "ejemplo_practico": "Si tenemos la clase Usuario con el constructor Usuario(String email), al ejecutar new Usuario(\"ana@email.com\") el constructor se ejecuta automáticamente y asigna el email inicial al objeto.",
+      "conclusion_final": "La misión principal de un constructor en Java es inicializar los datos del objeto cuando este se crea."
+    }
+  },
+  {
+    "id": "UT6-Q11",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué características sintácticas distinguen a un constructor de un método convencional?",
+    "contexto": "Diferencias sintácticas entre constructores y métodos en Java dentro de la programación orientada a objetos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Debe ser obligatoriamente de visibilidad privada."
+      },
+      {
+        "clave": "b",
+        "texto": "Se ejecuta cada vez que el Garbage Collector limpia la memoria."
+      },
+      { "clave": "c", "texto": "Siempre devuelve un valor de tipo boolean." },
+      {
+        "clave": "d",
+        "texto": "Se llama igual que la clase y no tiene tipo de retorno, ni siquiera void."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "Un constructor en Java es un método especial que se distingue porque tiene exactamente el mismo nombre que la clase y no tiene tipo de retorno, ni siquiera void. Su función es inicializar los datos del objeto cuando se crea mediante la palabra clave new. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un constructor puede tener diferentes niveles de visibilidad (public, protected, private). No está obligado a ser privado."
+        },
+        {
+          "clave": "b",
+          "motivo": "El Garbage Collector se encarga de liberar memoria cuando los objetos ya no se utilizan, pero no ejecuta constructores."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un constructor no devuelve ningún valor. A diferencia de los métodos, no tiene tipo de retorno."
+        }
+      ],
+      "resumen_didactico": "El constructor se diferencia de los métodos porque tiene el mismo nombre que la clase y no devuelve ningún valor.",
+      "ejemplo_practico": "Si tenemos la clase Usuario, su constructor se declara como: public Usuario(String email) { this.email = email; } Aquí Usuario es el nombre de la clase y del constructor, y no existe tipo de retorno.",
+      "conclusion_final": "La característica clave de un constructor es que se llama igual que la clase y no tiene tipo de retorno."
+    }
+  },
+  {
+    "id": "UT6-Q12",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué palabra clave es necesaria para invocar a un constructor y crear una nueva instancia de una clase en memoria?",
+    "contexto": "Proceso de instanciación de objetos en Java y ejecución automática del constructor.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "new" },
+      { "clave": "b", "texto": "import" },
+      { "clave": "c", "texto": "class" },
+      { "clave": "d", "texto": "extends" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La palabra clave new se utiliza en Java para crear una nueva instancia de una clase. Al usar new, el sistema reserva memoria para el objeto, ejecuta el constructor correspondiente y devuelve la referencia al objeto creado. Este proceso se denomina instanciación. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "import se utiliza para traer clases de otros paquetes o librerías al archivo actual, no para crear objetos."
+        },
+        {
+          "clave": "c",
+          "motivo": "class se utiliza para declarar o definir una clase, pero no para crear una instancia de ella."
+        },
+        {
+          "clave": "d",
+          "motivo": "extends se utiliza para indicar herencia entre clases, es decir, que una clase hereda de otra."
+        }
+      ],
+      "resumen_didactico": "Para crear un objeto en Java se utiliza la palabra clave new, que reserva memoria y ejecuta el constructor.",
+      "ejemplo_practico": "Si tenemos la clase Usuario, podemos crear un objeto así: Usuario u = new Usuario(\"ana@email.com\");. Aquí new crea el objeto y llama al constructor.",
+      "conclusion_final": "La palabra clave necesaria para crear una nueva instancia de una clase en memoria es new."
+    }
+  },
+  {
+    "id": "UT6-Q13",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué mecanismo automático de Java se encarga de gestionar la memoria eliminando objetos que ya no tienen referencias activas?",
+    "contexto": "Gestión automática de memoria en Java y liberación de objetos que ya no se utilizan.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Finalizer" },
+      { "clave": "b", "texto": "JVM Optimizer" },
+      { "clave": "c", "texto": "Garbage Collector" },
+      { "clave": "d", "texto": "Memory Leak Finder" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En Java, la memoria se gestiona automáticamente mediante el Garbage Collector (recolector de basura). Este mecanismo de la JVM revisa periódicamente la memoria y elimina los objetos que ya no tienen referencias activas, liberando el espacio de memoria para que pueda reutilizarse. Esto evita que el programador tenga que destruir manualmente los objetos. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El método finalize() fue una forma antigua de intervenir en la destrucción de objetos, pero actualmente está obsoleto y no gestiona directamente la memoria."
+        },
+        {
+          "clave": "b",
+          "motivo": "No existe un componente estándar llamado JVM Optimizer encargado de eliminar objetos en memoria."
+        },
+        {
+          "clave": "d",
+          "motivo": "Memory Leak Finder no es un mecanismo nativo de Java para gestionar memoria; sería una herramienta externa de diagnóstico."
+        }
+      ],
+      "resumen_didactico": "Java no requiere que el programador libere memoria manualmente. El Garbage Collector elimina automáticamente los objetos que ya no se utilizan.",
+      "ejemplo_practico": "Si una variable Usuario usuario = new Usuario() deja de utilizarse y pierde todas sus referencias (por ejemplo usuario = null), el Garbage Collector detectará que ese objeto ya no se usa y liberará su memoria.",
+      "conclusion_final": "El mecanismo automático encargado de eliminar objetos sin referencias activas es el Garbage Collector."
+    }
+  },
+  {
+    "id": "UT6-Q14",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "Si un desarrollador desea facilitar la eliminación de un objeto por parte del sistema de limpieza de Java, ¿qué acción debería realizar?",
+    "contexto": "Gestión automática de memoria en Java y funcionamiento del Garbage Collector cuando un objeto pierde su referencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cambiar la visibilidad de la clase a private."
+      },
+      {
+        "clave": "b",
+        "texto": "Asignar el valor null a la variable que referencia al objeto."
+      },
+      { "clave": "c", "texto": "Invocar manualmente al método finalize()." },
+      { "clave": "d", "texto": "Reiniciar el entorno de desarrollo (IDE)." }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En Java, el Garbage Collector elimina automáticamente los objetos que ya no tienen referencias activas. Si un programador quiere facilitar que un objeto pueda ser eliminado, puede eliminar su referencia asignando null a la variable que lo apunta. Una vez que el objeto no tiene referencias, el Garbage Collector podrá liberarlo cuando lo considere oportuno. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La visibilidad de una clase (public, private, etc.) controla el acceso al código, pero no influye en la gestión de memoria ni en la eliminación de objetos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El método finalize() está obsoleto y no se recomienda su uso. Además, no garantiza la eliminación inmediata del objeto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Reiniciar el IDE no tiene ninguna relación con la gestión de memoria del programa en ejecución."
+        }
+      ],
+      "resumen_didactico": "Para que el Garbage Collector pueda eliminar un objeto, este debe dejar de tener referencias activas.",
+      "ejemplo_practico": "Si tenemos: Usuario u = new Usuario(\"ana@email.com\"); y luego escribimos u = null;, el objeto Usuario ya no tiene referencias activas y el Garbage Collector podrá eliminarlo cuando sea necesario.",
+      "conclusion_final": "La forma de facilitar que Java elimine un objeto es eliminar su referencia, normalmente asignando null a la variable que lo apunta."
+    }
+  },
+  {
+    "id": "UT6-Q15",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué pilar de la programación orientada a objetos permite definir niveles de protección para el acceso a la información?",
+    "contexto": "Principios fundamentales de la programación orientada a objetos y control del acceso a los datos dentro de una clase.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Abstracción secuencial" },
+      { "clave": "b", "texto": "Herencia" },
+      { "clave": "c", "texto": "Polimorfismo" },
+      { "clave": "d", "texto": "Encapsulación y visibilidad" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "La encapsulación es uno de los pilares fundamentales de la programación orientada a objetos. Permite proteger la información interna de una clase definiendo niveles de acceso mediante modificadores de visibilidad como public, protected, package y private. Gracias a este mecanismo, el programador puede controlar qué partes del programa pueden acceder o modificar los datos. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La abstracción consiste en representar los aspectos esenciales de una entidad, pero no se centra en controlar los niveles de acceso a los datos."
+        },
+        {
+          "clave": "b",
+          "motivo": "La herencia permite que una clase herede atributos y métodos de otra, pero no define directamente los niveles de protección de acceso."
+        },
+        {
+          "clave": "c",
+          "motivo": "El polimorfismo permite que un mismo método tenga diferentes comportamientos dependiendo del contexto, pero no se utiliza para controlar el acceso a los datos."
+        }
+      ],
+      "resumen_didactico": "La encapsulación protege los datos de una clase y permite controlar quién puede acceder o modificarlos mediante modificadores de visibilidad.",
+      "ejemplo_practico": "En una clase CuentaBancaria, el saldo puede declararse private para evitar que otras clases lo modifiquen directamente. En su lugar se usan métodos como getSaldo() o depositar().",
+      "conclusion_final": "El pilar de la programación orientada a objetos que permite proteger y controlar el acceso a la información es la encapsulación y visibilidad."
+    }
+  },
+  {
+    "id": "UT6-Q16",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Cuál es el modificador de visibilidad más restrictivo, que permite el acceso a los elementos solo desde la propia clase?",
+    "contexto": "Niveles de visibilidad en Java utilizados para proteger los datos y controlar el acceso dentro de una clase.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Protected" },
+      { "clave": "b", "texto": "Public" },
+      { "clave": "c", "texto": "Package" },
+      { "clave": "d", "texto": "Privat" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El modificador private es el nivel de visibilidad más restrictivo en Java. Cuando un atributo o método se declara private, solo puede ser accesible desde la propia clase donde está definido. Esto es fundamental para aplicar el principio de encapsulación y proteger los datos internos del objeto. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "protected permite acceso desde la misma clase, desde clases del mismo paquete y desde subclases, por lo que no es el nivel más restrictivo."
+        },
+        {
+          "clave": "b",
+          "motivo": "public es el nivel menos restrictivo, ya que permite acceder al elemento desde cualquier parte del programa."
+        },
+        {
+          "clave": "c",
+          "motivo": "package (o default) permite acceso desde otras clases del mismo paquete, por lo que tampoco es el nivel más restrictivo."
+        }
+      ],
+      "resumen_didactico": "El modificador private restringe el acceso de un atributo o método únicamente a la propia clase.",
+      "ejemplo_practico": "En una clase CuentaBancaria, el campo saldo suele declararse private para que solo pueda modificarse mediante métodos controlados como depositar() o retirar().",
+      "conclusion_final": "El modificador de visibilidad más restrictivo en Java es private."
+    }
+  },
+  {
+    "id": "UT6-Q17",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué permite el nivel de visibilidad \"Public\" en un entorno de desarrollo?",
+    "contexto": "Modificadores de visibilidad en Java y control de acceso a los miembros de una clase.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ocultar la lógica de negocio al compilador."
+      },
+      {
+        "clave": "b",
+        "texto": "Acceso limitado solo a las subclases del mismo paquete."
+      },
+      {
+        "clave": "c",
+        "texto": "Compartir datos únicamente con la misma clase."
+      },
+      {
+        "clave": "d",
+        "texto": "Acceso total desde cualquier parte del programa y desde el exterior."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El modificador de visibilidad public es el menos restrictivo en Java. Permite que una clase, método o atributo sea accesible desde cualquier parte del programa e incluso desde otros paquetes o módulos. Es como una puerta abierta a todo el sistema, utilizada normalmente para exponer funcionalidades que deben ser accesibles globalmente. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los modificadores de visibilidad no ocultan lógica al compilador; su función es controlar quién puede acceder a los elementos del código."
+        },
+        {
+          "clave": "b",
+          "motivo": "Esa descripción corresponde más al comportamiento de protected, que permite acceso desde subclases y dentro del mismo paquete."
+        },
+        {
+          "clave": "c",
+          "motivo": "El acceso únicamente desde la misma clase corresponde al modificador private."
+        }
+      ],
+      "resumen_didactico": "El modificador public permite que un elemento sea accesible desde cualquier parte del programa.",
+      "ejemplo_practico": "Un método public void login() en una clase Usuario puede ser llamado desde cualquier otra clase del sistema, como controladores, servicios o interfaces.",
+      "conclusion_final": "El nivel de visibilidad public permite acceso completo a un elemento desde cualquier parte del programa."
+    }
+  },
+  {
+    "id": "UT6-Q18",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "En la jerarquía de permisos de Java, ¿qué nivel permite el acceso desde la misma clase, el mismo paquete y subclases en otros paquetes?",
+    "contexto": "Niveles de visibilidad en Java y alcance de acceso a los miembros de una clase en diferentes paquetes y jerarquías de herencia.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Package" },
+      { "clave": "b", "texto": "Static" },
+      { "clave": "c", "texto": "Private" },
+      { "clave": "d", "texto": "Protected" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "El modificador protected permite que un atributo o método sea accesible desde la propia clase, desde otras clases dentro del mismo paquete y también desde subclases, incluso si estas se encuentran en paquetes diferentes. Esto permite compartir información dentro de una jerarquía de herencia sin exponerla completamente al exterior. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El nivel package (o default) permite acceso desde la misma clase y desde otras clases del mismo paquete, pero no desde subclases que estén en paquetes diferentes."
+        },
+        {
+          "clave": "b",
+          "motivo": "static no es un modificador de visibilidad; indica que un miembro pertenece a la clase y no a una instancia."
+        },
+        {
+          "clave": "c",
+          "motivo": "private es el nivel más restrictivo y solo permite acceso desde la misma clase."
+        }
+      ],
+      "resumen_didactico": "El modificador protected permite compartir información dentro del mismo paquete y también con subclases, incluso si están en otros paquetes.",
+      "ejemplo_practico": "Si la clase Empleado tiene un atributo protected departamento, una subclase Ingeniero en otro paquete podrá acceder a ese atributo porque forma parte de la misma jerarquía de herencia.",
+      "conclusion_final": "El nivel de visibilidad que permite acceso desde la clase, el paquete y subclases en otros paquetes es protected."
+    }
+  },
+  {
+    "id": "UT6-Q19",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué sucede si no se define explícitamente ningún modificador de visibilidad en un miembro de la clase?",
+    "contexto": "Niveles de visibilidad en Java cuando no se especifica un modificador de acceso en campos o métodos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se aplica el nivel Package (o estándar), limitando el acceso al mismo paquete."
+      },
+      {
+        "clave": "b",
+        "texto": "El código no compila por error de sintaxis."
+      },
+      {
+        "clave": "c",
+        "texto": "El miembro se convierte en una constante global."
+      },
+      { "clave": "d", "texto": "Se aplica automáticamente el nivel Private." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Cuando no se especifica ningún modificador de visibilidad en Java, se aplica automáticamente el nivel package (también llamado default o estándar). Esto significa que el miembro solo puede ser accedido desde clases que se encuentren dentro del mismo paquete. No es accesible desde otros paquetes. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No definir un modificador de visibilidad no genera un error de compilación; simplemente se aplica el nivel por defecto (package)."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un miembro solo se convierte en constante cuando se declara con la palabra clave final, no por la ausencia de modificadores de visibilidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "Private es un modificador que debe declararse explícitamente. Java no lo aplica automáticamente cuando no se especifica visibilidad."
+        }
+      ],
+      "resumen_didactico": "Si no se indica public, protected o private, Java asigna automáticamente el nivel package.",
+      "ejemplo_practico": "Si en una clase escribimos: int contador;, otras clases del mismo paquete podrán acceder a contador, pero clases de otros paquetes no podrán hacerlo.",
+      "conclusion_final": "Cuando no se define un modificador de visibilidad, Java aplica el nivel package o estándar."
+    }
+  },
+  {
+    "id": "UT6-Q20",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Cuál es la recomendación profesional al diseñar la visibilidad de los campos de una clase por primera vez?",
+    "contexto": "Buenas prácticas de diseño en programación orientada a objetos para proteger los datos y aplicar encapsulación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No asignar ningún modificador para usar el nivel estándar."
+      },
+      {
+        "clave": "b",
+        "texto": "Hacer todo público para facilitar la comunicación."
+      },
+      {
+        "clave": "c",
+        "texto": "Empezar siempre con visibilidad Private y abrir el acceso solo si es necesario."
+      },
+      {
+        "clave": "d",
+        "texto": "Usar Protected para que cualquier clase pueda heredar los datos."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "Una recomendación profesional al diseñar clases es declarar inicialmente los campos como private. Esto permite aplicar correctamente el principio de encapsulación, protegiendo los datos internos del objeto. Solo cuando sea necesario se aumenta el nivel de visibilidad mediante métodos controlados (como getters o setters) o modificadores menos restrictivos. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Usar el nivel estándar (package) no es una práctica recomendada para proteger datos, ya que permite acceso desde cualquier clase del mismo paquete."
+        },
+        {
+          "clave": "b",
+          "motivo": "Hacer todos los campos públicos rompe el principio de encapsulación y permite que cualquier parte del programa modifique directamente los datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Protected se utiliza para permitir acceso dentro del mismo paquete o a subclases, pero no es la recomendación inicial para proteger los datos."
+        }
+      ],
+      "resumen_didactico": "La buena práctica en programación orientada a objetos es proteger primero los datos con private y abrir el acceso solo cuando realmente se necesite.",
+      "ejemplo_practico": "En una clase CuentaBancaria, el campo saldo se declara private y se accede a él mediante métodos como getSaldo() o ingresar(), evitando que otras clases modifiquen el saldo directamente.",
+      "conclusion_final": "La recomendación profesional es empezar con visibilidad private y permitir acceso solo cuando sea necesario."
+    }
+  },
+  {
+    "id": "UT6-Q21",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué herramienta organizativa permite agrupar clases e interfaces de forma jerárquica bajo una funcionalidad común?",
+    "contexto": "Organización del código en proyectos Java mediante estructuras jerárquicas para mantener orden y modularidad.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "Atributo estático" },
+      { "clave": "b", "texto": "Método de instancia" },
+      { "clave": "c", "texto": "Librería" },
+      { "clave": "d", "texto": "Paquete (Package)" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En Java, los paquetes (package) permiten agrupar clases e interfaces relacionadas bajo una misma estructura jerárquica. Funcionan de forma similar a carpetas en un sistema de archivos y ayudan a organizar grandes proyectos, evitando conflictos de nombres y facilitando el mantenimiento del código. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un atributo estático es un campo compartido por todos los objetos de una clase, pero no sirve para organizar clases dentro de un proyecto."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un método de instancia define comportamiento dentro de una clase, pero no agrupa clases ni interfaces."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una librería es un conjunto de paquetes y clases reutilizables, pero la herramienta organizativa básica dentro de un proyecto es el paquete."
+        }
+      ],
+      "resumen_didactico": "Los paquetes funcionan como carpetas que organizan clases e interfaces relacionadas dentro de un proyecto Java.",
+      "ejemplo_practico": "Un proyecto puede tener paquetes como com.empresa.usuarios, com.empresa.pedidos y com.empresa.pagos, cada uno agrupando clases relacionadas con esa funcionalidad.",
+      "conclusion_final": "La herramienta organizativa que agrupa clases e interfaces de forma jerárquica es el paquete (package)."
+    }
+  },
+  {
+    "id": "UT6-Q22",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué palabra clave se utiliza para declarar la ubicación de una clase dentro de la estructura de carpetas del proyecto?",
+    "contexto": "Declaración de la ubicación de una clase dentro de la jerarquía de paquetes en un proyecto Java.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "package" },
+      { "clave": "b", "texto": "folder" },
+      { "clave": "c", "texto": "location" },
+      { "clave": "d", "texto": "import" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En Java, la palabra clave package se utiliza al inicio de un archivo para indicar a qué paquete pertenece una clase. Esto define su ubicación dentro de la estructura jerárquica del proyecto y ayuda a organizar el código en módulos lógicos. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "folder no es una palabra clave del lenguaje Java; es simplemente un término del sistema de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "location no es una palabra reservada en Java para declarar la ubicación de clases."
+        },
+        {
+          "clave": "d",
+          "motivo": "import se utiliza para usar clases de otros paquetes, pero no para declarar a qué paquete pertenece la clase actual."
+        }
+      ],
+      "resumen_didactico": "La palabra clave package indica a qué paquete pertenece una clase dentro de la estructura del proyecto.",
+      "ejemplo_practico": "Si escribimos package com.empresa.usuarios; al inicio del archivo, estamos indicando que la clase pertenece al paquete com.empresa.usuarios.",
+      "conclusion_final": "La palabra clave que declara la ubicación de una clase dentro de la estructura del proyecto es package."
+    }
+  },
+  {
+    "id": "UT6-Q23",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "Cuando un programador necesita utilizar una clase que reside en un paquete distinto al actual, ¿qué sentencia debe emplear?",
+    "contexto": "Uso de clases que pertenecen a otros paquetes dentro de un proyecto Java.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "call" },
+      { "clave": "b", "texto": "include" },
+      { "clave": "c", "texto": "import" },
+      { "clave": "d", "texto": "package" }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "La sentencia import se utiliza en Java para poder usar clases que se encuentran en otros paquetes diferentes al paquete actual. Esta sentencia permite acceder a esas clases sin necesidad de escribir siempre su nombre completo con la ruta del paquete. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "call no es una palabra clave de Java utilizada para importar clases."
+        },
+        {
+          "clave": "b",
+          "motivo": "include es una directiva usada en otros lenguajes como C o C++, pero no existe en Java."
+        },
+        {
+          "clave": "d",
+          "motivo": "package se utiliza para declarar a qué paquete pertenece la clase actual, no para acceder a clases externas."
+        }
+      ],
+      "resumen_didactico": "La sentencia import permite utilizar clases que están almacenadas en otros paquetes del proyecto o en librerías externas.",
+      "ejemplo_practico": "Si queremos usar la clase Date del paquete java.util, escribimos: import java.util.Date; al inicio del archivo.",
+      "conclusion_final": "Para utilizar una clase que pertenece a otro paquete se utiliza la sentencia import."
+    }
+  },
+  {
+    "id": "UT6-Q24",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Cómo se define técnicamente una librería en el ecosistema de Java?",
+    "contexto": "Uso de librerías reutilizables dentro del ecosistema Java para compartir funcionalidades entre proyectos.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "El motor encargado de ejecutar el Bytecode." },
+      {
+        "clave": "b",
+        "texto": "Una agrupación de paquetes y clases diseñada para ser reutilizada en múltiples programas."
+      },
+      {
+        "clave": "c",
+        "texto": "Una variable global que almacena rutas de archivos."
+      },
+      {
+        "clave": "d",
+        "texto": "Un archivo de texto con instrucciones en lenguaje máquina."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En el ecosistema de Java, una librería es un conjunto organizado de paquetes y clases que proporcionan funcionalidades reutilizables. Estas librerías pueden ser utilizadas por distintos programas para evitar reescribir código y facilitar el desarrollo de software más complejo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El motor que ejecuta el Bytecode es la JVM (Java Virtual Machine), no una librería."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una variable global no define una librería ni agrupa funcionalidades reutilizables."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una librería no es un archivo de texto en lenguaje máquina, sino un conjunto de clases compiladas normalmente empaquetadas en archivos .jar."
+        }
+      ],
+      "resumen_didactico": "Una librería es un conjunto de clases y paquetes reutilizables que ofrecen funcionalidades listas para usar en distintos programas.",
+      "ejemplo_practico": "La librería Gson permite convertir objetos Java a JSON y viceversa sin tener que programar manualmente todo el proceso.",
+      "conclusion_final": "Una librería en Java es una agrupación de paquetes y clases diseñada para reutilizar funcionalidades en diferentes proyectos."
+    }
+  },
+  {
+    "id": "UT6-Q25",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué librería estándar de Java contiene las clases fundamentales y se importa de forma automática en todos los proyectos?",
+    "contexto": "Uso de librerías estándar del lenguaje Java y su disponibilidad automática en los programas.",
+    "tipo": "single",
+    "opciones": [
+      { "clave": "a", "texto": "java.lang" },
+      { "clave": "b", "texto": "java.io" },
+      { "clave": "c", "texto": "java.util" },
+      { "clave": "d", "texto": "java.security" }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "La librería java.lang contiene las clases fundamentales del lenguaje Java, como String, Math, Object y System. Esta librería se importa automáticamente en todos los programas Java, por lo que no es necesario declararla explícitamente con la sentencia import. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "java.io contiene clases relacionadas con entrada y salida de datos, como lectura y escritura de archivos, pero no se importa automáticamente."
+        },
+        {
+          "clave": "c",
+          "motivo": "java.util incluye utilidades como colecciones, fechas y estructuras de datos, pero debe importarse manualmente cuando se necesita."
+        },
+        {
+          "clave": "d",
+          "motivo": "java.security proporciona herramientas para criptografía y seguridad, pero no forma parte de las librerías importadas automáticamente."
+        }
+      ],
+      "resumen_didactico": "La librería java.lang es la base del lenguaje Java y contiene las clases fundamentales que el programa utiliza constantemente.",
+      "ejemplo_practico": "Cuando usamos System.out.println() o la clase String, no necesitamos escribir import java.lang.String porque java.lang se carga automáticamente.",
+      "conclusion_final": "La librería estándar que contiene las clases fundamentales y se importa automáticamente es java.lang."
+    }
+  },
+  {
+    "id": "UT6-Q26",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "En un entorno de desarrollo profesional, ¿cuál es el estándar de oro para nombrar paquetes y evitar conflictos de nombres?",
+    "contexto": "Convenciones de nomenclatura de paquetes en proyectos Java profesionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar nombres cortos y genéricos como \"data\" o \"test\"."
+      },
+      {
+        "clave": "b",
+        "texto": "Nombrar los paquetes igual que las clases que contienen."
+      },
+      {
+        "clave": "c",
+        "texto": "Utilizar el dominio de la empresa al revés (ej: com.empresa.proyecto)."
+      },
+      {
+        "clave": "d",
+        "texto": "Usar números de versión al inicio del nombre."
+      }
+    ],
+    "respuesta_correcta": ["c"],
+    "explicacion": {
+      "temario": "En el desarrollo profesional con Java, la convención estándar para nombrar paquetes consiste en utilizar el dominio de la empresa invertido. Por ejemplo: com.empresa.proyecto. Esta práctica evita conflictos de nombres entre paquetes de diferentes organizaciones y garantiza una estructura única en proyectos grandes o librerías públicas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los nombres genéricos pueden provocar conflictos entre paquetes de diferentes proyectos o librerías."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los paquetes suelen agrupar múltiples clases relacionadas, por lo que no se nombran igual que una sola clase."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los números de versión no forman parte del estándar de nomenclatura de paquetes en Java."
+        }
+      ],
+      "resumen_didactico": "El estándar profesional para nombrar paquetes consiste en usar el dominio de la organización invertido para garantizar unicidad.",
+      "ejemplo_practico": "Una empresa llamada \"MiEmpresa\" con dominio miempresa.com podría usar el paquete: com.miempresa.app.usuarios.",
+      "conclusion_final": "La práctica profesional recomendada es nombrar paquetes usando el dominio de la empresa al revés."
+    }
+  },
+  {
+    "id": "UT6-Q27",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué sucede técnicamente cuando se pasa un objeto como parámetro a un método en Java?",
+    "contexto": "Paso de objetos como argumentos en métodos y comportamiento de referencias en Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se crea una copia exacta del objeto en otra dirección de memoria."
+      },
+      {
+        "clave": "b",
+        "texto": "Se pasa la referencia o dirección de memoria del objeto original."
+      },
+      {
+        "clave": "c",
+        "texto": "El objeto queda bloqueado y no puede ser modificado."
+      },
+      {
+        "clave": "d",
+        "texto": "El objeto se convierte automáticamente en un tipo primitivo."
+      }
+    ],
+    "respuesta_correcta": ["b"],
+    "explicacion": {
+      "temario": "En Java, cuando se pasa un objeto como parámetro a un método, lo que realmente se pasa es la referencia al objeto (la dirección de memoria donde se encuentra). Esto significa que el método recibe acceso al mismo objeto original, por lo que cualquier modificación de sus atributos dentro del método afecta al objeto original. :contentReference[oaicite:0]{index=0}",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Java no crea una copia completa del objeto al pasarlo como parámetro; se pasa la referencia al mismo objeto."
+        },
+        {
+          "clave": "c",
+          "motivo": "El objeto no queda bloqueado; puede modificarse desde el método que recibe la referencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un objeto no se convierte automáticamente en un tipo primitivo al pasarlo como parámetro."
+        }
+      ],
+      "resumen_didactico": "Cuando pasas un objeto a un método, Java no copia el objeto: pasa su referencia.",
+      "ejemplo_practico": "Si un método recibe un objeto CuentaBancaria y cambia su saldo, el saldo del objeto original también cambia porque ambos usan la misma referencia.",
+      "conclusion_final": "En Java, al pasar un objeto a un método se pasa la referencia al objeto original, no una copia."
+    }
+  },
+  {
+    "id": "UT6-Q28",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Cuál es la consecuencia de modificar un atributo de un objeto dentro de un método que lo ha recibido como parámetro?",
+    "contexto": "Comportamiento de las referencias a objetos cuando se pasan como parámetros a métodos en Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El cambio es real y permanente para el objeto original fuera del método."
+      },
+      { "clave": "b", "texto": "Java lanza una excepción de seguridad." },
+      {
+        "clave": "c",
+        "texto": "El cambio es temporal y desaparece al terminar el método."
+      },
+      {
+        "clave": "d",
+        "texto": "El objeto se destruye inmediatamente después del cambio."
+      }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "En Java, cuando un objeto se pasa como parámetro a un método, lo que se transmite es la referencia al objeto original. Por tanto, si dentro del método se modifica alguno de sus atributos, el cambio afecta directamente al objeto original que existe fuera del método, ya que ambos apuntan al mismo objeto en memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Modificar atributos de un objeto no provoca ninguna excepción de seguridad por sí mismo; es un comportamiento normal del lenguaje."
+        },
+        {
+          "clave": "c",
+          "motivo": "El cambio no es temporal. Al tratarse del mismo objeto en memoria, la modificación permanece después de que el método termine."
+        },
+        {
+          "clave": "d",
+          "motivo": "El objeto no se destruye por modificar un atributo. Solo podría eliminarse cuando el Garbage Collector lo considere sin referencias activas."
+        }
+      ],
+      "resumen_didactico": "Cuando un método recibe un objeto, trabaja sobre el mismo objeto original mediante su referencia.",
+      "ejemplo_practico": "Si un método recibe un objeto CuentaBancaria y ejecuta cuenta.setSaldo(500), el saldo del objeto fuera del método también pasa a ser 500.",
+      "conclusion_final": "Modificar un atributo dentro de un método afecta directamente al objeto original porque se trabaja sobre la misma referencia en memoria."
+    }
+  },
+  {
+    "id": "UT6-Q29",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿En qué situación es correcto el uso de elementos estáticos (static)?",
+    "contexto": "Uso de atributos y métodos estáticos en Java cuando el comportamiento o los datos pertenecen a la clase y no a cada objeto individual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cuando la información es única para cada individuo u objeto."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo cuando trabajamos con métodos constructores."
+      },
+      {
+        "clave": "c",
+        "texto": "Cuando queremos que el Garbage Collector ignore el objeto."
+      },
+      {
+        "clave": "d",
+        "texto": "Cuando la información pertenece a la clase en su conjunto y no a una instancia específica."
+      }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+      "temario": "En Java, los elementos declarados como static pertenecen a la clase y no a cada objeto individual. Esto significa que existe una única copia compartida por todas las instancias. Los métodos o atributos estáticos se utilizan cuando el dato o comportamiento es común para todos los objetos de la clase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Si la información es diferente para cada objeto, debe declararse como atributo de instancia, no como static."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los constructores no necesitan ser static y, de hecho, nunca lo son en Java."
+        },
+        {
+          "clave": "c",
+          "motivo": "La palabra clave static no afecta al funcionamiento del Garbage Collector ni impide que los objetos sean recolectados."
+        }
+      ],
+      "resumen_didactico": "Los elementos static se utilizan cuando el dato o comportamiento pertenece a la clase completa y debe compartirse entre todos los objetos.",
+      "ejemplo_practico": "Si una clase Alumno tiene un contador total de alumnos creados, ese contador puede declararse como static para que todas las instancias compartan el mismo valor.",
+      "conclusion_final": "El uso correcto de static es cuando la información pertenece a toda la clase y debe ser compartida por todas sus instancias."
+    }
+  },
+  {
+    "id": "UT6-Q30",
+    "tema": "UT6 Clases y utilización de objetos",
+    "pregunta": "¿Qué ventaja ofrece el uso de librerías de terceros como Gson o Apache Commons?",
+    "contexto": "Uso de librerías externas en proyectos Java para ampliar funcionalidades y reutilizar soluciones ya desarrolladas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Proporcionar funcionalidades complejas sin tener que implementarlas desde cero."
+      },
+      {
+        "clave": "b",
+        "texto": "Eliminar la necesidad de usar modificadores de visibilidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Aumentar la velocidad del procesador de la computadora."
+      },
+      { "clave": "d", "texto": "Reducir el tamaño físico del archivo .java." }
+    ],
+    "respuesta_correcta": ["a"],
+    "explicacion": {
+      "temario": "Las librerías de terceros permiten reutilizar código ya desarrollado y probado por la comunidad o por otras empresas. Herramientas como Gson (para convertir objetos a JSON y viceversa) o Apache Commons (colecciones de utilidades para operaciones comunes) permiten implementar funcionalidades complejas de forma rápida, segura y eficiente sin necesidad de desarrollarlas desde cero.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las librerías externas no eliminan el uso de modificadores de visibilidad como public, private o protected, que siguen siendo parte fundamental del diseño de clases."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las librerías no aumentan la velocidad física del procesador; simplemente ofrecen herramientas que pueden facilitar o optimizar ciertas tareas de programación."
+        },
+        {
+          "clave": "d",
+          "motivo": "El tamaño del archivo .java no depende del uso de librerías externas; estas se añaden como dependencias y no reducen el tamaño del código fuente."
+        }
+      ],
+      "resumen_didactico": "Las librerías externas permiten reutilizar soluciones ya creadas para resolver problemas complejos sin tener que programarlos desde cero.",
+      "ejemplo_practico": "Si una aplicación necesita convertir objetos Java a JSON para enviarlos a una API, la librería Gson permite hacerlo con una sola línea de código en lugar de escribir manualmente todo el proceso de conversión.",
+      "conclusion_final": "Las librerías de terceros permiten ahorrar tiempo y esfuerzo al proporcionar funcionalidades avanzadas ya implementadas y probadas."
+    }
+  }
+]

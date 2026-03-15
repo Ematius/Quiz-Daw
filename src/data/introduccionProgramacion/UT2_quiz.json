@@ -1,0 +1,1073 @@
+[
+    {
+      "id": "UT2-Q01",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Imagina que aterrizas en tu primer día de trabajo en una software house en Valencia. ¿Cuál es el objetivo principal de la filosofía que vas a empezar a aplicar al construir sistemas?",
+      "contexto": "Primer día en una empresa de desarrollo aplicando Programación Orientada a Objetos.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Diseñar programas que no requieran actualizaciones futuras ni mantenimiento."
+        },
+        {
+          "clave": "b",
+          "texto": "Construir sistemas que sean fáciles de mantener y escalar."
+        },
+        {
+          "clave": "c",
+          "texto": "Escribir el mayor número de líneas de código posible en el menor tiempo."
+        },
+        {
+          "clave": "d",
+          "texto": "Crear aplicaciones que funcionen únicamente en sistemas operativos antiguos."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En la introducción del tema se indica que el objetivo es construir sistemas que no solo funcionen, sino que sean fáciles de mantener y escalar. La Programación Orientada a Objetos surge como respuesta a la necesidad de gestionar la complejidad en aplicaciones grandes, permitiendo que el software sea mantenible, reutilizable y escalable.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El temario no habla de eliminar mantenimiento, sino precisamente de facilitarlo. El mantenimiento es inevitable en sistemas reales."
+          },
+          {
+            "clave": "c",
+            "motivo": "La calidad del diseño y la organización del código es prioritaria frente a la cantidad de líneas escritas. La POO busca estructura y claridad, no volumen."
+          },
+          {
+            "clave": "d",
+            "motivo": "La POO no está orientada a sistemas operativos antiguos, sino a mejorar la organización del software independientemente del entorno."
+          }
+        ],
+        "resumen_didactico": "La POO nace para gestionar la complejidad del software profesional, permitiendo crear sistemas organizados, mantenibles y escalables.",
+        "ejemplo_practico": "En una plataforma de e-commerce, si se quiere añadir un nuevo tipo de producto, gracias a la POO se puede extender el sistema sin reescribirlo entero.",
+        "conclusion_final": "El objetivo principal de la filosofía aplicada es construir sistemas que sean fáciles de mantener y escalar."
+      }
+    },
+    {
+      "id": "UT2-Q02",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "La programación orientada a objetos (POO) utiliza entidades para representar datos y métodos que operan sobre ellos. ¿Qué lenguaje introdujo por primera vez estos conceptos en 1962?",
+      "contexto": "Origen histórico de la Programación Orientada a Objetos según el temario.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Python." },
+        { "clave": "b", "texto": "Simula 67." },
+        { "clave": "c", "texto": "Java." },
+        { "clave": "d", "texto": "C++." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En la introducción del tema se indica que en el año 1962 se creó el lenguaje Simula 67, introduciendo por primera vez los conceptos fundamentales de la Programación Orientada a Objetos. Antes de eso predominaba la programación estructurada.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Python es un lenguaje moderno que soporta POO, pero no fue el primero en introducir el paradigma."
+          },
+          {
+            "clave": "c",
+            "motivo": "Java popularizó la POO en el mercado laboral, pero apareció décadas después de Simula 67."
+          },
+          {
+            "clave": "d",
+            "motivo": "C++ implementa POO y es muy utilizado, pero tampoco fue el lenguaje pionero en introducir estos conceptos."
+          }
+        ],
+        "resumen_didactico": "La POO no nació con Java ni con Python; su origen histórico se remonta a Simula 67, que introdujo por primera vez clases y objetos.",
+        "ejemplo_practico": "Cuando hoy defines una clase en Java o Python, estás utilizando una idea que ya existía desde Simula 67.",
+        "conclusion_final": "El primer lenguaje que introdujo los conceptos de POO fue Simula 67."
+      }
+    },
+    {
+      "id": "UT2-Q03",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Un programador en Madrid debe desarrollar un sistema de gestión para una red de hospitales y nota que el código se vuelve difícil de entender. ¿Cómo denomina el temario a este código desordenado?",
+      "contexto": "Problemas de complejidad en programación estructurada antes del auge de la POO.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Código espagueti." },
+        { "clave": "b", "texto": "Código compuesto." },
+        { "clave": "c", "texto": "Código lineal." },
+        { "clave": "d", "texto": "Código binario." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En el apartado sobre el auge de la POO se explica que, cuando las aplicaciones crecían en tamaño (como un sistema de gestión hospitalaria), el código en programación estructurada se volvía un \"espagueti\" imposible de entender. De ahí el término \"código espagueti\" para describir software desordenado y difícil de mantener.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "El temario no utiliza el término \"código compuesto\" para referirse al desorden estructural del software."
+          },
+          {
+            "clave": "c",
+            "motivo": "Código lineal no describe el problema de complejidad creciente ni aparece como concepto asociado al desorden en el temario."
+          },
+          {
+            "clave": "d",
+            "motivo": "Código binario hace referencia al nivel bajo de representación en 0 y 1, no a problemas de organización del código."
+          }
+        ],
+        "resumen_didactico": "Cuando un sistema crece sin una buena estructura, el código se vuelve enredado y difícil de mantener: eso es código espagueti.",
+        "ejemplo_practico": "Un sistema hospitalario donde todas las funciones están mezcladas en un único archivo sin separación por clases ni responsabilidades claras.",
+        "conclusion_final": "El temario denomina \"código espagueti\" al código desordenado y difícil de entender."
+      }
+    },
+    {
+      "id": "UT2-Q04",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Trabajas en el equipo de desarrollo de un e-commerce en Barcelona. ¿Qué ventaja de la POO permite añadir nuevos tipos de productos sin reescribir todo el sistema?",
+      "contexto": "Desarrollo de una plataforma e-commerce y necesidad de escalabilidad.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "La creación de nuevas piezas que heredan funciones de las anteriores."
+        },
+        {
+          "clave": "b",
+          "texto": "La obligatoriedad de usar diagramas horizontales para el diseño."
+        },
+        {
+          "clave": "c",
+          "texto": "El uso exclusivo de datos primitivos en todas las clases."
+        },
+        { "clave": "d", "texto": "La eliminación de la memoria RAM." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "En el apartado sobre el auge de la POO se explica que, en un e-commerce, si cada vez que se añade un nuevo tipo de producto hubiera que reescribir todo el sistema, la empresa quebraría. Gracias a la POO, se puede crear una nueva \"pieza\" que hereda las funciones de las anteriores, permitiendo extender el sistema sin modificarlo por completo.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "El uso de diagramas horizontales es una decisión de representación UML, no una ventaja estructural que permita ampliar el sistema."
+          },
+          {
+            "clave": "c",
+            "motivo": "La POO no se basa exclusivamente en datos primitivos; al contrario, trabaja con objetos que pueden ser compuestos."
+          },
+          {
+            "clave": "d",
+            "motivo": "La memoria RAM no se elimina; de hecho, los objetos ocupan espacio en memoria durante la ejecución."
+          }
+        ],
+        "resumen_didactico": "La POO permite extender sistemas creando nuevas clases que heredan comportamiento, evitando reescribir código existente.",
+        "ejemplo_practico": "Si existe una clase Producto, puedes crear ProductoDigital o ProductoFisico heredando sus métodos básicos como calcularPrecio() sin duplicar código.",
+        "conclusion_final": "La ventaja clave es poder crear nuevas clases que heredan funcionalidades, permitiendo ampliar el sistema sin reescribirlo."
+      }
+    },
+    {
+      "id": "UT2-Q05",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "¿Qué concepto se define como el dibujo técnico, molde o plano que indica las propiedades y comportamientos de los elementos?",
+      "contexto": "Definición fundamental dentro de los pilares de la POO.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Instancia." },
+        { "clave": "b", "texto": "Objeto." },
+        { "clave": "c", "texto": "Método." },
+        { "clave": "d", "texto": "Clase." }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "El temario define la clase como un molde, plantilla o plano que especifica las propiedades (atributos) y comportamientos (métodos) que tendrán los objetos creados a partir de ella. Se compara con el dibujo técnico de un arquitecto antes de construir una casa.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Instancia es el proceso o resultado de crear un objeto a partir de una clase, no el molde en sí."
+          },
+          {
+            "clave": "b",
+            "motivo": "El objeto es la representación concreta en memoria creada a partir de la clase, no el plano que la define."
+          },
+          {
+            "clave": "c",
+            "motivo": "Un método es una función o comportamiento dentro de una clase, no el contenedor que define estructura y comportamiento completo."
+          }
+        ],
+        "resumen_didactico": "La clase es el plano; el objeto es la construcción real basada en ese plano.",
+        "ejemplo_practico": "Clase Vehiculo define matrícula y nivel de batería; cada coche real en el sistema es un objeto creado a partir de esa clase.",
+        "conclusion_final": "El concepto descrito como molde o plano que define propiedades y comportamientos es la clase."
+      }
+    },
+    {
+      "id": "UT2-Q06",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "En una startup de Málaga que gestiona flotas de vehículos, necesitas definir que todos tendrán una matrícula y nivel de batería. ¿Cómo se llaman estas características en una clase?",
+      "contexto": "Definición de propiedades dentro de una clase en un sistema de gestión de vehículos.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Métodos." },
+        { "clave": "b", "texto": "Atributos." },
+        { "clave": "c", "texto": "Moldes." },
+        { "clave": "d", "texto": "Instancias." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El temario define que una clase contiene propiedades llamadas atributos y comportamientos llamados métodos. En el ejemplo de la App de gestión de flotas, la matrícula y el nivel de batería son datos que todos los objetos Vehiculo deben tener; por tanto, son atributos.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Los métodos son acciones o funciones que realiza la clase, como arrancar(), no datos como matrícula o batería."
+          },
+          {
+            "clave": "c",
+            "motivo": "Molde es una forma metafórica de describir la clase completa, no las características internas."
+          },
+          {
+            "clave": "d",
+            "motivo": "Instancias son los objetos creados a partir de la clase, no las propiedades que definen su estructura."
+          }
+        ],
+        "resumen_didactico": "Los atributos son los datos que describen el estado de un objeto dentro de una clase.",
+        "ejemplo_practico": "En la clase Vehiculo, atributos serían: matricula: String y nivelBateria: Float.",
+        "conclusion_final": "Las características como matrícula y nivel de batería se denominan atributos."
+      }
+    },
+    {
+      "id": "UT2-Q07",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Cuando un programador en Madrid crea un elemento en tiempo de ejecución basado en una clase determinada, está creando:",
+      "contexto": "Proceso de creación en tiempo de ejecución dentro de la POO.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Una interfaz de usuario." },
+        { "clave": "b", "texto": "Una superclase." },
+        { "clave": "c", "texto": "Un objeto." },
+        { "clave": "d", "texto": "Un diagrama UML." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El temario explica que la instancia de una clase se denomina objeto. Técnicamente, un objeto es el resultado de la creación en tiempo de ejecución de un conjunto de datos almacenados en memoria, con estructura idéntica a la descrita en su clase.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Una interfaz de usuario es un componente visual, no el resultado de instanciar una clase."
+          },
+          {
+            "clave": "b",
+            "motivo": "Una superclase es una clase base de la que heredan otras, no algo que se crea en tiempo de ejecución."
+          },
+          {
+            "clave": "d",
+            "motivo": "Un diagrama UML es una representación gráfica del diseño del sistema, no una entidad ejecutable en memoria."
+          }
+        ],
+        "resumen_didactico": "Cuando instancias una clase en tiempo de ejecución, lo que realmente estás creando es un objeto.",
+        "ejemplo_practico": "Si defines una clase Usuario, cuando un cliente se registra en la aplicación se crea un objeto Usuario con sus datos concretos en memoria.",
+        "conclusion_final": "Crear un elemento en tiempo de ejecución basado en una clase significa crear un objeto."
+      }
+    },
+    {
+      "id": "UT2-Q08",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Dos usuarios se registran en una web con los mismos datos personales. Según el apartado de gestión de memoria, ¿cómo se almacenan estos objetos?",
+      "contexto": "Gestión de memoria de objetos en POO dentro de un sistema web.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Cada uno ocupará un espacio único e independiente en la memoria RAM."
+        },
+        {
+          "clave": "b",
+          "texto": "Comparten el mismo espacio de memoria para ahorrar recursos."
+        },
+        {
+          "clave": "c",
+          "texto": "El sistema borra el segundo objeto por ser duplicado."
+        },
+        {
+          "clave": "d",
+          "texto": "Se almacenan como datos primitivos simples de forma obligatoria."
+        }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El temario explica que dos objetos distintos pueden tener exactamente los mismos datos, pero cada uno ocupará un espacio único e independiente en la memoria RAM. Esto se debe a que cada objeto es una instancia distinta creada en tiempo de ejecución.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Los objetos no comparten automáticamente el mismo espacio de memoria aunque tengan los mismos datos; cada instancia se almacena por separado."
+          },
+          {
+            "clave": "c",
+            "motivo": "La POO no elimina objetos duplicados automáticamente; eso dependería de reglas específicas del sistema o de la base de datos."
+          },
+          {
+            "clave": "d",
+            "motivo": "Los objetos pueden contener datos primitivos, pero no se almacenan obligatoriamente como datos simples; siguen siendo instancias completas en memoria."
+          }
+        ],
+        "resumen_didactico": "Dos objetos pueden tener los mismos datos, pero siguen siendo entidades diferentes en memoria.",
+        "ejemplo_practico": "Dos usuarios llamados \"Juan Pérez\" pueden existir en el sistema. Cada registro es un objeto distinto con su propia posición en memoria.",
+        "conclusion_final": "Aunque los datos sean iguales, cada objeto ocupa su propio espacio independiente en la memoria."
+      }
+    },
+    {
+      "id": "UT2-Q09",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "En un sistema de reservas de un hotel en Sevilla, se desea evitar que el precio de la habitación cambie a 0€ por error. ¿Qué pilar de la POO se debe aplicar?",
+      "contexto": "Protección de los datos internos de un objeto dentro de un sistema de reservas.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Encapsulación." },
+        { "clave": "b", "texto": "Herencia." },
+        { "clave": "c", "texto": "Abstracción." },
+        { "clave": "d", "texto": "Polimorfismo." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El temario explica que la encapsulación es el mecanismo que agrupa datos y métodos y los protege de accesos externos no autorizados. En el ejemplo del sistema de reservas de un hotel, el atributo precioHabitacion debe estar protegido para evitar que cualquier parte del código pueda modificarlo directamente. En su lugar se utiliza un método controlado como setPrecio() que valide el cambio.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "La herencia permite crear nuevas clases a partir de otras, pero no está relacionada con proteger el acceso a los datos internos."
+          },
+          {
+            "clave": "c",
+            "motivo": "La abstracción consiste en centrarse en las características esenciales de un objeto y ocultar detalles irrelevantes, no en proteger la modificación de los datos."
+          },
+          {
+            "clave": "d",
+            "motivo": "El polimorfismo permite que diferentes objetos respondan de forma distinta al mismo método, pero no controla el acceso a atributos."
+          }
+        ],
+        "resumen_didactico": "La encapsulación protege los datos internos de una clase y obliga a modificarlos mediante métodos controlados.",
+        "ejemplo_practico": "En una clase Habitacion, el atributo precio puede ser privado y solo modificarse mediante setPrecio(nuevoPrecio), que valide que el valor no sea 0 o negativo.",
+        "conclusion_final": "Para proteger datos y evitar modificaciones incorrectas, se debe aplicar el pilar de la encapsulación."
+      }
+    },
+    {
+      "id": "UT2-Q10",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "El mecanismo que agrupa datos y métodos protegiéndolos de accesos externos no autorizados es:",
+      "contexto": "Principios fundamentales de la Programación Orientada a Objetos relacionados con la protección de datos.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "La visibilidad protegida." },
+        { "clave": "b", "texto": "La multiplicidad." },
+        { "clave": "c", "texto": "Encapsulación." },
+        { "clave": "d", "texto": "La instanciación." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El temario define la encapsulación como el mecanismo que agrupa los datos y los métodos que los manipulan, protegiéndolos de accesos externos no autorizados. Este principio permite controlar cómo se accede y modifica la información dentro de una clase.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La visibilidad protegida es un modificador de acceso dentro de la encapsulación, pero no el principio completo que protege los datos."
+          },
+          {
+            "clave": "b",
+            "motivo": "La multiplicidad se utiliza en diagramas UML para indicar cuántos objetos pueden relacionarse entre sí, no para proteger datos."
+          },
+          {
+            "clave": "d",
+            "motivo": "La instanciación es el proceso de crear un objeto a partir de una clase, no un mecanismo de protección de datos."
+          }
+        ],
+        "resumen_didactico": "Encapsular significa proteger los datos de una clase y permitir su acceso únicamente mediante métodos controlados.",
+        "ejemplo_practico": "En una clase CuentaBancaria, el saldo puede ser un atributo privado y solo modificarse mediante métodos como depositar() o retirar().",
+        "conclusion_final": "El mecanismo que protege datos agrupándolos con sus métodos es la encapsulación."
+      }
+    },
+    {
+      "id": "UT2-Q11",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Una empresa financiera en Madrid desarrolla una IA y decide ignorar el color de ojos de los clientes para centrarse en su saldo e historial. ¿Qué proceso está realizando el equipo?",
+      "contexto": "Selección de características relevantes al modelar un objeto en un sistema financiero.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Abstracción." },
+        { "clave": "b", "texto": "Encapsulación de métodos." },
+        { "clave": "c", "texto": "Composición fuerte." },
+        { "clave": "d", "texto": "Asociación reflexiva." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El temario define la abstracción como el proceso de identificar las características esenciales de un objeto ignorando los detalles complejos o irrelevantes para el contexto. En el ejemplo de un sistema financiero, se consideran datos relevantes como saldo o historial crediticio, mientras que características como el color de ojos se descartan por no aportar valor al sistema.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "La encapsulación protege datos y métodos de accesos externos, pero no trata sobre seleccionar qué características son relevantes."
+          },
+          {
+            "clave": "c",
+            "motivo": "La composición fuerte describe una relación de dependencia entre objetos, donde las partes dependen del ciclo de vida del objeto principal."
+          },
+          {
+            "clave": "d",
+            "motivo": "La asociación reflexiva ocurre cuando una clase se relaciona consigo misma, como en estructuras jerárquicas dentro de la misma entidad."
+          }
+        ],
+        "resumen_didactico": "La abstracción consiste en simplificar un modelo quedándose solo con los datos relevantes para el problema.",
+        "ejemplo_practico": "En una clase Cliente para un sistema bancario, se guardan datos como saldo o número de cuenta, pero no detalles irrelevantes como la altura o el color de ojos.",
+        "conclusion_final": "El proceso de seleccionar solo las características relevantes e ignorar las irrelevantes se denomina abstracción."
+      }
+    },
+    {
+      "id": "UT2-Q12",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Has creado un sistema de validación para un e-commerce en Zaragoza y ahora quieres usarlo para un gimnasio en Bilbao. ¿Qué beneficio técnico estás aprovechando?",
+      "contexto": "Uso del mismo código en diferentes proyectos de software.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "La reutilización o reusabilidad." },
+        { "clave": "b", "texto": "El diagrama de flujo." },
+        { "clave": "c", "texto": "La visibilidad pública." },
+        { "clave": "d", "texto": "La jerarquía vertical." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El temario define la reutilización (reusabilidad) como la capacidad de usar código ya escrito, probado y depurado en diferentes partes de un programa o incluso en proyectos completamente distintos. Esto permite ahorrar tiempo de desarrollo, reducir errores y aumentar la eficiencia del software.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Un diagrama de flujo es una herramienta de diseño o representación de procesos, no un beneficio técnico relacionado con reutilizar código."
+          },
+          {
+            "clave": "c",
+            "motivo": "La visibilidad pública es un modificador de acceso que permite que otros objetos accedan a ciertos atributos o métodos, pero no implica reutilización de código entre proyectos."
+          },
+          {
+            "clave": "d",
+            "motivo": "La jerarquía vertical se refiere a la representación de diagramas UML o relaciones jerárquicas, no al uso del mismo código en distintos sistemas."
+          }
+        ],
+        "resumen_didactico": "La reutilización consiste en usar código ya desarrollado en otros programas o proyectos sin tener que volver a escribirlo.",
+        "ejemplo_practico": "Un sistema de validación de usuarios creado para un e-commerce puede reutilizarse en una aplicación de gestión de gimnasios con pequeños ajustes.",
+        "conclusion_final": "Cuando utilizas código ya creado en otro proyecto, estás aprovechando la reutilización o reusabilidad."
+      }
+    },
+    {
+      "id": "UT2-Q13",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "En el lenguaje visual UML, ¿qué símbolo representa que un atributo o método tiene una visibilidad pública?",
+      "contexto": "Representación de modificadores de acceso en diagramas de clases UML.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "El signo almohadilla (#)." },
+        { "clave": "b", "texto": "El signo más (+)." },
+        { "clave": "c", "texto": "Una línea discontinua." },
+        { "clave": "d", "texto": "El signo menos (-)." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "En UML, la visibilidad de los atributos y métodos se indica mediante símbolos. El signo más (+) representa visibilidad pública, lo que significa que cualquier clase puede acceder a ese atributo o método.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El símbolo # representa visibilidad protegida, accesible solo desde la propia clase y sus subclases."
+          },
+          {
+            "clave": "c",
+            "motivo": "Las líneas discontinuas se usan para representar ciertos tipos de relaciones en diagramas UML, no niveles de visibilidad."
+          },
+          {
+            "clave": "d",
+            "motivo": "El signo - indica visibilidad privada, lo que significa que solo la propia clase puede acceder a ese atributo o método."
+          }
+        ],
+        "resumen_didactico": "En UML: + público, - privado, # protegido.",
+        "ejemplo_practico": "En un diagrama de clase Usuario podríamos ver: +nombre: String, lo que indica que el atributo nombre es público.",
+        "conclusion_final": "El símbolo que indica visibilidad pública en UML es el signo más (+)."
+      }
+    },
+    {
+      "id": "UT2-Q14",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Si un empleado tiene una contraseña de acceso que solo la propia clase puede leer y modificar, ¿qué modificador de visibilidad se está usando?",
+      "contexto": "Control de acceso a atributos dentro de una clase en POO.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Protegido." },
+        { "clave": "b", "texto": "Privado." },
+        { "clave": "c", "texto": "Público." },
+        { "clave": "d", "texto": "Compartido." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El temario explica que la visibilidad privada (-) significa que solo la propia clase puede acceder o modificar ese atributo o método. Se utiliza para proteger información sensible, como una contraseña, evitando accesos desde otras clases.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La visibilidad protegida (#) permite acceso a la clase y a sus subclases, por lo que no está restringida exclusivamente a la propia clase."
+          },
+          {
+            "clave": "c",
+            "motivo": "La visibilidad pública (+) permite que cualquier clase acceda al atributo o método, lo cual sería inseguro para una contraseña."
+          },
+          {
+            "clave": "d",
+            "motivo": "Compartido no es un modificador de visibilidad estándar en POO ni en UML."
+          }
+        ],
+        "resumen_didactico": "Privado significa que solo la propia clase puede acceder al atributo o método.",
+        "ejemplo_practico": "En una clase Empleado: -password: String indica que la contraseña es privada y no puede ser leída directamente desde otras clases.",
+        "conclusion_final": "Cuando solo la propia clase puede acceder a un atributo, se está usando visibilidad privada."
+      }
+    },
+    {
+      "id": "UT2-Q15",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "¿Cuál es la característica principal de la visibilidad protegida (#) según el temario?",
+      "contexto": "Modificadores de visibilidad en POO representados en UML.",
+      "tipo": "single",
+      "opciones": [
+        {
+          "clave": "a",
+          "texto": "Que la información solo es visible para el CEO de la empresa."
+        },
+        {
+          "clave": "b",
+          "texto": "Que solo la propia clase y sus subclases o hijas pueden acceder."
+        },
+        {
+          "clave": "c",
+          "texto": "Que el dato desaparece automáticamente al terminar la ejecución."
+        },
+        {
+          "clave": "d",
+          "texto": "Que cualquier clase externa ajena al sistema puede leer el dato."
+        }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "Según el temario, la visibilidad protegida (#) permite que los atributos o métodos sean accesibles por la propia clase y por sus clases hijas o subclases. Esto facilita la reutilización mediante herencia manteniendo cierto nivel de protección frente a clases externas.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La visibilidad protegida no tiene relación con roles empresariales como el CEO; es un concepto técnico de acceso entre clases."
+          },
+          {
+            "clave": "c",
+            "motivo": "La desaparición de datos al finalizar la ejecución está relacionada con el ciclo de vida de objetos o memoria, no con la visibilidad."
+          },
+          {
+            "clave": "d",
+            "motivo": "Permitir acceso a cualquier clase externa corresponde a visibilidad pública (+), no protegida."
+          }
+        ],
+        "resumen_didactico": "Protegido significa que la clase y sus subclases pueden acceder al atributo o método.",
+        "ejemplo_practico": "En una clase Empleado, un método #calcularSalarioBase() podría ser utilizado por subclases como Gerente o Becario.",
+        "conclusion_final": "La visibilidad protegida permite acceso a la clase y a sus subclases, pero no a clases externas."
+      }
+    },
+    {
+      "id": "UT2-Q16",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Laura diseña un sistema educativo en Valencia donde las clases Alumno y Trabajador adquieren el nombre y DNI de la clase Persona. Este concepto se conoce como:",
+      "contexto": "Relación entre clases en POO dentro de un sistema educativo.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Agregación." },
+        { "clave": "b", "texto": "Asociación." },
+        { "clave": "c", "texto": "Herencia." },
+        { "clave": "d", "texto": "Polimorfismo." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El temario explica que la herencia permite crear nuevas clases (subclases) a partir de una clase existente (superclase). Las subclases heredan los atributos y métodos de la clase base. En el ejemplo del sistema educativo, la clase Persona contiene datos como DNI y nombre, que son heredados por las clases Alumno y Trabajador.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La agregación es una relación de tipo 'todo-parte' donde los elementos pueden existir de forma independiente."
+          },
+          {
+            "clave": "b",
+            "motivo": "La asociación representa una relación entre objetos que interactúan, pero no implica heredar atributos o métodos."
+          },
+          {
+            "clave": "d",
+            "motivo": "El polimorfismo permite que diferentes objetos respondan de forma distinta al mismo método, pero no describe la herencia de atributos."
+          }
+        ],
+        "resumen_didactico": "La herencia permite crear clases hijas que reutilizan atributos y métodos de una clase padre.",
+        "ejemplo_practico": "Clase Persona → atributos nombre y DNI. Clases Alumno y Trabajador heredan esos atributos sin tener que definirlos de nuevo.",
+        "conclusion_final": "Cuando una clase adquiere atributos de otra clase base, se está aplicando herencia."
+      }
+    },
+    {
+      "id": "UT2-Q17",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "La propiedad que permite declarar nuevas subclases a partir de superclases, transfiriendo sus miembros excepto constructores, es:",
+      "contexto": "Relaciones entre clases en Programación Orientada a Objetos.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Composición fuerte." },
+        { "clave": "b", "texto": "Herencia." },
+        { "clave": "c", "texto": "Visibilidad privada." },
+        { "clave": "d", "texto": "Abstracción total." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El temario define la herencia como la propiedad que permite declarar nuevas clases (subclases) a partir de otras existentes (superclases), transfiriendo todos sus miembros excepto constructores y destructores. Este mecanismo permite reutilizar código y establecer jerarquías entre clases.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La composición fuerte describe una relación donde las partes dependen del ciclo de vida del objeto principal, no la creación de subclases."
+          },
+          {
+            "clave": "c",
+            "motivo": "La visibilidad privada es un modificador de acceso que restringe el acceso a atributos o métodos dentro de una clase."
+          },
+          {
+            "clave": "d",
+            "motivo": "La abstracción consiste en centrarse en las características relevantes de un objeto, ignorando detalles innecesarios."
+          }
+        ],
+        "resumen_didactico": "La herencia permite que una clase hija reutilice atributos y métodos de una clase padre.",
+        "ejemplo_practico": "Clase Persona → atributos nombre y DNI. Clases Alumno y Profesor heredan esos atributos sin redefinirlos.",
+        "conclusion_final": "La propiedad que permite crear subclases a partir de superclases es la herencia."
+      }
+    },
+    {
+      "id": "UT2-Q18",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Un cliente y un pedido en un e-commerce de Sevilla interactúan, pero el cliente sigue existiendo aunque el pedido se borre. ¿Qué tipo de relación es?",
+      "contexto": "Relación entre objetos dentro de un sistema de comercio electrónico.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Asociación." },
+        { "clave": "b", "texto": "Composición." },
+        { "clave": "c", "texto": "Asociación reflexiva." },
+        { "clave": "d", "texto": "Herencia." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El temario explica que la asociación es una relación donde los objetos interactúan entre sí pero pueden existir de forma independiente. En el ejemplo del e-commerce, un cliente puede tener pedidos, pero si se elimina un pedido el cliente continúa existiendo en el sistema.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "La composición implica una dependencia fuerte del ciclo de vida: si el objeto principal desaparece, sus partes también. Aquí el cliente sigue existiendo aunque el pedido se elimine."
+          },
+          {
+            "clave": "c",
+            "motivo": "La asociación reflexiva ocurre cuando una clase se relaciona consigo misma, como un empleado que supervisa a otros empleados."
+          },
+          {
+            "clave": "d",
+            "motivo": "La herencia describe una relación jerárquica entre clases padre e hijas, no una interacción entre objetos independientes."
+          }
+        ],
+        "resumen_didactico": "En una asociación, los objetos se relacionan pero no dependen de la existencia del otro.",
+        "ejemplo_practico": "Un Cliente puede tener varios Pedidos. Si se elimina un pedido del historial, el cliente sigue registrado en el sistema.",
+        "conclusion_final": "Cuando dos objetos interactúan pero pueden existir de forma independiente, la relación es una asociación."
+      }
+    },
+    {
+      "id": "UT2-Q19",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Si en un sistema bancario el Banco se elimina y, como consecuencia, todas sus Cuentas dejan de existir legalmente, estamos ante una:",
+      "contexto": "Relaciones de dependencia entre objetos dentro de un sistema bancario.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Relación de multiplicidad infinita." },
+        { "clave": "b", "texto": "Agregación." },
+        { "clave": "c", "texto": "Clase abstracta." },
+        { "clave": "d", "texto": "Composición." }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "El temario explica que la composición es una relación fuerte de tipo 'todo-parte' donde las partes dependen del ciclo de vida del objeto principal. Si el objeto principal se elimina, sus componentes también desaparecen. El ejemplo mencionado es un banco y sus cuentas: si el banco deja de existir, las cuentas asociadas también desaparecen.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La multiplicidad describe cuántos objetos pueden relacionarse entre sí en UML, no el nivel de dependencia entre ellos."
+          },
+          {
+            "clave": "b",
+            "motivo": "En la agregación las partes pueden existir independientemente del todo, lo cual no ocurre en este caso."
+          },
+          {
+            "clave": "c",
+            "motivo": "Una clase abstracta es una clase de la que no se crean objetos directamente; sirve como base para otras clases."
+          }
+        ],
+        "resumen_didactico": "Si las partes dependen completamente del objeto principal y desaparecen cuando él desaparece, la relación es composición.",
+        "ejemplo_practico": "Si un objeto Matricula se elimina y todas sus Asignaturas asociadas también desaparecen, se trata de una relación de composición.",
+        "conclusion_final": "Cuando las partes dependen del ciclo de vida del objeto principal, estamos ante una relación de composición."
+      }
+    },
+    {
+      "id": "UT2-Q20",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Un sistema en Toulouse gestiona PDF y Excel. Al dar la orden imprimir(), cada archivo reacciona de forma distinta según su tipo. ¿Cómo se llama esta propiedad?",
+      "contexto": "Comportamiento diferente ante el mismo método en distintos tipos de objetos.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Polimorfismo." },
+        { "clave": "b", "texto": "Encapsulación." },
+        { "clave": "c", "texto": "Abstracción." },
+        { "clave": "d", "texto": "Reutilización." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El temario define el polimorfismo como la propiedad por la cual diferentes objetos pueden responder de forma distinta al mismo mensaje o método. En el ejemplo, distintos tipos de documentos (PDF o Excel) reciben la misma orden imprimir(), pero cada uno ejecuta el proceso de forma específica según su tipo.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "La encapsulación protege los datos y métodos de accesos externos, pero no implica diferentes comportamientos ante el mismo método."
+          },
+          {
+            "clave": "c",
+            "motivo": "La abstracción consiste en centrarse en las características esenciales de un objeto ignorando detalles irrelevantes."
+          },
+          {
+            "clave": "d",
+            "motivo": "La reutilización se refiere a usar código existente en diferentes partes de un programa o proyectos."
+          }
+        ],
+        "resumen_didactico": "El polimorfismo permite usar el mismo método en distintos objetos, obteniendo comportamientos diferentes.",
+        "ejemplo_practico": "Un método imprimir() puede funcionar de forma distinta en clases DocumentoPDF, DocumentoExcel o DocumentoWord.",
+        "conclusion_final": "Cuando distintos objetos responden de manera diferente al mismo método, estamos ante el polimorfismo."
+      }
+    },
+    {
+      "id": "UT2-Q21",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Durante una planificación en Zaragoza, el arquitecto de software dibuja un diagrama que describe la estructura estática del sistema. ¿Qué lenguaje está usando?",
+      "contexto": "Diseño previo al desarrollo de software utilizando diagramas estructurales.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Java Script." },
+        { "clave": "b", "texto": "Pseudocódigo avanzado." },
+        { "clave": "c", "texto": "UML." },
+        { "clave": "d", "texto": "Python estructural." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El temario explica que el Lenguaje Unificado de Modelado (UML) se utiliza para representar gráficamente la estructura de un sistema antes de programarlo. Un diagrama de clases UML describe la estructura estática del sistema mostrando clases, atributos, métodos y relaciones entre objetos.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "JavaScript es un lenguaje de programación utilizado para desarrollar aplicaciones, no para representar gráficamente el diseño del sistema."
+          },
+          {
+            "clave": "b",
+            "motivo": "El pseudocódigo sirve para describir algoritmos de forma textual, pero no para representar gráficamente estructuras de clases."
+          },
+          {
+            "clave": "d",
+            "motivo": "Python es un lenguaje de programación y no un lenguaje de modelado para diseñar diagramas de arquitectura del sistema."
+          }
+        ],
+        "resumen_didactico": "UML es el lenguaje visual que permite diseñar y comunicar la estructura de un sistema antes de programarlo.",
+        "ejemplo_practico": "En un diagrama UML puedes representar clases como Usuario, Pedido o Producto y mostrar cómo se relacionan entre sí.",
+        "conclusion_final": "El lenguaje visual utilizado para describir la estructura de un sistema es UML."
+      }
+    },
+    {
+      "id": "UT2-Q22",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "En la representación de una clase en UML, ¿qué información se coloca en el nivel intermedio de la caja?",
+      "contexto": "Estructura visual de una clase en un diagrama UML.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Los campos o atributos." },
+        { "clave": "b", "texto": "Los valores de retorno." },
+        { "clave": "c", "texto": "Las funciones o métodos." },
+        { "clave": "d", "texto": "El nombre de la clase." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "Según el temario, una clase en UML se representa mediante una caja dividida en tres niveles. El nivel superior contiene el nombre de la clase, el nivel intermedio contiene los campos o atributos (los datos que almacena la clase), y el nivel inferior contiene las funciones o métodos que describen el comportamiento.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Los valores de retorno forman parte de la definición de un método, pero no constituyen el contenido principal del nivel intermedio."
+          },
+          {
+            "clave": "c",
+            "motivo": "Los métodos se colocan en el nivel inferior de la caja UML, no en el intermedio."
+          },
+          {
+            "clave": "d",
+            "motivo": "El nombre de la clase se ubica en la parte superior del diagrama UML."
+          }
+        ],
+        "resumen_didactico": "En UML: arriba va el nombre de la clase, en medio los atributos y abajo los métodos.",
+        "ejemplo_practico": "Clase Usuario → arriba: Usuario; en medio: nombre:String, email:String; abajo: login(), logout().",
+        "conclusion_final": "El nivel intermedio de una clase UML contiene los atributos o campos de la clase."
+      }
+    },
+    {
+      "id": "UT2-Q23",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Si necesitas representar el precio de un producto en un sistema en Málaga, ¿qué tipo de dato es el más adecuado según el temario?",
+      "contexto": "Selección del tipo de dato adecuado para representar precios en un sistema.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Float." },
+        { "clave": "b", "texto": "Integer." },
+        { "clave": "c", "texto": "String." },
+        { "clave": "d", "texto": "Boolean." }
+      ],
+      "respuesta_correcta": ["a"],
+      "explicacion": {
+        "temario": "El temario explica que el tipo de dato Float se utiliza para números con decimales, como el precio de un producto. Este tipo permite representar valores como 19.99 o 5.50, algo habitual en sistemas de venta o comercio electrónico.",
+        "analisis_incorrectas": [
+          {
+            "clave": "b",
+            "motivo": "Integer solo permite números enteros, por lo que no sería adecuado para precios con decimales."
+          },
+          {
+            "clave": "c",
+            "motivo": "String se utiliza para texto, no para cálculos numéricos como los precios."
+          },
+          {
+            "clave": "d",
+            "motivo": "Boolean solo permite valores verdadero o falso, por lo que no puede representar un precio."
+          }
+        ],
+        "resumen_didactico": "Los precios suelen necesitar decimales, por lo que se utilizan tipos numéricos con decimales como Float.",
+        "ejemplo_practico": "precioProducto: Float = 19.95 representa correctamente el precio de un artículo en una tienda online.",
+        "conclusion_final": "El tipo de dato más adecuado para representar precios es Float."
+      }
+    },
+    {
+      "id": "UT2-Q24",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "En una biblioteca de Sevilla, el proceso de crear la ficha real de un socio a partir del formulario general se denomina:",
+      "contexto": "Creación de objetos a partir de una clase en un sistema de gestión de biblioteca.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Herencia múltiple." },
+        { "clave": "b", "texto": "Abstracción." },
+        { "clave": "c", "texto": "Instanciación." },
+        { "clave": "d", "texto": "Polimorfismo de datos." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El temario define la instanciación como el proceso de crear un objeto real y concreto a partir de una clase abstracta. Se compara con un formulario general de alta (la clase) del que se crea una ficha concreta de un socio con datos específicos.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La herencia múltiple se refiere a que una clase puede heredar de varias clases base, no al proceso de crear objetos."
+          },
+          {
+            "clave": "b",
+            "motivo": "La abstracción consiste en identificar las características esenciales de un objeto ignorando detalles irrelevantes."
+          },
+          {
+            "clave": "d",
+            "motivo": "El polimorfismo permite que distintos objetos respondan de forma diferente al mismo método."
+          }
+        ],
+        "resumen_didactico": "Instanciar significa crear un objeto concreto a partir de una clase.",
+        "ejemplo_practico": "Clase Usuario → crear Usuario pedro = new Usuario(\"Pedro\", \"12345678A\"); significa instanciar un objeto Usuario.",
+        "conclusion_final": "Crear un objeto concreto a partir de una clase se denomina instanciación."
+      }
+    },
+    {
+      "id": "UT2-Q25",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Al definir restricciones de cantidad en una asociación, ¿qué significa el símbolo * o 1..n?",
+      "contexto": "Multiplicidad en relaciones entre clases dentro de diagramas UML.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Entre uno y cinco." },
+        { "clave": "b", "texto": "Exactamente uno." },
+        { "clave": "c", "texto": "De uno a muchos, sin límite definido." },
+        { "clave": "d", "texto": "Ninguna relación permitida." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El temario explica que en UML la multiplicidad indica cuántos objetos pueden participar en una relación. El símbolo 1..n o * representa una relación de uno a muchos, es decir, un objeto puede estar relacionado con múltiples objetos sin un límite máximo definido.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Entre uno y cinco se representaría como 1..5, no como 1..n ni *."
+          },
+          {
+            "clave": "b",
+            "motivo": "Exactamente uno se representa con el número 1."
+          },
+          {
+            "clave": "d",
+            "motivo": "El símbolo * no significa ausencia de relación, sino una cantidad múltiple sin límite específico."
+          }
+        ],
+        "resumen_didactico": "En UML: 1 = uno, 1..5 = rango limitado, 1..n o * = muchos.",
+        "ejemplo_practico": "Un Cliente puede tener muchos Pedidos. En UML se representaría como Cliente 1 —— * Pedido.",
+        "conclusion_final": "El símbolo * o 1..n indica una relación de uno a muchos sin límite definido."
+      }
+    },
+    {
+      "id": "UT2-Q26",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "En una oficina de Eindhoven, un Empleado que es jefe supervisa a otros Empleados. ¿Qué tipo de asociación especial es esta?",
+      "contexto": "Relación entre objetos de la misma clase dentro de un sistema de gestión de empleados.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Clase de asociación." },
+        { "clave": "b", "texto": "Elección con restricción." },
+        { "clave": "c", "texto": "Asociación reflexiva." },
+        { "clave": "d", "texto": "Composición débil." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El temario explica que una asociación reflexiva ocurre cuando una clase se relaciona con otra instancia de la misma clase. Un ejemplo típico es un sistema de recursos humanos donde un empleado (jefe) supervisa a otros empleados, todos pertenecientes a la misma clase Empleado.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "Una clase de asociación se utiliza cuando la relación entre dos clases necesita almacenar información adicional, como una fecha o estado."
+          },
+          {
+            "clave": "b",
+            "motivo": "La elección con restricción {or} se utiliza cuando un objeto debe elegir entre varias asociaciones posibles."
+          },
+          {
+            "clave": "d",
+            "motivo": "La composición débil corresponde a la agregación, que describe una relación todo-parte donde los elementos pueden existir independientemente."
+          }
+        ],
+        "resumen_didactico": "Una asociación reflexiva ocurre cuando un objeto se relaciona con otro objeto de su misma clase.",
+        "ejemplo_practico": "En una clase Empleado, un atributo jefe podría apuntar a otro objeto de la misma clase Empleado.",
+        "conclusion_final": "Cuando una clase se relaciona consigo misma, la relación se denomina asociación reflexiva."
+      }
+    },
+    {
+      "id": "UT2-Q27",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "¿Cómo se identifican visualmente las clases abstractas en un diagrama UML para indicar que no se pueden instanciar directamente?",
+      "contexto": "Representación de clases abstractas en diagramas UML.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Se marcan con un rombo negro." },
+        { "clave": "b", "texto": "Se rodean con un círculo rojo." },
+        { "clave": "c", "texto": "Se escriben en MAYÚSCULAS." },
+        { "clave": "d", "texto": "Su nombre se escribe en cursiva." }
+      ],
+      "respuesta_correcta": ["d"],
+      "explicacion": {
+        "temario": "El temario indica que las clases abstractas en UML se representan escribiendo su nombre en cursiva. Esto señala que la clase sirve como modelo o base para otras clases, pero que no se pueden crear objetos directamente a partir de ella.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "El rombo negro se utiliza en UML para representar una relación de composición, no para indicar clases abstractas."
+          },
+          {
+            "clave": "b",
+            "motivo": "Rodear el nombre con un círculo rojo no forma parte de la notación UML estándar."
+          },
+          {
+            "clave": "c",
+            "motivo": "Las MAYÚSCULAS no indican abstracción en UML; el estándar utiliza la cursiva para ese propósito."
+          }
+        ],
+        "resumen_didactico": "En UML, las clases abstractas se identifican visualmente escribiendo su nombre en cursiva.",
+        "ejemplo_practico": "Una clase abstracta Vehiculo aparecería en el diagrama UML como Vehiculo en cursiva, mientras que sus subclases Coche o Moto estarían en texto normal.",
+        "conclusion_final": "Las clases abstractas se identifican en UML escribiendo su nombre en cursiva."
+      }
+    },
+    {
+      "id": "UT2-Q28",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "En el diseño de un automóvil, la relación entre el vehículo y el motor se representa con un rombo negro porque son indivisibles lógicamente. Este símbolo indica:",
+      "contexto": "Representación de relaciones fuertes entre objetos en diagramas UML.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Agregación." },
+        { "clave": "b", "texto": "Composición." },
+        { "clave": "c", "texto": "Herencia inversa." },
+        { "clave": "d", "texto": "Asociación simple." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El temario indica que en UML la composición se representa con un rombo negro. Este símbolo describe una relación fuerte de tipo 'todo-parte' donde las partes dependen del ciclo de vida del objeto principal. En el ejemplo del automóvil, el motor forma parte del coche y no tiene sentido lógico dentro del sistema si el coche deja de existir.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La agregación se representa con un rombo blanco y describe una relación más débil donde las partes pueden existir de forma independiente."
+          },
+          {
+            "clave": "c",
+            "motivo": "Herencia inversa no es una relación estándar en UML."
+          },
+          {
+            "clave": "d",
+            "motivo": "Una asociación simple representa interacción entre objetos pero no implica dependencia del ciclo de vida."
+          }
+        ],
+        "resumen_didactico": "En UML: rombo blanco = agregación (relación débil) y rombo negro = composición (relación fuerte).",
+        "ejemplo_practico": "Un objeto Automovil contiene Motor y Chasis. Si el automóvil desaparece del sistema, esos componentes dejan de existir dentro de ese objeto.",
+        "conclusion_final": "El rombo negro en UML indica una relación de composición."
+      }
+    },
+    {
+      "id": "UT2-Q29",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Al digitalizar un instituto en Barcelona, el diseño basado en la herencia de la clase Persona permite:",
+      "contexto": "Diseño de un sistema educativo donde varias clases heredan de una clase base Persona.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Eliminar el uso de bases de datos." },
+        { "clave": "b", "texto": "Evitar que los profesores pongan notas." },
+        {
+          "clave": "c",
+          "texto": "Adaptar el sistema en minutos ante cambios constantes."
+        },
+        { "clave": "d", "texto": "Que los alumnos no necesiten matrícula." }
+      ],
+      "respuesta_correcta": ["c"],
+      "explicacion": {
+        "temario": "El temario explica que diseñar un sistema usando herencia, como una clase base Persona de la que heredan Estudiante y Profesor, permite que el sistema sea más flexible y fácil de modificar. Si cambian los requisitos, el diseño puede adaptarse rápidamente sin rehacer todo el sistema.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La herencia no elimina la necesidad de bases de datos; estas siguen siendo necesarias para almacenar información del sistema."
+          },
+          {
+            "clave": "b",
+            "motivo": "La herencia no afecta a las funciones de los profesores dentro del sistema, como registrar notas."
+          },
+          {
+            "clave": "d",
+            "motivo": "La matrícula forma parte del modelo del sistema educativo y no desaparece por usar herencia."
+          }
+        ],
+        "resumen_didactico": "La herencia facilita la evolución del sistema porque permite reutilizar y extender clases sin modificar todo el código.",
+        "ejemplo_practico": "Si mañana el instituto decide que los profesores también pueden ser alumnos de un curso, el sistema puede adaptarse fácilmente gracias a la estructura basada en Persona.",
+        "conclusion_final": "El diseño basado en herencia permite adaptar el sistema rápidamente ante cambios."
+      }
+    },
+    {
+      "id": "UT2-Q30",
+      "tema": "UT2 Programación orientada a objetos",
+      "pregunta": "Si estás en una consultora en Sevilla y debes representar una jerarquía o árbol genealógico en un PDF A4, ¿qué disposición es preferible?",
+      "contexto": "Representación de diagramas UML en documentos para visualizar jerarquías de clases.",
+      "tipo": "single",
+      "opciones": [
+        { "clave": "a", "texto": "Disposición horizontal." },
+        { "clave": "b", "texto": "Disposición vertical Top-Down." },
+        {
+          "clave": "c",
+          "texto": "Disposición aleatoria para evitar el espagueti."
+        },
+        { "clave": "d", "texto": "Disposición circular." }
+      ],
+      "respuesta_correcta": ["b"],
+      "explicacion": {
+        "temario": "El temario explica que la disposición vertical (Top-Down) es la forma clásica para representar jerarquías en diagramas UML, como árboles genealógicos o relaciones de herencia. Esta disposición es especialmente recomendable en documentos como PDFs o papel A4 porque aprovecha mejor el espacio vertical y facilita entender qué clases son superiores y cuáles subordinadas.",
+        "analisis_incorrectas": [
+          {
+            "clave": "a",
+            "motivo": "La disposición horizontal se utiliza más en pantallas panorámicas o cuando se quiere representar flujos de trabajo, no jerarquías clásicas en papel."
+          },
+          {
+            "clave": "c",
+            "motivo": "Una disposición aleatoria no forma parte de ningún estándar de representación UML."
+          },
+          {
+            "clave": "d",
+            "motivo": "La disposición circular no es un formato utilizado para representar jerarquías de clases en UML."
+          }
+        ],
+        "resumen_didactico": "Para representar jerarquías o herencia en UML, lo habitual es colocar las clases padre arriba y las hijas debajo.",
+        "ejemplo_practico": "Persona en la parte superior y debajo Estudiante y Profesor en un diagrama UML vertical.",
+        "conclusion_final": "Para representar jerarquías en documentos como un PDF A4 se recomienda la disposición vertical Top-Down."
+      }
+    }
+]

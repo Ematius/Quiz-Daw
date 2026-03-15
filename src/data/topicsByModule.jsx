@@ -126,5 +126,30 @@ export const topicsByModule = {
       title: "Introducción a la programación",
       numQuestion: 30,
     },
+    {
+      id: "UT2",
+      title: "Programación orientada a objetos",
+      numQuestion: 30,
+    },
+    {
+      id: "UT3 ",
+      title: "Lenguajes de programación y entornos de desarrollo integrado",
+      numQuestion: 30,
+    },
+    {
+      id: "UT4",
+      title: "Elementos de un programa informático",
+      numQuestion: 30,
+    },
+    {
+      id: "UT5",
+      title: "Estructura de control",
+      numQuestion: 30,
+    },
+    {
+      id: "UT6",
+      title: "Clases y utilización de objetos",
+      numQuestion: 30,
+    },
   ],
 };
