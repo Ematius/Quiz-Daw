@@ -1,14 +1,16 @@
 
 import "./QuizProgress.scss";
 
-export function QuizProgress({index,total,correctCount}){
+export function QuizProgress({ current, total, correctCount, pendingCount }){
 
     return (
       <section className="quiz-progress">
         <p>
-          {index + 1}/{total}
+          {current}/{total}
         </p>
         <p>Preguntas acertadas: {correctCount}</p>
+        <p>Preguntas incorrectas en repaso: {pendingCount}</p>
+        {pendingCount > 0 && <p>Repasando preguntas falladas</p>}
       </section>
     );
 }

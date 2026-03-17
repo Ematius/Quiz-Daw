@@ -27,6 +27,10 @@ export function Quiz()
   const questions = folder ? getQuiz(folder, topicId) : null;
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [roundQuestionIndexes, setRoundQuestionIndexes] = useState([]);
+  const [pendingQuestionIndexes, setPendingQuestionIndexes] = useState([]);
+  const [solvedQuestionIndexes, setSolvedQuestionIndexes] = useState([]);
+  const [quizFinished, setQuizFinished] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [feedback, setFeedback] = useState(null);
   const [answerCorrect, setAnswerCorrect] = useState(0);
@@ -35,14 +39,28 @@ export function Quiz()
 
   useEffect(() => {
     setCurrentIndex(0);
+    setRoundQuestionIndexes(
+      Array.isArray(questions) ? questions.map((_, idx) => idx) : []
+    );
+    setPendingQuestionIndexes([]);
+    setSolvedQuestionIndexes([]);
+    setQuizFinished(false);
     setSelectedOption(null);
     setFeedback(null);
     setAnswerCorrect(0);
     setHasAnsweredCurrent(false);
   }, [moduloId, topicId]);
 
+  useEffect(() => {
+    setAnswerCorrect(solvedQuestionIndexes.length);
+  }, [solvedQuestionIndexes]);
 
-  const currentQuestion = questions?.[currentIndex] ?? null;
+
+  const roundLength = roundQuestionIndexes.length;
+  const originalIndex =
+    roundLength > 0 ? roundQuestionIndexes[currentIndex] : null;
+  const currentQuestion =
+    questions && originalIndex !== null ? questions?.[originalIndex] ?? null : null;
 
   function handleOptionChange(optionKey) {
     if (hasAnsweredCurrent) return;
@@ -56,7 +74,11 @@ export function Quiz()
     if (hasAnsweredCurrent) return;
     if (!selectedOption) return;
 
-    const question = questions[currentIndex];
+    const idxInOriginal =
+      roundLength > 0 ? roundQuestionIndexes[currentIndex] : null;
+    if (idxInOriginal === null) return;
+
+    const question = questions[idxInOriginal];
     if (!question) return;
 
     const correctArray = Array.isArray(question.respuesta_correcta)
@@ -67,9 +89,18 @@ export function Quiz()
 
     if (isCorrect) {
       setFeedback("✔ Has respondido correctamente");
-      setAnswerCorrect((prev) => prev + 1);
+      setPendingQuestionIndexes((prev) => prev.filter((x) => x !== idxInOriginal));
+      setSolvedQuestionIndexes((prev) => {
+        if (prev.includes(idxInOriginal)) return prev;
+        return [...prev, idxInOriginal];
+      });
     } else {
       setFeedback("✘ Te has equivocado");
+      setPendingQuestionIndexes((prev) => {
+        if (prev.includes(idxInOriginal)) return prev;
+        if (solvedQuestionIndexes.includes(idxInOriginal)) return prev;
+        return [...prev, idxInOriginal];
+      });
     }
 
     setHasAnsweredCurrent(true);
@@ -77,11 +108,21 @@ export function Quiz()
 
   function handleNext() {
     if (!questions) return;
+    if (quizFinished) return;
+    if (!hasAnsweredCurrent) return;
 
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex < questions.length - 1) return prevIndex + 1;
-      return prevIndex;
-    });
+    const lastIndexInRound = roundLength - 1;
+    if (currentIndex < lastIndexInRound) {
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+    } else {
+      const nextRound = pendingQuestionIndexes;
+      if (nextRound.length > 0) {
+        setRoundQuestionIndexes(nextRound);
+        setCurrentIndex(0);
+      } else {
+        setQuizFinished(true);
+      }
+    }
 
     setSelectedOption(null);
     setFeedback(null);
@@ -89,14 +130,8 @@ export function Quiz()
   }
 
   function handleLess() {
-    setCurrentIndex((prevIndex) => {
-      if (prevIndex > 0) return prevIndex - 1;
-      return prevIndex;
-    });
-
-    setSelectedOption(null);
-    setFeedback(null);
-    setHasAnsweredCurrent(false);
+    // Navegación hacia atrás desactivada por consistencia del flujo de dominio
+    return;
   }
 
 
@@ -120,6 +155,38 @@ export function Quiz()
     );
   }
 
+  if (quizFinished) {
+    return (
+      <div className="page-container">
+        <article className="quiz">
+          <section className="quiz-header">
+            <h1>Quiz</h1>
+            <p>Módulo: {moduloId}</p>
+            <p>Tema: {topicId}</p>
+          </section>
+
+          <QuizProgress
+            current={answerCorrect}
+            total={questions.length}
+            correctCount={answerCorrect}
+            pendingCount={pendingQuestionIndexes.length}
+          />
+
+          <section className="quiz-question">
+            <h2>Quiz completado</h2>
+            <p>
+              Dominadas: {answerCorrect}/{questions.length}
+            </p>
+          </section>
+
+          <button type="button" className="btn-back" onClick={() => navigate(-1)}>
+            Volver atrás
+          </button>
+        </article>
+      </div>
+    );
+  }
+
   return (
     <div className="page-container">
       <article className="quiz">
@@ -130,9 +197,10 @@ export function Quiz()
         </section>
 
         <QuizProgress
-          index={currentIndex}
+          current={answerCorrect}
           total={questions.length}
           correctCount={answerCorrect}
+          pendingCount={pendingQuestionIndexes.length}
         />
 
         <QuizQuestion
@@ -145,13 +213,13 @@ export function Quiz()
         />
 
         <section className="quiz-button">
-          <button onClick={handleLess} disabled={currentIndex === 0}>
+          <button onClick={handleLess} disabled={true}>
             Anterior
           </button>
 
           <button
             onClick={handleNext}
-            disabled={currentIndex >= questions.length - 1}>
+            disabled={quizFinished || !hasAnsweredCurrent}>
             Siguiente
           </button>
         </section>
