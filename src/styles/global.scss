@@ -23,6 +23,10 @@ body {
   flex-direction: column;
 }
 
+.app-shell > main {
+  flex: 1;
+}
+
 // Contenedor principal de páginas
 .page-container {
   flex: 1;
@@ -30,6 +34,12 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 2.5rem 1.5rem 4rem;
+}
+
+@media (max-width: 600px) {
+  .page-container {
+    padding-bottom: 7.5rem;
+  }
 }
 
 // Titulares de páginas

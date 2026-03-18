@@ -3,6 +3,7 @@
 
 import { Header } from "./Components/core/Header";
 import { Footer } from "./Components/core/Footer";
+
 import { Home } from "./pages/Home";
 import { Modulo } from "./pages/Modulo";
 import { Routes, Route } from "react-router-dom";
@@ -21,7 +22,7 @@ function App() {
           <Route path="/*" element={<NotFoundPage/>}></Route>
         </Routes>
       </main>
-
+      <Footer />
     </div>
   );
 }
