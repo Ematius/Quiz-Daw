@@ -13,6 +13,8 @@ function resolveFolder(moduloId) {
     sistemas: "sistemas",
     sistemas2: "sistemas2",
     baseDatos: "baseDatos",
+    introduccionProgramacion: "introduccionProgramacion",
+    ingles: "ingles",
   };
   return map[moduloId] ?? null;
 }

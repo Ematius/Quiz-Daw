@@ -44,7 +44,20 @@ export function QuizQuestion({
       <div className="card-explication">
         {feedback && (
           <div className="card-explication__feedback">
-            <p className="card-explication__status">{feedback}</p>
+            <p
+              className="card-explication__status"
+              style={{
+                color: feedback.startsWith("✔")
+                  ? "#22c55e"
+                  : "#ef4444",
+                fontSize: "1.15rem",
+                fontWeight: 700,
+                textAlign: "center",
+                width: "100%",
+              }}
+            >
+              {feedback}
+            </p>
             <p className="card-explication__intro">
               Explicación de las opciones:
             </p>

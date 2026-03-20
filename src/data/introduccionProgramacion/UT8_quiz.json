@@ -1,0 +1,1027 @@
+[
+    {
+        "id": "UT8-Q01",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es la limitación principal de utilizar variables individuales cuando el volumen de datos de un proyecto crece significativamente?",
+        "contexto": "Gestión de grandes volúmenes de información con variables sueltas frente al uso de arrays.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Es ineficiente y genera un código imposible de mantener a gran escala." },
+          { "clave": "b", "texto": "Las variables individuales consumen más energía del procesador." },
+          { "clave": "c", "texto": "Java prohíbe el uso de más de 100 variables por cada clase." },
+          { "clave": "d", "texto": "Las variables individuales solo pueden almacenar números enteros." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario indica que, cuando un proyecto crece y maneja miles de datos, trabajar con variables individuales se vuelve desesperadamente ineficiente y crear miles de variables distintas es una pesadilla técnica imposible de mantener. Por eso se introducen los arrays como estructura para organizar grandes volúmenes de información bajo un único nombre.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El problema que plantea el tema no es el consumo energético del procesador, sino la mala organización y la falta de mantenibilidad del código cuando se usan variables sueltas para muchos datos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Java no impone una norma del temario que limite a 100 variables por clase. Esa afirmación es inventada y no corresponde al contenido de la unidad."
+            },
+            {
+              "clave": "d",
+              "motivo": "Una variable individual no solo puede almacenar enteros; puede almacenar distintos tipos como texto, booleanos, decimales, etc. La limitación real está en gestionar grandes cantidades de datos de esta forma."
+            }
+          ],
+          "resumen_didactico": "Cuando el volumen de datos crece, usar variables una por una genera caos, mucho código repetido y una solución difícil de escalar y mantener.",
+          "ejemplo_practico": "Si una aplicación debe gestionar 10.000 productos, crear variables como producto1, producto2, producto3... hasta producto10000 sería inviable; un array permite agruparlos y tratarlos de forma ordenada.",
+          "conclusion_final": "La limitación principal es que usar variables individuales para grandes volúmenes de datos resulta ineficiente y hace que el código sea prácticamente imposible de mantener a gran escala."
+        }
+      },
+      {
+        "id": "UT8-Q02",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "En el lenguaje Java, ¿qué herramienta se utiliza para agrupar datos de distinto tipo con una relación lógica, sustituyendo a los \"structs\" de lenguajes como C?",
+        "contexto": "En Java no existen los structs de C, por lo que se necesita otro mecanismo para reunir datos relacionados de distintos tipos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Clases" },
+          { "clave": "b", "texto": "Arrays multidimensionales" },
+          { "clave": "c", "texto": "Clases envoltorio" },
+          { "clave": "d", "texto": "Operadores lógicos" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En Java, la herramienta que sustituye a los structs es la clase. Una clase permite agrupar atributos de distinto tipo que guardan relación lógica entre sí, formando una estructura más potente y orientada a objetos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Los arrays multidimensionales sirven para organizar datos en varias dimensiones, pero no para agrupar atributos distintos con significado propio como haría una estructura."
+            },
+            {
+              "clave": "c",
+              "motivo": "Las clases envoltorio representan versiones objeto de tipos primitivos, como Integer o Double, pero no se usan para sustituir structs ni para modelar entidades completas."
+            },
+            {
+              "clave": "d",
+              "motivo": "Los operadores lógicos se emplean en expresiones condicionales, no para agrupar datos relacionados dentro de una estructura."
+            }
+          ],
+          "resumen_didactico": "Si en C usarías un struct para reunir datos relacionados, en Java ese papel lo cumple la clase.",
+          "ejemplo_practico": "Una clase Empleado puede agrupar nombre, edad, salario y departamento dentro de una sola entidad con sentido lógico.",
+          "conclusion_final": "La respuesta correcta es clases, porque en Java son el mecanismo para agrupar datos de distinto tipo relacionados entre sí."
+        }
+      },
+      {
+        "id": "UT8-Q03",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cómo se define técnicamente un array en el ecosistema de Java?",
+        "contexto": "Definición formal de array en Java según el temario de estructuras de almacenamiento.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Un objeto dinámico que cambia de tamaño automáticamente según la carga." },
+          { "clave": "b", "texto": "Un contenedor que almacena elementos de distinto tipo de forma desordenada." },
+          { "clave": "c", "texto": "Un objeto estático que almacena una colección secuencial de elementos de un número fijo y del mismo tipo." },
+          { "clave": "d", "texto": "Una variable global que solo puede residir en el método main." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario define el array como un objeto estático que almacena una colección secuencial de elementos. Todos sus elementos son del mismo tipo y su tamaño queda fijado en el momento de su creación, por lo que no cambia automáticamente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Eso no describe un array, sino una estructura dinámica. En Java, el array tiene tamaño fijo una vez creado."
+            },
+            {
+              "clave": "b",
+              "motivo": "Un array no almacena elementos de distinto tipo ni de forma desordenada; mantiene una secuencia de elementos homogéneos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Un array no es una variable global exclusiva del método main. Puede declararse en muchos contextos y no depende de estar en main."
+            }
+          ],
+          "resumen_didactico": "Un array en Java es una estructura de tamaño fijo que guarda varios datos del mismo tipo en posiciones ordenadas.",
+          "ejemplo_practico": "int[] notas = {7, 8, 9, 10}; almacena una secuencia de enteros, todos del mismo tipo, y con un tamaño ya definido.",
+          "conclusion_final": "La respuesta correcta es la c, porque un array en Java es una colección secuencial, homogénea y de tamaño fijo."
+        }
+      },
+      {
+        "id": "UT8-Q04",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "Al crear un array de tipos abstractos o de referencia (objetos), ¿qué valor inicial asigna Java a cada posición antes de que el programador los instancie?",
+        "contexto": "Inicialización por defecto de arrays de tipos de referencia en Java antes de asignar objetos reales a sus posiciones.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "null" },
+          { "clave": "b", "texto": "Un espacio en blanco" },
+          { "clave": "c", "texto": "false" },
+          { "clave": "d", "texto": "0vvvvvv" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Cuando se crea un array de tipos de referencia en Java, cada posición queda inicializada automáticamente con null hasta que el programador asigne o instancie un objeto real en ella. Esto indica que la referencia todavía no apunta a ningún objeto.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Un espacio en blanco no es el valor por defecto de las referencias. Ese valor no representa una referencia vacía en Java."
+            },
+            {
+              "clave": "c",
+              "motivo": "false es el valor por defecto de los boolean, no de los tipos de referencia u objetos."
+            },
+            {
+              "clave": "d",
+              "motivo": "0vvvvvv no es un valor válido de inicialización en Java. Además, el 0 se usa como valor por defecto en algunos tipos numéricos primitivos, no en referencias."
+            }
+          ],
+          "resumen_didactico": "En un array de objetos, Java no crea automáticamente los objetos internos; solo prepara las referencias y las deja en null.",
+          "ejemplo_practico": "Si escribes String[] nombres = new String[3];, las tres posiciones existen, pero inicialmente contienen null hasta que asignes valores como nombres[0] = \"Ana\".",
+          "conclusion_final": "La respuesta correcta es null, porque en los arrays de tipos de referencia Java inicializa cada posición como una referencia vacía hasta que se cree o asigne un objeto."
+        }
+      },
+      {
+        "id": "UT8-Q05",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Qué indica la dimensión de un array en la estructura de una aplicación?",
+        "contexto": "La dimensión de un array determina cómo se organizan los datos dentro de la estructura de almacenamiento.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "La visibilidad pública o privada del contenedor." },
+          { "clave": "b", "texto": "La \"profundidad\" u organización de los datos (lineal, tabla, etc.)." },
+          { "clave": "c", "texto": "El tiempo que tarda el Garbage Collector en procesarlo." },
+          { "clave": "d", "texto": "El peso en bytes que ocupa en el disco duro." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La dimensión de un array indica cómo se organizan sus datos. Un array de una dimensión representa una estructura lineal, mientras que uno de dos dimensiones se asemeja a una tabla con filas y columnas, y así sucesivamente con dimensiones superiores.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La visibilidad pública o privada depende de modificadores como public o private, no de la dimensión del array."
+            },
+            {
+              "clave": "c",
+              "motivo": "La dimensión del array no expresa nada relacionado con el tiempo de actuación del Garbage Collector."
+            },
+            {
+              "clave": "d",
+              "motivo": "La dimensión no describe el peso en bytes en disco, sino la forma estructural en la que se distribuyen los datos."
+            }
+          ],
+          "resumen_didactico": "La dimensión de un array describe la forma en que están organizados los datos: en línea, en tabla o en estructuras más complejas.",
+          "ejemplo_practico": "Un int[] representa una lista de notas, mientras que un int[][] puede representar una tabla de notas por alumno y asignatura.",
+          "conclusion_final": "La respuesta correcta es la b, porque la dimensión de un array define la profundidad u organización estructural de los datos."
+        }
+      },
+      {
+        "id": "UT8-Q06",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es la sintaxis correcta para declarar y crear simultáneamente un array de números enteros con capacidad para 10 elementos?",
+        "contexto": "Declaración e inicialización de un array de enteros en Java con tamaño fijo.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "int[] array = new int[10];" },
+          { "clave": "b", "texto": "array int = 10;" },
+          { "clave": "c", "texto": "int array = new int(10);" },
+          { "clave": "d", "texto": "new int[] array(10);" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En Java, para declarar y crear un array al mismo tiempo se indica primero el tipo seguido de corchetes, después el nombre de la variable y, finalmente, la creación con new y el tamaño entre corchetes. En este caso, int[] array = new int[10]; crea un array de 10 enteros.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La sintaxis es incorrecta porque no respeta el orden de declaración de variables en Java ni usa la estructura propia de los arrays."
+            },
+            {
+              "clave": "c",
+              "motivo": "Aquí se intenta declarar un entero simple, no un array, y además se usan paréntesis en lugar de corchetes para indicar el tamaño."
+            },
+            {
+              "clave": "d",
+              "motivo": "La construcción está mal formada: en Java el nombre de la variable no se coloca después de new int[] y el tamaño de un array no se expresa con paréntesis."
+            }
+          ],
+          "resumen_didactico": "Para crear un array en Java necesitas tipo, nombre de variable, operador =, palabra new, tipo otra vez y tamaño entre corchetes.",
+          "ejemplo_practico": "int[] edades = new int[10]; crea un array con 10 posiciones para guardar edades enteras.",
+          "conclusion_final": "La respuesta correcta es la a, porque es la única que sigue la sintaxis válida de Java para declarar y crear un array de enteros de tamaño fijo."
+        }
+      },
+      {
+        "id": "UT8-Q07",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es el requisito obligatorio respecto al tamaño de un array en el momento de su creación con la palabra clave \"new\"?",
+        "contexto": "En Java, al crear un array con new, su tamaño debe quedar definido desde el inicio.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Debe ser una potencia de dos." },
+          { "clave": "b", "texto": "El tamaño debe ser siempre menor a 10.000." },
+          { "clave": "c", "texto": "Debe ser un tamaño fijo igual o mayor a 1." },
+          { "clave": "d", "texto": "No es necesario indicar el tamaño si el array es unidimensional." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario establece que, al crear un array con la palabra clave new, es obligatorio indicar su tamaño en ese momento. Ese tamaño queda fijado desde la creación, ya que el array es una estructura estática. En el enfoque del tema, se trabaja con tamaños definidos de antemano e iguales o mayores que 1.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No existe ninguna norma en Java que obligue a que el tamaño de un array sea una potencia de dos."
+            },
+            {
+              "clave": "b",
+              "motivo": "Java no fija en el temario un límite de 10.000 elementos como requisito obligatorio para crear arrays."
+            },
+            {
+              "clave": "d",
+              "motivo": "Si usas new para crear un array, sí debes indicar su tamaño, salvo que lo inicialices directamente con valores entre llaves, que es otro caso distinto."
+            }
+          ],
+          "resumen_didactico": "Cuando creas un array con new, Java te obliga a decidir su tamaño desde el principio porque luego no cambia automáticamente.",
+          "ejemplo_practico": "int[] notas = new int[5]; es válido porque el tamaño 5 queda definido al crearlo. En cambio, int[] notas = new int[]; sería incorrecto porque falta el tamaño.",
+          "conclusion_final": "La respuesta correcta es la c, porque al crear un array con new su tamaño debe quedar fijado desde el primer momento."
+        }
+      },
+      {
+        "id": "UT8-Q08",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "En Java, ¿cuál es el índice de la primera posición de cualquier array?",
+        "contexto": "Acceso a posiciones dentro de un array según la indexación propia de Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "-1" },
+          { "clave": "b", "texto": "0" },
+          { "clave": "c", "texto": "El nombre del array" },
+          { "clave": "d", "texto": "1" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En Java, los arrays están indexados desde cero. Eso significa que la primera posición siempre se encuentra en el índice 0, la segunda en el 1 y así sucesivamente hasta llegar a length - 1.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El índice -1 no corresponde a una posición válida de un array en Java. Intentar acceder a una posición negativa produciría un error."
+            },
+            {
+              "clave": "c",
+              "motivo": "El nombre del array es la referencia a la estructura completa, no un índice de acceso a sus posiciones."
+            },
+            {
+              "clave": "d",
+              "motivo": "Aunque intuitivamente podría pensarse que la primera posición es 1, en Java la indexación comienza en 0."
+            }
+          ],
+          "resumen_didactico": "En Java, contar posiciones dentro de un array empieza en 0, no en 1.",
+          "ejemplo_practico": "Si tienes int[] numeros = {10, 20, 30};, el valor 10 está en numeros[0], no en numeros[1].",
+          "conclusion_final": "La respuesta correcta es la b, porque la primera posición de cualquier array en Java siempre tiene índice 0."
+        }
+      },
+      {
+        "id": "UT8-Q09",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "Si un array tiene una longitud total de \"n\" elementos, ¿cuál es el índice de la última posición accesible?",
+        "contexto": "Relación entre longitud total de un array e índice máximo válido en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "n - 1" },
+          { "clave": "b", "texto": "n + 1" },
+          { "clave": "c", "texto": "0" },
+          { "clave": "d", "texto": "n" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En Java, los arrays empiezan a indexarse en 0. Por eso, si un array tiene n elementos, su primera posición será 0 y la última posición válida será n - 1. Intentar acceder a n produciría un acceso fuera de rango.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "n + 1 está todavía más fuera del rango válido del array. Si el tamaño total es n, los índices válidos llegan solo hasta n - 1."
+            },
+            {
+              "clave": "c",
+              "motivo": "0 es el índice de la primera posición, no de la última, salvo en el caso especial de un array con un solo elemento."
+            },
+            {
+              "clave": "d",
+              "motivo": "n no es un índice válido, porque los arrays en Java se recorren desde 0 hasta n - 1."
+            }
+          ],
+          "resumen_didactico": "Si un array tiene n huecos, como empiezas a contar desde 0, el último índice siempre será n - 1.",
+          "ejemplo_practico": "Si tienes un array de longitud 5, sus índices válidos son 0, 1, 2, 3 y 4. El último accesible es 4, es decir, 5 - 1.",
+          "conclusion_final": "La respuesta correcta es la a, porque en Java la última posición válida de un array de longitud n es siempre n - 1."
+        }
+      },
+      {
+        "id": "UT8-Q10",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Qué sucede técnicamente cuando se pasa un array como argumento a un método?",
+        "contexto": "Paso de arrays a métodos en Java y comportamiento de las referencias en memoria.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El array se convierte automáticamente en una cadena de caracteres." },
+          { "clave": "b", "texto": "Java bloquea el array para que no pueda ser modificado dentro del método." },
+          { "clave": "c", "texto": "Se crea una copia física de todos los datos en la pila de memoria." },
+          { "clave": "d", "texto": "Se pasa una referencia a la dirección de memoria del array original." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Cuando un array se pasa a un método en Java, no se duplica todo su contenido. Lo que se transmite es la referencia al array original, es decir, el método recibe acceso al mismo objeto en memoria y puede trabajar sobre él.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Un array no se transforma automáticamente en texto por el hecho de pasarlo a un método. Sigue siendo el mismo objeto array."
+            },
+            {
+              "clave": "b",
+              "motivo": "Java no bloquea el array al enviarlo a un método. Si dentro del método se modifican sus posiciones, los cambios afectan al array original."
+            },
+            {
+              "clave": "c",
+              "motivo": "Al pasar un array como argumento no se crea una copia física completa de sus elementos. Eso solo ocurriría si el programador hace una copia explícita."
+            }
+          ],
+          "resumen_didactico": "Cuando pasas un array a un método, el método trabaja con la referencia del array original, no con una copia independiente.",
+          "ejemplo_practico": "Si un método recibe int[] datos y hace datos[0] = 99;, al volver al programa principal esa posición seguirá valiendo 99 porque ambos apuntan al mismo array.",
+          "conclusion_final": "La respuesta correcta es la d, porque en Java al pasar un array a un método se pasa una referencia al mismo objeto original en memoria."
+        }
+      },
+      {
+        "id": "UT8-Q11",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es la consecuencia de modificar un elemento de un array dentro de un método si este fue pasado por referencia?",
+        "contexto": "En Java, al pasar un array a un método se comparte la referencia del mismo objeto en memoria.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Los cambios se aplican al array original fuera del método." },
+          { "clave": "b", "texto": "El array se destruye al finalizar la ejecución de la función." },
+          { "clave": "c", "texto": "El cambio solo es visible dentro del método." },
+          { "clave": "d", "texto": "El programa lanza una excepción de seguridad." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Cuando un método recibe un array, trabaja sobre la referencia del array original. Por eso, si modifica uno de sus elementos, el cambio afecta al mismo objeto en memoria y se mantiene también fuera del método.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El array no se destruye al terminar el método. Sigue existiendo mientras haya referencias válidas apuntando a él."
+            },
+            {
+              "clave": "c",
+              "motivo": "Eso ocurriría si se trabajara con una copia independiente, pero en este caso se modifica el mismo array original."
+            },
+            {
+              "clave": "d",
+              "motivo": "Modificar un elemento de un array pasado a un método es un comportamiento normal en Java y no genera ninguna excepción de seguridad."
+            }
+          ],
+          "resumen_didactico": "Si cambias un elemento de un array dentro de un método, en realidad estás cambiando el array original porque ambos usan la misma referencia.",
+          "ejemplo_practico": "Si tienes int[] numeros = {1, 2, 3}; y un método hace numeros[0] = 99;, al salir del método el array seguirá siendo {99, 2, 3}.",
+          "conclusion_final": "La respuesta correcta es la a, porque al modificar un elemento dentro del método, el cambio queda reflejado en el array original."
+        }
+      },
+      {
+        "id": "UT8-Q12",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Qué propiedad de Java permite conocer la longitud o número de compartimentos de un array en tiempo de ejecución?",
+        "contexto": "Acceso al tamaño total de un array en Java mediante su propiedad incorporada.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": ".length" },
+          { "clave": "b", "texto": ".size()" },
+          { "clave": "c", "texto": ".capacity" },
+          { "clave": "d", "texto": ".count" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En Java, los arrays disponen de la propiedad length para indicar cuántas posiciones tienen. Esta propiedad permite conocer en tiempo de ejecución el número total de elementos que puede almacenar el array.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "size() no es la propiedad de los arrays. Ese método se asocia a otras estructuras como algunas colecciones, pero no a los arrays nativos."
+            },
+            {
+              "clave": "c",
+              "motivo": "capacity no es una propiedad estándar de los arrays en Java. El temario usa length como referencia para su tamaño."
+            },
+            {
+              "clave": "d",
+              "motivo": "count no es una propiedad válida de los arrays en Java para conocer su longitud."
+            }
+          ],
+          "resumen_didactico": "Para saber cuántas posiciones tiene un array en Java, se usa su propiedad length, sin paréntesis.",
+          "ejemplo_practico": "Si escribes int[] notas = new int[8];, entonces notas.length devuelve 8.",
+          "conclusion_final": "La respuesta correcta es la a, porque .length es la propiedad que indica la longitud total de un array en Java."
+        }
+      },
+      {
+        "id": "UT8-Q13",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es la ventaja principal de utilizar un bucle \"foreach\" para recorrer un array frente al bucle \"for\" clásico?",
+        "contexto": "Comparación entre el recorrido de arrays con for clásico y foreach en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Permite modificar el índice del array durante el recorrido." },
+          { "clave": "b", "texto": "Es el único que permite recorrer matrices bidimensionales." },
+          { "clave": "c", "texto": "Es más moderno, limpio y evita errores comunes con los límites del índice." },
+          { "clave": "d", "texto": "Aumenta la velocidad del procesador significativamente." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El bucle foreach se utiliza para recorrer arrays de forma más simple y legible. Su ventaja principal es que evita tener que manejar manualmente el índice, reduciendo errores típicos como salirse de los límites del array o escribir mal la condición del recorrido.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Precisamente foreach no trabaja con un índice explícito, así que no permite modificarlo durante el recorrido como sí ocurre con un for clásico."
+            },
+            {
+              "clave": "b",
+              "motivo": "No es el único que puede recorrer estructuras bidimensionales. También pueden recorrerse con for clásico, e incluso combinar varios foreach."
+            },
+            {
+              "clave": "d",
+              "motivo": "La ventaja principal no es un aumento significativo del rendimiento del procesador, sino la claridad del código y la reducción de errores."
+            }
+          ],
+          "resumen_didactico": "El foreach destaca porque hace el recorrido más limpio y seguro cuando solo necesitas leer los elementos del array.",
+          "ejemplo_practico": "En lugar de escribir for (int i = 0; i < notas.length; i++), puedes usar for (int nota : notas), evitando controlar manualmente el índice.",
+          "conclusion_final": "La respuesta correcta es la c, porque foreach simplifica el recorrido del array y reduce errores habituales relacionados con los índices."
+        }
+      },
+      {
+        "id": "UT8-Q14",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es el requisito indispensable para que el método de búsqueda binaria (binarySearch) funcione correctamente?",
+        "contexto": "Uso del método de búsqueda binaria sobre arrays en Java dentro de las operaciones habituales de búsqueda.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El tamaño del array debe ser un número par." },
+          { "clave": "b", "texto": "El array debe estar ordenado previamente." },
+          { "clave": "c", "texto": "El array debe estar completamente lleno de datos no nulos." },
+          { "clave": "d", "texto": "El array debe ser de tipo String obligatoriamente." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La búsqueda binaria solo funciona correctamente si el array está ordenado previamente. Este método divide sucesivamente el rango de búsqueda en mitades, y eso solo tiene sentido si los elementos siguen un orden definido.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No es necesario que el array tenga un número par de elementos. La búsqueda binaria funciona con tamaños pares e impares."
+            },
+            {
+              "clave": "c",
+              "motivo": "Que todas las posiciones estén ocupadas o no sean nulas no es el requisito clave. Lo indispensable es que los datos estén ordenados."
+            },
+            {
+              "clave": "d",
+              "motivo": "binarySearch no es exclusivo de String. Puede utilizarse con distintos tipos de datos siempre que el array esté ordenado."
+            }
+          ],
+          "resumen_didactico": "La búsqueda binaria no busca bien en un array desordenado. Primero hay que ordenar, después buscar.",
+          "ejemplo_practico": "Si tienes int[] numeros = {2, 4, 6, 8, 10};, binarySearch puede localizar el 8 correctamente. Pero si el array fuera {8, 2, 10, 4, 6}, el resultado no sería fiable.",
+          "conclusion_final": "La respuesta correcta es la b, porque el requisito imprescindible para usar binarySearch es que el array esté ordenado de antemano."
+        }
+      },
+      {
+        "id": "UT8-Q15",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Qué utilidad tiene el método \"Arrays.sort()\" incluido en la librería estándar de Java?",
+        "contexto": "Uso de utilidades de la clase Arrays para operar con arrays en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Borra todos los elementos del array." },
+          { "clave": "b", "texto": "Convierte el array en una imagen gráfica." },
+          { "clave": "c", "texto": "Busca un elemento específico y devuelve su posición." },
+          { "clave": "d", "texto": "Organiza los elementos de forma ascendente (numérica o alfabética)." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El método Arrays.sort() se utiliza para ordenar los elementos de un array. En tipos numéricos los organiza de menor a mayor, y en cadenas de texto los ordena alfabéticamente según el criterio natural de comparación.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Arrays.sort() no elimina contenido del array; únicamente reorganiza los elementos que ya existen dentro de él."
+            },
+            {
+              "clave": "b",
+              "motivo": "No tiene ninguna función gráfica. Es un método de utilidad para ordenar datos, no para representarlos visualmente."
+            },
+            {
+              "clave": "c",
+              "motivo": "Buscar elementos corresponde a otras utilidades, como binarySearch en determinados casos, pero no a sort()."
+            }
+          ],
+          "resumen_didactico": "Arrays.sort() sirve para poner en orden los elementos de un array, ya sean números o textos.",
+          "ejemplo_practico": "Si tienes int[] numeros = {5, 1, 9, 3};, después de Arrays.sort(numeros); el array queda como {1, 3, 5, 9}.",
+          "conclusion_final": "La respuesta correcta es la d, porque Arrays.sort() ordena los elementos del array en orden ascendente o alfabético."
+        }
+      },
+      {
+        "id": "UT8-Q16",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "Al comparar dos arrays utilizando el operador \"==\", ¿qué es lo que Java está evaluando realmente?",
+        "contexto": "Comparación de arrays en Java mediante operador de referencia frente a comparación de contenido.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Si ambos nombres apuntan a la misma dirección de memoria (misma caja física)." },
+          { "clave": "b", "texto": "Si el contenido de ambos arrays es idéntico." },
+          { "clave": "c", "texto": "Si ambos arrays tienen la misma longitud." },
+          { "clave": "d", "texto": "Si la suma de sus elementos es igual a cero." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Cuando en Java comparas dos arrays con el operador ==, no se compara su contenido interno. Lo que realmente se evalúa es si ambas variables de referencia apuntan exactamente al mismo objeto en memoria, es decir, a la misma dirección o caja física.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El operador == no compara elemento por elemento el contenido de los arrays. Para eso se usan utilidades como Arrays.equals()."
+            },
+            {
+              "clave": "c",
+              "motivo": "Tener la misma longitud no implica que == devuelva true. Dos arrays pueden medir lo mismo y ser objetos distintos en memoria."
+            },
+            {
+              "clave": "d",
+              "motivo": "Java no realiza ninguna suma de elementos al usar ==. Esa opción no guarda relación con la comparación de arrays."
+            }
+          ],
+          "resumen_didactico": "Con ==, Java pregunta si son el mismo array en memoria, no si guardan los mismos datos.",
+          "ejemplo_practico": "Si haces int[] a = {1,2,3}; int[] b = {1,2,3}; entonces a == b da false, porque aunque tengan el mismo contenido son arrays distintos. En cambio, int[] c = a; haría que a == c fuera true.",
+          "conclusion_final": "La respuesta correcta es la a, porque el operador == en arrays compara referencias, no contenido."
+        }
+      },
+      {
+        "id": "UT8-Q17",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "Para verificar si dos arrays distintos tienen exactamente los mismos valores internos, ¿qué herramienta se debe emplear?",
+        "contexto": "Comparación de contenido entre arrays diferentes en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El método Arrays.equals()" },
+          { "clave": "b", "texto": "El método .toString()" },
+          { "clave": "c", "texto": "El operador ==" },
+          { "clave": "d", "texto": "La propiedad .length" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Para comprobar si dos arrays distintos contienen exactamente los mismos valores en el mismo orden, en Java se utiliza Arrays.equals(). Este método compara el contenido interno de ambos arrays elemento por elemento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": ".toString() no sirve para comprobar igualdad real de contenido entre arrays. Solo genera una representación en texto, y en arrays normales ni siquiera muestra los elementos de forma útil por defecto."
+            },
+            {
+              "clave": "c",
+              "motivo": "El operador == compara si ambos nombres apuntan al mismo objeto en memoria, no si contienen los mismos datos."
+            },
+            {
+              "clave": "d",
+              "motivo": ".length solo indica cuántos elementos caben en el array. Dos arrays pueden tener la misma longitud y valores distintos."
+            }
+          ],
+          "resumen_didactico": "Si quieres saber si dos arrays tienen el mismo contenido, no uses ==; usa Arrays.equals().",
+          "ejemplo_practico": "Si tienes int[] a = {1, 2, 3}; e int[] b = {1, 2, 3};, entonces Arrays.equals(a, b) devuelve true aunque sean arrays distintos en memoria.",
+          "conclusion_final": "La respuesta correcta es la a, porque Arrays.equals() es la herramienta adecuada para comparar el contenido interno de dos arrays."
+        }
+      },
+      {
+        "id": "UT8-Q18",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿En qué consiste una \"Copia Shallow\" (poco profunda) de un array en el desarrollo de software?",
+        "contexto": "Tipos de copia de arrays en Java y diferencia entre compartir referencia o crear una copia independiente.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "En borrar el array original después de la copia." },
+          { "clave": "b", "texto": "En crear un duplicado completo e independiente en una nueva memoria." },
+          { "clave": "c", "texto": "En copiar solo las referencias, de modo que los cambios en la copia afectan al original." },
+          { "clave": "d", "texto": "En copiar solo los elementos que son números enteros." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Una copia shallow o poco profunda consiste en copiar la referencia del array, no crear un nuevo contenido independiente. Eso significa que ambas variables apuntan al mismo objeto en memoria, por lo que un cambio realizado desde una referencia también se refleja en la otra.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Una copia shallow no implica borrar el array original. El original sigue existiendo y, de hecho, sigue siendo el mismo objeto compartido."
+            },
+            {
+              "clave": "b",
+              "motivo": "Eso describe una copia real o independiente, más cercana a una deep copy, no una shallow copy."
+            },
+            {
+              "clave": "d",
+              "motivo": "La shallow copy no depende del tipo de dato de los elementos. No copia solo enteros, sino la referencia al mismo array."
+            }
+          ],
+          "resumen_didactico": "En una copia shallow no se duplican realmente los datos: se comparte la misma referencia al mismo array.",
+          "ejemplo_practico": "Si haces int[] a = {1, 2, 3}; int[] b = a;, entonces modificar b[0] también cambia a[0], porque ambos apuntan al mismo array.",
+          "conclusion_final": "La respuesta correcta es la c, porque una copia shallow comparte la referencia del array original y no crea una copia independiente."
+        }
+      },
+      {
+        "id": "UT8-Q19",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Qué método permite crear un duplicado independiente (Copia Deep) de un array de forma sencilla?",
+        "contexto": "Creación de copias independientes de arrays en Java para evitar compartir la misma referencia en memoria.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": ".clone()" },
+          { "clave": "b", "texto": ".trim()" },
+          { "clave": "c", "texto": ".parse()" },
+          { "clave": "d", "texto": ".equals()" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Para crear una copia independiente de un array de forma sencilla en Java, el temario presenta el método .clone(). Este método genera un nuevo array con el mismo contenido, evitando que ambas variables apunten a la misma referencia original.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": ".trim() es un método relacionado con cadenas de texto y sirve para eliminar espacios al principio y al final, no para copiar arrays."
+            },
+            {
+              "clave": "c",
+              "motivo": ".parse() se usa en conversiones de texto a tipos numéricos u otros formatos, no para duplicar arrays."
+            },
+            {
+              "clave": "d",
+              "motivo": ".equals() sirve para comparar contenido o igualdad según el contexto, pero no crea una copia nueva del array."
+            }
+          ],
+          "resumen_didactico": "Si quieres una copia separada del array, necesitas crear otro array nuevo. El método .clone() permite hacerlo de forma rápida.",
+          "ejemplo_practico": "Si haces int[] copia = original.clone();, ambos arrays tendrán los mismos valores, pero modificar copia[0] ya no alterará original[0].",
+          "conclusion_final": "La respuesta correcta es la a, porque .clone() permite generar una copia independiente del array de manera sencilla."
+        }
+      },
+      {
+        "id": "UT8-Q20",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es el procedimiento técnico necesario para eliminar un elemento de un array estático, dado que su tamaño es fijo?",
+        "contexto": "En Java, los arrays tienen tamaño fijo, por lo que eliminar una posición implica reconstruir la estructura.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Crear un array nuevo con un tamaño menor y copiar los elementos que se desean conservar." },
+          { "clave": "b", "texto": "Asignar el valor -1 a todas las posiciones del array." },
+          { "clave": "c", "texto": "Pulsar el botón \"Delete\" en el IDE." },
+          { "clave": "d", "texto": "Llamar al Garbage Collector manualmente" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Como un array en Java es una estructura de tamaño fijo, no se puede eliminar físicamente una posición dentro del mismo array. El procedimiento correcto consiste en crear un nuevo array con una posición menos y copiar en él los elementos que se quieren conservar, saltando el que se desea eliminar.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Asignar -1 no elimina el elemento ni reduce el tamaño del array. Solo cambia el valor almacenado en las posiciones, y además no serviría para arrays de otros tipos."
+            },
+            {
+              "clave": "c",
+              "motivo": "El botón Delete del IDE no modifica la estructura lógica del array en ejecución. La eliminación real debe hacerse mediante código."
+            },
+            {
+              "clave": "d",
+              "motivo": "El Garbage Collector gestiona memoria de objetos sin referencias, pero no elimina elementos concretos dentro de un array ni cambia su tamaño."
+            }
+          ],
+          "resumen_didactico": "En un array estático no puedes encoger la estructura por dentro. Si quieres quitar un elemento, necesitas construir otro array nuevo.",
+          "ejemplo_practico": "Si tienes {10, 20, 30, 40} y quieres eliminar 20, debes crear un nuevo array de tamaño 3 y copiar {10, 30, 40}.",
+          "conclusion_final": "La respuesta correcta es la a, porque eliminar un elemento de un array fijo exige crear otro array más pequeño y copiar solo los datos que se mantienen."
+        }
+      },
+      {
+        "id": "UT8-Q21",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cómo maneja Java internamente las cadenas de caracteres (String) a nivel de estructura de datos?",
+        "contexto": "Relación entre String y la estructura interna de caracteres en Java según el temario de cadenas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Como un array de caracteres (char[])." },
+          { "clave": "b", "texto": "Como un archivo de texto externo al programa." },
+          { "clave": "c", "texto": "Como una serie de impulsos eléctricos binarios sin formato." },
+          { "clave": "d", "texto": "Como una variable de tipo int de gran tamaño." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que una cadena de caracteres en Java se entiende a nivel estructural como una secuencia de caracteres, es decir, como un conjunto ordenado similar a un array de char. Aunque String es una clase, su base conceptual para almacenar texto es una colección secuencial de caracteres.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Un String no se maneja internamente como un archivo externo, sino como una estructura de datos dentro de la memoria del programa."
+            },
+            {
+              "clave": "c",
+              "motivo": "Aunque todo en memoria acaba representándose en binario, esa opción no describe la estructura de datos que enseña el temario para trabajar con cadenas."
+            },
+            {
+              "clave": "d",
+              "motivo": "Una cadena no es un entero grande. Un int almacena un valor numérico, mientras que un String representa una secuencia de caracteres."
+            }
+          ],
+          "resumen_didactico": "Java trata el texto como una secuencia ordenada de caracteres; por eso conceptualmente se relaciona con un array de char.",
+          "ejemplo_practico": "La palabra \"Hola\" puede entenderse como los caracteres 'H', 'o', 'l' y 'a' colocados en orden dentro de una secuencia.",
+          "conclusion_final": "La respuesta correcta es la a, porque las cadenas de texto en Java se basan en una estructura secuencial de caracteres equivalente conceptualmente a un char[]."
+        }
+      },
+      {
+        "id": "UT8-Q22",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Qué método de la clase String se utiliza para obtener el número total de caracteres de un texto, incluidos los espacios?",
+        "contexto": "Uso de métodos básicos de String para conocer la longitud total de una cadena en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": ".index()" },
+          { "clave": "b", "texto": ".size()" },
+          { "clave": "c", "texto": ".length()" },
+          { "clave": "d", "texto": ".count()" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La clase String utiliza el método length() para devolver el número total de caracteres que contiene una cadena. Ese recuento incluye letras, números, símbolos y también los espacios en blanco.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": ".index() no es el método usado para contar caracteres. La búsqueda de posiciones en una cadena se realiza con métodos como indexOf()."
+            },
+            {
+              "clave": "b",
+              "motivo": ".size() no es el método propio de String en Java para conocer la longitud de un texto."
+            },
+            {
+              "clave": "d",
+              "motivo": ".count() no es un método estándar de String en Java para obtener el número de caracteres."
+            }
+          ],
+          "resumen_didactico": "Si quieres saber cuántos caracteres tiene un texto en Java, debes usar length(), y los espacios también cuentan.",
+          "ejemplo_practico": "En la cadena \"Hola mundo\", length() devuelve 10, porque cuenta las 9 letras más el espacio intermedio.",
+          "conclusion_final": "La respuesta correcta es la c, porque length() es el método de String que devuelve la longitud total del texto."
+        }
+      },
+      {
+        "id": "UT8-Q23",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "Si se desea obtener la letra exacta que ocupa una posición específica dentro de un String, ¿qué método debe usarse?",
+        "contexto": "Acceso a un carácter concreto dentro de una cadena de texto en Java mediante su índice.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": ".charAt(pos)" },
+          { "clave": "b", "texto": ".trim()" },
+          { "clave": "c", "texto": ".indexOf(pos)" },
+          { "clave": "d", "texto": ".substring(pos)" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El método charAt(pos) permite obtener el carácter situado en una posición concreta de un String. Como las cadenas en Java se indexan desde 0, ese método devuelve exactamente la letra almacenada en el índice indicado.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "trim() se utiliza para eliminar espacios al principio y al final del texto, no para acceder a una posición concreta dentro de la cadena."
+            },
+            {
+              "clave": "c",
+              "motivo": "indexOf() sirve para buscar la posición de un carácter o fragmento dentro del texto, no para devolver directamente el carácter de una posición dada."
+            },
+            {
+              "clave": "d",
+              "motivo": "substring() extrae una parte de la cadena, pero no está pensado para obtener de forma directa un único carácter concreto por posición."
+            }
+          ],
+          "resumen_didactico": "Si quieres leer una letra exacta dentro de un String, debes usar charAt() indicando el índice de esa posición.",
+          "ejemplo_practico": "En String nombre = \"Carlos\";, nombre.charAt(2) devuelve 'r', porque la cadena empieza a contar en 0: C(0), a(1), r(2).",
+          "conclusion_final": "La respuesta correcta es la a, porque charAt(pos) es el método diseñado para obtener el carácter exacto de una posición concreta en un String."
+        }
+      },
+      {
+        "id": "UT8-Q24",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Para qué sirve el método \".substring(ini, fin)\" en la manipulación profesional de textos?",
+        "contexto": "Uso del método substring para extraer partes concretas de una cadena en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Para convertir el texto a mayúsculas." },
+          { "clave": "b", "texto": "Para borrar los espacios en blanco al final de la cadena." },
+          { "clave": "c", "texto": "Para traducir el texto a otro idioma automáticamente." },
+          { "clave": "d", "texto": "Para recortar y extraer un fragmento específico del texto original." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El método substring(ini, fin) se utiliza para extraer una parte concreta de una cadena de texto. Toma como referencia una posición inicial y una posición final, y devuelve el fragmento comprendido entre esos índices.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Convertir un texto a mayúsculas corresponde a métodos como toUpperCase(), no a substring()."
+            },
+            {
+              "clave": "b",
+              "motivo": "Eliminar espacios sobrantes al principio o al final se hace con trim(), no con substring()."
+            },
+            {
+              "clave": "c",
+              "motivo": "substring() no traduce contenido ni interpreta idiomas; solo recorta una porción del texto existente."
+            }
+          ],
+          "resumen_didactico": "substring() sirve para sacar una parte concreta de un texto, usando posiciones de inicio y fin.",
+          "ejemplo_practico": "Si tienes String fecha = \"2026-03-20\";, fecha.substring(0, 4) devuelve \"2026\", porque extrae solo ese tramo del texto.",
+          "conclusion_final": "La respuesta correcta es la d, porque substring(ini, fin) permite recortar y obtener un fragmento específico del String original."
+        }
+      },
+      {
+        "id": "UT8-Q25",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es el resultado de aplicar el método \".trim()\" sobre una cadena de texto capturada desde un formulario?",
+        "contexto": "Uso del método trim() para limpiar cadenas introducidas por el usuario en formularios o entradas de texto.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Se eliminan los espacios en blanco innecesarios al principio y al final del texto." },
+          { "clave": "b", "texto": "Se extraen solo las vocales del mensaje." },
+          { "clave": "c", "texto": "El texto se encripta para mejorar la seguridad." },
+          { "clave": "d", "texto": "El texto se convierte en un número entero." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El método trim() se utiliza para eliminar los espacios en blanco sobrantes al principio y al final de una cadena de texto. Es muy habitual al procesar datos escritos en formularios, donde el usuario puede introducir espacios sin querer.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "trim() no analiza el contenido para separar vocales; únicamente limpia espacios laterales de la cadena."
+            },
+            {
+              "clave": "c",
+              "motivo": "trim() no aplica ningún proceso de cifrado o seguridad. Solo modifica el texto eliminando espacios sobrantes externos."
+            },
+            {
+              "clave": "d",
+              "motivo": "La conversión de texto a número se hace con métodos como Integer.parseInt(), no con trim()."
+            }
+          ],
+          "resumen_didactico": "trim() limpia una cadena quitando los espacios innecesarios que sobran al inicio y al final.",
+          "ejemplo_practico": "Si un usuario escribe \"   Carlos   \" en un formulario, al aplicar trim() el resultado será \"Carlos\".",
+          "conclusion_final": "La respuesta correcta es la a, porque trim() elimina los espacios en blanco sobrantes al principio y al final del texto."
+        }
+      },
+      {
+        "id": "UT8-Q26",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Qué método de la clase String permite verificar si dos textos son idénticos en su contenido de caracteres?",
+        "contexto": "Comparación de cadenas en Java para comprobar igualdad real de contenido.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": ".compareTo()" },
+          { "clave": "b", "texto": "= =" },
+          { "clave": "c", "texto": ".equals()" },
+          { "clave": "d", "texto": ".indexOf()" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "En Java, para comprobar si dos cadenas tienen exactamente el mismo contenido de caracteres se utiliza el método equals(). Este método compara el texto interno de ambos String y devuelve true si son idénticos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "compareTo() se usa para comparar cadenas según su orden lexicográfico, no como método principal para verificar igualdad exacta de contenido."
+            },
+            {
+              "clave": "b",
+              "motivo": "El operador == compara referencias en memoria, es decir, si ambas variables apuntan al mismo objeto, no si contienen el mismo texto."
+            },
+            {
+              "clave": "d",
+              "motivo": "indexOf() sirve para buscar la posición de un carácter o fragmento dentro de una cadena, no para comparar dos textos completos."
+            }
+          ],
+          "resumen_didactico": "Si quieres saber si dos String dicen exactamente lo mismo, debes usar equals(), no ==.",
+          "ejemplo_practico": "Si tienes String a = \"hola\"; y String b = \"hola\";, a.equals(b) devuelve true porque el contenido es el mismo.",
+          "conclusion_final": "La respuesta correcta es la c, porque equals() es el método adecuado para verificar si dos textos son idénticos en su contenido."
+        }
+      },
+      {
+        "id": "UT8-Q27",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "En el desarrollo de software, ¿qué nombre recibe el proceso de convertir una cadena de texto en un tipo numérico (por ejemplo, de \"50\" a 50)?",
+        "contexto": "Conversión de datos desde String hacia tipos numéricos en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Parsing" },
+          { "clave": "b", "texto": "Cloning" },
+          { "clave": "c", "texto": "Casting" },
+          { "clave": "d", "texto": "Hashing" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En Java, el proceso de transformar una cadena de texto que representa un número en un valor numérico real se conoce como parsing. Es lo que ocurre cuando se usan métodos como Integer.parseInt() o Double.parseDouble().",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Cloning significa clonar o duplicar un objeto o estructura, no convertir texto en número."
+            },
+            {
+              "clave": "c",
+              "motivo": "Casting se refiere a conversiones entre tipos compatibles dentro del sistema de tipos, pero en este contexto el temario identifica la conversión desde String mediante parseo o parsing."
+            },
+            {
+              "clave": "d",
+              "motivo": "Hashing es un proceso de transformación de datos en un valor hash, usado por ejemplo en seguridad o estructuras de búsqueda, no para obtener un número a partir de un texto."
+            }
+          ],
+          "resumen_didactico": "Cuando un texto como \"50\" pasa a convertirse en el número 50, ese proceso se llama parsing.",
+          "ejemplo_practico": "String edadTexto = \"50\"; int edad = Integer.parseInt(edadTexto); convierte el contenido textual en un entero usable en cálculos.",
+          "conclusion_final": "La respuesta correcta es la a, porque convertir una cadena numérica en un tipo numérico se denomina parsing."
+        }
+      },
+      {
+        "id": "UT8-Q28",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Qué herramienta de Java permite realizar la conversión de un String a un número decimal (double)?",
+        "contexto": "Conversión de cadenas de texto a valores numéricos decimales en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "String.valueOf()" },
+          { "clave": "b", "texto": ".trim()" },
+          { "clave": "c", "texto": "Double.parseDouble()" },
+          { "clave": "d", "texto": "Integer.parseInt()" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Para convertir una cadena de texto que representa un número decimal en un valor de tipo double, Java utiliza el método Double.parseDouble(). Este método interpreta el contenido numérico del String y lo transforma en un decimal utilizable por el programa.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "String.valueOf() realiza la operación contraria en muchos casos: convierte otros tipos de datos a texto, no texto a double."
+            },
+            {
+              "clave": "b",
+              "motivo": "trim() solo elimina espacios al principio y al final de una cadena, pero no convierte su contenido a número."
+            },
+            {
+              "clave": "d",
+              "motivo": "Integer.parseInt() convierte un String a un entero, no a un número decimal con parte fraccionaria."
+            }
+          ],
+          "resumen_didactico": "Si el texto contiene un número con decimales y quieres obtener un double, el método correcto es Double.parseDouble().",
+          "ejemplo_practico": "String precio = \"19.95\"; double valor = Double.parseDouble(precio); convierte el texto en un número decimal listo para operar.",
+          "conclusion_final": "La respuesta correcta es la c, porque Double.parseDouble() es el método específico de Java para transformar un String en un double."
+        }
+      },
+      {
+        "id": "UT8-Q29",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Cuál es la forma correcta de convertir cualquier valor numérico en una cadena de texto para mostrarla al usuario?",
+        "contexto": "Conversión de valores numéricos a String en Java para visualización o concatenación.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Multiplicar el número por cero." },
+          { "clave": "b", "texto": "Usar el operador modulo %." },
+          { "clave": "c", "texto": "Usar el método String.valueOf()." },
+          { "clave": "d", "texto": "No es posible convertir números a texto en Java." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "En Java, para convertir un valor numérico en una cadena de texto se utiliza String.valueOf(). Este método transforma números y otros tipos en su representación textual para poder mostrarlos o concatenarlos con otros mensajes.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Multiplicar por cero solo cambia el valor numérico y no realiza ninguna conversión a texto."
+            },
+            {
+              "clave": "b",
+              "motivo": "El operador % sirve para obtener el resto de una división, no para transformar un número en String."
+            },
+            {
+              "clave": "d",
+              "motivo": "Sí es posible convertir números a texto en Java, y de hecho es una operación muy habitual al mostrar datos al usuario."
+            }
+          ],
+          "resumen_didactico": "Cuando quieres mostrar un número como texto, Java permite convertirlo fácilmente usando String.valueOf().",
+          "ejemplo_practico": "int edad = 25; String texto = String.valueOf(edad); convierte el número 25 en la cadena \"25\".",
+          "conclusion_final": "La respuesta correcta es la c, porque String.valueOf() es el método adecuado para transformar un número en texto en Java."
+        }
+      },
+      {
+        "id": "UT8-Q30",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "¿Por qué es valioso saber manipular arrays nativos \"a mano\" en lugar de usar siempre librerías automáticas?",
+        "contexto": "Importancia formativa de comprender arrays nativos y su manipulación directa dentro del aprendizaje de estructuras de almacenamiento en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Porque demuestra capacidad lógica y comprensión del manejo de la memoria del ordenador." },
+          { "clave": "b", "texto": "Porque los arrays nativos ocupan más espacio y son más lentos." },
+          { "clave": "c", "texto": "Porque los arrays nativos son los únicos que funcionan en internet." },
+          { "clave": "d", "texto": "Porque las librerías automáticas van a desaparecer en el futuro." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario presenta el trabajo manual con arrays como una base importante para entender cómo se organizan los datos, cómo se recorren, cómo se copian y cómo se manipulan en memoria. Saber hacerlo sin depender siempre de librerías demuestra lógica de programación y una comprensión más real de lo que ocurre por debajo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Esa no es la razón didáctica del tema. El valor de manipular arrays nativos no está en que ocupen más espacio o sean más lentos, sino en comprender la estructura y su funcionamiento."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los arrays nativos no son los únicos que funcionan en internet. Esa afirmación no tiene relación con el contenido del temario."
+            },
+            {
+              "clave": "d",
+              "motivo": "El tema no plantea que las librerías vayan a desaparecer. Lo importante es no depender de ellas sin entender primero los fundamentos."
+            }
+          ],
+          "resumen_didactico": "Manipular arrays a mano te obliga a pensar cómo están organizados los datos y cómo se mueven realmente dentro del programa.",
+          "ejemplo_practico": "Si sabes insertar o eliminar elementos creando y copiando arrays manualmente, entiendes mucho mejor qué hacen por dentro herramientas automáticas como Arrays.copyOf().",
+          "conclusion_final": "La respuesta correcta es la a, porque trabajar con arrays nativos manualmente fortalece la lógica y ayuda a comprender cómo se gestionan los datos y la memoria en programación."
+        }
+      }      
+]
+
+
+
+
+

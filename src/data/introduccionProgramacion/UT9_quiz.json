@@ -1,0 +1,1023 @@
+[
+    {
+        "id": "UT9-Q01",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cuál es la principal limitación técnica de los arrays estáticos frente a las colecciones dinámicas al gestionar grandes volúmenes de datos variables?",
+        "contexto": "Comparación entre arrays estáticos y colecciones dinámicas en Java cuando el número de elementos cambia durante la ejecución.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Requieren obligatoriamente el uso de claves únicas para cada elemento." },
+          { "clave": "b", "texto": "Los arrays no permiten almacenar tipos de datos primitivos." },
+          { "clave": "c", "texto": "El acceso a sus elementos es más lento que en una lista enlazada." },
+          { "clave": "d", "texto": "Tienen un tamaño fijo definido en la creación que no puede variar en tiempo de ejecución." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La limitación principal de los arrays estáticos es que su tamaño se fija en el momento de su creación y no puede cambiar después. Por eso, cuando la cantidad de datos varía en tiempo de ejecución, las colecciones dinámicas resultan más adecuadas porque pueden crecer o reducirse según sea necesario.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Eso no corresponde a los arrays. La idea de claves únicas se relaciona más con estructuras como Map, no con arrays estáticos."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque los arrays sí pueden almacenar tipos primitivos como int, double o char."
+            },
+            {
+              "clave": "c",
+              "motivo": "No es la limitación principal que trabaja el temario. El problema central de los arrays no es la velocidad de acceso, sino su rigidez de tamaño."
+            }
+          ],
+          "resumen_didactico": "Un array funciona bien si ya sabes cuántos datos vas a guardar. Si la cantidad cambia, su tamaño fijo se convierte en una limitación importante.",
+          "ejemplo_practico": "Si creas un array para 100 alumnos y luego se matriculan 120, el array ya no sirve tal como está. En cambio, una colección dinámica como ArrayList puede ampliarse automáticamente.",
+          "conclusion_final": "La respuesta correcta es la d porque el problema fundamental de los arrays estáticos es que no pueden cambiar de tamaño una vez creados."
+        }
+      },
+      {
+        "id": "UT9-Q02",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cómo se define técnicamente una colección en el ecosistema de Java?",
+        "contexto": "Definición general de colección dentro del framework de colecciones de Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Un tipo de dato primitivo que sustituye a los números enteros de gran tamaño." },
+          { "clave": "b", "texto": "Una estructura de datos dinámica que permite agrupar elementos y variar su tamaño automáticamente." },
+          { "clave": "c", "texto": "Una estructura rígida que reserva memoria física permanente en el disco duro." },
+          { "clave": "d", "texto": "Un archivo de configuración que agrupa clases de diferentes paquetes." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En Java, una colección se entiende como una estructura de datos dinámica que permite almacenar y agrupar múltiples elementos, adaptando su tamaño según las necesidades del programa. Esta idea aparece en el tema como respuesta a las limitaciones de los arrays estáticos, que no pueden cambiar de tamaño una vez creados.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Una colección no es un tipo primitivo. Los tipos primitivos en Java son int, double, char, boolean, etc., y no forman parte de la definición de colección."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque describe una estructura rígida y permanente, justo lo contrario de la idea central de las colecciones, que destacan por su flexibilidad y cambio de tamaño."
+            },
+            {
+              "clave": "d",
+              "motivo": "Una colección no es un archivo de configuración ni una agrupación de paquetes. Es una estructura de datos usada en memoria para trabajar con conjuntos de elementos."
+            }
+          ],
+          "resumen_didactico": "Una colección en Java sirve para guardar varios elementos en una misma estructura y poder gestionar su cantidad de forma flexible. Su rasgo clave es que puede crecer o reducirse en tiempo de ejecución.",
+          "ejemplo_practico": "Si en una aplicación guardas una lista de productos y cada día entran o salen productos nuevos, una colección como ArrayList permite añadir o quitar elementos sin tener que rehacer la estructura desde cero.",
+          "conclusion_final": "La respuesta correcta es la b porque una colección en Java se define como una estructura de datos dinámica pensada para agrupar elementos y ajustar su tamaño automáticamente."
+        }
+      },
+      {
+        "id": "UT9-Q03",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "En el diseño de arquitectura, ¿qué interfaz de la jerarquía de colecciones es la adecuada si el requisito principal es prohibir la existencia de elementos duplicados?",
+        "contexto": "Elección de la interfaz adecuada dentro del framework de colecciones de Java cuando se necesita unicidad de elementos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Queue" },
+          { "clave": "b", "texto": "Map" },
+          { "clave": "c", "texto": "List" },
+          { "clave": "d", "texto": "Set" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Dentro de la jerarquía de colecciones de Java, la interfaz Set está diseñada para almacenar elementos sin permitir duplicados. Su finalidad principal es garantizar la unicidad de los datos, a diferencia de List, que sí admite repetidos, o Queue, que está orientada a la gestión secuencial de elementos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Queue se utiliza para gestionar elementos siguiendo un orden de procesamiento, como colas o turnos, pero no tiene como objetivo principal impedir duplicados."
+            },
+            {
+              "clave": "b",
+              "motivo": "Map no se usa para almacenar elementos únicos como colección simple, sino pares clave-valor. Aunque las claves no se repiten, no es la interfaz pedida para este caso."
+            },
+            {
+              "clave": "c",
+              "motivo": "List mantiene el orden de inserción y permite elementos repetidos, por lo que no cumple el requisito de prohibir duplicados."
+            }
+          ],
+          "resumen_didactico": "Si necesitas que un dato aparezca una sola vez dentro de una colección, la interfaz adecuada es Set. Su función básica es asegurar que no existan elementos repetidos.",
+          "ejemplo_practico": "Si guardas DNIs de empleados, no tendría sentido permitir que el mismo DNI aparezca varias veces. En ese caso usarías un Set para asegurar unicidad.",
+          "conclusion_final": "La respuesta correcta es la d porque Set es la interfaz del framework de colecciones de Java diseñada específicamente para evitar elementos duplicados."
+        }
+      },
+      {
+        "id": "UT9-Q04",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "Si un sistema requiere mantener el orden de inserción de los elementos y permite que existan valores repetidos, ¿qué interfaz debe implementarse?",
+        "contexto": "Selección de la interfaz adecuada del framework de colecciones cuando se necesita conservar el orden y admitir elementos duplicados.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Set" },
+          { "clave": "b", "texto": "List" },
+          { "clave": "c", "texto": "Iterable" },
+          { "clave": "d", "texto": "TreeMap" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Dentro de la jerarquía de colecciones de Java, la interfaz List es la adecuada cuando se necesita conservar el orden de inserción y además permitir elementos repetidos. Es la estructura pensada para trabajar con secuencias ordenadas de datos donde la posición de cada elemento importa.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Set no es correcta porque su objetivo principal es evitar duplicados. Aunque algunas implementaciones pueden conservar cierto orden, no admite repetidos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Iterable no representa una colección concreta con comportamiento propio de almacenamiento, sino una interfaz base que permite recorrer elementos."
+            },
+            {
+              "clave": "d",
+              "motivo": "TreeMap no es una interfaz de colección para elementos simples, sino una implementación de Map que trabaja con pares clave-valor ordenados por clave."
+            }
+          ],
+          "resumen_didactico": "Si necesitas que los elementos conserven el orden en que fueron añadidos y además puedan repetirse, debes usar List. Es la opción natural para secuencias ordenadas.",
+          "ejemplo_practico": "Si guardas el historial de productos añadidos al carrito de compra y quieres que aparezcan en el orden en que el usuario los fue metiendo, incluso si repite el mismo producto, usarías una List.",
+          "conclusion_final": "La respuesta correcta es la b porque List permite mantener el orden de inserción y aceptar elementos duplicados."
+        }
+      },
+      {
+        "id": "UT9-Q05",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Para qué tipo de gestión de datos está diseñada específicamente la interfaz Queue?",
+        "contexto": "Uso de la interfaz Queue dentro del framework de colecciones de Java y su finalidad principal.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Para organizar elementos mediante políticas de acceso secuencial como turnos o prioridades." },
+          { "clave": "b", "texto": "Para búsquedas rápidas basadas en un identificador único de tipo String." },
+          { "clave": "c", "texto": "Para agrupar clases que no heredan de la clase raíz Object." },
+          { "clave": "d", "texto": "Para almacenar constantes físicas que no deben modificarse nunca." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La interfaz Queue está diseñada para gestionar elementos siguiendo un acceso secuencial, como ocurre en colas de espera, turnos o sistemas de prioridades. Su lógica no se basa en posiciones libres como una lista general, sino en el orden en que los elementos entran y salen de la estructura.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Eso no define a Queue. Las búsquedas por identificador único se relacionan más con estructuras de tipo Map, donde una clave permite acceder a un valor."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque todas las clases en Java heredan directa o indirectamente de Object, y Queue no tiene relación con esa idea."
+            },
+            {
+              "clave": "d",
+              "motivo": "Queue no sirve para almacenar constantes inmutables, sino para gestionar elementos que entran y salen siguiendo una política de procesamiento."
+            }
+          ],
+          "resumen_didactico": "Queue se usa cuando los datos deben procesarse en un orden de llegada o mediante una política de prioridad. Su idea central es gestionar turnos, colas o secuencias de atención.",
+          "ejemplo_practico": "En un sistema de atención al cliente, cada persona que llega se añade a una cola y se atiende por orden. Esa situación encaja directamente con el uso de Queue.",
+          "conclusion_final": "La respuesta correcta es la a porque Queue está pensada para organizar elementos mediante acceso secuencial, como colas, turnos o prioridades."
+        }
+      },
+      {
+        "id": "UT9-Q06",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cuál es la diferencia fundamental entre las interfaces Collection y Map en Java?",
+        "contexto": "Diferencia estructural entre la jerarquía Collection y la interfaz Map dentro del ecosistema de colecciones de Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Collection hereda de Iterable y Map no forma parte de esa jerarquía directa." },
+          { "clave": "b", "texto": "Map permite duplicados y Collection no los permite bajo ninguna circunstancia." },
+          { "clave": "c", "texto": "Map es una estructura estática y Collection es puramente dinámica." },
+          { "clave": "d", "texto": "Collection gestiona pares clave-valor y Map gestiona elementos individuales" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La diferencia fundamental es que Collection forma parte de una jerarquía de colecciones que hereda de Iterable, mientras que Map no pertenece directamente a esa misma jerarquía. Además, Collection agrupa elementos individuales y Map trabaja con asociaciones de clave-valor, por eso se tratan como ramas distintas dentro del ecosistema de Java.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque en Collection hay estructuras que sí permiten duplicados, como List. No se puede afirmar que Collection los prohíba siempre."
+            },
+            {
+              "clave": "c",
+              "motivo": "No es la diferencia principal del temario. Map no se define como estructura estática, sino como una estructura separada que gestiona pares clave-valor."
+            },
+            {
+              "clave": "d",
+              "motivo": "Está invertida. Collection gestiona elementos individuales, mientras que Map gestiona pares clave-valor."
+            }
+          ],
+          "resumen_didactico": "Collection y Map no son lo mismo dentro de Java. Collection pertenece a la jerarquía que se puede recorrer como conjunto de elementos, mientras que Map va aparte porque trabaja con claves y valores.",
+          "ejemplo_practico": "Una List<String> guarda nombres sueltos como 'Ana' o 'Luis'. En cambio, un Map<Integer, String> guarda relaciones como 1 -> 'Ana' y 2 -> 'Luis'.",
+          "conclusion_final": "La respuesta correcta es la a porque Collection hereda de Iterable y Map no forma parte directa de esa misma jerarquía."
+        }
+      },
+      {
+        "id": "UT9-Q07",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué pilar de la jerarquía de colecciones permite que una estructura pueda ser recorrida elemento a elemento mediante un bucle for-each?",
+        "contexto": "Relación entre la jerarquía de colecciones de Java y la posibilidad de recorrer sus elementos con for-each.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El modificador final" },
+          { "clave": "b", "texto": "La interfaz Map" },
+          { "clave": "c", "texto": "La interfaz Iterable" },
+          { "clave": "d", "texto": "El método size()" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El recorrido con un bucle for-each es posible porque las colecciones se apoyan en la interfaz Iterable. Esta interfaz proporciona la base para obtener un iterador y recorrer los elementos uno a uno, de ahí que Collection herede de Iterable dentro de la jerarquía.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El modificador final sirve para impedir cambios como la herencia o la reasignación, pero no tiene relación con el recorrido de elementos en una colección."
+            },
+            {
+              "clave": "b",
+              "motivo": "Map no es el pilar que habilita directamente el for-each en la jerarquía de colecciones. Además, Map no hereda de Iterable como Collection."
+            },
+            {
+              "clave": "d",
+              "motivo": "El método size() solo devuelve el número de elementos que contiene una estructura, pero no permite recorrerlos."
+            }
+          ],
+          "resumen_didactico": "Si una estructura puede recorrerse con for-each, detrás está la interfaz Iterable. Esa es la base que permite avanzar elemento a elemento.",
+          "ejemplo_practico": "Cuando haces for (String nombre : lista), Java puede recorrer la lista porque esa estructura forma parte de una jerarquía apoyada en Iterable.",
+          "conclusion_final": "La respuesta correcta es la c porque Iterable es la interfaz que permite recorrer los elementos de una estructura mediante for-each."
+        }
+      },
+      {
+        "id": "UT9-Q08",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "En términos de herencia de interfaces, ¿cuál es la raíz de la jerarquía para los grupos List, Set y Queue?",
+        "contexto": "Relación jerárquica entre las interfaces principales del framework de colecciones de Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Class ArrayList" },
+          { "clave": "b", "texto": "Interface Comparator" },
+          { "clave": "c", "texto": "Interface Collection" },
+          { "clave": "d", "texto": "Interface Map" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Dentro del framework de colecciones de Java, List, Set y Queue derivan de la interfaz Collection. Esta interfaz actúa como raíz común de esas tres ramas principales, mientras que Map queda fuera de esa jerarquía directa.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "ArrayList es una clase concreta de implementación, no la raíz de la jerarquía. La pregunta pide una interfaz superior común."
+            },
+            {
+              "clave": "b",
+              "motivo": "Comparator se usa para definir criterios de comparación u ordenación, pero no es la interfaz raíz de List, Set y Queue."
+            },
+            {
+              "clave": "d",
+              "motivo": "Map no forma parte de la misma jerarquía directa que List, Set y Queue. Se trata como una rama separada dentro del ecosistema de colecciones."
+            }
+          ],
+          "resumen_didactico": "List, Set y Queue pertenecen a la misma familia porque todas cuelgan de Collection. Esa es su interfaz raíz común.",
+          "ejemplo_practico": "Una ArrayList, un HashSet y una LinkedList usada como Queue pertenecen a ramas distintas, pero todas comparten la base común Collection.",
+          "conclusion_final": "La respuesta correcta es la c porque Collection es la interfaz raíz de la jerarquía a la que pertenecen List, Set y Queue."
+        }
+      },
+      {
+        "id": "UT9-Q09",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué método universal de la interfaz Collection permite verificar si un objeto específico ya existe dentro del contenedor?",
+        "contexto": "Métodos básicos de la interfaz Collection para comprobar la presencia de elementos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "isEmpty()" },
+          { "clave": "b", "texto": "clear()" },
+          { "clave": "c", "texto": "contains(Object o)" },
+          { "clave": "d", "texto": "iterator()" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El método contains(Object o) de la interfaz Collection sirve para comprobar si un objeto concreto ya está almacenado dentro de la colección. Devuelve true si el elemento existe y false si no se encuentra.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "isEmpty() solo indica si la colección está vacía o no, pero no comprueba la existencia de un objeto concreto."
+            },
+            {
+              "clave": "b",
+              "motivo": "clear() elimina todos los elementos de la colección. No sirve para consultar si un objeto está presente."
+            },
+            {
+              "clave": "d",
+              "motivo": "iterator() devuelve un iterador para recorrer la colección, pero no es el método específico para verificar directamente la existencia de un objeto."
+            }
+          ],
+          "resumen_didactico": "Si quieres saber si un elemento ya está dentro de una colección, el método pensado para eso es contains(). Es la comprobación directa de presencia.",
+          "ejemplo_practico": "Si tienes una colección de nombres y quieres saber si 'Ana' ya fue añadida, usarías coleccion.contains(\"Ana\").",
+          "conclusion_final": "La respuesta correcta es la c porque contains(Object o) es el método de Collection diseñado para verificar si un objeto ya existe en el contenedor."
+        }
+      },
+      {
+        "id": "UT9-Q10",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "Al utilizar el método add(E e) en un Set, ¿qué indica el valor de retorno boolean que devuelve la función?",
+        "contexto": "Comportamiento del método add(E e) en colecciones, especialmente en estructuras Set que no permiten duplicados.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Si la memoria RAM tiene espacio suficiente para el nuevo dato." },
+          { "clave": "b", "texto": "Si el elemento añadido es de tipo nulo (null)." },
+          { "clave": "c", "texto": "Si la colección se ha convertido automáticamente en un array estático." },
+          { "clave": "d", "texto": "Si el elemento se ha añadido con éxito o si ha sido rechazado por ser un duplicado." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El método add(E e) devuelve un valor boolean para indicar si la colección ha cambiado al intentar añadir el elemento. En un Set, como no se permiten duplicados, devolverá true si el elemento se inserta correctamente y false si no se añade porque ya existía.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El valor de retorno de add() no informa sobre el estado de la memoria RAM, sino sobre si la colección fue modificada o no tras la operación."
+            },
+            {
+              "clave": "b",
+              "motivo": "El boolean no indica si el valor es null. Indica si el elemento llegó a añadirse realmente a la colección."
+            },
+            {
+              "clave": "c",
+              "motivo": "Una colección no se transforma automáticamente en un array estático por usar add(). Esa opción no tiene relación con el comportamiento real del método."
+            }
+          ],
+          "resumen_didactico": "En un Set, add() sirve también para saber si el dato entró de verdad. Si ya estaba repetido, el Set lo rechaza y el método devuelve false.",
+          "ejemplo_practico": "Si haces set.add(\"Ana\") por primera vez, devolverá true. Si vuelves a hacer set.add(\"Ana\"), devolverá false porque el Set no admite duplicados.",
+          "conclusion_final": "La respuesta correcta es la d porque en un Set el boolean de add(E e) indica si el elemento se añadió con éxito o fue rechazado por duplicado."
+        }
+      },
+      {
+        "id": "UT9-Q11",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cuál es la función técnica del método iterator() presente en las clases que implementan Collection?",
+        "contexto": "Uso del método iterator() dentro de la jerarquía de colecciones de Java para recorrer elementos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Ordenar la colección siguiendo el orden natural de los números." },
+          { "clave": "b", "texto": "Proporcionar un objeto capaz de recorrer los elementos de manera secuencial." },
+          { "clave": "c", "texto": "Sincronizar la colección con una base de datos externa." },
+          { "clave": "d", "texto": "Borrar todos los elementos de la colección de forma segura." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El método iterator() devuelve un objeto iterador que permite recorrer los elementos de una colección uno a uno de forma secuencial. Esta capacidad está relacionada con la interfaz Iterable, que sirve de base para que las colecciones puedan recorrerse mediante iteradores o incluso con bucles for-each.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "iterator() no ordena la colección. Su función es únicamente permitir el recorrido secuencial de los elementos."
+            },
+            {
+              "clave": "c",
+              "motivo": "No tiene ninguna relación con bases de datos externas. iterator() trabaja solo sobre los elementos almacenados en la colección en memoria."
+            },
+            {
+              "clave": "d",
+              "motivo": "Borrar todos los elementos corresponde a métodos como clear(), no a iterator(). El iterador sirve para recorrer, no para vaciar la colección completa."
+            }
+          ],
+          "resumen_didactico": "iterator() sirve para obtener una herramienta de recorrido. Gracias a ese objeto, Java puede avanzar elemento a elemento dentro de una colección.",
+          "ejemplo_practico": "Si tienes una lista de nombres, al llamar a iterator() obtienes un iterador con el que puedes ir leyendo 'Ana', luego 'Luis', luego 'Marta', uno tras otro.",
+          "conclusion_final": "La respuesta correcta es la b porque iterator() proporciona un objeto que permite recorrer los elementos de la colección de manera secuencial."
+        }
+      },
+      {
+        "id": "UT9-Q12",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "En una interfaz Map, ¿qué regla inmutable rige sobre la relación entre las claves y los valores?",
+        "contexto": "Propiedad básica de funcionamiento de la interfaz Map en Java respecto a claves y valores.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Los valores son de tipo primitivo y las claves son siempre de tipo objeto." },
+          { "clave": "b", "texto": "La clave debe ser única, mientras que los valores asociados pueden repetirse." },
+          { "clave": "c", "texto": "Las claves pueden repetirse pero los valores deben ser únicos." },
+          { "clave": "d", "texto": "No se permite el uso de valores nulos en ninguna de las dos partes" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En la interfaz Map, cada clave debe ser única dentro de la estructura. En cambio, los valores asociados a distintas claves sí pueden repetirse, ya que la unicidad se exige a la clave y no al valor.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque en Map tanto claves como valores pueden ser tipos objeto. Además, los genéricos de Java no trabajan directamente con tipos primitivos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Está invertida. En Map no pueden repetirse las claves, mientras que los valores sí pueden repetirse sin problema."
+            },
+            {
+              "clave": "d",
+              "motivo": "No es una regla general e inmutable de Map. Algunas implementaciones permiten null en claves o valores, por lo que esa no es la norma fundamental del concepto."
+            }
+          ],
+          "resumen_didactico": "En un Map, la clave identifica de forma única cada entrada. El valor no necesita ser exclusivo y puede aparecer repetido en varias asociaciones.",
+          "ejemplo_practico": "Puedes tener un Map con 1 -> \"Ana\" y 2 -> \"Ana\" sin problema, porque el valor se repite. Lo que no puedes tener es dos veces la clave 1 como entradas distintas.",
+          "conclusion_final": "La respuesta correcta es la b porque en Map la clave debe ser única, mientras que los valores pueden repetirse."
+        }
+      },
+      {
+        "id": "UT9-Q13",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cómo se denomina técnicamente la estructura de datos que utiliza una fórmula matemática interna para calcular la posición de memoria de una clave?",
+        "contexto": "Concepto asociado al funcionamiento interno de estructuras como HashMap dentro del framework de colecciones de Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Lista doblemente enlazada" },
+          { "clave": "b", "texto": "Árbol rojo-negro" },
+          { "clave": "c", "texto": "Tabla hash" },
+          { "clave": "d", "texto": "Matriz bidimensional" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La estructura de datos que utiliza una función matemática para calcular la posición asociada a una clave es la tabla hash. En el tema aparece vinculada a implementaciones como HashMap, donde la clave se procesa mediante un mecanismo hash para ubicar rápidamente el valor asociado.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Una lista doblemente enlazada organiza nodos conectados entre sí, pero no calcula posiciones mediante una función matemática aplicada a claves."
+            },
+            {
+              "clave": "b",
+              "motivo": "Un árbol rojo-negro es una estructura arbórea balanceada, usada por ejemplo en TreeMap, pero su funcionamiento no se basa en una fórmula hash para ubicar claves."
+            },
+            {
+              "clave": "d",
+              "motivo": "Una matriz bidimensional organiza datos en filas y columnas, pero no utiliza funciones hash para calcular la posición de una clave."
+            }
+          ],
+          "resumen_didactico": "Cuando una estructura localiza datos usando una clave transformada por una fórmula matemática, estamos ante una tabla hash. Esa es la base conceptual de estructuras como HashMap.",
+          "ejemplo_practico": "En un HashMap, al guardar una entrada como 15 -> \"Ana\", Java aplica internamente un cálculo hash sobre la clave 15 para decidir dónde colocar esa asociación.",
+          "conclusion_final": "La respuesta correcta es la c porque la estructura que usa una fórmula matemática interna para calcular la posición de una clave se denomina tabla hash."
+        }
+      },
+      {
+        "id": "UT9-Q14",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cuál es la ventaja competitiva del HashMap en aplicaciones de alto rendimiento?",
+        "contexto": "Ventaja principal de HashMap dentro del framework de colecciones de Java cuando se prioriza rapidez de acceso.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Es la única colección que prohíbe el uso de claves nulas." },
+          { "clave": "b", "texto": "Mantiene los datos ordenados alfabéticamente de forma automática." },
+          { "clave": "c", "texto": "Ocupa menos espacio en memoria que un array de caracteres." },
+          { "clave": "d", "texto": "Ofrece una velocidad extrema de búsqueda con complejidad constante O(1)." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La gran ventaja de HashMap es su rapidez en operaciones de acceso, búsqueda e inserción gracias al uso interno de una tabla hash. En condiciones normales, estas operaciones tienen complejidad aproximada O(1), por eso se considera una estructura muy eficiente para aplicaciones de alto rendimiento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque HashMap no destaca por prohibir claves nulas como ventaja principal. De hecho, el punto fuerte que subraya el temario es su velocidad de acceso."
+            },
+            {
+              "clave": "b",
+              "motivo": "HashMap no mantiene los datos ordenados automáticamente. Si se necesita orden por clave, la estructura adecuada sería TreeMap."
+            },
+            {
+              "clave": "c",
+              "motivo": "No es una ventaja técnica característica de HashMap ni el temario lo presenta en términos de comparación con arrays de caracteres."
+            }
+          ],
+          "resumen_didactico": "HashMap se usa mucho cuando lo más importante es encontrar datos muy rápido. Su diseño interno con tabla hash permite búsquedas muy eficientes.",
+          "ejemplo_practico": "Si en una aplicación necesitas localizar rápidamente un usuario por su identificador miles de veces, un HashMap permite hacerlo de forma muy veloz sin recorrer todos los elementos uno por uno.",
+          "conclusion_final": "La respuesta correcta es la d porque la ventaja competitiva de HashMap es ofrecer búsquedas extremadamente rápidas con complejidad constante aproximada O(1)."
+        }
+      },
+      {
+        "id": "UT9-Q15",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué sucede en un HashMap si se intenta insertar un par con una clave que ya existe en el mapa?",
+        "contexto": "Comportamiento del método put() en HashMap cuando se usa una clave ya presente en la estructura.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El programa lanza una excepción de tipo NullPointerException." },
+          { "clave": "b", "texto": "El sistema crea automáticamente una clave nueva con un sufijo numérico." },
+          { "clave": "c", "texto": "La inserción es ignorada y se mantiene el valor original." },
+          { "clave": "d", "texto": "El nuevo valor reemplaza al valor antiguo asociado a esa clave." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "En un HashMap, las claves no pueden repetirse. Si se usa put() con una clave que ya existe, no se crea una nueva entrada duplicada, sino que el nuevo valor sustituye al valor anterior asociado a esa misma clave.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No se lanza una NullPointerException por repetir una clave. El comportamiento normal de HashMap ante una clave repetida es reemplazar el valor existente."
+            },
+            {
+              "clave": "b",
+              "motivo": "HashMap no genera claves nuevas automáticamente. La clave la define el programador y, si ya existe, se actualiza su valor."
+            },
+            {
+              "clave": "c",
+              "motivo": "Eso no es lo que hace HashMap. La operación no se ignora, sino que actualiza el valor vinculado a la clave repetida."
+            }
+          ],
+          "resumen_didactico": "En un Map la clave es única. Si vuelves a usar la misma clave, no se duplica la entrada: se sobreescribe el valor anterior.",
+          "ejemplo_practico": "Si haces mapa.put(1, \"Ana\") y después mapa.put(1, \"Marta\"), al final la clave 1 quedará asociada a \"Marta\".",
+          "conclusion_final": "La respuesta correcta es la d porque en HashMap una clave repetida provoca que el nuevo valor reemplace al valor antiguo asociado a esa clave."
+        }
+      },
+      {
+    "id": "UT9-Q16",
+    "tema": "UT9 Colecciones y tipos abstractos de datos",
+    "pregunta": "¿Qué implementación de Map es la más adecuada si el negocio requiere recorrer los elementos exactamente en el mismo orden en que fueron dados de alta?",
+    "contexto": "Elección de la implementación de Map adecuada cuando se necesita conservar el orden de inserción de las entradas.",
+    "tipo": "single",
+    "opciones": [
+        { "clave": "a", "texto": "HashMap" },
+        { "clave": "b", "texto": "TreeMap" },
+        { "clave": "c", "texto": "HashSet" },
+        { "clave": "d", "texto": "LinkedHashMap" }
+    ],
+    "respuesta_correcta": ["d"],
+    "explicacion": {
+        "temario": "La implementación de Map que conserva el orden de inserción de los elementos es LinkedHashMap. Por eso es la opción adecuada cuando el sistema necesita recorrer las entradas exactamente en el mismo orden en que fueron añadidas.",
+        "analisis_incorrectas": [
+        {
+            "clave": "a",
+            "motivo": "HashMap no garantiza el orden de recorrido de sus elementos. Su punto fuerte es la velocidad de acceso, no conservar el orden de alta."
+        },
+        {
+            "clave": "b",
+            "motivo": "TreeMap ordena los elementos según el orden natural de la clave o un comparador, no según el orden en que fueron insertados."
+        },
+        {
+            "clave": "c",
+            "motivo": "HashSet ni siquiera es una implementación de Map, sino de Set, por lo que no encaja en el requisito planteado."
+        }
+        ],
+        "resumen_didactico": "Si necesitas que un Map recuerde el orden exacto en que se añadieron sus entradas, debes usar LinkedHashMap. Esa es su característica diferencial.",
+        "ejemplo_practico": "Si das de alta primero el producto A, luego el B y luego el C, un LinkedHashMap permitirá recorrerlos después en el mismo orden: A, B, C.",
+        "conclusion_final": "La respuesta correcta es la d porque LinkedHashMap es la implementación de Map que mantiene el orden de inserción."
+    }
+    },
+    {
+        "id": "UT9-Q17",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cuál es la estructura interna en la que se basa un TreeMap para gestionar sus elementos?",
+        "contexto": "Fundamento interno de TreeMap dentro de las implementaciones de Map en Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Un array unidimensional de gran capacidad inicial." },
+          { "clave": "b", "texto": "Una tabla hash de acceso directo." },
+          { "clave": "c", "texto": "Una pila de datos tipo LIFO." },
+          { "clave": "d", "texto": "Un árbol binario balanceado (árbol rojo-negro)." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "TreeMap se basa internamente en un árbol binario balanceado, concretamente un árbol rojo-negro. Gracias a esta estructura, mantiene las claves ordenadas automáticamente y permite operaciones de búsqueda, inserción y borrado con buen rendimiento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "TreeMap no funciona sobre un array simple como base principal. Su comportamiento ordenado se apoya en una estructura arbórea balanceada."
+            },
+            {
+              "clave": "b",
+              "motivo": "La tabla hash es la base conceptual de HashMap, no de TreeMap. TreeMap no usa hashing para organizar sus claves."
+            },
+            {
+              "clave": "c",
+              "motivo": "Una pila LIFO procesa el último elemento insertado como el primero en salir, pero eso no tiene relación con el funcionamiento interno de TreeMap."
+            }
+          ],
+          "resumen_didactico": "TreeMap ordena sus elementos porque internamente usa un árbol balanceado. No trabaja con hash, sino con una estructura arbórea que mantiene las claves en orden.",
+          "ejemplo_practico": "Si guardas las claves 30, 10 y 20 en un TreeMap, la estructura interna reorganiza los nodos para que al recorrerlo aparezcan ordenadas como 10, 20 y 30.",
+          "conclusion_final": "La respuesta correcta es la d porque TreeMap se apoya en un árbol binario balanceado, concretamente un árbol rojo-negro."
+        }
+      },
+      {
+        "id": "UT9-Q18",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cuál es el comportamiento de un TreeMap respecto a la ordenación de sus datos?",
+        "contexto": "Comportamiento de TreeMap en relación con la ordenación automática de las entradas según sus claves.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Mantiene estrictamente el orden de inserción de los elementos." },
+          { "clave": "b", "texto": "Los ordena ascendentemente por el valor natural de la clave." },
+          { "clave": "c", "texto": "Los ordena de mayor a menor según el peso en bytes del valor." },
+          { "clave": "d", "texto": "Los ordena aleatoriamente para optimizar el procesador." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "TreeMap mantiene sus elementos ordenados automáticamente según el orden natural de sus claves, normalmente de forma ascendente. Esa es una de sus diferencias principales frente a HashMap, que no garantiza orden, y LinkedHashMap, que conserva el orden de inserción.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Ese comportamiento corresponde a LinkedHashMap, no a TreeMap. TreeMap no conserva el orden en que se insertan las entradas, sino que las ordena por clave."
+            },
+            {
+              "clave": "c",
+              "motivo": "TreeMap no ordena por el peso en bytes del valor ni por los valores en general. Su criterio de ordenación se aplica sobre las claves."
+            },
+            {
+              "clave": "d",
+              "motivo": "TreeMap no organiza los elementos de forma aleatoria. Su orden es predecible y responde a la comparación de las claves."
+            }
+          ],
+          "resumen_didactico": "TreeMap sirve cuando quieres que las entradas queden ordenadas automáticamente. El orden lo marca la clave, no el momento de inserción.",
+          "ejemplo_practico": "Si insertas en un TreeMap las claves 30, 10 y 20, al recorrerlo aparecerán ordenadas como 10, 20 y 30.",
+          "conclusion_final": "La respuesta correcta es la b porque TreeMap ordena sus datos ascendentemente según el valor natural de la clave."
+        }
+      },
+      {
+        "id": "UT9-Q19",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué restricción crítica diferencia a TreeMap de HashMap respecto al uso de referencias nulas?",
+        "contexto": "Diferencia entre TreeMap y HashMap en relación con el uso de null en claves y valores.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "HashMap no permite valores null y TreeMap sí los permite." },
+          { "clave": "b", "texto": "TreeMap prohíbe tener valores null." },
+          { "clave": "c", "texto": "TreeMap prohíbe estrictamente el uso de null en la clave." },
+          { "clave": "d", "texto": "Ambas estructuras prohíben el uso de nulos por seguridad." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La diferencia crítica es que TreeMap no permite usar null como clave, porque necesita comparar las claves para mantenerlas ordenadas. En cambio, HashMap sí puede admitir null como clave, ya que su funcionamiento se basa en hashing y no en ordenación por comparación directa.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque HashMap sí puede permitir valores null. La restricción importante no está en los valores, sino en la clave de TreeMap."
+            },
+            {
+              "clave": "b",
+              "motivo": "No es la diferencia crítica principal. El punto clave del tema es que TreeMap no acepta null en la clave porque debe ordenar comparando claves."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es falsa porque HashMap no prohíbe todos los nulos. La limitación estricta del tema afecta específicamente a la clave en TreeMap."
+            }
+          ],
+          "resumen_didactico": "TreeMap necesita comparar claves para ordenarlas, y por eso no puede trabajar con una clave null. HashMap, al no ordenar por comparación, sí puede admitirla.",
+          "ejemplo_practico": "En un HashMap puedes guardar una entrada como null -> \"Sin código\". En un TreeMap eso fallaría porque no puede ordenar una clave nula frente al resto.",
+          "conclusion_final": "La respuesta correcta es la c porque TreeMap prohíbe estrictamente el uso de null en la clave."
+        }
+      },
+      {
+        "id": "UT9-Q20",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué método de la interfaz Map se debe invocar para obtener un conjunto (Set) que contenga únicamente los identificadores o llaves del mapa?",
+        "contexto": "Métodos básicos de la interfaz Map para acceder a claves, valores o pares clave-valor.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "entrySet()" },
+          { "clave": "b", "texto": "get(Object key)" },
+          { "clave": "c", "texto": "values()" },
+          { "clave": "d", "texto": "keySet()" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El método keySet() de la interfaz Map devuelve un conjunto de tipo Set que contiene únicamente las claves del mapa. Es el método específico para obtener solo los identificadores, sin incluir ni los valores ni las entradas completas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "entrySet() no devuelve solo las claves, sino el conjunto de entradas completas del mapa, es decir, pares clave-valor."
+            },
+            {
+              "clave": "b",
+              "motivo": "get(Object key) sirve para recuperar el valor asociado a una clave concreta, no para obtener el conjunto de todas las claves."
+            },
+            {
+              "clave": "c",
+              "motivo": "values() devuelve una colección con los valores del mapa, no con sus claves."
+            }
+          ],
+          "resumen_didactico": "Si quieres sacar solo las claves de un Map, debes usar keySet(). Ese método te devuelve un Set con todos los identificadores del mapa.",
+          "ejemplo_practico": "Si tienes un mapa con 1 -> \"Ana\" y 2 -> \"Luis\", al llamar a keySet() obtendrás un conjunto con [1, 2].",
+          "conclusion_final": "La respuesta correcta es la d porque keySet() es el método de Map que devuelve exclusivamente el conjunto de claves."
+        }
+      },
+      {
+        "id": "UT9-Q21",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "Si un desarrollador necesita extraer la lista completa de los datos almacenados en un mapa, sin importar sus identificadores, ¿qué método debe usar?",
+        "contexto": "Métodos de la interfaz Map para obtener solo los valores almacenados, sin trabajar con las claves.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "containsValue()" },
+          { "clave": "b", "texto": "keySet()" },
+          { "clave": "c", "texto": "values()" },
+          { "clave": "d", "texto": "put()" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El método values() de la interfaz Map devuelve una colección con todos los valores almacenados en el mapa, sin incluir las claves. Es el método adecuado cuando solo interesa acceder a los datos guardados y no a sus identificadores.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "containsValue() solo comprueba si un valor concreto existe dentro del mapa, pero no devuelve la colección completa de valores."
+            },
+            {
+              "clave": "b",
+              "motivo": "keySet() devuelve el conjunto de claves del mapa, no los datos o valores asociados a ellas."
+            },
+            {
+              "clave": "d",
+              "motivo": "put() sirve para insertar o actualizar pares clave-valor en el mapa, no para extraer los valores almacenados."
+            }
+          ],
+          "resumen_didactico": "Si no te interesan las claves y solo quieres todos los datos guardados en el Map, debes usar values(). Ese método devuelve la colección de valores.",
+          "ejemplo_practico": "Si tienes un mapa con 1 -> \"Ana\", 2 -> \"Luis\" y 3 -> \"Marta\", al llamar a values() obtendrás una colección con [Ana, Luis, Marta].",
+          "conclusion_final": "La respuesta correcta es la c porque values() es el método de Map que devuelve todos los valores almacenados sin incluir sus identificadores."
+        }
+      },
+      {
+        "id": "UT9-Q22",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué método exclusivo de TreeMap permite obtener el par clave-valor asociado a la clave más baja o antigua del mapa?",
+        "contexto": "Métodos específicos de TreeMap para acceder a entradas según el orden natural de sus claves.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "floorEntry()" },
+          { "clave": "b", "texto": "firstKey()" },
+          { "clave": "c", "texto": "firstEntry()" },
+          { "clave": "d", "texto": "higherEntry()" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El método firstEntry() de TreeMap devuelve la entrada completa, es decir, el par clave-valor asociado a la clave más baja según el orden natural del mapa. Se diferencia de firstKey() en que este último solo devuelve la clave, no la entrada completa.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "floorEntry() no devuelve necesariamente la entrada con la clave más baja del mapa, sino la entrada cuya clave es menor o igual a una clave dada como referencia."
+            },
+            {
+              "clave": "b",
+              "motivo": "firstKey() devuelve únicamente la clave más baja, pero la pregunta pide el par clave-valor completo."
+            },
+            {
+              "clave": "d",
+              "motivo": "higherEntry() devuelve la entrada con clave inmediatamente superior a una clave dada, no la primera entrada del mapa."
+            }
+          ],
+          "resumen_didactico": "Si necesitas la primera entrada completa de un TreeMap, debes usar firstEntry(). Ese método devuelve tanto la clave como el valor asociado.",
+          "ejemplo_practico": "Si un TreeMap contiene 10 -> \"Ana\", 20 -> \"Luis\" y 30 -> \"Marta\", al llamar a firstEntry() obtendrás la entrada 10 -> \"Ana\".",
+          "conclusion_final": "La respuesta correcta es la c porque firstEntry() es el método de TreeMap que devuelve el par clave-valor asociado a la clave más baja del mapa."
+        }
+      },
+      {
+        "id": "UT9-Q23",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "Al diseñar un sistema de seguridad, ¿por qué es vital elegir correctamente entre HashMap y TreeMap?",
+        "contexto": "Comparación entre HashMap y TreeMap según rendimiento de acceso y necesidad de ordenación de claves.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Porque el HashMap es más seguro contra ataques de inyección de código." },
+          { "clave": "b", "texto": "Porque el compilador de Java no permite cambiar de una a otra una vez publicado el software." },
+          { "clave": "c", "texto": "Porque la elección afecta directamente a la eficiencia de las búsquedas y a la ordenación de los datos." },
+          { "clave": "d", "texto": "Porque TreeMap es la única estructura que permite cifrar claves" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Elegir entre HashMap y TreeMap es importante porque cada estructura resuelve necesidades distintas. HashMap destaca por la rapidez de acceso y búsqueda, mientras que TreeMap mantiene las claves ordenadas automáticamente, por lo que la elección influye directamente en el rendimiento y en la forma de organizar los datos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El tema no relaciona HashMap con protección frente a inyecciones de código. La diferencia entre ambas estructuras no es de seguridad frente a ataques, sino de rendimiento y ordenación."
+            },
+            {
+              "clave": "b",
+              "motivo": "Eso es falso. A nivel de desarrollo se puede sustituir una implementación por otra si el diseño lo permite; la cuestión importante del temario es qué comportamiento ofrece cada una."
+            },
+            {
+              "clave": "d",
+              "motivo": "TreeMap no es una estructura de cifrado. Su función es mantener las claves ordenadas, no cifrarlas."
+            }
+          ],
+          "resumen_didactico": "HashMap y TreeMap no se eligen al azar. Uno prioriza velocidad de acceso y el otro prioriza ordenación automática de las claves.",
+          "ejemplo_practico": "Si un sistema necesita localizar credenciales muy rápido, HashMap puede ser más adecuado. Si además necesita recorrerlas siempre ordenadas por identificador, TreeMap puede resultar mejor.",
+          "conclusion_final": "La respuesta correcta es la c porque elegir entre HashMap y TreeMap afecta directamente a la eficiencia de las búsquedas y a la ordenación de los datos."
+        }
+      },
+      {
+        "id": "UT9-Q24",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué utilidad tiene el método put(K clave, V valor) cuando la clave proporcionada ya tiene un valor asignado previamente?",
+        "contexto": "Comportamiento del método put() en la interfaz Map cuando se inserta una clave que ya existe en el mapa.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Actualiza el valor y devuelve el valor antiguo que ha sido sustituido." },
+          { "clave": "b", "texto": "Crea una sublista con ambos valores para evitar la pérdida de datos." },
+          { "clave": "c", "texto": "No realiza ninguna acción para proteger la integridad de la clave." },
+          { "clave": "d", "texto": "Elimina la clave del mapa permanentemente." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El método put(K clave, V valor) inserta una nueva asociación clave-valor o actualiza la ya existente si la clave estaba previamente en el mapa. Cuando reemplaza un valor anterior, devuelve precisamente ese valor antiguo que ha sido sustituido.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Map no crea sublistas ni conserva automáticamente ambos valores para una misma clave. La clave debe seguir siendo única y el valor anterior se reemplaza."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque sí realiza una acción: actualiza el valor asociado a la clave existente."
+            },
+            {
+              "clave": "d",
+              "motivo": "put() no elimina claves del mapa. Para eliminar una entrada se utiliza remove()."
+            }
+          ],
+          "resumen_didactico": "Si una clave ya existe, put() no crea otra entrada nueva: sustituye el valor anterior. Además, puede devolver el valor viejo para que sepas qué había antes.",
+          "ejemplo_practico": "Si haces mapa.put(1, \"Ana\") y después mapa.put(1, \"Marta\"), la clave 1 seguirá existiendo, pero ahora apuntará a \"Marta\" y el método devolverá \"Ana\" como valor reemplazado.",
+          "conclusion_final": "La respuesta correcta es la a porque put() actualiza el valor de una clave existente y devuelve el valor antiguo que ha sido sustituido."
+        }
+      },
+      {
+        "id": "UT9-Q25",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cuál es la recomendación profesional para optimizar el uso de un HashMap cuando se conoce de antemano que almacenará una gran cantidad de datos (ej. 50.000 registros)?",
+        "contexto": "Optimización de rendimiento en HashMap cuando se prevé almacenar un gran volumen de entradas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Dividir los datos en 50.000 variables individuales." },
+          { "clave": "b", "texto": "Inicializar el mapa con un tamaño estimado para evitar redimensionamientos internos costosos." },
+          { "clave": "c", "texto": "Usar siempre TreeMap en lugar de HashMap para ganar velocidad." },
+          { "clave": "d", "texto": "Desactivar el Garbage Collector durante el proceso de inserción." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Cuando se sabe que un HashMap va a almacenar una gran cantidad de elementos, es recomendable inicializarlo con una capacidad estimada. Así se reducen los redimensionamientos internos y las reorganizaciones de la tabla hash, mejorando el rendimiento durante las inserciones masivas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Eso no es una práctica profesional ni escalable. Precisamente las colecciones existen para evitar gestionar manualmente miles de variables sueltas."
+            },
+            {
+              "clave": "c",
+              "motivo": "TreeMap no se usa para ganar velocidad frente a HashMap. De hecho, HashMap suele ser más rápido en búsquedas e inserciones cuando no necesitas ordenación."
+            },
+            {
+              "clave": "d",
+              "motivo": "Desactivar el Garbage Collector no forma parte de la recomendación del temario ni es una solución adecuada para este problema. La optimización aquí pasa por ajustar la capacidad inicial de la estructura."
+            }
+          ],
+          "resumen_didactico": "Si ya sabes que vas a guardar muchos datos en un HashMap, conviene prepararlo con un tamaño aproximado desde el principio. Así evitas que tenga que crecer muchas veces internamente.",
+          "ejemplo_practico": "Si una aplicación va a cargar 50.000 usuarios en un HashMap, resulta más eficiente crearlo con una capacidad inicial alta que empezar con el tamaño por defecto y obligarlo a redimensionarse repetidamente.",
+          "conclusion_final": "La respuesta correcta es la b porque inicializar el HashMap con un tamaño estimado ayuda a evitar redimensionamientos internos costosos y mejora el rendimiento."
+        }
+      },
+      {
+        "id": "UT9-Q26",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "En el contexto de las colecciones, ¿qué significa el término \"programar contra la interfaz\"?",
+        "contexto": "Buena práctica de diseño en Java al declarar colecciones usando interfaces en lugar de depender directamente de clases concretas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Eliminar el uso de métodos públicos en las clases de negocio." },
+          { "clave": "b", "texto": "Escribir el código directamente en lenguaje ensamblador." },
+          { "clave": "c", "texto": "Crear aplicaciones que no tengan interfaz gráfica de usuario." },
+          { "clave": "d", "texto": "Usar el tipo de la interfaz (ej. List) a la izquierda y la implementación (ej. ArrayList) a la derecha." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Programar contra la interfaz significa declarar las variables usando la interfaz general, como List, Set o Map, y crear el objeto con una implementación concreta, como ArrayList, HashSet o HashMap. Esta práctica mejora la flexibilidad del código porque permite cambiar la implementación sin tener que reescribir toda la lógica que usa esa colección.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No tiene relación con el concepto. Programar contra la interfaz no consiste en quitar métodos públicos, sino en depender de abstracciones en lugar de clases concretas."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el término no tiene nada que ver con programar en ensamblador, sino con diseño orientado a objetos y uso de interfaces en Java."
+            },
+            {
+              "clave": "c",
+              "motivo": "Aquí 'interfaz' no se refiere a interfaz gráfica de usuario, sino a una interfaz de programación como List o Map."
+            }
+          ],
+          "resumen_didactico": "Programar contra la interfaz consiste en pensar en el comportamiento general que necesitas, no en una clase concreta fija. Así tu código queda más limpio, flexible y fácil de mantener.",
+          "ejemplo_practico": "Es mejor escribir List<String> nombres = new ArrayList<>(); que ArrayList<String> nombres = new ArrayList<>(); porque luego podrías cambiar ArrayList por LinkedList sin modificar el resto del código.",
+          "conclusion_final": "La respuesta correcta es la d porque programar contra la interfaz significa usar el tipo de la interfaz en la declaración y una implementación concreta en la creación del objeto."
+        }
+      },
+      {
+        "id": "UT9-Q27",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué método de TreeMap se utiliza para encontrar la entrada cuya clave es la inmediatamente superior a una clave dada?",
+        "contexto": "Métodos específicos de TreeMap para localizar entradas vecinas según el orden natural de las claves.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "get(Object key)" },
+          { "clave": "b", "texto": "higherEntry(K k)" },
+          { "clave": "c", "texto": "floorEntry(K k)" },
+          { "clave": "d", "texto": "lastEntry()" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El método higherEntry(K k) de TreeMap devuelve la entrada cuya clave es estrictamente superior e inmediatamente siguiente a la clave proporcionada. Se usa cuando quieres localizar el siguiente elemento en el orden natural del mapa.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "get(Object key) busca el valor exacto asociado a una clave concreta, pero no sirve para encontrar la entrada con la clave inmediatamente superior."
+            },
+            {
+              "clave": "c",
+              "motivo": "floorEntry(K k) devuelve la entrada cuya clave es menor o igual a la clave dada, no la inmediatamente superior."
+            },
+            {
+              "clave": "d",
+              "motivo": "lastEntry() devuelve la última entrada del TreeMap, es decir, la de clave más alta del mapa, sin depender de una clave de referencia."
+            }
+          ],
+          "resumen_didactico": "Si necesitas saber cuál es la siguiente entrada después de una clave dada en un TreeMap, el método correcto es higherEntry(). Sirve para moverte hacia arriba en el orden de las claves.",
+          "ejemplo_practico": "Si un TreeMap contiene las claves 10, 20 y 30, al llamar a higherEntry(20) obtendrás la entrada asociada a 30.",
+          "conclusion_final": "La respuesta correcta es la b porque higherEntry(K k) devuelve la entrada con la clave inmediatamente superior a la clave indicada."
+        }
+      },
+      {
+        "id": "UT9-Q28",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué garantiza el cumplimiento del contrato de la interfaz Iterable por parte de las colecciones?",
+        "contexto": "Importancia de la interfaz Iterable en la navegabilidad de las colecciones dentro de Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Que el programador no podrá usar el método remove()." },
+          { "clave": "b", "texto": "Que la colección ocupará siempre la misma cantidad de memoria RAM." },
+          { "clave": "c", "texto": "Que los datos se guardarán cifrados en el sistema de archivos." },
+          { "clave": "d", "texto": "Que todas las estructuras de datos que agrupan objetos serán fácilmente navegables con bucles modernos." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La interfaz Iterable garantiza que una estructura puede proporcionar un iterador para recorrer sus elementos uno a uno. Gracias a eso, las colecciones pueden navegarse fácilmente con mecanismos modernos como el bucle for-each, que se apoya precisamente en ese contrato.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Iterable no prohíbe el uso de remove(). Su función principal es permitir el recorrido de elementos mediante un iterador."
+            },
+            {
+              "clave": "b",
+              "motivo": "La interfaz Iterable no controla el consumo de memoria RAM de una colección. Solo define la capacidad de ser recorrida."
+            },
+            {
+              "clave": "c",
+              "motivo": "Iterable no tiene ninguna relación con cifrado ni con almacenamiento en sistema de archivos. Su ámbito es el recorrido de elementos en memoria."
+            }
+          ],
+          "resumen_didactico": "Si una colección cumple con Iterable, significa que puede recorrerse fácilmente elemento a elemento. Esa es la base que permite usar for-each y otros recorridos modernos.",
+          "ejemplo_practico": "Cuando escribes for (String nombre : lista), Java puede recorrer la lista porque esa colección cumple el contrato de Iterable y ofrece un iterador interno.",
+          "conclusion_final": "La respuesta correcta es la d porque Iterable garantiza que las colecciones sean navegables de forma sencilla mediante bucles modernos como for-each."
+        }
+      },
+      {
+        "id": "UT9-Q29",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Cuál es la diferencia de rendimiento al buscar un rango de datos (ej. del ID 100 al 200) entre un HashMap y un TreeMap?",
+        "contexto": "Comparación entre HashMap y TreeMap cuando no se busca una clave exacta, sino un intervalo de claves ordenadas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El HashMap es más rápido en rangos porque no gasta tiempo en ordenar." },
+          { "clave": "b", "texto": "El HashMap falla al intentar buscar rangos de claves numéricas." },
+          { "clave": "c", "texto": "No existe diferencia; ambos tardan el mismo tiempo en cualquier operación." },
+          { "clave": "d", "texto": "El TreeMap es superior en búsquedas de rangos debido a su estructura de árbol navegable" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "TreeMap resulta más adecuado para búsquedas por rango porque mantiene las claves ordenadas y se apoya en una estructura de árbol navegable. En cambio, HashMap está optimizado para búsquedas rápidas por clave exacta, pero no para recorrer intervalos ordenados de claves.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "HashMap destaca en búsquedas directas por clave, pero no ofrece una estructura ordenada que facilite consultas por rangos."
+            },
+            {
+              "clave": "b",
+              "motivo": "HashMap no falla por usar claves numéricas. Puede almacenar esas claves sin problema, aunque no está pensado para explotar rangos ordenados."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque sí existe una diferencia importante: TreeMap tiene ventaja cuando necesitas trabajar con intervalos de claves ordenadas."
+            }
+          ],
+          "resumen_didactico": "HashMap va muy bien cuando conoces la clave exacta. TreeMap es mejor cuando necesitas moverte por tramos o rangos de claves porque las mantiene ordenadas.",
+          "ejemplo_practico": "Si quieres recuperar todas las entradas con IDs entre 100 y 200, TreeMap permite hacerlo de forma natural gracias a su orden interno. Con HashMap no tienes ese recorrido ordenado preparado.",
+          "conclusion_final": "La respuesta correcta es la d porque TreeMap es superior en búsquedas de rangos al mantener las claves ordenadas dentro de una estructura de árbol navegable."
+        }
+      },
+      {
+        "id": "UT9-Q30",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "¿Qué capacidad técnica diferencia a un desarrollador senior de un junior al trabajar con tipos abstractos de datos?",
+        "contexto": "Importancia de elegir correctamente la estructura de datos más adecuada según el problema planteado y los requisitos del sistema.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "La velocidad para escribir líneas de código sin errores de sintaxis." },
+          { "clave": "b", "texto": "El uso exclusivo de arrays estáticos para ahorrar recursos del servidor." },
+          { "clave": "c", "texto": "El criterio de ingeniería para elegir la estructura de datos más eficiente según los requisitos del negocio." },
+          { "clave": "d", "texto": "El conocimiento de todos los atajos de teclado del IDE IntelliJ." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El punto clave del tema es que no existe una estructura de datos universalmente mejor, sino una más adecuada según cada necesidad. La diferencia técnica importante está en saber analizar los requisitos del problema y escoger la colección o implementación que ofrezca el mejor equilibrio entre rendimiento, ordenación, unicidad, flexibilidad y facilidad de acceso.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Escribir rápido o sin errores de sintaxis no es la capacidad diferencial principal al trabajar con tipos abstractos de datos. Lo importante es tomar buenas decisiones de diseño."
+            },
+            {
+              "clave": "b",
+              "motivo": "Usar siempre arrays estáticos no es una práctica avanzada ni eficiente en todos los casos. El temario insiste precisamente en elegir la estructura según el problema, no en usar una única solución."
+            },
+            {
+              "clave": "d",
+              "motivo": "Conocer atajos del IDE puede mejorar la productividad, pero no determina la capacidad de ingeniería necesaria para seleccionar correctamente estructuras de datos."
+            }
+          ],
+          "resumen_didactico": "Lo que marca la diferencia no es solo saber programar, sino saber qué estructura conviene en cada situación. Elegir bien entre List, Set, Queue, HashMap o TreeMap es una decisión de diseño, no de sintaxis.",
+          "ejemplo_practico": "Un desarrollador con criterio sabrá que para búsquedas exactas rápidas puede usar HashMap, pero para recorrer claves ordenadas o trabajar con rangos puede necesitar TreeMap.",
+          "conclusion_final": "La respuesta correcta es la c porque la verdadera capacidad técnica diferencial está en elegir la estructura de datos más eficiente según los requisitos concretos del negocio."
+        }
+      }
+
+]

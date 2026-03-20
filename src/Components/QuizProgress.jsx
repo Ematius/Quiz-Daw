@@ -5,6 +5,7 @@ export function QuizProgress({ current, total, correctCount, pendingCount }){
 
     return (
       <section className="quiz-progress">
+        
         <p>
           {current}/{total}
         </p>
