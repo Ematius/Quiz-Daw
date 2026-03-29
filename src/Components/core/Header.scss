@@ -20,7 +20,9 @@
 .app-header__inner {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
   min-height: 64px;
   padding-block: 0.6rem;
 }
@@ -29,8 +31,34 @@
 .app-header__brand {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.85rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.app-header__actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.app-header__user-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $color-text;
+  max-width: 10rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.app-header__btn {
+  font-size: 0.8rem;
+  padding: 0.45rem 0.75rem;
+  white-space: nowrap;
 }
 
 /* Logo con css */

@@ -1,13 +1,22 @@
 
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "./Header.scss";
 import logo from "../../assets/logo.png";
+import { useAuth } from "../../context/AuthContext";
 
 
 
 export function Header() {
+  const navigate = useNavigate();
+  const { user, isAuthenticated, logout } = useAuth();
+
+  function handleLogout() {
+    logout();
+    navigate("/", { replace: true });
+  }
+
   return (
     <header className="app-header">
       <div className="page-container app-header__inner">
@@ -24,6 +33,26 @@ export function Header() {
           </div>
         </div>
 
+        <nav className="app-header__actions" aria-label="Usuario y cuenta">
+          {isAuthenticated && user ? (
+            <>
+              <span className="app-header__user-name">{user.name}</span>
+              <Link to="/panel" className="btn-back app-header__btn">
+                Panel personal
+              </Link>
+              <button
+                type="button"
+                className="btn-back app-header__btn"
+                onClick={handleLogout}>
+                Logout
+              </button>
+            </>
+          ) : (
+            <Link to="/auth" className="btn-back app-header__btn">
+              Entrar / crear cuenta
+            </Link>
+          )}
+        </nav>
       </div>
     </header>
   );

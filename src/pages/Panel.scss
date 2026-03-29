@@ -1,0 +1,68 @@
+/** @format */
+
+@use "../styles/variables" as *;
+
+.panel-page__intro {
+  color: $color-text-muted;
+  margin-bottom: 1.25rem;
+  max-width: 52rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.panel-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  background: $color-surface-alt;
+}
+
+.panel-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 480px;
+}
+
+.panel-table__corner,
+.panel-table__module-head {
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  background: rgba(15, 23, 42, 0.45);
+  font-weight: 600;
+}
+
+.panel-table__row-head {
+  padding: 0.5rem 0.65rem;
+  text-align: left;
+  white-space: nowrap;
+  border-right: 1px solid rgba(148, 163, 184, 0.2);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  font-weight: 600;
+  color: $color-text-muted;
+}
+
+.panel-table__cell {
+  padding: 0.5rem 0.45rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  min-width: 3rem;
+}
+
+.panel-table__cell--ok {
+  font-variant-numeric: tabular-nums;
+}
+
+.panel-table__cell--na {
+  background: rgba(71, 85, 105, 0.45);
+  color: rgba(148, 163, 184, 0.85);
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.panel-table tbody tr:last-child .panel-table__cell,
+.panel-table tbody tr:last-child .panel-table__row-head {
+  border-bottom: none;
+}

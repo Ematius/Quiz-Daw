@@ -3,9 +3,11 @@
 import { useParams, useNavigate } from "react-router-dom";
 
 import { getQuiz } from "../data/quizLoader";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { QuizQuestion } from "../Components/QuizQuestion";
 import { QuizProgress } from "../Components/QuizProgress";
+import { useAuth } from "../context/AuthContext";
+import { recordTopicCompletion } from "../storage/quizAppStorage";
 import "./Quiz.scss";
 
 function resolveFolder(moduloId) {
@@ -22,8 +24,19 @@ function resolveFolder(moduloId) {
 
 export function Quiz()
 {
-  const { moduloId, topicId } = useParams();
+  const { moduloId, topicId: topicIdParam } = useParams();
+  const topicId =
+    topicIdParam != null
+      ? (() => {
+          try {
+            return decodeURIComponent(topicIdParam);
+          } catch {
+            return topicIdParam;
+          }
+        })()
+      : "";
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   const folder = resolveFolder(moduloId);
   const questions = folder ? getQuiz(folder, topicId) : null;
@@ -35,9 +48,16 @@ export function Quiz()
   const [quizFinished, setQuizFinished] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
   const [feedback, setFeedback] = useState(null);
-  const [answerCorrect, setAnswerCorrect] = useState(0);
   const [hasAnsweredCurrent, setHasAnsweredCurrent] = useState(false);
 
+  const solvedRef = useRef([]);
+  const completionRecordedRef = useRef(false);
+  useEffect(() => {
+    solvedRef.current = solvedQuestionIndexes;
+  }, [solvedQuestionIndexes]);
+
+  const totalQuestions = questions?.length ?? 0;
+  const answerCorrect = solvedQuestionIndexes.length;
 
   useEffect(() => {
     setCurrentIndex(0);
@@ -49,13 +69,9 @@ export function Quiz()
     setQuizFinished(false);
     setSelectedOption(null);
     setFeedback(null);
-    setAnswerCorrect(0);
     setHasAnsweredCurrent(false);
+    completionRecordedRef.current = false;
   }, [moduloId, topicId]);
-
-  useEffect(() => {
-    setAnswerCorrect(solvedQuestionIndexes.length);
-  }, [solvedQuestionIndexes]);
 
 
   const roundLength = roundQuestionIndexes.length;
@@ -100,7 +116,7 @@ export function Quiz()
       setFeedback("✘ Te has equivocado");
       setPendingQuestionIndexes((prev) => {
         if (prev.includes(idxInOriginal)) return prev;
-        if (solvedQuestionIndexes.includes(idxInOriginal)) return prev;
+        if (solvedRef.current.includes(idxInOriginal)) return prev;
         return [...prev, idxInOriginal];
       });
     }
@@ -117,13 +133,21 @@ export function Quiz()
     if (currentIndex < lastIndexInRound) {
       setCurrentIndex((prevIndex) => prevIndex + 1);
     } else {
-      const nextRound = pendingQuestionIndexes;
-      if (nextRound.length > 0) {
-        setRoundQuestionIndexes(nextRound);
-        setCurrentIndex(0);
-      } else {
-        setQuizFinished(true);
-      }
+      setPendingQuestionIndexes((pending) => {
+        if (pending.length > 0) {
+          setRoundQuestionIndexes([...pending]);
+          setCurrentIndex(0);
+        } else if (solvedRef.current.length === totalQuestions) {
+          if (!completionRecordedRef.current) {
+            completionRecordedRef.current = true;
+            setQuizFinished(true);
+            if (user?.username) {
+              recordTopicCompletion(user.username, moduloId, topicId);
+            }
+          }
+        }
+        return pending;
+      });
     }
 
     setSelectedOption(null);
@@ -168,16 +192,15 @@ export function Quiz()
           </section>
 
           <QuizProgress
-            current={answerCorrect}
-            total={questions.length}
+            total={totalQuestions}
             correctCount={answerCorrect}
             pendingCount={pendingQuestionIndexes.length}
           />
 
           <section className="quiz-question">
-            <h2>Quiz completado</h2>
+            <h2>Felicidades, has repasado por completo este tema</h2>
             <p>
-              Dominadas: {answerCorrect}/{questions.length}
+              Has dominado todas las preguntas: {answerCorrect}/{totalQuestions}
             </p>
           </section>
 
@@ -199,8 +222,7 @@ export function Quiz()
         </section>
 
         <QuizProgress
-          current={answerCorrect}
-          total={questions.length}
+          total={totalQuestions}
           correctCount={answerCorrect}
           pendingCount={pendingQuestionIndexes.length}
         />
