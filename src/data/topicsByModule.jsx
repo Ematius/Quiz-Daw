@@ -156,5 +156,25 @@ export const topicsByModule = {
       title: "Clases avanzadas y utilización de objetos",
       numQuestion: 30,
     },
+    {
+      id: "UT8",
+      title: " Estructura de almacenamiento. Arrays y cadenas de caracteres",
+      numQuestion: 30,
+    },
+    {
+      id: "UT9",
+      title: "Colecciones y tipos abstractos de datos",
+      numQuestion: 30,
+    },
+    {
+      id: "UT10",
+      title: "Control y manejo de excepciones",
+      numQuestion: 30,
+    },
+    {
+      id: "UT11",
+      title: "Recursividad y complejidad algorítmica",
+      numQuestion: 30,
+    },
   ],
 };

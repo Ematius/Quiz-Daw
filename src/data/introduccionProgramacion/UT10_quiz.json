@@ -1,0 +1,1385 @@
+[
+    {
+        "id": "UT10-Q01",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cuál es la función primordial de las excepciones en el desarrollo de software profesional?",
+        "contexto": "Finalidad principal de las excepciones dentro del control de errores en una aplicación.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Captar situaciones anómalas para corregirlas o realizar una interrupción controlada sin colapsar el sistema."
+          },
+          {
+            "clave": "b",
+            "texto": "Aumentar la velocidad de ejecución de los cálculos matemáticos."
+          },
+          {
+            "clave": "c",
+            "texto": "Eliminar automáticamente el código que contiene errores de sintaxis."
+          },
+          {
+            "clave": "d",
+            "texto": "Cifrar los datos sensibles del usuario antes de enviarlos a la base de datos."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Las excepciones existen para captar errores o situaciones anómalas durante la ejecución y darles un tratamiento: corregir el problema o interrumpir el proceso de forma controlada, evitando que todo el sistema colapse.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Las excepciones no están pensadas para mejorar el rendimiento ni acelerar cálculos. Su función pertenece al control de errores y a la robustez del software, no a la optimización matemática."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los errores de sintaxis se detectan en compilación, no se resuelven con excepciones en tiempo de ejecución. Las excepciones actúan cuando el programa ya se está ejecutando y surge una situación no prevista."
+            },
+            {
+              "clave": "d",
+              "motivo": "El cifrado de datos sensibles pertenece al ámbito de la seguridad y protección de datos, no al manejo de excepciones. Las excepciones sirven para gestionar fallos y comportamientos anómalos del programa."
+            }
+          ],
+          "resumen_didactico": "La idea clave es que una excepción no existe para mejorar el rendimiento, sino para controlar fallos de forma profesional. Su misión es evitar que la aplicación se rompa sin control cuando aparece un problema.",
+          "ejemplo_practico": "Un usuario envía un formulario con una fecha mal escrita. En lugar de que la aplicación se cierre o muestre una pantalla en blanco, el sistema captura esa situación, informa del error y detiene o corrige el proceso de manera controlada.",
+          "conclusion_final": "La respuesta correcta es la a, porque la función primordial de las excepciones es detectar situaciones anómalas y tratarlas de forma controlada para mantener la robustez del software."
+        }
+      },
+      {
+        "id": "UT10-Q02",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "En la jerarquía de Java, ¿cuál es la clase raíz de la que heredan todos los objetos que pueden ser lanzados o capturados?",
+        "contexto": "Jerarquía general de excepciones y errores en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Exception"
+          },
+          {
+            "clave": "b",
+            "texto": "RuntimeException"
+          },
+          {
+            "clave": "c",
+            "texto": "Throwable"
+          },
+          {
+            "clave": "d",
+            "texto": "Error"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "En Java, la clase raíz de la jerarquía de todo lo que puede lanzarse o capturarse es Throwable. De ella descienden los dos grandes grupos: Error y Exception. Por eso, tanto las excepciones como los errores forman parte de una misma familia cuyo padre común es Throwable.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Exception no es la clase raíz de toda la jerarquía, sino solo una de las ramas que cuelgan de Throwable. Sirve para representar problemas del programa que el desarrollador puede gestionar."
+            },
+            {
+              "clave": "b",
+              "motivo": "RuntimeException está todavía más abajo en la jerarquía. Es una subclase de Exception, así que no puede ser la raíz."
+            },
+            {
+              "clave": "d",
+              "motivo": "Error tampoco es la raíz, sino la otra gran rama que también hereda de Throwable. Representa fallos graves del sistema o de la JVM."
+            }
+          ],
+          "resumen_didactico": "Si dibujas el árbol de excepciones en Java, arriba del todo está Throwable. Debajo aparecen dos ramas principales: Error y Exception. Todo lo que puede lanzarse o capturarse pertenece a esa familia.",
+          "ejemplo_practico": "Una ArithmeticException pertenece a la rama Exception, y un OutOfMemoryError pertenece a la rama Error, pero ambas descienden de Throwable. Por eso comparten un origen común dentro de la jerarquía.",
+          "conclusion_final": "La respuesta correcta es la c, porque Throwable es la clase raíz de la jerarquía de objetos que pueden ser lanzados o capturados en Java."
+        }
+      },
+      {
+        "id": "UT10-Q03",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué diferencia técnica fundamental existe entre las clases \"Error\" y \"Exception\" en el ecosistema de Java?",
+        "contexto": "Diferencia jerárquica y funcional entre las dos grandes ramas que descienden de Throwable.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Error es para fallos leves y Exception para fallos críticos del sistema."
+          },
+          {
+            "clave": "b",
+            "texto": "Error representa fallos graves del sistema o hardware difíciles de recuperar; Exception es para errores lógicos que el programa puede gestionar."
+          },
+          {
+            "clave": "c",
+            "texto": "Error solo ocurre en lenguajes como C++ y Exception es exclusiva de Java."
+          },
+          {
+            "clave": "d",
+            "texto": "Error se detecta en tiempo de compilación y Exception en tiempo de ejecución."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En la jerarquía de Java, Error y Exception son las dos grandes ramas que heredan de Throwable. Error representa problemas graves, catastróficos o ligados a la JVM, la memoria o incluso al entorno físico, y normalmente no se pueden recuperar desde el código de aplicación. Exception, en cambio, representa problemas derivados del funcionamiento del programa, como datos incorrectos, archivos que no existen o fallos lógicos que sí pueden ser gestionados por el desarrollador.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Está invertida. No es Error la que representa fallos leves, sino todo lo contrario: Error se asocia a problemas graves del sistema. Exception es la rama pensada para problemas gestionables por el programa."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es falsa. Tanto Error como Exception forman parte de Java. No existe esa separación por lenguajes."
+            },
+            {
+              "clave": "d",
+              "motivo": "No esa es la diferencia real. Error y Exception no se distinguen por compilación frente a ejecución, sino por la naturaleza del problema: Error implica fallos graves y Exception problemas del programa que pueden ser tratados."
+            }
+          ],
+          "resumen_didactico": "La clave es separar dos mundos: Error significa que algo muy serio ha fallado en la JVM o en el sistema; Exception significa que el programa ha entrado en una situación problemática que, muchas veces, sí puede controlarse.",
+          "ejemplo_practico": "Si una aplicación se queda sin memoria y aparece un OutOfMemoryError, el sistema está en una situación crítica difícil de salvar. En cambio, si intentas abrir un archivo que no existe y aparece una excepción, el programa puede capturarla y mostrar un mensaje al usuario sin colapsar.",
+          "conclusion_final": "La respuesta correcta es la b, porque Error representa fallos graves del sistema o del entorno difíciles de recuperar, mientras que Exception representa errores del programa que sí pueden gestionarse."
+        }
+      },
+      {
+        "id": "UT10-Q04",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cómo se denominan las excepciones que el programador está obligado a capturar o declarar para que el código pueda compilar?",
+        "contexto": "Clasificación de excepciones según la obligación del compilador en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Checked Exceptions (Excepciones verificadas)"
+          },
+          {
+            "clave": "b",
+            "texto": "Unchecked Exceptions"
+          },
+          {
+            "clave": "c",
+            "texto": "Syntax Errors"
+          },
+          {
+            "clave": "d",
+            "texto": "Runtime Exceptions"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Las Checked Exceptions son las excepciones que Java obliga a tratar. Eso significa que el programador debe capturarlas con try-catch o declararlas en la firma del método con throws para que el código compile. Son excepciones previsibles, normalmente ligadas a situaciones externas como lectura de ficheros, impresoras o recursos que pueden fallar.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Las Unchecked Exceptions no obligan al programador a capturarlas ni declararlas para compilar. Java no exige su tratamiento, aunque puedan aparecer en ejecución."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los errores de sintaxis no son excepciones. Son fallos del código detectados por el compilador antes de que el programa se ejecute."
+            },
+            {
+              "clave": "d",
+              "motivo": "Las Runtime Exceptions forman parte de las Unchecked Exceptions. Precisamente se caracterizan porque el compilador no obliga a capturarlas ni declararlas."
+            }
+          ],
+          "resumen_didactico": "Si Java no te deja compilar hasta que hagas algo con una excepción, estás delante de una Checked Exception. La obligación puede cumplirse de dos maneras: capturarla o propagarla con throws.",
+          "ejemplo_practico": "Si un método intenta leer un archivo, Java puede obligarte a escribir un try-catch o a poner throws IOException en la firma del método. Si no haces una de esas dos cosas, el código no compila.",
+          "conclusion_final": "La respuesta correcta es la a, porque las Checked Exceptions son las excepciones verificadas que el programador debe capturar o declarar para que el compilador permita generar el programa."
+        }
+      },
+      {
+        "id": "UT10-Q05",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cuál es la característica principal de las excepciones de tipo \"RuntimeException\" (Unchecked)?",
+        "contexto": "Clasificación de excepciones no verificadas en Java y comportamiento del compilador frente a ellas.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Impiden que el programa genere un archivo .class si no se gestionan."
+          },
+          {
+            "clave": "b",
+            "texto": "El compilador no obliga a capturarlas, ya que suelen derivar de errores de lógica del programador."
+          },
+          {
+            "clave": "c",
+            "texto": "Se utilizan exclusivamente para gestionar conexiones a bases de datos."
+          },
+          {
+            "clave": "d",
+            "texto": "Deben declararse obligatoriamente en la firma del método con \"throws\"."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Las RuntimeException forman parte de las Unchecked Exceptions. Su característica principal es que el compilador no obliga a capturarlas ni a declararlas con throws. Normalmente indican errores de lógica del programador, como acceder a un índice inexistente, usar un objeto null o dividir entre cero.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Eso describe el comportamiento de las Checked Exceptions, no de las RuntimeException. Las unchecked no bloquean la compilación si no se gestionan."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es falso. Las RuntimeException no se reservan para bases de datos. Pueden aparecer en muchos contextos y suelen relacionarse con fallos de lógica general del programa."
+            },
+            {
+              "clave": "d",
+              "motivo": "No deben declararse obligatoriamente con throws. Esa obligación corresponde a las Checked Exceptions, mientras que las RuntimeException pueden aparecer sin que el compilador exija ese aviso."
+            }
+          ],
+          "resumen_didactico": "Si una excepción pertenece a RuntimeException, Java entiende que normalmente el problema está en la lógica del código y no te fuerza a capturarla. No porque no sea importante, sino porque lo correcto suele ser corregir el fallo en el programa.",
+          "ejemplo_practico": "Si tienes un array de 3 posiciones y accedes a la posición 8, se lanzará una ArrayIndexOutOfBoundsException. El compilador no te obligó a capturarla, porque espera que seas tú quien programe bien la lógica para no salirte del array.",
+          "conclusion_final": "La respuesta correcta es la b, porque las RuntimeException son excepciones no verificadas que el compilador no obliga a capturar y que suelen derivar de errores de lógica del programador."
+        }
+      },
+      {
+        "id": "UT10-Q06",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué bloque de código se utiliza para envolver las instrucciones que son susceptibles de provocar una excepción?",
+        "contexto": "Estructura básica del manejo de excepciones en Java mediante try-catch-finally.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "catch"
+          },
+          {
+            "clave": "b",
+            "texto": "throw"
+          },
+          {
+            "clave": "c",
+            "texto": "try"
+          },
+          {
+            "clave": "d",
+            "texto": "finally"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El bloque try es el que se utiliza para envolver el código que puede provocar una excepción. Es la zona de riesgo donde colocamos las instrucciones que pueden fallar durante la ejecución. Si dentro de ese bloque ocurre una excepción, entonces el control pasa al bloque catch correspondiente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El bloque catch no envuelve el código peligroso, sino que captura y trata la excepción después de que esta se produzca en el try."
+            },
+            {
+              "clave": "b",
+              "motivo": "throw no es un bloque, sino una instrucción que sirve para lanzar manualmente una excepción."
+            },
+            {
+              "clave": "d",
+              "motivo": "finally tampoco envuelve la zona de riesgo. Su función es ejecutar código de limpieza o cierre de recursos, ocurra o no una excepción."
+            }
+          ],
+          "resumen_didactico": "En el manejo de excepciones, try es el bloque donde colocas el código que podría fallar. Primero se intenta ejecutar ese código; si algo explota, entra en juego catch.",
+          "ejemplo_practico": "Si vas a dividir dos números y uno de ellos podría ser cero, esa operación se coloca dentro de un bloque try. Así, si se produce una ArithmeticException, puedes capturarla después con catch.",
+          "conclusion_final": "La respuesta correcta es la c, porque el bloque try es el que contiene las instrucciones susceptibles de provocar una excepción."
+        }
+      },
+      
+      {
+        "id": "UT10-Q07",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cuál es la misión del bloque \"catch\" dentro de una estructura de control de errores?",
+        "contexto": "Función del bloque catch en la estructura try-catch-finally de Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Reiniciar la Máquina Virtual de Java (JVM) automáticamente."
+          },
+          {
+            "clave": "b",
+            "texto": "Ejecutar el código principal si no hay errores."
+          },
+          {
+            "clave": "c",
+            "texto": "Capturar el objeto de excepción lanzado y ejecutar una solución o aviso específico."
+          },
+          {
+            "clave": "d",
+            "texto": "Borrar los archivos temporales creados por la aplicación."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La misión del bloque catch es capturar la excepción que se ha producido en el bloque try y aplicar un tratamiento concreto. Ese tratamiento puede consistir en mostrar un mensaje, registrar el error, tomar una medida correctiva o interrumpir el proceso de forma controlada. Es, por tanto, la parte de la estructura que se encarga de reaccionar ante el fallo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El bloque catch no reinicia la JVM. Su función es manejar excepciones dentro del flujo del programa, no controlar el arranque o reinicio del entorno de ejecución."
+            },
+            {
+              "clave": "b",
+              "motivo": "El código principal se ejecuta dentro del bloque try. El catch solo entra en acción cuando en ese try se produce una excepción."
+            },
+            {
+              "clave": "d",
+              "motivo": "Borrar archivos temporales o liberar recursos suele relacionarse más con finally, no con catch. El catch se centra en capturar y tratar el error detectado."
+            }
+          ],
+          "resumen_didactico": "Piensa en catch como la red de seguridad del programa. Si el código del try falla, catch recoge ese problema y permite responder de forma controlada en lugar de dejar que la aplicación se rompa bruscamente.",
+          "ejemplo_practico": "Si en un bloque try intentas dividir entre cero, se lanzará una ArithmeticException. El catch puede capturar esa excepción y mostrar un mensaje como: \"No se puede dividir entre cero\", evitando que la aplicación termine de forma abrupta.",
+          "conclusion_final": "La respuesta correcta es la c, porque el bloque catch se encarga de capturar la excepción lanzada y ejecutar la respuesta o tratamiento adecuado para ese error."
+        }
+      },
+      {
+        "id": "UT10-Q08",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué propiedad del bloque \"finally\" lo hace indispensable para la gestión de recursos críticos como ficheros o redes?",
+        "contexto": "Uso del bloque finally para garantizar la liberación de recursos en estructuras de manejo de excepciones.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Solo se ejecuta si ocurre un error catastrófico."
+          },
+          {
+            "clave": "b",
+            "texto": "Permite ignorar las excepciones verificadas del sistema."
+          },
+          {
+            "clave": "c",
+            "texto": "Se ejecuta siempre, ocurra o no una excepción, garantizando el cierre de recursos."
+          },
+          {
+            "clave": "d",
+            "texto": "Convierte las variables locales en constantes globales."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La característica esencial de finally es que se ejecuta siempre, tanto si en el bloque try ocurre una excepción como si no. Por eso es el lugar adecuado para cerrar ficheros, conexiones de red, bases de datos u otros recursos que no deben quedar abiertos aunque el programa falle en mitad del proceso.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque finally no se ejecuta solo ante fallos graves, sino en condiciones normales y también cuando hay excepciones."
+            },
+            {
+              "clave": "b",
+              "motivo": "finally no sirve para ignorar excepciones verificadas. Las checked exceptions siguen debiendo capturarse o declararse según corresponda."
+            },
+            {
+              "clave": "d",
+              "motivo": "No tiene relación con la finalidad de finally. Este bloque no altera el alcance ni la naturaleza de las variables."
+            }
+          ],
+          "resumen_didactico": "finally es importante porque asegura la limpieza del programa. Si abriste un recurso, este bloque te permite cerrarlo pase lo que pase, evitando dejar conexiones o archivos colgados.",
+          "ejemplo_practico": "Imagina que abres un fichero para leer datos. Aunque durante la lectura se produzca un error, el bloque finally puede ejecutar el cierre del fichero para que no quede bloqueado ni consuma recursos innecesariamente.",
+          "conclusion_final": "La respuesta correcta es la c, porque finally se ejecuta siempre y por eso garantiza el cierre de recursos críticos aunque ocurra una excepción."
+        }
+      },
+      {
+        "id": "UT10-Q09",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "En el manejo de múltiples bloques \"catch\", ¿cuál es la regla de oro respecto al orden de las excepciones?",
+        "contexto": "Orden correcto de los bloques catch cuando se manejan varias excepciones en una misma estructura try-catch.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Se deben colocar de la más específica (Hijo) a la más general (Padre) para evitar que la genérica absorba a todas."
+          },
+          {
+            "clave": "b",
+            "texto": "Se deben colocar de la más general (Padre) a la más específica (Hijo)."
+          },
+          {
+            "clave": "c",
+            "texto": "El orden es irrelevante para el compilador de Java."
+          },
+          {
+            "clave": "d",
+            "texto": "Solo se permite usar un bloque catch por cada bloque try."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Cuando existen varios bloques catch, deben ordenarse desde la excepción más específica hasta la más general. La razón es que si colocas primero una excepción genérica, como Exception, capturará también las excepciones hijas y los catch más concretos dejarán de tener sentido. Por eso la regla de oro es: primero las hijas, al final los padres.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque si colocas primero la excepción más general, esta capturará también los errores más específicos y no permitirá que los catch concretos actúen correctamente."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es falso. El orden sí importa en Java, tanto a nivel lógico como para el compilador, porque un catch genérico antes que uno específico puede volver inalcanzable al segundo."
+            },
+            {
+              "clave": "d",
+              "motivo": "También es incorrecta. Un mismo bloque try puede ir seguido de varios catch, precisamente para tratar distintos tipos de excepción."
+            }
+          ],
+          "resumen_didactico": "En una cadena de catch, Java necesita que pongas primero los errores más concretos y dejes para el final los más amplios. Así cada tipo de fallo recibe su tratamiento adecuado.",
+          "ejemplo_practico": "Si un bloque try puede lanzar ArithmeticException y también una excepción más genérica como Exception, debes poner primero catch (ArithmeticException e) y después catch (Exception e). Si lo haces al revés, el catch genérico se lo quedará todo.",
+          "conclusion_final": "La respuesta correcta es la a, porque en múltiples bloques catch el orden correcto va de la excepción más específica a la más general."
+        }
+      },
+      {
+        "id": "UT10-Q10",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué palabra clave se utiliza para lanzar manualmente una excepción en un punto concreto del código?",
+        "contexto": "Diferencia entre capturar, declarar y lanzar excepciones en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "catch"
+          },
+          {
+            "clave": "b",
+            "texto": "throws"
+          },
+          {
+            "clave": "c",
+            "texto": "new"
+          },
+          {
+            "clave": "d",
+            "texto": "throw"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La palabra clave que se usa para lanzar manualmente una excepción es throw. Se utiliza dentro del cuerpo del método, en el punto exacto donde el programador detecta una situación incorrecta o una regla de negocio incumplida, y quiere provocar el error de forma explícita.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "catch no sirve para lanzar excepciones, sino para capturarlas y tratarlas después de que se hayan producido en un bloque try."
+            },
+            {
+              "clave": "b",
+              "motivo": "throws no lanza la excepción. Solo declara en la firma del método que ese método puede propagar una excepción hacia quien lo llame."
+            },
+            {
+              "clave": "c",
+              "motivo": "new crea una instancia de una excepción, pero por sí sola no la lanza. Para lanzarla realmente hace falta usar throw delante."
+            }
+          ],
+          "resumen_didactico": "En Java, throw es la acción de lanzar el error. Si detectas que algo no cumple las reglas del programa, usas throw para interrumpir el flujo y generar la excepción en ese momento.",
+          "ejemplo_practico": "Si en un sistema de login la contraseña llega vacía, puedes escribir: throw new IllegalArgumentException(\"La contraseña no puede estar vacía\");. Ahí estás lanzando manualmente la excepción porque la regla de negocio se ha incumplido.",
+          "conclusion_final": "La respuesta correcta es la d, porque throw es la palabra clave que se utiliza para lanzar manualmente una excepción en un punto concreto del código."
+        }
+      },
+      {
+        "id": "UT10-Q11",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Para qué sirve la palabra clave \"throws\" en la firma de un método profesional?",
+        "contexto": "Uso de throws en la declaración de métodos para propagar excepciones en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Para capturar el error y mostrar un mensaje en consola."
+          },
+          {
+            "clave": "b",
+            "texto": "Para indicar que el método devuelve un valor de tipo booleano."
+          },
+          {
+            "clave": "c",
+            "texto": "Para delegar la responsabilidad de gestionar la excepción a quien llame al método."
+          },
+          {
+            "clave": "d",
+            "texto": "Para prohibir que el método sea sobrescrito por clases hijas."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La palabra clave throws se usa en la firma de un método para indicar que ese método no va a gestionar una determinada excepción, sino que la propaga hacia arriba en la pila de llamadas. En otras palabras, delega la responsabilidad de tratarla al método o bloque que lo invoque.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Capturar una excepción corresponde al bloque catch, no a throws. throws no trata el error, solo avisa de que puede propagarse."
+            },
+            {
+              "clave": "b",
+              "motivo": "El tipo de retorno de un método se indica con tipos como int, String o boolean, pero no con throws. Esa palabra clave no tiene relación con el valor devuelto."
+            },
+            {
+              "clave": "d",
+              "motivo": "La prohibición de sobrescritura se relaciona con final, no con throws. throws solo interviene en la gestión o propagación de excepciones."
+            }
+          ],
+          "resumen_didactico": "throws actúa como una advertencia en la cabecera del método: este método puede lanzar una excepción y no la resuelve aquí. Quien lo use debe estar preparado para gestionarla.",
+          "ejemplo_practico": "Si un método lee un archivo y puede fallar, puedes escribir: public void leerDatos() throws IOException. Eso significa que leerDatos no captura la IOException, sino que deja esa responsabilidad al método que lo llame.",
+          "conclusion_final": "La respuesta correcta es la c, porque throws sirve para delegar o propagar la responsabilidad de gestionar una excepción a quien invoque el método."
+        }
+      },
+      {
+        "id": "UT10-Q12",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "Al heredar de la clase \"Exception\" para crear una excepción personalizada, ¿qué beneficio obtiene la arquitectura de la empresa?",
+        "contexto": "Ventaja de crear excepciones personalizadas dentro de una aplicación profesional basada en reglas de negocio.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El programa se vuelve inmune a los virus informáticos."
+          },
+          {
+            "clave": "b",
+            "texto": "Se reduce el consumo de memoria RAM del servidor."
+          },
+          {
+            "clave": "c",
+            "texto": "Se eliminan los bloques finally de todo el proyecto."
+          },
+          {
+            "clave": "d",
+            "texto": "Se dota al código de semántica de negocio (ej. SaldoInsuficienteException), mejorando la claridad y el mantenimiento."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Crear una excepción personalizada heredando de Exception permite que el código exprese errores propios del negocio con mayor precisión. En lugar de usar excepciones genéricas, la arquitectura gana semántica y claridad, porque otro programador puede entender rápidamente qué tipo de problema representa esa excepción. Ejemplos como SaldoInsuficienteException u OperacionException hacen que el sistema hable el lenguaje de la empresa y sea más fácil de mantener.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Las excepciones personalizadas no tienen ninguna relación con la inmunidad frente a virus o amenazas informáticas. Eso pertenece al ámbito de la ciberseguridad, no al diseño semántico del código."
+            },
+            {
+              "clave": "b",
+              "motivo": "Crear excepciones personalizadas no tiene como objetivo reducir el consumo de memoria RAM. Su beneficio principal está en la expresividad, organización y mantenimiento del software."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los bloques finally siguen siendo necesarios cuando hay que liberar recursos. Definir excepciones propias no elimina esa necesidad."
+            }
+          ],
+          "resumen_didactico": "Una excepción personalizada sirve para que el programa exprese problemas reales del negocio con nombres claros. Eso hace el código más legible, más profesional y más fácil de mantener por otros desarrolladores.",
+          "ejemplo_practico": "En una app bancaria, no es lo mismo capturar una Exception genérica que encontrar un catch (SaldoInsuficienteException e). En el segundo caso, cualquier programador entiende al instante qué regla de negocio ha fallado.",
+          "conclusion_final": "La respuesta correcta es la d, porque crear excepciones personalizadas aporta semántica de negocio al código y mejora la claridad, la comprensión y el mantenimiento de la arquitectura."
+        }
+      },
+      {
+        "id": "UT10-Q13",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué información proporciona el método \"printStackTrace()\" durante la fase de depuración?",
+        "contexto": "Utilidad de los métodos de una excepción para analizar fallos durante la depuración del programa.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Un informe detallado (mapa forense) con la clase, el método y la línea exacta donde ocurrió el fallo."
+          },
+          {
+            "clave": "b",
+            "texto": "El nombre comercial del software y su versión."
+          },
+          {
+            "clave": "c",
+            "texto": "La lista de usuarios conectados al sistema en ese momento."
+          },
+          {
+            "clave": "d",
+            "texto": "El tiempo que falta para que el procesador se sobrecaliente."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El método printStackTrace() imprime en consola toda la traza de la pila, mostrando el recorrido que siguió el programa hasta que se produjo el error. Esa información incluye la clase, el método y la línea donde ocurrió el fallo, además de la cadena de llamadas que llevó hasta ese punto. Por eso se considera una herramienta fundamental de depuración.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "printStackTrace() no informa sobre el nombre comercial del software ni sobre su versión. Su finalidad es mostrar la traza técnica del error."
+            },
+            {
+              "clave": "c",
+              "motivo": "La lista de usuarios conectados pertenece a la lógica de negocio o a sistemas de monitorización, no a la información que ofrece una excepción con printStackTrace()."
+            },
+            {
+              "clave": "d",
+              "motivo": "Ese dato no tiene relación con el manejo de excepciones en Java. printStackTrace() se centra en el análisis del fallo dentro del código."
+            }
+          ],
+          "resumen_didactico": "printStackTrace() actúa como la caja negra del error. Te enseña por dónde pasó el programa hasta estrellarse y te ayuda a localizar el punto exacto del problema.",
+          "ejemplo_practico": "Si se produce una ArithmeticException por dividir entre cero, printStackTrace() puede mostrar en qué clase ocurrió, en qué método y en qué línea exacta, además de indicar qué métodos llamaron a ese código antes de fallar.",
+          "conclusion_final": "La respuesta correcta es la a, porque printStackTrace() proporciona un mapa detallado del error con la clase, el método y la línea exacta donde se produjo el fallo."
+        }
+      },
+      {
+        "id": "UT10-Q14",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Por qué capturar la clase genérica \"Exception\" para todo tipo de fallos se considera una mala práctica (anti-patrón)?",
+        "contexto": "Uso indebido de capturas genéricas en estructuras try-catch y pérdida de precisión en el tratamiento de errores.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Porque hace que el código sea demasiado corto."
+          },
+          {
+            "clave": "b",
+            "texto": "Porque el Garbage Collector deja de funcionar."
+          },
+          {
+            "clave": "c",
+            "texto": "Porque oculta errores específicos y dificulta dar una solución precisa a cada problema (pescar con dinamita)."
+          },
+          {
+            "clave": "d",
+            "texto": "Porque obliga al programador a usar la terminal de comandos."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Capturar la clase genérica Exception para todo se considera una mala práctica porque engloba fallos muy distintos bajo un mismo tratamiento. Eso hace que se pierda precisión, oculta la naturaleza real del error y dificulta aplicar una respuesta específica. El enfoque correcto es capturar la excepción más concreta posible, para poder entender mejor el problema y ofrecer una solución adaptada.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Que el código quede más corto no es el problema real. De hecho, a veces capturar Exception parece más cómodo, pero precisamente esa comodidad empeora la calidad del diseño."
+            },
+            {
+              "clave": "b",
+              "motivo": "El funcionamiento del Garbage Collector no depende de capturar Exception. Son conceptos distintos dentro del ecosistema de Java."
+            },
+            {
+              "clave": "d",
+              "motivo": "Capturar Exception no obliga a usar la terminal. Esa opción no tiene relación con el manejo técnico de excepciones."
+            }
+          ],
+          "resumen_didactico": "Si capturas Exception para todo, metes en el mismo saco errores matemáticos, errores de archivos, errores de formato y muchos más. Eso impide tratar cada caso con claridad y convierte el manejo de errores en algo borroso y poco profesional.",
+          "ejemplo_practico": "No es lo mismo capturar NumberFormatException para informar al usuario de que ha escrito mal un número, que capturar Exception y mostrar solo un genérico \"Algo ha fallado\". En el segundo caso, el usuario recibe menos ayuda y el programador pierde información valiosa para depurar.",
+          "conclusion_final": "La respuesta correcta es la c, porque capturar Exception de forma genérica oculta errores específicos y dificulta aplicar una solución precisa y mantenible a cada problema."
+        }
+      },
+      {
+        "id": "UT10-Q15",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cuál es la forma más eficiente y económica en términos de rendimiento para evitar excepciones matemáticas como la división por cero?",
+        "contexto": "Buenas prácticas para prevenir excepciones evitables y reducir el coste de tratamiento de errores en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Reiniciar el servidor antes de cada cálculo."
+          },
+          {
+            "clave": "b",
+            "texto": "Usar siempre un bloque try-catch."
+          },
+          {
+            "clave": "c",
+            "texto": "Validar los datos previamente con un condicional \"if\" antes de realizar la operación."
+          },
+          {
+            "clave": "d",
+            "texto": "Convertir todos los números a tipo String."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La forma más eficiente de evitar excepciones como la división por cero es validar antes los datos con un condicional if. El temario insiste en que no se debe abusar de las excepciones y que, en muchos casos, es mejor comprobar previamente si la operación es válida en lugar de esperar a que falle y capturar después la excepción. Esto hace el código más predecible y más económico en rendimiento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Reiniciar el servidor no tiene sentido como estrategia para evitar una división por cero. El problema no está en el servidor, sino en la lógica del cálculo."
+            },
+            {
+              "clave": "b",
+              "motivo": "Usar siempre try-catch no es la opción más eficiente. Para errores previsibles como dividir entre cero, el enfoque correcto es validar antes con if y no esperar a que el programa falle."
+            },
+            {
+              "clave": "d",
+              "motivo": "Convertir los números a String no evita el problema matemático. Solo cambia su representación, pero no soluciona la lógica del cálculo."
+            }
+          ],
+          "resumen_didactico": "Si un error se puede prever fácilmente, lo mejor no es capturarlo después, sino impedir que ocurra. En este caso, comprobar antes que el divisor no sea cero es más limpio, más rápido y más profesional.",
+          "ejemplo_practico": "Antes de hacer resultado = total / divisor, puedes escribir: if (divisor != 0) { resultado = total / divisor; } else { System.out.println(\"No se puede dividir entre cero\"); }. Así evitas lanzar la excepción y controlas la situación antes de que explote.",
+          "conclusion_final": "La respuesta correcta es la c, porque validar previamente con un if es la forma más eficiente y económica de evitar excepciones matemáticas previsibles como la división por cero."
+        }
+      },
+      {
+        "id": "UT10-Q16",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "En un entorno de producción, ¿qué ocurre con los recursos (como una conexión a base de datos) si se abre una puerta y no se cierra en un bloque \"finally\"?",
+        "contexto": "Importancia del bloque finally para liberar recursos críticos en aplicaciones reales.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Java los cierra solos a los 5 segundos."
+          },
+          {
+            "clave": "b",
+            "texto": "El sistema operativo Windows se reinicia por seguridad."
+          },
+          {
+            "clave": "c",
+            "texto": "Se generan recursos \"zombies\" que consumen memoria innecesariamente hasta colapsar el sistema."
+          },
+          {
+            "clave": "d",
+            "texto": "Los datos se guardan automáticamente en la nube."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Si un recurso como un fichero, una conexión de red o una conexión a base de datos se abre y no se cierra correctamente, puede quedar activo consumiendo memoria y recursos del sistema. Por eso el bloque finally es tan importante: garantiza que ese cierre se ejecute ocurra o no una excepción. En entornos reales, no liberar recursos puede dejar conexiones \"zombie\" y deteriorar el rendimiento hasta provocar bloqueos o colapsos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No existe una regla general por la que Java cierre automáticamente todos los recursos abiertos a los 5 segundos. Confiar en eso es una mala práctica."
+            },
+            {
+              "clave": "b",
+              "motivo": "El sistema operativo no reinicia por este motivo. El problema real es que los recursos quedan abiertos y siguen consumiendo memoria o conexiones."
+            },
+            {
+              "clave": "d",
+              "motivo": "Guardar datos en la nube no tiene relación con la liberación de recursos mediante finally. Son conceptos distintos."
+            }
+          ],
+          "resumen_didactico": "Abrir un recurso y no cerrarlo es como dejar grifos abiertos en una instalación: poco a poco se desperdician recursos hasta generar problemas serios. finally existe precisamente para asegurar ese cierre.",
+          "ejemplo_practico": "Si una aplicación abre una conexión a base de datos para consultar pedidos y ocurre un error antes de cerrarla, esa conexión puede quedar ocupando memoria y bloqueando nuevas peticiones. Si esto se repite muchas veces, el sistema termina saturado.",
+          "conclusion_final": "La respuesta correcta es la c, porque no cerrar recursos en finally puede dejar recursos zombie consumiendo memoria y degradando el sistema hasta provocar fallos graves."
+        }
+      },
+      {
+        "id": "UT10-Q17",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué significa que una excepción sea \"propagada\" en la pila de llamadas?",
+        "contexto": "Concepto de propagación de excepciones a través de los métodos que se van invocando en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Que el error se borra de la memoria RAM automáticamente."
+          },
+          {
+            "clave": "b",
+            "texto": "Que el error se multiplica en cada línea de código."
+          },
+          {
+            "clave": "c",
+            "texto": "Que el error se envía por correo electrónico al cliente."
+          },
+          {
+            "clave": "d",
+            "texto": "Que el error viaja hacia atrás por los métodos que se fueron llamando hasta encontrar a alguien con autoridad para gestionarlo."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Cuando una excepción no se captura en el método donde se produce, esta se propaga por la pila de llamadas. Eso significa que sube hacia atrás por los métodos que fueron participando en la ejecución, desde el que lanzó el error hasta los que lo llamaron, hasta que encuentra un bloque capaz de gestionarla o llega al main. Propagar una excepción es, por tanto, delegar su tratamiento a un nivel superior del programa.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La propagación no significa que el error desaparezca de la memoria automáticamente. El problema sigue existiendo y simplemente sube por la cadena de llamadas."
+            },
+            {
+              "clave": "b",
+              "motivo": "La excepción no se multiplica en cada línea de código. Lo que ocurre es que se transmite hacia los métodos superiores que participaron en la llamada."
+            },
+            {
+              "clave": "c",
+              "motivo": "La propagación no tiene relación con enviar correos al cliente. Es un mecanismo interno del flujo de ejecución del programa."
+            }
+          ],
+          "resumen_didactico": "Propagar una excepción significa pasarle el problema al método de arriba. Si el método actual no lo resuelve, la excepción sube por la pila de llamadas hasta que alguien la capture.",
+          "ejemplo_practico": "Si calcularBilletes() lanza una excepción y no la captura, esa excepción sube a sacarDinero(), y si tampoco se trata allí, seguirá subiendo hasta main(). Ese recorrido por los métodos es la propagación.",
+          "conclusion_final": "La respuesta correcta es la d, porque una excepción propagada viaja hacia atrás por la pila de llamadas hasta encontrar un punto del programa que tenga autoridad para gestionarla."
+        }
+      },
+      {
+        "id": "UT10-Q18",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cuál es el constructor recomendado al crear una excepción propia para poder enviar información sobre la causa del error?",
+        "contexto": "Diseño de excepciones personalizadas en Java con capacidad para conservar el mensaje y encadenar la causa original del fallo.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Un constructor que no reciba parámetros."
+          },
+          {
+            "clave": "b",
+            "texto": "Un constructor que devuelva un valor entero."
+          },
+          {
+            "clave": "c",
+            "texto": "Un constructor que sea de visibilidad privada."
+          },
+          {
+            "clave": "d",
+            "texto": "Un constructor que reciba un mensaje String y un objeto Throwable (causa)."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Al crear una excepción personalizada, lo recomendable es disponer de un constructor que permita pasar tanto un mensaje descriptivo como la causa original del error. De ese modo, la excepción propia conserva la semántica de negocio y además mantiene el encadenamiento del fallo real, algo muy útil para depurar y registrar errores. En Java esto suele hacerse con un constructor del tipo (String mensaje, Throwable causa) que delega en super(mensaje, causa).",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Un constructor sin parámetros puede existir, pero no permite enviar información útil sobre qué ha ocurrido ni conservar la causa original del error."
+            },
+            {
+              "clave": "b",
+              "motivo": "Un constructor no devuelve valores enteros. Su función es inicializar el objeto excepción, no retornar datos numéricos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Que el constructor sea privado no ayuda a transmitir la causa del error. De hecho, normalmente dificultaría crear la excepción desde otras partes del programa."
+            }
+          ],
+          "resumen_didactico": "Si quieres que tu excepción personalizada sea realmente útil, no basta con darle nombre. También conviene que pueda guardar un mensaje claro y enlazar el error original que la provocó.",
+          "ejemplo_practico": "En una app bancaria podrías crear SaldoInsuficienteException(String mensaje, Throwable causa). Así, si el problema de negocio se originó tras un fallo previo en otro componente, tu excepción conserva el mensaje de negocio y también la causa técnica real.",
+          "conclusion_final": "La respuesta correcta es la d, porque el constructor que recibe un String y un Throwable permite crear excepciones personalizadas más completas, expresivas y fáciles de depurar."
+        }
+      },
+      {
+        "id": "UT10-Q19",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué excepción de tiempo de ejecución (RuntimeException) es común al intentar acceder a un método de un objeto que es \"null\"?",
+        "contexto": "Identificación de excepciones comunes de tipo RuntimeException relacionadas con referencias nulas en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "ArithmeticException"
+          },
+          {
+            "clave": "b",
+            "texto": "FileNotFoundException"
+          },
+          {
+            "clave": "c",
+            "texto": "NullPointerException"
+          },
+          {
+            "clave": "d",
+            "texto": "IOException"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La excepción que se produce habitualmente cuando intentas usar un objeto que vale null es NullPointerException. Se trata de una RuntimeException, es decir, una excepción no verificada que suele indicar un fallo de lógica del programador, porque el código intenta llamar a un método o acceder a un atributo de una referencia que no apunta a ningún objeto real.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "ArithmeticException se relaciona con errores matemáticos, como una división entre cero, no con referencias nulas."
+            },
+            {
+              "clave": "b",
+              "motivo": "FileNotFoundException aparece cuando se intenta acceder a un archivo que no existe. No tiene relación con invocar métodos sobre objetos null."
+            },
+            {
+              "clave": "d",
+              "motivo": "IOException se asocia a problemas de entrada/salida, como lectura o escritura de archivos o flujos, no al uso de referencias nulas."
+            }
+          ],
+          "resumen_didactico": "Si una variable referencia no apunta a ningún objeto y aun así intentas usarla como si existiera, Java lanza una NullPointerException. Es uno de los errores más comunes en programación orientada a objetos.",
+          "ejemplo_practico": "Si escribes String nombre = null; y después haces nombre.length();, el programa lanzará una NullPointerException porque nombre no referencia a ningún objeto String real.",
+          "conclusion_final": "La respuesta correcta es la c, porque NullPointerException es la RuntimeException típica que aparece al intentar usar un método o atributo sobre un objeto que es null."
+        }
+      },
+      {
+        "id": "UT10-Q20",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cuál es el propósito del mecanismo \"Try-with-resources\" introducido en versiones modernas de Java?",
+        "contexto": "Uso de estructuras modernas de Java para gestionar recursos como ficheros, streams o conexiones de forma segura y automática.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Aumentar la resolución de las imágenes del programa."
+          },
+          {
+            "clave": "b",
+            "texto": "Gestionar el cierre automático de recursos que implementan la interfaz AutoCloseable sin necesidad de un finally explícito."
+          },
+          {
+            "clave": "c",
+            "texto": "Permitir ejecutar el código sin instalar el JDK."
+          },
+          {
+            "clave": "d",
+            "texto": "Compartir las variables locales entre diferentes hilos de ejecución."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El mecanismo try-with-resources sirve para gestionar automáticamente el cierre de recursos como ficheros, flujos, lectores o conexiones, siempre que implementen AutoCloseable. Su ventaja es que evita tener que escribir un bloque finally explícito solo para cerrar esos recursos, haciendo el código más seguro, limpio y menos propenso a fugas de recursos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Try-with-resources no tiene ninguna relación con gráficos ni con la resolución de imágenes. Su finalidad está en la gestión automática de recursos del programa."
+            },
+            {
+              "clave": "c",
+              "motivo": "Este mecanismo no permite ejecutar Java sin JDK. Eso depende del entorno de ejecución, no del manejo de excepciones ni del cierre de recursos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Try-with-resources no sirve para compartir variables entre hilos. Ese tema pertenece a concurrencia y sincronización, no al control de recursos."
+            }
+          ],
+          "resumen_didactico": "Try-with-resources es una forma moderna de abrir recursos y asegurarte de que se cierren solos al terminar el bloque, incluso si ocurre una excepción. Es como un finally automático enfocado al cierre seguro.",
+          "ejemplo_practico": "Si abres un BufferedReader para leer un archivo, puedes declararlo dentro del try y Java se encargará de cerrarlo automáticamente al salir del bloque, sin que tengas que escribir reader.close() dentro de finally.",
+          "conclusion_final": "La respuesta correcta es la b, porque try-with-resources existe para cerrar automáticamente recursos AutoCloseable y evitar fugas de memoria o conexiones abiertas sin depender de un finally explícito."
+        }
+      },
+      {
+        "id": "UT10-Q21",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "Si un método declara \"throws IOException\", ¿qué debe hacer obligatoriamente el método que lo invoca?",
+        "contexto": "Obligaciones del código llamador cuando un método propaga una checked exception en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Borrar el código que genera el error."
+          },
+          {
+            "clave": "b",
+            "texto": "Capturar la excepción con try-catch o volver a declararla con throws en su propia firma."
+          },
+          {
+            "clave": "c",
+            "texto": "Cambiar el tipo de dato de retorno a void."
+          },
+          {
+            "clave": "d",
+            "texto": "Reiniciar la computadora del usuario."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Si un método declara throws IOException, está avisando de que puede propagar una checked exception. Por tanto, el método que lo invoca tiene una obligación: o capturar esa excepción con un bloque try-catch, o volver a declararla con throws en su propia firma para seguir propagándola hacia arriba en la pila de llamadas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No es obligatorio borrar el código. Lo obligatorio es gestionar o propagar correctamente la excepción para que el programa compile y tenga un tratamiento adecuado del error."
+            },
+            {
+              "clave": "c",
+              "motivo": "El tipo de retorno del método no tiene relación con la obligación de tratar una IOException. throws afecta a la propagación de excepciones, no al valor devuelto."
+            },
+            {
+              "clave": "d",
+              "motivo": "Reiniciar el equipo del usuario no tiene ninguna relación con el contrato que impone una checked exception en Java."
+            }
+          ],
+          "resumen_didactico": "Cuando ves throws IOException, debes pensar: este método puede lanzar un error que Java me obliga a tener en cuenta. Si lo llamo, tengo que decidir si lo gestiono aquí con try-catch o si se lo paso al siguiente nivel con throws.",
+          "ejemplo_practico": "Si leerArchivo() declara throws IOException y tú lo llamas desde main, puedes hacer dos cosas: envolver la llamada en try-catch para tratar el fallo, o escribir también throws IOException en la firma de main para dejar que la excepción siga subiendo.",
+          "conclusion_final": "La respuesta correcta es la b, porque ante una IOException propagada el método llamador está obligado a capturarla con try-catch o volver a declararla con throws."
+        }
+      },
+      {
+        "id": "UT10-Q22",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué sucede con la ejecución de un bloque \"try\" en el momento exacto en que se produce una excepción?",
+        "contexto": "Comportamiento del flujo de ejecución cuando una excepción aparece dentro de un bloque try.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El programa vuelve a empezar desde el método main."
+          },
+          {
+            "clave": "b",
+            "texto": "La ejecución del bloque \"try\" se detiene inmediatamente y el control pasa al bloque \"catch\" correspondiente."
+          },
+          {
+            "clave": "c",
+            "texto": "El bloque \"try\" se repite en un bucle infinito."
+          },
+          {
+            "clave": "d",
+            "texto": "El programa ignora el error y sigue con la línea siguiente."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Cuando dentro de un bloque try se produce una excepción, la ejecución normal de ese bloque se interrumpe en ese mismo punto. Las líneas restantes del try ya no se ejecutan, y el control pasa al bloque catch que sea compatible con esa excepción. Esa es precisamente la lógica del manejo de errores en Java: parar el flujo normal y saltar al tratamiento del problema.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El programa no vuelve automáticamente a empezar desde main. Lo que ocurre es un salto de control desde el try al catch correspondiente, o una propagación hacia arriba si no se captura."
+            },
+            {
+              "clave": "c",
+              "motivo": "El bloque try no se repite automáticamente. Una excepción no genera un bucle, sino una interrupción del flujo normal."
+            },
+            {
+              "clave": "d",
+              "motivo": "El programa no ignora el error ni continúa con la línea siguiente dentro del try. En cuanto la excepción aparece, la ejecución de ese bloque se detiene."
+            }
+          ],
+          "resumen_didactico": "Una excepción corta el camino normal del try. Desde el instante en que aparece, Java deja de ejecutar ese bloque y busca el catch adecuado para tratar el error.",
+          "ejemplo_practico": "Si dentro de un try tienes tres instrucciones y en la segunda haces una división entre cero, la tercera ya no se ejecutará. En ese momento Java saltará al catch de ArithmeticException, si existe.",
+          "conclusion_final": "La respuesta correcta es la b, porque una excepción detiene inmediatamente la ejecución del bloque try y transfiere el control al bloque catch correspondiente."
+        }
+      },
+      {
+        "id": "UT10-Q23",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cuál es la diferencia entre \"throw\" (en singular) y \"throws\" (en plural) en el código Java?",
+        "contexto": "Diferencia entre lanzar manualmente una excepción y declararla en la firma de un método.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"throw\" se usa en las clases e \"throws\" en las interfaces."
+          },
+          {
+            "clave": "b",
+            "texto": "\"throw\" lanza la excepción; \"throws\" avisa en la firma del método que esa excepción podría ocurrir."
+          },
+          {
+            "clave": "c",
+            "texto": "\"throw\" es para errores de hardware e \"throws\" para errores de software."
+          },
+          {
+            "clave": "d",
+            "texto": "No hay diferencia, son sinónimos."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En Java, throw y throws no significan lo mismo. throw se utiliza dentro del cuerpo del método para lanzar una excepción en ese momento concreto. throws, en cambio, se escribe en la firma del método para declarar que ese método puede propagar una o varias excepciones y que otro nivel del programa deberá gestionarlas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la diferencia no depende de si estás en una clase o en una interfaz, sino de la función que cumple cada palabra clave dentro del manejo de excepciones."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es falsa. throw y throws no se distinguen por hardware o software, sino por si lanzan una excepción o la declaran en la cabecera del método."
+            },
+            {
+              "clave": "d",
+              "motivo": "No son sinónimos. Aunque se parezcan, cada una tiene un papel distinto y muy concreto dentro del código Java."
+            }
+          ],
+          "resumen_didactico": "Piensa así: throw es la acción de lanzar el error, mientras que throws es el aviso de que ese error podría salir del método. Una ejecuta, la otra declara.",
+          "ejemplo_practico": "Si escribes throw new IllegalArgumentException(\"Edad inválida\");, estás lanzando la excepción en ese punto. Si escribes public void leer() throws IOException, estás avisando de que ese método puede lanzar una IOException y no la resuelve ahí.",
+          "conclusion_final": "La respuesta correcta es la b, porque throw sirve para lanzar una excepción y throws sirve para declararla en la firma del método como posible excepción propagada."
+        }
+      },
+      {
+        "id": "UT10-Q24",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué tipo de fallo representa una excepción \"ArrayIndexOutOfBoundsException\"?",
+        "contexto": "Identificación de excepciones comunes de tipo RuntimeException relacionadas con accesos inválidos a arrays en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Un error al intentar escribir en un fichero protegido."
+          },
+          {
+            "clave": "b",
+            "texto": "Un error al intentar acceder a una posición de un array que no existe (fuera de límites)."
+          },
+          {
+            "clave": "c",
+            "texto": "Un fallo en la conversión de una cadena de texto a número."
+          },
+          {
+            "clave": "d",
+            "texto": "Un fallo al intentar conectar con un servidor remoto."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "ArrayIndexOutOfBoundsException es una excepción de tiempo de ejecución que aparece cuando el programa intenta acceder a una posición de un array que no existe. Es decir, se intenta leer o usar un índice fuera de los límites reales del array. Se trata de un error típico de lógica del programador y pertenece al grupo de las RuntimeException o unchecked exceptions.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Ese tipo de problema estaría más relacionado con operaciones de entrada/salida, permisos o acceso a ficheros, no con el manejo de arrays."
+            },
+            {
+              "clave": "c",
+              "motivo": "Ese caso corresponde a NumberFormatException, que aparece cuando intentas convertir un texto que no tiene formato numérico válido."
+            },
+            {
+              "clave": "d",
+              "motivo": "Los fallos de conexión remota pertenecen al ámbito de red o entrada/salida, no a errores de índices fuera de rango en arrays."
+            }
+          ],
+          "resumen_didactico": "Si un array tiene un tamaño concreto, solo puedes acceder a las posiciones que realmente existen. Cuando te sales de ese rango, Java lanza ArrayIndexOutOfBoundsException.",
+          "ejemplo_practico": "Si tienes int[] numeros = {10, 20, 30}; y escribes numeros[5], el programa fallará porque el array solo tiene las posiciones 0, 1 y 2. La posición 5 no existe.",
+          "conclusion_final": "La respuesta correcta es la b, porque ArrayIndexOutOfBoundsException representa el intento de acceder a una posición inexistente de un array, es decir, fuera de sus límites."
+        }
+      },
+      {
+        "id": "UT10-Q25",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "En la arquitectura de una aplicación robusta, ¿cuál es la mejor estrategia frente a errores de entrada de usuario?",
+        "contexto": "Tratamiento profesional de errores provocados por datos introducidos incorrectamente por el usuario.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Guardar el error en un archivo oculto y no decir nada."
+          },
+          {
+            "clave": "b",
+            "texto": "Apagar el monitor del ordenador automáticamente."
+          },
+          {
+            "clave": "c",
+            "texto": "Dejar que el programa explote para que el usuario aprenda."
+          },
+          {
+            "clave": "d",
+            "texto": "Capturar el error, informar al usuario con un mensaje amigable y permitirle corregir el dato."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "En una aplicación robusta, los errores de entrada del usuario deben gestionarse de forma controlada. La estrategia correcta es capturar la situación anómala, informar al usuario con un mensaje claro y permitir que corrija el dato sin que el sistema colapse. Esa es precisamente una de las finalidades principales del manejo de excepciones: evitar cierres bruscos y dar una respuesta útil ante fallos previsibles.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Guardar el error sin informar al usuario no resuelve el problema inmediato. El usuario seguiría sin saber qué ha hecho mal ni cómo corregirlo."
+            },
+            {
+              "clave": "b",
+              "motivo": "Apagar el monitor no tiene ninguna relación con una estrategia de manejo de errores en software. No soluciona ni trata el fallo."
+            },
+            {
+              "clave": "c",
+              "motivo": "Dejar que el programa explote es justo lo contrario de una arquitectura robusta. Un sistema profesional debe controlar el error y mantener una experiencia usable."
+            }
+          ],
+          "resumen_didactico": "Cuando el usuario introduce un dato incorrecto, el programa no debe romperse ni quedarse en blanco. Lo correcto es detectar el error, explicarlo de forma entendible y dejar que el usuario lo corrija.",
+          "ejemplo_practico": "Si un usuario escribe texto en un campo donde se espera un número, la aplicación puede capturar la excepción, mostrar un mensaje como \"Introduce un número válido\" y devolver el foco al campo para que lo corrija.",
+          "conclusion_final": "La respuesta correcta es la d, porque una aplicación robusta debe capturar el error, informar al usuario de forma amigable y permitir la corrección del dato sin colapsar el sistema."
+        }
+      },
+      {
+        "id": "UT10-Q26",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué método se utiliza para obtener el mensaje de error simplificado que contiene un objeto de excepción?",
+        "contexto": "Uso de los métodos principales de una excepción para obtener información útil durante la depuración y el tratamiento de errores.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "toString()"
+          },
+          {
+            "clave": "b",
+            "texto": "printStackTrace()"
+          },
+          {
+            "clave": "c",
+            "texto": "getMessage()"
+          },
+          {
+            "clave": "d",
+            "texto": "finalize()"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El método que se utiliza para obtener el mensaje de error simplificado de un objeto excepción es getMessage(). Este método devuelve un resumen corto y legible del problema, es decir, el texto descriptivo asociado a la excepción. Se usa mucho dentro de los bloques catch para mostrar o registrar una explicación clara del error.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "toString() puede devolver una representación del objeto, normalmente incluyendo el nombre de la clase de la excepción y el mensaje, pero no es el método específico pensado para obtener solo el mensaje simplificado."
+            },
+            {
+              "clave": "b",
+              "motivo": "printStackTrace() no devuelve un mensaje corto, sino que imprime en consola toda la traza de la pila con el recorrido completo del error."
+            },
+            {
+              "clave": "d",
+              "motivo": "finalize() no sirve para obtener mensajes de error. Es un método relacionado históricamente con la liberación de recursos de objetos, y además no forma parte del uso habitual del manejo de excepciones."
+            }
+          ],
+          "resumen_didactico": "Si quieres saber de forma rápida qué ha pasado en una excepción, el método más directo es getMessage(). Te da el texto breve del error sin mostrar toda la traza completa.",
+          "ejemplo_practico": "Si se produce una ArithmeticException por dividir entre cero y en el catch escribes e.getMessage(), obtendrás un mensaje parecido a \"/ by zero\", que resume el fallo de forma sencilla.",
+          "conclusion_final": "La respuesta correcta es la c, porque getMessage() es el método diseñado para obtener el mensaje de error simplificado contenido en un objeto excepción."
+        }
+      },
+      {
+        "id": "UT10-Q27",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Por qué es importante la \"prevención antes que la cura\" en términos de rendimiento?",
+        "contexto": "Relación entre validaciones previas y coste de lanzar excepciones en aplicaciones Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Porque Java no permite usar más de 10 bloques try-catch por proyecto."
+          },
+          {
+            "clave": "b",
+            "texto": "Porque el código con validaciones ocupa menos espacio en disco."
+          },
+          {
+            "clave": "c",
+            "texto": "Porque crear y lanzar un objeto de excepción es costoso en recursos comparado con una simple validación \"if\"."
+          },
+          {
+            "clave": "d",
+            "texto": "Porque las excepciones son \"gratuitas\" para el procesador."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La idea de \"prevención antes que la cura\" significa que, siempre que un error sea previsible, conviene validarlo antes con una condición sencilla en lugar de esperar a que ocurra y lanzar una excepción. Esto es importante porque crear, lanzar y gestionar una excepción consume más recursos que una simple comprobación con if. Por eso, en términos de rendimiento y claridad, es mejor prevenir el fallo que reaccionar después.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es falsa. Java no impone un límite de 10 bloques try-catch por proyecto. La recomendación de prevenir errores no tiene relación con una restricción de cantidad."
+            },
+            {
+              "clave": "b",
+              "motivo": "El punto importante no es el espacio en disco, sino el coste de ejecución. La ventaja real está en el rendimiento y en evitar lanzar excepciones innecesarias."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque las excepciones no son gratuitas para el procesador. Precisamente se consideran más costosas que una validación previa simple."
+            }
+          ],
+          "resumen_didactico": "Si puedes detectar un problema antes de que ocurra, hazlo. Una validación con if suele ser más barata y más limpia que dejar que el programa falle y luego capturar la excepción.",
+          "ejemplo_practico": "Antes de dividir dos números, es mejor comprobar if (divisor != 0) que hacer la división directamente y esperar una ArithmeticException. La validación evita el fallo y además consume menos recursos.",
+          "conclusion_final": "La respuesta correcta es la c, porque lanzar una excepción tiene un coste mayor que una validación previa sencilla, así que prevenir errores previsibles mejora el rendimiento."
+        }
+      },
+      {
+        "id": "UT10-Q28",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Qué ocurre si se lanza una excepción y no existe ningún bloque \"catch\" en toda la pila de llamadas capaz de gestionarla?",
+        "contexto": "Consecuencia de una excepción no capturada a lo largo de toda la pila de llamadas en Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El programa se borra del disco duro."
+          },
+          {
+            "clave": "b",
+            "texto": "La ejecución llega a la JVM, que imprime el error y detiene el programa (o el hilo) de forma abrupta."
+          },
+          {
+            "clave": "c",
+            "texto": "El programa entra en modo de bajo consumo."
+          },
+          {
+            "clave": "d",
+            "texto": "Java pide permiso al usuario para seguir ejecutando."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Si una excepción se produce y no es capturada por ningún bloque catch a lo largo de la pila de llamadas, la excepción sigue propagándose hasta llegar al nivel más alto. Cuando nadie la gestiona, llega a la JVM, que muestra la información del error y finaliza el programa o el hilo de forma abrupta. Esa es precisamente una de las razones por las que el manejo de excepciones es tan importante en aplicaciones profesionales.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Una excepción no capturada no borra el programa del disco duro. El problema afecta a la ejecución en memoria, no a los archivos físicos del proyecto."
+            },
+            {
+              "clave": "c",
+              "motivo": "No existe un comportamiento de \"modo de bajo consumo\" asociado al manejo de excepciones en Java. Si nadie captura la excepción, la ejecución termina."
+            },
+            {
+              "clave": "d",
+              "motivo": "Java no pide permiso al usuario para continuar. Si la excepción no es gestionada, la JVM informa del error y corta la ejecución."
+            }
+          ],
+          "resumen_didactico": "Una excepción no capturada sube por la pila de llamadas buscando a alguien que la trate. Si no encuentra ningún catch válido, termina llegando a la JVM, que muestra el fallo y detiene la ejecución.",
+          "ejemplo_practico": "Si en un método haces una división entre cero y ningún método intermedio ni el main tienen un catch para ArithmeticException, la JVM imprimirá el stack trace en consola y el programa terminará bruscamente.",
+          "conclusion_final": "La respuesta correcta es la b, porque una excepción no gestionada acaba llegando a la JVM, que imprime el error y detiene el programa o el hilo de forma abrupta."
+        }
+      },
+      {
+        "id": "UT10-Q29",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "¿Cuál es la utilidad de la \"pila de llamadas\" (Stack Trace) para un ingeniero de software?",
+        "contexto": "Valor práctico del stack trace en la depuración y análisis de errores dentro de una aplicación Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Actuar como un mapa que permite rastrear el origen del error a través de todos los métodos que estaban activos."
+          },
+          {
+            "clave": "b",
+            "texto": "Medir la temperatura de la placa base."
+          },
+          {
+            "clave": "c",
+            "texto": "Configurar la dirección IP del servidor de desarrollo."
+          },
+          {
+            "clave": "d",
+            "texto": "Guardar las contraseñas de los usuarios en la memoria RAM."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La pila de llamadas o stack trace sirve como un mapa forense del error. Muestra la ruta que siguió la ejecución del programa hasta que se produjo el fallo, indicando las clases, métodos y líneas implicadas. Gracias a esto, el ingeniero de software puede localizar el origen real del problema y entender qué cadena de llamadas lo provocó.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La pila de llamadas no mide temperatura ni parámetros físicos del hardware. Su función está relacionada con el análisis del flujo de ejecución del programa."
+            },
+            {
+              "clave": "c",
+              "motivo": "El stack trace no configura redes ni direcciones IP. Es una herramienta de depuración del código, no de administración de infraestructura."
+            },
+            {
+              "clave": "d",
+              "motivo": "La pila de llamadas no se utiliza para almacenar contraseñas de usuarios. Su cometido es registrar el recorrido del error durante la ejecución."
+            }
+          ],
+          "resumen_didactico": "El stack trace es como el rastro de huellas que deja el error. Permite ver de dónde vino, por qué métodos pasó y en qué punto exacto explotó el programa.",
+          "ejemplo_practico": "Si una excepción ocurre en calcularImpuestos(), el stack trace puede mostrar que ese método fue llamado desde procesarFactura() y este a su vez desde main(). Así sabes no solo dónde falló, sino también cómo se llegó hasta ese punto.",
+          "conclusion_final": "La respuesta correcta es la a, porque la pila de llamadas funciona como un mapa técnico que permite rastrear el origen del error a través de todos los métodos activos en el momento del fallo."
+        }
+      },
+      {
+        "id": "UT10-Q30",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "Al diseñar una excepción personalizada, ¿qué clase debemos extender si queremos que sea una excepción de tipo \"Checked\" (verificada)?",
+        "contexto": "Diseño de excepciones personalizadas en Java según la jerarquía y el tipo de control que impondrá el compilador.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "RuntimeException"
+          },
+          {
+            "clave": "b",
+            "texto": "Exception"
+          },
+          {
+            "clave": "c",
+            "texto": "Error"
+          },
+          {
+            "clave": "d",
+            "texto": "Throwable de forma directa"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Si queremos crear una excepción personalizada de tipo Checked, debemos extender la clase Exception. Las checked exceptions son aquellas que el compilador obliga a capturar o declarar con throws. En cambio, si heredáramos de RuntimeException, estaríamos creando una excepción Unchecked, que no obliga a ese tratamiento en compilación.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "RuntimeException sirve para crear excepciones no verificadas o Unchecked. Si heredas de esta clase, el compilador no obligará a capturar ni declarar la excepción."
+            },
+            {
+              "clave": "c",
+              "motivo": "Error representa fallos graves del sistema o de la JVM, no problemas de negocio o de lógica que deban diseñarse como excepciones verificadas."
+            },
+            {
+              "clave": "d",
+              "motivo": "Aunque técnicamente Throwable es la raíz de la jerarquía, no es la opción adecuada si quieres diseñar una checked exception profesional. La práctica correcta y convencional es extender Exception."
+            }
+          ],
+          "resumen_didactico": "La regla rápida es esta: si quieres una excepción personalizada que Java obligue a tratar, extiende Exception. Si quieres que no sea obligatoria en compilación, extiende RuntimeException.",
+          "ejemplo_practico": "Si en una aplicación bancaria quieres crear una excepción verificada como SaldoInsuficienteException para obligar a las capas superiores a gestionarla, la definirías como: public class SaldoInsuficienteException extends Exception { ... }.",
+          "conclusion_final": "La respuesta correcta es la b, porque una excepción personalizada de tipo Checked debe heredar de Exception para que el compilador obligue a capturarla o declararla."
+        }
+      }
+      
+      
+]

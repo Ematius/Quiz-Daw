@@ -1,0 +1,1023 @@
+[
+    {
+        "id": "UT11-Q01",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿En qué consiste el concepto fundamental de la recursividad en la programación de alto nivel?",
+        "contexto": "Definición básica de recursividad dentro del tema de programación.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "En un recurso donde un método se llama a sí mismo para resolver una tarea dividiéndola en versiones más pequeñas." },
+          { "clave": "b", "texto": "En la creación de múltiples hilos de ejecución para procesar datos en paralelo." },
+          { "clave": "c", "texto": "En la capacidad de un programa para reescribir su propio código fuente en tiempo de ejecución." },
+          { "clave": "d", "texto": "En el uso de bucles \"for\" anidados para recorrer matrices tridimensionales." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La recursividad consiste en que un método se llama a sí mismo para resolver una tarea, reduciendo el problema en versiones más pequeñas del mismo hasta llegar a una solución final. El temario la define como una alternativa a la iteración basada en la filosofía de \"divide y vencerás\".",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Esto describe procesamiento paralelo o concurrencia mediante hilos, no recursividad. La recursividad no trata de ejecutar varias tareas a la vez, sino de que un método vuelva a invocarse a sí mismo para reducir el problema."
+            },
+            {
+              "clave": "c",
+              "motivo": "Eso se relacionaría con autoreprogramación o modificación dinámica del código, algo completamente distinto. En el temario, la recursividad no consiste en cambiar el código fuente, sino en reutilizar el mismo método sobre subproblemas más pequeños."
+            },
+            {
+              "clave": "d",
+              "motivo": "Los bucles \"for\" anidados pertenecen a la iteración, no a la recursividad. El propio temario diferencia la recursividad de los bucles tradicionales y la presenta como una alternativa a ellos."
+            }
+          ],
+          "resumen_didactico": "Recursividad = un método se llama a sí mismo para resolver un problema grande convirtiéndolo en otros más pequeños del mismo tipo, hasta llegar a un punto en que ya se puede resolver directamente.",
+          "ejemplo_practico": "Un ejemplo clásico es el factorial. Para calcular 5!, el método puede hacer 5 * factorial(4), y luego 4 * factorial(3), hasta llegar al caso base, donde factorial(1) o factorial(0) vale 1.",
+          "conclusion_final": "La opción correcta es la a, porque recoge exactamente la idea central del tema: la recursividad es un recurso en el que un método se llama a sí mismo para resolver una tarea descomponiéndola en versiones más pequeñas."
+        }
+      },
+      {
+        "id": "UT11-Q02",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "Todo método recursivo debe tener una condición que detenga las llamadas a sí mismo para evitar un bucle infinito. ¿Cómo se denomina técnicamente este elemento?",
+        "contexto": "Elemento obligatorio de un algoritmo recursivo que permite detener la recursión.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Caso recursivo" },
+          { "clave": "b", "texto": "Interfaz de salida" },
+          { "clave": "c", "texto": "Caso base" },
+          { "clave": "d", "texto": "Punto de ruptura de hardware" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El elemento técnico que detiene las llamadas recursivas se denomina caso base. Es la condición de parada obligatoria en un método recursivo. Sin él, la función seguiría llamándose indefinidamente y podría provocar un bucle infinito y agotar la pila de llamadas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El caso recursivo es la parte en la que el método vuelve a llamarse a sí mismo, pero no es la condición que detiene la recursión. La parada la produce el caso base."
+            },
+            {
+              "clave": "b",
+              "motivo": "Interfaz de salida no es un término técnico propio de la recursividad. No forma parte de la estructura clásica de un algoritmo recursivo."
+            },
+            {
+              "clave": "d",
+              "motivo": "Un punto de ruptura de hardware no tiene relación con la lógica recursiva. Eso pertenece a otros contextos técnicos, no al diseño de métodos recursivos."
+            }
+          ],
+          "resumen_didactico": "Todo algoritmo recursivo necesita una salida de emergencia. Esa salida se llama caso base. Es lo que hace que la función deje de llamarse a sí misma.",
+          "ejemplo_practico": "En el factorial recursivo, cuando n == 0, el método devuelve 1 y deja de llamarse. Ese if (n == 0) es el caso base.",
+          "conclusion_final": "La respuesta correcta es la c, porque el caso base es la condición técnica que detiene la recursividad y evita el bucle infinito."
+        }
+      },
+      {
+        "id": "UT11-Q03",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué ocurre técnicamente en el \"caso recursivo\" de un algoritmo?",
+        "contexto": "Parte de la estructura de un algoritmo recursivo encargada de continuar la recursión.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El método se llama a sí mismo con un parámetro modificado, acercándose al caso base." },
+          { "clave": "b", "texto": "El compilador transforma el código en un diagrama de flujo automáticamente." },
+          { "clave": "c", "texto": "Se libera toda la memoria RAM utilizada por las variables locales." },
+          { "clave": "d", "texto": "El programa finaliza y devuelve el resultado al método main." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En el caso recursivo, el método se vuelve a llamar a sí mismo, pero lo hace con un parámetro modificado o con una versión más pequeña del problema. La clave es que esa nueva llamada debe acercarse al caso base para que la recursividad termine correctamente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El caso recursivo no tiene relación con que el compilador genere diagramas de flujo. Esa opción no describe ningún comportamiento propio de la recursividad."
+            },
+            {
+              "clave": "c",
+              "motivo": "En el caso recursivo no se libera toda la memoria RAM. De hecho, cada llamada recursiva añade información a la pila de llamadas hasta que se alcanza el caso base."
+            },
+            {
+              "clave": "d",
+              "motivo": "Eso no describe el caso recursivo, sino el final de la ejecución cuando la recursividad ya ha terminado. En el caso recursivo el método continúa llamándose a sí mismo."
+            }
+          ],
+          "resumen_didactico": "El caso recursivo es la parte del algoritmo donde la función sigue trabajando llamándose otra vez a sí misma, pero reduciendo el problema para acercarse a la condición de parada.",
+          "ejemplo_practico": "En un factorial recursivo, si n vale 5, el caso recursivo hace: 5 * factorial(4). Esa llamada a factorial(4) es el caso recursivo, porque el problema se reduce y se acerca al caso base.",
+          "conclusion_final": "La respuesta correcta es la a, porque el caso recursivo consiste precisamente en que el método se invoque de nuevo con un valor modificado que lo acerque al caso base."
+        }
+      },
+      {
+        "id": "UT11-Q04",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Cuál es la principal analogía visual utilizada para explicar el funcionamiento de la recursividad?",
+        "contexto": "Recurso didáctico usado en el temario para representar cómo un problema contiene versiones más pequeñas de sí mismo.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Un contrato legal con múltiples cláusulas de seguridad." },
+          { "clave": "b", "texto": "Un tren que avanza por una vía recta." },
+          { "clave": "c", "texto": "Una estantería con cajas de diferentes tamaños." },
+          { "clave": "d", "texto": "Un conjunto de muñecas rusas (Matrioshkas) contenidas unas dentro de otras." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La analogía principal del tema para explicar la recursividad es la de las muñecas rusas o Matrioshkas. Se utiliza para mostrar que, para llegar a la solución final, se va abriendo un problema que contiene dentro otro problema muy parecido, pero más pequeño, hasta llegar al último, que ya no se puede seguir abriendo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Un contrato legal con cláusulas no representa la idea de un problema dentro de otro problema del mismo tipo. No es la analogía usada en el temario para la recursividad."
+            },
+            {
+              "clave": "b",
+              "motivo": "Un tren en una vía recta sugiere un avance lineal, más cercano a la iteración o a un flujo secuencial, no a la estructura recursiva de elementos contenidos unos dentro de otros."
+            },
+            {
+              "clave": "c",
+              "motivo": "Aunque las cajas pueden sugerir tamaños distintos, la analogía concreta y explícita del temario no es esa, sino la de las muñecas rusas, porque refleja mejor la repetición de la misma estructura en niveles cada vez más pequeños."
+            }
+          ],
+          "resumen_didactico": "La recursividad se entiende visualmente como unas muñecas rusas: abres una y dentro hay otra parecida, luego otra, y así hasta llegar a la más pequeña, que sería el caso base.",
+          "ejemplo_practico": "En un factorial recursivo, calcular 5! implica resolver antes 4!, luego 3!, luego 2! y finalmente 1. Es como ir abriendo una Matrioshka dentro de otra hasta llegar a la última.",
+          "conclusion_final": "La respuesta correcta es la d, porque la metáfora de las muñecas rusas es la que el temario usa para explicar de forma visual cómo un problema recursivo contiene versiones más pequeñas de sí mismo."
+        }
+      },
+      {
+        "id": "UT11-Q05",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué estructura de datos interna utiliza la Máquina Virtual de Java (JVM) para gestionar las llamadas recursivas y recordar en qué punto debe retomar cada ejecución?",
+        "contexto": "Mecanismo interno que permite almacenar cada llamada recursiva y recuperar el punto de ejecución pendiente.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Una cola (Queue) de tipo FIFO." },
+          { "clave": "b", "texto": "Un árbol binario de búsqueda." },
+          { "clave": "c", "texto": "Una pila de llamadas (Stack)." },
+          { "clave": "d", "texto": "Una tabla hash de acceso rápido." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La JVM gestiona las llamadas recursivas mediante una pila de llamadas o Stack. Cada vez que un método se invoca, se guarda en esa pila la información necesaria para continuar después. En recursividad, esto permite recordar qué llamada estaba pendiente y en qué punto debe retomarse la ejecución cuando se alcanza el caso base.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Una cola FIFO funciona por orden de llegada, primero en entrar primero en salir. La recursividad no se resuelve así, sino al revés: la última llamada que entra es la primera que se resuelve, por eso se usa una pila y no una cola."
+            },
+            {
+              "clave": "b",
+              "motivo": "Un árbol binario de búsqueda es una estructura para organizar y buscar datos, pero no es la estructura interna que la JVM usa para controlar el flujo de llamadas recursivas."
+            },
+            {
+              "clave": "d",
+              "motivo": "Una tabla hash sirve para acceso rápido por clave, no para almacenar el orden de ejecución y retorno de llamadas a métodos."
+            }
+          ],
+          "resumen_didactico": "La recursividad se apoya en una pila de llamadas. Cada llamada nueva se apila encima de la anterior y, cuando se llega al caso base, la ejecución empieza a desapilarse para volver hacia atrás.",
+          "ejemplo_practico": "Si calculas factorial(3), la pila guarda factorial(3), luego factorial(2), luego factorial(1). Cuando factorial(1) devuelve 1, la JVM retoma factorial(2) y después factorial(3), usando esa pila para saber dónde continuar.",
+          "conclusion_final": "La respuesta correcta es la c, porque la estructura que usa la JVM para gestionar llamadas recursivas y recordar el punto de retorno es la pila de llamadas o Stack."
+        }
+      },
+      {
+        "id": "UT11-Q06",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Cuál es el riesgo técnico de realizar demasiadas llamadas recursivas sin alcanzar el caso base o superando la memoria asignada?",
+        "contexto": "Consecuencia técnica de una recursividad mal planteada o demasiado profunda.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Excepción de tipo StackOverflowError." },
+          { "clave": "b", "texto": "Error de sintaxis gramatical." },
+          { "clave": "c", "texto": "El programa se vuelve más lento pero nunca se detiene." },
+          { "clave": "d", "texto": "Los datos se borran del disco duro por seguridad." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Si un método recursivo no alcanza el caso base o realiza demasiadas llamadas, la pila de llamadas sigue creciendo hasta agotar el espacio disponible. En Java, ese problema técnico se manifiesta como un StackOverflowError.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Un error de sintaxis ocurre al escribir código incorrecto según las reglas del lenguaje, no por ejecutar demasiadas llamadas recursivas."
+            },
+            {
+              "clave": "c",
+              "motivo": "No es correcto decir que solo se vuelve más lento y nunca se detiene. Si la recursividad sigue creciendo sin control, puede terminar provocando un desbordamiento de pila."
+            },
+            {
+              "clave": "d",
+              "motivo": "La recursividad no borra datos del disco duro. El problema real afecta a la memoria de ejecución, concretamente a la pila de llamadas."
+            }
+          ],
+          "resumen_didactico": "Cada llamada recursiva ocupa espacio en la pila. Si no hay parada o la profundidad es excesiva, la pila se llena y Java lanza un StackOverflowError.",
+          "ejemplo_practico": "Si escribes un método como repetir() que se llama a sí mismo sin condición de parada, repetir() -> repetir() -> repetir(), llegará un momento en que la pila se saturará y el programa lanzará StackOverflowError.",
+          "conclusion_final": "La respuesta correcta es la a, porque el riesgo técnico de una recursividad infinita o demasiado profunda es el desbordamiento de la pila de llamadas, representado en Java por StackOverflowError."
+        }
+      },
+      {
+        "id": "UT11-Q07",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué propiedad define a la \"Recursividad Simple\" frente a otros tipos más complejos?",
+        "contexto": "Clasificación de los tipos de recursividad según el número y forma de las llamadas recursivas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El método contiene dos o más llamadas a sí mismo en el mismo bloque." },
+          { "clave": "b", "texto": "El método solo puede procesar números enteros negativos." },
+          { "clave": "c", "texto": "El método solo se llama a sí mismo una única vez dentro de su ejecución." },
+          { "clave": "d", "texto": "La llamada recursiva es la última instrucción del método." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La recursividad simple se define porque en el cuerpo del método existe una sola llamada a sí mismo. Su descomposición es lineal y uniforme, a diferencia de otros tipos más complejos como la recursividad múltiple, donde aparecen varias llamadas recursivas dentro del mismo método.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Eso describe la recursividad múltiple, no la simple. En la recursividad múltiple el método realiza dos o más llamadas a sí mismo, lo que genera una ramificación mayor."
+            },
+            {
+              "clave": "b",
+              "motivo": "La recursividad simple no depende de que el método trabaje con números negativos. Puede aplicarse a muchos tipos de problemas y datos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Que la llamada recursiva sea la última instrucción puede ocurrir en algunos casos, pero no es lo que define a la recursividad simple. Lo que la define es que solo haya una llamada recursiva."
+            }
+          ],
+          "resumen_didactico": "Recursividad simple significa una única llamada recursiva por ejecución del método. La idea es una cadena lineal: una llamada lleva a otra, y así hasta llegar al caso base.",
+          "ejemplo_practico": "El factorial es el ejemplo clásico: factorial(n) devuelve n * factorial(n - 1). En esa línea solo hay una llamada recursiva, por eso es recursividad simple.",
+          "conclusion_final": "La respuesta correcta es la c, porque la propiedad que distingue a la recursividad simple es que el método se llama a sí mismo una sola vez en cada paso recursivo."
+        }
+      },
+      {
+        "id": "UT11-Q08",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Cómo se denomina la recursividad en la que un método A llama a un método B, y este último vuelve a llamar al método A?",
+        "contexto": "Tipo de recursividad en la que la llamada recursiva no ocurre directamente dentro del mismo método, sino a través de otro método intermedio.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Iteración compuesta" },
+          { "clave": "b", "texto": "Recursividad cruzada o indirecta" },
+          { "clave": "c", "texto": "Recursividad final" },
+          { "clave": "d", "texto": "Recursividad múltiple" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Cuando un método A llama a un método B y después el método B vuelve a llamar al método A, estamos ante una recursividad cruzada o indirecta. No es una llamada directa del método a sí mismo, pero sigue existiendo un ciclo recursivo entre ambos métodos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Iteración compuesta no es el término técnico del tema para este caso. La iteración se relaciona con bucles, no con métodos que se llaman mutuamente."
+            },
+            {
+              "clave": "c",
+              "motivo": "Recursividad final no es la denominación que usa el temario para este patrón. Lo importante aquí no es la posición de la llamada, sino que dos métodos se invocan entre sí."
+            },
+            {
+              "clave": "d",
+              "motivo": "La recursividad múltiple ocurre cuando un mismo método realiza dos o más llamadas a sí mismo. Aquí no sucede eso: lo que hay es una llamada circular entre dos métodos distintos."
+            }
+          ],
+          "resumen_didactico": "Si un método no se llama directamente a sí mismo, pero entra en un ciclo recursivo a través de otro método, eso se llama recursividad cruzada o indirecta.",
+          "ejemplo_practico": "Un método esPar(num) puede llamar a esImpar(num - 1), y el método esImpar(num - 1) puede volver a llamar a esPar(num - 2). Esa ida y vuelta entre dos métodos es recursividad cruzada.",
+          "conclusion_final": "La respuesta correcta es la b, porque cuando dos métodos se llaman mutuamente formando un ciclo recursivo, el tipo técnico se denomina recursividad cruzada o indirecta."
+        }
+      },
+      {
+        "id": "UT11-Q09",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Cuál es la ventaja principal de la recursividad desde el punto de vista del diseño de software?",
+        "contexto": "Valoración de la recursividad no por rendimiento puro, sino por claridad y expresividad del código en ciertos problemas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Permite escribir un código mucho más limpio, elegante y fácil de leer en problemas complejos." },
+          { "clave": "b", "texto": "Consume menos memoria RAM que un bucle \"while\"." },
+          { "clave": "c", "texto": "No requiere el uso de condicionales \"if\" para funcionar." },
+          { "clave": "d", "texto": "Siempre es más rápida que cualquier bucle tradicional." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La principal ventaja de la recursividad, según el temario, es que en ciertos problemas complejos permite escribir un código más simple, elegante y limpio. Esto ocurre sobre todo en estructuras jerárquicas o en algoritmos donde la solución encaja de forma natural con una descomposición en subproblemas más pequeños.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el temario dice precisamente lo contrario: la recursividad consume más memoria, ya que cada llamada añade un nuevo bloque a la pila de llamadas."
+            },
+            {
+              "clave": "c",
+              "motivo": "También es incorrecta porque la recursividad sí necesita condicionales para definir el caso base y detener las llamadas. Sin esa condición de parada, el algoritmo caería en una recursión infinita."
+            },
+            {
+              "clave": "d",
+              "motivo": "No es verdad que siempre sea más rápida. El temario indica que, en general, la versión recursiva suele ser más lenta que la iterativa debido al coste de tantas llamadas a métodos."
+            }
+          ],
+          "resumen_didactico": "La gran ventaja de la recursividad no es correr más, sino expresar mejor ciertos problemas. Su fuerza está en la claridad del diseño cuando el problema tiene una estructura por niveles o ramas.",
+          "ejemplo_practico": "Recorrer carpetas dentro de carpetas suele quedar mucho más claro con un método recursivo que con varios bucles anidados escritos a mano para cada nivel posible.",
+          "conclusion_final": "La respuesta correcta es la a, porque desde el punto de vista del diseño de software la recursividad destaca por producir código más limpio, elegante y legible en problemas complejos."
+        }
+      },
+      {
+        "id": "UT11-Q10",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué desventaja crítica presenta la recursividad en términos de recursos del sistema?",
+        "contexto": "Inconveniente principal de la recursividad relacionado con el uso de memoria y el coste de las llamadas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Tiene un alto coste en memoria y tiempo debido a la gestión de la pila de llamadas." },
+          { "clave": "b", "texto": "Los métodos recursivos no pueden devolver valores de tipo objeto." },
+          { "clave": "c", "texto": "Solo funciona en sistemas operativos de 32 bits." },
+          { "clave": "d", "texto": "Es imposible de depurar con herramientas profesionales." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La desventaja crítica de la recursividad es que cada llamada añade un nuevo bloque a la pila de llamadas, lo que incrementa el consumo de memoria. Además, la gestión de tantas llamadas hace que normalmente sea más lenta que su versión iterativa.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque un método recursivo sí puede devolver objetos, igual que cualquier otro método de Java. La recursividad no limita el tipo de retorno."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es falsa porque la recursividad no depende de funcionar solo en sistemas de 32 bits. Es una técnica de programación, no una restricción de arquitectura concreta."
+            },
+            {
+              "clave": "d",
+              "motivo": "También es incorrecta porque los métodos recursivos sí pueden depurarse con herramientas profesionales. Lo que ocurre es que a veces su seguimiento mental puede ser más complejo por la pila de llamadas."
+            }
+          ],
+          "resumen_didactico": "La recursividad puede hacer el código más elegante, pero cuesta recursos: gasta más memoria por la pila y suele ser más lenta por el número de llamadas acumuladas.",
+          "ejemplo_practico": "Si un método recursivo recorre muchas subcarpetas o llama miles de veces a sí mismo, cada llamada se apila en memoria. Eso puede hacer que el programa consuma demasiados recursos e incluso llegue a desbordar la pila.",
+          "conclusion_final": "La respuesta correcta es la a, porque el principal inconveniente técnico de la recursividad es su mayor coste en memoria y tiempo debido a la gestión de la pila de llamadas."
+        }
+      },
+      {
+        "id": "UT11-Q11",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué mide exactamente la \"Complejidad Algorítmica\" en el desarrollo profesional?",
+        "contexto": "Definición de complejidad algorítmica y su relación con la eficiencia de una solución.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El nivel de dificultad que tiene un programador para entender el código." },
+          { "clave": "b", "texto": "La cantidad de recursos (tiempo y memoria) que consume un algoritmo al aumentar el volumen de datos." },
+          { "clave": "c", "texto": "El número de líneas de código que tiene un programa." },
+          { "clave": "d", "texto": "El número de comentarios Javadoc incluidos en la documentación." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La complejidad algorítmica mide cuántos recursos consume una solución, sobre todo tiempo de ejecución y memoria, en función del tamaño de los datos de entrada. No se centra en si el código es bonito o largo, sino en cómo escala su coste cuando crece el volumen de datos. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Eso se relaciona con legibilidad o dificultad humana de comprensión, no con complejidad algorítmica. El tema deja claro que la complejidad mide recursos del sistema, no esfuerzo mental del programador. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "c",
+              "motivo": "El número de líneas de código no determina la complejidad algorítmica. Un programa corto puede tener mala complejidad y uno más largo puede ser más eficiente. Lo que importa es el consumo de tiempo y memoria al crecer la entrada. "
+            },
+            {
+              "clave": "d",
+              "motivo": "Los comentarios Javadoc forman parte de la documentación, pero no influyen en la complejidad algorítmica. Esta se refiere al comportamiento y coste de ejecución del algoritmo. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "La complejidad algorítmica sirve para medir la eficiencia real de un algoritmo: cuánto tiempo tarda y cuánta memoria gasta cuando el problema se hace más grande. ",
+          "ejemplo_practico": "Si un algoritmo tarda poco con 100 datos, la complejidad algorítmica te ayuda a prever qué pasará con 1.000 o 1.000.000 de datos. Por ejemplo, un algoritmo O(n) crecerá de forma mucho más controlada que uno O(n²). :contentReference[oaicite:5]{index=5}",
+          "conclusion_final": "La respuesta correcta es la b, porque la complejidad algorítmica estudia el consumo de recursos, especialmente tiempo y memoria, según aumenta el tamaño de los datos de entrada. :contentReference[oaicite:6]{index=6}"
+        }
+      },
+      {
+        "id": "UT11-Q12",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Cómo se denomina la notación estándar utilizada para describir el rendimiento de un algoritmo en el peor escenario posible?",
+        "contexto": "Herramienta de análisis usada para expresar cómo crece el coste de un algoritmo cuando aumenta el tamaño de la entrada.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Notación Binaria" },
+          { "clave": "b", "texto": "Notación Pascal" },
+          { "clave": "c", "texto": "Notación de Camello" },
+          { "clave": "d", "texto": "Notación Big-O" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La notación estándar utilizada para describir el rendimiento de un algoritmo, especialmente en términos de cómo escala en el peor escenario al crecer los datos, es la Notación Big-O. Esta notación no indica segundos exactos, sino la forma en que crece el esfuerzo del algoritmo según aumenta el tamaño de la entrada.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No existe en el temario una \"Notación Binaria\" como sistema estándar para medir complejidad algorítmica. Lo binario puede relacionarse con datos o sistemas numéricos, pero no con el análisis formal del rendimiento de algoritmos."
+            },
+            {
+              "clave": "b",
+              "motivo": "Pascal es el nombre de un lenguaje de programación, no la notación usada para expresar complejidad algorítmica."
+            },
+            {
+              "clave": "c",
+              "motivo": "La notación de camello o camelCase es una convención de escritura de identificadores, no una herramienta de análisis del rendimiento."
+            }
+          ],
+          "resumen_didactico": "Big-O es el lenguaje universal para hablar de eficiencia algorítmica. Sirve para expresar cómo crece el coste de un algoritmo cuando aumenta la cantidad de datos.",
+          "ejemplo_practico": "Si recorres una lista una vez, la complejidad suele expresarse como O(n). Si tienes dos bucles anidados que comparan todos los elementos con todos, suele expresarse como O(n²).",
+          "conclusion_final": "La respuesta correcta es la d, porque la notación estándar para describir el rendimiento de un algoritmo en el peor escenario posible es la Notación Big-O."
+        }
+      },
+      {
+        "id": "UT11-Q13",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "Si un algoritmo tarda el mismo tiempo en ejecutarse sin importar si procesas 1 dato o 1.000.000, ¿qué complejidad tiene?",
+        "contexto": "Identificación de la complejidad cuando el coste no varía aunque aumente el tamaño de la entrada.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "O(1) - Constante" },
+          { "clave": "b", "texto": "O(log n) - Logarítmica" },
+          { "clave": "c", "texto": "O(n) - Lineal" },
+          { "clave": "d", "texto": "O(n²) - Cuadrática" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Un algoritmo tiene complejidad O(1) o constante cuando el tiempo de ejecución no cambia aunque aumente mucho la cantidad de datos. El esfuerzo es fijo, independientemente del tamaño de la entrada.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "O(log n) no mantiene un coste fijo. Aunque crece lentamente, sí aumenta cuando crece la entrada, porque el algoritmo sigue necesitando más pasos al trabajar con más datos."
+            },
+            {
+              "clave": "c",
+              "motivo": "La complejidad lineal O(n) significa que el esfuerzo crece en proporción al número de datos. Si pasas de 1 dato a 1.000.000, el tiempo no sería el mismo."
+            },
+            {
+              "clave": "d",
+              "motivo": "La complejidad cuadrática O(n²) crece mucho más deprisa que la lineal, normalmente por bucles anidados. Es justo lo contrario a un coste constante."
+            }
+          ],
+          "resumen_didactico": "Si un algoritmo tarda siempre lo mismo, sin importar si la entrada es pequeña o enorme, su complejidad es constante: O(1).",
+          "ejemplo_practico": "Acceder a un elemento de un array por su índice, como numeros[5], suele considerarse O(1), porque recuperar esa posición cuesta lo mismo aunque el array tenga 10 elementos o 10 millones.",
+          "conclusion_final": "La respuesta correcta es la a, porque O(1) representa una complejidad constante: el coste no depende del tamaño de los datos."
+        }
+      },
+      {
+        "id": "UT11-Q14",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué tipo de complejidad representa un simple bucle \"for\" que recorre una lista de \"n\" elementos una sola vez?",
+        "contexto": "Regla básica de análisis de complejidad para un recorrido lineal único sobre una lista.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Complejidad Logarítmica O(log n)" },
+          { "clave": "b", "texto": "Complejidad Exponencial O(2ⁿ)" },
+          { "clave": "c", "texto": "Complejidad Constante O(1)" },
+          { "clave": "d", "texto": "Complejidad Lineal O(n)" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Un bucle \"for\" que recorre una lista de n elementos una sola vez tiene complejidad lineal O(n), porque el esfuerzo crece en la misma proporción que el número de datos. Si la lista duplica su tamaño, el número de iteraciones también se duplica.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "O(log n) aparece cuando en cada paso reduces mucho el problema, por ejemplo dividiéndolo a la mitad. Un recorrido completo de una lista no hace eso."
+            },
+            {
+              "clave": "b",
+              "motivo": "O(2ⁿ) es una complejidad exponencial, típica de algoritmos muy costosos como ciertas recursividades múltiples. Un solo bucle sobre una lista no genera ese crecimiento."
+            },
+            {
+              "clave": "c",
+              "motivo": "O(1) significa coste constante, es decir, que el tiempo no cambia aunque aumenten los datos. En un bucle que recorre toda la lista, el trabajo sí aumenta con n."
+            }
+          ],
+          "resumen_didactico": "Si recorres una lista completa una sola vez, haces una operación por cada elemento. Por eso el coste crece de forma lineal: O(n).",
+          "ejemplo_practico": "Si tienes una lista de 10 nombres y un bucle los imprime uno por uno, harás 10 iteraciones. Si la lista pasa a 100 nombres, harás 100 iteraciones. El esfuerzo crece con el tamaño de la lista.",
+          "conclusion_final": "La respuesta correcta es la d, porque un único bucle que recorre una lista de n elementos una sola vez representa una complejidad lineal O(n)."
+        }
+      },
+      {
+        "id": "UT11-Q15",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Cuál es la complejidad típica de un algoritmo que contiene dos bucles anidados para comparar todos los elementos de una lista entre sí?",
+        "contexto": "Análisis de complejidad cuando un algoritmo utiliza dos bucles anidados para recorrer y comparar una lista completa.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "O(n log n)" },
+          { "clave": "b", "texto": "O(n) - Lineal" },
+          { "clave": "c", "texto": "O(n²) - Cuadrática" },
+          { "clave": "d", "texto": "O(1) - Constante" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Cuando un algoritmo contiene dos bucles anidados y compara todos los elementos de una lista entre sí, la complejidad típica es O(n²), también llamada cuadrática. Esto ocurre porque por cada elemento se vuelve a recorrer la lista completa o una gran parte de ella.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "O(n log n) suele aparecer en algoritmos más eficientes como ciertos métodos de ordenación por divide y vencerás, pero no es la complejidad típica de dos bucles anidados que comparan todos los elementos entre sí."
+            },
+            {
+              "clave": "b",
+              "motivo": "O(n) representa un único recorrido lineal sobre la lista. Aquí no hay un solo bucle, sino dos bucles anidados, así que el coste crece mucho más."
+            },
+            {
+              "clave": "d",
+              "motivo": "O(1) significa coste constante, es decir, que el tiempo no depende del tamaño de la entrada. En este caso sí depende, y además de forma cuadrática."
+            }
+          ],
+          "resumen_didactico": "Dos bucles anidados suelen significar que por cada elemento vuelves a recorrer los demás. Eso hace que el trabajo crezca como n por n, es decir, O(n²).",
+          "ejemplo_practico": "Si tienes una lista de 100 elementos y para cada uno lo comparas con los otros 100, realizas alrededor de 100 x 100 comparaciones. Si la lista pasa a 1.000 elementos, el coste sube a unas 1.000 x 1.000 comparaciones.",
+          "conclusion_final": "La respuesta correcta es la c, porque dos bucles anidados que comparan todos los elementos de una lista entre sí producen una complejidad cuadrática O(n²)."
+        }
+      },
+      {
+        "id": "UT11-Q16",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "En una entrevista técnica, ¿qué complejidad se considera el \"estándar de oro\" para algoritmos de búsqueda eficientes, como la búsqueda binaria?",
+        "contexto": "Identificación de la complejidad asociada a algoritmos de búsqueda muy eficientes que dividen el problema en partes más pequeñas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "O(2ⁿ) - Exponencial" },
+          { "clave": "b", "texto": "O(n!) - Factorial" },
+          { "clave": "c", "texto": "O(n) - Lineal" },
+          { "clave": "d", "texto": "O(log n) - Logarítmica" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La complejidad logarítmica O(log n) es la típica de algoritmos muy eficientes como la búsqueda binaria, porque en cada paso dividen el problema a la mitad. Eso hace que el número de operaciones crezca muy lentamente aunque aumente mucho el volumen de datos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "O(2ⁿ) es una complejidad exponencial, muy costosa y propia de algoritmos que se disparan en número de operaciones. Es lo contrario de un estándar eficiente de búsqueda."
+            },
+            {
+              "clave": "b",
+              "motivo": "O(n!) es una complejidad factorial, considerada de las peores posibles. Se asocia a fuerza bruta extrema, no a búsquedas eficientes."
+            },
+            {
+              "clave": "c",
+              "motivo": "O(n) es lineal. Aunque puede ser aceptable en algunos casos, no es el nivel de eficiencia característico de algoritmos como la búsqueda binaria, que mejoran ese coste al dividir el problema en cada paso."
+            }
+          ],
+          "resumen_didactico": "Cuando un algoritmo va reduciendo el problema a la mitad una y otra vez, su complejidad suele ser O(log n). Por eso es una referencia clásica de eficiencia en búsquedas.",
+          "ejemplo_practico": "En una búsqueda binaria sobre una lista ordenada, no revisas elemento por elemento. Miras el centro y descartas media lista en cada paso. Eso hace que incluso con muchos datos el número de comprobaciones sea pequeño.",
+          "conclusion_final": "La respuesta correcta es la d, porque la búsqueda binaria es el ejemplo clásico de complejidad logarítmica O(log n), considerada una de las formas más eficientes de buscar en estructuras adecuadas."
+        }
+      },
+      {
+        "id": "UT11-Q17",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué tipo de crecimiento de recursos se considera inasumible para grandes volúmenes de datos debido a que el tiempo de ejecución \"explota\" rápidamente?",
+        "contexto": "Identificación de las complejidades más peligrosas cuando el tamaño de los datos crece mucho.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Crecimiento exponencial O(2ⁿ) o factorial O(n!)." },
+          { "clave": "b", "texto": "Crecimiento logarítmico O(log n)." },
+          { "clave": "c", "texto": "Crecimiento lineal ONo." },
+          { "clave": "d", "texto": "Crecimiento constante O(1)." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Los crecimientos que se consideran inasumibles para grandes volúmenes de datos son el exponencial O(2ⁿ) y el factorial O(n!). Ambos hacen que el coste aumente de forma explosiva conforme crece la entrada, hasta volverse impracticables en escenarios reales.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "O(log n) es una complejidad muy eficiente. Crece muy lentamente y suele considerarse excelente para algoritmos de búsqueda como la búsqueda binaria."
+            },
+            {
+              "clave": "c",
+              "motivo": "O(n) es lineal. Su coste aumenta con el tamaño de los datos, pero no explota rápidamente. Puede ser perfectamente asumible en muchos casos reales."
+            },
+            {
+              "clave": "d",
+              "motivo": "O(1) es constante, la mejor situación posible en términos de crecimiento, porque el coste no depende del tamaño de la entrada."
+            }
+          ],
+          "resumen_didactico": "Cuando una complejidad es exponencial o factorial, el tiempo de ejecución se dispara enseguida al crecer los datos. Por eso son las más peligrosas y normalmente se intentan evitar.",
+          "ejemplo_practico": "Un Fibonacci recursivo ingenuo puede acercarse a un crecimiento exponencial, mientras que probar todas las combinaciones posibles de una clave puede caer en un crecimiento factorial. En ambos casos, con pocos datos aún funciona, pero al crecer el problema el coste se vuelve enorme.",
+          "conclusion_final": "La respuesta correcta es la a, porque los crecimientos exponencial O(2ⁿ) y factorial O(n!) son los que más rápidamente se vuelven inasumibles cuando aumenta el volumen de datos."
+        }
+      },
+      {
+        "id": "UT11-Q18",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Cuál es la regla fundamental para calcular la complejidad de un algoritmo que tiene varias tareas secuenciales?",
+        "contexto": "Criterio general de análisis cuando un algoritmo realiza varias operaciones una detrás de otra y se quiere expresar su complejidad final en Big-O.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Solo se cuenta la complejidad del método main." },
+          { "clave": "b", "texto": "Se ignora todo y se marca como ONo." },
+          { "clave": "c", "texto": "Se suman todas las complejidades y se dividen por el número de líneas." },
+          { "clave": "d", "texto": "Se descartan las constantes y los términos menores, quedándose solo con el término dominante." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Cuando un algoritmo tiene varias partes secuenciales, en el análisis de complejidad se observa qué término crece más al aumentar los datos. En notación Big-O se descartan las constantes y los términos menores, y se conserva solo el término dominante, porque es el que marca el comportamiento real del algoritmo cuando la entrada crece.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la complejidad no depende solo del método main, sino de todas las operaciones relevantes que ejecuta el algoritmo."
+            },
+            {
+              "clave": "b",
+              "motivo": "No se puede marcar automáticamente como O(n). La complejidad debe analizarse según las operaciones reales y su crecimiento."
+            },
+            {
+              "clave": "c",
+              "motivo": "En Big-O no se divide por el número de líneas. Lo importante no es cuántas líneas hay, sino qué parte del algoritmo domina el coste cuando aumenta la entrada."
+            }
+          ],
+          "resumen_didactico": "En complejidad algorítmica no te quedas con todos los detalles pequeños. Te quedas con la parte que más pesa cuando los datos crecen: el término dominante.",
+          "ejemplo_practico": "Si un algoritmo primero hace una operación O(n) y luego otra O(n²), la complejidad final será O(n²), porque al crecer los datos la parte cuadrática domina claramente sobre la lineal.",
+          "conclusion_final": "La respuesta correcta es la d, porque la regla fundamental en Big-O es eliminar constantes y términos menores para quedarse con el término dominante, que es el que realmente determina la escalabilidad del algoritmo."
+        }
+      },
+      {
+        "id": "UT11-Q19",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Por qué es importante para un arquitecto de software distinguir entre complejidad temporal y complejidad espacial?",
+        "contexto": "Diferenciación entre los dos grandes recursos que puede consumir un algoritmo: tiempo de ejecución y memoria.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Porque son términos opuestos que nunca ocurren a la vez." },
+          { "clave": "b", "texto": "Porque una mide la longitud del código y la otra el número de variables." },
+          { "clave": "c", "texto": "Porque Java solo permite optimizar el tiempo pero no el espacio." },
+          { "clave": "d", "texto": "Porque una mide el tiempo de CPU y la otra la memoria RAM consumida." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Es importante distinguir entre complejidad temporal y complejidad espacial porque la complejidad algorítmica estudia dos recursos diferentes: el tiempo de ejecución y la memoria consumida. Un arquitecto de software necesita valorar ambos para decidir si una solución escala bien y si su coste es asumible en producción.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque no son términos opuestos ni excluyentes. Un algoritmo puede consumir mucho tiempo y mucha memoria a la vez, o ser eficiente en uno de esos aspectos y peor en el otro."
+            },
+            {
+              "clave": "b",
+              "motivo": "No es correcto porque la complejidad temporal no mide la longitud del código ni la espacial cuenta simplemente variables. Lo que se analiza es el consumo de recursos del sistema durante la ejecución."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es falsa porque Java sí puede verse afectado tanto por el tiempo de ejecución como por el uso de memoria. La optimización no se limita solo al tiempo."
+            }
+          ],
+          "resumen_didactico": "La complejidad temporal te dice cuánto tarda el algoritmo; la complejidad espacial te dice cuánta memoria necesita. Distinguir ambas ayuda a elegir soluciones realmente viables.",
+          "ejemplo_practico": "Dos algoritmos pueden resolver el mismo problema: uno puede ser muy rápido pero gastar mucha memoria, y otro puede usar poca memoria pero tardar más. Un arquitecto de software debe decidir cuál conviene según el contexto del sistema.",
+          "conclusion_final": "La respuesta correcta es la d, porque la diferencia fundamental es que una complejidad mide el tiempo de CPU o ejecución y la otra mide la memoria RAM consumida por el algoritmo."
+        }
+      },
+      {
+        "id": "UT11-Q20",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿En qué escenario profesional es casi obligatorio usar recursividad en lugar de iteración?",
+        "contexto": "Elección entre iteración y recursividad según la forma de los datos y la profundidad de la estructura.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Para imprimir una lista de 10 nombres." },
+          { "clave": "b", "texto": "Para realizar una conexión simple a una base de datos." },
+          { "clave": "c", "texto": "Para sumar dos números enteros." },
+          { "clave": "d", "texto": "Para trabajar con estructuras jerárquicas de profundidad desconocida, como sistemas de archivos o árboles." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La recursividad se vuelve la opción natural y casi obligatoria cuando trabajas con estructuras jerárquicas de profundidad desconocida, como árboles o sistemas de archivos con carpetas dentro de carpetas. En esos casos, la iteración con bucles fijos se vuelve rígida y difícil de mantener, mientras que la recursividad se adapta dinámicamente a la profundidad real de los datos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Imprimir una lista de 10 nombres es un problema lineal y simple. El propio tema indica que para listas lineales y recorridos sencillos lo normal es usar iteración."
+            },
+            {
+              "clave": "b",
+              "motivo": "Una conexión simple a una base de datos no es un problema jerárquico ni de profundidad desconocida. No requiere recursividad para resolverse."
+            },
+            {
+              "clave": "c",
+              "motivo": "Sumar dos números enteros es una operación directa y trivial. No hay subniveles, ramas ni estructuras anidadas que justifiquen usar recursividad."
+            }
+          ],
+          "resumen_didactico": "La recursividad encaja especialmente bien cuando el problema tiene forma de árbol o de niveles dentro de niveles, y no sabes de antemano cuántos niveles habrá.",
+          "ejemplo_practico": "Si una aplicación debe recorrer todas las carpetas y subcarpetas de un cliente para hacer una copia de seguridad, no sabes si habrá 2 niveles o 20. Con recursividad puedes entrar en cada carpeta y volver a aplicar la misma lógica tantas veces como haga falta.",
+          "conclusion_final": "La respuesta correcta es la d, porque el caso profesional más claro para usar recursividad es el trabajo con estructuras jerárquicas y de profundidad desconocida, como árboles y sistemas de archivos."
+        }
+      },
+      {
+        "id": "UT11-Q21",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué sucede con la \"pila de llamadas\" cuando un método recursivo alcanza finalmente el caso base?",
+        "contexto": "Comportamiento de la pila de llamadas cuando la recursividad deja de profundizar y comienza a devolver resultados.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "La pila empieza a desatarse (unwinding), resolviendo las llamadas pendientes de la más reciente a la más antigua." },
+          { "clave": "b", "texto": "La pila se guarda en un archivo .jar automáticamente." },
+          { "clave": "c", "texto": "La pila explota y el programa termina." },
+          { "clave": "d", "texto": "Se duplica el tamaño de la memoria RAM asignada al programa." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Cuando un método recursivo alcanza el caso base, deja de generar nuevas llamadas. A partir de ese punto, la pila de llamadas comienza a deshacerse o desapilarse, devolviendo el control y los resultados a las llamadas anteriores en orden inverso: desde la más reciente hasta la más antigua.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Eso no tiene ninguna relación con la recursividad. Un archivo .jar sirve para empaquetar aplicaciones Java, no para guardar automáticamente la pila de llamadas."
+            },
+            {
+              "clave": "c",
+              "motivo": "La pila no explota cuando se alcanza el caso base. Al contrario: alcanzar el caso base es precisamente lo que permite que la ejecución empiece a volver hacia atrás de forma correcta. La pila solo falla si se desborda."
+            },
+            {
+              "clave": "d",
+              "motivo": "La memoria RAM no se duplica automáticamente al llegar al caso base. Lo que ocurre es que las llamadas pendientes empiezan a resolverse y la pila se va liberando."
+            }
+          ],
+          "resumen_didactico": "El caso base actúa como punto de parada. Desde ahí, la recursividad deja de bajar y empieza a subir: la pila se desapila y cada llamada pendiente recibe su resultado.",
+          "ejemplo_practico": "En factorial(3), la pila guarda factorial(3), luego factorial(2) y luego factorial(1). Cuando factorial(1) llega al caso base y devuelve 1, se resuelve factorial(2), y después factorial(3). Esa vuelta hacia atrás es el unwinding de la pila.",
+          "conclusion_final": "La respuesta correcta es la a, porque al alcanzar el caso base la pila de llamadas empieza a desatarse, resolviendo las llamadas pendientes desde la más reciente hasta la más antigua."
+        }
+      },
+      {
+        "id": "UT11-Q22",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué significa que un algoritmo de ordenación tenga una complejidad O(n log n)?",
+        "contexto": "Interpretación de la complejidad cuasi lineal en algoritmos de ordenación eficientes.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Que es el algoritmo más lento posible para esa tarea." },
+          { "clave": "b", "texto": "Que el algoritmo no funciona si la lista tiene menos de 100 elementos." },
+          { "clave": "c", "texto": "Que es un algoritmo eficiente que combina la división del problema con el recorrido de los datos." },
+          { "clave": "d", "texto": "Que el tiempo de ejecución disminuye a medida que aumentan los datos." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La complejidad O(n log n) se denomina cuasi lineal. En el temario se explica como una complejidad similar a la logarítmica, pero que además requiere unir las partes al final. Es típica de algoritmos de ordenación eficientes como Quicksort, donde se combina la división del problema con el trabajo de recorrer y reorganizar los datos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque O(n log n) no representa el algoritmo más lento posible. De hecho, en la tabla del tema aparece como una complejidad eficiente, claramente mejor que O(n²), O(2ⁿ) y O(n!)."
+            },
+            {
+              "clave": "b",
+              "motivo": "La complejidad O(n log n) no significa que el algoritmo deje de funcionar con listas pequeñas. La complejidad describe cómo escala el coste al crecer los datos, no un límite mínimo de tamaño para que el algoritmo funcione."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es falsa porque cuando aumentan los datos, el tiempo de ejecución no disminuye. Lo que ocurre es que crece de forma bastante eficiente en comparación con otras complejidades más costosas."
+            }
+          ],
+          "resumen_didactico": "O(n log n) significa que el algoritmo es eficiente y que mezcla dos ideas: procesar muchos elementos y, al mismo tiempo, dividir el problema en partes más pequeñas para trabajar mejor.",
+          "ejemplo_practico": "En una ordenación eficiente como Quicksort, no comparas todos los elementos con todos de manera bruta. Vas dividiendo la lista en partes y luego recomponiendo el resultado, lo que da una complejidad típica O(n log n).",
+          "conclusion_final": "La respuesta correcta es la c, porque O(n log n) describe una complejidad cuasi lineal propia de algoritmos de ordenación eficientes que combinan división del problema y recorrido de datos."
+        }
+      },
+      {
+        "id": "UT11-Q23",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Cuál es la principal diferencia entre un bucle \"while\" y un método recursivo?",
+        "contexto": "Comparación entre iteración y recursividad desde el punto de vista del mecanismo de ejecución.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El bucle puede ser infinito y la recursividad no." },
+          { "clave": "b", "texto": "La recursividad solo funciona con tipos primitivos y el bucle con objetos." },
+          { "clave": "c", "texto": "El bucle usa una estructura de control iterativa y la recursividad usa la propia pila de llamadas del sistema." },
+          { "clave": "d", "texto": "No hay ninguna diferencia; son exactamente lo mismo para el procesador." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La diferencia principal es que un bucle \"while\" repite una acción mediante una estructura de control iterativa, mientras que un método recursivo repite el proceso llamándose a sí mismo y apoyándose en la pila de llamadas para recordar cada ejecución pendiente. En la iteración controlas la repetición con condiciones y ciclos; en la recursividad, con caso base y llamadas recursivas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque ambos pueden volverse infinitos si están mal planteados. Un while sin condición de salida puede ser infinito, y una recursividad sin caso base también."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es falsa porque la recursividad no está limitada a tipos primitivos. Un método recursivo puede trabajar también con objetos, listas, árboles, carpetas y muchas otras estructuras."
+            },
+            {
+              "clave": "d",
+              "motivo": "No son exactamente lo mismo. Aunque ambos sirven para repetir procesos, el mecanismo interno es distinto: el bucle usa control iterativo y la recursividad depende de la pila de llamadas."
+            }
+          ],
+          "resumen_didactico": "El while repite desde una estructura de control; la recursividad repite mediante nuevas llamadas al mismo método. Esa es la diferencia clave.",
+          "ejemplo_practico": "Para recorrer una lista simple, un while va avanzando índice por índice. En cambio, un método recursivo procesaría un elemento y luego se llamaría a sí mismo para procesar el resto, guardando cada llamada en la pila.",
+          "conclusion_final": "La respuesta correcta es la c, porque el bucle \"while\" funciona mediante iteración, mientras que la recursividad funciona mediante llamadas al propio método y el uso de la pila de llamadas del sistema."
+        }
+      },
+      {
+        "id": "UT11-Q24",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué término define la estrategia de resolver un problema difícil dividiéndolo en subproblemas idénticos pero más simples?",
+        "contexto": "Principio conceptual que explica cómo se aborda un problema complejo en recursividad y en ciertos algoritmos eficientes.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Encapsulamiento" },
+          { "clave": "b", "texto": "Divide y vencerás" },
+          { "clave": "c", "texto": "Programación lineal" },
+          { "clave": "d", "texto": "Casting de tipo" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La estrategia de resolver un problema complejo dividiéndolo en subproblemas más pequeños del mismo tipo se denomina \"divide y vencerás\". En el tema, la recursividad se explica precisamente como una técnica basada en esa filosofía: descomponer el problema hasta llegar a una versión tan simple que pueda resolverse directamente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El encapsulamiento es un principio de programación orientada a objetos relacionado con proteger y agrupar datos y comportamiento dentro de una clase. No describe la estrategia de dividir problemas en subproblemas más pequeños."
+            },
+            {
+              "clave": "c",
+              "motivo": "La programación lineal no es el término usado en el temario para esta idea. Además, sugiere más bien un enfoque secuencial, no la descomposición recursiva de un problema."
+            },
+            {
+              "clave": "d",
+              "motivo": "El casting de tipo consiste en convertir una referencia o valor de un tipo a otro. No tiene relación con la estrategia de diseño algorítmico que divide problemas complejos."
+            }
+          ],
+          "resumen_didactico": "Divide y vencerás significa partir un problema grande en versiones más pequeñas del mismo problema, resolverlas y usar esos resultados para construir la solución final.",
+          "ejemplo_practico": "En el factorial recursivo, para calcular 5! no resuelves todo de golpe: haces 5 * factorial(4), luego 4 * factorial(3), luego 3 * factorial(2), hasta llegar al caso base. Cada paso reduce el problema.",
+          "conclusion_final": "La respuesta correcta es la b, porque el término técnico que define esa estrategia de descomponer un problema difícil en subproblemas más simples es \"divide y vencerás\"."
+        }
+      },
+      {
+        "id": "UT11-Q25",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "En la notación Big-O, ¿cómo se clasifica un algoritmo que tiene que probar todas las combinaciones posibles de una caja fuerte?",
+        "contexto": "Clasificación de algoritmos de fuerza bruta que exploran muchísimas posibilidades para encontrar una solución.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "O(2ⁿ) o complejidad exponencial." },
+          { "clave": "b", "texto": "O(log n) - Logarítmica" },
+          { "clave": "c", "texto": "O(1) - Constante" },
+          { "clave": "d", "texto": "O(n) - Lineal" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En el tema, las complejidades muy costosas se presentan como las que crecen de forma explosiva. Cuando un algoritmo tiene que probar una enorme cantidad de combinaciones posibles mediante fuerza bruta, se clasifica dentro de las complejidades peligrosas, y entre las opciones dadas la correcta es O(2ⁿ), es decir, complejidad exponencial.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "O(log n) es una complejidad muy eficiente, típica de algoritmos que reducen el problema a la mitad en cada paso, como la búsqueda binaria. No encaja con probar todas las combinaciones posibles."
+            },
+            {
+              "clave": "c",
+              "motivo": "O(1) significa coste constante, es decir, que el trabajo no depende del tamaño de la entrada. Probar combinaciones de una caja fuerte depende totalmente del número de posibilidades y puede crecer muchísimo."
+            },
+            {
+              "clave": "d",
+              "motivo": "O(n) es una complejidad lineal y representa un crecimiento mucho más controlado. Probar todas las combinaciones posibles no suele crecer de forma lineal, sino mucho más rápido."
+            }
+          ],
+          "resumen_didactico": "Si un algoritmo tiene que explorar muchísimas combinaciones posibles, su coste se dispara rápidamente. En Big-O eso se asocia a complejidades muy altas, y entre estas opciones la correcta es la exponencial O(2ⁿ).",
+          "ejemplo_practico": "Si una caja fuerte tiene cada vez más posiciones o más opciones por posición, el número de combinaciones posibles crece rápidamente. Un algoritmo que las pruebe una por una se vuelve muy costoso en poco tiempo.",
+          "conclusion_final": "La respuesta correcta es la a, porque probar todas las combinaciones posibles se asocia a un crecimiento explosivo del trabajo, y entre las opciones dadas eso corresponde a una complejidad exponencial O(2ⁿ)."
+        }
+      },
+      {
+        "id": "UT11-Q26",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué componente del hardware se ve más afectado por un algoritmo con alta complejidad temporal?",
+        "contexto": "Relación entre complejidad temporal y el recurso físico del sistema que más sufre cuando el algoritmo tarda demasiado en ejecutarse.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El disco duro (SSD/HDD)." },
+          { "clave": "b", "texto": "La tarjeta de red." },
+          { "clave": "c", "texto": "El procesador (CPU)." },
+          { "clave": "d", "texto": "La tarjeta gráfica (GPU)." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La complejidad temporal mide el tiempo de ejecución de un algoritmo. Por eso, el componente del hardware más directamente afectado es el procesador o CPU, ya que es el encargado de ejecutar las instrucciones y realizar el trabajo de cálculo durante más o menos tiempo según la eficiencia del algoritmo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El disco duro puede influir en operaciones de entrada y salida, pero la complejidad temporal del algoritmo se relaciona principalmente con el tiempo de procesamiento, no con el almacenamiento."
+            },
+            {
+              "clave": "b",
+              "motivo": "La tarjeta de red interviene en comunicaciones y transferencia de datos por red, no en el coste computacional interno de un algoritmo."
+            },
+            {
+              "clave": "d",
+              "motivo": "La GPU se usa sobre todo para gráficos o ciertos cálculos paralelos específicos, pero en el análisis general de complejidad temporal el recurso principal afectado es la CPU."
+            }
+          ],
+          "resumen_didactico": "Si un algoritmo tiene alta complejidad temporal, tarda mucho en ejecutarse. Eso significa que el procesador tiene que trabajar más tiempo.",
+          "ejemplo_practico": "Si un algoritmo O(n²) compara miles de elementos entre sí con dos bucles anidados, la CPU tendrá que realizar muchísimas operaciones. Cuanto peor sea la complejidad temporal, más carga soportará el procesador.",
+          "conclusion_final": "La respuesta correcta es la c, porque la complejidad temporal se refiere al tiempo de ejecución, y el componente del hardware más afectado por ese coste es el procesador (CPU)."
+        }
+      },
+      {
+        "id": "UT11-Q27",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué componente del hardware se ve más afectado por un algoritmo con alta complejidad espacial?",
+        "contexto": "Relación entre complejidad espacial y el recurso físico del sistema que más se consume cuando un algoritmo necesita mucha memoria.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El teclado." },
+          { "clave": "b", "texto": "La memoria de acceso aleatorio (RAM)." },
+          { "clave": "c", "texto": "El monitor." },
+          { "clave": "d", "texto": "El procesador (CPU)." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La complejidad espacial mide la cantidad de memoria que necesita un algoritmo durante su ejecución. Por eso, el componente del hardware más afectado es la memoria RAM, ya que ahí se almacenan variables, estructuras de datos y llamadas pendientes mientras el programa se está ejecutando.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El teclado es un dispositivo de entrada y no guarda la memoria que consume un algoritmo durante su ejecución."
+            },
+            {
+              "clave": "c",
+              "motivo": "El monitor solo muestra información en pantalla. No está relacionado con la cantidad de memoria que necesita un algoritmo para ejecutarse."
+            },
+            {
+              "clave": "d",
+              "motivo": "La CPU se ve más relacionada con la complejidad temporal, es decir, con el tiempo de ejecución. En cambio, la complejidad espacial afecta directamente al uso de memoria."
+            }
+          ],
+          "resumen_didactico": "La complejidad espacial habla de memoria, no de tiempo. Si un algoritmo necesita mucho espacio para ejecutarse, el componente más afectado será la RAM.",
+          "ejemplo_practico": "Un algoritmo que crea muchas estructuras auxiliares en memoria o una recursividad muy profunda puede consumir mucha RAM, porque cada dato y cada llamada pendiente necesita espacio para almacenarse.",
+          "conclusion_final": "La respuesta correcta es la b, porque la complejidad espacial mide el consumo de memoria y el componente del hardware encargado de eso es la memoria RAM."
+        }
+      },
+      {
+        "id": "UT11-Q28",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Qué es un \"Algoritmo de Fuerza Bruta\"?",
+        "contexto": "Concepto de algoritmo que prueba soluciones sin optimización y su relación con complejidades muy altas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Un programa que utiliza inteligencia artificial para aprender." },
+          { "clave": "b", "texto": "Un algoritmo optimizado que usa búsqueda binaria." },
+          { "clave": "c", "texto": "Un código escrito exclusivamente en lenguaje ensamblador." },
+          { "clave": "d", "texto": "Aquel que intenta todas las soluciones posibles sin una estrategia de optimización, teniendo normalmente alta complejidad." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Un algoritmo de fuerza bruta es aquel que intenta todas las soluciones o combinaciones posibles sin aplicar una estrategia de optimización para reducir el trabajo. Por eso suele estar asociado a complejidades muy altas, especialmente cuando el número de posibilidades crece mucho.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Eso describe sistemas de aprendizaje automático o inteligencia artificial, no un algoritmo de fuerza bruta. La fuerza bruta no aprende ni mejora su estrategia: prueba posibilidades una por una."
+            },
+            {
+              "clave": "b",
+              "motivo": "La búsqueda binaria es precisamente un ejemplo de algoritmo eficiente, no de fuerza bruta. En lugar de probar todas las opciones, va descartando grandes partes del problema."
+            },
+            {
+              "clave": "c",
+              "motivo": "El hecho de que un programa esté escrito en ensamblador no lo convierte en fuerza bruta. La fuerza bruta se define por la estrategia de probar todas las soluciones posibles, no por el lenguaje utilizado."
+            }
+          ],
+          "resumen_didactico": "Fuerza bruta significa atacar el problema probándolo todo, sin atajos ni optimización. Funciona, pero suele ser muy caro en tiempo y recursos cuando los datos crecen.",
+          "ejemplo_practico": "Intentar abrir una caja fuerte probando una por una todas las combinaciones posibles es fuerza bruta. No hay una estrategia inteligente: simplemente se prueban todas hasta acertar.",
+          "conclusion_final": "La respuesta correcta es la d, porque un algoritmo de fuerza bruta se caracteriza por intentar todas las soluciones posibles sin optimizar el proceso, lo que normalmente provoca una complejidad alta."
+        }
+      },
+      {
+        "id": "UT11-Q29",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "¿Por qué se dice que la recursividad es una \"alternativa cerebral\" a los bucles?",
+        "contexto": "Interpretación conceptual de la recursividad como una forma de modelar problemas complejos mediante descomposición lógica.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Porque se basa en definiciones matemáticas y lógicas que modelan el problema de forma natural." },
+          { "clave": "b", "texto": "Porque el procesador tiene una zona especial llamada \"cerebro recursivo\"." },
+          { "clave": "c", "texto": "Porque requiere menos esfuerzo de pensamiento por parte del programador." },
+          { "clave": "d", "texto": "Porque solo se puede usar en proyectos de investigación científica." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Se dice que la recursividad es una alternativa cerebral porque obliga a cambiar la forma de pensar el problema. En lugar de resolverlo paso a paso con bucles, se modela mediante una definición lógica: un problema grande se expresa en términos de versiones más pequeñas del mismo problema hasta llegar al caso base. Por eso tiene una relación muy natural con el razonamiento matemático y estructural.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es falsa porque no existe ninguna zona del procesador llamada \"cerebro recursivo\". La expresión es una metáfora sobre la forma de razonar, no una característica física del hardware."
+            },
+            {
+              "clave": "c",
+              "motivo": "No es correcto. De hecho, la recursividad suele exigir más esfuerzo conceptual al principio, porque obliga a pensar en caso base, caso recurrente y descomposición del problema."
+            },
+            {
+              "clave": "d",
+              "motivo": "También es incorrecta porque la recursividad no se limita a investigación científica. Puede aplicarse en problemas profesionales reales como árboles, menús anidados o sistemas de archivos."
+            }
+          ],
+          "resumen_didactico": "La recursividad es \"cerebral\" porque no repite de forma mecánica como un bucle, sino que te obliga a pensar el problema como una estructura lógica que se va reduciendo a versiones más pequeñas de sí misma.",
+          "ejemplo_practico": "Para recorrer carpetas dentro de carpetas, en vez de escribir muchos bucles anidados, piensas así: si encuentro un archivo, termino; si encuentro una carpeta, vuelvo a aplicar la misma función dentro. Esa forma de definir el problema es la parte cerebral de la recursividad.",
+          "conclusion_final": "La respuesta correcta es la a, porque la recursividad se considera una alternativa cerebral a los bucles al basarse en una descomposición lógica y matemática del problema en subproblemas más simples del mismo tipo."
+        }
+      },
+      {
+        "id": "UT11-Q30",
+        "tema": "UT11 Recursividad y complejidad algorítmica",
+        "pregunta": "Según los estándares de la industria, ¿qué debe priorizar un desarrollador: la legibilidad del código recursivo o la eficiencia del código iterativo?",
+        "contexto": "Toma de decisiones profesional entre claridad del diseño y rendimiento según el problema concreto y el volumen de datos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Siempre la recursividad por estética." },
+          { "clave": "b", "texto": "Siempre la iteración para ahorrar energía." },
+          { "clave": "c", "texto": "Se debe preguntar al cliente final qué prefiere." },
+          { "clave": "d", "texto": "Depende del contexto: se busca el equilibrio entre un código mantenible y un rendimiento aceptable para el volumen de datos esperado" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La decisión correcta depende del contexto. El tema insiste en que no basta con que el código sea elegante: también debe ser eficiente. La recursividad puede producir código más limpio y legible en estructuras jerárquicas, pero la iteración suele ser más rápida y consumir menos memoria. Por eso, un desarrollador profesional debe buscar el equilibrio entre mantenibilidad y rendimiento según el problema y el tamaño esperado de los datos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el temario no defiende usar siempre recursividad. De hecho, explica que la recursividad tiene ventajas de claridad, pero también inconvenientes importantes de memoria y velocidad."
+            },
+            {
+              "clave": "b",
+              "motivo": "También es incorrecta porque la iteración no debe imponerse siempre. El propio tema dice que hay casos, como estructuras jerárquicas y profundidades desconocidas, donde la recursividad es la solución más natural y mantenible."
+            },
+            {
+              "clave": "c",
+              "motivo": "No es una decisión que deba tomar el cliente final en términos técnicos. Elegir entre recursividad e iteración es una decisión de diseño de software que depende de la estructura del problema y de los recursos del sistema."
+            }
+          ],
+          "resumen_didactico": "No existe una respuesta absoluta de \"siempre recursión\" o \"siempre iteración\". Un buen desarrollador valora qué opción deja un código claro, mantenible y suficientemente eficiente para el volumen de datos real.",
+          "ejemplo_practico": "Si tienes que recorrer un array simple, normalmente eliges iteración porque es clara y eficiente. Pero si debes recorrer carpetas dentro de carpetas o un árbol de categorías, la recursividad puede ser más limpia y más fácil de mantener, aunque tenga cierto coste extra.",
+          "conclusion_final": "La respuesta correcta es la d, porque en desarrollo profesional se debe decidir según el contexto, buscando el equilibrio entre legibilidad, mantenibilidad y rendimiento aceptable para el caso real."
+        }
+      }
+
+]
