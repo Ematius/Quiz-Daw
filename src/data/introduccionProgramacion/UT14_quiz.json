@@ -1,0 +1,1338 @@
+[
+    {
+        "id": "UT14-Q01",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Llegas a tu primer día de trabajo y tu mentor te explica que el contrato millonario con la multinacional logística requiere manejar millones de paquetes. ¿Qué tecnología domina el 90% del mercado empresarial (bancos, comercios electrónicos) para este tipo de volúmenes?",
+        "contexto": "En la introducción del tema se explica que la mayoría de empresas trabajan con una tecnología concreta para gestionar grandes volúmenes de información en proyectos reales.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Bases de datos orientadas a objetos puras."
+          },
+          {
+            "clave": "b",
+            "texto": "Bases de datos relacionales (RDBMS)."
+          },
+          {
+            "clave": "c",
+            "texto": "Almacenamiento exclusivo en la memoria RAM del servidor."
+          },
+          {
+            "clave": "d",
+            "texto": "Archivos de texto plano compartidos en red."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El tema dice que el 90% de las empresas del mundo, como bancos, aseguradoras y comercios electrónicos, funcionan con bases de datos relacionales. Por eso se presentan como el estándar del mercado para trabajar con grandes volúmenes de datos en entornos reales.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Las bases de datos orientadas a objetos se mencionan como algo visto antes y útil en ciertos casos, pero no como la tecnología que domina el mercado empresarial."
+            },
+            {
+              "clave": "c",
+              "motivo": "La RAM puede intervenir en el rendimiento del sistema, pero no es la tecnología de persistencia principal para gestionar millones de registros empresariales."
+            },
+            {
+              "clave": "d",
+              "motivo": "Los archivos de texto plano no ofrecen las capacidades de organización, relación, integridad y escalabilidad que sí proporcionan los sistemas relacionales."
+            }
+          ],
+          "resumen_didactico": "Si piensas en empresas grandes y gestión seria de datos, la tecnología dominante es la base de datos relacional. Es la opción estándar porque organiza la información en tablas y permite trabajar de forma robusta y escalable.",
+          "ejemplo_practico": "Un banco puede tener millones de clientes, cuentas y movimientos. Para manejar todo eso de forma estructurada y relacionar unas tablas con otras, usa un sistema relacional.",
+          "conclusion_final": "La respuesta correcta es bases de datos relacionales, porque son la tecnología que domina el mercado empresarial para gestionar grandes volúmenes de información."
+        }
+      },
+      {
+        "id": "UT14-Q02",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "En el ecosistema de desarrollo Java, ¿qué conjunto de bibliotecas actúa como el estándar para conectar una aplicación con cualquier motor de base de datos relacional?",
+        "contexto": "El tema explica cuál es la tecnología estándar en Java para establecer la conexión entre una aplicación y una base de datos relacional como MariaDB.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JPA (Java Persistence API)."
+          },
+          {
+            "clave": "b",
+            "texto": "JVM (Java Virtual Machine)."
+          },
+          {
+            "clave": "c",
+            "texto": "JRE (Java Runtime Environment)."
+          },
+          {
+            "clave": "d",
+            "texto": "JDBC (Java Database Connectivity)."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que en Java el estándar para conectar una aplicación con una base de datos relacional es JDBC. Se presenta como el mecanismo que permite que Java se comunique con motores como MariaDB mediante un driver específico.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "JPA es una API de persistencia de más alto nivel, pero en este tema la conexión directa con la base de datos relacional se trabaja con JDBC."
+            },
+            {
+              "clave": "b",
+              "motivo": "La JVM es la máquina virtual que ejecuta programas Java, pero no es la biblioteca estándar para conectarse a bases de datos."
+            },
+            {
+              "clave": "c",
+              "motivo": "La JRE proporciona el entorno de ejecución de Java, pero no actúa como tecnología de conectividad con motores relacionales."
+            }
+          ],
+          "resumen_didactico": "Si Java necesita hablar con una base de datos relacional, el estándar que usa es JDBC. Luego, para cada motor concreto, se añade su driver correspondiente.",
+          "ejemplo_practico": "Si una aplicación Java quiere conectarse a MariaDB, utiliza JDBC junto con el driver mariadb-java-client para abrir la conexión y ejecutar sentencias SQL.",
+          "conclusion_final": "La respuesta correcta es JDBC, porque es el estándar de conectividad de Java para trabajar con bases de datos relacionales."
+        }
+      },
+      {
+        "id": "UT14-Q03",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Un desarrollador junior intenta conectar una aplicación a una base de datos MySQL en un servidor local. ¿Cuál de los siguientes formatos representa una URL de conexión válida y profesional?",
+        "contexto": "El tema explica la estructura correcta de una URL de conexión JDBC para que una aplicación Java pueda conectarse a una base de datos relacional en un servidor local.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "jdbc:mysql://localhost:3306/logistica"
+          },
+          {
+            "clave": "b",
+            "texto": "C:\\BBDD\\logistica.sql"
+          },
+          {
+            "clave": "c",
+            "texto": "mysql.server.local:password"
+          },
+          {
+            "clave": "d",
+            "texto": "http://localhost:3306/logistica"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que la URL de conexión JDBC sigue la estructura jdbc:protocolo://ip:puerto/base_de_datos. Por tanto, una dirección como jdbc:mysql://localhost:3306/logistica es un formato válido y profesional para conectarse a una base de datos MySQL en local.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Eso es una ruta de archivo del sistema operativo, no una URL de conexión JDBC hacia un servidor de base de datos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Ese formato no sigue la sintaxis estándar de JDBC y además mezcla host y contraseña sin la estructura correcta de conexión."
+            },
+            {
+              "clave": "d",
+              "motivo": "HTTP es un protocolo web, no el protocolo de conexión que usa JDBC para comunicarse con una base de datos relacional."
+            }
+          ],
+          "resumen_didactico": "Una URL JDBC bien formada indica el tipo de motor, el servidor, el puerto y el nombre de la base de datos. Si falta esa estructura, Java no sabrá conectarse correctamente.",
+          "ejemplo_practico": "Para MariaDB en el tema se usa algo como jdbc:mariadb://localhost:3306/TechCorp_Management. Para MySQL sería equivalente cambiando el protocolo a mysql.",
+          "conclusion_final": "La respuesta correcta es jdbc:mysql://localhost:3306/logistica porque respeta el formato estándar de una URL de conexión JDBC."
+        }
+      },
+      {
+        "id": "UT14-Q04",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Estás configurando el entorno de trabajo en la consultora y necesitas que Java \"hable\" el mismo idioma que el motor de base de datos específico (MySQL, Oracle, etc.). ¿Qué componente externo debes añadir al proyecto?",
+        "contexto": "El tema explica que Java necesita un componente traductor para comunicarse con un motor de base de datos concreto como MariaDB o MySQL.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Un archivo de texto con las consultas SQL."
+          },
+          {
+            "clave": "b",
+            "texto": "El código fuente del motor de la base de datos."
+          },
+          {
+            "clave": "c",
+            "texto": "Una nueva versión del sistema operativo."
+          },
+          {
+            "clave": "d",
+            "texto": "El Driver o Conector (archivo .jar) específico del fabricante."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que Java necesita un Driver JDBC para poder comunicarse con un motor de base de datos concreto. Ese driver se distribuye como una librería externa, normalmente un archivo .jar, que se añade al proyecto para que Java pueda entender cómo conectarse a MariaDB, MySQL u otros motores.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Un archivo con consultas SQL puede contener instrucciones, pero no actúa como traductor entre Java y el motor de base de datos."
+            },
+            {
+              "clave": "b",
+              "motivo": "No hace falta añadir el código fuente completo del motor de base de datos; lo que se necesita es su driver o conector oficial."
+            },
+            {
+              "clave": "c",
+              "motivo": "El sistema operativo no resuelve la comunicación específica entre Java y el SGBD; esa función corresponde al driver."
+            }
+          ],
+          "resumen_didactico": "Java no se conecta directamente por arte de magia a una base de datos. Necesita una librería intermedia específica del fabricante que haga de traductor entre ambos.",
+          "ejemplo_practico": "Si trabajas con MariaDB, añades al proyecto el archivo mariadb-java-client.jar. Con eso, Java ya puede abrir conexiones JDBC contra ese motor.",
+          "conclusion_final": "La respuesta correcta es el Driver o Conector específico del fabricante, porque es la pieza que permite a Java comunicarse correctamente con el motor de base de datos."
+        }
+      },
+      {
+        "id": "UT14-Q05",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Cuál es la clase de Java encargada de gestionar la lista de controladores disponibles y establecer la comunicación física con la base de datos?",
+        "contexto": "El tema explica qué clase de Java se utiliza para abrir la conexión con la base de datos una vez configurado el driver y la URL.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "DriverManager"
+          },
+          {
+            "clave": "b",
+            "texto": "DatabaseLinker"
+          },
+          {
+            "clave": "c",
+            "texto": "ConnectionFactory"
+          },
+          {
+            "clave": "d",
+            "texto": "StatementManager"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que la clase DriverManager es la que se encarga de utilizar el driver disponible y abrir la conexión con la base de datos mediante la URL, el usuario y la contraseña. Es la pieza que establece la comunicación efectiva entre la aplicación Java y el SGBD.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "DatabaseLinker no es una clase estándar de Java para conexión con bases de datos relacionales."
+            },
+            {
+              "clave": "c",
+              "motivo": "ConnectionFactory puede existir como patrón o clase creada por un programador, pero no es la clase estándar de Java que gestiona los drivers y abre la conexión."
+            },
+            {
+              "clave": "d",
+              "motivo": "StatementManager no es una clase estándar de JDBC. Además, Statement sirve para ejecutar SQL, no para gestionar drivers ni abrir la comunicación física."
+            }
+          ],
+          "resumen_didactico": "Primero Java carga o reconoce el driver y después usa DriverManager para abrir la conexión real contra la base de datos. Sin esa clase, no se establece el canal de comunicación.",
+          "ejemplo_practico": "Cuando escribes DriverManager.getConnection(url, usuario, password), estás pidiendo a Java que use el driver adecuado y te devuelva una conexión lista para trabajar con MariaDB o MySQL.",
+          "conclusion_final": "La respuesta correcta es DriverManager, porque es la clase estándar de JDBC encargada de gestionar los controladores disponibles y abrir la conexión con la base de datos."
+        }
+      },
+      {
+        "id": "UT14-Q06",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Un hacker intenta acceder a la base de datos de tu empresa introduciendo comandos maliciosos a través de un formulario de login. ¿Cómo se denomina técnicamente este tipo de ataque?",
+        "contexto": "El tema explica que cuando hay variables en consultas SQL se debe usar PreparedStatement porque es más seguro y evita un tipo concreto de hackeo.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "SQL Injection (Inyección SQL)."
+          },
+          {
+            "clave": "b",
+            "texto": "Cross-Site Scripting."
+          },
+          {
+            "clave": "c",
+            "texto": "Buffer Overflow."
+          },
+          {
+            "clave": "d",
+            "texto": "Brute Force."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario indica que PreparedStatement debe usarse siempre que haya variables porque es más seguro y evita hackeos SQL Injection. Este ataque consiste en introducir código SQL malicioso a través de datos de entrada, como un formulario de login, para alterar la consulta o acceder indebidamente a la base de datos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Cross-Site Scripting (XSS) ataca normalmente al navegador o a la página web inyectando scripts, no a la consulta SQL contra la base de datos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Buffer Overflow es un desbordamiento de memoria, relacionado con gestión de memoria y ejecución de código, no con manipulación de consultas SQL."
+            },
+            {
+              "clave": "d",
+              "motivo": "Brute Force consiste en probar muchas contraseñas o combinaciones hasta acertar, pero aquí se describe la introducción de comandos maliciosos en una consulta."
+            }
+          ],
+          "resumen_didactico": "Si un atacante mete código SQL en un formulario para cambiar el comportamiento de una consulta, estamos ante una inyección SQL. Por eso el tema insiste en usar PreparedStatement con parámetros en lugar de concatenar Strings.",
+          "ejemplo_practico": "En un login inseguro, un atacante podría escribir algo como usuario = 'admin' y añadir una condición manipulada en la entrada para intentar saltarse la autenticación. Con PreparedStatement, el valor se trata como dato y no como parte del SQL.",
+          "conclusion_final": "La respuesta correcta es SQL Injection, porque es el ataque que consiste en introducir instrucciones SQL maliciosas a través de entradas del usuario."
+        }
+      },
+      {
+        "id": "UT14-Q07",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Qué herramienta de JDBC es la más recomendada para prevenir ataques de inyección SQL al trabajar con variables externas?",
+        "contexto": "El tema compara Statement y PreparedStatement y explica cuál es la opción profesional y segura cuando una consulta usa datos variables introducidos desde fuera.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "PreparedStatement"
+          },
+          {
+            "clave": "b",
+            "texto": "StringConcatenator"
+          },
+          {
+            "clave": "c",
+            "texto": "Statement"
+          },
+          {
+            "clave": "d",
+            "texto": "ResultSet"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que PreparedStatement es la forma profesional y segura de trabajar cuando una consulta SQL tiene variables. Además, en la chuleta final se indica expresamente que debe usarse siempre que haya variables porque es más seguro y evita hackeos de tipo SQL Injection.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "StringConcatenator no es la herramienta de JDBC diseñada para ejecutar consultas seguras con parámetros. Concatenar texto, de hecho, aumenta el riesgo si se usa para construir SQL manualmente."
+            },
+            {
+              "clave": "c",
+              "motivo": "Statement sirve para consultas fijas, pero no es la opción recomendada cuando entran variables externas, porque no ofrece el mismo nivel de seguridad frente a inyección SQL."
+            },
+            {
+              "clave": "d",
+              "motivo": "ResultSet no sirve para preparar ni proteger consultas. Es el objeto que contiene los resultados devueltos por una consulta SELECT."
+            }
+          ],
+          "resumen_didactico": "Si una consulta lleva datos externos, la opción segura es PreparedStatement. Así Java trata esos valores como datos y no como fragmentos de SQL ejecutable.",
+          "ejemplo_practico": "En lugar de construir un login con un String como \"SELECT * FROM usuarios WHERE nombre='\" + usuario + \"'\", se usa \"SELECT * FROM usuarios WHERE nombre = ?\" y luego se rellena con setString().",
+          "conclusion_final": "La respuesta correcta es PreparedStatement, porque es la herramienta de JDBC recomendada para trabajar con variables externas de forma segura y prevenir inyecciones SQL."
+        }
+      },
+      {
+        "id": "UT14-Q08",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Necesitas insertar un nuevo camión en la tabla \"Vehiculos\" usando un PreparedStatement. ¿Qué símbolo se utiliza dentro de la consulta SQL para indicar que ahí irá un valor variable más tarde?",
+        "contexto": "El tema explica cómo funcionan las consultas preparadas en JDBC y qué símbolo se usa como hueco para colocar valores después mediante métodos set.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El símbolo de interrogación (?)."
+          },
+          {
+            "clave": "b",
+            "texto": "Un asterisco (*)."
+          },
+          {
+            "clave": "c",
+            "texto": "El símbolo del dólar ($)."
+          },
+          {
+            "clave": "d",
+            "texto": "Comillas dobles (\"\")."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que PreparedStatement representa una sentencia SQL precompilada y que las partes variables de la consulta se marcan con el símbolo de interrogación (?). Después, esos huecos se rellenan con métodos como setInt(), setString() o setDouble().",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El asterisco se usa normalmente en SQL para indicar todas las columnas, como en SELECT *, pero no para marcar parámetros variables en un PreparedStatement."
+            },
+            {
+              "clave": "c",
+              "motivo": "El símbolo dólar no es el marcador estándar de parámetros en JDBC con PreparedStatement."
+            },
+            {
+              "clave": "d",
+              "motivo": "Las comillas dobles sirven para delimitar ciertos textos según el contexto, pero no representan huecos de parámetros en consultas preparadas."
+            }
+          ],
+          "resumen_didactico": "En JDBC, una consulta preparada deja huecos con ? para que luego Java introduzca los valores de forma segura. Ese símbolo es la base del uso correcto de PreparedStatement.",
+          "ejemplo_practico": "Si quieres insertar un vehículo, puedes escribir: INSERT INTO Vehiculos (matricula, modelo) VALUES (?, ?). Luego completas esos huecos con setString(1, \"1234ABC\") y setString(2, \"Volvo FH\").",
+          "conclusion_final": "La respuesta correcta es el símbolo de interrogación (?), porque es el marcador de posición que usa PreparedStatement para representar valores variables."
+        }
+      },
+      {
+        "id": "UT14-Q09",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "El departamento de logística te pide un informe con todos los paquetes entregados hoy. ¿Qué método de ejecución debes usar para realizar esta consulta de selección (SELECT)?",
+        "contexto": "El tema diferencia claramente entre el método que se usa para leer datos con SELECT y el que se usa para insertar, actualizar o borrar registros.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "executeCommit()"
+          },
+          {
+            "clave": "b",
+            "texto": "executeUpdate()"
+          },
+          {
+            "clave": "c",
+            "texto": "executeInsert()"
+          },
+          {
+            "clave": "d",
+            "texto": "executeQuery()"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que para consultas de lectura como SELECT se usa executeQuery(), que devuelve un ResultSet con los datos obtenidos. En cambio, executeUpdate() se reserva para operaciones que modifican datos, como INSERT, UPDATE o DELETE.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "executeCommit() no es el método estándar de JDBC para lanzar una consulta SELECT. El commit pertenece al control de transacciones, no a la ejecución de consultas de lectura."
+            },
+            {
+              "clave": "b",
+              "motivo": "executeUpdate() se utiliza cuando insertas, actualizas o borras datos, porque devuelve el número de filas afectadas, no un conjunto de resultados."
+            },
+            {
+              "clave": "c",
+              "motivo": "executeInsert() no es un método estándar de JDBC para ejecutar sentencias SQL."
+            }
+          ],
+          "resumen_didactico": "Si la consulta es un SELECT y esperas filas como respuesta, debes pensar en executeQuery(). Si lo que haces es cambiar datos, entonces usarías executeUpdate().",
+          "ejemplo_practico": "Si escribes SELECT * FROM Paquetes WHERE fecha_entrega = CURDATE(), el resultado será una lista de paquetes. Como esperas una tabla de resultados, necesitas executeQuery().",
+          "conclusion_final": "La respuesta correcta es executeQuery(), porque es el método JDBC diseñado para ejecutar consultas SELECT y devolver un ResultSet."
+        }
+      },
+      {
+        "id": "UT14-Q10",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Tras realizar una consulta a la base de datos, recibes un objeto que contiene las filas y columnas resultantes. ¿Cómo se llama este objeto en Java?",
+        "contexto": "El tema explica qué objeto devuelve una consulta SELECT en JDBC y cómo se recorren sus filas para leer los datos obtenidos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "ResultSet"
+          },
+          {
+            "clave": "b",
+            "texto": "PreparedStatement"
+          },
+          {
+            "clave": "c",
+            "texto": "Connection"
+          },
+          {
+            "clave": "d",
+            "texto": "DataGrid"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que cuando se ejecuta una consulta SELECT con executeQuery(), Java devuelve un objeto llamado ResultSet. Este objeto representa una especie de tabla virtual con filas y columnas, y se recorre usando el método next() para acceder a cada registro.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "PreparedStatement sirve para preparar y ejecutar una consulta SQL con parámetros, pero no es el objeto que contiene los resultados devueltos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Connection representa la conexión abierta con la base de datos, no el conjunto de filas y columnas resultado de una consulta."
+            },
+            {
+              "clave": "d",
+              "motivo": "DataGrid no es el nombre del objeto estándar de JDBC que almacena los resultados de una consulta SQL."
+            }
+          ],
+          "resumen_didactico": "Cuando haces un SELECT en JDBC, no recibes directamente una lista normal de Java, sino un ResultSet. Ese objeto contiene los datos devueltos por la base de datos y te permite recorrerlos fila a fila.",
+          "ejemplo_practico": "Si ejecutas SELECT * FROM Empleados, el resultado se guarda en un ResultSet. Después puedes hacer while (resultados.next()) para leer el id, el nombre o el puesto de cada empleado.",
+          "conclusion_final": "La respuesta correcta es ResultSet, porque es el objeto de JDBC que almacena las filas y columnas devueltas por una consulta SELECT."
+        }
+      },
+      {
+        "id": "UT14-Q11",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Un operario en el puerto de Málaga registra la llegada de un nuevo contenedor. ¿Qué método de JDBC es el adecuado para ejecutar una sentencia INSERT y saber cuántas filas se han visto afectadas?",
+        "contexto": "El tema explica qué método se usa en JDBC para operaciones que modifican datos, como INSERT, UPDATE o DELETE, y qué valor devuelve tras ejecutarlas.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "executeBatch()"
+          },
+          {
+            "clave": "b",
+            "texto": "executeUpdate()"
+          },
+          {
+            "clave": "c",
+            "texto": "executeQuery()"
+          },
+          {
+            "clave": "d",
+            "texto": "getGeneratedKeys()"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que para operaciones de inserción, actualización o borrado se utiliza executeUpdate(). Este método no devuelve un conjunto de resultados, sino un número entero que indica cuántas filas han sido afectadas por la sentencia SQL.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "executeBatch() se utiliza para ejecutar un lote de varias sentencias agrupadas, no como método principal para una inserción individual cuando lo que quieres es saber directamente las filas afectadas."
+            },
+            {
+              "clave": "c",
+              "motivo": "executeQuery() se usa para consultas de lectura como SELECT, porque devuelve un ResultSet, no un número de filas modificadas."
+            },
+            {
+              "clave": "d",
+              "motivo": "getGeneratedKeys() puede servir para recuperar claves generadas automáticamente, pero no es el método de ejecución principal de una sentencia INSERT ni el que devuelve las filas afectadas."
+            }
+          ],
+          "resumen_didactico": "Cuando una sentencia cambia datos en la base de datos, como un INSERT, debes pensar en executeUpdate(). Su pista más importante es que devuelve un int con el número de filas afectadas.",
+          "ejemplo_practico": "Si insertas un nuevo contenedor en la tabla Contenedores y todo sale bien, executeUpdate() devolverá normalmente 1, indicando que se ha añadido una fila.",
+          "conclusion_final": "La respuesta correcta es executeUpdate(), porque es el método JDBC diseñado para ejecutar INSERT, UPDATE y DELETE y devolver cuántas filas han sido afectadas."
+        }
+      },
+      {
+        "id": "UT14-Q12",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Cuál es el tipo de dato que devuelve el método executeUpdate() tras realizar un borrado o una actualización de datos?",
+        "contexto": "El tema explica qué devuelve executeUpdate() cuando se usa en operaciones que modifican datos, como UPDATE o DELETE.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Un objeto de tipo ResultSet."
+          },
+          {
+            "clave": "b",
+            "texto": "Un valor booleano (true/false)."
+          },
+          {
+            "clave": "c",
+            "texto": "Un número entero (int) con el conteo de filas afectadas."
+          },
+          {
+            "clave": "d",
+            "texto": "Una cadena de texto con el mensaje de confirmación."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario indica que executeUpdate() se utiliza para operaciones que modifican datos, como INSERT, UPDATE y DELETE, y que devuelve un número entero. Ese entero representa la cantidad de filas afectadas por la sentencia ejecutada.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "ResultSet es el objeto que se obtiene al usar executeQuery() en consultas SELECT, no el valor devuelto por executeUpdate()."
+            },
+            {
+              "clave": "b",
+              "motivo": "executeUpdate() no devuelve true o false, sino un número entero con el recuento de registros modificados."
+            },
+            {
+              "clave": "d",
+              "motivo": "El método no devuelve un mensaje de texto de confirmación. La confirmación debe deducirse del número de filas afectadas o gestionarse aparte en el programa."
+            }
+          ],
+          "resumen_didactico": "Si una sentencia cambia datos en la base de datos, executeUpdate() te devuelve un int. Ese número te dice cuántas filas se han insertado, actualizado o borrado.",
+          "ejemplo_practico": "Si ejecutas DELETE FROM Empleados WHERE id = 3 y existe ese empleado, executeUpdate() devolverá 1. Si no existe, normalmente devolverá 0.",
+          "conclusion_final": "La respuesta correcta es un número entero (int), porque executeUpdate() informa del total de filas afectadas por la operación."
+        }
+      },
+      {
+        "id": "UT14-Q13",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Estás recorriendo los resultados de una consulta con un bucle. ¿Qué método del ResultSet debes llamar para saltar a la siguiente fila de datos?",
+        "contexto": "El tema explica cómo se recorre un ResultSet fila a fila después de ejecutar una consulta SELECT en JDBC.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "next()"
+          },
+          {
+            "clave": "b",
+            "texto": "hasMoreElements()"
+          },
+          {
+            "clave": "c",
+            "texto": "start()"
+          },
+          {
+            "clave": "d",
+            "texto": "getNextRow()"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que el ResultSet se recorre usando el método next(), que mueve el cursor a la siguiente fila disponible. Al principio el cursor está antes de la primera fila, así que hay que llamar a next() para avanzar e ir leyendo los datos registro a registro.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "hasMoreElements() no es el método estándar de ResultSet en JDBC para avanzar entre filas de una consulta."
+            },
+            {
+              "clave": "c",
+              "motivo": "start() no es un método de ResultSet para recorrer los resultados devueltos por una consulta SQL."
+            },
+            {
+              "clave": "d",
+              "motivo": "getNextRow() tampoco es el método que JDBC usa para mover el cursor dentro de un ResultSet."
+            }
+          ],
+          "resumen_didactico": "Cuando haces un SELECT, Java te devuelve un ResultSet y debes recorrerlo fila a fila. El método clave para avanzar es next().",
+          "ejemplo_practico": "Si consultas todos los empleados, puedes usar while (resultados.next()) para ir leyendo uno por uno el id, el nombre o el puesto de cada fila.",
+          "conclusion_final": "La respuesta correcta es next(), porque es el método de ResultSet que permite avanzar a la siguiente fila de datos."
+        }
+      },
+      {
+        "id": "UT14-Q14",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Un compañero de equipo está depurando un error y no encuentra los datos de un cliente. ¿Cuál es la forma correcta de extraer el valor de una columna llamada \"nombre\" desde un ResultSet?",
+        "contexto": "El tema muestra cómo, una vez obtenido un ResultSet, se accede a los valores de cada columna por nombre usando los métodos adecuados.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "rs.fetchString(1)"
+          },
+          {
+            "clave": "b",
+            "texto": "rs.getString(\"nombre\")"
+          },
+          {
+            "clave": "c",
+            "texto": "rs.valueAt(\"nombre\")"
+          },
+          {
+            "clave": "d",
+            "texto": "rs.read(\"nombre\")"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario enseña que, al recorrer un ResultSet, los datos de cada columna se extraen con métodos como getInt(), getString() o getDouble(), indicando el nombre de la columna o su índice. En los ejemplos del tema aparece explícitamente la lectura de una columna llamada nombre usando resultados.getString(\"nombre\").",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "fetchString(1) no es el método estándar de JDBC para leer una columna de un ResultSet."
+            },
+            {
+              "clave": "c",
+              "motivo": "valueAt(\"nombre\") no pertenece a la API estándar de ResultSet en JDBC."
+            },
+            {
+              "clave": "d",
+              "motivo": "read(\"nombre\") tampoco es un método válido de ResultSet para obtener el valor de una columna."
+            }
+          ],
+          "resumen_didactico": "Cuando haces una consulta y obtienes un ResultSet, lees cada columna con el método adecuado según el tipo de dato. Si la columna es de texto, lo normal es usar getString(\"nombreColumna\").",
+          "ejemplo_practico": "Si consultas una tabla de clientes y quieres mostrar el nombre de cada uno, dentro del bucle puedes escribir: String nombre = rs.getString(\"nombre\");",
+          "conclusion_final": "La respuesta correcta es rs.getString(\"nombre\"), porque es la forma estándar en JDBC de obtener el valor textual de una columna desde un ResultSet."
+        }
+      },
+      {
+        "id": "UT14-Q15",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Cuál es la jerarquía correcta de cierre de recursos para evitar fugas de memoria y bloqueos en la base de datos?",
+        "contexto": "El tema insiste en cerrar correctamente los recursos JDBC al terminar de trabajar con la base de datos para no saturar el servidor ni dejar recursos abiertos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El Garbage Collector se encarga de cerrarlos automáticamente sin intervención."
+          },
+          {
+            "clave": "b",
+            "texto": "Solo es necesario cerrar la Connection."
+          },
+          {
+            "clave": "c",
+            "texto": "ResultSet -> Statement -> Connection."
+          },
+          {
+            "clave": "d",
+            "texto": "Connection -> Statement -> ResultSet."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "En JDBC los recursos deben cerrarse en orden inverso a cómo dependen unos de otros. Primero se cierra el ResultSet, después el Statement y por último la Connection, porque el ResultSet depende del Statement y el Statement depende de la Connection.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No es buena práctica confiar en el Garbage Collector para cerrar recursos de base de datos. Las conexiones y cursores deben cerrarse explícitamente para evitar fugas y bloqueos."
+            },
+            {
+              "clave": "b",
+              "motivo": "Cerrar solo la Connection no expresa la jerarquía correcta de liberación de recursos. Además, el enfoque profesional es cerrar también los objetos intermedios que se hayan abierto."
+            },
+            {
+              "clave": "d",
+              "motivo": "Ese orden es incorrecto porque intentaría cerrar antes el recurso base del que dependen los demás. Lo correcto es cerrar primero lo más interno y después lo más externo."
+            }
+          ],
+          "resumen_didactico": "En JDBC debes pensar de dentro hacia fuera: primero cierras lo que devuelve datos, luego lo que ejecuta la consulta y al final la conexión general. Así evitas dejar recursos colgados.",
+          "ejemplo_practico": "Si haces una consulta SELECT y obtienes un ResultSet, al terminar lo correcto sería cerrar primero el ResultSet, luego el Statement con el que ejecutaste la consulta y por último la Connection contra MariaDB.",
+          "conclusion_final": "La respuesta correcta es ResultSet -> Statement -> Connection, porque es el orden seguro y lógico para liberar recursos JDBC sin provocar fugas ni bloqueos."
+        }
+      },
+      {
+        "id": "UT14-Q16",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Tu jefe te pide que realices una serie de ingresos de dinero que deben ser \"todo o nada\". ¿Qué concepto de base de datos garantiza que un grupo de operaciones se ejecute completamente o no se ejecute ninguna?",
+        "contexto": "El tema explica que cuando varias operaciones deben tratarse como una única unidad lógica de trabajo, se necesita un mecanismo que permita confirmarlas todas o deshacerlas todas.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Polimorfismo."
+          },
+          {
+            "clave": "b",
+            "texto": "Transacción."
+          },
+          {
+            "clave": "c",
+            "texto": "Herencia múltiple."
+          },
+          {
+            "clave": "d",
+            "texto": "Encapsulación."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que una transacción permite agrupar varias operaciones SQL para que se consideren una única unidad lógica de trabajo. Eso significa que o bien se ejecutan todas correctamente y se confirman con commit(), o si algo falla se deshacen todas con rollback().",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El polimorfismo es un concepto de programación orientada a objetos, no un mecanismo de bases de datos para controlar operaciones agrupadas."
+            },
+            {
+              "clave": "c",
+              "motivo": "La herencia múltiple pertenece al ámbito de la programación orientada a objetos y no guarda relación con el control de operaciones SQL en bloque."
+            },
+            {
+              "clave": "d",
+              "motivo": "La encapsulación también es un principio de programación orientada a objetos, pero no sirve para garantizar que varias operaciones de base de datos se ejecuten como un todo."
+            }
+          ],
+          "resumen_didactico": "Cuando varias operaciones deben salir todas bien o ninguna, estás ante una transacción. Es el mecanismo que protege la integridad de los datos en procesos delicados.",
+          "ejemplo_practico": "Si transfieres dinero de una cuenta a otra, primero restas saldo en una cuenta y luego lo sumas en la otra. Si falla la segunda operación, una transacción permite hacer rollback() para que no se quede el dinero descontado solo en una parte.",
+          "conclusion_final": "La respuesta correcta es transacción, porque es el concepto que garantiza el comportamiento de \"todo o nada\" en un grupo de operaciones de base de datos."
+        }
+      },
+      {
+        "id": "UT14-Q17",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Por defecto, JDBC confirma cada operación en la base de datos de forma individual. ¿Qué método de la conexión se debe usar para tomar el control manual de las transacciones?",
+        "contexto": "El tema explica que JDBC trabaja por defecto con AutoCommit activado y que, si quieres controlar manualmente una transacción, debes desactivar ese comportamiento automático.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "beginWork()"
+          },
+          {
+            "clave": "b",
+            "texto": "setAutoCommit(false)"
+          },
+          {
+            "clave": "c",
+            "texto": "disableFlash()"
+          },
+          {
+            "clave": "d",
+            "texto": "setTransaction(true)"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario indica que en JDBC el modo AutoCommit está activado por defecto, lo que significa que cada sentencia SQL se confirma automáticamente al ejecutarse. Si quieres controlar manualmente una transacción para decidir cuándo hacer commit() o rollback(), debes usar el método setAutoCommit(false).",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "beginWork() no es el método estándar de JDBC para desactivar la confirmación automática ni para iniciar el control manual de transacciones."
+            },
+            {
+              "clave": "c",
+              "motivo": "disableFlash() no tiene relación con la gestión de transacciones en JDBC y no es un método válido para este contexto."
+            },
+            {
+              "clave": "d",
+              "motivo": "setTransaction(true) no es el método que usa JDBC para tomar el control manual de las transacciones."
+            }
+          ],
+          "resumen_didactico": "Si dejas AutoCommit activado, cada operación se guarda al instante. Si quieres agrupar varias operaciones y decidir tú si se guardan o se deshacen, tienes que desactivar ese modo automático con setAutoCommit(false).",
+          "ejemplo_practico": "Si haces una transferencia bancaria con dos operaciones, restar dinero de una cuenta y sumarlo en otra, usarías setAutoCommit(false) para que ambas formen parte de la misma transacción. Si algo falla, haces rollback(); si todo sale bien, haces commit().",
+          "conclusion_final": "La respuesta correcta es setAutoCommit(false), porque es el método que permite desactivar la confirmación automática y gestionar manualmente las transacciones en JDBC."
+        }
+      },
+      {
+        "id": "UT14-Q18",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Tras detectar un fallo en mitad de un proceso de actualización masiva, necesitas deshacer todos los cambios realizados desde el inicio de la transacción. ¿Qué comando ejecutas?",
+        "contexto": "El tema explica que cuando una transacción falla a mitad de proceso, existe un comando para volver atrás y dejar la base de datos como estaba antes de empezar.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "commit()"
+          },
+          {
+            "clave": "b",
+            "texto": "rollback()"
+          },
+          {
+            "clave": "c",
+            "texto": "deleteTransaction()"
+          },
+          {
+            "clave": "d",
+            "texto": "undo()"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que, cuando trabajas con transacciones manuales, si algo falla durante el proceso debes ejecutar rollback() para deshacer todos los cambios realizados desde el inicio de la transacción. De este modo, la base de datos vuelve al estado anterior y no queda modificada a medias.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "commit() hace justo lo contrario: confirma definitivamente los cambios realizados en la transacción."
+            },
+            {
+              "clave": "c",
+              "motivo": "deleteTransaction() no es un comando estándar de JDBC para gestionar transacciones."
+            },
+            {
+              "clave": "d",
+              "motivo": "undo() puede sonar lógico, pero no es el método real que usa JDBC para deshacer una transacción."
+            }
+          ],
+          "resumen_didactico": "Si una transacción falla, no quieres dejar cambios a medias. Para eso sirve rollback(): borra todos los cambios pendientes y devuelve la base de datos al punto anterior.",
+          "ejemplo_practico": "Imagina que en una importación masiva insertas 200 registros y en el registro 150 aparece un error. Si estabas dentro de una transacción, con rollback() deshaces los 149 cambios previos y evitas dejar la base de datos inconsistente.",
+          "conclusion_final": "La respuesta correcta es rollback(), porque es el comando que deshace todos los cambios realizados dentro de una transacción cuando ocurre un fallo."
+        }
+      },
+      {
+        "id": "UT14-Q19",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Si todas las operaciones de un lote de envío han salido correctamente, ¿qué método confirma los cambios de forma definitiva en el disco duro del servidor?",
+        "contexto": "El tema explica que, cuando trabajas con transacciones manuales o procesamiento por lotes, debes confirmar explícitamente los cambios si todo ha ido bien.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "commit()"
+          },
+          {
+            "clave": "b",
+            "texto": "push()"
+          },
+          {
+            "clave": "c",
+            "texto": "saveAll()"
+          },
+          {
+            "clave": "d",
+            "texto": "finish()"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que, cuando desactivas el AutoCommit y trabajas con transacciones o con batch processing, si todas las operaciones salen correctamente debes ejecutar commit() para confirmar definitivamente los cambios. Ese método hace que la base de datos guarde de forma estable las operaciones realizadas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "push() no es un método de JDBC para confirmar transacciones en una base de datos."
+            },
+            {
+              "clave": "c",
+              "motivo": "saveAll() puede existir en otros contextos o frameworks, pero no es el método estándar de JDBC para confirmar cambios en una transacción."
+            },
+            {
+              "clave": "d",
+              "motivo": "finish() no es el comando que JDBC utiliza para hacer persistentes los cambios de una transacción."
+            }
+          ],
+          "resumen_didactico": "Cuando controlas una transacción manualmente, hay dos caminos: si algo falla haces rollback(), y si todo va bien haces commit(). Ese es el momento en que los cambios quedan confirmados de verdad.",
+          "ejemplo_practico": "Si en un lote insertas varios envíos y actualizas el estado de varios paquetes, al terminar correctamente todas las operaciones llamas a commit() para que todo quede guardado definitivamente en la base de datos.",
+          "conclusion_final": "La respuesta correcta es commit(), porque es el método que confirma de forma definitiva los cambios realizados dentro de una transacción."
+        }
+      },
+      {
+        "id": "UT14-Q21",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Al intentar realizar una conexión, el programa lanza una excepción indicando que no encuentra la clase del controlador. ¿Qué error de Java suele ser este?",
+        "contexto": "El tema explica que, al cargar el driver JDBC con Class.forName(...), puede producirse una excepción si Java no encuentra la clase del controlador.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "IOException"
+          },
+          {
+            "clave": "b",
+            "texto": "ClassNotFoundException"
+          },
+          {
+            "clave": "c",
+            "texto": "ArithmeticException"
+          },
+          {
+            "clave": "d",
+            "texto": "NullPointerException"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El tema muestra que para cargar el driver JDBC se utiliza Class.forName(\"org.mariadb.jdbc.Driver\"). Si Java no encuentra esa clase, normalmente se produce una ClassNotFoundException, lo que indica que el driver no está añadido correctamente al proyecto o no está disponible en el classpath.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "IOException se relaciona con errores de entrada y salida, como lectura o escritura de archivos o flujos, no con la carga de una clase Java."
+            },
+            {
+              "clave": "c",
+              "motivo": "ArithmeticException aparece en errores matemáticos, como una división entre cero, y no tiene relación con la búsqueda de una clase del driver."
+            },
+            {
+              "clave": "d",
+              "motivo": "NullPointerException ocurre cuando intentas usar una referencia nula, pero aquí el problema descrito es que no se encuentra la clase del controlador."
+            }
+          ],
+          "resumen_didactico": "Si el programa intenta cargar una clase del driver y Java no la localiza, el error típico es ClassNotFoundException. Suele significar que falta el archivo .jar del driver o que está mal configurado.",
+          "ejemplo_practico": "Si escribes Class.forName(\"org.mariadb.jdbc.Driver\") pero no has añadido mariadb-java-client.jar al proyecto, al ejecutar el programa puede saltar una ClassNotFoundException.",
+          "conclusion_final": "La respuesta correcta es ClassNotFoundException, porque es la excepción típica cuando Java no encuentra la clase del controlador JDBC."
+        }
+      },
+      {
+        "id": "UT14-Q22",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Para qué tipo de sentencias se utiliza el método executeUpdate() cuando trabajamos con la estructura de la base de datos (DDL)?",
+        "contexto": "El tema explica que executeUpdate() no solo sirve para modificar datos, sino también para lanzar sentencias DDL que cambian la estructura de la base de datos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "CREATE TABLE o DROP TABLE."
+          },
+          {
+            "clave": "b",
+            "texto": "Solo para consultas de lectura rápida."
+          },
+          {
+            "clave": "c",
+            "texto": "Para imprimir informes en PDF."
+          },
+          {
+            "clave": "d",
+            "texto": "SELECT y JOIN."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario indica que las sentencias DDL, como CREATE, ALTER o DROP, también se ejecutan con executeUpdate(). En el anexo se ve incluso el ejemplo de un CREATE TABLE lanzado con este método, y se aclara que en DDL normalmente devuelve 0.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Las consultas de lectura, como SELECT, se ejecutan con executeQuery(), no con executeUpdate()."
+            },
+            {
+              "clave": "c",
+              "motivo": "Imprimir informes en PDF no tiene relación con el uso de executeUpdate() ni con sentencias DDL."
+            },
+            {
+              "clave": "d",
+              "motivo": "SELECT y JOIN son operaciones de consulta de datos, no de modificación de estructura. Por tanto, se asocian a executeQuery(), no a DDL con executeUpdate()."
+            }
+          ],
+          "resumen_didactico": "executeUpdate() no sirve solo para INSERT, UPDATE y DELETE. También se usa cuando cambias la estructura de la base de datos, por ejemplo creando o eliminando tablas.",
+          "ejemplo_practico": "Si tu aplicación necesita crear una tabla nueva al arrancar por primera vez, puedes ejecutar algo como CREATE TABLE Direcciones (...) usando un Statement y el método executeUpdate().",
+          "conclusion_final": "La respuesta correcta es CREATE TABLE o DROP TABLE, porque las sentencias DDL se ejecutan con executeUpdate() cuando modifican la estructura de la base de datos."
+        }
+      },
+      {
+        "id": "UT14-Q23",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Cuál es la ventaja de usar PreparedStatement frente a Statement cuando la consulta se repite muchas veces?",
+        "contexto": "El tema compara Statement y PreparedStatement y explica cuál es la ventaja de la consulta preparada cuando se ejecuta repetidamente.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El motor de la base de datos puede pre-compilar la consulta, mejorando el rendimiento."
+          },
+          {
+            "clave": "b",
+            "texto": "Ocupa menos espacio en el código fuente."
+          },
+          {
+            "clave": "c",
+            "texto": "No requiere cerrar la conexión al finalizar."
+          },
+          {
+            "clave": "d",
+            "texto": "Permite usar variables globales de forma ilimitada."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario define PreparedStatement como una sentencia SQL precompilada y además indica que es más rápido si la ejecutas muchas veces. Por eso, frente a Statement, su ventaja cuando repites la misma consulta es que el motor puede reutilizar esa preparación y mejorar el rendimiento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La ventaja importante de PreparedStatement no es ocupar menos código, sino la seguridad y el mejor rendimiento cuando reutilizas la consulta."
+            },
+            {
+              "clave": "c",
+              "motivo": "Aunque uses PreparedStatement, la conexión sigue teniendo que cerrarse correctamente al finalizar para no dejar recursos abiertos."
+            },
+            {
+              "clave": "d",
+              "motivo": "PreparedStatement sirve para trabajar con parámetros en consultas SQL, no para usar variables globales ilimitadas."
+            }
+          ],
+          "resumen_didactico": "PreparedStatement prepara la consulta una vez y luego permite reutilizarla con distintos valores. Eso lo hace más eficiente que Statement cuando la misma estructura SQL se lanza muchas veces.",
+          "ejemplo_practico": "Si en una aplicación buscas empleados por distintos ID una y otra vez, con PreparedStatement puedes dejar preparada la consulta SELECT * FROM Empleados WHERE id = ? y cambiar solo el valor del parámetro en cada ejecución.",
+          "conclusion_final": "La respuesta correcta es que el motor puede precompilar la consulta, mejorando el rendimiento, porque esa es una de las ventajas clave de PreparedStatement cuando la consulta se repite muchas veces."
+        }
+      },
+      {
+        "id": "UT14-Q24",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Qué ocurre si intentas acceder a los datos de un ResultSet mediante rs.getString() antes de haber llamado por primera vez al método rs.next()?",
+        "contexto": "El tema explica que el cursor del ResultSet no empieza situado sobre la primera fila, sino antes de ella, y que hay que moverlo con next() antes de leer datos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Devuelve una cadena vacía."
+          },
+          {
+            "clave": "b",
+            "texto": "Imprime el nombre de la tabla."
+          },
+          {
+            "clave": "c",
+            "texto": "Abre una ventana de ayuda automáticamente."
+          },
+          {
+            "clave": "d",
+            "texto": "Lanza una excepción porque el cursor no está posicionado en una fila válida."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que, cuando recibes un ResultSet, el cursor empieza antes de la primera fila. Por eso primero debes llamar a rs.next() para colocarte sobre una fila válida y solo después leer columnas con métodos como getString(). Si intentas leer antes de posicionarte correctamente, se produce un error porque no estás sobre ningún registro válido.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "ResultSet no devuelve una cadena vacía por defecto en ese caso. El problema real es que el cursor aún no apunta a ninguna fila de datos."
+            },
+            {
+              "clave": "b",
+              "motivo": "getString() no imprime automáticamente el nombre de la tabla. Ese método intenta leer el valor de una columna de la fila actual."
+            },
+            {
+              "clave": "c",
+              "motivo": "JDBC no abre ventanas de ayuda automáticas al usar mal un ResultSet. Lo normal es que se produzca una excepción."
+            }
+          ],
+          "resumen_didactico": "Un ResultSet no empieza leyendo desde la primera fila directamente. Primero debes avanzar el cursor con next() y luego ya puedes extraer valores con getString(), getInt() u otros métodos.",
+          "ejemplo_practico": "Si haces una consulta SELECT * FROM Empleados y luego intentas escribir rs.getString(\"nombre\") sin haber hecho antes rs.next(), fallará porque todavía no te has colocado sobre ningún empleado concreto.",
+          "conclusion_final": "La respuesta correcta es que lanza una excepción, porque antes de leer datos debes mover el cursor a una fila válida usando rs.next()."
+        }
+      },
+      {
+        "id": "UT14-Q25",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Cuál es la forma profesional de gestionar las credenciales de la base de datos (usuario y contraseña) en un entorno real?",
+        "contexto": "El tema muestra ejemplos donde la configuración de conexión se centraliza y se guarda en constantes, en lugar de repetir usuario y contraseña por todo el código.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Usar constantes en una clase de configuración o variables de entorno."
+          },
+          {
+            "clave": "b",
+            "texto": "Pedírselas al usuario por teclado cada vez que el programa haga una consulta."
+          },
+          {
+            "clave": "c",
+            "texto": "Escribirlas directamente en el código de cada método."
+          },
+          {
+            "clave": "d",
+            "texto": "No usar contraseña por comodidad."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario enseña una configuración centralizada de la conexión, guardando la URL, el usuario y la contraseña en variables o constantes de configuración. Esa es la forma profesional de trabajar, porque evita repetir credenciales por todo el proyecto y facilita el mantenimiento; en un entorno real, además, esto suele evolucionar a variables de entorno o ficheros de configuración seguros.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Pedir las credenciales al usuario en cada consulta no es una práctica profesional para una aplicación backend. Haría el sistema incómodo, poco automatizable y mal diseñado."
+            },
+            {
+              "clave": "c",
+              "motivo": "Escribir usuario y contraseña dentro de cada método duplica información y vuelve el código difícil de mantener. Si cambian las credenciales, habría que corregir muchos puntos del programa."
+            },
+            {
+              "clave": "d",
+              "motivo": "No usar contraseña por comodidad es una mala práctica grave de seguridad y no corresponde a un entorno profesional real."
+            }
+          ],
+          "resumen_didactico": "Las credenciales deben estar centralizadas y bien gestionadas, no dispersas por el código. En aprendizaje se suelen ver como constantes de configuración, y en proyectos reales se manejan mejor aún con variables de entorno o configuraciones externas.",
+          "ejemplo_practico": "En vez de poner \"admin\" y \"1234\" en cada método, se crea una clase de configuración con URL, USER y PASS, o se leen esos datos desde variables de entorno para que toda la aplicación use un único punto de configuración.",
+          "conclusion_final": "La respuesta correcta es usar constantes en una clase de configuración o variables de entorno, porque es la forma más limpia, mantenible y profesional de gestionar credenciales."
+        }
+      },
+      {
+        "id": "UT14-Q26",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Qué significan las siglas DML en el contexto de las operaciones de base de datos que modifican el contenido de las tablas?",
+        "contexto": "El tema diferencia entre operaciones que modifican los datos almacenados en las tablas y operaciones que modifican la estructura de la base de datos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Digital Management Link."
+          },
+          {
+            "clave": "b",
+            "texto": "Data Model Language."
+          },
+          {
+            "clave": "c",
+            "texto": "Data Manipulation Language."
+          },
+          {
+            "clave": "d",
+            "texto": "Direct Memory Loader."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que DML hace referencia a las operaciones que manipulan el contenido de las tablas, es decir, los datos. Dentro de este grupo están sentencias como INSERT, UPDATE y DELETE, que sirven para añadir, modificar o borrar registros.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Digital Management Link no es el significado real de DML en bases de datos y no se usa como categoría estándar de sentencias SQL."
+            },
+            {
+              "clave": "b",
+              "motivo": "Data Model Language suena parecido, pero no es el término correcto para las operaciones que cambian los datos almacenados."
+            },
+            {
+              "clave": "d",
+              "motivo": "Direct Memory Loader no pertenece a la terminología habitual de SQL ni describe operaciones de manipulación de registros."
+            }
+          ],
+          "resumen_didactico": "DML es el bloque de sentencias SQL que trabaja sobre los datos que ya están dentro de las tablas. Si cambias filas, insertas nuevas o borras registros, estás usando DML.",
+          "ejemplo_practico": "Si añades un nuevo empleado con INSERT, actualizas su salario con UPDATE o eliminas su ficha con DELETE, en los tres casos estás usando sentencias de tipo DML.",
+          "conclusion_final": "La respuesta correcta es Data Manipulation Language, porque DML es el lenguaje de manipulación de datos dentro de las tablas."
+        }
+      },
+      {
+        "id": "UT14-Q27",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Al trabajar con tipos de datos numéricos con decimales como el sueldo de un empleado, ¿qué método del ResultSet es el más preciso?",
+        "contexto": "El tema muestra cómo leer columnas numéricas con decimales desde un ResultSet, usando como ejemplo el salario de un empleado.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "getInt()"
+          },
+          {
+            "clave": "b",
+            "texto": "getString()"
+          },
+          {
+            "clave": "c",
+            "texto": "getBoolean()"
+          },
+          {
+            "clave": "d",
+            "texto": "getDouble()"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario enseña explícitamente que, al recorrer un ResultSet, una columna como salario se recupera con resultados.getDouble(\"salario\"). Además, en el anexo aparece un ejemplo de consulta con salario > ? usando setDouble(), lo que refuerza que para valores numéricos con decimales se trabaja con double en estos ejemplos del tema.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "getInt() sirve para enteros, pero perdería la parte decimal de un sueldo como 45000.75."
+            },
+            {
+              "clave": "b",
+              "motivo": "getString() podría leer el dato como texto, pero no es el método más adecuado ni el más preciso para tratarlo como número decimal."
+            },
+            {
+              "clave": "c",
+              "motivo": "getBoolean() se utiliza para valores lógicos verdadero/falso, no para cantidades numéricas con decimales."
+            }
+          ],
+          "resumen_didactico": "Si una columna representa un número con decimales, en este tema se trabaja con getDouble(). Así puedes recuperar el valor como dato numérico y operar con él correctamente.",
+          "ejemplo_practico": "Si en la tabla Empleados el salario de Laura es 45000.50, al leerlo con rs.getDouble(\"salario\") obtendrás ese valor numérico con su parte decimal.",
+          "conclusion_final": "La respuesta correcta es getDouble(), porque es el método que el propio temario usa para leer columnas numéricas con decimales como el salario."
+        }
+      },
+      {
+        "id": "UT14-Q28",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Cuál es la principal diferencia entre executeQuery() y executeUpdate() en cuanto a lo que devuelven al programa Java?",
+        "contexto": "El tema diferencia claramente entre las consultas de lectura y las operaciones que modifican datos, explicando también qué devuelve cada método al programa.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "executeQuery() devuelve un ResultSet y executeUpdate() devuelve un int."
+          },
+          {
+            "clave": "b",
+            "texto": "executeQuery() devuelve un int y executeUpdate() un booleano."
+          },
+          {
+            "clave": "c",
+            "texto": "executeQuery() no devuelve nada (void)."
+          },
+          {
+            "clave": "d",
+            "texto": "Ambos devuelven lo mismo."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que executeQuery() se usa para consultas SELECT y devuelve un ResultSet, es decir, una tabla virtual con las filas obtenidas. En cambio, executeUpdate() se utiliza para INSERT, UPDATE y DELETE, y devuelve un int con el número de filas afectadas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Está invertido y además es incorrecto: executeQuery() no devuelve un int, y executeUpdate() no devuelve un booleano."
+            },
+            {
+              "clave": "c",
+              "motivo": "executeQuery() sí devuelve algo: un ResultSet con los resultados de la consulta."
+            },
+            {
+              "clave": "d",
+              "motivo": "No devuelven lo mismo porque sirven para operaciones distintas: uno devuelve datos consultados y el otro el número de registros modificados."
+            }
+          ],
+          "resumen_didactico": "Si haces una consulta para leer datos, piensas en ResultSet y por tanto en executeQuery(). Si haces una operación que cambia datos, piensas en filas afectadas y por tanto en executeUpdate().",
+          "ejemplo_practico": "Si ejecutas SELECT * FROM Empleados, usarás executeQuery() y recibirás un ResultSet. Si ejecutas UPDATE Empleados SET salario = 50000 WHERE id = 5, usarás executeUpdate() y recibirás un int, normalmente 1 si una fila ha cambiado.",
+          "conclusion_final": "La respuesta correcta es que executeQuery() devuelve un ResultSet y executeUpdate() devuelve un int, porque esa es la diferencia fundamental entre leer datos y modificar registros en JDBC."
+        }
+      },
+      {
+        "id": "UT14-Q29",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "¿Por qué \"cerrar los recursos es sagrado\"?",
+        "contexto": "El tema insiste en que dejar conexiones abiertas es una mala práctica grave en backend porque afecta al servidor y a otros usuarios.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Porque las bases de datos relacionales solo permiten una conexión al día."
+          },
+          {
+            "clave": "b",
+            "texto": "Porque si no se cierran, el servidor puede quedarse sin conexiones libres para otros usuarios."
+          },
+          {
+            "clave": "c",
+            "texto": "Porque así el código se ve más bonito y organizado."
+          },
+          {
+            "clave": "d",
+            "texto": "Porque el compilador de Java borra el programa si no hay cierres."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario dice literalmente que siempre hay que cerrar la conexión al terminar y que dejar conexiones abiertas es \"el pecado capital en backend\" porque tumba servidores. También recalca que cerrar la llamada es vital para no saturar el servidor.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No existe esa limitación de \"una conexión al día\". El problema real es consumir recursos del servidor y agotar conexiones disponibles."
+            },
+            {
+              "clave": "c",
+              "motivo": "Aunque un código ordenado ayuda, aquí no se habla de estética del código, sino de evitar saturación y problemas reales en el servidor."
+            },
+            {
+              "clave": "d",
+              "motivo": "El compilador de Java no borra el programa por no cerrar recursos. El riesgo está en el consumo de conexiones y recursos del sistema."
+            }
+          ],
+          "resumen_didactico": "Cerrar recursos no es un detalle decorativo: es una obligación técnica. Si dejas conexiones abiertas, el servidor va acumulando recursos ocupados y puede dejar de atender correctamente a otros usuarios o procesos.",
+          "ejemplo_practico": "Si una aplicación web abre conexiones a MariaDB cada vez que un usuario entra y nunca las cierra, llegará un momento en que nuevas peticiones no podrán conectarse porque el servidor estará saturado.",
+          "conclusion_final": "La respuesta correcta es que, si no se cierran, el servidor puede quedarse sin conexiones libres para otros usuarios, y eso puede saturarlo o incluso tumbarlo."
+        }
+      },
+      {
+        "id": "UT14-Q30",
+        "tema": "UT14 Gestión de bases de datos relacionales",
+        "pregunta": "Según la arquitectura JDBC, ¿qué componente permite que el mismo código Java funcione con MySQL y con Oracle sin cambiar casi nada?",
+        "contexto": "El tema explica que Java utiliza una arquitectura de conectividad genérica y que cada motor de base de datos aporta su propio driver, que actúa como traductor entre Java y ese motor concreto.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El uso de variables locales."
+          },
+          {
+            "clave": "b",
+            "texto": "El lenguaje SQL."
+          },
+          {
+            "clave": "c",
+            "texto": "La abstracción del Driver, que traduce las llamadas genéricas de Java a comandos específicos del motor."
+          },
+          {
+            "clave": "d",
+            "texto": "La velocidad del procesador."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que Java habla con la base de datos a través de JDBC y que el driver actúa como un traductor entre la aplicación y el motor concreto, como MariaDB, MySQL u Oracle. Gracias a esa abstracción, el código Java puede mantenerse casi igual y solo cambia el driver o la configuración específica del motor.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Las variables locales son un detalle del código Java, pero no son el mecanismo que permite la portabilidad entre distintos motores de bases de datos."
+            },
+            {
+              "clave": "b",
+              "motivo": "SQL influye en la compatibilidad, pero lo que permite que Java se conecte de forma genérica a distintos motores dentro de la arquitectura JDBC es el driver."
+            },
+            {
+              "clave": "d",
+              "motivo": "La velocidad del procesador puede afectar al rendimiento, pero no a la capacidad de que el mismo código Java funcione con distintos motores de base de datos."
+            }
+          ],
+          "resumen_didactico": "JDBC ofrece una forma común de programar en Java, y luego cada base de datos aporta su driver para traducir esas llamadas al idioma real del motor. Esa capa traductora es la que da flexibilidad y portabilidad.",
+          "ejemplo_practico": "Una aplicación puede usar Connection, Statement y ResultSet igual tanto con MySQL como con Oracle. Lo que cambia normalmente es el driver .jar y la URL de conexión, no toda la lógica Java de acceso a datos.",
+          "conclusion_final": "La respuesta correcta es la abstracción del Driver, porque es el componente que traduce las llamadas genéricas de JDBC y permite reutilizar casi el mismo código Java con distintos motores de base de datos."
+        }
+      }
+
+
+]

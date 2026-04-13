@@ -176,5 +176,24 @@ export const topicsByModule = {
       title: "Recursividad y complejidad algorítmica",
       numQuestion: 30,
     },
+    {
+      id: "UT12",
+      title: "Lectura y escritura de información",
+      numQuestion: 30,
+    },
+    {
+      id: "UT13",
+      title: "Mantenimiento de la persistencia de los datos",
+      numQuestion: 30,
+    },
+    {
+      id: "UT14",
+      title: "Gestión de bases de datos relacionales",
+      numQuestion: 30,
+    },    {
+      id: "UT15",
+      title: "Creación de interfaces gráficas",
+      numQuestion: 30,
+    },
   ],
 };

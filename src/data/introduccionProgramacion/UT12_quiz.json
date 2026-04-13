@@ -1,0 +1,1023 @@
+[
+    {
+        "id": "UT12-Q01",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué concepto técnico define Java como el puente o canal por el cual viaja la información entre el programa y el mundo exterior?",
+        "contexto": "El temario explica que en una aplicación real existe una interacción constante con elementos externos para recibir o enviar datos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Flujo (Stream)" },
+          { "clave": "b", "texto": "Serialización" },
+          { "clave": "c", "texto": "Persistencia" },
+          { "clave": "d", "texto": "Buffer" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es Flujo (Stream), porque el temario define un stream como una secuencia ordenada de datos que se transmiten desde una fuente hacia un destino, actuando como la 'tubería' o canal por el que circula la información entre el programa y el exterior.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La serialización no es el canal general por el que viaja la información, sino el proceso de convertir un objeto en una secuencia de bytes para almacenarlo o transmitirlo."
+            },
+            {
+              "clave": "c",
+              "motivo": "La persistencia se refiere a que los datos sobreviven al cierre del programa y pueden recuperarse más tarde, no al canal por el que circulan."
+            },
+            {
+              "clave": "d",
+              "motivo": "El buffer es una memoria intermedia que mejora el rendimiento de lectura o escritura, pero no es el concepto general que define el canal de comunicación."
+            }
+          ],
+          "resumen_didactico": "Si te preguntan por el canal o puente por el que los datos entran o salen del programa, en este tema la palabra clave es Stream o flujo.",
+          "ejemplo_practico": "Cuando un usuario escribe su nombre por teclado o cuando el programa guarda un informe en un archivo, esa información viaja a través de un flujo.",
+          "conclusion_final": "El concepto técnico correcto es Flujo (Stream), porque el tema lo presenta como la vía organizada por la que los datos se transmiten entre el programa y el mundo exterior."
+        }
+      },
+      {
+        "id": "UT12-Q02",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "En el desarrollo de software profesional, ¿cómo se denomina a la capacidad de que la información generada por un programa se mantenga guardada tras cerrar la aplicación?",
+        "contexto": "El temario explica que los datos que solo están en memoria desaparecen al cerrar el programa, y que los ficheros permiten que la información se conserve en el tiempo.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Recursividad" },
+          { "clave": "b", "texto": "Encapsulación" },
+          { "clave": "c", "texto": "Persistencia" },
+          { "clave": "d", "texto": "Volatilidad" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es Persistencia, porque el temario dice que los ficheros son la solución para dotar a los datos de persistencia, es decir, para que la información sobreviva al cierre del programa y pueda recuperarse más tarde.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La recursividad es una técnica de programación en la que un método se llama a sí mismo. No tiene relación con conservar datos tras cerrar una aplicación."
+            },
+            {
+              "clave": "b",
+              "motivo": "La encapsulación es un principio de la programación orientada a objetos relacionado con ocultar y proteger datos dentro de una clase. No se refiere al guardado permanente de información."
+            },
+            {
+              "clave": "d",
+              "motivo": "La volatilidad expresa justo la idea contraria: datos que no se conservan de forma estable, como ocurre con la información que solo vive en la memoria RAM."
+            }
+          ],
+          "resumen_didactico": "Si la información sigue existiendo después de cerrar el programa, el concepto que usa este tema es persistencia.",
+          "ejemplo_practico": "Si una aplicación guarda la configuración del usuario en un fichero y al abrirla al día siguiente todo sigue igual, esa información ha tenido persistencia.",
+          "conclusion_final": "La capacidad de mantener la información guardada tras cerrar la aplicación se llama persistencia."
+        }
+      },
+      {
+        "id": "UT12-Q03",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "Java divide los flujos de datos en dos grandes categorías según el tipo de información que manejan. ¿Cuáles son?",
+        "contexto": "El temario clasifica los flujos según el tipo de datos que transmiten y distingue dos familias principales para trabajar con información binaria o textual.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Flujos de texto (caracteres) y flujos binarios (bytes)." },
+          { "clave": "b", "texto": "Flujos públicos y flujos privados." },
+          { "clave": "c", "texto": "Flujos estáticos y flujos dinámicos." },
+          { "clave": "d", "texto": "Flujos de entrada y flujos de salida." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es flujos de texto o caracteres y flujos binarios o bytes. El temario explica que, según el tipo de datos, existen flujos de bytes y flujos de caracteres. Además, cuando presenta las clases relativas a flujos, vuelve a dividirlas en dos grandes familias: manejo de flujos de bytes y manejo de flujos de caracteres.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El temario no clasifica los flujos en públicos y privados. Esa división no aparece en esta unidad."
+            },
+            {
+              "clave": "c",
+              "motivo": "El tema tampoco habla de flujos estáticos y dinámicos como clasificación oficial de los flujos de datos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Entrada y salida sí son una clasificación válida, pero corresponden a la dirección del flujo, no al tipo de información que manejan."
+            }
+          ],
+          "resumen_didactico": "Si la pregunta te dice 'según el tipo de información', tienes que pensar en la división principal del tema: bytes para datos binarios y caracteres para texto.",
+          "ejemplo_practico": "Una imagen o un PDF se manejarían con flujos de bytes, mientras que un fichero .txt o .json se trabajaría con flujos de caracteres.",
+          "conclusion_final": "Según el tipo de información, Java distingue entre flujos de caracteres para texto y flujos de bytes para datos binarios."
+        }
+      },
+      {
+        "id": "UT12-Q04",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué clase de la jerarquía de Java es la base para todos los flujos que leen información en formato binario (bytes)?",
+        "contexto": "El temario explica las familias de clases de flujos y señala cuáles son las clases base para lectura y escritura de datos binarios.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "OutputStream" },
+          { "clave": "b", "texto": "Writer" },
+          { "clave": "c", "texto": "InputStream" },
+          { "clave": "d", "texto": "Reader" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es InputStream, porque el temario dice que las clases para el manejo de flujos de bytes heredan de InputStream para lectura y de OutputStream para escritura. Por tanto, si la pregunta habla de leer información binaria, la clase base correcta es InputStream.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "OutputStream es la clase base de los flujos de bytes de escritura, no de lectura."
+            },
+            {
+              "clave": "b",
+              "motivo": "Writer pertenece a la familia de flujos de caracteres y se usa para escribir texto, no para leer datos binarios."
+            },
+            {
+              "clave": "d",
+              "motivo": "Reader también pertenece a la familia de flujos de caracteres, pero se usa para lectura de texto, no de bytes."
+            }
+          ],
+          "resumen_didactico": "En la jerarquía de bytes, InputStream sirve para leer y OutputStream para escribir. Si la pregunta dice 'leer binario', piensa en InputStream.",
+          "ejemplo_practico": "FileInputStream es una clase concreta que hereda de InputStream y se usa para leer bytes desde un fichero.",
+          "conclusion_final": "La clase base para todos los flujos que leen información binaria en Java es InputStream."
+        }
+      },
+      {
+        "id": "UT12-Q05",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "Si necesitas leer un archivo de texto plano para un cliente en Sevilla, ¿qué jerarquía de clases es la más adecuada por estar optimizada para caracteres?",
+        "contexto": "El temario distingue entre flujos de bytes y flujos de caracteres, e indica qué clases base se usan cuando se trabaja con texto legible.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Reader / Writer" },
+          { "clave": "b", "texto": "ObjectInput / ObjectOutput" },
+          { "clave": "c", "texto": "InputStream / OutputStream" },
+          { "clave": "d", "texto": "File / Path" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es Reader / Writer, porque el temario explica que las clases para el manejo de flujos de caracteres heredan de Reader y Writer y están diseñadas específicamente para texto. También indica que gestionan automáticamente la codificación, por lo que son las adecuadas para archivos de texto plano.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "ObjectInput / ObjectOutput se relacionan con la serialización de objetos, no con la lectura normal de texto plano optimizada para caracteres."
+            },
+            {
+              "clave": "c",
+              "motivo": "InputStream / OutputStream pertenecen a la familia de flujos de bytes. Sirven para datos binarios y no son la jerarquía específica optimizada para texto."
+            },
+            {
+              "clave": "d",
+              "motivo": "File se usa para gestionar rutas, existencia, directorios y metadatos del sistema de archivos, pero no es la jerarquía de clases especializada en leer caracteres."
+            }
+          ],
+          "resumen_didactico": "Si el archivo es texto legible, el tema te dice que debes pensar en flujos de caracteres. Su jerarquía base es Reader para leer y Writer para escribir.",
+          "ejemplo_practico": "Para leer un fichero .txt o .csv, el temario sitúa dentro de esta familia clases como FileReader o BufferedReader, que derivan de Reader.",
+          "conclusion_final": "La jerarquía más adecuada para trabajar con texto plano porque está optimizada para caracteres es Reader / Writer."
+        }
+      },
+      {
+        "id": "UT12-Q06",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Cuál es la regla de oro profesional que debe cumplirse siempre al terminar de trabajar con un flujo o un fichero?",
+        "contexto": "El temario insiste en el ciclo de vida de los flujos y remarca una norma profesional para evitar bloqueos de archivos y consumo innecesario de recursos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Llamar al método close() para liberar los recursos del sistema." },
+          { "clave": "b", "texto": "Reiniciar la Máquina Virtual de Java (JVM)." },
+          { "clave": "c", "texto": "Borrar el contenido del archivo original." },
+          { "clave": "d", "texto": "Cambiar el nombre del archivo." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es llamar al método close() para liberar los recursos del sistema. El temario explica que trabajar con flujos sigue un ciclo de vida de apertura, uso y cierre, y recalca que olvidar el cierre puede consumir recursos innecesarios o bloquear archivos. Incluso lo presenta como una regla de oro: si abres un flujo, debes cerrarlo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Reiniciar la JVM no forma parte del ciclo correcto de trabajo con flujos ni es la solución profesional que marca el tema."
+            },
+            {
+              "clave": "c",
+              "motivo": "Borrar el contenido del archivo original no es una norma general al terminar de usar un flujo. De hecho, normalmente se quiere conservar la información."
+            },
+            {
+              "clave": "d",
+              "motivo": "Cambiar el nombre del archivo no tiene relación con la liberación de recursos ni con el cierre correcto del flujo."
+            }
+          ],
+          "resumen_didactico": "La regla de oro del tema es muy clara: abrir, usar y cerrar. El cierre con close() evita fugas de recursos y problemas de acceso al fichero.",
+          "ejemplo_practico": "Si un programa abre un archivo de log y no lo cierra, otro proceso puede no poder acceder a él porque sigue bloqueado por la aplicación anterior.",
+          "conclusion_final": "La norma profesional imprescindible al terminar de trabajar con un flujo o fichero es cerrarlo con close() para liberar recursos y evitar bloqueos."
+        }
+      },
+      {
+        "id": "UT12-Q07",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué riesgo técnico existe si un programador olvida cerrar un flujo de datos abierto en un servidor?",
+        "contexto": "El temario advierte que dejar un flujo abierto consume recursos innecesarios y puede impedir que otros procesos accedan al fichero o incluso provocar problemas en el sistema.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El programa se vuelve más rápido." },
+          { "clave": "b", "texto": "El compilador genera una excepción de tipo lógica." },
+          { "clave": "c", "texto": "Se produce una “hemorragia” de recursos que puede bloquear el sistema o corromper datos." },
+          { "clave": "d", "texto": "Las variables de entorno se borran automáticamente." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que se produce una “hemorragia” de recursos que puede bloquear el sistema o corromper datos. El temario insiste en que un flujo abierto consume recursos del sistema y puede dejar archivos bloqueados. En el resumen final lo expresa como una hemorragia de recursos y advierte de que dejar un fichero abierto puede bloquear el sistema o corromper datos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Ocurre justo lo contrario. Dejar un flujo abierto no mejora el rendimiento, sino que malgasta recursos y puede generar problemas de acceso."
+            },
+            {
+              "clave": "b",
+              "motivo": "El problema no es que el compilador genere una excepción lógica, sino que en ejecución quedan recursos abiertos y el sistema puede verse afectado."
+            },
+            {
+              "clave": "d",
+              "motivo": "El temario no relaciona el olvido de cerrar flujos con el borrado automático de variables de entorno."
+            }
+          ],
+          "resumen_didactico": "Si abres un flujo y no lo cierras, dejas recursos ocupados. Eso puede bloquear archivos, perjudicar al servidor y poner en riesgo la integridad de los datos.",
+          "ejemplo_practico": "Si una aplicación de servidor abre un fichero de log y no lo cierra, otro proceso puede no poder escribir en él, o el sistema puede ir acumulando recursos abiertos hasta fallar.",
+          "conclusion_final": "Olvidar cerrar un flujo abierto provoca una fuga o “hemorragia” de recursos que puede bloquear el sistema o incluso corromper datos."
+        }
+      },
+      {
+        "id": "UT12-Q08",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Cuál es la función principal de las clases \"Buffered\" (como BufferedReader) en la lectura de información?",
+        "contexto": "El temario explica que las clases con buffer usan una memoria intermedia para mejorar el rendimiento y reducir accesos lentos al sistema de archivos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Cifrar la información para que nadie pueda leer el archivo." },
+          { "clave": "b", "texto": "Traducir el código Java a lenguaje ensamblador." },
+          { "clave": "c", "texto": "Permitir la herencia múltiple entre flujos de datos." },
+          { "clave": "d", "texto": "Actuar como un almacén temporal para leer bloques de datos, reduciendo los accesos lentos al disco." }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La respuesta correcta es actuar como un almacén temporal para leer bloques de datos, reduciendo los accesos lentos al disco. El temario dice que las clases Buffered utilizan un buffer, es decir, una memoria intermedia, para acumular o leer datos por bloques y así minimizar el número de accesos al sistema de archivos, mejorando drásticamente el rendimiento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Las clases Buffered no se encargan de cifrar información. Su función en el tema es optimizar la lectura y escritura mediante un búfer."
+            },
+            {
+              "clave": "b",
+              "motivo": "Traducir Java a ensamblador no tiene relación con BufferedReader ni con las clases de flujos del tema."
+            },
+            {
+              "clave": "c",
+              "motivo": "El temario no dice que las clases Buffered sirvan para permitir herencia múltiple. Su objetivo es el rendimiento en operaciones de entrada y salida."
+            }
+          ],
+          "resumen_didactico": "Un buffer es una zona de memoria temporal que evita ir al disco constantemente. Gracias a eso, las clases Buffered leen o escriben de forma más eficiente.",
+          "ejemplo_practico": "BufferedReader puede leer líneas completas de un archivo de texto sin tener que acceder al disco carácter a carácter en cada operación.",
+          "conclusion_final": "La función principal de las clases Buffered es usar una memoria intermedia para trabajar por bloques y reducir los accesos lentos al disco."
+        }
+      },
+      {
+        "id": "UT12-Q09",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "Al trabajar con archivos de texto, ¿cuál es la ventaja del método readLine() de la clase BufferedReader?",
+        "contexto": "El temario presenta BufferedReader como una herramienta especialmente útil para leer texto de forma profesional y eficiente.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Permite leer una línea completa de texto hasta encontrar un salto de línea." },
+          { "clave": "b", "texto": "Convierte automáticamente el texto en un número entero." },
+          { "clave": "c", "texto": "Lee el archivo bit a bit para mayor seguridad." },
+          { "clave": "d", "texto": "Elimina los virus del archivo de origen." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que permite leer una línea completa de texto hasta encontrar un salto de línea. El temario dice que BufferedReader tiene un método 'mágico' llamado readLine(), que lee una línea entera de texto de golpe y que es la forma estándar y profesional de leer archivos de configuración, CSV o logs.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "readLine() no convierte automáticamente el texto en entero. Su función es devolver una línea de texto completa."
+            },
+            {
+              "clave": "c",
+              "motivo": "El tema no dice que BufferedReader lea bit a bit. Al contrario, destaca que lee líneas completas de texto, no bits individuales."
+            },
+            {
+              "clave": "d",
+              "motivo": "BufferedReader no elimina virus ni realiza funciones de seguridad sobre el archivo. Solo sirve para leer texto."
+            }
+          ],
+          "resumen_didactico": "La gran ventaja de readLine() es que no tienes que leer carácter a carácter. Te devuelve cada línea completa, lo que hace la lectura de texto mucho más cómoda y profesional.",
+          "ejemplo_practico": "Si tienes un archivo CSV con varias filas, readLine() te permite procesar cada fila entera una a una, en vez de ir leyendo letra por letra.",
+          "conclusion_final": "La ventaja principal de readLine() es que permite leer una línea completa de texto de una sola vez, hasta llegar al salto de línea."
+        }
+      },
+      {
+        "id": "UT12-Q10",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué clase se utiliza habitualmente para escribir texto en un archivo y permite crear el fichero si no existe previamente?",
+        "contexto": "El temario distingue las clases de caracteres para trabajar con texto y explica el comportamiento de apertura de ficheros en acceso secuencial.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "FileInputStream" },
+          { "clave": "b", "texto": "FileWriter" },
+          { "clave": "c", "texto": "FileReader" },
+          { "clave": "d", "texto": "ObjectOutputStream" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La respuesta correcta es FileWriter, porque el temario lo presenta como la clase equivalente a FileOutputStream pero para texto. Sirve para escribir texto en un fichero. Además, en el acceso secuencial el tema indica que si el fichero no existe, Java lo crea automáticamente y lo abre para escribir.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "FileInputStream pertenece a la familia de flujos de bytes y se usa para leer datos binarios desde un fichero, no para escribir texto."
+            },
+            {
+              "clave": "c",
+              "motivo": "FileReader también trabaja con texto, pero su función es leer caracteres desde un archivo, no escribirlos."
+            },
+            {
+              "clave": "d",
+              "motivo": "ObjectOutputStream se utiliza para serializar objetos, es decir, para guardar objetos completos en forma de bytes, no para la escritura habitual de texto plano."
+            }
+          ],
+          "resumen_didactico": "Si la pregunta habla de escribir texto en un archivo, dentro del temario la clase directa y propia para eso es FileWriter.",
+          "ejemplo_practico": "Si una aplicación necesita guardar una nota en un archivo .txt, puede usar FileWriter para escribir el contenido y, si el fichero no existe, Java lo creará al abrirlo para escritura.",
+          "conclusion_final": "La clase habitual para escribir texto en un archivo y crear el fichero si no existe es FileWriter."
+        }
+      },
+      {
+        "id": "UT12-Q11",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "Al instanciar un FileWriter, ¿qué indica el segundo parámetro booleano (append) en su constructor?",
+        "contexto": "El temario explica el comportamiento de apertura de los ficheros en acceso secuencial y diferencia entre sobrescritura y modo append.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Si el contenido nuevo debe añadirse al final del archivo existente o sobrescribirlo." },
+          { "clave": "b", "texto": "Si el flujo debe cerrarse solo al terminar." },
+          { "clave": "c", "texto": "Si el archivo debe ser de lectura o de escritura." },
+          { "clave": "d", "texto": "Si el archivo debe comprimirse automáticamente." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que indica si el contenido nuevo debe añadirse al final del archivo existente o sobrescribirlo. El temario dice que, en acceso secuencial, si el fichero ya existe, por defecto se sobrescribe. Pero si al construir el flujo se pasa el argumento true en modo append, el puntero se coloca al final del archivo y se respeta lo que ya había.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El parámetro append no controla el cierre automático del flujo. El cierre pertenece al ciclo de vida del flujo y debe gestionarse aparte."
+            },
+            {
+              "clave": "c",
+              "motivo": "Ese booleano no decide entre lectura o escritura. FileWriter ya es una clase de escritura; el parámetro solo define si añade al final o sobrescribe."
+            },
+            {
+              "clave": "d",
+              "motivo": "El temario no relaciona append con compresión automática del archivo. Su función es únicamente controlar si se conserva el contenido previo."
+            }
+          ],
+          "resumen_didactico": "En FileWriter, el booleano append decide si escribes desde cero borrando lo anterior o si continúas escribiendo al final del archivo ya existente.",
+          "ejemplo_practico": "Si un sistema de logs usa FileWriter con append en true, cada nuevo mensaje se añade al final del fichero sin borrar los errores anteriores.",
+          "conclusion_final": "El segundo parámetro booleano append indica si el nuevo contenido se añade al final del archivo existente o si se sobrescribe el contenido previo."
+        }
+      },
+      {
+        "id": "UT12-Q12",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué clase de Java proporciona herramientas para gestionar metadatos de archivos, como comprobar si existe, su tamaño o si es un directorio?",
+        "contexto": "El temario explica que la gestión de metainformación y estructura del sistema de ficheros no la hacen los flujos, sino una clase específica de java.io.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Buffer" },
+          { "clave": "b", "texto": "Serializer" },
+          { "clave": "c", "texto": "Stream" },
+          { "clave": "d", "texto": "File" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La respuesta correcta es File, porque el temario dice que la clase java.io.File se encarga de la gestión de metadatos y de la estructura del sistema de archivos. Entre sus funciones están comprobar si un archivo existe, si es un fichero o un directorio, cuánto pesa y navegar por carpetas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Buffer no es la clase que gestiona metadatos del sistema de archivos. En el tema, el buffer es una memoria intermedia usada para mejorar el rendimiento de lectura y escritura."
+            },
+            {
+              "clave": "b",
+              "motivo": "Serializer no aparece como clase de gestión de archivos en el temario. La serialización se trata con Serializable, ObjectOutputStream y ObjectInputStream."
+            },
+            {
+              "clave": "c",
+              "motivo": "Stream es el concepto general de flujo de datos para entrada y salida de información, pero no es la clase destinada a consultar existencia, tamaño o tipo de archivo."
+            }
+          ],
+          "resumen_didactico": "Si la pregunta habla de metadatos del archivo, como existencia, tamaño, permisos o si es directorio, la clase clave del tema es File.",
+          "ejemplo_practico": "Con File puedes comprobar si una ruta existe con exists(), saber si es directorio con isDirectory() y consultar su tamaño con length().",
+          "conclusion_final": "La clase de Java que se utiliza para gestionar metadatos y estructura del sistema de ficheros es File."
+        }
+      },
+      {
+        "id": "UT12-Q13",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Cómo se denomina el sistema de lectura donde debemos procesar los datos uno detrás de otro, desde el principio hasta el final?",
+        "contexto": "El temario clasifica los flujos y los modos de acceso según la forma en que se accede a la información dentro del fichero.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Acceso recursivo" },
+          { "clave": "b", "texto": "Acceso aleatorio" },
+          { "clave": "c", "texto": "Acceso secuencial" },
+          { "clave": "d", "texto": "Acceso polimórfico" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es acceso secuencial, porque el temario explica que en este modo los datos se leen uno tras otro, en orden, como si escucharas una cinta de casete. También indica que en los ficheros de texto, habitualmente, el acceso es secuencial.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El acceso recursivo no aparece en el temario como forma de lectura de ficheros o flujos."
+            },
+            {
+              "clave": "b",
+              "motivo": "El acceso aleatorio o directo es justo el caso contrario: permite saltar directamente al dato que necesitas sin leer los anteriores."
+            },
+            {
+              "clave": "d",
+              "motivo": "El acceso polimórfico no es una categoría de acceso a ficheros en esta unidad."
+            }
+          ],
+          "resumen_didactico": "Si para llegar a un dato tienes que pasar por los anteriores, estás ante un acceso secuencial. Lees en cadena, desde el principio hacia el final.",
+          "ejemplo_practico": "Cuando lees un archivo de texto línea a línea con BufferedReader, normalmente recorres la información de forma secuencial hasta llegar al final.",
+          "conclusion_final": "El sistema de lectura en el que los datos se procesan uno detrás de otro desde el principio hasta el final se llama acceso secuencial."
+        }
+      },
+      {
+        "id": "UT12-Q14",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué herramienta de Java permite realizar un \"Acceso aleatorio\", saltando directamente a cualquier posición de un archivo de gran tamaño?",
+        "contexto": "El temario explica que existe un modo de acceso directo exclusivo para ficheros binarios, pensado para posicionarse en cualquier byte sin leer los anteriores.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "BufferedReader" },
+          { "clave": "b", "texto": "FileInputStream" },
+          { "clave": "c", "texto": "RandomAccessFile" },
+          { "clave": "d", "texto": "Scanner" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es RandomAccessFile, porque el temario dice que el acceso directo o aleatorio utiliza una clase especial llamada RandomAccessFile. También define este acceso como la capacidad de llegar a cualquier byte del fichero de forma inmediata, sin tener que leer los anteriores.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "BufferedReader se usa para leer texto de forma eficiente, especialmente línea a línea, pero no para saltar a posiciones arbitrarias dentro de un archivo."
+            },
+            {
+              "clave": "b",
+              "motivo": "FileInputStream permite leer bytes desde un fichero, pero el tema lo sitúa dentro del acceso secuencial, no como herramienta de acceso aleatorio."
+            },
+            {
+              "clave": "d",
+              "motivo": "Scanner se usa en el temario para capturar entrada estándar desde teclado, no para gestionar acceso directo dentro de archivos grandes."
+            }
+          ],
+          "resumen_didactico": "Si la pregunta habla de saltar directamente a una posición concreta dentro de un archivo, la palabra clave del tema es acceso aleatorio, y la clase asociada es RandomAccessFile.",
+          "ejemplo_practico": "En un fichero binario enorme de inventario, RandomAccessFile permite ir directamente al registro que te interesa sin leer todos los anteriores.",
+          "conclusion_final": "La herramienta de Java que permite realizar acceso aleatorio y saltar directamente a cualquier posición de un archivo es RandomAccessFile."
+        }
+      },
+      {
+        "id": "UT12-Q15",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "En el acceso aleatorio, ¿cómo se llama el puntero interno que indica la posición actual dentro del archivo?",
+        "contexto": "El temario explica que RandomAccessFile da control sobre un puntero interno que marca dónde se encuentra la lectura o escritura en cada momento.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Marker" },
+          { "clave": "b", "texto": "Cursor (o File Pointer)" },
+          { "clave": "c", "texto": "Iterator" },
+          { "clave": "d", "texto": "Index" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La respuesta correcta es Cursor (o File Pointer), porque el temario dice que en RandomAccessFile tienes control total del puntero y nombra métodos como getFilePointer(), que precisamente devuelve la posición actual dentro del fichero. También explica que seek() mueve ese puntero a una posición concreta.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Marker no es el nombre que usa el temario para el puntero interno del acceso aleatorio."
+            },
+            {
+              "clave": "c",
+              "motivo": "Iterator se usa en otros contextos para recorrer colecciones, pero no es el término del tema para la posición actual dentro de un archivo."
+            },
+            {
+              "clave": "d",
+              "motivo": "Index puede sugerir posición, pero el temario no usa ese nombre. La terminología correcta en esta unidad es puntero o File Pointer."
+            }
+          ],
+          "resumen_didactico": "En acceso aleatorio siempre hay una posición actual dentro del fichero. El tema la llama puntero, y en Java aparece como File Pointer.",
+          "ejemplo_practico": "Si con RandomAccessFile llamas a seek(100), el puntero se mueve al byte 100. Después, getFilePointer() te diría que esa es la posición actual.",
+          "conclusion_final": "En el acceso aleatorio, el puntero interno que indica la posición actual dentro del archivo se llama Cursor o File Pointer."
+        }
+      },
+      {
+        "id": "UT12-Q16",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué método se utiliza en un RandomAccessFile para mover el puntero a una posición específica de bytes?",
+        "contexto": "El temario explica que RandomAccessFile permite controlar el puntero interno del fichero y nombra los métodos principales para hacerlo.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "move(pos)" },
+          { "clave": "b", "texto": "skip(pos)" },
+          { "clave": "c", "texto": "find(pos)" },
+          { "clave": "d", "texto": "seek(pos)" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La respuesta correcta es seek(pos), porque el temario indica expresamente que uno de los métodos clave del puntero en RandomAccessFile es seek(long pos), cuya función es mover el puntero a la posición pos medida en bytes.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "move(pos) no es el método que presenta el temario para desplazar el puntero dentro de un RandomAccessFile."
+            },
+            {
+              "clave": "b",
+              "motivo": "skip(pos) no es el método señalado en esta unidad como herramienta principal para posicionar el puntero en un acceso aleatorio."
+            },
+            {
+              "clave": "c",
+              "motivo": "find(pos) no aparece en el temario como método de RandomAccessFile para moverse a una posición concreta."
+            }
+          ],
+          "resumen_didactico": "En acceso aleatorio, el método importante para colocar el puntero exactamente donde quieres es seek(). Es la orden de 've a esta posición'.",
+          "ejemplo_practico": "Si quieres volver al inicio del fichero, puedes usar seek(0). Si quieres saltar al byte 200, usarías seek(200).",
+          "conclusion_final": "El método que se usa en RandomAccessFile para mover el puntero a una posición específica de bytes es seek(pos)."
+        }
+      },
+      {
+        "id": "UT12-Q17",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué proceso permite convertir un objeto de la memoria RAM en una secuencia de bytes para poder guardarlo en un archivo o enviarlo por red?",
+        "contexto": "El temario explica el almacenamiento de objetos en ficheros y define el proceso que transforma un objeto en bytes para conservarlo o transmitirlo.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Serialización" },
+          { "clave": "b", "texto": "Compilación" },
+          { "clave": "c", "texto": "Casting" },
+          { "clave": "d", "texto": "Parsing" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es Serialización, porque el temario la define como el proceso de convertir un objeto en memoria, con toda su estructura y datos, en una secuencia lineal de bytes para poder almacenarlo en disco o transmitirlo por una red.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La compilación es el proceso de traducir el código fuente para generar un programa ejecutable o intermedio, pero no sirve para guardar objetos en un archivo."
+            },
+            {
+              "clave": "c",
+              "motivo": "El casting consiste en convertir una referencia o valor de un tipo a otro, no en transformar un objeto completo en bytes para persistirlo."
+            },
+            {
+              "clave": "d",
+              "motivo": "El parsing se refiere a analizar o interpretar una cadena o estructura de datos, pero no es el proceso de almacenamiento de objetos que describe el tema."
+            }
+          ],
+          "resumen_didactico": "Si un objeto pasa de vivir en memoria RAM a quedar transformado en bytes para guardarse o enviarse, ese proceso se llama serialización.",
+          "ejemplo_practico": "Cuando en una aplicación se guarda la configuración de un usuario o una partida de videojuego completa en un archivo, lo que se está haciendo es serializar ese objeto.",
+          "conclusion_final": "El proceso que convierte un objeto de la memoria RAM en una secuencia de bytes para guardarlo o enviarlo por red es la serialización."
+        }
+      },
+      {
+        "id": "UT12-Q18",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Cuál es el requisito indispensable que debe cumplir una clase Java para que sus objetos puedan ser serializados?",
+        "contexto": "El temario establece las reglas necesarias para poder almacenar objetos en ficheros mediante serialización.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "No tener constructores." },
+          { "clave": "b", "texto": "Ser de visibilidad privada." },
+          { "clave": "c", "texto": "Implementar la interfaz Serializable." },
+          { "clave": "d", "texto": "Tener todos sus métodos estáticos." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es implementar la interfaz Serializable, porque el temario lo presenta como la primera regla sagrada de la serialización. Indica que la clase debe implementar java.io.Serializable para que Java considere que sus objetos son aptos para ser guardados como una secuencia de bytes.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El temario no dice que una clase deba carecer de constructores para ser serializable. Ese no es un requisito de esta unidad."
+            },
+            {
+              "clave": "b",
+              "motivo": "La visibilidad privada no es la condición que exige el tema para serializar objetos. La condición esencial es implementar Serializable."
+            },
+            {
+              "clave": "d",
+              "motivo": "Tener todos los métodos estáticos no aparece en el temario como requisito de serialización y, además, no guarda relación con el proceso de convertir un objeto en bytes."
+            }
+          ],
+          "resumen_didactico": "Si una clase quiere que sus objetos puedan viajar de la memoria a un archivo o a una red en forma de bytes, necesita su 'pasaporte': implementar Serializable.",
+          "ejemplo_practico": "Si una clase ConfiguracionUsuario implementa Serializable, entonces un ObjectOutputStream podrá guardar uno de sus objetos en un fichero.",
+          "conclusion_final": "El requisito indispensable para que una clase Java pueda serializar sus objetos es implementar la interfaz Serializable."
+        }
+      },
+      {
+        "id": "UT12-Q19",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué tipo de interfaz es Serializable y qué código debe escribir el programador dentro de ella?",
+        "contexto": "El temario explica los requisitos de la serialización y aclara la naturaleza de la interfaz Serializable dentro de Java.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Es una interfaz final que prohíbe la herencia." },
+          { "clave": "b", "texto": "Es una interfaz de marcado (marker interface) y no requiere escribir ningún método." },
+          { "clave": "c", "texto": "Es una interfaz abstracta que obliga a implementar el método save()." },
+          { "clave": "d", "texto": "Es una interfaz funcional con un método obligatorio." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que Serializable es una interfaz de marcado o marker interface y no requiere escribir ningún método. El temario dice expresamente que Serializable es una interfaz 'marca', es decir, una interfaz sin métodos cuya función es indicar a Java que ese objeto es apto para ser serializado.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El temario no presenta Serializable como una interfaz final ni dice que prohíba la herencia. Esa descripción no corresponde a esta unidad."
+            },
+            {
+              "clave": "c",
+              "motivo": "Serializable no obliga a implementar ningún método save(). El PDF insiste en que no tiene métodos y que solo sirve como marca."
+            },
+            {
+              "clave": "d",
+              "motivo": "No es una interfaz funcional con un único método obligatorio. Precisamente el tema recalca que no requiere implementar métodos."
+            }
+          ],
+          "resumen_didactico": "Serializable no te obliga a programar métodos dentro de la interfaz. Su papel es simplemente marcar la clase como válida para que Java permita serializar sus objetos.",
+          "ejemplo_practico": "Si escribes 'class ConfiguracionUsuario implements Serializable', no tienes que añadir ningún método especial dentro de Serializable; con implementarla ya estás indicando que el objeto puede guardarse en bytes.",
+          "conclusion_final": "Serializable es una marker interface y no exige escribir ningún método dentro de ella."
+        }
+      },
+      {
+        "id": "UT12-Q20",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Cuál es la función de la palabra clave \"transient\" aplicada a un atributo de una clase serializable?",
+        "contexto": "El temario explica los requisitos de la serialización y señala qué ocurre con los atributos que no se desean conservar al guardar un objeto.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Fuerza a que el atributo se guarde en un archivo separado." },
+          { "clave": "b", "texto": "Indica que el atributo es el más importante y debe cifrarse." },
+          { "clave": "c", "texto": "Indica que ese atributo no debe ser guardado durante la serialización (se ignora)." },
+          { "clave": "d", "texto": "Convierte el atributo en una constante global." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que indica que ese atributo no debe ser guardado durante la serialización. El temario lo explica claramente al decir que, si hay algún dato que no quieres guardar, como una contraseña temporal o un fichero abierto, debes marcarlo con la palabra clave transient. Esos datos se perderán al deserializar el objeto.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "transient no hace que el atributo se guarde en otro archivo. Su función en el temario es justo la contraria: evitar que se guarde."
+            },
+            {
+              "clave": "b",
+              "motivo": "El tema no relaciona transient con cifrado ni con que el atributo sea más importante. Solo indica que ese dato debe quedar fuera de la serialización."
+            },
+            {
+              "clave": "d",
+              "motivo": "transient no convierte el atributo en una constante global. Esa idea no aparece en el temario y no corresponde a esta palabra clave."
+            }
+          ],
+          "resumen_didactico": "Si un atributo tiene transient, Java lo ignora al serializar el objeto. Es una forma de decir: este dato no se guarda.",
+          "ejemplo_practico": "Si una clase de configuración tiene un campo sesionTemporalID marcado como transient, al guardar y volver a cargar el objeto ese dato no se recuperará.",
+          "conclusion_final": "La palabra clave transient sirve para indicar que un atributo no debe formar parte de la serialización y, por tanto, se ignora al guardar el objeto."
+        }
+      },
+      {
+        "id": "UT12-Q21",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué par de clases se utilizan específicamente para leer y escribir objetos completos en archivos?",
+        "contexto": "El temario dedica un apartado a la serialización y nombra las clases especialistas encargadas de guardar y recuperar objetos enteros.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "FileReader y FileWriter" },
+          { "clave": "b", "texto": "ObjectInputStream y ObjectOutputStream" },
+          { "clave": "c", "texto": "BufferedReader y BufferedWriter" },
+          { "clave": "d", "texto": "DataInputStream y DataOutputStream" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La respuesta correcta es ObjectInputStream y ObjectOutputStream, porque el temario los presenta como las dos clases especialistas de la serialización. ObjectOutputStream usa el método writeObject() para escribir el objeto, y ObjectInputStream usa readObject() para volver a leerlo y reconstruirlo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "FileReader y FileWriter se usan para leer y escribir texto, no para guardar objetos completos."
+            },
+            {
+              "clave": "c",
+              "motivo": "BufferedReader y BufferedWriter también trabajan con texto y mejoran el rendimiento mediante buffer, pero no están pensadas para serializar objetos."
+            },
+            {
+              "clave": "d",
+              "motivo": "DataInputStream y DataOutputStream sirven para leer y escribir tipos primitivos tipificados, como int, double o boolean, pero no objetos completos."
+            }
+          ],
+          "resumen_didactico": "Si la pregunta habla de guardar y recuperar objetos enteros, tienes que pensar en serialización. Y en serialización, el par de clases clave es ObjectOutputStream para escribir y ObjectInputStream para leer.",
+          "ejemplo_practico": "Si quieres guardar un objeto ConfiguracionUsuario en un archivo user.dat, usarías ObjectOutputStream para escribirlo y ObjectInputStream para cargarlo después.",
+          "conclusion_final": "Las clases específicas para leer y escribir objetos completos en archivos son ObjectInputStream y ObjectOutputStream."
+        }
+      },
+      {
+        "id": "UT12-Q22",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Cómo se denomina el proceso inverso a la serialización, que consiste en reconstruir un objeto en la RAM a partir de un flujo de bytes?",
+        "contexto": "El temario explica el ciclo completo de guardar un objeto como bytes y después recuperarlo reconstruyendo su estado en memoria.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Actualización" },
+          { "clave": "b", "texto": "Deserialización" },
+          { "clave": "c", "texto": "Casting ascendente" },
+          { "clave": "d", "texto": "Reencarnación" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La respuesta correcta es Deserialización, porque el temario explica que, después de convertir un objeto en una secuencia de bytes mediante serialización, el proceso inverso consiste en leer esos bytes y reconstruir el objeto original en memoria. Ese proceso recibe el nombre de deserialización.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Actualización no es el término que usa el temario para reconstruir un objeto desde bytes guardados en un fichero."
+            },
+            {
+              "clave": "c",
+              "motivo": "El casting ascendente pertenece al ámbito de la conversión de referencias entre tipos en programación orientada a objetos, no al proceso de recuperar objetos serializados."
+            },
+            {
+              "clave": "d",
+              "motivo": "Reencarnación no es un término técnico del tema. El nombre correcto que da el temario es deserialización."
+            }
+          ],
+          "resumen_didactico": "Serializar es convertir un objeto en bytes para guardarlo o enviarlo. Deserializar es hacer el camino contrario: volver a construir ese objeto en la RAM.",
+          "ejemplo_practico": "Si guardas un objeto ConfiguracionUsuario en un archivo con ObjectOutputStream, luego puedes usar ObjectInputStream para leerlo y deserializarlo, recuperando de nuevo el objeto en memoria.",
+          "conclusion_final": "El proceso inverso a la serialización, que reconstruye un objeto en la RAM a partir de bytes, se llama deserialización."
+        }
+      },
+      {
+        "id": "UT12-Q23",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "Al realizar una deserialización, ¿por qué es necesario realizar un casting explícito al leer el objeto?",
+        "contexto": "El temario muestra que, al recuperar un objeto desde ObjectInputStream, hay que convertir la referencia leída al tipo concreto de la clase original.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Porque el método readObject() devuelve una referencia de tipo genérico Object." },
+          { "clave": "b", "texto": "Porque Java prohíbe la lectura de objetos públicos." },
+          { "clave": "c", "texto": "Porque los objetos pierden sus atributos al guardarse en el disco." },
+          { "clave": "d", "texto": "Para borrar el archivo del disco después de leerlo." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que el método readObject() devuelve una referencia de tipo genérico Object. En el ejemplo del temario, al deserializar se lee el objeto y después se hace un casting al tipo correcto, precisamente para recuperar la referencia como instancia de la clase original.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El temario no dice que Java prohíba leer objetos públicos. El problema no es la visibilidad, sino el tipo genérico que devuelve readObject()."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los objetos no necesitan casting porque pierdan atributos. De hecho, la deserialización reconstruye el objeto con su estado, salvo los campos marcados como transient."
+            },
+            {
+              "clave": "d",
+              "motivo": "El casting no se realiza para borrar el archivo del disco. Su finalidad es convertir la referencia Object al tipo concreto que realmente esperas leer."
+            }
+          ],
+          "resumen_didactico": "Cuando lees un objeto con readObject(), Java te lo entrega como Object. Por eso necesitas decirle explícitamente de qué tipo real es mediante un casting.",
+          "ejemplo_practico": "Si has guardado un objeto ConfiguracionUsuario, al leerlo con readObject() tendrás que hacer algo como '(ConfiguracionUsuario)' para poder usarlo como ese tipo concreto.",
+          "conclusion_final": "El casting explícito es necesario porque readObject() devuelve una referencia genérica de tipo Object, y hay que convertirla al tipo real del objeto recuperado."
+        }
+      },
+      {
+        "id": "UT12-Q24",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Cuál es la principal ventaja de usar la serialización frente a guardar los datos en un archivo de texto manual?",
+        "contexto": "El temario explica que la serialización permite guardar objetos completos sin tener que desmontarlos atributo por atributo para escribirlos manualmente.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Permite guardar la estructura y el estado completo del objeto (incluyendo relaciones con otros objetos) de forma automática." },
+          { "clave": "b", "texto": "Los archivos serializados pueden leerse con cualquier editor de texto como el Bloc de notas." },
+          { "clave": "c", "texto": "No requiere el manejo de excepciones try-catch." },
+          { "clave": "d", "texto": "El archivo resultante ocupa menos espacio que un .zip." }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que permite guardar la estructura y el estado completo del objeto de forma automática. El temario define la serialización como el proceso de convertir un objeto en memoria, con toda su estructura y datos, en una secuencia de bytes para almacenarlo o transmitirlo. Además, explica que así no hace falta desmontar el objeto pieza a pieza para guardarlo manualmente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El temario no presenta los archivos serializados como texto legible. Al contrario, la serialización convierte el objeto en bytes, no en un formato pensado para leerse con un editor de texto."
+            },
+            {
+              "clave": "c",
+              "motivo": "La serialización no elimina la necesidad de gestionar excepciones. En los ejemplos del tema se sigue utilizando try-catch al trabajar con ficheros y streams."
+            },
+            {
+              "clave": "d",
+              "motivo": "El tema no dice que el archivo serializado ocupe menos que un .zip. Esa comparación no forma parte del contenido estudiado."
+            }
+          ],
+          "resumen_didactico": "La gran ventaja de la serialización es que te permite guardar un objeto completo tal como está en memoria, sin tener que escribir manualmente cada dato por separado en un archivo de texto.",
+          "ejemplo_practico": "Si tienes un objeto ConfiguracionUsuario con varios atributos, con serialización puedes guardarlo entero con writeObject(), en vez de escribir a mano cada campo como texto en distintas líneas.",
+          "conclusion_final": "La principal ventaja de la serialización es que guarda automáticamente el estado y la estructura completa del objeto, evitando el trabajo manual de almacenar cada dato por separado."
+        }
+      },
+      {
+        "id": "UT12-Q25",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "En el tratamiento de la información, ¿qué significa que un flujo sea \"de salida\" (Output)?",
+        "contexto": "El temario clasifica los flujos según la dirección en entrada, salida o mixtos, según hacia dónde viaja la información.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Que el método devuelve un valor de tipo void." },
+          { "clave": "b", "texto": "Que el programa borra la memoria caché." },
+          { "clave": "c", "texto": "Que el programa envía o escribe datos hacia un destino externo (fichero, pantalla, etc.)." },
+          { "clave": "d", "texto": "Que el programa recibe datos del teclado." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que el programa envía o escribe datos hacia un destino externo. El temario dice que, según la dirección del flujo, los de salida son aquellos en los que enviamos datos fuera. Es decir, el programa escribe información hacia un fichero, la pantalla u otro destino.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Que un método devuelva void no define un flujo de salida. Eso pertenece al tipo de retorno de un método, no a la dirección de un flujo de datos."
+            },
+            {
+              "clave": "b",
+              "motivo": "Borrar la memoria caché no es lo que significa output en esta unidad. El tema relaciona salida con envío de información al exterior."
+            },
+            {
+              "clave": "d",
+              "motivo": "Recibir datos del teclado corresponde a un flujo de entrada, no de salida."
+            }
+          ],
+          "resumen_didactico": "Flujo de salida significa que la información sale del programa hacia fuera. Si el programa escribe, imprime o guarda, está usando output.",
+          "ejemplo_practico": "Cuando un programa guarda un informe en un archivo o muestra un mensaje por pantalla con System.out, está realizando una operación de salida.",
+          "conclusion_final": "Un flujo de salida es aquel en el que el programa envía o escribe datos hacia un destino externo."
+        }
+      },
+      {
+        "id": "UT12-Q26",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué jerarquía de clases usarías para leer una imagen o un archivo de audio, dado que son datos no legibles como texto?",
+        "contexto": "El temario distingue entre flujos de bytes y flujos de caracteres, y asocia los datos binarios como imágenes o audio con una familia concreta de clases.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "File / Path" },
+          { "clave": "b", "texto": "String / StringBuilder" },
+          { "clave": "c", "texto": "InputStream / OutputStream" },
+          { "clave": "d", "texto": "Reader / Writer" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es InputStream / OutputStream, porque el temario explica que las clases para el manejo de flujos de bytes heredan de InputStream y OutputStream y son las adecuadas para imágenes, PDF, audio y cualquier dato binario no legible como texto.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "File se usa para gestionar rutas, existencia, directorios y metadatos del sistema de archivos, pero no es la jerarquía de lectura y escritura de datos binarios."
+            },
+            {
+              "clave": "b",
+              "motivo": "String y StringBuilder sirven para trabajar con texto en memoria, no para manejar directamente ficheros binarios como imágenes o audio."
+            },
+            {
+              "clave": "d",
+              "motivo": "Reader / Writer es la jerarquía orientada a caracteres y texto legible. El propio tema indica que para datos no legibles como texto deben usarse flujos de bytes."
+            }
+          ],
+          "resumen_didactico": "Si el archivo no es texto legible, como una imagen o un audio, el tema te lleva a pensar en datos binarios. Para eso se usa la jerarquía de bytes: InputStream y OutputStream.",
+          "ejemplo_practico": "Para leer una foto .jpg o un archivo de sonido, usarías clases de bytes como FileInputStream, que deriva de InputStream.",
+          "conclusion_final": "Para leer una imagen o un archivo de audio, la jerarquía adecuada es InputStream / OutputStream, porque está pensada para datos binarios."
+        }
+      },
+      {
+        "id": "UT12-Q27",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué excepción debe capturarse obligatoriamente al trabajar con la mayoría de las operaciones de lectura y escritura de ficheros?",
+        "contexto": "El temario muestra repetidamente que las operaciones con flujos, ficheros y clases de entrada/salida pueden producir errores de E/S que deben gestionarse.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "NullPointerException" },
+          { "clave": "b", "texto": "IOException" },
+          { "clave": "c", "texto": "ArithmeticException" },
+          { "clave": "d", "texto": "ClassCastException" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La respuesta correcta es IOException, porque en el temario la mayoría de ejemplos de lectura y escritura de ficheros usan bloques try-catch capturando IOException. También se indica que métodos como createNewFile() pueden lanzar IOException si hay problemas de disco, y las operaciones de entrada y salida se gestionan habitualmente con esta excepción.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "NullPointerException no es la excepción típica del trabajo con ficheros en esta unidad. Esa excepción aparece cuando se usa una referencia nula, no como error general de entrada/salida."
+            },
+            {
+              "clave": "c",
+              "motivo": "ArithmeticException se relaciona con errores aritméticos, como divisiones incorrectas, y no con operaciones de lectura o escritura de archivos."
+            },
+            {
+              "clave": "d",
+              "motivo": "ClassCastException aparece cuando se hace un casting inválido entre tipos, pero no es la excepción general asociada al manejo de ficheros en el temario."
+            }
+          ],
+          "resumen_didactico": "Cuando trabajas con ficheros, el riesgo más habitual es que ocurra un problema de entrada/salida. Por eso, la excepción clave que debes pensar en este tema es IOException.",
+          "ejemplo_practico": "Si intentas leer un archivo que da problemas de acceso o escribir en una ruta donde falla el disco, el programa debe capturar IOException para gestionar ese error.",
+          "conclusion_final": "La excepción que debe capturarse habitualmente al trabajar con operaciones de lectura y escritura de ficheros es IOException."
+        }
+      },
+      {
+        "id": "UT12-Q28",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Cuál es la diferencia de rendimiento entre leer un archivo de 10GB byte a byte frente a usar un Buffer?",
+        "contexto": "El temario compara los flujos básicos con las clases Buffered y explica que el buffer reduce el número de accesos al sistema de archivos, mejorando el rendimiento.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Java prohíbe la lectura de archivos de más de 1GB sin serialización." },
+          { "clave": "b", "texto": "Leer byte a byte es más rápido porque no pierde tiempo llenando el almacén temporal." },
+          { "clave": "c", "texto": "El uso de Buffer es drásticamente más rápido al realizar menos peticiones físicas al hardware del disco." },
+          { "clave": "d", "texto": "No hay diferencia; el hardware actual lo procesa igual." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que el uso de Buffer es drásticamente más rápido al realizar menos peticiones físicas al hardware del disco. El temario explica que las clases Buffered utilizan una memoria intermedia para acumular o leer datos por bloques, reduciendo el número de accesos al sistema de archivos, que son operaciones lentas y costosas. Incluso compara leer sin buffer con llevar ladrillos de uno en uno y usar buffer con hacerlo con una carretilla.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El temario no dice que Java prohíba leer archivos grandes sin serialización. La serialización trata de guardar objetos, no de poner un límite de tamaño a la lectura de ficheros."
+            },
+            {
+              "clave": "b",
+              "motivo": "El tema indica justo lo contrario. Leer byte a byte provoca más accesos al disco y eso empeora el rendimiento frente al uso de un buffer."
+            },
+            {
+              "clave": "d",
+              "motivo": "Sí hay diferencia según el temario. De hecho, remarca que el rendimiento mejora drásticamente con buffer porque se minimizan las operaciones físicas de acceso al disco."
+            }
+          ],
+          "resumen_didactico": "Leer byte a byte obliga a hacer muchas más visitas al disco. Un buffer agrupa datos en memoria y por eso trabaja mucho más rápido.",
+          "ejemplo_practico": "Si una aplicación tiene que leer un archivo enorme de vídeo, hacerlo con BufferedInputStream será mucho más eficiente que ir leyendo cada byte directamente desde el disco uno a uno.",
+          "conclusion_final": "La diferencia clave es que el buffer mejora mucho el rendimiento porque reduce los accesos físicos al disco, mientras que leer byte a byte resulta mucho más lento."
+        }
+      },
+      {
+        "id": "UT12-Q29",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "¿Qué sucede con un archivo si intentas abrirlo con un FileWriter usando \"append = false\" y el archivo ya tenía datos?",
+        "contexto": "El temario explica el comportamiento de apertura de los ficheros en acceso secuencial y diferencia entre sobrescritura y modo append.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El programa lanza un error y no escribe nada." },
+          { "clave": "b", "texto": "El archivo se vacía y se sobrescribe con la nueva información." },
+          { "clave": "c", "texto": "Se crea un archivo copia automáticamente." },
+          { "clave": "d", "texto": "Los datos nuevos se colocan al principio." }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que el archivo se vacía y se sobrescribe con la nueva información. El temario dice que, en acceso secuencial, si el fichero ya existe, por defecto se tritura, es decir, se borra todo el contenido anterior y se empieza a escribir desde cero. Solo si se usa append en true se respeta lo que ya había.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El comportamiento que describe el tema no es lanzar un error por existir datos previos, sino sobrescribir el contenido si no se usa append."
+            },
+            {
+              "clave": "c",
+              "motivo": "El temario no dice que se cree una copia automática del archivo. La acción por defecto es sobrescribir el mismo fichero."
+            },
+            {
+              "clave": "d",
+              "motivo": "Aunque pueda sonar parecido, el punto clave del tema no es simplemente que los datos se coloquen al principio, sino que el contenido anterior se borra y el archivo se reescribe desde cero."
+            }
+          ],
+          "resumen_didactico": "Si usas FileWriter sin append, el archivo no conserva lo anterior. Se elimina el contenido previo y se escribe el nuevo desde cero.",
+          "ejemplo_practico": "Si un fichero de log ya tenía mensajes guardados y abres FileWriter con append = false, perderás todo el historial anterior y solo quedará la nueva información escrita.",
+          "conclusion_final": "Con append = false, un archivo que ya tenía datos se sobrescribe: se vacía su contenido previo y se reemplaza por la nueva información."
+        }
+      },
+      {
+        "id": "UT12-Q30",
+        "tema": "UT12 Lectura y escritura de información",
+        "pregunta": "Según la arquitectura de Java, ¿por qué se dice que el sistema de flujos es \"encadenable\"?",
+        "contexto": "El temario muestra varias clases de flujos que envuelven a otras para añadir capacidades nuevas, como buffer, tipado o serialización.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Porque los datos viajan físicamente a través de una cadena de metal." },
+          { "clave": "b", "texto": "Porque el programador debe escribir el código en una sola línea." },
+          { "clave": "c", "texto": "Porque puedes envolver un flujo básico (como FileOutputStream) con uno más avanzado (como ObjectOutputStream) para añadir funcionalidades." },
+          { "clave": "d", "texto": "Porque solo se puede usar una clase a la vez." }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La respuesta correcta es que puedes envolver un flujo básico con otro más avanzado para añadir funcionalidades. El temario lo muestra varias veces: BufferedOutputStream envuelve a FileOutputStream para mejorar el rendimiento, DataOutputStream envuelve a otro OutputStream para escribir tipos primitivos, y ObjectOutputStream envuelve a un FileOutputStream para serializar objetos. Esa arquitectura permite ir encadenando flujos y ampliar capacidades sobre un flujo base.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El temario usa comparaciones como la tubería o el flujo, pero no dice que los datos viajen por una cadena de metal. Esa opción no tiene sentido técnico dentro de la unidad."
+            },
+            {
+              "clave": "b",
+              "motivo": "Que el código esté en una sola línea no tiene relación con la arquitectura de flujos. Lo encadenable se refiere a cómo unas clases envuelven a otras."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es justo lo contrario. El sistema de flujos se considera encadenable porque sí pueden combinarse varias clases, una envolviendo a otra, para añadir funciones."
+            }
+          ],
+          "resumen_didactico": "El sistema de flujos en Java es encadenable porque puedes partir de un flujo básico y envolverlo con otros flujos especializados para conseguir más funciones sin cambiar el flujo original.",
+          "ejemplo_practico": "Puedes crear un FileOutputStream para escribir en un archivo y después envolverlo con un BufferedOutputStream para ganar rendimiento, o con un ObjectOutputStream para guardar objetos completos.",
+          "conclusion_final": "Se dice que los flujos son encadenables porque Java permite envolver un flujo base con otros flujos más avanzados para añadir nuevas capacidades como buffer, tipado o serialización."
+        }
+      }
+
+]

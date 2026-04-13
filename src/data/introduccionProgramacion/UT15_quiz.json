@@ -1,0 +1,1382 @@
+[
+    {
+        "id": "UT15-Q01",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cuál es el objetivo principal de crear una interfaz gráfica (GUI) en una aplicación comercial?",
+        "contexto": "La unidad explica el paso de programas orientados a consola a aplicaciones visuales pensadas para el usuario final.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Aumentar la seguridad del código frente a ataques de inyección."
+          },
+          {
+            "clave": "b",
+            "texto": "Sustituir la terminal por una \"cara bonita\" que permita al usuario interactuar de forma intuitiva."
+          },
+          {
+            "clave": "c",
+            "texto": "Reducir el consumo de memoria RAM del procesador."
+          },
+          {
+            "clave": "d",
+            "texto": "Eliminar la necesidad de escribir métodos y clases en el backend."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El tema explica que una aplicación comercial necesita una interfaz visual para que el usuario pueda interactuar con ella de forma intuitiva. La idea central es dejar atrás la interacción exclusiva por consola y ofrecer una \"cara bonita\" usable por el cliente final.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La seguridad frente a inyecciones pertenece al ámbito de la seguridad del software y del backend, no al objetivo principal de una GUI. La GUI se crea para mejorar la usabilidad."
+            },
+            {
+              "clave": "c",
+              "motivo": "Una interfaz gráfica no se crea para reducir el consumo de memoria RAM. Su finalidad principal es facilitar la interacción visual con el programa."
+            },
+            {
+              "clave": "d",
+              "motivo": "La GUI no elimina la lógica del backend. El programa sigue necesitando métodos, clases y lógica interna; la interfaz solo permite al usuario usarlo visualmente."
+            }
+          ],
+          "resumen_didactico": "Una GUI se crea para que el usuario no tenga que trabajar con una terminal y pueda usar la aplicación mediante ventanas, botones y elementos visuales de forma clara e intuitiva.",
+          "ejemplo_practico": "En lugar de pedirle al cliente que escriba comandos en consola para guardar datos, se le ofrece una ventana con campos de texto y botones como \"Guardar\" o \"Cancelar\".",
+          "conclusion_final": "El objetivo principal de una interfaz gráfica en una aplicación comercial es hacer que el programa sea usable y amigable para el usuario final mediante interacción visual e intuitiva."
+        }
+      },
+      {
+        "id": "UT15-Q02",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "En el ecosistema Java, ¿qué librería es considerada la base nativa original para crear interfaces, aunque hoy se use principalmente como cimiento?",
+        "contexto": "El tema diferencia entre la librería base histórica de Java para interfaces y su evolución posterior.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Swing"
+          },
+          {
+            "clave": "b",
+            "texto": "Hibernate"
+          },
+          {
+            "clave": "c",
+            "texto": "AWT (Abstract Window Toolkit)"
+          },
+          {
+            "clave": "d",
+            "texto": "JavaFX"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "AWT (Abstract Window Toolkit) es la librería más nativa y original de Java para crear interfaces gráficas. El tema la presenta como el cimiento de todo, es decir, la base histórica sobre la que después evolucionan otras tecnologías como Swing.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Swing no es la base original, sino la evolución de AWT. Es más moderna y potente, pero no la librería nativa inicial."
+            },
+            {
+              "clave": "b",
+              "motivo": "Hibernate no es una librería de interfaces gráficas. Está relacionada con persistencia de datos y acceso a bases de datos."
+            },
+            {
+              "clave": "d",
+              "motivo": "JavaFX es otra tecnología para interfaces, más moderna que AWT, pero no es la base nativa original que presenta el tema."
+            }
+          ],
+          "resumen_didactico": "Si te preguntan por la librería histórica, nativa y base de las interfaces en Java, la respuesta es AWT. Swing vino después como evolución.",
+          "ejemplo_practico": "Si creas una ventana clásica con clases como Frame, Button o Label, estás trabajando con AWT, que representa la base original del sistema gráfico en Java.",
+          "conclusion_final": "La librería considerada el cimiento nativo original para crear interfaces en Java es AWT (Abstract Window Toolkit)."
+        }
+      },
+      {
+        "id": "UT15-Q03",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cómo se denomina la clase madre de la jerarquía AWT de la que heredan casi todos los elementos visuales como botones o etiquetas?",
+        "contexto": "La unidad explica la estructura jerárquica básica de AWT y cuál es la raíz de los elementos visuales.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Component"
+          },
+          {
+            "clave": "b",
+            "texto": "Layout"
+          },
+          {
+            "clave": "c",
+            "texto": "Container"
+          },
+          {
+            "clave": "d",
+            "texto": "Window"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En AWT, la clase madre de todo lo visual es Component. El tema explica que esta clase define qué es un control y cómo se comportan los elementos visuales de la aplicación. Tanto contenedores como controles derivan de esa base común.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Layout no es la clase madre de los elementos visuales. Un layout es un gestor de diseño que organiza la posición y el tamaño de los componentes dentro de un contenedor."
+            },
+            {
+              "clave": "c",
+              "motivo": "Container no es la raíz total de la jerarquía visual, sino una subclase dentro de ella. Sirve para contener otros componentes, pero hereda a su vez de Component."
+            },
+            {
+              "clave": "d",
+              "motivo": "Window es un tipo concreto de contenedor de alto nivel, no la clase madre de botones, etiquetas y demás elementos visuales."
+            }
+          ],
+          "resumen_didactico": "La palabra clave aquí es Component. En AWT, casi todo lo visual parte de esa clase base, y por eso muchos elementos comparten propiedades y métodos comunes.",
+          "ejemplo_practico": "Un Button, un Label o un TextField pueden configurarse con métodos como setSize o setVisible porque todos descienden de la clase Component.",
+          "conclusion_final": "La clase madre de la jerarquía visual en AWT es Component."
+        }
+      },
+      {
+        "id": "UT15-Q04",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué término técnico define a los objetos que pueden contener a otros elementos visuales dentro de una interfaz?",
+        "contexto": "En la estructura de una interfaz gráfica, algunos elementos sirven como base o caja para alojar otros componentes.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Contenedores (Containers)"
+          },
+          {
+            "clave": "b",
+            "texto": "Eventos"
+          },
+          {
+            "clave": "c",
+            "texto": "Componentes"
+          },
+          {
+            "clave": "d",
+            "texto": "Listeners"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En AWT, los contenedores son los componentes que definen la estructura de las ventanas y pueden albergar otros controles u otros contenedores en su interior. El tema los compara con cajas que guardan cosas dentro.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Los eventos no contienen elementos visuales. Representan acciones o sucesos que ocurren cuando el usuario interactúa con la interfaz."
+            },
+            {
+              "clave": "c",
+              "motivo": "Componentes es un término más general. Incluye tanto contenedores como controles, pero la pregunta pide específicamente los que pueden alojar otros elementos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Los listeners no contienen componentes. Son objetos que escuchan y gestionan eventos, como clics o cierres de ventana."
+            }
+          ],
+          "resumen_didactico": "Si un objeto visual puede guardar dentro botones, etiquetas, paneles u otros elementos, técnicamente se llama contenedor.",
+          "ejemplo_practico": "Un Frame o un Panel son contenedores porque dentro de ellos puedes añadir un Button, un Label o un TextField.",
+          "conclusion_final": "El término técnico correcto para los objetos que contienen otros elementos visuales es contenedores (Containers)."
+        }
+      },
+      {
+        "id": "UT15-Q05",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cuál es la principal evolución de la librería Swing respecto a su antecesora AWT?",
+        "contexto": "El tema compara AWT con Swing y destaca la diferencia clave en cómo se dibujan los componentes y su apariencia visual.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Swing requiere menos líneas de código para funcionar."
+          },
+          {
+            "clave": "b",
+            "texto": "Swing solo funciona en dispositivos móviles."
+          },
+          {
+            "clave": "c",
+            "texto": "Swing es \"pintada\" por Java (lightweight), lo que permite que sea independiente de la estética del sistema operativo."
+          },
+          {
+            "clave": "d",
+            "texto": "Swing elimina el uso del paquete java.awt."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La evolución principal de Swing frente a AWT es que Swing dibuja sus propios componentes, en lugar de depender de los controles nativos del sistema operativo. Por eso la aplicación puede mantener una apariencia más uniforme e independiente del sistema en el que se ejecuta. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El tema no presenta Swing como una librería cuyo valor principal sea escribir menos código, sino como una evolución más potente, más estable y visualmente independiente del sistema operativo."
+            },
+            {
+              "clave": "b",
+              "motivo": "Swing no está pensada solo para móviles. Es una librería de interfaces gráficas de Java usada en aplicaciones de escritorio."
+            },
+            {
+              "clave": "d",
+              "motivo": "Swing no elimina completamente java.awt. De hecho, muchas clases y conceptos base siguen relacionados con AWT, ya que Swing evoluciona a partir de ella."
+            }
+          ],
+          "resumen_didactico": "AWT usa componentes más ligados al sistema operativo. Swing, en cambio, los dibuja por sí misma, por eso se ve más uniforme y más moderna entre distintos sistemas.",
+          "ejemplo_practico": "Un botón creado con AWT puede verse distinto en Windows y en Mac, porque depende del sistema. Un JButton de Swing mantiene una apariencia más consistente porque lo pinta Java.",
+          "conclusion_final": "La principal evolución de Swing es su independencia visual respecto al sistema operativo, ya que sus componentes son dibujados por Java y no dependen directamente de la estética nativa del sistema. :contentReference[oaicite:1]{index=1}"
+        }
+      },
+      {
+        "id": "UT15-Q06",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "Al trabajar con la librería Swing, ¿qué letra se antepone por convención a los nombres de las clases para distinguirlas de AWT?",
+        "contexto": "La unidad explica que Swing mantiene muchos componentes equivalentes a AWT, pero los diferencia mediante una convención de nombres.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "La letra \"J\""
+          },
+          {
+            "clave": "b",
+            "texto": "La letra \"V\""
+          },
+          {
+            "clave": "c",
+            "texto": "La letra \"G\""
+          },
+          {
+            "clave": "d",
+            "texto": "La letra \"S\""
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En Swing, casi todos los componentes equivalentes a los de AWT se distinguen porque llevan una \"J\" delante. Por ejemplo, Button pasa a JButton y Frame pasa a JFrame. Esa es la convención típica de la librería Swing.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La letra \"V\" no forma parte de la convención de nombres de Swing. No se usa para distinguir sus clases respecto a AWT."
+            },
+            {
+              "clave": "c",
+              "motivo": "La letra \"G\" tampoco identifica las clases de Swing. No existe esa convención en el temario."
+            },
+            {
+              "clave": "d",
+              "motivo": "Aunque podría parecer lógica por venir de Swing, la letra \"S\" no es la que se utiliza en los nombres de sus componentes."
+            }
+          ],
+          "resumen_didactico": "Si comparas AWT con Swing, una pista muy clara es la \"J\" inicial: JFrame, JButton, JLabel, JTextField. Esa letra te indica que estás en Swing.",
+          "ejemplo_practico": "En AWT usarías Frame y Button. En Swing usarías JFrame y JButton. El cambio visual en el nombre empieza precisamente por la letra \"J\".",
+          "conclusion_final": "La letra que se antepone por convención en las clases de Swing para diferenciarlas de AWT es la \"J\"."
+        }
+      },
+      {
+        "id": "UT15-Q07",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cuál es el componente de Swing que actúa como la ventana principal donde se monta toda la aplicación?",
+        "contexto": "En Swing existen varios contenedores, pero uno de ellos se usa como ventana principal de la aplicación.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JFrame"
+          },
+          {
+            "clave": "b",
+            "texto": "JLabel"
+          },
+          {
+            "clave": "c",
+            "texto": "JDialog"
+          },
+          {
+            "clave": "d",
+            "texto": "JPanel"
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En Swing, el contenedor que se usa como ventana principal de la aplicación es JFrame. Es el equivalente evolucionado del Frame de AWT y actúa como la estructura principal donde se añaden paneles, botones, etiquetas, menús y el resto de componentes visuales.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "JLabel no es una ventana principal. Es un componente de texto estático que se usa para mostrar información dentro de otros contenedores."
+            },
+            {
+              "clave": "c",
+              "motivo": "JDialog es una ventana secundaria de diálogo, útil para avisos, confirmaciones o ventanas emergentes, pero no suele ser la base principal de toda la aplicación."
+            },
+            {
+              "clave": "d",
+              "motivo": "JPanel es un contenedor interno que sirve para organizar componentes dentro de una ventana, pero necesita estar montado dentro de otro contenedor mayor como un JFrame."
+            }
+          ],
+          "resumen_didactico": "Si te preguntan por la ventana principal de una aplicación Swing, piensa en JFrame. Es el contenedor base donde se construye la interfaz principal.",
+          "ejemplo_practico": "Si creas una app de escritorio con un formulario de login, normalmente primero creas un JFrame y dentro de él añades un JPanel con los campos de usuario, contraseña y el botón de entrar.",
+          "conclusion_final": "El componente de Swing que actúa como ventana principal donde se monta toda la aplicación es JFrame."
+        }
+      },
+      {
+        "id": "UT15-Q08",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué objeto se utiliza para organizar la posición y el tamaño de los componentes dentro de un contenedor de forma automática?",
+        "contexto": "La unidad explica que colocar componentes manualmente con coordenadas puede ser arriesgado y que existen gestores que distribuyen los elementos automáticamente.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Window Listener"
+          },
+          {
+            "clave": "b",
+            "texto": "Event Handler"
+          },
+          {
+            "clave": "c",
+            "texto": "Layout Manager"
+          },
+          {
+            "clave": "d",
+            "texto": "Border Factory"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El objeto encargado de organizar automáticamente la posición y el tamaño de los componentes dentro de un contenedor es el Layout Manager. El tema explica que los contenedores pueden tener asociado un Layout, que recoloca los componentes de forma automática para que se adapten mejor a la interfaz.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Window Listener no organiza componentes. Su función es escuchar eventos de ventana, como abrir, cerrar o minimizar."
+            },
+            {
+              "clave": "b",
+              "motivo": "Event Handler se relaciona con la gestión de eventos del usuario, como clics o pulsaciones, no con la distribución visual de los componentes."
+            },
+            {
+              "clave": "d",
+              "motivo": "Border Factory no es el objeto que organiza automáticamente componentes. Está relacionado con la creación de bordes visuales en Swing, no con la disposición general de la interfaz."
+            }
+          ],
+          "resumen_didactico": "Si quieres que los botones, etiquetas o campos de texto se coloquen solos de forma ordenada dentro de una ventana o panel, necesitas un Layout Manager.",
+          "ejemplo_practico": "Si usas FlowLayout, los botones se colocan de izquierda a derecha automáticamente. Si usas GridLayout, se reparten en filas y columnas sin que tengas que calcular coordenadas manuales.",
+          "conclusion_final": "El objeto que organiza automáticamente la posición y el tamaño de los componentes dentro de un contenedor es el Layout Manager."
+        }
+      },
+      {
+        "id": "UT15-Q09",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cuál es el administrador de diseño por defecto en un JFrame, que divide el espacio en cinco zonas?",
+        "contexto": "La unidad presenta los distintos gestores de diseño y explica que uno de ellos distribuye los componentes en norte, sur, este, oeste y centro.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "GridLayout"
+          },
+          {
+            "clave": "b",
+            "texto": "BorderLayout"
+          },
+          {
+            "clave": "c",
+            "texto": "FlowLayout"
+          },
+          {
+            "clave": "d",
+            "texto": "NullLayout"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El gestor de diseño que divide el espacio en cinco zonas es BorderLayout. Estas zonas son NORTH, SOUTH, EAST, WEST y CENTER. El tema lo presenta como un layout que coloca elementos en los cuatro puntos cardinales y en el centro.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "GridLayout organiza los componentes en una rejilla de filas y columnas del mismo tamaño. No divide el espacio en cinco zonas fijas."
+            },
+            {
+              "clave": "c",
+              "motivo": "FlowLayout coloca los componentes en línea, de izquierda a derecha, y cuando no caben salta a la siguiente fila. No trabaja por zonas cardinales."
+            },
+            {
+              "clave": "d",
+              "motivo": "NullLayout implica diseño manual, normalmente usando coordenadas con setBounds. No es el gestor que reparte automáticamente la ventana en cinco áreas."
+            }
+          ],
+          "resumen_didactico": "Si una ventana se organiza en norte, sur, este, oeste y centro, estás ante un BorderLayout.",
+          "ejemplo_practico": "Puedes poner un título arriba en NORTH, botones laterales en EAST y WEST, una barra inferior en SOUTH y el contenido principal en CENTER.",
+          "conclusion_final": "El administrador de diseño que divide el espacio en cinco zonas es BorderLayout."
+        }
+      },
+      {
+        "id": "UT15-Q10",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "Si deseas colocar componentes uno al lado del otro en una fila, ¿qué administrador de diseño debes usar?",
+        "contexto": "La unidad explica varios gestores de diseño y uno de ellos coloca los componentes horizontalmente siguiendo un flujo natural.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "AbsoluteLayout"
+          },
+          {
+            "clave": "b",
+            "texto": "BorderLayout"
+          },
+          {
+            "clave": "c",
+            "texto": "CardLayout"
+          },
+          {
+            "clave": "d",
+            "texto": "FlowLayout"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "FlowLayout coloca cada componente horizontalmente de izquierda a derecha, como si escribieras palabras en una línea. Si ya no caben más componentes en esa fila, los pasa automáticamente a la siguiente. Por eso es el layout adecuado cuando quieres elementos uno al lado del otro.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "AbsoluteLayout no es el gestor que el tema presenta para colocar automáticamente componentes en fila. El diseño absoluto implica posicionamiento manual y no un flujo automático."
+            },
+            {
+              "clave": "b",
+              "motivo": "BorderLayout distribuye los componentes en cinco zonas: norte, sur, este, oeste y centro. No está pensado para ir colocando elementos seguidos en una fila."
+            },
+            {
+              "clave": "c",
+              "motivo": "CardLayout superpone componentes en el mismo espacio y muestra uno cada vez, como si fueran cartas. No organiza varios componentes visibles en línea."
+            }
+          ],
+          "resumen_didactico": "Si quieres que los componentes se vayan colocando de forma natural uno detrás de otro en horizontal, debes pensar en FlowLayout.",
+          "ejemplo_practico": "Si añades cinco botones a un contenedor con FlowLayout, aparecerán alineados de izquierda a derecha. Si la ventana se hace pequeña, algunos bajarán a otra fila automáticamente.",
+          "conclusion_final": "El administrador de diseño correcto para colocar componentes uno al lado del otro en una fila es FlowLayout."
+        }
+      },
+      {
+        "id": "UT15-Q11",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué administrador de diseño organiza los componentes en una rejilla rígida de filas y columnas del mismo tamaño?",
+        "contexto": "La unidad presenta varios gestores de diseño y uno de ellos distribuye los componentes siguiendo una estructura de tabla uniforme.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "FlowLayout"
+          },
+          {
+            "clave": "b",
+            "texto": "GridBagLayout"
+          },
+          {
+            "clave": "c",
+            "texto": "BoxLayout"
+          },
+          {
+            "clave": "d",
+            "texto": "GridLayout"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "GridLayout organiza los componentes en una rejilla de filas y columnas del mismo tamaño. El tema lo describe como un layout que sigue el patrón estricto de una tabla, distribuyendo los elementos de izquierda a derecha y de arriba abajo con celdas uniformes.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "FlowLayout coloca los componentes en línea, de izquierda a derecha, y cuando no caben salta a la siguiente fila. No crea una rejilla rígida con celdas iguales."
+            },
+            {
+              "clave": "b",
+              "motivo": "GridBagLayout también trabaja con una cuadrícula, pero no es rígida ni uniforme. Su ventaja es precisamente que permite distintos tamaños y que un componente ocupe varias celdas."
+            },
+            {
+              "clave": "c",
+              "motivo": "BoxLayout no es el gestor que el temario presenta como rejilla de filas y columnas iguales. Su lógica es distinta y no responde a la estructura tabular rígida que pide la pregunta."
+            }
+          ],
+          "resumen_didactico": "Si te hablan de una tabla visual con filas y columnas iguales para todos los componentes, la respuesta es GridLayout.",
+          "ejemplo_practico": "Si creas una calculadora simple con 4 filas y 4 columnas de botones y quieres que todos ocupen exactamente el mismo espacio, usarías GridLayout.",
+          "conclusion_final": "El administrador de diseño que organiza componentes en una rejilla rígida de filas y columnas del mismo tamaño es GridLayout."
+        }
+      },
+      {
+        "id": "UT15-Q12",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cómo se denomina el mecanismo que permite a un programa detectar que el usuario ha realizado una acción?",
+        "contexto": "La unidad explica cómo una interfaz gráfica responde cuando el usuario hace clic, pulsa una tecla o interactúa con un componente.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Encapsulación"
+          },
+          {
+            "clave": "b",
+            "texto": "Casting de componentes"
+          },
+          {
+            "clave": "c",
+            "texto": "Polimorfismo visual"
+          },
+          {
+            "clave": "d",
+            "texto": "Gestión de Eventos"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El mecanismo que permite detectar que el usuario ha realizado una acción se denomina gestión de eventos. El tema explica que los eventos son las acciones que se producen cuando el usuario interactúa con un componente, como hacer clic en un botón, pulsar una tecla o cerrar una ventana.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La encapsulación es un concepto de programación orientada a objetos relacionado con ocultar y proteger datos, no con detectar acciones del usuario en una interfaz gráfica."
+            },
+            {
+              "clave": "b",
+              "motivo": "El casting de componentes se refiere a conversiones de tipo entre objetos, no al sistema que escucha y responde a clics, teclas o acciones del usuario."
+            },
+            {
+              "clave": "c",
+              "motivo": "Polimorfismo visual no es el término técnico que usa el temario para este mecanismo. La unidad habla claramente de eventos y de su gestión."
+            }
+          ],
+          "resumen_didactico": "Cuando el usuario toca algo en la interfaz, el programa necesita enterarse de ello. Ese sistema de detección y respuesta se llama gestión de eventos.",
+          "ejemplo_practico": "Si el usuario pulsa un botón de \"Enviar\", la interfaz genera un evento y el programa lo detecta para ejecutar la acción correspondiente.",
+          "conclusion_final": "El mecanismo que permite a un programa detectar acciones del usuario se denomina gestión de eventos."
+        }
+      },
+      {
+        "id": "UT15-Q13",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué objeto es el encargado de escuchar y reaccionar cuando se produce una interacción del usuario?",
+        "contexto": "La unidad explica el sistema de eventos y el papel de los objetos que capturan acciones del usuario para ejecutar una respuesta.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "LayoutManager"
+          },
+          {
+            "clave": "b",
+            "texto": "Event Object"
+          },
+          {
+            "clave": "c",
+            "texto": "Source"
+          },
+          {
+            "clave": "d",
+            "texto": "Listener"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El objeto encargado de escuchar y reaccionar ante una interacción del usuario es el Listener. El tema explica que para capturar un evento se añade un listener al componente, por ejemplo con métodos como addActionListener(...). Ese listener espera a que ocurra la acción y entonces ejecuta la funcionalidad programada.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "LayoutManager no escucha acciones del usuario. Su función es organizar automáticamente la posición y el tamaño de los componentes dentro de un contenedor."
+            },
+            {
+              "clave": "b",
+              "motivo": "Event Object representa el evento que ha ocurrido, es decir, la información sobre la acción producida. Pero quien escucha y reacciona no es el evento, sino el listener."
+            },
+            {
+              "clave": "c",
+              "motivo": "Source se refiere al componente que origina el evento, por ejemplo un botón. Sin embargo, el objeto que se encarga de escuchar y responder es el listener."
+            }
+          ],
+          "resumen_didactico": "En una interfaz, el usuario actúa, el componente genera el evento y el listener lo escucha para reaccionar.",
+          "ejemplo_practico": "Si un usuario pulsa un botón, el botón genera un ActionEvent, pero quien lo detecta y ejecuta código como cambiar un texto o cerrar una ventana es el ActionListener.",
+          "conclusion_final": "El objeto encargado de escuchar y reaccionar cuando se produce una interacción del usuario es el Listener."
+        }
+      },
+      {
+        "id": "UT15-Q14",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cuál es la interfaz que se debe implementar para capturar el clic sobre un JButton?",
+        "contexto": "La unidad explica cómo gestionar eventos en componentes gráficos y qué listener se asocia a los botones para reaccionar al clic del usuario.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "WindowListener"
+          },
+          {
+            "clave": "b",
+            "texto": "KeyListener"
+          },
+          {
+            "clave": "c",
+            "texto": "MouseMotionListener"
+          },
+          {
+            "clave": "d",
+            "texto": "ActionListener"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "Para capturar el clic sobre un botón como JButton se utiliza ActionListener. El tema explica que los botones generan un ActionEvent y que para escuchar ese evento se añade al componente un listener mediante métodos como addActionListener(...).",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "WindowListener se usa para detectar eventos relacionados con ventanas, como abrirlas, cerrarlas o minimizarlas, no para el clic normal de un botón."
+            },
+            {
+              "clave": "b",
+              "motivo": "KeyListener sirve para capturar pulsaciones de teclado, no acciones de clic sobre un JButton."
+            },
+            {
+              "clave": "c",
+              "motivo": "MouseMotionListener detecta movimiento o arrastre del ratón, pero no es la interfaz habitual del temario para gestionar la acción de pulsar un botón."
+            }
+          ],
+          "resumen_didactico": "En botones de AWT o Swing, el evento típico al pulsarlos es un ActionEvent, y quien lo escucha es un ActionListener.",
+          "ejemplo_practico": "Si tienes un JButton llamado botonEnviar y quieres que al pulsarlo aparezca un mensaje o cambie un texto, le añades un ActionListener con addActionListener(...).",
+          "conclusion_final": "La interfaz que se debe implementar para capturar el clic sobre un JButton es ActionListener."
+        }
+      },
+      {
+        "id": "UT15-Q15",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué método de la interfaz ActionListener ejecuta el código cuando se pulsa un componente?",
+        "contexto": "La unidad explica la gestión de eventos en botones y muestra el método que se ejecuta al producirse una acción sobre el componente.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "runEvent()"
+          },
+          {
+            "clave": "b",
+            "texto": "actionPerformed(ActionEvent e)"
+          },
+          {
+            "clave": "c",
+            "texto": "startAction()"
+          },
+          {
+            "clave": "d",
+            "texto": "onClick()"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En la interfaz ActionListener, el método que se ejecuta cuando el usuario pulsa un componente es actionPerformed(ActionEvent e). El tema muestra este método en el ejemplo del botón, donde al hacer clic se ejecuta el código programado dentro de ese bloque.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "runEvent() no es el método definido por la interfaz ActionListener en Java. No pertenece al sistema estándar de eventos de AWT o Swing."
+            },
+            {
+              "clave": "c",
+              "motivo": "startAction() tampoco es un método propio de ActionListener. Puede sonar lógico por el nombre, pero no es el que usa Java para gestionar este evento."
+            },
+            {
+              "clave": "d",
+              "motivo": "onClick() es un nombre común en otros entornos o frameworks, pero no es el método oficial de la interfaz ActionListener en Java."
+            }
+          ],
+          "resumen_didactico": "Cuando un botón se pulsa y estás usando ActionListener, el código que responde a esa acción va dentro de actionPerformed(ActionEvent e).",
+          "ejemplo_practico": "Si un JButton debe cambiar el texto de una etiqueta al pulsarlo, ese cambio se escribe dentro del método actionPerformed(ActionEvent e).",
+          "conclusion_final": "El método de la interfaz ActionListener que ejecuta el código cuando se pulsa un componente es actionPerformed(ActionEvent e)."
+        }
+      },
+      {
+        "id": "UT15-Q16",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "En el modelo de delegación de eventos, ¿qué es la Fuente (Source)?",
+        "contexto": "La unidad explica el sistema de eventos y distingue entre el componente que origina la acción, el evento generado y el listener que lo escucha.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El código que se ejecuta tras el error."
+          },
+          {
+            "clave": "b",
+            "texto": "El sistema operativo del usuario."
+          },
+          {
+            "clave": "c",
+            "texto": "La base de datos donde se guardan los clics."
+          },
+          {
+            "clave": "d",
+            "texto": "El componente gráfico que genera el evento."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "En el modelo de delegación de eventos, la Source es el componente gráfico que origina la acción. Por ejemplo, un botón, una ventana o un campo de texto pueden ser la fuente cuando el usuario interactúa con ellos y se dispara un evento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La fuente no es el código que se ejecuta después. Ese código suele estar en el listener o en el método que gestiona el evento."
+            },
+            {
+              "clave": "b",
+              "motivo": "El sistema operativo no es la fuente dentro del modelo de eventos de Java. La fuente es el componente concreto de la interfaz que ha provocado el evento."
+            },
+            {
+              "clave": "c",
+              "motivo": "La base de datos no participa como fuente en la gestión de eventos de una interfaz gráfica. Un clic no se define por dónde se guarda, sino por qué componente lo genera."
+            }
+          ],
+          "resumen_didactico": "La fuente es el objeto visual que provoca el evento. El usuario actúa sobre ese componente, ese componente genera el evento y luego el listener lo escucha.",
+          "ejemplo_practico": "Si el usuario pulsa un JButton llamado botonGuardar, ese JButton es la Source del ActionEvent que se genera.",
+          "conclusion_final": "En el modelo de delegación de eventos, la Fuente (Source) es el componente gráfico que genera el evento."
+        }
+      },
+      {
+        "id": "UT15-Q17",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué componente de Swing permite introducir una única línea de texto?",
+        "contexto": "La unidad repasa los controles de Swing y diferencia entre etiquetas, campos de texto, campos de contraseña y áreas de texto.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JLabel"
+          },
+          {
+            "clave": "b",
+            "texto": "JTextField"
+          },
+          {
+            "clave": "c",
+            "texto": "JPasswordField"
+          },
+          {
+            "clave": "d",
+            "texto": "JTextArea"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El componente de Swing que permite introducir una única línea de texto es JTextField. En el tema aparece como el campo de texto estándar para que el usuario escriba información en una sola línea dentro de la interfaz.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "JLabel no sirve para introducir texto. Es una etiqueta de información, pensada para mostrar texto estático al usuario."
+            },
+            {
+              "clave": "c",
+              "motivo": "JPasswordField también permite escribir en una sola línea, pero su finalidad específica es ocultar los caracteres introducidos, normalmente para contraseñas. La pregunta pide el componente general para introducir texto en una línea."
+            },
+            {
+              "clave": "d",
+              "motivo": "JTextArea se utiliza para escribir varias líneas de texto, no una única línea."
+            }
+          ],
+          "resumen_didactico": "Si necesitas un campo normal para que el usuario escriba texto en una sola línea, el componente típico es JTextField.",
+          "ejemplo_practico": "En un formulario de login, el campo donde el usuario escribe su nombre o correo suele ser un JTextField.",
+          "conclusion_final": "El componente de Swing que permite introducir una única línea de texto es JTextField."
+        }
+      },
+      {
+        "id": "UT15-Q18",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué componente usarías para mostrar un texto o imagen que el usuario no pueda editar?",
+        "contexto": "La unidad distingue entre componentes interactivos y componentes informativos dentro de una interfaz Swing.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JButton"
+          },
+          {
+            "clave": "b",
+            "texto": "JLabel"
+          },
+          {
+            "clave": "c",
+            "texto": "JCheckBox"
+          },
+          {
+            "clave": "d",
+            "texto": "JScrollPane"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El componente adecuado para mostrar un texto o una imagen que el usuario no puede editar es JLabel. Su función es presentar información visual estática dentro de la interfaz, como títulos, descripciones o iconos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "JButton es un botón pensado para que el usuario pulse y ejecute acciones. No se usa como simple elemento informativo estático."
+            },
+            {
+              "clave": "c",
+              "motivo": "JCheckBox permite marcar o desmarcar opciones, por lo que es un componente interactivo, no un elemento de solo visualización."
+            },
+            {
+              "clave": "d",
+              "motivo": "JScrollPane es un contenedor con barras de desplazamiento para envolver otros componentes. No está pensado para mostrar por sí mismo un texto o imagen fija."
+            }
+          ],
+          "resumen_didactico": "Cuando necesitas enseñar algo al usuario sin que pueda modificarlo, como un texto informativo o una imagen, el componente típico es JLabel.",
+          "ejemplo_practico": "En una ventana de login, el texto \"Usuario:\" o un logotipo de la aplicación suelen mostrarse con JLabel.",
+          "conclusion_final": "El componente correcto para mostrar un texto o imagen no editable por el usuario es JLabel."
+        }
+      },
+      {
+        "id": "UT15-Q19",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué ventaja ofrece una herramienta visual como WindowBuilder?",
+        "contexto": "La unidad explica el uso de herramientas gráficas para diseñar interfaces de forma más rápida y menos propensa a errores que escribiéndolas totalmente a mano.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Hace que el programa sea inmune a virus."
+          },
+          {
+            "clave": "b",
+            "texto": "Permite que el programa funcione sin RAM."
+          },
+          {
+            "clave": "c",
+            "texto": "Aumenta la productividad al permitir arrastrar y soltar componentes."
+          },
+          {
+            "clave": "d",
+            "texto": "No requiere tener instalado el JDK."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El tema explica que herramientas visuales como WindowBuilder aumentan la productividad porque permiten trabajar con filosofía Drag & Drop, es decir, arrastrar y soltar componentes sobre la interfaz mientras la herramienta genera automáticamente gran parte del código Java. Esto ahorra tiempo y reduce errores al diseñar ventanas, paneles y controles.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "WindowBuilder no aporta inmunidad frente a virus. Es una herramienta de diseño de interfaces gráficas, no un sistema de seguridad."
+            },
+            {
+              "clave": "b",
+              "motivo": "Ningún programa funciona sin RAM. La ventaja de WindowBuilder no tiene relación con eliminar requisitos físicos del sistema, sino con facilitar el diseño visual."
+            },
+            {
+              "clave": "d",
+              "motivo": "WindowBuilder no sustituye al JDK. Sigue siendo una herramienta para desarrollar en Java, por lo que el entorno Java sigue siendo necesario."
+            }
+          ],
+          "resumen_didactico": "La ventaja clave de WindowBuilder es que te deja construir interfaces más rápido y cómodamente, colocando componentes visualmente en vez de escribir todo a mano.",
+          "ejemplo_practico": "En vez de escribir manualmente el código para un botón, una etiqueta y un campo de texto, puedes arrastrarlos desde la paleta al formulario y ajustar sus propiedades desde el panel visual.",
+          "conclusion_final": "La principal ventaja de WindowBuilder es que aumenta la productividad al permitir diseñar interfaces mediante arrastrar y soltar componentes."
+        }
+      },
+      {
+        "id": "UT15-Q20",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cuál es la función del panel de Propiedades en un editor visual?",
+        "contexto": "La unidad explica la anatomía de la vista de diseño en herramientas como WindowBuilder o NetBeans.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Modificar la lógica de negocio."
+          },
+          {
+            "clave": "b",
+            "texto": "Cambiar aspectos visuales como color, fuente o texto."
+          },
+          {
+            "clave": "c",
+            "texto": "Configurar la base de datos."
+          },
+          {
+            "clave": "d",
+            "texto": "Actualizar la versión de Java."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El panel de Propiedades en un editor visual sirve para modificar las características del componente seleccionado, como su texto, color de fondo, fuente, tamaño y otras propiedades visuales. El tema lo presenta como el panel de control del objeto seleccionado dentro de la vista de diseño.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La lógica de negocio pertenece al comportamiento interno de la aplicación, no al panel de Propiedades. Este panel se centra en configurar atributos del componente visual."
+            },
+            {
+              "clave": "c",
+              "motivo": "La configuración de bases de datos no corresponde al panel de Propiedades de un editor de interfaces. Ese panel trabaja sobre componentes gráficos, no sobre persistencia de datos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Actualizar la versión de Java es una tarea del entorno de desarrollo o del sistema, no una función del panel de Propiedades."
+            }
+          ],
+          "resumen_didactico": "El panel de Propiedades te permite cambiar cómo se ve y cómo está configurado un componente visual sin escribir código manualmente.",
+          "ejemplo_practico": "Si seleccionas un botón en WindowBuilder, desde el panel de Propiedades puedes cambiar su texto de \"Button\" a \"Guardar\", ponerle otro color o modificar la fuente.",
+          "conclusion_final": "La función del panel de Propiedades en un editor visual es cambiar aspectos visuales y configuraciones del componente seleccionado, como color, fuente o texto."
+        }
+      },
+      {
+        "id": "UT15-Q21",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué ocurre cuando usas Absolute Layout?",
+        "contexto": "La unidad explica el problema de colocar componentes manualmente usando coordenadas fijas en lugar de un gestor de diseño automático.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Los componentes se quedan fijos en coordenadas exactas X e Y."
+          },
+          {
+            "clave": "b",
+            "texto": "El botón cambia de tamaño automáticamente."
+          },
+          {
+            "clave": "c",
+            "texto": "Se borra el método main."
+          },
+          {
+            "clave": "d",
+            "texto": "Los componentes se alinean solos al Norte."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Cuando usas diseño absoluto, los componentes se colocan manualmente en posiciones exactas usando coordenadas fijas, normalmente con métodos como setBounds(x, y, ancho, alto). El tema advierte que este enfoque es arriesgado porque si cambia la resolución o el tamaño de la ventana, la interfaz puede romperse.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "En diseño absoluto el tamaño no se adapta automáticamente. Precisamente debes indicar manualmente la posición y el tamaño de cada componente."
+            },
+            {
+              "clave": "c",
+              "motivo": "El uso de Absolute Layout no tiene ninguna relación con borrar el método main. Son conceptos totalmente distintos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Alinear componentes al norte corresponde a un layout como BorderLayout, no al diseño absoluto. En Absolute Layout nada se coloca solo: todo se fija manualmente."
+            }
+          ],
+          "resumen_didactico": "Absolute Layout significa colocar cada componente a mano, marcando sus coordenadas exactas en la ventana. Da control total, pero es poco flexible.",
+          "ejemplo_practico": "Si pones un botón con setBounds(100, 50, 120, 30), siempre quedará en esa posición exacta. Si la ventana cambia de tamaño, el botón no se recoloca automáticamente.",
+          "conclusion_final": "Al usar Absolute Layout, los componentes quedan fijos en coordenadas exactas X e Y, en lugar de adaptarse automáticamente mediante un gestor de diseño."
+        }
+      },
+      {
+        "id": "UT15-Q22",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué componente es ideal para mostrar mensajes emergentes?",
+        "contexto": "En una interfaz gráfica a veces se necesita mostrar avisos, confirmaciones o mensajes al usuario en una ventana emergente.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JComboBox"
+          },
+          {
+            "clave": "b",
+            "texto": "JOptionPane"
+          },
+          {
+            "clave": "c",
+            "texto": "JFrame"
+          },
+          {
+            "clave": "d",
+            "texto": "JMenuBar"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El componente más adecuado para mostrar mensajes emergentes en Swing es JOptionPane. Se usa para enseñar avisos, errores, confirmaciones o pedir datos al usuario mediante cuadros de diálogo sencillos y rápidos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "JComboBox es un desplegable para seleccionar opciones, no un componente pensado para mostrar mensajes emergentes."
+            },
+            {
+              "clave": "c",
+              "motivo": "JFrame es la ventana principal de la aplicación, no el componente específico para lanzar mensajes emergentes al usuario."
+            },
+            {
+              "clave": "d",
+              "motivo": "JMenuBar sirve para crear la barra de menús de una ventana, no para mostrar avisos o diálogos emergentes."
+            }
+          ],
+          "resumen_didactico": "Si necesitas mostrar una ventanita con un mensaje, una advertencia o una confirmación, en Swing lo normal es usar JOptionPane.",
+          "ejemplo_practico": "Si el usuario pulsa \"Eliminar\" y quieres preguntarle \"¿Seguro que deseas continuar?\", puedes mostrar ese mensaje con JOptionPane.",
+          "conclusion_final": "El componente ideal para mostrar mensajes emergentes en Swing es JOptionPane."
+        }
+      },
+      {
+        "id": "UT15-Q23",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Para qué sirve el método setVisible(true)?",
+        "contexto": "En los ejemplos del tema, después de crear y configurar la ventana, se llama a este método para que la interfaz aparezca al usuario.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Para activar el recolector de basura."
+          },
+          {
+            "clave": "b",
+            "texto": "Para conectar con la terminal."
+          },
+          {
+            "clave": "c",
+            "texto": "Para publicar el código."
+          },
+          {
+            "clave": "d",
+            "texto": "Para hacer visible la ventana en pantalla."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El método setVisible(true) se usa para hacer visible en pantalla un componente gráfico, especialmente una ventana como un Frame o un JFrame. En el tema aparece al final de los ejemplos, justo después de crear y configurar la interfaz, porque sin ese paso la ventana no se muestra al usuario.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El recolector de basura de Java no se activa con setVisible(true). Ese mecanismo pertenece a la gestión automática de memoria, no a la visualización de interfaces."
+            },
+            {
+              "clave": "b",
+              "motivo": "setVisible(true) no conecta con la terminal ni tiene relación con la consola. Su objetivo es mostrar componentes gráficos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Publicar el código no tiene nada que ver con este método. setVisible(true) actúa sobre la interfaz en tiempo de ejecución."
+            }
+          ],
+          "resumen_didactico": "Puedes construir una ventana completa, pero si no llamas a setVisible(true), el usuario no la verá. Ese método es el que la muestra en pantalla.",
+          "ejemplo_practico": "Creas un JFrame, le pones tamaño, añades botones y campos de texto. Hasta que no ejecutas setVisible(true), la ventana sigue sin aparecer.",
+          "conclusion_final": "El método setVisible(true) sirve para hacer visible la ventana o componente gráfico en pantalla."
+        }
+      },
+      {
+        "id": "UT15-Q24",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué componente permite elegir una opción en una lista desplegable?",
+        "contexto": "La unidad presenta componentes avanzados de Swing y uno de ellos sirve para mostrar opciones en formato desplegable.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JList"
+          },
+          {
+            "clave": "b",
+            "texto": "JSlider"
+          },
+          {
+            "clave": "c",
+            "texto": "JComboBox"
+          },
+          {
+            "clave": "d",
+            "texto": "JRadioButton"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El componente de Swing que permite elegir una opción en una lista desplegable es JComboBox. El tema lo menciona como un desplegable más potente dentro de los controles avanzados de Swing.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "JList muestra una lista de elementos, pero no funciona como un desplegable cerrado que se abre al pulsarlo. Su comportamiento visual es distinto al que describe la pregunta."
+            },
+            {
+              "clave": "b",
+              "motivo": "JSlider sirve para seleccionar un valor dentro de un rango deslizando un control, no para elegir elementos de una lista desplegable."
+            },
+            {
+              "clave": "d",
+              "motivo": "JRadioButton permite seleccionar una opción entre varias, normalmente en grupo, pero no mediante una lista desplegable."
+            }
+          ],
+          "resumen_didactico": "Si el usuario debe pulsar una flecha y elegir una opción de una lista que se despliega, el componente típico en Swing es JComboBox.",
+          "ejemplo_practico": "En un formulario podrías usar un JComboBox para que el usuario elija su provincia, su país o un método de pago entre varias opciones.",
+          "conclusion_final": "El componente que permite elegir una opción en una lista desplegable es JComboBox."
+        }
+      },
+      {
+        "id": "UT15-Q25",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Cuál es la diferencia entre JCheckBox y JRadioButton?",
+        "contexto": "En Swing existen componentes de selección, pero no todos se comportan igual cuando el usuario debe marcar opciones.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JCheckBox es de AWT."
+          },
+          {
+            "clave": "b",
+            "texto": "JRadioButton solo funciona con números."
+          },
+          {
+            "clave": "c",
+            "texto": "No hay diferencia."
+          },
+          {
+            "clave": "d",
+            "texto": "JCheckBox permite varias selecciones; JRadioButton normalmente solo una."
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "La diferencia principal es funcional. JCheckBox se usa cuando el usuario puede marcar varias opciones al mismo tiempo. JRadioButton, en cambio, suele usarse para elegir solo una opción dentro de un grupo. Ambos son componentes de selección de Swing, pero responden a necesidades distintas de interacción.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "JCheckBox no es de AWT. Al empezar por la letra \"J\", pertenece a Swing."
+            },
+            {
+              "clave": "b",
+              "motivo": "JRadioButton no está limitado a números. Sirve para elegir una opción entre varias, independientemente de que sean textos, categorías o valores."
+            },
+            {
+              "clave": "c",
+              "motivo": "Sí hay diferencia. JCheckBox está pensado para selección múltiple y JRadioButton normalmente para selección única dentro de un grupo."
+            }
+          ],
+          "resumen_didactico": "Si el usuario puede marcar varias cosas a la vez, usas JCheckBox. Si debe elegir solo una entre varias, usas JRadioButton.",
+          "ejemplo_practico": "En un formulario, podrías usar JCheckBox para seleccionar varios hobbies como música, cine y deporte. En cambio, usarías JRadioButton para elegir solo un método de envío: estándar, urgente o recogida en tienda.",
+          "conclusion_final": "La diferencia correcta es que JCheckBox permite varias selecciones, mientras que JRadioButton normalmente se utiliza para permitir solo una."
+        }
+      },
+      {
+        "id": "UT15-Q26",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué componente permite introducir múltiples líneas de texto?",
+        "contexto": "En Swing hay distintos componentes de entrada de texto según si el usuario debe escribir en una sola línea o en varias.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JLabel"
+          },
+          {
+            "clave": "b",
+            "texto": "JPasswordField"
+          },
+          {
+            "clave": "c",
+            "texto": "JTextArea"
+          },
+          {
+            "clave": "d",
+            "texto": "JTextField"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El componente de Swing que permite introducir múltiples líneas de texto es JTextArea. Se usa cuando el usuario necesita escribir contenido más amplio que no cabe en una sola línea, como comentarios, descripciones o mensajes largos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "JLabel no sirve para introducir texto. Es un componente informativo que muestra texto o imágenes que el usuario no edita."
+            },
+            {
+              "clave": "b",
+              "motivo": "JPasswordField permite escribir en una sola línea y además oculta los caracteres. Está pensado para contraseñas, no para texto multilínea."
+            },
+            {
+              "clave": "d",
+              "motivo": "JTextField permite introducir texto, pero solo en una única línea. No está diseñado para escritura multilínea."
+            }
+          ],
+          "resumen_didactico": "Si el usuario necesita escribir varias líneas seguidas, el componente adecuado en Swing es JTextArea.",
+          "ejemplo_practico": "En un formulario de contacto, el campo donde el usuario escribe un mensaje largo o una incidencia suele implementarse con JTextArea.",
+          "conclusion_final": "El componente que permite introducir múltiples líneas de texto es JTextArea."
+        }
+      },
+      {
+        "id": "UT15-Q27",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué propiedad identifica el nombre de la variable del componente?",
+        "contexto": "En los editores visuales de interfaces, cada componente puede tener propiedades visuales y también propiedades relacionadas con su identificación en el código.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "opaque"
+          },
+          {
+            "clave": "b",
+            "texto": "text"
+          },
+          {
+            "clave": "c",
+            "texto": "variableName"
+          },
+          {
+            "clave": "d",
+            "texto": "toolTipText"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La propiedad que identifica el nombre de la variable asociada a un componente es variableName. En un editor visual, esta propiedad sirve para reconocer cómo se llamará ese componente dentro del código generado, permitiendo referenciarlo posteriormente desde Java.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "opaque no identifica el nombre de la variable. Está relacionada con aspectos visuales del componente, concretamente con su opacidad o transparencia de fondo."
+            },
+            {
+              "clave": "b",
+              "motivo": "text indica el texto que muestra el componente, por ejemplo el título de un botón o el contenido de una etiqueta, pero no el nombre de la variable en el código."
+            },
+            {
+              "clave": "d",
+              "motivo": "toolTipText se usa para definir el texto de ayuda que aparece al pasar el ratón sobre el componente. No sirve para nombrar la variable."
+            }
+          ],
+          "resumen_didactico": "Una cosa es lo que el componente muestra en pantalla y otra cómo se llama dentro del código. La propiedad que define ese nombre interno es variableName.",
+          "ejemplo_practico": "Un botón puede mostrar el texto \"Guardar\" en pantalla, pero su nombre en el código puede ser btnGuardar. Ese identificador interno se corresponde con la propiedad variableName.",
+          "conclusion_final": "La propiedad que identifica el nombre de la variable del componente es variableName."
+        }
+      },
+      {
+        "id": "UT15-Q28",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué método recupera el texto de un JTextField?",
+        "contexto": "En Swing, los campos de texto permiten introducir datos y después leer su contenido desde el código.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "readString()"
+          },
+          {
+            "clave": "b",
+            "texto": "valueOf()"
+          },
+          {
+            "clave": "c",
+            "texto": "fetchText()"
+          },
+          {
+            "clave": "d",
+            "texto": "getText()"
+          }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El método que recupera el texto escrito en un JTextField es getText(). Es el método estándar para leer el contenido actual de un campo de texto en Swing.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "readString() no es el método propio de JTextField en Swing para leer el texto introducido por el usuario."
+            },
+            {
+              "clave": "b",
+              "motivo": "valueOf() se usa en otros contextos de Java, por ejemplo para convertir valores a String, pero no para obtener directamente el contenido de un JTextField."
+            },
+            {
+              "clave": "c",
+              "motivo": "fetchText() no es un método estándar de JTextField en Swing."
+            }
+          ],
+          "resumen_didactico": "Si el usuario escribe algo en un JTextField y quieres leerlo desde tu programa, el método que debes usar es getText().",
+          "ejemplo_practico": "Si tienes un campo llamado txtNombre, puedes hacer String nombre = txtNombre.getText(); para recuperar lo que el usuario ha escrito.",
+          "conclusion_final": "El método que recupera el texto de un JTextField es getText()."
+        }
+      },
+      {
+        "id": "UT15-Q29",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Por qué el diseño de interfaces marca el paso de picacódigos a desarrollador?",
+        "contexto": "La conclusión del tema presenta la creación de interfaces como un salto profesional, porque el programador deja de centrarse solo en la lógica interna y empieza a construir experiencias usables para personas.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Porque ya no se necesita lógica."
+          },
+          {
+            "clave": "b",
+            "texto": "Porque no hay errores."
+          },
+          {
+            "clave": "c",
+            "texto": "Porque se construyen soluciones visuales que conectan con las personas."
+          },
+          {
+            "clave": "d",
+            "texto": "Porque Java es el único lenguaje con botones."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El tema concluye que aprender interfaces gráficas supone un salto profesional porque ya no solo programas lógica invisible, sino que construyes soluciones visuales que las personas pueden entender y usar. Es decir, pasas de hacer código que funciona a crear experiencias que conectan con el usuario final.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Diseñar interfaces no elimina la lógica. Sigue siendo necesaria toda la parte interna del programa; la interfaz simplemente añade una capa visual para que el usuario interactúe con ella."
+            },
+            {
+              "clave": "b",
+              "motivo": "Trabajar con interfaces no significa que desaparezcan los errores. De hecho, una interfaz también puede tener fallos de diseño, eventos o distribución de componentes."
+            },
+            {
+              "clave": "d",
+              "motivo": "Java no es el único lenguaje con botones ni con librerías gráficas. La idea del tema no es la exclusividad de Java, sino la capacidad de crear soluciones visuales útiles para personas."
+            }
+          ],
+          "resumen_didactico": "El verdadero salto profesional ocurre cuando dejas de pensar solo en que el programa funcione y empiezas a pensar también en cómo lo va a usar una persona real.",
+          "ejemplo_practico": "No es lo mismo tener una aplicación que solo acepta comandos en consola que una ventana con botones, menús y campos de texto que un cliente puede usar sin conocimientos técnicos.",
+          "conclusion_final": "El diseño de interfaces marca ese paso porque convierte al programador en alguien capaz de construir soluciones visuales que conectan con las personas y no solo con la máquina."
+        }
+      },
+      {
+        "id": "UT15-Q30",
+        "tema": "UT15 Creación de interfaces gráficas",
+        "pregunta": "¿Qué relación tiene JFrame con Component?",
+        "contexto": "La unidad explica que Component es la clase madre de lo visual y que tanto contenedores como controles heredan de esa base dentro de la jerarquía gráfica.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Son la misma clase."
+          },
+          {
+            "clave": "b",
+            "texto": "JFrame es descendiente de Component a través de varias etapas."
+          },
+          {
+            "clave": "c",
+            "texto": "No tienen relación."
+          },
+          {
+            "clave": "d",
+            "texto": "JFrame es el padre de Component."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Component es la clase base de la jerarquía visual. JFrame no es esa clase base, pero sí forma parte de esa jerarquía y llega a ella por herencia a través de varias clases intermedias. Es decir, JFrame desciende de Component, no de forma directa, sino pasando por varios niveles de la estructura de contenedores y ventanas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No son la misma clase. Component es una clase base general de la jerarquía gráfica, mientras que JFrame es una clase concreta usada como ventana principal en Swing."
+            },
+            {
+              "clave": "c",
+              "motivo": "Sí tienen relación. JFrame pertenece al árbol jerárquico de componentes visuales y por eso hereda comportamiento común de esa estructura."
+            },
+            {
+              "clave": "d",
+              "motivo": "No puede ser el padre de Component porque Component es una clase más alta en la jerarquía. JFrame está por debajo, no por encima."
+            }
+          ],
+          "resumen_didactico": "Component está arriba en el árbol de herencia visual. JFrame es una clase más específica que cuelga de esa jerarquía mediante varias clases intermedias.",
+          "ejemplo_practico": "Un JFrame puede usar propiedades y comportamientos comunes del sistema gráfico porque, aunque sea una ventana principal de Swing, forma parte del árbol que arranca en Component.",
+          "conclusion_final": "La relación correcta es que JFrame es descendiente de Component a través de varias etapas de herencia."
+        }
+      }
+]

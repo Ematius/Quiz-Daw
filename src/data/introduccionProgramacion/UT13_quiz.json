@@ -1,0 +1,1298 @@
+[
+    {
+        "id": "UT13-Q01",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cuál es la principal limitación de los sistemas de ficheros cuando el volumen de datos de una empresa crece a millones de registros?",
+        "contexto": "El temario compara el uso de ficheros con el uso de bases de datos cuando el volumen de información empresarial crece mucho.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Se vuelven insuficientes para gestionar grandes cantidades de información con velocidad y facilidad."
+          },
+          {
+            "clave": "b",
+            "texto": "Solo pueden almacenar datos en formato binario, nunca en texto."
+          },
+          {
+            "clave": "c",
+            "texto": "No permiten el uso de caracteres especiales en el texto."
+          },
+          {
+            "clave": "d",
+            "texto": "Obligan al usuario a instalar una máquina virtual de Java adicional."
+          }
+        ],
+        "respuesta_correcta": [
+          "a"
+        ],
+        "explicacion": {
+          "temario": "El PDF explica que al principio un sistema de ficheros puede servir, pero cuando hay que gestionar millones de referencias de productos en tiempo real, ese sistema se queda corto. También indica que, cuando el volumen crece, los ficheros resultan insuficientes y se necesita una herramienta más potente: las bases de datos, que permiten gestionar grandes cantidades de información con mejores resultados, velocidad y facilidad de manejo. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque los sistemas de ficheros pueden almacenar tanto texto como binario; el problema que destaca el tema no es el formato, sino su insuficiencia cuando el volumen de datos crece mucho. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el temario no menciona ninguna limitación relacionada con caracteres especiales. La limitación real está en la gestión eficiente de grandes volúmenes de información. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque eso no aparece como problema en el tema. La unidad habla de escalabilidad y manejo de datos, no de instalar una JVM adicional por usar ficheros. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "Los ficheros pueden servir para poca información, pero cuando una empresa maneja millones de datos dejan de ser una solución cómoda, rápida y potente.",
+          "ejemplo_practico": "Guardar unos pocos contactos en archivos puede funcionar, pero si una empresa como un supermercado necesita consultar y actualizar millones de productos en tiempo real, el sistema de ficheros ya no responde bien y se recurre a bases de datos. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La opción correcta es la a, porque el problema principal de los sistemas de ficheros es que se vuelven insuficientes para gestionar grandes cantidades de información con velocidad y facilidad cuando el volumen crece mucho. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q02",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "En el desarrollo backend moderno, ¿qué herramientas se consideran la columna vertebral para gestionar grandes cantidades de información de forma eficiente?",
+        "contexto": "El temario explica qué tecnología sustituye a los sistemas de ficheros cuando una empresa necesita manejar mucha información con velocidad y facilidad.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Los diagramas de flujo."
+          },
+          {
+            "clave": "b",
+            "texto": "Las bases de datos."
+          },
+          {
+            "clave": "c",
+            "texto": "Los archivos de texto plano (.txt)."
+          },
+          {
+            "clave": "d",
+            "texto": "Las variables locales del método main."
+          }
+        ],
+        "respuesta_correcta": [
+          "b"
+        ],
+        "explicacion": {
+          "temario": "El PDF lo dice de forma directa: \"Las bases de datos son la columna vertebral de cualquier empresa moderna\" y permiten gestionar grandes cantidades de información con mejores resultados, velocidad y facilidad de manejo. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque los diagramas de flujo sirven para representar procesos o algoritmos, no para almacenar y gestionar grandes volúmenes de datos empresariales. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el tema explica precisamente que los sistemas basados en ficheros o archivos se quedan cortos cuando el volumen de datos crece mucho, y por eso se recurre a bases de datos. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque las variables locales solo existen durante la ejecución del programa y no sirven para persistir ni gestionar información masiva de una empresa. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "Cuando una empresa maneja mucha información, la herramienta clave no son archivos sueltos ni variables del programa, sino las bases de datos.",
+          "ejemplo_practico": "Una cadena de supermercados necesita gestionar millones de productos, precios y referencias en tiempo real. Para eso usa bases de datos, no archivos .txt ni variables en memoria. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la b, porque el temario define a las bases de datos como la columna vertebral para gestionar grandes cantidades de información de forma eficiente. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q03",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cómo se denominan las bases de datos que sirven como representación directa del sistema de clases de Java?",
+        "contexto": "El temario explica qué tipo de bases de datos se centra en guardar la información siguiendo directamente la lógica de objetos de Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Bases de datos de acceso aleatorio."
+          },
+          {
+            "clave": "b",
+            "texto": "Bases de datos orientadas a objetos."
+          },
+          {
+            "clave": "c",
+            "texto": "Bases de datos de texto secuencial."
+          },
+          {
+            "clave": "d",
+            "texto": "Bases de datos relacionales puras."
+          }
+        ],
+        "respuesta_correcta": [
+          "b"
+        ],
+        "explicacion": {
+          "temario": "El PDF dice que la unidad se centra en bases de datos que \"sirven como representación directa de tu sistema de clases en Java\" y las identifica como bases de datos orientadas a objetos. También explica que representan la información directamente en forma de objetos. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"acceso aleatorio\" no es el nombre del modelo que describe el temario. La unidad habla específicamente de bases de datos orientadas a objetos. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque una base de datos de texto secuencial no representa directamente un sistema de clases Java ni trabaja con objetos persistentes como explica el tema. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque las bases de datos relacionales puras obligan a descomponer el objeto en tablas, mientras que aquí se busca justamente representarlo de forma directa como objeto. :contentReference[oaicite:4]{index=4}"
+            }
+          ],
+          "resumen_didactico": "Si una base de datos guarda la información siguiendo la misma lógica de clases y objetos que usas en Java, estamos hablando de una base de datos orientada a objetos.",
+          "ejemplo_practico": "Si en Java tienes un objeto `Jugador` con inventario, logros y posición, una BDOO intenta guardarlo como objeto, en lugar de romperlo en varias tablas separadas. :contentReference[oaicite:5]{index=5}",
+          "conclusion_final": "La respuesta correcta es la b, porque el tema define las bases de datos orientadas a objetos como la representación directa del sistema de clases de Java. :contentReference[oaicite:6]{index=6}"
+        }
+      },
+      {
+        "id": "UT13-Q05",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cuál es la función principal de JPA dentro de un proyecto profesional?",
+        "contexto": "El temario presenta JPA como el estándar que describe cómo deben gestionarse los datos persistentes en aplicaciones Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Definir un estándar para gestionar la persistencia de datos y el mapeo de objetos a bases de datos."
+          },
+          {
+            "clave": "b",
+            "texto": "Aumentar la resolución de las imágenes en las aplicaciones de escritorio."
+          },
+          {
+            "clave": "c",
+            "texto": "Eliminar la necesidad de usar el bloque try-catch."
+          },
+          {
+            "clave": "d",
+            "texto": "Traducir el código Java a lenguaje HTML automáticamente."
+          }
+        ],
+        "respuesta_correcta": [
+          "a"
+        ],
+        "explicacion": {
+          "temario": "El PDF explica que JPA es una especificación de Java que describe la gestión de datos en aplicaciones Java y que se usa como estándar para definir qué objetos se guardan y cómo se comportan. En otras palabras, marca las reglas de persistencia y del trabajo con objetos persistentes dentro de un proyecto profesional. ",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque JPA no tiene ninguna relación con imágenes ni con su resolución. Su ámbito es la persistencia de datos en aplicaciones Java. "
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque JPA no elimina el uso de try-catch. El manejo de excepciones pertenece a otra parte del desarrollo, no a la función principal de la API de persistencia. "
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque JPA no traduce Java a HTML. Su función es definir cómo se gestionan y persisten los datos y objetos en Java. "
+            }
+          ],
+          "resumen_didactico": "JPA sirve para fijar las reglas con las que una aplicación Java guarda, recupera y maneja objetos persistentes de forma estandarizada.",
+          "ejemplo_practico": "Si en tu proyecto tienes una clase `Contacto` y la marcas como entidad, JPA define cómo esa clase puede persistirse y cómo herramientas como ObjectDB, Hibernate o EclipseLink deben trabajar con ella. ",
+          "conclusion_final": "La respuesta correcta es la a, porque la función principal de JPA es definir el estándar para gestionar la persistencia de datos y el trabajo con objetos dentro de proyectos Java profesionales. "
+        }
+      },
+      {
+        "id": "UT13-Q06",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "En el contexto de JPA, ¿qué es un \"ORM\" (Object-Relational Mapping)?",
+        "contexto": "La pregunta se refiere al concepto de mapeo entre objetos de Java y estructuras de persistencia, dentro del trabajo con JPA.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Un tipo de virus informático que afecta a las bases de datos."
+          },
+          {
+            "clave": "b",
+            "texto": "Un servidor físico que solo almacena archivos .jar."
+          },
+          {
+            "clave": "c",
+            "texto": "Una técnica para convertir datos entre sistemas incompatibles usando programación orientada a objetos."
+          },
+          {
+            "clave": "d",
+            "texto": "Un método de la clase String para recortar espacios."
+          }
+        ],
+        "respuesta_correcta": [
+          "c"
+        ],
+        "explicacion": {
+          "temario": "En el tema, JPA se presenta como la especificación que describe la gestión de datos relacionales en aplicaciones Java y marca las reglas de cómo debe guardarse un objeto. Además, cuando habla de ORM, explica la idea de \"mapeo\" como la conversión o traducción entre objetos y registros/tablas, algo de lo que las bases de datos orientadas a objetos intentan librarse. Por eso, la opción más correcta es la que describe ORM como una técnica de conversión entre modelos distintos usando objetos. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque ORM no tiene nada que ver con virus informáticos. El término pertenece al ámbito de la persistencia y del mapeo entre objetos y bases de datos. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque ORM no es un servidor físico ni un almacén de archivos `.jar`. Es un concepto de software relacionado con cómo se representan los datos entre objetos y sistemas persistentes. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque no es un método de `String`. ORM significa Object-Relational Mapping y trata sobre persistencia de datos, no sobre manipulación de cadenas. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "ORM es la idea de traducir o mapear objetos del programa a la forma en que se guardan en una base de datos relacional.",
+          "ejemplo_practico": "Si tienes una clase `Contacto` en Java, un ORM permite relacionar ese objeto con la estructura persistente donde se almacenan sus datos, sin tener que gestionar manualmente toda la conversión. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la c, porque ORM se refiere al mapeo o conversión entre el mundo de los objetos y el sistema de persistencia de datos. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q07",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué ventaja competitiva ofrece usar una base de datos orientada a objetos frente a una tradicional de tablas y columnas?",
+        "contexto": "El temario compara las bases de datos relacionales con las orientadas a objetos y destaca la forma en que estas últimas guardan la información.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Los datos se guardan automáticamente en formato de audio."
+          },
+          {
+            "clave": "b",
+            "texto": "Es la única que funciona sin conexión a internet."
+          },
+          {
+            "clave": "c",
+            "texto": "Permite guardar objetos de Java directamente sin necesidad de \"desmontarlos\" en tablas."
+          },
+          {
+            "clave": "d",
+            "texto": "No requiere el uso de memoria RAM para las consultas."
+          }
+        ],
+        "respuesta_correcta": [
+          "c"
+        ],
+        "explicacion": {
+          "temario": "El PDF explica que en una base de datos relacional habría que \"desmontar\" el objeto para guardarlo en tablas, mientras que en una base de datos orientada a objetos el objeto de Java se persiste directamente, sin desmontarlo en filas y columnas. Incluso lo compara con guardar un mueble de IKEA desmontado frente a guardarlo ya montado. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el tema no habla de guardar datos en formato de audio. La ventaja real está en representar y persistir directamente objetos, no en el tipo multimedia del almacenamiento. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el PDF no presenta esa como ventaja diferencial. La comparación se centra en cómo se modelan y guardan los datos, no en depender o no de internet. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque toda consulta necesita recursos del sistema, incluida memoria. El temario destaca como ventaja que el acceso es más directo y que se evitan joins complejos, no que desaparezca el uso de RAM. :contentReference[oaicite:4]{index=4}"
+            }
+          ],
+          "resumen_didactico": "La gran ventaja es que puedes guardar el objeto casi tal como existe en Java, sin romperlo en tablas y columnas como en una base de datos relacional.",
+          "ejemplo_practico": "Si tienes un objeto `Jugador` con inventario, logros y posición, una base de datos relacional obliga a repartir esa información en varias tablas; una orientada a objetos permite persistir ese `Jugador` directamente como objeto. :contentReference[oaicite:5]{index=5}",
+          "conclusion_final": "La respuesta correcta es la c, porque el tema subraya que una base de datos orientada a objetos permite guardar objetos de Java directamente sin necesidad de desmontarlos en tablas. :contentReference[oaicite:6]{index=6}"
+        }
+      },
+      {
+        "id": "UT13-Q08",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué nombre recibe la unidad lógica de JPA que describe cómo se conectan las clases con la base de datos?",
+        "contexto": "La pregunta se refiere al concepto de configuración lógica de JPA que define la persistencia y la conexión entre entidades y base de datos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Unidad de control."
+          },
+          {
+            "clave": "b",
+            "texto": "Unidad de persistencia (Persistence Unit)."
+          },
+          {
+            "clave": "c",
+            "texto": "Módulo de ejecución."
+          },
+          {
+            "clave": "d",
+            "texto": "Paquete de seguridad."
+          }
+        ],
+        "respuesta_correcta": [
+          "b"
+        ],
+        "explicacion": {
+          "temario": "La respuesta correcta es la unidad de persistencia o Persistence Unit. Aunque el PDF no desarrolla ese término con ese nombre de forma extensa, sí explica que JPA es el estándar que define cómo deben guardarse los objetos y muestra el uso de `Persistence.createEntityManagerFactory(...)` para abrir la conexión con la base de datos, lo que encaja con esa idea de configuración lógica de persistencia. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"unidad de control\" no es el nombre estándar de JPA para la configuración de persistencia. El término correcto en JPA es Persistence Unit."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"módulo de ejecución\" no pertenece a la terminología propia de JPA para definir la conexión entre entidades y base de datos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque un paquete de seguridad no describe la configuración lógica de persistencia ni la relación entre clases y base de datos."
+            }
+          ],
+          "resumen_didactico": "En JPA, la configuración lógica que agrupa cómo trabajan las entidades y la conexión con la base de datos se llama unidad de persistencia.",
+          "ejemplo_practico": "Cuando una aplicación Java usa JPA para trabajar con sus entidades y abrir la conexión a la base de datos, esa configuración general pertenece a la Persistence Unit; después, desde ahí, se crea el `EntityManagerFactory`. :contentReference[oaicite:1]{index=1}",
+          "conclusion_final": "La respuesta correcta es la b, porque en JPA esa unidad lógica recibe el nombre de unidad de persistencia o Persistence Unit."
+        }
+      },
+      {
+        "id": "UT13-Q09",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cuál es el archivo de configuración estándar donde se definen los detalles de la base de datos en un proyecto JPA?",
+        "contexto": "La pregunta apunta al archivo estándar de configuración de JPA dentro de un proyecto Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "persistence.xml"
+          },
+          {
+            "clave": "b",
+            "texto": "database.java"
+          },
+          {
+            "clave": "c",
+            "texto": "settings.txt"
+          },
+          {
+            "clave": "d",
+            "texto": "config.properties"
+          }
+        ],
+        "respuesta_correcta": [
+          "a"
+        ],
+        "explicacion": {
+          "temario": "La respuesta correcta es `persistence.xml`, que es el archivo estándar de configuración de JPA. En el PDF no se desarrolla ese archivo de forma explícita, pero sí se explica que JPA es el estándar de persistencia en Java y que la conexión se abre mediante `Persistence.createEntityManagerFactory(...)`, lo que encaja con esa configuración general de persistencia. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque `database.java` no es el archivo estándar de configuración de JPA. Puede ser un nombre inventado de una clase Java, pero no el fichero oficial de persistencia."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque `settings.txt` no pertenece a la configuración estándar de JPA. JPA usa un archivo XML específico para definir la persistencia."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque `config.properties` puede existir en algunos proyectos para otras configuraciones, pero no es el archivo estándar de JPA para definir la unidad de persistencia."
+            }
+          ],
+          "resumen_didactico": "Si te preguntan por el archivo estándar de configuración de JPA, la respuesta que debes recordar es `persistence.xml`.",
+          "ejemplo_practico": "En un proyecto Java con JPA, ahí se suelen definir datos como la unidad de persistencia, el proveedor y la conexión general con la base de datos; después, la aplicación usa `Persistence.createEntityManagerFactory(...)` para trabajar con ella. :contentReference[oaicite:2]{index=2}",
+          "conclusion_final": "La opción correcta es la a: `persistence.xml`."
+        }
+      },
+      {
+        "id": "UT13-Q10",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué anotación de Java se coloca encima de una clase para indicar a JPA que debe gestionarla como una tabla en la base de datos?",
+        "contexto": "El temario explica qué anotación convierte una clase Java en una entidad gestionada por JPA.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "@Persistent"
+          },
+          {
+            "clave": "b",
+            "texto": "@DatabaseClass"
+          },
+          {
+            "clave": "c",
+            "texto": "@Entity"
+          },
+          {
+            "clave": "d",
+            "texto": "@TableOnly"
+          }
+        ],
+        "respuesta_correcta": [
+          "c"
+        ],
+        "explicacion": {
+          "temario": "El PDF lo dice de forma directa: para decirle a Java \"Oye, guarda esta clase\", se usa la anotación `@Entity` justo encima del nombre de la clase. También muestra ejemplos reales de clases `Contacto` marcadas con `@Entity`. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `@Persistent` no es la anotación que el temario presenta para declarar una entidad JPA. La que aparece en la unidad es `@Entity`. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque `@DatabaseClass` no es una anotación estándar de JPA ni aparece en el temario como forma de marcar una clase persistente. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque `@TableOnly` no es la anotación indicada en la unidad. El tema insiste en que la clase debe llevar `@Entity` para ser gestionada por JPA. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "Si una clase Java debe ser reconocida por JPA como entidad persistente, la anotación clave que debes recordar es `@Entity`.",
+          "ejemplo_practico": "Si tienes una clase `Contacto` y quieres que la base de datos la guarde, escribes `@Entity` encima de la clase; así JPA entiende que esa clase forma parte de la persistencia. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la c, porque `@Entity` es la anotación que se coloca sobre una clase para que JPA la gestione como entidad persistente. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q11",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "Al definir una clase entidad, ¿qué anotación es obligatoria para marcar el atributo que funcionará como clave primaria (ID)?",
+        "contexto": "El temario muestra cómo se define una entidad `Contacto` y qué anotación lleva el campo identificador.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "@Unique"
+          },
+          {
+            "clave": "b",
+            "texto": "@Primary"
+          },
+          {
+            "clave": "c",
+            "texto": "@Id"
+          },
+          {
+            "clave": "d",
+            "texto": "@Key"
+          }
+        ],
+        "respuesta_correcta": [
+          "c"
+        ],
+        "explicacion": {
+          "temario": "La respuesta correcta es `@Id`. En el ejemplo de la entidad `Contacto` del tema, el atributo identificador aparece declarado como `@Id @GeneratedValue private long id;`, lo que muestra que `@Id` es la anotación usada para marcar la clave primaria de la entidad. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `@Unique` no es la anotación estándar de JPA para marcar la clave primaria. La clave primaria se identifica con `@Id`. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque `@Primary` no es la anotación usada por JPA para señalar el identificador principal de una entidad. En el temario aparece `@Id`. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque `@Key` no es la anotación mostrada en el tema ni la estándar de JPA para la clave primaria. La correcta es `@Id`. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "Si te preguntan qué anotación marca el campo identificador principal de una entidad JPA, la palabra clave que debes recordar es `@Id`.",
+          "ejemplo_practico": "En una clase `Contacto`, el atributo `id` se declara con `@Id` para indicar que ese campo identifica de forma única cada registro guardado en la base de datos. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la c, porque `@Id` es la anotación de JPA que marca el atributo que actuará como clave primaria de la entidad. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q12",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué interfaz de JPA actúa como la herramienta principal para realizar operaciones de lectura, escritura y borrado de objetos?",
+        "contexto": "El temario explica qué componente se usa para gestionar el ciclo de vida de las entidades y ejecutar operaciones CRUD sobre la base de datos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "PersistenceManager"
+          },
+          {
+            "clave": "b",
+            "texto": "EntityManager"
+          },
+          {
+            "clave": "c",
+            "texto": "ObjectHandler"
+          },
+          {
+            "clave": "d",
+            "texto": "DataStore"
+          }
+        ],
+        "respuesta_correcta": [
+          "b"
+        ],
+        "explicacion": {
+          "temario": "El PDF dice que `EntityManager` es la interfaz que gestiona el ciclo de vida de las entidades y que permite realizar operaciones CRUD, es decir, crear, leer, actualizar y borrar sobre la base de datos. Por eso es la herramienta principal para trabajar con los objetos persistentes. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `PersistenceManager` no es la interfaz que el temario presenta para operar con entidades en JPA. La unidad identifica expresamente a `EntityManager` como la herramienta de trabajo para CRUD. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque `ObjectHandler` no aparece en el tema como componente de JPA para gestionar entidades o persistencia. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque `DataStore` no es la interfaz que el PDF usa para describir las operaciones principales de lectura, escritura y borrado en JPA. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "Si `EntityManagerFactory` abre el acceso general, `EntityManager` es la herramienta concreta con la que haces el trabajo real sobre los datos.",
+          "ejemplo_practico": "Si quieres guardar un `Contacto`, buscarlo por su ID o eliminarlo, lo haces a través de `EntityManager`, usando métodos como `persist`, `find` o `remove`. :contentReference[oaicite:4]{index=4} :contentReference[oaicite:5]{index=5}",
+          "conclusion_final": "La respuesta correcta es la b, porque `EntityManager` es la interfaz principal de JPA para realizar operaciones de lectura, escritura y borrado de objetos. :contentReference[oaicite:6]{index=6}"
+        }
+      },
+      {
+        "id": "UT13-Q13",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cómo se obtiene una instancia del EntityManager en una aplicación profesional?",
+        "contexto": "El temario explica la relación entre EntityManagerFactory y EntityManager al establecer la conexión con la base de datos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Descargándola directamente de un servidor web."
+          },
+          {
+            "clave": "b",
+            "texto": "No se necesita instancia, sus métodos son todos estáticos."
+          },
+          {
+            "clave": "c",
+            "texto": "A través de una factoría denominada EntityManagerFactory."
+          },
+          {
+            "clave": "d",
+            "texto": "Usando el operador \"new EntityManager()\"."
+          }
+        ],
+        "respuesta_correcta": [
+          "c"
+        ],
+        "explicacion": {
+          "temario": "El PDF lo explica de forma directa: `EntityManagerFactory` es una fábrica de gestores de entidades y su función es crear instancias de `EntityManager` para operar con la base de datos. Además, en el ejemplo de conexión aparece `EntityManager em = emf.createEntityManager();`. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el `EntityManager` no se descarga de ningún servidor web. Se obtiene desde la factoría de persistencia que crea la propia aplicación. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque sí se necesita una instancia concreta. El tema muestra que primero se crea la factoría y luego se obtiene un `EntityManager` con `createEntityManager()`. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque el `EntityManager` no se crea con `new EntityManager()`. El temario deja claro que se pide a la `EntityManagerFactory`, que actúa como fábrica de gestores. :contentReference[oaicite:4]{index=4}"
+            }
+          ],
+          "resumen_didactico": "En JPA, el `EntityManager` no se construye manualmente: se obtiene a partir de la `EntityManagerFactory`, que es la encargada de crearlo.",
+          "ejemplo_practico": "Primero abres la conexión general con `EntityManagerFactory emf = Persistence.createEntityManagerFactory(rutaBBDD);` y después obtienes el gestor real con `EntityManager em = emf.createEntityManager();`. :contentReference[oaicite:5]{index=5}",
+          "conclusion_final": "La respuesta correcta es la c, porque una instancia de `EntityManager` se obtiene a través de una factoría llamada `EntityManagerFactory`. :contentReference[oaicite:6]{index=6}"
+        }
+      },
+      {
+        "id": "UT13-Q14",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué método del EntityManager se utiliza para guardar un objeto nuevo de forma permanente en la base de datos?",
+        "contexto": "El temario explica la operación de inserción de nuevos objetos en la base de datos usando JPA y EntityManager.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "store()"
+          },
+          {
+            "clave": "b",
+            "texto": "save()"
+          },
+          {
+            "clave": "c",
+            "texto": "insert()"
+          },
+          {
+            "clave": "d",
+            "texto": "persist()"
+          }
+        ],
+        "respuesta_correcta": [
+          "d"
+        ],
+        "explicacion": {
+          "temario": "El PDF indica que para guardar un objeto nuevo hay que abrir una transacción, crear el objeto Java, ejecutar el guardado con `em.persist(...)` y después hacer `commit`. En los ejemplos de inserción aparecen llamadas como `em.persist(laura);` y `em.persist(contacto);`. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `store()` no es el método que muestra el temario para insertar una entidad nueva con `EntityManager`. El método que aparece en la unidad es `persist()`. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque `save()` no es el método usado en los ejemplos del PDF con `EntityManager`. En esta unidad, la inserción se realiza con `persist()`. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque `insert()` no es el método del `EntityManager` mostrado en el tema para guardar entidades. Aunque el PDF menciona `INSERT` como palabra del lenguaje de consulta, para insertar objetos con JPA usa `persist()`. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "Si quieres guardar un objeto nuevo con JPA usando `EntityManager`, la palabra clave que debes recordar es `persist()`.",
+          "ejemplo_practico": "Si creas un objeto `Contacto contacto = new Contacto(...)`, lo guardas con `em.persist(contacto);` dentro de una transacción y luego confirmas con `commit`. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la d, porque el método del `EntityManager` que se usa para guardar un objeto nuevo de forma permanente es `persist()`. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q16",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cuál es la función del método remove() en el ciclo de vida de una entidad?",
+        "contexto": "El temario explica la operación de borrado dentro del CRUD usando EntityManager.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Eliminar físicamente el objeto de la base de datos de persistencia."
+          },
+          {
+            "clave": "b",
+            "texto": "Vaciar la memoria caché del navegador."
+          },
+          {
+            "clave": "c",
+            "texto": "Cambiar el nombre de la clase en tiempo de ejecución."
+          },
+          {
+            "clave": "d",
+            "texto": "Ocultar el objeto de la interfaz de usuario de forma temporal."
+          }
+        ],
+        "respuesta_correcta": [
+          "a"
+        ],
+        "explicacion": {
+          "temario": "El PDF, en el apartado de borrado, indica que para eliminar una entidad primero se busca el objeto y luego se le dice al gestor \"elimina esto\" mediante el método `em.remove(objeto)`. El ejemplo mostrado hace `em.remove(contacto);` dentro de una transacción, lo que implica borrar la entidad de la base de datos. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque `remove()` en JPA no tiene relación con la caché del navegador. El tema lo sitúa dentro del apartado BORRADO (DELETE) de entidades persistentes. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque `remove()` no modifica nombres de clases ni altera la estructura del programa; su función es eliminar una entidad persistente. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque ocultar elementos de interfaz pertenece a la capa visual. En el temario, `remove()` se usa para eliminar registros de la base de datos. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "Dentro del CRUD, `remove()` corresponde a la D de Delete: sirve para borrar una entidad persistente.",
+          "ejemplo_practico": "Si un cliente solicita la baja, puedes recuperarlo con `find`, abrir transacción y ejecutar `em.remove(contacto);` para eliminarlo de la base de datos. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la a, porque `remove()` se usa para eliminar físicamente una entidad de la base de datos de persistencia. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q17",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué lenguaje de consultas, similar a SQL pero orientado a objetos, se utiliza en JPA?",
+        "contexto": "El temario explica qué lenguaje usa JPA para realizar consultas y destaca que se parece a SQL, pero se aplica sobre entidades y objetos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "JPQL (Java Persistence Query Language)."
+          },
+          {
+            "clave": "b",
+            "texto": "JQuery"
+          },
+          {
+            "clave": "c",
+            "texto": "OQL (Object Query Language)."
+          },
+          {
+            "clave": "d",
+            "texto": "JSON Select."
+          }
+        ],
+        "respuesta_correcta": [
+          "a"
+        ],
+        "explicacion": {
+          "temario": "El PDF lo indica de forma directa en la parte de mecanismos de consulta: `JPQL (Java Persistence Query Language)` es un lenguaje muy parecido a SQL, y además señala que en esta unidad se centran en JPQL porque es el estándar de la industria para la mayoría de operaciones. También en la introducción del tema se menciona expresamente que aprenderás a manejar el lenguaje JPQL. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque JQuery es una librería de JavaScript para manipular el DOM y realizar tareas en frontend, no un lenguaje de consultas de JPA. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque, aunque suene relacionado con objetos, el temario no presenta OQL como el lenguaje usado en JPA. El PDF nombra específicamente a JPQL. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque JSON Select no aparece en el tema como lenguaje de consultas de persistencia en Java. El lenguaje que se estudia en la unidad es JPQL. :contentReference[oaicite:4]{index=4}"
+            }
+          ],
+          "resumen_didactico": "Si te preguntan por el lenguaje de consultas de JPA parecido a SQL, la respuesta clave es JPQL.",
+          "ejemplo_practico": "Una consulta como `SELECT c FROM Contacto c WHERE c.id = 7` está escrita en JPQL: se parece a SQL, pero trabaja con entidades como `Contacto` en vez de pensar solo en tablas tradicionales. ",
+          "conclusion_final": "La respuesta correcta es la a, porque el lenguaje de consultas similar a SQL que utiliza JPA es JPQL, Java Persistence Query Language. :contentReference[oaicite:6]{index=6}"
+        }
+      },
+      {
+        "id": "UT13-Q18",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cuál es la diferencia fundamental entre una consulta SQL y una consulta JPQL?",
+        "contexto": "El temario presenta JPQL como un lenguaje parecido a SQL, pero aplicado al modelo de persistencia de JPA.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "SQL es más rápido y JPQL es más lento siempre."
+          },
+          {
+            "clave": "b",
+            "texto": "No hay diferencia, son exactamente el mismo lenguaje."
+          },
+          {
+            "clave": "c",
+            "texto": "JPQL solo sirve para borrar datos y SQL para insertarlos."
+          },
+          {
+            "clave": "d",
+            "texto": "SQL trabaja sobre tablas y columnas; JPQL trabaja sobre clases y atributos de Java."
+          }
+        ],
+        "respuesta_correcta": [
+          "d"
+        ],
+        "explicacion": {
+          "temario": "El PDF explica que JPQL es un lenguaje muy parecido a SQL, pero en esta unidad se usa dentro de JPA para trabajar con entidades y objetos. De hecho, los ejemplos de consulta usan expresiones como `SELECT c FROM Contacto c`, donde `Contacto` es una clase entidad y `c.id` o `c.nombre` son atributos, no nombres de tablas y columnas al estilo SQL clásico. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el temario no establece una regla absoluta de velocidad entre ambos lenguajes. La diferencia que sí enseña es conceptual: JPQL trabaja sobre entidades y atributos del modelo Java. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el PDF dice que JPQL es \"muy parecido\" a SQL, no que sea exactamente el mismo lenguaje. La diferencia está en el nivel sobre el que operan las consultas. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el tema muestra que JPQL se usa para `SELECT`, `UPDATE`, `INSERT` y `DELETE`, no solo para borrar datos. :contentReference[oaicite:4]{index=4}"
+            }
+          ],
+          "resumen_didactico": "La clave es recordar esto: SQL piensa en tablas; JPQL piensa en objetos del programa.",
+          "ejemplo_practico": "En SQL podrías consultar una tabla `contactos`; en JPQL escribirías algo como `SELECT c FROM Contacto c`, porque `Contacto` es la entidad Java con la que trabaja JPA. :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6}",
+          "conclusion_final": "La respuesta correcta es la d, porque la diferencia fundamental es que SQL trabaja sobre tablas y columnas, mientras que JPQL trabaja sobre clases entidad y atributos de Java. :contentReference[oaicite:7]{index=7}"
+        }
+      },
+      {
+        "id": "UT13-Q18",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cuál es la diferencia fundamental entre una consulta SQL y una consulta JPQL?",
+        "contexto": "El temario presenta JPQL como un lenguaje parecido a SQL, pero aplicado al modelo de persistencia de JPA.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "SQL es más rápido y JPQL es más lento siempre."
+          },
+          {
+            "clave": "b",
+            "texto": "No hay diferencia, son exactamente el mismo lenguaje."
+          },
+          {
+            "clave": "c",
+            "texto": "JPQL solo sirve para borrar datos y SQL para insertarlos."
+          },
+          {
+            "clave": "d",
+            "texto": "SQL trabaja sobre tablas y columnas; JPQL trabaja sobre clases y atributos de Java."
+          }
+        ],
+        "respuesta_correcta": [
+          "d"
+        ],
+        "explicacion": {
+          "temario": "El PDF explica que JPQL es un lenguaje muy parecido a SQL, pero en esta unidad se usa dentro de JPA para trabajar con entidades y objetos. De hecho, los ejemplos de consulta usan expresiones como `SELECT c FROM Contacto c`, donde `Contacto` es una clase entidad y `c.id` o `c.nombre` son atributos, no nombres de tablas y columnas al estilo SQL clásico. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el temario no establece una regla absoluta de velocidad entre ambos lenguajes. La diferencia que sí enseña es conceptual: JPQL trabaja sobre entidades y atributos del modelo Java. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el PDF dice que JPQL es \"muy parecido\" a SQL, no que sea exactamente el mismo lenguaje. La diferencia está en el nivel sobre el que operan las consultas. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el tema muestra que JPQL se usa para `SELECT`, `UPDATE`, `INSERT` y `DELETE`, no solo para borrar datos. :contentReference[oaicite:4]{index=4}"
+            }
+          ],
+          "resumen_didactico": "La clave es recordar esto: SQL piensa en tablas; JPQL piensa en objetos del programa.",
+          "ejemplo_practico": "En SQL podrías consultar una tabla `contactos`; en JPQL escribirías algo como `SELECT c FROM Contacto c`, porque `Contacto` es la entidad Java con la que trabaja JPA. :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6}",
+          "conclusion_final": "La respuesta correcta es la d, porque la diferencia fundamental es que SQL trabaja sobre tablas y columnas, mientras que JPQL trabaja sobre clases entidad y atributos de Java. :contentReference[oaicite:7]{index=7}"
+        }
+      },
+      {
+        "id": "UT13-Q19",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "Para ejecutar una consulta personalizada que devuelva varios objetos, ¿qué método del EntityManager se debe usar?",
+        "contexto": "El temario muestra cómo lanzar consultas estáticas y dinámicas en JPA para recuperar listas de entidades.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "executeAction()"
+          },
+          {
+            "clave": "b",
+            "texto": "runSql()"
+          },
+          {
+            "clave": "c",
+            "texto": "createQuery()"
+          },
+          {
+            "clave": "d",
+            "texto": "getMultiple()"
+          }
+        ],
+        "respuesta_correcta": [
+          "c"
+        ],
+        "explicacion": {
+          "temario": "El PDF enseña que, para una consulta dinámica, se construye el texto JPQL y luego se usa `em.createQuery(consulta, Contacto.class)`. Después, para obtener varios resultados, se llama a `getResultList()`. Por eso, el método del `EntityManager` para crear y ejecutar la consulta personalizada es `createQuery()`. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `executeAction()` no es el método que aparece en el temario para crear consultas JPQL con `EntityManager`. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque `runSql()` no es el método mostrado en JPA para consultas personalizadas. El PDF usa `createQuery()`. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque `getMultiple()` no es el método del `EntityManager` presentado en la unidad. Para varios objetos, la consulta se crea con `createQuery()` y los resultados se obtienen con `getResultList()`. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "En JPA, primero creas la consulta con `createQuery()` y luego recuperas varios objetos con `getResultList()`.",
+          "ejemplo_practico": "Si quieres obtener varios contactos, escribirías algo como `TypedQuery<Contacto> query = em.createQuery(consulta, Contacto.class);` y después `List<Contacto> results = query.getResultList();`. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la c, porque el método del `EntityManager` que se usa para lanzar una consulta personalizada es `createQuery()`. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q20",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "En una aplicación real, ¿qué utilidad tiene la pestaña \"Schema\" de una herramienta de administración de bases de datos de objetos?",
+        "contexto": "El temario explica las funcionalidades del Explorador de ObjectDB, en particular la pestaña `Schema`.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Escribir el manual de usuario automáticamente."
+          },
+          {
+            "clave": "b",
+            "texto": "Cambiar el color de fondo del código fuente."
+          },
+          {
+            "clave": "c",
+            "texto": "Instalar actualizaciones del sistema operativo."
+          },
+          {
+            "clave": "d",
+            "texto": "Realizar una auditoría visual de la estructura de las clases y los datos guardados."
+          }
+        ],
+        "respuesta_correcta": [
+          "d"
+        ],
+        "explicacion": {
+          "temario": "El PDF dice que una de las funcionalidades clave del explorador es la \"Auditoría visual (pestaña Schema)\" y explica que ahí puedes ver la estructura de tus clases (`Entity Classes`) y navegar por los objetos como si fuera una hoja de cálculo. Por eso su utilidad real es revisar visualmente la estructura y los datos almacenados. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la pestaña `Schema` no redacta documentación ni manuales; su función es inspeccionar visualmente entidades y datos persistidos. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque cambiar colores del código fuente pertenece al editor o IDE, no a una herramienta de exploración de base de datos. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el explorador de ObjectDB no sirve para actualizar el sistema operativo; sirve para revisar el contenido de la base de datos. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "La pestaña `Schema` sirve para mirar por dentro la base de datos: ver clases, entidades y objetos guardados de forma visual.",
+          "ejemplo_practico": "Si quieres comprobar si la entidad `Contacto` se ha guardado bien y revisar sus campos como `nombre` o `email`, abres la pestaña `Schema` y navegas por los objetos almacenados. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la d, porque la pestaña `Schema` se usa para hacer una auditoría visual de la estructura de las clases y de los datos guardados. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q21",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué ventaja ofrece probar una consulta en un \"Laboratorio de consultas\" antes de escribirla definitivamente en el código Java?",
+        "contexto": "El temario explica la utilidad de la pestaña `Query` del explorador de ObjectDB como laboratorio de consultas JPQL.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Permite ensayar y corregir errores en segundos sin necesidad de compilar y ejecutar todo el programa."
+          },
+          {
+            "clave": "b",
+            "texto": "Reduce el número de clases necesarias en el paquete."
+          },
+          {
+            "clave": "c",
+            "texto": "Borra los logs de error del servidor."
+          },
+          {
+            "clave": "d",
+            "texto": "Aumenta la seguridad del cifrado de las contraseñas."
+          }
+        ],
+        "respuesta_correcta": [
+          "a"
+        ],
+        "explicacion": {
+          "temario": "El PDF define la pestaña `Query` como un \"Laboratorio de consultas\" y dice que es posiblemente la herramienta más útil para un desarrollador, porque permite lanzar consultas JPQL \"al vuelo\" y ver el resultado inmediatamente. También explica que así puedes escribir una query compleja, probarla allí primero y hacer ensayo y error en segundos, en lugar de escribirla en Java, compilar y ejecutar para ver si falla. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque probar consultas en el laboratorio no cambia la estructura del proyecto ni reduce el número de clases. Su utilidad es validar consultas de forma rápida. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque la pestaña `Query` no sirve para borrar logs del servidor. El temario la presenta como una herramienta para lanzar y comprobar consultas JPQL. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque el laboratorio de consultas no se menciona en el tema como una herramienta de cifrado o seguridad de contraseñas, sino como un espacio para probar queries. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "La ventaja clave es poder probar una consulta de forma rápida y corregir errores antes de llevarla al código del programa.",
+          "ejemplo_practico": "Si quieres comprobar si `SELECT c FROM Contacto c` funciona bien, puedes lanzarla en la pestaña `Query` y ver el resultado al instante, sin recompilar tu aplicación Java. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la a, porque el laboratorio de consultas permite ensayar, detectar y corregir errores en segundos sin necesidad de compilar y ejecutar todo el programa. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q22",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué objeto de JPA representa el \"contexto de persistencia\" donde se encuentran los objetos que están siendo gestionados?",
+        "contexto": "La pregunta se refiere al componente de JPA que mantiene y gestiona las entidades activas durante el trabajo con la base de datos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El archivo persistence.xml."
+          },
+          {
+            "clave": "b",
+            "texto": "El recolector de basura (Garbage Collector)."
+          },
+          {
+            "clave": "c",
+            "texto": "El EntityManager."
+          },
+          {
+            "clave": "d",
+            "texto": "La clase raíz Object."
+          }
+        ],
+        "respuesta_correcta": [
+          "c"
+        ],
+        "explicacion": {
+          "temario": "La respuesta correcta es `EntityManager`, porque el PDF lo presenta como la interfaz que gestiona el ciclo de vida de las entidades y permite realizar operaciones CRUD sobre la base de datos. Eso encaja con la idea del contexto de persistencia: el espacio donde las entidades están siendo gestionadas por JPA. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `persistence.xml` es un archivo de configuración, no el objeto que gestiona en tiempo de ejecución las entidades persistentes."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el recolector de basura pertenece a la gestión de memoria de Java, no al contexto de persistencia de JPA."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque `Object` es la clase base de Java, pero no representa el componente de JPA que administra entidades y persistencia."
+            }
+          ],
+          "resumen_didactico": "Si te preguntan qué objeto de JPA controla y gestiona las entidades activas, debes pensar en `EntityManager`.",
+          "ejemplo_practico": "Cuando haces `find`, `persist` o `remove`, lo haces con `EntityManager`; por eso es el objeto que mantiene bajo control las entidades con las que estás trabajando. :contentReference[oaicite:1]{index=1} :contentReference[oaicite:2]{index=2}",
+          "conclusion_final": "La respuesta correcta es la c, porque `EntityManager` es el objeto de JPA que representa el contexto donde se gestionan las entidades persistentes. :contentReference[oaicite:3]{index=3}"
+        }
+      },
+      {
+        "id": "UT13-Q23",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "Al realizar una consulta JPQL como \"SELECT c FROM Contacto c\", ¿qué representa la letra \"c\"?",
+        "contexto": "El temario muestra varias consultas JPQL usando expresiones como `SELECT c FROM Contacto c` y `WHERE c.id = ...`.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Una constante numérica definida en el sistema."
+          },
+          {
+            "clave": "b",
+            "texto": "El nombre de la conexión a internet."
+          },
+          {
+            "clave": "c",
+            "texto": "Una columna de la base de datos física."
+          },
+          {
+            "clave": "d",
+            "texto": "Un alias que representa a los objetos de la clase Contacto."
+          }
+        ],
+        "respuesta_correcta": [
+          "d"
+        ],
+        "explicacion": {
+          "temario": "En los ejemplos del PDF aparece la consulta `SELECT c FROM Contacto c` y luego se usa `c.id` en condiciones como `WHERE c.id = :identificador`. Eso muestra que la letra `c` es un nombre corto que representa cada objeto de la entidad `Contacto` dentro de la consulta, es decir, un alias. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `c` no es una constante numérica; en la consulta se usa para referirse a la entidad y a sus atributos, como `c.id`. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque `c` no tiene relación con internet ni con la conexión de red. Está dentro de la sintaxis de una consulta JPQL para nombrar la entidad en la consulta. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque `c` no es una columna física. En JPQL se trabaja con clases y atributos, y `c` representa al objeto `Contacto`, no a una columna concreta. :contentReference[oaicite:4]{index=4}"
+            }
+          ],
+          "resumen_didactico": "En JPQL, una letra como `c` suele ser un alias: un nombre corto para referirse a la entidad durante la consulta.",
+          "ejemplo_practico": "En `SELECT c FROM Contacto c WHERE c.id = 7`, `c` representa cada objeto `Contacto`, por eso luego puedes escribir `c.id`, `c.nombre` o `c.email`. :contentReference[oaicite:5]{index=5}",
+          "conclusion_final": "La respuesta correcta es la d, porque la letra `c` es un alias que representa a los objetos de la clase `Contacto` dentro de la consulta JPQL. :contentReference[oaicite:6]{index=6}"
+        }
+      },
+      {
+        "id": "UT13-Q24",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué sucede con los datos de un objeto si el programador olvida llamar al método persist() antes de cerrar el programa?",
+        "contexto": "El temario explica que para insertar un objeto en la base de datos hay que abrir transacción, crear el objeto, llamar a `persist()` y confirmar con `commit`.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Se envían por correo electrónico al administrador."
+          },
+          {
+            "clave": "b",
+            "texto": "Se guardan en un archivo temporal .tmp."
+          },
+          {
+            "clave": "c",
+            "texto": "Se guardan automáticamente por seguridad."
+          },
+          {
+            "clave": "d",
+            "texto": "Los datos se pierden porque no se ha solicitado su persistencia en el almacenamiento."
+          }
+        ],
+        "respuesta_correcta": [
+          "d"
+        ],
+        "explicacion": {
+          "temario": "El PDF deja claro que, para guardar un objeto nuevo, hay que iniciar una transacción, crear el objeto, ejecutar el guardado con `em.persist(...)` y después confirmar con `commit`. Si no se llama a `persist()`, el objeto existe solo en memoria del programa, pero no se solicita su almacenamiento persistente en la base de datos, así que al cerrar el programa se pierde. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `persist()` no tiene ninguna relación con enviar información por correo. Su función es pedir a JPA que guarde una entidad en la base de datos. :contentReference[oaicite:1]{index=1}"
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el temario no indica que, si falta `persist()`, los datos se guarden en un archivo temporal. El problema es precisamente que no llegan a persistirse. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el tema no habla de un guardado automático de seguridad. Al contrario, insiste en que el programador debe realizar explícitamente el proceso de persistencia. :contentReference[oaicite:3]{index=3}"
+            }
+          ],
+          "resumen_didactico": "Si no llamas a `persist()`, el objeto no pasa de ser un dato en memoria; para que sobreviva al cierre del programa, debes pedir expresamente su persistencia.",
+          "ejemplo_practico": "Creas un `Contacto contacto = new Contacto(...)`, pero cierras la aplicación sin ejecutar `em.persist(contacto);`. Cuando vuelvas a abrir la base de datos, ese contacto no estará guardado porque nunca se insertó realmente. :contentReference[oaicite:4]{index=4}",
+          "conclusion_final": "La respuesta correcta es la d, porque sin `persist()` no se solicita el guardado permanente del objeto y sus datos se pierden al cerrar el programa. :contentReference[oaicite:5]{index=5}"
+        }
+      },
+      {
+        "id": "UT13-Q25",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Por qué el dominio de la persistencia de datos se considera una habilidad crítica para un desarrollador backend?",
+        "contexto": "El temario explica desde la introducción y el cierre de la unidad por qué saber persistir datos es una competencia importante en el trabajo backend profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Porque permite que los programas funcionen sin electricidad."
+          },
+          {
+            "clave": "b",
+            "texto": "Porque permite crear aplicaciones que \"recuerdan\" la información, algo indispensable en cualquier puesto profesional."
+          },
+          {
+            "clave": "c",
+            "texto": "Porque es la única forma de usar bucles \"for\" en Java."
+          },
+          {
+            "clave": "d",
+            "texto": "Porque evita tener que aprender a usar interfaces gráficas."
+          }
+        ],
+        "respuesta_correcta": [
+          "b"
+        ],
+        "explicacion": {
+          "temario": "El PDF afirma al principio que el mantenimiento de la persistencia es una de las habilidades más demandadas en el desarrollo backend actual y, al final de la unidad, concluye que con estas herramientas puedes crear aplicaciones Java que recuerden la información, algo que define como una habilidad indispensable en cualquier puesto de desarrollo backend. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la persistencia de datos no tiene relación con hacer que los programas funcionen sin electricidad. El tema habla de guardar y recuperar información de forma permanente. :contentReference[oaicite:2]{index=2}"
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque los bucles `for` pertenecen a la lógica de programación general y no dependen de la persistencia de datos. El PDF vincula la persistencia con guardar información y con el trabajo backend profesional. :contentReference[oaicite:3]{index=3}"
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque aprender persistencia no sustituye el uso de interfaces gráficas. Son ámbitos distintos. El temario resalta su valor porque permite que las aplicaciones recuerden datos y trabajen con ellos de forma profesional. :contentReference[oaicite:4]{index=4}"
+            }
+          ],
+          "resumen_didactico": "La persistencia es crítica porque hace posible que una aplicación no olvide los datos al cerrarse y pueda seguir trabajando con esa información después.",
+          "ejemplo_practico": "Una aplicación de contactos, una tienda online o un sistema de inventario necesita recordar usuarios, productos o pedidos aunque el programa se cierre. Eso solo es posible si dominamos la persistencia de datos. :contentReference[oaicite:5]{index=5} :contentReference[oaicite:6]{index=6}",
+          "conclusion_final": "La respuesta correcta es la b, porque la persistencia permite crear aplicaciones que recuerdan la información, y el propio tema la define como una habilidad indispensable en cualquier puesto de desarrollo backend. :contentReference[oaicite:7]{index=7}"
+        }
+      },
+      {
+        "id": "UT13-Q26",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Qué componente de software se encarga de crear las tablas automáticamente basándose en tus clases Java si usas la configuración adecuada de JPA?",
+        "contexto": "La pregunta se refiere al componente que implementa las reglas de JPA y materializa la persistencia a partir de las clases Java.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "El motor de persistencia o proveedor de JPA."
+          },
+          {
+            "clave": "b",
+            "texto": "El compilador javac."
+          },
+          {
+            "clave": "c",
+            "texto": "El sistema operativo."
+          },
+          {
+            "clave": "d",
+            "texto": "El editor de texto Bloc de notas."
+          }
+        ],
+        "respuesta_correcta": [
+          "a"
+        ],
+        "explicacion": {
+          "temario": "La respuesta correcta es el motor de persistencia o proveedor de JPA. El PDF explica que JPA pone las \"reglas del juego\" sobre cómo debe guardarse un objeto y que ObjectDB es quien cumple esas reglas, es decir, quien las implementa realmente. Aunque esta pregunta habla de \"crear tablas automáticamente\" y el tema trabaja con ObjectDB orientado a objetos y archivos `.odb`, la idea de fondo es la misma: el componente que ejecuta la persistencia según JPA es el proveedor o motor de persistencia. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque `javac` solo compila código Java a bytecode; no se encarga de gestionar la persistencia ni de materializar la estructura de base de datos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el sistema operativo ejecuta programas y gestiona recursos del equipo, pero no implementa las reglas de JPA ni crea la estructura persistente basada en entidades."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque un editor de texto como Bloc de notas solo sirve para editar archivos, no para gestionar persistencia ni generar estructuras de base de datos."
+            }
+          ],
+          "resumen_didactico": "JPA define las normas; el proveedor de JPA es quien hace el trabajo real de persistencia a partir de tus clases Java.",
+          "ejemplo_practico": "En el tema, ObjectDB es el software que se integra con tu proyecto Java y cumple las reglas marcadas por JPA para guardar objetos. En un entorno relacional, ese mismo papel lo tendría el proveedor que genera la estructura persistente según tus entidades. :contentReference[oaicite:1]{index=1} :contentReference[oaicite:2]{index=2}",
+          "conclusion_final": "La respuesta correcta es la a, porque quien se encarga de aplicar la configuración de JPA y materializar la persistencia basada en tus clases Java es el motor o proveedor de JPA. :contentReference[oaicite:3]{index=3}"
+        }
+      },
+      {
+        "id": "UT13-Q28",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "¿Cuál es el primer paso técnico para empezar a usar JPA en un proyecto Java?",
+        "contexto": "La pregunta apunta a la preparación inicial de un proyecto Java para trabajar con persistencia, antes de realizar operaciones sobre la base de datos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Borrar todos los comentarios del código."
+          },
+          {
+            "clave": "b",
+            "texto": "Escribir el método main."
+          },
+          {
+            "clave": "c",
+            "texto": "Configurar la unidad de persistencia en el archivo XML correspondiente e incluir las librerías necesarias."
+          },
+          {
+            "clave": "d",
+            "texto": "Comprar un servidor de base de datos físico."
+          }
+        ],
+        "respuesta_correcta": [
+          "c"
+        ],
+        "explicacion": {
+          "temario": "La opción correcta es la c. En el temario, el arranque técnico consiste en preparar el proyecto Java para que pueda trabajar con persistencia: primero crear el proyecto y añadir la librería `objectdb.jar`, porque sin esa preparación Java no sabrá trabajar con la base de datos orientada a objetos. Después, la conexión se abre usando `Persistence.createEntityManagerFactory(...)`, lo que encaja con la configuración inicial propia de JPA. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque borrar comentarios no tiene ninguna relación con la configuración inicial de JPA ni con la preparación del proyecto para persistencia."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque escribir `main` puede ser útil para probar, pero no es el paso técnico clave para empezar a usar JPA. Antes hay que preparar el proyecto y la persistencia."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque no necesitas comprar un servidor físico para empezar a trabajar con JPA en este contexto. El tema usa ObjectDB y se centra en configurar el entorno y las librerías."
+            }
+          ],
+          "resumen_didactico": "Antes de usar JPA de verdad, primero debes dejar preparado el proyecto: configuración de persistencia y librerías necesarias.",
+          "ejemplo_practico": "En el tema, Javier crea el proyecto Java, añade `objectdb.jar` al Build Path y luego ya puede abrir la conexión con `Persistence.createEntityManagerFactory(...)`. :contentReference[oaicite:2]{index=2} :contentReference[oaicite:3]{index=3}",
+          "conclusion_final": "La respuesta correcta es la c, porque el primer paso técnico consiste en dejar configurada la persistencia del proyecto e incluir las librerías necesarias para que JPA pueda funcionar. :contentReference[oaicite:4]{index=4}"
+        }
+      },
+      {
+        "id": "UT13-Q30",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "En una consulta como \"SELECT c FROM Contacto c WHERE c.email IS NULL\", ¿qué se está buscando profesionalmente?",
+        "contexto": "La consulta JPQL filtra objetos de la entidad `Contacto` según el valor de su atributo `email`.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Todos los contactos que tienen el email correctamente configurado."
+          },
+          {
+            "clave": "b",
+            "texto": "Aquellos objetos de la clase Contacto cuyo atributo email no tiene ningún valor asignado."
+          },
+          {
+            "clave": "c",
+            "texto": "La dirección física del servidor de correo."
+          },
+          {
+            "clave": "d",
+            "texto": "El número total de correos electrónicos enviados."
+          }
+        ],
+        "respuesta_correcta": [
+          "b"
+        ],
+        "explicacion": {
+          "temario": "En JPQL se trabaja sobre entidades y atributos de Java, no sobre tablas puras. En una consulta como `SELECT c FROM Contacto c`, la `c` es el alias del objeto `Contacto`, y al añadir `WHERE c.email IS NULL` se filtran aquellos objetos cuyo atributo `email` no tiene ningún valor asignado. El temario muestra precisamente que JPQL usa expresiones como `SELECT c FROM Contacto c WHERE c.id = ...`, trabajando con atributos de la clase. :contentReference[oaicite:0]{index=0} :contentReference[oaicite:1]{index=1}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque `IS NULL` significa justo lo contrario: que el atributo no tiene valor. Si el email estuviera correctamente configurado, no sería `NULL`."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque la consulta no habla de servidores ni de direcciones físicas de correo. Está filtrando entidades `Contacto` por el valor de su atributo `email`."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque la consulta no cuenta correos enviados ni hace agregaciones. Solo selecciona objetos `Contacto` cuyo email está vacío o no asignado."
+            }
+          ],
+          "resumen_didactico": "Cuando ves `IS NULL` en JPQL, debes pensar en atributos sin valor asignado.",
+          "ejemplo_practico": "Si en tu base de datos hay contactos como Laura con email y Antonio sin email, la consulta `SELECT c FROM Contacto c WHERE c.email IS NULL` devolvería a Antonio, porque su atributo `email` está vacío.",
+          "conclusion_final": "La respuesta correcta es la b, porque profesionalmente esa consulta busca los objetos `Contacto` cuyo atributo `email` no tiene ningún valor asignado."
+        }
+      }
+]
