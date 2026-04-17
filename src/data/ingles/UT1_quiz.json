@@ -1,0 +1,762 @@
+[
+    {
+        "id": "UT1-Q01",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Read the following paragraph and identify the main idea: \"The company has implemented a remote work policy to improve productivity and employee satisfaction. This approach allows staff to work from home two days a week, reducing commuting time and increasing work-life balance.\"",
+        "contexto": "Se pide identificar la idea principal de un párrafo donde la primera oración presenta el mensaje central y la segunda aporta detalles que lo desarrollan.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "The company introduced remote work to enhance productivity and employee well-being."
+          },
+          {
+            "clave": "b",
+            "texto": "Employees will now work remotely every day."
+          },
+          {
+            "clave": "c",
+            "texto": "The company wants to reduce commuting time for employees."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La idea principal es el núcleo del mensaje, es decir, lo más importante que el autor quiere transmitir. Las ideas secundarias amplían o respaldan esa idea con detalles o ejemplos. En este párrafo, la idea central es que la empresa ha implantado una política de trabajo remoto para mejorar la productividad y la satisfacción de los empleados; después, el texto añade detalles como trabajar desde casa dos días, reducir desplazamientos y mejorar el equilibrio entre vida personal y trabajo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el texto no dice que los empleados trabajarán en remoto todos los días, sino solo dos días a la semana."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incompleta porque reducir el tiempo de desplazamiento es una idea secundaria o detalle de apoyo, no la idea principal del párrafo."
+            }
+          ],
+          "resumen_didactico": "La idea principal resume de qué trata el texto en conjunto. Aquí no se centra solo en un detalle concreto, sino en la implantación del trabajo remoto como medida para mejorar el rendimiento y el bienestar.",
+          "ejemplo_practico": "Si en un examen lees: \"The school introduced digital platforms to improve learning. Students can now access materials online and submit homework more easily\", la idea principal sería la implantación de plataformas digitales para mejorar el aprendizaje, no solo entregar tareas online.",
+          "conclusion_final": "La respuesta correcta es la a porque recoge el mensaje global del párrafo, mientras que las otras opciones se centran en un dato falso o en un detalle secundario."
+        }
+      },
+      {
+        "id": "UT1-Q02",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Which of the following are supporting details from the previous paragraph?",
+        "contexto": "Se pide identificar el detalle secundario que apoya la idea principal del párrafo anterior sobre la política de trabajo remoto.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Employees are more productive when working from home."
+          },
+          {
+            "clave": "b",
+            "texto": "The company is considering hiring more remote employees."
+          },
+          {
+            "clave": "c",
+            "texto": "Staff can work from home two days a week, which reduces commuting time."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Las ideas secundarias o supporting details amplían, explican o respaldan la idea principal con datos concretos, ejemplos o descripciones. En el párrafo anterior, la idea principal era la implantación de una política de trabajo remoto para mejorar la productividad y la satisfacción. El detalle que la apoya de forma directa es que el personal puede trabajar desde casa dos días por semana, lo cual reduce el tiempo de desplazamiento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es una interpretación general del texto, pero no aparece formulada como detalle concreto dentro del párrafo. El texto habla de mejorar la productividad, pero el supporting detail específico es otro."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque esa información no aparece en el párrafo. En ningún momento se menciona contratar más empleados remotos."
+            }
+          ],
+          "resumen_didactico": "Un supporting detail no resume el texto entero, sino que aporta una información específica que refuerza la idea principal. Aquí ese dato específico es trabajar desde casa dos días y reducir desplazamientos.",
+          "ejemplo_practico": "Si un texto dice: \"The school launched a reading program to improve student performance. Students now read 20 minutes daily and discuss books in class\", el detalle secundario sería que los estudiantes leen 20 minutos al día y comentan libros en clase.",
+          "conclusion_final": "La respuesta correcta es la c porque expresa el detalle concreto que desarrolla y apoya la idea principal del párrafo."
+        }
+      },
+      {
+        "id": "UT1-Q03",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Identify the main idea of the following passage: \"Digital marketing strategies, such as social media campaigns and email marketing, help businesses reach a wider audience. By analyzing user data, companies can create personalized ads and improve engagement with potential customers.\"",
+        "contexto": "Se pide identificar la idea principal de un texto donde primero se presenta una afirmación general sobre el marketing digital y después se añaden ejemplos y consecuencias de su uso.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Email marketing has completely replaced traditional advertising."
+          },
+          {
+            "clave": "b",
+            "texto": "Social media is the most effective digital marketing strategy."
+          },
+          {
+            "clave": "c",
+            "texto": "Digital marketing strategies allow businesses to connect with more customers"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La idea principal es el núcleo del mensaje, aquello de lo que trata el texto en conjunto. Las ideas secundarias amplían o explican esa idea con ejemplos o detalles. En este caso, el texto afirma primero que las estrategias de marketing digital ayudan a las empresas a llegar a una audiencia más amplia. Después añade ejemplos concretos, como las campañas en redes sociales, el email marketing y el análisis de datos para personalizar anuncios y mejorar la interacción.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el texto no dice que el email marketing haya sustituido por completo a la publicidad tradicional. Esa afirmación no aparece en el pasaje."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el texto menciona redes sociales como un ejemplo de estrategia digital, pero no afirma que sea la más efectiva de todas."
+            }
+          ],
+          "resumen_didactico": "Para encontrar la idea principal, hay que fijarse en la afirmación más general que engloba todo el contenido. Aquí el texto trata del valor del marketing digital para llegar a más clientes; lo demás son ejemplos y aplicaciones.",
+          "ejemplo_practico": "Si un texto dice: \"Online learning platforms help students study more flexibly. They offer video lessons, interactive exercises and personalized feedback\", la idea principal sería que las plataformas de aprendizaje online ayudan a estudiar con más flexibilidad, mientras que los vídeos, ejercicios y feedback serían detalles secundarios.",
+          "conclusion_final": "La respuesta correcta es la c porque resume la idea global del pasaje, mientras que las otras opciones añaden afirmaciones que el texto no dice o reducen demasiado el mensaje."
+        }
+      },
+      {
+        "id": "UT1-Q04",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Which of the following are keywords in the previous paragraph?",
+        "contexto": "Se pide reconocer las palabras clave de un texto sobre estrategias de marketing digital y su utilidad para llegar a más clientes e incrementar la interacción.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Digital marketing, social media, engagement."
+          },
+          {
+            "clave": "b",
+            "texto": "Business growth, finance, development."
+          },
+          {
+            "clave": "c",
+            "texto": "Communication, office, management."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Las palabras clave son términos que se repiten o concentran el tema central del texto. Suelen ayudar a identificar la idea principal porque señalan de qué trata el contenido. En el párrafo anterior aparecen conceptos directamente relacionados con el mensaje principal: digital marketing strategies, social media campaigns y engagement. Por eso, la opción a reúne las keywords más representativas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque incluye términos que no aparecen ni representan de forma directa el contenido del párrafo. El texto no trata de finance ni se centra en development como palabra temática principal."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque esas palabras no corresponden al campo temático del pasaje. El texto habla de marketing digital, datos de usuarios y engagement, no de office o management."
+            }
+          ],
+          "resumen_didactico": "Las keywords son palabras que condensan el tema del texto. Si el pasaje trata sobre marketing digital y menciona redes sociales e interacción con clientes, esas serán las palabras clave más probables.",
+          "ejemplo_practico": "Si lees: \"Online education platforms offer flexible learning, video lessons and student interaction\", las keywords serían online education, learning, video lessons e interaction, porque resumen el contenido principal.",
+          "conclusion_final": "La respuesta correcta es la a porque contiene los términos más directamente vinculados con el tema central del párrafo."
+        }
+      },
+      {
+        "id": "UT1-Q05",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "What is the function of supporting details in a text?",
+        "contexto": "Se pide identificar la función de los detalles secundarios dentro de un texto expositivo o informativo.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "They are opinions that replace the main idea."
+          },
+          {
+            "clave": "b",
+            "texto": "They provide unrelated information to make the text longer."
+          },
+          {
+            "clave": "c",
+            "texto": "They help to clarify or expand the main idea."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Los supporting details o ideas secundarias tienen la función de ampliar, explicar o respaldar la idea principal. No sustituyen el mensaje central, sino que lo desarrollan con datos, ejemplos, descripciones o aclaraciones que ayudan a comprender mejor el texto.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque los detalles secundarios no reemplazan la idea principal. La idea principal sigue siendo el núcleo del mensaje y los detalles solo la apoyan."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque los supporting details no aportan información irrelevante. Su función es estar relacionados con la idea principal y hacerla más clara."
+            }
+          ],
+          "resumen_didactico": "La idea principal dice de qué trata el texto; los detalles secundarios ayudan a entenderla mejor. Sin ellos, el mensaje sería más pobre o menos claro.",
+          "ejemplo_practico": "Si un texto dice: \"Exercise is important for good health\", esa es la idea principal. Si después añade \"It improves cardiovascular health, reduces stress and helps maintain a healthy weight\", esas son supporting details porque explican por qué el ejercicio es importante.",
+          "conclusion_final": "La respuesta correcta es la c porque los detalles secundarios sirven para aclarar, desarrollar y reforzar la idea principal del texto."
+        }
+      },
+      {
+        "id": "UT1-Q06",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "What is an effective strategy to identify the main idea of a text?",
+        "contexto": "Se pide reconocer una estrategia práctica adecuada para localizar la idea principal en un texto.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Read only the last paragraph of the text."
+          },
+          {
+            "clave": "b",
+            "texto": "Focus on adjectives and descriptive words."
+          },
+          {
+            "clave": "c",
+            "texto": "Skim the text, looking for key sentences and repeated ideas."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Una estrategia eficaz para identificar la idea principal consiste en hacer una lectura general del texto, fijándose en palabras clave, frases temáticas, ideas repetidas y en la estructura del contenido. El temario explica que la idea principal suele aparecer en la introducción, en la conclusión o al inicio de un párrafo, y que buscar palabras clave ayuda a detectar el tema central. Por eso, recorrer el texto rápidamente buscando oraciones clave e ideas que se repiten es una técnica adecuada.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque leer solo el último párrafo puede ayudar en algunos casos, pero no es una estrategia completa ni segura. La idea principal también puede aparecer en la introducción o al comienzo de un párrafo."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque los adjetivos y palabras descriptivas pueden aportar matices, pero no suelen ser el mejor recurso para encontrar la idea principal. Lo importante es localizar frases temáticas, palabras clave y el mensaje que se repite."
+            }
+          ],
+          "resumen_didactico": "Para encontrar la idea principal no basta con mirar una sola parte del texto ni con fijarse en palabras decorativas. Lo más útil es hacer una lectura global y localizar oraciones clave e ideas repetidas.",
+          "ejemplo_practico": "Si lees un texto sobre comercio internacional, puedes hacer una primera lectura rápida y observar que se repiten expresiones como trade agreement, exports y reducing costs. Esas repeticiones te orientan hacia la idea principal del texto.",
+          "conclusion_final": "La respuesta correcta es la c porque describe una estrategia real y eficaz: revisar el texto de forma general buscando frases importantes y conceptos que se repiten."
+        }
+      },
+      {
+        "id": "UT1-Q07",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Read the following passage and choose the best summary: \"Artificial intelligence (AI) is transforming the healthcare industry. AI-powered algorithms help doctors diagnose diseases more accurately and quickly. In addition, AI can predict health risks based on patient history.\"",
+        "contexto": "Se pide seleccionar el mejor resumen de un texto que presenta una idea principal sobre la inteligencia artificial en la sanidad y añade dos aplicaciones concretas: diagnóstico y predicción de riesgos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "AI is taking over hospitals and replacing doctors."
+          },
+          {
+            "clave": "b",
+            "texto": "AI is making healthcare more efficient by assisting in diagnosis and risk prediction."
+          },
+          {
+            "clave": "c",
+            "texto": "AI is used exclusively for administrative tasks in hospitals."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Un buen resumen recoge la idea principal y las ideas secundarias más importantes en una o dos oraciones, sin añadir información falsa ni detalles irrelevantes. En este texto, la idea principal es que la inteligencia artificial está transformando el sector sanitario, y las ideas secundarias que la desarrollan son que ayuda a diagnosticar enfermedades con más precisión y rapidez, y que también permite predecir riesgos de salud a partir del historial del paciente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque exagera el contenido del texto. El pasaje no dice que la inteligencia artificial sustituya a los médicos, sino que los ayuda en tareas de diagnóstico y análisis."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el texto no habla de tareas administrativas ni dice que la IA se use exclusivamente para eso. Al contrario, menciona usos clínicos concretos como diagnóstico y predicción."
+            }
+          ],
+          "resumen_didactico": "Resumir no es repetir todo ni inventar información nueva. Un buen resumen condensa el mensaje global del texto y conserva los puntos secundarios más importantes.",
+          "ejemplo_practico": "Si un texto dice: \"Online learning platforms improve education. They give students flexible access to lessons and offer personalized feedback\", un buen resumen sería: \"Online platforms improve education by making learning more flexible and personalized.\"",
+          "conclusion_final": "La respuesta correcta es la b porque resume de forma fiel y completa la idea principal del texto junto con sus dos aplicaciones más relevantes: el diagnóstico y la predicción de riesgos."
+        }
+      },
+      {
+        "id": "UT1-Q08",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Which of the following tools helps organize information visually?",
+        "contexto": "Se pide identificar la herramienta que permite estructurar la información de forma visual y lógica para comprender mejor las ideas principales y secundarias.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "A list of words without any connection."
+          },
+          {
+            "clave": "b",
+            "texto": "A concept map that links ideas logically."
+          },
+          {
+            "clave": "c",
+            "texto": "A long paragraph summarizing the information."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que los organizadores gráficos permiten estructurar la información de forma clara y jerárquica, facilitando la identificación de ideas principales y secundarias y visualizando las relaciones entre conceptos. Entre ellos, el mapa conceptual coloca la idea principal en el centro o en la parte superior y conecta las ideas secundarias mediante líneas o flechas. Por eso, un concept map que enlaza ideas lógicamente es la herramienta visual adecuada. ",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque una lista de palabras sin conexión no organiza visualmente la información ni muestra relaciones entre conceptos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque un párrafo largo puede resumir información, pero no la organiza de manera visual. La pregunta pide una herramienta visual de organización."
+            }
+          ],
+          "resumen_didactico": "Cuando necesitas ver cómo se relacionan las ideas entre sí, un organizador gráfico como el mapa conceptual es mucho más útil que una lista suelta o un párrafo corrido.",
+          "ejemplo_practico": "Si estudias un tema como digital marketing, puedes poner esa idea en el centro del mapa conceptual y unirla con social media, email marketing, user data y engagement. Así ves rápidamente qué conceptos dependen de cuál.",
+          "conclusion_final": "La respuesta correcta es la b porque el mapa conceptual es una herramienta visual diseñada para organizar información y conectar ideas de forma lógica."
+        }
+      },
+      {
+        "id": "UT1-Q09",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Why is summarizing a text useful?",
+        "contexto": "Se pide identificar por qué hacer un resumen ayuda en la comprensión y estudio de un texto.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "It helps retain key ideas by condensing information."
+          },
+          {
+            "clave": "b",
+            "texto": "It removes important details and makes the text incomplete."
+          },
+          {
+            "clave": "c",
+            "texto": "It replaces the need to read the text carefully."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Resumir un texto es útil porque permite condensar la información conservando la idea principal y las ideas secundarias más importantes. El temario explica que crear resúmenes consiste en escribir una o dos oraciones que recojan lo esencial del contenido, y también señala que repetir o resumir la información clave ayuda a confirmar la comprensión y a retener mejor las ideas importantes.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque un buen resumen no elimina lo importante, sino que selecciona y conserva lo esencial del texto de forma más breve y clara."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque resumir no sustituye una lectura cuidadosa. Primero hay que comprender el texto para poder identificar sus ideas clave y resumirlo correctamente."
+            }
+          ],
+          "resumen_didactico": "Un resumen sirve para reducir el texto a sus ideas fundamentales. Esto facilita estudiar, recordar y comprobar si realmente has entendido el contenido.",
+          "ejemplo_practico": "Si un texto explica que digital marketing helps companies reach more customers through social media, email marketing and personalized ads, el resumen no repite todo, sino que condensa la idea en una frase más corta con lo esencial.",
+          "conclusion_final": "La respuesta correcta es la a porque resumir ayuda a retener las ideas clave al condensar la información de forma clara y útil para el estudio."
+        }
+      },
+      {
+        "id": "UT1-Q10",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Which of the following best describes an effective outline for organizing information in a text?",
+        "contexto": "Se pide identificar qué definición describe mejor un esquema eficaz para organizar la información de un texto.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "A structured plan that arranges main ideas and supporting details logically."
+          },
+          {
+            "clave": "b",
+            "texto": "A random selection of sentences that are loosely connected."
+          },
+          {
+            "clave": "c",
+            "texto": "A long paragraph that summarizes all the information without distinguishing key points."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Un esquema eficaz organiza la información de forma clara y jerárquica, distinguiendo la idea principal de las ideas secundarias. El temario explica que los organizadores gráficos y el esquema jerárquico sirven precisamente para ordenar el contenido por niveles de importancia y mostrar las relaciones entre conceptos. Por eso, un effective outline debe ser un plan estructurado que coloque las ideas principales y los supporting details de manera lógica.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque una selección aleatoria de oraciones no organiza la información ni muestra una estructura lógica entre ideas principales y secundarias."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque un párrafo largo puede resumir, pero no funciona como esquema si no separa ni organiza claramente los puntos clave."
+            }
+          ],
+          "resumen_didactico": "Un outline no es un conjunto de frases sueltas ni un párrafo corrido. Es una estructura ordenada que ayuda a ver qué idea es principal y cuáles son los detalles que la desarrollan.",
+          "ejemplo_practico": "Si el tema es digital marketing, un buen esquema podría poner como idea principal \"Digital marketing strategies\" y debajo, como ideas secundarias, \"social media campaigns\", \"email marketing\" y \"personalized ads based on user data\".",
+          "conclusion_final": "La respuesta correcta es la a porque describe exactamente la función de un buen esquema: organizar las ideas principales y los detalles de apoyo de forma lógica y estructurada."
+        }
+      },
+      {
+        "id": "UT1-Q11",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Read the following excerpt from a professional speech and identify its purpose: \"By investing in sustainable energy solutions, we can reduce operational costs and minimize environmental impact. Our goal is to implement solar and wind energy by 2030.\"",
+        "contexto": "Se pide identificar el propósito de un discurso profesional que presenta ventajas de una propuesta y busca impulsar una decisión concreta sobre energía sostenible.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "To describe the history of solar energy."
+          },
+          {
+            "clave": "b",
+            "texto": "To inform employees about budget cuts."
+          },
+          {
+            "clave": "c",
+            "texto": "To persuade the audience to consider sustainable energy solutions."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El propósito persuasivo busca convencer a la audiencia de tomar una acción específica. En este fragmento, el hablante presenta beneficios claros de invertir en energía sostenible, como reducir costes operativos y minimizar el impacto ambiental, y además marca un objetivo concreto para implantar energía solar y eólica en 2030. Por tanto, no solo informa, sino que intenta que la audiencia valore y apoye esa propuesta.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el fragmento no explica la historia de la energía solar ni su evolución en el tiempo. Se centra en una propuesta actual orientada al futuro."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque no se habla de recortes presupuestarios ni de reducción de gastos de personal. El texto menciona reducción de costes operativos como ventaja de una inversión sostenible."
+            }
+          ],
+          "resumen_didactico": "Cuando un discurso presenta ventajas con intención de que la audiencia apoye una idea o adopte una medida, su propósito es persuadir. Aquí se usan beneficios económicos y medioambientales para reforzar esa intención.",
+          "ejemplo_practico": "Si una empresa dice: \"Implementing digital tools will save time, improve coordination and reduce errors\", probablemente no solo está dando datos, sino intentando convencer al equipo de adoptar esa solución.",
+          "conclusion_final": "La respuesta correcta es la c porque el discurso busca persuadir a la audiencia para que considere e impulse el uso de soluciones energéticas sostenibles."
+        }
+      },
+      {
+        "id": "UT1-Q12",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "What is the purpose of a business report?",
+        "contexto": "Se pide identificar la finalidad de un informe empresarial dentro de los formatos de discurso profesional del ámbito laboral.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "To share personal opinions about a company."
+          },
+          {
+            "clave": "b",
+            "texto": "To provide structured information that supports decision-making."
+          },
+          {
+            "clave": "c",
+            "texto": "To encourage employees to work harder."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que los informes y reportes son documentos escritos que presentan información detallada sobre un tema específico y que pueden incluir gráficos, tablas y análisis. Por eso, su finalidad principal es ofrecer información estructurada y útil para comprender una situación, evaluarla y apoyar la toma de decisiones en el entorno profesional.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque un business report no se basa en opiniones personales, sino en información organizada, datos y análisis sobre un tema concreto."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque animar a los empleados a trabajar más tendría más relación con un discurso motivacional, no con la función principal de un informe empresarial."
+            }
+          ],
+          "resumen_didactico": "Un business report sirve para presentar información clara, ordenada y analizada sobre un asunto de la empresa. Su valor está en ayudar a entender la situación y facilitar decisiones fundamentadas.",
+          "ejemplo_practico": "Un informe de ventas trimestral puede incluir cifras, gráficos y comparaciones con meses anteriores para que la dirección decida si debe cambiar la estrategia comercial.",
+          "conclusion_final": "La respuesta correcta es la b porque un informe empresarial tiene como función principal proporcionar información estructurada que apoye la toma de decisiones."
+        }
+      },
+      {
+        "id": "UT1-Q13",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Which of the following is an example of an instructional professional speech?",
+        "contexto": "Se pide identificar un ejemplo de discurso profesional con propósito instructivo, es decir, orientado a dar pasos o directrices para realizar una tarea.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"Our profits have increased by 20% this year.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"To install the software, first download the latest version, then follow the installation guide.\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"We need to focus on teamwork to improve our results.\""
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Un discurso profesional instructivo tiene como finalidad dar directrices o pasos a seguir para realizar una acción concreta. En esta opción se presentan instrucciones secuenciales y claras: primero descargar la última versión del software y después seguir la guía de instalación. Eso encaja exactamente con la función de instruir.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque simplemente informa sobre un resultado de la empresa. Aporta un dato, pero no da pasos ni indicaciones para hacer algo."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque expresa una idea orientada a motivar o recomendar una actitud general, pero no ofrece instrucciones concretas ni un procedimiento paso a paso."
+            }
+          ],
+          "resumen_didactico": "Cuando una intervención explica qué hacer y en qué orden hacerlo, estamos ante un discurso instructivo. La clave suele estar en verbos de acción y en una secuencia de pasos.",
+          "ejemplo_practico": "Si un responsable técnico dice: \"First open the control panel, then select network settings and restart the router\", está dando instrucciones concretas, así que el propósito del discurso es instructivo.",
+          "conclusion_final": "La respuesta correcta es la b porque muestra de forma clara un conjunto de pasos que la audiencia debe seguir para completar una tarea."
+        }
+      },
+      {
+        "id": "UT1-Q14",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Read the following email subject and choose its main objective: \"Project Update: Deadline Extended to March 15\"",
+        "contexto": "Se pide identificar el objetivo principal de un asunto de correo profesional que comunica una modificación en la fecha límite de un proyecto.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "To inform recipients about a schedule change."
+          },
+          {
+            "clave": "b",
+            "texto": "To promote a new company initiative."
+          },
+          {
+            "clave": "c",
+            "texto": "To request feedback on a report."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En los discursos profesionales, informar significa proporcionar datos o actualizaciones. Además, el correo electrónico se utiliza en el ámbito laboral para comunicaciones oficiales o de seguimiento, y también para informar de manera clara, concisa y directa. En este caso, el asunto del email comunica que la fecha límite se ha ampliado hasta el 15 de marzo, por lo que su objetivo principal es informar a los destinatarios de un cambio en el calendario del proyecto.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el asunto no promociona ninguna iniciativa nueva ni intenta presentar un proyecto o campaña de la empresa. Solo comunica una actualización sobre el plazo."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el asunto no solicita comentarios ni feedback sobre ningún informe. No aparece ninguna petición, solo una notificación de cambio de fecha."
+            }
+          ],
+          "resumen_didactico": "Cuando un asunto de correo anuncia una modificación concreta, como una nueva fecha límite, su propósito suele ser informar. La clave está en detectar si el mensaje da una actualización, persuade, instruye o solicita algo.",
+          "ejemplo_practico": "Si recibes un correo con el asunto \"Meeting Rescheduled to Friday at 10:00\", el objetivo principal también sería informar a los destinatarios de un cambio de horario.",
+          "conclusion_final": "La respuesta correcta es la a porque el asunto del correo comunica de forma directa una actualización del proyecto: la ampliación del plazo hasta el 15 de marzo."
+        }
+      },
+      {
+        "id": "UT1-Q15",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Which of the following statements best represents a motivational speech?",
+        "contexto": "Se pide identificar qué enunciado corresponde a un discurso profesional cuyo propósito es motivar al equipo y aumentar su compromiso con los objetivos.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"The company will be closed for maintenance next Monday.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"The financial report is now available for review.\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"If we work together, we can achieve our goals and exceed expectations!\""
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "Un discurso motivacional tiene como finalidad inspirar y aumentar el compromiso del equipo con la empresa y sus metas. Suele usar un tono positivo, apelaciones al esfuerzo compartido y mensajes orientados a superar objetivos. La opción c encaja perfectamente porque anima a trabajar juntos para lograr metas y superar expectativas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque solo informa sobre un cierre por mantenimiento. Su propósito es informativo, no motivacional."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque comunica la disponibilidad de un informe financiero. También es un mensaje informativo, no busca inspirar ni reforzar el compromiso del equipo."
+            }
+          ],
+          "resumen_didactico": "Un discurso motivacional no se limita a dar datos o instrucciones. Busca animar, inspirar y movilizar a la audiencia hacia una meta común.",
+          "ejemplo_practico": "Si un jefe dice: \"This is our opportunity to show what we can do as a team. Let’s give our best and reach the target together\", está usando un discurso claramente motivacional.",
+          "conclusion_final": "La respuesta correcta es la c porque transmite ánimo, trabajo en equipo y orientación al logro, que son rasgos propios de un discurso motivacional."
+        }
+      },
+      {
+        "id": "UT1-Q16",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Identify the technical term in the following sentence: \"The user interface (UI) of our application needs to be more intuitive to improve customer experience.\"",
+        "contexto": "Se pide reconocer la terminología específica dentro de una frase del ámbito del desarrollo de aplicaciones.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Needs to be."
+          },
+          {
+            "clave": "b",
+            "texto": "User interface (UI)."
+          },
+          {
+            "clave": "c",
+            "texto": "Improve."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La terminología específica está formada por palabras o expresiones técnicas que tienen un significado particular dentro de un campo profesional. En desarrollo de aplicaciones web, términos como front-end, back-end o user interface pertenecen a ese vocabulario técnico. En esta frase, \"user interface (UI)\" es el término técnico porque nombra un concepto propio del diseño y desarrollo de aplicaciones.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"needs to be\" no es un término técnico, sino una estructura verbal común del inglés."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"improve\" es un verbo general que puede aparecer en muchos contextos, pero no constituye terminología técnica del sector."
+            }
+          ],
+          "resumen_didactico": "Un technical term no es cualquier palabra del texto, sino una expresión especializada que pertenece al vocabulario profesional de un área concreta. Aquí esa expresión es \"user interface (UI)\".",
+          "ejemplo_practico": "En una frase como \"The back-end connects to the API to process data\", los términos técnicos serían \"back-end\" y \"API\" porque pertenecen al lenguaje especializado del desarrollo de aplicaciones.",
+          "conclusion_final": "La respuesta correcta es la b porque \"user interface (UI)\" es un término técnico propio del ámbito informático y del desarrollo de aplicaciones."
+        }
+      },
+      {
+        "id": "UT1-Q17",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "What does the prefix \"inter-\" mean in \"international trade\"?",
+        "contexto": "Se pide interpretar el significado de un prefijo técnico frecuente dentro de una expresión del ámbito profesional y comercial.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Between different countries."
+          },
+          {
+            "clave": "b",
+            "texto": "Inside one company."
+          },
+          {
+            "clave": "c",
+            "texto": "Faster than other types of trade."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario indica que muchos términos técnicos pueden entenderse identificando sus prefijos y sufijos. En concreto, el prefijo \"inter-\" significa \"entre\", y se pone como ejemplo \"international trade\", explicado como comercio entre países. Por eso, en esta expresión el prefijo señala una relación entre diferentes naciones.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque \"inter-\" no significa \"dentro de\" una sola empresa. Esa idea se relacionaría más con algo interno, no entre distintos países."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el prefijo \"inter-\" no expresa velocidad ni comparación de rapidez. Su significado en este contexto es de relación entre varios países."
+            }
+          ],
+          "resumen_didactico": "Reconocer prefijos técnicos ayuda a deducir el significado de palabras nuevas. Aquí, \"inter-\" significa \"entre\", así que \"international trade\" se entiende como comercio entre países.",
+          "ejemplo_practico": "En una expresión como \"international cooperation\", el prefijo \"inter-\" también indica relación entre diferentes países o naciones que cooperan entre sí.",
+          "conclusion_final": "La respuesta correcta es la a porque el prefijo \"inter-\" significa \"entre\", y en \"international trade\" se refiere al comercio entre distintos países."
+        }
+      },
+      {
+        "id": "UT1-Q18",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "What does the suffix \"-logy\" indicate in \"technology\"?",
+        "contexto": "Se pide interpretar el significado de un sufijo técnico frecuente dentro de una palabra del vocabulario profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "A way to improve efficiency."
+          },
+          {
+            "clave": "b",
+            "texto": "A type of computer software."
+          },
+          {
+            "clave": "c",
+            "texto": "The study or science of a subject."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que identificar prefijos y sufijos técnicos ayuda a deducir el significado de palabras especializadas. En concreto, el sufijo \"-logy\" significa \"estudio de\" o \"ciencia de\", y se pone como ejemplo la palabra \"technology\". Por eso, este sufijo indica relación con el estudio o la ciencia de una materia.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el sufijo \"-logy\" no significa una manera de mejorar la eficiencia. Esa idea puede relacionarse con el uso de la tecnología, pero no con el significado del sufijo."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque \"-logy\" no se refiere a un tipo de software. Es un sufijo que aporta significado lingüístico relacionado con estudio o ciencia."
+            }
+          ],
+          "resumen_didactico": "Los sufijos técnicos ayudan a entender palabras nuevas. Cuando ves \"-logy\", normalmente indica estudio, ciencia o conocimiento sistemático sobre un tema.",
+          "ejemplo_practico": "En palabras como \"biology\" o \"psychology\", el sufijo \"-logy\" también aporta la idea de estudio o ciencia de un campo determinado.",
+          "conclusion_final": "La respuesta correcta es la c porque el sufijo \"-logy\" indica \"estudio de\" o \"ciencia de\" una materia."
+        }
+      },
+      {
+        "id": "UT1-Q19",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Which of the following terms belongs to the logistics industry?",
+        "contexto": "Se pide identificar qué término pertenece al vocabulario técnico del sector de transporte y logística.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Supply chain."
+          },
+          {
+            "clave": "b",
+            "texto": "Marketing campaign."
+          },
+          {
+            "clave": "c",
+            "texto": "Customer service."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario incluye un glosario de terminología específica por sectores profesionales. En el apartado de Transporte y Logística aparece \"Supply chain\" como término técnico, con el significado de \"cadena de suministro\". Por tanto, es una expresión propia del ámbito logístico y relacionada con la red de procesos necesarios para que los productos lleguen al cliente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque \"marketing campaign\" pertenece al ámbito del marketing y la publicidad, no al sector de la logística."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"customer service\" es una expresión general del entorno empresarial y de atención al cliente, pero no aparece como término técnico específico del bloque de logística en el temario."
+            }
+          ],
+          "resumen_didactico": "Para reconocer terminología específica, hay que fijarse en si el término pertenece claramente a un sector profesional concreto. \"Supply chain\" es vocabulario típico de logística porque se refiere al sistema de suministro y distribución.",
+          "ejemplo_practico": "Si una empresa dice: \"We need to improve our supply chain to avoid delivery delays\", está hablando de coordinación logística, inventario, transporte y distribución de productos.",
+          "conclusion_final": "La respuesta correcta es la a porque \"Supply chain\" es un término técnico propio del sector de transporte y logística."
+        }
+      },
+      {
+        "id": "UT1-Q20",
+        "tema": "UT1 Técnicas de comprensión oral y escrita",
+        "pregunta": "Read the following business statement and identify the technical term: \"The company's cash flow increased by 20% this quarter due to improved sales performance.\"",
+        "contexto": "Se pide identificar la terminología específica dentro de una frase del ámbito de Administración y Finanzas.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Quarter."
+          },
+          {
+            "clave": "b",
+            "texto": "Cash flow."
+          },
+          {
+            "clave": "c",
+            "texto": "Increased."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La terminología específica está formada por palabras o expresiones técnicas que tienen un significado particular dentro de un campo profesional. En el glosario del tema, dentro del sector de Administración y Finanzas, aparece \"cash flow\" como término técnico y se traduce como \"flujo de caja\". Por eso, en esta oración ese es el vocabulario especializado del ámbito empresarial y financiero.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"quarter\" significa trimestre y, aunque se usa con frecuencia en contextos empresariales, aquí no funciona como término técnico principal del sector según el glosario del tema."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"increased\" es un verbo de uso general que indica aumento, pero no constituye terminología técnica específica del área financiera."
+            }
+          ],
+          "resumen_didactico": "Un technical term es una palabra especializada propia de un campo profesional. En esta frase, \"cash flow\" pertenece claramente al lenguaje técnico de finanzas.",
+          "ejemplo_practico": "En una frase como \"Positive cash flow allows the company to pay suppliers on time\", el término técnico sigue siendo \"cash flow\" porque se refiere a la disponibilidad y movimiento del dinero en la empresa.",
+          "conclusion_final": "La respuesta correcta es la b porque \"cash flow\" es el término técnico específico del ámbito de Administración y Finanzas."
+        }
+      }
+]

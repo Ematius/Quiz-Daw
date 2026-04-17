@@ -196,4 +196,22 @@ export const topicsByModule = {
       numQuestion: 30,
     },
   ],
+  ingles:[
+      {
+        id: "UT1",
+        title: "Técnicas de comprensión oral y escrita",
+        numQuestion: 20,
+      },
+      {
+        id: "UT2",
+        title: "Técnicas de producción oral y escrita",
+        numQuestion: 20,
+      },
+      {
+        id: "UT3",
+        title: "Recursos comunicativos",
+        numQuestion: 20,
+      },
+    
+  ]
 };

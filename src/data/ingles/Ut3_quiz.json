@@ -1,0 +1,764 @@
+[
+    {
+        "id": "UT3-Q01",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Which sentence is in the present simple tense?",
+        "contexto": "Se pide identificar qué oración está construida en presente simple, tiempo verbal usado para rutinas y hechos generales.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "She is studying for the exam."
+          },
+          {
+            "clave": "b",
+            "texto": "She studies for the exam every evening."
+          },
+          {
+            "clave": "c",
+            "texto": "She studied for the exam yesterday."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El presente simple se usa para hablar de rutinas y hechos generales. En la opción b, \"She studies for the exam every evening\", la acción se presenta como un hábito repetido en el tiempo, por eso está en presente simple. En el tema se explica que este tiempo verbal sirve precisamente para expresar rutinas y hechos generales.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"She is studying\" está en presente continuo, que se usa para acciones en progreso o planes futuros, no para rutinas."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"She studied\" está en pasado simple, ya que habla de una acción terminada en el pasado, reforzada además por el marcador temporal \"yesterday\"."
+            }
+          ],
+          "resumen_didactico": "Para reconocer el presente simple, busca acciones habituales, rutinas o hechos generales. Si la frase expresa algo que ocurre regularmente, como \"every evening\", normalmente estás ante un presente simple.",
+          "ejemplo_practico": "Por ejemplo, \"I work in the logistics department\" está en presente simple porque expresa un hecho general o una situación habitual, igual que \"She studies for the exam every evening\" expresa una rutina.",
+          "conclusion_final": "La respuesta correcta es la b porque describe una rutina habitual y está formulada en presente simple."
+        }
+      },
+      {
+        "id": "UT3-Q02",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Identify the sentence using present continuous correctly:",
+        "contexto": "Se pide identificar la oración que usa correctamente el presente continuo, tiempo verbal empleado para acciones en progreso en este momento.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "He writes a report right now."
+          },
+          {
+            "clave": "b",
+            "texto": "He is writing a report right now."
+          },
+          {
+            "clave": "c",
+            "texto": "He wrote a report right now."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El presente continuo se usa para hablar de acciones en progreso o planes futuros. Su estructura básica es sujeto + verbo to be + verbo en -ing. En la opción b, \"He is writing a report right now\", aparece correctamente formado con \"is writing\" y además el marcador temporal \"right now\" refuerza que la acción está ocurriendo en este momento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"He writes\" está en presente simple. Ese tiempo se usa para rutinas o hechos generales, no para una acción que está ocurriendo ahora mismo."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"He wrote\" está en pasado simple. Además, combina mal con \"right now\", que indica presente inmediato."
+            }
+          ],
+          "resumen_didactico": "Para reconocer el presente continuo, busca dos cosas: el verbo \"to be\" en presente y el verbo principal terminado en -ing. Si además aparece una expresión como \"right now\", casi seguro se trata de una acción en progreso.",
+          "ejemplo_practico": "En el tema aparece una estructura similar: \"We are currently reviewing the quarterly report.\" También está en presente continuo porque expresa una acción que está desarrollándose en este momento.",
+          "conclusion_final": "La respuesta correcta es la b porque usa correctamente la estructura del presente continuo para expresar una acción en progreso ahora mismo."
+        }
+      },
+      {
+        "id": "UT3-Q03",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Choose the correct past simple sentence:",
+        "contexto": "Se pide identificar la oración correctamente construida en pasado simple, tiempo verbal usado para acciones finalizadas en el pasado.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "She finished the project last week."
+          },
+          {
+            "clave": "b",
+            "texto": "She is finishing the project last week."
+          },
+          {
+            "clave": "c",
+            "texto": "She finishes the project last week."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El pasado simple se usa para hablar de eventos terminados en el pasado. En la opción a, \"She finished the project last week\", el verbo aparece en pasado simple y el marcador temporal \"last week\" indica claramente una acción ya finalizada. En el tema se explica que este tiempo verbal sirve precisamente para expresar hechos cerrados en el pasado.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque \"She is finishing\" está en presente continuo, que se usa para acciones en progreso. Además, no encaja con el marcador temporal \"last week\", que exige una referencia al pasado."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"She finishes\" está en presente simple. Ese tiempo verbal se usa para rutinas o hechos generales, no para una acción terminada la semana pasada."
+            }
+          ],
+          "resumen_didactico": "Para reconocer el pasado simple, fíjate en dos pistas: el verbo en pasado y una referencia temporal pasada, como yesterday, last week o last year.",
+          "ejemplo_practico": "En el tema aparece un ejemplo similar: \"I completed the report yesterday.\" También está en pasado simple porque expresa una acción acabada en un momento concreto del pasado.",
+          "conclusion_final": "La respuesta correcta es la a porque usa correctamente el pasado simple para expresar una acción terminada en el pasado."
+        }
+      },
+      {
+        "id": "UT3-Q04",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Which sentence correctly expresses a future action with \"will\"?",
+        "contexto": "Se pide identificar la oración que expresa correctamente una acción futura usando la estructura con \"will\".",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "I am finish the report tomorrow."
+          },
+          {
+            "clave": "b",
+            "texto": "I will finish the report tomorrow."
+          },
+          {
+            "clave": "c",
+            "texto": "I finished the report tomorrow."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El futuro con \"will\" se usa para expresar predicciones, promesas o acciones futuras. Su estructura básica es sujeto + will + verbo en forma base. En la opción b, \"I will finish the report tomorrow\", la construcción es correcta porque utiliza \"will\" seguido del verbo base \"finish\", y además el marcador temporal \"tomorrow\" indica claramente futuro.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la estructura está mal formada. Después de \"am\" no puede ir el verbo en forma base \"finish\" de esa manera."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"finished\" está en pasado simple y no puede combinarse correctamente con el marcador temporal \"tomorrow\", que indica futuro."
+            }
+          ],
+          "resumen_didactico": "Para formar el futuro con \"will\", solo necesitas tres elementos: sujeto + will + verbo base. Es una estructura muy directa y fácil de reconocer.",
+          "ejemplo_practico": "En el tema aparece un ejemplo casi idéntico: \"I will finish the report by tomorrow.\" También usa correctamente \"will\" para expresar una acción futura.",
+          "conclusion_final": "La respuesta correcta es la b porque usa la estructura adecuada del futuro con \"will\" para expresar una acción que ocurrirá mañana."
+        }
+      },
+      {
+        "id": "UT3-Q05",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Identify the correct sentence with \"going to\":",
+        "contexto": "Se pide identificar la oración correctamente construida con la estructura futura \"going to\", usada para expresar planes o intenciones futuras.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "He is go to travel next month."
+          },
+          {
+            "clave": "b",
+            "texto": "He will going to travel next month."
+          },
+          {
+            "clave": "c",
+            "texto": "He is going to travel next month."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "La estructura de futuro con \"going to\" se forma con sujeto + verbo \"to be\" + going to + verbo en forma base. En la opción c, \"He is going to travel next month\", la construcción es correcta porque incluye el auxiliar \"is\", la expresión \"going to\" y el verbo base \"travel\". Este tiempo verbal se usa para hablar de planes o intenciones futuras.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la estructura está mal formada. Después de \"is\" no puede ir directamente \"go\" en esa construcción."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque mezcla de forma incorrecta dos estructuras de futuro distintas: \"will\" y \"going to\"."
+            }
+          ],
+          "resumen_didactico": "Para usar bien \"going to\", recuerda esta fórmula: sujeto + am/is/are + going to + verbo base. Si quieres hablar de un plan futuro, esa es la estructura que debes buscar.",
+          "ejemplo_practico": "Por ejemplo: \"We are going to launch the campaign next week.\" Esa frase también está bien construida porque expresa un plan futuro con la estructura correcta.",
+          "conclusion_final": "La respuesta correcta es la c porque usa correctamente la estructura de futuro con \"going to\" para hablar de una acción planificada para el próximo mes."
+        }
+      },
+      {
+        "id": "UT3-Q06",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Which sentence expresses a strong obligation?",
+        "contexto": "Se pide identificar la oración que expresa una obligación fuerte usando un verbo modal o una expresión de obligatoriedad.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "You should take an umbrella."
+          },
+          {
+            "clave": "b",
+            "texto": "You can arrive late to the meeting."
+          },
+          {
+            "clave": "c",
+            "texto": "You must wear a seatbelt while driving."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "En el tema se explica que para expresar obligación fuerte se usa \"must\". El ejemplo del temario es muy claro: \"Employees must wear a safety helmet in the factory.\" Por tanto, en la opción c, \"You must wear a seatbelt while driving\", el verbo modal \"must\" expresa una obligación fuerte.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"should\" expresa recomendación o consejo, no una obligación fuerte."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque \"can\" expresa permiso o posibilidad, no obligatoriedad."
+            }
+          ],
+          "resumen_didactico": "Si quieres identificar una obligación fuerte, busca normalmente el modal \"must\". Si aparece \"should\", suele ser consejo; si aparece \"can\", suele ser permiso o posibilidad.",
+          "ejemplo_practico": "Por ejemplo, \"Employees must wear an ID badge in the office\" expresa una norma obligatoria. En cambio, \"Employees should arrive early\" sería solo una recomendación.",
+          "conclusion_final": "La respuesta correcta es la c porque \"must\" se usa para expresar una obligación fuerte y clara."
+        }
+      },
+      {
+        "id": "UT3-Q07",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Which sentence correctly asks for permission?",
+        "contexto": "Se pide identificar la oración que formula correctamente una petición de permiso usando un verbo modal adecuado.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Can I leave early today?"
+          },
+          {
+            "clave": "b",
+            "texto": "He leaves early today."
+          },
+          {
+            "clave": "c",
+            "texto": "I must leave early today."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En el tema se explica que para pedir permiso se usa el verbo modal \"can\". De hecho, aparece el ejemplo: \"Can I take the day off tomorrow?\". La opción a, \"Can I leave early today?\", sigue exactamente esa misma función: formular una petición de permiso de manera correcta.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque \"He leaves early today\" es una afirmación en presente simple. No está pidiendo permiso, solo describe una acción."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"I must leave early today\" expresa obligación o necesidad, no una solicitud de permiso."
+            }
+          ],
+          "resumen_didactico": "Cuando quieres pedir permiso en inglés básico, una de las formas más claras es usar \"Can I...?\". Si la frase no tiene esa intención interrogativa, no está pidiendo permiso.",
+          "ejemplo_practico": "Igual que en el tema aparece \"Can I take the day off tomorrow?\", aquí \"Can I leave early today?\" funciona del mismo modo: la persona pregunta si tiene permiso para hacerlo.",
+          "conclusion_final": "La respuesta correcta es la a porque usa \"Can I...?\" para pedir permiso de forma directa y correcta."
+        }
+      },
+      {
+        "id": "UT3-Q08",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Choose the correct comparative sentence:",
+        "contexto": "Se pide identificar la oración correctamente construida en grado comparativo para comparar dos tareas.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "This task is easiest than the last one."
+          },
+          {
+            "clave": "b",
+            "texto": "This task is the more easy than the last one."
+          },
+          {
+            "clave": "c",
+            "texto": "This task is easier than the last one."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El comparativo se usa para comparar dos elementos. Con adjetivos cortos como \"easy\", normalmente se forma añadiendo \"-er\" y usando \"than\": \"easier than\". Por eso, la opción c es la correcta. En el tema se explica que los comparativos sirven precisamente para comparar dos cosas, como en \"This project is more complex than the previous one\" o \"Our logistics system is faster than our competitors'.\"",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"easiest\" es un superlativo, no un comparativo. Además, el superlativo no se usa con \"than\"."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque la estructura \"the more easy than\" no es correcta. Con \"easy\" el comparativo adecuado es \"easier than\"."
+            }
+          ],
+          "resumen_didactico": "Si comparas dos cosas, necesitas un comparativo. Con adjetivos cortos como easy, fast o small, normalmente usas la forma en \"-er\" más \"than\".",
+          "ejemplo_practico": "Igual que dices \"faster than\" o \"smaller than\", también debes decir \"easier than\" para comparar dos tareas o situaciones.",
+          "conclusion_final": "La respuesta correcta es la c porque usa bien el comparativo \"easier than\" para comparar esta tarea con la anterior."
+        }
+      },
+      {
+        "id": "UT3-Q09",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Identify the correct superlative sentence:",
+        "contexto": "Se pide identificar la oración correctamente construida en grado superlativo para señalar el nivel más alto dentro de un grupo.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "This is the best project of the year."
+          },
+          {
+            "clave": "b",
+            "texto": "This is more better project of the year."
+          },
+          {
+            "clave": "c",
+            "texto": "This is the better project of the year."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El superlativo se usa para expresar el grado más alto de una cualidad dentro de un grupo. En el tema aparece el ejemplo \"This is the best sales campaign we have had this year\", donde \"the best\" marca el nivel máximo. Por eso, en esta pregunta la opción correcta es \"This is the best project of the year\", porque utiliza correctamente el superlativo irregular \"best\".",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque mezcla dos formas comparativas o superlativas de manera errónea. \"More better\" no existe en inglés correcto."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"better\" es comparativo, no superlativo. Si hablas del mejor dentro de todo el año, necesitas \"the best\"."
+            }
+          ],
+          "resumen_didactico": "El superlativo sirve para señalar el número uno dentro de un grupo. Si comparas un elemento con todos los demás, debes usar una forma como \"the best\", \"the fastest\" o \"the most challenging\".",
+          "ejemplo_practico": "Igual que en el tema se dice \"This is the best sales campaign we have had this year\", aquí \"This is the best project of the year\" indica que es el proyecto número uno dentro del conjunto de proyectos del año.",
+          "conclusion_final": "La respuesta correcta es la a porque usa correctamente el superlativo \"the best\" para expresar el grado más alto dentro del grupo."
+        }
+      },
+      {
+        "id": "UT3-Q10",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Which sentence is a correct example of a first conditional?",
+        "contexto": "Se pide identificar la oración que usa correctamente el primer condicional, estructura empleada para situaciones posibles en el futuro.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "If you studied, you would pass the exam."
+          },
+          {
+            "clave": "b",
+            "texto": "If you study, you will pass the exam."
+          },
+          {
+            "clave": "c",
+            "texto": "If you study, you pass the exam."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El primer condicional se usa para hablar de situaciones posibles en el futuro. Su estructura es: If + presente simple, will + verbo. La opción b, \"If you study, you will pass the exam\", sigue exactamente ese patrón, por lo que es el ejemplo correcto de first conditional.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"If you studied, you would pass the exam\" corresponde al segundo condicional, que se usa para situaciones hipotéticas, no para posibilidades reales en el futuro."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque aunque comienza con \"If you study\", la segunda parte no lleva \"will\", que es la estructura esperada en el primer condicional según el temario."
+            }
+          ],
+          "resumen_didactico": "Para reconocer el primer condicional, busca esta fórmula: presente simple después de if y will en la consecuencia. Se usa cuando la situación es posible y real.",
+          "ejemplo_practico": "En el tema aparece un ejemplo muy parecido: \"If you attend the seminar, you will learn new sales strategies.\" Funciona igual que \"If you study, you will pass the exam\" porque ambas expresan una posibilidad futura real.",
+          "conclusion_final": "La respuesta correcta es la b porque usa correctamente la estructura del primer condicional para expresar una situación posible en el futuro."
+        }
+      },
+      {
+        "id": "UT3-Q11",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Identify the correct second conditional sentence:",
+        "contexto": "Se pide identificar la oración correctamente construida en segundo condicional, estructura usada para situaciones hipotéticas o poco probables.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "If I had more money, I would buy a car."
+          },
+          {
+            "clave": "b",
+            "texto": "If I have more money, I buy a car."
+          },
+          {
+            "clave": "c",
+            "texto": "If I will have more money, I will buy a car."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El segundo condicional se usa para hablar de situaciones hipotéticas o imaginarias. Su estructura es: If + pasado simple, would/could + verbo. La opción a, \"If I had more money, I would buy a car\", sigue exactamente esa fórmula, por eso es el ejemplo correcto de second conditional.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque mezcla presente simple en ambas partes y no sigue la estructura del segundo condicional. Además, la consecuencia debería llevar \"would\" si se trata de una situación hipotética."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque en las oraciones condicionales no se usa \"will\" en la cláusula con \"if\" de esta manera. Además, esa estructura no corresponde al segundo condicional."
+            }
+          ],
+          "resumen_didactico": "Para reconocer el segundo condicional, piensa en algo hipotético: una situación que no es real ahora o que es poco probable. La fórmula clave es: If + pasado simple, would + verbo.",
+          "ejemplo_practico": "En el tema aparece un ejemplo muy similar: \"If I had more experience, I would apply for the manager position.\" Funciona igual que \"If I had more money, I would buy a car\" porque ambas expresan una hipótesis.",
+          "conclusion_final": "La respuesta correcta es la a porque usa correctamente la estructura del segundo condicional para expresar una situación imaginaria o poco probable."
+        }
+      },
+      {
+        "id": "UT3-Q12",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Which sentence is an imperative?",
+        "contexto": "Se pide identificar la oración construida en imperativo, forma verbal usada para dar órdenes, instrucciones o sugerencias.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "She is turning off the lights when she leaves."
+          },
+          {
+            "clave": "b",
+            "texto": "Turn off the lights when you leave."
+          },
+          {
+            "clave": "c",
+            "texto": "He turns off the lights when he leaves."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El imperativo se utiliza para dar órdenes, instrucciones, sugerencias o motivar a alguien a realizar una acción. Su forma básica suele usar directamente el verbo en infinitivo sin sujeto expreso. La opción b, \"Turn off the lights when you leave\", cumple exactamente esa estructura, por lo que es una oración en imperativo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque está en presente continuo, no en imperativo. Describe una acción en desarrollo o una situación, pero no da una orden o instrucción."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque está en presente simple y describe un hábito o una acción habitual de otra persona, no una instrucción dirigida al interlocutor."
+            }
+          ],
+          "resumen_didactico": "Para reconocer un imperativo, fíjate en si la frase da una orden o indicación directa y empieza con el verbo en forma base, normalmente sin sujeto.",
+          "ejemplo_practico": "En el tema aparecen ejemplos como \"Be on time for the meeting\" o \"Don’t forget to attach the document to the email\". Igual que esos, \"Turn off the lights when you leave\" da una instrucción directa.",
+          "conclusion_final": "La respuesta correcta es la b porque usa el verbo en forma base para dar una instrucción clara, que es precisamente la función del imperativo."
+        }
+      },
+      {
+        "id": "UT3-Q13",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Choose the correct way to apologize formally:",
+        "contexto": "Se pide identificar la forma adecuada de disculparse con un tono formal y profesional en inglés.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Don’t be mad at me."
+          },
+          {
+            "clave": "b",
+            "texto": "You need to forgive me."
+          },
+          {
+            "clave": "c",
+            "texto": "I’m sorry for the inconvenience."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "En el tema, dentro del bloque de léxico y expresiones comunes, se incluye \"I’m sorry for the inconvenience\" como fórmula apropiada para disculparse. Además, las normas de cortesía insisten en mantener un tono profesional y respetuoso. Por eso, esta es la forma correcta de pedir disculpas formalmente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque suena demasiado informal y emocional. No mantiene el nivel de cortesía esperado en un contexto profesional."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque resulta demasiado directa e impositiva. En lugar de disculparse con cortesía, parece exigir el perdón de la otra persona."
+            }
+          ],
+          "resumen_didactico": "Una disculpa formal debe sonar educada, profesional y respetuosa. No debe ser agresiva, coloquial ni exigir nada a la otra persona.",
+          "ejemplo_practico": "Si un informe llega tarde, una forma adecuada de disculparse sería: \"I’m sorry for the inconvenience. I will send the updated version as soon as possible.\"",
+          "conclusion_final": "La respuesta correcta es la c porque expresa una disculpa formal, cortés y adecuada para el entorno profesional."
+        }
+      },
+      {
+        "id": "UT3-Q14",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "What phrase is commonly used in a meeting?",
+        "contexto": "Se pide identificar una expresión habitual en el contexto de una reunión profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "I’m going to the supermarket."
+          },
+          {
+            "clave": "b",
+            "texto": "She is late for work."
+          },
+          {
+            "clave": "c",
+            "texto": "Let’s move to the next item on the agenda."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "En el tema, dentro del bloque de léxico y expresiones comunes, aparece \"Let’s move to the next item on the agenda\" como una frase típica para reuniones. Se usa para avanzar de un punto al siguiente dentro del orden del día, por lo que es una expresión claramente vinculada al contexto profesional de una meeting.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque habla de una actividad cotidiana personal y no de una expresión propia de una reunión de trabajo."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque describe una situación sobre otra persona, pero no funciona como frase típica para intervenir en una reunión."
+            }
+          ],
+          "resumen_didactico": "Las frases de reunión suelen servir para organizar la conversación, pedir aclaraciones o pasar al siguiente punto. \"Let’s move to the next item on the agenda\" encaja exactamente con esa función.",
+          "ejemplo_practico": "En una reunión de equipo, después de terminar de hablar del presupuesto, alguien puede decir: \"Let’s move to the next item on the agenda: the marketing strategy for next month.\"",
+          "conclusion_final": "La respuesta correcta es la c porque es una expresión habitual y funcional dentro de una reunión profesional."
+        }
+      },
+      {
+        "id": "UT3-Q15",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Which of the following is a polite way to ask for something?",
+        "contexto": "Se pide identificar la forma más cortés y profesional de pedir algo en inglés dentro de un contexto comunicativo o laboral.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Could you please send me the report?"
+          },
+          {
+            "clave": "b",
+            "texto": "Send me the report now!"
+          },
+          {
+            "clave": "c",
+            "texto": "I need the report."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En el tema, dentro de las normas de cortesía, aparece como ejemplo de expresión cortés: \"Could you please send me the updated file?\". Esa estructura usa \"Could you please...\" para pedir algo de manera educada y profesional. Por eso, la opción a, \"Could you please send me the report?\", es la forma correcta y más amable de hacer la petición.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque usa un imperativo directo, \"Send me...\", que suena brusco y poco cortés, especialmente en un contexto profesional."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque expresa una necesidad, pero no formula la petición de forma educada ni amable."
+            }
+          ],
+          "resumen_didactico": "Para pedir algo con cortesía en inglés, una de las fórmulas más útiles es \"Could you please...?\". Esa estructura suaviza la petición y la hace más profesional.",
+          "ejemplo_practico": "En lugar de decir \"Send me the file\", en un entorno laboral sería mejor decir: \"Could you please send me the file before 3 PM?\"",
+          "conclusion_final": "La respuesta correcta es la a porque utiliza una fórmula de cortesía clara, respetuosa y adecuada para pedir algo profesionalmente."
+        }
+      },
+      {
+        "id": "UT3-Q16",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Identify the correct use of an addition connector:",
+        "contexto": "Se pide identificar la oración que usa correctamente un conector de adición para sumar una idea relacionada a la anterior.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "The product is popular. However, it is affordable."
+          },
+          {
+            "clave": "b",
+            "texto": "The product is popular. Moreover, it is affordable."
+          },
+          {
+            "clave": "c",
+            "texto": "The product is popular. As a result, it is affordable."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Los conectores de adición se usan para añadir información a una idea anterior. En el tema aparecen como ejemplos \"Moreover\", \"Additionally\" y \"Not only that, but...\". Por eso, la opción b es correcta, porque \"Moreover\" suma una nueva característica del producto: además de ser popular, también es asequible.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"However\" es un conector de contraste. Se usa para oponer o matizar una idea, no para añadir información del mismo sentido."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"As a result\" es un conector de causa y consecuencia. Indica resultado, no simple adición de información."
+            }
+          ],
+          "resumen_didactico": "Si quieres sumar una idea a otra, necesitas un conector de adición. \"Moreover\" significa algo parecido a \"además\", así que encaja cuando quieres añadir otra cualidad o dato relacionado.",
+          "ejemplo_practico": "Por ejemplo: \"The campaign increased customer engagement by 25%. Moreover, we noticed a higher conversion rate.\" Aquí la segunda idea se añade a la primera, igual que en la opción correcta.",
+          "conclusion_final": "La respuesta correcta es la b porque \"Moreover\" es un conector de adición y sirve para incorporar información extra relacionada con la idea anterior."
+        }
+      },
+      {
+        "id": "UT3-Q17",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Choose the correct contrast sentence:",
+        "contexto": "Se pide identificar la oración que usa correctamente un conector de contraste para oponer una idea a otra.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "She is tired. However, she continues working."
+          },
+          {
+            "clave": "b",
+            "texto": "She is tired. Because of this, she sleeps early."
+          },
+          {
+            "clave": "c",
+            "texto": "She is tired. As a result, she continues working."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Los conectores de contraste se usan para oponer una idea a otra. En el tema aparecen como ejemplos \"However\" y \"On the other hand\". La opción a es correcta porque presenta una oposición clara: está cansada, pero aun así sigue trabajando. Ese matiz contrario es justamente la función del conector \"However\".",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque \"Because of this\" es un conector de causa y consecuencia, no de contraste. Expresa resultado, no oposición."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"As a result\" también es un conector de consecuencia. Además, la relación lógica de la frase no expresa contraste, sino un supuesto resultado."
+            }
+          ],
+          "resumen_didactico": "Si una frase dice una cosa y la siguiente va en dirección contraria, necesitas un conector de contraste. \"However\" funciona como \"sin embargo\" y sirve precisamente para eso.",
+          "ejemplo_practico": "Por ejemplo: \"The project was difficult. However, the team completed it on time.\" Aquí también hay una oposición clara entre dificultad y resultado.",
+          "conclusion_final": "La respuesta correcta es la a porque usa \"However\" de forma adecuada para introducir una idea que contrasta con la anterior."
+        }
+      },
+      {
+        "id": "UT3-Q18",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "What happens to intonation in a yes/no question?",
+        "contexto": "Se pide identificar qué ocurre con la entonación en una pregunta cerrada de sí o no dentro del inglés oral.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "It stays the same."
+          },
+          {
+            "clave": "b",
+            "texto": "It rises at the end of the sentence."
+          },
+          {
+            "clave": "c",
+            "texto": "It falls at the end of the sentence."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En el tema se explica que en las preguntas cerradas o yes/no questions la entonación sube al final de la oración. Se pone como ejemplo: \"Is this the final version of the report?\". Por eso, en una pregunta de sí o no, la voz normalmente asciende al final.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque en este tipo de preguntas la entonación no se mantiene plana; cambia para indicar que se está formulando una pregunta cerrada."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el tema indica que en las yes/no questions la entonación sube al final, no baja."
+            }
+          ],
+          "resumen_didactico": "Una pregunta de sí o no suele sonar como si la voz subiera al final. Esa subida ayuda a transmitir que se espera una confirmación o una negación.",
+          "ejemplo_practico": "Por ejemplo, en \"Are you ready?\" la voz normalmente sube en la palabra final. Eso marca claramente que es una yes/no question.",
+          "conclusion_final": "La respuesta correcta es la b porque en las preguntas cerradas la entonación asciende al final de la frase."
+        }
+      },
+      {
+        "id": "UT3-Q19",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "Which of these is a reliable source for business information?",
+        "contexto": "Se pide identificar una fuente de información fiable para obtener datos profesionales o empresariales.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Personal opinions from social media"
+          },
+          {
+            "clave": "b",
+            "texto": "Random blogs on the internet"
+          },
+          {
+            "clave": "c",
+            "texto": "World Trade Organization (WTO)"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El tema explica que las páginas oficiales proporcionan datos actualizados y confiables. Además, dentro de las fuentes internacionales relevantes para el ámbito profesional aparece la World Trade Organization (WTO) como referencia para comercio internacional. Por eso, la WTO es una fuente fiable para obtener información empresarial y profesional.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque las opiniones personales en redes sociales no garantizan fiabilidad, verificación ni rigor profesional."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque los blogs aleatorios de internet pueden contener información útil, pero no se consideran por sí mismos fuentes oficiales ni necesariamente confiables."
+            }
+          ],
+          "resumen_didactico": "Cuando busques información profesional, debes priorizar fuentes oficiales, organismos reconocidos y reportes fiables. No basta con que algo esté en internet: tiene que ser una fuente seria y verificable.",
+          "ejemplo_practico": "Si necesitas información sobre comercio internacional, aranceles o acuerdos comerciales, consultar la WTO es mucho más fiable que basarte en comentarios de redes sociales o en blogs sin respaldo institucional.",
+          "conclusion_final": "La respuesta correcta es la c porque la World Trade Organization (WTO) es una fuente oficial y confiable para información profesional y de negocio."
+        }
+      },
+      {
+        "id": "UT3-Q20",
+        "tema": "UT3 Recursos comunicativos",
+        "pregunta": "What is a proper closing in a professional email?",
+        "contexto": "Se pide identificar una despedida adecuada para cerrar un correo electrónico profesional con cortesía.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Best regards, John Smith."
+          },
+          {
+            "clave": "b",
+            "texto": "See you soon, bye."
+          },
+          {
+            "clave": "c",
+            "texto": "Talk later, thanks."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "En el tema, dentro de las normas de cortesía, aparecen despedidas formales como \"Looking forward to your response\" y \"Best regards, Sarah Johnson.\". Estas fórmulas se consideran adecuadas para mantener un tono profesional en correos electrónicos. Por eso, \"Best regards, John Smith.\" es un cierre correcto y apropiado.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque \"See you soon, bye\" suena demasiado informal para un correo profesional. Puede servir en contextos personales, pero no como cierre estándar de email laboral."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque \"Talk later, thanks\" también tiene un tono demasiado coloquial y no ofrece el nivel de formalidad esperado en una comunicación profesional."
+            }
+          ],
+          "resumen_didactico": "Un cierre profesional debe sonar respetuoso, claro y estándar. Expresiones como \"Best regards\" funcionan muy bien porque mantienen la cortesía sin resultar exageradas.",
+          "ejemplo_practico": "Un email profesional puede terminar así: \"Thank you for your time and support. Best regards, John Smith.\" Ese cierre transmite educación y formalidad.",
+          "conclusion_final": "La respuesta correcta es la a porque \"Best regards\" es una despedida formal y apropiada para un correo electrónico profesional."
+        }
+      }
+
+
+]

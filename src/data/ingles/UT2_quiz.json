@@ -1,0 +1,762 @@
+[
+    {
+        "id": "UT2-Q01",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is the main purpose of active listening in a professional setting?",
+        "contexto": "Se pide identificar la finalidad principal de la escucha activa dentro del entorno profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "To prepare your response while the other person is speaking."
+          },
+          {
+            "clave": "b",
+            "texto": "To understand both the explicit and implicit meaning of a message."
+          },
+          {
+            "clave": "c",
+            "texto": "To interrupt when necessary to correct errors."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La escucha activa se define como la habilidad de prestar atención de manera intencionada y comprometida a un interlocutor para comprender no solo el contenido literal del mensaje, sino también su contexto, emociones y objetivos implícitos. Por eso, su propósito principal en un entorno profesional es entender tanto el significado explícito como el implícito del mensaje.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la escucha activa no consiste en centrarte en preparar tu respuesta mientras la otra persona habla, sino en comprender plenamente lo que está comunicando."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque interrumpir rompe el proceso de escucha activa. El temario señala que una buena escucha implica respetar el turno del interlocutor y confirmar la comprensión después, no cortar el mensaje."
+            }
+          ],
+          "resumen_didactico": "Escuchar activamente no es solo oír palabras. Es captar el mensaje completo: lo que la persona dice, lo que quiere decir y cómo se siente al decirlo.",
+          "ejemplo_practico": "Si un cliente dice: \"We are concerned about the delay in delivery\", la escucha activa no solo detecta que hubo un retraso, sino también que existe preocupación y que probablemente el cliente necesita una solución rápida y una respuesta empática.",
+          "conclusion_final": "La respuesta correcta es la b porque la escucha activa busca comprender el mensaje de forma completa, incluyendo tanto la información directa como su intención, contexto y significado implícito."
+        }
+      },
+      {
+        "id": "UT2-Q02",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which of the following is an example of paraphrasing?",
+        "contexto": "Se pide identificar un ejemplo de parafraseo dentro de las técnicas de escucha activa en el entorno profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"So, the client is unhappy due to the delay in the report delivery. Is that correct?\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"I understand, but let me tell you my perspective instead.\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"That’s interesting, let’s move on to another topic.\""
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "Parafrasear consiste en repetir con palabras propias lo que la otra persona ha dicho para comprobar que se ha entendido correctamente el mensaje y aclarar posibles malentendidos. La opción a reformula el contenido original sobre el cliente molesto por el retraso del informe y además confirma la comprensión con la pregunta \"Is that correct?\".",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque no reformula el mensaje del interlocutor. Cambia el foco de la conversación hacia la opinión de quien responde."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque no verifica la comprensión ni reexpresa el contenido escuchado. Simplemente cambia de tema."
+            }
+          ],
+          "resumen_didactico": "Parafrasear es demostrar que has escuchado y entendido, diciendo lo mismo con otras palabras. Sirve para confirmar el mensaje y evitar confusiones.",
+          "ejemplo_practico": "Si un compañero dice: \"The shipment was delayed because customs held the documents\", una buena paráfrasis sería: \"So, the delay happened because customs stopped the paperwork. Is that right?\"",
+          "conclusion_final": "La respuesta correcta es la a porque reformula el mensaje original con otras palabras y comprueba si la interpretación es correcta."
+        }
+      },
+      {
+        "id": "UT2-Q03",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which barrier to active listening is not considered an internal barrier?",
+        "contexto": "Se pide identificar qué obstáculo para la escucha activa no pertenece a la categoría de barreras internas.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Lack of attention."
+          },
+          {
+            "clave": "b",
+            "texto": "Environmental noise."
+          },
+          {
+            "clave": "c",
+            "texto": "Emotional bias."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario clasifica las barreras de la escucha activa en internas, externas, de comunicación, culturales y fisiológicas. Entre las barreras internas aparecen la falta de atención, los juicios previos, la impaciencia y las emociones negativas. En cambio, el ruido ambiental pertenece a las barreras externas. Por eso, la opción correcta es la que menciona el ruido del entorno.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la falta de atención sí aparece en el temario como una barrera interna de la escucha activa."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el sesgo emocional se relaciona con las emociones negativas o juicios previos, que forman parte de las barreras internas."
+            }
+          ],
+          "resumen_didactico": "Las barreras internas nacen dentro del oyente, como distraerse, impacientarse o dejarse llevar por emociones. Las externas vienen del entorno, como el ruido o las interrupciones.",
+          "ejemplo_practico": "Si estás en una reunión y no entiendes bien porque hay obras fuera de la oficina, el problema no es interno, sino externo: el ruido ambiental dificulta la escucha.",
+          "conclusion_final": "La respuesta correcta es la b porque el environmental noise no es una barrera interna, sino una barrera externa."
+        }
+      },
+      {
+        "id": "UT2-Q04",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is the best response when a colleague says, “I need to talk to the installation team before contacting the Westwoods again”?",
+        "contexto": "Se pide identificar la mejor respuesta profesional aplicando escucha activa, empatía y apoyo ante una situación que requiere recopilar información antes de actuar.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"You should probably handle that on your own.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"I understand. It’s important to get all the facts first. Would you like me to help by gathering their reports or coordinating the conversation?\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"Just call them now and deal with it later.\""
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "La escucha activa en el entorno profesional incluye mostrar empatía, confirmar la comprensión y ofrecer apoyo cuando sea necesario. En los ejemplos del temario, ante esta misma situación se propone una respuesta empática que reconoce la necesidad de reunir primero toda la información y además ofrece ayuda concreta para avanzar. Por eso, la opción b es la más adecuada.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque no muestra empatía ni colaboración. La escucha activa busca apoyar al interlocutor, no dejarle solo con el problema."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque propone actuar de forma precipitada, sin reunir antes todos los hechos. Eso contradice la idea de aclarar la situación antes de responder al cliente."
+            }
+          ],
+          "resumen_didactico": "Una buena respuesta de escucha activa reconoce la preocupación de la otra persona, valida su enfoque y ofrece ayuda concreta. No juzga ni empuja a actuar sin información suficiente.",
+          "ejemplo_practico": "Si un compañero dice: \"I need to review the shipment records before answering the client\", una respuesta adecuada sería: \"I understand. It makes sense to check the details first. Would you like me to help collect the delivery notes?\"",
+          "conclusion_final": "La respuesta correcta es la b porque combina empatía, comprensión del problema y una propuesta de ayuda práctica, que son rasgos propios de la escucha activa profesional."
+        }
+      },
+      {
+        "id": "UT2-Q05",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which technique helps show engagement in a conversation?",
+        "contexto": "Se pide identificar la técnica de escucha activa que demuestra interés y seguimiento durante una conversación profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Interrupting to offer immediate solutions."
+          },
+          {
+            "clave": "b",
+            "texto": "Using verbal and non-verbal cues like nodding and saying “I see” or “That makes sense.”"
+          },
+          {
+            "clave": "c",
+            "texto": "Responding with silence to make the other person uncomfortable."
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "Una de las técnicas clave de la escucha activa es utilizar señales verbales y no verbales para mostrar que se está siguiendo la conversación. El temario menciona ejemplos como asentir con la cabeza, sonreír y usar expresiones como “That makes sense” o “I understand”. Estas señales demuestran interés, respeto y atención hacia el interlocutor.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque interrumpir rompe el flujo de la conversación y dificulta la escucha activa. Antes de ofrecer soluciones, primero hay que comprender bien el mensaje."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el silencio usado para incomodar no demuestra interés ni empatía. La escucha activa busca facilitar la comunicación, no generar tensión."
+            }
+          ],
+          "resumen_didactico": "Mostrar engagement en una conversación significa hacer visible que estás escuchando de verdad. Para eso sirven gestos como asentir y frases breves que confirman que sigues el mensaje.",
+          "ejemplo_practico": "Si un compañero explica un problema con un cliente, puedes asentir y responder: \"I see\" o \"That makes sense\" mientras escuchas. Así le haces saber que estás atento y comprendiendo la situación.",
+          "conclusion_final": "La respuesta correcta es la b porque las señales verbales y no verbales son una técnica directa de escucha activa para mostrar implicación en la conversación."
+        }
+      },
+      {
+        "id": "UT2-Q06",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which of the following is an example of formal language?",
+        "contexto": "Se pide identificar qué enunciado utiliza un registro formal apropiado para el entorno profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"Dear Mr. Johnson, I would like to request a meeting to discuss the quarterly results.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"Yo dude, we need to chat about those numbers!\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"Hey, John, let’s talk about the report later, okay?\""
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El lenguaje formal se utiliza en situaciones profesionales que requieren respeto y seriedad, como correos electrónicos oficiales, reuniones con directivos o comunicaciones con clientes. El temario pone como ejemplo exacto una frase como \"Dear Mr. Johnson, I would like to request a meeting to discuss the quarterly results\", que presenta saludo formal, estructura clara y tono profesional.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque usa expresiones coloquiales e informales como \"Yo dude\" y \"chat\", impropias de un contexto profesional formal."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque aunque puede ser aceptable entre compañeros cercanos, utiliza un tono informal con \"Hey\" y \"okay?\", por lo que no representa lenguaje formal."
+            }
+          ],
+          "resumen_didactico": "El lenguaje formal cuida el tono, evita expresiones coloquiales y mantiene una estructura respetuosa. Suele usarse con directivos, clientes o en comunicaciones oficiales.",
+          "ejemplo_practico": "En vez de escribir \"Hey, can we talk later?\", en un correo formal sería mejor decir: \"Dear Ms. Brown, I would like to arrange a meeting at your convenience to discuss the project status.\"",
+          "conclusion_final": "La respuesta correcta es la a porque utiliza un saludo formal, un tono respetuoso y una formulación profesional adecuada al entorno laboral."
+        }
+      },
+      {
+        "id": "UT2-Q07",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is the most appropriate way to ask a boss for clarification in a formal email?",
+        "contexto": "Se pide identificar la forma más adecuada de pedir aclaraciones a un superior manteniendo un tono formal y profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"I don’t get it. Can you make it simpler?\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"Hey, what exactly do you mean? Too many numbers or what?\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"Could you specify which sections need additional data? Would you prefer more statistics or case studies?\""
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "En un entorno profesional, cuando se necesita aclaración, conviene usar preguntas clarificadoras con un tono respetuoso, preciso y profesional. El temario presenta como técnica de escucha activa precisamente formular preguntas como \"Could you specify which sections need additional data? Would you prefer more statistics or case studies?\". Además, el lenguaje formal debe evitar expresiones bruscas, ambiguas o coloquiales.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque \"I don’t get it\" suena demasiado brusco e informal para dirigirse a un jefe en un correo formal. No mantiene el nivel de cortesía esperado."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque usa un tono claramente informal y poco profesional, con expresiones como \"Hey\" y \"or what?\", impropias de una comunicación formal con un superior."
+            }
+          ],
+          "resumen_didactico": "Cuando pides aclaraciones en un correo formal, debes ser concreto, educado y profesional. Lo ideal es hacer preguntas claras que ayuden a entender exactamente qué necesita la otra persona.",
+          "ejemplo_practico": "Si tu supervisor dice que el informe necesita mejoras, una forma correcta de responder sería: \"Could you clarify which sections require revision? Would you like more data or a clearer explanation of the results?\"",
+          "conclusion_final": "La respuesta correcta es la c porque formula una petición de aclaración de manera clara, respetuosa y profesional, justo como se espera en un correo formal dirigido a un jefe."
+        }
+      },
+      {
+        "id": "UT2-Q08",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "In which scenario is informal language most appropriate?",
+        "contexto": "Se pide identificar en qué contexto laboral es más adecuado utilizar un lenguaje informal manteniendo el profesionalismo.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Writing an email to a client."
+          },
+          {
+            "clave": "b",
+            "texto": "Presenting a project to the board of directors."
+          },
+          {
+            "clave": "c",
+            "texto": "Chatting with a colleague on Slack."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que el lenguaje informal es más común en interacciones con compañeros o en mensajes instantáneos dentro del equipo, como Slack o Teams, siempre manteniendo el profesionalismo. En cambio, con clientes, directivos o en presentaciones formales se recomienda usar un registro formal. Por eso, el contexto más adecuado para un tono informal es una conversación con un compañero en Slack.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque escribir un correo a un cliente requiere normalmente lenguaje formal, claridad y una estructura profesional."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque presentar un proyecto ante el consejo de dirección exige un tono formal, respetuoso y estructurado."
+            }
+          ],
+          "resumen_didactico": "El lenguaje informal no significa hablar de cualquier manera. En el trabajo se usa sobre todo con compañeros y en canales internos rápidos, pero sin perder la cortesía ni la profesionalidad.",
+          "ejemplo_practico": "Un mensaje como \"Hey John, can we catch up about the project later?\" puede ser apropiado en Slack entre compañeros, pero no sería el tono correcto para escribir a un cliente o exponer ante directivos.",
+          "conclusion_final": "La respuesta correcta es la c porque el lenguaje informal se adapta mejor a la comunicación interna breve entre compañeros, como sucede en Slack."
+        }
+      },
+      {
+        "id": "UT2-Q09",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which of the following sentences is too informal for a business email?",
+        "contexto": "Se pide identificar qué frase resulta demasiado informal para usarse en un correo electrónico profesional de negocios.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"Please let me know a convenient time to discuss the project.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"Hey, can we catch up about the project later?\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"Could we schedule a meeting to go over the project details?\""
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En los correos electrónicos profesionales se recomienda usar un tono claro, breve y profesional, con saludos y cierres adecuados. El lenguaje informal puede emplearse con compañeros en mensajes internos, pero en un business email conviene evitar expresiones coloquiales como \"Hey\" o \"catch up\". Por eso, la opción b resulta demasiado informal para este contexto.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque esta opción sí mantiene un tono profesional, cortés y adecuado para un correo de negocios."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque también utiliza un registro formal y apropiado, solicitando una reunión de manera educada y clara."
+            }
+          ],
+          "resumen_didactico": "Un business email debe sonar profesional y respetuoso. Expresiones demasiado coloquiales pueden ser válidas en chats internos, pero no en correos formales de trabajo.",
+          "ejemplo_practico": "En Slack entre compañeros puede funcionar: \"Hey, can we catch up later?\". Pero en un email profesional sería mejor escribir: \"Could we schedule a meeting to discuss the project details?\"",
+          "conclusion_final": "La respuesta correcta es la b porque usa un tono demasiado informal para un correo empresarial, especialmente por expresiones como \"Hey\" y \"catch up\"."
+        }
+      },
+      {
+        "id": "UT2-Q10",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Why is it important to adapt your language depending on the audience?",
+        "contexto": "Se pide identificar por qué en el entorno laboral es necesario ajustar el nivel de formalidad según quién reciba el mensaje.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Because using formal language always makes you sound more intelligent."
+          },
+          {
+            "clave": "b",
+            "texto": "Because informal language is always more effective in communication."
+          },
+          {
+            "clave": "c",
+            "texto": "Because different professional settings require different levels of formality."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que en el entorno laboral el lenguaje varía según la audiencia y el contexto. Antes de hablar o escribir, hay que analizar quién recibirá el mensaje: con directivos o clientes se utiliza lenguaje formal, estructura clara y se evitan abreviaciones; con compañeros de equipo puede emplearse un tono más relajado, manteniendo siempre el profesionalismo. Por eso es importante adaptar el lenguaje, porque cada situación profesional exige un nivel distinto de formalidad.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el objetivo no es sonar más inteligente, sino comunicarse de manera adecuada, clara y profesional según la situación y la audiencia."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el lenguaje informal no siempre es más efectivo. En muchos contextos laborales, como correos a clientes o reuniones con directivos, lo apropiado es usar un registro formal."
+            }
+          ],
+          "resumen_didactico": "Adaptar el lenguaje significa elegir el tono correcto para cada contexto. No se habla igual con un cliente, con un jefe o con un compañero en Slack, porque cada situación tiene expectativas diferentes.",
+          "ejemplo_practico": "Puedes escribir a un compañero: \"Hey, can we talk later about the project?\", pero a un cliente sería más adecuado decir: \"Dear Ms. Brown, I would like to arrange a meeting to discuss the project status.\"",
+          "conclusion_final": "La respuesta correcta es la c porque en el trabajo no existe un único tono válido: cada audiencia y cada contexto requieren un nivel de formalidad diferente."
+        }
+      },
+      {
+        "id": "UT2-Q11",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is the correct structure for a business presentation?",
+        "contexto": "Se pide identificar la estructura adecuada de una presentación profesional en el entorno laboral.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Background information, key points, additional information."
+          },
+          {
+            "clave": "b",
+            "texto": "Summary, examples, closing remarks."
+          },
+          {
+            "clave": "c",
+            "texto": "Introduction, development, conclusion."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario indica que una presentación profesional efectiva debe seguir una estructura clara de tres partes: introducción, desarrollo y conclusión. En la introducción se presenta el tema y el objetivo; en el desarrollo se explican los puntos principales de forma organizada; y en la conclusión se resumen las ideas clave y se abre espacio para preguntas. Por eso, la estructura correcta es la opción c.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque, aunque incluye elementos útiles, no refleja la estructura formal completa que establece el temario para una presentación profesional."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque empieza directamente con un summary y no contempla la introducción del tema ni el desarrollo organizado de los puntos principales."
+            }
+          ],
+          "resumen_didactico": "Una buena presentación no se improvisa ni se organiza al azar. Necesita un inicio claro, una parte central bien desarrollada y un cierre que recoja lo esencial.",
+          "ejemplo_practico": "En una presentación sobre resultados de marketing, primero presentas el objetivo del informe, después explicas los datos y acciones realizadas, y al final resumes los resultados y respondes preguntas.",
+          "conclusion_final": "La respuesta correcta es la c porque coincide exactamente con la estructura profesional del temario: introducción, desarrollo y conclusión."
+        }
+      },
+      {
+        "id": "UT2-Q12",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which sentence is most effective for the introduction of a presentation?",
+        "contexto": "Se pide identificar qué frase funciona mejor como introducción de una presentación profesional en el entorno laboral.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"Good morning, everyone. Today, I’ll present the results of our marketing campaign and outline the next steps.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"Hi guys, I have some things to tell you, let’s just get into it.\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"This is a presentation, so let’s begin now.\""
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "La introducción de una presentación profesional debe presentar el tema y el objetivo de forma clara y adecuada al contexto laboral. El temario da como ejemplo exactamente una fórmula como: \"Good morning, everyone. Today, I’ll present the results of our marketing campaign and outline the next steps.\" Esta opción es efectiva porque saluda de manera profesional, introduce el tema y anticipa el propósito de la presentación.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque usa un tono demasiado informal para una presentación profesional. Además, no define con claridad el tema ni el objetivo."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque resulta demasiado genérica. No aporta información concreta sobre el contenido ni sobre la finalidad de la presentación."
+            }
+          ],
+          "resumen_didactico": "Una buena introducción debe hacer tres cosas: saludar adecuadamente, decir de qué va la presentación y explicar qué se va a tratar. Así la audiencia entiende desde el principio el propósito del discurso.",
+          "ejemplo_practico": "Si vas a presentar mejoras logísticas, una introducción adecuada sería: \"Good afternoon, everyone. Today, I will present the results of our recent logistics improvements and discuss the next steps.\"",
+          "conclusion_final": "La respuesta correcta es la a porque cumple con la estructura profesional esperada en una introducción: saludo formal, presentación del tema y explicación del objetivo."
+        }
+      },
+      {
+        "id": "UT2-Q13",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which technique helps capture the audience’s attention at the beginning of a presentation?",
+        "contexto": "Se pide identificar la técnica más eficaz para captar la atención del público al inicio de una presentación profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Starting with a surprising fact or rhetorical question."
+          },
+          {
+            "clave": "b",
+            "texto": "Using complicated words to sound more intelligent."
+          },
+          {
+            "clave": "c",
+            "texto": "Reading directly from your slides without looking at the audience."
+          }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario indica que una de las estrategias para captar y mantener la atención del público es dar una introducción impactante. Para ello propone comenzar con una cita relevante, un dato sorprendente o una pregunta retórica. Estas técnicas despiertan el interés desde el primer momento y preparan a la audiencia para el tema de la presentación.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque usar palabras complicadas no garantiza captar la atención ni mejorar la comunicación. De hecho, puede dificultar la comprensión del mensaje."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque leer directamente de las diapositivas sin mirar a la audiencia reduce la conexión con el público y hace la presentación menos dinámica e interesante."
+            }
+          ],
+          "resumen_didactico": "Para enganchar al público al principio, necesitas un inicio que genere curiosidad. Un dato sorprendente o una pregunta retórica funciona mejor que sonar complicado o limitarte a leer diapositivas.",
+          "ejemplo_practico": "Si vas a hablar de logística, podrías empezar con: \"What would happen if your supply chain failed tomorrow?\" o con un dato como: \"Did you know that delivery delays can reduce customer satisfaction by more than 20%?\"",
+          "conclusion_final": "La respuesta correcta es la a porque empezar con un dato sorprendente o una pregunta retórica es una técnica directa y efectiva para captar la atención del público desde el inicio."
+        }
+      },
+      {
+        "id": "UT2-Q14",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is the purpose of the conclusion in a presentation?",
+        "contexto": "Se pide identificar la función de la conclusión dentro de la estructura de una presentación profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "To introduce new concepts."
+          },
+          {
+            "clave": "b",
+            "texto": "To start a debate."
+          },
+          {
+            "clave": "c",
+            "texto": "To summarize key points and provide a closing statement."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario indica que una presentación efectiva se organiza en introducción, desarrollo y conclusión. La conclusión tiene como función resumir las ideas clave y cerrar la intervención, normalmente dejando espacio para preguntas o terminando con un mensaje final claro. Por eso, su propósito principal es recoger los puntos más importantes y ofrecer un cierre adecuado.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque la conclusión no debe introducir conceptos nuevos. Esa parte del contenido pertenece al desarrollo de la presentación."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque aunque al final puede abrirse un turno de preguntas, la función principal de la conclusión no es iniciar un debate, sino cerrar y resumir la exposición."
+            }
+          ],
+          "resumen_didactico": "La conclusión sirve para cerrar bien una presentación. No añade temas nuevos, sino que recuerda lo esencial y deja una impresión final clara en la audiencia.",
+          "ejemplo_practico": "En una presentación sobre resultados logísticos, una buena conclusión sería: \"To conclude, these improvements have boosted efficiency and customer satisfaction. I’m happy to answer any questions you may have.\"",
+          "conclusion_final": "La respuesta correcta es la c porque la conclusión debe resumir los puntos clave y terminar la presentación con un cierre claro y profesional."
+        }
+      },
+      {
+        "id": "UT2-Q15",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which of the following is not an effective way to engage an audience?",
+        "contexto": "Se pide identificar qué práctica no ayuda a captar ni mantener la atención del público durante una presentación profesional.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Making eye contact and using gestures."
+          },
+          {
+            "clave": "b",
+            "texto": "Speaking in a monotone voice and avoiding audience interaction."
+          },
+          {
+            "clave": "c",
+            "texto": "Using storytelling to connect with listeners"
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario indica que para captar y mantener la atención del público conviene hablar con claridad y confianza, variar el tono, usar lenguaje corporal seguro, mantener contacto visual, involucrar a la audiencia y utilizar storytelling. Por tanto, hablar en un tono monótono y evitar la interacción con la audiencia va justo en contra de esas recomendaciones y no resulta eficaz para enganchar al público.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque mantener contacto visual y usar gestos sí ayuda a conectar con la audiencia y a transmitir seguridad durante la presentación."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque el storytelling es una técnica recomendada en el temario para conectar emocionalmente con el público y hacer la presentación más memorable."
+            }
+          ],
+          "resumen_didactico": "Para implicar a la audiencia hay que sonar vivo, mirar al público y hacerlo participar. Un tono plano y sin interacción hace que la presentación pierda fuerza e interés.",
+          "ejemplo_practico": "Si presentas un proyecto mirando a la pantalla, leyendo todo con la misma entonación y sin hacer preguntas ni usar ejemplos, el público desconectará antes que si miras a la audiencia, cambias el tono y cuentas un caso real.",
+          "conclusion_final": "La respuesta correcta es la b porque una voz monótona y la falta de interacción dificultan la conexión con la audiencia y reducen la efectividad de la presentación."
+        }
+      },
+      {
+        "id": "UT2-Q16",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is the best way to contribute to a meeting?",
+        "contexto": "Se pide identificar la forma más adecuada de participar activamente en una reunión laboral.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Speak only when asked a direct question."
+          },
+          {
+            "clave": "b",
+            "texto": "Interrupt frequently to ensure your ideas are heard."
+          },
+          {
+            "clave": "c",
+            "texto": "Prepare in advance, express ideas clearly, and listen actively."
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario indica que para contribuir activamente en reuniones laborales conviene prepararse previamente revisando la agenda y reuniendo información relevante, expresar las ideas de forma clara y estructurada, aplicar escucha activa tomando notas y haciendo preguntas, y cerrar aportando respuestas o soluciones concretas. Por eso, la mejor manera de participar en una reunión es prepararse con antelación, comunicar las ideas con claridad y escuchar activamente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque una participación eficaz no consiste en limitarse a responder solo cuando te preguntan. En una reunión también es importante aportar ideas, sugerencias y soluciones de forma proactiva."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque interrumpir con frecuencia perjudica la comunicación, rompe la escucha activa y puede dificultar el trabajo colaborativo."
+            }
+          ],
+          "resumen_didactico": "Participar bien en una reunión no es hablar mucho ni quedarse callado. Es llegar preparado, intervenir con sentido y escuchar de verdad para construir sobre lo que dicen los demás.",
+          "ejemplo_practico": "En una reunión sobre logística, una buena intervención sería: \"I agree with the proposed strategy to optimize delivery routes. Additionally, we could implement tracking tools to improve efficiency.\" Esa aportación muestra preparación, claridad y orientación a soluciones.",
+          "conclusion_final": "La respuesta correcta es la c porque resume las tres claves de una participación efectiva en reuniones: preparación previa, expresión clara y escucha activa."
+        }
+      },
+      {
+        "id": "UT2-Q17",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is the most professional way to respond to a client’s complaint about a late delivery?",
+        "contexto": "Se pide identificar la respuesta más profesional ante una queja de un cliente por un retraso en la entrega.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"That’s how things work sometimes, nothing we can do about it.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"We apologize for the delay. Let me check the details and provide a solution right away.\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"It’s not our fault, you should have placed the order earlier.\""
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En la resolución de problemas y atención al usuario, el temario indica que la respuesta profesional debe combinar escucha activa, empatía y una solución clara. El ejemplo dado ante una queja por retraso es precisamente: \"We apologize for the delay. Let me check the details of your shipment and provide a solution right away.\" Por tanto, la opción b es la más adecuada porque reconoce el problema, muestra cortesía y se orienta a resolverlo.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque transmite indiferencia y no ofrece ninguna ayuda ni solución. Ese tono daña la relación con el cliente y no refleja profesionalidad."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque culpa al cliente y adopta un tono defensivo. El temario insiste en evitar culpar a otros y centrarse en soluciones."
+            }
+          ],
+          "resumen_didactico": "Ante una queja, lo correcto no es justificarte ni culpar al cliente. Lo profesional es reconocer la situación, mostrar empatía y actuar para resolver el problema.",
+          "ejemplo_practico": "Si un cliente dice: \"The shipment arrived late, and we’re not happy with the service\", una buena respuesta sería: \"We apologize for the delay. Let me review the shipment details and offer you a solution as soon as possible.\"",
+          "conclusion_final": "La respuesta correcta es la b porque mantiene un tono profesional, reconoce la incidencia y se enfoca en ofrecer una solución inmediata."
+        }
+      },
+      {
+        "id": "UT2-Q18",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is an effective way to negotiate a business deal?",
+        "contexto": "Se pide identificar la estrategia más adecuada para negociar profesionalmente un acuerdo de negocio en el entorno laboral.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "Agree to any terms just to close the deal quickly."
+          },
+          {
+            "clave": "b",
+            "texto": "Use aggressive language to pressure the other party."
+          },
+          {
+            "clave": "c",
+            "texto": "Clearly define objectives, use supporting data, and apply active listenin"
+          }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario señala que en las negociaciones hay que definir con claridad los objetivos, respaldar los argumentos con datos, aplicar escucha activa y mantener un lenguaje claro y profesional. Por eso, la opción más eficaz es aquella que combina objetivos bien definidos, apoyo con información o evidencias y escucha activa durante la negociación.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque aceptar cualquier condición solo para cerrar rápido puede perjudicar los intereses de la empresa. Una negociación profesional requiere criterio, preparación y objetivos claros."
+            },
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque el lenguaje agresivo dificulta la comunicación, genera tensión y va en contra del tono profesional recomendado en el temario."
+            }
+          ],
+          "resumen_didactico": "Negociar bien no consiste en ceder sin pensar ni en presionar de forma agresiva. Consiste en saber qué quieres conseguir, justificarlo con datos y escuchar a la otra parte para llegar a una solución razonable.",
+          "ejemplo_practico": "Si una empresa propone un descuento por volumen, una forma profesional de negociarlo sería: \"Based on our market analysis, we propose a 10% discount for bulk orders to increase sales volume.\" Después, se escucha la respuesta de la otra parte y se ajusta la propuesta si es necesario.",
+          "conclusion_final": "La respuesta correcta es la c porque refleja exactamente la forma profesional de negociar: definir objetivos, apoyar los argumentos con datos y aplicar escucha activa."
+        }
+      },
+      {
+        "id": "UT2-Q19",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "What is an example of a clear and professional statement in a meeting?",
+        "contexto": "Se pide identificar qué frase representa una intervención clara, estructurada y profesional dentro de una reunión laboral.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"I don’t think this idea is good, but whatever you say.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"I’d like to suggest implementing real-time tracking to optimize delivery times.\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"Maybe we should do something different, I don’t know.\""
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En las reuniones laborales, el temario indica que una participación efectiva requiere expresión clara, ideas estructuradas y lenguaje profesional. También propone fórmulas como \"I’d like to suggest...\" para introducir aportaciones de forma adecuada. La opción b cumple exactamente con ese modelo, porque plantea una propuesta concreta, clara y orientada a mejorar un proceso.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque el tono es poco profesional y transmite desinterés con la expresión \"whatever you say\", en lugar de aportar una idea de forma constructiva."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque resulta vaga e insegura. No presenta una propuesta concreta ni una formulación clara, algo necesario en una reunión profesional."
+            }
+          ],
+          "resumen_didactico": "Una intervención profesional en una reunión debe ser clara, concreta y respetuosa. Lo ideal es proponer ideas con estructura, no hablar de forma ambigua ni mostrar desinterés.",
+          "ejemplo_practico": "En una reunión sobre logística, una frase profesional sería: \"I’d like to suggest reviewing the delivery schedule and implementing tracking tools to improve efficiency.\" Así presentas una propuesta concreta y útil.",
+          "conclusion_final": "La respuesta correcta es la b porque expresa una sugerencia de manera clara, profesional y orientada a la mejora, justo como recomienda el temario para participar en reuniones."
+        }
+      },
+      {
+        "id": "UT2-Q20",
+        "tema": "UT2 Técnicas de producción oral y escrita",
+        "pregunta": "Which of the following is a good example of problem-solving in a workplace?",
+        "contexto": "Se pide identificar una respuesta profesional orientada a la resolución de problemas en el entorno laboral y atención al usuario.",
+        "tipo": "single",
+        "opciones": [
+          {
+            "clave": "a",
+            "texto": "\"It’s not our responsibility to fix this.\""
+          },
+          {
+            "clave": "b",
+            "texto": "\"We can reschedule the delivery for tomorrow or offer a refund. Which option works best for you?\""
+          },
+          {
+            "clave": "c",
+            "texto": "\"We will handle it later, let’s not worry about it now.\""
+          }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "En la resolución de problemas y atención al usuario, el temario indica que una respuesta eficaz debe mostrar empatía y ofrecer soluciones claras. Entre los ejemplos propuestos aparece precisamente una fórmula como: \"We can either reschedule delivery for tomorrow or offer a refund. Which option works best for you?\". Esta respuesta es adecuada porque plantea alternativas concretas y permite al interlocutor participar en la solución.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Es incorrecta porque evita asumir el problema y no ofrece ninguna solución. En el entorno profesional se recomienda centrarse en resolver la incidencia, no en desentenderse de ella."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque aplaza el problema sin proponer ninguna acción concreta. Eso transmite poca profesionalidad y no responde a la necesidad inmediata del cliente o del equipo."
+            }
+          ],
+          "resumen_didactico": "Resolver problemas en el trabajo no consiste en esquivar responsabilidades ni dejarlo para más tarde. Lo correcto es ofrecer opciones claras, concretas y orientadas a solucionar la situación.",
+          "ejemplo_practico": "Si un cliente se queja porque su pedido llegó tarde, una buena respuesta sería: \"We can send a replacement tomorrow morning or process a refund today. Which option would you prefer?\". Así muestras iniciativa y das alternativas reales.",
+          "conclusion_final": "La respuesta correcta es la b porque presenta una solución profesional, concreta y centrada en las necesidades de la otra persona, tal como recomienda el temario."
+        }
+      }
+]
