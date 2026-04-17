@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT14-Q01",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Un desarrollador junior consulta clientes desde una app web sin saber en qué sector del disco están guardados ni cómo se organizan físicamente. ¿Qué beneficio clásico de una base de datos está aprovechando?",
+    "contexto": "Separación entre uso de los datos y detalles físicos de almacenamiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Independencia de los datos."
+      },
+      {
+        "clave": "b",
+        "texto": "Redundancia controlada."
+      },
+      {
+        "clave": "c",
+        "texto": "Compresión binaria."
+      },
+      {
+        "clave": "d",
+        "texto": "Fragmentación horizontal."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una base de datos permite que aplicaciones y usuarios trabajen con la información sin depender de cómo se almacena físicamente. Ese desacoplamiento es la independencia de los datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La redundancia controlada trata de evitar o gestionar duplicados, no de ocultar los detalles físicos al programador."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compresión binaria es una técnica de almacenamiento, pero no explica por qué el desarrollador puede ignorar el disco."
+        },
+        {
+          "clave": "d",
+          "motivo": "La fragmentación horizontal es una técnica de distribución, no el beneficio general descrito en el escenario."
+        }
+      ],
+      "resumen_didactico": "La base de datos te deja pedir datos sin pensar en el disco: eso es independencia.",
+      "ejemplo_practico": "Una consulta sobre CLIENTES funciona igual aunque el SGBD cambie su organización interna en disco.",
+      "conclusion_final": "El beneficio aprovechado es la independencia de los datos."
+    }
+  },
+  {
+    "id": "UT14-Q02",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Una empresa quiere hacer analítica de ventas y obtener informes fiables. ¿Qué ventaja de trabajar con datos estructurados y sin duplicados mejora directamente la calidad del análisis?",
+    "contexto": "Relación entre diseño organizado y resultados correctos en explotación de la información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Fiabilidad."
+      },
+      {
+        "clave": "b",
+        "texto": "Ofuscación."
+      },
+      {
+        "clave": "c",
+        "texto": "Serialización."
+      },
+      {
+        "clave": "d",
+        "texto": "Paginación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Cuando los datos están estructurados y libres de duplicidades e inconsistencias, el análisis y los informes arrojan resultados más precisos. Esa ventaja se resume como fiabilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La ofuscación busca dificultar la lectura de código o datos, no mejorar la precisión analítica."
+        },
+        {
+          "clave": "c",
+          "motivo": "La serialización transforma estructuras de datos a un formato intercambiable, pero no garantiza calidad analítica."
+        },
+        {
+          "clave": "d",
+          "motivo": "La paginación divide resultados en páginas; no corrige errores de calidad de datos."
+        }
+      ],
+      "resumen_didactico": "Datos ordenados y coherentes producen informes más fiables.",
+      "ejemplo_practico": "Si un cliente no está duplicado en tres tablas distintas, el total de ventas por cliente será correcto.",
+      "conclusion_final": "La ventaja que mejora el análisis es la fiabilidad."
+    }
+  },
+  {
+    "id": "UT14-Q03",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Tienes dos ficheros pequeños y quieres unirlos en uno solo para gestionarlos como una única unidad. ¿Qué operación de tratamiento de ficheros estás realizando?",
+    "contexto": "Operaciones básicas sobre ficheros a nivel organizativo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Concatenación."
+      },
+      {
+        "clave": "b",
+        "texto": "Indexación."
+      },
+      {
+        "clave": "c",
+        "texto": "Compactación."
+      },
+      {
+        "clave": "d",
+        "texto": "Bloqueo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La concatenación consiste en unir varios ficheros en uno único. Es una operación básica de tratamiento de ficheros cuando interesa manejarlos como un solo conjunto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La indexación crea estructuras auxiliares para localizar datos, no une físicamente dos ficheros en uno."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compactación reorganiza o limpia espacio tras borrados o inserciones, pero no describe la unión de dos ficheros completos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El bloqueo se relaciona con acceso concurrente o control de uso, no con fusionar ficheros."
+        }
+      ],
+      "resumen_didactico": "Si unes dos ficheros en uno, estás concatenando.",
+      "ejemplo_practico": "Un fichero enero.csv y otro febrero.csv pueden concatenarse para formar ventas_bimestre.csv.",
+      "conclusion_final": "La operación correcta es la concatenación."
+    }
+  },
+  {
+    "id": "UT14-Q04",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Frente a los modelos antiguos, rígidos y jerárquicos, Codd defendía que el nuevo modelo debía ser fácil de entender y de usar con un lenguaje casi natural. ¿Qué objetivo fundamental describe esto?",
+    "contexto": "Objetivos históricos del modelo relacional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Simplicidad."
+      },
+      {
+        "clave": "b",
+        "texto": "Replicación síncrona."
+      },
+      {
+        "clave": "c",
+        "texto": "Concurrencia pesimista."
+      },
+      {
+        "clave": "d",
+        "texto": "Persistencia eventual."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Uno de los pilares de Codd fue la simplicidad: frente a modelos jerárquicos complejos, el relacional debía ser más claro, manejable y expresable con un lenguaje más cercano al usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La replicación síncrona es una técnica de disponibilidad, no uno de los objetivos fundacionales de Codd."
+        },
+        {
+          "clave": "c",
+          "motivo": "La concurrencia pesimista es una estrategia de bloqueo moderna, ajena al objetivo histórico señalado."
+        },
+        {
+          "clave": "d",
+          "motivo": "La persistencia eventual pertenece a otros enfoques distribuidos y no a los pilares clásicos del modelo relacional."
+        }
+      ],
+      "resumen_didactico": "Codd quería un modelo más simple que los anteriores.",
+      "ejemplo_practico": "Las tablas y SQL sustituyen estructuras jerárquicas difíciles de mantener y consultar.",
+      "conclusion_final": "El objetivo descrito es la simplicidad."
+    }
+  },
+  {
+    "id": "UT14-Q05",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "En la arquitectura ANSI/SPARC, cada perfil de usuario ve una parte distinta de la información según su trabajo. ¿Cómo se llama ese nivel de visión particular?",
+    "contexto": "Separación entre vista de usuario, esquema global y almacenamiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Nivel externo."
+      },
+      {
+        "clave": "b",
+        "texto": "Nivel interno."
+      },
+      {
+        "clave": "c",
+        "texto": "Nivel físico."
+      },
+      {
+        "clave": "d",
+        "texto": "Nivel algebraico."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El nivel externo representa las vistas particulares que diferentes usuarios o aplicaciones tienen sobre la base de datos. Cada una muestra solo lo necesario para ese perfil.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El nivel interno describe cómo se almacenan físicamente los datos, no la vista particular de cada usuario."
+        },
+        {
+          "clave": "c",
+          "motivo": "'Físico' se asocia al almacenamiento real; ANSI/SPARC nombra formalmente interno, conceptual y externo."
+        },
+        {
+          "clave": "d",
+          "motivo": "No existe un 'nivel algebraico' como uno de los tres niveles clásicos de ANSI/SPARC."
+        }
+      ],
+      "resumen_didactico": "La vista particular de cada usuario corresponde al nivel externo.",
+      "ejemplo_practico": "Contabilidad puede ver importes y facturas, mientras logística ve direcciones y rutas: son vistas externas distintas.",
+      "conclusion_final": "Ese nivel se denomina nivel externo."
+    }
+  },
+  {
+    "id": "UT14-Q06",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Ya tienes el modelo físico decidido y ahora escribes CREATE TABLE, tipos y restricciones dentro del SGBD. ¿En qué fase del diseño estás entrando?",
+    "contexto": "Paso donde la estructura diseñada se convierte en código ejecutable.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Implementación."
+      },
+      {
+        "clave": "b",
+        "texto": "Modelo conceptual."
+      },
+      {
+        "clave": "c",
+        "texto": "Modelo de negocio."
+      },
+      {
+        "clave": "d",
+        "texto": "Observación etnográfica."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La implementación es la fase en la que el diseño deja de ser un plano y se traduce a sentencias reales de SQL dentro del SGBD, como CREATE TABLE y demás definiciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El modelo conceptual describe ideas del negocio sin entrar en tecnología ni código SQL."
+        },
+        {
+          "clave": "c",
+          "motivo": "El modelo de negocio no es la fase donde se ejecuta DDL concreto sobre un gestor."
+        },
+        {
+          "clave": "d",
+          "motivo": "La observación etnográfica no pertenece al flujo de diseño de bases de datos."
+        }
+      ],
+      "resumen_didactico": "Cuando escribes el SQL real, ya estás implementando.",
+      "ejemplo_practico": "Pasar de un esquema en papel a CREATE TABLE Usuarios (...) es implementación.",
+      "conclusion_final": "La fase descrita es la implementación."
+    }
+  },
+  {
+    "id": "UT14-Q07",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Una tabla guarda en una sola celda el valor 'Java, Python, SQL' dentro del campo Lenguajes. ¿Qué principio básico de normalización está incumpliendo?",
+    "contexto": "Valores múltiples dentro de una misma celda.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La 1FN, porque los valores no son atómicos."
+      },
+      {
+        "clave": "b",
+        "texto": "La 2FN, porque falta una clave compuesta."
+      },
+      {
+        "clave": "c",
+        "texto": "La 3FN, porque hay dependencia transitiva."
+      },
+      {
+        "clave": "d",
+        "texto": "La FNBC, porque no existe índice."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La Primera Forma Normal exige atomicidad: cada celda debe contener un único valor indivisible. Guardar una lista de lenguajes en la misma celda viola ese principio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La 2FN se refiere a dependencias parciales respecto a claves compuestas, no a listas dentro de una celda."
+        },
+        {
+          "clave": "c",
+          "motivo": "La 3FN trata dependencias transitivas, no problemas de atomicidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "La FNBC se centra en determinantes y claves candidatas, no en la existencia de índices."
+        }
+      ],
+      "resumen_didactico": "Una celda, un valor: si metes varios, rompes la 1FN.",
+      "ejemplo_practico": "En lugar de 'Java, Python, SQL' en una sola columna, debe modelarse de otra forma, por ejemplo con filas separadas o una tabla relacionada.",
+      "conclusion_final": "El principio incumplido es la 1FN por falta de atomicidad."
+    }
+  },
+  {
+    "id": "UT14-Q08",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Una tabla tiene una clave primaria simple formada solo por id_pedido. Respecto a la Segunda Forma Normal, ¿qué afirmación es correcta?",
+    "contexto": "Dependencias parciales y tipo de clave primaria.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Si ya está en 1FN, cumple automáticamente la 2FN."
+      },
+      {
+        "clave": "b",
+        "texto": "Nunca podrá llegar a 2FN."
+      },
+      {
+        "clave": "c",
+        "texto": "Necesita obligatoriamente una clave compuesta para estar en 2FN."
+      },
+      {
+        "clave": "d",
+        "texto": "La 2FN exige eliminar todos los NULL."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La 2FN combate dependencias parciales sobre claves compuestas. Si la clave primaria es simple, ese problema no puede darse; por tanto, una tabla en 1FN con clave simple cumple automáticamente la 2FN.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Sí puede cumplir 2FN; de hecho, con clave simple el obstáculo típico de la 2FN desaparece."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es justo al revés: el problema de la 2FN aparece con claves compuestas, no porque falten."
+        },
+        {
+          "clave": "d",
+          "motivo": "La eliminación de NULL no define la 2FN; esta forma normal trata dependencias funcionales."
+        }
+      ],
+      "resumen_didactico": "Con clave simple no hay dependencia parcial que romper.",
+      "ejemplo_practico": "Una tabla PEDIDOS(id_pedido, fecha, total) en 1FN no tiene problema de 2FN por depender todo de un solo identificador.",
+      "conclusion_final": "La afirmación correcta es que, si ya está en 1FN, cumple automáticamente la 2FN."
+    }
+  },
+  {
+    "id": "UT14-Q09",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "En Boyce-Codd, si existe una dependencia X → Y, ¿qué debe ser X para que la relación sea válida bajo esta forma normal?",
+    "contexto": "Condición reforzada de la FNBC.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una clave candidata o superclave."
+      },
+      {
+        "clave": "b",
+        "texto": "Un atributo opcional."
+      },
+      {
+        "clave": "c",
+        "texto": "Un valor NULL permitido."
+      },
+      {
+        "clave": "d",
+        "texto": "Un índice secundario."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La Forma Normal de Boyce-Codd exige que todo determinante de una dependencia funcional sea una clave candidata o, dicho de forma práctica, una superclave que identifique de manera suficiente la fila.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Que un atributo sea opcional no tiene relación con la regla de los determinantes en FNBC."
+        },
+        {
+          "clave": "c",
+          "motivo": "La presencia de NULL no define FNBC ni resuelve dependencias funcionales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un índice secundario mejora búsquedas, pero no convierte un determinante en clave válida."
+        }
+      ],
+      "resumen_didactico": "En FNBC, quien determina debe ser clave.",
+      "ejemplo_practico": "Si profesor determina aula, para estar en FNBC ese profesor tendría que comportarse como clave candidata en esa relación.",
+      "conclusion_final": "Para cumplir FNBC, X debe ser una clave candidata o superclave."
+    }
+  },
+  {
+    "id": "UT14-Q10",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Intentas borrar un cliente que todavía tiene pedidos asociados, y la base de datos te impide la operación para no dejar registros huérfanos. ¿Qué política de integridad referencial está actuando?",
+    "contexto": "Protección conservadora ante borrados de registros padre.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "RESTRICT."
+      },
+      {
+        "clave": "b",
+        "texto": "CASCADE."
+      },
+      {
+        "clave": "c",
+        "texto": "SET NULL."
+      },
+      {
+        "clave": "d",
+        "texto": "SET DEFAULT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La política RESTRICT prohíbe borrar el registro padre si todavía existen registros hijos relacionados. Su objetivo es evitar huérfanos y obligar a resolver primero las dependencias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "CASCADE habría borrado automáticamente los pedidos hijos junto con el cliente padre."
+        },
+        {
+          "clave": "c",
+          "motivo": "SET NULL mantendría los pedidos, pero pondría la clave ajena a NULL si se permite."
+        },
+        {
+          "clave": "d",
+          "motivo": "SET DEFAULT asignaría un valor por defecto al vínculo, no bloquearía la operación."
+        }
+      ],
+      "resumen_didactico": "Si la base de datos te frena para no romper relaciones, está aplicando RESTRICT.",
+      "ejemplo_practico": "No puedes borrar un cliente con pedidos activos hasta tratar antes esos pedidos.",
+      "conclusion_final": "La política aplicada es RESTRICT."
+    }
+  },
+  {
+    "id": "UT14-Q11",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Borras un profesor y las clases siguen existiendo, pero el campo id_profesor pasa a NULL. ¿Qué política referencial se ha configurado?",
+    "contexto": "Comportamiento de claves ajenas cuando desaparece el registro padre.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SET NULL."
+      },
+      {
+        "clave": "b",
+        "texto": "RESTRICT."
+      },
+      {
+        "clave": "c",
+        "texto": "NO ACTION lógica."
+      },
+      {
+        "clave": "d",
+        "texto": "CASCADE TOTAL."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SET NULL mantiene las filas hijas, pero deja la clave ajena a NULL cuando desaparece el registro padre, siempre que la columna admita nulos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "RESTRICT habría impedido el borrado del profesor en lugar de permitirlo y vaciar la referencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "'NO ACTION lógica' no es la política del temario para este comportamiento específico."
+        },
+        {
+          "clave": "d",
+          "motivo": "CASCADE habría eliminado también las clases hijas, no las habría dejado vivas con NULL."
+        }
+      ],
+      "resumen_didactico": "Si el hijo se queda vivo pero sin dueño, es SET NULL.",
+      "ejemplo_practico": "Al borrar un cliente, sus pedidos pueden seguir existiendo con ClienteID = NULL si esa política se configuró.",
+      "conclusion_final": "La política configurada es SET NULL."
+    }
+  },
+  {
+    "id": "UT14-Q12",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Acabas de crear bdEmpresa y quieres comprobar qué bases de datos existen ahora en el servidor. ¿Qué comando del temario debes ejecutar?",
+    "contexto": "Comando informativo para listar bases de datos disponibles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SHOW DATABASES;"
+      },
+      {
+        "clave": "b",
+        "texto": "LIST DATABASES;"
+      },
+      {
+        "clave": "c",
+        "texto": "DESC DATABASES;"
+      },
+      {
+        "clave": "d",
+        "texto": "PRINT DATABASES;"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SHOW DATABASES; es el comando utilizado para listar las bases de datos presentes en el servidor y comprobar que la nueva creación existe.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "LIST DATABASES; no es la sintaxis indicada en el temario para este fin."
+        },
+        {
+          "clave": "c",
+          "motivo": "DESC se emplea típicamente para describir tablas, no para listar todas las bases de datos del servidor."
+        },
+        {
+          "clave": "d",
+          "motivo": "PRINT DATABASES; no es un comando SQL estándar del temario."
+        }
+      ],
+      "resumen_didactico": "Para ver las bases disponibles se usa SHOW DATABASES.",
+      "ejemplo_practico": "Después de CREATE DATABASE bdJobieFP, el siguiente paso lógico es ejecutar SHOW DATABASES;.",
+      "conclusion_final": "El comando correcto es SHOW DATABASES;."
+    }
+  },
+  {
+    "id": "UT14-Q13",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Un compañero ejecuta DROP DATABASE tienda_online; en producción. ¿Qué efecto describe mejor este comando?",
+    "contexto": "Comando destructivo a nivel de base de datos completa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Elimina la base de datos completa, con su estructura y sus datos."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo vacía las tablas, pero conserva la base vacía."
+      },
+      {
+        "clave": "c",
+        "texto": "Renombra la base de datos automáticamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Bloquea temporalmente la base hasta reiniciar el servidor."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "DROP DATABASE es el comando destructivo que elimina por completo la base de datos: desaparecen tanto su estructura como todos los datos que contiene.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Vaciar tablas conservando la estructura sería otra operación; DROP DATABASE elimina el contenedor entero."
+        },
+        {
+          "clave": "c",
+          "motivo": "No renombra nada; destruye el objeto base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un bloqueo temporal, sino una eliminación definitiva dentro del entorno SQL."
+        }
+      ],
+      "resumen_didactico": "DROP DATABASE no vacía: destruye la base entera.",
+      "ejemplo_practico": "Si borras bdEmpresa con DROP DATABASE, dejan de existir sus tablas, índices y registros.",
+      "conclusion_final": "El efecto correcto es la eliminación completa de la base de datos y su contenido."
+    }
+  },
+  {
+    "id": "UT14-Q14",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "En una tabla intermedia MATRICULA(alumno_id, asignatura_id), ningún campo por sí solo identifica una fila, pero la pareja sí lo hace. ¿Cómo se llama esa clave?",
+    "contexto": "Identificación única mediante combinación de columnas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Clave primaria compuesta."
+      },
+      {
+        "clave": "b",
+        "texto": "Clave ajena doble."
+      },
+      {
+        "clave": "c",
+        "texto": "Dominio binario."
+      },
+      {
+        "clave": "d",
+        "texto": "Vista indexada."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Cuando la unicidad de una fila depende de la combinación de varias columnas, hablamos de clave primaria compuesta. Es habitual en tablas intermedias o de relación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una clave ajena doble puede existir, pero aquí lo importante es que la pareja identifica de forma única la fila como clave primaria."
+        },
+        {
+          "clave": "c",
+          "motivo": "El dominio binario se refiere al tipo o conjunto de valores, no a la identificación compuesta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una vista indexada no describe la clave que identifica una fila en una tabla de relación."
+        }
+      ],
+      "resumen_didactico": "Si hacen falta dos columnas juntas para identificar la fila, la clave es compuesta.",
+      "ejemplo_practico": "En una matrícula, alumno_id y asignatura_id juntos pueden ser la PK que evita duplicados de inscripción.",
+      "conclusion_final": "Esa clave se llama clave primaria compuesta."
+    }
+  },
+  {
+    "id": "UT14-Q15",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Quieres que el campo activo valga TRUE cuando en el INSERT no se especifique nada. ¿Qué restricción o mecanismo estás usando?",
+    "contexto": "Relleno automático de valores omitidos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DEFAULT."
+      },
+      {
+        "clave": "b",
+        "texto": "UNIQUE."
+      },
+      {
+        "clave": "c",
+        "texto": "CHECK."
+      },
+      {
+        "clave": "d",
+        "texto": "FOREIGN KEY."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "DEFAULT permite que la base de datos asigne automáticamente un valor cuando la inserción no proporciona ninguno para esa columna.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UNIQUE evita duplicados, pero no rellena automáticamente un valor omitido."
+        },
+        {
+          "clave": "c",
+          "motivo": "CHECK valida una condición sobre el contenido, no introduce un valor por defecto."
+        },
+        {
+          "clave": "d",
+          "motivo": "FOREIGN KEY garantiza referencia entre tablas, no define valores automáticos de arranque."
+        }
+      ],
+      "resumen_didactico": "Si no te mandan valor y quieres que la BD ponga uno sola, usa DEFAULT.",
+      "ejemplo_practico": "fecha_creacion DEFAULT CURRENT_DATE o activo DEFAULT TRUE son ejemplos clásicos.",
+      "conclusion_final": "El mecanismo correcto es DEFAULT."
+    }
+  },
+  {
+    "id": "UT14-Q16",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Una empresa quiere impedir que se guarde un stock negativo. ¿Qué restricción es la más adecuada para expresar una regla como stock >= 0?",
+    "contexto": "Reglas de negocio expresadas a nivel de columna o tabla.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CHECK."
+      },
+      {
+        "clave": "b",
+        "texto": "UNION."
+      },
+      {
+        "clave": "c",
+        "texto": "ORDER BY."
+      },
+      {
+        "clave": "d",
+        "texto": "INDEX."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "CHECK permite definir una condición que deben cumplir los datos antes de aceptarse. Es ideal para reglas de negocio como impedir cantidades negativas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UNION combina resultados de consultas; no valida datos al insertarlos o actualizarlos."
+        },
+        {
+          "clave": "c",
+          "motivo": "ORDER BY solo ordena resultados de consulta, no impone reglas de integridad."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un índice acelera búsquedas, pero no bloquea valores inválidos como un stock menor que cero."
+        }
+      ],
+      "resumen_didactico": "CHECK sirve para decirle a la base de datos qué valores son admisibles.",
+      "ejemplo_practico": "stock INT CHECK (stock >= 0) evita insertar -5 como cantidad disponible.",
+      "conclusion_final": "La restricción adecuada es CHECK."
+    }
+  },
+  {
+    "id": "UT14-Q17",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Necesitas vaciar completamente una tabla de pruebas, pero quieres conservar la estructura para seguir usándola después. ¿Qué comando expresa mejor esa intención?",
+    "contexto": "Borrar todos los registros sin destruir el objeto tabla.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "TRUNCATE TABLE."
+      },
+      {
+        "clave": "b",
+        "texto": "DROP TABLE."
+      },
+      {
+        "clave": "c",
+        "texto": "REMOVE TABLE."
+      },
+      {
+        "clave": "d",
+        "texto": "DELETE DATABASE."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "TRUNCATE TABLE se usa para vaciar una tabla conservando su estructura. Es distinto de DROP TABLE, que elimina la tabla como objeto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DROP TABLE destruye la tabla completa, incluida su estructura."
+        },
+        {
+          "clave": "c",
+          "motivo": "REMOVE TABLE no es la sintaxis estándar del temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "DELETE DATABASE ni siquiera es el comando adecuado para actuar sobre una única tabla."
+        }
+      ],
+      "resumen_didactico": "TRUNCATE vacía; DROP destruye.",
+      "ejemplo_practico": "Tras TRUNCATE TABLE logs_pruebas;, la tabla sigue existiendo pero sin filas.",
+      "conclusion_final": "El comando correcto es TRUNCATE TABLE."
+    }
+  },
+  {
+    "id": "UT14-Q18",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Una consulta devuelve muchos nombres repetidos y solo quieres ver cada ciudad una vez. ¿Qué palabra clave debes añadir al SELECT?",
+    "contexto": "Eliminación de duplicados en el resultado de una consulta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DISTINCT."
+      },
+      {
+        "clave": "b",
+        "texto": "RESTRICT."
+      },
+      {
+        "clave": "c",
+        "texto": "DEFAULT."
+      },
+      {
+        "clave": "d",
+        "texto": "HAVING."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "DISTINCT elimina filas duplicadas en el resultado de una consulta cuando lo que se busca es una lista única de valores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "RESTRICT se asocia a políticas referenciales, no a limpieza de duplicados en un SELECT."
+        },
+        {
+          "clave": "c",
+          "motivo": "DEFAULT actúa en inserciones cuando falta un valor, no en los resultados de consulta."
+        },
+        {
+          "clave": "d",
+          "motivo": "HAVING filtra grupos agregados después de un GROUP BY; no es la palabra clave general para quitar repetidos."
+        }
+      ],
+      "resumen_didactico": "Si quieres una lista única en un SELECT, usa DISTINCT.",
+      "ejemplo_practico": "SELECT DISTINCT ciudad FROM clientes; devuelve cada ciudad solo una vez.",
+      "conclusion_final": "La palabra clave correcta es DISTINCT."
+    }
+  },
+  {
+    "id": "UT14-Q19",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Quieres mostrar solo los departamentos cuyo salario medio supera 2000 euros después de agrupar empleados. ¿Qué cláusula debe realizar ese filtro?",
+    "contexto": "Filtrado sobre resultados agregados y no sobre filas individuales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HAVING."
+      },
+      {
+        "clave": "b",
+        "texto": "WHERE."
+      },
+      {
+        "clave": "c",
+        "texto": "ORDER BY."
+      },
+      {
+        "clave": "d",
+        "texto": "FROM."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "HAVING filtra grupos una vez calculadas las agregaciones. WHERE actúa antes del agrupamiento y no sirve para condiciones sobre AVG, COUNT u otras funciones agregadas del grupo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "WHERE filtra filas antes de agrupar, no grupos ya agregados por departamento."
+        },
+        {
+          "clave": "c",
+          "motivo": "ORDER BY ordena resultados, pero no decide qué grupos quedan fuera."
+        },
+        {
+          "clave": "d",
+          "motivo": "FROM indica de qué tablas vienen los datos, no filtra promedios ya calculados."
+        }
+      ],
+      "resumen_didactico": "Primero agrupas; después filtras grupos con HAVING.",
+      "ejemplo_practico": "SELECT depto, AVG(salario) FROM empleados GROUP BY depto HAVING AVG(salario) > 2000;.",
+      "conclusion_final": "La cláusula correcta es HAVING."
+    }
+  },
+  {
+    "id": "UT14-Q20",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Quieres una consulta que incluya todos los registros de la tabla izquierda y de la derecha, tengan o no correspondencia entre sí. ¿Qué tipo de unión expresa mejor esa necesidad?",
+    "contexto": "Unión que no pierde filas no relacionadas de ninguno de los dos lados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FULL OUTER JOIN."
+      },
+      {
+        "clave": "b",
+        "texto": "INNER JOIN."
+      },
+      {
+        "clave": "c",
+        "texto": "CROSS JOIN."
+      },
+      {
+        "clave": "d",
+        "texto": "SELF JOIN."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "FULL OUTER JOIN incluye todas las filas de ambas tablas. Cuando no hay correspondencia, los campos del otro lado aparecen como NULL, pero ninguna fila de ninguno de los dos conjuntos se pierde.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "INNER JOIN solo conserva filas con coincidencia en ambas tablas y descartaría las no relacionadas."
+        },
+        {
+          "clave": "c",
+          "motivo": "CROSS JOIN genera un producto cartesiano, no una unión por relación con conservación de huérfanos."
+        },
+        {
+          "clave": "d",
+          "motivo": "SELF JOIN une una tabla consigo misma y no expresa por sí solo la inclusión total de ambos lados."
+        }
+      ],
+      "resumen_didactico": "Si no quieres perder ni las filas huérfanas de A ni las de B, necesitas FULL OUTER JOIN.",
+      "ejemplo_practico": "Un listado de alumnos y becas donde aparezcan también alumnos sin beca y becas sin alumno asignado pide FULL OUTER JOIN.",
+      "conclusion_final": "La unión adecuada es FULL OUTER JOIN."
+    }
+  },
+  {
+    "id": "UT14-Q21",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Si una subconsulta interna devuelve exactamente un único valor, ¿qué tipo de comparación es habitual usar en la consulta externa?",
+    "contexto": "Diferencia entre subconsulta escalar y subconsulta multivalor.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una comparación directa como = o >."
+      },
+      {
+        "clave": "b",
+        "texto": "Siempre UNION."
+      },
+      {
+        "clave": "c",
+        "texto": "Obligatoriamente LIKE."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo INTERSECT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Cuando la subconsulta devuelve un único valor (subconsulta escalar), la consulta externa puede compararlo de forma directa con operadores como =, <, > o >= según la lógica necesaria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UNION combina conjuntos de resultados, no es la respuesta típica a una subconsulta escalar."
+        },
+        {
+          "clave": "c",
+          "motivo": "LIKE sirve para patrones de texto, no para toda comparación de una subconsulta de un solo valor."
+        },
+        {
+          "clave": "d",
+          "motivo": "INTERSECT obtiene intersección entre consultas, no resuelve la comparación escalar estándar."
+        }
+      ],
+      "resumen_didactico": "Si la subconsulta da un solo dato, lo comparas directamente.",
+      "ejemplo_practico": "WHERE salario > (SELECT AVG(salario) FROM empleados) usa una subconsulta escalar con comparación directa.",
+      "conclusion_final": "Lo habitual es usar una comparación directa como =, < o >."
+    }
+  },
+  {
+    "id": "UT14-Q22",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Después de crear usuarios y cambiar permisos en MySQL, quieres obligar al servidor a recargar las tablas de privilegios sin reiniciar. ¿Qué comando del temario se emplea?",
+    "contexto": "Aplicación inmediata de cambios de privilegios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FLUSH PRIVILEGES;"
+      },
+      {
+        "clave": "b",
+        "texto": "SYNC USERS;"
+      },
+      {
+        "clave": "c",
+        "texto": "RELOAD AUTH;"
+      },
+      {
+        "clave": "d",
+        "texto": "COMMIT SECURITY;"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "FLUSH PRIVILEGES; fuerza al servidor a recargar inmediatamente la información de permisos, aplicando los cambios sin necesidad de reiniciar el servicio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SYNC USERS; no es la sintaxis indicada en el temario para recargar privilegios."
+        },
+        {
+          "clave": "c",
+          "motivo": "RELOAD AUTH; no es el comando estándar trabajado en la unidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "COMMIT SECURITY; no forma parte del lenguaje DCL del temario para este objetivo."
+        }
+      ],
+      "resumen_didactico": "Si cambias permisos y quieres que el servidor se entere ya, usa FLUSH PRIVILEGES.",
+      "ejemplo_practico": "Tras CREATE USER o REVOKE en ciertos contextos, FLUSH PRIVILEGES; garantiza que la nueva política quede activa enseguida.",
+      "conclusion_final": "El comando correcto es FLUSH PRIVILEGES;."
+    }
+  },
+  {
+    "id": "UT14-Q23",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "En un procedimiento PL/SQL quieres devolver un resultado a la variable que te pasa el llamador, sin necesitar leer el valor original que traía. ¿Qué modo de parámetro es el más adecuado?",
+    "contexto": "Diferencia funcional entre IN, OUT e IN OUT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "OUT."
+      },
+      {
+        "clave": "b",
+        "texto": "IN."
+      },
+      {
+        "clave": "c",
+        "texto": "IN OUT."
+      },
+      {
+        "clave": "d",
+        "texto": "RETURN PARAM."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El modo OUT se utiliza para devolver información desde el procedimiento al exterior. El valor inicial que llegue no es relevante: el procedimiento lo rellena con el resultado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "IN es de entrada y solo lectura; sirve para leer un dato, no para devolverlo como salida principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "IN OUT se usa cuando necesitas leer el valor de entrada, modificarlo y devolverlo cambiado."
+        },
+        {
+          "clave": "d",
+          "motivo": "RETURN PARAM no es un modo formal de parámetro en PL/SQL."
+        }
+      ],
+      "resumen_didactico": "OUT es la caja vacía que el procedimiento devuelve llena.",
+      "ejemplo_practico": "Un procedimiento puede recibir p_total OUT NUMBER y asignarle dentro el importe calculado.",
+      "conclusion_final": "El modo adecuado es OUT."
+    }
+  },
+  {
+    "id": "UT14-Q24",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Necesitas una cuenta atrás desde 10 hasta 1 con un bucle FOR en PL/SQL, sin gestionar manualmente el contador. ¿Qué palabra clave debe acompañar al rango?",
+    "contexto": "Bucle FOR descendente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "REVERSE."
+      },
+      {
+        "clave": "b",
+        "texto": "BACKWARD."
+      },
+      {
+        "clave": "c",
+        "texto": "DOWNTO."
+      },
+      {
+        "clave": "d",
+        "texto": "DESC."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En PL/SQL, la palabra clave REVERSE permite recorrer un rango de FOR en sentido descendente sin necesidad de manipular manualmente el contador.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "BACKWARD no es la palabra reservada del temario para invertir el recorrido de un FOR."
+        },
+        {
+          "clave": "c",
+          "motivo": "DOWNTO existe en otros lenguajes, pero no es la sintaxis trabajada aquí."
+        },
+        {
+          "clave": "d",
+          "motivo": "DESC se usa típicamente para ordenaciones SQL, no para el sentido del contador en FOR PL/SQL."
+        }
+      ],
+      "resumen_didactico": "FOR con cuenta atrás en PL/SQL se escribe con REVERSE.",
+      "ejemplo_practico": "FOR i IN REVERSE 1 .. 10 LOOP ... END LOOP; recorre del 10 al 1.",
+      "conclusion_final": "La palabra clave necesaria es REVERSE."
+    }
+  },
+  {
+    "id": "UT14-Q25",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Capturas un error con WHEN OTHERS y quieres mostrar el texto descriptivo del fallo, no solo su número. ¿Qué función de Oracle debes usar?",
+    "contexto": "Diagnóstico de excepciones en PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SQLERRM."
+      },
+      {
+        "clave": "b",
+        "texto": "SQLTEXT."
+      },
+      {
+        "clave": "c",
+        "texto": "SQLSTATE."
+      },
+      {
+        "clave": "d",
+        "texto": "SQLNOTE."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SQLERRM devuelve el mensaje descriptivo del error ocurrido. Suele usarse junto a SQLCODE, que aporta el número del error, para diagnosticar fallos dentro de un bloque EXCEPTION.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SQLTEXT no es la función del temario para obtener el mensaje de una excepción capturada."
+        },
+        {
+          "clave": "c",
+          "motivo": "SQLSTATE pertenece a otros contextos SQL, pero la pareja destacada en Oracle/PLSQL es SQLCODE y SQLERRM."
+        },
+        {
+          "clave": "d",
+          "motivo": "SQLNOTE no es una función estándar del temario para describir errores."
+        }
+      ],
+      "resumen_didactico": "Número del error: SQLCODE. Mensaje del error: SQLERRM.",
+      "ejemplo_practico": "En EXCEPTION WHEN OTHERS THEN DBMS_OUTPUT.PUT_LINE(SQLERRM); puedes ver el texto del fallo.",
+      "conclusion_final": "La función correcta es SQLERRM."
+    }
+  },
+  {
+    "id": "UT14-Q26",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Haces un SELECT INTO esperando un único empleado, pero la consulta devuelve cuatro filas. ¿Qué excepción típica se produce?",
+    "contexto": "Excepciones asociadas a SELECT INTO cuando no devuelve exactamente una fila.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "TOO_MANY_ROWS."
+      },
+      {
+        "clave": "b",
+        "texto": "NO_DATA_FOUND."
+      },
+      {
+        "clave": "c",
+        "texto": "ZERO_DIVIDE."
+      },
+      {
+        "clave": "d",
+        "texto": "LOGIN_DENIED."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SELECT INTO exige exactamente una fila. Si devuelve más de una, Oracle lanza la excepción TOO_MANY_ROWS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "NO_DATA_FOUND aparece cuando no hay ninguna fila, no cuando aparecen demasiadas."
+        },
+        {
+          "clave": "c",
+          "motivo": "ZERO_DIVIDE corresponde a una división por cero, ajena al problema de cardinalidad de la consulta."
+        },
+        {
+          "clave": "d",
+          "motivo": "LOGIN_DENIED se relaciona con autenticación, no con un SELECT INTO multirregistro."
+        }
+      ],
+      "resumen_didactico": "SELECT INTO es estricto: una fila exacta. Si salen varias, explota con TOO_MANY_ROWS.",
+      "ejemplo_practico": "Buscar por un apellido no único con SELECT INTO puede provocar TOO_MANY_ROWS si hay varios empleados con ese apellido.",
+      "conclusion_final": "La excepción que se produce es TOO_MANY_ROWS."
+    }
+  },
+  {
+    "id": "UT14-Q27",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "No quieres llamar manualmente a cierto código: prefieres que se ejecute solo cuando ocurra un INSERT o un DELETE sobre una tabla. ¿Qué objeto de PL/SQL se adapta a eso?",
+    "contexto": "Autoinvocación de lógica ante eventos de base de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un trigger o disparador."
+      },
+      {
+        "clave": "b",
+        "texto": "Una vista."
+      },
+      {
+        "clave": "c",
+        "texto": "Un dominio."
+      },
+      {
+        "clave": "d",
+        "texto": "Un alias de columna."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los triggers o disparadores son procedimientos especiales que se ejecutan automáticamente al producirse determinados eventos sobre la base de datos, como INSERT, UPDATE o DELETE.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una vista encapsula una consulta, pero no se autoejecuta por eventos de escritura."
+        },
+        {
+          "clave": "c",
+          "motivo": "El dominio define valores válidos de un atributo, no comportamiento automático."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un alias de columna solo renombra un resultado en una consulta; no contiene lógica ejecutable."
+        }
+      ],
+      "resumen_didactico": "Si quieres que la base actúe sola ante un evento, necesitas un trigger.",
+      "ejemplo_practico": "Al insertar un nuevo pedido, un trigger puede actualizar automáticamente el stock.",
+      "conclusion_final": "El objeto adecuado es un trigger o disparador."
+    }
+  },
+  {
+    "id": "UT14-Q28",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "¿Qué rasgo diferencia de forma más clara a una función PL/SQL respecto a un procedimiento?",
+    "contexto": "Contraste entre estructuras funcionales reutilizables.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Debe devolver un valor mediante RETURN."
+      },
+      {
+        "clave": "b",
+        "texto": "Se ejecuta solo al arrancar la base de datos."
+      },
+      {
+        "clave": "c",
+        "texto": "No admite parámetros."
+      },
+      {
+        "clave": "d",
+        "texto": "No puede contener variables locales."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La función se caracteriza por calcular y devolver un valor del tipo declarado mediante RETURN. El procedimiento, en cambio, se orienta a ejecutar acciones y no necesita devolver un valor único.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Ni las funciones ni los procedimientos se ejecutan automáticamente al arrancar la base por esa razón; eso no las define."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las funciones sí pueden admitir parámetros de entrada."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una función puede declarar variables locales para realizar sus cálculos internos."
+        }
+      ],
+      "resumen_didactico": "Procedimiento = hacer; función = calcular y devolver.",
+      "ejemplo_practico": "FUNCTION calcular_iva(precio NUMBER) RETURN NUMBER devuelve un resultado concreto mediante RETURN.",
+      "conclusion_final": "La diferencia clave es que la función debe devolver un valor con RETURN."
+    }
+  },
+  {
+    "id": "UT14-Q29",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "En administración de sistemas se repite mucho una idea: 'un backup que no se prueba, no existe'. ¿Qué buena práctica está subrayando esta frase?",
+    "contexto": "Disciplina profesional en la gestión de copias de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Comprobar periódicamente que las copias se realizan y pueden restaurarse."
+      },
+      {
+        "clave": "b",
+        "texto": "Guardar siempre las copias con nombres aleatorios."
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar cualquier automatización del proceso."
+      },
+      {
+        "clave": "d",
+        "texto": "Mantener original y copia en el mismo armario."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La buena práctica es verificar de forma periódica que los backups se generan correctamente y que no están corruptos, idealmente probando también su restauración. Una copia no validada puede fallar justo cuando más se necesita.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los nombres aleatorios dificultan la gestión; el temario recomienda orden y claridad en la nomenclatura."
+        },
+        {
+          "clave": "c",
+          "motivo": "El temario recomienda automatizar las copias para reducir olvidos y errores, no lo contrario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Guardar copia y original juntos rompe la seguridad física: un incendio o robo podría destruir ambos."
+        }
+      ],
+      "resumen_didactico": "Hacer backup no basta: hay que comprobar que sirve de verdad.",
+      "ejemplo_practico": "Una empresa puede generar copias cada noche, pero si nunca prueba restaurarlas quizá descubra demasiado tarde que estaban corruptas.",
+      "conclusion_final": "La frase subraya la necesidad de comprobar y testear periódicamente las copias."
+    }
+  },
+  {
+    "id": "UT14-Q30",
+    "tema": "UT14 — Repaso global (Abarca el 85% a 100% del temario)",
+    "pregunta": "Una empresa guarda el servidor principal y las copias de seguridad en la misma sala. Si hay un incendio, lo pierde todo. ¿Qué recomendación profesional sobre backups está incumpliendo?",
+    "contexto": "Localización física de las copias y continuidad ante desastres.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mantener las copias en un lugar distinto del original."
+      },
+      {
+        "clave": "b",
+        "texto": "Desactivar el Archive Bit tras cada copia."
+      },
+      {
+        "clave": "c",
+        "texto": "Usar siempre solo copias diferenciales."
+      },
+      {
+        "clave": "d",
+        "texto": "Convertir todas las tablas en vistas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una regla profesional esencial es almacenar las copias en una ubicación física distinta al servidor original. Si ambos están en el mismo lugar, un desastre local puede destruir el original y el respaldo a la vez.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La gestión del Archive Bit afecta a la estrategia de copias, pero no resuelve el problema de que un incendio destruya ambos soportes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Elegir solo diferenciales no corrige el error principal de localización física de las copias."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las vistas son una capa de abstracción de consultas y no sustituyen a una política de backup."
+        }
+      ],
+      "resumen_didactico": "Una copia útil no debe vivir pegada al original.",
+      "ejemplo_practico": "Guardar backups en un CDC, en otra oficina o en almacenamiento externo evita perderlo todo en un único incidente físico.",
+      "conclusion_final": "La recomendación incumplida es mantener las copias en un lugar distinto del original."
+    }
+  }
+]

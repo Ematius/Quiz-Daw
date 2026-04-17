@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT13-Q01",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "En un proyecto enorme con cientos de tablas, necesitas saber qué significa una columna llamada estado_pedido, su tipo y sus restricciones. ¿Qué recurso debes consultar primero?",
+    "contexto": "Necesidad de conocer significado, formato y reglas de un dato dentro del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El diccionario de datos."
+      },
+      {
+        "clave": "b",
+        "texto": "El cableado del CPD."
+      },
+      {
+        "clave": "c",
+        "texto": "El historial del navegador."
+      },
+      {
+        "clave": "d",
+        "texto": "La memoria RAM del servidor."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El diccionario de datos almacena los metadatos: significado, tipo, formato y restricciones de los datos del sistema. Es la referencia formal para comprender columnas y estructuras.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El cableado físico pertenece a la infraestructura, no documenta el significado de una columna."
+        },
+        {
+          "clave": "c",
+          "motivo": "El historial del navegador no contiene la definición técnica de la base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La RAM guarda datos en ejecución, pero no actúa como manual semántico del esquema."
+        }
+      ],
+      "resumen_didactico": "Si quieres saber qué representa un dato y cómo debe usarse, miras el diccionario de datos.",
+      "ejemplo_practico": "Una columna estado_pedido puede definirse allí como CHAR(1) con valores P, E y C.",
+      "conclusion_final": "La fuente correcta para entender una columna es el diccionario de datos."
+    }
+  },
+  {
+    "id": "UT13-Q02",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Siguiendo la metodología de Pressman, quieres representar qué ocurre cuando un usuario pulsa «Comprar» y cómo circula esa información por el sistema. ¿Qué diagrama usarías?",
+    "contexto": "Modelar funciones del sistema y transformación de la información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diagrama de Flujo de Datos (DFD)."
+      },
+      {
+        "clave": "b",
+        "texto": "Diagrama Entidad/Relación (DER)."
+      },
+      {
+        "clave": "c",
+        "texto": "Diagrama de Transición de Estados (DTE)."
+      },
+      {
+        "clave": "d",
+        "texto": "Plano eléctrico del servidor."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La especificación de proceso en Pressman se representa con el Diagrama de Flujo de Datos (DFD), que describe cómo entra, se transforma y sale la información dentro del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El DER modela datos y relaciones, no el recorrido funcional de los procesos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El DTE muestra estados y cambios de estado, no el flujo de datos entre procesos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un artefacto de análisis software."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta es qué hace el sistema con la información, el diagrama adecuado es el DFD.",
+      "ejemplo_practico": "Al pulsar «Comprar», el DFD puede mostrar validación, pago, creación de pedido y actualización de stock.",
+      "conclusion_final": "Para modelar el flujo de información en procesos, se usa un DFD."
+    }
+  },
+  {
+    "id": "UT13-Q03",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "En una aplicación de pedidos, un encargo puede estar en estado «Pendiente», «Pagado», «Enviado» o «Entregado». ¿Qué diagrama refleja mejor estos cambios?",
+    "contexto": "Modelado de los estados posibles de una entidad y sus transiciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diagrama de Transición de Estados (DTE)."
+      },
+      {
+        "clave": "b",
+        "texto": "Diagrama de Flujo de Datos (DFD)."
+      },
+      {
+        "clave": "c",
+        "texto": "Diccionario de datos."
+      },
+      {
+        "clave": "d",
+        "texto": "Índice B-tree."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La especificación de control en Pressman se apoya en el Diagrama de Transición de Estados (DTE), que representa estados y saltos de uno a otro.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El DFD modela procesos y circulación de datos, no estados."
+        },
+        {
+          "clave": "c",
+          "motivo": "El diccionario documenta datos, no muestra cómo cambian de estado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un índice es una estructura de acceso, no un diagrama de análisis."
+        }
+      ],
+      "resumen_didactico": "Cuando lo importante es ver en qué estado está algo y cómo cambia, el DTE es la herramienta correcta.",
+      "ejemplo_practico": "Un pedido puede pasar de Pendiente a Pagado y luego a Enviado según eventos concretos.",
+      "conclusion_final": "Los cambios de estado se representan con un DTE."
+    }
+  },
+  {
+    "id": "UT13-Q04",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Si dices que el diccionario de datos es la «metabase» del sistema, ¿qué estás afirmando exactamente?",
+    "contexto": "Concepto de metadatos frente a datos reales del negocio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que guarda datos sobre los datos."
+      },
+      {
+        "clave": "b",
+        "texto": "Que sustituye físicamente a todas las tablas."
+      },
+      {
+        "clave": "c",
+        "texto": "Que solo contiene copias de seguridad."
+      },
+      {
+        "clave": "d",
+        "texto": "Que es un disco duro especial."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Metabase significa que almacena metadatos: información descriptiva sobre los propios datos, como nombres, tipos, formatos y reglas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No reemplaza tablas operativas; documenta su estructura."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los backups son copias de seguridad, no el concepto de metabase."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es hardware, sino un recurso lógico de documentación/definición."
+        }
+      ],
+      "resumen_didactico": "Metabase = información que describe cómo son y cómo se usan los datos del sistema.",
+      "ejemplo_practico": "Puede indicar que salario es DECIMAL(10,2), NOT NULL y visible solo para ciertos roles.",
+      "conclusion_final": "Llamarlo metabase significa que guarda metadatos."
+    }
+  },
+  {
+    "id": "UT13-Q05",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Una consulta compleja se guarda con nombre para reutilizarla como si fuera una tabla, pero sin duplicar físicamente los datos. ¿Qué objeto es?",
+    "contexto": "Reutilización lógica de una consulta ya definida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una vista (VIEW)."
+      },
+      {
+        "clave": "b",
+        "texto": "Una clave ajena."
+      },
+      {
+        "clave": "c",
+        "texto": "Un trigger."
+      },
+      {
+        "clave": "d",
+        "texto": "Un backup incremental."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una vista es una tabla virtual definida a partir de una consulta. Permite reutilizar resultados lógicos sin duplicar físicamente la información base.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La clave ajena enlaza tablas y mantiene integridad referencial."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un trigger reacciona a eventos de inserción, borrado o actualización."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un backup incremental es una técnica de copia de seguridad."
+        }
+      ],
+      "resumen_didactico": "Una vista es una consulta guardada con nombre que se consulta como si fuera una tabla.",
+      "ejemplo_practico": "Puedes crear vista_clientes_activos para no repetir siempre el mismo SELECT con filtros.",
+      "conclusion_final": "El objeto descrito es una vista."
+    }
+  },
+  {
+    "id": "UT13-Q06",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Quieres que un empleado vea nombres y departamentos, pero no el salario de los trabajadores. ¿Qué solución encaja mejor con el temario?",
+    "contexto": "Ocultar columnas sensibles sin alterar la tabla original.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Crear una vista que no incluya la columna salario."
+      },
+      {
+        "clave": "b",
+        "texto": "Borrar definitivamente la columna salario."
+      },
+      {
+        "clave": "c",
+        "texto": "Copiar toda la tabla a Excel."
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar la base de datos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las vistas permiten mostrar una visión parcial de la información y apoyar la seguridad/flexibilidad, ocultando columnas sensibles a determinados usuarios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Borrar la columna destruiría información necesaria para otros roles autorizados."
+        },
+        {
+          "clave": "c",
+          "motivo": "Exportar a Excel no es una medida estructural de seguridad en la BD."
+        },
+        {
+          "clave": "d",
+          "motivo": "No resuelve el problema de acceso selectivo."
+        }
+      ],
+      "resumen_didactico": "Una vista puede enseñar solo lo que un perfil debe ver.",
+      "ejemplo_practico": "vista_empleados_publica puede incluir nombre y departamento, dejando fuera salario.",
+      "conclusion_final": "La opción adecuada es usar una vista parcial."
+    }
+  },
+  {
+    "id": "UT13-Q07",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Tienes una tabla con clave primaria simple formada solo por ID. ¿Qué afirmación correcta puedes hacer sobre la Segunda Forma Normal?",
+    "contexto": "Relación entre 2FN y claves simples.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cumple automáticamente 2FN."
+      },
+      {
+        "clave": "b",
+        "texto": "Nunca puede cumplir 2FN."
+      },
+      {
+        "clave": "c",
+        "texto": "Necesita obligatoriamente una clave compuesta."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo la cumpliría si no tuviera índices."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La 2FN solo plantea problemas cuando la clave primaria es compuesta. Con una clave simple, no pueden existir dependencias parciales respecto a una parte de la clave.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Sí puede cumplirla, y de hecho con clave simple la cumple automáticamente en este aspecto."
+        },
+        {
+          "clave": "c",
+          "motivo": "La 2FN no exige clave compuesta; solo se vuelve problemática cuando existe."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los índices no determinan el cumplimiento de 2FN."
+        }
+      ],
+      "resumen_didactico": "Clave simple implica que el problema clásico de dependencia parcial no aparece.",
+      "ejemplo_practico": "Si CLIENTES tiene solo ID como clave, no puede haber atributos que dependan de «media clave».",
+      "conclusion_final": "Con clave primaria simple, la tabla cumple automáticamente 2FN."
+    }
+  },
+  {
+    "id": "UT13-Q08",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Intentas insertar una línea de pedido con id_cliente = 999, pero ese cliente no existe en la tabla CLIENTES. ¿Qué regla debe impedirlo?",
+    "contexto": "Coherencia entre tablas relacionadas por clave primaria y foránea.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La integridad referencial."
+      },
+      {
+        "clave": "b",
+        "texto": "La concatenación."
+      },
+      {
+        "clave": "c",
+        "texto": "El factor de bloqueo."
+      },
+      {
+        "clave": "d",
+        "texto": "La copia diferencial."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La integridad referencial obliga a que toda clave foránea apunte a una clave primaria existente en la tabla padre, evitando registros huérfanos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La concatenación une textos en consultas; no controla relaciones entre tablas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El factor de bloqueo describe registros por bloque físico."
+        },
+        {
+          "clave": "d",
+          "motivo": "La copia diferencial pertenece a las copias de seguridad."
+        }
+      ],
+      "resumen_didactico": "Una clave foránea no puede apuntar a un padre inexistente.",
+      "ejemplo_practico": "No deberías poder crear un pedido asociado a un cliente que no existe en CLIENTES.",
+      "conclusion_final": "La regla correcta es la integridad referencial."
+    }
+  },
+  {
+    "id": "UT13-Q09",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Aplicando el principio de mínimo privilegio, ¿qué permiso sería el más razonable para el perfil «Becario» en producción?",
+    "contexto": "Asignación de permisos mínimos para reducir riesgos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo SELECT."
+      },
+      {
+        "clave": "b",
+        "texto": "DROP y ALTER."
+      },
+      {
+        "clave": "c",
+        "texto": "Todos los permisos del DBA."
+      },
+      {
+        "clave": "d",
+        "texto": "Acceso completo al sistema operativo y a la BD."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El principio de mínimo privilegio indica que cada usuario debe tener únicamente los permisos estrictamente necesarios. En el ejemplo del temario, el becario solo debería leer datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DROP y ALTER son operaciones destructivas o estructurales que deben restringirse."
+        },
+        {
+          "clave": "c",
+          "motivo": "Dar permisos de DBA al becario contradice por completo el principio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ampliar privilegios sin necesidad aumenta el riesgo operativo y de seguridad."
+        }
+      ],
+      "resumen_didactico": "Mínimo privilegio significa dar lo mínimo imprescindible, no lo máximo posible.",
+      "ejemplo_practico": "Un becario puede consultar datos para aprender o verificar, pero no modificar estructura crítica.",
+      "conclusion_final": "El permiso más razonable es solo SELECT."
+    }
+  },
+  {
+    "id": "UT13-Q10",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "En un equipo de desarrollo, ¿a qué perfil debería reservarse el permiso DROP sobre la base de datos?",
+    "contexto": "Comandos destructivos y control de perfiles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Al DBA o perfil administrativo responsable."
+      },
+      {
+        "clave": "b",
+        "texto": "A cualquier usuario autenticado."
+      },
+      {
+        "clave": "c",
+        "texto": "Al perfil Becario."
+      },
+      {
+        "clave": "d",
+        "texto": "Al departamento de marketing."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los comandos destructivos como DROP deben limitarse a perfiles administrativos responsables, típicamente el DBA, para evitar daños graves por error o abuso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Autenticado no significa autorizado para destruir estructura."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un becario no debería tener permisos destructivos en producción."
+        },
+        {
+          "clave": "d",
+          "motivo": "Marketing no es un perfil técnico de administración de BD."
+        }
+      ],
+      "resumen_didactico": "Los permisos peligrosos se reservan a perfiles muy controlados.",
+      "ejemplo_practico": "En producción, DROP TABLE solo debería ejecutarlo un DBA dentro de un procedimiento formal.",
+      "conclusion_final": "El permiso DROP debe quedar en manos del DBA."
+    }
+  },
+  {
+    "id": "UT13-Q11",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Aunque un usuario haya iniciado sesión en Linux o Windows, el acceso al SGBD debe gestionarse además con usuarios propios del motor. ¿Por qué?",
+    "contexto": "Separación de autenticación del sistema operativo y del gestor de base de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque la autenticación del SGBD debe ser independiente."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque así desaparecen los backups."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque evita usar claves foráneas."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque sustituye al modelo relacional."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el acceso al motor de base de datos debe tener usuarios y contraseñas propios, independientes del sistema operativo, para controlar mejor la seguridad del SGBD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los backups siguen siendo necesarios y no dependen de esto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las claves foráneas son reglas de integridad, no de autenticación."
+        },
+        {
+          "clave": "d",
+          "motivo": "No guarda relación con el modelo relacional."
+        }
+      ],
+      "resumen_didactico": "El control de acceso al SGBD no debe depender solo del login del servidor.",
+      "ejemplo_practico": "Un administrador del sistema no tiene por qué tener automáticamente permisos de lectura o borrado en todas las tablas.",
+      "conclusion_final": "Se exige independencia en la autenticación del SGBD."
+    }
+  },
+  {
+    "id": "UT13-Q12",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "El temario menciona que hoy la autenticación va más allá de usuario y contraseña. ¿Cuál de estas opciones es un ejemplo directo de ello?",
+    "contexto": "Métodos modernos para verificar identidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Doble factor (2FA)."
+      },
+      {
+        "clave": "b",
+        "texto": "Copias completas."
+      },
+      {
+        "clave": "c",
+        "texto": "Normalización 3FN."
+      },
+      {
+        "clave": "d",
+        "texto": "Factor de bloqueo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de seguridad menciona ejemplos modernos de autenticación como 2FA, tokens JWT o biometría para verificar identidad de forma más robusta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las copias completas pertenecen a la recuperación y backups."
+        },
+        {
+          "clave": "c",
+          "motivo": "La 3FN es un concepto de diseño relacional."
+        },
+        {
+          "clave": "d",
+          "motivo": "El factor de bloqueo describe almacenamiento físico."
+        }
+      ],
+      "resumen_didactico": "La autenticación moderna incluye mecanismos adicionales de verificación de identidad.",
+      "ejemplo_practico": "Además de la contraseña, un código temporal en el móvil sería 2FA.",
+      "conclusion_final": "Un ejemplo claro es la autenticación de doble factor."
+    }
+  },
+  {
+    "id": "UT13-Q13",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "¿Qué arquitectura permite que el sistema siga operativo aunque falle uno de los discos del servidor?",
+    "contexto": "Tolerancia a fallos físicos en almacenamiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "RAID."
+      },
+      {
+        "clave": "b",
+        "texto": "SQL Injection."
+      },
+      {
+        "clave": "c",
+        "texto": "Diagrama E/R."
+      },
+      {
+        "clave": "d",
+        "texto": "Archivo CSV."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "RAID introduce redundancia de discos para que la pérdida de uno no implique necesariamente la caída del servicio ni la pérdida inmediata de la información.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SQL Injection es un ataque lógico, no una arquitectura de tolerancia a fallos físicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El diagrama E/R modela datos, no hardware redundante."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un CSV es un formato de fichero, no una solución de alta disponibilidad."
+        }
+      ],
+      "resumen_didactico": "RAID es redundancia de discos para resistir averías físicas.",
+      "ejemplo_practico": "Si un disco muere, el sistema puede seguir vivo mientras se sustituye y reconstruye.",
+      "conclusion_final": "La arquitectura correcta es RAID."
+    }
+  },
+  {
+    "id": "UT13-Q14",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Si un incendio destruye el CPD principal, ¿qué instalación secundaria está pensada para asumir el mando?",
+    "contexto": "Continuidad del servicio ante desastre total de la sede principal.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Centro de Contingencia de Datos (CDC)."
+      },
+      {
+        "clave": "b",
+        "texto": "Entorno local del desarrollador."
+      },
+      {
+        "clave": "c",
+        "texto": "Papelera de reciclaje."
+      },
+      {
+        "clave": "d",
+        "texto": "Servidor DNS doméstico."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El CDC es una ubicación secundaria con hardware y software replicado preparada para tomar el relevo cuando la sede principal cae por un desastre mayor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un entorno local no está preparado para asumir producción empresarial."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es una instalación de continuidad de negocio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un DNS doméstico no sustituye a un CPD."
+        }
+      ],
+      "resumen_didactico": "Para un desastre mayor del centro principal, el relevo lo toma el CDC.",
+      "ejemplo_practico": "Si el CPD de Madrid se pierde, un CDC en otra ubicación puede reanudar la operación.",
+      "conclusion_final": "La instalación correcta es el CDC."
+    }
+  },
+  {
+    "id": "UT13-Q15",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "¿Cómo se llama la técnica que replica los datos en tiempo real entre dos servidores distintos, como si uno fuera el espejo del otro?",
+    "contexto": "Réplica inmediata para alta disponibilidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mirroring."
+      },
+      {
+        "clave": "b",
+        "texto": "Compresión."
+      },
+      {
+        "clave": "c",
+        "texto": "Normalización."
+      },
+      {
+        "clave": "d",
+        "texto": "Hashing."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El mirroring consiste en replicar datos en tiempo real en otro servidor, de modo que si el principal falla, la réplica dispone de la última información escrita.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La compresión reduce tamaño, no replica en tiempo real."
+        },
+        {
+          "clave": "c",
+          "motivo": "La normalización organiza tablas, no servidores."
+        },
+        {
+          "clave": "d",
+          "motivo": "El hashing calcula direcciones o resúmenes, no replica sistemas."
+        }
+      ],
+      "resumen_didactico": "Mirroring = dos servidores reflejando los mismos datos al instante.",
+      "ejemplo_practico": "Si escribes un dato en el servidor principal y aparece al momento en otro, estás ante mirroring.",
+      "conclusion_final": "La técnica descrita es el mirroring."
+    }
+  },
+  {
+    "id": "UT13-Q16",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "¿Qué documento define paso a paso qué hacer cuando ocurre un desastre, priorizando la recuperación de la base de datos?",
+    "contexto": "Organización formal de la respuesta ante incidentes graves.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Plan de contingencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Catálogo de tipos de datos."
+      },
+      {
+        "clave": "c",
+        "texto": "Álgebra relacional."
+      },
+      {
+        "clave": "d",
+        "texto": "Diagrama de clases de Java."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El plan de contingencia es el protocolo de emergencia que establece acciones, prioridades y responsables cuando se produce un desastre o interrupción grave.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El catálogo de tipos de datos no organiza la respuesta ante incidentes."
+        },
+        {
+          "clave": "c",
+          "motivo": "El álgebra relacional es fundamento teórico de consultas, no de emergencias."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es el documento operativo de continuidad de negocio."
+        }
+      ],
+      "resumen_didactico": "Cuando algo grave ocurre, el plan de contingencia marca el procedimiento a seguir.",
+      "ejemplo_practico": "Puede indicar conmutar al CDC, validar backups y restaurar servicios en un orden concreto.",
+      "conclusion_final": "El documento correcto es el plan de contingencia."
+    }
+  },
+  {
+    "id": "UT13-Q17",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "En seguridad, ¿qué significa «restauración»?",
+    "contexto": "Proceso de recuperación tras pérdida o corrupción de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Devolver al sistema la información guardada en una copia."
+      },
+      {
+        "clave": "b",
+        "texto": "Crear una vista nueva."
+      },
+      {
+        "clave": "c",
+        "texto": "Normalizar una tabla en 3FN."
+      },
+      {
+        "clave": "d",
+        "texto": "Conceder permisos con GRANT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La restauración es el proceso inverso al backup: tomar una copia de seguridad y devolver la información al sistema para recuperar su funcionamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una vista pertenece al ámbito de consultas y estructura lógica."
+        },
+        {
+          "clave": "c",
+          "motivo": "La normalización es diseño del modelo de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "GRANT pertenece al control de permisos."
+        }
+      ],
+      "resumen_didactico": "Backup guarda; restauración trae de vuelta lo guardado.",
+      "ejemplo_practico": "Tras un fallo eléctrico, restauras la última copia para reponer pedidos y clientes.",
+      "conclusion_final": "Restaurar significa recuperar el sistema desde una copia."
+    }
+  },
+  {
+    "id": "UT13-Q18",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Después de realizar una copia completa, ¿qué ocurre con el flag de modificado (Archive Bit)?",
+    "contexto": "Comportamiento del indicador de cambio tras backup total.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se desactiva."
+      },
+      {
+        "clave": "b",
+        "texto": "Se activa en todos los archivos."
+      },
+      {
+        "clave": "c",
+        "texto": "Se convierte en clave primaria."
+      },
+      {
+        "clave": "d",
+        "texto": "Se ignora por completo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En una copia completa, el sistema considera que todo quedó respaldado, por lo que desactiva el flag de modificado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Activarlo indicaría que aún están pendientes de copia."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Archive Bit no tiene relación con claves de base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí se tiene en cuenta; es esencial para estas estrategias."
+        }
+      ],
+      "resumen_didactico": "Backup total = todos los cambios ya están a salvo, por eso el flag se limpia.",
+      "ejemplo_practico": "Domingo haces copia completa; a partir de ahí solo los nuevos cambios volverán a marcarse.",
+      "conclusion_final": "Tras la copia completa, el flag se desactiva."
+    }
+  },
+  {
+    "id": "UT13-Q19",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "¿Qué copia de seguridad guarda solo los archivos cambiados desde la última copia realizada, ya sea total o incremental?",
+    "contexto": "Selección de cambios con criterio mínimo de tiempo y espacio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Incremental."
+      },
+      {
+        "clave": "b",
+        "texto": "Total."
+      },
+      {
+        "clave": "c",
+        "texto": "Diferencial."
+      },
+      {
+        "clave": "d",
+        "texto": "Espejo lógico."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La copia incremental guarda solo lo modificado desde la última copia efectuada. Es rápida y ligera, pero complica más la restauración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La total copia absolutamente todo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La diferencial toma como referencia la última total, no la última copia cualquiera."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es el nombre del tipo de backup descrito."
+        }
+      ],
+      "resumen_didactico": "Incremental = desde la última copia, sea esta total o incremental.",
+      "ejemplo_practico": "Si el lunes haces incremental y el martes otra, la del martes solo lleva cambios desde la del lunes.",
+      "conclusion_final": "La copia correcta es la incremental."
+    }
+  },
+  {
+    "id": "UT13-Q20",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "¿Qué copia de seguridad toma como referencia la última copia total y vuelve a copiar todos los cambios acumulados desde entonces?",
+    "contexto": "Estrategia acumulativa basada en la última copia total.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diferencial."
+      },
+      {
+        "clave": "b",
+        "texto": "Incremental."
+      },
+      {
+        "clave": "c",
+        "texto": "Completa."
+      },
+      {
+        "clave": "d",
+        "texto": "RAID 1."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La copia diferencial guarda los archivos modificados desde la última copia total. Por eso cada diferencial suele crecer hasta que aparece una nueva total.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La incremental solo copia desde la última copia realizada."
+        },
+        {
+          "clave": "c",
+          "motivo": "La completa no selecciona cambios: lo copia todo."
+        },
+        {
+          "clave": "d",
+          "motivo": "RAID 1 es redundancia de discos, no un tipo de backup temporal."
+        }
+      ],
+      "resumen_didactico": "Diferencial = todo lo cambiado desde la última total.",
+      "ejemplo_practico": "Si el domingo hubo total, la diferencial del miércoles incluye cambios del lunes, martes y miércoles.",
+      "conclusion_final": "La estrategia descrita es la diferencial."
+    }
+  },
+  {
+    "id": "UT13-Q21",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "En una estrategia diferencial, ¿qué pasa con el flag de modificado después de hacer la copia?",
+    "contexto": "Diferencia clave entre backup incremental y diferencial.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permanece activado."
+      },
+      {
+        "clave": "b",
+        "texto": "Se desactiva."
+      },
+      {
+        "clave": "c",
+        "texto": "Se borra del sistema operativo."
+      },
+      {
+        "clave": "d",
+        "texto": "Se convierte en checksum."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La copia diferencial no desactiva el flag de modificado, por eso la siguiente diferencial volverá a incluir los cambios anteriores más los nuevos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Desactivar el flag corresponde a la completa y normalmente a la incremental."
+        },
+        {
+          "clave": "c",
+          "motivo": "No desaparece del sistema como concepto operativo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un checksum es otra técnica distinta."
+        }
+      ],
+      "resumen_didactico": "La diferencial deja la «etiqueta roja» puesta para seguir acumulando cambios.",
+      "ejemplo_practico": "Si el lunes un archivo cambia, la diferencial del martes y la del miércoles pueden volver a arrastrarlo.",
+      "conclusion_final": "En diferencial, el flag permanece activado."
+    }
+  },
+  {
+    "id": "UT13-Q22",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Para restaurar correctamente una estrategia con copias incrementales, después de la última copia total debes:",
+    "contexto": "Orden correcto de recuperación cuando existen varias incrementales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicar todas las incrementales en orden cronológico."
+      },
+      {
+        "clave": "b",
+        "texto": "Aplicar solo la última incremental."
+      },
+      {
+        "clave": "c",
+        "texto": "Restaurarlas en orden inverso."
+      },
+      {
+        "clave": "d",
+        "texto": "Ignorar las incrementales y arrancar el sistema."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La restauración incremental exige reconstruir la cadena completa: primero la copia total y luego todas las incrementales posteriores, desde la más antigua a la más reciente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Solo la última no contiene todos los cambios históricos necesarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "El orden inverso rompería la secuencia lógica de recuperación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sin aplicar los cambios, el sistema quedaría incompleto."
+        }
+      ],
+      "resumen_didactico": "Con incrementales, la restauración depende de toda la cadena.",
+      "ejemplo_practico": "Total del domingo + incremental lunes + incremental martes + incremental miércoles.",
+      "conclusion_final": "Debes restaurar todas las incrementales en orden cronológico."
+    }
+  },
+  {
+    "id": "UT13-Q23",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Si la estrategia elegida fue diferencial y ya restauraste la última copia total, ¿qué necesitas añadir después?",
+    "contexto": "Restauración simplificada con backups diferenciales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La copia diferencial más reciente."
+      },
+      {
+        "clave": "b",
+        "texto": "Todas las diferenciales en orden."
+      },
+      {
+        "clave": "c",
+        "texto": "Todas las incrementales existentes."
+      },
+      {
+        "clave": "d",
+        "texto": "Ninguna copia adicional."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Con copias diferenciales, después de restaurar la última total basta con aplicar la diferencial más reciente, porque ya acumula todos los cambios desde esa total.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No hace falta aplicar todas; la última ya las contiene de forma acumulada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las incrementales son otra estrategia distinta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sin la diferencial más reciente faltarán cambios posteriores a la total."
+        }
+      ],
+      "resumen_didactico": "La gran ventaja de la diferencial es una restauración más simple.",
+      "ejemplo_practico": "Total del domingo + diferencial del jueves suele bastar para volver al estado del jueves.",
+      "conclusion_final": "Tras la total, se aplica solo la diferencial más reciente."
+    }
+  },
+  {
+    "id": "UT13-Q24",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Si trabajas con PostgreSQL en lugar de Oracle, ¿qué lenguaje procedimental muy similar a PL/SQL menciona el temario?",
+    "contexto": "Equivalente procedimental en otro SGBD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "PL/pgSQL."
+      },
+      {
+        "clave": "b",
+        "texto": "HTML."
+      },
+      {
+        "clave": "c",
+        "texto": "CSS."
+      },
+      {
+        "clave": "d",
+        "texto": "Bash relacional."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que PostgreSQL desarrolló PL/pgSQL, un lenguaje procedimental muy similar en filosofía a PL/SQL.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "HTML es marcado web, no lenguaje procedimental de BD."
+        },
+        {
+          "clave": "c",
+          "motivo": "CSS es estilo visual, no programación de base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es el lenguaje citado por el temario."
+        }
+      ],
+      "resumen_didactico": "PostgreSQL tiene su propia variante procedimental: PL/pgSQL.",
+      "ejemplo_practico": "Quien domina la lógica de PL/SQL suele adaptarse con rapidez a PL/pgSQL.",
+      "conclusion_final": "El lenguaje mencionado es PL/pgSQL."
+    }
+  },
+  {
+    "id": "UT13-Q25",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Necesitas ejecutar una corrección puntual «ahora» y no quieres almacenar el código como objeto permanente en la base de datos. ¿Qué debes usar?",
+    "contexto": "Script temporal sin persistencia en el catálogo de objetos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un bloque anónimo."
+      },
+      {
+        "clave": "b",
+        "texto": "Un procedimiento almacenado permanente."
+      },
+      {
+        "clave": "c",
+        "texto": "Una tabla física."
+      },
+      {
+        "clave": "d",
+        "texto": "Un índice compuesto."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El bloque anónimo se ejecuta en el momento y no se guarda como objeto reutilizable en la base de datos. Es ideal para mantenimiento puntual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un procedimiento sí queda almacenado como objeto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una tabla guarda datos, no lógica temporal de ejecución."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un índice optimiza acceso, no ejecuta correcciones puntuales."
+        }
+      ],
+      "resumen_didactico": "Si el código es de usar y tirar, lo apropiado es un bloque anónimo.",
+      "ejemplo_practico": "Una administradora corrige pólizas erróneas con un bloque que ejecuta una vez y desaparece.",
+      "conclusion_final": "La estructura adecuada es el bloque anónimo."
+    }
+  },
+  {
+    "id": "UT13-Q26",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "En los ejemplos del temario, ¿qué símbolo se usa para indicar al motor que ejecute el bloque PL/SQL escrito en consola?",
+    "contexto": "Terminación y ejecución de bloques anónimos en Oracle.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/"
+      },
+      {
+        "clave": "b",
+        "texto": "#."
+      },
+      {
+        "clave": "c",
+        "texto": "@@"
+      },
+      {
+        "clave": "d",
+        "texto": "%%"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En los ejemplos de PL/SQL, la barra inclinada '/' indica al motor que debe ejecutar el bloque previamente escrito.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el símbolo de ejecución usado en el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "No corresponde a la sintaxis mostrada para lanzar el bloque."
+        },
+        {
+          "clave": "d",
+          "motivo": "Tampoco es el delimitador indicado."
+        }
+      ],
+      "resumen_didactico": "En consola, tras END; se usa / para lanzar realmente el bloque.",
+      "ejemplo_practico": "Escribes DECLARE...BEGIN...END; y finalmente / para ejecutarlo.",
+      "conclusion_final": "El símbolo utilizado es la barra inclinada '/'."
+    }
+  },
+  {
+    "id": "UT13-Q27",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "¿Qué parte es obligatoria en la anatomía de un bloque PL/SQL bien formado?",
+    "contexto": "Secciones opcionales y obligatorias de la estructura básica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "BEGIN y END."
+      },
+      {
+        "clave": "b",
+        "texto": "DECLARE solamente."
+      },
+      {
+        "clave": "c",
+        "texto": "EXCEPTION solamente."
+      },
+      {
+        "clave": "d",
+        "texto": "CREATE VIEW obligatorio."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En un bloque PL/SQL, BEGIN y END delimitan el cuerpo ejecutable y son obligatorios. DECLARE y EXCEPTION son secciones opcionales según la necesidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DECLARE es útil pero opcional."
+        },
+        {
+          "clave": "c",
+          "motivo": "EXCEPTION solo se incluye si se va a manejar errores de ese modo."
+        },
+        {
+          "clave": "d",
+          "motivo": "CREATE VIEW no forma parte obligatoria de un bloque PL/SQL."
+        }
+      ],
+      "resumen_didactico": "DECLARE ayuda, EXCEPTION protege, pero BEGIN...END es lo imprescindible.",
+      "ejemplo_practico": "Puedes tener un bloque sin DECLARE, pero nunca sin BEGIN y END.",
+      "conclusion_final": "La parte obligatoria es BEGIN y END."
+    }
+  },
+  {
+    "id": "UT13-Q28",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "¿Qué limitación menciona el temario sobre los bloques básicos de PL/SQL frente a SQL puro?",
+    "contexto": "Capacidades y límites de PL/SQL dentro de sus bloques básicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No soportan DDL ni DCL de forma directa."
+      },
+      {
+        "clave": "b",
+        "texto": "No permiten variables."
+      },
+      {
+        "clave": "c",
+        "texto": "No admiten IF ni bucles."
+      },
+      {
+        "clave": "d",
+        "texto": "No pueden capturar excepciones."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica como desventaja que PL/SQL no soporta DDL ni DCL de forma directa en sus bloques básicos, aunque sí añade variables, control de flujo y manejo de excepciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Precisamente una de sus ventajas es el uso de variables."
+        },
+        {
+          "clave": "c",
+          "motivo": "PL/SQL sí añade IF, bucles y otras estructuras de control."
+        },
+        {
+          "clave": "d",
+          "motivo": "El control de excepciones es una de sus fortalezas."
+        }
+      ],
+      "resumen_didactico": "PL/SQL gana lógica procedimental, pero sus bloques básicos tienen esa limitación concreta respecto a DDL/DCL.",
+      "ejemplo_practico": "Puedes usar variables, IF o EXCEPTION, pero no tratar DDL/DCL de forma directa en ese contexto básico.",
+      "conclusion_final": "La limitación señalada es DDL/DCL no directos en bloques básicos."
+    }
+  },
+  {
+    "id": "UT13-Q29",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "Al escribir CREATE OR REPLACE PROCEDURE, ¿qué función tiene exactamente la parte OR REPLACE?",
+    "contexto": "Mantenimiento ágil de objetos PL/SQL ya existentes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sobrescribir la versión anterior si ya existe."
+      },
+      {
+        "clave": "b",
+        "texto": "Crear una copia de seguridad automática."
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminar todos los parámetros."
+      },
+      {
+        "clave": "d",
+        "texto": "Convertir el procedimiento en función."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "OR REPLACE permite redefinir un procedimiento o función existente sin provocar error por duplicidad, reemplazando la versión previa por la nueva.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No genera backups automáticos del objeto."
+        },
+        {
+          "clave": "c",
+          "motivo": "No afecta a la existencia de parámetros; eso depende de la definición."
+        },
+        {
+          "clave": "d",
+          "motivo": "No cambia la naturaleza del objeto: procedimiento sigue siendo procedimiento."
+        }
+      ],
+      "resumen_didactico": "OR REPLACE agiliza el desarrollo porque actualiza el objeto existente.",
+      "ejemplo_practico": "Si corriges una lógica de nómina, puedes recompilar el procedimiento sin borrarlo antes manualmente.",
+      "conclusion_final": "OR REPLACE sirve para sobrescribir la versión anterior."
+    }
+  },
+  {
+    "id": "UT13-Q30",
+    "tema": "UT13 — Repaso global (Abarca el 68% a 85% del temario)",
+    "pregunta": "En un procedimiento PL/SQL, la variable que defines en la cabecera al crearlo se llama parámetro formal. ¿Cómo se llama entonces el valor real que envías al invocarlo?",
+    "contexto": "Diferencia entre definición y llamada de parámetros.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Parámetro actual."
+      },
+      {
+        "clave": "b",
+        "texto": "Parámetro fantasma."
+      },
+      {
+        "clave": "c",
+        "texto": "Parámetro espejo."
+      },
+      {
+        "clave": "d",
+        "texto": "Parámetro nulo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El parámetro formal es el nombre/variable definida en la creación del procedimiento. El parámetro actual es el valor concreto que se pasa en la llamada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la terminología usada en PL/SQL."
+        },
+        {
+          "clave": "c",
+          "motivo": "Tampoco es el término técnico del temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "No describe el valor real suministrado a la llamada."
+        }
+      ],
+      "resumen_didactico": "Formal = lo declaras; actual = lo que realmente le pasas.",
+      "ejemplo_practico": "Si defines p_precio IN NUMBER, el 50 que mandas al llamar sería el parámetro actual.",
+      "conclusion_final": "El valor real enviado se llama parámetro actual."
+    }
+  }
+]

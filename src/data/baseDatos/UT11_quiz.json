@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT11-Q01",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En una empresa, Ventas, Soporte y Facturación consultan una única tabla de CLIENTES en lugar de mantener tres copias separadas. ¿Qué ventaja directa se consigue sobre todo al actualizar un teléfono?",
+    "contexto": "Centralización del dato en una sola fuente compartida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se reduce el riesgo de inconsistencias entre departamentos."
+      },
+      {
+        "clave": "b",
+        "texto": "Se obliga a que cada departamento use un fichero distinto."
+      },
+      {
+        "clave": "c",
+        "texto": "Se elimina la necesidad de hacer copias de seguridad."
+      },
+      {
+        "clave": "d",
+        "texto": "Se impide que varios usuarios consulten datos a la vez."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una base de datos centralizada evita que el mismo dato viva en múltiples archivos desincronizados. Si el teléfono se actualiza una sola vez en un punto común, reducimos inconsistencias y redundancia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es justo lo contrario: una base de datos busca compartir la información, no separarla en ficheros distintos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La centralización no elimina la necesidad de backups; la seguridad sigue siendo imprescindible."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las bases de datos precisamente están pensadas para facilitar el acceso concurrente controlado."
+        }
+      ],
+      "resumen_didactico": "Una única fuente de verdad evita versiones distintas del mismo cliente.",
+      "ejemplo_practico": "Si Soporte cambia el teléfono de un cliente, Ventas y Facturación verán el mismo dato actualizado.",
+      "conclusion_final": "La ventaja clave es reducir inconsistencias al mantener el dato centralizado."
+    }
+  },
+  {
+    "id": "UT11-Q02",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Abres un archivo .json en un editor y lo lees sin problema, pero al abrir una imagen .png solo ves símbolos extraños. ¿Qué diferencia explica esto?",
+    "contexto": "Distinción entre ficheros de texto plano y ficheros binarios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El .png está protegido con contraseña y el .json no."
+      },
+      {
+        "clave": "b",
+        "texto": "El .json es texto plano y el .png es un fichero binario."
+      },
+      {
+        "clave": "c",
+        "texto": "El .png siempre está corrupto si no se entiende en un editor."
+      },
+      {
+        "clave": "d",
+        "texto": "El .json se guarda en RAM y el .png solo en disco."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los ficheros de texto plano almacenan caracteres legibles por humanos, mientras que los binarios codifican bytes con significado específico para un software concreto, como una imagen o un ejecutable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La diferencia esencial no es una contraseña, sino la naturaleza del contenido."
+        },
+        {
+          "clave": "c",
+          "motivo": "Que un editor de texto no interprete una imagen no implica corrupción; es el comportamiento normal de un binario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ambos se almacenan en disco; la diferencia no tiene que ver con RAM frente a disco."
+        }
+      ],
+      "resumen_didactico": "Texto plano se puede leer; binario necesita una aplicación que lo interprete.",
+      "ejemplo_practico": "Un .json puede mostrar claves y valores; un .png contiene bytes que representan píxeles y metadatos.",
+      "conclusion_final": "La explicación correcta es texto plano frente a fichero binario."
+    }
+  },
+  {
+    "id": "UT11-Q03",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Si una función hash transforma directamente una clave en la dirección donde buscar el registro, ¿qué método de acceso se está utilizando?",
+    "contexto": "Métodos de acceso a archivos y registros.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Acceso secuencial."
+      },
+      {
+        "clave": "b",
+        "texto": "Acceso calculado o hash."
+      },
+      {
+        "clave": "c",
+        "texto": "Acceso por cinta magnética."
+      },
+      {
+        "clave": "d",
+        "texto": "Acceso por reorganización física."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El acceso calculado utiliza una función hash o de direccionamiento para obtener la posición donde debe encontrarse el registro sin recorrer todos los anteriores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En el acceso secuencial hay que recorrer registros hasta encontrar el buscado."
+        },
+        {
+          "clave": "c",
+          "motivo": "La cinta magnética se asocia al acceso secuencial, no al cálculo directo por clave."
+        },
+        {
+          "clave": "d",
+          "motivo": "La reorganización es una operación de mantenimiento, no un método de acceso."
+        }
+      ],
+      "resumen_didactico": "Si la clave “calcula” la posición, hablamos de acceso hash.",
+      "ejemplo_practico": "Con una clave de cliente, la función hash devuelve el bloque donde se espera encontrarlo.",
+      "conclusion_final": "El método descrito es el acceso calculado o hash."
+    }
+  },
+  {
+    "id": "UT11-Q04",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En un bloque físico de 4 KB caben exactamente 8 registros lógicos del mismo tamaño. ¿Qué valor tiene el factor de bloqueo?",
+    "contexto": "Relación entre bloque físico y número de registros lógicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "4"
+      },
+      {
+        "clave": "b",
+        "texto": "8"
+      },
+      {
+        "clave": "c",
+        "texto": "12"
+      },
+      {
+        "clave": "d",
+        "texto": "4096"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El factor de bloqueo es el número de registros lógicos que caben dentro de un bloque físico de lectura/escritura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No corresponde al número de registros indicado en el enunciado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Sería incorrecto porque el bloque solo admite 8 registros completos."
+        },
+        {
+          "clave": "d",
+          "motivo": "4096 es el tamaño del bloque en bytes, no el factor de bloqueo."
+        }
+      ],
+      "resumen_didactico": "Factor de bloqueo = cuántos registros caben en un bloque.",
+      "ejemplo_practico": "Si un bloque trae 8 clientes por lectura, el factor de bloqueo es 8.",
+      "conclusion_final": "El factor de bloqueo en este caso vale 8."
+    }
+  },
+  {
+    "id": "UT11-Q05",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Entre los objetivos de Codd, ¿cuál se relaciona con organizar la información en tablas que comparten una filosofía común y “hablan” entre ellas?",
+    "contexto": "Pilares del modelo relacional de Codd.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Estandarización lógica."
+      },
+      {
+        "clave": "b",
+        "texto": "No repudio."
+      },
+      {
+        "clave": "c",
+        "texto": "Compresión binaria."
+      },
+      {
+        "clave": "d",
+        "texto": "Serialización de procesos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La estandarización lógica de Codd persigue representar la información mediante relaciones o tablas con reglas comunes y coherentes entre sí.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No repudio pertenece al ámbito de seguridad, no a los pilares del modelo relacional."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compresión binaria no es un objetivo fundamental de Codd."
+        },
+        {
+          "clave": "d",
+          "motivo": "La serialización es otro concepto y no describe la organización relacional en tablas."
+        }
+      ],
+      "resumen_didactico": "Codd buscó que los datos se organizaran de forma lógica y uniforme en tablas.",
+      "ejemplo_practico": "Clientes, pedidos y productos se modelan como tablas relacionadas bajo una misma lógica.",
+      "conclusion_final": "El objetivo citado es la estandarización lógica."
+    }
+  },
+  {
+    "id": "UT11-Q06",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Según la metodología de Pressman, si quieres describir qué estados puede tener un pedido como “Pendiente”, “Enviado” o “Entregado”, ¿qué parte del análisis estás trabajando?",
+    "contexto": "Especificación de control en la modelización del software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Descripción de objetos de datos."
+      },
+      {
+        "clave": "b",
+        "texto": "Especificación de control."
+      },
+      {
+        "clave": "c",
+        "texto": "Implementación física."
+      },
+      {
+        "clave": "d",
+        "texto": "Diccionario de errores."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La especificación de control modela los estados y transiciones del sistema, normalmente mediante diagramas de transición de estados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La descripción de objetos de datos se centra en entidades y relaciones, no en estados del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "La implementación física pertenece a fases posteriores y tecnológicas."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una parte formal de la metodología tratada en el temario."
+        }
+      ],
+      "resumen_didactico": "Cuando modelas estados y cambios entre ellos, estás en la especificación de control.",
+      "ejemplo_practico": "Un pedido puede pasar de Pendiente a Enviado y luego a Entregado.",
+      "conclusion_final": "La parte correcta es la especificación de control."
+    }
+  },
+  {
+    "id": "UT11-Q07",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En la arquitectura ANSI/SPARC, ¿qué nivel describe cómo se almacenan realmente los datos en disco, índices y estructuras internas?",
+    "contexto": "Diferencia entre nivel externo, conceptual e interno.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Nivel externo."
+      },
+      {
+        "clave": "b",
+        "texto": "Nivel conceptual."
+      },
+      {
+        "clave": "c",
+        "texto": "Nivel interno."
+      },
+      {
+        "clave": "d",
+        "texto": "Nivel de usuario final."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El nivel interno representa la organización física y las estructuras de almacenamiento que utiliza el SGBD para guardar y acceder a los datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El nivel externo muestra vistas particulares para usuarios o aplicaciones."
+        },
+        {
+          "clave": "b",
+          "motivo": "El nivel conceptual define la visión lógica global, no el detalle físico."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es el nombre formal del nivel físico en ANSI/SPARC."
+        }
+      ],
+      "resumen_didactico": "Lo físico del almacenamiento pertenece al nivel interno.",
+      "ejemplo_practico": "Índices, rutas de acceso y disposición en disco se sitúan en el nivel interno.",
+      "conclusion_final": "El nivel que describe el almacenamiento real es el interno."
+    }
+  },
+  {
+    "id": "UT11-Q08",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En una tabla EMPLEADOS existen varias columnas o combinaciones que identifican de forma única cada fila, pero eliges solo una como identificador principal. ¿Cómo se llaman las otras candidatas que no se escogieron?",
+    "contexto": "Tipos de claves en el modelo relacional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Claves alternativas."
+      },
+      {
+        "clave": "b",
+        "texto": "Claves foráneas."
+      },
+      {
+        "clave": "c",
+        "texto": "Claves nulas."
+      },
+      {
+        "clave": "d",
+        "texto": "Claves derivadas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las claves candidatas son las que podrían identificar de forma única una tupla. La elegida como principal pasa a ser clave primaria y las demás quedan como claves alternativas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las claves foráneas sirven para relacionar tablas, no para identificar filas de forma primaria dentro de la misma."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe ese concepto como categoría estándar del temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la denominación correcta para candidatas no seleccionadas."
+        }
+      ],
+      "resumen_didactico": "Las candidatas no elegidas como primaria pasan a ser alternativas.",
+      "ejemplo_practico": "Si DNI y email son únicos, puedes elegir DNI como primaria y email quedaría como clave alternativa.",
+      "conclusion_final": "Se denominan claves alternativas."
+    }
+  },
+  {
+    "id": "UT11-Q09",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En una tabla no normalizada, para dar de alta un nuevo producto debes repetir también datos del proveedor en cada fila, aunque sean siempre los mismos. ¿Qué problema de diseño evidencia esto?",
+    "contexto": "Anomalías causadas por redundancia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Anomalía de inserción."
+      },
+      {
+        "clave": "b",
+        "texto": "Compresión del dominio."
+      },
+      {
+        "clave": "c",
+        "texto": "Independencia física."
+      },
+      {
+        "clave": "d",
+        "texto": "Bloqueo pesimista."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Cuando el diseño obliga a introducir datos redundantes o a depender de otros datos para insertar un nuevo registro, aparece una anomalía de inserción típica de tablas mal normalizadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No describe el problema de dependencia entre datos al insertar."
+        },
+        {
+          "clave": "c",
+          "motivo": "La independencia física es un objetivo del modelo relacional, no una anomalía."
+        },
+        {
+          "clave": "d",
+          "motivo": "El bloqueo pesimista trata concurrencia, no diseño redundante."
+        }
+      ],
+      "resumen_didactico": "Si para insertar algo nuevo debes repetir información ajena, hay anomalía de inserción.",
+      "ejemplo_practico": "No puedes crear un producto sin copiar otra vez nombre, dirección y teléfono del proveedor.",
+      "conclusion_final": "El problema descrito es una anomalía de inserción."
+    }
+  },
+  {
+    "id": "UT11-Q10",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En una relación muchos a muchos entre ALUMNOS y ASIGNATURAS, ¿cuál es la solución relacional habitual para implementarla correctamente?",
+    "contexto": "Transformación de cardinalidades M:N al diseño tabular.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Eliminar una de las dos tablas principales."
+      },
+      {
+        "clave": "b",
+        "texto": "Añadir una tabla intermedia con las claves de ambas."
+      },
+      {
+        "clave": "c",
+        "texto": "Guardar todas las asignaturas en una sola celda del alumno."
+      },
+      {
+        "clave": "d",
+        "texto": "Crear una vista y no una tabla."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las relaciones M:N se resuelven creando una tabla intermedia o de unión que contiene, como mínimo, las claves de las dos tablas relacionadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No hace falta eliminar tablas; cada entidad sigue teniendo su propia relación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso violaría la atomicidad y el buen diseño relacional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una vista no sustituye la necesidad estructural de la relación intermedia."
+        }
+      ],
+      "resumen_didactico": "Muchos a muchos se modela con una tabla puente.",
+      "ejemplo_practico": "MATRICULAS(id_alumno, id_asignatura, fecha) conecta ALUMNOS y ASIGNATURAS.",
+      "conclusion_final": "La solución correcta es una tabla intermedia con las claves de ambas."
+    }
+  },
+  {
+    "id": "UT11-Q11",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En una tabla PEDIDOS guardas en la misma columna varios valores como “ProductoA, ProductoB, ProductoC”. ¿Qué forma normal estás incumpliendo de manera más evidente?",
+    "contexto": "Valores no atómicos dentro de una sola celda.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "1FN."
+      },
+      {
+        "clave": "b",
+        "texto": "2FN."
+      },
+      {
+        "clave": "c",
+        "texto": "3FN."
+      },
+      {
+        "clave": "d",
+        "texto": "FNBC."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La Primera Forma Normal exige atomicidad: cada celda debe contener un único valor del dominio, no listas ni grupos repetitivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "2FN trata dependencias parciales con claves compuestas, no valores múltiples en una celda."
+        },
+        {
+          "clave": "c",
+          "motivo": "3FN trata dependencias transitivas."
+        },
+        {
+          "clave": "d",
+          "motivo": "FNBC es una forma más estricta y avanzada, pero el problema básico aquí es de 1FN."
+        }
+      ],
+      "resumen_didactico": "Una celda no debe contener listas; debe guardar un único valor.",
+      "ejemplo_practico": "Cada línea de pedido debería representar un producto distinto, no una lista en texto.",
+      "conclusion_final": "Se incumple la Primera Forma Normal."
+    }
+  },
+  {
+    "id": "UT11-Q12",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Una tabla ya está en 3FN, pero existe una dependencia funcional cuyo determinante no es clave candidata. ¿Qué forma normal más estricta no se cumple?",
+    "contexto": "Diferencia entre 3FN y Boyce-Codd.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "1FN."
+      },
+      {
+        "clave": "b",
+        "texto": "2FN."
+      },
+      {
+        "clave": "c",
+        "texto": "FNBC."
+      },
+      {
+        "clave": "d",
+        "texto": "6FN."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La Forma Normal de Boyce-Codd exige que todo determinante de una dependencia funcional sea una clave candidata. Puede haber tablas en 3FN que no alcancen FNBC.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "1FN se refiere a atomicidad y es un nivel mucho más básico."
+        },
+        {
+          "clave": "b",
+          "motivo": "2FN trata dependencias parciales."
+        },
+        {
+          "clave": "d",
+          "motivo": "6FN es mucho más avanzada y no es la forma mencionada en este caso."
+        }
+      ],
+      "resumen_didactico": "Si un determinante no es clave candidata, falla FNBC.",
+      "ejemplo_practico": "Una tabla puede pasar 3FN y aun así no cumplir la exigencia reforzada de Boyce-Codd.",
+      "conclusion_final": "La forma normal incumplida es FNBC."
+    }
+  },
+  {
+    "id": "UT11-Q13",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Quieres obligar a que el campo edad solo acepte valores mayores o iguales que 18. ¿Qué restricción DDL es la más adecuada?",
+    "contexto": "Uso de restricciones para validar dominios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FOREIGN KEY."
+      },
+      {
+        "clave": "b",
+        "texto": "UNIQUE."
+      },
+      {
+        "clave": "c",
+        "texto": "CHECK."
+      },
+      {
+        "clave": "d",
+        "texto": "INDEX."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La restricción CHECK permite imponer condiciones lógicas sobre el valor de una columna, como rangos numéricos o listas válidas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FOREIGN KEY relaciona tablas, no valida un rango numérico interno de la columna."
+        },
+        {
+          "clave": "b",
+          "motivo": "UNIQUE evita duplicados, pero no fuerza que el valor sea al menos 18."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un índice mejora búsquedas, no valida reglas de dominio."
+        }
+      ],
+      "resumen_didactico": "CHECK sirve para imponer reglas sobre qué valores son válidos.",
+      "ejemplo_practico": "edad INT CHECK (edad >= 18)",
+      "conclusion_final": "La restricción adecuada es CHECK."
+    }
+  },
+  {
+    "id": "UT11-Q14",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "¿Qué diferencia práctica existe entre PRIMARY KEY y UNIQUE, según el diseño habitual de tablas SQL?",
+    "contexto": "Restricciones de unicidad e identificación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UNIQUE nunca evita duplicados."
+      },
+      {
+        "clave": "b",
+        "texto": "PRIMARY KEY identifica oficialmente la fila y no admite NULL."
+      },
+      {
+        "clave": "c",
+        "texto": "PRIMARY KEY solo se usa en vistas."
+      },
+      {
+        "clave": "d",
+        "texto": "UNIQUE obliga a que la columna sea foránea."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La PRIMARY KEY es el identificador principal de la fila y, por definición, no admite valores NULL. UNIQUE evita duplicados, pero no sustituye necesariamente el papel de identificador principal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "UNIQUE precisamente se usa para evitar valores repetidos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La PRIMARY KEY se define en tablas, no como una característica exclusiva de vistas."
+        },
+        {
+          "clave": "d",
+          "motivo": "UNIQUE no convierte una columna en clave foránea."
+        }
+      ],
+      "resumen_didactico": "Primary key = identificador principal sin NULL; unique = unicidad adicional.",
+      "ejemplo_practico": "id_usuario puede ser PRIMARY KEY y email puede ser UNIQUE.",
+      "conclusion_final": "La diferencia clave es que PRIMARY KEY identifica la fila y no admite NULL."
+    }
+  },
+  {
+    "id": "UT11-Q15",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Necesitas almacenar fecha y hora exacta de registro de un pedido, no solo el día. ¿Qué tipo de dato es más coherente?",
+    "contexto": "Elección de tipos temporales en SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DATE sin más precisión temporal."
+      },
+      {
+        "clave": "b",
+        "texto": "BOOLEAN."
+      },
+      {
+        "clave": "c",
+        "texto": "TIMESTAMP o un tipo fecha-hora equivalente."
+      },
+      {
+        "clave": "d",
+        "texto": "CHAR(19) por defecto."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Cuando además de la fecha interesa la hora exacta del evento, conviene usar un tipo temporal que almacene fecha y tiempo, como TIMESTAMP o su equivalente según el SGBD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DATE puede ser insuficiente si el contexto del temario separa fecha y fecha-hora con mayor precisión."
+        },
+        {
+          "clave": "b",
+          "motivo": "BOOLEAN solo representa verdadero o falso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Guardar fechas como texto es menos adecuado y dificulta validación y operaciones temporales."
+        }
+      ],
+      "resumen_didactico": "Para registrar el momento exacto, usa un tipo fecha-hora.",
+      "ejemplo_practico": "2026-04-17 18:43:21 requiere más que solo el día del calendario.",
+      "conclusion_final": "La opción coherente es TIMESTAMP o tipo equivalente de fecha-hora."
+    }
+  },
+  {
+    "id": "UT11-Q16",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Antes de llamarse SQL, el lenguaje se conoció inicialmente con otro nombre en IBM. ¿Cuál era?",
+    "contexto": "Origen histórico del lenguaje SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SEQUEL."
+      },
+      {
+        "clave": "b",
+        "texto": "PL/SQL."
+      },
+      {
+        "clave": "c",
+        "texto": "QBE."
+      },
+      {
+        "clave": "d",
+        "texto": "DDL."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El lenguaje nació con el nombre SEQUEL (Structured English Query Language) y más tarde pasó a denominarse SQL por cuestiones legales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "PL/SQL es una extensión procedimental de Oracle, posterior y distinta."
+        },
+        {
+          "clave": "c",
+          "motivo": "QBE es otro enfoque de consulta, no el nombre original de SQL."
+        },
+        {
+          "clave": "d",
+          "motivo": "DDL es un sublenguaje dentro de SQL, no su denominación histórica."
+        }
+      ],
+      "resumen_didactico": "El nombre original fue SEQUEL.",
+      "ejemplo_practico": "IBM lo redefinió después como SQL, nombre con el que se popularizó internacionalmente.",
+      "conclusion_final": "El nombre inicial era SEQUEL."
+    }
+  },
+  {
+    "id": "UT11-Q17",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "¿Cuál es la contrapartida típica de crear un índice para acelerar lecturas sobre una columna muy consultada?",
+    "contexto": "Equilibrio entre rendimiento de lectura y coste de mantenimiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las consultas SELECT suelen ser algo más lentas."
+      },
+      {
+        "clave": "b",
+        "texto": "Las inserciones y actualizaciones pueden costar más mantenimiento."
+      },
+      {
+        "clave": "c",
+        "texto": "La tabla deja de poder tener clave primaria."
+      },
+      {
+        "clave": "d",
+        "texto": "Los datos pasan automáticamente a estar cifrados."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Un índice acelera búsquedas y ordenaciones sobre ciertas columnas, pero debe mantenerse al insertar, borrar o actualizar datos, lo que introduce un coste adicional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En general, el propósito del índice es acelerar SELECT, no ralentizarlas."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe esa incompatibilidad general entre índices y claves primarias."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un índice no cifra la información por sí mismo."
+        }
+      ],
+      "resumen_didactico": "Más velocidad en lecturas, pero más trabajo al modificar datos.",
+      "ejemplo_practico": "Al insertar miles de filas, el SGBD debe actualizar también las estructuras del índice.",
+      "conclusion_final": "La contrapartida típica es el mayor coste de mantenimiento en INSERT/UPDATE/DELETE."
+    }
+  },
+  {
+    "id": "UT11-Q18",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Si quieres filtrar una consulta para obtener solo los empleados cuyo departamento sea Ventas, RRHH o Marketing, ¿qué operador suele expresar mejor esa condición?",
+    "contexto": "Filtrado por pertenencia a un conjunto de valores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "LIKE."
+      },
+      {
+        "clave": "b",
+        "texto": "IN."
+      },
+      {
+        "clave": "c",
+        "texto": "BETWEEN."
+      },
+      {
+        "clave": "d",
+        "texto": "DISTINCT."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "IN permite comparar una columna contra una lista cerrada de valores posibles, evitando encadenar varios OR cuando la condición es de pertenencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "LIKE se usa para patrones de texto, no para listas cerradas de igualdad exacta."
+        },
+        {
+          "clave": "c",
+          "motivo": "BETWEEN sirve para intervalos, habitualmente numéricos o alfabéticos ordenados."
+        },
+        {
+          "clave": "d",
+          "motivo": "DISTINCT elimina duplicados del resultado, no filtra por pertenencia."
+        }
+      ],
+      "resumen_didactico": "Para “uno de estos valores”, el operador más natural es IN.",
+      "ejemplo_practico": "WHERE departamento IN ('Ventas', 'RRHH', 'Marketing')",
+      "conclusion_final": "El operador adecuado es IN."
+    }
+  },
+  {
+    "id": "UT11-Q19",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Tras agrupar ventas por producto, quieres saber qué artículo ha vendido el importe total más alto. ¿Qué función de agregación te ayuda a obtener el valor máximo?",
+    "contexto": "Uso de funciones agregadas en consultas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "MIN()."
+      },
+      {
+        "clave": "b",
+        "texto": "AVG()."
+      },
+      {
+        "clave": "c",
+        "texto": "MAX()."
+      },
+      {
+        "clave": "d",
+        "texto": "COUNT()."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "MAX devuelve el valor mayor dentro de un conjunto, por lo que se utiliza para obtener el mayor importe, fecha más reciente, mayor salario, etc.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "MIN devuelve el valor más pequeño."
+        },
+        {
+          "clave": "b",
+          "motivo": "AVG calcula el promedio, no el máximo."
+        },
+        {
+          "clave": "d",
+          "motivo": "COUNT cuenta registros, pero no devuelve el mayor valor."
+        }
+      ],
+      "resumen_didactico": "Para localizar el valor más alto, se usa MAX.",
+      "ejemplo_practico": "MAX(total_ventas) devuelve el importe total más elevado del conjunto analizado.",
+      "conclusion_final": "La función correcta es MAX()."
+    }
+  },
+  {
+    "id": "UT11-Q20",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En ORDER BY provincia ASC, ciudad DESC, ¿qué criterio se aplica primero al ordenar los resultados?",
+    "contexto": "Ordenación por múltiples columnas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Primero ciudad y después provincia."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo se usa la última columna indicada."
+      },
+      {
+        "clave": "c",
+        "texto": "Primero provincia y, dentro de cada provincia, ciudad."
+      },
+      {
+        "clave": "d",
+        "texto": "El orden depende del motor y no de la sentencia."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Cuando ORDER BY incluye varias columnas, el SGBD ordena primero por la primera lista y usa las siguientes para desempatar dentro de los grupos resultantes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El primer criterio es la primera columna escrita en ORDER BY."
+        },
+        {
+          "clave": "b",
+          "motivo": "Se usan todas las columnas especificadas, no solo la última."
+        },
+        {
+          "clave": "d",
+          "motivo": "La sentencia establece claramente la prioridad del orden."
+        }
+      ],
+      "resumen_didactico": "En ORDER BY manda primero la primera columna y luego las siguientes como desempate.",
+      "ejemplo_practico": "Todos los registros de Madrid quedan juntos y, dentro de Madrid, las ciudades se ordenan en sentido descendente.",
+      "conclusion_final": "Se ordena primero por provincia y luego por ciudad."
+    }
+  },
+  {
+    "id": "UT11-Q21",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "¿Qué afirmación describe mejor una vista (VIEW) en SQL?",
+    "contexto": "Naturaleza de las vistas como consultas almacenadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es una copia física completa de la tabla original."
+      },
+      {
+        "clave": "b",
+        "texto": "Es una consulta almacenada que presenta datos como si fuera una tabla virtual."
+      },
+      {
+        "clave": "c",
+        "texto": "Es un índice con otro nombre."
+      },
+      {
+        "clave": "d",
+        "texto": "Es el único lugar donde se puede usar SELECT."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una vista es una tabla virtual construida a partir de una consulta. Sirve para simplificar accesos, reutilizar lógica y limitar qué información se presenta al usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una vista normal no almacena por defecto una copia completa de los datos como una tabla física."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un índice mejora acceso; una vista presenta un resultado consultable."
+        },
+        {
+          "clave": "d",
+          "motivo": "SELECT puede usarse directamente sobre tablas y otras vistas, no solo dentro de una vista."
+        }
+      ],
+      "resumen_didactico": "Una vista no duplica datos: ofrece una representación virtual basada en una consulta.",
+      "ejemplo_practico": "vista_clientes_activos muestra solo clientes activos sin obligar al usuario a escribir siempre el mismo SELECT.",
+      "conclusion_final": "La definición correcta es una consulta almacenada que actúa como tabla virtual."
+    }
+  },
+  {
+    "id": "UT11-Q22",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Quieres permitir que un usuario pueda insertar nuevas filas en la tabla PEDIDOS. ¿Qué sentencia DCL usarías para conceder ese privilegio?",
+    "contexto": "Concesión de permisos sobre objetos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DROP."
+      },
+      {
+        "clave": "b",
+        "texto": "GRANT."
+      },
+      {
+        "clave": "c",
+        "texto": "REVOKE."
+      },
+      {
+        "clave": "d",
+        "texto": "ALTER USERDATA."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "GRANT se utiliza para conceder privilegios o permisos a usuarios o roles sobre objetos de la base de datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DROP elimina objetos; no concede permisos."
+        },
+        {
+          "clave": "c",
+          "motivo": "REVOKE hace lo contrario: retira permisos previamente concedidos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la sentencia estándar del temario para concesión de privilegios."
+        }
+      ],
+      "resumen_didactico": "Dar permisos = GRANT; quitarlos = REVOKE.",
+      "ejemplo_practico": "GRANT INSERT ON pedidos TO usuario_app;",
+      "conclusion_final": "La sentencia adecuada para conceder el privilegio es GRANT."
+    }
+  },
+  {
+    "id": "UT11-Q23",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En PL/SQL, si quieres declarar un valor que no deba modificarse durante la ejecución del bloque, ¿qué debes usar?",
+    "contexto": "Diferencia entre variable y constante en PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una constante declarada con CONSTANT."
+      },
+      {
+        "clave": "b",
+        "texto": "Una tabla temporal."
+      },
+      {
+        "clave": "c",
+        "texto": "Un trigger BEFORE."
+      },
+      {
+        "clave": "d",
+        "texto": "Un cursor implícito."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "PL/SQL permite declarar constantes para fijar valores inmutables dentro del bloque, mejorando claridad y evitando modificaciones accidentales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una tabla temporal no sustituye a una constante del lenguaje."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un trigger reacciona a eventos sobre tablas; no sirve para declarar valores inmutables en un bloque."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un cursor implícito gestiona resultados de sentencias SQL, no constantes."
+        }
+      ],
+      "resumen_didactico": "Si no quieres que el valor cambie, decláralo como CONSTANT.",
+      "ejemplo_practico": "IVA CONSTANT NUMBER := 21;",
+      "conclusion_final": "Debes usar una constante declarada con CONSTANT."
+    }
+  },
+  {
+    "id": "UT11-Q24",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "¿Qué diferencia esencial distingue a una función de un procedimiento en PL/SQL?",
+    "contexto": "Estructuras funcionales reutilizables.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La función debe devolver un valor mediante RETURN."
+      },
+      {
+        "clave": "b",
+        "texto": "El procedimiento siempre trabaja sin parámetros."
+      },
+      {
+        "clave": "c",
+        "texto": "La función no puede contener SQL."
+      },
+      {
+        "clave": "d",
+        "texto": "El procedimiento solo sirve para leer datos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una función en PL/SQL tiene cláusula RETURN y devuelve un valor del tipo especificado. Un procedimiento encapsula lógica reutilizable, pero no está obligado a devolver un valor por retorno directo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un procedimiento puede recibir parámetros de entrada o salida."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las funciones pueden integrar SQL dentro de su lógica según el contexto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un procedimiento puede leer, insertar, actualizar o borrar según su implementación."
+        }
+      ],
+      "resumen_didactico": "Función = devuelve valor; procedimiento = no necesariamente.",
+      "ejemplo_practico": "calcular_descuento(precio) RETURN NUMBER es función; actualizar_stock(p_id, p_cantidad) puede ser procedimiento.",
+      "conclusion_final": "La diferencia esencial es que la función debe devolver un valor con RETURN."
+    }
+  },
+  {
+    "id": "UT11-Q25",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "En un procedimiento PL/SQL, ¿qué modo de parámetro se usa cuando el dato solo entra al procedimiento y no debe devolverse modificado?",
+    "contexto": "Modos de parámetros en procedimientos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "IN."
+      },
+      {
+        "clave": "b",
+        "texto": "OUT."
+      },
+      {
+        "clave": "c",
+        "texto": "IN OUT."
+      },
+      {
+        "clave": "d",
+        "texto": "RETURN."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El modo IN indica que el parámetro se usa como entrada: el procedimiento puede leerlo, pero no devolverlo modificado como resultado en la misma variable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "OUT se usa para devolver un valor hacia fuera."
+        },
+        {
+          "clave": "c",
+          "motivo": "IN OUT permite entrada y salida con modificación."
+        },
+        {
+          "clave": "d",
+          "motivo": "RETURN se asocia al valor devuelto por una función, no a un modo de parámetro."
+        }
+      ],
+      "resumen_didactico": "Si el dato solo entra, el modo correcto es IN.",
+      "ejemplo_practico": "crear_pedido(p_cliente IN NUMBER) usa el identificador como dato de entrada.",
+      "conclusion_final": "El modo adecuado es IN."
+    }
+  },
+  {
+    "id": "UT11-Q26",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Ejecutas un SELECT ... INTO y la consulta no devuelve ninguna fila. ¿Qué excepción típica se produce en PL/SQL?",
+    "contexto": "Comportamiento de SELECT INTO ante ausencia de resultados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DUP_VAL_ON_INDEX."
+      },
+      {
+        "clave": "b",
+        "texto": "NO_DATA_FOUND."
+      },
+      {
+        "clave": "c",
+        "texto": "ZERO_DIVIDE."
+      },
+      {
+        "clave": "d",
+        "texto": "STORAGE_ERROR."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "SELECT INTO exige exactamente una fila. Si no encuentra ninguna, Oracle lanza la excepción NO_DATA_FOUND; si devuelve más de una, TOO_MANY_ROWS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DUP_VAL_ON_INDEX se asocia a duplicados que violan unicidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "ZERO_DIVIDE ocurre al dividir entre cero."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la excepción típica de este escenario de consulta sin filas."
+        }
+      ],
+      "resumen_didactico": "Cero filas en SELECT INTO provoca NO_DATA_FOUND.",
+      "ejemplo_practico": "Buscar un usuario por id inexistente con SELECT nombre INTO v_nom ... lanza esa excepción.",
+      "conclusion_final": "La excepción esperable es NO_DATA_FOUND."
+    }
+  },
+  {
+    "id": "UT11-Q27",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "¿Para qué caso es especialmente útil un trigger AFTER en una tabla?",
+    "contexto": "Elección del momento de disparo según la finalidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para validar antes de guardar el dato."
+      },
+      {
+        "clave": "b",
+        "texto": "Para auditoría o registro de acciones una vez realizada la operación."
+      },
+      {
+        "clave": "c",
+        "texto": "Para declarar variables del bloque."
+      },
+      {
+        "clave": "d",
+        "texto": "Para reemplazar una clave primaria."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los triggers AFTER se ejecutan después de que la operación tenga éxito, por lo que son especialmente apropiados para auditorías, logs o acciones posteriores al cambio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La validación previa suele asociarse mejor a BEFORE."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las variables se declaran en el código del bloque, no es el propósito del trigger AFTER."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un trigger no sustituye la función estructural de una clave primaria."
+        }
+      ],
+      "resumen_didactico": "AFTER es ideal para dejar rastro o reaccionar después del cambio.",
+      "ejemplo_practico": "Tras un UPDATE de salario, un AFTER trigger inserta un registro de auditoría.",
+      "conclusion_final": "El uso especialmente adecuado es auditoría o logging posterior."
+    }
+  },
+  {
+    "id": "UT11-Q28",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Si un trigger NO lleva la cláusula FOR EACH ROW y ejecutas un UPDATE que afecta a 200 filas, ¿cuántas veces se dispara normalmente?",
+    "contexto": "Diferencia entre trigger por fila y por sentencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "200 veces."
+      },
+      {
+        "clave": "b",
+        "texto": "100 veces."
+      },
+      {
+        "clave": "c",
+        "texto": "1 vez por la sentencia."
+      },
+      {
+        "clave": "d",
+        "texto": "Ninguna vez."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Sin FOR EACH ROW, el trigger es de nivel sentencia: se dispara una sola vez por la orden SQL, independientemente del número de filas afectadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso ocurriría con un trigger por fila, no con uno a nivel sentencia."
+        },
+        {
+          "clave": "b",
+          "motivo": "No existe esa regla intermedia; el disparo depende de fila o sentencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí se dispara, pero una sola vez por la sentencia."
+        }
+      ],
+      "resumen_didactico": "Sin FOR EACH ROW, el trigger actúa por sentencia completa.",
+      "ejemplo_practico": "Un UPDATE masivo sobre 200 empleados activa el trigger una sola vez si es statement-level.",
+      "conclusion_final": "Se dispara 1 vez por la sentencia."
+    }
+  },
+  {
+    "id": "UT11-Q29",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Dentro de CIDAN, ¿qué principio comprueba que quien intenta acceder al sistema es realmente quien dice ser?",
+    "contexto": "Pilares de seguridad aplicados al acceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Integridad."
+      },
+      {
+        "clave": "b",
+        "texto": "Autenticación."
+      },
+      {
+        "clave": "c",
+        "texto": "Disponibilidad."
+      },
+      {
+        "clave": "d",
+        "texto": "No repudio."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La autenticación es el proceso de verificar la identidad del usuario o sistema que intenta acceder, mediante contraseñas, tokens, 2FA, biometría, etc.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Integridad protege frente a alteraciones indebidas del dato."
+        },
+        {
+          "clave": "c",
+          "motivo": "Disponibilidad garantiza acceso cuando el servicio se necesita."
+        },
+        {
+          "clave": "d",
+          "motivo": "No repudio aporta evidencias para que una acción no pueda negarse."
+        }
+      ],
+      "resumen_didactico": "Antes de autorizar, hay que comprobar identidad: eso es autenticación.",
+      "ejemplo_practico": "Un inicio de sesión con contraseña y segundo factor verifica que el usuario es quien afirma ser.",
+      "conclusion_final": "El principio correcto es la autenticación."
+    }
+  },
+  {
+    "id": "UT11-Q30",
+    "tema": "UT11 — Repaso global (Abarca el 34% a 51% del temario)",
+    "pregunta": "Tienes una copia completa hecha el domingo y, después, copias incrementales diarias. Si el sistema cae el jueves, ¿qué necesitas normalmente para restaurar hasta el último punto disponible?",
+    "contexto": "Recuperación con estrategia de backups incrementales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo la última copia incremental."
+      },
+      {
+        "clave": "b",
+        "texto": "La copia completa y todas las incrementales posteriores necesarias."
+      },
+      {
+        "clave": "c",
+        "texto": "Únicamente volver a crear las tablas vacías."
+      },
+      {
+        "clave": "d",
+        "texto": "La base de datos original sin ninguna copia."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Con backups incrementales, la restauración exige la copia completa base y la secuencia de incrementales aplicables hasta el punto deseado, ya que cada una guarda solo los cambios desde la anterior.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La última incremental por sí sola no contiene todo el histórico necesario para reconstruir el estado final."
+        },
+        {
+          "clave": "c",
+          "motivo": "Recrear tablas no recupera los datos reales perdidos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Si la base original ha fallado, precisamente necesitas las copias de seguridad para reconstruirla."
+        }
+      ],
+      "resumen_didactico": "Backup incremental = restaurar la completa base más la cadena de incrementales.",
+      "ejemplo_practico": "Para recuperar al jueves, aplicas la copia del domingo y luego lunes, martes, miércoles y jueves según la política usada.",
+      "conclusion_final": "Debes usar la copia completa y las incrementales posteriores necesarias."
+    }
+  }
+]

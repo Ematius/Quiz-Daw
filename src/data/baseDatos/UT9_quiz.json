@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT9-Q01",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "En una empresa, la app móvil y el panel web consultan la misma base de datos de clientes sin mantener copias separadas. ¿Qué beneficio clave de las bases de datos describe mejor esta situación?",
+    "contexto": "Una única fuente de datos es utilizada por varias aplicaciones distintas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Independencia de los datos respecto de una sola aplicación."
+      },
+      {
+        "clave": "b",
+        "texto": "Bloqueo exclusivo permanente."
+      },
+      {
+        "clave": "c",
+        "texto": "Acceso secuencial obligatorio."
+      },
+      {
+        "clave": "d",
+        "texto": "Compresión binaria del almacenamiento."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La independencia implica que la información no queda atada a una única aplicación. Una misma base puede ser usada por distintos programas sin duplicar el dato ni rehacer su estructura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El bloqueo exclusivo es un mecanismo de concurrencia, no el beneficio descrito al reutilizar la misma información desde varias apps."
+        },
+        {
+          "clave": "c",
+          "motivo": "El acceso secuencial es un método de lectura de ficheros, no la ventaja de que varias aplicaciones consuman el mismo repositorio de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La compresión puede existir, pero no es la idea central del escenario planteado."
+        }
+      ],
+      "resumen_didactico": "Una base de datos independiente puede alimentar varias aplicaciones sin duplicar la información.",
+      "ejemplo_practico": "La app móvil consulta clientes, y el ERP web consulta esos mismos clientes, ambos sobre el mismo repositorio central.",
+      "conclusion_final": "El beneficio principal es la independencia de los datos respecto de una sola aplicación."
+    }
+  },
+  {
+    "id": "UT9-Q02",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Tienes que diseñar el sistema de movimientos de un banco, donde cada operación debe ser exacta y consistente. ¿Qué modelo de base de datos encaja mejor como elección principal?",
+    "contexto": "Escenario de transacciones críticas donde la precisión del dato es prioritaria.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Modelo Relacional."
+      },
+      {
+        "clave": "b",
+        "texto": "Modelo documental NoSQL."
+      },
+      {
+        "clave": "c",
+        "texto": "Modelo de grafos."
+      },
+      {
+        "clave": "d",
+        "texto": "Modelo de texto plano."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El modelo relacional destaca cuando la consistencia, las reglas estrictas y la integridad del dato son críticas, como en finanzas, inventarios o transacciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El modelo documental es flexible y escalable, pero no es la opción clásica principal para escenarios donde manda la consistencia transaccional estricta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Grafos es muy útil para redes de relaciones complejas, no para ser la elección base de un sistema bancario transaccional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un fichero de texto plano no proporciona integridad, relaciones ni control propio de un sistema gestor."
+        }
+      ],
+      "resumen_didactico": "Cuando el dato debe ser exacto y estar muy controlado, el modelo relacional es la referencia principal.",
+      "ejemplo_practico": "Transferencias, saldos y movimientos de cuenta se gestionan mejor en tablas relacionadas con reglas estrictas.",
+      "conclusion_final": "La elección principal es el modelo relacional."
+    }
+  },
+  {
+    "id": "UT9-Q03",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Una empresa quiere analizar ventas por año, región y producto con consultas rapidísimas orientadas a inteligencia de negocio. ¿Qué tipo de base de datos está especialmente pensada para ese enfoque?",
+    "contexto": "Consultas analíticas por dimensiones y métricas de negocio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Base de datos multidimensional."
+      },
+      {
+        "clave": "b",
+        "texto": "Base de datos jerárquica."
+      },
+      {
+        "clave": "c",
+        "texto": "Base de datos clave-valor."
+      },
+      {
+        "clave": "d",
+        "texto": "Base de datos orientada a objetos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las bases de datos multidimensionales organizan la información en cubos y dimensiones, muy útiles en BI para análisis por tiempo, región, producto y otras perspectivas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La jerárquica trabaja como árbol padre-hijo y no está especializada en análisis dimensional por cubos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Clave-valor es excelente para accesos directos por clave, pero no para explotación analítica multidimensional."
+        },
+        {
+          "clave": "d",
+          "motivo": "El modelo orientado a objetos se usa para persistir objetos complejos, no como solución típica de cubos BI."
+        }
+      ],
+      "resumen_didactico": "Si el negocio pide análisis por dimensiones, la palabra clave es multidimensional.",
+      "ejemplo_practico": "Consultar las ventas de 2025 en Andalucía para la gama de portátiles desde un cubo analítico.",
+      "conclusion_final": "El tipo adecuado es una base de datos multidimensional."
+    }
+  },
+  {
+    "id": "UT9-Q04",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Cuando una API en Node.js necesita obtener un usuario, no lee el disco directamente. ¿Qué software actúa como intermediario entre la aplicación y los datos físicos?",
+    "contexto": "Arquitectura donde la aplicación solicita datos sin tocar el almacenamiento físico de forma directa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El SGBD."
+      },
+      {
+        "clave": "b",
+        "texto": "El sistema de archivos CSV."
+      },
+      {
+        "clave": "c",
+        "texto": "El compilador del lenguaje."
+      },
+      {
+        "clave": "d",
+        "texto": "El navegador del usuario."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El Sistema Gestor de Bases de Datos es el intermediario entre aplicaciones y datos físicos. Gestiona acceso, seguridad, eficiencia y concurrencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un CSV es solo un formato de fichero; no gestiona permisos, índices, concurrencia ni consultas complejas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El compilador traduce código, pero no actúa como gestor de la base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El navegador es un cliente de interfaz, no el software responsable de administrar datos persistentes."
+        }
+      ],
+      "resumen_didactico": "La app habla con el SGBD, no con el disco duro directamente.",
+      "ejemplo_practico": "Tu backend envía una consulta a PostgreSQL y este localiza el registro entre millones de filas.",
+      "conclusion_final": "El intermediario es el SGBD."
+    }
+  },
+  {
+    "id": "UT9-Q05",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "En la arquitectura ANSI/SPARC, el cliente ve fotos y precios, el repartidor ve direcciones y el contable ve facturas. ¿A qué nivel pertenecen esas visiones distintas de los mismos datos?",
+    "contexto": "Diferentes perfiles observan subconjuntos distintos de la información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Nivel externo."
+      },
+      {
+        "clave": "b",
+        "texto": "Nivel conceptual."
+      },
+      {
+        "clave": "c",
+        "texto": "Nivel interno."
+      },
+      {
+        "clave": "d",
+        "texto": "Nivel físico bruto."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El nivel externo representa las vistas de usuario. Cada perfil accede a una representación parcial adaptada a sus necesidades.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El nivel conceptual es la visión global lógica de toda la base, no las vistas particulares por perfil."
+        },
+        {
+          "clave": "c",
+          "motivo": "El nivel interno describe cómo se almacenan los datos físicamente y cómo se optimiza su acceso."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la denominación formal de la arquitectura ANSI/SPARC en el temario."
+        }
+      ],
+      "resumen_didactico": "Las vistas adaptadas a cada usuario pertenecen al nivel externo.",
+      "ejemplo_practico": "El repartidor ve coordenadas y el cliente ve precios, pero ambos salen de la misma base de datos.",
+      "conclusion_final": "Esas visiones corresponden al nivel externo."
+    }
+  },
+  {
+    "id": "UT9-Q06",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Migras la base de datos a otro servidor y cambias la forma de indexar los archivos, pero el esquema lógico sigue igual y la aplicación continúa funcionando. ¿Qué propiedad se está demostrando?",
+    "contexto": "Cambios internos o de infraestructura sin romper el modelo lógico ni las aplicaciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Independencia física de los datos."
+      },
+      {
+        "clave": "b",
+        "texto": "Dependencia jerárquica."
+      },
+      {
+        "clave": "c",
+        "texto": "Normalización en 1FN."
+      },
+      {
+        "clave": "d",
+        "texto": "Acceso secuencial indexado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La independencia física permite modificar detalles de almacenamiento, soporte o indexación sin afectar al esquema lógico ni a las aplicaciones que usan la base.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La dependencia jerárquica no describe esta separación entre almacenamiento y uso lógico."
+        },
+        {
+          "clave": "c",
+          "motivo": "La 1FN trata de atomicidad de valores, no de cambios de infraestructura o almacenamiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es una técnica de organización/acceso, no la propiedad arquitectónica que se describe."
+        }
+      ],
+      "resumen_didactico": "Si cambias el interior del sistema sin romper lo que usa la aplicación, hay independencia física.",
+      "ejemplo_practico": "Pasar de un servidor a otro o cambiar índices sin tocar el código SQL de negocio.",
+      "conclusion_final": "La propiedad demostrada es la independencia física de los datos."
+    }
+  },
+  {
+    "id": "UT9-Q07",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Estás con el cliente dibujando entidades y relaciones del negocio sin decidir todavía si usarás MySQL, PostgreSQL u otro motor. ¿En qué fase o modelo estás trabajando?",
+    "contexto": "Diseño de alto nivel centrado en el negocio y no en la tecnología concreta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Modelo conceptual."
+      },
+      {
+        "clave": "b",
+        "texto": "Modelo físico."
+      },
+      {
+        "clave": "c",
+        "texto": "Implementación."
+      },
+      {
+        "clave": "d",
+        "texto": "Modelo interno."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El modelo conceptual recoge qué necesita el negocio y cómo se relacionan sus elementos, sin entrar todavía en detalles del SGBD o tipos concretos de columna.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El modelo físico ya decide tipos, tamaños, índices y aspectos concretos del motor."
+        },
+        {
+          "clave": "c",
+          "motivo": "La implementación es el momento de escribir el SQL real y crear los objetos en el sistema gestor."
+        },
+        {
+          "clave": "d",
+          "motivo": "El nivel interno pertenece a la arquitectura de almacenamiento, no al diseño de negocio previo."
+        }
+      ],
+      "resumen_didactico": "Cuando piensas en conceptos del negocio y no en tecnología, estás en el modelo conceptual.",
+      "ejemplo_practico": "Usuario, pedido y factura se dibujan primero como ideas relacionadas, antes de definir VARCHAR o índices.",
+      "conclusion_final": "La fase correcta es el modelo conceptual."
+    }
+  },
+  {
+    "id": "UT9-Q08",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Necesitas saber qué significa el campo estado_cli, su tipo, sus restricciones y su descripción funcional dentro de un sistema grande. ¿Qué documento o repositorio debes consultar?",
+    "contexto": "Búsqueda de metadatos para comprender exactamente un dato del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El diccionario de datos."
+      },
+      {
+        "clave": "b",
+        "texto": "El archivo ejecutable del servidor."
+      },
+      {
+        "clave": "c",
+        "texto": "La caché del navegador."
+      },
+      {
+        "clave": "d",
+        "texto": "La última copia diferencial."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El diccionario de datos almacena metadatos: tipo, significado, restricciones, formato y descripción de cada dato de la base.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El ejecutable del servidor no es el lugar donde se documenta formalmente el significado de los datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La caché del navegador guarda recursos temporales del cliente, no definiciones semánticas de la base."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una copia de seguridad protege datos, pero no sustituye un repositorio de metadatos bien definido."
+        }
+      ],
+      "resumen_didactico": "Si buscas datos sobre los datos, debes ir al diccionario de datos.",
+      "ejemplo_practico": "Consultar si estado_cli admite solo ACTIVO, BLOQUEADO y BAJA y si es obligatorio o no.",
+      "conclusion_final": "El repositorio correcto es el diccionario de datos."
+    }
+  },
+  {
+    "id": "UT9-Q09",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "En una tabla de CLIENTES guardas en un solo campo valores como \"600111222 / 600333444\" para el teléfono. ¿Qué forma normal se incumple de forma más directa?",
+    "contexto": "Un atributo almacena varios valores dentro de la misma celda.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Primera Forma Normal (1FN)."
+      },
+      {
+        "clave": "b",
+        "texto": "Segunda Forma Normal (2FN)."
+      },
+      {
+        "clave": "c",
+        "texto": "Tercera Forma Normal (3FN)."
+      },
+      {
+        "clave": "d",
+        "texto": "Forma Normal de Boyce-Codd."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La 1FN exige atomicidad: cada atributo debe contener un único valor simple, no listas, grupos repetidos ni varios datos en la misma celda.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La 2FN se centra en dependencias parciales respecto a claves compuestas, no en valores múltiples dentro de una celda."
+        },
+        {
+          "clave": "c",
+          "motivo": "La 3FN elimina dependencias transitivas, no corrige directamente la falta de atomicidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "FNBC es más avanzada y no es el primer problema estructural de este caso."
+        }
+      ],
+      "resumen_didactico": "Si una celda guarda varios valores a la vez, lo primero que falla es la 1FN.",
+      "ejemplo_practico": "Lo correcto sería separar teléfonos en otra tabla o en filas independientes, no meterlos juntos en un único campo.",
+      "conclusion_final": "Se incumple la Primera Forma Normal."
+    }
+  },
+  {
+    "id": "UT9-Q10",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "En LINEA_PEDIDO la clave primaria es compuesta por (id_pedido, id_producto). Si descripcion_producto depende solo de id_producto, ¿qué forma normal está siendo violada?",
+    "contexto": "Un atributo no clave depende solo de una parte de la clave compuesta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Primera Forma Normal (1FN)."
+      },
+      {
+        "clave": "b",
+        "texto": "Segunda Forma Normal (2FN)."
+      },
+      {
+        "clave": "c",
+        "texto": "Tercera Forma Normal (3FN)."
+      },
+      {
+        "clave": "d",
+        "texto": "Cuarta Forma Normal (4FN)."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La 2FN exige que, si la clave es compuesta, los atributos no clave dependan de la totalidad de esa clave y no solo de una parte.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La 1FN habla de atomicidad y no del problema de dependencia parcial mostrado aquí."
+        },
+        {
+          "clave": "c",
+          "motivo": "La 3FN se centra en dependencias transitivas entre atributos no clave."
+        },
+        {
+          "clave": "d",
+          "motivo": "La 4FN trata otros problemas más avanzados, no la dependencia parcial clásica."
+        }
+      ],
+      "resumen_didactico": "Clave compuesta + atributo dependiente de solo una parte = problema de 2FN.",
+      "ejemplo_practico": "La descripción del producto debería vivir en PRODUCTO, no repetida en cada línea de pedido.",
+      "conclusion_final": "La forma normal violada es la Segunda Forma Normal."
+    }
+  },
+  {
+    "id": "UT9-Q11",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "En una tabla de USUARIOS, la clave primaria determina el código postal y este a su vez determina la ciudad. Para eliminar esa dependencia indirecta, ¿qué forma normal debes alcanzar?",
+    "contexto": "Existencia de una dependencia transitiva entre atributos no clave.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Primera Forma Normal (1FN)."
+      },
+      {
+        "clave": "b",
+        "texto": "Segunda Forma Normal (2FN)."
+      },
+      {
+        "clave": "c",
+        "texto": "Tercera Forma Normal (3FN)."
+      },
+      {
+        "clave": "d",
+        "texto": "Quinta Forma Normal (5FN)."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La 3FN elimina dependencias transitivas: un atributo no clave no debe depender de otro atributo no clave, sino directamente de la clave.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La 1FN no resuelve dependencias transitivas; solo exige atomicidad."
+        },
+        {
+          "clave": "b",
+          "motivo": "La 2FN corrige dependencias parciales con claves compuestas, que no es el problema central aquí."
+        },
+        {
+          "clave": "d",
+          "motivo": "La 5FN aborda descomposiciones más avanzadas y no es la corrección básica de este escenario."
+        }
+      ],
+      "resumen_didactico": "Si un campo depende de otro no clave y no directamente de la clave, debes pensar en 3FN.",
+      "ejemplo_practico": "Separar la información postal para que ciudad no quede colgando transitivamente del código postal dentro de la misma tabla.",
+      "conclusion_final": "La forma normal a alcanzar es la Tercera Forma Normal."
+    }
+  },
+  {
+    "id": "UT9-Q12",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Borras un cliente y quieres que sus pedidos sigan existiendo, pero sin quedar apuntando a un ID inexistente. ¿Qué política de integridad referencial aplicarías si el campo foráneo admite nulos?",
+    "contexto": "Gestión de una relación padre-hijo cuando el padre desaparece.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SET NULL."
+      },
+      {
+        "clave": "b",
+        "texto": "RESTRICT."
+      },
+      {
+        "clave": "c",
+        "texto": "CASCADE."
+      },
+      {
+        "clave": "d",
+        "texto": "Shared Lock."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SET NULL deja la clave foránea en NULL cuando desaparece el registro padre, evitando referencias a un ID inexistente y manteniendo vivo el registro hijo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "RESTRICT bloquearía el borrado del padre mientras existan hijos relacionados."
+        },
+        {
+          "clave": "c",
+          "motivo": "CASCADE borraría también los pedidos, justo lo contrario de lo que se pide."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un bloqueo compartido es un mecanismo de concurrencia, no una política de integridad referencial."
+        }
+      ],
+      "resumen_didactico": "Si el hijo debe sobrevivir pero sin dueño, la política es SET NULL.",
+      "ejemplo_practico": "Eliminar un cliente histórico pero conservar sus pedidos para auditoría dejando ClienteID en NULL.",
+      "conclusion_final": "La política adecuada es SET NULL."
+    }
+  },
+  {
+    "id": "UT9-Q13",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "¿Qué significa decir que SQL es un lenguaje no procedimental?",
+    "contexto": "Naturaleza declarativa de SQL frente a los lenguajes donde se programa paso a paso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que el usuario indica qué quiere obtener, pero no el algoritmo interno exacto para conseguirlo."
+      },
+      {
+        "clave": "b",
+        "texto": "Que SQL solo sirve para leer y nunca para modificar datos."
+      },
+      {
+        "clave": "c",
+        "texto": "Que siempre necesita procedimientos almacenados para funcionar."
+      },
+      {
+        "clave": "d",
+        "texto": "Que obliga a recorrer manualmente el disco duro."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SQL es declarativo: expresas el resultado deseado y el SGBD decide el plan de ejecución y el modo interno de conseguirlo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SQL también permite definir estructura y manipular datos; no se limita solo a lectura."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los procedimientos almacenados pueden existir, pero no definen la naturaleza del lenguaje SQL en sí."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso describe justo lo contrario del enfoque declarativo: SQL evita que el usuario programe el recorrido interno."
+        }
+      ],
+      "resumen_didactico": "En SQL dices qué quieres; el motor decide cómo obtenerlo.",
+      "ejemplo_practico": "Pides los clientes de Sevilla y el SGBD elige si usar un índice o un escaneo.",
+      "conclusion_final": "No procedimental significa indicar el qué, no el cómo."
+    }
+  },
+  {
+    "id": "UT9-Q14",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Necesitas almacenar un código postal español de longitud fija en una tabla. ¿Qué tipo de dato de caracteres resulta más adecuado según el temario?",
+    "contexto": "Dato textual cuya longitud siempre es la misma.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CHAR."
+      },
+      {
+        "clave": "b",
+        "texto": "VARCHAR."
+      },
+      {
+        "clave": "c",
+        "texto": "CLOB."
+      },
+      {
+        "clave": "d",
+        "texto": "TEXT largo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "CHAR se emplea cuando la longitud es fija. VARCHAR se reserva para cadenas de longitud variable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "VARCHAR es más apropiado cuando no sabes cuántos caracteres reales tendrá cada valor."
+        },
+        {
+          "clave": "c",
+          "motivo": "CLOB se usa para grandes volúmenes de texto y sería totalmente desproporcionado para un código postal."
+        },
+        {
+          "clave": "d",
+          "motivo": "TEXT largo no es la elección natural para un identificador corto y fijo."
+        }
+      ],
+      "resumen_didactico": "Longitud fija = CHAR; longitud variable = VARCHAR.",
+      "ejemplo_practico": "Un código postal de cinco caracteres encaja mejor en un campo fijo que en uno variable.",
+      "conclusion_final": "El tipo más adecuado es CHAR."
+    }
+  },
+  {
+    "id": "UT9-Q15",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Vas a guardar importes económicos y no puedes permitir errores de redondeo en los céntimos. ¿Qué familia de tipos es la correcta?",
+    "contexto": "Almacenamiento de dinero con precisión exacta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DECIMAL o NUMERIC."
+      },
+      {
+        "clave": "b",
+        "texto": "FLOAT o DOUBLE."
+      },
+      {
+        "clave": "c",
+        "texto": "BOOLEAN."
+      },
+      {
+        "clave": "d",
+        "texto": "DATE."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Para dinero se usan tipos exactos como DECIMAL o NUMERIC, ya que preservan la precisión decimal necesaria en importes y contabilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "FLOAT y DOUBLE trabajan con aproximación y pueden introducir errores de redondeo inaceptables para dinero."
+        },
+        {
+          "clave": "c",
+          "motivo": "BOOLEAN solo representa verdadero o falso, no cantidades monetarias."
+        },
+        {
+          "clave": "d",
+          "motivo": "DATE almacena fechas, no importes."
+        }
+      ],
+      "resumen_didactico": "Cuando un céntimo importa, necesitas un tipo exacto y no aproximado.",
+      "ejemplo_practico": "precio DECIMAL(10,2) permite representar euros y céntimos con precisión controlada.",
+      "conclusion_final": "La familia correcta es DECIMAL o NUMERIC."
+    }
+  },
+  {
+    "id": "UT9-Q16",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Quieres vaciar completamente una tabla de LOGS, pero conservar su estructura para seguir reutilizándola. ¿Qué comando encaja mejor con ese objetivo?",
+    "contexto": "Eliminar todos los registros sin destruir el objeto tabla.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "TRUNCATE TABLE logs;"
+      },
+      {
+        "clave": "b",
+        "texto": "DROP TABLE logs;"
+      },
+      {
+        "clave": "c",
+        "texto": "REMOVE TABLE logs;"
+      },
+      {
+        "clave": "d",
+        "texto": "ERASE logs;"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "TRUNCATE TABLE elimina todos los registros de la tabla manteniendo su estructura. DROP TABLE elimina también el objeto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DROP TABLE destruye la tabla entera, incluyendo su definición estructural."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es la sintaxis estándar tratada en el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una instrucción SQL estándar de la unidad."
+        }
+      ],
+      "resumen_didactico": "TRUNCATE vacía; DROP destruye.",
+      "ejemplo_practico": "Limpiar una tabla temporal de logs antes de volver a llenarla en el siguiente proceso nocturno.",
+      "conclusion_final": "El comando adecuado es TRUNCATE TABLE."
+    }
+  },
+  {
+    "id": "UT9-Q17",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Después de agrupar ventas por vendedor, quieres quedarte solo con los grupos cuyo total supera 10.000 €. ¿Qué cláusula debes usar para filtrar esos grupos ya agregados?",
+    "contexto": "Filtrado posterior a GROUP BY sobre resultados agregados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HAVING."
+      },
+      {
+        "clave": "b",
+        "texto": "WHERE."
+      },
+      {
+        "clave": "c",
+        "texto": "ORDER BY."
+      },
+      {
+        "clave": "d",
+        "texto": "DISTINCT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "HAVING se utiliza para filtrar grupos después de aplicar GROUP BY. WHERE filtra filas antes de la agrupación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "WHERE actúa antes del agrupamiento y no es la cláusula correcta para condiciones sobre agregados ya calculados."
+        },
+        {
+          "clave": "c",
+          "motivo": "ORDER BY ordena resultados, pero no filtra grupos."
+        },
+        {
+          "clave": "d",
+          "motivo": "DISTINCT elimina duplicados, no sirve para expresar una condición sobre una suma agrupada."
+        }
+      ],
+      "resumen_didactico": "WHERE filtra filas; HAVING filtra grupos.",
+      "ejemplo_practico": "GROUP BY vendedor HAVING SUM(total) > 10000.",
+      "conclusion_final": "La cláusula correcta es HAVING."
+    }
+  },
+  {
+    "id": "UT9-Q18",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "En una consulta sobre la tabla EMPLEADOS quieres que cada departamento aparezca solo una vez, aunque haya muchos empleados en él. ¿Qué palabra clave debes añadir al SELECT?",
+    "contexto": "Eliminación de duplicados en el resultado de una consulta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DISTINCT."
+      },
+      {
+        "clave": "b",
+        "texto": "UNIQUE KEY."
+      },
+      {
+        "clave": "c",
+        "texto": "INDEX."
+      },
+      {
+        "clave": "d",
+        "texto": "LIMIT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "DISTINCT elimina filas duplicadas en el resultado proyectado por el SELECT, devolviendo solo valores únicos de los campos seleccionados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UNIQUE KEY es una restricción de diseño de tabla, no una palabra clave de consulta para limpiar duplicados en un resultado."
+        },
+        {
+          "clave": "c",
+          "motivo": "INDEX mejora rendimiento de búsqueda, pero no modifica la proyección del resultado."
+        },
+        {
+          "clave": "d",
+          "motivo": "LIMIT reduce el número de filas devueltas, pero no garantiza unicidad."
+        }
+      ],
+      "resumen_didactico": "Si quieres valores únicos en el resultado, piensa en DISTINCT.",
+      "ejemplo_practico": "SELECT DISTINCT departamento FROM empleados;",
+      "conclusion_final": "La palabra clave necesaria es DISTINCT."
+    }
+  },
+  {
+    "id": "UT9-Q19",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "¿Qué patrón con LIKE selecciona códigos que empiezan por \"AB\" y tienen exactamente un carácter adicional?",
+    "contexto": "Uso del comodín de un solo carácter en búsquedas por patrón.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "'AB_'"
+      },
+      {
+        "clave": "b",
+        "texto": "'AB%'"
+      },
+      {
+        "clave": "c",
+        "texto": "'AB*'"
+      },
+      {
+        "clave": "d",
+        "texto": "'AB??'"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En SQL estándar, el guion bajo (_) representa exactamente un carácter, mientras que % representa cero o más caracteres.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "AB% también coincide con ABX, pero además con AB12, ABXYZ y cualquier longitud posterior."
+        },
+        {
+          "clave": "c",
+          "motivo": "El asterisco no es el comodín estándar de LIKE en SQL."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los signos de interrogación no son el comodín estándar trabajado en la unidad."
+        }
+      ],
+      "resumen_didactico": "_ significa un carácter; % significa muchos o ninguno.",
+      "ejemplo_practico": "AB1 o ABZ coinciden con 'AB_', pero AB12 ya no.",
+      "conclusion_final": "El patrón correcto es 'AB_'."
+    }
+  },
+  {
+    "id": "UT9-Q20",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Creas una vista para que soporte consulte incidencias sin ver toda la complejidad de las tablas originales. ¿Cuál es la ventaja principal de una vista en este contexto?",
+    "contexto": "Simplificar el acceso y ofrecer una representación controlada de la información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Presentar una consulta reutilizable y simplificada sobre los datos."
+      },
+      {
+        "clave": "b",
+        "texto": "Aumentar automáticamente la RAM del servidor."
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminar la necesidad de permisos de acceso."
+      },
+      {
+        "clave": "d",
+        "texto": "Convertir cualquier consulta en un backup."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las vistas permiten encapsular consultas y ofrecer una representación más simple o restringida de la información, facilitando el trabajo diario y el control de lo que se expone.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una vista no modifica el hardware ni la memoria disponible del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los permisos siguen siendo necesarios; una vista no elimina la seguridad del SGBD."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una vista no es una copia de seguridad, sino un objeto lógico de consulta."
+        }
+      ],
+      "resumen_didactico": "Una vista sirve para simplificar y controlar cómo se presenta la información.",
+      "ejemplo_practico": "El equipo de soporte consulta una vista de incidencias sin tocar directamente todas las tablas internas del sistema.",
+      "conclusion_final": "La ventaja principal es ofrecer una consulta reutilizable y simplificada."
+    }
+  },
+  {
+    "id": "UT9-Q21",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "¿Por qué PL/SQL resulta más potente que el SQL estándar cuando quieres automatizar reglas de negocio en Oracle?",
+    "contexto": "Comparación entre un lenguaje declarativo puro y su extensión procedimental.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque añade variables, condiciones, bucles y control de excepciones."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque elimina la necesidad de usar SQL."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque convierte todas las tablas en ficheros de texto."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque no necesita SGBD para ejecutarse."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "PL/SQL extiende SQL con características procedimentales: variables, estructuras de control, manejo de errores y modularidad, permitiendo automatizar lógica compleja junto a los datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "PL/SQL no sustituye a SQL; de hecho, lo incorpora y se apoya en él para acceder y manipular datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "No transforma las tablas en texto plano; sigue trabajando sobre la base de datos del motor Oracle."
+        },
+        {
+          "clave": "d",
+          "motivo": "PL/SQL vive dentro del ecosistema del SGBD, no fuera de él."
+        }
+      ],
+      "resumen_didactico": "SQL pide datos; PL/SQL además permite programar lógica alrededor de ellos.",
+      "ejemplo_practico": "Aplicar descuentos, actualizar stock y capturar errores en el mismo proceso del servidor.",
+      "conclusion_final": "PL/SQL es más potente porque añade variables, control de flujo y excepciones."
+    }
+  },
+  {
+    "id": "UT9-Q22",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Necesitas ejecutar un script puntual de mantenimiento que no debe quedar guardado como objeto permanente en la base de datos. ¿Qué forma de PL/SQL encaja mejor?",
+    "contexto": "Ejecución inmediata de código de usar y tirar.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bloque anónimo."
+      },
+      {
+        "clave": "b",
+        "texto": "Trigger de sistema."
+      },
+      {
+        "clave": "c",
+        "texto": "Función persistente."
+      },
+      {
+        "clave": "d",
+        "texto": "Vista materializada."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El bloque anónimo se ejecuta al momento y no queda almacenado como procedimiento o función reutilizable dentro de la base.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un trigger se asocia a eventos automáticos y se almacena como objeto del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una función persistente sí queda guardada con nombre para futuras invocaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una vista materializada es un objeto de almacenamiento/consulta, no la estructura procedimental pedida."
+        }
+      ],
+      "resumen_didactico": "Si el código es puntual y no quieres guardarlo, usa bloque anónimo.",
+      "ejemplo_practico": "Corregir una tanda concreta de registros una única vez desde SQL*Plus.",
+      "conclusion_final": "La opción correcta es un bloque anónimo."
+    }
+  },
+  {
+    "id": "UT9-Q23",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Quieres declarar una variable que siempre herede el mismo tipo que la columna email de la tabla USUARIOS, incluso si en el futuro esa columna cambia. ¿Qué atributo debes usar?",
+    "contexto": "Mantenibilidad del código PL/SQL alineada con la definición real de la tabla.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "%TYPE."
+      },
+      {
+        "clave": "b",
+        "texto": "%ROWTYPE."
+      },
+      {
+        "clave": "c",
+        "texto": "%ISOPEN."
+      },
+      {
+        "clave": "d",
+        "texto": "%FOUND."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "%TYPE permite declarar una variable con el mismo tipo que una columna existente, manteniendo la compatibilidad si la definición cambia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "%ROWTYPE copia la estructura completa de una fila, no el tipo de una sola columna concreta."
+        },
+        {
+          "clave": "c",
+          "motivo": "%ISOPEN es un atributo de cursores para saber si están abiertos, no para heredar tipos."
+        },
+        {
+          "clave": "d",
+          "motivo": "%FOUND también es atributo de cursor, no un mecanismo de declaración tipada."
+        }
+      ],
+      "resumen_didactico": "Una sola columna -> %TYPE; una fila completa -> %ROWTYPE.",
+      "ejemplo_practico": "v_email usuarios.email%TYPE mantiene sincronizado el tipo de la variable con la columna real.",
+      "conclusion_final": "El atributo correcto es %TYPE."
+    }
+  },
+  {
+    "id": "UT9-Q24",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Debes evaluar una misma variable contra varios posibles casos y quieres una sintaxis más limpia que encadenar muchos IF. ¿Qué estructura te conviene especialmente?",
+    "contexto": "Selección múltiple sobre una misma variable dentro de PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CASE."
+      },
+      {
+        "clave": "b",
+        "texto": "LOOP."
+      },
+      {
+        "clave": "c",
+        "texto": "FETCH."
+      },
+      {
+        "clave": "d",
+        "texto": "COMMIT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "CASE resulta especialmente útil cuando comparas una misma variable o situación frente a varias alternativas, con una sintaxis más legible que múltiples IF encadenados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "LOOP sirve para repetición, no para selección múltiple de casos."
+        },
+        {
+          "clave": "c",
+          "motivo": "FETCH pertenece al trabajo con cursores y recuperación de filas."
+        },
+        {
+          "clave": "d",
+          "motivo": "COMMIT confirma transacciones; no decide entre casos de ejecución."
+        }
+      ],
+      "resumen_didactico": "Para múltiples caminos de decisión sobre el mismo valor, CASE suele ser la opción más clara.",
+      "ejemplo_practico": "Asignar una calificación textual según el rango de una nota o un estado según el valor de una variable.",
+      "conclusion_final": "La estructura adecuada es CASE."
+    }
+  },
+  {
+    "id": "UT9-Q25",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "¿Qué tipo de bucle comprueba la condición antes de entrar y puede no ejecutarse ni una sola vez si esa condición es falsa desde el inicio?",
+    "contexto": "Comparación entre los distintos bucles de PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "WHILE."
+      },
+      {
+        "clave": "b",
+        "texto": "LOOP básico."
+      },
+      {
+        "clave": "c",
+        "texto": "FOR siempre descendente."
+      },
+      {
+        "clave": "d",
+        "texto": "CASE iterativo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "WHILE evalúa la condición antes de cada iteración. Si la condición es falsa al principio, el bucle no entra nunca.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El LOOP básico es infinito por defecto hasta que el programador introduce una salida con EXIT o EXIT WHEN."
+        },
+        {
+          "clave": "c",
+          "motivo": "FOR no depende de una condición externa inicial de ese modo y además no es necesariamente descendente."
+        },
+        {
+          "clave": "d",
+          "motivo": "CASE no es un bucle, sino una estructura de selección."
+        }
+      ],
+      "resumen_didactico": "WHILE es prudente: primero mira si debe entrar.",
+      "ejemplo_practico": "Mientras queden filas por procesar, sigue; si no hay ninguna desde el inicio, no hace nada.",
+      "conclusion_final": "El bucle correcto es WHILE."
+    }
+  },
+  {
+    "id": "UT9-Q26",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Quieres recorrer muchas filas con un cursor, pero sin escribir manualmente OPEN, FETCH y CLOSE. ¿Qué forma de trabajo te da esa simplificación automática?",
+    "contexto": "Procesamiento de múltiples filas de forma más limpia y segura en PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bucle FOR sobre cursor."
+      },
+      {
+        "clave": "b",
+        "texto": "SELECT INTO."
+      },
+      {
+        "clave": "c",
+        "texto": "Bloque EXCEPTION."
+      },
+      {
+        "clave": "d",
+        "texto": "TRUNCATE TABLE."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El bucle FOR sobre cursor automatiza la apertura, lectura fila a fila y cierre del cursor, reduciendo código y errores frente al manejo manual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SELECT INTO solo sirve correctamente cuando la consulta devuelve exactamente una fila."
+        },
+        {
+          "clave": "c",
+          "motivo": "EXCEPTION maneja errores, pero no recorre resultados."
+        },
+        {
+          "clave": "d",
+          "motivo": "TRUNCATE es una operación DDL sobre tablas, sin relación con iterar consultas."
+        }
+      ],
+      "resumen_didactico": "Para muchas filas con menos código, el FOR sobre cursor es la opción inteligente.",
+      "ejemplo_practico": "Recorrer clientes y enviar un procesamiento a cada uno sin gestionar OPEN/FETCH/CLOSE manualmente.",
+      "conclusion_final": "La simplificación automática la proporciona el bucle FOR sobre cursor."
+    }
+  },
+  {
+    "id": "UT9-Q27",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Los logs del sistema demuestran que un administrador ejecutó un DROP TABLE a las 03:00. ¿Qué principio de seguridad impide que luego pueda negar esa acción?",
+    "contexto": "Trazabilidad y evidencia sobre operaciones realizadas en la base de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No repudio."
+      },
+      {
+        "clave": "b",
+        "texto": "Disponibilidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Integridad."
+      },
+      {
+        "clave": "d",
+        "texto": "Escalabilidad."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El no repudio garantiza que exista evidencia suficiente para que una acción realizada no pueda ser negada posteriormente por quien la ejecutó.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La disponibilidad trata de que el sistema esté accesible, no de atribuir acciones concretas a un usuario."
+        },
+        {
+          "clave": "c",
+          "motivo": "La integridad protege contra alteraciones indebidas del dato, pero no es el principio que evita negar una autoría ya registrada."
+        },
+        {
+          "clave": "d",
+          "motivo": "La escalabilidad no pertenece al conjunto CIDAN y no resuelve trazabilidad."
+        }
+      ],
+      "resumen_didactico": "Si puedes probar quién hizo algo y cuándo lo hizo, estás aplicando no repudio.",
+      "ejemplo_practico": "Un log firmado o auditado demuestra que el usuario administrador lanzó un comando destructivo.",
+      "conclusion_final": "El principio aplicable es el no repudio."
+    }
+  },
+  {
+    "id": "UT9-Q28",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "En un equipo de desarrollo, al perfil \"Becario\" solo se le concede SELECT y nada más. ¿Qué principio de seguridad se está aplicando?",
+    "contexto": "Asignación mínima de privilegios para reducir riesgos de error o abuso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Principio de mínimo privilegio."
+      },
+      {
+        "clave": "b",
+        "texto": "Principio de máxima disponibilidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Principio de bloqueo exclusivo."
+      },
+      {
+        "clave": "d",
+        "texto": "Principio de herencia transitiva."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El mínimo privilegio consiste en otorgar a cada perfil solo los permisos estrictamente necesarios para su función, reduciendo superficie de riesgo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La disponibilidad busca que el sistema esté accesible, no delimitar qué puede hacer cada rol."
+        },
+        {
+          "clave": "c",
+          "motivo": "El bloqueo exclusivo es una técnica de concurrencia, no una política general de permisos por rol."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un principio de seguridad tratado para gestión de permisos."
+        }
+      ],
+      "resumen_didactico": "Dar solo lo imprescindible a cada rol es aplicar mínimo privilegio.",
+      "ejemplo_practico": "El becario puede leer, pero no insertar, borrar ni modificar estructura en producción.",
+      "conclusion_final": "Se está aplicando el principio de mínimo privilegio."
+    }
+  },
+  {
+    "id": "UT9-Q29",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "Realizaste una copia total el domingo y copias diferenciales el lunes y el martes. El miércoles el sistema cae. Para restaurar con esa estrategia, ¿qué necesitas aplicar?",
+    "contexto": "Proceso de recuperación cuando se ha optado por backups diferenciales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La última copia total y la última copia diferencial."
+      },
+      {
+        "clave": "b",
+        "texto": "La copia total y todas las diferenciales en orden."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo la primera diferencial."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo la última incremental."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Con copias diferenciales, siempre partes de la última copia total y después restauras únicamente la diferencial más reciente, porque ya acumula todos los cambios desde la total.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso sería innecesario con diferenciales; la ventaja es precisamente no tener que restaurarlas todas una por una."
+        },
+        {
+          "clave": "c",
+          "motivo": "La primera diferencial no contiene los cambios posteriores y dejaría el sistema incompleto."
+        },
+        {
+          "clave": "d",
+          "motivo": "La incremental es otra estrategia distinta de backup y restauración."
+        }
+      ],
+      "resumen_didactico": "Diferencial = base total + última diferencial.",
+      "ejemplo_practico": "Domingo total, martes diferencial: con esas dos recuperas también lo que pasó el lunes.",
+      "conclusion_final": "Necesitas la última copia total y la última copia diferencial."
+    }
+  },
+  {
+    "id": "UT9-Q30",
+    "tema": "UT9 — Repaso global (Abarca de 0% a 17% del temario)",
+    "pregunta": "¿Cómo se llama la técnica que replica los datos en tiempo real en otro servidor para que, si falla el principal, exista un reflejo casi instantáneo listo para tomar el relevo?",
+    "contexto": "Alta disponibilidad mediante réplica inmediata a nivel de servidor.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mirroring."
+      },
+      {
+        "clave": "b",
+        "texto": "Formateo preventivo."
+      },
+      {
+        "clave": "c",
+        "texto": "Concatenación."
+      },
+      {
+        "clave": "d",
+        "texto": "Normalización."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El mirroring replica los datos en tiempo real sobre otro servidor o sistema espejo, de modo que exista una copia sincronizada ante una caída del principal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Formatear no protege el servicio ni replica datos; destruye información si se hace sobre un sistema en uso."
+        },
+        {
+          "clave": "c",
+          "motivo": "La concatenación une cadenas de texto y no tiene relación con disponibilidad o réplica."
+        },
+        {
+          "clave": "d",
+          "motivo": "La normalización mejora el diseño lógico del modelo, pero no crea una réplica inmediata de servidores."
+        }
+      ],
+      "resumen_didactico": "Réplica en tiempo real para alta disponibilidad = mirroring.",
+      "ejemplo_practico": "Escribir en el servidor principal y ver el mismo cambio aparecer al instante en el servidor espejo.",
+      "conclusion_final": "La técnica descrita se llama mirroring."
+    }
+  }
+]

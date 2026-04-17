@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT12-Q01",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Una empresa permite consultar la misma base de datos desde una app móvil, un panel web y una tablet en almacén, incluso desde ubicaciones distintas. ¿Qué ventaja de las bases de datos encaja mejor con esta situación?",
+    "contexto": "Los mismos datos se consultan desde distintos dispositivos y lugares.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Accesibilidad universal."
+      },
+      {
+        "clave": "b",
+        "texto": "Bloqueo exclusivo."
+      },
+      {
+        "clave": "c",
+        "texto": "Hashing calculado."
+      },
+      {
+        "clave": "d",
+        "texto": "Normalización avanzada."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La accesibilidad universal significa que los datos pueden consultarse desde distintos dispositivos y ubicaciones, siempre que existan los permisos y la conexión adecuados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El bloqueo exclusivo es una técnica de concurrencia para impedir accesos simultáneos conflictivos, no una ventaja de acceso desde múltiples dispositivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El acceso calculado u hash es un método de localización de registros, no el beneficio descrito."
+        },
+        {
+          "clave": "d",
+          "motivo": "La normalización organiza tablas para evitar redundancia, pero no describe el acceso desde varios puntos."
+        }
+      ],
+      "resumen_didactico": "Acceder a la misma información desde móvil, web o tablet describe accesibilidad universal.",
+      "ejemplo_practico": "Un comercial consulta clientes desde su móvil mientras logística revisa pedidos en una tablet del almacén.",
+      "conclusion_final": "La ventaja principal es la accesibilidad universal."
+    }
+  },
+  {
+    "id": "UT12-Q02",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Un programador junior escribe consultas SQL sin preocuparse de cómo se ordenan físicamente los bits en disco. ¿Qué beneficio para el usuario ilustra esto?",
+    "contexto": "El usuario trabaja a nivel de consulta y no de almacenamiento físico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Abstracción."
+      },
+      {
+        "clave": "b",
+        "texto": "Cascada."
+      },
+      {
+        "clave": "c",
+        "texto": "Área de desbordamiento."
+      },
+      {
+        "clave": "d",
+        "texto": "Partición física."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La abstracción permite trabajar con herramientas de consulta sin tener que conocer los detalles internos de almacenamiento, organización física o movimiento de bloques en disco.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La cascada es una política de integridad referencial, no un beneficio de ocultar la complejidad técnica."
+        },
+        {
+          "clave": "c",
+          "motivo": "El área de desbordamiento pertenece a sistemas secuenciales indexados, no al nivel de uso del programador."
+        },
+        {
+          "clave": "d",
+          "motivo": "La partición física es una técnica de organización de datos, no la idea de ocultar cómo se guardan."
+        }
+      ],
+      "resumen_didactico": "Abstracción significa usar la base de datos sin pensar en el nivel físico.",
+      "ejemplo_practico": "El desarrollador hace un SELECT sobre CLIENTES sin saber en qué sector del disco están los datos.",
+      "conclusion_final": "El beneficio ilustrado es la abstracción."
+    }
+  },
+  {
+    "id": "UT12-Q03",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En los antiguos sistemas basados en archivos cerrados, ¿cuál era la única ventaja importante frente a un SGBD moderno, según el temario?",
+    "contexto": "Se comparan ficheros ligados a una sola aplicación frente a gestores de bases de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mayor flexibilidad y escalabilidad."
+      },
+      {
+        "clave": "b",
+        "texto": "Velocidad en tareas muy concretas."
+      },
+      {
+        "clave": "c",
+        "texto": "Mejor integración entre departamentos."
+      },
+      {
+        "clave": "d",
+        "texto": "Mayor independencia de datos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los sistemas antiguos de archivos podían resultar muy rápidos cuando estaban súper optimizados para una única tarea, aunque perdían flexibilidad, integración y escalabilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Era justo al revés: los ficheros cerrados sacrificaban flexibilidad y escalabilidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "La integración era uno de sus grandes problemas, porque cada aplicación “secuestraba” sus datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La independencia de datos es una virtud de los SGBD, no de los ficheros ligados a una app."
+        }
+      ],
+      "resumen_didactico": "La ventaja histórica de los ficheros cerrados era la velocidad en tareas muy específicas.",
+      "ejemplo_practico": "Un programa de nóminas antiguo podía ir muy rápido con su propio archivo, pero era casi imposible compartir esos datos con contabilidad.",
+      "conclusion_final": "La única ventaja importante era su rapidez en un uso muy concreto."
+    }
+  },
+  {
+    "id": "UT12-Q04",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Tras meses de inserciones, borrados y cambios, un fichero ha quedado desordenado y poco eficiente. ¿Qué operación básica se usa para “limpiarlo” y optimizarlo?",
+    "contexto": "El archivo ha perdido eficiencia por el paso del tiempo y los cambios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reorganización."
+      },
+      {
+        "clave": "b",
+        "texto": "Replicación."
+      },
+      {
+        "clave": "c",
+        "texto": "Serialización."
+      },
+      {
+        "clave": "d",
+        "texto": "Tokenización."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La reorganización consiste en limpiar y optimizar un archivo después de numerosos cambios, para recuperar orden y eficiencia en el acceso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La replicación crea copias o espejos, pero no “limpia” la estructura interna del fichero."
+        },
+        {
+          "clave": "c",
+          "motivo": "La serialización transforma datos a un formato intercambiable, no optimiza un archivo desordenado."
+        },
+        {
+          "clave": "d",
+          "motivo": "La tokenización se asocia a seguridad o análisis de texto, no al mantenimiento de ficheros."
+        }
+      ],
+      "resumen_didactico": "Cuando un fichero queda “sucio” por muchos cambios, se reorganiza.",
+      "ejemplo_practico": "Después de miles de altas y bajas en un archivo de clientes, se ejecuta una reorganización para volver a optimizarlo.",
+      "conclusion_final": "La operación correcta es la reorganización."
+    }
+  },
+  {
+    "id": "UT12-Q05",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Necesitas juntar dos ficheros pequeños en uno solo y, en otros casos, dividir uno enorme en trozos manejables. ¿Qué operación básica del mundo de los ficheros describe esto?",
+    "contexto": "Se trabaja con manipulación estructural de archivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Unión y partición."
+      },
+      {
+        "clave": "b",
+        "texto": "Hash y colisión."
+      },
+      {
+        "clave": "c",
+        "texto": "Bloqueo y desbloqueo."
+      },
+      {
+        "clave": "d",
+        "texto": "Cifrado y firma."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Unión y partición son operaciones básicas sobre ficheros: permiten combinar varios en uno o dividir uno grande en partes más manejables.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Hash y colisión pertenecen a métodos de acceso por cálculo, no a juntar o dividir archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Bloqueo y desbloqueo gestionan concurrencia, no el tamaño o agrupación de ficheros."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cifrado y firma protegen información, pero no describen la operación planteada."
+        }
+      ],
+      "resumen_didactico": "Juntar archivos o trocearlos corresponde a unión y partición.",
+      "ejemplo_practico": "Un sistema fusiona dos ficheros históricos en uno y, más tarde, divide un fichero gigante por años.",
+      "conclusion_final": "La operación es unión y partición."
+    }
+  },
+  {
+    "id": "UT12-Q06",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Entre los objetivos de Codd, ¿cuál buscaba que el modelo relacional fuese más fácil de entender que los antiguos modelos jerárquicos llenos de rigidez?",
+    "contexto": "Se comparan los modelos previos con el relacional desde el punto de vista de comprensión y uso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Simplicidad."
+      },
+      {
+        "clave": "b",
+        "texto": "Área de desbordamiento."
+      },
+      {
+        "clave": "c",
+        "texto": "Redundancia controlada."
+      },
+      {
+        "clave": "d",
+        "texto": "Compresión de columnas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Codd defendía la simplicidad como uno de los pilares del modelo relacional: frente a estructuras anteriores muy rígidas y complejas, el nuevo modelo debía resultar más claro y manejable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El área de desbordamiento es un concepto de ficheros secuenciales indexados, no un objetivo de Codd."
+        },
+        {
+          "clave": "c",
+          "motivo": "La redundancia controlada no es uno de los cuatro pilares formulados por Codd en esta unidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "La compresión de columnas es una técnica técnica concreta, no un principio fundacional del modelo relacional."
+        }
+      ],
+      "resumen_didactico": "Uno de los grandes logros del modelo relacional fue su simplicidad frente a modelos más enrevesados.",
+      "ejemplo_practico": "En lugar de navegar por estructuras casi “genealógicas”, el usuario trabaja con tablas y relaciones más comprensibles.",
+      "conclusion_final": "El objetivo descrito es la simplicidad."
+    }
+  },
+  {
+    "id": "UT12-Q07",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En la fase inicial de análisis de requisitos de una base de datos, ¿qué se intenta aclarar antes de dibujar tablas o escribir SQL?",
+    "contexto": "Primera etapa del diseño antes del modelo lógico o físico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El propósito, el alcance y las necesidades del sistema con el cliente."
+      },
+      {
+        "clave": "b",
+        "texto": "Los comandos CREATE TABLE exactos."
+      },
+      {
+        "clave": "c",
+        "texto": "El orden físico de los discos del servidor."
+      },
+      {
+        "clave": "d",
+        "texto": "La carga real de millones de registros en producción."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El análisis de requisitos sirve para entender qué necesita el negocio: propósito del sistema, alcance funcional y necesidades reales antes de diseñar la solución.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El SQL llega más tarde, en implementación o diseño técnico, no en la conversación inicial con el cliente."
+        },
+        {
+          "clave": "c",
+          "motivo": "La organización física del servidor es una decisión muy posterior y técnica."
+        },
+        {
+          "clave": "d",
+          "motivo": "La carga de datos reales no es el primer objetivo; antes hay que definir qué sistema se quiere construir."
+        }
+      ],
+      "resumen_didactico": "Antes de dibujar o programar, hay que entender el problema real del cliente.",
+      "ejemplo_practico": "En una reunión inicial, se define si el sistema debe gestionar pedidos, facturas, usuarios y qué límites tendrá.",
+      "conclusion_final": "La fase inicial aclara propósito, alcance y necesidades."
+    }
+  },
+  {
+    "id": "UT12-Q08",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Estás modelando una biblioteca: “Libro” representa la obra y “Ejemplar” las copias físicas. Si al desaparecer el Libro dejan de tener sentido sus Ejemplares, ¿qué tipo de entidad es “Ejemplar”?",
+    "contexto": "Una entidad depende de otra para existir dentro del modelo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Entidad débil."
+      },
+      {
+        "clave": "b",
+        "texto": "Entidad fuerte."
+      },
+      {
+        "clave": "c",
+        "texto": "Entidad derivada."
+      },
+      {
+        "clave": "d",
+        "texto": "Entidad recursiva."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una entidad débil depende de otra más fuerte para su identificación o sentido en el modelo. En este caso, un Ejemplar existe vinculado al Libro del que es copia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una entidad fuerte puede existir y definirse por sí misma, cosa que aquí no ocurre."
+        },
+        {
+          "clave": "c",
+          "motivo": "“Derivada” no es la clasificación usada en esta unidad para este caso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una entidad recursiva se relaciona consigo misma, no es el caso de Libro y Ejemplar."
+        }
+      ],
+      "resumen_didactico": "Si una entidad depende de otra para tener sentido, hablamos de entidad débil.",
+      "ejemplo_practico": "No tiene sentido una copia física “huérfana” si el Libro al que pertenece desaparece del modelo.",
+      "conclusion_final": "“Ejemplar” es una entidad débil."
+    }
+  },
+  {
+    "id": "UT12-Q09",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En la relación entre PROFESOR y MÓDULO, cada módulo lo imparte un único profesor, pero un profesor puede impartir varios módulos. ¿Qué cardinalidad describe esa relación?",
+    "contexto": "Se analiza una relación clásica docente-contenido.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "1:N."
+      },
+      {
+        "clave": "b",
+        "texto": "1:1."
+      },
+      {
+        "clave": "c",
+        "texto": "M:N."
+      },
+      {
+        "clave": "d",
+        "texto": "0:0."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La relación es uno a muchos: un profesor puede aparecer ligado a varios módulos, mientras que cada módulo queda asociado a un único profesor en el escenario planteado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Uno a uno sería correcto solo si cada profesor impartiera exactamente un módulo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Muchos a muchos implicaría que un módulo pudiera tener varios profesores simultáneamente en este caso."
+        },
+        {
+          "clave": "d",
+          "motivo": "0:0 no es una cardinalidad válida para describir el escenario del temario."
+        }
+      ],
+      "resumen_didactico": "Un profesor → varios módulos; cada módulo → un solo profesor: eso es 1:N.",
+      "ejemplo_practico": "La tabla MODULOS podría llevar un ProfesorID como clave foránea para reflejar esa relación.",
+      "conclusion_final": "La cardinalidad correcta es 1:N."
+    }
+  },
+  {
+    "id": "UT12-Q10",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En la relación “Cliente - Tarjeta VIP”, un cliente puede no tener tarjeta o tener como máximo una. ¿Cómo se expresa correctamente esa modalidad?",
+    "contexto": "Se pide la notación de mínimos y máximos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "(1,N)."
+      },
+      {
+        "clave": "b",
+        "texto": "(0,1)."
+      },
+      {
+        "clave": "c",
+        "texto": "(1,1)."
+      },
+      {
+        "clave": "d",
+        "texto": "(0,N)."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La modalidad (0,1) indica que la relación es opcional en el mínimo y única en el máximo: puede no existir o existir una sola vez.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "(1,N) significaría al menos una y potencialmente muchas, lo cual no corresponde."
+        },
+        {
+          "clave": "c",
+          "motivo": "(1,1) obligaría a que todo cliente tuviera tarjeta, y además una sola."
+        },
+        {
+          "clave": "d",
+          "motivo": "(0,N) permitiría cero o muchas tarjetas, pero aquí el máximo es una."
+        }
+      ],
+      "resumen_didactico": "Cero o una relación se expresa como (0,1).",
+      "ejemplo_practico": "Un cliente puede pasar años sin tarjeta VIP y, si la tiene, solo posee una.",
+      "conclusion_final": "La modalidad correcta es (0,1)."
+    }
+  },
+  {
+    "id": "UT12-Q11",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En una relación M:N entre VENTA y PRODUCTO, ¿qué atributos suelen pertenecer a la relación y no a las entidades por separado?",
+    "contexto": "Hay datos que solo tienen sentido en el vínculo concreto entre dos entidades.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cantidad y precio unitario de esa venta concreta."
+      },
+      {
+        "clave": "b",
+        "texto": "Nombre del producto y teléfono del cliente."
+      },
+      {
+        "clave": "c",
+        "texto": "Fecha de nacimiento del vendedor y DNI del comprador."
+      },
+      {
+        "clave": "d",
+        "texto": "Descripción larga del catálogo y salario del comercial."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En una relación M:N, ciertos datos no pertenecen ni solo a VENTA ni solo a PRODUCTO, sino al hecho de que un producto participa en una venta concreta: cantidad, precio unitario, coste total, etc.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esos datos pertenecen a otras entidades o no describen el vínculo VENTA-PRODUCTO."
+        },
+        {
+          "clave": "c",
+          "motivo": "Son atributos ajenos a la relación comercial planteada."
+        },
+        {
+          "clave": "d",
+          "motivo": "No son atributos típicos del vínculo entre una venta y un producto."
+        }
+      ],
+      "resumen_didactico": "Cuando un dato depende del cruce entre dos entidades, es atributo de relación.",
+      "ejemplo_practico": "En una línea de venta, la cantidad comprada de un producto no pertenece al producto en general, sino a esa venta concreta.",
+      "conclusion_final": "Los atributos típicos son cantidad y precio unitario de la venta concreta."
+    }
+  },
+  {
+    "id": "UT12-Q12",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En una tabla USUARIOS, el campo Email debe ser único pero no ha sido elegido como PRIMARY KEY. ¿Cómo se denomina profesionalmente ese tipo de identificador alternativo?",
+    "contexto": "Existe una columna que también identifica de forma única, aunque no sea la primaria elegida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Clave candidata."
+      },
+      {
+        "clave": "b",
+        "texto": "Clave fantasma."
+      },
+      {
+        "clave": "c",
+        "texto": "Clave reflejada."
+      },
+      {
+        "clave": "d",
+        "texto": "Clave compuesta obligatoria."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una clave candidata es cualquier atributo o conjunto de atributos capaz de identificar unívocamente una fila. De entre las candidatas, una se elige como clave primaria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "“Clave fantasma” no es una denominación formal del modelo relacional en este temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "“Clave reflejada” no es un concepto estándar aquí."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una clave candidata no tiene por qué ser compuesta ni obligatoriamente distinta de una sola columna."
+        }
+      ],
+      "resumen_didactico": "No toda clave única es la primaria; muchas son candidatas.",
+      "ejemplo_practico": "En PERSONAS, Email podría ser UNIQUE y seguir siendo una clave candidata aunque la PRIMARY KEY sea id_persona.",
+      "conclusion_final": "El identificador alternativo se llama clave candidata."
+    }
+  },
+  {
+    "id": "UT12-Q13",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En una ficha de empleado, el campo segundo_apellido vale \"\" y el campo telefono vale NULL. ¿Qué interpretación es correcta?",
+    "contexto": "Se comparan cadena vacía y ausencia total de información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ambos significan exactamente lo mismo."
+      },
+      {
+        "clave": "b",
+        "texto": "\"\" indica ausencia total de información y NULL indica texto vacío."
+      },
+      {
+        "clave": "c",
+        "texto": "\"\" es un valor de texto vacío y NULL es falta de información."
+      },
+      {
+        "clave": "d",
+        "texto": "NULL equivale siempre al número 0."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Una cadena vacía es un valor existente de longitud cero, mientras que NULL representa que no hay información, que es desconocida o que no se ha proporcionado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No significan lo mismo: una es un valor y la otra es ausencia de valor."
+        },
+        {
+          "clave": "b",
+          "motivo": "Está invertido: NULL es ausencia, no texto vacío."
+        },
+        {
+          "clave": "d",
+          "motivo": "NULL no equivale a 0; ese es uno de los errores clásicos del inicio en bases de datos."
+        }
+      ],
+      "resumen_didactico": "Cadena vacía y NULL no son equivalentes.",
+      "ejemplo_practico": "El sistema puede saber que alguien no tiene segundo apellido (\"\") y, en cambio, desconocer por completo su teléfono (NULL).",
+      "conclusion_final": "La interpretación correcta es que \"\" es texto vacío y NULL es falta de información."
+    }
+  },
+  {
+    "id": "UT12-Q14",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Varios usuarios quieren consultar simultáneamente el precio de un producto, pero ninguno debe modificarlo mientras existan lecturas activas. ¿Qué candado describe esta situación?",
+    "contexto": "Concurrencia con varias lecturas permitidas y escrituras bloqueadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bloqueo compartido (Shared Lock)."
+      },
+      {
+        "clave": "b",
+        "texto": "Bloqueo exclusivo (Exclusive Lock)."
+      },
+      {
+        "clave": "c",
+        "texto": "Bloqueo nulo."
+      },
+      {
+        "clave": "d",
+        "texto": "Bloqueo de partición."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El bloqueo compartido permite que varios usuarios lean a la vez, pero impide escrituras mientras esas lecturas están activas, manteniendo la consistencia del dato observado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El exclusivo impide tanto lectura como escritura por parte de otros; es más fuerte de lo necesario aquí."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un “bloqueo nulo” no protege el dato y no es el concepto correcto."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se trata de un bloqueo por partición, sino de lectura concurrente sobre un dato."
+        }
+      ],
+      "resumen_didactico": "Shared Lock = muchos leen; nadie escribe mientras tanto.",
+      "ejemplo_practico": "Cinco analistas consultan el precio actual de un producto mientras se evita que otro usuario lo cambie en mitad de la lectura.",
+      "conclusion_final": "El candado correcto es el bloqueo compartido."
+    }
+  },
+  {
+    "id": "UT12-Q15",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En un entorno profesional con muchos usuarios, ¿qué práctica de permisos es más mantenible según el temario?",
+    "contexto": "Se compara gestión individual de privilegios frente a gestión por perfiles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Crear roles y asignar usuarios a esos roles."
+      },
+      {
+        "clave": "b",
+        "texto": "Dar todos los permisos a todos y confiar en la prudencia."
+      },
+      {
+        "clave": "c",
+        "texto": "Gestionar cada permiso usuario por usuario siempre."
+      },
+      {
+        "clave": "d",
+        "texto": "Usar solo la cuenta root para evitar confusión."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La buena práctica es definir roles o perfiles con permisos concretos y luego asignar usuarios a esos roles. Esto simplifica administración, auditoría y mantenimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Dar todo a todos viola el principio de mínimo privilegio y aumenta el riesgo de errores graves."
+        },
+        {
+          "clave": "c",
+          "motivo": "Gestionar uno a uno es posible, pero mucho menos mantenible y escalable."
+        },
+        {
+          "clave": "d",
+          "motivo": "Centralizar todo en root es inseguro y poco profesional."
+        }
+      ],
+      "resumen_didactico": "Permisos bien gestionados = roles bien definidos + usuarios dentro de ellos.",
+      "ejemplo_practico": "Puedes crear un rol “Perfil_Becario” con SELECT y otro “Perfil_DBA” con privilegios administrativos.",
+      "conclusion_final": "La práctica más mantenible es crear roles y asignar usuarios a ellos."
+    }
+  },
+  {
+    "id": "UT12-Q16",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Empiezas un proyecto desde cero y necesitas crear la base de datos antes de sus tablas. ¿Qué sentencia DDL expresa esa acción?",
+    "contexto": "Creación inicial del contenedor principal en SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CREATE DATABASE"
+      },
+      {
+        "clave": "b",
+        "texto": "NEW DATABASE"
+      },
+      {
+        "clave": "c",
+        "texto": "MAKE SCHEMA"
+      },
+      {
+        "clave": "d",
+        "texto": "BUILD DB"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "CREATE DATABASE es la sentencia DDL utilizada para crear una nueva base de datos en el enfoque trabajado en el temario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la sintaxis estándar mostrada en la unidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "No corresponde a la instrucción principal explicada para crear la base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Tampoco es una sentencia SQL estándar del temario."
+        }
+      ],
+      "resumen_didactico": "Para crear una BD nueva se usa CREATE DATABASE.",
+      "ejemplo_practico": "Antes de definir CLIENTES o PEDIDOS, primero se crea la base empresa con CREATE DATABASE empresa;",
+      "conclusion_final": "La sentencia correcta es CREATE DATABASE."
+    }
+  },
+  {
+    "id": "UT12-Q17",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En desarrollo web moderno, ¿cuál es la práctica más recomendable para manejar fotos de perfil sin sobrecargar innecesariamente la base de datos?",
+    "contexto": "Se decide entre guardar binarios completos o referencias externas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Guardar la imagen en almacenamiento externo y en la BD solo la URL o ruta."
+      },
+      {
+        "clave": "b",
+        "texto": "Guardar siempre el fichero completo en binario dentro de la BD."
+      },
+      {
+        "clave": "c",
+        "texto": "Convertir toda imagen a texto y meterla en un CLOB."
+      },
+      {
+        "clave": "d",
+        "texto": "No permitir fotos de perfil en ningún caso."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La práctica recomendada es almacenar la imagen en un servicio o servidor externo y guardar en la base de datos solo la URL o ruta, reduciendo peso y complejidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Guardar binarios grandes dentro de la BD puede ser posible, pero no suele ser la mejor práctica general para este escenario web."
+        },
+        {
+          "clave": "c",
+          "motivo": "Convertir imágenes a texto para guardarlas en un CLOB es ineficiente y no es la recomendación del temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eliminar la funcionalidad no resuelve el problema técnico planteado."
+        }
+      ],
+      "resumen_didactico": "En web moderna suele guardarse la referencia a la imagen, no la imagen entera en la tabla.",
+      "ejemplo_practico": "Una tabla USUARIOS almacena avatar_url mientras la imagen real vive en un bucket de almacenamiento.",
+      "conclusion_final": "La mejor práctica es guardar la foto fuera y almacenar solo la URL o ruta."
+    }
+  },
+  {
+    "id": "UT12-Q18",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Cuando defines una FOREIGN KEY en la tabla PEDIDOS apuntando a CLIENTES, ¿qué garantía introduces?",
+    "contexto": "Se busca el efecto de integridad de una clave foránea.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que el valor referenciado exista en la tabla principal."
+      },
+      {
+        "clave": "b",
+        "texto": "Que la tabla hija no pueda tener más de diez filas."
+      },
+      {
+        "clave": "c",
+        "texto": "Que la clave foránea sea siempre numérica."
+      },
+      {
+        "clave": "d",
+        "texto": "Que la tabla principal no pueda modificarse nunca."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una FOREIGN KEY obliga a que el valor almacenado en la tabla hija exista previamente en la tabla padre o principal, evitando referencias huérfanas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La clave foránea no limita la cantidad de filas de la tabla hija."
+        },
+        {
+          "clave": "c",
+          "motivo": "Puede haber claves foráneas de distintos tipos; no tienen por qué ser siempre numéricas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La tabla principal sí puede modificarse, aunque respetando las reglas de integridad definidas."
+        }
+      ],
+      "resumen_didactico": "La clave foránea evita que una fila apunte a un registro inexistente.",
+      "ejemplo_practico": "No puede existir un pedido con ClienteID = 999 si ese cliente no existe en CLIENTES.",
+      "conclusion_final": "La garantía es que el valor exista en la tabla principal."
+    }
+  },
+  {
+    "id": "UT12-Q19",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Has activado ON DELETE CASCADE entre CLIENTES y PEDIDOS. ¿Qué comportamiento debes esperar al borrar un cliente?",
+    "contexto": "Se evalúa una política de integridad referencial sobre borrado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los pedidos relacionados se borran automáticamente."
+      },
+      {
+        "clave": "b",
+        "texto": "El borrado se prohíbe siempre."
+      },
+      {
+        "clave": "c",
+        "texto": "Los pedidos cambian su cliente a NULL obligatoriamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Se crea una copia de seguridad antes del borrado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ON DELETE CASCADE propaga el borrado desde la fila padre a las filas hijas relacionadas, eliminándolas automáticamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso correspondería a una política tipo RESTRICT, no a CASCADE."
+        },
+        {
+          "clave": "c",
+          "motivo": "Poner a NULL sería SET NULL, no CASCADE."
+        },
+        {
+          "clave": "d",
+          "motivo": "La creación de copias de seguridad no forma parte del significado de esta cláusula."
+        }
+      ],
+      "resumen_didactico": "CASCADE transmite el borrado a los registros dependientes.",
+      "ejemplo_practico": "Si se borra un cliente y sus pedidos dependían de él, esos pedidos también desaparecen automáticamente.",
+      "conclusion_final": "Con ON DELETE CASCADE, los registros relacionados se borran automáticamente."
+    }
+  },
+  {
+    "id": "UT12-Q20",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Quieres listar todos los héroes de la tabla principal, incluso aquellos que todavía no tienen poder asociado en la tabla secundaria. ¿Qué JOIN necesitas?",
+    "contexto": "Se desea conservar todas las filas de la tabla izquierda aunque no haya coincidencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "LEFT JOIN."
+      },
+      {
+        "clave": "b",
+        "texto": "INNER JOIN."
+      },
+      {
+        "clave": "c",
+        "texto": "CROSS JOIN."
+      },
+      {
+        "clave": "d",
+        "texto": "SELF JOIN."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "LEFT JOIN devuelve todas las filas de la tabla izquierda y completa con NULL los campos de la derecha cuando no existe coincidencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "INNER JOIN eliminaría precisamente los casos sin correspondencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "CROSS JOIN genera combinaciones cartesianas y no responde al requisito."
+        },
+        {
+          "clave": "d",
+          "motivo": "SELF JOIN une una tabla consigo misma, no describe el problema de conservar no coincidentes."
+        }
+      ],
+      "resumen_didactico": "Cuando quieres “todos los de la izquierda”, usa LEFT JOIN.",
+      "ejemplo_practico": "La consulta devuelve todos los héroes y, si alguno no tiene poder asignado, las columnas del poder aparecen a NULL.",
+      "conclusion_final": "El JOIN correcto es LEFT JOIN."
+    }
+  },
+  {
+    "id": "UT12-Q21",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Dos sedes distintas te entregan listados de alias y necesitas una única lista sin valores repetidos. ¿Qué operador de conjuntos encaja mejor?",
+    "contexto": "Se combinan resultados eliminando duplicados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UNION."
+      },
+      {
+        "clave": "b",
+        "texto": "UNION ALL."
+      },
+      {
+        "clave": "c",
+        "texto": "CROSS APPLY."
+      },
+      {
+        "clave": "d",
+        "texto": "CONCAT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "UNION combina resultados compatibles y elimina los duplicados del conjunto final, lo que encaja con una lista única.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UNION ALL conserva duplicados, justo lo contrario de lo pedido."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es el operador de conjuntos del temario para este caso."
+        },
+        {
+          "clave": "d",
+          "motivo": "CONCAT une cadenas, no conjuntos de filas."
+        }
+      ],
+      "resumen_didactico": "Si quieres unificar resultados sin repetidos, piensa en UNION.",
+      "ejemplo_practico": "La sede de Madrid y la de Valencia aportan alias; UNION devuelve un repertorio único.",
+      "conclusion_final": "El operador adecuado es UNION."
+    }
+  },
+  {
+    "id": "UT12-Q22",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "¿Por qué es una buena práctica escribir siempre los nombres de las columnas al hacer un INSERT, en lugar de confiar en el orden implícito de la tabla?",
+    "contexto": "Se compara un INSERT explícito frente a otro frágil ante cambios estructurales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque evita errores si la estructura de la tabla cambia."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque así el SGBD deja de validar restricciones."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque obliga a que todos los campos sean NULL."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque convierte el INSERT en DDL."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Especificar columnas hace el INSERT más robusto y mantenible: si la tabla cambia de orden o añade columnas nuevas, el código es menos propenso a romperse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las restricciones siguen aplicándose; nombrar campos no las desactiva."
+        },
+        {
+          "clave": "c",
+          "motivo": "No obliga a que los campos sean NULL; simplemente aclara dónde va cada dato."
+        },
+        {
+          "clave": "d",
+          "motivo": "INSERT sigue siendo DML, no DDL."
+        }
+      ],
+      "resumen_didactico": "INSERT con columnas explícitas = menos fragilidad ante cambios futuros.",
+      "ejemplo_practico": "INSERT INTO clientes (nombre, email) VALUES (...) sigue funcionando mejor si luego la tabla añade fecha_alta.",
+      "conclusion_final": "La buena práctica existe para evitar errores cuando cambia la estructura."
+    }
+  },
+  {
+    "id": "UT12-Q23",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Concedes a un jefe de equipo permiso SELECT sobre una vista y, además, quieres que pueda delegar ese mismo permiso a otros usuarios. ¿Qué cláusula debes añadir?",
+    "contexto": "Se desea permitir la delegación de privilegios concedidos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "WITH GRANT OPTION."
+      },
+      {
+        "clave": "b",
+        "texto": "WITH ROOT ACCESS."
+      },
+      {
+        "clave": "c",
+        "texto": "AS ADMIN MODE."
+      },
+      {
+        "clave": "d",
+        "texto": "INCLUDING CASCADE."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "WITH GRANT OPTION permite que el usuario receptor del privilegio pueda a su vez concederlo a terceros, según el modelo DCL trabajado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la cláusula estándar del temario para delegación de permisos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Tampoco corresponde a la sintaxis enseñada."
+        },
+        {
+          "clave": "d",
+          "motivo": "CASCADE se asocia a otros contextos, no a delegar permisos en GRANT."
+        }
+      ],
+      "resumen_didactico": "GRANT da el permiso; WITH GRANT OPTION permite volver a concederlo.",
+      "ejemplo_practico": "Un responsable recibe SELECT sobre una vista y puede transferir ese permiso a analistas de su equipo.",
+      "conclusion_final": "La cláusula correcta es WITH GRANT OPTION."
+    }
+  },
+  {
+    "id": "UT12-Q24",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En PL/SQL, cuando quieres guardar un valor en una variable, ¿qué operador de asignación debes utilizar?",
+    "contexto": "Sintaxis básica de variables en PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "="
+      },
+      {
+        "clave": "b",
+        "texto": ":="
+      },
+      {
+        "clave": "c",
+        "texto": "->"
+      },
+      {
+        "clave": "d",
+        "texto": "::"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "PL/SQL usa el operador := para asignar valores a variables dentro de bloques, procedimientos o funciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El signo igual se usa en comparaciones o en otros contextos, pero la asignación propia de PL/SQL es :=."
+        },
+        {
+          "clave": "c",
+          "motivo": "-> no es el operador de asignación estándar de PL/SQL."
+        },
+        {
+          "clave": "d",
+          "motivo": ":: se usa en otros lenguajes o motores para cast, no para asignar en PL/SQL."
+        }
+      ],
+      "resumen_didactico": "En PL/SQL, asignar un valor se hace con :=.",
+      "ejemplo_practico": "DECLARE v_total NUMBER; BEGIN v_total := 100; END;",
+      "conclusion_final": "El operador correcto es :=."
+    }
+  },
+  {
+    "id": "UT12-Q25",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Has escrito varios DBMS_OUTPUT.PUT_LINE, pero no aparece nada en consola al ejecutar el script. ¿Qué comando de entorno suele faltar?",
+    "contexto": "Activación de la salida visible para depuración en Oracle.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SET SERVEROUTPUT ON"
+      },
+      {
+        "clave": "b",
+        "texto": "ENABLE DEBUG LINES"
+      },
+      {
+        "clave": "c",
+        "texto": "SHOW OUTPUT TRUE"
+      },
+      {
+        "clave": "d",
+        "texto": "PRINT CONSOLE ON"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Para que los mensajes enviados con DBMS_OUTPUT.PUT_LINE se muestren en consola, se activa previamente la salida con SET SERVEROUTPUT ON.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el comando estándar enseñado en el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Tampoco corresponde a la sintaxis vista en PL/SQL."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la orden de entorno utilizada en Oracle para este fin."
+        }
+      ],
+      "resumen_didactico": "DBMS_OUTPUT necesita que la salida del servidor esté activada.",
+      "ejemplo_practico": "Un script puede funcionar perfectamente, pero no mostrar mensajes hasta ejecutar SET SERVEROUTPUT ON.",
+      "conclusion_final": "El comando que falta es SET SERVEROUTPUT ON."
+    }
+  },
+  {
+    "id": "UT12-Q26",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Quieres que un script PL/SQL pida un valor al usuario en tiempo de ejecución para reutilizarlo como parámetro de entrada. ¿Qué símbolo se usa para la variable de sustitución?",
+    "contexto": "Scripts interactivos en herramientas tipo SQL*Plus o entornos compatibles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "&"
+      },
+      {
+        "clave": "b",
+        "texto": "@"
+      },
+      {
+        "clave": "c",
+        "texto": "$"
+      },
+      {
+        "clave": "d",
+        "texto": "#"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el enfoque del temario, el símbolo & se utiliza para crear variables de sustitución e introducir valores al ejecutar el script.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "@ se asocia a la ejecución de scripts, no a la variable de sustitución pedida."
+        },
+        {
+          "clave": "c",
+          "motivo": "$ no es el símbolo usado aquí para pedir datos al usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "# tampoco corresponde a la sintaxis explicada en la unidad."
+        }
+      ],
+      "resumen_didactico": "Para pedir valores al usuario en PL/SQL interactivo se usa &.",
+      "ejemplo_practico": "Puedes lanzar un script que pregunte por un ID y luego haga un SELECT usando &id_usuario.",
+      "conclusion_final": "El símbolo correcto es &."
+    }
+  },
+  {
+    "id": "UT12-Q27",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Tras hacer FETCH sobre un cursor explícito, ¿qué atributo te permite saber que se ha leído una fila correctamente?",
+    "contexto": "Control del estado de lectura en cursores PL/SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "%FOUND"
+      },
+      {
+        "clave": "b",
+        "texto": "%ISOPEN"
+      },
+      {
+        "clave": "c",
+        "texto": "%ROWTYPE"
+      },
+      {
+        "clave": "d",
+        "texto": "%EXCEPTION"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "%FOUND se evalúa como verdadero cuando la última operación FETCH ha recuperado con éxito una fila del cursor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "%ISOPEN indica si el cursor está abierto o cerrado, no si el FETCH devolvió fila."
+        },
+        {
+          "clave": "c",
+          "motivo": "%ROWTYPE sirve para declarar estructuras de fila, no para comprobar el resultado del FETCH."
+        },
+        {
+          "clave": "d",
+          "motivo": "%EXCEPTION no es el atributo de cursor usado para esta comprobación en el temario."
+        }
+      ],
+      "resumen_didactico": "Para saber si FETCH obtuvo fila, consulta %FOUND.",
+      "ejemplo_practico": "Un bucle manual con cursor puede seguir iterando mientras cursor_clientes%FOUND sea verdadero tras cada FETCH.",
+      "conclusion_final": "El atributo correcto es %FOUND."
+    }
+  },
+  {
+    "id": "UT12-Q28",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "En continuidad de negocio, ¿cómo se llama la ubicación secundaria con hardware y software replicado que puede asumir el mando si cae el CPD principal?",
+    "contexto": "Arquitectura de seguridad ante desastre mayor en la sede principal.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Centro de Contingencia de Datos (CDC)."
+      },
+      {
+        "clave": "b",
+        "texto": "Proxy inverso."
+      },
+      {
+        "clave": "c",
+        "texto": "Entorno de pruebas."
+      },
+      {
+        "clave": "d",
+        "texto": "Servidor de desarrollo local."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El Centro de Contingencia de Datos es una ubicación secundaria preparada para asumir la operación si la infraestructura principal queda inutilizada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un proxy inverso gestiona tráfico, pero no sustituye un CPD completo en caso de desastre."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un entorno de pruebas no está diseñado para tomar el relevo de producción."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un servidor local de desarrollo no cumple la función de continuidad de negocio."
+        }
+      ],
+      "resumen_didactico": "Cuando la sede principal cae, el relevo lo toma el CDC.",
+      "ejemplo_practico": "Si un incendio inutiliza el CPD de Madrid, el CDC en otra ciudad puede reanudar el servicio.",
+      "conclusion_final": "La instalación descrita es el Centro de Contingencia de Datos (CDC)."
+    }
+  },
+  {
+    "id": "UT12-Q29",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Durante una migración entre motores, observas que MySQL no trata BOOLEAN como un tipo lógico estricto igual que otros sistemas. ¿Cómo lo gestiona según el temario?",
+    "contexto": "Compatibilidad de tipos al migrar entre SGBD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como sinónimo de TINYINT."
+      },
+      {
+        "clave": "b",
+        "texto": "Como CLOB."
+      },
+      {
+        "clave": "c",
+        "texto": "Como DATE."
+      },
+      {
+        "clave": "d",
+        "texto": "Como JSON nativo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En MySQL, BOOLEAN se maneja habitualmente como un sinónimo de TINYINT, lo que puede provocar diferencias de comportamiento al integrar aplicaciones o migrar desde otros motores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "CLOB es para texto largo, no para booleanos."
+        },
+        {
+          "clave": "c",
+          "motivo": "DATE es un tipo temporal, no lógico."
+        },
+        {
+          "clave": "d",
+          "motivo": "JSON nativo es otra familia de datos y no describe BOOLEAN en MySQL."
+        }
+      ],
+      "resumen_didactico": "En MySQL, BOOLEAN suele aterrizar realmente como TINYINT.",
+      "ejemplo_practico": "Una aplicación que espera TRUE/FALSE estrictos puede recibir 1 o 0 y necesitar adaptación en el backend.",
+      "conclusion_final": "Según el temario, MySQL lo gestiona como sinónimo de TINYINT."
+    }
+  },
+  {
+    "id": "UT12-Q30",
+    "tema": "UT12 — Repaso global (Abarca el 51% a 68% del temario)",
+    "pregunta": "Según la buena práctica de seguridad y recuperación, ¿qué significa decir que “un backup que no se prueba, no existe”?",
+    "contexto": "No basta con crear copias: también hay que verificar su utilidad real.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que la copia es opcional si ocupa poco espacio."
+      },
+      {
+        "clave": "b",
+        "texto": "Que una copia sin prueba de restauración no puede darse por fiable."
+      },
+      {
+        "clave": "c",
+        "texto": "Que toda copia debe borrarse tras crearla."
+      },
+      {
+        "clave": "d",
+        "texto": "Que solo valen las copias completas, nunca las diferenciales."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La idea es que una copia de seguridad solo es realmente útil si se ha comprobado que puede restaurarse correctamente. De lo contrario, su fiabilidad es solo una suposición.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El espacio ocupado no cambia la necesidad de validar la restauración."
+        },
+        {
+          "clave": "c",
+          "motivo": "Borrar la copia tras crearla sería absurdo y contrario al objetivo del backup."
+        },
+        {
+          "clave": "d",
+          "motivo": "La frase no invalida copias diferenciales o incrementales; habla de verificar cualquier estrategia."
+        }
+      ],
+      "resumen_didactico": "Un backup vale cuando se demuestra que restaura, no solo cuando se genera.",
+      "ejemplo_practico": "Una empresa cree tener copias perfectas, pero el día del desastre descubre que estaban corruptas: en la práctica, era como no tener nada.",
+      "conclusion_final": "La frase significa que una copia sin prueba de restauración no puede considerarse fiable."
+    }
+  }
+]

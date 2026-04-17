@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT10-Q01",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "En una empresa, cada departamento guarda su propio Excel y luego resulta muy difícil integrar toda la información para obtener una visión única del negocio. ¿Qué problema clásico de los sistemas basados en ficheros describe mejor esta situación?",
+    "contexto": "Datos repartidos en archivos aislados por departamentos, con mucha dificultad para consolidarlos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aislamiento de la información."
+      },
+      {
+        "clave": "b",
+        "texto": "Factor de bloqueo alto."
+      },
+      {
+        "clave": "c",
+        "texto": "Bloqueo compartido."
+      },
+      {
+        "clave": "d",
+        "texto": "Replicación síncrona."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Cuando los datos quedan encerrados en archivos o departamentos distintos y cuesta unirlos, hablamos de aislamiento de la información.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El factor de bloqueo se refiere a cuántos registros lógicos caben en un bloque físico, no a la fragmentación entre departamentos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El bloqueo compartido es una política de concurrencia, no un problema de organización documental."
+        },
+        {
+          "clave": "d",
+          "motivo": "La replicación síncrona es una técnica de alta disponibilidad, no el problema descrito."
+        }
+      ],
+      "resumen_didactico": "Si los datos están en silos y cuesta combinarlos, el problema es el aislamiento.",
+      "ejemplo_practico": "Ventas tiene un Excel, Soporte otro y RRHH otro; cada uno gestiona su copia sin repositorio común.",
+      "conclusion_final": "La situación describe aislamiento de la información."
+    }
+  },
+  {
+    "id": "UT10-Q02",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Necesitas localizar un cliente por su clave rápidamente usando una estructura auxiliar que te lleve a su posición, sin recorrer todo el archivo de principio a fin. ¿Qué método de acceso encaja mejor?",
+    "contexto": "Búsqueda acelerada mediante una estructura adicional asociada a la clave.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Acceso secuencial puro."
+      },
+      {
+        "clave": "b",
+        "texto": "Acceso secuencial indexado."
+      },
+      {
+        "clave": "c",
+        "texto": "Acceso por cinta magnética."
+      },
+      {
+        "clave": "d",
+        "texto": "Acceso manual por bloques."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El acceso secuencial indexado utiliza un índice para localizar más rápido la posición de un registro sin revisar todo el archivo en orden.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El secuencial puro obliga a recorrer registros en orden, sin apoyo de un índice."
+        },
+        {
+          "clave": "c",
+          "motivo": "La cinta magnética es un soporte típico de acceso secuencial, no una técnica de localización rápida por clave."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la denominación técnica del método visto en el temario."
+        }
+      ],
+      "resumen_didactico": "Si una estructura auxiliar te guía por clave, estás ante acceso indexado.",
+      "ejemplo_practico": "Buscas id_cliente=250 y el índice te lleva directamente a la zona donde está el registro.",
+      "conclusion_final": "El método adecuado es el acceso secuencial indexado."
+    }
+  },
+  {
+    "id": "UT10-Q03",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Si un registro lógico es tan grande que debe partirse entre varios bloques físicos, ¿qué situación se produce respecto al factor de bloqueo?",
+    "contexto": "Un solo registro ocupa más espacio que un bloque y debe repartirse.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Factor de bloqueo mayor que 1, con máxima eficiencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Factor de bloqueo igual a 1, con ajuste perfecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Factor de bloqueo menor que 1, con lectura ineficiente."
+      },
+      {
+        "clave": "d",
+        "texto": "El factor de bloqueo desaparece y deja de aplicarse."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Cuando un registro lógico ocupa varios bloques, el factor de bloqueo es menor que 1 y recuperar ese registro exige varias operaciones de E/S, lo que resulta ineficiente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Mayor que 1 implica que varios registros caben en un mismo bloque, justo lo contrario del escenario dado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Igual a 1 significa un registro por bloque, no un registro partido entre varios bloques."
+        },
+        {
+          "clave": "d",
+          "motivo": "El concepto sigue existiendo; simplemente adopta un valor inferior a 1."
+        }
+      ],
+      "resumen_didactico": "Registro enorme repartido en varias cajas = factor de bloqueo menor que 1.",
+      "ejemplo_practico": "Para leer una ficha gigantesca, el sistema debe ir a varios bloques consecutivos del disco.",
+      "conclusion_final": "Se produce un factor de bloqueo menor que 1, con pérdida de eficiencia."
+    }
+  },
+  {
+    "id": "UT10-Q04",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Tras muchas inserciones y borrados, un archivo queda desordenado y poco eficiente. ¿Qué operación básica sirve para “limpiarlo” y optimizar su organización interna?",
+    "contexto": "Archivo degradado por muchos cambios a lo largo del tiempo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Clasificación."
+      },
+      {
+        "clave": "b",
+        "texto": "Unión."
+      },
+      {
+        "clave": "c",
+        "texto": "Reorganización."
+      },
+      {
+        "clave": "d",
+        "texto": "Partición."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La reorganización consiste en limpiar y reordenar el archivo para recuperar eficiencia después de múltiples modificaciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Clasificar es ordenar según un criterio, pero no describe por sí sola la operación de saneamiento global del archivo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Unión junta archivos, no repara el desorden interno generado por cambios sucesivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Partición divide un archivo grande en trozos, pero no es la acción de limpieza descrita."
+        }
+      ],
+      "resumen_didactico": "Cuando el archivo se degrada con el uso, toca reorganizarlo.",
+      "ejemplo_practico": "Tras miles de altas y bajas, el sistema reestructura el archivo para evitar huecos y lentitud.",
+      "conclusion_final": "La operación correcta es la reorganización."
+    }
+  },
+  {
+    "id": "UT10-Q05",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "En una empresa, el director ve dashboards globales y un becario solo datos limitados. Según los objetivos de Codd, ¿qué pilar permite mostrar la información de forma distinta y protegida según quién consulte?",
+    "contexto": "Distintas vistas y permisos según el perfil del usuario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Flexibilidad y seguridad."
+      },
+      {
+        "clave": "b",
+        "texto": "Factor de bloqueo."
+      },
+      {
+        "clave": "c",
+        "texto": "Secuencialidad física."
+      },
+      {
+        "clave": "d",
+        "texto": "Redundancia controlada."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Uno de los pilares de Codd es la flexibilidad y seguridad: el sistema debe mostrar la información de forma diferente según el usuario y proteger los datos sensibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El factor de bloqueo pertenece al almacenamiento físico, no al control de vistas o accesos."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es un pilar de Codd relacionado con perfiles y protección."
+        },
+        {
+          "clave": "d",
+          "motivo": "No expresa el objetivo de adaptar la visión y restringir acceso según roles."
+        }
+      ],
+      "resumen_didactico": "Ver cosas distintas según el perfil es una mezcla de flexibilidad y seguridad.",
+      "ejemplo_practico": "RRHH ve salarios; soporte ve incidencias; dirección ve métricas agregadas.",
+      "conclusion_final": "El pilar correcto es flexibilidad y seguridad."
+    }
+  },
+  {
+    "id": "UT10-Q06",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "En el Modelo Conceptual de Datos de una app falta la fecha de nacimiento, aunque el negocio la necesita obligatoriamente. ¿Qué característica del modelo está fallando?",
+    "contexto": "El modelo no incluye toda la información necesaria para el sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Completitud."
+      },
+      {
+        "clave": "b",
+        "texto": "Compresión."
+      },
+      {
+        "clave": "c",
+        "texto": "Jerarquización."
+      },
+      {
+        "clave": "d",
+        "texto": "Replicación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un buen MCD debe ser completo: ha de contener toda la información necesaria para el negocio. Si falta un dato esencial, falla la completitud.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La compresión afecta al almacenamiento físico, no a la calidad semántica del modelo conceptual."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es la propiedad clave mencionada en el temario para este caso."
+        },
+        {
+          "clave": "d",
+          "motivo": "La replicación trata de copias, no de que el modelo recoja todos los datos necesarios."
+        }
+      ],
+      "resumen_didactico": "Si el modelo olvida un dato importante, no está completo.",
+      "ejemplo_practico": "La app necesita validar mayoría de edad, pero el MCD no incluye fecha_nacimiento.",
+      "conclusion_final": "La característica que falla es la completitud."
+    }
+  },
+  {
+    "id": "UT10-Q07",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "¿Qué tipo de modelo está más orientado a cómo “piensa” el SGBD y depende ya de la implementación técnica real, en lugar de centrarse en la visión humana del negocio?",
+    "contexto": "Comparación entre modelos de alto nivel y modelos cercanos al gestor de bases de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Modelo conceptual."
+      },
+      {
+        "clave": "b",
+        "texto": "Modelo convencional."
+      },
+      {
+        "clave": "c",
+        "texto": "Modelo semántico puro."
+      },
+      {
+        "clave": "d",
+        "texto": "Modelo de entrevista con cliente."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El modelo convencional está más cerca del SGBD, es dependiente de la implementación y menos semántico que el conceptual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El conceptual es de alto nivel, independiente del SGBD y más cercano a cómo piensan los humanos."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es la clasificación empleada en el temario para contraponer humano frente a técnico."
+        },
+        {
+          "clave": "d",
+          "motivo": "No corresponde a una categoría formal de modelado de datos."
+        }
+      ],
+      "resumen_didactico": "Humano = conceptual; técnico e implementado = convencional.",
+      "ejemplo_practico": "El DER es conceptual; el modelo relacional implementado en un SGBD es convencional.",
+      "conclusion_final": "El modelo orientado al SGBD es el modelo convencional."
+    }
+  },
+  {
+    "id": "UT10-Q08",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Si defines que un campo se guarda en un archivo físico concreto, con un índice B-Tree y un algoritmo de compresión, ¿en qué nivel de ANSI/SPARC te estás moviendo?",
+    "contexto": "Descripción de detalles estrictamente físicos de almacenamiento y acceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Nivel externo."
+      },
+      {
+        "clave": "b",
+        "texto": "Nivel conceptual."
+      },
+      {
+        "clave": "c",
+        "texto": "Nivel interno."
+      },
+      {
+        "clave": "d",
+        "texto": "Nivel visual."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El nivel interno describe cómo se almacenan físicamente los datos: archivos, sectores, índices, compresión y demás detalles de máquina.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El nivel externo se refiere a vistas de usuario, no a archivos ni algoritmos de compresión."
+        },
+        {
+          "clave": "b",
+          "motivo": "El nivel conceptual define la estructura lógica global, no el detalle físico exacto."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un nivel formal de la arquitectura ANSI/SPARC."
+        }
+      ],
+      "resumen_didactico": "Archivos, B-Tree y compresión pertenecen al nivel interno.",
+      "ejemplo_practico": "Indicar en qué disco, con qué índice y con qué compresión se guarda PEDIDOS es nivel interno.",
+      "conclusion_final": "Ese trabajo corresponde al nivel interno."
+    }
+  },
+  {
+    "id": "UT10-Q09",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "En una tabla EMPLEADOS, la columna “Cargo” describe una propiedad que todos los registros poseen. ¿Qué nombre técnico recibe esa columna en el modelo relacional?",
+    "contexto": "Identificación del elemento vertical de una relación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Tupla."
+      },
+      {
+        "clave": "b",
+        "texto": "Atributo."
+      },
+      {
+        "clave": "c",
+        "texto": "Dominio."
+      },
+      {
+        "clave": "d",
+        "texto": "Índice."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las columnas de una tabla son atributos; las filas son tuplas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una tupla es una fila completa, no una columna."
+        },
+        {
+          "clave": "c",
+          "motivo": "El dominio es el conjunto de valores permitidos, no la columna en sí."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un índice es una estructura auxiliar de búsqueda, no el nombre de la columna."
+        }
+      ],
+      "resumen_didactico": "Columna = atributo; fila = tupla.",
+      "ejemplo_practico": "En EMPLEADOS, Nombre, Cargo y Teléfono son atributos de la relación.",
+      "conclusion_final": "La columna recibe el nombre de atributo."
+    }
+  },
+  {
+    "id": "UT10-Q10",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Si defines que el atributo Departamento solo puede tomar los valores {Desarrollo, Marketing, RRHH, Ventas}, ¿qué concepto estás estableciendo?",
+    "contexto": "Conjunto cerrado de valores válidos para una columna.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La cardinalidad."
+      },
+      {
+        "clave": "b",
+        "texto": "La clave foránea."
+      },
+      {
+        "clave": "c",
+        "texto": "El dominio."
+      },
+      {
+        "clave": "d",
+        "texto": "La 2FN."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El dominio de un atributo define los valores permitidos que puede tomar, ya sea como lista cerrada o como tipo de dato.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La cardinalidad describe relaciones 1:1, 1:N o N:M, no valores válidos dentro de una celda."
+        },
+        {
+          "clave": "b",
+          "motivo": "La clave foránea conecta tablas, no restringe directamente un conjunto de valores literales como lista cerrada."
+        },
+        {
+          "clave": "d",
+          "motivo": "La 2FN trata dependencias parciales, no la definición del conjunto válido de un atributo."
+        }
+      ],
+      "resumen_didactico": "Si marcas qué valores son válidos, estás definiendo el dominio.",
+      "ejemplo_practico": "No sería válido guardar “Cocina” si no está en el dominio permitido del campo Departamento.",
+      "conclusion_final": "Eso es definir el dominio del atributo."
+    }
+  },
+  {
+    "id": "UT10-Q11",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Quieres recuperar los empleados cuyo teléfono no consta todavía en la base de datos. ¿Cuál es la forma correcta de escribir la condición en SQL?",
+    "contexto": "Comprobación de ausencia total de información en un campo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "WHERE telefono = NULL"
+      },
+      {
+        "clave": "b",
+        "texto": "WHERE telefono == NULL"
+      },
+      {
+        "clave": "c",
+        "texto": "WHERE telefono IS NULL"
+      },
+      {
+        "clave": "d",
+        "texto": "WHERE telefono = ''"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "NULL no se compara con '='. En SQL se comprueba con IS NULL o IS NOT NULL debido a la lógica ternaria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La comparación directa con '=' no funciona con NULL como se espera; devuelve UNKNOWN."
+        },
+        {
+          "clave": "b",
+          "motivo": "'==' no es la sintaxis estándar correcta en SQL para este caso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cadena vacía no es lo mismo que ausencia total de información (NULL)."
+        }
+      ],
+      "resumen_didactico": "Para buscar nulos, usa IS NULL; '=' no sirve con NULL.",
+      "ejemplo_practico": "telefono IS NULL selecciona empleados cuyo dato todavía no existe en la tabla.",
+      "conclusion_final": "La condición correcta es WHERE telefono IS NULL."
+    }
+  },
+  {
+    "id": "UT10-Q12",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Varios usuarios quieren consultar el precio de un producto al mismo tiempo, pero ninguno debe poder modificarlo mientras haya lecturas en curso. ¿Qué tipo de bloqueo encaja con esa situación?",
+    "contexto": "Lectura simultánea permitida y escritura bloqueada temporalmente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bloqueo exclusivo."
+      },
+      {
+        "clave": "b",
+        "texto": "Bloqueo compartido."
+      },
+      {
+        "clave": "c",
+        "texto": "Bloqueo nulo."
+      },
+      {
+        "clave": "d",
+        "texto": "Bloqueo físico de disco."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El bloqueo compartido permite lecturas simultáneas, pero impide escrituras mientras el dato está siendo leído por otros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El exclusivo es el candado fuerte: ni leer ni escribir por terceros, así que sería demasiado restrictivo para el escenario."
+        },
+        {
+          "clave": "c",
+          "motivo": "No protege el dato ni corresponde al mecanismo descrito."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la denominación de la política de concurrencia vista en el temario."
+        }
+      ],
+      "resumen_didactico": "Muchos leen, nadie escribe = shared lock.",
+      "ejemplo_practico": "Varias consultas revisan el precio de un portátil, pero ninguna actualización puede ejecutarse hasta que terminen.",
+      "conclusion_final": "El bloqueo adecuado es el bloqueo compartido."
+    }
+  },
+  {
+    "id": "UT10-Q13",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "En una relación 1:N entre CLIENTES y PEDIDOS, ¿qué elemento suele añadirse en la tabla del lado N para materializar físicamente esa relación?",
+    "contexto": "Paso del modelo conceptual al modelo físico relacional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un trigger BEFORE."
+      },
+      {
+        "clave": "b",
+        "texto": "Una clave foránea."
+      },
+      {
+        "clave": "c",
+        "texto": "Un índice FULLTEXT."
+      },
+      {
+        "clave": "d",
+        "texto": "Un valor NULL obligatorio."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las relaciones 1:N se representan en el modelo físico añadiendo una clave foránea en la tabla del lado N que referencia la clave primaria de la tabla del lado 1.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un trigger puede automatizar acciones, pero no es el mecanismo estructural básico que materializa la relación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un índice mejora búsquedas, pero no define la relación entre ambas tablas."
+        },
+        {
+          "clave": "d",
+          "motivo": "NULL no representa por sí mismo una relación relacional entre tablas."
+        }
+      ],
+      "resumen_didactico": "Relación 1:N = la tabla “muchos” guarda una FK apuntando a la PK de la tabla “uno”.",
+      "ejemplo_practico": "PEDIDOS.id_cliente referencia a CLIENTES.id_cliente para saber a qué cliente pertenece cada pedido.",
+      "conclusion_final": "El elemento clave es una clave foránea."
+    }
+  },
+  {
+    "id": "UT10-Q14",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "La tabla PROVEEDORES ya existe y ahora el cliente pide añadir una columna correo. ¿Qué sentencia DDL debes usar como idea principal?",
+    "contexto": "Reforma de una tabla existente para incorporar un campo nuevo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ALTER TABLE ... ADD"
+      },
+      {
+        "clave": "b",
+        "texto": "DROP TABLE"
+      },
+      {
+        "clave": "c",
+        "texto": "DELETE FROM"
+      },
+      {
+        "clave": "d",
+        "texto": "REVOKE"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ALTER TABLE permite reformar una tabla ya existente; con ADD se añade una nueva columna.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DROP TABLE elimina la tabla entera, justo lo contrario de añadir un campo."
+        },
+        {
+          "clave": "c",
+          "motivo": "DELETE FROM borra filas, no modifica la estructura de la tabla."
+        },
+        {
+          "clave": "d",
+          "motivo": "REVOKE gestiona permisos, no columnas."
+        }
+      ],
+      "resumen_didactico": "Añadir columna en tabla existente = ALTER TABLE ... ADD.",
+      "ejemplo_practico": "ALTER TABLE TProveedor ADD cCorreo VARCHAR(256);",
+      "conclusion_final": "La idea correcta es usar ALTER TABLE con ADD."
+    }
+  },
+  {
+    "id": "UT10-Q15",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Definiste por error el teléfono como numérico y quieres corregir el tipo de la columna sin recrear la tabla completa. ¿Qué operación DDL se ajusta mejor?",
+    "contexto": "Corrección de un tipo de dato ya definido en una tabla existente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ALTER TABLE ... MODIFY COLUMN"
+      },
+      {
+        "clave": "b",
+        "texto": "SELECT ... INTO"
+      },
+      {
+        "clave": "c",
+        "texto": "GROUP BY"
+      },
+      {
+        "clave": "d",
+        "texto": "CREATE VIEW"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Para cambiar el tipo o la definición de una columna existente, se usa ALTER TABLE con la operación de modificación correspondiente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SELECT INTO pertenece a consulta/procesamiento, no a modificación estructural de columnas."
+        },
+        {
+          "clave": "c",
+          "motivo": "GROUP BY agrupa resultados de consultas, no reforma tablas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una vista no corrige el tipo real almacenado en la tabla base."
+        }
+      ],
+      "resumen_didactico": "Para arreglar el tipo de una columna, se modifica su definición con ALTER TABLE.",
+      "ejemplo_practico": "ALTER TABLE TProveedor MODIFY COLUMN nTelefono VARCHAR(9);",
+      "conclusion_final": "La operación adecuada es ALTER TABLE ... MODIFY COLUMN."
+    }
+  },
+  {
+    "id": "UT10-Q16",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "¿Cuál es el efecto típico de crear un índice sobre columnas muy consultadas?",
+    "contexto": "Intercambio entre velocidad de lectura y coste de mantenimiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Acelera las lecturas, pero puede ralentizar INSERT y UPDATE."
+      },
+      {
+        "clave": "b",
+        "texto": "Hace más rápidas tanto las lecturas como todas las escrituras sin coste alguno."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo sirve para ocultar columnas sensibles."
+      },
+      {
+        "clave": "d",
+        "texto": "Sustituye a las claves primarias y foráneas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los índices mejoran la velocidad de búsqueda en SELECT, pero cada escritura también debe actualizar el índice, lo que añade coste.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No existe mejora gratuita: mantener el índice tiene un precio en operaciones de inserción y actualización."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ocultar datos sensibles es asunto de permisos/vistas, no la función de un índice."
+        },
+        {
+          "clave": "d",
+          "motivo": "Índices y claves son conceptos distintos: un índice no reemplaza la integridad relacional."
+        }
+      ],
+      "resumen_didactico": "Índice = lecturas más rápidas, escrituras algo más costosas.",
+      "ejemplo_practico": "Buscar por nombre es más veloz, pero insertar nuevos proveedores exige actualizar también el índice.",
+      "conclusion_final": "El efecto típico es acelerar lecturas y encarecer algo las escrituras."
+    }
+  },
+  {
+    "id": "UT10-Q17",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Llegas a un proyecto nuevo y quieres ver tipos, nulos y claves de una tabla ya creada sin modificar nada. ¿Qué comando se menciona como especialmente útil para eso?",
+    "contexto": "Inspección rápida de la estructura de una tabla existente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DESC"
+      },
+      {
+        "clave": "b",
+        "texto": "ROLLBACK"
+      },
+      {
+        "clave": "c",
+        "texto": "COMMIT"
+      },
+      {
+        "clave": "d",
+        "texto": "HAVING"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "DESC (Describe) muestra la estructura de una tabla: columnas, tipos, si admiten nulos, claves, etc.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "ROLLBACK revierte transacciones, no describe tablas."
+        },
+        {
+          "clave": "c",
+          "motivo": "COMMIT confirma transacciones, no inspecciona metadatos de estructura."
+        },
+        {
+          "clave": "d",
+          "motivo": "HAVING filtra grupos agregados en consultas; no describe tablas."
+        }
+      ],
+      "resumen_didactico": "Para “ver los planos” de la tabla, usa DESC.",
+      "ejemplo_practico": "DESC TProveedor muestra si nTelefono es VARCHAR(9), si admite NULL y si es UNIQUE.",
+      "conclusion_final": "El comando útil para esa inspección es DESC."
+    }
+  },
+  {
+    "id": "UT10-Q18",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Debes guardar una imagen de perfil o un PDF binario dentro de la base de datos. ¿Qué familia de tipos encaja mejor con ese contenido?",
+    "contexto": "Almacenamiento de objetos binarios, no texto legible.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "BLOB u objeto binario."
+      },
+      {
+        "clave": "b",
+        "texto": "CHAR fijo."
+      },
+      {
+        "clave": "c",
+        "texto": "DATE."
+      },
+      {
+        "clave": "d",
+        "texto": "BOOLEAN."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los objetos binarios como imágenes o PDF se almacenan mediante tipos binarios como BLOB, no mediante tipos de texto o fechas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "CHAR almacena caracteres de longitud fija, no contenido binario complejo."
+        },
+        {
+          "clave": "c",
+          "motivo": "DATE sirve para fechas, no para archivos binarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "BOOLEAN representa verdadero/falso, sin relación con documentos o imágenes."
+        }
+      ],
+      "resumen_didactico": "Imagen o PDF = tipo binario, no texto.",
+      "ejemplo_practico": "Una foto de perfil o un escaneo firmado se guardaría como BLOB o tipo binario equivalente.",
+      "conclusion_final": "La familia correcta es la de BLOB u objetos binarios."
+    }
+  },
+  {
+    "id": "UT10-Q19",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Si escribes ORDER BY nombre y no especificas ASC ni DESC, ¿qué orden se asume por defecto según el temario?",
+    "contexto": "Comportamiento por defecto de la ordenación en SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aleatorio."
+      },
+      {
+        "clave": "b",
+        "texto": "Ascendente."
+      },
+      {
+        "clave": "c",
+        "texto": "Descendente."
+      },
+      {
+        "clave": "d",
+        "texto": "Depende siempre del sistema operativo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Si no se especifica nada, SQL asume orden ascendente (ASC) por defecto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La ordenación no queda al azar si se ha usado ORDER BY."
+        },
+        {
+          "clave": "c",
+          "motivo": "DESC solo se aplica cuando se pide expresamente."
+        },
+        {
+          "clave": "d",
+          "motivo": "No depende del sistema operativo, sino de la sintaxis SQL por defecto trabajada."
+        }
+      ],
+      "resumen_didactico": "ORDER BY sin indicar nada = ASC.",
+      "ejemplo_practico": "ORDER BY apellido ordena de A a Z salvo que escribas DESC.",
+      "conclusion_final": "El orden asumido por defecto es ascendente."
+    }
+  },
+  {
+    "id": "UT10-Q20",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "En una condición SQL mezclas AND y OR sin usar paréntesis. ¿Qué operador se evalúa antes?",
+    "contexto": "Jerarquía de operadores lógicos en consultas SQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "OR, siempre antes que AND."
+      },
+      {
+        "clave": "b",
+        "texto": "AND, antes que OR."
+      },
+      {
+        "clave": "c",
+        "texto": "Los dos tienen exactamente la misma prioridad."
+      },
+      {
+        "clave": "d",
+        "texto": "Se evalúan alfabéticamente."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En SQL, AND tiene mayor prioridad que OR. Por eso conviene usar paréntesis cuando se combinan ambos operadores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es justo al revés: OR tiene menor prioridad que AND."
+        },
+        {
+          "clave": "c",
+          "motivo": "No tienen la misma jerarquía; existe precedencia definida."
+        },
+        {
+          "clave": "d",
+          "motivo": "La evaluación no depende del orden alfabético del operador."
+        }
+      ],
+      "resumen_didactico": "Sin paréntesis, primero se resuelve AND y después OR.",
+      "ejemplo_practico": "A OR B AND C se interpreta como A OR (B AND C).",
+      "conclusion_final": "El operador que se evalúa antes es AND."
+    }
+  },
+  {
+    "id": "UT10-Q21",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Quieres unir alias y equipo en una sola etiqueta dentro del resultado de una consulta usando el operador estándar SQL. ¿Cuál debes emplear?",
+    "contexto": "Concatenación de textos dentro de una consulta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "||"
+      },
+      {
+        "clave": "b",
+        "texto": "&&"
+      },
+      {
+        "clave": "c",
+        "texto": "=="
+      },
+      {
+        "clave": "d",
+        "texto": "<>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El operador estándar de concatenación en SQL es ||, aunque algunos motores concretos acepten otras alternativas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el operador estándar de concatenación en SQL."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es un comparador, no una unión de cadenas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Indica desigualdad, no concatenación."
+        }
+      ],
+      "resumen_didactico": "Para “pegar” textos en SQL estándar, usa barras dobles verticales.",
+      "ejemplo_practico": "SELECT alias || ' - ' || equipo FROM heroe;",
+      "conclusion_final": "El operador correcto es ||."
+    }
+  },
+  {
+    "id": "UT10-Q22",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Si quieres contar todas las filas de una tabla sin depender de una columna concreta, ¿qué agregación resulta la más adecuada?",
+    "contexto": "Conteo global de registros en una tabla.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "AVG(*)"
+      },
+      {
+        "clave": "b",
+        "texto": "SUM(*)"
+      },
+      {
+        "clave": "c",
+        "texto": "COUNT(*)"
+      },
+      {
+        "clave": "d",
+        "texto": "MAX(*)"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "COUNT(*) cuenta las filas de una tabla sin necesidad de apoyarse en un campo concreto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "AVG calcula medias, no cantidades."
+        },
+        {
+          "clave": "b",
+          "motivo": "SUM suma valores numéricos, no cuenta registros."
+        },
+        {
+          "clave": "d",
+          "motivo": "MAX devuelve el mayor valor, no el número de filas."
+        }
+      ],
+      "resumen_didactico": "Para saber cuántas filas hay, usa COUNT(*).",
+      "ejemplo_practico": "SELECT COUNT(*) FROM pedidos; devuelve el total de pedidos almacenados.",
+      "conclusion_final": "La agregación correcta es COUNT(*)."
+    }
+  },
+  {
+    "id": "UT10-Q23",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "A un usuario ya se le concedió SELECT sobre una tabla, pero ahora quieres retirarle ese privilegio. ¿Qué sentencia expresa mejor esa acción?",
+    "contexto": "Gestión de permisos en DCL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "GRANT"
+      },
+      {
+        "clave": "b",
+        "texto": "CREATE"
+      },
+      {
+        "clave": "c",
+        "texto": "REVOKE"
+      },
+      {
+        "clave": "d",
+        "texto": "SELECT"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "REVOKE se usa para retirar permisos previamente concedidos. GRANT hace lo contrario: concederlos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "GRANT otorga privilegios; no los elimina."
+        },
+        {
+          "clave": "b",
+          "motivo": "CREATE genera objetos, no administra permisos concedidos."
+        },
+        {
+          "clave": "d",
+          "motivo": "SELECT es un privilegio o una consulta, no la orden de retirada."
+        }
+      ],
+      "resumen_didactico": "Conceder = GRANT; quitar = REVOKE.",
+      "ejemplo_practico": "REVOKE SELECT ON empleados FROM becario;",
+      "conclusion_final": "Para retirar el privilegio, se usa REVOKE."
+    }
+  },
+  {
+    "id": "UT10-Q24",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Dentro de un bloque anónimo PL/SQL, ¿qué sección está pensada específicamente para capturar y gestionar errores si algo falla durante la ejecución?",
+    "contexto": "Estructura de un bloque PL/SQL con manejo de errores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DECLARE"
+      },
+      {
+        "clave": "b",
+        "texto": "EXCEPTION"
+      },
+      {
+        "clave": "c",
+        "texto": "GROUP BY"
+      },
+      {
+        "clave": "d",
+        "texto": "HAVING"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La sección EXCEPTION de PL/SQL se utiliza para capturar y tratar errores ocurridos dentro del bloque BEGIN...END.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DECLARE sirve para declarar variables, cursores o excepciones personalizadas, no para manejarlas cuando ocurren."
+        },
+        {
+          "clave": "c",
+          "motivo": "GROUP BY pertenece al lenguaje de consultas SQL, no a la estructura de control de errores en PL/SQL."
+        },
+        {
+          "clave": "d",
+          "motivo": "HAVING filtra grupos en consultas, no gestiona excepciones en bloques procedimentales."
+        }
+      ],
+      "resumen_didactico": "Si algo falla, la zona de rescate del bloque es EXCEPTION.",
+      "ejemplo_practico": "Capturar NO_DATA_FOUND o TOO_MANY_ROWS para evitar que el script termine abruptamente.",
+      "conclusion_final": "La sección específica para errores es EXCEPTION."
+    }
+  },
+  {
+    "id": "UT10-Q25",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "En un procedimiento PL/SQL quieres devolver un resultado a través de un parámetro, sin que importe el valor inicial que te hayan pasado. ¿Qué modo de parámetro encaja mejor?",
+    "contexto": "Parámetro pensado para salida de información desde el procedimiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "IN"
+      },
+      {
+        "clave": "b",
+        "texto": "OUT"
+      },
+      {
+        "clave": "c",
+        "texto": "BOOLEAN"
+      },
+      {
+        "clave": "d",
+        "texto": "RETURN"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "OUT se usa para devolver un resultado desde el procedimiento; el valor inicial recibido no es relevante como entrada de trabajo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "IN es de solo lectura hacia dentro del procedimiento; no sirve para devolver el resultado como salida modificada."
+        },
+        {
+          "clave": "c",
+          "motivo": "BOOLEAN es un tipo de dato, no un modo de parámetro."
+        },
+        {
+          "clave": "d",
+          "motivo": "RETURN se asocia a funciones, no al modo de un parámetro en un procedimiento."
+        }
+      ],
+      "resumen_didactico": "IN entra, OUT sale, IN OUT entra y sale.",
+      "ejemplo_practico": "Un procedimiento puede calcular total_final OUT NUMBER y entregarlo al llamador al terminar.",
+      "conclusion_final": "El modo adecuado es OUT."
+    }
+  },
+  {
+    "id": "UT10-Q26",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Cuando usas SELECT ... INTO en PL/SQL para guardar el resultado en variables, ¿qué condición debe cumplir la consulta?",
+    "contexto": "Regla estricta del uso de SELECT INTO en bloques procedimentales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Debe devolver exactamente una fila."
+      },
+      {
+        "clave": "b",
+        "texto": "Debe devolver al menos diez filas."
+      },
+      {
+        "clave": "c",
+        "texto": "No puede contener WHERE."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo puede consultar columnas numéricas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SELECT INTO exige exactamente una fila. Si devuelve cero o más de una, se producen excepciones como NO_DATA_FOUND o TOO_MANY_ROWS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Para múltiples filas se usan cursores, no SELECT INTO directo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Puede llevar WHERE; de hecho suele necesitarlo para garantizar una sola fila."
+        },
+        {
+          "clave": "d",
+          "motivo": "Funciona con texto, fechas, números y otros tipos, no solo con numéricos."
+        }
+      ],
+      "resumen_didactico": "SELECT INTO es “una fila exacta” o excepción.",
+      "ejemplo_practico": "Buscar un usuario por su PK suele ser válido; buscar por un apellido repetido puede lanzar TOO_MANY_ROWS.",
+      "conclusion_final": "La consulta debe devolver exactamente una fila."
+    }
+  },
+  {
+    "id": "UT10-Q27",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Ejecutas un UPDATE masivo que modifica el sueldo de 100 empleados. Si el trigger está definido con FOR EACH ROW, ¿cuántas veces se dispara?",
+    "contexto": "Diferencia entre alcance por fila y alcance por sentencia en triggers.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una sola vez, porque la sentencia es una sola."
+      },
+      {
+        "clave": "b",
+        "texto": "Cien veces, una por cada fila afectada."
+      },
+      {
+        "clave": "c",
+        "texto": "Dos veces, una antes y otra después."
+      },
+      {
+        "clave": "d",
+        "texto": "No se dispara en operaciones UPDATE."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "FOR EACH ROW hace que el trigger se ejecute por cada fila afectada por la operación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso sería propio de un trigger a nivel sentencia, no de uno FOR EACH ROW."
+        },
+        {
+          "clave": "c",
+          "motivo": "No depende simplemente de BEFORE/AFTER, sino del número de filas impactadas con el alcance por fila."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los triggers pueden definirse para UPDATE y dispararse correctamente."
+        }
+      ],
+      "resumen_didactico": "FOR EACH ROW = una ejecución por fila tocada.",
+      "ejemplo_practico": "Si actualizas 100 registros y el disparador es por fila, Oracle lo ejecuta 100 veces.",
+      "conclusion_final": "Se dispara cien veces, una por cada fila afectada."
+    }
+  },
+  {
+    "id": "UT10-Q28",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Un desarrollador guarda contraseñas reales en texto plano dentro de la base de datos. ¿Qué medida de seguridad básica está ignorando?",
+    "contexto": "Protección de credenciales almacenadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hasheado o cifrado adecuado de contraseñas."
+      },
+      {
+        "clave": "b",
+        "texto": "Creación de índices compuestos."
+      },
+      {
+        "clave": "c",
+        "texto": "Normalización a 3FN."
+      },
+      {
+        "clave": "d",
+        "texto": "Particionado horizontal."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Nunca deben almacenarse contraseñas reales en texto plano. Deben protegerse mediante técnicas seguras como hasheado con herramientas estándar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los índices mejoran rendimiento, pero no protegen credenciales frente a una filtración."
+        },
+        {
+          "clave": "c",
+          "motivo": "La normalización mejora diseño lógico, no el almacenamiento seguro de contraseñas."
+        },
+        {
+          "clave": "d",
+          "motivo": "El particionado distribuye datos, pero no convierte contraseñas en algo seguro si están en claro."
+        }
+      ],
+      "resumen_didactico": "Contraseña en claro = error gravísimo; debe protegerse antes de guardarla.",
+      "ejemplo_practico": "Si la base se filtra y la clave está en texto plano, el atacante puede usarla directamente sin esfuerzo adicional.",
+      "conclusion_final": "La medida ignorada es el hasheado o cifrado adecuado de contraseñas."
+    }
+  },
+  {
+    "id": "UT10-Q29",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "¿Qué idea resume mejor la regla profesional “un backup que no se prueba, no existe”?",
+    "contexto": "Buenas prácticas para verificar copias de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que las copias deben probarse periódicamente para comprobar que restauran bien y no están corruptas."
+      },
+      {
+        "clave": "b",
+        "texto": "Que basta con hacer copias cada muchos meses si ocupan mucho."
+      },
+      {
+        "clave": "c",
+        "texto": "Que solo importa el nombre del archivo, no su restauración."
+      },
+      {
+        "clave": "d",
+        "texto": "Que los backups no necesitan protección especial."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las buenas prácticas indican que un backup debe comprobarse y someterse a pruebas de restauración; de lo contrario, podrías descubrir demasiado tarde que está corrupto o incompleto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Espaciar copias aumenta la pérdida potencial de datos y no resuelve la necesidad de validarlas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Nombrar bien ayuda, pero no sustituye probar que el backup funciona realmente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las copias deben protegerse igual o más que el sistema original, precisamente porque contienen datos valiosos."
+        }
+      ],
+      "resumen_didactico": "Backup fiable = backup probado.",
+      "ejemplo_practico": "Una empresa descubre tras un fallo real que su copia estaba dañada porque nunca había ensayado la restauración.",
+      "conclusion_final": "La idea correcta es probar periódicamente las copias y su restauración."
+    }
+  },
+  {
+    "id": "UT10-Q30",
+    "tema": "UT10 — Repaso global (Abarca de 17% a 34% del temario)",
+    "pregunta": "Durante una migración desde SQL Server a PostgreSQL, ¿qué riesgo concreto se destaca al trabajar con tipos como DATETIMEOFFSET?",
+    "contexto": "Migración entre SGBD con diferencias en el tratamiento de fechas y zonas horarias.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Perder la zona horaria y desajustar la fecha real del evento."
+      },
+      {
+        "clave": "b",
+        "texto": "Que el servidor deje de soportar tablas relacionales."
+      },
+      {
+        "clave": "c",
+        "texto": "Que todos los números se conviertan automáticamente en BOOLEAN."
+      },
+      {
+        "clave": "d",
+        "texto": "Que PostgreSQL no permita almacenar fechas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Al migrar tipos de fecha/hora entre motores, un riesgo clave es perder el offset o zona horaria, provocando que los eventos queden registrados con hora incorrecta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La migración de tipos no elimina el modelo relacional del motor destino."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esa confusión pertenece a problemas de booleanos, no de fechas con offset."
+        },
+        {
+          "clave": "d",
+          "motivo": "PostgreSQL sí soporta fechas y horas; el problema es mapearlas correctamente."
+        }
+      ],
+      "resumen_didactico": "Con fechas y offset, el peligro está en perder la zona horaria y alterar el momento real del dato.",
+      "ejemplo_practico": "Un pedido internacional registrado a las 23:00 UTC+2 puede aparecer como si se hubiera hecho en otra hora o incluso otro día.",
+      "conclusion_final": "El riesgo principal es perder la zona horaria y desajustar la fecha/hora real."
+    }
+  }
+]
