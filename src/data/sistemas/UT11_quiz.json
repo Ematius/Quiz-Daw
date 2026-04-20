@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT11-Q01",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué tecnología de almacenamiento utiliza platos giratorios y magnetización para guardar la información?",
+    "contexto": "Comparación entre tecnologías de almacenamiento permanente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SSD NVMe"
+      },
+      {
+        "clave": "b",
+        "texto": "HDD"
+      },
+      {
+        "clave": "c",
+        "texto": "Memoria caché"
+      },
+      {
+        "clave": "d",
+        "texto": "RAM DDR4"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El disco duro mecánico (HDD) pertenece al almacenamiento magnético y funciona mediante platos giratorios y cabezales de lectura/escritura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un SSD usa memoria flash, no magnetización ni partes móviles."
+        },
+        {
+          "clave": "c",
+          "motivo": "La caché es memoria rápida interna o cercana a la CPU, no almacenamiento permanente mecánico."
+        },
+        {
+          "clave": "d",
+          "motivo": "La RAM es memoria volátil principal, no almacenamiento magnético."
+        }
+      ],
+      "resumen_didactico": "HDD equivale a almacenamiento magnético clásico con discos giratorios.",
+      "ejemplo_practico": "Un PC antiguo puede combinar un HDD para datos masivos y un SSD para arrancar el sistema más rápido.",
+      "conclusion_final": "Si hay platos giratorios y magnetización, hablamos de un HDD."
+    }
+  },
+  {
+    "id": "UT11-Q02",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué tipo de módulo de memoria RAM se utiliza habitualmente en portátiles por su tamaño reducido?",
+    "contexto": "Elección de componentes según formato del equipo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DIMM"
+      },
+      {
+        "clave": "b",
+        "texto": "SO-DIMM"
+      },
+      {
+        "clave": "c",
+        "texto": "PCIe x16"
+      },
+      {
+        "clave": "d",
+        "texto": "ATX"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los portátiles usan con frecuencia módulos SO-DIMM, que son físicamente más pequeños que los DIMM de sobremesa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DIMM es el formato típico de memoria en equipos de sobremesa."
+        },
+        {
+          "clave": "c",
+          "motivo": "PCIe x16 es una ranura de expansión, no un módulo de RAM."
+        },
+        {
+          "clave": "d",
+          "motivo": "ATX es un factor de forma de placa base, no memoria."
+        }
+      ],
+      "resumen_didactico": "Portátil suele implicar SO-DIMM; sobremesa, DIMM.",
+      "ejemplo_practico": "Al ampliar un portátil no compras una RAM DIMM estándar, sino un módulo SO-DIMM compatible.",
+      "conclusion_final": "El formato habitual de RAM en portátiles es SO-DIMM."
+    }
+  },
+  {
+    "id": "UT11-Q03",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué tipo de ranura de expansión de la placa base se asocia normalmente a una tarjeta gráfica dedicada moderna?",
+    "contexto": "Ampliación de hardware en equipos de sobremesa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "PCIe x16"
+      },
+      {
+        "clave": "b",
+        "texto": "SO-DIMM"
+      },
+      {
+        "clave": "c",
+        "texto": "SATA"
+      },
+      {
+        "clave": "d",
+        "texto": "PS/2"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las tarjetas gráficas dedicadas modernas suelen instalarse en ranuras PCI Express x16 de la placa base.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SO-DIMM es un formato de memoria RAM para portátiles."
+        },
+        {
+          "clave": "c",
+          "motivo": "SATA es una interfaz de almacenamiento, no de expansión gráfica."
+        },
+        {
+          "clave": "d",
+          "motivo": "PS/2 es un conector externo antiguo para teclado o ratón."
+        }
+      ],
+      "resumen_didactico": "GPU dedicada moderna = normalmente ranura PCIe x16.",
+      "ejemplo_practico": "Si una placa tiene una ranura PCIe x16 libre, es candidata para instalar una gráfica dedicada.",
+      "conclusion_final": "La ranura típica para una GPU dedicada es PCIe x16."
+    }
+  },
+  {
+    "id": "UT11-Q04",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué componente de la placa base coordina y sincroniza la comunicación entre distintos elementos del sistema?",
+    "contexto": "Componentes internos de la placa base.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Chipset"
+      },
+      {
+        "clave": "b",
+        "texto": "Fuente de alimentación"
+      },
+      {
+        "clave": "c",
+        "texto": "Caja del equipo"
+      },
+      {
+        "clave": "d",
+        "texto": "Monitor"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El chipset coordina y sincroniza la comunicación entre componentes del sistema en la placa base.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La fuente entrega energía, pero no coordina comunicaciones internas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La caja solo aloja físicamente los componentes."
+        },
+        {
+          "clave": "d",
+          "motivo": "El monitor es un periférico de salida."
+        }
+      ],
+      "resumen_didactico": "El chipset es el coordinador lógico de muchos intercambios internos de la placa.",
+      "ejemplo_practico": "Compatibilidad de CPU, RAM y expansión suele depender en parte del chipset de la placa.",
+      "conclusion_final": "El elemento que sincroniza y coordina componentes es el chipset."
+    }
+  },
+  {
+    "id": "UT11-Q05",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "En memoria RAM, ¿qué interpretación es correcta sobre la latencia CAS (CL)?",
+    "contexto": "Comparación de módulos de memoria principal.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cuanto mayor es CL, mejor respuesta siempre"
+      },
+      {
+        "clave": "b",
+        "texto": "Cuanto menor es CL, mejor tiempo de respuesta relativo"
+      },
+      {
+        "clave": "c",
+        "texto": "CL indica la capacidad total en GB"
+      },
+      {
+        "clave": "d",
+        "texto": "CL solo existe en discos SSD"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La latencia CL se mide en ciclos de reloj; en igualdad de condiciones, una latencia menor implica mejor respuesta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una latencia mayor no mejora el tiempo de acceso; normalmente lo empeora."
+        },
+        {
+          "clave": "c",
+          "motivo": "La capacidad se expresa en GB, no en CL."
+        },
+        {
+          "clave": "d",
+          "motivo": "La latencia CL se usa al hablar de memoria RAM, no de SSD."
+        }
+      ],
+      "resumen_didactico": "A igualdad de velocidad y contexto, menor CL suele significar mejor comportamiento.",
+      "ejemplo_practico": "Entre dos módulos comparables, uno con CL16 suele responder mejor que otro con CL22.",
+      "conclusion_final": "La lectura correcta es que una CL más baja suele ser mejor."
+    }
+  },
+  {
+    "id": "UT11-Q06",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué tipo de sistema operativo está pensado para que el usuario interactúe constantemente con aplicaciones como hojas de cálculo o procesadores de texto?",
+    "contexto": "Clasificación de sistemas operativos según el tipo de procesamiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sistema en tiempo real estricto"
+      },
+      {
+        "clave": "b",
+        "texto": "Sistema interactivo o de tiempo compartido"
+      },
+      {
+        "clave": "c",
+        "texto": "Sistema por lotes puro"
+      },
+      {
+        "clave": "d",
+        "texto": "Sistema monotarea"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los sistemas interactivos o de tiempo compartido están diseñados para responder a la participación continua del usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un sistema en tiempo real se centra en plazos estrictos y comportamiento predecible."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un sistema por lotes ejecuta tareas agrupadas sin interacción constante del usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Monotarea implica un modelo mucho más limitado."
+        }
+      ],
+      "resumen_didactico": "Windows, macOS o Linux de escritorio son ejemplos de sistemas interactivos comunes.",
+      "ejemplo_practico": "Editar un documento y alternar entre ventanas requiere una respuesta interactiva continua del sistema.",
+      "conclusion_final": "La categoría correcta es sistema interactivo o de tiempo compartido."
+    }
+  },
+  {
+    "id": "UT11-Q07",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué tipo de procesamiento agrupa tareas similares y las ejecuta en serie sin intervención del usuario durante la ejecución?",
+    "contexto": "Clasificación de procesos según su modo de ejecución.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Procesamiento interactivo"
+      },
+      {
+        "clave": "b",
+        "texto": "Procesamiento en tiempo real"
+      },
+      {
+        "clave": "c",
+        "texto": "Procesamiento por lotes"
+      },
+      {
+        "clave": "d",
+        "texto": "Procesamiento gráfico"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El procesamiento por lotes reúne tareas semejantes y las ejecuta de forma secuencial sin intervención del usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El interactivo requiere participación del usuario."
+        },
+        {
+          "clave": "b",
+          "motivo": "El tiempo real busca cumplir plazos estrictos, no agrupar tareas sin interacción."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una categoría de procesamiento equivalente a las anteriores."
+        }
+      ],
+      "resumen_didactico": "Por lotes = muchas tareas en serie, poca o ninguna interacción durante la ejecución.",
+      "ejemplo_practico": "Generar cientos de facturas de una vez es un ejemplo clásico de procesamiento por lotes.",
+      "conclusion_final": "La ejecución agrupada y sin intervención corresponde al procesamiento por lotes."
+    }
+  },
+  {
+    "id": "UT11-Q08",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué tipo de interfaz de sistema operativo consume normalmente menos recursos, aunque exige mayor conocimiento técnico?",
+    "contexto": "Comparación entre modos de interacción con el sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Interfaz textual"
+      },
+      {
+        "clave": "b",
+        "texto": "Interfaz gráfica"
+      },
+      {
+        "clave": "c",
+        "texto": "Interfaz táctil obligatoria"
+      },
+      {
+        "clave": "d",
+        "texto": "Interfaz biométrica"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las interfaces textuales funcionan mediante comandos y suelen consumir menos recursos que las gráficas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La interfaz gráfica resulta más intuitiva, pero suele consumir más recursos."
+        },
+        {
+          "clave": "c",
+          "motivo": "No define una clasificación general equivalente en este contexto."
+        },
+        {
+          "clave": "d",
+          "motivo": "La biometría es un método de autenticación, no el tipo clásico de interfaz de administración del sistema."
+        }
+      ],
+      "resumen_didactico": "Terminal y comandos suelen requerir menos recursos que ventanas y elementos gráficos.",
+      "ejemplo_practico": "Un servidor puede administrarse eficazmente por terminal aunque no tenga un entorno gráfico completo.",
+      "conclusion_final": "La interfaz textual es la más ligera en consumo de recursos."
+    }
+  },
+  {
+    "id": "UT11-Q09",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué mecanismo del sistema de archivos ayuda a volver a un estado coherente tras un apagón inesperado?",
+    "contexto": "Gestión de errores y recuperación de consistencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Journaling o registro"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambio de fondo de pantalla"
+      },
+      {
+        "clave": "c",
+        "texto": "Compresión ZIP"
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar usuarios invitados"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El journaling registra operaciones relevantes del sistema de archivos para facilitar la recuperación de la coherencia después de fallos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No guarda relación con la integridad del sistema de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compresión de archivos no cumple la función de recuperar consistencia del sistema de archivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es una medida de seguridad, no de recuperación de coherencia del almacenamiento."
+        }
+      ],
+      "resumen_didactico": "El registro previo de operaciones ayuda a reparar tras apagones o errores.",
+      "ejemplo_practico": "NTFS y ext4 utilizan mecanismos de journaling para reducir daños tras un corte eléctrico.",
+      "conclusion_final": "El journaling es la técnica asociada a la recuperación coherente tras un fallo."
+    }
+  },
+  {
+    "id": "UT11-Q10",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "En virtualización, ¿qué describe mejor una instantánea o snapshot?",
+    "contexto": "Administración de máquinas virtuales en entornos de pruebas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una copia exacta del monitor físico"
+      },
+      {
+        "clave": "b",
+        "texto": "Un punto guardado del estado de la máquina virtual para poder volver atrás"
+      },
+      {
+        "clave": "c",
+        "texto": "La licencia comercial del hipervisor"
+      },
+      {
+        "clave": "d",
+        "texto": "El cable de red virtual"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una instantánea conserva el estado de una máquina virtual en un momento concreto y permite regresar a él si es necesario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No tiene relación con el monitor del equipo físico."
+        },
+        {
+          "clave": "c",
+          "motivo": "La licencia es un aspecto legal, no una función de protección del estado."
+        },
+        {
+          "clave": "d",
+          "motivo": "La red virtual no define una snapshot."
+        }
+      ],
+      "resumen_didactico": "Snapshot equivale a guardar el estado para pruebas y reversión rápida.",
+      "ejemplo_practico": "Antes de instalar software dudoso en una VM, haces una snapshot para restaurarla si algo falla.",
+      "conclusion_final": "Una snapshot es un punto de retorno del estado de la VM."
+    }
+  },
+  {
+    "id": "UT11-Q11",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "En el contexto de virtualización, ¿qué es el host?",
+    "contexto": "Relación entre sistema físico y máquinas virtuales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La máquina virtual invitada"
+      },
+      {
+        "clave": "b",
+        "texto": "El sistema físico que ejecuta el hipervisor y aloja las máquinas virtuales"
+      },
+      {
+        "clave": "c",
+        "texto": "Una ISO de instalación"
+      },
+      {
+        "clave": "d",
+        "texto": "El servicio DNS de la red"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El host es la máquina física principal sobre la que se ejecuta el software de virtualización y donde se alojan los sistemas invitados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La máquina virtual es el guest o invitado, no el host."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una ISO es un medio de instalación, no el equipo anfitrión."
+        },
+        {
+          "clave": "d",
+          "motivo": "DNS es un servicio de red independiente de la definición de host en virtualización."
+        }
+      ],
+      "resumen_didactico": "Host = equipo real; guest = sistema virtualizado que corre dentro de él.",
+      "ejemplo_practico": "Tu portátil con VirtualBox es el host; Debian y Windows dentro de VirtualBox son guests.",
+      "conclusion_final": "El host es el sistema físico que hospeda las máquinas virtuales."
+    }
+  },
+  {
+    "id": "UT11-Q12",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "Si un Windows deja de arrancar tras una actualización y quieres intentar una recuperación lógica antes de formatear, ¿qué opción es más adecuada?",
+    "contexto": "Mantenimiento correctivo sin pérdida innecesaria de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reparación de inicio o Restaurar sistema desde el entorno de recuperación"
+      },
+      {
+        "clave": "b",
+        "texto": "Borrar todas las particiones de inmediato"
+      },
+      {
+        "clave": "c",
+        "texto": "Retirar el monitor y volverlo a conectar"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar el ratón USB"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El entorno de recuperación de Windows permite intentar reparaciones del arranque o restaurar puntos previos sin recurrir primero a acciones destructivas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es una medida extrema y destructiva que no debe ser el primer paso."
+        },
+        {
+          "clave": "c",
+          "motivo": "No ataca la causa del fallo de arranque del sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un periférico así no explica un problema de arranque tras una actualización."
+        }
+      ],
+      "resumen_didactico": "Ante un fallo lógico de arranque, primero se intenta reparar o restaurar.",
+      "ejemplo_practico": "Arrancar desde el medio de instalación y entrar en Reparar equipo antes de pensar en reinstalar todo.",
+      "conclusion_final": "La vía correcta inicial es la recuperación lógica, no el formateo directo."
+    }
+  },
+  {
+    "id": "UT11-Q13",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué comando muestra en Linux el directorio de trabajo actual?",
+    "contexto": "Navegación básica por la jerarquía del sistema de archivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "pwd"
+      },
+      {
+        "clave": "b",
+        "texto": "cd"
+      },
+      {
+        "clave": "c",
+        "texto": "rm"
+      },
+      {
+        "clave": "d",
+        "texto": "touch"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El comando pwd muestra la ruta absoluta del directorio donde se encuentra actualmente el usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "cd cambia de directorio, pero no muestra la ruta actual por sí mismo."
+        },
+        {
+          "clave": "c",
+          "motivo": "rm se utiliza para eliminar archivos o directorios."
+        },
+        {
+          "clave": "d",
+          "motivo": "touch crea archivos o actualiza marcas de tiempo."
+        }
+      ],
+      "resumen_didactico": "pwd responde a la pregunta: ¿dónde estoy exactamente en el árbol?",
+      "ejemplo_practico": "Si estás en /home/alumno/proyectos, pwd mostrará esa ruta completa.",
+      "conclusion_final": "El comando correcto para saber tu ubicación actual es pwd."
+    }
+  },
+  {
+    "id": "UT11-Q14",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué efecto tiene ejecutar cd .. en Linux o en una terminal compatible?",
+    "contexto": "Movimiento relativo por directorios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Entra en el directorio personal del usuario"
+      },
+      {
+        "clave": "b",
+        "texto": "Sube al directorio padre"
+      },
+      {
+        "clave": "c",
+        "texto": "Elimina el directorio actual"
+      },
+      {
+        "clave": "d",
+        "texto": "Muestra archivos ocultos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los dos puntos .. representan el directorio padre dentro de la estructura jerárquica de directorios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso suele lograrse con cd ~ o cd sin argumentos, no con cd .."
+        },
+        {
+          "clave": "c",
+          "motivo": "cd no elimina directorios; solo cambia de ubicación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Mostrar ocultos corresponde a opciones de ls, no a cd."
+        }
+      ],
+      "resumen_didactico": ".. significa 'un nivel por encima' en el árbol de directorios.",
+      "ejemplo_practico": "Desde /home/alumno/documentos, cd .. te llevaría normalmente a /home/alumno.",
+      "conclusion_final": "cd .. sirve para subir al directorio padre."
+    }
+  },
+  {
+    "id": "UT11-Q15",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "En un Windows de 64 bits, ¿qué carpeta suele contener muchas aplicaciones de 32 bits instaladas?",
+    "contexto": "Estructura de directorios típica del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "\\Windows\\System32"
+      },
+      {
+        "clave": "b",
+        "texto": "\\Program Files (x86)"
+      },
+      {
+        "clave": "c",
+        "texto": "\\Users\\Public\\Music"
+      },
+      {
+        "clave": "d",
+        "texto": "\\PerfLogs"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En sistemas Windows de 64 bits, Program Files (x86) se reserva habitualmente para aplicaciones de 32 bits.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "System32 contiene componentes del sistema, no es la carpeta típica de instalación de software de usuario de 32 bits."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una ruta de datos compartidos de usuario, no de instalación de programas."
+        },
+        {
+          "clave": "d",
+          "motivo": "PerfLogs se relaciona con registros de rendimiento."
+        }
+      ],
+      "resumen_didactico": "Windows separa a menudo programas de 64 y 32 bits en carpetas distintas.",
+      "ejemplo_practico": "Una aplicación antigua de 32 bits puede instalarse en C:\\Program Files (x86).",
+      "conclusion_final": "La carpeta típica para 32 bits es Program Files (x86)."
+    }
+  },
+  {
+    "id": "UT11-Q16",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué opción de ls en Linux permite mostrar también los archivos ocultos?",
+    "contexto": "Listados básicos de directorio por línea de comandos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "-a"
+      },
+      {
+        "clave": "b",
+        "texto": "-S"
+      },
+      {
+        "clave": "c",
+        "texto": "-t"
+      },
+      {
+        "clave": "d",
+        "texto": "-h"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La opción -a de ls muestra todos los elementos, incluidos los que comienzan por punto, que suelen considerarse ocultos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "-S ordena por tamaño."
+        },
+        {
+          "clave": "c",
+          "motivo": "-t ordena por fecha o tiempo."
+        },
+        {
+          "clave": "d",
+          "motivo": "-h muestra tamaños en formato legible al combinarse con otras opciones adecuadas."
+        }
+      ],
+      "resumen_didactico": "Ocultos en Linux suelen empezar por punto; ls -a los muestra.",
+      "ejemplo_practico": "Un archivo como .bashrc no aparece en un ls simple pero sí en ls -a.",
+      "conclusion_final": "Para ver ocultos, usa la opción -a."
+    }
+  },
+  {
+    "id": "UT11-Q17",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "En la salida de ls -l, ¿qué tipo de archivo representa la letra s al inicio de la línea?",
+    "contexto": "Interpretación de tipos de fichero en GNU/Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Socket"
+      },
+      {
+        "clave": "b",
+        "texto": "Directorio"
+      },
+      {
+        "clave": "c",
+        "texto": "Enlace duro"
+      },
+      {
+        "clave": "d",
+        "texto": "Dispositivo de bloque"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Linux, la letra s al inicio de ls -l identifica un socket, utilizado para facilitar comunicación entre procesos locales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los directorios se identifican con la letra d."
+        },
+        {
+          "clave": "c",
+          "motivo": "El enlace simbólico se muestra con l; el duro no se distingue así como tipo independiente."
+        },
+        {
+          "clave": "d",
+          "motivo": "El dispositivo de bloque se identifica con b."
+        }
+      ],
+      "resumen_didactico": "La primera letra de ls -l ayuda a reconocer rápidamente el tipo de fichero.",
+      "ejemplo_practico": "Un servicio local puede crear un socket Unix que aparezca con s en un listado largo.",
+      "conclusion_final": "La letra s corresponde a un socket."
+    }
+  },
+  {
+    "id": "UT11-Q18",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué opción de usermod se utiliza para bloquear una cuenta de usuario en Linux?",
+    "contexto": "Administración de cuentas y seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "-L"
+      },
+      {
+        "clave": "b",
+        "texto": "-m"
+      },
+      {
+        "clave": "c",
+        "texto": "-R"
+      },
+      {
+        "clave": "d",
+        "texto": "-t"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La opción -L de usermod se usa para bloquear la cuenta del usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "-m se asocia a gestión de directorios personales en otros comandos y contextos, no al bloqueo de cuenta."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es la opción indicada para bloquear usuarios con usermod."
+        },
+        {
+          "clave": "d",
+          "motivo": "No corresponde a la opción de bloqueo de cuenta en este contexto."
+        }
+      ],
+      "resumen_didactico": "Bloquear temporalmente una cuenta evita accesos sin borrarla.",
+      "ejemplo_practico": "Si un empleado deja temporalmente la empresa, puede bloquearse su cuenta con usermod -L usuario.",
+      "conclusion_final": "La opción adecuada para bloquear una cuenta es -L."
+    }
+  },
+  {
+    "id": "UT11-Q19",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué comando elimina un usuario de Linux y además borra su directorio personal cuando se usa con la opción correspondiente?",
+    "contexto": "Baja limpia de cuentas locales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "userdel -r"
+      },
+      {
+        "clave": "b",
+        "texto": "usermod -L"
+      },
+      {
+        "clave": "c",
+        "texto": "groupdel -r"
+      },
+      {
+        "clave": "d",
+        "texto": "chage -d"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "userdel elimina cuentas de usuario, y con la opción -r también suprime el directorio personal asociado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "usermod -L bloquea, pero no elimina la cuenta."
+        },
+        {
+          "clave": "c",
+          "motivo": "groupdel elimina grupos, no usuarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "chage se usa para políticas de contraseña y caducidad."
+        }
+      ],
+      "resumen_didactico": "Borrar un usuario sin revisar consecuencias puede ser delicado; si se usa -r también desaparece su home.",
+      "ejemplo_practico": "Al dar de baja a un exempleado, userdel -r usuario elimina la cuenta y su carpeta personal.",
+      "conclusion_final": "El comando correcto es userdel -r."
+    }
+  },
+  {
+    "id": "UT11-Q20",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué comando resulta adecuado en Linux para consultar rápidamente los grupos a los que pertenece un usuario?",
+    "contexto": "Comprobación de membresías de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "groups"
+      },
+      {
+        "clave": "b",
+        "texto": "pwd"
+      },
+      {
+        "clave": "c",
+        "texto": "lsblk"
+      },
+      {
+        "clave": "d",
+        "texto": "shutdown"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El comando groups muestra el grupo principal y los secundarios asociados al usuario consultado o al usuario actual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "pwd muestra el directorio actual, no grupos."
+        },
+        {
+          "clave": "c",
+          "motivo": "lsblk lista dispositivos de bloques y particiones."
+        },
+        {
+          "clave": "d",
+          "motivo": "shutdown se usa para apagar o reiniciar el sistema."
+        }
+      ],
+      "resumen_didactico": "Para saber en qué grupos cae un usuario, groups es una opción rápida y directa.",
+      "ejemplo_practico": "groups ana puede devolver algo como ana : ana sudo developers.",
+      "conclusion_final": "La consulta rápida de grupos se hace con groups."
+    }
+  },
+  {
+    "id": "UT11-Q21",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué sistema modular de autenticación utiliza Linux para controlar el acceso a aplicaciones y servicios?",
+    "contexto": "Seguridad de cuentas y autenticación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Linux-PAM"
+      },
+      {
+        "clave": "b",
+        "texto": "NTLM"
+      },
+      {
+        "clave": "c",
+        "texto": "DirectX"
+      },
+      {
+        "clave": "d",
+        "texto": "CSMA/CD"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Linux-PAM es el sistema de autenticación modular empleado para controlar el acceso a aplicaciones y servicios en Linux.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "NTLM se asocia al ecosistema de autenticación Windows."
+        },
+        {
+          "clave": "c",
+          "motivo": "DirectX es un conjunto de APIs multimedia, no un sistema de autenticación."
+        },
+        {
+          "clave": "d",
+          "motivo": "CSMA/CD es una técnica de acceso al medio en redes Ethernet."
+        }
+      ],
+      "resumen_didactico": "PAM centraliza reglas de autenticación y puede integrarse con diferentes métodos.",
+      "ejemplo_practico": "Cuando sudo pide contraseña, el sistema puede estar apoyándose en módulos PAM configurados para ese servicio.",
+      "conclusion_final": "El sistema modular de autenticación en Linux es Linux-PAM."
+    }
+  },
+  {
+    "id": "UT11-Q22",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué comportamiento describe mejor al protocolo POP3 frente a IMAP4?",
+    "contexto": "Gestión de correo electrónico desde clientes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mantiene los mensajes sincronizados permanentemente en varios dispositivos por diseño"
+      },
+      {
+        "clave": "b",
+        "texto": "Se utiliza para enviar correo entre servidores"
+      },
+      {
+        "clave": "c",
+        "texto": "Descarga mensajes al cliente y tradicionalmente puede retirarlos del servidor según configuración"
+      },
+      {
+        "clave": "d",
+        "texto": "Cifra todos los correos de forma obligatoria"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "POP3 está orientado a descargar el correo al cliente; tradicionalmente puede dejar o no copia en servidor según configuración, a diferencia de IMAP4, que sincroniza el buzón.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe mejor a IMAP4."
+        },
+        {
+          "clave": "b",
+          "motivo": "El envío se asocia a SMTP, no a POP3."
+        },
+        {
+          "clave": "d",
+          "motivo": "POP3 no cifra obligatoriamente por sí mismo; el cifrado depende de capas y configuraciones adicionales."
+        }
+      ],
+      "resumen_didactico": "POP3 se centra en descargar; IMAP4, en sincronizar el buzón entre dispositivos.",
+      "ejemplo_practico": "Si lees un correo en POP3 desde un PC, puede no reflejarse igual en el móvil si no se conserva copia en el servidor.",
+      "conclusion_final": "La característica distintiva de POP3 es la descarga al cliente más que la sincronización completa."
+    }
+  },
+  {
+    "id": "UT11-Q23",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué servicio de red se encarga de traducir nombres de dominio como ejemplo.com en direcciones IP?",
+    "contexto": "Uso cotidiano de servicios de red en clientes y servidores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DNS"
+      },
+      {
+        "clave": "b",
+        "texto": "ARP"
+      },
+      {
+        "clave": "c",
+        "texto": "DHCP"
+      },
+      {
+        "clave": "d",
+        "texto": "SMTP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "DNS resuelve nombres de dominio a direcciones IP para que las aplicaciones puedan localizar los hosts remotos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "ARP relaciona IP y MAC en una red local, no nombres de dominio."
+        },
+        {
+          "clave": "c",
+          "motivo": "DHCP asigna parámetros IP automáticamente a los equipos."
+        },
+        {
+          "clave": "d",
+          "motivo": "SMTP se usa para enviar correo electrónico."
+        }
+      ],
+      "resumen_didactico": "Sin DNS tendríamos que recordar direcciones IP en lugar de nombres legibles.",
+      "ejemplo_practico": "Al visitar una web, el navegador consulta DNS para saber a qué IP debe conectarse.",
+      "conclusion_final": "La traducción nombre→IP corresponde a DNS."
+    }
+  },
+  {
+    "id": "UT11-Q24",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "En una red local Ethernet, ¿qué protocolo ayuda a descubrir qué dirección MAC corresponde a una dirección IP conocida?",
+    "contexto": "Diagnóstico básico de red local.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ARP"
+      },
+      {
+        "clave": "b",
+        "texto": "FTP"
+      },
+      {
+        "clave": "c",
+        "texto": "IMAP4"
+      },
+      {
+        "clave": "d",
+        "texto": "NTP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ARP se utiliza en redes locales para relacionar direcciones IP con direcciones físicas MAC.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "FTP sirve para transferir archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "IMAP4 gestiona acceso a correo electrónico."
+        },
+        {
+          "clave": "d",
+          "motivo": "NTP se orienta a sincronización horaria."
+        }
+      ],
+      "resumen_didactico": "ARP responde a la pregunta: ¿qué MAC tiene esta IP dentro de mi LAN?",
+      "ejemplo_practico": "Antes de enviar una trama a un equipo local, el host puede consultar o descubrir la MAC asociada a la IP destino mediante ARP.",
+      "conclusion_final": "La asociación IP↔MAC en LAN se resuelve con ARP."
+    }
+  },
+  {
+    "id": "UT11-Q25",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué dispositivo de red trabaja en capa 3 y se encarga de comunicar redes distintas entre sí?",
+    "contexto": "Interconexión de subredes y salida a Internet.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hub"
+      },
+      {
+        "clave": "b",
+        "texto": "Router"
+      },
+      {
+        "clave": "c",
+        "texto": "Repetidor"
+      },
+      {
+        "clave": "d",
+        "texto": "Patch panel"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El router opera en la capa de red y encamina paquetes entre redes diferentes usando información IP y tablas de encaminamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El hub solo replica señales en la red local y no enruta."
+        },
+        {
+          "clave": "c",
+          "motivo": "El repetidor amplifica o regenera señal, pero no toma decisiones de ruta."
+        },
+        {
+          "clave": "d",
+          "motivo": "El patch panel es un elemento pasivo de cableado."
+        }
+      ],
+      "resumen_didactico": "Si hay que pasar de una red a otra, pensamos en un router.",
+      "ejemplo_practico": "La salida de tu LAN doméstica hacia Internet depende normalmente del router.",
+      "conclusion_final": "El dispositivo que conecta redes distintas es el router."
+    }
+  },
+  {
+    "id": "UT11-Q26",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué característica describe correctamente a una dirección MAC de una tarjeta de red Ethernet?",
+    "contexto": "Direccionamiento físico en redes LAN.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es un nombre DNS legible por humanos"
+      },
+      {
+        "clave": "b",
+        "texto": "Es una dirección física formada típicamente por 12 dígitos hexadecimales"
+      },
+      {
+        "clave": "c",
+        "texto": "Es la máscara de subred de la interfaz"
+      },
+      {
+        "clave": "d",
+        "texto": "Es un número de puerto TCP"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La dirección MAC es el identificador físico de la interfaz de red y se representa normalmente con 12 dígitos hexadecimales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un nombre DNS es lógico y legible, no la dirección física de la NIC."
+        },
+        {
+          "clave": "c",
+          "motivo": "La máscara de subred es un parámetro IP distinto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los puertos TCP pertenecen a la capa de transporte y no identifican la tarjeta de red."
+        }
+      ],
+      "resumen_didactico": "MAC identifica físicamente la NIC en el contexto local de la red.",
+      "ejemplo_practico": "Valores como 00:1A:2B:3C:4D:5E son ejemplos típicos de direcciones MAC.",
+      "conclusion_final": "Una MAC es una dirección física hexadecimal de la interfaz."
+    }
+  },
+  {
+    "id": "UT11-Q27",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué estándar Wi‑Fi se conoce comúnmente como Wi‑Fi 6?",
+    "contexto": "Evolución de estándares inalámbricos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "802.11g"
+      },
+      {
+        "clave": "b",
+        "texto": "802.11n"
+      },
+      {
+        "clave": "c",
+        "texto": "802.11ax"
+      },
+      {
+        "clave": "d",
+        "texto": "802.11b"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Wi‑Fi 6 corresponde al estándar 802.11ax, evolución posterior a 802.11ac.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "802.11g es un estándar mucho más antiguo."
+        },
+        {
+          "clave": "b",
+          "motivo": "802.11n se asocia a generaciones anteriores y suele denominarse Wi‑Fi 4."
+        },
+        {
+          "clave": "d",
+          "motivo": "802.11b es un estándar inalámbrico antiguo de baja velocidad comparativa."
+        }
+      ],
+      "resumen_didactico": "Wi‑Fi 6 = 802.11ax en la nomenclatura IEEE.",
+      "ejemplo_practico": "Al comparar routers modernos, verás que los modelos Wi‑Fi 6 anuncian soporte para 802.11ax.",
+      "conclusion_final": "La denominación Wi‑Fi 6 corresponde a 802.11ax."
+    }
+  },
+  {
+    "id": "UT11-Q28",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué comando permite seguir el camino por saltos hasta un servidor remoto para detectar dónde puede fallar la ruta?",
+    "contexto": "Diagnóstico de conectividad avanzada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "tracert o traceroute"
+      },
+      {
+        "clave": "b",
+        "texto": "mkdir"
+      },
+      {
+        "clave": "c",
+        "texto": "hostname"
+      },
+      {
+        "clave": "d",
+        "texto": "who"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "tracert en Windows o traceroute en otros sistemas muestra los saltos intermedios hasta el destino, útil para localizar incidencias de ruta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "mkdir crea directorios y no analiza rutas de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "hostname muestra o establece el nombre del equipo, no la ruta de red."
+        },
+        {
+          "clave": "d",
+          "motivo": "who informa sobre usuarios conectados en Linux o Unix."
+        }
+      ],
+      "resumen_didactico": "Ping dice si llegas; tracert/traceroute ayuda a ver por dónde pasas.",
+      "ejemplo_practico": "Si una web no responde, traceroute puede mostrar en qué salto de la red se interrumpe el tráfico.",
+      "conclusion_final": "El análisis por saltos se hace con tracert o traceroute."
+    }
+  },
+  {
+    "id": "UT11-Q29",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "En una licencia Creative Commons con condición BY, ¿qué exigencia principal se impone al reutilizar la obra?",
+    "contexto": "Selección correcta de materiales y recursos digitales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Prohibición absoluta de modificar la obra"
+      },
+      {
+        "clave": "b",
+        "texto": "Uso exclusivo en proyectos cerrados"
+      },
+      {
+        "clave": "c",
+        "texto": "Reconocer o atribuir la autoría original"
+      },
+      {
+        "clave": "d",
+        "texto": "Pagar una suscripción obligatoria al autor"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La cláusula BY de Creative Commons exige atribución, es decir, reconocer la autoría original cuando se reutiliza la obra.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La prohibición de modificar se asociaría a una cláusula como ND, no a BY."
+        },
+        {
+          "clave": "b",
+          "motivo": "BY no obliga a que el proyecto sea cerrado ni abierto; exige atribución."
+        },
+        {
+          "clave": "d",
+          "motivo": "No implica una suscripción obligatoria por defecto."
+        }
+      ],
+      "resumen_didactico": "CC-BY significa libertad condicionada a citar correctamente al autor.",
+      "ejemplo_practico": "Si usas una imagen con licencia CC-BY en una presentación, debes indicar su autoría según lo exigido por la licencia.",
+      "conclusion_final": "La condición BY obliga a atribuir la obra al autor original."
+    }
+  },
+  {
+    "id": "UT11-Q30",
+    "tema": "UT11 — Repaso global del módulo Sistemas I (Bloque 3)",
+    "pregunta": "¿Qué categoría de aplicación corresponde mejor a un programa diseñado para detectar y bloquear software malicioso?",
+    "contexto": "Clasificación de software de propósito general.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Antimalware"
+      },
+      {
+        "clave": "b",
+        "texto": "Hoja de cálculo"
+      },
+      {
+        "clave": "c",
+        "texto": "Procesador de texto"
+      },
+      {
+        "clave": "d",
+        "texto": "Cliente FTP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los programas orientados a detectar, bloquear o eliminar amenazas se clasifican como software antimalware.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una hoja de cálculo se usa para cálculos y tablas, no para proteger el sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un procesador de texto sirve para redactar documentos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un cliente FTP transfiere archivos con servidores remotos, pero no protege contra malware por sí mismo."
+        }
+      ],
+      "resumen_didactico": "La defensa frente a software malicioso pertenece a la categoría antimalware.",
+      "ejemplo_practico": "Un antivirus de escritorio que analiza descargas y bloquea amenazas entra en la categoría de antimalware.",
+      "conclusion_final": "El software de protección frente a amenazas se clasifica como antimalware."
+    }
+  }
+]

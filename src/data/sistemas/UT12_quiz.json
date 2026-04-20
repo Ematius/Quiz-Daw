@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT12-Q01",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Cuáles son los tres elementos principales que componen un sistema informático?",
+    "contexto": "Definición general de sistema informático.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hardware, software y usuarios"
+      },
+      {
+        "clave": "b",
+        "texto": "CPU, BIOS y router"
+      },
+      {
+        "clave": "c",
+        "texto": "RAM, SSD y monitor"
+      },
+      {
+        "clave": "d",
+        "texto": "Núcleo, shell y navegador"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un sistema informático se compone de hardware (parte física), software (parte lógica) y usuarios, que interactúan con ambos elementos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Son componentes o tecnologías concretas, pero no la clasificación general del sistema informático."
+        },
+        {
+          "clave": "c",
+          "motivo": "Solo enumera algunos elementos de hardware, dejando fuera software y usuarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "Son piezas de software o interfaz, no los tres componentes básicos del sistema completo."
+        }
+      ],
+      "resumen_didactico": "La visión global de cualquier sistema informático se resume en hardware, software y usuarios.",
+      "ejemplo_practico": "Un portátil de oficina funciona porque combina sus piezas físicas, el sistema operativo y aplicaciones, y las personas que lo usan.",
+      "conclusion_final": "Sin alguno de esos tres elementos, el sistema informático no puede cumplir su propósito."
+    }
+  },
+  {
+    "id": "UT12-Q02",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué papel desempeña el sistema operativo dentro de un ordenador?",
+    "contexto": "Relación entre hardware, aplicaciones y usuario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Actúa como intermediario entre hardware, aplicaciones y usuario"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo sirve para mostrar el escritorio"
+      },
+      {
+        "clave": "c",
+        "texto": "Se limita a almacenar archivos en el disco"
+      },
+      {
+        "clave": "d",
+        "texto": "Sustituye a todos los programas de aplicación"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El sistema operativo coordina recursos y proporciona interfaces para que aplicaciones y usuarios utilicen el hardware de forma controlada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La interfaz gráfica es solo una parte; el sistema operativo hace mucho más."
+        },
+        {
+          "clave": "c",
+          "motivo": "Gestiona el almacenamiento, pero también procesos, memoria, dispositivos y seguridad."
+        },
+        {
+          "clave": "d",
+          "motivo": "No reemplaza las aplicaciones; las hace posibles y les ofrece servicios."
+        }
+      ],
+      "resumen_didactico": "El sistema operativo es el puente entre lo físico y lo lógico.",
+      "ejemplo_practico": "Cuando abres un navegador, el sistema operativo le permite usar CPU, RAM, disco y red sin que tú gestiones el hardware directamente.",
+      "conclusion_final": "Su función central es coordinar el sistema para que hardware, software y usuario trabajen juntos."
+    }
+  },
+  {
+    "id": "UT12-Q03",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué función del sistema operativo se ocupa de controlar componentes físicos mediante controladores o drivers?",
+    "contexto": "Gestión de hardware por parte del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gestión de dispositivos"
+      },
+      {
+        "clave": "b",
+        "texto": "Gestión de licencias"
+      },
+      {
+        "clave": "c",
+        "texto": "Compresión de archivos"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestión de presentaciones"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La gestión de dispositivos permite al sistema operativo comunicarse con periféricos y hardware a través de drivers o controladores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las licencias pertenecen al ámbito legal del software, no al control del hardware."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compresión es una función concreta sobre datos, no la administración general de dispositivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las presentaciones son aplicaciones ofimáticas, no una función del sistema operativo."
+        }
+      ],
+      "resumen_didactico": "Si un periférico necesita funcionar, entra en juego la gestión de dispositivos.",
+      "ejemplo_practico": "Una impresora requiere un driver para que el sistema operativo pueda enviarle trabajos correctamente.",
+      "conclusion_final": "Los drivers hacen posible la comunicación entre el sistema operativo y el hardware específico."
+    }
+  },
+  {
+    "id": "UT12-Q04",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué limitación clásica tiene FAT32 que lo hace poco adecuado para vídeos grandes o copias extensas?",
+    "contexto": "Elección de sistema de archivos para soportes extraíbles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No admite archivos mayores de 4 GB"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo funciona en Linux"
+      },
+      {
+        "clave": "c",
+        "texto": "Exige permisos NTFS"
+      },
+      {
+        "clave": "d",
+        "texto": "No puede usarse en memorias USB"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "FAT32 es muy compatible, pero no puede manejar archivos de más de 4 GB, lo que limita su uso en contenidos multimedia grandes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Precisamente FAT32 destaca por su compatibilidad entre sistemas y dispositivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los permisos NTFS son propios de NTFS, no una exigencia de FAT32."
+        },
+        {
+          "clave": "d",
+          "motivo": "FAT32 se ha usado durante años en pendrives y tarjetas de memoria."
+        }
+      ],
+      "resumen_didactico": "La barrera de 4 GB es el gran límite práctico de FAT32.",
+      "ejemplo_practico": "Intentar copiar un archivo de vídeo de 6 GB a un pendrive FAT32 provoca un error.",
+      "conclusion_final": "Para ficheros grandes conviene usar exFAT o NTFS en lugar de FAT32."
+    }
+  },
+  {
+    "id": "UT12-Q05",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué sistema de archivos introducido por Apple desde 2017 está optimizado para SSD y ofrece cifrado eficiente?",
+    "contexto": "Elección de sistema de archivos en equipos macOS modernos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "APFS"
+      },
+      {
+        "clave": "b",
+        "texto": "FAT16"
+      },
+      {
+        "clave": "c",
+        "texto": "ext2"
+      },
+      {
+        "clave": "d",
+        "texto": "NTFS"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "APFS es el sistema de archivos moderno de Apple, optimizado para SSD, con cifrado eficiente y conversión automática desde HFS+.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "FAT16 es antiguo y no está pensado para equipos Apple modernos."
+        },
+        {
+          "clave": "c",
+          "motivo": "ext2 pertenece al ecosistema Linux y no es el sistema nativo actual de macOS."
+        },
+        {
+          "clave": "d",
+          "motivo": "NTFS es el sistema habitual de Windows, no el nativo de Apple."
+        }
+      ],
+      "resumen_didactico": "APFS es la apuesta moderna de Apple para almacenamiento rápido y seguro.",
+      "ejemplo_practico": "Un MacBook con SSD usa APFS para beneficiarse de copias rápidas y cifrado integrado.",
+      "conclusion_final": "En equipos Apple actuales, APFS es el sistema de archivos de referencia."
+    }
+  },
+  {
+    "id": "UT12-Q06",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué rasgo hace especialmente apropiado a ext4 para servidores Linux y contenedores?",
+    "contexto": "Rendimiento y fiabilidad en sistemas Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Journaling y recuperación eficaz"
+      },
+      {
+        "clave": "b",
+        "texto": "Compatibilidad nativa con macOS sin soporte adicional"
+      },
+      {
+        "clave": "c",
+        "texto": "Prohibición total de fragmentación"
+      },
+      {
+        "clave": "d",
+        "texto": "Dependencia obligatoria de licencias propietarias"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ext4 es una evolución moderna de Linux con journaling, buen rendimiento, recuperación eficaz y menor fragmentación, ideal para servidores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No destaca por compatibilidad nativa multiplataforma con macOS."
+        },
+        {
+          "clave": "c",
+          "motivo": "Reduce fragmentación, pero no la elimina de forma absoluta."
+        },
+        {
+          "clave": "d",
+          "motivo": "ext4 pertenece al mundo Linux y no depende de licencias propietarias de ese tipo."
+        }
+      ],
+      "resumen_didactico": "ext4 combina estabilidad, rendimiento y buena recuperación tras fallos.",
+      "ejemplo_practico": "Tras un apagón inesperado, un sistema ext4 puede volver a un estado coherente con mayor facilidad gracias al journaling.",
+      "conclusion_final": "Para Linux profesional, ext4 es una opción sólida por fiabilidad y rendimiento."
+    }
+  },
+  {
+    "id": "UT12-Q07",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué caracteriza a una ruta absoluta en un sistema de archivos?",
+    "contexto": "Navegación por directorios en Linux y Windows.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Empieza desde la raíz del sistema"
+      },
+      {
+        "clave": "b",
+        "texto": "Siempre usa puntos suspensivos"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo puede escribirse en Windows"
+      },
+      {
+        "clave": "d",
+        "texto": "Depende siempre del directorio actual"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Una ruta absoluta comienza desde la raíz del sistema y permite localizar un recurso sin depender de la ubicación actual del usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los puntos y dobles puntos se usan en rutas relativas o navegación, no definen una ruta absoluta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Existen rutas absolutas tanto en Linux como en Windows."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso describe una ruta relativa, no una absoluta."
+        }
+      ],
+      "resumen_didactico": "Ruta absoluta = camino completo desde el origen del árbol de directorios.",
+      "ejemplo_practico": "'/home/alumno/docs' en Linux o 'C:\\Users\\Alumno\\Docs' en Windows son rutas absolutas.",
+      "conclusion_final": "Si la ruta no depende de dónde estés situado, es absoluta."
+    }
+  },
+  {
+    "id": "UT12-Q08",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué directorio de Linux contiene los archivos necesarios para el arranque del sistema?",
+    "contexto": "Estructura jerárquica de directorios GNU/Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/boot"
+      },
+      {
+        "clave": "b",
+        "texto": "/tmp"
+      },
+      {
+        "clave": "c",
+        "texto": "/home"
+      },
+      {
+        "clave": "d",
+        "texto": "/media"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El directorio /boot almacena archivos esenciales del arranque, como el kernel y elementos del cargador de arranque.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "/tmp se usa para archivos temporales."
+        },
+        {
+          "clave": "c",
+          "motivo": "/home contiene los directorios personales de los usuarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "/media suele emplearse para puntos de montaje de dispositivos extraíbles."
+        }
+      ],
+      "resumen_didactico": "Sin /boot no habría una base clara para iniciar el sistema.",
+      "ejemplo_practico": "Archivos del cargador de arranque y del kernel se localizan típicamente dentro de /boot.",
+      "conclusion_final": "Cuando se habla de arranque en Linux, el directorio clave es /boot."
+    }
+  },
+  {
+    "id": "UT12-Q09",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué opción de ls en Linux ordena el contenido de un directorio por tamaño?",
+    "contexto": "Gestión de archivos desde la línea de comandos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "-S"
+      },
+      {
+        "clave": "b",
+        "texto": "-R"
+      },
+      {
+        "clave": "c",
+        "texto": "-a"
+      },
+      {
+        "clave": "d",
+        "texto": "-t"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La opción -S de ls ordena la salida según el tamaño de los archivos y directorios listados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "-R lista de forma recursiva el contenido de subdirectorios."
+        },
+        {
+          "clave": "c",
+          "motivo": "-a muestra también archivos ocultos."
+        },
+        {
+          "clave": "d",
+          "motivo": "-t ordena por fecha de modificación."
+        }
+      ],
+      "resumen_didactico": "Si quieres ver primero los archivos grandes, usa ls -S.",
+      "ejemplo_practico": "`ls -lSh` ayuda a localizar rápidamente qué elementos están ocupando más espacio.",
+      "conclusion_final": "Para ordenar por tamaño en Linux, la opción correcta es -S."
+    }
+  },
+  {
+    "id": "UT12-Q10",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué efecto tiene usar rm con la opción -i en Linux?",
+    "contexto": "Eliminación segura de archivos por CLI.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pide confirmación antes de borrar"
+      },
+      {
+        "clave": "b",
+        "texto": "Comprime el archivo antes de eliminarlo"
+      },
+      {
+        "clave": "c",
+        "texto": "Lo mueve a la papelera gráfica"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo elimina enlaces simbólicos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La opción -i de rm activa el modo interactivo y solicita confirmación antes de cada eliminación, reduciendo errores humanos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "rm no comprime archivos; elimina según las opciones indicadas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Por defecto rm no usa la papelera gráfica del escritorio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Puede borrar distintos tipos de archivos; no se limita a enlaces simbólicos."
+        }
+      ],
+      "resumen_didactico": "El modo interactivo de rm sirve para borrar con más prudencia.",
+      "ejemplo_practico": "`rm -i informe.txt` te preguntará antes de eliminar el archivo.",
+      "conclusion_final": "Si quieres evitar borrados accidentales, usa rm -i."
+    }
+  },
+  {
+    "id": "UT12-Q11",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué opción de useradd permite asignar grupos secundarios al crear un usuario en Linux?",
+    "contexto": "Alta inicial de cuentas con varios permisos de grupo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "-G"
+      },
+      {
+        "clave": "b",
+        "texto": "-L"
+      },
+      {
+        "clave": "c",
+        "texto": "-r"
+      },
+      {
+        "clave": "d",
+        "texto": "-i"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La opción -G de useradd permite indicar una lista de grupos secundarios a los que pertenecerá el nuevo usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "-L se relaciona con bloqueo en usermod, no con grupos secundarios en useradd."
+        },
+        {
+          "clave": "c",
+          "motivo": "-r se usa para otros fines y no define grupos secundarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "No corresponde a la asignación de grupos adicionales en este comando."
+        }
+      ],
+      "resumen_didactico": "Grupo principal y grupos secundarios no se configuran igual; los secundarios se indican con -G.",
+      "ejemplo_practico": "`useradd -m -G developers,qa ana` crea el usuario y lo añade a dos grupos secundarios.",
+      "conclusion_final": "Para sumar pertenencias adicionales desde el alta, se usa -G."
+    }
+  },
+  {
+    "id": "UT12-Q12",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "En el archivo /etc/group, ¿qué contiene el cuarto campo de cada línea?",
+    "contexto": "Interpretación del fichero de grupos en Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La lista de usuarios del grupo como secundarios"
+      },
+      {
+        "clave": "b",
+        "texto": "La contraseña en texto plano del administrador"
+      },
+      {
+        "clave": "c",
+        "texto": "La ruta del directorio personal del grupo"
+      },
+      {
+        "clave": "d",
+        "texto": "La fecha de expiración del grupo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El cuarto campo de /etc/group contiene la lista de usuarios que pertenecen al grupo como miembros secundarios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las contraseñas no se guardan ahí en texto plano."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los grupos no tienen un directorio personal como campo en /etc/group."
+        },
+        {
+          "clave": "d",
+          "motivo": "La estructura de /etc/group no reserva ese campo para expiración."
+        }
+      ],
+      "resumen_didactico": "El último campo de /etc/group te dice quién está añadido al grupo de forma secundaria.",
+      "ejemplo_practico": "`developers:x:1003:ana,juan` muestra a ana y juan dentro del grupo developers.",
+      "conclusion_final": "Para saber qué usuarios están listados como secundarios en un grupo, mira el cuarto campo."
+    }
+  },
+  {
+    "id": "UT12-Q13",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué significa que una cuenta tenga UID 0 en Linux?",
+    "contexto": "Interpretación de identificadores de usuario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que corresponde al superusuario root"
+      },
+      {
+        "clave": "b",
+        "texto": "Que es una cuenta deshabilitada"
+      },
+      {
+        "clave": "c",
+        "texto": "Que no tiene directorio personal"
+      },
+      {
+        "clave": "d",
+        "texto": "Que pertenece siempre al grupo nobody"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Linux, el UID 0 identifica al superusuario root, con control total sobre el sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una cuenta deshabilitada no se define por UID 0."
+        },
+        {
+          "clave": "c",
+          "motivo": "Puede tener directorio personal; UID 0 se refiere a privilegios, no al home."
+        },
+        {
+          "clave": "d",
+          "motivo": "No existe esa asociación necesaria con el grupo nobody."
+        }
+      ],
+      "resumen_didactico": "UID 0 equivale al máximo nivel de privilegio en Linux.",
+      "ejemplo_practico": "La cuenta root usa UID 0 y puede realizar tareas administrativas críticas sobre todo el sistema.",
+      "conclusion_final": "Si ves UID 0, estás ante una cuenta con privilegios de superusuario."
+    }
+  },
+  {
+    "id": "UT12-Q14",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué utilidad permite a un usuario ejecutar tareas administrativas en Linux sin iniciar sesión directamente como root?",
+    "contexto": "Delegación controlada de privilegios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "sudo"
+      },
+      {
+        "clave": "b",
+        "texto": "mkdir"
+      },
+      {
+        "clave": "c",
+        "texto": "who"
+      },
+      {
+        "clave": "d",
+        "texto": "grep"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "sudo permite ejecutar comandos con privilegios elevados de forma controlada, sin necesidad de trabajar permanentemente como root.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "mkdir crea directorios, pero no eleva privilegios."
+        },
+        {
+          "clave": "c",
+          "motivo": "who muestra usuarios conectados."
+        },
+        {
+          "clave": "d",
+          "motivo": "grep busca texto en entradas o archivos."
+        }
+      ],
+      "resumen_didactico": "sudo da privilegios administrativos temporales y auditables.",
+      "ejemplo_practico": "Un administrador puede usar `sudo apt update` sin abrir una sesión root completa.",
+      "conclusion_final": "La forma correcta de delegar tareas administrativas puntuales es usar sudo."
+    }
+  },
+  {
+    "id": "UT12-Q15",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué directorio de Linux se usa como plantilla para copiar archivos iniciales al crear el home de un nuevo usuario?",
+    "contexto": "Configuración por defecto de cuentas nuevas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/skel"
+      },
+      {
+        "clave": "b",
+        "texto": "/srv"
+      },
+      {
+        "clave": "c",
+        "texto": "/mnt"
+      },
+      {
+        "clave": "d",
+        "texto": "/root"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los archivos de /etc/skel se copian al directorio personal del usuario nuevo cuando se crea su home.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "/srv se destina normalmente a datos de servicios."
+        },
+        {
+          "clave": "c",
+          "motivo": "/mnt se usa como punto de montaje."
+        },
+        {
+          "clave": "d",
+          "motivo": "/root es el directorio personal del superusuario, no la plantilla general."
+        }
+      ],
+      "resumen_didactico": "Si quieres personalizar el home inicial de nuevas cuentas, toca /etc/skel.",
+      "ejemplo_practico": "Archivos como `.bashrc` o `.profile` pueden copiarse automáticamente desde /etc/skel al nuevo usuario.",
+      "conclusion_final": "La plantilla estándar para nuevos perfiles en Linux se encuentra en /etc/skel."
+    }
+  },
+  {
+    "id": "UT12-Q16",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué comando se utiliza en Linux para crear un grupo nuevo?",
+    "contexto": "Gestión básica de grupos por línea de comandos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "groupadd"
+      },
+      {
+        "clave": "b",
+        "texto": "groupdel"
+      },
+      {
+        "clave": "c",
+        "texto": "usermod"
+      },
+      {
+        "clave": "d",
+        "texto": "passwd"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "groupadd crea un grupo nuevo y añade su correspondiente línea al fichero /etc/group.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "groupdel elimina un grupo existente."
+        },
+        {
+          "clave": "c",
+          "motivo": "usermod modifica cuentas de usuario, no crea grupos desde cero."
+        },
+        {
+          "clave": "d",
+          "motivo": "passwd gestiona contraseñas."
+        }
+      ],
+      "resumen_didactico": "Alta de grupo nueva = groupadd.",
+      "ejemplo_practico": "`groupadd proyectos` crea el grupo proyectos para asignar permisos compartidos.",
+      "conclusion_final": "Cuando necesitas un grupo nuevo en Linux, el comando correcto es groupadd."
+    }
+  },
+  {
+    "id": "UT12-Q17",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Cómo se denomina la dirección IP que un equipo obtiene de forma aleatoria si no recibe una IP estática ni una concesión DHCP?",
+    "contexto": "Tipos de configuración IP según el temario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Alternativa"
+      },
+      {
+        "clave": "b",
+        "texto": "Virtual"
+      },
+      {
+        "clave": "c",
+        "texto": "Privilegiada"
+      },
+      {
+        "clave": "d",
+        "texto": "Persistente"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario distingue direcciones IP estáticas, dinámicas y alternativas; esta última aparece cuando no se cumple ninguna de las dos anteriores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la categoría usada en la unidad para este tipo de dirección."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe como clasificación habitual de IP en este contexto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Persistente no es el término empleado aquí."
+        }
+      ],
+      "resumen_didactico": "Si no hay estática ni DHCP, la unidad habla de dirección alternativa.",
+      "ejemplo_practico": "En una incidencia de red, un equipo puede acabar con una IP alternativa al no contactar con el servidor DHCP.",
+      "conclusion_final": "La tercera categoría que recoge el temario es la dirección alternativa."
+    }
+  },
+  {
+    "id": "UT12-Q18",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "En Windows, ¿para qué sirven las “Opciones avanzadas” dentro de la configuración de TCP/IPv4 de un adaptador?",
+    "contexto": "Configuración manual de red desde la interfaz gráfica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para agregar múltiples direcciones IP y configurar DNS adicionales"
+      },
+      {
+        "clave": "b",
+        "texto": "Para cambiar el procesador por defecto del sistema"
+      },
+      {
+        "clave": "c",
+        "texto": "Para desactivar el arranque seguro del firmware"
+      },
+      {
+        "clave": "d",
+        "texto": "Para crear cuentas de usuario locales"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las opciones avanzadas del protocolo TCP/IPv4 permiten añadir varias IP, configurar varias puertas de enlace y ajustar parámetros DNS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La CPU no se gestiona desde el panel de configuración de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "El arranque seguro se ajusta en UEFI/BIOS, no en TCP/IPv4."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las cuentas de usuario se gestionan en otra parte del sistema."
+        }
+      ],
+      "resumen_didactico": "Las opciones avanzadas amplían la configuración IP más allá de una sola dirección y un solo DNS.",
+      "ejemplo_practico": "Un servidor con varias direcciones IP en una misma tarjeta puede configurarlas desde ese panel avanzado.",
+      "conclusion_final": "Ese apartado sirve para ajustes IP más complejos y profesionales."
+    }
+  },
+  {
+    "id": "UT12-Q19",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Cómo está formada normalmente una dirección MAC de Ethernet?",
+    "contexto": "Direccionamiento físico en redes cableadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Por 12 dígitos hexadecimales"
+      },
+      {
+        "clave": "b",
+        "texto": "Por 4 bloques decimales separados por puntos"
+      },
+      {
+        "clave": "c",
+        "texto": "Por 32 caracteres binarios obligatorios visibles"
+      },
+      {
+        "clave": "d",
+        "texto": "Por una cadena aleatoria de longitud variable"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La dirección MAC se compone habitualmente de 12 dígitos hexadecimales asociados a la tarjeta de red.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso recuerda más al formato visual clásico de IPv4."
+        },
+        {
+          "clave": "c",
+          "motivo": "Internamente hay bits, pero la representación habitual no se expresa así para el usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "La MAC sigue una estructura fija, no una longitud arbitraria."
+        }
+      ],
+      "resumen_didactico": "MAC = identificador físico expresado en hexadecimal.",
+      "ejemplo_practico": "Una MAC puede mostrarse como 00:1A:2B:3C:4D:5E.",
+      "conclusion_final": "Si hablas de 12 caracteres hexadecimales, estás describiendo una dirección MAC."
+    }
+  },
+  {
+    "id": "UT12-Q20",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué describe correctamente a 1000BaseT?",
+    "contexto": "Implementaciones conocidas de Ethernet.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ethernet de 1 Gbps sobre par trenzado hasta 100 metros"
+      },
+      {
+        "clave": "b",
+        "texto": "Wi‑Fi de 1 Gbps sobre 5 GHz"
+      },
+      {
+        "clave": "c",
+        "texto": "Fibra óptica obligatoria a 10 Gbps"
+      },
+      {
+        "clave": "d",
+        "texto": "Red coaxial de 10 Mbps y 500 metros"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "1000BaseT corresponde a Gigabit Ethernet sobre par trenzado, con alcance típico de 100 metros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso mezclaría conceptos de Wi‑Fi y Ethernet cableado."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se refiere a 10 Gbps ni exige fibra óptica."
+        },
+        {
+          "clave": "d",
+          "motivo": "Esa descripción encaja con 10Base5, no con 1000BaseT."
+        }
+      ],
+      "resumen_didactico": "1000BaseT es la forma clásica de Gigabit Ethernet en cobre.",
+      "ejemplo_practico": "Muchos switches y tarjetas de red de oficina trabajan a 1000BaseT sobre cableado de par trenzado.",
+      "conclusion_final": "Si ves 1000BaseT, piensa en 1 Gbps cableado sobre cobre."
+    }
+  },
+  {
+    "id": "UT12-Q21",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué característica corresponde al estándar 802.11ac, conocido como Wi‑Fi 5?",
+    "contexto": "Identificación de estándares inalámbricos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Opera principalmente en 5 GHz"
+      },
+      {
+        "clave": "b",
+        "texto": "Usa exclusivamente cable coaxial"
+      },
+      {
+        "clave": "c",
+        "texto": "Es el nombre técnico de Ethernet Gigabit"
+      },
+      {
+        "clave": "d",
+        "texto": "Trabaja solo a 11 Mbps en 2,4 GHz"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El estándar 802.11ac, conocido como Wi‑Fi 5, se asocia al uso de la banda de 5 GHz.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Wi‑Fi es inalámbrico; no usa cable coaxial como medio normal."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ethernet Gigabit pertenece a otra familia de estándares."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso encaja más con 802.11b, no con 802.11ac."
+        }
+      ],
+      "resumen_didactico": "Wi‑Fi 5 se identifica con 802.11ac y la banda de 5 GHz.",
+      "ejemplo_practico": "Un router compatible con Wi‑Fi 5 ofrece conexiones 802.11ac para mejorar ancho de banda respecto a estándares anteriores.",
+      "conclusion_final": "802.11ac y 5 GHz van de la mano en redes Wi‑Fi modernas."
+    }
+  },
+  {
+    "id": "UT12-Q22",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué implica que el protocolo IP sea no orientado a la conexión?",
+    "contexto": "Comportamiento de IPv4 e IPv6 en red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que cada paquete puede tomar rutas diferentes hasta el destino"
+      },
+      {
+        "clave": "b",
+        "texto": "Que obliga a establecer sesión previa como TCP"
+      },
+      {
+        "clave": "c",
+        "texto": "Que garantiza siempre llegada y orden"
+      },
+      {
+        "clave": "d",
+        "texto": "Que cifra automáticamente todos los paquetes"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "IP es un protocolo no orientado a la conexión; los paquetes pueden seguir rutas distintas y no se garantiza entrega ni orden.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso sería propio de protocolos orientados a conexión como TCP."
+        },
+        {
+          "clave": "c",
+          "motivo": "IP no ofrece esa fiabilidad por sí mismo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El cifrado no forma parte de IP como característica automática."
+        }
+      ],
+      "resumen_didactico": "IP envía datagramas sin crear una conexión previa fiable entre extremos.",
+      "ejemplo_practico": "Dos paquetes del mismo flujo pueden atravesar routers distintos antes de llegar al destino.",
+      "conclusion_final": "La naturaleza no orientada a conexión de IP permite flexibilidad, pero no garantiza orden ni entrega."
+    }
+  },
+  {
+    "id": "UT12-Q23",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "En IPv6, ¿qué campo cumple la función equivalente al TTL de IPv4?",
+    "contexto": "Comparación entre cabeceras IPv4 e IPv6.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Límite de saltos"
+      },
+      {
+        "clave": "b",
+        "texto": "Etiqueta de flujo"
+      },
+      {
+        "clave": "c",
+        "texto": "Clase de tráfico"
+      },
+      {
+        "clave": "d",
+        "texto": "Cabecera siguiente"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En IPv6, el campo 'límite de saltos' cumple la función análoga al TTL de IPv4 para evitar bucles indefinidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La etiqueta de flujo se relaciona con calidad de servicio y tratamiento de flujos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La clase de tráfico expresa prioridad, no el conteo de saltos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cabecera siguiente indica qué tipo de cabecera viene a continuación."
+        }
+      ],
+      "resumen_didactico": "TTL en IPv4 se traduce a hop limit o límite de saltos en IPv6.",
+      "ejemplo_practico": "Cada router reduce ese valor; cuando llega a cero, el paquete se descarta.",
+      "conclusion_final": "El nombre cambia, pero la misión sigue siendo evitar recorridos infinitos."
+    }
+  },
+  {
+    "id": "UT12-Q24",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué combinación de funciones describe mejor a un router SOHO típico de hogar o pequeña oficina?",
+    "contexto": "Equipo habitual entre la LAN e Internet.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "NAT, servicios como DHCP/DNS y punto de acceso Wi‑Fi"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo sirve como monitor de rendimiento"
+      },
+      {
+        "clave": "c",
+        "texto": "Únicamente funciona como disco de red"
+      },
+      {
+        "clave": "d",
+        "texto": "Se limita a actuar como teclado inalámbrico"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un router SOHO suele conectar LAN y WAN, realizar NAT y ofrecer servicios integrados como DHCP, DNS, switch Ethernet y punto de acceso Wi‑Fi.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es su función principal ni recoge sus servicios de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se define por servir como almacenamiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "No guarda relación con el papel de un router doméstico."
+        }
+      ],
+      "resumen_didactico": "El router SOHO concentra varias funciones de conectividad en un solo equipo.",
+      "ejemplo_practico": "El router del operador da Internet, reparte IP por DHCP y emite la red Wi‑Fi del hogar.",
+      "conclusion_final": "En casa y pequeñas oficinas, el router suele ser también NAT, AP y servidor básico de red."
+    }
+  },
+  {
+    "id": "UT12-Q25",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué elemento lógico se utiliza en una topología en anillo para indicar cuándo un equipo puede transmitir y evitar colisiones?",
+    "contexto": "Funcionamiento básico de redes en anillo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un testigo o token"
+      },
+      {
+        "clave": "b",
+        "texto": "Una GPU dedicada"
+      },
+      {
+        "clave": "c",
+        "texto": "Un registro de la CPU"
+      },
+      {
+        "clave": "d",
+        "texto": "Un adaptador SATA"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En redes con topología en anillo puede emplearse un testigo o token que regula el turno de transmisión para evitar colisiones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La GPU no participa en el control del acceso al medio de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los registros son parte interna del procesador."
+        },
+        {
+          "clave": "d",
+          "motivo": "SATA se relaciona con almacenamiento, no con acceso a red."
+        }
+      ],
+      "resumen_didactico": "El token marca quién tiene permiso temporal para enviar datos en el anillo.",
+      "ejemplo_practico": "Mientras un equipo posee el testigo, puede transmitir; después lo libera para el siguiente nodo.",
+      "conclusion_final": "En topologías en anillo, el token es la clave para ordenar el tráfico."
+    }
+  },
+  {
+    "id": "UT12-Q26",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué ventaja técnica destaca en una topología de malla frente a otras topologías físicas?",
+    "contexto": "Diseño de redes con alta tolerancia a fallos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ofrece rutas alternativas si falla un enlace"
+      },
+      {
+        "clave": "b",
+        "texto": "Necesita muy poco cableado"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo admite dos equipos"
+      },
+      {
+        "clave": "d",
+        "texto": "Depende siempre de un único concentrador central"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La topología en malla conecta los equipos con múltiples rutas, permitiendo mantener la comunicación aunque falle un camino.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "De hecho, la malla requiere bastante cableado y es costosa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Puede conectar más de dos equipos; el problema es el coste, no la cantidad mínima."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso se asociaría más a una estrella, no a una malla."
+        }
+      ],
+      "resumen_didactico": "La fortaleza de la malla es la redundancia de caminos.",
+      "ejemplo_practico": "Si un enlace entre dos nodos cae, el tráfico puede buscar otra ruta disponible dentro de la malla.",
+      "conclusion_final": "Cuando prima la tolerancia a fallos, la malla aporta caminos alternativos."
+    }
+  },
+  {
+    "id": "UT12-Q27",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué herramienta de Linux se utiliza para programar una tarea puntual, no repetitiva, en una fecha y hora concretas?",
+    "contexto": "Automatización de una única acción futura.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "at"
+      },
+      {
+        "clave": "b",
+        "texto": "cron"
+      },
+      {
+        "clave": "c",
+        "texto": "groups"
+      },
+      {
+        "clave": "d",
+        "texto": "chmod"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La herramienta at sirve para programar tareas puntuales; cron queda reservada para ejecuciones periódicas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "cron está orientado a tareas repetitivas o periódicas."
+        },
+        {
+          "clave": "c",
+          "motivo": "groups muestra pertenencia a grupos del usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "chmod cambia permisos de archivos."
+        }
+      ],
+      "resumen_didactico": "Acción única en el futuro = at; tarea recurrente = cron.",
+      "ejemplo_practico": "Programar un reinicio único del servidor a medianoche encaja con at.",
+      "conclusion_final": "Si la tarea no se repetirá, la elección adecuada es at."
+    }
+  },
+  {
+    "id": "UT12-Q28",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿En qué ubicación de Linux se almacenan la mayoría de logs y registros de eventos del sistema?",
+    "contexto": "Diagnóstico de incidencias y auditoría básica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/var/log"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/skel"
+      },
+      {
+        "clave": "c",
+        "texto": "/home"
+      },
+      {
+        "clave": "d",
+        "texto": "/opt"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los logs del sistema Linux suelen almacenarse en /var/log, incluyendo registros de autenticación, kernel y servicios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "/etc/skel contiene plantillas de usuario, no registros del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "/home guarda directorios personales de usuarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "/opt suele alojar software adicional o de terceros."
+        }
+      ],
+      "resumen_didactico": "Cuando investigas fallos en Linux, /var/log es una parada obligatoria.",
+      "ejemplo_practico": "Para revisar intentos de acceso indebido se consulta a menudo /var/log/auth.log.",
+      "conclusion_final": "La 'caja negra' habitual del sistema Linux está en /var/log."
+    }
+  },
+  {
+    "id": "UT12-Q29",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Qué afirmación describe correctamente a SFTP frente a FTP clásico?",
+    "contexto": "Transferencia segura de ficheros en entornos profesionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SFTP viaja sobre SSH y suele usar el puerto 22"
+      },
+      {
+        "clave": "b",
+        "texto": "SFTP es un protocolo sin cifrado por diseño"
+      },
+      {
+        "clave": "c",
+        "texto": "FTP clásico usa exclusivamente el puerto 22"
+      },
+      {
+        "clave": "d",
+        "texto": "SFTP necesita siempre dos conexiones separadas como condición obligatoria"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "SFTP funciona sobre SSH, usa una sola conexión y se asocia normalmente al puerto 22, ofreciendo mayor seguridad que FTP clásico.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Precisamente destaca por ir encapsulado en SSH y proteger el tránsito."
+        },
+        {
+          "clave": "c",
+          "motivo": "El FTP clásico se asocia al puerto 21, no al 22."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una ventaja de SFTP es simplificar la conexión frente al modelo clásico de FTP."
+        }
+      ],
+      "resumen_didactico": "SFTP = transferencia de ficheros segura apoyada en SSH.",
+      "ejemplo_practico": "Un administrador usa FileZilla para subir archivos a un servidor mediante SFTP usando credenciales y puerto 22.",
+      "conclusion_final": "Para transferencias seguras en entornos actuales, SFTP es la opción preferible frente a FTP tradicional."
+    }
+  },
+  {
+    "id": "UT12-Q30",
+    "tema": "UT12 — Repaso global del módulo Sistemas I (Bloque 4)",
+    "pregunta": "¿Cuál es la función principal de un cortafuegos o firewall en una red?",
+    "contexto": "Seguridad básica de comunicaciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Filtrar tráfico entrante y saliente según reglas"
+      },
+      {
+        "clave": "b",
+        "texto": "Aumentar automáticamente la memoria RAM"
+      },
+      {
+        "clave": "c",
+        "texto": "Convertir direcciones MAC en nombres de usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "Formatear discos duros dañados"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El firewall analiza el tráfico de entrada y salida y decide, según reglas definidas, si lo permite o lo bloquea.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La memoria RAM no depende del firewall."
+        },
+        {
+          "clave": "c",
+          "motivo": "La relación entre direcciones y nombres no es su cometido."
+        },
+        {
+          "clave": "d",
+          "motivo": "El formateo de discos no tiene relación con el filtrado de red."
+        }
+      ],
+      "resumen_didactico": "Un firewall es un filtro de tráfico basado en políticas de seguridad.",
+      "ejemplo_practico": "Una regla puede bloquear conexiones entrantes a un puerto no autorizado y permitir solo el tráfico web saliente.",
+      "conclusion_final": "Cuando se trata de controlar qué comunicaciones pasan y cuáles no, el firewall es la herramienta clave."
+    }
+  }
+]

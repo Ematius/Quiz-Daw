@@ -13,7 +13,7 @@ import "./Quiz.scss";
 function resolveFolder(moduloId) {
   const map = {
     sistemas: "sistemas",
-    sistemas2: "sistemas2",
+    entornosDesarrollo: "entornosDesarrollo",
     baseDatos: "baseDatos",
     introduccionProgramacion: "introduccionProgramacion",
     ingles: "ingles",

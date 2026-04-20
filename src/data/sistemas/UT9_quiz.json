@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT9-Q01",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "En un equipo de sobremesa, después de encender, no aparece imagen y suenan pitidos del POST. ¿Cuál es la actuación inicial más correcta?",
+    "contexto": "Diagnóstico previo a cargar el sistema operativo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reinstalar Windows desde USB"
+      },
+      {
+        "clave": "b",
+        "texto": "Consultar la tabla de pitidos de la BIOS/UEFI y revisar el componente indicado"
+      },
+      {
+        "clave": "c",
+        "texto": "Formatear el disco duro"
+      },
+      {
+        "clave": "d",
+        "texto": "Desactivar el antivirus"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El POST comprueba componentes básicos antes de arrancar el sistema operativo. Los códigos acústicos sirven para orientar el diagnóstico del hardware.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La incidencia ocurre antes de cargar el sistema operativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Formatear es destructivo y no soluciona un fallo de hardware previo al arranque."
+        },
+        {
+          "clave": "d",
+          "motivo": "El antivirus aún no interviene en esta fase."
+        }
+      ],
+      "resumen_didactico": "Los pitidos del POST se interpretan con la documentación del firmware y ayudan a localizar el componente defectuoso.",
+      "ejemplo_practico": "Tres pitidos pueden llevar a revisar memoria RAM o vídeo según el fabricante.",
+      "conclusion_final": "Ante pitidos del POST, primero se diagnostica hardware con la tabla del fabricante."
+    }
+  },
+  {
+    "id": "UT9-Q02",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué función del sistema operativo se encarga de decidir qué proceso usa la CPU y en qué momento?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gestión de procesos"
+      },
+      {
+        "clave": "b",
+        "texto": "Gestión de archivos"
+      },
+      {
+        "clave": "c",
+        "texto": "Gestión de almacenamiento secundario"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestión de interfaz gráfica"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La gestión de procesos planifica la ejecución de tareas y reparte tiempo de CPU entre procesos e hilos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Organiza ficheros y directorios, no la planificación del procesador."
+        },
+        {
+          "clave": "c",
+          "motivo": "Se centra en discos y sistemas de archivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se ocupa de la interacción con el usuario, no de la CPU."
+        }
+      ],
+      "resumen_didactico": "El planificador del sistema operativo determina la ejecución de procesos.",
+      "ejemplo_practico": "Mientras exportas vídeo, el sistema sigue atendiendo clics y otras tareas gracias a la planificación.",
+      "conclusion_final": "La CPU la administra la gestión de procesos."
+    }
+  },
+  {
+    "id": "UT9-Q03",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "Necesitas un sistema de archivos para un disco externo que se usará entre Windows y macOS con vídeos de más de 4 GB. ¿Cuál eliges?",
+    "contexto": "Compatibilidad multiplataforma y archivos grandes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FAT32"
+      },
+      {
+        "clave": "b",
+        "texto": "ext4"
+      },
+      {
+        "clave": "c",
+        "texto": "exFAT"
+      },
+      {
+        "clave": "d",
+        "texto": "NTFS sin controladores adicionales"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "exFAT elimina el límite clásico de 4 GB por archivo y ofrece buena compatibilidad entre Windows y macOS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FAT32 no permite archivos mayores de 4 GB."
+        },
+        {
+          "clave": "b",
+          "motivo": "ext4 es propio del ecosistema Linux."
+        },
+        {
+          "clave": "d",
+          "motivo": "NTFS no ofrece escritura nativa completa en macOS sin soporte adicional."
+        }
+      ],
+      "resumen_didactico": "Para compatibilidad cruzada y archivos grandes, exFAT es la opción práctica.",
+      "ejemplo_practico": "Una cámara 4K o un SSD externo compartido entre Mac y PC suele prepararse en exFAT.",
+      "conclusion_final": "exFAT resuelve el problema de compatibilidad y tamaño."
+    }
+  },
+  {
+    "id": "UT9-Q04",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "En Linux, ¿qué archivo guarda la información básica de cada usuario, como login, UID, GID, directorio personal y shell?",
+    "contexto": "Auditoría de cuentas locales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/passwd"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/shadow"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/skel"
+      },
+      {
+        "clave": "d",
+        "texto": "/etc/profile"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "/etc/passwd contiene los campos básicos de las cuentas de usuario del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Guarda hashes de contraseñas y políticas relacionadas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Contiene plantillas que se copian al directorio personal."
+        },
+        {
+          "clave": "d",
+          "motivo": "Define configuración global del entorno, no cuentas."
+        }
+      ],
+      "resumen_didactico": "La base de datos principal de cuentas Linux está en /etc/passwd.",
+      "ejemplo_practico": "Una línea como ana:x:1001:1001:... indica datos fundamentales del usuario.",
+      "conclusion_final": "/etc/passwd es el fichero clave para identificar cuentas."
+    }
+  },
+  {
+    "id": "UT9-Q05",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué diferencia técnica describe mejor a TCP frente a UDP?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "TCP es orientado a conexión y garantiza entrega ordenada"
+      },
+      {
+        "clave": "b",
+        "texto": "UDP cifra el tráfico por defecto"
+      },
+      {
+        "clave": "c",
+        "texto": "TCP solo sirve para correo electrónico"
+      },
+      {
+        "clave": "d",
+        "texto": "UDP siempre es más seguro que TCP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "TCP establece conexión, controla errores y asegura la entrega ordenada de los segmentos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Ni TCP ni UDP cifran por sí solos."
+        },
+        {
+          "clave": "c",
+          "motivo": "TCP se usa en múltiples protocolos, no solo en correo."
+        },
+        {
+          "clave": "d",
+          "motivo": "UDP prioriza simplicidad y velocidad, no mayor seguridad."
+        }
+      ],
+      "resumen_didactico": "TCP prioriza fiabilidad; UDP, ligereza.",
+      "ejemplo_practico": "HTTP y FTP suelen usar TCP; DNS o streaming en tiempo real pueden usar UDP.",
+      "conclusion_final": "La diferencia clave es fiabilidad con conexión frente a envío simple sin garantías."
+    }
+  },
+  {
+    "id": "UT9-Q06",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "En Windows, un usuario tiene permiso en el recurso compartido por red, pero sigue sin poder abrir un archivo localmente en el servidor. ¿Qué debes revisar?",
+    "contexto": "Acceso combinado a recurso compartido y seguridad local.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los permisos NTFS"
+      },
+      {
+        "clave": "b",
+        "texto": "La resolución DNS"
+      },
+      {
+        "clave": "c",
+        "texto": "La tabla ARP"
+      },
+      {
+        "clave": "d",
+        "texto": "El tamaño del disco"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Windows, los permisos NTFS controlan el acceso local al archivo y pueden limitar el resultado final aunque el recurso esté compartido.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DNS resuelve nombres, no controla permisos de archivo."
+        },
+        {
+          "clave": "c",
+          "motivo": "ARP traduce IP a MAC en red local."
+        },
+        {
+          "clave": "d",
+          "motivo": "El tamaño del disco no determina permisos."
+        }
+      ],
+      "resumen_didactico": "Los permisos compartidos y NTFS se combinan, pero NTFS es esencial para el acceso real al recurso.",
+      "ejemplo_practico": "Un usuario puede entrar en \\\\SERVIDOR\\DATOS y aun así no leer un archivo por falta de permisos NTFS.",
+      "conclusion_final": "Si falla el acceso a un archivo en Windows, revisa NTFS además del recurso compartido."
+    }
+  },
+  {
+    "id": "UT9-Q07",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "En una empresa, necesitan un programa para redactar informes, aplicar formato, insertar imágenes y exportar documentos. ¿Qué tipo de herramienta es?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Procesador de texto"
+      },
+      {
+        "clave": "b",
+        "texto": "Cliente FTP"
+      },
+      {
+        "clave": "c",
+        "texto": "Hipervisor"
+      },
+      {
+        "clave": "d",
+        "texto": "Analizador de paquetes"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los procesadores de texto forman parte de las herramientas ofimáticas orientadas a crear y editar documentos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Sirve para transferir archivos, no para redactar documentos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Gestiona máquinas virtuales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se usa para estudiar tráfico de red."
+        }
+      ],
+      "resumen_didactico": "Word, Writer o editores equivalentes son herramientas ofimáticas de texto.",
+      "ejemplo_practico": "Preparar una memoria o un informe técnico en Word entra en esta categoría.",
+      "conclusion_final": "La categoría correcta es procesador de texto."
+    }
+  },
+  {
+    "id": "UT9-Q08",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "Al crear una máquina virtual en un host con 8 GB de RAM, ¿qué decisión evita dejar sin recursos al sistema anfitrión?",
+    "contexto": "Asignación de recursos en virtualización.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Asignar toda la RAM del equipo a la máquina virtual"
+      },
+      {
+        "clave": "b",
+        "texto": "Dejar margen de memoria para el host y ajustar la RAM del invitado"
+      },
+      {
+        "clave": "c",
+        "texto": "Desactivar el almacenamiento del host"
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar la memoria virtual del sistema"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La RAM asignada al guest deja de estar disponible para el host, por lo que debe reservarse memoria suficiente para el sistema anfitrión.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El host quedaría sin recursos y el rendimiento sería deficiente."
+        },
+        {
+          "clave": "c",
+          "motivo": "El almacenamiento del host sigue siendo necesario para operar."
+        },
+        {
+          "clave": "d",
+          "motivo": "La memoria virtual no sustituye una mala planificación de RAM."
+        }
+      ],
+      "resumen_didactico": "La virtualización exige repartir recursos entre host e invitado de forma equilibrada.",
+      "ejemplo_practico": "Con 8 GB, asignar 4 GB al guest puede ser razonable si el host conserva memoria suficiente para seguir funcionando.",
+      "conclusion_final": "Nunca se debe entregar toda la RAM del equipo al invitado."
+    }
+  },
+  {
+    "id": "UT9-Q09",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué comando muestra en Linux las interfaces de red y sus direcciones IP?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ip addr"
+      },
+      {
+        "clave": "b",
+        "texto": "df -h"
+      },
+      {
+        "clave": "c",
+        "texto": "uname -a"
+      },
+      {
+        "clave": "d",
+        "texto": "ps aux"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ip addr es el comando moderno para consultar interfaces, estado, IP y MAC en Linux.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Muestra uso de disco."
+        },
+        {
+          "clave": "c",
+          "motivo": "Muestra información general del kernel y sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Lista procesos en ejecución."
+        }
+      ],
+      "resumen_didactico": "Para diagnosticar red en Linux, ip addr es una herramienta básica.",
+      "ejemplo_practico": "Con ip addr puedes identificar la interfaz activa y comprobar si tiene IP asignada.",
+      "conclusion_final": "La opción correcta para ver IPs e interfaces es ip addr."
+    }
+  },
+  {
+    "id": "UT9-Q10",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué comando usarías en Linux para crear un usuario y su directorio personal desde el principio?",
+    "contexto": "Alta inicial de un empleado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "useradd -m usuario1"
+      },
+      {
+        "clave": "b",
+        "texto": "passwd usuario1"
+      },
+      {
+        "clave": "c",
+        "texto": "groupadd usuario1"
+      },
+      {
+        "clave": "d",
+        "texto": "chmod 700 usuario1"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La opción -m en useradd crea el home del usuario y copia la estructura base desde /etc/skel.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Solo establece o cambia la contraseña de un usuario existente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Crea un grupo, no una cuenta de usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cambia permisos, no crea usuarios."
+        }
+      ],
+      "resumen_didactico": "Para alta completa inicial, useradd -m es la opción adecuada.",
+      "ejemplo_practico": "Después de crear la cuenta, suele completarse con passwd usuario1.",
+      "conclusion_final": "Crear usuario con directorio personal se hace con useradd -m."
+    }
+  },
+  {
+    "id": "UT9-Q11",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué característica es propia de un sistema operativo multiusuario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite que varias personas usen el sistema al mismo tiempo compartiendo recursos"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo ejecuta un proceso a la vez"
+      },
+      {
+        "clave": "c",
+        "texto": "Carece de gestión de permisos"
+      },
+      {
+        "clave": "d",
+        "texto": "Obliga a usar interfaz de comandos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un sistema multiusuario gestiona sesiones simultáneas y reparte recursos entre varios usuarios con control de acceso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe un sistema monotarea o monoprogramado, no multiusuario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Precisamente requiere control de permisos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Puede ser gráfico o textual."
+        }
+      ],
+      "resumen_didactico": "Multiusuario significa concurrencia de usuarios con administración de recursos.",
+      "ejemplo_practico": "Un servidor con varios usuarios conectados por SSH es un ejemplo clásico.",
+      "conclusion_final": "La clave del multiusuario es compartir recursos con aislamiento y control."
+    }
+  },
+  {
+    "id": "UT9-Q12",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué directorio de Linux contiene la configuración global del sistema?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc"
+      },
+      {
+        "clave": "b",
+        "texto": "/home"
+      },
+      {
+        "clave": "c",
+        "texto": "/dev"
+      },
+      {
+        "clave": "d",
+        "texto": "/boot/grub/themes"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El directorio /etc agrupa archivos de configuración global del sistema y servicios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Contiene directorios personales de usuarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Representa dispositivos como archivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es una ruta específica, no el directorio general de configuración."
+        }
+      ],
+      "resumen_didactico": "/etc es una referencia fundamental en administración Linux.",
+      "ejemplo_practico": "Archivos como /etc/hostname o configuraciones de servicios residen en /etc.",
+      "conclusion_final": "Cuando piensas en configuración global en Linux, piensas en /etc."
+    }
+  },
+  {
+    "id": "UT9-Q13",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "En Windows, ¿qué utilidad muestra la configuración IP completa, incluida información DHCP y DNS?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ipconfig /all"
+      },
+      {
+        "clave": "b",
+        "texto": "tracert"
+      },
+      {
+        "clave": "c",
+        "texto": "netstat -an"
+      },
+      {
+        "clave": "d",
+        "texto": "arp -a"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ipconfig /all ofrece el detalle completo de la configuración de las interfaces de red en Windows.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "tracert analiza la ruta hasta un destino."
+        },
+        {
+          "clave": "c",
+          "motivo": "netstat muestra conexiones y puertos."
+        },
+        {
+          "clave": "d",
+          "motivo": "arp -a enseña la caché ARP."
+        }
+      ],
+      "resumen_didactico": "Para revisar IP, máscara, puerta de enlace, DNS y DHCP en Windows, se usa ipconfig /all.",
+      "ejemplo_practico": "Es útil cuando necesitas comprobar si una interfaz recibe IP dinámica o estática.",
+      "conclusion_final": "La herramienta básica de diagnóstico IP en Windows es ipconfig /all."
+    }
+  },
+  {
+    "id": "UT9-Q14",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué sistema de archivos es el estándar profesional en Windows cuando necesitas permisos por grupos, auditoría y journaling?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "NTFS"
+      },
+      {
+        "clave": "b",
+        "texto": "FAT32"
+      },
+      {
+        "clave": "c",
+        "texto": "exFAT"
+      },
+      {
+        "clave": "d",
+        "texto": "ext4"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "NTFS incorpora permisos, auditoría, cifrado, compresión y journaling, por lo que es el sistema de archivos de referencia en Windows.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "FAT32 carece de control fino de permisos."
+        },
+        {
+          "clave": "c",
+          "motivo": "exFAT se orienta a compatibilidad, no a seguridad avanzada."
+        },
+        {
+          "clave": "d",
+          "motivo": "ext4 pertenece al ecosistema Linux."
+        }
+      ],
+      "resumen_didactico": "Para seguridad y administración avanzada en Windows, la respuesta es NTFS.",
+      "ejemplo_practico": "Una carpeta de un despacho jurídico con permisos por grupos se apoyará en NTFS.",
+      "conclusion_final": "NTFS es la opción correcta cuando prima el control y la seguridad."
+    }
+  },
+  {
+    "id": "UT9-Q15",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "En Linux, ¿qué archivo almacena las contraseñas cifradas de los usuarios?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/group"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/shadow"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/skel"
+      },
+      {
+        "clave": "d",
+        "texto": "/etc/hosts"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "/etc/shadow guarda los hashes de contraseñas y datos relacionados con su caducidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Describe grupos, no contraseñas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Contiene plantillas para nuevos directorios personales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se usa para resolución local de nombres."
+        }
+      ],
+      "resumen_didactico": "La seguridad de las contraseñas Linux se centraliza en /etc/shadow.",
+      "ejemplo_practico": "Un administrador puede auditar caducidades y cambios de claves consultando este fichero o herramientas relacionadas.",
+      "conclusion_final": "Las contraseñas cifradas están en /etc/shadow."
+    }
+  },
+  {
+    "id": "UT9-Q16",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué protocolo usa ping para comprobar conectividad básica entre dos equipos IP?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ICMP"
+      },
+      {
+        "clave": "b",
+        "texto": "SMTP"
+      },
+      {
+        "clave": "c",
+        "texto": "ARP"
+      },
+      {
+        "clave": "d",
+        "texto": "FTP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ping se basa en mensajes ICMP Echo Request y Echo Reply para probar conectividad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SMTP es protocolo de correo saliente."
+        },
+        {
+          "clave": "c",
+          "motivo": "ARP resuelve direcciones IP a MAC en red local."
+        },
+        {
+          "clave": "d",
+          "motivo": "FTP transfiere archivos."
+        }
+      ],
+      "resumen_didactico": "Ping no usa TCP ni UDP, sino ICMP.",
+      "ejemplo_practico": "Al ejecutar ping 8.8.8.8, el sistema envía ecos ICMP para ver si el destino responde.",
+      "conclusion_final": "La conectividad básica con ping se comprueba mediante ICMP."
+    }
+  },
+  {
+    "id": "UT9-Q17",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "Si en Linux ejecutas ls -lt -h, ¿qué obtienes?",
+    "contexto": "Listar archivos con criterio útil para auditoría rápida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Listado por fecha en formato largo y tamaños legibles"
+      },
+      {
+        "clave": "b",
+        "texto": "Listado recursivo con colores"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo archivos ocultos y enlaces"
+      },
+      {
+        "clave": "d",
+        "texto": "Todos los procesos del sistema"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La combinación -l muestra formato largo, -t ordena por fecha y -h expresa tamaños en formato legible.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso requeriría otras opciones como -R o --color."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los ocultos se muestran con -a."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los procesos se consultan con comandos como ps."
+        }
+      ],
+      "resumen_didactico": "ls -lt -h es muy útil para revisar qué cambió recientemente y cuánto ocupa.",
+      "ejemplo_practico": "Un administrador puede localizar rápidamente archivos modificados hace poco con su tamaño entendible en KB o MB.",
+      "conclusion_final": "La combinación correcta da listado largo, ordenado por fecha y con tamaños legibles."
+    }
+  },
+  {
+    "id": "UT9-Q18",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué comando de Linux permite modificar la caducidad y antigüedad de la contraseña de un usuario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "chage"
+      },
+      {
+        "clave": "b",
+        "texto": "chmod"
+      },
+      {
+        "clave": "c",
+        "texto": "chown"
+      },
+      {
+        "clave": "d",
+        "texto": "umask"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "chage administra parámetros como edad máxima de la contraseña, avisos y fecha de expiración de la cuenta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "chmod cambia permisos de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "chown cambia propietario."
+        },
+        {
+          "clave": "d",
+          "motivo": "umask define permisos por defecto al crear archivos."
+        }
+      ],
+      "resumen_didactico": "Las políticas de cambio de contraseña en Linux se gestionan con chage.",
+      "ejemplo_practico": "Con chage -M 90 usuario se puede forzar renovación cada 90 días.",
+      "conclusion_final": "Si quieres controlar caducidad de contraseñas, usa chage."
+    }
+  },
+  {
+    "id": "UT9-Q19",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué afirmación describe mejor a un switch frente a un hub en una red local?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El switch reenvía tramas de forma selectiva y reduce tráfico innecesario"
+      },
+      {
+        "clave": "b",
+        "texto": "El switch repite todo a todos los puertos"
+      },
+      {
+        "clave": "c",
+        "texto": "El hub segmenta dominios de colisión por puerto"
+      },
+      {
+        "clave": "d",
+        "texto": "Ambos funcionan exactamente igual"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un switch examina direcciones MAC y envía las tramas solo al puerto correspondiente, mejorando rendimiento y seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe el comportamiento de un hub."
+        },
+        {
+          "clave": "c",
+          "motivo": "El hub no segmenta de esa forma."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sus comportamientos son distintos en la práctica."
+        }
+      ],
+      "resumen_didactico": "El switch es más inteligente y eficiente que el hub.",
+      "ejemplo_practico": "En una red con mucho tráfico, sustituir un hub por un switch mejora el rendimiento percibido.",
+      "conclusion_final": "La característica diferencial del switch es el reenvío selectivo."
+    }
+  },
+  {
+    "id": "UT9-Q20",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "En una aplicación comercial cerrada, ¿qué licencia conviene evitar si no quieres verte obligado a publicar el código derivado?",
+    "contexto": "Selección de licencias en software de propósito general.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "MIT"
+      },
+      {
+        "clave": "b",
+        "texto": "BSD"
+      },
+      {
+        "clave": "c",
+        "texto": "GPL"
+      },
+      {
+        "clave": "d",
+        "texto": "Apache-2.0"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La GPL es una licencia copyleft fuerte y puede obligar a distribuir la obra derivada bajo la misma licencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "MIT es permisiva y compatible con uso comercial cerrado."
+        },
+        {
+          "clave": "b",
+          "motivo": "BSD también es permisiva."
+        },
+        {
+          "clave": "d",
+          "motivo": "Apache-2.0 es permisiva aunque incorpora cláusulas de patentes."
+        }
+      ],
+      "resumen_didactico": "Si quieres mantener código cerrado, evita componentes GPL salvo que asumas sus condiciones.",
+      "ejemplo_practico": "Una librería GPL integrada en una aplicación distribuida puede forzar la liberación del código bajo GPL.",
+      "conclusion_final": "La licencia a evitar en este escenario es GPL."
+    }
+  },
+  {
+    "id": "UT9-Q21",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "En una máquina con UEFI, el USB de instalación no aparece como opción de arranque. ¿Qué revisarías primero en el firmware?",
+    "contexto": "Problema de boot antes de instalar un sistema operativo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Orden de arranque, modo UEFI/Legacy y Secure Boot"
+      },
+      {
+        "clave": "b",
+        "texto": "El tema visual de Windows"
+      },
+      {
+        "clave": "c",
+        "texto": "La resolución de pantalla del monitor"
+      },
+      {
+        "clave": "d",
+        "texto": "El protector de pantalla"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La detección del medio de arranque depende de la configuración UEFI: orden de arranque, compatibilidad UEFI/Legacy y estado de Secure Boot.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No influye en el arranque del firmware."
+        },
+        {
+          "clave": "c",
+          "motivo": "La resolución no determina si el USB arranca."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es irrelevante en esta fase."
+        }
+      ],
+      "resumen_didactico": "Los problemas de arranque desde USB suelen resolverse revisando la configuración del firmware.",
+      "ejemplo_practico": "Desactivar temporalmente Secure Boot o cambiar el orden puede hacer visible el medio de instalación.",
+      "conclusion_final": "Ante este fallo, lo primero es comprobar la configuración UEFI."
+    }
+  },
+  {
+    "id": "UT9-Q22",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué archivo global de Linux suele cargar variables de entorno y configuración general al iniciar sesión todos los usuarios?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/profile"
+      },
+      {
+        "clave": "b",
+        "texto": "~/.bash_history"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/passwd"
+      },
+      {
+        "clave": "d",
+        "texto": "/var/log/syslog"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "/etc/profile se ejecuta al inicio de sesión para definir variables y ajustes globales del entorno.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Guarda historial de comandos del usuario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Describe cuentas de usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un archivo de logs."
+        }
+      ],
+      "resumen_didactico": "Las variables globales de sesión en Linux suelen definirse en /etc/profile.",
+      "ejemplo_practico": "Configurar PATH para todos los usuarios puede hacerse desde este archivo.",
+      "conclusion_final": "El fichero global de entorno más representativo es /etc/profile."
+    }
+  },
+  {
+    "id": "UT9-Q23",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué componente de la placa base aloja físicamente el microprocesador?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La ranura PCIe"
+      },
+      {
+        "clave": "b",
+        "texto": "El zócalo de CPU"
+      },
+      {
+        "clave": "c",
+        "texto": "La bahía SATA"
+      },
+      {
+        "clave": "d",
+        "texto": "El chipset de audio"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La CPU se instala en un zócalo específico de la placa base, cuya compatibilidad es crítica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "PCIe se usa para tarjetas de expansión."
+        },
+        {
+          "clave": "c",
+          "motivo": "SATA conecta unidades de almacenamiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "No aloja el procesador."
+        }
+      ],
+      "resumen_didactico": "La compatibilidad entre procesador y placa base depende, entre otras cosas, del zócalo.",
+      "ejemplo_practico": "Un procesador LGA requiere una placa con el socket adecuado para montarlo.",
+      "conclusion_final": "El microprocesador se instala en el zócalo de CPU."
+    }
+  },
+  {
+    "id": "UT9-Q24",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué propiedad describe mejor a la memoria RAM frente al almacenamiento permanente?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es volátil y pierde la información al apagar"
+      },
+      {
+        "clave": "b",
+        "texto": "Es óptica y usa láser"
+      },
+      {
+        "clave": "c",
+        "texto": "Es magnética y gira a gran velocidad"
+      },
+      {
+        "clave": "d",
+        "texto": "Siempre conserva los datos sin energía"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La RAM almacena temporalmente datos y programas en uso, pero pierde su contenido cuando el equipo se apaga.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso corresponde a medios ópticos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso describe discos duros mecánicos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La RAM no es persistente."
+        }
+      ],
+      "resumen_didactico": "La volatilidad es la característica esencial de la RAM.",
+      "ejemplo_practico": "Un documento no guardado abierto en memoria puede perderse tras un apagado brusco.",
+      "conclusion_final": "La RAM se define por ser memoria rápida pero volátil."
+    }
+  },
+  {
+    "id": "UT9-Q25",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué concepto de Windows explica que un usuario reciba un identificador con su SID, los grupos a los que pertenece y sus privilegios al iniciar sesión?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SAT"
+      },
+      {
+        "clave": "b",
+        "texto": "DNS"
+      },
+      {
+        "clave": "c",
+        "texto": "FAT32"
+      },
+      {
+        "clave": "d",
+        "texto": "POST"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El Security Access Token (SAT) representa la identidad y privilegios efectivos del usuario en Windows.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DNS resuelve nombres de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es un sistema de archivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "POST es la comprobación de arranque."
+        }
+      ],
+      "resumen_didactico": "El SAT es el 'pase' de seguridad que Windows usa para tomar decisiones de acceso.",
+      "ejemplo_practico": "Si cambias a un usuario de grupo, el cambio no se refleja en procesos ya abiertos hasta nueva sesión porque el SAT ya estaba creado.",
+      "conclusion_final": "La respuesta correcta es SAT."
+    }
+  },
+  {
+    "id": "UT9-Q26",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué herramienta gráfica de Windows usarías para configurar una IP estática en un adaptador de red?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Centro de redes y recursos compartidos > Propiedades de TCP/IPv4"
+      },
+      {
+        "clave": "b",
+        "texto": "Administrador de tareas"
+      },
+      {
+        "clave": "c",
+        "texto": "Windows Update"
+      },
+      {
+        "clave": "d",
+        "texto": "Liberador de espacio en disco"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La configuración manual de IPv4 se realiza en las propiedades del adaptador, dentro del protocolo TCP/IPv4.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Gestiona procesos y rendimiento, no configuración IP."
+        },
+        {
+          "clave": "c",
+          "motivo": "Actualiza el sistema, no la red."
+        },
+        {
+          "clave": "d",
+          "motivo": "Limpia archivos temporales."
+        }
+      ],
+      "resumen_didactico": "La IP fija se configura sobre la interfaz de red, no en herramientas generales del sistema.",
+      "ejemplo_practico": "Desde el Panel de control se accede al adaptador, se abre TCP/IPv4 y se introducen IP, máscara, gateway y DNS.",
+      "conclusion_final": "La ruta correcta pasa por las propiedades de TCP/IPv4 del adaptador."
+    }
+  },
+  {
+    "id": "UT9-Q27",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué ventaja destaca de la virtualización frente a tener varias máquinas físicas separadas?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aislamiento y snapshots con menor coste físico"
+      },
+      {
+        "clave": "b",
+        "texto": "Eliminación total de sobrecarga"
+      },
+      {
+        "clave": "c",
+        "texto": "No requiere memoria RAM en el host"
+      },
+      {
+        "clave": "d",
+        "texto": "El invitado no necesita sistema operativo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La virtualización permite aislamiento, instantáneas, ajuste de recursos y ahorro de hardware y energía frente a múltiples equipos físicos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Sí existe cierta sobrecarga por virtualización."
+        },
+        {
+          "clave": "c",
+          "motivo": "El host necesita RAM y la comparte con los invitados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cada invitado sigue necesitando su sistema operativo."
+        }
+      ],
+      "resumen_didactico": "La virtualización aporta flexibilidad, seguridad y ahorro, aunque no es gratis en rendimiento.",
+      "ejemplo_practico": "Un laboratorio puede probar Windows y Linux en el mismo host gracias a máquinas virtuales aisladas.",
+      "conclusion_final": "La combinación de aislamiento y ahorro de recursos es una ventaja clave."
+    }
+  },
+  {
+    "id": "UT9-Q28",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué archivo o directorio de Windows contiene los perfiles de usuario en la estructura habitual del sistema?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "C:\\Users"
+      },
+      {
+        "clave": "b",
+        "texto": "C:\\Program Files"
+      },
+      {
+        "clave": "c",
+        "texto": "C:\\Windows\\System32"
+      },
+      {
+        "clave": "d",
+        "texto": "C:\\PerfLogs"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los perfiles de usuario de Windows se almacenan normalmente bajo C:\\Users.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Contiene programas instalados."
+        },
+        {
+          "clave": "c",
+          "motivo": "Incluye componentes del sistema operativo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se usa para registros de rendimiento."
+        }
+      ],
+      "resumen_didactico": "C:\\Users es el equivalente conceptual a /home en muchos sistemas Linux.",
+      "ejemplo_practico": "Dentro de C:\\Users\\alumno se encuentran Escritorio, Documentos y otros datos personales.",
+      "conclusion_final": "La ruta general de perfiles en Windows es C:\\Users."
+    }
+  },
+  {
+    "id": "UT9-Q29",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué significa que una licencia de software sea permisiva, como MIT o BSD?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite uso comercial y redistribución sin obligar a liberar el código derivado"
+      },
+      {
+        "clave": "b",
+        "texto": "Impide cualquier modificación"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo autoriza uso educativo"
+      },
+      {
+        "clave": "d",
+        "texto": "Prohíbe integrar la obra en productos comerciales"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las licencias permisivas permiten usar, modificar y redistribuir, incluso en productos cerrados, manteniendo normalmente la atribución.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso sería una restricción fuerte, no una licencia permisiva."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se limitan al ámbito educativo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Precisamente suelen permitir uso comercial."
+        }
+      ],
+      "resumen_didactico": "MIT, BSD o Apache-2.0 destacan por su flexibilidad en proyectos profesionales.",
+      "ejemplo_practico": "Una startup puede integrar una librería MIT en su producto sin publicar todo su código.",
+      "conclusion_final": "Permisiva significa pocas restricciones y alta compatibilidad con uso comercial."
+    }
+  },
+  {
+    "id": "UT9-Q30",
+    "tema": "UT9 — Repaso global del módulo Sistemas I (Bloque 1)",
+    "pregunta": "¿Qué clase de proceso requiere respuesta inmediata y plazos estrictos, como un sistema de alarmas o control crítico?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Proceso por lotes"
+      },
+      {
+        "clave": "b",
+        "texto": "Proceso en tiempo real"
+      },
+      {
+        "clave": "c",
+        "texto": "Proceso recreativo"
+      },
+      {
+        "clave": "d",
+        "texto": "Proceso diferido sin prioridad"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los procesos en tiempo real exigen comportamiento predecible y cumplimiento estricto de plazos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los procesos por lotes no requieren interacción inmediata."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es una categoría técnica del temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "No define procesos con plazos críticos."
+        }
+      ],
+      "resumen_didactico": "Tiempo real implica precisión temporal, no solo rapidez percibida.",
+      "ejemplo_practico": "Un sistema que dispara una alarma industrial no puede responder tarde sin consecuencias.",
+      "conclusion_final": "Cuando hay plazos estrictos, hablamos de procesos en tiempo real."
+    }
+  }
+]

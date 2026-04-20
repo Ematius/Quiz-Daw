@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT13-Q01",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "En un equipo moderno, ¿qué firmware ofrece normalmente interfaz más avanzada, soporte de discos grandes y opciones como Secure Boot?",
+    "contexto": "Comparativa de firmware de arranque.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "BIOS clásica exclusivamente analógica"
+      },
+      {
+        "clave": "b",
+        "texto": "UEFI"
+      },
+      {
+        "clave": "c",
+        "texto": "POST"
+      },
+      {
+        "clave": "d",
+        "texto": "Administrador de arranque de Windows"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "UEFI sustituye a la BIOS tradicional en muchos equipos modernos y añade compatibilidad con discos grandes, interfaz mejorada y funciones de seguridad como Secure Boot.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La BIOS es más limitada y no incorpora estas capacidades modernas de forma nativa."
+        },
+        {
+          "clave": "c",
+          "motivo": "POST es la autocomprobación del hardware al arrancar, no el firmware completo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un componente de software posterior al firmware."
+        }
+      ],
+      "resumen_didactico": "UEFI es la evolución moderna del firmware de arranque.",
+      "ejemplo_practico": "Un portátil reciente con SSD NVMe y Secure Boot suele arrancar mediante UEFI.",
+      "conclusion_final": "Si buscas arranque moderno y más funciones, la respuesta es UEFI."
+    }
+  },
+  {
+    "id": "UT13-Q02",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué función tiene Secure Boot en un sistema con UEFI?",
+    "contexto": "Seguridad en el arranque del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aumentar automáticamente la RAM disponible"
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar que el software de arranque esté firmado y autorizado"
+      },
+      {
+        "clave": "c",
+        "texto": "Desfragmentar el disco antes de iniciar el sistema"
+      },
+      {
+        "clave": "d",
+        "texto": "Convertir cualquier disco en SSD"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Secure Boot comprueba la firma del software de arranque para impedir que se ejecuten cargadores o sistemas no autorizados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No tiene relación con la gestión de memoria."
+        },
+        {
+          "clave": "c",
+          "motivo": "No realiza tareas de mantenimiento del disco."
+        },
+        {
+          "clave": "d",
+          "motivo": "No altera la tecnología física del almacenamiento."
+        }
+      ],
+      "resumen_didactico": "Secure Boot protege el inicio del sistema frente a software no confiable.",
+      "ejemplo_practico": "Puede bloquear el arranque de un USB no firmado hasta que se desactive o se autorice.",
+      "conclusion_final": "Su misión es verificar la legitimidad del software de arranque."
+    }
+  },
+  {
+    "id": "UT13-Q03",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "En Windows, ¿qué efecto puede tener Fast Boot cuando intentas arrancar desde un USB o entrar cómodamente en la BIOS/UEFI?",
+    "contexto": "Incidencias durante mantenimiento y clonación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Facilita siempre el multiboot sin ajustes extra"
+      },
+      {
+        "clave": "b",
+        "texto": "Puede dificultar el acceso al firmware o al arranque alternativo"
+      },
+      {
+        "clave": "c",
+        "texto": "Desactiva la tarjeta de red al apagar"
+      },
+      {
+        "clave": "d",
+        "texto": "Borra automáticamente los puntos de restauración"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Fast Boot acelera el arranque de Windows, pero puede dificultar acceder al firmware o iniciar desde otros dispositivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "A menudo ocurre justo lo contrario en tareas de mantenimiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es su función principal."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se dedica a gestionar restauraciones."
+        }
+      ],
+      "resumen_didactico": "Inicio rápido sí, acceso técnico más incómodo también.",
+      "ejemplo_practico": "Para arrancar Clonezilla desde USB puede ser necesario desactivar Fast Boot previamente.",
+      "conclusion_final": "Fast Boot puede obstaculizar tareas de arranque alternativo y soporte."
+    }
+  },
+  {
+    "id": "UT13-Q04",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué herramienta se usa habitualmente en Windows para crear un USB arrancable a partir de una imagen ISO?",
+    "contexto": "Preparación de medios de instalación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Rufus"
+      },
+      {
+        "clave": "b",
+        "texto": "Bloc de notas"
+      },
+      {
+        "clave": "c",
+        "texto": "Paint"
+      },
+      {
+        "clave": "d",
+        "texto": "Visor de eventos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Rufus es una utilidad conocida para grabar una ISO en un USB y convertirlo en un medio arrancable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es un editor de texto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una herramienta de dibujo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se usa para revisar logs, no para crear USB booteables."
+        }
+      ],
+      "resumen_didactico": "ISO + USB + Rufus = medio arrancable.",
+      "ejemplo_practico": "Para instalar Windows o Debian en un portátil se prepara un pendrive con Rufus.",
+      "conclusion_final": "La herramienta típica para este trabajo es Rufus."
+    }
+  },
+  {
+    "id": "UT13-Q05",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "En Clonezilla, ¿qué modo elegirías si quieres guardar una copia reutilizable del disco para desplegarla después en varios equipos?",
+    "contexto": "Clonación e imagen de sistemas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "device-image"
+      },
+      {
+        "clave": "b",
+        "texto": "device-device"
+      },
+      {
+        "clave": "c",
+        "texto": "safe-mode"
+      },
+      {
+        "clave": "d",
+        "texto": "deep-format"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "device-image crea una imagen del disco para guardarla y reutilizarla posteriormente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Clona directamente disco a disco, sin generar una imagen reutilizable."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es el modo principal para este objetivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un modo de trabajo de Clonezilla para crear despliegues reutilizables."
+        }
+      ],
+      "resumen_didactico": "Si quieres guardar una copia maestra, usa imagen; si quieres copiar al vuelo, usa disco a disco.",
+      "ejemplo_practico": "Crear una imagen del equipo base y restaurarla luego en los portátiles del aula.",
+      "conclusion_final": "Para una copia reutilizable, la opción correcta es device-image."
+    }
+  },
+  {
+    "id": "UT13-Q06",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué limitación práctica debes recordar al clonar discos con Clonezilla en modo disco a disco?",
+    "contexto": "Migración de equipos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo puede clonar discos SSD y nunca HDD"
+      },
+      {
+        "clave": "b",
+        "texto": "No puede clonar de un disco mayor a otro más pequeño"
+      },
+      {
+        "clave": "c",
+        "texto": "Siempre destruye el disco origen"
+      },
+      {
+        "clave": "d",
+        "texto": "Obliga a formatear en FAT32 antes de empezar"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En una clonación directa, el disco destino debe tener capacidad suficiente; no se puede clonar de mayor a menor sin más.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Puede trabajar con distintas tecnologías de disco."
+        },
+        {
+          "clave": "c",
+          "motivo": "La operación se realiza sobre el destino, no destruye por sí sola el origen."
+        },
+        {
+          "clave": "d",
+          "motivo": "No exige FAT32 para operar."
+        }
+      ],
+      "resumen_didactico": "En clonación directa, el destino debe ser al menos tan grande como el origen.",
+      "ejemplo_practico": "No podrás clonar un disco de 1 TB en otro de 500 GB sin rediseñar antes las particiones.",
+      "conclusion_final": "La restricción clave es la capacidad del disco destino."
+    }
+  },
+  {
+    "id": "UT13-Q07",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué define mejor a Oracle VM VirtualBox en cuanto a tipo de hipervisor?",
+    "contexto": "Virtualización de laboratorio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hipervisor de tipo 1 que corre directamente sobre el hardware sin sistema anfitrión"
+      },
+      {
+        "clave": "b",
+        "texto": "Hipervisor de tipo 2 que se ejecuta sobre un sistema operativo anfitrión"
+      },
+      {
+        "clave": "c",
+        "texto": "Firmware UEFI especializado en máquinas virtuales"
+      },
+      {
+        "clave": "d",
+        "texto": "Sistema de archivos para discos virtuales"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "VirtualBox es un hipervisor de tipo 2: necesita un sistema operativo anfitrión sobre el que ejecutarse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe plataformas como algunos hipervisores bare-metal, no VirtualBox."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es firmware de arranque."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un sistema de archivos."
+        }
+      ],
+      "resumen_didactico": "VirtualBox vive encima del sistema anfitrión, no reemplaza al sistema base.",
+      "ejemplo_practico": "Instalas VirtualBox en Windows o Linux y dentro creas una VM Debian.",
+      "conclusion_final": "VirtualBox se clasifica como hipervisor tipo 2."
+    }
+  },
+  {
+    "id": "UT13-Q08",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué ventaja aportan las Guest Additions o herramientas equivalentes en una máquina virtual?",
+    "contexto": "Mejora de integración entre host e invitado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sustituyen el sistema operativo invitado por el anfitrión"
+      },
+      {
+        "clave": "b",
+        "texto": "Mejoran integración gráfica, portapapeles y otros servicios entre host e invitado"
+      },
+      {
+        "clave": "c",
+        "texto": "Desactivan automáticamente la memoria virtual del host"
+      },
+      {
+        "clave": "d",
+        "texto": "Convierten la VM en un equipo físico"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Estas herramientas mejoran la experiencia del invitado: resolución dinámica, integración del ratón, portapapeles compartido y otros extras.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No sustituyen sistemas operativos."
+        },
+        {
+          "clave": "c",
+          "motivo": "No gestionan la paginación del host de ese modo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una VM sigue siendo virtual."
+        }
+      ],
+      "resumen_didactico": "Son utilidades de integración y comodidad, no un cambio de arquitectura.",
+      "ejemplo_practico": "Tras instalar Guest Additions, la VM ajusta mejor la resolución al redimensionar la ventana.",
+      "conclusion_final": "Su propósito es mejorar la integración entre anfitrión e invitado."
+    }
+  },
+  {
+    "id": "UT13-Q09",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "En Linux, ¿qué resultado produce normalmente chmod 640 informe.txt?",
+    "contexto": "Permisos locales sobre archivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Propietario rw, grupo r, otros sin permisos"
+      },
+      {
+        "clave": "b",
+        "texto": "Propietario rwx, grupo rw, otros r"
+      },
+      {
+        "clave": "c",
+        "texto": "Propietario solo lectura, grupo escritura, otros ejecución"
+      },
+      {
+        "clave": "d",
+        "texto": "Todos los usuarios con lectura y escritura"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "640 equivale a rw- para el propietario, r-- para el grupo y --- para otros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso correspondería a otro valor octal, no a 640."
+        },
+        {
+          "clave": "c",
+          "motivo": "La distribución de permisos no coincide con el valor indicado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso se acercaría a 666, no a 640."
+        }
+      ],
+      "resumen_didactico": "6=rw, 4=r, 0=sin permisos.",
+      "ejemplo_practico": "El propietario puede modificar un informe, el grupo solo leerlo y el resto no verlo.",
+      "conclusion_final": "chmod 640 limita bastante el acceso y es más seguro que abrirlo a todos."
+    }
+  },
+  {
+    "id": "UT13-Q10",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "Si ejecutas chmod go+w proyecto, ¿qué cambio aplicas?",
+    "contexto": "Permisos simbólicos en Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Quitas escritura al propietario"
+      },
+      {
+        "clave": "b",
+        "texto": "Añades escritura al grupo y a otros"
+      },
+      {
+        "clave": "c",
+        "texto": "Das ejecución solo al propietario"
+      },
+      {
+        "clave": "d",
+        "texto": "Bloqueas por completo el archivo"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "go+w añade permiso de escritura al grupo (g) y a otros (o).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No afecta al propietario con esa sintaxis."
+        },
+        {
+          "clave": "c",
+          "motivo": "No añade ejecución, sino escritura."
+        },
+        {
+          "clave": "d",
+          "motivo": "No bloquea, al contrario: concede más permisos."
+        }
+      ],
+      "resumen_didactico": "g = grupo, o = otros, +w = añadir escritura.",
+      "ejemplo_practico": "Una carpeta compartida puede permitir que varios compañeros creen o modifiquen archivos.",
+      "conclusion_final": "El comando amplía la escritura para grupo y otros."
+    }
+  },
+  {
+    "id": "UT13-Q11",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "Con una umask 0022, ¿qué permisos suele tener por defecto un archivo nuevo en Linux?",
+    "contexto": "Seguridad por defecto al crear ficheros.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "777"
+      },
+      {
+        "clave": "b",
+        "texto": "666"
+      },
+      {
+        "clave": "c",
+        "texto": "644"
+      },
+      {
+        "clave": "d",
+        "texto": "600"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La umask 0022 resta permisos al valor base, dando habitualmente 644 para archivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso sería totalmente abierto y no es el resultado con esa umask."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es el punto de partida típico para archivos antes de aplicar la máscara."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sería más restrictivo y correspondería a otra máscara."
+        }
+      ],
+      "resumen_didactico": "Umask = recorte de permisos por defecto.",
+      "ejemplo_practico": "Un archivo recién creado suele quedar con lectura/escritura para el dueño y solo lectura para el resto.",
+      "conclusion_final": "Con 0022, lo habitual para archivos es 644."
+    }
+  },
+  {
+    "id": "UT13-Q12",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué fichero de configuración afecta globalmente al entorno de inicio de sesión de todos los usuarios en Linux?",
+    "contexto": "Variables y ajustes globales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "~/.bashrc"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/profile"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/shadow"
+      },
+      {
+        "clave": "d",
+        "texto": "/var/log/syslog"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "/etc/profile se carga como configuración global de entorno para las sesiones de todos los usuarios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es una configuración local del usuario, no global."
+        },
+        {
+          "clave": "c",
+          "motivo": "Guarda contraseñas cifradas, no variables de entorno."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un archivo de registro del sistema."
+        }
+      ],
+      "resumen_didactico": "Global para todos: /etc/profile; personal: ~/.bashrc.",
+      "ejemplo_practico": "Definir variables comunes del sistema para todos los usuarios al iniciar sesión.",
+      "conclusion_final": "La configuración global de entorno suele centralizarse en /etc/profile."
+    }
+  },
+  {
+    "id": "UT13-Q13",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué fichero local suele personalizar alias y variables del shell para un usuario concreto en Linux?",
+    "contexto": "Personalización del entorno individual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "~/.bashrc"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/passwd"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/group"
+      },
+      {
+        "clave": "d",
+        "texto": "/boot/grub"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "~/.bashrc permite definir alias, variables y ajustes del shell para un usuario determinado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Contiene información básica de cuentas, no configuración interactiva del shell."
+        },
+        {
+          "clave": "c",
+          "motivo": "Define grupos, no alias personales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se relaciona con el arranque, no con el shell del usuario."
+        }
+      ],
+      "resumen_didactico": "Lo local y personal del shell suele ir en ~/.bashrc.",
+      "ejemplo_practico": "Crear alias como ll=\"ls -la\" para un usuario específico.",
+      "conclusion_final": "Para personalizar tu terminal, el fichero habitual es ~/.bashrc."
+    }
+  },
+  {
+    "id": "UT13-Q14",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "Si quieres programar una acción puntual para una sola vez en Linux, ¿qué herramienta es la adecuada?",
+    "contexto": "Automatización no recurrente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "cron"
+      },
+      {
+        "clave": "b",
+        "texto": "at"
+      },
+      {
+        "clave": "c",
+        "texto": "useradd"
+      },
+      {
+        "clave": "d",
+        "texto": "groups"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "at sirve para programar una tarea única en una fecha y hora concretas; cron se usa para tareas periódicas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "cron está orientado a repetición periódica."
+        },
+        {
+          "clave": "c",
+          "motivo": "Crea usuarios, no agenda tareas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Muestra grupos del usuario."
+        }
+      ],
+      "resumen_didactico": "Puntual = at; recurrente = cron.",
+      "ejemplo_practico": "Programar un reinicio del servidor solo una vez a medianoche.",
+      "conclusion_final": "Para ejecuciones únicas, la herramienta correcta es at."
+    }
+  },
+  {
+    "id": "UT13-Q15",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "En Windows, ¿qué pestaña del Administrador de tareas te interesa si quieres desactivar programas que ralentizan el arranque?",
+    "contexto": "Optimización del inicio del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usuarios"
+      },
+      {
+        "clave": "b",
+        "texto": "Historial de aplicaciones"
+      },
+      {
+        "clave": "c",
+        "texto": "Inicio"
+      },
+      {
+        "clave": "d",
+        "texto": "Servicios"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La pestaña Inicio permite revisar y desactivar programas que arrancan automáticamente con Windows.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Muestra sesiones, no programas de arranque."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es la sección principal para controlar el inicio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Gestiona servicios, pero no es la pestaña específica citada para aplicaciones de arranque."
+        }
+      ],
+      "resumen_didactico": "Si Windows tarda en arrancar, revisa Inicio.",
+      "ejemplo_practico": "Desactivar un lanzador de música o chat que no necesitas al encender el PC.",
+      "conclusion_final": "La pestaña clave para este trabajo es Inicio."
+    }
+  },
+  {
+    "id": "UT13-Q16",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "En la monitorización de procesos Linux, ¿qué indica normalmente el estado Z?",
+    "contexto": "Diagnóstico de procesos anómalos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Proceso en ejecución intensa"
+      },
+      {
+        "clave": "b",
+        "texto": "Proceso zombi, finalizado pero no recogido por el padre"
+      },
+      {
+        "clave": "c",
+        "texto": "Proceso congelado por falta de red"
+      },
+      {
+        "clave": "d",
+        "texto": "Proceso protegido por root"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El estado Z corresponde a un zombie: el proceso ha terminado, pero su padre aún no ha recogido su estado con wait().",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso se asociaría a estados activos, no a Z."
+        },
+        {
+          "clave": "c",
+          "motivo": "La red no define este estado."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una marca de privilegio."
+        }
+      ],
+      "resumen_didactico": "Z no significa “vivo”, sino “terminado y mal recogido”.",
+      "ejemplo_practico": "En ps puede aparecer un proceso <defunct> como zombi.",
+      "conclusion_final": "El estado Z identifica procesos zombi."
+    }
+  },
+  {
+    "id": "UT13-Q17",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué comando de Linux es especialmente útil para observar procesos y consumo de recursos en tiempo real de forma interactiva?",
+    "contexto": "Monitorización rápida del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "htop"
+      },
+      {
+        "clave": "b",
+        "texto": "mkdir"
+      },
+      {
+        "clave": "c",
+        "texto": "passwd"
+      },
+      {
+        "clave": "d",
+        "texto": "route"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "htop es una herramienta interactiva muy usada para monitorizar CPU, memoria y procesos en tiempo real.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Crea directorios, no monitoriza."
+        },
+        {
+          "clave": "c",
+          "motivo": "Gestiona contraseñas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se relaciona con enrutamiento, no con procesos."
+        }
+      ],
+      "resumen_didactico": "Para ver “qué está consumiendo” ahora mismo, htop es una gran opción.",
+      "ejemplo_practico": "Detectar qué proceso dispara la CPU en un servidor Linux cargado.",
+      "conclusion_final": "La herramienta interactiva típica es htop."
+    }
+  },
+  {
+    "id": "UT13-Q18",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué capacidad de un switch gestionable permite segmentar lógicamente una red física en varios dominios separados?",
+    "contexto": "Diseño y orden en redes corporativas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "VLAN"
+      },
+      {
+        "clave": "b",
+        "texto": "POST"
+      },
+      {
+        "clave": "c",
+        "texto": "DHCP relay pasivo"
+      },
+      {
+        "clave": "d",
+        "texto": "Clonación de discos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las VLAN permiten dividir lógicamente una red física en segmentos independientes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "POST es una prueba de arranque del hardware."
+        },
+        {
+          "clave": "c",
+          "motivo": "No describe la función principal de segmentación lógica aquí."
+        },
+        {
+          "clave": "d",
+          "motivo": "No pertenece al ámbito del switching."
+        }
+      ],
+      "resumen_didactico": "Una VLAN separa tráfico sin necesidad de levantar otra red física completa.",
+      "ejemplo_practico": "Separar administración, alumnado e invitados dentro del mismo switch.",
+      "conclusion_final": "La función buscada es la creación de VLAN."
+    }
+  },
+  {
+    "id": "UT13-Q19",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué característica de muchos switches modernos permite alimentar ciertos dispositivos de red a través del propio cable Ethernet?",
+    "contexto": "Instalación de cámaras IP y puntos de acceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "PoE"
+      },
+      {
+        "clave": "b",
+        "texto": "RAID 1"
+      },
+      {
+        "clave": "c",
+        "texto": "PAM"
+      },
+      {
+        "clave": "d",
+        "texto": "NAT loopback"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "PoE (Power over Ethernet) transporta datos y alimentación eléctrica por el mismo cable de red.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "RAID pertenece al almacenamiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "PAM es autenticación modular en Linux."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la función mencionada de alimentación eléctrica."
+        }
+      ],
+      "resumen_didactico": "PoE simplifica cableado al dar red y energía en un solo enlace.",
+      "ejemplo_practico": "Una cámara IP se conecta al switch sin fuente de alimentación independiente.",
+      "conclusion_final": "La tecnología que permite esto es PoE."
+    }
+  },
+  {
+    "id": "UT13-Q20",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué función de un switch permite ajustar automáticamente el tipo de cable necesario y simplificar la conexión entre equipos?",
+    "contexto": "Compatibilidad física en cableado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Auto-MDI/MDI-X"
+      },
+      {
+        "clave": "b",
+        "texto": "Secure Boot"
+      },
+      {
+        "clave": "c",
+        "texto": "Journaled mode"
+      },
+      {
+        "clave": "d",
+        "texto": "Snapshot on demand"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Auto-MDI/MDI-X detecta y ajusta automáticamente la polaridad de transmisión/recepción, evitando preocuparse por cable directo o cruzado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Pertenece al arranque UEFI, no al switch."
+        },
+        {
+          "clave": "c",
+          "motivo": "Se asocia a sistemas de archivos, no a cableado de red."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una función típica de switching."
+        }
+      ],
+      "resumen_didactico": "Con Auto-MDI/MDI-X, el switch “se adapta” al cableado.",
+      "ejemplo_practico": "Puedes conectar dos dispositivos sin preocuparte tanto por si el cable es cruzado o no.",
+      "conclusion_final": "La característica correcta es Auto-MDI/MDI-X."
+    }
+  },
+  {
+    "id": "UT13-Q21",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué utilidad tienen los puertos SFP en muchos switches profesionales?",
+    "contexto": "Expansión y enlaces de red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Añadir módulos, a menudo para enlaces de fibra óptica"
+      },
+      {
+        "clave": "b",
+        "texto": "Instalar procesadores adicionales en el switch"
+      },
+      {
+        "clave": "c",
+        "texto": "Crear usuarios locales del sistema operativo"
+      },
+      {
+        "clave": "d",
+        "texto": "Guardar copias de seguridad del firmware en cinta"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los puertos SFP permiten insertar módulos de red, muy usados para fibra óptica y uplinks.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No son zócalos de CPU."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se usan para administración de usuarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "No están destinados a ese tipo de almacenamiento."
+        }
+      ],
+      "resumen_didactico": "SFP aporta flexibilidad de enlace, especialmente en fibra.",
+      "ejemplo_practico": "Conectar dos armarios de comunicaciones mediante módulos SFP y fibra.",
+      "conclusion_final": "Su función principal es ampliar conectividad mediante módulos intercambiables."
+    }
+  },
+  {
+    "id": "UT13-Q22",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué estándar Wi‑Fi trabajaba en 2,4 GHz y 5 GHz con velocidades máximas teóricas de hasta 600 Mbps?",
+    "contexto": "Comparativa de generaciones inalámbricas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "802.11b"
+      },
+      {
+        "clave": "b",
+        "texto": "802.11n"
+      },
+      {
+        "clave": "c",
+        "texto": "802.11ac"
+      },
+      {
+        "clave": "d",
+        "texto": "802.11a"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "802.11n (Wi‑Fi 4) puede operar en 2,4 y 5 GHz y alcanzó hasta 600 Mbps teóricos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Trabaja en 2,4 GHz con menor velocidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Wi‑Fi 5 se centra en 5 GHz y mayores velocidades."
+        },
+        {
+          "clave": "d",
+          "motivo": "Trabaja en 5 GHz con velocidades más bajas que 802.11n máximo."
+        }
+      ],
+      "resumen_didactico": "Wi‑Fi 4 = 802.11n = doble banda y hasta 600 Mbps.",
+      "ejemplo_practico": "Muchos routers domésticos antiguos dual band ofrecían 2,4/5 GHz bajo 802.11n.",
+      "conclusion_final": "La respuesta correcta es 802.11n."
+    }
+  },
+  {
+    "id": "UT13-Q23",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué tamaño fijo tiene la cabecera base de un datagrama IPv6?",
+    "contexto": "Comparativa entre IPv4 e IPv6.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "20 bytes"
+      },
+      {
+        "clave": "b",
+        "texto": "32 bytes"
+      },
+      {
+        "clave": "c",
+        "texto": "40 bytes"
+      },
+      {
+        "clave": "d",
+        "texto": "60 bytes"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "IPv6 emplea una cabecera base fija de 40 bytes, lo que simplifica el tratamiento por los routers.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Puede recordar al mínimo típico de IPv4, no a IPv6."
+        },
+        {
+          "clave": "b",
+          "motivo": "No corresponde al estándar."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es el tamaño fijo de la cabecera base IPv6."
+        }
+      ],
+      "resumen_didactico": "Una de las mejoras de IPv6 es su cabecera fija de 40 bytes.",
+      "ejemplo_practico": "El router puede procesar más fácilmente los campos base sin cabecera variable como en IPv4.",
+      "conclusion_final": "La cabecera base de IPv6 mide 40 bytes."
+    }
+  },
+  {
+    "id": "UT13-Q24",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "En Ethernet, ¿qué longitud tiene normalmente una dirección MAC expresada en hexadecimal?",
+    "contexto": "Direccionamiento físico de red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "8 dígitos hexadecimales"
+      },
+      {
+        "clave": "b",
+        "texto": "12 dígitos hexadecimales"
+      },
+      {
+        "clave": "c",
+        "texto": "16 dígitos hexadecimales"
+      },
+      {
+        "clave": "d",
+        "texto": "32 dígitos hexadecimales"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una MAC Ethernet se representa habitualmente con 12 dígitos hexadecimales agrupados en pares.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es insuficiente para una MAC completa."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es la longitud habitual de una MAC."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se aleja del formato estándar Ethernet."
+        }
+      ],
+      "resumen_didactico": "MAC = 48 bits = 12 hexadecimales.",
+      "ejemplo_practico": "00:1A:2B:3C:4D:5E es una representación típica.",
+      "conclusion_final": "La dirección MAC estándar se expresa con 12 dígitos hexadecimales."
+    }
+  },
+  {
+    "id": "UT13-Q25",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "En una red con varias subredes, ¿qué dispositivo elegirías para reenviar tráfico entre ellas tomando decisiones en capa 3?",
+    "contexto": "Interconexión profesional de redes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Router"
+      },
+      {
+        "clave": "b",
+        "texto": "Hub"
+      },
+      {
+        "clave": "c",
+        "texto": "Patch panel"
+      },
+      {
+        "clave": "d",
+        "texto": "Tarjeta de sonido"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El router trabaja en capa 3 y decide cómo enviar paquetes entre redes distintas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Solo repite señales o tráfico dentro del mismo dominio, sin enrutamiento real."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es un elemento pasivo de cableado."
+        },
+        {
+          "clave": "d",
+          "motivo": "No pertenece a la infraestructura de red."
+        }
+      ],
+      "resumen_didactico": "Para pasar de una red a otra, piensas en routing.",
+      "ejemplo_practico": "Un router conecta la LAN 192.168.1.0/24 con otra subred y con Internet.",
+      "conclusion_final": "El equipo adecuado es un router."
+    }
+  },
+  {
+    "id": "UT13-Q26",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué protocolo de correo suele descargarse los mensajes al cliente y, tradicionalmente, puede eliminarlos del servidor según configuración?",
+    "contexto": "Gestión de correo electrónico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "POP3"
+      },
+      {
+        "clave": "b",
+        "texto": "IMAP4"
+      },
+      {
+        "clave": "c",
+        "texto": "SMTP"
+      },
+      {
+        "clave": "d",
+        "texto": "SSH"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "POP3 se orienta a descargar correo al cliente, históricamente dejando menos sincronización entre dispositivos que IMAP4.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "IMAP mantiene normalmente los mensajes en el servidor y sincroniza varios clientes."
+        },
+        {
+          "clave": "c",
+          "motivo": "SMTP se usa para envío, no para consulta/descarga principal."
+        },
+        {
+          "clave": "d",
+          "motivo": "SSH sirve para acceso remoto seguro, no para correo."
+        }
+      ],
+      "resumen_didactico": "POP3 baja el correo; IMAP sincroniza; SMTP envía.",
+      "ejemplo_practico": "Un cliente antiguo de escritorio que descarga correos a un único equipo suele usar POP3.",
+      "conclusion_final": "La descripción corresponde a POP3."
+    }
+  },
+  {
+    "id": "UT13-Q27",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué diferencia caracteriza a un gestor de correo basado en webmail frente a uno basado en aplicación instalada?",
+    "contexto": "Herramientas de Internet y correo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El webmail se usa desde el navegador sin instalar un cliente específico"
+      },
+      {
+        "clave": "b",
+        "texto": "El webmail solo funciona sin Internet"
+      },
+      {
+        "clave": "c",
+        "texto": "El cliente instalado nunca puede usar IMAP"
+      },
+      {
+        "clave": "d",
+        "texto": "No existe diferencia funcional alguna"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El webmail se accede desde un navegador, mientras que el cliente de correo basado en aplicación se instala en el equipo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Normalmente requiere conexión al servicio remoto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los clientes instalados pueden usar IMAP, POP3 y otros protocolos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí existe una diferencia clara de modo de acceso y uso."
+        }
+      ],
+      "resumen_didactico": "Webmail = navegador; cliente de correo = programa instalado.",
+      "ejemplo_practico": "Outlook.com desde Chrome frente a Outlook o Thunderbird instalados.",
+      "conclusion_final": "La clave del webmail es que se usa desde el navegador."
+    }
+  },
+  {
+    "id": "UT13-Q28",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué clase de licencia open source resulta más cómoda para integrar software en un producto comercial cerrado sin obligación de liberar el código propio?",
+    "contexto": "Selección legal de dependencias.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Licencia permisiva como MIT o BSD"
+      },
+      {
+        "clave": "b",
+        "texto": "GPL estricta"
+      },
+      {
+        "clave": "c",
+        "texto": "Copyright cerrado sin permiso"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo dominio público registrado"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las licencias permisivas como MIT o BSD permiten uso comercial e integración en productos cerrados con menos restricciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La GPL puede imponer obligaciones de liberar el código derivado."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es una licencia open source permisiva."
+        },
+        {
+          "clave": "d",
+          "motivo": "No describe correctamente la opción habitual de software abierto comercializable."
+        }
+      ],
+      "resumen_didactico": "Permisiva = integración más sencilla en software cerrado.",
+      "ejemplo_practico": "Una librería MIT puede incorporarse a una app comercial manteniendo el repositorio privado.",
+      "conclusion_final": "La mejor encaja aquí es una licencia permisiva como MIT o BSD."
+    }
+  },
+  {
+    "id": "UT13-Q29",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué categoría de software describe mejor a una agenda electrónica que gestiona citas, reuniones y tareas?",
+    "contexto": "Clasificación por propósito de aplicaciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicación de productividad y negocios"
+      },
+      {
+        "clave": "b",
+        "texto": "Firmware de arranque"
+      },
+      {
+        "clave": "c",
+        "texto": "Controlador de dispositivo"
+      },
+      {
+        "clave": "d",
+        "texto": "Sistema de archivos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las agendas electrónicas se incluyen dentro del software de productividad y gestión personal/empresarial.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No interviene en el arranque del equipo."
+        },
+        {
+          "clave": "c",
+          "motivo": "No controla hardware."
+        },
+        {
+          "clave": "d",
+          "motivo": "No organiza bloques de almacenamiento."
+        }
+      ],
+      "resumen_didactico": "Gestionar tiempo y tareas = productividad.",
+      "ejemplo_practico": "Una herramienta que organiza reuniones, recordatorios y calendario de trabajo.",
+      "conclusion_final": "Se trata de una aplicación de productividad y negocios."
+    }
+  },
+  {
+    "id": "UT13-Q30",
+    "tema": "UT13 — Repaso global del módulo Sistemas I (Bloque 5)",
+    "pregunta": "¿Qué herramienta gráfica de Windows permite crear un volumen reflejado sencillo para redundancia de disco sin usar comandos?",
+    "contexto": "Gestión de almacenamiento con interfaz gráfica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Administración de discos"
+      },
+      {
+        "clave": "b",
+        "texto": "Bloc de notas"
+      },
+      {
+        "clave": "c",
+        "texto": "Programador de tareas"
+      },
+      {
+        "clave": "d",
+        "texto": "Administrador de dispositivos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La consola Administración de discos permite crear y gestionar distintos volúmenes, incluido el reflejado en sistemas compatibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es un editor de texto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Agenda tareas, no volúmenes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Gestiona hardware y drivers, no volúmenes de disco."
+        }
+      ],
+      "resumen_didactico": "Para volúmenes y discos en Windows, la herramienta clave es Administración de discos.",
+      "ejemplo_practico": "Un técnico crea un espejo simple RAID 1 desde la interfaz del sistema.",
+      "conclusion_final": "La utilidad adecuada es Administración de discos."
+    }
+  }
+]

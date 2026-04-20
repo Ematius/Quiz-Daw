@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT10-Q01",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué ventaja arquitectónica caracteriza al modelo Harvard frente al modelo de Von Neumann?",
+    "contexto": "Comparación de arquitecturas básicas de sistemas informáticos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Utiliza una sola memoria compartida para datos e instrucciones."
+      },
+      {
+        "clave": "b",
+        "texto": "Separa caminos o memorias para datos e instrucciones, permitiendo mayor simultaneidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Elimina completamente la necesidad de buses."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo puede emplearse en ordenadores antiguos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El modelo Harvard separa datos e instrucciones, mejorando la eficiencia de acceso frente al modelo de Von Neumann, donde ambos comparten memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe al modelo de Von Neumann, no al de Harvard."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ambas arquitecturas siguen necesitando comunicación mediante buses o canales equivalentes."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una arquitectura limitada a equipos antiguos; su concepto sigue vigente."
+        }
+      ],
+      "resumen_didactico": "La separación entre datos e instrucciones es la clave diferencial del modelo Harvard.",
+      "ejemplo_practico": "Un sistema puede leer una instrucción y acceder a datos por caminos distintos sin competir por la misma memoria.",
+      "conclusion_final": "Harvard mejora la simultaneidad al separar el acceso a instrucciones y datos."
+    }
+  },
+  {
+    "id": "UT10-Q02",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué interfaz del sistema operativo utilizan las aplicaciones para solicitar servicios del hardware de forma controlada?",
+    "contexto": "Relación entre programas y sistema operativo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La API del sistema operativo"
+      },
+      {
+        "clave": "b",
+        "texto": "La BIOS Setup"
+      },
+      {
+        "clave": "c",
+        "texto": "La interfaz del router"
+      },
+      {
+        "clave": "d",
+        "texto": "El explorador de archivos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El sistema operativo ofrece una interfaz para aplicaciones que permite usar recursos hardware sin acceder directamente a ellos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La BIOS/UEFI se usa para configuración de firmware, no como interfaz normal para aplicaciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "El router es un dispositivo de red externo al sistema operativo del equipo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El explorador es una aplicación de usuario, no una interfaz de programación."
+        }
+      ],
+      "resumen_didactico": "Las aplicaciones piden servicios al sistema a través de su API.",
+      "ejemplo_practico": "Un programa usa llamadas del sistema para leer un archivo o acceder a la red.",
+      "conclusion_final": "La API del sistema operativo es el puente entre software y hardware."
+    }
+  },
+  {
+    "id": "UT10-Q03",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué componente del microprocesador almacena datos temporales de altísima velocidad y su tamaño ayuda a definir si un sistema es de 32 o 64 bits?",
+    "contexto": "Elementos internos de la CPU.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los registros"
+      },
+      {
+        "clave": "b",
+        "texto": "La memoria RAM"
+      },
+      {
+        "clave": "c",
+        "texto": "El disco SSD"
+      },
+      {
+        "clave": "d",
+        "texto": "La BIOS"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los registros son las memorias más pequeñas y rápidas de la CPU; su tamaño está relacionado con la arquitectura de 32 o 64 bits.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La RAM es memoria principal externa a la CPU y mucho más lenta que los registros."
+        },
+        {
+          "clave": "c",
+          "motivo": "El SSD es almacenamiento secundario permanente."
+        },
+        {
+          "clave": "d",
+          "motivo": "La BIOS es firmware de arranque, no memoria temporal de cálculo."
+        }
+      ],
+      "resumen_didactico": "Registros = memoria mínima, interna y rapidísima de la CPU.",
+      "ejemplo_practico": "Un procesador de 64 bits maneja registros de 64 bits para operaciones y direcciones.",
+      "conclusion_final": "Los registros son el nivel más rápido de almacenamiento interno del procesador."
+    }
+  },
+  {
+    "id": "UT10-Q04",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué significado técnico tiene el valor TDP de un procesador o una tarjeta gráfica?",
+    "contexto": "Elección de componentes y refrigeración.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La velocidad máxima del bus PCIe"
+      },
+      {
+        "clave": "b",
+        "texto": "El calor que genera y la necesidad de refrigeración asociada"
+      },
+      {
+        "clave": "c",
+        "texto": "La cantidad de memoria RAM que admite"
+      },
+      {
+        "clave": "d",
+        "texto": "El número de cuentas de usuario soportadas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El TDP expresa el calor generado y orienta sobre la refrigeración necesaria del componente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El TDP no indica velocidad del bus de expansión."
+        },
+        {
+          "clave": "c",
+          "motivo": "La RAM soportada depende de CPU, placa y controlador de memoria, no del TDP en sí."
+        },
+        {
+          "clave": "d",
+          "motivo": "No tiene relación con usuarios o software."
+        }
+      ],
+      "resumen_didactico": "TDP ayuda a dimensionar disipación y fuente de alimentación.",
+      "ejemplo_practico": "Una GPU con TDP elevado requerirá mejor ventilación y una fuente adecuada.",
+      "conclusion_final": "El TDP se usa para estimar calor y refrigeración, no rendimiento lógico puro."
+    }
+  },
+  {
+    "id": "UT10-Q05",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué ventaja principal ofrece un SSD frente a un HDD mecánico en un equipo de escritorio moderno?",
+    "contexto": "Comparación entre tecnologías de almacenamiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Necesita discos giratorios más veloces"
+      },
+      {
+        "clave": "b",
+        "texto": "No tiene partes móviles y ofrece acceso más rápido a los datos"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo funciona en portátiles"
+      },
+      {
+        "clave": "d",
+        "texto": "No puede usarse como disco de arranque"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los SSD usan memoria flash, no tienen partes móviles y son más rápidos que los HDD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso corresponde a discos mecánicos, no a SSD."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los SSD se usan tanto en portátiles como en sobremesa y servidores."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí pueden utilizarse perfectamente para arrancar el sistema operativo."
+        }
+      ],
+      "resumen_didactico": "SSD = más velocidad y menos desgaste mecánico.",
+      "ejemplo_practico": "El arranque del sistema y la apertura de aplicaciones suele ser mucho más rápida con SSD.",
+      "conclusion_final": "La ausencia de partes móviles y la baja latencia hacen del SSD la opción más rápida."
+    }
+  },
+  {
+    "id": "UT10-Q06",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué objetivo tienen los factores de forma como ATX, Micro-ATX y Mini-ITX en las placas base?",
+    "contexto": "Compatibilidad de componentes hardware.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aumentar el número de usuarios simultáneos del sistema operativo"
+      },
+      {
+        "clave": "b",
+        "texto": "Estandarizar medidas, disposición y potencia para asegurar compatibilidad entre fabricantes"
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituir la función del procesador"
+      },
+      {
+        "clave": "d",
+        "texto": "Determinar el sistema de archivos del disco"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los factores de forma estandarizan tamaño y disposición de la placa base para garantizar compatibilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso no depende del formato físico de la placa base."
+        },
+        {
+          "clave": "c",
+          "motivo": "La placa base no reemplaza a la CPU."
+        },
+        {
+          "clave": "d",
+          "motivo": "El sistema de archivos pertenece al almacenamiento y al sistema operativo."
+        }
+      ],
+      "resumen_didactico": "ATX y derivados sirven para que caja, fuente y placa encajen correctamente.",
+      "ejemplo_practico": "Una caja ATX está preparada para montar una placa base del mismo estándar.",
+      "conclusion_final": "El factor de forma se usa para asegurar compatibilidad física y de conexión."
+    }
+  },
+  {
+    "id": "UT10-Q07",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué diferencia describe mejor los requisitos mínimos frente a los recomendados de una aplicación o sistema operativo?",
+    "contexto": "Planificación de instalaciones en varios equipos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los mínimos garantizan fluidez alta y los recomendados solo permiten arrancar"
+      },
+      {
+        "clave": "b",
+        "texto": "Los mínimos indican lo imprescindible para funcionar; los recomendados aseguran una experiencia más fluida"
+      },
+      {
+        "clave": "c",
+        "texto": "Los recomendados solo se publican para Linux"
+      },
+      {
+        "clave": "d",
+        "texto": "Los mínimos siempre exigen GPU dedicada"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los requisitos mínimos permiten arrancar y funcionar; los recomendados apuntan a un uso cómodo y estable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Está invertido respecto a su significado real."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los requisitos pueden publicarse para cualquier plataforma soportada."
+        },
+        {
+          "clave": "d",
+          "motivo": "No todas las aplicaciones requieren GPU dedicada."
+        }
+      ],
+      "resumen_didactico": "Mínimo = que funcione; recomendado = que vaya bien.",
+      "ejemplo_practico": "Un editor de vídeo puede instalarse con 4 GB de RAM, pero rendir de forma adecuada con 16 GB.",
+      "conclusion_final": "Distinguir ambos requisitos evita instalaciones lentas o poco útiles."
+    }
+  },
+  {
+    "id": "UT10-Q08",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué tipo de sistema operativo permite que un solo usuario ejecute varios programas al mismo tiempo manteniendo varios procesos en memoria?",
+    "contexto": "Clasificación de sistemas operativos por capacidad de ejecución.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Monotarea"
+      },
+      {
+        "clave": "b",
+        "texto": "Multitarea o multiprogramado"
+      },
+      {
+        "clave": "c",
+        "texto": "Monousuario textual"
+      },
+      {
+        "clave": "d",
+        "texto": "Tiempo real estricto"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Un sistema multitarea permite ejecutar varios programas a la vez manteniendo varios procesos en memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En monotarea solo se ejecuta un programa cada vez, además del propio sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Monousuario se refiere al número de usuarios, no al número de tareas simultáneas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Tiempo real describe respuesta temporal, no necesariamente multitarea de usuario."
+        }
+      ],
+      "resumen_didactico": "Multitarea = varias aplicaciones activas a la vez.",
+      "ejemplo_practico": "Escuchar música mientras navegas y editas un documento en el mismo equipo.",
+      "conclusion_final": "La capacidad de ejecutar varios programas simultáneamente es propia de la multitarea."
+    }
+  },
+  {
+    "id": "UT10-Q09",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué tipo de sistema operativo hace que varios ordenadores trabajen juntos como si fueran uno solo, aprovechando recursos en paralelo?",
+    "contexto": "Clasificación según la forma de ofrecer servicios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sistema operativo distribuido"
+      },
+      {
+        "clave": "b",
+        "texto": "Sistema operativo monotarea"
+      },
+      {
+        "clave": "c",
+        "texto": "Sistema operativo de escritorio monousuario"
+      },
+      {
+        "clave": "d",
+        "texto": "Sistema operativo textual"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los sistemas operativos distribuidos coordinan varios equipos como si fuesen un único sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Monotarea solo describe el número de programas simultáneos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un sistema de escritorio gestiona un equipo local, no varios nodos como una unidad lógica."
+        },
+        {
+          "clave": "d",
+          "motivo": "Textual solo indica el tipo de interfaz."
+        }
+      ],
+      "resumen_didactico": "Distribuido = varios equipos cooperando de forma transparente.",
+      "ejemplo_practico": "Un usuario lanza un trabajo sin percibir en qué nodo concreto se ejecuta.",
+      "conclusion_final": "Cuando varios ordenadores se presentan como uno solo, hablamos de sistemas distribuidos."
+    }
+  },
+  {
+    "id": "UT10-Q10",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué argumento técnico explica mejor por qué un microkernel puede ser más mantenible que un kernel monolítico?",
+    "contexto": "Arquitecturas de sistemas operativos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque elimina la necesidad de controladores"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque ejecuta servicios no críticos en modo usuario, aislando fallos y reduciendo el núcleo"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque siempre consume menos memoria que cualquier otro diseño"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque integra la interfaz gráfica dentro del kernel"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En un microkernel, muchos servicios se ejecutan en modo usuario, lo que reduce superficie crítica y facilita mantenimiento y aislamiento de fallos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los controladores siguen siendo necesarios; cambia dónde y cómo se ejecutan."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe una garantía universal de menor consumo en todos los casos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La interfaz gráfica no define la esencia del microkernel."
+        }
+      ],
+      "resumen_didactico": "Menos código crítico dentro del kernel facilita aislar errores.",
+      "ejemplo_practico": "Un fallo en un servicio en modo usuario puede reiniciarse sin comprometer todo el sistema.",
+      "conclusion_final": "La mantenibilidad mejora al sacar servicios fuera del núcleo principal."
+    }
+  },
+  {
+    "id": "UT10-Q11",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "Cuando la RAM física no es suficiente y el sistema empieza a mover datos de RAM al disco para seguir funcionando, ¿qué mecanismo está usando?",
+    "contexto": "Rendimiento degradado con muchas aplicaciones abiertas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Journaling"
+      },
+      {
+        "clave": "b",
+        "texto": "Memoria virtual"
+      },
+      {
+        "clave": "c",
+        "texto": "RAID por software"
+      },
+      {
+        "clave": "d",
+        "texto": "POST"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La memoria virtual usa espacio de disco como extensión temporal de la RAM cuando esta no alcanza.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El journaling pertenece al sistema de archivos y ayuda a la recuperación."
+        },
+        {
+          "clave": "c",
+          "motivo": "RAID organiza discos para redundancia o rendimiento, no sustituye RAM."
+        },
+        {
+          "clave": "d",
+          "motivo": "El POST solo se ejecuta durante el arranque."
+        }
+      ],
+      "resumen_didactico": "Si falta RAM, el sistema 'aparca' datos en disco mediante memoria virtual.",
+      "ejemplo_practico": "Abrir muchas pestañas y varias aplicaciones puede provocar intercambio constante con el disco y lentitud.",
+      "conclusion_final": "El uso intensivo de memoria virtual indica que la RAM se ha quedado corta."
+    }
+  },
+  {
+    "id": "UT10-Q12",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué protocolo de acceso al medio utiliza Ethernet clásico para detectar colisiones en la red cableada compartida?",
+    "contexto": "Fundamentos del protocolo Ethernet.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CSMA/CA"
+      },
+      {
+        "clave": "b",
+        "texto": "CSMA/CD"
+      },
+      {
+        "clave": "c",
+        "texto": "STP"
+      },
+      {
+        "clave": "d",
+        "texto": "NAT"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Ethernet clásico utiliza CSMA/CD para acceso múltiple con detección de portadora y colisiones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "CSMA/CA se asocia al entorno Wi‑Fi, donde se intenta evitar la colisión antes de transmitir."
+        },
+        {
+          "clave": "c",
+          "motivo": "STP se usa para evitar bucles en redes con switches."
+        },
+        {
+          "clave": "d",
+          "motivo": "NAT traduce direcciones, no gestiona acceso al medio."
+        }
+      ],
+      "resumen_didactico": "Ethernet clásico escucha el medio y detecta colisiones con CSMA/CD.",
+      "ejemplo_practico": "En un medio compartido, dos equipos pueden intentar transmitir y el protocolo reacciona si colisionan.",
+      "conclusion_final": "CSMA/CD es la referencia clásica de acceso en Ethernet cableada."
+    }
+  },
+  {
+    "id": "UT10-Q13",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué técnica de acceso al medio se asocia a las redes Wi‑Fi para intentar evitar colisiones antes de transmitir?",
+    "contexto": "Funcionamiento básico de la comunicación inalámbrica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CSMA/CD"
+      },
+      {
+        "clave": "b",
+        "texto": "CSMA/CA"
+      },
+      {
+        "clave": "c",
+        "texto": "PPP"
+      },
+      {
+        "clave": "d",
+        "texto": "Token Ring"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Wi‑Fi utiliza CSMA/CA, que intenta evitar colisiones pidiendo paso antes de transmitir.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "CSMA/CD corresponde al mundo Ethernet clásico con detección de colisiones, no al inalámbrico."
+        },
+        {
+          "clave": "c",
+          "motivo": "PPP es un protocolo de enlace punto a punto, no una técnica de acceso al medio Wi‑Fi."
+        },
+        {
+          "clave": "d",
+          "motivo": "Token Ring es otra tecnología de red distinta."
+        }
+      ],
+      "resumen_didactico": "En Wi‑Fi se intenta evitar la colisión, no detectarla una vez ocurrida.",
+      "ejemplo_practico": "Un punto de acceso y los clientes coordinan el envío antes de ocupar el canal.",
+      "conclusion_final": "CSMA/CA es el mecanismo asociado a la contención en redes Wi‑Fi."
+    }
+  },
+  {
+    "id": "UT10-Q14",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué característica de la cabecera IPv6 mejora el trabajo de encaminamiento respecto a IPv4?",
+    "contexto": "Comparación entre IPv4 e IPv6.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su cabecera fija de 40 bytes"
+      },
+      {
+        "clave": "b",
+        "texto": "Que elimina completamente las direcciones IP"
+      },
+      {
+        "clave": "c",
+        "texto": "Que siempre cifra todos los paquetes"
+      },
+      {
+        "clave": "d",
+        "texto": "Que solo permite redes locales"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "IPv6 usa una cabecera fija de 40 bytes, lo que facilita el procesamiento por parte de los routers.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "IPv6 no elimina direcciones; define un nuevo espacio de direccionamiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "El cifrado no es automático en todos los paquetes IPv6."
+        },
+        {
+          "clave": "d",
+          "motivo": "IPv6 se usa tanto en redes locales como globales."
+        }
+      ],
+      "resumen_didactico": "La cabecera fija de IPv6 simplifica el trabajo del router.",
+      "ejemplo_practico": "Al no tener una longitud tan variable como IPv4, los dispositivos de red pueden procesarla con más eficiencia.",
+      "conclusion_final": "La cabecera fija de 40 bytes es una mejora clave de IPv6."
+    }
+  },
+  {
+    "id": "UT10-Q15",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué afirmación describe correctamente a un protocolo abierto frente a uno propietario?",
+    "contexto": "Clasificación de protocolos de red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo puede usarse dentro de una única empresa"
+      },
+      {
+        "clave": "b",
+        "texto": "Se basa en estándares internacionales y suele estar más extendido"
+      },
+      {
+        "clave": "c",
+        "texto": "Siempre requiere una licencia privada para funcionar"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo sirve para redes inalámbricas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los protocolos abiertos se basan en estándares internacionales y suelen estar ampliamente adoptados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso encajaría más con desarrollos cerrados o propietarios, no con protocolos abiertos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La exigencia de licencia es típica de protocolos propietarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "No están limitados a un medio físico concreto."
+        }
+      ],
+      "resumen_didactico": "Abierto = estándar compartido y extendido.",
+      "ejemplo_practico": "TCP/IP es una familia de protocolos abierta y ampliamente implantada.",
+      "conclusion_final": "Los protocolos abiertos se apoyan en estándares y facilitan interoperabilidad."
+    }
+  },
+  {
+    "id": "UT10-Q16",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué tipo de dirección IP obtiene normalmente un equipo al conectarse a una red gestionada por un servidor DHCP?",
+    "contexto": "Configuración automática de red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Estática"
+      },
+      {
+        "clave": "b",
+        "texto": "Dinámica"
+      },
+      {
+        "clave": "c",
+        "texto": "Raíz"
+      },
+      {
+        "clave": "d",
+        "texto": "Simbólica"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una dirección IP dinámica es proporcionada automáticamente por un servidor DHCP al conectarse a la red.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La dirección estática se configura manualmente por un administrador."
+        },
+        {
+          "clave": "c",
+          "motivo": "'Raíz' no es una categoría de dirección IP en este contexto."
+        },
+        {
+          "clave": "d",
+          "motivo": "'Simbólica' no describe un modo de asignación IP."
+        }
+      ],
+      "resumen_didactico": "DHCP asigna IP dinámicas automáticamente.",
+      "ejemplo_practico": "Al conectar un portátil a una red corporativa, recibe IP, puerta de enlace y DNS sin configuración manual.",
+      "conclusion_final": "Si la red usa DHCP, la IP habitual del cliente será dinámica."
+    }
+  },
+  {
+    "id": "UT10-Q17",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué afirmación es correcta sobre las rutas de directorio en Linux y Windows?",
+    "contexto": "Documentación técnica multiplataforma.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ambos sistemas usan la barra invertida \\ por defecto"
+      },
+      {
+        "clave": "b",
+        "texto": "Linux usa / y Windows usa \\ por defecto"
+      },
+      {
+        "clave": "c",
+        "texto": "Linux usa \\ y Windows usa / por defecto"
+      },
+      {
+        "clave": "d",
+        "texto": "El separador depende del idioma instalado"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Linux separa rutas con '/' y Windows normalmente con '\\'.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo Windows usa normalmente la barra invertida como separador clásico."
+        },
+        {
+          "clave": "c",
+          "motivo": "Está invertido respecto al uso habitual de cada sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "No depende del idioma del sistema."
+        }
+      ],
+      "resumen_didactico": "Cada sistema tiene su separador de rutas propio.",
+      "ejemplo_practico": "Ruta Linux: /home/ana; ruta Windows: C:\\Users\\Ana.",
+      "conclusion_final": "La documentación correcta debe respetar / en Linux y \\ en Windows."
+    }
+  },
+  {
+    "id": "UT10-Q18",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "En Linux, ¿qué representa el directorio /dev dentro de la estructura jerárquica del sistema?",
+    "contexto": "Interpretación de directorios principales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La ubicación de los perfiles de usuario"
+      },
+      {
+        "clave": "b",
+        "texto": "Archivos de configuración global"
+      },
+      {
+        "clave": "c",
+        "texto": "Dispositivos y componentes del sistema representados como archivos"
+      },
+      {
+        "clave": "d",
+        "texto": "Binarios de usuario instalados por defecto"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En Linux, /dev contiene dispositivos y componentes de entrada/salida representados como archivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los perfiles de usuario suelen encontrarse en /home."
+        },
+        {
+          "clave": "b",
+          "motivo": "La configuración global se ubica típicamente en /etc."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los binarios habituales se localizan en /bin o /usr/bin."
+        }
+      ],
+      "resumen_didactico": "En Linux, muchos dispositivos se gestionan como archivos dentro de /dev.",
+      "ejemplo_practico": "Discos, terminales y otros dispositivos aparecen como nodos especiales en /dev.",
+      "conclusion_final": "El directorio /dev agrupa la representación de dispositivos del sistema."
+    }
+  },
+  {
+    "id": "UT10-Q19",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué tipo de fichero en Linux almacena una referencia a una ruta y se identifica con la letra l al usar ls -l?",
+    "contexto": "Tipos de ficheros en GNU/Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Directorio"
+      },
+      {
+        "clave": "b",
+        "texto": "Archivo regular"
+      },
+      {
+        "clave": "c",
+        "texto": "Enlace simbólico"
+      },
+      {
+        "clave": "d",
+        "texto": "Dispositivo de bloque"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El vínculo o enlace simbólico almacena una ruta y se identifica como 'l' en el listado largo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los directorios se identifican con la letra d."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los archivos regulares aparecen con el guion inicial -."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los dispositivos de bloque usan la letra b."
+        }
+      ],
+      "resumen_didactico": "El enlace simbólico apunta a otra ruta dentro del sistema de archivos.",
+      "ejemplo_practico": "Un enlace puede dirigir /var/www/actual hacia otra carpeta de despliegue.",
+      "conclusion_final": "La letra l en ls -l identifica un enlace simbólico."
+    }
+  },
+  {
+    "id": "UT10-Q20",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué comando de Linux elimina directorios de forma recursiva cuando se usa con la opción adecuada?",
+    "contexto": "Gestión de archivos por línea de comandos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "rm -r"
+      },
+      {
+        "clave": "b",
+        "texto": "pwd -r"
+      },
+      {
+        "clave": "c",
+        "texto": "cd -r"
+      },
+      {
+        "clave": "d",
+        "texto": "who -r"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El comando rm elimina archivos; con -r o -R elimina directorios de forma recursiva.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "pwd muestra el directorio actual, no elimina nada."
+        },
+        {
+          "clave": "c",
+          "motivo": "cd cambia de directorio, no borra contenido."
+        },
+        {
+          "clave": "d",
+          "motivo": "who muestra usuarios conectados, no actúa sobre archivos."
+        }
+      ],
+      "resumen_didactico": "rm con recursividad permite borrar carpetas y su contenido.",
+      "ejemplo_practico": "rm -r carpeta_pruebas elimina la carpeta y todo lo que contiene.",
+      "conclusion_final": "Para borrar un directorio completo desde CLI se usa rm -r."
+    }
+  },
+  {
+    "id": "UT10-Q21",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué comando se usa en Linux para comprobar qué usuarios están conectados al sistema en ese momento?",
+    "contexto": "Servidor multiusuario en producción.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "who"
+      },
+      {
+        "clave": "b",
+        "texto": "mkdir"
+      },
+      {
+        "clave": "c",
+        "texto": "touch"
+      },
+      {
+        "clave": "d",
+        "texto": "route"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El comando who permite ver qué usuarios están conectados al sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "mkdir crea directorios."
+        },
+        {
+          "clave": "c",
+          "motivo": "touch crea archivos vacíos o actualiza marcas temporales."
+        },
+        {
+          "clave": "d",
+          "motivo": "route gestiona información de enrutamiento de red."
+        }
+      ],
+      "resumen_didactico": "who ayuda a auditar sesiones activas en sistemas multiusuario.",
+      "ejemplo_practico": "Antes de reiniciar un servidor, el administrador usa who para comprobar si hay usuarios conectados.",
+      "conclusion_final": "Para ver usuarios conectados, la orden base es who."
+    }
+  },
+  {
+    "id": "UT10-Q22",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué comando de Linux añade un usuario existente a un grupo secundario sin eliminar su pertenencia a otros grupos?",
+    "contexto": "Gestión de grupos en un servidor Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "usermod -aG grupo usuario"
+      },
+      {
+        "clave": "b",
+        "texto": "groupdel grupo usuario"
+      },
+      {
+        "clave": "c",
+        "texto": "userdel -G grupo usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "passwd -aG grupo usuario"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "usermod -aG agrega grupos secundarios manteniendo los ya existentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "groupdel elimina grupos, no añade miembros."
+        },
+        {
+          "clave": "c",
+          "motivo": "userdel borra usuarios, no modifica grupos."
+        },
+        {
+          "clave": "d",
+          "motivo": "passwd gestiona contraseñas, no membresías de grupo."
+        }
+      ],
+      "resumen_didactico": "Para añadir grupos secundarios sin perder los anteriores se usa usermod -aG.",
+      "ejemplo_practico": "usermod -aG developers ana incorpora a Ana al grupo developers sin sacarla de otros grupos.",
+      "conclusion_final": "La forma correcta de añadir un grupo secundario es usermod -aG."
+    }
+  },
+  {
+    "id": "UT10-Q23",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué archivo de Linux define los grupos y la lista de usuarios que pertenecen a ellos como secundarios?",
+    "contexto": "Revisión manual de grupos del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/fstab"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/group"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/profile"
+      },
+      {
+        "clave": "d",
+        "texto": "/etc/hostname"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El archivo /etc/group define nombre de grupo, GID y usuarios secundarios asociados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "fstab define montajes del sistema de archivos, no grupos."
+        },
+        {
+          "clave": "c",
+          "motivo": "profile carga entorno global de inicio de sesión."
+        },
+        {
+          "clave": "d",
+          "motivo": "hostname define el nombre del equipo."
+        }
+      ],
+      "resumen_didactico": "Los grupos locales del sistema se describen en /etc/group.",
+      "ejemplo_practico": "Una línea puede mostrar developers:x:1003:ana,juan.",
+      "conclusion_final": "Para consultar grupos y sus miembros se revisa /etc/group."
+    }
+  },
+  {
+    "id": "UT10-Q24",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué comando de Linux se usa para cambiar el propietario de un archivo o directorio?",
+    "contexto": "Ajuste de permisos sin modificar el contenido.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "chown"
+      },
+      {
+        "clave": "b",
+        "texto": "passwd"
+      },
+      {
+        "clave": "c",
+        "texto": "free"
+      },
+      {
+        "clave": "d",
+        "texto": "ping"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "chown cambia el propietario de un archivo o directorio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "passwd cambia contraseñas."
+        },
+        {
+          "clave": "c",
+          "motivo": "free muestra memoria disponible y usada."
+        },
+        {
+          "clave": "d",
+          "motivo": "ping comprueba conectividad de red."
+        }
+      ],
+      "resumen_didactico": "Para reasignar propiedad se usa chown.",
+      "ejemplo_practico": "chown ana informe.txt hace que el archivo pase a pertenecer a Ana.",
+      "conclusion_final": "El cambio de propietario en Linux se realiza con chown."
+    }
+  },
+  {
+    "id": "UT10-Q25",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "En permisos NTFS de Windows, ¿qué ocurre si sobre la misma acción coinciden un permiso explícito de Permitir y otro de Denegar?",
+    "contexto": "Resolución de conflictos de permisos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se aplican los dos a la vez"
+      },
+      {
+        "clave": "b",
+        "texto": "Gana Denegar"
+      },
+      {
+        "clave": "c",
+        "texto": "Se ignoran ambos"
+      },
+      {
+        "clave": "d",
+        "texto": "Siempre prevalece el heredado"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En conflicto directo entre Permitir y Denegar sobre la misma acción, prevalece Denegar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No se suman libremente cuando hay conflicto directo."
+        },
+        {
+          "clave": "c",
+          "motivo": "El sistema sí resuelve el conflicto siguiendo prioridad."
+        },
+        {
+          "clave": "d",
+          "motivo": "La herencia no garantiza prevalecer frente a una denegación explícita."
+        }
+      ],
+      "resumen_didactico": "Denegar actúa como bloqueo prioritario cuando entra en conflicto con Permitir.",
+      "ejemplo_practico": "Aunque un usuario tenga escritura por grupo, una denegación explícita puede impedirla.",
+      "conclusion_final": "En NTFS, Denegar vence a Permitir cuando chocan sobre la misma acción."
+    }
+  },
+  {
+    "id": "UT10-Q26",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué herramienta gráfica de Windows permite crear y gestionar recursos compartidos de forma centralizada en un servidor?",
+    "contexto": "Administración de carpetas compartidas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Panel de control > Programas"
+      },
+      {
+        "clave": "b",
+        "texto": "Administración de equipos"
+      },
+      {
+        "clave": "c",
+        "texto": "Administrador de tareas"
+      },
+      {
+        "clave": "d",
+        "texto": "Bloc de notas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La consola Administración de equipos permite gestionar recursos compartidos de manera centralizada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Programas sirve para instalar o desinstalar software."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Administrador de tareas se centra en procesos y rendimiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Bloc de notas no gestiona recursos compartidos."
+        }
+      ],
+      "resumen_didactico": "La administración centralizada de comparticiones se hace desde Administración de equipos.",
+      "ejemplo_practico": "Desde Recursos compartidos se puede crear un nuevo recurso de red para usuarios.",
+      "conclusion_final": "En Windows, la consola adecuada es Administración de equipos."
+    }
+  },
+  {
+    "id": "UT10-Q27",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "Después de añadir a un usuario a un nuevo grupo en Active Directory o en Windows, ¿qué acción suele ser necesaria para que su token de seguridad recoja el cambio?",
+    "contexto": "Aplicación efectiva de nuevos permisos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cerrar sesión y volver a iniciarla"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar la resolución de pantalla"
+      },
+      {
+        "clave": "c",
+        "texto": "Formatear el perfil del usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "Desinstalar el antivirus"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El token de seguridad se genera al iniciar sesión, por lo que los cambios de grupo suelen requerir cerrar e iniciar sesión de nuevo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La resolución no tiene relación con grupos o permisos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una medida extrema e innecesaria para refrescar el token."
+        },
+        {
+          "clave": "d",
+          "motivo": "El antivirus no actualiza pertenencias de grupo."
+        }
+      ],
+      "resumen_didactico": "Si cambian grupos o privilegios, conviene regenerar la sesión del usuario.",
+      "ejemplo_practico": "Un usuario obtiene acceso a una carpeta tras cerrar sesión y entrar de nuevo.",
+      "conclusion_final": "El cambio de grupo se refleja normalmente al reiniciar la sesión."
+    }
+  },
+  {
+    "id": "UT10-Q28",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué protocolo de correo se usa para enviar mensajes desde el cliente al servidor o entre servidores de correo?",
+    "contexto": "Funcionamiento básico del correo electrónico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "IMAP4"
+      },
+      {
+        "clave": "b",
+        "texto": "POP3"
+      },
+      {
+        "clave": "c",
+        "texto": "SMTP"
+      },
+      {
+        "clave": "d",
+        "texto": "DHCP"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "SMTP se utiliza para el envío de correos desde el cliente al servidor y entre servidores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "IMAP4 se usa para acceder y sincronizar mensajes almacenados en el servidor."
+        },
+        {
+          "clave": "b",
+          "motivo": "POP3 se usa para descargar correo del servidor al cliente."
+        },
+        {
+          "clave": "d",
+          "motivo": "DHCP asigna direcciones IP, no gestiona correo."
+        }
+      ],
+      "resumen_didactico": "Enviar correo = SMTP.",
+      "ejemplo_practico": "Cuando pulsas 'Enviar' en tu cliente de correo, normalmente se usa SMTP.",
+      "conclusion_final": "El protocolo estándar de envío de correo es SMTP."
+    }
+  },
+  {
+    "id": "UT10-Q29",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué protocolo de correo permite consultar el mismo buzón desde varios dispositivos manteniendo los mensajes sincronizados en el servidor?",
+    "contexto": "Acceso multiplataforma al correo electrónico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FTP"
+      },
+      {
+        "clave": "b",
+        "texto": "IMAP4"
+      },
+      {
+        "clave": "c",
+        "texto": "ARP"
+      },
+      {
+        "clave": "d",
+        "texto": "NTP"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "IMAP4 mantiene los mensajes en el servidor y sincroniza su estado entre dispositivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FTP es para transferencia de archivos, no para correo."
+        },
+        {
+          "clave": "c",
+          "motivo": "ARP resuelve direcciones IP a MAC en red local."
+        },
+        {
+          "clave": "d",
+          "motivo": "NTP sincroniza la hora del sistema."
+        }
+      ],
+      "resumen_didactico": "IMAP4 es ideal cuando lees el correo desde móvil, webmail y portátil.",
+      "ejemplo_practico": "Un mensaje leído en el móvil aparece también como leído en el portátil.",
+      "conclusion_final": "Para buzón sincronizado en varios dispositivos se usa IMAP4."
+    }
+  },
+  {
+    "id": "UT10-Q30",
+    "tema": "UT10 — Repaso global del módulo Sistemas I (Bloque 2)",
+    "pregunta": "¿Qué condición impone una licencia Creative Commons con cláusula NC (Non Commercial)?",
+    "contexto": "Uso de recursos digitales en proyectos y documentación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Obliga a publicar el código fuente"
+      },
+      {
+        "clave": "b",
+        "texto": "Prohíbe el uso comercial de la obra"
+      },
+      {
+        "clave": "c",
+        "texto": "Exige cifrado de los archivos distribuidos"
+      },
+      {
+        "clave": "d",
+        "texto": "Impide cualquier tipo de atribución"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La cláusula NC de Creative Commons limita el uso de la obra a contextos no comerciales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso no define la cláusula NC; se refiere a software y licencias de otro tipo."
+        },
+        {
+          "clave": "c",
+          "motivo": "NC no exige cifrado alguno."
+        },
+        {
+          "clave": "d",
+          "motivo": "Creative Commons suele mantener condiciones sobre atribución, no eliminarla por completo."
+        }
+      ],
+      "resumen_didactico": "NC significa que la obra no puede explotarse comercialmente sin permiso adicional.",
+      "ejemplo_practico": "Un recurso con CC BY-NC puede usarse en docencia, pero no integrarse libremente en un producto comercial.",
+      "conclusion_final": "La marca NC restringe expresamente el uso comercial."
+    }
+  }
+]

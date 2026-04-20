@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT14-Q01",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué información transporta principalmente el bus de direcciones dentro de un sistema informático?",
+    "contexto": "Arquitectura básica de hardware y comunicación interna.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las posiciones de memoria o de E/S a las que se quiere acceder"
+      },
+      {
+        "clave": "b",
+        "texto": "Únicamente los datos finales del usuario"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo impulsos de reloj del procesador"
+      },
+      {
+        "clave": "d",
+        "texto": "Exclusivamente señales de vídeo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El bus de direcciones indica qué posición de memoria o qué dispositivo debe atender una operación. No lleva el contenido del dato, sino la referencia al lugar al que se accede.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso corresponde al bus de datos, no al de direcciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "La señal de reloj es otra referencia de sincronización del sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "El vídeo usa canales y componentes específicos, no define el bus de direcciones."
+        }
+      ],
+      "resumen_didactico": "El bus de direcciones dice “dónde” leer o escribir dentro del sistema.",
+      "ejemplo_practico": "Cuando la CPU quiere leer una instrucción, coloca en este bus la dirección de memoria correspondiente.",
+      "conclusion_final": "Si te preguntan qué localiza posiciones de memoria, la respuesta es el bus de direcciones."
+    }
+  },
+  {
+    "id": "UT14-Q02",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué función realiza la UAL (Unidad Aritmético-Lógica) dentro del microprocesador?",
+    "contexto": "Partes internas de la CPU.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Guardar de forma permanente los archivos del usuario"
+      },
+      {
+        "clave": "b",
+        "texto": "Realizar operaciones matemáticas y lógicas"
+      },
+      {
+        "clave": "c",
+        "texto": "Gestionar la carcasa y la refrigeración del equipo"
+      },
+      {
+        "clave": "d",
+        "texto": "Producir la señal Wi‑Fi del sistema"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La UAL es la parte de la CPU que ejecuta sumas, restas, comparaciones y operaciones lógicas, fundamentales para procesar instrucciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El almacenamiento permanente corresponde a discos o SSD, no a la UAL."
+        },
+        {
+          "clave": "c",
+          "motivo": "La refrigeración pertenece al ámbito físico del hardware, no a la unidad lógica de cálculo."
+        },
+        {
+          "clave": "d",
+          "motivo": "La conectividad Wi‑Fi depende de adaptadores y controladores de red."
+        }
+      ],
+      "resumen_didactico": "La UAL es el bloque que calcula y compara dentro del procesador.",
+      "ejemplo_practico": "Comparar si un valor es mayor que otro o sumar dos números son tareas típicas de la UAL.",
+      "conclusion_final": "Cuando la CPU “opera”, quien hace el trabajo aritmético y lógico es la UAL."
+    }
+  },
+  {
+    "id": "UT14-Q03",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué conector interno de la placa base se asocia habitualmente a SSD modernos muy compactos y rápidos, especialmente en formato NVMe?",
+    "contexto": "Actualización de almacenamiento en equipos actuales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "PS/2"
+      },
+      {
+        "clave": "b",
+        "texto": "PCI heredado de 32 bits"
+      },
+      {
+        "clave": "c",
+        "texto": "M.2"
+      },
+      {
+        "clave": "d",
+        "texto": "VGA"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Muchas placas base modernas incorporan ranuras M.2 para instalar SSD compactos. Cuando trabajan sobre PCIe/NVMe ofrecen un rendimiento muy superior al de interfaces más antiguas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "PS/2 se usa para periféricos clásicos como teclado o ratón."
+        },
+        {
+          "clave": "b",
+          "motivo": "PCI clásico no es la interfaz típica de estos SSD compactos modernos."
+        },
+        {
+          "clave": "d",
+          "motivo": "VGA es un conector de vídeo, no de almacenamiento."
+        }
+      ],
+      "resumen_didactico": "Los SSD compactos actuales suelen conectarse en ranuras M.2.",
+      "ejemplo_practico": "Un portátil con SSD NVMe normalmente monta la unidad en una ranura M.2 interna.",
+      "conclusion_final": "Si piensas en SSD pequeño y rápido, la respuesta habitual es M.2."
+    }
+  },
+  {
+    "id": "UT14-Q04",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "Tras superar el POST y terminar el firmware su trabajo, ¿qué misión cumple el cargador de arranque o bootloader?",
+    "contexto": "Secuencia de arranque del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reemplazar físicamente la memoria RAM"
+      },
+      {
+        "clave": "b",
+        "texto": "Iniciar la carga del sistema operativo"
+      },
+      {
+        "clave": "c",
+        "texto": "Crear usuarios nuevos en el sistema"
+      },
+      {
+        "clave": "d",
+        "texto": "Asignar permisos NTFS a todos los discos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El bootloader toma el control tras el firmware y localiza el sistema operativo para iniciar su carga en memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La RAM es hardware físico y no se sustituye mediante software de arranque."
+        },
+        {
+          "clave": "c",
+          "motivo": "La gestión de usuarios corresponde al sistema operativo ya cargado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los permisos NTFS pertenecen a la administración del sistema, no al arranque inicial."
+        }
+      ],
+      "resumen_didactico": "El bootloader enlaza el firmware con el sistema operativo.",
+      "ejemplo_practico": "GRUB o el administrador de arranque de Windows seleccionan qué sistema iniciar y comienzan su carga.",
+      "conclusion_final": "Si preguntas qué pone en marcha el SO tras el firmware, la clave es el bootloader."
+    }
+  },
+  {
+    "id": "UT14-Q05",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "Un portátil tiene el sistema dañado y probablemente haya que reinstalarlo. Antes de lanzarte a la instalación, ¿qué actuación preventiva es la más prudente si el usuario tiene información importante?",
+    "contexto": "Buenas prácticas de soporte técnico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Forzar varios apagados hasta que arranque"
+      },
+      {
+        "clave": "b",
+        "texto": "Hacer copia de seguridad de los datos si es posible"
+      },
+      {
+        "clave": "c",
+        "texto": "Borrar directamente todas las particiones"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar la hora de la BIOS"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Antes de reinstalar o aplicar acciones potencialmente destructivas, conviene salvaguardar la información del usuario para evitar pérdidas irreversibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Puede empeorar el estado del sistema de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una acción destructiva y elimina opciones de recuperación."
+        },
+        {
+          "clave": "d",
+          "motivo": "No protege la información ni soluciona el riesgo principal."
+        }
+      ],
+      "resumen_didactico": "Primero protege los datos; después actúa sobre la instalación.",
+      "ejemplo_practico": "Arrancar con un live USB y copiar Documentos a un disco externo antes de reinstalar.",
+      "conclusion_final": "La prioridad profesional es conservar la información del usuario."
+    }
+  },
+  {
+    "id": "UT14-Q06",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué ventaja principal ofrece clonar una máquina virtual para prácticas frente a crear otra desde cero?",
+    "contexto": "Trabajo con entornos repetibles en laboratorio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reduce la RAM física del host"
+      },
+      {
+        "clave": "b",
+        "texto": "Permite duplicar una configuración ya preparada y reutilizarla"
+      },
+      {
+        "clave": "c",
+        "texto": "Evita instalar el hipervisor"
+      },
+      {
+        "clave": "d",
+        "texto": "Convierte automáticamente la VM en un servidor físico"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Clonar una VM permite replicar un sistema ya configurado, ahorrando tiempo y manteniendo un entorno homogéneo para pruebas o formación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La RAM del host sigue siendo necesaria para ejecutar las máquinas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Sin hipervisor no hay ejecución de la VM."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una VM sigue siendo virtual, aunque se clone."
+        }
+      ],
+      "resumen_didactico": "Clonar ahorra tiempo porque duplica una máquina ya preparada.",
+      "ejemplo_practico": "En un aula, se clona una VM base con Debian y herramientas instaladas para repartirla a todos los alumnos.",
+      "conclusion_final": "Si quieres repetir un entorno sin reconfigurarlo todo, clonar es la opción lógica."
+    }
+  },
+  {
+    "id": "UT14-Q07",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué tipo de enlace en Linux reutiliza el mismo i‑nodo que el archivo original?",
+    "contexto": "Gestión de archivos y conceptos de sistema de archivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enlace simbólico"
+      },
+      {
+        "clave": "b",
+        "texto": "Enlace duro"
+      },
+      {
+        "clave": "c",
+        "texto": "Alias de shell"
+      },
+      {
+        "clave": "d",
+        "texto": "Montaje remoto"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El enlace duro comparte el mismo i‑nodo que el archivo original. No crea otro contenido, sino otro nombre para la misma información.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El simbólico referencia una ruta, no comparte i‑nodo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un alias es un atajo de comandos, no un tipo de enlace de sistema de archivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un montaje remoto pertenece a la gestión de sistemas o red, no a enlaces locales de i‑nodo."
+        }
+      ],
+      "resumen_didactico": "Hard link = mismo i‑nodo, otro nombre.",
+      "ejemplo_practico": "Dos nombres de archivo distintos pueden apuntar al mismo contenido real mediante un enlace duro.",
+      "conclusion_final": "Si comparten i‑nodo, estás ante un enlace duro."
+    }
+  },
+  {
+    "id": "UT14-Q08",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "En la primera columna de la salida de ls -l, ¿qué representa la letra p?",
+    "contexto": "Identificación de tipos de fichero en Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una tubería o pipe"
+      },
+      {
+        "clave": "b",
+        "texto": "Un programa empaquetado"
+      },
+      {
+        "clave": "c",
+        "texto": "Un puerto físico del sistema"
+      },
+      {
+        "clave": "d",
+        "texto": "Un parche del kernel"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La letra p identifica una tubería (pipe), un mecanismo de comunicación unidireccional entre procesos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No existe ese significado en la codificación de tipos de fichero de ls -l."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los puertos físicos no se representan así en ese listado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los parches del kernel no tienen esa marca de tipo de archivo."
+        }
+      ],
+      "resumen_didactico": "La p de ls -l indica una tubería de comunicación entre procesos.",
+      "ejemplo_practico": "Un pipe con nombre puede usarse para que un proceso escriba información y otro la lea.",
+      "conclusion_final": "Si ves p al inicio del permiso, piensa en pipe."
+    }
+  },
+  {
+    "id": "UT14-Q09",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "En la estructura habitual de Windows, ¿para qué se utiliza principalmente la carpeta \\ProgramData?",
+    "contexto": "Organización de directorios del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para almacenar datos comunes de programas para todos los usuarios"
+      },
+      {
+        "clave": "b",
+        "texto": "Para guardar exclusivamente el kernel de Windows"
+      },
+      {
+        "clave": "c",
+        "texto": "Para contener solo drivers de impresora"
+      },
+      {
+        "clave": "d",
+        "texto": "Para alojar perfiles personales de cada usuario"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "ProgramData es una carpeta oculta que suele contener datos y configuraciones de programas compartidas por todos los usuarios del equipo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El kernel y los archivos de sistema se ubican en otras áreas del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "No está limitada a controladores de impresión."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los perfiles personales suelen estar bajo Users."
+        }
+      ],
+      "resumen_didactico": "ProgramData guarda datos comunes de aplicaciones a nivel de equipo.",
+      "ejemplo_practico": "Una aplicación puede guardar en ProgramData recursos compartidos o configuraciones globales.",
+      "conclusion_final": "Si el dato es de la aplicación para todo el equipo, ProgramData es un lugar típico."
+    }
+  },
+  {
+    "id": "UT14-Q10",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "Dentro de una ruta relativa en Linux, ¿qué representa el símbolo . (punto) por sí solo?",
+    "contexto": "Navegación básica por directorios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El directorio actual"
+      },
+      {
+        "clave": "b",
+        "texto": "El directorio padre"
+      },
+      {
+        "clave": "c",
+        "texto": "La raíz del sistema"
+      },
+      {
+        "clave": "d",
+        "texto": "El home del usuario root"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En rutas y comandos de Linux, el punto representa el directorio actual desde el que se está trabajando.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El directorio padre se representa con .."
+        },
+        {
+          "clave": "c",
+          "motivo": "La raíz se representa con /"
+        },
+        {
+          "clave": "d",
+          "motivo": "El home de root no se indica con un punto aislado."
+        }
+      ],
+      "resumen_didactico": "Un punto simple significa “aquí mismo”.",
+      "ejemplo_practico": "./script.sh ejecuta un script situado en el directorio actual.",
+      "conclusion_final": "Si solo ves ., la referencia es el directorio actual."
+    }
+  },
+  {
+    "id": "UT14-Q11",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué opción de groupmod permite cambiar el nombre de un grupo existente en Linux?",
+    "contexto": "Mantenimiento de grupos de usuarios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "-n"
+      },
+      {
+        "clave": "b",
+        "texto": "-r"
+      },
+      {
+        "clave": "c",
+        "texto": "-p"
+      },
+      {
+        "clave": "d",
+        "texto": "-x"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El comando groupmod permite modificar grupos. La opción -n se usa para asignar un nuevo nombre al grupo existente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No corresponde al cambio de nombre del grupo en este contexto."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es la opción usada para renombrar grupos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una opción válida típica para este propósito."
+        }
+      ],
+      "resumen_didactico": "Para renombrar un grupo con groupmod, la opción clave es -n.",
+      "ejemplo_practico": "groupmod -n desarrollo web2025 cambia el nombre del grupo web2025 a desarrollo.",
+      "conclusion_final": "Si modificas el nombre de un grupo, recuerda la opción -n."
+    }
+  },
+  {
+    "id": "UT14-Q12",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "Según el procedimiento clásico visto en Linux, ¿qué comando se menciona para añadir un usuario existente a un grupo?",
+    "contexto": "Gestión de membresías en grupos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "adduser usuario grupo"
+      },
+      {
+        "clave": "b",
+        "texto": "mkgroup usuario grupo"
+      },
+      {
+        "clave": "c",
+        "texto": "passwd grupo usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "groups -a usuario grupo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario incluye el uso de adduser usuario grupo para añadir un usuario ya existente a un grupo determinado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el comando habitual mostrado para esta tarea."
+        },
+        {
+          "clave": "c",
+          "motivo": "passwd gestiona contraseñas, no membresías."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la sintaxis estándar tratada para añadir pertenencia a grupos."
+        }
+      ],
+      "resumen_didactico": "Una forma clásica de añadir un usuario a un grupo es usar adduser usuario grupo.",
+      "ejemplo_practico": "adduser ana developers incorpora a ana al grupo developers.",
+      "conclusion_final": "Para sumar un usuario a un grupo según el temario, recuerda adduser usuario grupo."
+    }
+  },
+  {
+    "id": "UT14-Q13",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué ventaja de seguridad ofrece sudo frente a trabajar siempre directamente como root?",
+    "contexto": "Administración segura en Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite delegar tareas concretas y registrar mejor quién las ejecuta"
+      },
+      {
+        "clave": "b",
+        "texto": "Desactiva por completo la necesidad de contraseñas"
+      },
+      {
+        "clave": "c",
+        "texto": "Convierte a todos los usuarios en administradores permanentes"
+      },
+      {
+        "clave": "d",
+        "texto": "Evita que existan permisos de archivos en el sistema"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "sudo permite elevar privilegios de forma controlada para tareas concretas y facilita la trazabilidad administrativa, evitando usar continuamente la cuenta root.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Normalmente requiere autenticación y control, no elimina la seguridad."
+        },
+        {
+          "clave": "c",
+          "motivo": "No transforma automáticamente a todos en administradores totales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los permisos del sistema siguen existiendo y son fundamentales."
+        }
+      ],
+      "resumen_didactico": "sudo aplica mínimo privilegio y mejor trazabilidad que usar root todo el tiempo.",
+      "ejemplo_practico": "Un técnico usa sudo solo para instalar un paquete, sin mantener una sesión completa como root.",
+      "conclusion_final": "A nivel profesional, sudo ayuda a administrar con más control y menos riesgo."
+    }
+  },
+  {
+    "id": "UT14-Q14",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué comando de Linux se utiliza para cambiar el grupo propietario de un archivo o directorio?",
+    "contexto": "Administración de recursos locales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "chgrp"
+      },
+      {
+        "clave": "b",
+        "texto": "grpview"
+      },
+      {
+        "clave": "c",
+        "texto": "usermod"
+      },
+      {
+        "clave": "d",
+        "texto": "who"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "chgrp cambia el grupo asociado a un archivo o directorio, lo que influye en los permisos aplicables a sus miembros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el comando estándar para esta tarea."
+        },
+        {
+          "clave": "c",
+          "motivo": "usermod modifica propiedades de usuarios, no el grupo propietario de un archivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "who se usa para ver usuarios conectados."
+        }
+      ],
+      "resumen_didactico": "Si quieres cambiar el grupo de un recurso, usa chgrp.",
+      "ejemplo_practico": "chgrp contabilidad informe.xlsx asigna el archivo al grupo contabilidad.",
+      "conclusion_final": "Grupo del archivo = chgrp."
+    }
+  },
+  {
+    "id": "UT14-Q15",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué cambio aplica el comando chmod u+x script.sh?",
+    "contexto": "Permisos locales en Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Añade permiso de ejecución al propietario"
+      },
+      {
+        "clave": "b",
+        "texto": "Quita todos los permisos al grupo"
+      },
+      {
+        "clave": "c",
+        "texto": "Convierte el archivo en directorio"
+      },
+      {
+        "clave": "d",
+        "texto": "Asigna lectura a otros usuarios únicamente"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En modo simbólico, u representa al usuario propietario y +x añade permiso de ejecución.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No modifica los permisos del grupo en esa sintaxis."
+        },
+        {
+          "clave": "c",
+          "motivo": "El tipo de archivo no cambia con chmod."
+        },
+        {
+          "clave": "d",
+          "motivo": "No actúa sobre otros usuarios ni sobre lectura."
+        }
+      ],
+      "resumen_didactico": "u+x = ejecutar para el propietario.",
+      "ejemplo_practico": "Tras usar chmod u+x, el dueño del archivo puede lanzar el script directamente.",
+      "conclusion_final": "Si quieres que el propietario ejecute un script, usa u+x."
+    }
+  },
+  {
+    "id": "UT14-Q16",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "En una ACL de Windows, ¿qué función tiene la SACL?",
+    "contexto": "Permisos y auditoría en NTFS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Definir qué acciones deben auditarse o registrarse"
+      },
+      {
+        "clave": "b",
+        "texto": "Guardar la contraseña del propietario del archivo"
+      },
+      {
+        "clave": "c",
+        "texto": "Asignar automáticamente direcciones IP"
+      },
+      {
+        "clave": "d",
+        "texto": "Sustituir por completo a la DACL"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La SACL (System ACL) se utiliza para definir qué accesos o acciones sobre el recurso se auditan en el registro de eventos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las contraseñas no se gestionan mediante ACL del recurso."
+        },
+        {
+          "clave": "c",
+          "motivo": "La configuración IP no tiene relación con ACL de archivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La DACL controla permisos; la SACL se centra en auditoría."
+        }
+      ],
+      "resumen_didactico": "SACL = caja negra de auditoría del recurso.",
+      "ejemplo_practico": "Registrar quién intentó borrar una carpeta sensible es una tarea típica de la SACL.",
+      "conclusion_final": "Si la pregunta va de registrar accesos, la respuesta es SACL."
+    }
+  },
+  {
+    "id": "UT14-Q17",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "En la gestión de recursos de Windows, si un derecho o privilegio entra en conflicto con un permiso sobre un recurso, ¿qué tiene prioridad según el temario?",
+    "contexto": "Conflicto entre reglas de acceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El derecho o privilegio"
+      },
+      {
+        "clave": "b",
+        "texto": "El color del recurso compartido"
+      },
+      {
+        "clave": "c",
+        "texto": "Siempre el permiso NTFS menos restrictivo"
+      },
+      {
+        "clave": "d",
+        "texto": "La ruta UNC más corta"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que los derechos o privilegios del usuario tienen prioridad sobre los permisos cuando ambos chocan.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es un aspecto sin valor técnico en la seguridad."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es la regla general indicada para este conflicto concreto."
+        },
+        {
+          "clave": "d",
+          "motivo": "La longitud de la ruta no influye en la prioridad de acceso."
+        }
+      ],
+      "resumen_didactico": "Si derecho y permiso chocan, el derecho prevalece según la unidad.",
+      "ejemplo_practico": "Un usuario con derecho de sistema para determinada acción puede verse afectado por esa prioridad frente a permisos del recurso.",
+      "conclusion_final": "No confundas permisos con derechos: el derecho va por delante en ese escenario."
+    }
+  },
+  {
+    "id": "UT14-Q18",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué autoriza específicamente el derecho de Windows “Permitir el inicio de sesión local”?",
+    "contexto": "Directivas de seguridad de usuario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Iniciar sesión físicamente en ese equipo"
+      },
+      {
+        "clave": "b",
+        "texto": "Formatear todos los discos automáticamente"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiar cualquier ACL remota sin restricciones"
+      },
+      {
+        "clave": "d",
+        "texto": "Acceder a Internet sin configuración de red"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Ese derecho controla si una cuenta puede iniciar sesión localmente en el equipo, es decir, acceder físicamente al sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El formateo de discos no depende de ese derecho."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las ACL y la administración remota requieren otros permisos o privilegios."
+        },
+        {
+          "clave": "d",
+          "motivo": "La conectividad de red no se concede con ese derecho."
+        }
+      ],
+      "resumen_didactico": "Inicio de sesión local = poder entrar físicamente al equipo.",
+      "ejemplo_practico": "En un servidor, solo ciertos administradores pueden tener habilitado ese derecho.",
+      "conclusion_final": "Si la cuestión es “sentarse delante del equipo y entrar”, el derecho es inicio de sesión local."
+    }
+  },
+  {
+    "id": "UT14-Q19",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué sintaxis UNC es coherente para acceder a un recurso compartido en Windows por red?",
+    "contexto": "Acceso a carpetas compartidas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "//SERVIDOR1/recurso"
+      },
+      {
+        "clave": "b",
+        "texto": "C:\\\\SERVIDOR1\\\\recurso"
+      },
+      {
+        "clave": "c",
+        "texto": "\\\\SERVIDOR1\\recurso"
+      },
+      {
+        "clave": "d",
+        "texto": "SERVIDOR1:recurso:"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La notación UNC en Windows para recursos compartidos comienza con doble barra invertida, seguida del nombre del servidor y del recurso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Usa sintaxis más cercana a otros entornos, no la UNC clásica de Windows."
+        },
+        {
+          "clave": "b",
+          "motivo": "C: indica una unidad local, no una ruta UNC válida."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la forma estándar de acceso a comparticiones en red."
+        }
+      ],
+      "resumen_didactico": "UNC en Windows se escribe como \\\\servidor\\recurso.",
+      "ejemplo_practico": "\\\\SERVIDOR1\\ALUMNOS abre una carpeta compartida alojada en el servidor.",
+      "conclusion_final": "Para compartir por red en Windows, piensa en doble barra invertida inicial."
+    }
+  },
+  {
+    "id": "UT14-Q20",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué conjunto de funciones describe mejor a un router SOHO típico de hogar o pequeña oficina?",
+    "contexto": "Equipos integrados de red doméstica y pyme.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo amplifica señal eléctrica como un repetidor puro"
+      },
+      {
+        "clave": "b",
+        "texto": "Enruta entre LAN y WAN, suele hacer NAT y puede ofrecer DHCP, DNS y Wi‑Fi"
+      },
+      {
+        "clave": "c",
+        "texto": "Únicamente imprime documentos y comparte USB"
+      },
+      {
+        "clave": "d",
+        "texto": "Se limita a mostrar la hora del sistema"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los routers SOHO suelen interconectar la red interna con Internet, hacer NAT y ofrecer servicios como DHCP, DNS y punto de acceso inalámbrico.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso sería una función mucho más simple que la de un router SOHO."
+        },
+        {
+          "clave": "c",
+          "motivo": "Puede haber funciones extra, pero no define su papel principal de red."
+        },
+        {
+          "clave": "d",
+          "motivo": "No describe ninguna función real de enrutamiento."
+        }
+      ],
+      "resumen_didactico": "El router SOHO es un pequeño centro de servicios de red para casa u oficina.",
+      "ejemplo_practico": "El router de una pyme da IP por DHCP, conecta la LAN a Internet y gestiona la Wi‑Fi.",
+      "conclusion_final": "Si reúne LAN, WAN, NAT y servicios básicos, estás ante un router SOHO."
+    }
+  },
+  {
+    "id": "UT14-Q21",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué topología física organiza la red en ramas jerárquicas, similar a departamentos conectados en distintos niveles?",
+    "contexto": "Diseño de redes con estructura jerárquica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bus"
+      },
+      {
+        "clave": "b",
+        "texto": "Árbol"
+      },
+      {
+        "clave": "c",
+        "texto": "Anillo"
+      },
+      {
+        "clave": "d",
+        "texto": "Malla completa"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La topología en árbol o estrella jerárquica conecta equipos en una estructura ramificada, útil para organizar segmentos o departamentos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En bus todos comparten un único canal principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "En anillo los nodos forman un círculo cerrado."
+        },
+        {
+          "clave": "d",
+          "motivo": "En malla cada nodo se interconecta con muchos o todos los demás."
+        }
+      ],
+      "resumen_didactico": "Estructura por ramas = topología en árbol.",
+      "ejemplo_practico": "Una sede con un switch principal y varios secundarios por plantas o departamentos puede representarse como árbol.",
+      "conclusion_final": "Si la red se parece a una jerarquía con ramas, la topología es árbol."
+    }
+  },
+  {
+    "id": "UT14-Q22",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "En las conexiones WAN privadas, ¿qué modalidad exige establecer un canal dedicado antes de iniciar la comunicación?",
+    "contexto": "Tecnologías de acceso WAN.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Conmutación de circuitos"
+      },
+      {
+        "clave": "b",
+        "texto": "Conmutación de paquetes"
+      },
+      {
+        "clave": "c",
+        "texto": "Difusión por broadcast local"
+      },
+      {
+        "clave": "d",
+        "texto": "Resolución ARP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La conmutación de circuitos requiere reservar previamente un canal dedicado entre los nodos antes de transmitir.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La conmutación de paquetes comparte la red sin canal exclusivo previo."
+        },
+        {
+          "clave": "c",
+          "motivo": "El broadcast local no describe una tecnología WAN privada de este tipo."
+        },
+        {
+          "clave": "d",
+          "motivo": "ARP pertenece a la resolución de direcciones en redes IP locales."
+        }
+      ],
+      "resumen_didactico": "Canal dedicado previo = conmutación de circuitos.",
+      "ejemplo_practico": "Una conexión WAN reservada para voz o servicios críticos puede basarse en esa lógica de canal previo.",
+      "conclusion_final": "Si la pregunta habla de “reservar el camino antes de comunicar”, la respuesta es conmutación de circuitos."
+    }
+  },
+  {
+    "id": "UT14-Q23",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "En el comando find de Linux, ¿qué diferencia principal hay entre -name y -iname?",
+    "contexto": "Búsqueda de archivos por patrón.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "-iname no distingue mayúsculas y minúsculas"
+      },
+      {
+        "clave": "b",
+        "texto": "-name solo busca directorios y -iname solo archivos"
+      },
+      {
+        "clave": "c",
+        "texto": "-iname busca por tamaño y -name por fecha"
+      },
+      {
+        "clave": "d",
+        "texto": "No existe diferencia funcional entre ambas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "find -name busca respetando mayúsculas/minúsculas, mientras que -iname realiza la comparación sin distinguirlas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El tipo de elemento se filtra con otros criterios como -type."
+        },
+        {
+          "clave": "c",
+          "motivo": "Tamaño y fecha se controlan con opciones distintas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí hay diferencia en sensibilidad a mayúsculas."
+        }
+      ],
+      "resumen_didactico": "-iname es la búsqueda insensible a mayúsculas.",
+      "ejemplo_practico": "find . -iname '*.pdf' localizará tanto informe.PDF como informe.pdf.",
+      "conclusion_final": "Si quieres ignorar mayúsculas, usa -iname."
+    }
+  },
+  {
+    "id": "UT14-Q24",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Para qué sirve la opción -maxdepth n cuando se usa con find en Linux?",
+    "contexto": "Búsquedas controladas en árboles de directorios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para limitar la profundidad máxima de subdirectorios que recorrerá la búsqueda"
+      },
+      {
+        "clave": "b",
+        "texto": "Para mostrar el archivo más grande encontrado"
+      },
+      {
+        "clave": "c",
+        "texto": "Para montar automáticamente la partición buscada"
+      },
+      {
+        "clave": "d",
+        "texto": "Para cambiar permisos durante la búsqueda"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "-maxdepth establece hasta qué nivel de subdirectorios descenderá find, ayudando a acotar búsquedas y evitar recorridos innecesarios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El tamaño se evalúa con criterios como -size."
+        },
+        {
+          "clave": "c",
+          "motivo": "find no monta particiones por sí mismo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cambiar permisos requeriría otras acciones o comandos."
+        }
+      ],
+      "resumen_didactico": "-maxdepth controla cuánto baja find por el árbol de directorios.",
+      "ejemplo_practico": "find /var -maxdepth 1 limita la búsqueda a /var y a sus subdirectorios inmediatos.",
+      "conclusion_final": "Si no quieres que find baje demasiado, usa -maxdepth."
+    }
+  },
+  {
+    "id": "UT14-Q25",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué busca find cuando usas el criterio -type f?",
+    "contexto": "Clasificación de resultados en Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Directorios"
+      },
+      {
+        "clave": "b",
+        "texto": "Ficheros regulares"
+      },
+      {
+        "clave": "c",
+        "texto": "Sockets exclusivamente"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo dispositivos de bloque"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En find, -type f filtra archivos regulares, es decir, ficheros normales y no directorios ni otros tipos especiales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los directorios se filtran con -type d."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los sockets usan otro tipo específico."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los dispositivos de bloque se identifican con un tipo distinto."
+        }
+      ],
+      "resumen_didactico": "-type f = ficheros normales.",
+      "ejemplo_practico": "find . -type f -name '*.log' localiza solo archivos .log, no carpetas.",
+      "conclusion_final": "Cuando necesites limitar la búsqueda a archivos regulares, usa -type f."
+    }
+  },
+  {
+    "id": "UT14-Q26",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué interpreta find con el criterio -size +100M?",
+    "contexto": "Localización de archivos grandes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Archivos de exactamente 100 MB"
+      },
+      {
+        "clave": "b",
+        "texto": "Archivos de más de 100 MB"
+      },
+      {
+        "clave": "c",
+        "texto": "Archivos de menos de 100 MB"
+      },
+      {
+        "clave": "d",
+        "texto": "Directorios de 100 niveles de profundidad"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En find, el signo + delante del tamaño indica “más de”. Por tanto, +100M localiza elementos mayores de 100 MB.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Para exactitud no se usa el prefijo +."
+        },
+        {
+          "clave": "c",
+          "motivo": "Menos de se expresaría con el signo -."
+        },
+        {
+          "clave": "d",
+          "motivo": "No tiene relación con profundidad, sino con tamaño."
+        }
+      ],
+      "resumen_didactico": "+n en -size significa “superior a n”.",
+      "ejemplo_practico": "find /home -size +100M ayuda a detectar archivos pesados que ocupan mucho espacio.",
+      "conclusion_final": "Si buscas ficheros grandes, recuerda que +100M significa “más de 100 MB”."
+    }
+  },
+  {
+    "id": "UT14-Q27",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué soporte óptico clásico ofrece normalmente mayor capacidad entre CD, DVD y Blu‑ray?",
+    "contexto": "Comparativa de medios ópticos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CD"
+      },
+      {
+        "clave": "b",
+        "texto": "DVD de una capa siempre"
+      },
+      {
+        "clave": "c",
+        "texto": "Blu‑ray"
+      },
+      {
+        "clave": "d",
+        "texto": "Disquete de 3,5 pulgadas"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Entre los soportes ópticos clásicos citados, Blu‑ray alcanza capacidades mucho mayores que CD o DVD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El CD tiene una capacidad muy inferior."
+        },
+        {
+          "clave": "b",
+          "motivo": "El DVD mejora al CD, pero queda por debajo de Blu‑ray."
+        },
+        {
+          "clave": "d",
+          "motivo": "El disquete no es un medio óptico y su capacidad es muchísimo menor."
+        }
+      ],
+      "resumen_didactico": "De los medios ópticos clásicos, Blu‑ray es el de mayor capacidad.",
+      "ejemplo_practico": "Para guardar grandes volúmenes de vídeo, Blu‑ray supera ampliamente a CD y DVD.",
+      "conclusion_final": "Si te preguntan por el óptico con más capacidad, la respuesta es Blu‑ray."
+    }
+  },
+  {
+    "id": "UT14-Q28",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "Si una obra digital no muestra licencia ni aviso específico, ¿qué suposición prudente debes hacer por defecto?",
+    "contexto": "Uso legal de recursos digitales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que está en dominio público automáticamente"
+      },
+      {
+        "clave": "b",
+        "texto": "Que puede usarse comercialmente sin condiciones"
+      },
+      {
+        "clave": "c",
+        "texto": "Que debe asumirse protegida por copyright"
+      },
+      {
+        "clave": "d",
+        "texto": "Que obliga siempre a usar GPL"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario recuerda que, si una obra no trae aviso legal ni cesión explícita, lo prudente es asumir copyright y no reutilizar libremente sin permiso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El dominio público no se presume por ausencia de aviso."
+        },
+        {
+          "clave": "b",
+          "motivo": "El uso comercial libre necesita una licencia que lo permita."
+        },
+        {
+          "clave": "d",
+          "motivo": "GPL es una licencia concreta de software, no la situación por defecto."
+        }
+      ],
+      "resumen_didactico": "Sin licencia visible, la postura segura es asumir copyright.",
+      "ejemplo_practico": "Un icono sin licencia clara no debería integrarse en un proyecto comercial sin revisar permisos.",
+      "conclusion_final": "La ausencia de licencia no significa libertad total de uso."
+    }
+  },
+  {
+    "id": "UT14-Q29",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué categoría de software describe mejor a una aplicación diseñada para intercambiar archivos directamente entre equipos pares?",
+    "contexto": "Clasificación por propósito del software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicación P2P"
+      },
+      {
+        "clave": "b",
+        "texto": "Sistema operativo de tiempo real"
+      },
+      {
+        "clave": "c",
+        "texto": "Driver de dispositivo"
+      },
+      {
+        "clave": "d",
+        "texto": "Hipervisor tipo 2"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las aplicaciones P2P permiten intercambio directo entre equipos pares, sin seguir el esquema clásico cliente-servidor para cada operación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un sistema operativo en tiempo real es otro tipo de software con finalidad distinta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un driver controla hardware, no define intercambio P2P de archivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un hipervisor virtualiza sistemas, no es una categoría de intercambio entre pares."
+        }
+      ],
+      "resumen_didactico": "Intercambio directo entre equipos = software P2P.",
+      "ejemplo_practico": "Una aplicación que comparte archivos entre varios usuarios conectados de forma directa entra en la categoría P2P.",
+      "conclusion_final": "Si el rasgo clave es “peer to peer”, la clasificación correcta es P2P."
+    }
+  },
+  {
+    "id": "UT14-Q30",
+    "tema": "UT14 — Repaso global del módulo Sistemas I (Bloque 6)",
+    "pregunta": "¿Qué rasgo define mejor la comunicación asíncrona en herramientas de mensajería o correo?",
+    "contexto": "Modelos de comunicación digital.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Exige que emisor y receptor estén conectados a la vez"
+      },
+      {
+        "clave": "b",
+        "texto": "Permite que el mensaje se reciba o lea aunque el destinatario no esté conectado en ese momento"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo funciona con llamadas de voz en tiempo real"
+      },
+      {
+        "clave": "d",
+        "texto": "Obliga a borrar el historial tras cada envío"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La comunicación asíncrona no requiere simultaneidad entre emisor y receptor. El mensaje puede enviarse ahora y consultarse más tarde.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe mejor un modelo síncrono."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se limita a voz; puede ser texto, adjuntos, etc."
+        },
+        {
+          "clave": "d",
+          "motivo": "El borrado del historial no define la asíncronía."
+        }
+      ],
+      "resumen_didactico": "Asíncrono significa que no hace falta coincidir en el mismo momento.",
+      "ejemplo_practico": "Un correo enviado por la mañana puede leerse horas después sin que ambos usuarios coincidan conectados.",
+      "conclusion_final": "Si no se necesita simultaneidad, la comunicación es asíncrona."
+    }
+  }
+]

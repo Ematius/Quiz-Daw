@@ -5,13 +5,13 @@ import { ModuleCard } from "../Components/ModuleCard";
 
 
 const modules = [
-  { id: "sistemas", title: "Sistemas Informáticos", subtitle: "7 temas" },
-  { id: "sistemas2", title: "Sistemas Informáticos2", subtitle: "7 temas" },
+  { id: "sistemas", title: "Sistemas Informáticos", subtitle: "14 tests" },
+  { id: "entornosDesarrollo", title: "Entornos de Desarrollo", subtitle: "7 temas" },
   { id: "ingles", title: "Inglés", subtitle: "3 temas" },
   {
     id: "baseDatos",
     title: "Base de datos",
-    subtitle: "7 temas",
+    subtitle: "14 tests",
   },
   { id:"introduccionProgramacion", title: "Introducción a la programación", subtitle: "15 temas"},
 ];
