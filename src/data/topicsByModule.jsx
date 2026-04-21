@@ -107,6 +107,41 @@ export const topicsByModule = {
       title: "Elaboración de diagramas de comportamiento",
       numQuestion: 30,
     },
+    {
+      id: "UT8",
+      title: "Aun no creado",
+      numQuestion: 0,
+    },
+    {
+      id: "UT9",
+      title: "Repaso global (Abarca de 0% a 17% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT10",
+      title: "Repaso global (Abarca de 17% a 34% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT11",
+      title: "Repaso global (Abarca el 34% a 51% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT12",
+      title: "Repaso global (Abarca el 51% a 68% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT13",
+      title: "Repaso global (Abarca el 68% a 85% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT14",
+      title: "Repaso global (Abarca el 85% a 100% del temario)",
+      numQuestion: 30,
+    },
   ],
   baseDatos: [
     {

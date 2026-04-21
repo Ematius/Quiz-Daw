@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT10-Q01",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué objetivo cumple normalmente el programa “Hello World” cuando se empieza con un lenguaje nuevo?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Comprobar el entorno y entender la estructura mínima del lenguaje."
+      },
+      {
+        "clave": "b",
+        "texto": "Medir el rendimiento de la CPU bajo carga."
+      },
+      {
+        "clave": "c",
+        "texto": "Generar una interfaz gráfica completa."
+      },
+      {
+        "clave": "d",
+        "texto": "Cifrar automáticamente los datos del usuario."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Hello World se usa como primer programa simple para validar que el entorno funciona y para entender la sintaxis y estructura básica de un lenguaje.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es una prueba de estrés ni de rendimiento del procesador."
+        },
+        {
+          "clave": "c",
+          "motivo": "No crea una aplicación completa; solo demuestra la ejecución mínima."
+        },
+        {
+          "clave": "d",
+          "motivo": "No realiza tareas de seguridad ni cifrado."
+        }
+      ],
+      "resumen_didactico": "Hello World sirve para empezar: instala, compila/ejecuta y confirma que todo está correctamente configurado.",
+      "ejemplo_practico": "Tras instalar Java o Python, ejecutar Hello World confirma que el lenguaje y el entorno funcionan.",
+      "conclusion_final": "Si el objetivo es verificar el entorno y aprender la forma mínima del lenguaje, la respuesta correcta es la opción a."
+    }
+  },
+  {
+    "id": "UT10-Q02",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Cuando una aplicación necesita acceder a impresora, disco o red, ¿quién actúa como intermediario principal entre la aplicación y el hardware?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El sistema operativo."
+      },
+      {
+        "clave": "b",
+        "texto": "El manual técnico."
+      },
+      {
+        "clave": "c",
+        "texto": "El lenguaje ensamblador."
+      },
+      {
+        "clave": "d",
+        "texto": "La suite ofimática instalada."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La aplicación no se comunica directamente con el hardware: lo hace a través del sistema operativo, que gestiona recursos y dispositivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La documentación explica el sistema, pero no media en la ejecución."
+        },
+        {
+          "clave": "c",
+          "motivo": "El ensamblador es un tipo de lenguaje, no el intermediario general entre app y hardware."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una suite ofimática es una aplicación, no la capa de control del hardware."
+        }
+      ],
+      "resumen_didactico": "Aplicación → sistema operativo → hardware es la cadena correcta de comunicación.",
+      "ejemplo_practico": "Un programa de correo imprime usando servicios y drivers gestionados por el sistema operativo.",
+      "conclusion_final": "El intermediario entre aplicación y hardware es el sistema operativo."
+    }
+  },
+  {
+    "id": "UT10-Q03",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué afirmación describe mejor un lenguaje ensamblador frente al lenguaje máquina?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usa símbolos mnemotécnicos y sigue estando muy próximo al hardware."
+      },
+      {
+        "clave": "b",
+        "texto": "Se ejecuta siempre dentro de una máquina virtual."
+      },
+      {
+        "clave": "c",
+        "texto": "Es más abstracto que Python y Java."
+      },
+      {
+        "clave": "d",
+        "texto": "No necesita ningún tipo de traducción para ejecutarse."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El ensamblador apareció para facilitar la programación respecto al código máquina: usa palabras clave o símbolos mnemotécnicos, pero sigue siendo cercano al hardware.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe mejor a los lenguajes virtuales, como Java con bytecode."
+        },
+        {
+          "clave": "c",
+          "motivo": "Python y Java son lenguajes de alto nivel, bastante más abstractos."
+        },
+        {
+          "clave": "d",
+          "motivo": "También requiere traducción; el único lenguaje que la máquina entiende directamente es el código máquina."
+        }
+      ],
+      "resumen_didactico": "Ensamblador simplifica el binario, pero sigue pegado a la máquina.",
+      "ejemplo_practico": "En sistemas embebidos puede elegirse ensamblador para controlar con precisión registros y memoria.",
+      "conclusion_final": "La mejor descripción del ensamblador es la opción a."
+    }
+  },
+  {
+    "id": "UT10-Q04",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué característica encaja mejor con Java según el temario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Genera bytecode y puede ejecutarse en distintos sistemas mediante una JVM adecuada."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo funciona en sistemas Unix y no en Windows."
+      },
+      {
+        "clave": "c",
+        "texto": "Es un lenguaje puramente compilado sin máquina virtual."
+      },
+      {
+        "clave": "d",
+        "texto": "Se basa exclusivamente en punteros y acceso directo a memoria."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Java genera un bytecode que se ejecuta en una máquina virtual Java (JVM), lo que le da portabilidad entre sistemas compatibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Java es portable y no está limitado a Unix."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se describe como puramente compilado a ejecutable nativo; usa bytecode + JVM."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso encaja más con C/C++ que con Java."
+        }
+      ],
+      "resumen_didactico": "Java destaca por bytecode, JVM y portabilidad.",
+      "ejemplo_practico": "Compilas una vez y el programa puede ejecutarse en otro sistema si dispone de la JVM correspondiente.",
+      "conclusion_final": "La opción correcta es la a, porque resume la idea de bytecode y JVM."
+    }
+  },
+  {
+    "id": "UT10-Q05",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué rol del proceso de desarrollo estudia las necesidades del cliente y las traduce en un diseño técnico realista?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Analista de sistemas."
+      },
+      {
+        "clave": "b",
+        "texto": "Usuario final."
+      },
+      {
+        "clave": "c",
+        "texto": "Compilador."
+      },
+      {
+        "clave": "d",
+        "texto": "Sistema operativo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El analista de sistemas estudia lo que necesita el cliente y lo transforma en especificaciones y diseño técnico viables para el equipo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El usuario final usa el sistema, pero no traduce requisitos a diseño técnico."
+        },
+        {
+          "clave": "c",
+          "motivo": "El compilador traduce código, no requisitos de negocio."
+        },
+        {
+          "clave": "d",
+          "motivo": "El sistema operativo ejecuta y gestiona recursos, no analiza necesidades."
+        }
+      ],
+      "resumen_didactico": "Cliente y negocio se convierten en diseño técnico gracias al analista.",
+      "ejemplo_practico": "En un proyecto de facturación, el analista recoge procesos, reglas y necesidades antes de que el programador empiece a codificar.",
+      "conclusion_final": "La figura que traduce necesidades del cliente a diseño técnico es el analista de sistemas."
+    }
+  },
+  {
+    "id": "UT10-Q06",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué rasgo hizo especialmente famoso a Turbo Pascal en su época?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su velocidad de compilación muy alta."
+      },
+      {
+        "clave": "b",
+        "texto": "Su uso exclusivo desde navegador."
+      },
+      {
+        "clave": "c",
+        "texto": "Su orientación obligatoria a apps iOS."
+      },
+      {
+        "clave": "d",
+        "texto": "Su dependencia total de la nube."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Turbo Pascal destacó históricamente por compilar rapidísimo y por facilitar ciclos muy ágiles de escribir, compilar y corregir.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No era un entorno online ni basado en navegador."
+        },
+        {
+          "clave": "c",
+          "motivo": "No estaba orientado al ecosistema Apple móvil."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un producto muy anterior al trabajo en la nube."
+        }
+      ],
+      "resumen_didactico": "Turbo Pascal se asocia a rapidez de compilación y sencillez.",
+      "ejemplo_practico": "En muchos laboratorios se usaba porque permitía probar cambios casi al instante.",
+      "conclusion_final": "Si se pregunta por la seña histórica de Turbo Pascal, la respuesta es su gran velocidad de compilación."
+    }
+  },
+  {
+    "id": "UT10-Q07",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué enfoque de desarrollo popularizó Visual Basic 6 según el temario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "RAD, basado en prototipar primero la interfaz."
+      },
+      {
+        "clave": "b",
+        "texto": "Programación exclusivamente funcional."
+      },
+      {
+        "clave": "c",
+        "texto": "Desarrollo en lenguaje máquina."
+      },
+      {
+        "clave": "d",
+        "texto": "Modelado UML de distribución física."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Visual Basic 6 popularizó el enfoque RAD (Rapid Application Development), empezando por la interfaz y validándola con el usuario antes de completar lógica y datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No se presenta como un lenguaje o entorno de programación funcional."
+        },
+        {
+          "clave": "c",
+          "motivo": "No trabaja a nivel de lenguaje máquina."
+        },
+        {
+          "clave": "d",
+          "motivo": "UML es un lenguaje de modelado, no el enfoque de desarrollo que hizo famoso a Visual Basic 6."
+        }
+      ],
+      "resumen_didactico": "VB6 y RAD van de la mano: interfaz rápida, validación temprana y luego lógica.",
+      "ejemplo_practico": "Primero se monta un formulario con botones y campos; después se añaden base de datos y código.",
+      "conclusion_final": "La respuesta correcta es RAD, opción a."
+    }
+  },
+  {
+    "id": "UT10-Q08",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Si quieres desarrollar aplicaciones nativas para macOS e iOS con la herramienta oficial de Apple, ¿qué IDE debes usar?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Xcode."
+      },
+      {
+        "clave": "b",
+        "texto": "Eclipse."
+      },
+      {
+        "clave": "c",
+        "texto": "JDeveloper."
+      },
+      {
+        "clave": "d",
+        "texto": "Turbo Pascal."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Xcode es el entorno oficial de Apple para crear aplicaciones nativas para sus sistemas, como macOS e iOS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eclipse es multiplataforma y muy usado en Java, pero no es el IDE oficial de Apple."
+        },
+        {
+          "clave": "c",
+          "motivo": "JDeveloper pertenece al ecosistema de Oracle, no al de Apple."
+        },
+        {
+          "clave": "d",
+          "motivo": "Turbo Pascal es un IDE histórico de Borland, sin relación con el desarrollo nativo de Apple."
+        }
+      ],
+      "resumen_didactico": "Apple + apps nativas + IDE oficial = Xcode.",
+      "ejemplo_practico": "Un desarrollador que quiera subir una app de iPhone a la App Store trabaja con Xcode.",
+      "conclusion_final": "Para desarrollo nativo en Apple, la respuesta es Xcode."
+    }
+  },
+  {
+    "id": "UT10-Q09",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué IDE open source evolucionó desde VisualAge de IBM y utiliza actualmente la licencia EPL?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Eclipse."
+      },
+      {
+        "clave": "b",
+        "texto": "Visual Basic 6."
+      },
+      {
+        "clave": "c",
+        "texto": "Xcode."
+      },
+      {
+        "clave": "d",
+        "texto": "Delphi."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Eclipse evolucionó desde VisualAge de IBM y hoy se desarrolla de forma independiente con licencia EPL.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Visual Basic 6 es un producto de Microsoft y no usa la licencia EPL."
+        },
+        {
+          "clave": "c",
+          "motivo": "Xcode es el IDE de Apple, no un proyecto EPL derivado de IBM."
+        },
+        {
+          "clave": "d",
+          "motivo": "Delphi es una evolución de Borland/Turbo Pascal, no de VisualAge."
+        }
+      ],
+      "resumen_didactico": "VisualAge + open source + EPL + JDT apuntan a Eclipse.",
+      "ejemplo_practico": "Al trabajar con Java y plugins, Eclipse destaca por su comunidad y su licencia EPL.",
+      "conclusion_final": "La opción correcta es Eclipse."
+    }
+  },
+  {
+    "id": "UT10-Q10",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué ventaja se atribuye a los entornos de desarrollo online en el temario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Facilitan el trabajo colaborativo desde distintos dispositivos."
+      },
+      {
+        "clave": "b",
+        "texto": "Ofrecen siempre más potencia que un IDE local."
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminan la necesidad de conexión a Internet."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo pueden usarse en un único sistema operativo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los entornos de desarrollo online se valoran por facilitar colaboración, acceso desde varios dispositivos y trabajo con repositorios comunes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El temario indica precisamente que suelen contar con menor potencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "Al ser online, dependen de la conectividad para su uso normal."
+        },
+        {
+          "clave": "d",
+          "motivo": "El acceso por navegador los hace más, no menos, independientes del sistema operativo."
+        }
+      ],
+      "resumen_didactico": "Online IDE = colaboración, accesibilidad y rapidez para compartir trabajo.",
+      "ejemplo_practico": "En una corrección remota, profesor y alumno pueden entrar al mismo entorno mediante un enlace compartido.",
+      "conclusion_final": "La principal ventaja indicada es la colaboración desde distintos dispositivos."
+    }
+  },
+  {
+    "id": "UT10-Q11",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "En Java, ¿qué componente del JDK es el responsable de traducir el código fuente a bytecode?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "javac."
+      },
+      {
+        "clave": "b",
+        "texto": "JRE."
+      },
+      {
+        "clave": "c",
+        "texto": "JVM."
+      },
+      {
+        "clave": "d",
+        "texto": "Swing."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Dentro del JDK, el compilador javac transforma los archivos fuente Java en bytecode.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El JRE es el entorno de ejecución, no el compilador."
+        },
+        {
+          "clave": "c",
+          "motivo": "La JVM ejecuta el bytecode, pero no es quien lo compila."
+        },
+        {
+          "clave": "d",
+          "motivo": "Swing es una librería para interfaces gráficas, no un compilador."
+        }
+      ],
+      "resumen_didactico": "JDK aporta herramientas de desarrollo; javac es la herramienta de compilación.",
+      "ejemplo_practico": "Al ejecutar javac MiClase.java se genera el bytecode .class correspondiente.",
+      "conclusion_final": "El traductor de código fuente a bytecode es javac."
+    }
+  },
+  {
+    "id": "UT10-Q12",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Durante la depuración en NetBeans, ¿qué hace la acción asociada a F8 según el temario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pasa por alto la llamada a funciones y se centra en los valores devueltos."
+      },
+      {
+        "clave": "b",
+        "texto": "Entra dentro de la función para examinar su interior."
+      },
+      {
+        "clave": "c",
+        "texto": "Compila todo el proyecto desde cero."
+      },
+      {
+        "clave": "d",
+        "texto": "Genera automáticamente la documentación HTML."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, F8 evita entrar en la implementación interna de la función y continúa observando el flujo y los resultados devueltos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso corresponde a F7, que sí entra en la función."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compilación no es la función de F8 en la depuración descrita."
+        },
+        {
+          "clave": "d",
+          "motivo": "La documentación HTML se relaciona con Javadoc, no con F8."
+        }
+      ],
+      "resumen_didactico": "F7 entra; F8 pasa por encima.",
+      "ejemplo_practico": "Si una línea llama a calcularTotal(), con F8 ves el efecto sin recorrer su código interno paso a paso.",
+      "conclusion_final": "La opción correcta es la a."
+    }
+  },
+  {
+    "id": "UT10-Q13",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Para qué sirve Javadoc en el ecosistema Java?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para transformar comentarios del código en documentación HTML."
+      },
+      {
+        "clave": "b",
+        "texto": "Para gestionar ramas Git distribuidas."
+      },
+      {
+        "clave": "c",
+        "texto": "Para reemplazar la JVM por un compilador nativo."
+      },
+      {
+        "clave": "d",
+        "texto": "Para medir exclusivamente el uso de memoria de la GPU."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Javadoc recoge comentarios estructurados del código Java y los transforma en documentación navegable en formato HTML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Git y sus ramas pertenecen al control de versiones, no a Javadoc."
+        },
+        {
+          "clave": "c",
+          "motivo": "Javadoc documenta, no sustituye componentes de ejecución."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso encajaría con herramientas de análisis/profiling, no con documentación."
+        }
+      ],
+      "resumen_didactico": "Javadoc convierte comentarios bien escritos en documentación útil para el equipo.",
+      "ejemplo_practico": "Un API interna puede documentarse automáticamente y publicarse en HTML para otros desarrolladores.",
+      "conclusion_final": "Javadoc sirve para generar documentación HTML a partir del código comentado."
+    }
+  },
+  {
+    "id": "UT10-Q14",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Dentro de un plan de pruebas, ¿para qué sirve especificar expresamente “lo que no se prueba”?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para acotar el alcance y evitar ambigüedades."
+      },
+      {
+        "clave": "b",
+        "texto": "Para eliminar la necesidad de definir criterios de validez."
+      },
+      {
+        "clave": "c",
+        "texto": "Para sustituir la aprobación formal del plan."
+      },
+      {
+        "clave": "d",
+        "texto": "Para convertir todas las pruebas en caja blanca."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Indicar qué queda fuera del plan permite acotar el alcance de la fase de pruebas y evita malentendidos sobre lo que debía o no debía verificarse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los criterios de validez siguen siendo necesarios aunque se delimite el alcance."
+        },
+        {
+          "clave": "c",
+          "motivo": "La aprobación formal sigue siendo otra parte distinta del plan."
+        },
+        {
+          "clave": "d",
+          "motivo": "El tipo de prueba no viene determinado por esa delimitación."
+        }
+      ],
+      "resumen_didactico": "Decir lo que no se prueba también es una forma de definir bien el trabajo.",
+      "ejemplo_practico": "Si una versión piloto no incluye informes, el plan puede dejar claro que ese módulo no entra todavía en la batería de pruebas.",
+      "conclusion_final": "La finalidad de esa sección es acotar alcance y evitar ambigüedades."
+    }
+  },
+  {
+    "id": "UT10-Q15",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Según el temario, ¿quién debería probar idealmente el software para reducir sesgos?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Alguien distinto de quien lo programó."
+      },
+      {
+        "clave": "b",
+        "texto": "Exclusivamente el jefe de proyecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo el mismo programador que lo desarrolló."
+      },
+      {
+        "clave": "d",
+        "texto": "Siempre el cliente final en solitario."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El procedimiento de pruebas recomienda, idealmente, que quien prueba no sea la misma persona que programó, para reducir sesgos y puntos ciegos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El jefe de proyecto puede coordinar, pero no es la única ni la mejor opción por defecto."
+        },
+        {
+          "clave": "c",
+          "motivo": "El mismo programador puede tener sesgos y pasar por alto errores propios."
+        },
+        {
+          "clave": "d",
+          "motivo": "El cliente final puede participar en validación, pero no sustituye toda la fase de pruebas."
+        }
+      ],
+      "resumen_didactico": "Separar desarrollo y prueba ayuda a ver errores que el autor puede dar por supuestos.",
+      "ejemplo_practico": "Un tester o compañero revisa el módulo de otro desarrollador para detectar fallos con mayor objetividad.",
+      "conclusion_final": "La opción correcta es que pruebe alguien distinto de quien lo programó."
+    }
+  },
+  {
+    "id": "UT10-Q16",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Qué miden principalmente las pruebas no funcionales?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Rendimiento, fiabilidad o resistencia al estrés."
+      },
+      {
+        "clave": "b",
+        "texto": "La sintaxis exacta del código fuente."
+      },
+      {
+        "clave": "c",
+        "texto": "La jerarquía de clases UML."
+      },
+      {
+        "clave": "d",
+        "texto": "La creación de objetos en memoria desde el diseño."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las pruebas no funcionales se centran en cómo se comporta el sistema: rendimiento, estabilidad, fiabilidad o respuesta bajo carga.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La sintaxis se valida en compilación/análisis del código, no en pruebas no funcionales."
+        },
+        {
+          "clave": "c",
+          "motivo": "La jerarquía UML pertenece al modelado, no a esta categoría de pruebas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La creación de objetos es una cuestión de diseño o implementación, no de no funcionalidad."
+        }
+      ],
+      "resumen_didactico": "No funcional = calidad de comportamiento, no lógica de negocio.",
+      "ejemplo_practico": "Lanzar muchas peticiones a una API para medir tiempos de respuesta es una prueba no funcional.",
+      "conclusion_final": "La categoría correcta es rendimiento, fiabilidad o estrés."
+    }
+  },
+  {
+    "id": "UT10-Q17",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "En pruebas de caja blanca, ¿qué patrón de comprobación se recomienda específicamente para los bucles?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Probar 0 vueltas, 1 vuelta y muchas vueltas."
+      },
+      {
+        "clave": "b",
+        "texto": "Probar solo la vuelta media del rango."
+      },
+      {
+        "clave": "c",
+        "texto": "Ignorar los bucles y centrarse solo en la interfaz."
+      },
+      {
+        "clave": "d",
+        "texto": "Ejecutar una única iteración porque basta para cubrir el código."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En caja blanca, los bucles suelen probarse con 0 iteraciones, 1 iteración y muchas iteraciones para cubrir comportamientos típicos y errores de control.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una vuelta media no cubre los casos críticos de entrada y repetición."
+        },
+        {
+          "clave": "c",
+          "motivo": "La interfaz corresponde a otras perspectivas de prueba, no a la técnica interna de bucles."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una única iteración no garantiza cobertura suficiente del comportamiento del bucle."
+        }
+      ],
+      "resumen_didactico": "Los bucles esconden errores en extremos: por eso se prueban 0, 1 y muchas vueltas.",
+      "ejemplo_practico": "Una lista vacía, una lista con un elemento y una lista larga obligan al bucle a comportarse de formas distintas.",
+      "conclusion_final": "La forma recomendada de cubrir bucles es 0, 1 y muchas iteraciones."
+    }
+  },
+  {
+    "id": "UT10-Q18",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Cuál es la idea principal de las clases de equivalencia en caja negra?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agrupar entradas que deberían comportarse igual para reducir pruebas sin perder cobertura."
+      },
+      {
+        "clave": "b",
+        "texto": "Ejecutar todas las rutas internas del programa."
+      },
+      {
+        "clave": "c",
+        "texto": "Comprobar solo los valores mínimos y máximos de cada rango."
+      },
+      {
+        "clave": "d",
+        "texto": "Analizar el consumo de CPU durante una ejecución prolongada."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las clases de equivalencia agrupan entradas que se espera que produzcan un comportamiento similar, reduciendo el número de pruebas necesarias sin perder representatividad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso corresponde a cobertura de rutas de caja blanca."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso describe valores límite, que es otra técnica distinta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso se acerca más a rendimiento/no funcionalidad."
+        }
+      ],
+      "resumen_didactico": "Equivalencia = menos casos, misma representatividad.",
+      "ejemplo_practico": "Si todos los usuarios válidos tienen entre 8 y 20 caracteres, puede elegirse un valor representativo en lugar de probarlos todos.",
+      "conclusion_final": "La finalidad principal es agrupar entradas equivalentes para optimizar la batería de pruebas."
+    }
+  },
+  {
+    "id": "UT10-Q19",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Si un formulario solo acepta edades entre 18 y 65, ¿qué conjunto encaja mejor como prueba de valores límite?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "18, 65, 17 y 66."
+      },
+      {
+        "clave": "b",
+        "texto": "30, 31, 32 y 33."
+      },
+      {
+        "clave": "c",
+        "texto": "18, 30, 40 y 50."
+      },
+      {
+        "clave": "d",
+        "texto": "0, 100, 200 y 300."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los valores límite comprueban el borde válido y justo fuera de él: mínimo válido, máximo válido y los valores inmediatamente inferiores/superiores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Son valores internos, no bordes del rango."
+        },
+        {
+          "clave": "c",
+          "motivo": "Incluye algunos valores válidos, pero no prueba los extremos externos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Son extremos lejanos y no validan las comparaciones críticas junto al límite."
+        }
+      ],
+      "resumen_didactico": "Los errores suelen aparecer en el borde, no en el centro del rango.",
+      "ejemplo_practico": "Para 18..65, conviene validar 18 y 65, y también 17 y 66 como valores inmediatamente fuera.",
+      "conclusion_final": "La combinación correcta para límites es 18, 65, 17 y 66."
+    }
+  },
+  {
+    "id": "UT10-Q20",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué técnica de refactorización elimina un método o variable intermedia demasiado simple para dejar la expresión directamente en el punto de uso?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Métodos inline o código embebido."
+      },
+      {
+        "clave": "b",
+        "texto": "Extraer clases."
+      },
+      {
+        "clave": "c",
+        "texto": "Autoencapsular campos."
+      },
+      {
+        "clave": "d",
+        "texto": "Mover métodos entre clases."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La técnica inline inserta directamente código simple donde se usa, evitando llamadas o temporales innecesarios cuando entorpecen más que ayudan.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Extraer clases divide responsabilidades entre clases, no elimina un método simple."
+        },
+        {
+          "clave": "c",
+          "motivo": "Autoencapsular campos convierte atributos en privados con get/set."
+        },
+        {
+          "clave": "d",
+          "motivo": "Mover métodos entre clases redistribuye responsabilidades entre clases."
+        }
+      ],
+      "resumen_didactico": "Si el rodeo es innecesario, inline lo simplifica.",
+      "ejemplo_practico": "Cambiar `resultado = a>b; return resultado;` por `return a>b;` es un ejemplo típico.",
+      "conclusion_final": "La técnica descrita corresponde a inline o código embebido."
+    }
+  },
+  {
+    "id": "UT10-Q21",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué buena práctica de refactorización busca que nombres como totalFactura o cantidadBilletes50 sustituyan a nombres pobres como x o temp?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Variables autoexplicativas."
+      },
+      {
+        "clave": "b",
+        "texto": "Composición."
+      },
+      {
+        "clave": "c",
+        "texto": "Distribución física."
+      },
+      {
+        "clave": "d",
+        "texto": "Regresión funcional."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Usar variables autoexplicativas mejora la legibilidad y reduce la necesidad de comentarios innecesarios o interpretaciones ambiguas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La composición es una relación UML/POO, no una técnica de nombrado."
+        },
+        {
+          "clave": "c",
+          "motivo": "La distribución física pertenece al despliegue/modelado, no al código limpio."
+        },
+        {
+          "clave": "d",
+          "motivo": "La regresión es una categoría de pruebas, no una técnica de nombrado."
+        }
+      ],
+      "resumen_didactico": "Un buen nombre explica intención sin obligar a leer comentarios.",
+      "ejemplo_practico": "Renombrar `m` por `monedero` hace que el código se entienda mucho antes.",
+      "conclusion_final": "La práctica correcta es utilizar variables autoexplicativas."
+    }
+  },
+  {
+    "id": "UT10-Q22",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Antes de sustituir un algoritmo por otro más eficiente, ¿qué red de seguridad recomienda expresamente el temario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un buen conjunto de pruebas de regresión."
+      },
+      {
+        "clave": "b",
+        "texto": "Desactivar el control de versiones."
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminar toda la documentación anterior."
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar también la interfaz gráfica para compensar."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Cuando se cambia un algoritmo, las pruebas de regresión sirven para confirmar que el programa sigue devolviendo resultados correctos tras la optimización.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El control de versiones ayuda; desactivarlo empeora la seguridad del cambio."
+        },
+        {
+          "clave": "c",
+          "motivo": "La documentación puede necesitar actualizarse, pero no debe eliminarse."
+        },
+        {
+          "clave": "d",
+          "motivo": "La interfaz gráfica no tiene relación necesaria con la sustitución del algoritmo."
+        }
+      ],
+      "resumen_didactico": "Cambiar estrategia sin romper resultados exige una red de seguridad: regresión.",
+      "ejemplo_practico": "Al optimizar una búsqueda de rutas, se vuelven a ejecutar los casos ya validados para asegurar mismas salidas correctas.",
+      "conclusion_final": "La recomendación clave es apoyarse en pruebas de regresión."
+    }
+  },
+  {
+    "id": "UT10-Q23",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué característica diferencia a un sistema de control de versiones distribuido frente a uno centralizado?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cada usuario posee una copia completa del repositorio con su historial."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo existe una copia del historial en el servidor principal."
+      },
+      {
+        "clave": "c",
+        "texto": "Nadie puede trabajar sin conexión."
+      },
+      {
+        "clave": "d",
+        "texto": "No permite ramificar ni experimentar en local."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En un sistema distribuido como Git, cada usuario tiene una copia completa del repositorio y de su historial, lo que aporta flexibilidad y resiliencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe un sistema centralizado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Precisamente una ventaja del distribuido es poder trabajar sin conexión."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los sistemas distribuidos destacan por facilitar trabajo local y experimentación."
+        }
+      ],
+      "resumen_didactico": "Distribuido = historial completo en cada equipo, no solo en un servidor.",
+      "ejemplo_practico": "Un desarrollador puede revisar commits antiguos o crear ramas en local aunque no tenga acceso momentáneo al servidor remoto.",
+      "conclusion_final": "La diferencia clave es que cada usuario dispone de una copia completa del repositorio."
+    }
+  },
+  {
+    "id": "UT10-Q24",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿A qué categoría pertenece un patrón como Observer o Strategy?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Patrones de comportamiento."
+      },
+      {
+        "clave": "b",
+        "texto": "Patrones estructurales."
+      },
+      {
+        "clave": "c",
+        "texto": "Patrones creacionales."
+      },
+      {
+        "clave": "d",
+        "texto": "Patrones de documentación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Observer y Strategy son patrones de comportamiento porque se centran en cómo los objetos colaboran, se comunican o cambian su forma de actuar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los estructurales tratan de composición y organización de objetos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los creacionales se ocupan de la creación flexible de objetos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una categoría estándar de patrones de diseño."
+        }
+      ],
+      "resumen_didactico": "Si el foco está en interacción y conducta entre objetos, la categoría es comportamiento.",
+      "ejemplo_practico": "Observer organiza notificaciones entre objetos; Strategy permite intercambiar estrategias de actuación.",
+      "conclusion_final": "Observer y Strategy pertenecen a los patrones de comportamiento."
+    }
+  },
+  {
+    "id": "UT10-Q25",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Qué característica se considera la “estrella” de UML en el temario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su capacidad de diagramación desde múltiples perspectivas."
+      },
+      {
+        "clave": "b",
+        "texto": "La ejecución directa de código binario."
+      },
+      {
+        "clave": "c",
+        "texto": "La sustitución completa de los lenguajes de programación."
+      },
+      {
+        "clave": "d",
+        "texto": "Su limitación a un único tipo de diagrama."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La gran fortaleza de UML es su capacidad para representar el mismo sistema mediante distintos tipos de diagramas, cada uno enfocado en una perspectiva diferente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UML no ejecuta código; es un lenguaje de modelado."
+        },
+        {
+          "clave": "c",
+          "motivo": "No sustituye a los lenguajes de programación, sino que los complementa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Precisamente su valor está en ofrecer múltiples tipos de diagrama."
+        }
+      ],
+      "resumen_didactico": "UML no da un solo plano, sino varios mapas del mismo sistema.",
+      "ejemplo_practico": "Puedes usar diagrama de clases para estructura y diagrama de actividades para flujo, ambos sobre el mismo software.",
+      "conclusion_final": "La característica estrella de UML es su capacidad de diagramación múltiple."
+    }
+  },
+  {
+    "id": "UT10-Q26",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Qué trío de autores se asocia a la unificación original de métodos que desembocó en UML?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Rumbaugh, Booch y Jacobson."
+      },
+      {
+        "clave": "b",
+        "texto": "Gamma, Helm y Martin."
+      },
+      {
+        "clave": "c",
+        "texto": "Knuth, Turing y Dijkstra."
+      },
+      {
+        "clave": "d",
+        "texto": "Oracle, IBM y Microsoft."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "James Rumbaugh, Grady Booch e Ivar Jacobson son los tres autores ligados a la unificación de métodos en Rational que dio origen a UML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el trío histórico asociado al origen de UML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Son nombres fundamentales de la informática, pero no los autores de la unificación de UML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Esas son empresas relacionadas con tecnología y estándares, no los tres autores del origen de UML."
+        }
+      ],
+      "resumen_didactico": "Los “tres amigos” de UML fueron Rumbaugh, Booch y Jacobson.",
+      "ejemplo_practico": "Su trabajo conjunto ayudó a poner orden en un panorama lleno de notaciones OO incompatibles.",
+      "conclusion_final": "El trío correcto es Rumbaugh, Booch y Jacobson."
+    }
+  },
+  {
+    "id": "UT10-Q27",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Para qué se usa un diagrama UML de distribución según el temario?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para mostrar la distribución física de elementos en nodos informáticos."
+      },
+      {
+        "clave": "b",
+        "texto": "Para representar herencia entre clases."
+      },
+      {
+        "clave": "c",
+        "texto": "Para modelar únicamente los atributos de un objeto concreto."
+      },
+      {
+        "clave": "d",
+        "texto": "Para validar casos de prueba de caja negra."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El diagrama de distribución se emplea para visualizar cómo se sitúan físicamente los elementos del sistema en nodos o equipos informáticos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La herencia pertenece a diagramas de clases."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un objeto concreto se modela mejor en un diagrama de objetos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las pruebas de caja negra pertenecen al ámbito del testing, no del despliegue físico UML."
+        }
+      ],
+      "resumen_didactico": "Distribución = dónde vive físicamente cada parte del sistema.",
+      "ejemplo_practico": "Un servidor web, un servidor de aplicaciones y una base de datos pueden representarse en distintos nodos de un diagrama de distribución.",
+      "conclusion_final": "La utilidad del diagrama de distribución es mostrar la distribución física en nodos."
+    }
+  },
+  {
+    "id": "UT10-Q28",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Si un Cliente puede tener 0..* Pedido, ¿qué expresa esa multiplicidad en UML?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que un cliente puede no tener ninguno o tener muchos pedidos."
+      },
+      {
+        "clave": "b",
+        "texto": "Que un cliente debe tener exactamente un pedido."
+      },
+      {
+        "clave": "c",
+        "texto": "Que la relación es obligatoriamente de herencia."
+      },
+      {
+        "clave": "d",
+        "texto": "Que el pedido no puede existir sin el cliente por composición."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La multiplicidad 0..* significa 'cero o muchos': permite que una instancia no tenga ninguna relación o tenga varias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Exactamente uno se expresaría con 1."
+        },
+        {
+          "clave": "c",
+          "motivo": "La multiplicidad no indica herencia, sino cantidad de relaciones posibles."
+        },
+        {
+          "clave": "d",
+          "motivo": "La composición es un tipo de relación distinto; la multiplicidad por sí sola no implica dependencia vital."
+        }
+      ],
+      "resumen_didactico": "0..* se lee como 'cero o muchos'.",
+      "ejemplo_practico": "Un cliente nuevo puede no haber hecho aún ningún pedido, mientras que otro puede haber hecho decenas.",
+      "conclusion_final": "La interpretación correcta de 0..* es 'cero o muchos'."
+    }
+  },
+  {
+    "id": "UT10-Q29",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué diferencia esencial marca el temario entre agregación y composición?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En agregación las partes pueden existir sin el todo; en composición no."
+      },
+      {
+        "clave": "b",
+        "texto": "La agregación siempre implica herencia múltiple."
+      },
+      {
+        "clave": "c",
+        "texto": "La composición solo se usa para métodos, no para clases."
+      },
+      {
+        "clave": "d",
+        "texto": "No existe diferencia real entre ambas; solo cambia el color del rombo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La agregación describe una relación 'tiene un/a' donde las partes conservan existencia independiente; la composición implica una relación fuerte donde la parte depende del todo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No guarda relación con herencia múltiple."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ambas son relaciones entre clases/objetos, no una notación para métodos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí existe diferencia semántica importante entre ambas."
+        }
+      ],
+      "resumen_didactico": "Agregación = vínculo débil; composición = dependencia fuerte del ciclo de vida.",
+      "ejemplo_practico": "Un grupo musical puede disolverse y sus cantantes seguir existiendo: agregación. Un motor del coche se modela como parte inseparable: composición, según el ejemplo del tema.",
+      "conclusion_final": "La diferencia clave es la independencia o no de las partes respecto del todo."
+    }
+  },
+  {
+    "id": "UT10-Q30",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "En un diagrama de secuencia, ¿qué representa la barra de activación sobre la línea de vida?",
+    "contexto": null,
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El periodo en el que el objeto está ejecutando una acción o está ocupado."
+      },
+      {
+        "clave": "b",
+        "texto": "El límite del sistema completo."
+      },
+      {
+        "clave": "c",
+        "texto": "Una relación de herencia entre actores."
+      },
+      {
+        "clave": "d",
+        "texto": "Una multiplicidad de asociación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La barra de activación es el rectángulo vertical que aparece sobre la línea de vida e indica el intervalo en el que el participante está realizando una acción.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El límite del sistema aparece en casos de uso, no como barra de activación en secuencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "La herencia/generalización se representa de otra forma y en otro contexto."
+        },
+        {
+          "clave": "d",
+          "motivo": "La multiplicidad es propia de asociaciones en diagramas de clases."
+        }
+      ],
+      "resumen_didactico": "Línea de vida = existencia en el tiempo; barra de activación = momento de trabajo efectivo.",
+      "ejemplo_practico": "Cuando un objeto recibe un mensaje y ejecuta un método, su línea de vida muestra una barra vertical de activación durante esa tarea.",
+      "conclusion_final": "La barra de activación representa el tiempo en que el objeto está ocupado ejecutando una acción."
+    }
+  }
+]

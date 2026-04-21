@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT11-Q01",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Cuando una aplicación ya está funcionando en producción y comienzan a aparecer incidencias reales de usuarios, ¿en qué fase del ciclo de vida se encuentra principalmente?",
+    "contexto": "Uso real del software tras su puesta en marcha.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Análisis."
+      },
+      {
+        "clave": "b",
+        "texto": "Diseño."
+      },
+      {
+        "clave": "c",
+        "texto": "Explotación."
+      },
+      {
+        "clave": "d",
+        "texto": "Compilación."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La explotación es la fase en la que el software ya se usa de verdad en el día a día y empiezan a registrarse incidencias, errores y nuevas necesidades.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En análisis todavía se estudian requisitos y problemas del cliente, no se usa el sistema en producción."
+        },
+        {
+          "clave": "b",
+          "motivo": "En diseño se define la arquitectura y la solución técnica, pero aún no está explotándose por usuarios reales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Compilar es una acción técnica concreta, no una fase completa del ciclo de vida orientada al uso real."
+        }
+      ],
+      "resumen_didactico": "Producción y uso real del sistema = explotación.",
+      "ejemplo_practico": "Una app de facturación ya instalada en la empresa recibe reportes de fallos y peticiones de mejora por parte de los usuarios.",
+      "conclusion_final": "Si el software ya se está utilizando en el entorno real, hablamos de fase de explotación."
+    }
+  },
+  {
+    "id": "UT11-Q02",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué figura del proyecto decide normalmente la estructura general del sistema y qué tecnologías o frameworks se van a utilizar?",
+    "contexto": "Distribución de roles en un equipo de desarrollo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Arquitecto de software."
+      },
+      {
+        "clave": "b",
+        "texto": "Usuario final."
+      },
+      {
+        "clave": "c",
+        "texto": "Tester funcional."
+      },
+      {
+        "clave": "d",
+        "texto": "Operador de soporte."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El arquitecto de software diseña la estructura general del proyecto y suele tomar decisiones sobre tecnologías, lenguajes y frameworks.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El usuario final usa el sistema, pero no define habitualmente su arquitectura técnica."
+        },
+        {
+          "clave": "c",
+          "motivo": "El tester valida calidad y comportamiento, no decide la arquitectura del sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "El soporte ayuda en operación y resolución de incidencias, pero no suele fijar la estructura del proyecto."
+        }
+      ],
+      "resumen_didactico": "Arquitecto = visión global y decisiones técnicas de alto nivel.",
+      "ejemplo_practico": "Elegir backend en Spring Boot, frontend en Angular y una arquitectura modular sería una decisión típica de arquitectura.",
+      "conclusion_final": "La figura responsable de la estructura general del sistema es el arquitecto de software."
+    }
+  },
+  {
+    "id": "UT11-Q03",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "En Java, ¿cómo se denomina el código intermedio que se ejecuta sobre una máquina virtual en lugar de convertirse directamente en código máquina nativo?",
+    "contexto": "Clasificación por forma de ejecución de los lenguajes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Firmware."
+      },
+      {
+        "clave": "b",
+        "texto": "Bytecode."
+      },
+      {
+        "clave": "c",
+        "texto": "Pseudocódigo."
+      },
+      {
+        "clave": "d",
+        "texto": "Script embebido."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Java genera bytecode, un código intermedio que se ejecuta en la máquina virtual de Java (JVM).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El firmware es software de bajo nivel grabado en dispositivos, no el formato intermedio típico de Java."
+        },
+        {
+          "clave": "c",
+          "motivo": "El pseudocódigo sirve para describir algoritmos de forma informal, no para ejecutarse en una máquina virtual."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un script embebido no es el término técnico usado en Java para su código intermedio."
+        }
+      ],
+      "resumen_didactico": "Java compila a bytecode y la JVM lo interpreta/ejecuta.",
+      "ejemplo_practico": "Un archivo .class contiene bytecode que puede ejecutarse en distintos sistemas con una JVM compatible.",
+      "conclusion_final": "El código intermedio característico de Java se denomina bytecode."
+    }
+  },
+  {
+    "id": "UT11-Q04",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué rasgo describe mejor al software a medida frente al software estándar?",
+    "contexto": "Comparación entre producto específico y producto genérico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Está diseñado para muchos clientes distintos desde el principio."
+      },
+      {
+        "clave": "b",
+        "texto": "Suele requerir menos mantenimiento porque ya viene totalmente estabilizado."
+      },
+      {
+        "clave": "c",
+        "texto": "Se crea para necesidades concretas de una empresa u organización."
+      },
+      {
+        "clave": "d",
+        "texto": "Siempre es más barato porque no necesita análisis previo."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El software a medida se desarrolla específicamente para cubrir necesidades concretas de una empresa u organización.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esa idea corresponde al software estándar o enlatado, pensado para múltiples clientes."
+        },
+        {
+          "clave": "b",
+          "motivo": "El software a medida suele necesitar mantenimiento frecuente, sobre todo al inicio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Suele ser más caro y requiere análisis, diseño y desarrollo adaptados al cliente."
+        }
+      ],
+      "resumen_didactico": "A medida = específico; estándar = genérico y reutilizable por muchos.",
+      "ejemplo_practico": "Una app creada solo para los procesos internos de una clínica privada sería software a medida.",
+      "conclusion_final": "La característica clave del software a medida es su adaptación a necesidades concretas de un único cliente o contexto."
+    }
+  },
+  {
+    "id": "UT11-Q05",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué ventaja ofrece un IDE frente a trabajar solo con un editor de texto y un compilador por separado?",
+    "contexto": "Comparación entre entorno integrado y herramientas aisladas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Integra en una sola herramienta edición, ejecución, depuración y gestión del proyecto."
+      },
+      {
+        "clave": "b",
+        "texto": "Obliga a programar únicamente en lenguaje máquina."
+      },
+      {
+        "clave": "c",
+        "texto": "Elimina por completo la necesidad de probar el software."
+      },
+      {
+        "clave": "d",
+        "texto": "Sirve solo para diseñar interfaces gráficas y nada más."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un IDE reúne en una sola aplicación editor, compilador o intérprete, depurador, gestión de proyectos y otras utilidades integradas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un IDE facilita el trabajo con lenguajes de alto nivel; no obliga a usar lenguaje máquina."
+        },
+        {
+          "clave": "c",
+          "motivo": "Aunque ayuda a programar mejor, no sustituye a las pruebas del software."
+        },
+        {
+          "clave": "d",
+          "motivo": "Puede incluir diseñadores visuales, pero su función es mucho más amplia."
+        }
+      ],
+      "resumen_didactico": "IDE = caja de herramientas integrada del desarrollador.",
+      "ejemplo_practico": "Desde el mismo entorno puedes editar código, compilar, depurar y lanzar tests sin cambiar de aplicación.",
+      "conclusion_final": "La principal ventaja del IDE es integrar múltiples herramientas de desarrollo en un único entorno."
+    }
+  },
+  {
+    "id": "UT11-Q06",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué componente de Java es suficiente para ejecutar una aplicación ya compilada, aunque no para desarrollarla?",
+    "contexto": "Diferencia entre ejecución y desarrollo en Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "JRE."
+      },
+      {
+        "clave": "b",
+        "texto": "Javadoc."
+      },
+      {
+        "clave": "c",
+        "texto": "Profiler."
+      },
+      {
+        "clave": "d",
+        "texto": "Plugin de Swing."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El JRE proporciona el entorno de ejecución necesario para correr aplicaciones Java sin incluir las herramientas completas de desarrollo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Javadoc genera documentación, no ejecuta aplicaciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "El profiler sirve para analizar rendimiento, no como entorno de ejecución general."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un plugin o librería concreta no sustituye al entorno de ejecución Java."
+        }
+      ],
+      "resumen_didactico": "Ejecutar = JRE; desarrollar y compilar = JDK.",
+      "ejemplo_practico": "Un usuario final puede lanzar un .jar con JRE instalado aunque no tenga javac ni herramientas de desarrollo.",
+      "conclusion_final": "Para ejecutar aplicaciones Java ya compiladas basta con el JRE."
+    }
+  },
+  {
+    "id": "UT11-Q07",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "En NetBeans, ¿para qué sirve colocar un breakpoint antes de iniciar la depuración?",
+    "contexto": "Uso básico del depurador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para detener la ejecución en un punto concreto y analizar el estado del programa."
+      },
+      {
+        "clave": "b",
+        "texto": "Para borrar automáticamente las variables locales."
+      },
+      {
+        "clave": "c",
+        "texto": "Para compilar el proyecto en modo más rápido."
+      },
+      {
+        "clave": "d",
+        "texto": "Para convertir comentarios en documentación HTML."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El breakpoint permite parar la ejecución en una línea concreta para inspeccionar variables y entender qué está ocurriendo en ese punto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No elimina variables; precisamente ayuda a inspeccionarlas."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es una técnica de compilación, sino de análisis durante la ejecución."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso se relaciona con Javadoc, no con depuración."
+        }
+      ],
+      "resumen_didactico": "Breakpoint = pausa estratégica para mirar dentro del programa.",
+      "ejemplo_practico": "Si sospechas de un fallo en el cálculo del total, colocas un breakpoint justo antes de esa línea y observas el valor de las variables.",
+      "conclusion_final": "El breakpoint se usa para detener la ejecución e inspeccionar el programa en un punto concreto."
+    }
+  },
+  {
+    "id": "UT11-Q08",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué combinación de teclas se usa habitualmente en la depuración explicada en NetBeans para entrar en una función y verla por dentro?",
+    "contexto": "Avance paso a paso durante la depuración.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "F7."
+      },
+      {
+        "clave": "b",
+        "texto": "F1."
+      },
+      {
+        "clave": "c",
+        "texto": "Ctrl + S."
+      },
+      {
+        "clave": "d",
+        "texto": "Alt + Tab."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la depuración mostrada, F7 permite entrar en la función para analizar su funcionamiento interno, mientras que F8 avanza sin entrar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "F1 suele asociarse a ayuda, no a entrar paso a paso en funciones durante depuración."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ctrl + S guarda archivos; no se usa para entrar en una llamada durante la depuración."
+        },
+        {
+          "clave": "d",
+          "motivo": "Alt + Tab cambia de ventana del sistema operativo, no controla el depurador."
+        }
+      ],
+      "resumen_didactico": "F7 entra; F8 pasa por encima.",
+      "ejemplo_practico": "Si una llamada a validarUsuario() puede estar fallando, F7 te deja entrar dentro del método para ver qué ocurre.",
+      "conclusion_final": "La tecla utilizada para entrar en una función durante la depuración es F7."
+    }
+  },
+  {
+    "id": "UT11-Q09",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué ventaja se destaca de los entornos de desarrollo online frente a muchos entornos locales tradicionales?",
+    "contexto": "Trabajo colaborativo y acceso desde distintos dispositivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Facilitan el trabajo colaborativo y el acceso desde varios dispositivos."
+      },
+      {
+        "clave": "b",
+        "texto": "Siempre tienen más potencia que un IDE de escritorio."
+      },
+      {
+        "clave": "c",
+        "texto": "Obligan a compilar en lenguaje ensamblador."
+      },
+      {
+        "clave": "d",
+        "texto": "No necesitan conexión de red en ningún caso."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los entornos online destacan por facilitar la colaboración, el uso compartido de repositorios y el acceso desde distintos dispositivos, aunque suelen tener menor potencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El temario señala precisamente que suelen contar con menor potencia que algunos entornos locales."
+        },
+        {
+          "clave": "c",
+          "motivo": "No tienen relación con obligar a usar ensamblador."
+        },
+        {
+          "clave": "d",
+          "motivo": "Su naturaleza online hace que dependan de la conectividad para muchas de sus ventajas."
+        }
+      ],
+      "resumen_didactico": "Online IDE = colaboración rápida y ubicua.",
+      "ejemplo_practico": "Un profesor y un alumno abren el mismo editor online mediante enlace y corrigen juntos un error de configuración.",
+      "conclusion_final": "La ventaja principal destacada es la colaboración y el acceso desde diferentes dispositivos."
+    }
+  },
+  {
+    "id": "UT11-Q10",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Según las buenas prácticas del temario, ¿quién debería realizar idealmente una prueba para reducir sesgos?",
+    "contexto": "Imparcialidad al validar el software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La misma persona que programó esa parte, siempre que tenga prisa."
+      },
+      {
+        "clave": "b",
+        "texto": "Alguien distinto a quien desarrolló el módulo, si es posible."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo el cliente final, sin apoyo del equipo técnico."
+      },
+      {
+        "clave": "d",
+        "texto": "Nadie; basta con confiar en que el código compila."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El procedimiento de pruebas recomienda, idealmente, que pruebe alguien distinto a quien programó para evitar sesgos y mejorar la objetividad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Quien programó puede pasar por alto errores por familiaridad con su propio código."
+        },
+        {
+          "clave": "c",
+          "motivo": "El cliente puede participar en algunas validaciones, pero no sustituye toda la labor técnica de pruebas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Compilar no garantiza calidad, rendimiento ni cumplimiento de requisitos."
+        }
+      ],
+      "resumen_didactico": "Probar con ojos distintos ayuda a encontrar fallos que el autor puede no ver.",
+      "ejemplo_practico": "Un desarrollador implementa el módulo y otro miembro del equipo ejecuta el plan de pruebas sobre él.",
+      "conclusion_final": "Para reducir sesgos, lo ideal es que pruebe alguien distinto al desarrollador original."
+    }
+  },
+  {
+    "id": "UT11-Q11",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Qué técnica de caja blanca se centra específicamente en probar la ejecución de un bucle con 0, 1 y muchas iteraciones?",
+    "contexto": "Cobertura de estructuras repetitivas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pruebas de bucles."
+      },
+      {
+        "clave": "b",
+        "texto": "Pruebas de interfaz gráfica."
+      },
+      {
+        "clave": "c",
+        "texto": "Clases de equivalencia."
+      },
+      {
+        "clave": "d",
+        "texto": "Pruebas alfa."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Dentro de la caja blanca, una de las familias habituales es la prueba de bucles, que revisa comportamientos con cero, una y múltiples iteraciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las interfaces gráficas se validan desde otro enfoque; aquí se habla de estructuras internas de control."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las clases de equivalencia son una técnica típica de caja negra sobre entradas y salidas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Alfa describe un contexto de validación, no una técnica específica sobre bucles internos."
+        }
+      ],
+      "resumen_didactico": "Caja blanca en bucles = probar casos mínimo, simple y repetido.",
+      "ejemplo_practico": "En una función que recorre pedidos, se comprueba qué pasa si hay 0 pedidos, 1 pedido y muchos pedidos.",
+      "conclusion_final": "La técnica concreta es la prueba de bucles."
+    }
+  },
+  {
+    "id": "UT11-Q12",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Qué ventaja principal aporta dividir los datos de entrada en clases de equivalencia?",
+    "contexto": "Optimización del número de casos de prueba.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite reducir el número de pruebas sin perder cobertura representativa."
+      },
+      {
+        "clave": "b",
+        "texto": "Obliga a revisar el código fuente línea a línea."
+      },
+      {
+        "clave": "c",
+        "texto": "Hace innecesarias las pruebas de regresión."
+      },
+      {
+        "clave": "d",
+        "texto": "Sustituye a cualquier plan de pruebas formal."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las clases de equivalencia agrupan entradas que deberían comportarse igual, reduciendo el número de pruebas necesarias sin perder cobertura útil.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso sería más propio de técnicas de caja blanca, no de agrupación de entradas externas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La regresión sigue siendo necesaria tras cambios, aunque se usen clases de equivalencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es una técnica concreta, no un sustituto del plan completo de pruebas."
+        }
+      ],
+      "resumen_didactico": "Agrupar entradas parecidas ahorra casos redundantes.",
+      "ejemplo_practico": "Si varios valores inválidos se comportan igual, basta con elegir representantes de esa clase en lugar de probar todos uno por uno.",
+      "conclusion_final": "La gran ventaja es reducir casos manteniendo una cobertura razonable y representativa."
+    }
+  },
+  {
+    "id": "UT11-Q13",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "En un formulario que admite edades entre 18 y 65, ¿qué conjunto refleja mejor una comprobación de valores límite?",
+    "contexto": "Análisis de bordes en caja negra.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "18, 65, 17 y 66."
+      },
+      {
+        "clave": "b",
+        "texto": "20, 30 y 40 solamente."
+      },
+      {
+        "clave": "c",
+        "texto": "0, 100 y 200 solamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo 18 y 65, sin más casos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los valores límite miran justo los bordes válidos y los inmediatamente exteriores: 18 y 65 como válidos, 17 y 66 como inválidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Son valores internos de la clase válida, pero no analizan los bordes del rango."
+        },
+        {
+          "clave": "c",
+          "motivo": "Son extremos alejados del rango y no reflejan correctamente el análisis clásico de límite inmediato."
+        },
+        {
+          "clave": "d",
+          "motivo": "Conviene incluir también los valores justo fuera del rango para validar bien el borde."
+        }
+      ],
+      "resumen_didactico": "Los errores suelen vivir en las esquinas del rango.",
+      "ejemplo_practico": "Una app de registro debe aceptar 18 y rechazar 17; aceptar 65 y rechazar 66.",
+      "conclusion_final": "El conjunto correcto para probar límites inmediatos es 18, 65, 17 y 66."
+    }
+  },
+  {
+    "id": "UT11-Q14",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué idea resume mejor la utilidad de un sistema de control de versiones (SCV) en un proyecto?",
+    "contexto": "Trabajo en equipo y recuperación de cambios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Actúa como una máquina del tiempo que registra cambios y permite volver atrás."
+      },
+      {
+        "clave": "b",
+        "texto": "Sustituye a la documentación técnica del proyecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Evita completamente la aparición de errores en el código."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo sirve cuando el proyecto ya está terminado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El SCV registra cada cambio del proyecto y permite revisar historial, comparar versiones y volver atrás si algo sale mal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Ayuda al proyecto, pero no reemplaza manuales, README ni documentación técnica."
+        },
+        {
+          "clave": "c",
+          "motivo": "No impide por sí solo los errores; facilita gestionarlos y rastrear cuándo aparecieron."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se usa desde el principio del proyecto, no solo al final."
+        }
+      ],
+      "resumen_didactico": "SCV = historial + control + recuperación.",
+      "ejemplo_practico": "Tras un cambio defectuoso, el equipo consulta el historial y revierte a una versión estable anterior.",
+      "conclusion_final": "La metáfora correcta del SCV es la de una máquina del tiempo para el código."
+    }
+  },
+  {
+    "id": "UT11-Q15",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Cómo se clasifican los documentos que explican las “tripas” del sistema, como arquitectura, componentes, bases de datos o APIs?",
+    "contexto": "Familias de documentación en un proyecto software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Documentos promocionales."
+      },
+      {
+        "clave": "b",
+        "texto": "Documentos técnicos."
+      },
+      {
+        "clave": "c",
+        "texto": "Documentos funcionales."
+      },
+      {
+        "clave": "d",
+        "texto": "Documentos publicitarios."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los documentos técnicos contienen información interna y estructural del producto: arquitectura, componentes, APIs, base de datos, etc.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No se trata de material de difusión o marketing."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los funcionales explican qué hace el producto y cómo se usa, no sus detalles internos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La publicidad busca vender o presentar, no documentar la arquitectura del sistema."
+        }
+      ],
+      "resumen_didactico": "Técnico = interior del sistema; funcional = uso y finalidad.",
+      "ejemplo_practico": "Un documento con endpoints, modelo de base de datos y arquitectura por capas sería técnico.",
+      "conclusion_final": "La documentación sobre arquitectura y componentes pertenece a la familia de documentos técnicos."
+    }
+  },
+  {
+    "id": "UT11-Q16",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Cuál de estos tres manuales está dirigido principalmente a personas sin conocimientos técnicos para explicarles cómo usar el programa?",
+    "contexto": "Documentos mínimos al entregar una aplicación profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Manual técnico."
+      },
+      {
+        "clave": "b",
+        "texto": "Manual de instalación interna del servidor."
+      },
+      {
+        "clave": "c",
+        "texto": "Manual de usuario."
+      },
+      {
+        "clave": "d",
+        "texto": "Registro de incidencias."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El manual de usuario está escrito con lenguaje sencillo para que cualquier persona pueda entender para qué sirve el producto y cómo utilizarlo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El manual técnico se orienta a desarrolladores o personal de sistemas, no a usuarios no técnicos."
+        },
+        {
+          "clave": "b",
+          "motivo": "La instalación es un documento paso a paso de despliegue, no la guía principal de uso cotidiano."
+        },
+        {
+          "clave": "d",
+          "motivo": "El registro de incidencias sirve para seguimiento de errores, no para explicar el manejo normal del programa."
+        }
+      ],
+      "resumen_didactico": "Usuario = cómo se usa; técnico = cómo está hecho; instalación = cómo se monta.",
+      "ejemplo_practico": "Una guía con capturas y pasos para crear un pedido o generar una factura sería un manual de usuario.",
+      "conclusion_final": "El documento pensado para no técnicos es el manual de usuario."
+    }
+  },
+  {
+    "id": "UT11-Q17",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué recomendación de calidad documental encaja mejor con la idea de escribir un buen README.md cerca del código?",
+    "contexto": "Documentación viva y cercana al repositorio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La documentación debe vivir lo más cerca posible del código y mantenerse junto a él."
+      },
+      {
+        "clave": "b",
+        "texto": "Toda la documentación debe estar siempre en papel para evitar cambios."
+      },
+      {
+        "clave": "c",
+        "texto": "Es mejor no documentar módulos pequeños porque se entienden solos."
+      },
+      {
+        "clave": "d",
+        "texto": "Conviene ocultar la documentación técnica al equipo para evitar sobrecarga."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda documentación viva y cercana al código, como README.md por módulo o ADR para decisiones importantes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La documentación actual tiende a ser viva y actualizable, no estática en papel."
+        },
+        {
+          "clave": "c",
+          "motivo": "Incluso módulos pequeños se benefician de una breve explicación clara sobre propósito y uso."
+        },
+        {
+          "clave": "d",
+          "motivo": "La documentación debe ayudar al equipo, no esconderse."
+        }
+      ],
+      "resumen_didactico": "Documentar cerca del código facilita mantenerlo actualizado y útil.",
+      "ejemplo_practico": "Cada módulo del repositorio incorpora un README con objetivo, dependencias, arranque y errores habituales.",
+      "conclusion_final": "La pauta adecuada es mantener la documentación junto al código y actualizarla con él."
+    }
+  },
+  {
+    "id": "UT11-Q18",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "En una fase de mantenimiento, ¿qué conviene registrar después de cada cambio aplicado al software?",
+    "contexto": "Trazabilidad de correcciones y evoluciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Qué se modificó, quién lo hizo y quién lo probó."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo el color de la interfaz resultante."
+      },
+      {
+        "clave": "c",
+        "texto": "Únicamente el número de líneas borradas."
+      },
+      {
+        "clave": "d",
+        "texto": "Nada, porque en mantenimiento la documentación ya no aporta valor."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En mantenimiento se recomienda registrar cada cambio realizado, indicando qué se modificó, quién lo hizo y quién lo probó, para asegurar trazabilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El color de la interfaz no resume de forma útil la intervención técnica realizada."
+        },
+        {
+          "clave": "c",
+          "motivo": "El número de líneas por sí solo no documenta el alcance ni la responsabilidad del cambio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Precisamente en mantenimiento la documentación es clave para entender el historial y evitar errores repetidos."
+        }
+      ],
+      "resumen_didactico": "Mantenimiento serio = cambios trazables y atribuibles.",
+      "ejemplo_practico": "Un bug corregido queda anotado con descripción, desarrollador responsable y persona que validó la corrección.",
+      "conclusion_final": "Tras cada cambio en mantenimiento debe registrarse qué se modificó, quién lo hizo y quién lo probó."
+    }
+  },
+  {
+    "id": "UT11-Q19",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Cuál de estas afirmaciones describe correctamente UML?",
+    "contexto": "Naturaleza del lenguaje de modelado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es un lenguaje de programación para compilar aplicaciones empresariales."
+      },
+      {
+        "clave": "b",
+        "texto": "Es un lenguaje visual para diseñar, describir y documentar sistemas software."
+      },
+      {
+        "clave": "c",
+        "texto": "Es una base de datos orientada a objetos."
+      },
+      {
+        "clave": "d",
+        "texto": "Es un compilador integrado en los IDE modernos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "UML no es un lenguaje de programación, sino un lenguaje visual de modelado para diseñar, describir y documentar sistemas de software.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No sirve para compilar ni para ejecutar software; modela y documenta."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es un sistema de almacenamiento de datos, sino un estándar de modelado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un compilador transforma código; UML representa planos y diagramas."
+        }
+      ],
+      "resumen_didactico": "UML dibuja el sistema; no lo compila ni lo ejecuta.",
+      "ejemplo_practico": "Con UML puedes crear diagramas de clases, secuencia o casos de uso para explicar un proyecto antes de programarlo.",
+      "conclusion_final": "La definición correcta es la de lenguaje visual para diseñar, describir y documentar sistemas software."
+    }
+  },
+  {
+    "id": "UT11-Q20",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué ventaja aporta que UML sea un estándar de facto en sistemas orientados a objetos?",
+    "contexto": "Comprensión compartida entre equipos distintos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que cada empresa puede inventar símbolos distintos sin problema."
+      },
+      {
+        "clave": "b",
+        "texto": "Que equipos diferentes pueden entender los mismos diagramas usando una notación común."
+      },
+      {
+        "clave": "c",
+        "texto": "Que deja de ser necesario documentar el software."
+      },
+      {
+        "clave": "d",
+        "texto": "Que obliga a programar solo en Java."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La estandarización de UML permite que distintos equipos compartan una simbología común y entiendan los diagramas entre sí.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La gracia del estándar es precisamente evitar que cada equipo invente su propia notación."
+        },
+        {
+          "clave": "c",
+          "motivo": "UML es una forma de documentación, no una excusa para eliminarla."
+        },
+        {
+          "clave": "d",
+          "motivo": "UML no obliga a un lenguaje de programación concreto."
+        }
+      ],
+      "resumen_didactico": "Estándar común = menos “Torre de Babel” entre equipos.",
+      "ejemplo_practico": "Un diagrama creado en Sevilla puede ser entendido por un equipo en otra ciudad porque ambos usan la misma notación UML.",
+      "conclusion_final": "La ventaja central del estándar UML es la comprensión compartida entre equipos distintos."
+    }
+  },
+  {
+    "id": "UT11-Q21",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué organización asumió oficialmente la responsabilidad de mantener y evolucionar UML?",
+    "contexto": "Historia del estándar UML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "OMG (Object Management Group)."
+      },
+      {
+        "clave": "b",
+        "texto": "GNU Project."
+      },
+      {
+        "clave": "c",
+        "texto": "Apache Foundation."
+      },
+      {
+        "clave": "d",
+        "texto": "Oracle University."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "OMG asumió la responsabilidad oficial del mantenimiento y evolución de UML tras aceptar la propuesta del estándar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "GNU se asocia al software libre, pero no es la entidad responsable del estándar UML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Apache gestiona muchos proyectos open source, pero no es quien mantiene UML como estándar."
+        },
+        {
+          "clave": "d",
+          "motivo": "Oracle no es la organización estandarizadora mencionada para UML."
+        }
+      ],
+      "resumen_didactico": "Origen con los “tres amigos”; mantenimiento formal con OMG.",
+      "ejemplo_practico": "Las revisiones y evolución del lenguaje UML se canalizan a través de OMG como organismo estandarizador.",
+      "conclusion_final": "La organización responsable de mantener UML es OMG."
+    }
+  },
+  {
+    "id": "UT11-Q22",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML, Unified Modeling Language)",
+    "pregunta": "¿Qué característica de UML permite representar el mismo sistema desde distintas perspectivas, como estructura, flujo o secuencia temporal?",
+    "contexto": "Diversidad de diagramas dentro de un mismo lenguaje de modelado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su capacidad de diagramación."
+      },
+      {
+        "clave": "b",
+        "texto": "Su dependencia obligatoria de Scrum."
+      },
+      {
+        "clave": "c",
+        "texto": "Su ejecución en máquina virtual."
+      },
+      {
+        "clave": "d",
+        "texto": "Su función de compilador OO."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La capacidad de diagramación es la característica estrella de UML: permite usar varios tipos de diagramas para describir un mismo sistema desde ángulos diferentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UML no depende de una metodología específica como Scrum."
+        },
+        {
+          "clave": "c",
+          "motivo": "UML no se ejecuta como software en una máquina virtual; es un lenguaje visual."
+        },
+        {
+          "clave": "d",
+          "motivo": "No compila código; modela y documenta."
+        }
+      ],
+      "resumen_didactico": "Muchos diagramas, un mismo sistema.",
+      "ejemplo_practico": "Puedes usar un diagrama de clases para la estructura y uno de secuencia para el orden temporal de los mensajes.",
+      "conclusion_final": "La característica que permite esas múltiples vistas es la capacidad de diagramación de UML."
+    }
+  },
+  {
+    "id": "UT11-Q23",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "En UML, ¿qué representa una clase respecto a sus objetos?",
+    "contexto": "Relación entre plantilla e instancias.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una instancia concreta con valores reales."
+      },
+      {
+        "clave": "b",
+        "texto": "Una plantilla o molde a partir del cual se crean objetos."
+      },
+      {
+        "clave": "c",
+        "texto": "Un comentario externo sin impacto en el modelo."
+      },
+      {
+        "clave": "d",
+        "texto": "Una relación temporal entre mensajes."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La clase es el plano o plantilla de un tipo concreto; los objetos son sus instancias reales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe un objeto o instancia, no la clase general."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un comentario así sería una nota adjunta, no una clase."
+        },
+        {
+          "clave": "d",
+          "motivo": "La relación temporal de mensajes pertenece a diagramas de comportamiento, no a la definición de clase."
+        }
+      ],
+      "resumen_didactico": "Clase = molde; objeto = ejemplar creado con ese molde.",
+      "ejemplo_practico": "Clase Vehiculo; objeto concreto: coche con matrícula 1234ABC y 40.000 km.",
+      "conclusion_final": "Una clase representa la plantilla a partir de la cual se crean objetos."
+    }
+  },
+  {
+    "id": "UT11-Q24",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué tipo de dato UML es el más adecuado para un atributo llamado disponible que solo puede valer verdadero o falso?",
+    "contexto": "Tipado básico de atributos en diagramas de clases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "String."
+      },
+      {
+        "clave": "b",
+        "texto": "Boolean."
+      },
+      {
+        "clave": "c",
+        "texto": "Float."
+      },
+      {
+        "clave": "d",
+        "texto": "Integer."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Boolean es el tipo de dato apropiado para valores lógicos de verdadero o falso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "String almacena texto, no un estado lógico binario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Float se usa para números con decimales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Integer representa enteros, no un valor de sí/no."
+        }
+      ],
+      "resumen_didactico": "True/false en UML → Boolean.",
+      "ejemplo_practico": "Vehiculo: disponible: Boolean indica si el coche puede alquilarse o no.",
+      "conclusion_final": "El tipo correcto para un atributo lógico como disponible es Boolean."
+    }
+  },
+  {
+    "id": "UT11-Q25",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué diferencia esencial existe entre agregación y composición en UML?",
+    "contexto": "Relaciones todo-parte en diagramas de clases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En la composición, la vida de la parte depende inseparablemente del todo."
+      },
+      {
+        "clave": "b",
+        "texto": "En la agregación, la parte siempre desaparece al borrar el todo."
+      },
+      {
+        "clave": "c",
+        "texto": "Son exactamente la misma relación con distinto nombre."
+      },
+      {
+        "clave": "d",
+        "texto": "La composición solo se usa para herencia entre clases."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La composición implica una dependencia fuerte del ciclo de vida: la parte no existe sin el todo. La agregación es más débil.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso sería propio de la composición, no de la agregación."
+        },
+        {
+          "clave": "c",
+          "motivo": "No son idénticas; la diferencia de dependencia del ciclo de vida es clave."
+        },
+        {
+          "clave": "d",
+          "motivo": "La herencia es otra relación distinta, no una composición."
+        }
+      ],
+      "resumen_didactico": "Agregación = vínculo débil; composición = vínculo fuerte y dependiente.",
+      "ejemplo_practico": "Una línea de factura suele modelarse en composición con su factura; si desaparece la factura, desaparecen sus líneas.",
+      "conclusion_final": "La composición se distingue porque la vida de la parte depende del todo."
+    }
+  },
+  {
+    "id": "UT11-Q26",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué funcionalidad de una herramienta CASE se está usando cuando se genera un diagrama UML a partir de código ya existente?",
+    "contexto": "Ingeniería inversa aplicada al modelado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ingeniería de ida (diagrama a código)."
+      },
+      {
+        "clave": "b",
+        "texto": "Ingeniería inversa (código a diagrama)."
+      },
+      {
+        "clave": "c",
+        "texto": "Serialización binaria."
+      },
+      {
+        "clave": "d",
+        "texto": "Compilación incremental."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Cuando se parte del código y se obtiene un diagrama, la herramienta CASE está haciendo ingeniería inversa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La ingeniería de ida recorre el camino contrario: del diagrama al código."
+        },
+        {
+          "clave": "c",
+          "motivo": "La serialización convierte datos/objetos a otro formato, no genera diagramas UML."
+        },
+        {
+          "clave": "d",
+          "motivo": "La compilación incremental optimiza builds, pero no crea diagramas desde el código."
+        }
+      ],
+      "resumen_didactico": "Código → diagrama = ingeniería inversa; diagrama → código = ingeniería de ida.",
+      "ejemplo_practico": "A partir de clases Java existentes, la herramienta genera el diagrama de clases para entender su estructura.",
+      "conclusion_final": "Generar UML desde código existente corresponde a ingeniería inversa."
+    }
+  },
+  {
+    "id": "UT11-Q27",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "En un diagrama de casos de uso, ¿qué representa la “caja” grande que encierra los óvalos de funcionalidad?",
+    "contexto": "Elementos básicos de un diagrama de casos de uso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El sistema y sus límites."
+      },
+      {
+        "clave": "b",
+        "texto": "Una base de datos relacional."
+      },
+      {
+        "clave": "c",
+        "texto": "La secuencia temporal de los mensajes."
+      },
+      {
+        "clave": "d",
+        "texto": "El código fuente compilado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La caja del diagrama de casos de uso representa el sistema y delimita qué funcionalidades forman parte de él.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No representa la base de datos, sino el límite del sistema completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La secuencia temporal pertenece a diagramas de secuencia, no al contenedor de casos de uso."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una representación del código compilado, sino del alcance funcional del sistema."
+        }
+      ],
+      "resumen_didactico": "La caja dice “esto sí forma parte de nuestro sistema”.",
+      "ejemplo_practico": "En una web de reservas, dentro de la caja aparecen “Buscar tren”, “Seleccionar asiento” y “Realizar pago”.",
+      "conclusion_final": "La caja grande representa el sistema y sus límites."
+    }
+  },
+  {
+    "id": "UT11-Q28",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "Si un caso de uso puede ampliarse opcionalmente con un comportamiento extra, ¿qué relación UML se utiliza?",
+    "contexto": "Ampliación opcional entre casos de uso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<<extends>>."
+      },
+      {
+        "clave": "b",
+        "texto": "<<include>>."
+      },
+      {
+        "clave": "c",
+        "texto": "Composición."
+      },
+      {
+        "clave": "d",
+        "texto": "Agregación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "<<extends>> expresa una ampliación opcional sobre un caso de uso base; el caso principal puede ejecutarse sin ella.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<<include>> indica obligatoriedad, no ampliación opcional."
+        },
+        {
+          "clave": "c",
+          "motivo": "Composición es una relación de diagramas de clases, no una relación de casos de uso."
+        },
+        {
+          "clave": "d",
+          "motivo": "La agregación también pertenece al modelado estructural de clases."
+        }
+      ],
+      "resumen_didactico": "Opcional = extends; obligatorio = include.",
+      "ejemplo_practico": "“Buscar tren” puede ser ampliado opcionalmente por “Aplicar descuento de familia numerosa”.",
+      "conclusion_final": "La relación correcta para un extra opcional es <<extends>>."
+    }
+  },
+  {
+    "id": "UT11-Q29",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué elemento de un diagrama de secuencia muestra visualmente que un objeto está “ocupado” realizando una acción durante un intervalo?",
+    "contexto": "Notación básica en diagramas de secuencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La barra de activación."
+      },
+      {
+        "clave": "b",
+        "texto": "El actor externo."
+      },
+      {
+        "clave": "c",
+        "texto": "El rombo de decisión."
+      },
+      {
+        "clave": "d",
+        "texto": "El comentario UML."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La barra de activación es el rectángulo vertical sobre la línea de vida que indica el periodo en que un participante está ejecutando una acción.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El actor participa en la interacción, pero no marca el periodo de ejecución interna del objeto."
+        },
+        {
+          "clave": "c",
+          "motivo": "El rombo de decisión es típico de diagramas de actividades, no de secuencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un comentario no expresa actividad temporal del objeto."
+        }
+      ],
+      "resumen_didactico": "Línea de vida = existencia en el tiempo; barra de activación = tiempo de trabajo activo.",
+      "ejemplo_practico": "Cuando el sistema procesa un pago, sobre su línea de vida aparece una barra de activación mientras ejecuta la operación.",
+      "conclusion_final": "El elemento que indica que un objeto está ocupado es la barra de activación."
+    }
+  },
+  {
+    "id": "UT11-Q30",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de mensaje se produce en un diagrama de secuencia cuando el emisor no espera la respuesta inmediata del receptor para continuar?",
+    "contexto": "Diferencia entre mensajes sincrónicos y asincrónicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mensaje asincrónico."
+      },
+      {
+        "clave": "b",
+        "texto": "Mensaje sincrónico."
+      },
+      {
+        "clave": "c",
+        "texto": "Mensaje recursivo."
+      },
+      {
+        "clave": "d",
+        "texto": "Mensaje de composición."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En un mensaje asincrónico, el emisor continúa su ejecución sin quedar bloqueado esperando la respuesta del receptor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El sincrónico sí espera respuesta antes de continuar."
+        },
+        {
+          "clave": "c",
+          "motivo": "El recursivo describe una autollamada del mismo objeto, no la espera o no espera de respuesta."
+        },
+        {
+          "clave": "d",
+          "motivo": "La composición es una relación estructural de clases, no un tipo de mensaje."
+        }
+      ],
+      "resumen_didactico": "No espera = asincrónico; espera = sincrónico.",
+      "ejemplo_practico": "Un sistema lanza una notificación en segundo plano y sigue ejecutando otras tareas sin detenerse.",
+      "conclusion_final": "Si el emisor no espera respuesta inmediata, el mensaje es asincrónico."
+    }
+  }
+]

@@ -6,7 +6,7 @@ import { ModuleCard } from "../Components/ModuleCard";
 
 const modules = [
   { id: "sistemas", title: "Sistemas Informáticos", subtitle: "14 tests" },
-  { id: "entornosDesarrollo", title: "Entornos de Desarrollo", subtitle: "7 temas" },
+  { id: "entornosDesarrollo", title: "Entornos de Desarrollo", subtitle: "14 tests" },
   { id: "ingles", title: "Inglés", subtitle: "3 temas" },
   {
     id: "baseDatos",

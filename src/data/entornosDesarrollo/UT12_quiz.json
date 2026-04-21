@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT12-Q01",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué característica distingue al lenguaje máquina frente a otros lenguajes de programación?",
+    "contexto": "Comparación entre niveles de lenguaje en programación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usa símbolos mnemotécnicos fáciles de leer por humanos."
+      },
+      {
+        "clave": "b",
+        "texto": "Es el único que el procesador entiende directamente sin traducción."
+      },
+      {
+        "clave": "c",
+        "texto": "Genera bytecode para una máquina virtual."
+      },
+      {
+        "clave": "d",
+        "texto": "Se ejecuta línea por línea mediante un intérprete."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El lenguaje máquina está formado por combinaciones binarias y es el único que la máquina entiende de manera directa, sin traductor intermedio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe mejor al ensamblador, que usa palabras clave o mnemónicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El bytecode pertenece a lenguajes virtuales como Java."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso corresponde a lenguajes interpretados, no al código máquina."
+        }
+      ],
+      "resumen_didactico": "Lenguaje máquina = binario puro entendido directamente por el procesador.",
+      "ejemplo_practico": "Un programa escrito en C o Java necesita traducción; el código máquina no.",
+      "conclusion_final": "La diferencia clave es que el lenguaje máquina no necesita traducción para ser ejecutado por el hardware."
+    }
+  },
+  {
+    "id": "UT12-Q02",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Según el temario, ¿qué rasgo encaja especialmente con Python?",
+    "contexto": "Características de los lenguajes más difundidos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se caracteriza por el uso intensivo de punteros y ejecutables muy pequeños."
+      },
+      {
+        "clave": "b",
+        "texto": "Se integra fácilmente con C y es muy utilizado por su simplicidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Depende obligatoriamente de una máquina virtual propia como la JVM."
+      },
+      {
+        "clave": "d",
+        "texto": "Está pensado solo para sistemas embebidos muy cercanos al hardware."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Python es un lenguaje de alto nivel, interpretado, fácil de aprender y con buena integración con C para mejorar rendimiento cuando hace falta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe mejor rasgos clásicos de C o C++."
+        },
+        {
+          "clave": "c",
+          "motivo": "La JVM se asocia a Java, no a Python."
+        },
+        {
+          "clave": "d",
+          "motivo": "Python no está limitado a sistemas embebidos ni a bajo nivel."
+        }
+      ],
+      "resumen_didactico": "Python destaca por simplicidad, portabilidad e integración con C.",
+      "ejemplo_practico": "Se puede usar Python para automatización rápida y delegar partes críticas en extensiones C.",
+      "conclusion_final": "La opción correcta es la integración con C y su facilidad de uso."
+    }
+  },
+  {
+    "id": "UT12-Q03",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "¿Qué característica se asocia en el temario a C y C++?",
+    "contexto": "Comparación entre lenguajes difundidos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Generan bytecode portable gestionado por una máquina virtual."
+      },
+      {
+        "clave": "b",
+        "texto": "Se basan en punteros y generan programas muy rápidos y eficientes."
+      },
+      {
+        "clave": "c",
+        "texto": "Se orientan solo al desarrollo web en navegador."
+      },
+      {
+        "clave": "d",
+        "texto": "No permiten mezclar código de alto y bajo nivel."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario destaca de C y C++ el uso de punteros, el control cercano de memoria y la generación de programas rápidos y eficientes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso corresponde a lenguajes virtuales como Java."
+        },
+        {
+          "clave": "c",
+          "motivo": "C y C++ no se limitan al navegador ni al desarrollo web."
+        },
+        {
+          "clave": "d",
+          "motivo": "Precisamente pueden combinar elementos de alto y bajo nivel."
+        }
+      ],
+      "resumen_didactico": "C/C++ = control fino, punteros y alto rendimiento.",
+      "ejemplo_practico": "Motores, librerías nativas o módulos de alto rendimiento suelen desarrollarse en C o C++.",
+      "conclusion_final": "La combinación de punteros y eficiencia es uno de sus rasgos clásicos."
+    }
+  },
+  {
+    "id": "UT12-Q04",
+    "tema": "UT1 — Desarrollo de software",
+    "pregunta": "Cuando el equipo transforma los requisitos ya aprobados en una solución técnica con estructura, componentes y decisiones tecnológicas, ¿en qué fase trabaja principalmente?",
+    "contexto": "Fases del ciclo de vida del software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diseño."
+      },
+      {
+        "clave": "b",
+        "texto": "Mantenimiento."
+      },
+      {
+        "clave": "c",
+        "texto": "Explotación."
+      },
+      {
+        "clave": "d",
+        "texto": "Implantación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la fase de diseño se define cómo se va a construir la solución: estructura, componentes, organización técnica y decisiones de implementación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Mantenimiento actúa sobre un sistema ya entregado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Explotación se refiere al uso real del software en producción."
+        },
+        {
+          "clave": "d",
+          "motivo": "Implantación consiste en poner en marcha la solución, no en diseñarla."
+        }
+      ],
+      "resumen_didactico": "Análisis = qué se necesita. Diseño = cómo se va a construir.",
+      "ejemplo_practico": "Decidir módulos, arquitectura y base tecnológica pertenece al diseño.",
+      "conclusion_final": "Traducir requisitos a una solución técnica es trabajo de la fase de diseño."
+    }
+  },
+  {
+    "id": "UT12-Q05",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué IDE clásico de Microsoft destaca en el temario por su trabajo con C/C++, bibliotecas de Windows, .NET y MFC?",
+    "contexto": "Primeros entornos de desarrollo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Visual C++."
+      },
+      {
+        "clave": "b",
+        "texto": "Turbo Pascal."
+      },
+      {
+        "clave": "c",
+        "texto": "NetBeans."
+      },
+      {
+        "clave": "d",
+        "texto": "Xcode."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Visual C++ se presenta como el entorno de Microsoft para C y C++ con gran apoyo de bibliotecas de Windows, .NET y MFC.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Turbo Pascal pertenece al ecosistema Borland y Pascal."
+        },
+        {
+          "clave": "c",
+          "motivo": "NetBeans es un IDE multiplataforma y open source, no el entorno clásico de Microsoft para MFC."
+        },
+        {
+          "clave": "d",
+          "motivo": "Xcode es la herramienta oficial de Apple."
+        }
+      ],
+      "resumen_didactico": "Windows nativo + C/C++ + MFC/.NET = Visual C++.",
+      "ejemplo_practico": "Una aplicación de escritorio Windows con interfaz MFC encaja con Visual C++.",
+      "conclusion_final": "La herramienta señalada por el temario es Visual C++."
+    }
+  },
+  {
+    "id": "UT12-Q06",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué IDE se describe en el temario como open source, multiplataforma y con soporte para lenguajes como C/C++, HTML5, PHP y Python?",
+    "contexto": "Entornos de desarrollo actuales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "NetBeans."
+      },
+      {
+        "clave": "b",
+        "texto": "Delphi."
+      },
+      {
+        "clave": "c",
+        "texto": "Visual Basic 6."
+      },
+      {
+        "clave": "d",
+        "texto": "Turbo Pascal."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "NetBeans está escrito en Java, funciona en varias plataformas y soporta múltiples lenguajes además de Java.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Delphi no se describe así en el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Visual Basic 6 es propietario y centrado en otro contexto histórico."
+        },
+        {
+          "clave": "d",
+          "motivo": "Turbo Pascal es un entorno clásico mucho más antiguo."
+        }
+      ],
+      "resumen_didactico": "Multiplataforma + open source + muchos lenguajes = NetBeans.",
+      "ejemplo_practico": "Un equipo con Windows, Linux y macOS puede trabajar con NetBeans en un mismo proyecto.",
+      "conclusion_final": "La descripción encaja con NetBeans."
+    }
+  },
+  {
+    "id": "UT12-Q07",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "Según el temario, ¿qué condición económica se exige para publicar aplicaciones en la App Store usando Xcode?",
+    "contexto": "Desarrollo en el ecosistema Apple.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Comprar una licencia vitalicia de Xcode."
+      },
+      {
+        "clave": "b",
+        "texto": "Pagar una suscripción anual del programa de desarrolladores."
+      },
+      {
+        "clave": "c",
+        "texto": "Abonar una comisión por cada compilación local."
+      },
+      {
+        "clave": "d",
+        "texto": "Pagar una única tasa al instalar el JDK."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que ser desarrollador Apple es gratuito, pero que para subir apps a la App Store se requiere una suscripción anual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Xcode no se presenta como un producto con licencia vitalicia obligatoria."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se paga por compilación local."
+        },
+        {
+          "clave": "d",
+          "motivo": "El JDK no tiene relación con la publicación en la App Store."
+        }
+      ],
+      "resumen_didactico": "Xcode puede usarse para desarrollar, pero publicar en App Store exige suscripción anual.",
+      "ejemplo_practico": "Un desarrollador puede probar su app en local y solo al publicarla necesita el pago anual.",
+      "conclusion_final": "La condición económica destacada es la suscripción anual."
+    }
+  },
+  {
+    "id": "UT12-Q08",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué ventaja concreta atribuye el temario a instalar módulos o plugins en un IDE?",
+    "contexto": "Ampliación de capacidades del entorno.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sirven para transformar el IDE en sistema operativo."
+      },
+      {
+        "clave": "b",
+        "texto": "Permiten añadir funciones según las necesidades del proyecto o del lenguaje."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituyen siempre al compilador nativo del lenguaje."
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminan la necesidad de documentar el proyecto."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El enfoque modular permite extender el IDE incorporando nuevas funciones, soporte de lenguajes o herramientas concretas solo cuando hacen falta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un plugin no convierte el IDE en un sistema operativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "No siempre sustituyen al compilador; suelen integrarse con herramientas existentes."
+        },
+        {
+          "clave": "d",
+          "motivo": "La documentación sigue siendo necesaria aunque el IDE se amplíe."
+        }
+      ],
+      "resumen_didactico": "Plugin = capacidad extra bajo demanda.",
+      "ejemplo_practico": "Añadir soporte para un lenguaje o integración con una herramienta de calidad mediante plugins.",
+      "conclusion_final": "La utilidad principal es ampliar el IDE según necesidades reales."
+    }
+  },
+  {
+    "id": "UT12-Q09",
+    "tema": "UT2 — Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué limitación se menciona en el temario sobre los entornos de desarrollo online frente a muchos entornos locales?",
+    "contexto": "Comparación entre IDE online y local.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No permiten trabajo colaborativo."
+      },
+      {
+        "clave": "b",
+        "texto": "Tienen menor potencia, aunque facilitan colaboración y acceso desde varios dispositivos."
+      },
+      {
+        "clave": "c",
+        "texto": "No pueden usar repositorios comunes."
+      },
+      {
+        "clave": "d",
+        "texto": "No funcionan en navegador web."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los entornos online ganan en colaboración y accesibilidad, pero el temario advierte que suelen contar con menor potencia que otras alternativas locales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Precisamente una de sus ventajas es la colaboración."
+        },
+        {
+          "clave": "c",
+          "motivo": "El temario destaca que favorecen el uso de repositorios comunes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se usan precisamente a través de entornos conectados y accesibles desde distintos dispositivos."
+        }
+      ],
+      "resumen_didactico": "Online = más colaboración y accesibilidad, pero menos potencia.",
+      "ejemplo_practico": "Un editor online compartido puede corregirse al instante entre varios usuarios, aunque no tenga tanta capacidad como un entorno local completo.",
+      "conclusion_final": "La limitación señalada es la menor potencia."
+    }
+  },
+  {
+    "id": "UT12-Q10",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "¿Para qué sirve definir desde el principio niveles de severidad como bloqueante, mayor o menor en un plan de pruebas?",
+    "contexto": "Buenas prácticas de organización de pruebas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para sustituir los casos de prueba por prioridades."
+      },
+      {
+        "clave": "b",
+        "texto": "Para evitar discusiones posteriores al decidir si un sistema puede salir a producción."
+      },
+      {
+        "clave": "c",
+        "texto": "Para eliminar la necesidad de documentar errores."
+      },
+      {
+        "clave": "d",
+        "texto": "Para asegurar que todo defecto se corrige automáticamente."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario aconseja fijar niveles de severidad desde el principio para clasificar defectos y evitar conflictos al decidir el estado de salida a producción.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La severidad no sustituye a los casos de prueba; los complementa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los errores deben seguir documentándose con detalle."
+        },
+        {
+          "clave": "d",
+          "motivo": "Clasificar defectos no implica corregirlos de forma automática."
+        }
+      ],
+      "resumen_didactico": "Severidad = criterio común para valorar impacto de los defectos.",
+      "ejemplo_practico": "Un fallo de login puede clasificarse como bloqueante y uno de texto mal alineado como menor.",
+      "conclusion_final": "Su utilidad principal es ordenar decisiones y reducir discusiones."
+    }
+  },
+  {
+    "id": "UT12-Q11",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "En la fase de codificación y ejecución de pruebas, ¿qué objetivo tiene preparar una infraestructura estable y documentar exactamente los datos utilizados?",
+    "contexto": "Repetibilidad y trazabilidad de las pruebas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evitar falsos positivos y poder repetir las pruebas siempre en las mismas condiciones."
+      },
+      {
+        "clave": "b",
+        "texto": "Reducir el número total de módulos del sistema."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituir las pruebas de caja negra por pruebas manuales."
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar la necesidad de un plan de prueba previo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Preparar máquinas, permisos y sets de datos bien definidos ayuda a evitar falsos positivos y garantiza repetibilidad y trazabilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La infraestructura de prueba no cambia el tamaño lógico del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "No sustituye enfoques de prueba; los habilita mejor."
+        },
+        {
+          "clave": "d",
+          "motivo": "El plan de prueba sigue siendo necesario como marco general."
+        }
+      ],
+      "resumen_didactico": "Infraestructura y datos controlados = pruebas repetibles y fiables.",
+      "ejemplo_practico": "Usar siempre la misma base de datos de test y dejar constancia de qué entradas se probaron.",
+      "conclusion_final": "La meta es poder repetir y confiar en el resultado obtenido."
+    }
+  },
+  {
+    "id": "UT12-Q12",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Según el temario, ¿qué pruebas de caja blanca combinan booleanos y decisiones para detectar errores internos?",
+    "contexto": "Familias habituales de pruebas estructurales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pruebas de condiciones."
+      },
+      {
+        "clave": "b",
+        "texto": "Pruebas de aceptación."
+      },
+      {
+        "clave": "c",
+        "texto": "Pruebas de usabilidad."
+      },
+      {
+        "clave": "d",
+        "texto": "Pruebas de instalación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Dentro de caja blanca se citan cubrimiento, condiciones y bucles. Las pruebas de condiciones trabajan con decisiones y combinaciones booleanas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La aceptación valida el producto frente al usuario o cliente, no analiza decisiones internas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La usabilidad se centra en experiencia de uso, no en lógica interna del código."
+        },
+        {
+          "clave": "d",
+          "motivo": "La instalación comprueba despliegue y entorno, no combinaciones booleanas del programa."
+        }
+      ],
+      "resumen_didactico": "Caja blanca + decisiones booleanas = pruebas de condiciones.",
+      "ejemplo_practico": "Verificar todas las combinaciones posibles de permisos y estados que activan una rama del código.",
+      "conclusion_final": "La familia correcta es la de pruebas de condiciones."
+    }
+  },
+  {
+    "id": "UT12-Q13",
+    "tema": "UT3 — Diseño y realización de pruebas",
+    "pregunta": "Cuando en pruebas funcionales se verifican autenticación, permisos y compatibilidad con otros sistemas sin mirar el código, ¿en qué enfoque se está trabajando?",
+    "contexto": "Pruebas funcionales de caja negra.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Caja negra guiada por comportamiento externo."
+      },
+      {
+        "clave": "b",
+        "texto": "Caja blanca basada en rutas internas."
+      },
+      {
+        "clave": "c",
+        "texto": "Refactorización del código fuente."
+      },
+      {
+        "clave": "d",
+        "texto": "Diseño de patrones UML."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario ubica autenticación, permisos y compatibilidad dentro de las pruebas funcionales de caja negra, centradas en comportamiento observable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Caja blanca necesita analizar el interior del programa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Refactorizar no es una estrategia de prueba."
+        },
+        {
+          "clave": "d",
+          "motivo": "UML sirve para modelado, no para ese tipo de prueba funcional."
+        }
+      ],
+      "resumen_didactico": "Si no ves el código y validas comportamiento, estás en caja negra.",
+      "ejemplo_practico": "Comprobar que un usuario sin permisos no entra a una sección restringida sin revisar cómo está implementado internamente.",
+      "conclusion_final": "Ese enfoque corresponde a pruebas funcionales de caja negra."
+    }
+  },
+  {
+    "id": "UT12-Q14",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué problema intenta evitar la refactorización cuando descompone responsabilidades o aclara nombres y estructuras?",
+    "contexto": "Ventajas del código limpio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La aparición de redundancias y duplicados en la lógica."
+      },
+      {
+        "clave": "b",
+        "texto": "La existencia de requisitos del cliente."
+      },
+      {
+        "clave": "c",
+        "texto": "La necesidad de compilar el proyecto."
+      },
+      {
+        "clave": "d",
+        "texto": "La ejecución de pruebas automáticas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Entre las ventajas destacadas de la refactorización está evitar redundancias y duplicados, además de simplificar y robustecer el código.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los requisitos siguen existiendo; la refactorización no los elimina."
+        },
+        {
+          "clave": "c",
+          "motivo": "Compilar seguirá siendo necesario después de refactorizar."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las pruebas siguen siendo recomendables y necesarias."
+        }
+      ],
+      "resumen_didactico": "Refactorizar ayuda a limpiar, simplificar y reducir duplicidad.",
+      "ejemplo_practico": "Evitar tener la misma regla de descuento copiada en tres métodos distintos.",
+      "conclusion_final": "Uno de sus objetivos claros es eliminar redundancias lógicas."
+    }
+  },
+  {
+    "id": "UT12-Q15",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué mala práctica describe el temario cuando una misma variable temporal se reutiliza para distintos propósitos dentro del mismo proceso?",
+    "contexto": "Claridad y seguridad en variables temporales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Herencia múltiple."
+      },
+      {
+        "clave": "b",
+        "texto": "Mal uso de variables temporales."
+      },
+      {
+        "clave": "c",
+        "texto": "Generalización de actores."
+      },
+      {
+        "clave": "d",
+        "texto": "Composición de objetos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario advierte que reutilizar una variable temporal para cosas distintas genera confusión y errores difíciles de rastrear.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La herencia múltiple es otro concepto de diseño, no un problema de variables locales."
+        },
+        {
+          "clave": "c",
+          "motivo": "La generalización pertenece a UML, no a refactorización de variables."
+        },
+        {
+          "clave": "d",
+          "motivo": "La composición afecta a relaciones entre clases, no al uso de variables temporales."
+        }
+      ],
+      "resumen_didactico": "Una temporal debe servir para una cosa clara; reutilizarla para varias complica el código.",
+      "ejemplo_practico": "Usar la misma variable tmp primero para sumar y después para restar distintos valores puede inducir errores.",
+      "conclusion_final": "La mala práctica se llama mal uso de variables temporales."
+    }
+  },
+  {
+    "id": "UT12-Q16",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "Si una clase acumula demasiados datos y se crea otra clase nueva para agrupar una parte coherente de ellos, ¿qué patrón de refactorización se está aplicando?",
+    "contexto": "Distribución de responsabilidades entre clases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Extraer clases."
+      },
+      {
+        "clave": "b",
+        "texto": "Método inline."
+      },
+      {
+        "clave": "c",
+        "texto": "Clases de equivalencia."
+      },
+      {
+        "clave": "d",
+        "texto": "Caso de uso extendido."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Extraer clases se utiliza cuando una clase está sobrecargada y conviene separar un conjunto relacionado de datos o comportamientos en otra clase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Inline actúa sobre métodos demasiado simples, no sobre clases con exceso de responsabilidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las clases de equivalencia pertenecen al ámbito de pruebas, no al de refactorización estructural."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso es terminología de diagramas de comportamiento, no de refactorización."
+        }
+      ],
+      "resumen_didactico": "Clase demasiado cargada = suele convenir extraer otra clase.",
+      "ejemplo_practico": "Separar Direccion de Cliente cuando la información postal ocupa demasiado dentro de la clase original.",
+      "conclusion_final": "La técnica correcta es extraer clases."
+    }
+  },
+  {
+    "id": "UT12-Q17",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué persigue la técnica de mover métodos o variables miembro entre clases según el temario?",
+    "contexto": "Reparto correcto de responsabilidades en POO.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Repartir mejor las responsabilidades para evitar clases sobrecargadas y otras vacías."
+      },
+      {
+        "clave": "b",
+        "texto": "Eliminar por completo la orientación a objetos del proyecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituir automáticamente todos los patrones de diseño."
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar la licencia del código fuente."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Mover métodos o variables miembro busca que cada clase tenga responsabilidades coherentes y equilibradas, evitando sobrecargas innecesarias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La técnica actúa dentro de la POO, no contra ella."
+        },
+        {
+          "clave": "c",
+          "motivo": "No reemplaza patrones de diseño, solo mejora distribución interna."
+        },
+        {
+          "clave": "d",
+          "motivo": "No guarda relación con licencias del software."
+        }
+      ],
+      "resumen_didactico": "Cada clase debe encargarse de lo que le corresponde.",
+      "ejemplo_practico": "Mover calcularTotal() desde Cliente a Pedido si realmente usa datos del pedido y no del cliente.",
+      "conclusion_final": "La finalidad es mejorar la cohesión y repartir bien responsabilidades."
+    }
+  },
+  {
+    "id": "UT12-Q18",
+    "tema": "UT4 — Optimización y documentación",
+    "pregunta": "¿Qué técnica se aplica cuando un atributo público pasa a ser privado y se controla mediante getters y setters?",
+    "contexto": "Encapsulación en refactorización.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Autoencapsular campos."
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar algoritmos."
+      },
+      {
+        "clave": "c",
+        "texto": "Extender caso de uso."
+      },
+      {
+        "clave": "d",
+        "texto": "Documento técnico externo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Autoencapsular campos consiste en convertir el acceso directo a atributos en acceso controlado mediante getters y setters.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Cambiar algoritmos supone sustituir una estrategia de cálculo o proceso por otra."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso pertenece a UML de comportamiento, no a encapsulación de atributos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un tipo de documento, sino un patrón de refactorización."
+        }
+      ],
+      "resumen_didactico": "Privado + get/set = campo autoencapsulado.",
+      "ejemplo_practico": "precio deja de ser público y pasa a leerse con getPrecio() y modificarse con setPrecio().",
+      "conclusion_final": "La técnica es autoencapsular campos."
+    }
+  },
+  {
+    "id": "UT12-Q19",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "Según el temario, ¿cuál es la versión estable más reciente de UML que se toma como referencia?",
+    "contexto": "Evolución y versiones del estándar UML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UML 1.5."
+      },
+      {
+        "clave": "b",
+        "texto": "UML 2.0."
+      },
+      {
+        "clave": "c",
+        "texto": "UML 2.5.1."
+      },
+      {
+        "clave": "d",
+        "texto": "UML 3.0."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que la versión 2.5.1, publicada en 2017, es la referencia estable más reciente mencionada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es una revisión antigua ya superada por la rama 2.x."
+        },
+        {
+          "clave": "b",
+          "motivo": "UML 2.0 fue un hito importante, pero no la versión más reciente indicada."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se menciona trabajo futuro en UML 3, no como versión estable de referencia."
+        }
+      ],
+      "resumen_didactico": "Última versión estable citada en el tema: UML 2.5.1.",
+      "ejemplo_practico": "Al estudiar diagramas UML actuales, el temario remite a 2.5.1 como versión vigente de referencia.",
+      "conclusion_final": "La respuesta correcta es UML 2.5.1."
+    }
+  },
+  {
+    "id": "UT12-Q20",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Qué idea resume mejor el valor de un modelo dentro de UML?",
+    "contexto": "Uso del modelado en metodologías orientadas a objetos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es una copia exacta del sistema final con todos sus detalles técnicos."
+      },
+      {
+        "clave": "b",
+        "texto": "Es una abstracción que omite detalles no esenciales para entender mejor el sistema antes de construirlo."
+      },
+      {
+        "clave": "c",
+        "texto": "Es un compilador gráfico que genera por sí solo la aplicación completa."
+      },
+      {
+        "clave": "d",
+        "texto": "Es un sustituto obligatorio del código fuente en producción."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El modelo es una abstracción de algo real que omite detalles no esenciales para facilitar comprensión, prueba de ideas y detección temprana de errores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un modelo simplifica; no pretende replicar todos los detalles del sistema final."
+        },
+        {
+          "clave": "c",
+          "motivo": "UML no es un compilador ni se define por generar automáticamente la aplicación completa."
+        },
+        {
+          "clave": "d",
+          "motivo": "El modelado complementa al código, no lo sustituye en producción."
+        }
+      ],
+      "resumen_didactico": "Modelo = simplificación útil para entender y decidir mejor antes de construir.",
+      "ejemplo_practico": "Como una maqueta de un edificio, ayuda a ver estructura y detectar errores antes de construirlo real.",
+      "conclusion_final": "La idea clave es la abstracción de lo esencial."
+    }
+  },
+  {
+    "id": "UT12-Q21",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Qué herramienta se describe como apoyo automatizado a analistas e ingenieros durante el ciclo de vida del software y puede trabajar con UML?",
+    "contexto": "Herramientas CASE con soporte UML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una herramienta CASE."
+      },
+      {
+        "clave": "b",
+        "texto": "Un ensamblador de medio nivel."
+      },
+      {
+        "clave": "c",
+        "texto": "Un sistema operativo distribuido."
+      },
+      {
+        "clave": "d",
+        "texto": "Un gestor de arranque."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las herramientas CASE asisten de forma automatizada a analistas e ingenieros en distintas tareas del ciclo de vida y pueden soportar modelado UML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El ensamblador es un lenguaje, no una herramienta de apoyo metodológico UML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso pertenece al ámbito de sistemas, no de modelado asistido."
+        },
+        {
+          "clave": "d",
+          "motivo": "El gestor de arranque no tiene relación con UML o CASE."
+        }
+      ],
+      "resumen_didactico": "CASE = ayuda automatizada para análisis, diseño y documentación del software.",
+      "ejemplo_practico": "Crear diagramas, comprobar errores del modelo o generar esqueleto de código desde una herramienta UML.",
+      "conclusion_final": "La respuesta correcta es una herramienta CASE."
+    }
+  },
+  {
+    "id": "UT12-Q22",
+    "tema": "UT5 — Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Qué componente de una herramienta CASE almacena de forma centralizada la información del modelo, como diagramas, clases y relaciones?",
+    "contexto": "Elementos clave de una herramienta CASE moderna.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Repositorio."
+      },
+      {
+        "clave": "b",
+        "texto": "Depurador."
+      },
+      {
+        "clave": "c",
+        "texto": "Línea de vida."
+      },
+      {
+        "clave": "d",
+        "texto": "Compilador JIT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El repositorio de una herramienta CASE centraliza la información del modelo: diagramas, clases, relaciones y demás elementos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El depurador es una herramienta de ejecución, no de almacenamiento del modelo UML."
+        },
+        {
+          "clave": "c",
+          "motivo": "La línea de vida es un elemento de diagramas de secuencia, no una parte de una CASE."
+        },
+        {
+          "clave": "d",
+          "motivo": "El compilador JIT no es el almacén de información del modelo."
+        }
+      ],
+      "resumen_didactico": "Repositorio = base central del modelo UML en la CASE.",
+      "ejemplo_practico": "Guardar en un mismo lugar diagramas de clases, actores, asociaciones y componentes de un proyecto.",
+      "conclusion_final": "El componente correcto es el repositorio."
+    }
+  },
+  {
+    "id": "UT12-Q23",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué tipo de dato UML es el más adecuado para un atributo matricula de una clase Vehiculo?",
+    "contexto": "Tipado de atributos en un diagrama de clases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "String."
+      },
+      {
+        "clave": "b",
+        "texto": "Boolean."
+      },
+      {
+        "clave": "c",
+        "texto": "Integer/int."
+      },
+      {
+        "clave": "d",
+        "texto": "Float."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La matrícula es un texto identificativo, por lo que el tipo adecuado es String.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Boolean solo admite verdadero o falso."
+        },
+        {
+          "clave": "c",
+          "motivo": "Integer sirve para enteros, no para matrículas alfanuméricas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Float representa números con decimales, no cadenas."
+        }
+      ],
+      "resumen_didactico": "Texto alfanumérico descriptivo → String.",
+      "ejemplo_practico": "matricula: String, modelo: String, kilometraje: Integer.",
+      "conclusion_final": "La matrícula debe modelarse como String."
+    }
+  },
+  {
+    "id": "UT12-Q24",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "Si en una clase Vehiculo quieres indicar que disponible vale true por defecto al registrar un coche nuevo, ¿qué idea UML estás usando?",
+    "contexto": "Atributos con valor inicial o por defecto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un valor por defecto del atributo."
+      },
+      {
+        "clave": "b",
+        "texto": "Una generalización de actores."
+      },
+      {
+        "clave": "c",
+        "texto": "Una relación de composición."
+      },
+      {
+        "clave": "d",
+        "texto": "Una barra de activación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que los atributos pueden tener valores por defecto o iniciales, como disponible = true al registrar un vehículo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La generalización pertenece a relaciones de UML, no a inicialización de atributos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La composición describe una relación fuerte entre clases, no un valor inicial."
+        },
+        {
+          "clave": "d",
+          "motivo": "La barra de activación pertenece a diagramas de secuencia."
+        }
+      ],
+      "resumen_didactico": "Un atributo puede declararse con un valor inicial o por defecto.",
+      "ejemplo_practico": "disponible: Boolean [true] o equivalente según la notación usada.",
+      "conclusion_final": "Se trata de un valor por defecto del atributo."
+    }
+  },
+  {
+    "id": "UT12-Q25",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "¿Qué caracteriza a un método como getKilometraje(): int dentro de una clase UML?",
+    "contexto": "Métodos que devuelven un dato.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es un método que devuelve un valor entero como resultado."
+      },
+      {
+        "clave": "b",
+        "texto": "Es una nota adjunta para documentar el atributo kilometraje."
+      },
+      {
+        "clave": "c",
+        "texto": "Es una instancia concreta de la clase Vehiculo."
+      },
+      {
+        "clave": "d",
+        "texto": "Es una asociación entre dos clases diferentes."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un método puede ejecutar una acción o devolver un dato. El formato getKilometraje(): int indica una operación que devuelve un entero.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una nota adjunta es un comentario externo, no una operación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una instancia es un objeto concreto, no un método."
+        },
+        {
+          "clave": "d",
+          "motivo": "La asociación es una relación entre clases, no una operación interna."
+        }
+      ],
+      "resumen_didactico": "Método + tipo de retorno = operación que devuelve un valor.",
+      "ejemplo_practico": "getKilometraje(): int devuelve el kilometraje actual del vehículo.",
+      "conclusion_final": "Se trata de un método con retorno entero."
+    }
+  },
+  {
+    "id": "UT12-Q26",
+    "tema": "UT6 — Elaboración de diagramas de clases",
+    "pregunta": "En un diagrama de clases, ¿qué representa una asociación entre Profesor y Asignatura con el nombre imparte?",
+    "contexto": "Relaciones entre clases del dominio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que las instancias de una clase se relacionan con las de otra según ese papel o vínculo."
+      },
+      {
+        "clave": "b",
+        "texto": "Que Profesor hereda de Asignatura."
+      },
+      {
+        "clave": "c",
+        "texto": "Que Asignatura no puede existir sin Profesor por composición obligatoria."
+      },
+      {
+        "clave": "d",
+        "texto": "Que ambas clases deben fusionarse en una sola."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La asociación expresa un vínculo entre clases y, por extensión, entre sus instancias, pudiendo llevar nombre y multiplicidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Herencia indica relación 'es-un', no un vínculo funcional como impartir."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eso sería composición y no encaja necesariamente con Profesor–Asignatura."
+        },
+        {
+          "clave": "d",
+          "motivo": "La asociación no implica fusionar clases."
+        }
+      ],
+      "resumen_didactico": "Asociación = relación funcional o semántica entre clases.",
+      "ejemplo_practico": "Profesor imparte varias asignaturas; la línea entre ambas clases lo documenta.",
+      "conclusion_final": "La asociación indica que sus instancias están relacionadas bajo ese vínculo."
+    }
+  },
+  {
+    "id": "UT12-Q27",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿En qué etapa del proyecto se suele emplear el diagrama de casos de uso para asegurar que la idea funcional es la correcta antes de programar?",
+    "contexto": "Uso de diagramas de comportamiento en el análisis.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En la etapa de análisis."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo después de desplegar el sistema en producción."
+      },
+      {
+        "clave": "c",
+        "texto": "Únicamente al final del mantenimiento."
+      },
+      {
+        "clave": "d",
+        "texto": "Exclusivamente cuando ya existe todo el código compilado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el diagrama de casos de uso se utiliza a menudo en análisis para dejar claras las funcionalidades clave antes de empezar a programar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Su valor principal aparece antes de construir, no solo después de desplegar."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es una herramienta reservada al mantenimiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Precisamente ayuda antes de escribir todo el código."
+        }
+      ],
+      "resumen_didactico": "Casos de uso = herramienta temprana para validar funcionalidades con claridad.",
+      "ejemplo_practico": "Antes de programar una web de reservas, se dibujan Buscar, Reservar y Pagar para validar el alcance con el cliente.",
+      "conclusion_final": "La etapa más típica es la de análisis."
+    }
+  },
+  {
+    "id": "UT12-Q28",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "En un diagrama de secuencia, ¿qué idea expresa que el tiempo fluye de arriba hacia abajo?",
+    "contexto": "Lectura temporal de las interacciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los mensajes situados más arriba ocurren antes que los situados más abajo."
+      },
+      {
+        "clave": "b",
+        "texto": "Las flechas de retorno siempre se dibujan a la izquierda del actor."
+      },
+      {
+        "clave": "c",
+        "texto": "Las notas adjuntas sustituyen a las líneas de vida."
+      },
+      {
+        "clave": "d",
+        "texto": "Los casos de uso se leen de derecha a izquierda."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El diagrama de secuencia organiza la interacción en vertical: los mensajes superiores suceden antes y los inferiores después.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No define la lectura temporal general del diagrama."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las notas no sustituyen elementos temporales del diagrama."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los casos de uso pertenecen a otro tipo de diagrama."
+        }
+      ],
+      "resumen_didactico": "Secuencia = el tiempo baja por la página.",
+      "ejemplo_practico": "Primero login, después validación y después respuesta; ese orden se ve de arriba abajo.",
+      "conclusion_final": "La frase correcta es que lo de arriba ocurre antes que lo de abajo."
+    }
+  },
+  {
+    "id": "UT12-Q29",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "Cuando un actor general Usuario da origen a Usuario registrado y Usuario invitado en un diagrama de casos de uso, ¿qué relación UML se está utilizando?",
+    "contexto": "Jerarquías entre actores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Generalización."
+      },
+      {
+        "clave": "b",
+        "texto": "Asociación."
+      },
+      {
+        "clave": "c",
+        "texto": "Include."
+      },
+      {
+        "clave": "d",
+        "texto": "Extends."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La generalización en casos de uso permite crear jerarquías de actores o de casos de uso, de forma parecida a la herencia en clases.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La asociación une actor y caso de uso, no define herencia entre actores."
+        },
+        {
+          "clave": "c",
+          "motivo": "Include expresa obligatoriedad entre casos de uso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Extends expresa ampliación opcional entre casos de uso."
+        }
+      ],
+      "resumen_didactico": "Jerarquía actor padre–actor hijo = generalización.",
+      "ejemplo_practico": "Usuario registrado y Usuario invitado heredan el comportamiento general de Usuario.",
+      "conclusion_final": "La relación correcta es generalización."
+    }
+  },
+  {
+    "id": "UT12-Q30",
+    "tema": "UT7 — Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se denomina en un diagrama de secuencia el mensaje en el que un objeto se envía una llamada a sí mismo?",
+    "contexto": "Mensajes especiales en diagramas de secuencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mensaje de retorno."
+      },
+      {
+        "clave": "b",
+        "texto": "Mensaje recursivo o autollamada."
+      },
+      {
+        "clave": "c",
+        "texto": "Mensaje include."
+      },
+      {
+        "clave": "d",
+        "texto": "Mensaje de agregación."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En secuencia, cuando un objeto se invoca a sí mismo se representa una autollamada o mensaje recursivo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El retorno es la respuesta a una llamada, no una llamada a sí mismo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Include es una relación de casos de uso, no un tipo de mensaje en secuencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Agregación pertenece a diagramas de clases."
+        }
+      ],
+      "resumen_didactico": "Objeto que se llama a sí mismo = mensaje recursivo/autollamada.",
+      "ejemplo_practico": "Un método validar() que internamente vuelve a invocarse sobre la misma línea de vida.",
+      "conclusion_final": "La denominación correcta es mensaje recursivo o autollamada."
+    }
+  }
+]

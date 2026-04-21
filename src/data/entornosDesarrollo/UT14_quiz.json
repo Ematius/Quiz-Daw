@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT14-Q01",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "En una consultora de Sevilla, el equipo quiere dejar por escrito qué debe hacer el software, cómo se instalará y qué limitaciones se aceptan antes de empezar a programar. ¿En qué fase del desarrollo se genera sobre todo esa información inicial?",
+    "contexto": "Proyecto que necesita fijar objetivos, alcance y restricciones antes de la implementación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En la fase de análisis y definición de requisitos."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo en la fase de mantenimiento correctivo."
+      },
+      {
+        "clave": "c",
+        "texto": "Después de la entrega final, cuando ya no hay cambios."
+      },
+      {
+        "clave": "d",
+        "texto": "Únicamente al compilar el programa por primera vez."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La documentación inicial se crea principalmente en el análisis, cuando se definen requisitos, alcance, restricciones y objetivos del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El mantenimiento puede añadir documentación, pero no sustituye la definición inicial del proyecto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esperar al final impide guiar correctamente el desarrollo."
+        },
+        {
+          "clave": "d",
+          "motivo": "La compilación no produce por sí sola la definición funcional del software."
+        }
+      ],
+      "resumen_didactico": "Primero se define qué se necesita; luego se diseña y construye.",
+      "ejemplo_practico": "Antes de crear una app de reservas, se documenta qué usuarios habrá, qué funciones tendrá y qué datos manejará.",
+      "conclusion_final": "La documentación inicial pertenece sobre todo a la fase de análisis de requisitos."
+    }
+  },
+  {
+    "id": "UT14-Q02",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Una empresa necesita una herramienta muy específica para su proceso interno y asume más tiempo y coste a cambio de adaptación total. ¿Qué tipo de software encaja mejor?",
+    "contexto": "Decisión entre producto estándar y desarrollo específico para una sola organización.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Software estándar o enlatado."
+      },
+      {
+        "clave": "b",
+        "texto": "Software a medida."
+      },
+      {
+        "clave": "c",
+        "texto": "Una macro ofimática sin análisis previo."
+      },
+      {
+        "clave": "d",
+        "texto": "Un controlador de dispositivo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El software a medida se crea para necesidades concretas de una organización, con mayor adaptación pero también más coste y tiempo de desarrollo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El estándar se comparte entre muchos clientes y no siempre cubre procesos muy específicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una macro puede ayudar en automatizaciones puntuales, pero no define un proyecto de software a medida completo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un driver controla hardware, no resuelve una necesidad empresarial específica."
+        }
+      ],
+      "resumen_didactico": "Más adaptación y personalización suelen apuntar a software a medida.",
+      "ejemplo_practico": "Un sistema interno de trazabilidad diseñado solo para una fábrica concreta.",
+      "conclusion_final": "Si la prioridad es la adaptación total a procesos únicos, encaja el software a medida."
+    }
+  },
+  {
+    "id": "UT14-Q03",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué característica describe mejor a un lenguaje interpretado frente a uno compilado?",
+    "contexto": "Comparación de modelos de ejecución de lenguajes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se traduce de una vez a código máquina y genera un ejecutable final optimizado."
+      },
+      {
+        "clave": "b",
+        "texto": "Se ejecuta exclusivamente dentro del kernel del sistema operativo."
+      },
+      {
+        "clave": "c",
+        "texto": "Se traduce durante la ejecución, normalmente instrucción a instrucción o bloque a bloque."
+      },
+      {
+        "clave": "d",
+        "texto": "No necesita ningún tipo de traductor o runtime."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Los lenguajes interpretados se traducen mientras se ejecutan, lo que aporta flexibilidad, frente a los compilados que suelen transformarse previamente a código máquina.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe a un lenguaje compilado, no interpretado."
+        },
+        {
+          "clave": "b",
+          "motivo": "La ejecución en kernel no define el tipo de lenguaje."
+        },
+        {
+          "clave": "d",
+          "motivo": "Todo lenguaje necesita algún mecanismo de traducción o ejecución."
+        }
+      ],
+      "resumen_didactico": "Interpretado = traducción en ejecución; compilado = traducción previa.",
+      "ejemplo_practico": "Python suele interpretarse, mientras que C++ suele compilarse antes de ejecutar.",
+      "conclusion_final": "La característica clave del lenguaje interpretado es la traducción durante la ejecución."
+    }
+  },
+  {
+    "id": "UT14-Q04",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "En una formación interna te dicen: \"Java se ejecuta sobre una máquina virtual y por eso es portable\". ¿Qué idea resume mejor esa afirmación?",
+    "contexto": "Portabilidad de Java en distintos sistemas operativos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que Java se limita a ejecutarse solo en Windows."
+      },
+      {
+        "clave": "b",
+        "texto": "Que genera bytecode y puede ejecutarse donde exista una JVM compatible."
+      },
+      {
+        "clave": "c",
+        "texto": "Que se traduce siempre a ensamblador específico del procesador."
+      },
+      {
+        "clave": "d",
+        "texto": "Que no necesita bibliotecas ni entorno de ejecución."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Java genera bytecode y este se ejecuta en una Máquina Virtual de Java, lo que favorece su portabilidad entre sistemas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Java no está limitado a Windows."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se define por generar ensamblador específico del procesador como vía principal."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí necesita entorno de ejecución, como la JVM/JRE."
+        }
+      ],
+      "resumen_didactico": "Java es portable porque el bytecode viaja y la JVM se adapta al sistema destino.",
+      "ejemplo_practico": "El mismo .jar puede correr en Linux, Windows o macOS con la JVM adecuada.",
+      "conclusion_final": "La portabilidad de Java se apoya en el bytecode y la JVM."
+    }
+  },
+  {
+    "id": "UT14-Q05",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Un junior pregunta qué ventaja inmediata le da un IDE respecto a usar solo bloc de notas y compilador. ¿Cuál es la respuesta más completa?",
+    "contexto": "Comparación entre editor simple y entorno de desarrollo integrado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un IDE reúne editor, ejecución, depuración y otras herramientas en un mismo entorno."
+      },
+      {
+        "clave": "b",
+        "texto": "Un IDE sustituye al lenguaje de programación."
+      },
+      {
+        "clave": "c",
+        "texto": "Un IDE impide que existan errores lógicos."
+      },
+      {
+        "clave": "d",
+        "texto": "Un IDE elimina la necesidad de instalar dependencias o runtimes."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El IDE integra editor, compilador o intérprete, depurador, gestión de proyectos y otras ayudas que mejoran la productividad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El IDE no reemplaza al lenguaje; es la herramienta para trabajar con él."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ayuda a detectar fallos, pero no elimina los errores lógicos por sí solo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Muchas veces sigue siendo necesario instalar JDK, librerías o herramientas externas."
+        }
+      ],
+      "resumen_didactico": "IDE = caja de herramientas integrada para programar mejor y más rápido.",
+      "ejemplo_practico": "Autocompletado, breakpoints y ejecución con un clic dentro del mismo programa.",
+      "conclusion_final": "La ventaja principal del IDE es integrar herramientas clave del desarrollo en un solo entorno."
+    }
+  },
+  {
+    "id": "UT14-Q06",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "En un equipo Java se instala el JDK antes que el JRE. ¿Por qué tiene sentido hacerlo así en una máquina de desarrollo?",
+    "contexto": "Preparación de un entorno de programación Java.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque el JDK incluye herramientas de desarrollo además del entorno de ejecución."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el JDK solo sirve para navegar por Internet."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque el JRE compila el código y el JDK solo lo ejecuta."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque sin JDK no se puede instalar ningún IDE del mercado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El JDK incorpora herramientas como compilador y utilidades para desarrollar, mientras que el JRE se centra en ejecutar aplicaciones Java.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No tiene relación con navegación web."
+        },
+        {
+          "clave": "c",
+          "motivo": "Está invertido: el JDK aporta compilación y el JRE ejecución."
+        },
+        {
+          "clave": "d",
+          "motivo": "Muchos IDE pueden instalarse, aunque para desarrollar Java el JDK sea necesario."
+        }
+      ],
+      "resumen_didactico": "Desarrollar = JDK; ejecutar = JRE.",
+      "ejemplo_practico": "Para compilar una clase Java desde el IDE necesitas herramientas del JDK.",
+      "conclusion_final": "En un puesto de desarrollo Java se instala el JDK porque incluye lo necesario para programar y compilar."
+    }
+  },
+  {
+    "id": "UT14-Q07",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Un desarrollador detiene la ejecución en una línea concreta, avanza paso a paso y observa el valor de variables para encontrar un fallo. ¿Qué herramienta del IDE está usando?",
+    "contexto": "Análisis controlado de una ejecución con errores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El profiler."
+      },
+      {
+        "clave": "b",
+        "texto": "El depurador."
+      },
+      {
+        "clave": "c",
+        "texto": "El sistema de control de versiones."
+      },
+      {
+        "clave": "d",
+        "texto": "El generador de documentación."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El depurador permite detener la ejecución, usar breakpoints, inspeccionar variables y seguir el programa paso a paso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El profiler mide consumo y rendimiento, no depuración paso a paso."
+        },
+        {
+          "clave": "c",
+          "motivo": "El SCV gestiona cambios de código, no la ejecución del programa."
+        },
+        {
+          "clave": "d",
+          "motivo": "La documentación no permite inspeccionar estados de ejecución."
+        }
+      ],
+      "resumen_didactico": "Breakpoints + variables + paso a paso = depurador.",
+      "ejemplo_practico": "Parar en el método login() y ver por qué la contraseña validada no coincide.",
+      "conclusion_final": "La herramienta usada para seguir la ejecución controladamente es el depurador."
+    }
+  },
+  {
+    "id": "UT14-Q08",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Si el objetivo es medir qué métodos consumen más tiempo o memoria en una aplicación, ¿qué herramienta encaja mejor?",
+    "contexto": "Búsqueda de cuellos de botella de rendimiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Profiler."
+      },
+      {
+        "clave": "b",
+        "texto": "Linter."
+      },
+      {
+        "clave": "c",
+        "texto": "Gestor de plugins."
+      },
+      {
+        "clave": "d",
+        "texto": "Preprocesador de texto."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El profiler se utiliza para analizar rendimiento, tiempos de ejecución y consumo de recursos del software.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El linter revisa estilo y calidad sintáctica, no perfiles de rendimiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "Gestiona extensiones del IDE, no analiza ejecución."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una herramienta de análisis de rendimiento."
+        }
+      ],
+      "resumen_didactico": "Rendimiento interno y consumo de recursos se estudian con profiling.",
+      "ejemplo_practico": "Detectar que una consulta o un bucle concreto consume la mayor parte del tiempo total.",
+      "conclusion_final": "Para localizar cuellos de botella, la herramienta adecuada es el profiler."
+    }
+  },
+  {
+    "id": "UT14-Q09",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Un equipo usa NetBeans en Windows, Linux y macOS porque busca una herramienta multiplataforma y abierta. ¿Qué ventaja están explotando especialmente?",
+    "contexto": "Selección de IDE para un equipo con sistemas operativos distintos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que es exclusivo para ecosistemas Apple."
+      },
+      {
+        "clave": "b",
+        "texto": "Que permite trabajar en distintos sistemas operativos con una misma herramienta."
+      },
+      {
+        "clave": "c",
+        "texto": "Que solo sirve para Pascal."
+      },
+      {
+        "clave": "d",
+        "texto": "Que elimina la necesidad de plugins o módulos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "NetBeans se presenta como IDE multiplataforma y open source, útil para trabajar en varios sistemas operativos con una experiencia común.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso correspondería más al ecosistema Xcode/Apple."
+        },
+        {
+          "clave": "c",
+          "motivo": "No está limitado a Pascal; soporta varios lenguajes."
+        },
+        {
+          "clave": "d",
+          "motivo": "La modularidad y extensibilidad siguen siendo relevantes en IDE modernos."
+        }
+      ],
+      "resumen_didactico": "Mismo IDE en varios sistemas = ventaja multiplataforma.",
+      "ejemplo_practico": "Un alumno usa Ubuntu, otro Windows y ambos comparten proyecto con el mismo entorno base.",
+      "conclusion_final": "La ventaja destacada es la posibilidad de usar la misma herramienta en distintos sistemas operativos."
+    }
+  },
+  {
+    "id": "UT14-Q10",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Cuál de estos IDE está asociado de forma oficial al desarrollo nativo para iOS y macOS?",
+    "contexto": "Elección de herramienta para apps del ecosistema Apple.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Xcode."
+      },
+      {
+        "clave": "b",
+        "texto": "Eclipse."
+      },
+      {
+        "clave": "c",
+        "texto": "Turbo Pascal."
+      },
+      {
+        "clave": "d",
+        "texto": "Visual Basic 6."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Xcode es el entorno oficial de Apple para desarrollar aplicaciones nativas de macOS e iOS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eclipse es multiplataforma, pero no el entorno oficial de Apple."
+        },
+        {
+          "clave": "c",
+          "motivo": "Turbo Pascal es histórico y no pertenece al ecosistema Apple moderno."
+        },
+        {
+          "clave": "d",
+          "motivo": "Visual Basic 6 se asocia a Microsoft y RAD clásico."
+        }
+      ],
+      "resumen_didactico": "Apple nativo = Xcode.",
+      "ejemplo_practico": "Crear una app iPhone con Swift desde Xcode.",
+      "conclusion_final": "Para desarrollo nativo en iOS y macOS, el IDE oficial es Xcode."
+    }
+  },
+  {
+    "id": "UT14-Q11",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "En una revisión de calidad, el equipo decide renombrar variables ambiguas y separar un método enorme en varios métodos pequeños sin cambiar el resultado final. ¿Qué práctica están aplicando?",
+    "contexto": "Mejora interna del código sin alterar la funcionalidad observable.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Refactorización."
+      },
+      {
+        "clave": "b",
+        "texto": "Despliegue continuo."
+      },
+      {
+        "clave": "c",
+        "texto": "Serialización."
+      },
+      {
+        "clave": "d",
+        "texto": "Virtualización."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La refactorización reorganiza el código internamente para mejorar claridad, mantenibilidad o eficiencia sin cambiar el comportamiento externo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El despliegue continuo se refiere a publicación automatizada, no a limpiar el código."
+        },
+        {
+          "clave": "c",
+          "motivo": "La serialización convierte datos/objetos en un formato intercambiable."
+        },
+        {
+          "clave": "d",
+          "motivo": "La virtualización trata de entornos o máquinas, no de reorganizar código."
+        }
+      ],
+      "resumen_didactico": "Mejorar el código por dentro sin cambiar lo que hace por fuera es refactorizar.",
+      "ejemplo_practico": "Pasar de procesarPedidoTodo() a validarPedido(), calcularTotal() y guardarPedido().",
+      "conclusion_final": "La práctica descrita es refactorización."
+    }
+  },
+  {
+    "id": "UT14-Q12",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué patrón de refactorización se está aplicando cuando un método muy largo se divide en varios métodos más pequeños y específicos?",
+    "contexto": "División de lógica extensa para ganar claridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Extract Method."
+      },
+      {
+        "clave": "b",
+        "texto": "Inline Method."
+      },
+      {
+        "clave": "c",
+        "texto": "Herencia múltiple."
+      },
+      {
+        "clave": "d",
+        "texto": "Polimorfismo dinámico."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Extract Method consiste en extraer partes de una función compleja a métodos más pequeños, legibles y reutilizables.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Inline hace justo lo contrario: integrar métodos muy simples en el punto de uso."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es un patrón de refactorización para dividir un método."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un concepto de POO, no la técnica de separación de un método largo."
+        }
+      ],
+      "resumen_didactico": "Método enorme → varios métodos pequeños = Extract Method.",
+      "ejemplo_practico": "De registrarUsuario() a validarDatos(), guardarUsuario() y enviarBienvenida().",
+      "conclusion_final": "La técnica aplicada es Extract Method."
+    }
+  },
+  {
+    "id": "UT14-Q13",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Un desarrollador sustituye un algoritmo lento por otro más eficiente, pero quiere asegurarse de que el sistema sigue dando los mismos resultados correctos. ¿Qué debería ejecutar después?",
+    "contexto": "Cambio interno importante con riesgo de romper funcionalidad previa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pruebas de regresión."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo el instalador del IDE."
+      },
+      {
+        "clave": "c",
+        "texto": "Un cambio de licencia del proyecto."
+      },
+      {
+        "clave": "d",
+        "texto": "Únicamente una copia de la carpeta src."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Tras cambios internos relevantes, las pruebas de regresión verifican que lo que ya funcionaba no se haya roto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El IDE no valida el comportamiento funcional por sí mismo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La licencia no comprueba resultados del software."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una copia de código no demuestra corrección funcional."
+        }
+      ],
+      "resumen_didactico": "Cambias algo dentro y vuelves a probar lo anterior: eso es regresión.",
+      "ejemplo_practico": "Tras optimizar búsquedas, se reejecutan los tests de login, filtros y exportación de datos.",
+      "conclusion_final": "Después de cambiar un algoritmo, deben ejecutarse pruebas de regresión."
+    }
+  },
+  {
+    "id": "UT14-Q14",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué documento fija módulos a probar, responsables, calendario, criterios de validez y aprobación formal antes de empezar a probar?",
+    "contexto": "Organización previa de la fase de pruebas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Plan de pruebas."
+      },
+      {
+        "clave": "b",
+        "texto": "README del proyecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Diagrama de clases."
+      },
+      {
+        "clave": "d",
+        "texto": "Contrato de hosting."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El plan de pruebas recoge qué se probará, cómo, cuándo, con qué responsables y bajo qué criterios se considerará válido el software.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un README puede resumir el proyecto, pero no sustituye un plan formal de pruebas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El diagrama de clases modela estructura, no la planificación completa de pruebas."
+        },
+        {
+          "clave": "d",
+          "motivo": "No tiene relación con la validación del software."
+        }
+      ],
+      "resumen_didactico": "Antes de probar de forma seria, se necesita un plan de pruebas.",
+      "ejemplo_practico": "Definir que login, pagos y recuperación de contraseña se probarán por QA en fechas concretas con criterios de aceptación claros.",
+      "conclusion_final": "Ese documento es el plan de pruebas."
+    }
+  },
+  {
+    "id": "UT14-Q15",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Si pruebas una funcionalidad solo a partir de entradas y salidas esperadas, sin mirar el código interno, ¿qué enfoque estás usando?",
+    "contexto": "Validación externa basada en requisitos funcionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Caja negra."
+      },
+      {
+        "clave": "b",
+        "texto": "Caja blanca."
+      },
+      {
+        "clave": "c",
+        "texto": "Refactorización."
+      },
+      {
+        "clave": "d",
+        "texto": "Inyección de dependencias."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las pruebas de caja negra validan el comportamiento externo del sistema mediante entradas y salidas, sin analizar su implementación interna.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La caja blanca sí analiza código, rutas y condiciones internas."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es un enfoque de pruebas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un patrón/técnica de diseño, no una estrategia de pruebas."
+        }
+      ],
+      "resumen_didactico": "Si no miras el interior y solo validas el comportamiento visible, es caja negra.",
+      "ejemplo_practico": "Comprobar que un formulario rechaza una edad 17 sin abrir el código fuente.",
+      "conclusion_final": "El enfoque descrito corresponde a pruebas de caja negra."
+    }
+  },
+  {
+    "id": "UT14-Q16",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué técnica de caja negra agrupa entradas que deberían comportarse igual para reducir el número de pruebas sin perder cobertura?",
+    "contexto": "Diseño eficiente de casos de prueba.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Clases de equivalencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Recursividad."
+      },
+      {
+        "clave": "c",
+        "texto": "Herencia simple."
+      },
+      {
+        "clave": "d",
+        "texto": "Normalización."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las clases de equivalencia agrupan entradas que deberían producir comportamientos similares para evitar pruebas redundantes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es un concepto algorítmico, no de diseño de pruebas funcionales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es un concepto de POO."
+        },
+        {
+          "clave": "d",
+          "motivo": "Pertenece a bases de datos."
+        }
+      ],
+      "resumen_didactico": "No pruebas cada valor; pruebas representantes de grupos equivalentes.",
+      "ejemplo_practico": "Para edades válidas entre 18 y 65, probar 30 puede representar una clase válida.",
+      "conclusion_final": "La técnica es clases de equivalencia."
+    }
+  },
+  {
+    "id": "UT14-Q17",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "En UML, ¿qué ventaja principal ofrece usar diagramas para documentar un sistema frente a enseñar directamente el código fuente a perfiles no técnicos?",
+    "contexto": "Comunicación entre equipo técnico y stakeholders del negocio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite una representación visual más comprensible del sistema."
+      },
+      {
+        "clave": "b",
+        "texto": "Convierte automáticamente el proyecto en ejecutable."
+      },
+      {
+        "clave": "c",
+        "texto": "Impide hacer cambios posteriores en el diseño."
+      },
+      {
+        "clave": "d",
+        "texto": "Obliga a usar un solo tipo de diagrama."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "UML facilita documentación visual y comprensible para distintos perfiles, no solo para programadores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "UML no se define por generar ejecutables automáticamente."
+        },
+        {
+          "clave": "c",
+          "motivo": "No impide cambios; de hecho facilita estudiar impactos."
+        },
+        {
+          "clave": "d",
+          "motivo": "UML ofrece varios diagramas, no uno solo."
+        }
+      ],
+      "resumen_didactico": "UML sirve para explicar mejor el sistema con diagramas claros.",
+      "ejemplo_practico": "Un directivo entiende casos de uso y flujos sin leer Java o Python.",
+      "conclusion_final": "La ventaja clave es la claridad visual para comunicar el sistema."
+    }
+  },
+  {
+    "id": "UT14-Q18",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué dos grandes grupos organizan los diagramas UML según el temario?",
+    "contexto": "Clasificación general del lenguaje de modelado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Locales y remotos."
+      },
+      {
+        "clave": "b",
+        "texto": "Visuales y textuales."
+      },
+      {
+        "clave": "c",
+        "texto": "De estructura y de comportamiento."
+      },
+      {
+        "clave": "d",
+        "texto": "De compilación y de ejecución."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "UML agrupa sus diagramas en estructura (visión estática) y comportamiento (visión dinámica del sistema).",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es una clasificación UML estándar."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es la división principal presentada en el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una clasificación de diagramas UML."
+        }
+      ],
+      "resumen_didactico": "Estructura dice de qué está hecho el sistema; comportamiento dice cómo actúa.",
+      "ejemplo_practico": "Clases = estructura; secuencia = comportamiento.",
+      "conclusion_final": "Los dos grandes grupos son diagramas de estructura y de comportamiento."
+    }
+  },
+  {
+    "id": "UT14-Q19",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "En un diagrama de clases, ¿cómo se llama la relación básica que conecta dos clases como Profesor y Asignatura cuando una imparte varias de la otra?",
+    "contexto": "Relación funcional entre elementos del dominio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Asociación."
+      },
+      {
+        "clave": "b",
+        "texto": "Compilación."
+      },
+      {
+        "clave": "c",
+        "texto": "Serialización."
+      },
+      {
+        "clave": "d",
+        "texto": "Sobrecarga."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La asociación representa una relación entre clases en un diagrama de clases UML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es un tipo de relación UML entre clases."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es un proceso de transformación de datos/objetos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es un concepto de programación, no la relación básica entre clases aquí."
+        }
+      ],
+      "resumen_didactico": "Cuando dos clases están relacionadas funcionalmente, suele hablarse de asociación.",
+      "ejemplo_practico": "Profesor —imparte— Asignatura.",
+      "conclusion_final": "La relación básica descrita es una asociación."
+    }
+  },
+  {
+    "id": "UT14-Q20",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué elemento de un diagrama de clases UML define una acción que la clase puede realizar?",
+    "contexto": "Diferenciación entre datos y comportamiento en POO.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Método u operación."
+      },
+      {
+        "clave": "b",
+        "texto": "Atributo."
+      },
+      {
+        "clave": "c",
+        "texto": "Nota adjunta."
+      },
+      {
+        "clave": "d",
+        "texto": "Paquete de despliegue."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los métodos u operaciones representan acciones o comportamientos de la clase; los atributos representan datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El atributo almacena información, no describe una acción."
+        },
+        {
+          "clave": "c",
+          "motivo": "La nota añade aclaraciones, no comportamiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es el elemento usado para representar acciones dentro de una clase."
+        }
+      ],
+      "resumen_didactico": "Clase: tiene atributos y hace cosas mediante métodos.",
+      "ejemplo_practico": "CuentaBancaria: saldo; ingresar(); retirar(); consultarSaldo().",
+      "conclusion_final": "La acción de la clase se representa mediante un método u operación."
+    }
+  },
+  {
+    "id": "UT14-Q21",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "En un diagrama de casos de uso, ¿qué relación usarías si \"Finalizar matrícula\" necesita obligatoriamente \"Validar documentación\"?",
+    "contexto": "Dependencia obligatoria entre funcionalidades del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<<extends>>"
+      },
+      {
+        "clave": "b",
+        "texto": "<<include>>"
+      },
+      {
+        "clave": "c",
+        "texto": "Generalización"
+      },
+      {
+        "clave": "d",
+        "texto": "Composición"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La relación <<include>> indica que un caso de uso incorpora obligatoriamente otro para completarse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<<extends>> se usa para comportamiento opcional."
+        },
+        {
+          "clave": "c",
+          "motivo": "La generalización crea jerarquías, no obligatoriedad funcional."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la relación propia de casos de uso para este escenario."
+        }
+      ],
+      "resumen_didactico": "Obligatorio dentro de otro caso de uso = include.",
+      "ejemplo_practico": "Finalizar matrícula <<include>> Validar documentación.",
+      "conclusion_final": "La relación correcta es <<include>>."
+    }
+  },
+  {
+    "id": "UT14-Q22",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué diagrama UML muestra el orden temporal de mensajes entre objetos durante una interacción?",
+    "contexto": "Necesidad de representar cronología de llamadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diagrama de secuencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Diagrama de distribución."
+      },
+      {
+        "clave": "c",
+        "texto": "Diagrama de clases."
+      },
+      {
+        "clave": "d",
+        "texto": "Diagrama de componentes."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El diagrama de secuencia representa cómo y en qué orden se envían mensajes entre participantes a lo largo del tiempo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La distribución muestra despliegue físico en nodos o servidores."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las clases muestran estructura, no cronología."
+        },
+        {
+          "clave": "d",
+          "motivo": "Componentes modela piezas del sistema, no el orden temporal de mensajes."
+        }
+      ],
+      "resumen_didactico": "Tiempo + mensajes + líneas de vida = secuencia.",
+      "ejemplo_practico": "Usuario → Sistema → BD → Sistema → Usuario en orden vertical descendente.",
+      "conclusion_final": "El diagrama adecuado es el diagrama de secuencia."
+    }
+  },
+  {
+    "id": "UT14-Q23",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Una empresa quiere poder volver atrás si una modificación rompe la aplicación y además saber quién hizo cada cambio. ¿Qué herramienta responde mejor a esa necesidad?",
+    "contexto": "Control del historial de cambios en un proyecto de software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sistema de control de versiones."
+      },
+      {
+        "clave": "b",
+        "texto": "Compilador."
+      },
+      {
+        "clave": "c",
+        "texto": "Generador de diagramas UML."
+      },
+      {
+        "clave": "d",
+        "texto": "Editor hexadecimal."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los sistemas de control de versiones registran cambios, autores y permiten recuperar estados anteriores del proyecto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Compila código, pero no gestiona historial ni reversión de cambios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Puede ayudar a documentar, pero no controla versiones del código."
+        },
+        {
+          "clave": "d",
+          "motivo": "No está pensado para la gestión histórica colaborativa del proyecto."
+        }
+      ],
+      "resumen_didactico": "Historial, autores y vuelta atrás son responsabilidades del control de versiones.",
+      "ejemplo_practico": "Revertir un commit defectuoso y ver qué desarrollador introdujo un cambio concreto.",
+      "conclusion_final": "La herramienta clave es un sistema de control de versiones."
+    }
+  },
+  {
+    "id": "UT14-Q24",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Si un proyecto Java quiere generar documentación técnica a partir de comentarios especiales del código fuente, ¿qué herramienta del ecosistema clásico encaja?",
+    "contexto": "Generación automatizada de documentación de API.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Javadoc."
+      },
+      {
+        "clave": "b",
+        "texto": "Wireshark."
+      },
+      {
+        "clave": "c",
+        "texto": "GDB."
+      },
+      {
+        "clave": "d",
+        "texto": "Makefs."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Javadoc genera documentación a partir de comentarios estructurados en código Java.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es una herramienta de análisis de red."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es un depurador, no un generador de documentación Java."
+        },
+        {
+          "clave": "d",
+          "motivo": "No corresponde a la herramienta típica de documentación Java."
+        }
+      ],
+      "resumen_didactico": "Comentarios Java especiales + documentación HTML/API = Javadoc.",
+      "ejemplo_practico": "Documentar una clase UsuarioService para que otros desarrolladores entiendan métodos y parámetros.",
+      "conclusion_final": "La herramienta adecuada es Javadoc."
+    }
+  },
+  {
+    "id": "UT14-Q25",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Cuál de estas opciones describe mejor una ventaja típica de los entornos de desarrollo online?",
+    "contexto": "Trabajo colaborativo desde distintos dispositivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Facilitan colaboración y acceso desde varios equipos sin depender siempre del mismo ordenador."
+      },
+      {
+        "clave": "b",
+        "texto": "Eliminan totalmente la necesidad de conexión a Internet."
+      },
+      {
+        "clave": "c",
+        "texto": "Son siempre más potentes que cualquier IDE local."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo sirven para escribir pseudocódigo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los entornos online destacan por facilitar colaboración, acceso desde distintos dispositivos y trabajo con repositorios comunes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Precisamente suelen depender de conexión a Internet."
+        },
+        {
+          "clave": "c",
+          "motivo": "El temario no los presenta como siempre más potentes; a menudo tienen menos potencia que soluciones locales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Pueden servir para programar de verdad, no solo pseudocódigo."
+        }
+      ],
+      "resumen_didactico": "Su fuerza es colaborar y entrar desde cualquier sitio, no necesariamente la máxima potencia.",
+      "ejemplo_practico": "Compartir un enlace a un editor online para corregir juntos una práctica en remoto.",
+      "conclusion_final": "La ventaja más clara es la colaboración y el acceso desde distintos dispositivos."
+    }
+  },
+  {
+    "id": "UT14-Q26",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Un desarrollador deja comentarios mínimos porque usa nombres muy claros como totalFacturaConIVA o fechaLimiteDevolucion. ¿Qué buena práctica está reforzando?",
+    "contexto": "Mejora de legibilidad mediante nombres significativos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Variables autoexplicativas."
+      },
+      {
+        "clave": "b",
+        "texto": "Ofuscación del código."
+      },
+      {
+        "clave": "c",
+        "texto": "Desnormalización."
+      },
+      {
+        "clave": "d",
+        "texto": "Compresión de binarios."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las variables autoexplicativas ayudan a comprender el código sin depender excesivamente de comentarios externos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La ofuscación persigue dificultar la lectura, justo lo contrario."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es un concepto de legibilidad de código."
+        },
+        {
+          "clave": "d",
+          "motivo": "No guarda relación con el nombrado de variables."
+        }
+      ],
+      "resumen_didactico": "Buenos nombres aclaran el código y reducen ambigüedad.",
+      "ejemplo_practico": "usar descuentoAplicado en lugar de d1.",
+      "conclusion_final": "La práctica es usar variables autoexplicativas."
+    }
+  },
+  {
+    "id": "UT14-Q27",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué debería incluir un conjunto de datos de prueba bien diseñado para comprobar la robustez de una funcionalidad?",
+    "contexto": "Preparación de datos antes de ejecutar pruebas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo datos correctos para ver que el flujo ideal funciona."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo datos inválidos para forzar errores."
+      },
+      {
+        "clave": "c",
+        "texto": "Datos válidos, inválidos y fuera de rango."
+      },
+      {
+        "clave": "d",
+        "texto": "Únicamente datos copiados de producción sin filtrar."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Los sets de prueba deben cubrir entradas válidas, inválidas y fuera de rango para medir corrección y robustez del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Solo lo correcto no prueba la reacción ante errores y límites."
+        },
+        {
+          "clave": "b",
+          "motivo": "Solo lo inválido no confirma el funcionamiento normal esperado."
+        },
+        {
+          "clave": "d",
+          "motivo": "No garantiza cobertura sistemática ni siempre es adecuado por privacidad y calidad."
+        }
+      ],
+      "resumen_didactico": "Hay que probar lo normal, lo incorrecto y los extremos.",
+      "ejemplo_practico": "Edad 30, edad 10 y edad -3.",
+      "conclusion_final": "Un set robusto combina datos válidos, inválidos y fuera de rango."
+    }
+  },
+  {
+    "id": "UT14-Q28",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "¿Qué diagrama de comportamiento es el más adecuado para mostrar qué puede hacer un actor externo con el sistema desde la perspectiva del usuario?",
+    "contexto": "Necesidad de describir funcionalidades visibles del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diagrama de casos de uso."
+      },
+      {
+        "clave": "b",
+        "texto": "Diagrama de objetos."
+      },
+      {
+        "clave": "c",
+        "texto": "Diagrama de componentes."
+      },
+      {
+        "clave": "d",
+        "texto": "Diagrama de paquetes."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El diagrama de casos de uso representa actores externos y funcionalidades del sistema desde la visión del usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Modela instancias concretas, no catálogo funcional para actores."
+        },
+        {
+          "clave": "c",
+          "motivo": "Describe componentes estructurales del software."
+        },
+        {
+          "clave": "d",
+          "motivo": "Agrupa elementos, pero no describe interacción actor-función."
+        }
+      ],
+      "resumen_didactico": "Usuario + funcionalidades visibles = casos de uso.",
+      "ejemplo_practico": "Cliente: registrarse, comprar, consultar pedido.",
+      "conclusion_final": "El diagrama adecuado es el de casos de uso."
+    }
+  },
+  {
+    "id": "UT14-Q29",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Cuando en un diagrama de secuencia aparece una línea discontinua vertical bajo un objeto, ¿qué está representando?",
+    "contexto": "Lectura de la notación básica de secuencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La línea de vida del participante."
+      },
+      {
+        "clave": "b",
+        "texto": "Una excepción no controlada."
+      },
+      {
+        "clave": "c",
+        "texto": "La compilación de un método."
+      },
+      {
+        "clave": "d",
+        "texto": "La herencia entre dos clases."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En secuencia, la línea discontinua vertical es la línea de vida y muestra la existencia del participante a lo largo del tiempo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la notación de excepción."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compilación no se representa así en un diagrama de secuencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "La herencia pertenece a diagramas de clases."
+        }
+      ],
+      "resumen_didactico": "La línea de vida conecta el participante con el paso del tiempo en la interacción.",
+      "ejemplo_practico": "Usuario, Sistema y BD aparecen con sus respectivas líneas de vida bajo sus nombres.",
+      "conclusion_final": "Esa línea representa la línea de vida del participante."
+    }
+  },
+  {
+    "id": "UT14-Q30",
+    "tema": "UT14 — Repaso global de Entornos de desarrollo (Bloque 6)",
+    "pregunta": "Un analista quiere añadir una aclaración visual al lado de una clase UML sin alterar el modelo ni el código derivado. ¿Qué recurso debe usar?",
+    "contexto": "Anotaciones de apoyo en un diagrama de clases.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una nota adjunta."
+      },
+      {
+        "clave": "b",
+        "texto": "Una herencia múltiple."
+      },
+      {
+        "clave": "c",
+        "texto": "Una composición obligatoria."
+      },
+      {
+        "clave": "d",
+        "texto": "Un atributo booleano adicional."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las notas adjuntas sirven para aclarar o comentar elementos del diagrama sin modificar la estructura del modelo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La herencia modifica el modelo, no es un comentario."
+        },
+        {
+          "clave": "c",
+          "motivo": "La composición cambia relaciones estructurales del diseño."
+        },
+        {
+          "clave": "d",
+          "motivo": "Añadir atributos altera la clase y el modelo."
+        }
+      ],
+      "resumen_didactico": "Para explicar algo sin cambiar el diseño, se usa una nota.",
+      "ejemplo_practico": "Nota: \"La matrícula debe validarse con formato europeo\" junto a la clase Vehiculo.",
+      "conclusion_final": "El recurso adecuado es una nota adjunta."
+    }
+  }
+]
