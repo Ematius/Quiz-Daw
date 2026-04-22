@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT4-Q01",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Read the following paragraph and identify the main idea: \"The company redesigned its website to improve user experience. The new layout is cleaner, the shopping cart is easier to use, and customers can now complete purchases more quickly.\"",
+    "contexto": "Se pide identificar la idea principal de un párrafo donde la primera oración presenta el mensaje central y las siguientes lo desarrollan con detalles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "The company redesigned its website to improve user experience."
+      },
+      {
+        "clave": "b",
+        "texto": "Customers can now complete purchases more quickly."
+      },
+      {
+        "clave": "c",
+        "texto": "The shopping cart is easier to use than before."
+      },
+      {
+        "clave": "d",
+        "texto": "The website uses a cleaner layout than most competitors."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La idea principal es el núcleo del mensaje. En este párrafo, la oración central es que la empresa rediseñó su página web para mejorar la experiencia de usuario. Después aparecen ideas secundarias que explican cómo se consigue: un diseño más limpio, un carrito más sencillo y compras más rápidas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque expresa un detalle secundario que desarrolla la idea principal, pero no resume el contenido completo del párrafo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque solo recoge un ejemplo concreto del rediseño, no el mensaje global."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque añade una comparación con la competencia que no aparece en el texto."
+        }
+      ],
+      "resumen_didactico": "La idea principal resume el mensaje completo; los demás elementos lo explican o lo ejemplifican.",
+      "ejemplo_practico": "Si un texto dice: \"The school introduced digital tools to improve learning. Students can now access materials online and submit homework faster\", la idea principal sería la introducción de herramientas digitales para mejorar el aprendizaje.",
+      "conclusion_final": "La respuesta correcta es la a porque recoge el mensaje global del párrafo."
+    }
+  },
+  {
+    "id": "UT4-Q02",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which of the following is a supporting detail in this passage? \"The new trade agreement reduces export costs for agricultural products. It also simplifies customs procedures and improves competitiveness in international markets.\"",
+    "contexto": "Se pide identificar el detalle secundario que apoya la idea principal de un texto sobre un acuerdo comercial.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "The agreement focuses on agriculture and exports."
+      },
+      {
+        "clave": "b",
+        "texto": "It simplifies customs procedures."
+      },
+      {
+        "clave": "c",
+        "texto": "International trade is always easy to manage."
+      },
+      {
+        "clave": "d",
+        "texto": "Agricultural products are more expensive than technology products."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los supporting details amplían o respaldan la idea principal con datos o explicaciones concretas. En este texto, la idea central es que el acuerdo comercial reduce costes de exportación para productos agrícolas. Un detalle que la apoya directamente es que también simplifica los procedimientos aduaneros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es demasiado general y se acerca más al tema central del texto que a un detalle específico de apoyo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque no aparece en el pasaje y además es una afirmación absoluta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque introduce una comparación que el texto no menciona."
+        }
+      ],
+      "resumen_didactico": "Un supporting detail no sustituye a la idea principal; la desarrolla con información más concreta.",
+      "ejemplo_practico": "En un texto sobre una campaña de marketing, la idea principal podría ser \"The campaign improved visibility\" y un detalle secundario sería \"website traffic increased by 40%\".",
+      "conclusion_final": "La respuesta correcta es la b porque aporta una información concreta que apoya la idea principal."
+    }
+  },
+  {
+    "id": "UT4-Q03",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "What is an effective strategy to identify the main idea of a professional text?",
+    "contexto": "Se pide reconocer una estrategia práctica adecuada para localizar la idea principal.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Focus only on numbers and percentages."
+      },
+      {
+        "clave": "b",
+        "texto": "Read just the title and ignore the body of the text."
+      },
+      {
+        "clave": "c",
+        "texto": "Look for keywords, repeated ideas, and topic sentences."
+      },
+      {
+        "clave": "d",
+        "texto": "Translate every word before trying to understand the text."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que una forma eficaz de identificar la idea principal es buscar palabras clave, frases temáticas e ideas repetidas. También ayuda observar la estructura del texto, ya que la idea principal suele aparecer en la introducción, la conclusión o al inicio de un párrafo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los datos numéricos pueden ser útiles, pero no siempre revelan por sí solos la idea principal."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el título orienta, pero ignorar el resto del texto impide comprobar el mensaje global."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque comprender el sentido general suele ser más importante que traducir cada palabra de manera aislada."
+        }
+      ],
+      "resumen_didactico": "Para encontrar la idea principal conviene leer de forma global y localizar las pistas que se repiten.",
+      "ejemplo_practico": "Si en un texto aparecen varias veces términos como \"delivery\", \"tracking\" y \"reduce errors\", probablemente la idea central esté relacionada con mejorar el seguimiento de envíos.",
+      "conclusion_final": "La respuesta correcta es la c porque describe la estrategia más completa y útil."
+    }
+  },
+  {
+    "id": "UT4-Q04",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which option contains the most relevant keywords in this sentence? \"The shipment for client X will be delayed by 24 hours due to weather conditions.\"",
+    "contexto": "Se pide reconocer las palabras clave de un mensaje profesional breve.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "shipment, delayed, weather conditions"
+      },
+      {
+        "clave": "b",
+        "texto": "client, hours, sentence"
+      },
+      {
+        "clave": "c",
+        "texto": "professional, communication, structure"
+      },
+      {
+        "clave": "d",
+        "texto": "office, laptop, manager"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las palabras clave son los términos que concentran la información esencial del mensaje. Aquí lo importante es que hay un envío, que sufrirá un retraso y que la causa son las condiciones meteorológicas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque mezcla una palabra relevante con otras demasiado genéricas o poco representativas del mensaje central."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque incluye conceptos generales que no aparecen en la frase."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque introduce palabras ajenas al contenido del enunciado."
+        }
+      ],
+      "resumen_didactico": "Las keywords deben señalar el núcleo informativo del mensaje, no palabras accesorias o inventadas.",
+      "ejemplo_practico": "En la frase \"The API integration is complete. Please test the payment gateway\", las palabras clave serían \"API integration\", \"complete\" y \"payment gateway\".",
+      "conclusion_final": "La respuesta correcta es la a porque recoge los tres conceptos más importantes del mensaje."
+    }
+  },
+  {
+    "id": "UT4-Q05",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Read the following excerpt and identify its purpose: \"To resolve this bug, first update the software, then run the diagnostic tool, and finally restart the system.\"",
+    "contexto": "Se pide identificar el propósito de un discurso profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "To persuade"
+      },
+      {
+        "clave": "b",
+        "texto": "To instruct"
+      },
+      {
+        "clave": "c",
+        "texto": "To motivate"
+      },
+      {
+        "clave": "d",
+        "texto": "To evaluate"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Un discurso instructivo da directrices o pasos a seguir para realizar una tarea. En este fragmento aparecen instrucciones secuenciadas: actualizar el software, ejecutar la herramienta de diagnóstico y reiniciar el sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el enunciado no intenta convencer a la audiencia, sino indicarle qué hacer."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque no busca inspirar ni aumentar el compromiso del equipo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque no analiza un desempeño ni ofrece feedback."
+        }
+      ],
+      "resumen_didactico": "Cuando un mensaje explica pasos concretos en orden, su propósito suele ser instructivo.",
+      "ejemplo_practico": "Un ejemplo parecido sería: \"First scan each package at pickup, then scan it again at delivery.\"",
+      "conclusion_final": "La respuesta correcta es la b porque el texto da instrucciones claras y secuenciales."
+    }
+  },
+  {
+    "id": "UT4-Q06",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which of the following is considered a professional discourse format in the workplace?",
+    "contexto": "Se pide identificar un formato de discurso profesional habitual en el ámbito laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A random online comment"
+      },
+      {
+        "clave": "b",
+        "texto": "A business email"
+      },
+      {
+        "clave": "c",
+        "texto": "A personal diary entry"
+      },
+      {
+        "clave": "d",
+        "texto": "A song lyric"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario incluye varios formatos de discursos profesionales, como reuniones, presentaciones, correos electrónicos, comunicados oficiales, informes, entrevistas y talleres. Un business email es uno de esos formatos porque se usa para informar, dar instrucciones o realizar seguimiento de temas laborales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque un comentario aleatorio en internet no constituye un formato profesional del ámbito laboral."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque un diario personal pertenece al ámbito privado, no al profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque una letra de canción no forma parte de los formatos laborales estudiados."
+        }
+      ],
+      "resumen_didactico": "Los formatos profesionales están vinculados a la comunicación dentro del trabajo y tienen una función concreta.",
+      "ejemplo_practico": "Por ejemplo, una reunión se usa para decidir estrategias, mientras que un correo profesional sirve para enviar información clara y formal.",
+      "conclusion_final": "La respuesta correcta es la b porque el correo empresarial es un formato profesional reconocido en el temario."
+    }
+  },
+  {
+    "id": "UT4-Q07",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which tool helps organize complex information visually and hierarchically?",
+    "contexto": "Se pide identificar la herramienta que organiza la información de forma visual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A concept map"
+      },
+      {
+        "clave": "b",
+        "texto": "A single long paragraph"
+      },
+      {
+        "clave": "c",
+        "texto": "A casual conversation"
+      },
+      {
+        "clave": "d",
+        "texto": "A list of unrelated words"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los organizadores gráficos ayudan a estructurar información de forma clara y jerárquica. El mapa conceptual coloca la idea principal en el centro o en la parte superior y conecta las ideas secundarias mediante líneas o flechas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque un párrafo puede resumir información, pero no la organiza visualmente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque una conversación no es una herramienta visual de organización."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque una lista sin relación lógica no muestra jerarquías ni conexiones entre ideas."
+        }
+      ],
+      "resumen_didactico": "Un organizador gráfico permite ver qué idea manda y cómo se relacionan las demás con ella.",
+      "ejemplo_practico": "Si estudias \"Website Development Process\", un mapa conceptual puede unir la idea principal con \"planning\", \"design\" y \"testing\".",
+      "conclusion_final": "La respuesta correcta es la a porque el concept map es una herramienta visual y jerárquica."
+    }
+  },
+  {
+    "id": "UT4-Q08",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "In web development terminology, what does \"front-end\" refer to?",
+    "contexto": "Se pide reconocer el significado de un término técnico del sector de desarrollo web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "The visible part of an application"
+      },
+      {
+        "clave": "b",
+        "texto": "The legal department of a company"
+      },
+      {
+        "clave": "c",
+        "texto": "The printed documentation of a project"
+      },
+      {
+        "clave": "d",
+        "texto": "The server room in a data center"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario de terminología específica indica que en desarrollo web \"front-end\" y \"back-end\" describen las partes visible e interna de una aplicación, respectivamente. Por eso, front-end se refiere a la parte que el usuario ve e interactúa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque no tiene relación con la terminología técnica del desarrollo web."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la documentación de un proyecto no define el término \"front-end\"."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un server room es un espacio físico, no el significado del término."
+        }
+      ],
+      "resumen_didactico": "La terminología específica usa palabras con sentido particular dentro de cada sector profesional.",
+      "ejemplo_practico": "Si diseñas una tienda online, los botones, colores y pantallas que ve el usuario pertenecen al front-end; la lógica del servidor sería back-end.",
+      "conclusion_final": "La respuesta correcta es la a porque front-end es la parte visible de la aplicación."
+    }
+  },
+  {
+    "id": "UT4-Q09",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Choose the best summary of this excerpt: \"The vaccine teaches the immune system how to respond to the virus. It helps the body produce antibodies and may cause mild side effects such as fatigue, which usually disappear in a few days.\"",
+    "contexto": "Se pide seleccionar el mejor resumen de un texto informativo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "The vaccine explains medical theory in great detail and replaces hospital treatment."
+      },
+      {
+        "clave": "b",
+        "texto": "The vaccine helps the immune system respond to the virus and may produce temporary mild side effects."
+      },
+      {
+        "clave": "c",
+        "texto": "All vaccines cause serious illness in most patients."
+      },
+      {
+        "clave": "d",
+        "texto": "The immune system stops working for a few days after vaccination."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Un buen resumen recoge la idea principal y los detalles más importantes sin añadir información falsa. En este fragmento, la idea central es que la vacuna enseña al sistema inmunológico a reaccionar frente al virus, y el detalle más relevante es que puede producir efectos secundarios leves y temporales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque añade ideas que no aparecen en el texto, como sustituir tratamientos hospitalarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque contradice el contenido: el texto habla de efectos leves, no de enfermedad grave en la mayoría de los pacientes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque afirma algo opuesto a la idea del texto, ya que la vacuna activa la respuesta inmune."
+        }
+      ],
+      "resumen_didactico": "Resumir significa condensar lo esencial sin deformar el contenido del mensaje original.",
+      "ejemplo_practico": "Si un texto dice: \"Online tools improve teamwork by making communication faster and clearer\", el resumen correcto debe conservar esa idea general, no inventar consecuencias distintas.",
+      "conclusion_final": "La respuesta correcta es la b porque sintetiza fielmente la información principal del fragmento."
+    }
+  },
+  {
+    "id": "UT4-Q10",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Why is a specialized glossary useful in a professional context?",
+    "contexto": "Se pide identificar la función principal de un glosario especializado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Because it replaces all professional documents"
+      },
+      {
+        "clave": "b",
+        "texto": "Because it defines technical terms used in a specific field"
+      },
+      {
+        "clave": "c",
+        "texto": "Because it is only useful for literary analysis"
+      },
+      {
+        "clave": "d",
+        "texto": "Because it avoids the need to read texts carefully"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los glosarios especializados son herramientas que definen términos técnicos. El temario explica que pueden encontrarse en manuales, sitios web o crearse de manera personalizada para comprender mejor la terminología propia de un sector profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque un glosario no sustituye documentos, solo ayuda a interpretarlos mejor."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque su uso no se limita al análisis literario; es especialmente valioso en ámbitos técnicos y laborales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un glosario ayuda, pero no reemplaza una lectura cuidadosa del contexto."
+        }
+      ],
+      "resumen_didactico": "El glosario facilita entender vocabulario técnico que fuera de ese ámbito puede resultar desconocido.",
+      "ejemplo_practico": "En marketing, un glosario puede explicar qué significan términos como SEO o CTR para que el lector comprenda los documentos del sector.",
+      "conclusion_final": "La respuesta correcta es la b porque esa es la función esencial del glosario especializado."
+    }
+  },
+  {
+    "id": "UT4-Q11",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "What is active listening in a professional setting?",
+    "contexto": "Se pide identificar la definición correcta de escucha activa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Preparing your answer while the other person is still speaking"
+      },
+      {
+        "clave": "b",
+        "texto": "Paying intentional attention to understand content, context, and emotions"
+      },
+      {
+        "clave": "c",
+        "texto": "Interrupting frequently to save time"
+      },
+      {
+        "clave": "d",
+        "texto": "Repeating the same sentence without understanding it"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La escucha activa es la habilidad de prestar atención de manera intencionada y comprometida para comprender no solo el contenido literal del mensaje, sino también su contexto, emociones y objetivos implícitos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque desplaza la atención hacia la respuesta propia en lugar de centrarse en comprender al interlocutor."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque interrumpir dificulta la escucha y rompe el proceso comunicativo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque repetir palabras sin comprender no demuestra escucha activa real."
+        }
+      ],
+      "resumen_didactico": "Escuchar activamente es entender el mensaje completo, no solo oír palabras.",
+      "ejemplo_practico": "Si un cliente dice que está preocupado por un retraso, la escucha activa detecta tanto el problema como la emoción de preocupación.",
+      "conclusion_final": "La respuesta correcta es la b porque recoge los elementos esenciales de la escucha activa."
+    }
+  },
+  {
+    "id": "UT4-Q12",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which of the following is an external barrier to active listening?",
+    "contexto": "Se pide identificar una barrera externa de la escucha activa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Prejudice"
+      },
+      {
+        "clave": "b",
+        "texto": "Environmental noise"
+      },
+      {
+        "clave": "c",
+        "texto": "Impatience"
+      },
+      {
+        "clave": "d",
+        "texto": "Negative emotions"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las barreras de la escucha activa pueden ser internas, externas, de comunicación, culturales o fisiológicas. El ruido ambiental pertenece a las barreras externas, mientras que prejuicios, impaciencia y emociones negativas son barreras internas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los juicios previos o prejuicios nacen dentro del oyente y forman parte de las barreras internas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la impaciencia es una barrera interna."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque las emociones negativas también son barreras internas."
+        }
+      ],
+      "resumen_didactico": "Las barreras externas vienen del entorno; las internas vienen de la actitud o el estado del oyente.",
+      "ejemplo_practico": "Si estás en una videollamada y no oyes bien porque hay obras en la calle, el problema es externo: el ruido ambiental.",
+      "conclusion_final": "La respuesta correcta es la b porque el ruido pertenece al entorno y no al oyente."
+    }
+  },
+  {
+    "id": "UT4-Q13",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which sentence is the best example of paraphrasing?",
+    "contexto": "Se pide identificar un ejemplo correcto de parafraseo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "So, the client is unhappy because the report was late. Is that correct?"
+      },
+      {
+        "clave": "b",
+        "texto": "That is your problem, not mine."
+      },
+      {
+        "clave": "c",
+        "texto": "Let us change the subject now."
+      },
+      {
+        "clave": "d",
+        "texto": "I already knew that before you told me."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Parafrasear consiste en reformular con palabras propias lo que otra persona ha dicho para comprobar que se ha entendido correctamente el mensaje y evitar malentendidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque no reformula el mensaje escuchado ni muestra comprensión."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque cambia el tema sin confirmar la información."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque no verifica la comprensión y además interrumpe la dinámica de escucha."
+        }
+      ],
+      "resumen_didactico": "Una paráfrasis repite el contenido con otras palabras para confirmar que se ha entendido bien.",
+      "ejemplo_practico": "Si un compañero dice: \"The delivery was delayed because customs stopped the shipment\", puedes responder: \"So, customs caused the delay in delivery, right?\"",
+      "conclusion_final": "La respuesta correcta es la a porque reexpresa el mensaje y solicita confirmación."
+    }
+  },
+  {
+    "id": "UT4-Q14",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which of the following is the most appropriate formal sentence for an email to a manager?",
+    "contexto": "Se pide identificar una formulación formal adecuada para un correo profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dear Ms. Brown, I would like to request a meeting to discuss the report."
+      },
+      {
+        "clave": "b",
+        "texto": "Hey, can we talk about the report sometime?"
+      },
+      {
+        "clave": "c",
+        "texto": "Yo, I need five minutes with you."
+      },
+      {
+        "clave": "d",
+        "texto": "Tell me when you are free, okay?"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El lenguaje formal se usa con directivos, clientes y en comunicaciones oficiales. Debe mantener un tono respetuoso, claro y profesional, evitando abreviaciones o expresiones coloquiales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el saludo y el tono son demasiado informales para dirigirse a una manager."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque usa expresiones coloquiales impropias del entorno profesional formal."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque suena demasiado directo e informal para un correo a una superiora."
+        }
+      ],
+      "resumen_didactico": "Un correo formal suele incluir saludo adecuado, petición clara y tono respetuoso.",
+      "ejemplo_practico": "Del mismo modo, una frase como \"Could you please send me the updated file?\" mantiene el nivel de cortesía esperado en un email profesional.",
+      "conclusion_final": "La respuesta correcta es la a porque combina saludo formal, claridad y cortesía."
+    }
+  },
+  {
+    "id": "UT4-Q15",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "In which context is informal language most appropriate?",
+    "contexto": "Se pide identificar el contexto laboral en el que el lenguaje informal es más adecuado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A presentation to the board of directors"
+      },
+      {
+        "clave": "b",
+        "texto": "A message to a teammate on Slack"
+      },
+      {
+        "clave": "c",
+        "texto": "An official complaint letter to a client"
+      },
+      {
+        "clave": "d",
+        "texto": "A formal cover letter"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El lenguaje informal puede utilizarse con compañeros en mensajes internos o chats de equipo, siempre manteniendo el profesionalismo. En cambio, con clientes, directivos o documentos oficiales se requiere un registro formal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque una exposición ante el consejo requiere un tono formal."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque una carta de queja oficial exige lenguaje formal y preciso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque una cover letter siempre debe mantener un registro formal."
+        }
+      ],
+      "resumen_didactico": "El tono depende de la audiencia y del canal de comunicación.",
+      "ejemplo_practico": "Una frase como \"Hey John, can we catch up about the project later?\" puede ser aceptable entre compañeros en Slack, pero no en una carta formal.",
+      "conclusion_final": "La respuesta correcta es la b porque ese es el contexto donde un tono informal puede resultar natural y apropiado."
+    }
+  },
+  {
+    "id": "UT4-Q16",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "What is the correct structure of an effective professional presentation?",
+    "contexto": "Se pide identificar la estructura correcta de una presentación profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Introduction, development, conclusion"
+      },
+      {
+        "clave": "b",
+        "texto": "Examples, summary, questions"
+      },
+      {
+        "clave": "c",
+        "texto": "Greeting, random facts, ending"
+      },
+      {
+        "clave": "d",
+        "texto": "Title, joke, conclusion"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario establece que una presentación efectiva debe incluir introducción, desarrollo y conclusión. En la introducción se presenta el tema y el objetivo; en el desarrollo se organizan los puntos principales; y en la conclusión se resumen las ideas clave y se deja espacio para preguntas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque omite la estructura global completa y no refleja el desarrollo organizado del contenido."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque no describe una secuencia profesional ni lógica."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un chiste puede ser un recurso puntual, pero no sustituye la estructura formal de una presentación."
+        }
+      ],
+      "resumen_didactico": "Una buena presentación necesita inicio claro, cuerpo organizado y cierre eficaz.",
+      "ejemplo_practico": "Por ejemplo, en una presentación logística puedes abrir con el objetivo, explicar las mejoras implementadas y terminar resumiendo los resultados.",
+      "conclusion_final": "La respuesta correcta es la a porque coincide con la estructura profesional estudiada."
+    }
+  },
+  {
+    "id": "UT4-Q17",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which technique is especially effective at the beginning of a presentation to capture attention?",
+    "contexto": "Se pide identificar una técnica útil para captar la atención del público al inicio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reading every line from the slides"
+      },
+      {
+        "clave": "b",
+        "texto": "Starting with a surprising fact or a rhetorical question"
+      },
+      {
+        "clave": "c",
+        "texto": "Speaking in a very low voice"
+      },
+      {
+        "clave": "d",
+        "texto": "Using as many technical words as possible"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Para captar y mantener la atención del público, el temario recomienda una introducción impactante. Entre las técnicas propuestas están usar una cita relevante, un dato sorprendente o una pregunta retórica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque leer diapositivas reduce el dinamismo y la conexión con la audiencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque hablar demasiado bajo dificulta la atención y la comprensión."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque abusar del vocabulario técnico no garantiza interés y puede dificultar el seguimiento."
+        }
+      ],
+      "resumen_didactico": "El inicio debe despertar curiosidad y preparar a la audiencia para el tema.",
+      "ejemplo_practico": "Puedes empezar con algo como: \"What would happen if your supply chain failed tomorrow?\" para implicar al público desde el primer minuto.",
+      "conclusion_final": "La respuesta correcta es la b porque esas técnicas generan atención inmediata."
+    }
+  },
+  {
+    "id": "UT4-Q18",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "What does the STAR technique stand for in job interviews?",
+    "contexto": "Se pide identificar el significado de la técnica STAR usada para estructurar respuestas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Situation, Task, Action, Result"
+      },
+      {
+        "clave": "b",
+        "texto": "Strategy, Time, Activity, Review"
+      },
+      {
+        "clave": "c",
+        "texto": "Summary, Topic, Analysis, Response"
+      },
+      {
+        "clave": "d",
+        "texto": "Speech, Tone, Attitude, Respect"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el bloque de entrevistas y negociaciones, el temario explica que la técnica STAR sirve para estructurar respuestas en entrevistas laborales. Sus pasos son Situation, Task, Action y Result.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque inventa una combinación de términos que no corresponde a la técnica estudiada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque no coincide con la secuencia real usada en entrevistas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque reúne conceptos generales de comunicación, pero no define STAR."
+        }
+      ],
+      "resumen_didactico": "STAR es una estructura para responder con orden y mostrar experiencia de manera clara.",
+      "ejemplo_practico": "Por ejemplo: \"In my previous role, I improved delivery efficiency (Situation) by optimizing routes (Task), using new software (Action), which reduced delays by 15% (Result).\"",
+      "conclusion_final": "La respuesta correcta es la a porque reproduce exactamente los cuatro elementos de la técnica STAR."
+    }
+  },
+  {
+    "id": "UT4-Q19",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which sentence is most appropriate for participating actively in a meeting?",
+    "contexto": "Se pide identificar una frase útil para intervenir de forma clara y profesional en una reunión.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Whatever, do what you want."
+      },
+      {
+        "clave": "b",
+        "texto": "I’d like to suggest an alternative approach."
+      },
+      {
+        "clave": "c",
+        "texto": "This is boring, let us finish."
+      },
+      {
+        "clave": "d",
+        "texto": "I am not listening to this anymore."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario de participación en reuniones recomienda expresiones claras y profesionales como \"I’d like to suggest...\" o \"In my opinion, the best approach would be...\" para contribuir con ideas de manera estructurada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque es una respuesta despectiva y poco profesional."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque transmite desinterés y falta de respeto hacia la reunión."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque rompe completamente la dinámica profesional de participación."
+        }
+      ],
+      "resumen_didactico": "Participar activamente implica aportar ideas, escuchar y expresarse con profesionalidad.",
+      "ejemplo_practico": "En una reunión sobre logística podrías decir: \"I agree with the proposed strategy. Additionally, we could implement tracking tools to improve efficiency.\"",
+      "conclusion_final": "La respuesta correcta es la b porque formula una propuesta de manera profesional."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which response best shows empathy and problem-solving in customer service?",
+    "contexto": "Se pide identificar la mejor respuesta profesional ante una queja de un cliente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "That is not our fault."
+      },
+      {
+        "clave": "b",
+        "texto": "We apologize for the delay. Let me check the details and offer a solution right away."
+      },
+      {
+        "clave": "c",
+        "texto": "You should have called earlier."
+      },
+      {
+        "clave": "d",
+        "texto": "There is nothing we can do about it."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Para resolver problemas y atender a usuarios correctamente, el temario insiste en combinar escucha activa, empatía y soluciones claras. Una buena respuesta reconoce el problema, muestra cortesía y propone actuar de inmediato.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque evita la responsabilidad y no ofrece ninguna solución."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque culpa al cliente en lugar de ayudarle."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque cierra la conversación sin intentar resolver la situación."
+        }
+      ],
+      "resumen_didactico": "La buena atención al usuario combina empatía con acciones concretas.",
+      "ejemplo_practico": "Si un cliente dice: \"The shipment arrived late\", una respuesta adecuada sería: \"We apologize for the delay. Let me check the status and get back to you within the next hour.\"",
+      "conclusion_final": "La respuesta correcta es la b porque muestra empatía y orienta la conversación hacia una solución."
+    }
+  },
+  {
+    "id": "UT4-Q21",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which sentence is in the present simple tense?",
+    "contexto": "Se pide identificar una oración en presente simple.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "They are reviewing the budget now."
+      },
+      {
+        "clave": "b",
+        "texto": "They review the budget every Monday."
+      },
+      {
+        "clave": "c",
+        "texto": "They reviewed the budget yesterday."
+      },
+      {
+        "clave": "d",
+        "texto": "They will review the budget tomorrow."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El presente simple se usa para rutinas y hechos generales. La opción b expresa una acción habitual mediante el marcador \"every Monday\".",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque está en presente continuo y describe una acción en progreso."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque está en pasado simple."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque expresa futuro con \"will\"."
+        }
+      ],
+      "resumen_didactico": "Si una acción ocurre de forma regular, normalmente se expresa en presente simple.",
+      "ejemplo_practico": "Un ejemplo del tema es: \"I work in the logistics department.\"",
+      "conclusion_final": "La respuesta correcta es la b porque describe una rutina semanal."
+    }
+  },
+  {
+    "id": "UT4-Q22",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Choose the sentence that uses the present continuous correctly.",
+    "contexto": "Se pide identificar la oración bien construida en presente continuo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "We are reviewing the quarterly report right now."
+      },
+      {
+        "clave": "b",
+        "texto": "We review the quarterly report right now."
+      },
+      {
+        "clave": "c",
+        "texto": "We reviewed the quarterly report right now."
+      },
+      {
+        "clave": "d",
+        "texto": "We are review the quarterly report right now."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El presente continuo se forma con am/is/are + verbo en -ing y se usa para acciones en progreso. La opción a sigue esa estructura correctamente y además incluye el marcador temporal \"right now\".",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque usa presente simple, no presente continuo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque está en pasado simple y además no encaja con \"right now\"."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la estructura verbal está mal formada."
+        }
+      ],
+      "resumen_didactico": "Para reconocer el presente continuo, busca el verbo to be y la terminación -ing.",
+      "ejemplo_practico": "En el tema aparece un modelo parecido: \"He isn’t attending the meeting right now.\"",
+      "conclusion_final": "La respuesta correcta es la a porque utiliza correctamente la estructura del presente continuo."
+    }
+  },
+  {
+    "id": "UT4-Q23",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which sentence is the correct negative form in the past simple?",
+    "contexto": "Se pide identificar la forma negativa correcta en pasado simple.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "She didn’t attend the training session."
+      },
+      {
+        "clave": "b",
+        "texto": "She doesn’t attend the training session yesterday."
+      },
+      {
+        "clave": "c",
+        "texto": "She isn’t attending the training session yesterday."
+      },
+      {
+        "clave": "d",
+        "texto": "She not attended the training session."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La negación en pasado simple se forma con did not / didn’t + verbo base. La opción a sigue exactamente esta estructura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque usa presente simple negativo con una referencia temporal pasada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque mezcla presente continuo con un marcador de pasado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la negación está mal construida."
+        }
+      ],
+      "resumen_didactico": "En pasado simple negativo, el verbo principal vuelve a su forma base después de did not.",
+      "ejemplo_practico": "El tema ofrece este mismo modelo: \"She didn’t attend the training session.\"",
+      "conclusion_final": "La respuesta correcta es la a porque es la única forma negativa correctamente construida."
+    }
+  },
+  {
+    "id": "UT4-Q24",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which sentence correctly expresses a future plan with \"going to\"?",
+    "contexto": "Se pide identificar la estructura correcta con going to.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "We going to launch the campaign next week."
+      },
+      {
+        "clave": "b",
+        "texto": "We are going to launch the campaign next week."
+      },
+      {
+        "clave": "c",
+        "texto": "We will going to launch the campaign next week."
+      },
+      {
+        "clave": "d",
+        "texto": "We are launch the campaign next week."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La estructura de \"going to\" es sujeto + am/is/are + going to + verbo base. La opción b cumple ese patrón y expresa un plan futuro.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque falta el verbo \"to be\"."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque mezcla incorrectamente \"will\" y \"going to\"."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque omite la parte \"going to\" de la estructura."
+        }
+      ],
+      "resumen_didactico": "Si hablas de un plan o intención futura, la fórmula correcta requiere am/is/are + going to.",
+      "ejemplo_practico": "En el tema aparece una estructura parecida: \"We are not going to launch the campaign next week.\"",
+      "conclusion_final": "La respuesta correcta es la b porque está bien formada y expresa un plan futuro."
+    }
+  },
+  {
+    "id": "UT4-Q25",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which sentence expresses a strong obligation?",
+    "contexto": "Se pide identificar la oración que expresa obligación fuerte.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Employees must wear a safety helmet in the factory."
+      },
+      {
+        "clave": "b",
+        "texto": "Employees can wear a safety helmet in the factory."
+      },
+      {
+        "clave": "c",
+        "texto": "Employees should wear a safety helmet in the factory."
+      },
+      {
+        "clave": "d",
+        "texto": "Employees might wear a safety helmet in the factory."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario asocia \"must\" con obligación fuerte. Por ello, la frase con \"must\" es la que expresa una norma obligatoria clara.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque \"can\" expresa permiso o posibilidad, no obligación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque \"should\" expresa consejo o recomendación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque \"might\" indica posibilidad, no deber."
+        }
+      ],
+      "resumen_didactico": "Para una obligación fuerte y directa, el modal más claro en este temario es must.",
+      "ejemplo_practico": "El ejemplo del tema dice: \"Employees must wear a safety helmet in the factory.\"",
+      "conclusion_final": "La respuesta correcta es la a porque usa must para expresar una obligación clara."
+    }
+  },
+  {
+    "id": "UT4-Q26",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which sentence correctly asks for permission?",
+    "contexto": "Se pide identificar la oración adecuada para pedir permiso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Must I take the day off tomorrow?"
+      },
+      {
+        "clave": "b",
+        "texto": "Can I take the day off tomorrow?"
+      },
+      {
+        "clave": "c",
+        "texto": "I take the day off tomorrow."
+      },
+      {
+        "clave": "d",
+        "texto": "I will take the day off tomorrow?"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Para pedir permiso, el temario utiliza el modal \"can\" en preguntas como \"Can I take the day off tomorrow?\". Esa es la estructura correcta de solicitud de permiso en este nivel.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque \"must\" se asocia con obligación, no con permiso."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque es una afirmación, no una petición."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la construcción no es natural para pedir permiso."
+        }
+      ],
+      "resumen_didactico": "Las peticiones de permiso en este bloque se reconocen fácilmente por la estructura \"Can I...?\"",
+      "ejemplo_practico": "Otro ejemplo similar sería: \"Can I leave early today?\"",
+      "conclusion_final": "La respuesta correcta es la b porque formula una pregunta de permiso correctamente."
+    }
+  },
+  {
+    "id": "UT4-Q27",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Choose the correct comparative sentence.",
+    "contexto": "Se pide identificar una oración bien formada en comparativo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Our logistics system is fastest than our competitors."
+      },
+      {
+        "clave": "b",
+        "texto": "Our logistics system is faster than our competitors’."
+      },
+      {
+        "clave": "c",
+        "texto": "Our logistics system is the faster than our competitors."
+      },
+      {
+        "clave": "d",
+        "texto": "Our logistics system is more fast than our competitors."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los comparativos se usan para comparar dos elementos. Con adjetivos cortos como fast, la forma habitual es faster than.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque \"fastest\" es superlativo, no comparativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la presencia de \"the\" y \"faster than\" crea una estructura incorrecta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque con \"fast\" se usa preferentemente \"faster\", no \"more fast\" en este nivel."
+        }
+      ],
+      "resumen_didactico": "Para comparar dos cosas, necesitas una forma comparativa y la partícula than.",
+      "ejemplo_practico": "El tema ofrece este mismo modelo: \"Our logistics system is faster than our competitors'.\"",
+      "conclusion_final": "La respuesta correcta es la b porque usa correctamente el comparativo."
+    }
+  },
+  {
+    "id": "UT4-Q28",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which sentence is a correct first conditional?",
+    "contexto": "Se pide identificar una oración correcta en primer condicional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "If we reduce costs, we will increase our profit."
+      },
+      {
+        "clave": "b",
+        "texto": "If we reduced costs, we will increase our profit."
+      },
+      {
+        "clave": "c",
+        "texto": "If we reduce costs, we would increase our profit."
+      },
+      {
+        "clave": "d",
+        "texto": "If we will reduce costs, we increase our profit."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El primer condicional expresa situaciones posibles en el futuro y sigue la estructura: If + presente simple, will + verbo. La opción a cumple exactamente ese patrón.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque mezcla pasado simple en la condición con will en la consecuencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque combina presente simple con would, estructura más cercana a una hipótesis no real."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque no se usa will en la cláusula con if de esta estructura básica."
+        }
+      ],
+      "resumen_didactico": "El primer condicional habla de posibilidades reales o probables en el futuro.",
+      "ejemplo_practico": "Otro ejemplo del tema es: \"If you attend the seminar, you will learn new sales strategies.\"",
+      "conclusion_final": "La respuesta correcta es la a porque sigue correctamente la fórmula del primer condicional."
+    }
+  },
+  {
+    "id": "UT4-Q29",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which of the following is an addition connector?",
+    "contexto": "Se pide identificar un conector de adición para cohesión textual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "However"
+      },
+      {
+        "clave": "b",
+        "texto": "As a result"
+      },
+      {
+        "clave": "c",
+        "texto": "Moreover"
+      },
+      {
+        "clave": "d",
+        "texto": "On the other hand"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En el tema se presentan como conectores de adición expresiones como \"Moreover\" y \"Additionally\". Sirven para añadir información relacionada a la idea anterior.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque \"However\" es un conector de contraste."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque \"As a result\" expresa causa o consecuencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque \"On the other hand\" también introduce contraste."
+        }
+      ],
+      "resumen_didactico": "Los conectores de adición suman información; los de contraste o consecuencia cumplen funciones distintas.",
+      "ejemplo_practico": "En un correo profesional podrías escribir: \"The campaign increased customer engagement by 25%. Moreover, we noticed a higher conversion rate.\"",
+      "conclusion_final": "La respuesta correcta es la c porque moreover añade información al mensaje previo."
+    }
+  },
+  {
+    "id": "UT4-Q30",
+    "tema": "UT4 — Repaso global de inglés profesional (Bloque 1)",
+    "pregunta": "Which of the following is a reliable source of information for web development or international trade according to the temario?",
+    "contexto": "Se pide identificar una fuente de información fiable y relevante del temario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Random anonymous forum comments"
+      },
+      {
+        "clave": "b",
+        "texto": "GitHub or W3C"
+      },
+      {
+        "clave": "c",
+        "texto": "An unverified personal blog with no author"
+      },
+      {
+        "clave": "d",
+        "texto": "Private rumors shared in a chat group"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El bloque de uso de fuentes de información menciona páginas oficiales, artículos y reportes como fuentes fiables. Entre las fuentes internacionales relevantes para Desarrollo de Aplicaciones Web / Multiplataforma aparecen GitHub y W3C, y para Comercio Internacional aparece WTO. Por eso, GitHub o W3C son opciones válidas y fiables según el temario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los comentarios anónimos no garantizan fiabilidad ni actualización."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque un blog no verificado sin autor identificable no es una fuente sólida."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque los rumores en chats no constituyen una fuente de información profesional ni confiable."
+        }
+      ],
+      "resumen_didactico": "Las fuentes fiables suelen ser oficiales, reconocidas internacionalmente o respaldadas por instituciones y comunidades profesionales.",
+      "ejemplo_practico": "Si trabajas en desarrollo web, consultar W3C para estándares o GitHub para proyectos y documentación es mucho más fiable que depender de rumores o páginas sin autor.",
+      "conclusion_final": "La respuesta correcta es la b porque ambas se citan como fuentes relevantes en el temario."
+    }
+  }
+]

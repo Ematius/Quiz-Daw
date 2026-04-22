@@ -307,6 +307,36 @@ export const topicsByModule = {
         title: "Recursos comunicativos",
         numQuestion: 20,
       },
+      {
+        id: "UT4",
+        title: "Repaso global (Abarca de 0% a 17% del temario)",
+        numQuestion: 30,
+      },
+      {
+        id: "UT5",
+        title: "Repaso global (Abarca de 17% a 34% del temario)",
+        numQuestion: 30,
+      },
+      {
+        id: "UT6",
+        title: "Repaso global (Abarca el 34% a 51% del temario)",
+        numQuestion: 30,
+      },
+      {
+        id: "UT7",
+        title: "Repaso global (Abarca el 51% a 68% del temario)",
+        numQuestion: 30,
+      },
+      {
+        id: "UT8",
+        title: "Repaso global (Abarca el 68% a 85% del temario)",
+        numQuestion: 30,
+      },
+      {
+        id: "UT9",
+        title: "Repaso global (Abarca el 85% a 100% del temario)",
+        numQuestion: 30,
+      },
     
   ]
 };
