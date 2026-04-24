@@ -7,7 +7,10 @@ import { useEffect, useRef, useState } from "react";
 import { QuizQuestion } from "../Components/QuizQuestion";
 import { QuizProgress } from "../Components/QuizProgress";
 import { useAuth } from "../context/AuthContext";
-import { recordTopicCompletion } from "../storage/quizAppStorage";
+import {
+  recordLastTestIncorrects,
+  recordTopicCompletion,
+} from "../storage/quizAppStorage";
 import "./Quiz.scss";
 
 function resolveFolder(moduloId) {
@@ -135,6 +138,9 @@ export function Quiz()
     } else {
       setPendingQuestionIndexes((pending) => {
         if (pending.length > 0) {
+          if (roundLength === totalQuestions && user?.username) {
+            recordLastTestIncorrects(user.username, moduloId, topicId, pending.length);
+          }
           setRoundQuestionIndexes([...pending]);
           setCurrentIndex(0);
         } else if (solvedRef.current.length === totalQuestions) {

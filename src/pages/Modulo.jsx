@@ -3,7 +3,7 @@ import { useParams,useNavigate } from "react-router-dom";
 import { TopicCard } from "../Components/TopicCard";
 import { topicsByModule } from "../data/topicsByModule";
 import { useAuth } from "../context/AuthContext";
-import { readCompletions } from "../storage/quizAppStorage";
+import { readCompletions, readLastTestIncorrects } from "../storage/quizAppStorage";
 import "./Modulo.scss"
 
 
@@ -17,6 +17,7 @@ export function Modulo() {
   const { moduloId } = useParams();
   const topics = topicsByModule[moduloId] || [];
   const completions = readCompletions();
+  const lastTestIncorrects = readLastTestIncorrects();
 
   return (
     <div className="page-container">
@@ -35,6 +36,7 @@ export function Modulo() {
               title={topic.title}
               numQuestion={`${topic.numQuestion} preguntas`}
               attempts={completions?.[session?.username]?.[moduloId]?.[String(topic.id)] ?? 0}
+              lastTestIncorrectCount={lastTestIncorrects?.[session?.username]?.[moduloId]?.[String(topic.id)] ?? 0}
               to={`/modulo/${moduloId}/${topic.id}`}
             />
           ))}

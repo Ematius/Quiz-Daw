@@ -3,6 +3,7 @@
 export const LS_USERS = "quiz_app_users";
 export const LS_SESSION = "quiz_app_session";
 export const LS_COMPLETIONS = "quiz_app_completions";
+export const LS_LAST_TEST_INCORRECTS = "quiz_app_last_test_incorrects";
 
 function safeParse(json, fallback) {
   try {
@@ -53,5 +54,27 @@ export function recordTopicCompletion(username, moduloId, topicId) {
   const prev = all[u][m][t] ?? 0;
   all[u][m][t] = prev + 1;
   writeCompletions(all);
+}
+
+export function readLastTestIncorrects() {
+  return safeParse(localStorage.getItem(LS_LAST_TEST_INCORRECTS), {});
+}
+
+export function writeLastTestIncorrects(data) {
+  localStorage.setItem(LS_LAST_TEST_INCORRECTS, JSON.stringify(data));
+}
+
+export function recordLastTestIncorrects(username, moduloId, topicId, count) {
+  const u = String(username).trim();
+  const m = String(moduloId).trim();
+  const t = String(topicId).trim();
+  if (!u || !m || !t) return;
+
+  const value = Number.isFinite(Number(count)) ? Number(count) : 0;
+  const all = readLastTestIncorrects();
+  if (!all[u]) all[u] = {};
+  if (!all[u][m]) all[u][m] = {};
+  all[u][m][t] = value;
+  writeLastTestIncorrects(all);
 }
 
