@@ -2,6 +2,8 @@
 import { useParams,useNavigate } from "react-router-dom";
 import { TopicCard } from "../Components/TopicCard";
 import { topicsByModule } from "../data/topicsByModule";
+import { useAuth } from "../context/AuthContext";
+import { readCompletions } from "../storage/quizAppStorage";
 import "./Modulo.scss"
 
 
@@ -11,8 +13,10 @@ import "./Modulo.scss"
 
 export function Modulo() {
   const navigate = useNavigate();
+  const { session } = useAuth();
   const { moduloId } = useParams();
   const topics = topicsByModule[moduloId] || [];
+  const completions = readCompletions();
 
   return (
     <div className="page-container">
@@ -30,6 +34,7 @@ export function Modulo() {
               id={topic.id}
               title={topic.title}
               numQuestion={`${topic.numQuestion} preguntas`}
+              attempts={completions?.[session?.username]?.[moduloId]?.[String(topic.id)] ?? 0}
               to={`/modulo/${moduloId}/${topic.id}`}
             />
           ))}
