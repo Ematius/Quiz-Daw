@@ -24,9 +24,9 @@ export function Panel() {
     <div className="page-container panel-page">
       <h1 className="page-title">Panel personal</h1>
       <p className="panel-page__intro">
-        Veces que has completado cada tema (dominio total del test). Celdas grises:
-        ese tema no existe en ese módulo.
-      </p>
+        Primer numero es el numero de veces completado por completo el test y el segundo es la nota final del ultimo test.
+            <br/> 
+            <span style={{fontSize:"1.5rem", fontWeight:"bold", color:"#6366f1"}}>nª veces completado</span> | <span style={{fontSize:"1.5rem", fontWeight:"bold", color:"#6366f1"}}>nota del ultimo test</span> </p>
 
       <div className="panel-table-wrap">
         <table className="panel-table">
@@ -64,8 +64,8 @@ export function Panel() {
                     <td
                       key={colKey}
                       className="panel-table__cell panel-table__cell--ok"
-                      title={cell.title || cell.topicId}>
-                      {cell.count}
+                      title={`${cell.title || cell.topicId} | Nota: ${cell.grade}`}>
+                      {cell.count} | {cell.grade}
                     </td>
                   );
                 })}

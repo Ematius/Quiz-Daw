@@ -1,7 +1,10 @@
 /** @format */
 
 import { topicsByModule } from "../data/topicsByModule";
-import { readCompletions } from "../storage/quizAppStorage";
+import {
+  readCompletions,
+  readLastTestIncorrects,
+} from "../storage/quizAppStorage";
 
 /**
  * Formato legible del id de módulo sin duplicar listas de módulos.
@@ -22,14 +25,25 @@ export function formatModuleColumnTitle(moduleKey) {
  *   rows: Array<{
  *     rowIndex: number,
  *     label: string,
- *     cells: Array<{ exists: boolean, topicId: string | null, title: string | null, count: number }>
+ *     cells: Array<{
+ *       exists: boolean,
+ *       topicId: string | null,
+ *       title: string | null,
+ *       count: number,
+ *       lastTestIncorrectCount: number,
+ *       grade: string
+ *     }>
  *   }>
  * }}
  */
 export function buildPanelMatrix(username) {
   const moduleKeys = Object.keys(topicsByModule || {});
   const completions = readCompletions();
+  const lastTestIncorrects = readLastTestIncorrects();
   const userData = username ? completions[String(username).trim()] : null;
+  const userLastIncorrects = username
+    ? lastTestIncorrects[String(username).trim()]
+    : null;
 
   let maxTopicRows = 0;
   for (const mk of moduleKeys) {
@@ -50,15 +64,24 @@ export function buildPanelMatrix(username) {
           topicId: null,
           title: null,
           count: 0,
+          lastTestIncorrectCount: 0,
+          grade: "Test sin hacer",
         };
       }
       const tid = String(topic.id).trim();
       const count = userData?.[mk]?.[tid] ?? 0;
+      const lastTestIncorrectCount = userLastIncorrects?.[mk]?.[tid] ?? 0;
+      const grade =
+        count === 0
+          ? "0.0"
+          : (((30 - lastTestIncorrectCount) / 30) * 10).toFixed(2);
       return {
         exists: true,
         topicId: tid,
         title: topic.title ?? null,
         count,
+        lastTestIncorrectCount,
+        grade,
       };
     });
     rows.push({ rowIndex: r, label, cells });
