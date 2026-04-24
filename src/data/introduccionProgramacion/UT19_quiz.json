@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT19-Q01",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Según el origen histórico presentado en la unidad, ¿qué impulsó inicialmente la necesidad de automatizar procesos mediante programación?",
+    "contexto": "Explicación histórica sobre cómo surgió la programación a partir de tareas manuales en procesos técnicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La obligación legal de usar inteligencia artificial en las empresas."
+      },
+      {
+        "clave": "b",
+        "texto": "Que las tareas eran manuales y tediosas."
+      },
+      {
+        "clave": "c",
+        "texto": "La aparición inmediata de Internet en las fábricas."
+      },
+      {
+        "clave": "d",
+        "texto": "La necesidad de diseñar videojuegos en 3D."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad indica que, en sus orígenes, muchas tareas eran manuales y tediosas, y precisamente esa situación impulsó la necesidad de automatizar procesos mediante programación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La inteligencia artificial aparece como ejemplo moderno en la introducción, pero no fue la causa histórica del nacimiento de la programación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Internet no aparece en el tema como origen de la programación ni de la automatización inicial."
+        },
+        {
+          "clave": "d",
+          "motivo": "El desarrollo de videojuegos es un campo posterior y no explica el origen histórico de la programación."
+        }
+      ],
+      "resumen_didactico": "La programación surgió para evitar trabajo repetitivo y pesado. Cuando hacer algo manualmente era lento e ineficiente, apareció la necesidad de automatizarlo.",
+      "ejemplo_practico": "Si una fábrica debía repetir cálculos o pasos una y otra vez, resultaba más útil diseñar una máquina o sistema que ejecutara esas instrucciones automáticamente.",
+      "conclusion_final": "El origen práctico de la programación está en la necesidad de sustituir tareas manuales y tediosas por procesos automáticos."
+    }
+  },
+  {
+    "id": "UT19-Q02",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué elemento incorporaba la máquina analítica para ser considerada la primera computadora de propósito general según el temario?",
+    "contexto": "Hito histórico asociado al diseño de Charles Babbage dentro de la evolución de la computación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una unidad de control y memoria."
+      },
+      {
+        "clave": "b",
+        "texto": "Una pantalla táctil y conexión a red."
+      },
+      {
+        "clave": "c",
+        "texto": "Un compilador para Java y Python."
+      },
+      {
+        "clave": "d",
+        "texto": "Un disco duro SSD y un sistema operativo gráfico."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El PDF explica que la máquina analítica se considera la primera computadora de propósito general porque incluía una unidad de control y memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Son tecnologías modernas que no pertenecen al contexto histórico de la máquina analítica."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los compiladores de lenguajes actuales no forman parte de ese diseño del siglo XIX."
+        },
+        {
+          "clave": "d",
+          "motivo": "SSD y sistemas gráficos son conceptos totalmente posteriores a la época de Babbage."
+        }
+      ],
+      "resumen_didactico": "No fue solo una máquina de cálculo: el gran salto fue incluir control y memoria, acercándose al concepto moderno de computador.",
+      "ejemplo_practico": "Un sistema con memoria puede conservar datos intermedios, y una unidad de control puede decidir qué paso ejecutar después.",
+      "conclusion_final": "La clave que convirtió a la máquina analítica en un hito fue la presencia de unidad de control y memoria."
+    }
+  },
+  {
+    "id": "UT19-Q03",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué afirmación distingue correctamente un algoritmo de un programa?",
+    "contexto": "Conceptos fundamentales sobre diseño lógico e implementación técnica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El algoritmo es la receta lógica; el programa es su implementación en un lenguaje de programación."
+      },
+      {
+        "clave": "b",
+        "texto": "El algoritmo siempre necesita compilarse y el programa puede ejecutarse en papel."
+      },
+      {
+        "clave": "c",
+        "texto": "El algoritmo solo puede resolver problemas matemáticos y el programa no."
+      },
+      {
+        "clave": "d",
+        "texto": "El algoritmo es un archivo ejecutable y el programa un diagrama."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad diferencia claramente ambos conceptos: el algoritmo es una secuencia finita y ordenada de pasos para resolver un problema, mientras que el programa es la traducción técnica de esa lógica a un lenguaje ejecutable por la máquina.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es justo al revés: lo que se implementa y puede compilarse es el programa, no el algoritmo como concepto lógico."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un algoritmo no se limita a problemas matemáticos; puede aplicarse a cualquier proceso ordenado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un archivo ejecutable es una forma de programa compilado, no un algoritmo; y un diagrama es una herramienta de representación."
+        }
+      ],
+      "resumen_didactico": "Algoritmo y programa no son lo mismo. Primero piensas la solución; después la codificas.",
+      "ejemplo_practico": "\"Pedir PIN, validar, permitir tres intentos y entregar dinero\" es un algoritmo. Escribir eso en Java sería el programa.",
+      "conclusion_final": "La distinción correcta es que el algoritmo define la lógica y el programa la implementa técnicamente."
+    }
+  },
+  {
+    "id": "UT19-Q04",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Según la unidad, ¿quién puede ejecutar un algoritmo además de una máquina?",
+    "contexto": "Definición de algoritmo como secuencia de pasos finitos y ordenados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo un compilador profesional."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo un procesador físico."
+      },
+      {
+        "clave": "c",
+        "texto": "También una persona, como ocurre con una receta de cocina."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo una base de datos relacional."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El tema indica que un algoritmo puede ejecutarse en una máquina o también por una persona, y usa precisamente el ejemplo de una receta de cocina para explicarlo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El compilador transforma código, pero no es el único ejecutor posible de un algoritmo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El procesador puede ejecutar programas, pero el algoritmo como secuencia lógica también puede seguirlo un ser humano."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una base de datos no es el concepto general que el tema usa como ejecutor de algoritmos."
+        }
+      ],
+      "resumen_didactico": "Un algoritmo es una solución lógica, no algo exclusivo del ordenador. Por eso se puede describir y seguir incluso sin programar.",
+      "ejemplo_practico": "Seguir los pasos de una receta, de un manual de montaje o de un protocolo de validación también es ejecutar un algoritmo.",
+      "conclusion_final": "La unidad enseña que un algoritmo puede ejecutarlo tanto una máquina como una persona."
+    }
+  },
+  {
+    "id": "UT19-Q05",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Antes de codificar una solución, ¿qué dos herramientas recomienda la unidad para representar el algoritmo?",
+    "contexto": "Fase de diseño lógico previa a la escritura de código.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "JDK y JRE."
+      },
+      {
+        "clave": "b",
+        "texto": "Pseudocódigo y diagramas de flujo."
+      },
+      {
+        "clave": "c",
+        "texto": "Base de datos y framework."
+      },
+      {
+        "clave": "d",
+        "texto": "Compilador y ensamblador."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El PDF afirma que, antes de codificar, los desarrolladores representan los algoritmos con pseudocódigo y diagramas de flujo para validar la lógica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "JDK y JRE pertenecen al ecosistema Java y no son herramientas de representación algorítmica previa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una base de datos y un framework son componentes de implementación, no herramientas de diseño lógico inicial."
+        },
+        {
+          "clave": "d",
+          "motivo": "Compilador y ensamblador no se usan como pareja de representación del algoritmo en esta fase."
+        }
+      ],
+      "resumen_didactico": "Diseñar bien antes de programar evita errores. Por eso el tema insiste en representar la lógica antes de tocar el lenguaje real.",
+      "ejemplo_practico": "Puedes dibujar un rombo para una decisión y escribir luego el mismo proceso en pseudocódigo antes de pasarlo a Java.",
+      "conclusion_final": "Las dos herramientas que la unidad destaca para representar algoritmos son el pseudocódigo y los diagramas de flujo."
+    }
+  },
+  {
+    "id": "UT19-Q06",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Según el tip profesional de la unidad, ¿qué tipo de error suele ser más difícil de corregir en un proyecto real?",
+    "contexto": "Consejo de empleabilidad sobre la importancia del diseño lógico frente a la simple sintaxis.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un error de lógica en el diseño del algoritmo."
+      },
+      {
+        "clave": "b",
+        "texto": "Una falta de sangría en el código."
+      },
+      {
+        "clave": "c",
+        "texto": "Un nombre de variable demasiado largo."
+      },
+      {
+        "clave": "d",
+        "texto": "Un comentario mal escrito en español."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad afirma que un error de lógica en el diseño es mucho más difícil de corregir que un error de sintaxis en el programa, y por eso recomienda dedicar mucho tiempo a la fase de diseño.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La sangría puede afectar a la legibilidad, pero no se presenta como el problema más grave ni difícil de corregir."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un nombre mejorable puede corregirse con relativa facilidad, a diferencia de una lógica mal planteada."
+        },
+        {
+          "clave": "d",
+          "motivo": "La redacción de comentarios no es el foco del consejo profesional del tema."
+        }
+      ],
+      "resumen_didactico": "Es más grave pensar mal la solución que escribir mal una coma. La lógica equivocada contamina todo el sistema.",
+      "ejemplo_practico": "Si diseñas mal la validación de un cajero, luego corregirlo exige rehacer decisiones, bucles y reglas. Un simple error de sintaxis suele arreglarse rápido.",
+      "conclusion_final": "El error más difícil de corregir suele ser el fallo lógico en el diseño del algoritmo."
+    }
+  },
+  {
+    "id": "UT19-Q07",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué característica comparte cualquier lenguaje de programación según la definición formal del tema?",
+    "contexto": "Definición general de lenguaje de programación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es un sistema formal con sintaxis y reglas gramaticales precisas."
+      },
+      {
+        "clave": "b",
+        "texto": "Siempre funciona sin necesidad de traductor o compilador."
+      },
+      {
+        "clave": "c",
+        "texto": "Debe estar orientado exclusivamente al desarrollo web."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo puede utilizar números binarios y nunca palabras."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema define el lenguaje de programación como un sistema formal con sintaxis y reglas gramaticales precisas que permite comunicarnos con la máquina.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Muchos lenguajes necesitan compiladores, intérpretes o máquinas virtuales para ejecutarse."
+        },
+        {
+          "clave": "c",
+          "motivo": "La definición no limita los lenguajes al desarrollo web; pueden aplicarse a muchos ámbitos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Precisamente la evolución de los lenguajes incluye palabras y sintaxis cercanas al lenguaje humano."
+        }
+      ],
+      "resumen_didactico": "Un lenguaje de programación no es improvisado: tiene reglas claras, igual que un idioma técnico.",
+      "ejemplo_practico": "En Java no puedes colocar instrucciones al azar; debes respetar sintaxis, operadores y estructura para que el compilador lo entienda.",
+      "conclusion_final": "La propiedad común y formal de los lenguajes de programación es que poseen sintaxis y reglas gramaticales precisas."
+    }
+  },
+  {
+    "id": "UT19-Q08",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué par de lenguajes sitúa la clasificación por nivel de abstracción dentro del grupo de medio nivel?",
+    "contexto": "Clasificación de lenguajes mostrada en el esquema del temario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Java y Python."
+      },
+      {
+        "clave": "b",
+        "texto": "C y C++."
+      },
+      {
+        "clave": "c",
+        "texto": "MIPS y ensamblador puro."
+      },
+      {
+        "clave": "d",
+        "texto": "HTML y CSS."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El diagrama de clasificación del tema coloca a C y C++ en el grupo de lenguajes de medio nivel.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Java y Python aparecen como ejemplos de lenguajes de alto nivel."
+        },
+        {
+          "clave": "c",
+          "motivo": "MIPS y ensamblador se asocian al bajo nivel, más cercanos al hardware."
+        },
+        {
+          "clave": "d",
+          "motivo": "HTML y CSS ni siquiera aparecen en esa clasificación del temario como lenguajes de programación por nivel."
+        }
+      ],
+      "resumen_didactico": "Los lenguajes de medio nivel hacen de puente: ofrecen más abstracción que el ensamblador, pero siguen dejando tocar aspectos críticos del sistema.",
+      "ejemplo_practico": "C y C++ son muy usados para sistemas operativos, motores de videojuegos y software donde importa el control de memoria y rendimiento.",
+      "conclusion_final": "El par que el tema sitúa en medio nivel es C y C++."
+    }
+  },
+  {
+    "id": "UT19-Q09",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Para qué escenario profesional presenta la unidad como especialmente útil un lenguaje de bajo nivel?",
+    "contexto": "Uso práctico de los lenguajes más cercanos al hardware.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Crear firmware o controlar directamente el procesador."
+      },
+      {
+        "clave": "b",
+        "texto": "Diseñar presentaciones de diapositivas interactivas."
+      },
+      {
+        "clave": "c",
+        "texto": "Escribir contratos legales con plantillas de texto."
+      },
+      {
+        "clave": "d",
+        "texto": "Definir estilos visuales de una página web."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema usa como ejemplo de bajo nivel el control absoluto del procesador y menciona casos como el firmware de un sensor en una línea de montaje automatizada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las presentaciones no requieren la cercanía al hardware propia de los lenguajes de bajo nivel."
+        },
+        {
+          "clave": "c",
+          "motivo": "Redactar texto no guarda relación con firmware ni control directo del procesador."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los estilos web pertenecen a otros ámbitos y no al uso clásico del bajo nivel."
+        }
+      ],
+      "resumen_didactico": "Cuanto más bajo es el nivel, más control tienes sobre la máquina y menos comodidad tienes al escribir.",
+      "ejemplo_practico": "Programar una rutina en ensamblador para un dispositivo embebido que deba reaccionar con máxima precisión.",
+      "conclusion_final": "La unidad asocia el bajo nivel a escenarios de firmware y control muy directo del hardware."
+    }
+  },
+  {
+    "id": "UT19-Q10",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En el ejemplo del valor absoluto en Java, ¿qué muestra mejor la ventaja práctica de los lenguajes de alto nivel?",
+    "contexto": "Comparación entre ejemplos de bajo, medio y alto nivel para resolver el mismo problema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que la complejidad se reduce gracias a funciones y librerías del lenguaje."
+      },
+      {
+        "clave": "b",
+        "texto": "Que obliga a mover datos entre registros físicos de CPU."
+      },
+      {
+        "clave": "c",
+        "texto": "Que elimina completamente la necesidad de pensar la lógica."
+      },
+      {
+        "clave": "d",
+        "texto": "Que solo puede utilizarse sin números decimales."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El ejemplo con Math.abs(numero) muestra que los lenguajes de alto nivel permiten centrarse en la solución del problema gracias a librerías ya preparadas, reduciendo complejidad técnica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Mover registros físicos es propio del ejemplo de bajo nivel en ensamblador, no del alto nivel."
+        },
+        {
+          "clave": "c",
+          "motivo": "El tema nunca dice que desaparezca la lógica; al contrario, insiste en que dominarla es esencial."
+        },
+        {
+          "clave": "d",
+          "motivo": "El ejemplo usa precisamente un valor decimal, así que esta opción contradice el caso mostrado."
+        }
+      ],
+      "resumen_didactico": "El alto nivel no quita la lógica, pero sí te ahorra detalles técnicos repetitivos gracias a funciones predefinidas.",
+      "ejemplo_practico": "En Java puedes llamar a Math.abs(-25.75) y obtener el valor absoluto sin tener que escribir toda la lógica de cambio de signo manualmente.",
+      "conclusion_final": "La ventaja práctica destacada es la reducción de complejidad mediante librerías y funciones del propio lenguaje."
+    }
+  },
+  {
+    "id": "UT19-Q11",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué idea transmite el tip de empleabilidad cuando afirma que aprender otro lenguaje es muchas veces \"cuestión de vocabulario\"?",
+    "contexto": "Consejo profesional sobre transferir fundamentos de programación entre lenguajes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que dominar la lógica facilita saltar de un lenguaje a otro."
+      },
+      {
+        "clave": "b",
+        "texto": "Que todos los lenguajes tienen exactamente la misma sintaxis."
+      },
+      {
+        "clave": "c",
+        "texto": "Que no hace falta estudiar ningún lenguaje si sabes inglés."
+      },
+      {
+        "clave": "d",
+        "texto": "Que los compiladores corrigen la lógica automáticamente."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad señala que, si entiendes los fundamentos y la lógica de programación, cambiar de un lenguaje a otro resulta mucho más fácil, porque muchas veces solo cambian las palabras y la sintaxis concreta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El tema no dice que la sintaxis sea idéntica; precisamente reconoce que cambia, aunque la lógica de fondo se mantiene."
+        },
+        {
+          "clave": "c",
+          "motivo": "Saber inglés puede ayudar, pero no sustituye el aprendizaje técnico de la programación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los compiladores no arreglan una mala lógica; el tema recalca que la lógica es responsabilidad del programador."
+        }
+      ],
+      "resumen_didactico": "Lo más valioso no es memorizar una sintaxis, sino entender cómo se piensa una solución.",
+      "ejemplo_practico": "Si ya entiendes condicionales, bucles y variables, aprender su equivalente en JavaScript, Java o Python es mucho más rápido.",
+      "conclusion_final": "La enseñanza es que dominar la lógica de programación permite cambiar de lenguaje con mayor facilidad."
+    }
+  },
+  {
+    "id": "UT19-Q12",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué condición formal añade la programación estructurada además de usar secuencia, selección y repetición?",
+    "contexto": "Características formales del paradigma estructurado explicadas en la unidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un único punto de entrada y un único punto de salida."
+      },
+      {
+        "clave": "b",
+        "texto": "Un número ilimitado de saltos libres entre líneas."
+      },
+      {
+        "clave": "c",
+        "texto": "La obligación de escribir cada módulo en un servidor distinto."
+      },
+      {
+        "clave": "d",
+        "texto": "La sustitución de todos los bucles por recursividad."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema explica que la programación estructurada busca un flujo claro y añade como idea formal que el programa tenga un único punto de entrada y un único punto de salida.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso iría contra el objetivo del paradigma estructurado, que precisamente nace para evitar el caos de los saltos sin control."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esa idea pertenece al ejemplo de microservicios y modularidad, no a la definición formal de estructurada."
+        },
+        {
+          "clave": "d",
+          "motivo": "La recursividad no aparece como requisito de la programación estructurada en esta unidad."
+        }
+      ],
+      "resumen_didactico": "La programación estructurada no solo organiza el flujo con tres estructuras; también busca que el recorrido del programa sea limpio y controlado.",
+      "ejemplo_practico": "Un algoritmo que entra por Inicio, sigue decisiones y bucles ordenados y termina en un único Fin encaja con esa filosofía.",
+      "conclusion_final": "La condición formal añadida por el tema es la existencia de un único punto de entrada y salida."
+    }
+  },
+  {
+    "id": "UT19-Q13",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En el ejemplo de validación estructurada para reservar una sala, ¿qué ocurre si la suscripción está activa y hay plazas disponibles?",
+    "contexto": "Caso práctico del validador de disponibilidad de salas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se realiza la reserva y se resta una plaza disponible."
+      },
+      {
+        "clave": "b",
+        "texto": "Se bloquea la cuenta del usuario automáticamente."
+      },
+      {
+        "clave": "c",
+        "texto": "Se reinicia el sistema y se cancela la sesión."
+      },
+      {
+        "clave": "d",
+        "texto": "Se incrementa el número de plazas disponibles."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el ejemplo del tema, si suscripcionActiva es verdadera y plazasDisponibles > 0, se imprime que la reserva fue realizada con éxito y se decrementa el contador de plazas disponibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El caso práctico no habla de bloqueo de cuenta, sino de validación de reserva."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe ningún reinicio del sistema en el flujo mostrado."
+        },
+        {
+          "clave": "d",
+          "motivo": "El ejemplo hace exactamente lo contrario: resta una plaza porque ya ha sido ocupada."
+        }
+      ],
+      "resumen_didactico": "El ejemplo une una condición lógica con una acción concreta: si se cumplen los requisitos, la reserva sale adelante y se actualiza el estado.",
+      "ejemplo_practico": "Es la lógica clásica de cualquier sistema de plazas: comprobar condición y después actualizar disponibilidad.",
+      "conclusion_final": "Cuando ambas condiciones se cumplen, la reserva se confirma y disminuye el número de plazas disponibles."
+    }
+  },
+  {
+    "id": "UT19-Q14",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué papel desempeña el programa principal en el ejemplo modular de GestiónCoworking?",
+    "contexto": "Ejemplo de enfoque modular en Java con módulos de permiso y notificación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Orquesta la llamada a módulos independientes."
+      },
+      {
+        "clave": "b",
+        "texto": "Sustituye completamente a los módulos y realiza todo dentro de una sola línea."
+      },
+      {
+        "clave": "c",
+        "texto": "Se limita a dibujar un diagrama de flujo."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo crea variables pero nunca toma decisiones."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el ejemplo modular, el main no resuelve todo por sí mismo, sino que coordina o orquesta los módulos independientes como tienePermiso() y enviarConfirmacion().",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso sería lo contrario del enfoque modular, que precisamente separa responsabilidades."
+        },
+        {
+          "clave": "c",
+          "motivo": "El programa principal está en Java ejecutando lógica, no solo dibujando diagramas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí toma decisiones, por ejemplo al comprobar si el cliente tiene permiso antes de notificar."
+        }
+      ],
+      "resumen_didactico": "En un enfoque modular, el main manda y coordina, pero delega el trabajo específico en módulos concretos.",
+      "ejemplo_practico": "El programa principal puede comprobar un permiso y luego llamar a un módulo de notificación, sin mezclar ambas tareas en el mismo bloque.",
+      "conclusion_final": "La función del programa principal es orquestar módulos independientes."
+    }
+  },
+  {
+    "id": "UT19-Q15",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Cómo presenta el tema a los microservicios en relación con la programación modular?",
+    "contexto": "Tip de empleabilidad dentro del paradigma modular.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como llevar la modularidad al extremo, con programas independientes."
+      },
+      {
+        "clave": "b",
+        "texto": "Como una forma de volver al código espagueti."
+      },
+      {
+        "clave": "c",
+        "texto": "Como una técnica exclusiva del lenguaje ensamblador."
+      },
+      {
+        "clave": "d",
+        "texto": "Como un sustituto de los algoritmos y diagramas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tip de empleabilidad explica que los microservicios consisten en llevar la programación modular al extremo, haciendo que cada parte sea un programa independiente que corre en un servidor distinto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los microservicios buscan precisamente separar responsabilidades, no mezclarlo todo de nuevo."
+        },
+        {
+          "clave": "c",
+          "motivo": "No tienen relación exclusiva con ensamblador; pertenecen a arquitecturas modernas de software."
+        },
+        {
+          "clave": "d",
+          "motivo": "No sustituyen el diseño lógico, sino que aplican modularidad a gran escala."
+        }
+      ],
+      "resumen_didactico": "Un microservicio es como un módulo que se independiza y vive por sí mismo dentro de una arquitectura distribuida.",
+      "ejemplo_practico": "Puedes tener un servicio de pagos, otro de usuarios y otro de inventario ejecutándose como aplicaciones separadas.",
+      "conclusion_final": "El tema define los microservicios como una extensión extrema de la modularidad."
+    }
+  },
+  {
+    "id": "UT19-Q16",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué idea resume mejor la frase del mentor: \"Si el pseudocódigo funciona, el programa funcionará\"?",
+    "contexto": "Importancia del diseño lógico previo en el desarrollo profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que una lógica bien planteada facilita después la implementación en código."
+      },
+      {
+        "clave": "b",
+        "texto": "Que el compilador convierte automáticamente pseudocódigo en Java."
+      },
+      {
+        "clave": "c",
+        "texto": "Que ya no es necesario probar el programa real."
+      },
+      {
+        "clave": "d",
+        "texto": "Que el pseudocódigo ejecuta directamente en la JVM."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad usa esa frase para destacar que el verdadero rompecabezas se resuelve en la fase de lógica. Si el diseño está bien pensado, luego programarlo en Java resulta mucho más sencillo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El pseudocódigo no se compila automáticamente a Java en el contexto del tema; es una herramienta de diseño."
+        },
+        {
+          "clave": "c",
+          "motivo": "Aunque el diseño sea bueno, seguirán siendo necesarias pruebas y validación del programa real."
+        },
+        {
+          "clave": "d",
+          "motivo": "La JVM no ejecuta pseudocódigo; ejecuta bytecode Java."
+        }
+      ],
+      "resumen_didactico": "Primero se resuelve el problema en la cabeza y en papel; luego se traduce al lenguaje de programación.",
+      "ejemplo_practico": "Si ya tienes claro el flujo de un cajero en pseudocódigo, al pasarlo a Java solo debes traducir condiciones, bucles y variables a sintaxis concreta.",
+      "conclusion_final": "La frase subraya que una lógica correcta en pseudocódigo es la base para una implementación exitosa."
+    }
+  },
+  {
+    "id": "UT19-Q17",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué ventaja específica aporta el pseudocódigo cuando se quiere explicar la solución a un cliente no técnico, como el dueño de una pastelería?",
+    "contexto": "Uso comunicativo del pseudocódigo en fases tempranas del proyecto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite explicar la lógica sin depender de la sintaxis exacta de un lenguaje real."
+      },
+      {
+        "clave": "b",
+        "texto": "Obliga al cliente a aprender Java antes de entender el proyecto."
+      },
+      {
+        "clave": "c",
+        "texto": "Sirve para diseñar hardware y circuitos eléctricos."
+      },
+      {
+        "clave": "d",
+        "texto": "Elimina la necesidad de documentar el sistema."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que Elena usa pseudocódigo para que el dueño de la pastelería entienda cómo funcionará el sistema antes de gastar horas escribiendo código complejo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El pseudocódigo precisamente evita obligar al cliente a conocer la sintaxis técnica de un lenguaje como Java."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se presenta como herramienta de diseño electrónico o hardware, sino de lógica algorítmica."
+        },
+        {
+          "clave": "d",
+          "motivo": "Explicar la lógica con pseudocódigo forma parte de documentar y comunicar el sistema, no de eliminar esa necesidad."
+        }
+      ],
+      "resumen_didactico": "El pseudocódigo es útil porque hace visible la lógica del sistema en un formato más comprensible para personas no técnicas.",
+      "ejemplo_practico": "Es más fácil enseñar: \"Leer pedido → Calcular precio → Imprimir ticket\" que mostrar directamente clases, llaves y sintaxis Java.",
+      "conclusion_final": "La ventaja clave es que permite comunicar la lógica del sistema sin depender de sintaxis técnica real."
+    }
+  },
+  {
+    "id": "UT19-Q18",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En la tabla de operadores del pseudocódigo, ¿qué operador se utiliza para calcular el resto de una división?",
+    "contexto": "Operadores aritméticos incluidos en la caja de herramientas del pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Div"
+      },
+      {
+        "clave": "b",
+        "texto": "Mod"
+      },
+      {
+        "clave": "c",
+        "texto": "^"
+      },
+      {
+        "clave": "d",
+        "texto": "<>"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La tabla de operadores del pseudocódigo recoge que Mod representa el resto o módulo de una división.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Div se usa para la división entera, no para el resto."
+        },
+        {
+          "clave": "c",
+          "motivo": "^ corresponde a la potencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "<> es un operador relacional que significa distinto."
+        }
+      ],
+      "resumen_didactico": "Cuando quieres saber el residuo de una división, la palabra clave del pseudocódigo es Mod.",
+      "ejemplo_practico": "Para comprobar si un número es par puedes usar numero Mod 2 y ver si el resultado es 0.",
+      "conclusion_final": "El operador correcto para el resto de una división es Mod."
+    }
+  },
+  {
+    "id": "UT19-Q19",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué operador lógico del pseudocódigo invierte el valor de una condición?",
+    "contexto": "Operadores lógicos disponibles para conectar o negar condiciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "and"
+      },
+      {
+        "clave": "b",
+        "texto": "or"
+      },
+      {
+        "clave": "c",
+        "texto": "no"
+      },
+      {
+        "clave": "d",
+        "texto": "Div"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La tabla de operadores del tema señala que \"no\" es la negación lógica, es decir, el operador que invierte una condición.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "and conecta dos condiciones que deben ser verdaderas, pero no invierte ninguna."
+        },
+        {
+          "clave": "b",
+          "motivo": "or permite que baste con una condición verdadera, pero tampoco realiza negación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Div es un operador aritmético de división entera."
+        }
+      ],
+      "resumen_didactico": "Si quieres cambiar verdadero por falso o negar una condición, el pseudocódigo usa \"no\".",
+      "ejemplo_practico": "Si una variable booleana indica estaPagado = Verdadero, entonces \"no estaPagado\" expresaría la condición contraria.",
+      "conclusion_final": "El operador lógico de negación en el pseudocódigo es \"no\"."
+    }
+  },
+  {
+    "id": "UT19-Q20",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Dentro de las palabras reservadas del pseudocódigo, ¿qué pareja pertenece claramente al grupo de acciones sobre datos?",
+    "contexto": "Clasificación de palabras reservadas por estructura, acciones y otros usos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Leer / Imprimir"
+      },
+      {
+        "clave": "b",
+        "texto": "Inicio / Fin"
+      },
+      {
+        "clave": "c",
+        "texto": "Caso / Otro"
+      },
+      {
+        "clave": "d",
+        "texto": "Si / Entonces"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la tabla de palabras reservadas, el tema agrupa Leer e Imprimir en el bloque de acciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Inicio y Fin pertenecen a la estructura general del algoritmo, no a acciones sobre datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Caso y Otro aparecen en otros usos asociados a estructuras múltiples."
+        },
+        {
+          "clave": "d",
+          "motivo": "Si y Entonces pertenecen a la lógica de decisión, no al bloque de acciones."
+        }
+      ],
+      "resumen_didactico": "Leer e Imprimir representan acciones típicas de entrada y salida dentro del algoritmo.",
+      "ejemplo_practico": "Leer usuario, Leer contraseña o Imprimir ticket son instrucciones de acción, no de estructura global.",
+      "conclusion_final": "La pareja del grupo de acciones es Leer / Imprimir."
+    }
+  },
+  {
+    "id": "UT19-Q21",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué palabra reservada se recomienda cuando existen muchos caminos posibles y se quiere seleccionar uno según un valor?",
+    "contexto": "Estructuras alternativas múltiples dentro del pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Según"
+      },
+      {
+        "clave": "b",
+        "texto": "Mientras"
+      },
+      {
+        "clave": "c",
+        "texto": "Retornar"
+      },
+      {
+        "clave": "d",
+        "texto": "Incrementar"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El apartado de estructuras alternativas indica que la alternativa múltiple se expresa con \"Según\" cuando hay muchos caminos posibles según el valor de una opción.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Mientras es una estructura iterativa, no una selección múltiple."
+        },
+        {
+          "clave": "c",
+          "motivo": "Retornar pertenece a acciones o funciones, no a la elección entre múltiples casos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Incrementar no define una estructura de selección múltiple."
+        }
+      ],
+      "resumen_didactico": "Cuando tienes muchas opciones posibles, en lugar de encadenar muchos \"Si\", el pseudocódigo propone usar \"Según\".",
+      "ejemplo_practico": "Según el dulce elegido, el sistema puede asignar un precio distinto a cada producto del menú.",
+      "conclusion_final": "La palabra reservada adecuada para una alternativa múltiple es \"Según\"."
+    }
+  },
+  {
+    "id": "UT19-Q22",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué tipo de dato del pseudocódigo es el más adecuado para representar si un pedido está pagado o no?",
+    "contexto": "Selección correcta del tipo de dato según la naturaleza de la información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cadena"
+      },
+      {
+        "clave": "b",
+        "texto": "Booleano"
+      },
+      {
+        "clave": "c",
+        "texto": "Real"
+      },
+      {
+        "clave": "d",
+        "texto": "Carácter"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La tabla de tipos de datos indica que Booleano se usa para valores verdadero o falso, y pone como ejemplo precisamente la idea de si algo está pagado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una cadena sirve para texto completo, no para una condición de sí/no."
+        },
+        {
+          "clave": "c",
+          "motivo": "Real es un tipo numérico con decimales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Carácter representa un solo símbolo, no un estado lógico."
+        }
+      ],
+      "resumen_didactico": "Si una información solo puede ser verdadera o falsa, el tipo correcto es booleano.",
+      "ejemplo_practico": "pedidoPagado = Verdadero o pedidoPagado = Falso son valores propios de un booleano.",
+      "conclusion_final": "Para representar si un pedido está pagado o no, el tipo de dato correcto es Booleano."
+    }
+  },
+  {
+    "id": "UT19-Q23",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué metáfora usa la unidad para explicar el comportamiento de una variable?",
+    "contexto": "Definición didáctica de variable en el pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una caja etiquetada cuyo contenido puede cambiar."
+      },
+      {
+        "clave": "b",
+        "texto": "Una piedra grabada que nunca se modifica."
+      },
+      {
+        "clave": "c",
+        "texto": "Un compilador que traduce a bytecode."
+      },
+      {
+        "clave": "d",
+        "texto": "Una carpeta del sistema operativo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema compara la variable con una caja que tiene una etiqueta exterior: puedes cambiar lo que hay dentro, pero la etiqueta sigue identificando para qué sirve.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esa imagen encaja mejor con una constante, no con una variable."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un compilador es una herramienta de traducción de código, no una metáfora de variable."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una carpeta puede agrupar archivos, pero no es la analogía que usa el tema para explicar una variable."
+        }
+      ],
+      "resumen_didactico": "La variable cambia por dentro, pero conserva su nombre y su función dentro del algoritmo.",
+      "ejemplo_practico": "cantidadPedidos puede empezar valiendo 5 y luego pasar a 10 si entran nuevos clientes.",
+      "conclusion_final": "La metáfora correcta es la de una caja etiquetada cuyo contenido puede cambiar."
+    }
+  },
+  {
+    "id": "UT19-Q24",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué rasgo distingue a una constante respecto a una variable durante la ejecución?",
+    "contexto": "Comparación entre valores mutables e inmutables dentro del algoritmo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permanece inmutable durante todo el programa."
+      },
+      {
+        "clave": "b",
+        "texto": "Se almacena siempre en un archivo externo."
+      },
+      {
+        "clave": "c",
+        "texto": "Debe declararse solo con números enteros."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo puede usarse dentro de un diagrama de flujo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad define las constantes como valores que permanecen inmutables durante todo el programa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El tema no dice que deban vivir en archivos; habla de su naturaleza inmutable."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una constante puede ser de varios tipos, como Real o Cadena, no solo entero."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las constantes se usan en algoritmos, pseudocódigo y programas, no solo en diagramas."
+        }
+      ],
+      "resumen_didactico": "Constante significa valor fijo. Si cambia, deja de comportarse como constante.",
+      "ejemplo_practico": "PIN_CORRECTO o IVA pueden definirse al inicio y mantenerse iguales durante toda la ejecución.",
+      "conclusion_final": "La característica diferenciadora es su inmutabilidad durante el programa."
+    }
+  },
+  {
+    "id": "UT19-Q25",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué estructura de control describe un flujo donde las instrucciones se ejecutan una tras otra sin saltos?",
+    "contexto": "Estructuras de control básicas dentro del pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Secuencial"
+      },
+      {
+        "clave": "b",
+        "texto": "Alternativa doble"
+      },
+      {
+        "clave": "c",
+        "texto": "Alternativa múltiple"
+      },
+      {
+        "clave": "d",
+        "texto": "Iterativa Mientras"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El apartado 1.5.3 define la estructura secuencial como aquella en la que las instrucciones se ejecutan una tras otra, sin saltos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La alternativa doble toma caminos distintos según una condición."
+        },
+        {
+          "clave": "c",
+          "motivo": "La alternativa múltiple elige entre varios casos posibles."
+        },
+        {
+          "clave": "d",
+          "motivo": "Mientras es una estructura iterativa que repite instrucciones."
+        }
+      ],
+      "resumen_didactico": "Si el algoritmo solo avanza paso a paso, sin decidir ni repetir, estás en una estructura secuencial.",
+      "ejemplo_practico": "Leer pedido, calcular precio e imprimir ticket son pasos típicos de un flujo secuencial.",
+      "conclusion_final": "El flujo lineal sin saltos corresponde a la estructura secuencial."
+    }
+  },
+  {
+    "id": "UT19-Q26",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué estructura iterativa del pseudocódigo se utiliza cuando no sabes cuántas repeticiones harán falta y debes seguir mientras la condición sea verdadera?",
+    "contexto": "Comparación entre tipos de bucles explicados en la unidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mientras"
+      },
+      {
+        "clave": "b",
+        "texto": "Para"
+      },
+      {
+        "clave": "c",
+        "texto": "Según"
+      },
+      {
+        "clave": "d",
+        "texto": "Caso"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad define Mientras como el bucle que repite un bloque mientras se cumpla una condición.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Para se usa cuando sabemos exactamente cuántas veces repetir."
+        },
+        {
+          "clave": "c",
+          "motivo": "Según es una estructura de selección múltiple, no de repetición."
+        },
+        {
+          "clave": "d",
+          "motivo": "Caso forma parte de estructuras alternativas múltiples, no de un bucle."
+        }
+      ],
+      "resumen_didactico": "Si la repetición depende de una condición que puede mantenerse o dejar de cumplirse, el bucle natural es Mientras.",
+      "ejemplo_practico": "Mientras haya harina, sigue haciendo pasteles; cuando ya no haya, el bucle termina.",
+      "conclusion_final": "La estructura correcta cuando dependes de una condición variable es Mientras."
+    }
+  },
+  {
+    "id": "UT19-Q27",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué característica específica tiene el bucle \"Repetir hasta que\" según el tema?",
+    "contexto": "Propiedad diferencial de una de las estructuras iterativas del pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se ejecuta al menos una vez antes de comprobar si debe parar."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo puede ejecutarse exactamente tres veces."
+      },
+      {
+        "clave": "c",
+        "texto": "Nunca evalúa condiciones lógicas."
+      },
+      {
+        "clave": "d",
+        "texto": "Se usa únicamente para recorrer arrays bidimensionales."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema explica que Repetir hasta que se ejecuta al menos una vez y solo después comprueba la condición de parada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No existe esa limitación fija de tres repeticiones en su definición."
+        },
+        {
+          "clave": "c",
+          "motivo": "Sí evalúa una condición, precisamente para decidir cuándo detenerse."
+        },
+        {
+          "clave": "d",
+          "motivo": "No está restringido a matrices; es una estructura iterativa general."
+        }
+      ],
+      "resumen_didactico": "La gran diferencia de este bucle es que primero actúa y después pregunta si ya debe terminar.",
+      "ejemplo_practico": "Haz un pastel y luego comprueba si ya has llegado al límite de producción.",
+      "conclusion_final": "La propiedad clave es que se ejecuta al menos una vez antes de evaluar la condición de salida."
+    }
+  },
+  {
+    "id": "UT19-Q28",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En la simbología ISO de diagramas de flujo, ¿qué símbolo representa una operación interna como un cálculo o una asignación?",
+    "contexto": "Simbología estándar usada para documentar algoritmos de forma gráfica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Rombo"
+      },
+      {
+        "clave": "b",
+        "texto": "Rectángulo"
+      },
+      {
+        "clave": "c",
+        "texto": "Óvalo o elipse"
+      },
+      {
+        "clave": "d",
+        "texto": "Paralelogramo"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La tabla de simbología ISO indica que el rectángulo representa un Proceso, es decir, una operación interna como un cálculo o una asignación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El rombo se usa para decisiones o bifurcaciones lógicas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El óvalo o elipse marca inicio o fin del proceso."
+        },
+        {
+          "clave": "d",
+          "motivo": "El paralelogramo se utiliza para entrada o salida de datos."
+        }
+      ],
+      "resumen_didactico": "Si el diagrama muestra que el programa hace algo por dentro —calcular, asignar, actualizar— el símbolo típico es el rectángulo.",
+      "ejemplo_practico": "La instrucción saldoCuenta <- saldoCuenta - cantidadRetirar se dibujaría como un proceso dentro de un rectángulo.",
+      "conclusion_final": "El símbolo de proceso para cálculos y asignaciones es el rectángulo."
+    }
+  },
+  {
+    "id": "UT19-Q29",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué símbolo del diagrama de flujo se usa para representar la lectura de datos o la impresión de resultados?",
+    "contexto": "Identificación del símbolo correspondiente a entrada y salida en la norma ISO.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Paralelogramo"
+      },
+      {
+        "clave": "b",
+        "texto": "Rombo"
+      },
+      {
+        "clave": "c",
+        "texto": "Rectángulo"
+      },
+      {
+        "clave": "d",
+        "texto": "Óvalo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La simbología ISO del tema asocia el paralelogramo a la Entrada / Salida, es decir, leer datos o imprimir resultados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El rombo corresponde a decisiones, no a operaciones de entrada/salida."
+        },
+        {
+          "clave": "c",
+          "motivo": "El rectángulo representa procesos internos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El óvalo se usa para inicio o fin."
+        }
+      ],
+      "resumen_didactico": "Cuando el algoritmo recibe información o muestra algo al exterior, el símbolo visual habitual es el paralelogramo.",
+      "ejemplo_practico": "Leer pinIngresado o Imprimir \"Saldo insuficiente\" se dibujan como entrada/salida, por tanto dentro de un paralelogramo.",
+      "conclusion_final": "El símbolo de entrada y salida en un diagrama de flujo es el paralelogramo."
+    }
+  },
+  {
+    "id": "UT19-Q30",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Según el tip final de empleabilidad, ¿qué tipo de lógica aparece como base del desarrollo back-end en el caso del cajero automático?",
+    "contexto": "Conclusión profesional del caso práctico de validación y estado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Algoritmos de validación y estado."
+      },
+      {
+        "clave": "b",
+        "texto": "Diseño exclusivo de interfaces gráficas."
+      },
+      {
+        "clave": "c",
+        "texto": "Renderizado 3D en tiempo real."
+      },
+      {
+        "clave": "d",
+        "texto": "Maquetación visual con HTML y CSS."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tip de empleabilidad final indica que este tipo de algoritmos de validación y estado son la base del desarrollo back-end.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las interfaces gráficas pertenecen a otra capa y no son la idea destacada en esa conclusión del tema."
+        },
+        {
+          "clave": "c",
+          "motivo": "El renderizado 3D no forma parte del caso práctico ni del mensaje final de la unidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "HTML y CSS son tecnologías de presentación y no el núcleo lógico del back-end descrito aquí."
+        }
+      ],
+      "resumen_didactico": "Comprobar estados, validar entradas y decidir qué hacer después es una lógica central en el back-end.",
+      "ejemplo_practico": "Validar un PIN, contar intentos, comprobar saldo y decidir si se bloquea la tarjeta o se entrega dinero es exactamente ese tipo de lógica.",
+      "conclusion_final": "La unidad concluye que los algoritmos de validación y estado son una base directa del desarrollo back-end."
+    }
+  }
+]

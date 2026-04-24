@@ -290,6 +290,41 @@ export const topicsByModule = {
       title: "Creación de interfaces gráficas",
       numQuestion: 30,
     },
+    {
+      id: "UT16",
+      title: "Repaso global (Abarca de 0% a 14% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT17",
+      title: "Repaso global (Abarca de 14% a 28% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT18",
+      title: "Repaso global (Abarca de 28% a 42% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT19",
+      title: "Repaso global (Abarca de 42% a 56% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT20",
+      title: "Repaso global (Abarca de 56% a 70% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT21",
+      title: "Repaso global (Abarca de 70% a 84% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT22",
+      title: "Repaso global (Abarca de 84% a 100% del temario)",
+      numQuestion: 30,
+    }
   ],
   ingles:[
       {

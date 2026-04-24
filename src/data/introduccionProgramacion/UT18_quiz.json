@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT18-Q01",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué sistema de entrada de datos utilizaban las primeras máquinas mecánicas citadas en la unidad para recibir información?",
+    "contexto": "Historia inicial de la informática y mecanismos físicos usados antes de los ordenadores modernos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Tarjetas perforadas."
+      },
+      {
+        "clave": "b",
+        "texto": "Pantallas táctiles."
+      },
+      {
+        "clave": "c",
+        "texto": "Sensores ópticos inalámbricos."
+      },
+      {
+        "clave": "d",
+        "texto": "Bases de datos relacionales."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que las primeras máquinas mecánicas recibían datos a través de tarjetas perforadas, sistema que fue una base histórica de la informática.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las pantallas táctiles pertenecen a tecnologías modernas y no formaban parte de las primeras calculadoras mecánicas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los sensores ópticos inalámbricos no existían en ese contexto histórico."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las bases de datos relacionales son tecnologías de software mucho más posteriores y no eran un mecanismo físico de entrada de datos."
+        }
+      ],
+      "resumen_didactico": "Antes de los ordenadores actuales, la información se introducía físicamente mediante tarjetas perforadas.",
+      "ejemplo_practico": "Una máquina antigua podía leer patrones de agujeros en cartón para saber qué operación debía ejecutar.",
+      "conclusion_final": "El sistema histórico de entrada de datos mencionado en la unidad son las tarjetas perforadas."
+    }
+  },
+  {
+    "id": "UT18-Q02",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Para qué fue concebida la máquina de diferencias de Charles Babbage según el recorrido histórico del tema?",
+    "contexto": "Hitos históricos que impulsaron el nacimiento de la programación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para reproducir sonido digital en tiempo real."
+      },
+      {
+        "clave": "b",
+        "texto": "Para cálculos matemáticos complejos."
+      },
+      {
+        "clave": "c",
+        "texto": "Para gestionar correo electrónico."
+      },
+      {
+        "clave": "d",
+        "texto": "Para ejecutar aplicaciones móviles."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario señala que la máquina de diferencias, propuesta por Babbage en 1822, estaba destinada a resolver cálculos matemáticos complejos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La reproducción de sonido digital no tiene relación con la función histórica de esa máquina."
+        },
+        {
+          "clave": "c",
+          "motivo": "El correo electrónico pertenece a la era de las redes informáticas modernas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las aplicaciones móviles son un concepto contemporáneo ajeno al contexto del siglo XIX."
+        }
+      ],
+      "resumen_didactico": "La máquina de diferencias nace para automatizar cálculos matemáticos complejos.",
+      "ejemplo_practico": "En lugar de resolver grandes tablas numéricas a mano, la idea era que la máquina realizara ese trabajo automáticamente.",
+      "conclusion_final": "Su propósito principal era ejecutar cálculos matemáticos complejos."
+    }
+  },
+  {
+    "id": "UT18-Q03",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué combinación de elementos hace que la máquina analítica se considere la primera computadora de propósito general en la unidad?",
+    "contexto": "Comparación histórica entre inventos previos y el salto conceptual de la máquina analítica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Unidad de control y memoria."
+      },
+      {
+        "clave": "b",
+        "texto": "Monitor y teclado."
+      },
+      {
+        "clave": "c",
+        "texto": "Compilador e intérprete."
+      },
+      {
+        "clave": "d",
+        "texto": "Ratón y disco SSD."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad indica que la máquina analítica fue la primera computadora de propósito general por incluir una unidad de control y memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Monitor y teclado son periféricos modernos que no explican el salto conceptual citado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Compilador e intérprete son componentes de software, no rasgos de la máquina analítica."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ratón y SSD son tecnologías contemporáneas totalmente ajenas a ese invento."
+        }
+      ],
+      "resumen_didactico": "Lo que la volvió especial fue incorporar control y memoria, acercándola a la idea de computador general.",
+      "ejemplo_practico": "Ya no era solo una máquina para una operación concreta, sino una arquitectura capaz de gestionar información de forma más flexible.",
+      "conclusion_final": "La clave fue la presencia de unidad de control y memoria."
+    }
+  },
+  {
+    "id": "UT18-Q04",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Por qué Augusta Ada Byron (Ada Lovelace) ocupa un lugar esencial en la historia de la programación?",
+    "contexto": "Origen de la profesión y figuras pioneras del desarrollo de software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque inventó Internet."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque creó el primer algoritmo informático para la máquina analítica."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque diseñó el lenguaje Java."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque fabricó la primera CPU comercial."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El tema explica que Ada Lovelace creó el primer algoritmo informático para la máquina analítica y por ello es considerada la primera programadora de la historia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Internet surgió muchísimo después y no está vinculado a Ada Lovelace."
+        },
+        {
+          "clave": "c",
+          "motivo": "Java es un lenguaje del siglo XX, muy posterior a su época."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se le atribuye la fabricación de una CPU, sino un hito lógico y algorítmico."
+        }
+      ],
+      "resumen_didactico": "Ada Lovelace destaca por escribir el primer algoritmo pensado para ser ejecutado por una máquina.",
+      "ejemplo_practico": "Mientras Babbage diseñaba la máquina, Ada aportó la lógica que le daba utilidad computacional.",
+      "conclusion_final": "Su papel histórico se debe a haber creado el primer algoritmo informático de la historia."
+    }
+  },
+  {
+    "id": "UT18-Q05",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué afirmación encaja con la definición de algoritmo presentada en la unidad?",
+    "contexto": "Diferenciación entre algoritmo y programa dentro de los conceptos fundamentales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es una secuencia de pasos ordenados y finitos para resolver un problema."
+      },
+      {
+        "clave": "b",
+        "texto": "Es siempre una app descargable desde una tienda digital."
+      },
+      {
+        "clave": "c",
+        "texto": "Es un conjunto de componentes físicos del ordenador."
+      },
+      {
+        "clave": "d",
+        "texto": "Es un documento que solo puede ejecutar una CPU."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad define un algoritmo como una secuencia de pasos ordenados y finitos destinada a resolver un problema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una aplicación puede implementar algoritmos, pero no es la definición de algoritmo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los componentes físicos pertenecen al hardware, no al concepto de algoritmo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un algoritmo puede incluso ejecutarlo una persona siguiendo instrucciones; no es un documento exclusivo de la CPU."
+        }
+      ],
+      "resumen_didactico": "Algoritmo significa lógica paso a paso con un final claro.",
+      "ejemplo_practico": "Una receta de cocina también puede entenderse como algoritmo porque describe pasos ordenados para alcanzar un resultado.",
+      "conclusion_final": "La definición correcta es la de una secuencia de pasos ordenados y finitos."
+    }
+  },
+  {
+    "id": "UT18-Q06",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Según el tip profesional del tema, ¿qué suele ser más difícil de corregir en un proyecto real?",
+    "contexto": "Relación entre diseño lógico y codificación en el trabajo profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un error de lógica en el diseño del algoritmo."
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar el color de un comentario."
+      },
+      {
+        "clave": "c",
+        "texto": "Escribir un punto y coma de más en un ejemplo aislado."
+      },
+      {
+        "clave": "d",
+        "texto": "Poner un nombre largo a una variable."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad insiste en que un error lógico en el diseño es más difícil de corregir que un error de sintaxis, por eso se recomienda dedicar más tiempo a pensar la solución.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El color de un comentario no afecta a la lógica del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un error sintáctico suele ser más fácil de localizar y corregir que un fallo de diseño."
+        },
+        {
+          "clave": "d",
+          "motivo": "La longitud del nombre puede afectar a la legibilidad, pero no es el problema más costoso de resolver."
+        }
+      ],
+      "resumen_didactico": "Equivocarse en la lógica duele más que equivocarse en la sintaxis.",
+      "ejemplo_practico": "Si diseñas mal un proceso de validación de pagos, el fallo puede afectar a todo el sistema, mientras que un paréntesis mal escrito suele detectarse enseguida.",
+      "conclusion_final": "Lo más difícil de corregir suele ser un error de lógica en el diseño del algoritmo."
+    }
+  },
+  {
+    "id": "UT18-Q07",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué rasgo hace especialmente adecuados a los lenguajes de bajo nivel para tareas como firmware o control directo del hardware?",
+    "contexto": "Clasificación de lenguajes por cercanía al procesador y tipo de uso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su cercanía al procesador y el control detallado del hardware."
+      },
+      {
+        "clave": "b",
+        "texto": "Su sintaxis casi idéntica al lenguaje natural."
+      },
+      {
+        "clave": "c",
+        "texto": "Su dependencia de librerías visuales de alto nivel."
+      },
+      {
+        "clave": "d",
+        "texto": "Su orientación exclusiva a bases de datos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema explica que los lenguajes de bajo nivel operan directamente sobre el hardware y se utilizan cuando se necesita control absoluto del procesador.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe mejor a los lenguajes de alto nivel."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las librerías visuales no son el rasgo definitorio del bajo nivel."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se orientan a bases de datos, sino a tareas muy próximas a la máquina."
+        }
+      ],
+      "resumen_didactico": "Cuanto más cerca del hardware está un lenguaje, más control técnico ofrece.",
+      "ejemplo_practico": "El firmware de un sensor industrial necesita hablar casi directamente con la máquina, por eso se usan lenguajes cercanos al hardware.",
+      "conclusion_final": "Su ventaja es la cercanía al procesador y el control detallado del hardware."
+    }
+  },
+  {
+    "id": "UT18-Q08",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué característica distingue a los lenguajes de medio nivel en la unidad?",
+    "contexto": "Posición intermedia entre control técnico y abstracción lógica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permiten una capa de abstracción sin perder acceso a aspectos críticos como la memoria."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo sirven para diseñar diagramas de flujo."
+      },
+      {
+        "clave": "c",
+        "texto": "Se ejecutan exclusivamente en navegadores web."
+      },
+      {
+        "clave": "d",
+        "texto": "No admiten condiciones ni funciones."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que los lenguajes de medio nivel aplican una capa de abstracción pero siguen permitiendo manipular aspectos críticos del sistema, como la memoria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los diagramas de flujo son herramientas de diseño, no el uso principal de estos lenguajes."
+        },
+        {
+          "clave": "c",
+          "motivo": "No están limitados al navegador; de hecho se asocian a sistemas, motores y software de alto rendimiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí admiten estructuras lógicas complejas; precisamente combinan control y expresividad."
+        }
+      ],
+      "resumen_didactico": "Los lenguajes de medio nivel equilibran cercanía al sistema con sintaxis más manejable.",
+      "ejemplo_practico": "C o C++ permiten escribir lógica comprensible y, al mismo tiempo, controlar memoria y recursos del sistema.",
+      "conclusion_final": "Lo que los define es esa mezcla de abstracción y acceso a aspectos críticos del sistema."
+    }
+  },
+  {
+    "id": "UT18-Q09",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué familia de lenguajes presenta la unidad como la más habitual para aplicaciones web o de gestión?",
+    "contexto": "Clasificación por cercanía al lenguaje humano y uso profesional cotidiano.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Lenguajes de alto nivel."
+      },
+      {
+        "clave": "b",
+        "texto": "Lenguajes exclusivamente binarios."
+      },
+      {
+        "clave": "c",
+        "texto": "Lenguajes de microcódigo."
+      },
+      {
+        "clave": "d",
+        "texto": "Lenguajes físicos de cableado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los lenguajes de alto nivel son los más cercanos al lenguaje humano y el tema los sitúa como los más usados en desarrollo web o de gestión.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El binario corresponde al nivel más bajo y no es la opción habitual para aplicaciones web o de gestión."
+        },
+        {
+          "clave": "c",
+          "motivo": "El microcódigo no se presenta como la familia típica para este tipo de software."
+        },
+        {
+          "clave": "d",
+          "motivo": "El cableado físico no es una categoría de lenguaje de programación de uso habitual."
+        }
+      ],
+      "resumen_didactico": "Para software empresarial o web, lo normal es trabajar con lenguajes de alto nivel.",
+      "ejemplo_practico": "Java, Python o C# permiten centrarse en resolver el problema sin entrar en detalles eléctricos del procesador.",
+      "conclusion_final": "La familia más habitual en ese contexto son los lenguajes de alto nivel."
+    }
+  },
+  {
+    "id": "UT18-Q10",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En el ejemplo del valor absoluto escrito en Java, ¿qué recurso muestra la ventaja de los lenguajes de alto nivel?",
+    "contexto": "Reducción de complejidad gracias a utilidades integradas del lenguaje.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El uso de una función predefinida como Math.abs()."
+      },
+      {
+        "clave": "b",
+        "texto": "La manipulación directa de registros de CPU."
+      },
+      {
+        "clave": "c",
+        "texto": "La necesidad de escribir código binario manualmente."
+      },
+      {
+        "clave": "d",
+        "texto": "La ausencia total de librerías estándar."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad enseña que en Java la complejidad se reduce gracias a librerías del propio lenguaje, como la función Math.abs para calcular el valor absoluto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso sería propio de un contexto de muy bajo nivel, no de Java como ejemplo de alto nivel."
+        },
+        {
+          "clave": "c",
+          "motivo": "Java no exige escribir binario manualmente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Precisamente ocurre lo contrario: la existencia de librerías estándar facilita la resolución del problema."
+        }
+      ],
+      "resumen_didactico": "Una ventaja del alto nivel es que muchas operaciones ya están resueltas por el propio lenguaje.",
+      "ejemplo_practico": "En vez de programar toda la lógica del valor absoluto, basta con llamar a Math.abs(numero).",
+      "conclusion_final": "El recurso que evidencia esa ventaja es el uso de una función predefinida como Math.abs()."
+    }
+  },
+  {
+    "id": "UT18-Q11",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué enseñanza profesional resume la unidad al afirmar que pasar de un lenguaje a otro es, en gran parte, cuestión de vocabulario?",
+    "contexto": "Relación entre fundamentos lógicos y adaptación a distintos lenguajes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que dominar la lógica facilita aprender nuevos lenguajes."
+      },
+      {
+        "clave": "b",
+        "texto": "Que todos los lenguajes tienen exactamente la misma sintaxis."
+      },
+      {
+        "clave": "c",
+        "texto": "Que solo importa memorizar palabras reservadas."
+      },
+      {
+        "clave": "d",
+        "texto": "Que no hace falta entender algoritmos para programar."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tip de empleabilidad señala que si entiendes los fundamentos de programación y la lógica, cambiar de lenguaje resulta mucho más sencillo; la sintaxis pasa a ser una cuestión secundaria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los lenguajes no comparten exactamente la misma sintaxis."
+        },
+        {
+          "clave": "c",
+          "motivo": "Memorizar palabras sin entender la lógica no basta para programar con solvencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "La unidad insiste precisamente en lo contrario: primero se entiende la lógica y luego se codifica."
+        }
+      ],
+      "resumen_didactico": "La verdadera base no es el vocabulario del lenguaje, sino la lógica de programación.",
+      "ejemplo_practico": "Si sabes diseñar condiciones, bucles y algoritmos, aprender Java después de Python resulta mucho más fácil.",
+      "conclusion_final": "La idea central es que dominar la lógica facilita aprender otros lenguajes."
+    }
+  },
+  {
+    "id": "UT18-Q12",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué define mejor a un paradigma de programación según la explicación del tema?",
+    "contexto": "Decisión de arquitectura sobre el estilo general con el que se organizará el software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un enfoque o metodología para resolver problemas y estructurar el código."
+      },
+      {
+        "clave": "b",
+        "texto": "Un periférico de entrada del ordenador."
+      },
+      {
+        "clave": "c",
+        "texto": "Un único tipo de dato reservado para enteros."
+      },
+      {
+        "clave": "d",
+        "texto": "Un archivo obligatorio del sistema operativo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define paradigma como un enfoque particular o una metodología para resolver problemas y organizar el código de un programa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un periférico pertenece al hardware, no al diseño del software."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un tipo de dato no expresa una filosofía de construcción del programa."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un archivo del sistema, sino una forma de pensar y estructurar el desarrollo."
+        }
+      ],
+      "resumen_didactico": "Paradigma significa estilo de construcción del software.",
+      "ejemplo_practico": "Elegir programación estructurada o modular implica escoger un paradigma de trabajo.",
+      "conclusion_final": "La mejor definición es la de enfoque o metodología para estructurar el código."
+    }
+  },
+  {
+    "id": "UT18-Q13",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué problema histórico intentó resolver la programación estructurada al aparecer en los años 60?",
+    "contexto": "Nacimiento del paradigma estructurado como respuesta al desorden del código antiguo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El caos del código que saltaba de un lado a otro sin control."
+      },
+      {
+        "clave": "b",
+        "texto": "La falta de teclados mecánicos en las oficinas."
+      },
+      {
+        "clave": "c",
+        "texto": "La imposibilidad de almacenar variables booleanas."
+      },
+      {
+        "clave": "d",
+        "texto": "La ausencia de tarjetas perforadas en las máquinas modernas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La programación estructurada surge para poner orden al caos del código antiguo y evitar el llamado código espagueti.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los teclados no son el problema que resuelve este paradigma."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los tipos booleanos no explican su origen histórico."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las tarjetas perforadas pertenecen a otra etapa histórica y no justifican el nacimiento de la programación estructurada."
+        }
+      ],
+      "resumen_didactico": "La estructurada nace para evitar programas caóticos y difíciles de mantener.",
+      "ejemplo_practico": "En lugar de saltos desordenados por el código, se impone un flujo claro basado en secuencia, decisión y repetición.",
+      "conclusion_final": "Su objetivo fue resolver el caos del código antiguo sin control."
+    }
+  },
+  {
+    "id": "UT18-Q14",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Además de un flujo claro, ¿qué condición formal atribuye la unidad a la programación estructurada?",
+    "contexto": "Rasgos formales del paradigma estructurado más allá de sus estructuras básicas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un único punto de entrada y un único punto de salida."
+      },
+      {
+        "clave": "b",
+        "texto": "Herencia múltiple obligatoria."
+      },
+      {
+        "clave": "c",
+        "texto": "Un intérprete visual integrado."
+      },
+      {
+        "clave": "d",
+        "texto": "Variables globales en todos los módulos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema indica que la programación estructurada mantiene un único punto de entrada y un único punto de salida, evitando la dispersión del flujo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La herencia múltiple no forma parte de la definición del paradigma estructurado."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se menciona ningún intérprete visual como requisito del modelo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las variables globales no son una condición formal de este paradigma."
+        }
+      ],
+      "resumen_didactico": "La estructurada busca un flujo controlado y bien delimitado.",
+      "ejemplo_practico": "Un algoritmo entra por Inicio, sigue un recorrido lógico controlado y termina de forma definida en Fin.",
+      "conclusion_final": "La condición formal señalada es tener un único punto de entrada y un único punto de salida."
+    }
+  },
+  {
+    "id": "UT18-Q15",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué acción resume mejor la esencia de la programación modular?",
+    "contexto": "Necesidad de organizar software grande en partes manejables y reutilizables.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dividir un programa grande en módulos o funciones con tareas específicas."
+      },
+      {
+        "clave": "b",
+        "texto": "Convertir todo el proyecto en una sola lista continua de instrucciones."
+      },
+      {
+        "clave": "c",
+        "texto": "Escribir siempre en lenguaje máquina para evitar dependencias."
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar cualquier comunicación entre partes del sistema."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que la programación modular divide el programa en partes más pequeñas llamadas módulos o funciones, cada una con una tarea concreta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso contradice el objetivo de la modularidad, que busca precisamente evitar el bloque monolítico difícil de mantener."
+        },
+        {
+          "clave": "c",
+          "motivo": "El lenguaje máquina no define la modularidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los módulos sí se comunican; lo importante es que cada uno tenga una responsabilidad concreta."
+        }
+      ],
+      "resumen_didactico": "Modularizar significa separar un sistema grande en piezas pequeñas con funciones bien definidas.",
+      "ejemplo_practico": "Un e-commerce puede tener módulos distintos para usuarios, pagos y stock.",
+      "conclusion_final": "La esencia de la programación modular es dividir el sistema en módulos con tareas específicas."
+    }
+  },
+  {
+    "id": "UT18-Q16",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Si un módulo de una aplicación se puede revisar o reparar sin reescribir el resto del sistema, ¿qué ventaja modular se está demostrando?",
+    "contexto": "Beneficios de mantenimiento y reutilización que aporta la división en módulos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mantenimiento aislado de componentes."
+      },
+      {
+        "clave": "b",
+        "texto": "Ejecución en binario puro."
+      },
+      {
+        "clave": "c",
+        "texto": "Desaparición del algoritmo principal."
+      },
+      {
+        "clave": "d",
+        "texto": "Imposibilidad de reutilizar código."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad subraya que la modularidad facilita el mantenimiento porque cada módulo puede trabajarse de forma separada sin afectar necesariamente a todo el sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El binario puro no guarda relación con la ventaja de mantenimiento de la modularidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "El algoritmo principal no desaparece; simplemente orquesta llamadas entre módulos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La modularidad favorece la reutilización, no la impide."
+        }
+      ],
+      "resumen_didactico": "Un buen diseño modular deja tocar una parte sin desmontarlo todo.",
+      "ejemplo_practico": "Si falla el envío de notificaciones, puedes reparar ese módulo sin rehacer el módulo de inventario.",
+      "conclusion_final": "La ventaja demostrada es el mantenimiento aislado de componentes."
+    }
+  },
+  {
+    "id": "UT18-Q17",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Cómo presenta el tip de empleabilidad a los microservicios en relación con la programación modular?",
+    "contexto": "Evolución de la modularidad hacia arquitecturas distribuidas modernas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como llevar la modularidad al extremo mediante programas independientes."
+      },
+      {
+        "clave": "b",
+        "texto": "Como una forma antigua de programación en ensamblador."
+      },
+      {
+        "clave": "c",
+        "texto": "Como diagramas de flujo ejecutables dentro del navegador."
+      },
+      {
+        "clave": "d",
+        "texto": "Como un sustituto completo de los algoritmos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tip de empleabilidad afirma que los microservicios son llevar la programación modular al extremo: cada parte de la aplicación es un programa independiente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los microservicios no tienen relación con programación en ensamblador."
+        },
+        {
+          "clave": "c",
+          "motivo": "No son diagramas, sino servicios independientes que colaboran entre sí."
+        },
+        {
+          "clave": "d",
+          "motivo": "No sustituyen los algoritmos; se apoyan en ellos igual que cualquier otra arquitectura."
+        }
+      ],
+      "resumen_didactico": "Microservicios = módulos convertidos en servicios independientes.",
+      "ejemplo_practico": "Un servicio de pagos, otro de usuarios y otro de notificaciones pueden ejecutarse por separado y comunicarse entre sí.",
+      "conclusion_final": "Se presentan como la modularidad llevada al extremo mediante programas independientes."
+    }
+  },
+  {
+    "id": "UT18-Q18",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué ventaja ofrece el pseudocódigo frente al lenguaje real cuando todavía estás diseñando la solución?",
+    "contexto": "Fase de diseño lógico previa a la codificación en Java u otro lenguaje.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite planificar la lógica sin quedar atrapado por detalles de sintaxis."
+      },
+      {
+        "clave": "b",
+        "texto": "Genera automáticamente un archivo ejecutable nativo."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituye para siempre la necesidad de programar."
+      },
+      {
+        "clave": "d",
+        "texto": "Evita completamente el uso de variables."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad describe el pseudocódigo como el borrador oficial del programa, útil para planificar qué ocurre paso a paso sin preocuparse aún por signos, paréntesis o sintaxis exacta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El pseudocódigo no compila ni genera ejecutables por sí mismo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Sigue siendo una fase de diseño; después hay que implementar la solución en un lenguaje real."
+        },
+        {
+          "clave": "d",
+          "motivo": "El pseudocódigo sí utiliza variables, constantes, operadores y estructuras de control."
+        }
+      ],
+      "resumen_didactico": "Primero se piensa la lógica; después se escribe la sintaxis.",
+      "ejemplo_practico": "Puedes redactar “Leer pedido, calcular precio, imprimir ticket” antes de decidir cómo se escribe exactamente en Java.",
+      "conclusion_final": "Su ventaja principal es permitir diseñar la lógica sin quedar atrapado por la sintaxis del lenguaje real."
+    }
+  },
+  {
+    "id": "UT18-Q19",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En la tabla de operadores del pseudocódigo, ¿qué palabra se usa para expresar una división entera?",
+    "contexto": "Operadores aritméticos estandarizados en el pseudocódigo del tema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Div"
+      },
+      {
+        "clave": "b",
+        "texto": "Mod"
+      },
+      {
+        "clave": "c",
+        "texto": "and"
+      },
+      {
+        "clave": "d",
+        "texto": "<-"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La tabla de operadores indica que Div representa la división entera.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Mod representa el resto o módulo, no la división entera."
+        },
+        {
+          "clave": "c",
+          "motivo": "and es un operador lógico."
+        },
+        {
+          "clave": "d",
+          "motivo": "<- es el operador especial de asignación."
+        }
+      ],
+      "resumen_didactico": "Div significa dividir quedándote con la parte entera del resultado.",
+      "ejemplo_practico": "7 Div 2 da 3, porque no conserva la parte decimal.",
+      "conclusion_final": "El operador correcto de división entera es Div."
+    }
+  },
+  {
+    "id": "UT18-Q20",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué operador del pseudocódigo se emplea para representar una potencia?",
+    "contexto": "Operadores aritméticos presentes en la tabla resumida del tema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "^"
+      },
+      {
+        "clave": "b",
+        "texto": "//"
+      },
+      {
+        "clave": "c",
+        "texto": "<="
+      },
+      {
+        "clave": "d",
+        "texto": "or"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la tabla de operadores del tema, el símbolo ^ se asocia a la potencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "// se usa para comentarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "<= es un operador relacional de menor o igual."
+        },
+        {
+          "clave": "d",
+          "motivo": "or es un operador lógico de disyunción."
+        }
+      ],
+      "resumen_didactico": "El símbolo ^ se reserva para elevar un valor a una potencia.",
+      "ejemplo_practico": "2 ^ 3 representa dos elevado a tres.",
+      "conclusion_final": "El operador que representa una potencia es ^."
+    }
+  },
+  {
+    "id": "UT18-Q21",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En la notación del tema, ¿qué operador relacional expresa que dos valores son distintos?",
+    "contexto": "Comparaciones usadas en condiciones y decisiones de pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<>"
+      },
+      {
+        "clave": "b",
+        "texto": "="
+      },
+      {
+        "clave": "c",
+        "texto": "and"
+      },
+      {
+        "clave": "d",
+        "texto": "^"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La tabla de operadores del pseudocódigo recoge <> como operador relacional de distinto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "= se usa para expresar igualdad en la tabla relacional."
+        },
+        {
+          "clave": "c",
+          "motivo": "and es un conector lógico, no un comparador de desigualdad."
+        },
+        {
+          "clave": "d",
+          "motivo": "^ corresponde a potencia, no a comparación."
+        }
+      ],
+      "resumen_didactico": "Cuando quieres decir 'no es igual', el símbolo correcto es <>.",
+      "ejemplo_practico": "Si pinIngresado <> PIN_CORRECTO Entonces significa que el PIN introducido es diferente del correcto.",
+      "conclusion_final": "El operador relacional de distinto es <>."
+    }
+  },
+  {
+    "id": "UT18-Q22",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué palabra reservada del pseudocódigo se adapta mejor a una selección con muchas opciones posibles, como un menú de productos?",
+    "contexto": "Estructuras alternativas múltiples dentro del diseño lógico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Según"
+      },
+      {
+        "clave": "b",
+        "texto": "Mientras"
+      },
+      {
+        "clave": "c",
+        "texto": "Retornar"
+      },
+      {
+        "clave": "d",
+        "texto": "Leer"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad indica que la alternativa múltiple se expresa con Según cuando existen muchos caminos posibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Mientras introduce un bucle, no una selección múltiple."
+        },
+        {
+          "clave": "c",
+          "motivo": "Retornar se utiliza para devolver un resultado desde una función o procedimiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Leer corresponde a entrada de datos."
+        }
+      ],
+      "resumen_didactico": "Para decidir entre varias opciones de un menú, la palabra clave típica es Según.",
+      "ejemplo_practico": "Según tipoPastel Hacer → Caso 1, Caso 2, Caso 3...",
+      "conclusion_final": "La palabra reservada adecuada para una selección múltiple es Según."
+    }
+  },
+  {
+    "id": "UT18-Q23",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué pareja de palabras reservadas delimita normalmente el comienzo y el final de un algoritmo en el pseudocódigo del tema?",
+    "contexto": "Estructura básica con la que se enmarca un algoritmo completo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Inicio / Fin"
+      },
+      {
+        "clave": "b",
+        "texto": "Leer / Imprimir"
+      },
+      {
+        "clave": "c",
+        "texto": "Caso / Otro"
+      },
+      {
+        "clave": "d",
+        "texto": "and / or"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La lista de palabras reservadas muestra Inicio y Fin como los términos destinados a abrir y cerrar la estructura del algoritmo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Leer e Imprimir son acciones de entrada y salida, no delimitadores generales del algoritmo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Caso y Otro se usan dentro de una selección múltiple."
+        },
+        {
+          "clave": "d",
+          "motivo": "and y or son operadores lógicos, no marcas de inicio o cierre."
+        }
+      ],
+      "resumen_didactico": "Un algoritmo se encierra entre un arranque y un cierre claros: Inicio y Fin.",
+      "ejemplo_practico": "Inicio → Leer datos → Procesar → Imprimir resultado → Fin.",
+      "conclusion_final": "La pareja correcta es Inicio / Fin."
+    }
+  },
+  {
+    "id": "UT18-Q24",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué tipo de dato es el adecuado para almacenar un único símbolo, como la inicial de un cliente?",
+    "contexto": "Clasificación de tipos de datos fundamentales en pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Carácter."
+      },
+      {
+        "clave": "b",
+        "texto": "Cadena."
+      },
+      {
+        "clave": "c",
+        "texto": "Booleano."
+      },
+      {
+        "clave": "d",
+        "texto": "Real."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La tabla de tipos de datos explica que Carácter se utiliza para un solo símbolo, como 'A'.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Cadena se reserva para textos completos, no para un único símbolo aislado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Booleano solo guarda verdadero o falso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Real sirve para números con decimales."
+        }
+      ],
+      "resumen_didactico": "Un símbolo suelto no es una cadena completa, sino un carácter.",
+      "ejemplo_practico": "La inicial 'M' del apellido de un usuario se almacenaría como Carácter.",
+      "conclusion_final": "El tipo correcto para un único símbolo es Carácter."
+    }
+  },
+  {
+    "id": "UT18-Q25",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Cómo define la unidad a una variable dentro del algoritmo?",
+    "contexto": "Gestión de memoria lógica mediante nombres que almacenan datos cambiantes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como una etiqueta para un espacio de memoria cuyo contenido puede cambiar."
+      },
+      {
+        "clave": "b",
+        "texto": "Como un valor que nunca debe modificarse."
+      },
+      {
+        "clave": "c",
+        "texto": "Como un periférico de entrada del sistema."
+      },
+      {
+        "clave": "d",
+        "texto": "Como un símbolo exclusivo de los diagramas de flujo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad presenta la variable como un nombre o etiqueta que representa un espacio de memoria donde se guardan datos que pueden cambiar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe a una constante, no a una variable."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una variable no es un periférico físico."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un símbolo gráfico, sino un contenedor lógico de datos."
+        }
+      ],
+      "resumen_didactico": "Variable = caja etiquetada cuyo contenido se puede actualizar durante la ejecución.",
+      "ejemplo_practico": "cantidadPedidos puede valer 5 al empezar y 10 después de nuevas ventas.",
+      "conclusion_final": "La variable se define como una etiqueta para un espacio de memoria cuyo valor puede cambiar."
+    }
+  },
+  {
+    "id": "UT18-Q26",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Por qué recomienda la unidad escribir las constantes en MAYÚSCULAS?",
+    "contexto": "Convención visual usada para diferenciar valores inmutables en pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque así cualquier programador identifica que no deben modificarse."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque solo las mayúsculas pueden almacenarse en memoria."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque el compilador de pseudocódigo lo exige obligatoriamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque las constantes siempre son números enteros."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El contenido explica que las constantes se escriben en mayúsculas para que cualquier desarrollador reconozca visualmente que son valores inmutables.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La memoria no impone esa limitación sobre mayúsculas y minúsculas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El pseudocódigo no se compila de ese modo; se trata de una convención de claridad, no de una obligación técnica del compilador."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una constante puede ser un número, una cadena u otro tipo de dato, no solo un entero."
+        }
+      ],
+      "resumen_didactico": "Las mayúsculas sirven como señal visual de 'no tocar este valor'.",
+      "ejemplo_practico": "PIN_CORRECTO o NOMBRE_TIENDA se escriben así para que quede claro que representan valores constantes.",
+      "conclusion_final": "Se escriben en mayúsculas para que cualquier programador identifique que no deben modificarse."
+    }
+  },
+  {
+    "id": "UT18-Q27",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En la simbología ISO de diagramas de flujo, ¿qué figura representa el inicio o el final del proceso?",
+    "contexto": "Símbolos universales usados para que cualquier desarrollador entienda un diagrama.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Óvalo o elipse."
+      },
+      {
+        "clave": "b",
+        "texto": "Rombo."
+      },
+      {
+        "clave": "c",
+        "texto": "Rectángulo."
+      },
+      {
+        "clave": "d",
+        "texto": "Paralelogramo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La tabla de simbología indica que el óvalo o elipse se usa para señalar dónde comienza y termina el proceso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El rombo representa una decisión."
+        },
+        {
+          "clave": "c",
+          "motivo": "El rectángulo representa un proceso u operación interna."
+        },
+        {
+          "clave": "d",
+          "motivo": "El paralelogramo se utiliza para entrada o salida de datos."
+        }
+      ],
+      "resumen_didactico": "En un diagrama, la entrada y la salida global del proceso se marcan con una forma ovalada.",
+      "ejemplo_practico": "Un algoritmo puede arrancar con un óvalo 'Inicio' y cerrarse con otro que ponga 'Fin'.",
+      "conclusion_final": "La figura correcta es el óvalo o elipse."
+    }
+  },
+  {
+    "id": "UT18-Q28",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué indican las flechas dentro de un diagrama de flujo según la norma explicada en la unidad?",
+    "contexto": "Elementos que conectan símbolos y aclaran el recorrido exacto de la lógica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La dirección de la ejecución del programa."
+      },
+      {
+        "clave": "b",
+        "texto": "La cantidad de memoria libre del sistema."
+      },
+      {
+        "clave": "c",
+        "texto": "El tipo de dato almacenado en cada variable."
+      },
+      {
+        "clave": "d",
+        "texto": "El número total de módulos del proyecto."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La tabla ISO del tema indica que las flechas o líneas de flujo señalan la dirección exacta de la ejecución del programa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las flechas no informan sobre memoria del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "El tipo de dato se expresa en el diseño lógico, pero no lo determinan las flechas del diagrama."
+        },
+        {
+          "clave": "d",
+          "motivo": "El número de módulos del proyecto no se representa mediante las flechas."
+        }
+      ],
+      "resumen_didactico": "Las flechas dicen por dónde avanza la lógica del algoritmo.",
+      "ejemplo_practico": "Desde un rombo de decisión, una flecha puede llevar al camino 'Sí' y otra al camino 'No'.",
+      "conclusion_final": "Su función es marcar la dirección de la ejecución del programa."
+    }
+  },
+  {
+    "id": "UT18-Q29",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En el caso práctico del cajero automático, ¿qué resultado produce el algoritmo cuando el usuario agota los intentos de PIN sin lograr acceso?",
+    "contexto": "Validación y seguridad en el ejemplo final de retirada de efectivo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La tarjeta queda bloqueada por seguridad."
+      },
+      {
+        "clave": "b",
+        "texto": "El sistema entrega el dinero igualmente."
+      },
+      {
+        "clave": "c",
+        "texto": "El saldo de la cuenta se duplica automáticamente."
+      },
+      {
+        "clave": "d",
+        "texto": "El algoritmo reinicia los intentos sin límite."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el pseudocódigo final, si accesoConcedido sigue en falso tras el control de intentos, el sistema imprime que la tarjeta queda bloqueada por seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La retirada solo se autoriza si el acceso ha sido concedido y además hay saldo suficiente."
+        },
+        {
+          "clave": "c",
+          "motivo": "El algoritmo no altera el saldo en ese caso salvo para bloquear el acceso."
+        },
+        {
+          "clave": "d",
+          "motivo": "El número de intentos está limitado y no se reinicia de forma infinita."
+        }
+      ],
+      "resumen_didactico": "Sin PIN correcto dentro del límite, el algoritmo prioriza la seguridad y bloquea la tarjeta.",
+      "ejemplo_practico": "Tras tres intentos erróneos, el sistema deja de pedir el PIN y muestra el mensaje de bloqueo.",
+      "conclusion_final": "El resultado previsto es el bloqueo de la tarjeta por seguridad."
+    }
+  },
+  {
+    "id": "UT18-Q30",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué condición debe cumplirse en el algoritmo del cajero para que la cantidad retirada se reste del saldo de la cuenta?",
+    "contexto": "Comprobación final del caso práctico antes de autorizar la retirada de efectivo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que cantidadRetirar sea menor o igual que saldoCuenta."
+      },
+      {
+        "clave": "b",
+        "texto": "Que el usuario haya escrito su nombre en mayúsculas."
+      },
+      {
+        "clave": "c",
+        "texto": "Que el número de intentos sea exactamente cero."
+      },
+      {
+        "clave": "d",
+        "texto": "Que el PIN correcto se haya definido como variable y no como constante."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La segunda decisión del pseudocódigo comprueba si cantidadRetirar <= saldoCuenta; solo entonces se actualiza el saldo y se autoriza la retirada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El nombre del usuario no interviene en esa lógica de validación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los intentos pueden haber sido uno, dos o ninguno; lo importante es haber obtenido acceso y disponer de saldo suficiente."
+        },
+        {
+          "clave": "d",
+          "motivo": "PIN_CORRECTO es una constante en el ejemplo, y eso no impide la autorización correcta de la retirada."
+        }
+      ],
+      "resumen_didactico": "No basta con entrar al sistema: también hay que tener saldo suficiente para retirar la cantidad solicitada.",
+      "ejemplo_practico": "Si el saldo es 1000,50 y el usuario pide 1200, el sistema no descuenta nada y muestra saldo insuficiente.",
+      "conclusion_final": "La condición correcta es que la cantidad a retirar sea menor o igual que el saldo disponible."
+    }
+  }
+]

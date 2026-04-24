@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT17-Q01",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué se entiende por paradigma de programación según el enfoque del temario?",
+    "contexto": "Definición general de paradigma al decidir cómo organizar el código de una gran plataforma.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un error sintáctico que impide compilar el programa."
+      },
+      {
+        "clave": "b",
+        "texto": "Un enfoque o metodología para resolver problemas y estructurar el código."
+      },
+      {
+        "clave": "c",
+        "texto": "Una biblioteca estándar exclusiva del lenguaje Java."
+      },
+      {
+        "clave": "d",
+        "texto": "Un tipo de dato usado para representar valores lógicos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El tema define un paradigma como un enfoque particular o una metodología para resolver problemas y estructurar el código. Se presenta como el estilo arquitectónico que guía cómo se construye un programa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un error sintáctico es un fallo de escritura del código, no una filosofía de construcción del software."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una biblioteca es un conjunto de recursos reutilizables, pero no un estilo general para organizar programas."
+        },
+        {
+          "clave": "d",
+          "motivo": "El tipo lógico pertenece a la representación de datos, no a la forma de estructurar el software."
+        }
+      ],
+      "resumen_didactico": "Un paradigma marca la manera de pensar y organizar un programa antes incluso de escribirlo.",
+      "ejemplo_practico": "Elegir entre programar todo de forma lineal o dividir la aplicación en módulos independientes es una decisión de paradigma.",
+      "conclusion_final": "La respuesta correcta es la b, porque un paradigma es el enfoque metodológico que define cómo se resuelven problemas y se organiza el código."
+    }
+  },
+  {
+    "id": "UT17-Q02",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Con qué objetivo histórico surge la programación estructurada en los años 60?",
+    "contexto": "Origen de la programación estructurada como respuesta a problemas de organización del código antiguo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para acercar el código de alto nivel al lenguaje máquina puro."
+      },
+      {
+        "clave": "b",
+        "texto": "Para sustituir completamente los algoritmos por diagramas visuales."
+      },
+      {
+        "clave": "c",
+        "texto": "Para poner orden al caos del código antiguo y evitar saltos sin control."
+      },
+      {
+        "clave": "d",
+        "texto": "Para obligar a que todos los programas usen bases de datos desde el inicio."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que la programación estructurada apareció para poner orden al caos del código antiguo, donde el flujo saltaba de un lado a otro sin control y generaba código difícil de mantener.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La estructurada no busca volver al bajo nivel, sino ordenar la lógica del programa."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los diagramas ayudan a documentar, pero no sustituyen el propósito central del paradigma estructurado."
+        },
+        {
+          "clave": "d",
+          "motivo": "El uso de bases de datos no define el nacimiento de este paradigma."
+        }
+      ],
+      "resumen_didactico": "La programación estructurada nace para hacer el flujo lógico claro, controlado y mantenible.",
+      "ejemplo_practico": "En vez de tener saltos desordenados por todo el programa, se sigue un recorrido claro de secuencia, decisión y repetición.",
+      "conclusion_final": "La respuesta correcta es la c, porque la programación estructurada surgió para organizar el flujo del programa y evitar el caos del código antiguo."
+    }
+  },
+  {
+    "id": "UT17-Q03",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué propiedad formal caracteriza a un programa escrito siguiendo programación estructurada?",
+    "contexto": "Rasgo técnico del flujo en programación estructurada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Tiene un único punto de entrada y un único punto de salida."
+      },
+      {
+        "clave": "b",
+        "texto": "Debe ejecutarse siempre en paralelo mediante varios hilos."
+      },
+      {
+        "clave": "c",
+        "texto": "Elimina la necesidad de usar condiciones y bucles."
+      },
+      {
+        "clave": "d",
+        "texto": "Obliga a que todos los módulos se compilen por separado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema señala que la programación estructurada se apoya en un flujo claro, con un único punto de entrada y un único punto de salida, evitando así el llamado código espagueti.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La concurrencia no es una propiedad exigida por la programación estructurada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Precisamente utiliza decisiones y bucles como parte de sus tres estructuras básicas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La compilación separada pertenece a otros aspectos del desarrollo, no a esta propiedad formal."
+        }
+      ],
+      "resumen_didactico": "La estructurada quiere que el programa siga una lógica controlada, sin entradas y salidas caóticas.",
+      "ejemplo_practico": "Un algoritmo que comienza en Inicio, sigue pasos ordenados y termina en Fin está respetando esta idea.",
+      "conclusion_final": "La respuesta correcta es la a, porque la programación estructurada se basa en un único punto de entrada y uno de salida."
+    }
+  },
+  {
+    "id": "UT17-Q04",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué tres familias de estructuras utiliza la programación estructurada para construir la lógica del programa?",
+    "contexto": "Bloques fundamentales sobre los que se apoya el paradigma estructurado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Clases, objetos y herencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Secuencia, selección y repetición."
+      },
+      {
+        "clave": "c",
+        "texto": "Compilación, interpretación y ejecución."
+      },
+      {
+        "clave": "d",
+        "texto": "Entrada, salida y persistencia."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que la programación estructurada organiza el flujo mediante tres tipos de estructuras: secuencia, selección o decisiones, y repetición o bucles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esos conceptos pertenecen a la programación orientada a objetos, no al paradigma estructurado básico."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esos términos se relacionan con la forma de ejecutar programas, no con las estructuras lógicas del paradigma."
+        },
+        {
+          "clave": "d",
+          "motivo": "Entrada, salida y persistencia son conceptos importantes, pero no las tres estructuras base del flujo estructurado."
+        }
+      ],
+      "resumen_didactico": "Todo programa estructurado se apoya en avanzar, decidir o repetir.",
+      "ejemplo_practico": "Leer datos y calcular sería secuencia; comprobar una condición sería selección; repetir un proceso sería iteración.",
+      "conclusion_final": "La respuesta correcta es la b, porque esas son las tres estructuras fundamentales del paradigma estructurado."
+    }
+  },
+  {
+    "id": "UT17-Q05",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿En qué consiste la programación modular según el caso del e-commerce del temario?",
+    "contexto": "Definición del paradigma modular al dividir un sistema grande en partes manejables.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En escribir todo el sistema dentro de un único bloque principal para acelerar la ejecución."
+      },
+      {
+        "clave": "b",
+        "texto": "En dividir el programa en módulos o funciones, cada uno encargado de una tarea específica."
+      },
+      {
+        "clave": "c",
+        "texto": "En sustituir las funciones por variables globales compartidas."
+      },
+      {
+        "clave": "d",
+        "texto": "En obligar a cada módulo a usar un lenguaje de programación distinto."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El tema define la programación modular como la división de un programa grande en partes más pequeñas y manejables llamadas módulos o funciones, cada una encargada de una tarea concreta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso contradice precisamente el objetivo de la modularidad, que es evitar sistemas monolíticos y difíciles de mantener."
+        },
+        {
+          "clave": "c",
+          "motivo": "La modularidad no consiste en reemplazar funciones por variables globales, sino en separar responsabilidades."
+        },
+        {
+          "clave": "d",
+          "motivo": "No existe esa obligación; todos los módulos pueden pertenecer al mismo lenguaje y al mismo sistema."
+        }
+      ],
+      "resumen_didactico": "La modularidad divide el problema en piezas más pequeñas para hacerlo más claro y mantenible.",
+      "ejemplo_practico": "En una tienda online, pagos, inventario y usuarios pueden separarse en módulos distintos que colaboran entre sí.",
+      "conclusion_final": "La respuesta correcta es la b, porque la programación modular se basa en dividir un programa en módulos especializados."
+    }
+  },
+  {
+    "id": "UT17-Q06",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "Si el módulo de pagos de una aplicación falla pero el de inventario sigue funcionando, ¿qué ventaja de la programación modular se está demostrando?",
+    "contexto": "Beneficio práctico de la separación por módulos en un sistema real.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que todos los módulos comparten exactamente el mismo estado interno."
+      },
+      {
+        "clave": "b",
+        "texto": "Que la aplicación deja de necesitar mantenimiento."
+      },
+      {
+        "clave": "c",
+        "texto": "Que el sistema gana aislamiento funcional y mejor mantenibilidad."
+      },
+      {
+        "clave": "d",
+        "texto": "Que los errores desaparecen automáticamente al compilar."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El e-commerce del temario muestra que, si un módulo falla, los demás pueden seguir operando. Esto ilustra el aislamiento funcional y la mejora del mantenimiento que aporta la programación modular.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La modularidad busca separar responsabilidades, no fusionar el estado de todos los módulos."
+        },
+        {
+          "clave": "b",
+          "motivo": "El mantenimiento no desaparece; precisamente se vuelve más fácil gracias a la separación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Compilar no elimina automáticamente los errores lógicos o de diseño."
+        }
+      ],
+      "resumen_didactico": "Separar el sistema en módulos hace que un fallo local no tenga por qué derribar toda la aplicación.",
+      "ejemplo_practico": "Si el envío de correos falla, el resto del portal puede seguir dejando entrar usuarios o gestionando stock.",
+      "conclusion_final": "La respuesta correcta es la c, porque la situación muestra aislamiento funcional y mayor mantenibilidad."
+    }
+  },
+  {
+    "id": "UT17-Q07",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Cómo presenta el tip de empleabilidad la relación entre microservicios y programación modular?",
+    "contexto": "Extensión del enfoque modular al desarrollo cloud moderno.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como una forma de eliminar por completo la comunicación entre módulos."
+      },
+      {
+        "clave": "b",
+        "texto": "Como llevar la programación modular al extremo, con partes independientes de la aplicación."
+      },
+      {
+        "clave": "c",
+        "texto": "Como una técnica exclusiva para interfaces gráficas de escritorio."
+      },
+      {
+        "clave": "d",
+        "texto": "Como un sustituto del pseudocódigo en pruebas técnicas."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El tip de empleabilidad indica que los microservicios son llevar la programación modular al extremo: cada parte de la aplicación se convierte en un programa independiente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los módulos o microservicios se comunican; no se trata de eliminar toda interacción entre ellos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los microservicios pertenecen al backend y a arquitecturas distribuidas, no a interfaces de escritorio."
+        },
+        {
+          "clave": "d",
+          "motivo": "El pseudocódigo cumple otra función distinta, relacionada con diseñar la lógica antes de programar."
+        }
+      ],
+      "resumen_didactico": "Microservicios significa dividir una aplicación en servicios pequeños e independientes, una versión extrema de la modularidad.",
+      "ejemplo_practico": "Un servicio gestiona usuarios, otro pagos y otro notificaciones, cada uno desplegado por separado.",
+      "conclusion_final": "La respuesta correcta es la b, porque el temario relaciona los microservicios con una modularidad llevada al extremo."
+    }
+  },
+  {
+    "id": "UT17-Q08",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué enseñanza de empleabilidad extrae la unidad del dominio de los fundamentos de programación?",
+    "contexto": "Capacidad para adaptarse a distintos lenguajes a partir de una buena base lógica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que aprender un lenguaje impide trabajar después con otros."
+      },
+      {
+        "clave": "b",
+        "texto": "Que lo importante es memorizar mucha sintaxis aunque no se entienda la lógica."
+      },
+      {
+        "clave": "c",
+        "texto": "Que entender la lógica permite cambiar de lenguaje con más facilidad."
+      },
+      {
+        "clave": "d",
+        "texto": "Que solo merece la pena aprender lenguajes compilados."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El tip de empleabilidad afirma que dominar los fundamentos permite saltar de un lenguaje a otro con facilidad, porque si entiendes la lógica la sintaxis se vuelve secundaria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La unidad dice justo lo contrario: una buena base facilita el cambio entre lenguajes."
+        },
+        {
+          "clave": "b",
+          "motivo": "El temario insiste en que la lógica es más importante que memorizar sintaxis."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se limita a un tipo concreto de lenguaje; el aprendizaje de fundamentos es transversal."
+        }
+      ],
+      "resumen_didactico": "La lógica es transferible entre lenguajes; la sintaxis se aprende después.",
+      "ejemplo_practico": "Quien domina decisiones, bucles y variables puede adaptarse mejor de Java a Python que quien solo memorizó comandos.",
+      "conclusion_final": "La respuesta correcta es la c, porque la unidad relaciona empleabilidad con entender la lógica por encima de la sintaxis concreta."
+    }
+  },
+  {
+    "id": "UT17-Q09",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué característica distingue a un lenguaje de bajo nivel según la clasificación de la unidad?",
+    "contexto": "Clasificación por cercanía al hardware.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Está totalmente ligado al procesador del ordenador."
+      },
+      {
+        "clave": "b",
+        "texto": "Genera bytecode para una máquina virtual."
+      },
+      {
+        "clave": "c",
+        "texto": "Integra por defecto frameworks de negocio."
+      },
+      {
+        "clave": "d",
+        "texto": "Se parece al lenguaje humano y es muy legible."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que el lenguaje máquina, representante del bajo nivel, está totalmente ligado al procesador del ordenador y es el único que la máquina entiende directamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso describe a los lenguajes virtuales, como Java."
+        },
+        {
+          "clave": "c",
+          "motivo": "La presencia de frameworks es típica de entornos de alto nivel, no del bajo nivel."
+        },
+        {
+          "clave": "d",
+          "motivo": "Esa es precisamente una de las ventajas de los lenguajes de alto nivel."
+        }
+      ],
+      "resumen_didactico": "Cuanto más cerca del hardware está un lenguaje, menos abstracto y más dependiente es del procesador.",
+      "ejemplo_practico": "Un programa en lenguaje máquina cambia según la arquitectura concreta sobre la que vaya a ejecutarse.",
+      "conclusion_final": "La respuesta correcta es la a, porque el bajo nivel se caracteriza por su dependencia directa del procesador."
+    }
+  },
+  {
+    "id": "UT17-Q10",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué rasgo específico atribuye la unidad al lenguaje ensamblador o de medio nivel?",
+    "contexto": "Clasificación intermedia entre lenguaje máquina y alto nivel.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usa símbolos mnemotécnicos y sigue muy cercano al hardware."
+      },
+      {
+        "clave": "b",
+        "texto": "Es un lenguaje pensado solo para diseñar diagramas de flujo."
+      },
+      {
+        "clave": "c",
+        "texto": "No necesita traducción para ser entendido por la máquina."
+      },
+      {
+        "clave": "d",
+        "texto": "Se ejecuta únicamente en navegadores web."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema indica que el ensamblador apareció para facilitar la programación respecto al código máquina, usando símbolos mnemotécnicos, aunque sigue muy cercano al hardware.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los diagramas de flujo pertenecen al diseño de algoritmos, no a la ejecución en ensamblador."
+        },
+        {
+          "clave": "c",
+          "motivo": "La máquina entiende directamente el lenguaje máquina, no el ensamblador sin traducción."
+        },
+        {
+          "clave": "d",
+          "motivo": "El ensamblador no es un lenguaje de navegador, sino un lenguaje próximo al hardware."
+        }
+      ],
+      "resumen_didactico": "El ensamblador hace el código algo más humano que el binario, pero sigue muy pegado a la máquina.",
+      "ejemplo_practico": "En sistemas embebidos puede usarse ensamblador cuando se necesita un control muy detallado del hardware.",
+      "conclusion_final": "La respuesta correcta es la a, porque el ensamblador utiliza mnemónicos y mantiene cercanía con el hardware."
+    }
+  },
+  {
+    "id": "UT17-Q11",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué ventaja destaca la unidad de los lenguajes de alto nivel modernos?",
+    "contexto": "Características y ventajas generales de los lenguajes de alto nivel.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se parecen más al lenguaje humano e incorporan librerías y frameworks útiles."
+      },
+      {
+        "clave": "b",
+        "texto": "Funcionan sin traductores ni compiladores de ningún tipo."
+      },
+      {
+        "clave": "c",
+        "texto": "Están diseñados exclusivamente para escribir drivers de hardware."
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminan por completo la necesidad de pensar la lógica del problema."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que los lenguajes de alto nivel son más cercanos al lenguaje humano, fáciles de leer y suelen incorporar librerías y frameworks que resuelven problemas comunes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Siguen necesitando algún proceso de traducción o ejecución; no se entienden mágicamente por la máquina."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los drivers y el control fino del hardware se asocian más al bajo o medio nivel."
+        },
+        {
+          "clave": "d",
+          "motivo": "La lógica sigue siendo imprescindible; el lenguaje solo facilita expresarla mejor."
+        }
+      ],
+      "resumen_didactico": "Los lenguajes de alto nivel hacen el código más legible y el desarrollo más productivo gracias a su abstracción y a sus bibliotecas.",
+      "ejemplo_practico": "Trabajar con Java, Python o JavaScript permite apoyarse en librerías para no reinventar soluciones comunes desde cero.",
+      "conclusion_final": "La respuesta correcta es la a, porque esa es la principal ventaja que destaca la unidad sobre los lenguajes de alto nivel."
+    }
+  },
+  {
+    "id": "UT17-Q12",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué caracteriza a un lenguaje compilado según la clasificación por ejecución?",
+    "contexto": "Modelos de traducción y ejecución de programas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Traduce el código línea por línea mientras se ejecuta."
+      },
+      {
+        "clave": "b",
+        "texto": "Se traduce una sola vez a lenguaje máquina, generando un programa rápido y optimizado."
+      },
+      {
+        "clave": "c",
+        "texto": "Necesita siempre una máquina virtual para ejecutarse."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo sirve para pseudocódigo y diagramas de flujo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El tema distingue los lenguajes compilados como aquellos cuyo código se traduce de una sola vez a lenguaje máquina, generando programas rápidos y optimizados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso corresponde a la interpretación, no a la compilación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La necesidad de máquina virtual se asocia a los lenguajes virtuales, no a todos los compilados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los diagramas y el pseudocódigo son herramientas de diseño, no modelos de ejecución de un lenguaje."
+        }
+      ],
+      "resumen_didactico": "Compilar significa traducir antes de ejecutar, obteniendo un programa optimizado para correr más rápido.",
+      "ejemplo_practico": "C++ se suele presentar como ejemplo de lenguaje compilado por su foco en rendimiento.",
+      "conclusion_final": "La respuesta correcta es la b, porque esa es la definición de lenguaje compilado trabajada en la unidad."
+    }
+  },
+  {
+    "id": "UT17-Q13",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué define mejor a un lenguaje interpretado?",
+    "contexto": "Modelo de ejecución interpretada frente a compilación y máquina virtual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Produce un ejecutable nativo completamente optimizado antes de comenzar."
+      },
+      {
+        "clave": "b",
+        "texto": "Se traduce línea por línea mientras el programa se está ejecutando."
+      },
+      {
+        "clave": "c",
+        "texto": "No necesita CPU ni memoria para funcionar."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo puede utilizarse en entornos académicos y nunca profesionales."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que los lenguajes interpretados se traducen línea por línea mientras se ejecutan. Esto los hace flexibles, aunque menos rápidos que los compilados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso corresponde al modelo compilado, no al interpretado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Todo programa necesita recursos del sistema para ejecutarse."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los lenguajes interpretados se usan ampliamente en el mundo profesional."
+        }
+      ],
+      "resumen_didactico": "Interpretar significa ir traduciendo a medida que el programa corre.",
+      "ejemplo_practico": "Python y JavaScript se citan como ejemplos de lenguajes interpretados por su flexibilidad.",
+      "conclusion_final": "La respuesta correcta es la b, porque define exactamente cómo funciona la ejecución interpretada."
+    }
+  },
+  {
+    "id": "UT17-Q14",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué característica propia tienen los lenguajes virtuales como Java en la clasificación de la unidad?",
+    "contexto": "Modelo virtual basado en bytecode y máquina virtual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Generan bytecode que se ejecuta en una máquina virtual."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo funcionan cuando se convierten directamente en binario puro."
+      },
+      {
+        "clave": "c",
+        "texto": "No son portables entre sistemas."
+      },
+      {
+        "clave": "d",
+        "texto": "Se usan exclusivamente para diseñar bases de datos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La clasificación del tema indica que los lenguajes virtuales generan un bytecode que se ejecuta en una máquina virtual. Java es el ejemplo señalado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El rasgo distintivo es precisamente pasar por una máquina virtual y no ir directo a binario nativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La portabilidad es una de sus ventajas más importantes."
+        },
+        {
+          "clave": "d",
+          "motivo": "No son lenguajes exclusivos de bases de datos."
+        }
+      ],
+      "resumen_didactico": "Lenguaje virtual = bytecode + máquina virtual + portabilidad.",
+      "ejemplo_practico": "Un programa Java puede ejecutarse en distintos sistemas si estos disponen de la máquina virtual adecuada.",
+      "conclusion_final": "La respuesta correcta es la a, porque esa es la definición operativa de los lenguajes virtuales trabajada en la unidad."
+    }
+  },
+  {
+    "id": "UT17-Q15",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Por qué la unidad presenta a Java como un ejemplo de lenguaje versátil y portable?",
+    "contexto": "Justificación de la portabilidad en lenguajes virtuales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque siempre se ejecuta sin ninguna traducción previa."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque compila a bytecode que puede ejecutarse en una máquina virtual."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque está ligado a un único procesador y a un único sistema operativo."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque sustituye por completo a todos los demás lenguajes."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad pone a Java como ejemplo de lenguaje virtual: genera bytecode y este se ejecuta en una máquina virtual, lo que le aporta versatilidad y portabilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Sí existe una traducción al bytecode; no se ejecuta sin transformación alguna."
+        },
+        {
+          "clave": "c",
+          "motivo": "La idea es la contraria: Java busca desacoplarse de una sola plataforma."
+        },
+        {
+          "clave": "d",
+          "motivo": "La unidad no afirma que Java reemplace a todos los lenguajes."
+        }
+      ],
+      "resumen_didactico": "La portabilidad de Java descansa en el bytecode y en la existencia de una máquina virtual en cada sistema.",
+      "ejemplo_practico": "El mismo programa Java puede moverse entre distintos entornos si cuentan con la máquina virtual correspondiente.",
+      "conclusion_final": "La respuesta correcta es la b, porque la portabilidad de Java se explica por su ejecución sobre bytecode y máquina virtual."
+    }
+  },
+  {
+    "id": "UT17-Q16",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Cómo define el temario al pseudocódigo respecto al programa real?",
+    "contexto": "Función del pseudocódigo en el diseño lógico previo a la codificación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como un lenguaje binario que la CPU puede ejecutar directamente."
+      },
+      {
+        "clave": "b",
+        "texto": "Como el borrador oficial del programa, escrito con lógica técnica y lenguaje cercano al natural."
+      },
+      {
+        "clave": "c",
+        "texto": "Como una base de datos donde se almacenan algoritmos ya compilados."
+      },
+      {
+        "clave": "d",
+        "texto": "Como una librería visual exclusiva de los IDE modernos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad define el pseudocódigo como un lenguaje de descripción de algoritmos parecido al lenguaje natural pero con lógica técnica, y lo presenta como el borrador oficial del programa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El pseudocódigo no lo ejecuta la CPU; sirve para diseñar la lógica antes de escribir código real."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es un sistema de almacenamiento ni una base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una librería visual, sino una técnica de representación lógica."
+        }
+      ],
+      "resumen_didactico": "El pseudocódigo sirve para pensar el programa antes de atarlo a una sintaxis concreta.",
+      "ejemplo_practico": "Antes de programar un sistema de pedidos, se redactan pasos lógicos como leer, validar, calcular e imprimir.",
+      "conclusion_final": "La respuesta correcta es la b, porque el tema presenta el pseudocódigo como el borrador lógico oficial del programa."
+    }
+  },
+  {
+    "id": "UT17-Q17",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué ventaja aporta el pseudocódigo cuando se quiere explicar una solución a un cliente no técnico antes de programarla?",
+    "contexto": "Uso del pseudocódigo para validar la lógica con terceros antes de codificar.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite mostrar la lógica paso a paso sin depender aún de la sintaxis de un lenguaje real."
+      },
+      {
+        "clave": "b",
+        "texto": "Convierte automáticamente el algoritmo en una aplicación ejecutable."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituye la necesidad de comprobar el algoritmo en papel."
+      },
+      {
+        "clave": "d",
+        "texto": "Evita tener que usar variables o estructuras de control."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema explica que el pseudocódigo permite planificar la lógica paso a paso y que incluso el dueño de la pastelería pueda entender cómo funcionará el sistema antes de escribir código complejo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El pseudocódigo no se transforma automáticamente en una aplicación ejecutable."
+        },
+        {
+          "clave": "c",
+          "motivo": "Precisamente forma parte del diseño previo en papel o en borrador."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las variables y las estructuras de control siguen existiendo dentro del razonamiento lógico."
+        }
+      ],
+      "resumen_didactico": "El pseudocódigo es útil porque hace comprensible la lógica sin obligar a saber sintaxis de Java u otro lenguaje.",
+      "ejemplo_practico": "Un cliente puede validar que primero se compruebe el stock y luego se cobre, sin leer código fuente.",
+      "conclusion_final": "La respuesta correcta es la a, porque el pseudocódigo facilita explicar la lógica de forma clara antes de codificar."
+    }
+  },
+  {
+    "id": "UT17-Q18",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Por qué las palabras reservadas del pseudocódigo no deben usarse para nombrar elementos libremente?",
+    "contexto": "Significado especial de las palabras sagradas del algoritmo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque solo se permiten en programas compilados."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el sistema ya las utiliza para controlar el flujo y la estructura del algoritmo."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque están prohibidas por el sistema operativo, no por el algoritmo."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque solo sirven para trabajar con números reales."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad describe las palabras reservadas como términos con un significado especial y sagrado dentro del algoritmo. Por eso no deben reutilizarse como nombres arbitrarios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No se limita a programas compilados; el problema es su función dentro de la lógica del algoritmo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La restricción pertenece al lenguaje o sistema de representación lógica, no al sistema operativo."
+        },
+        {
+          "clave": "d",
+          "motivo": "No están relacionadas solo con números reales, sino con el control y la estructura del algoritmo."
+        }
+      ],
+      "resumen_didactico": "Si una palabra ya tiene un papel lógico especial, no puede reutilizarse con otro significado arbitrario.",
+      "ejemplo_practico": "Usar términos como Si, Mientras o Inicio para otra cosa generaría confusión en la lectura del algoritmo.",
+      "conclusion_final": "La respuesta correcta es la b, porque las palabras reservadas controlan la lógica y estructura del algoritmo."
+    }
+  },
+  {
+    "id": "UT17-Q19",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué tipo de dato del pseudocódigo es el adecuado para almacenar un texto completo como el nombre de una tienda?",
+    "contexto": "Clasificación de tipos de datos básicos en pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Carácter"
+      },
+      {
+        "clave": "b",
+        "texto": "Cadena"
+      },
+      {
+        "clave": "c",
+        "texto": "Booleano"
+      },
+      {
+        "clave": "d",
+        "texto": "Real"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El tema diferencia entre carácter, que es un solo símbolo, y cadena, que representa un texto completo. Un nombre de tienda encaja en el tipo cadena.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Carácter sirve para un único símbolo, no para un texto completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Booleano solo representa verdadero o falso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Real se usa para números con decimales, no para textos."
+        }
+      ],
+      "resumen_didactico": "Un texto largo o compuesto por varias letras se guarda como cadena, no como carácter aislado.",
+      "ejemplo_practico": "\"Pastelería Granada\" se representaría como una cadena, mientras que \"A\" sería un carácter.",
+      "conclusion_final": "La respuesta correcta es la b, porque una cadena es el tipo adecuado para almacenar un texto completo."
+    }
+  },
+  {
+    "id": "UT17-Q20",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué tipo de dato debe elegirse para representar una cantidad monetaria con decimales en pseudocódigo?",
+    "contexto": "Elección del tipo adecuado según la forma de la información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Entero"
+      },
+      {
+        "clave": "b",
+        "texto": "Booleano"
+      },
+      {
+        "clave": "c",
+        "texto": "Real"
+      },
+      {
+        "clave": "d",
+        "texto": "Carácter"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La unidad indica que el tipo real se usa para números con decimales. Por eso es el adecuado para representar importes monetarios que no son enteros exactos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Entero no puede expresar decimales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Booleano solo admite dos estados lógicos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Carácter representa un símbolo, no una cantidad numérica."
+        }
+      ],
+      "resumen_didactico": "Si el valor tiene decimales, el tipo apropiado es real.",
+      "ejemplo_practico": "Un precio como 1,50 o un saldo como 1000,50 se almacenan como reales.",
+      "conclusion_final": "La respuesta correcta es la c, porque el tipo real es el preparado para números con decimales."
+    }
+  },
+  {
+    "id": "UT17-Q21",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué propiedad distingue a una constante frente a una variable durante la ejecución del algoritmo?",
+    "contexto": "Comparación funcional entre variables y constantes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La constante cambia de valor cuando entra un nuevo dato y la variable no."
+      },
+      {
+        "clave": "b",
+        "texto": "La constante permanece inmutable, mientras que la variable puede cambiar."
+      },
+      {
+        "clave": "c",
+        "texto": "La constante solo puede usarse en diagramas de flujo."
+      },
+      {
+        "clave": "d",
+        "texto": "La constante siempre tiene que ser de tipo entero."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que las constantes son valores inmutables durante todo el programa, mientras que las variables representan espacios de memoria cuyo contenido puede modificarse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Está invertido: quien puede cambiar es la variable, no la constante."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las constantes pueden usarse en algoritmos, pseudocódigo y programas, no solo en diagramas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una constante no tiene por qué ser entera; puede ser también cadena, real u otro tipo según el caso."
+        }
+      ],
+      "resumen_didactico": "Variable = dato modificable; constante = dato fijo durante la ejecución.",
+      "ejemplo_practico": "El IVA o un PIN correcto pueden tratarse como constantes, mientras que un saldo o un contador de intentos cambian.",
+      "conclusion_final": "La respuesta correcta es la b, porque esa es la diferencia esencial entre constante y variable."
+    }
+  },
+  {
+    "id": "UT17-Q22",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué convención visual recomienda la unidad para que una constante sea reconocible al leer el algoritmo?",
+    "contexto": "Forma habitual de escribir constantes para que destaquen.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Escribirla completamente en mayúsculas."
+      },
+      {
+        "clave": "b",
+        "texto": "Escribirla siempre en minúsculas y sin espacios."
+      },
+      {
+        "clave": "c",
+        "texto": "Ponerla obligatoriamente entre corchetes."
+      },
+      {
+        "clave": "d",
+        "texto": "Acompañarla siempre de un comentario al final."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema indica que las constantes se escriben en mayúsculas para que cualquier programador identifique de inmediato que ese valor no debe modificarse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La recomendación visual del tema no es usar minúsculas, sino mayúsculas."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe esa obligación de encerrar las constantes entre corchetes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los comentarios pueden ayudar, pero no son la convención visual central señalada por la unidad."
+        }
+      ],
+      "resumen_didactico": "Las mayúsculas actúan como una señal visual rápida para identificar constantes.",
+      "ejemplo_practico": "NOMBRE_TIENDA o PIN_CORRECTO destacan más claramente como valores fijos que si estuvieran escritos en minúsculas.",
+      "conclusion_final": "La respuesta correcta es la a, porque la unidad recomienda escribir las constantes en mayúsculas."
+    }
+  },
+  {
+    "id": "UT17-Q23",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué describe mejor a la estructura secuencial dentro del pseudocódigo?",
+    "contexto": "Funcionamiento básico del flujo lineal de instrucciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite escoger entre muchos caminos posibles usando Según."
+      },
+      {
+        "clave": "b",
+        "texto": "Repite instrucciones hasta que una condición deje de cumplirse."
+      },
+      {
+        "clave": "c",
+        "texto": "Ejecuta las instrucciones una detrás de otra, sin saltos."
+      },
+      {
+        "clave": "d",
+        "texto": "Sirve exclusivamente para leer variables booleanas."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La unidad define la estructura secuencial como aquella en la que las instrucciones se ejecutan una tras otra, sin saltos, siguiendo un flujo lineal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe una estructura alternativa múltiple, no una secuencial."
+        },
+        {
+          "clave": "b",
+          "motivo": "Eso corresponde a la repetición o iteración."
+        },
+        {
+          "clave": "d",
+          "motivo": "La secuencial no se limita a variables booleanas; es una forma general de organizar pasos."
+        }
+      ],
+      "resumen_didactico": "Secuencial significa avanzar paso a paso, en orden.",
+      "ejemplo_practico": "Leer un pedido, calcular un precio e imprimir un ticket son acciones que pueden encadenarse de forma secuencial.",
+      "conclusion_final": "La respuesta correcta es la c, porque la estructura secuencial ejecuta instrucciones de manera lineal y sin saltos."
+    }
+  },
+  {
+    "id": "UT17-Q24",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué estructura alternativa se utiliza cuando existen muchos caminos posibles y se quiere elegir uno según el valor de una opción?",
+    "contexto": "Clasificación de las alternativas dentro de las decisiones del pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Alternativa simple."
+      },
+      {
+        "clave": "b",
+        "texto": "Alternativa doble."
+      },
+      {
+        "clave": "c",
+        "texto": "Alternativa múltiple (Según)."
+      },
+      {
+        "clave": "d",
+        "texto": "Estructura secuencial."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El tema explica que la alternativa múltiple, expresada con Según, se usa cuando hay muchos caminos posibles y la decisión depende de la opción elegida.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La alternativa simple solo contempla un caso en el que, si se cumple una condición, se hace algo."
+        },
+        {
+          "clave": "b",
+          "motivo": "La doble maneja dos caminos posibles, pero no una variedad amplia de opciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "La secuencial no decide entre varias rutas; simplemente ejecuta pasos en orden."
+        }
+      ],
+      "resumen_didactico": "Cuando hay varias opciones posibles, la estructura adecuada es Según o alternativa múltiple.",
+      "ejemplo_practico": "Según el dulce elegido por el cliente, cambia el precio o el tipo de preparación.",
+      "conclusion_final": "La respuesta correcta es la c, porque la alternativa múltiple es la estructura pensada para varios caminos posibles."
+    }
+  },
+  {
+    "id": "UT17-Q25",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué rasgo define a la estructura iterativa \"Repetir hasta que\"?",
+    "contexto": "Comparación entre distintos bucles del pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Comprueba la condición antes de ejecutar el bloque y puede no entrar nunca."
+      },
+      {
+        "clave": "b",
+        "texto": "Se ejecuta al menos una vez y luego comprueba si debe detenerse."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo puede usarse con valores booleanos constantes."
+      },
+      {
+        "clave": "d",
+        "texto": "Está reservada a programas compilados en C++."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad indica que Repetir hasta que ejecuta primero el bloque y después comprueba si debe parar, lo que garantiza al menos una ejecución.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ese comportamiento se asocia más a Mientras, que evalúa antes de entrar al bucle."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe esa restricción en la unidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "La estructura es una idea lógica de pseudocódigo, no una exclusividad de un lenguaje concreto."
+        }
+      ],
+      "resumen_didactico": "Repetir hasta que siempre arranca y solo luego decide si ya debe terminar.",
+      "ejemplo_practico": "Hacer un pastel y después comprobar si ya se alcanzó el límite del día encaja con esta estructura.",
+      "conclusion_final": "La respuesta correcta es la b, porque Repetir hasta que garantiza al menos una ejecución antes de comprobar la condición."
+    }
+  },
+  {
+    "id": "UT17-Q26",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Cuándo recomienda la unidad utilizar la estructura iterativa \"Para\"?",
+    "contexto": "Uso adecuado del bucle Para dentro del pseudocódigo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cuando no se sabe nunca cuántas repeticiones habrá."
+      },
+      {
+        "clave": "b",
+        "texto": "Cuando se conoce de antemano el número exacto de repeticiones."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo cuando se trabaja con cadenas de texto."
+      },
+      {
+        "clave": "d",
+        "texto": "Únicamente para sustituir diagramas de flujo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que la estructura Para se utiliza cuando sabemos exactamente cuántas veces hay que repetir una acción.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Si no se conoce el número de repeticiones, suelen encajar mejor estructuras como Mientras."
+        },
+        {
+          "clave": "c",
+          "motivo": "No está limitada a cadenas de texto; puede aplicarse a cualquier tarea repetitiva con contador conocido."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los bucles y los diagramas cumplen funciones distintas y no se sustituyen de esa manera."
+        }
+      ],
+      "resumen_didactico": "Para = repetición con cantidad conocida de antemano.",
+      "ejemplo_practico": "Si hay que añadir crema a 12 moldes exactos, la unidad propone usar Para.",
+      "conclusion_final": "La respuesta correcta es la b, porque la estructura Para se reserva a repeticiones cuyo número ya conocemos."
+    }
+  },
+  {
+    "id": "UT17-Q27",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué valor profesional atribuye la unidad a los diagramas de flujo dentro de un equipo de desarrollo?",
+    "contexto": "Papel de la documentación visual en proyectos colaborativos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sustituyen por completo al código fuente en producción."
+      },
+      {
+        "clave": "b",
+        "texto": "Son la base de la documentación técnica que facilita mantener la lógica entre equipos."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo se usan en proyectos académicos y no en empresas."
+      },
+      {
+        "clave": "d",
+        "texto": "Sirven exclusivamente para calcular tiempos de compilación."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El tip de empleabilidad de la unidad afirma que los diagramas de flujo son la base de la documentación técnica y ayudan a que el resto del equipo pueda mantener el sistema en el futuro.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los diagramas documentan la lógica, pero no sustituyen al código ejecutable."
+        },
+        {
+          "clave": "c",
+          "motivo": "La unidad insiste precisamente en su utilidad en entornos profesionales y colaborativos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No están diseñados para medir tiempos de compilación."
+        }
+      ],
+      "resumen_didactico": "Documentar la lógica con claridad es una habilidad profesional, y los diagramas de flujo ayudan mucho en ello.",
+      "ejemplo_practico": "Cuando otro desarrollador toma un proyecto, un diagrama bien hecho le permite entender antes cómo piensa el sistema.",
+      "conclusion_final": "La respuesta correcta es la b, porque la unidad destaca a los diagramas de flujo como base de la documentación técnica."
+    }
+  },
+  {
+    "id": "UT17-Q28",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En un diagrama de flujo, ¿qué representa una estructura de decisión?",
+    "contexto": "Interpretación funcional de las estructuras en diagramas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El momento en que el programa evalúa una condición y elige un camino."
+      },
+      {
+        "clave": "b",
+        "texto": "La declaración obligatoria de una constante numérica."
+      },
+      {
+        "clave": "c",
+        "texto": "La fase de compilación del código fuente."
+      },
+      {
+        "clave": "d",
+        "texto": "La instalación del entorno de desarrollo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que la estructura de decisión en diagramas es el momento en que el programa evalúa una condición para tomar un camino u otro.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La declaración de constantes pertenece al diseño de datos, no a la decisión del flujo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compilación es un proceso del lenguaje o del entorno, no una estructura lógica del diagrama."
+        },
+        {
+          "clave": "d",
+          "motivo": "Instalar un IDE no forma parte de la lógica representada en un diagrama de flujo."
+        }
+      ],
+      "resumen_didactico": "Una decisión en un diagrama es un punto donde el programa piensa y escoge ruta.",
+      "ejemplo_practico": "Si el rostro coincide con la base de datos, abre la puerta; si no, activa la alarma.",
+      "conclusion_final": "La respuesta correcta es la a, porque una estructura de decisión representa la evaluación de una condición y la elección del camino correspondiente."
+    }
+  },
+  {
+    "id": "UT17-Q29",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "En el caso práctico del cajero automático, ¿qué sucede inmediatamente después de validar correctamente el PIN?",
+    "contexto": "Secuencia lógica del algoritmo de retirada de efectivo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se bloquea la tarjeta de forma automática."
+      },
+      {
+        "clave": "b",
+        "texto": "Se solicita directamente el envío de un ticket final."
+      },
+      {
+        "clave": "c",
+        "texto": "Se pide la cantidad a retirar y luego se comprueba el saldo disponible."
+      },
+      {
+        "clave": "d",
+        "texto": "Se reinicia el contador de intentos y finaliza el sistema."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El algoritmo del cajero establece que, una vez concedido el acceso por PIN correcto, el sistema solicita la cantidad a retirar y comprueba si el saldo es suficiente antes de entregar el dinero.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La tarjeta se bloquea cuando no se concede acceso tras agotar los intentos, no cuando el PIN es correcto."
+        },
+        {
+          "clave": "b",
+          "motivo": "El ticket no es el siguiente paso descrito; antes hay que pedir cantidad y validar el saldo."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se reinicia para finalizar sin más; el proceso continúa con la retirada."
+        }
+      ],
+      "resumen_didactico": "PIN correcto no significa fin del proceso: primero viene la petición de importe y la comprobación del saldo.",
+      "ejemplo_practico": "Tras aceptar el PIN, el cajero pregunta cuánto quieres sacar y solo entonces decide si autoriza la operación.",
+      "conclusion_final": "La respuesta correcta es la c, porque esa es la secuencia que sigue el algoritmo del caso práctico."
+    }
+  },
+  {
+    "id": "UT17-Q30",
+    "tema": "UT1 Introducción a la programación",
+    "pregunta": "¿Qué finalidad cumple la variable booleana accesoConcedido en el algoritmo profesional del cajero?",
+    "contexto": "Uso de variables de estado dentro del pseudocódigo del caso práctico final.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Guardar la cantidad exacta de dinero que queda en la cuenta."
+      },
+      {
+        "clave": "b",
+        "texto": "Indicar si el usuario ya ha superado correctamente la validación del PIN."
+      },
+      {
+        "clave": "c",
+        "texto": "Almacenar el número secreto del cliente como si fuera una constante."
+      },
+      {
+        "clave": "d",
+        "texto": "Representar el número máximo de reintentos permitidos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En el pseudocódigo del cajero, accesoConcedido se declara como booleano y sirve para reflejar si el usuario ha conseguido validar correctamente el PIN y puede continuar con la operación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El saldo se guarda en la variable saldoCuenta, no en accesoConcedido."
+        },
+        {
+          "clave": "c",
+          "motivo": "El PIN correcto se maneja como constante separada; accesoConcedido expresa un estado lógico."
+        },
+        {
+          "clave": "d",
+          "motivo": "El límite de intentos se controla con la variable intentos y con la condición del bucle, no con accesoConcedido."
+        }
+      ],
+      "resumen_didactico": "Las variables booleanas suelen expresar estados del sistema. Aquí indica si el acceso fue logrado o no.",
+      "ejemplo_practico": "Mientras accesoConcedido sea falso, el sistema sigue validando o contando intentos; cuando pasa a verdadero, permite continuar.",
+      "conclusion_final": "La respuesta correcta es la b, porque accesoConcedido representa el estado lógico de validación correcta del PIN."
+    }
+  }
+]
