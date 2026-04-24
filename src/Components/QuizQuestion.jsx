@@ -18,6 +18,7 @@ export function QuizQuestion({
       <form onSubmit={onSubmit}>
         {question.opciones.map((opcion) => {
           const optionId = `option-${opcion.clave}`;
+          const visibleLetter = opcion.displayLetter ?? opcion.clave;
 
           return (
             <div key={opcion.clave}>
@@ -30,7 +31,7 @@ export function QuizQuestion({
                 onChange={() => onOptionChange(opcion.clave)}
               />
               <label htmlFor={optionId}>
-                {opcion.clave}) {opcion.texto}
+                {visibleLetter}) {opcion.texto}
               </label>
             </div>
           );
@@ -67,7 +68,9 @@ export function QuizQuestion({
         {feedback !== null &&
           question.explicacion.analisis_incorrectas.map((option) => (
             <div key={option.clave} className="analisis-opcion">
-              <span className="analisis-opcion__badge">{option.clave}</span>
+              <span className="analisis-opcion__badge">
+                {question.displayLetterByKey?.[option.clave] ?? option.clave}
+              </span>
               <p className="analisis-opcion__text">{option.motivo}</p>
             </div>
           ))}

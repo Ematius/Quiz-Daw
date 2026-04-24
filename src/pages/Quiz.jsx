@@ -3,7 +3,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 
 import { getQuiz } from "../data/quizLoader";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { QuizQuestion } from "../Components/QuizQuestion";
 import { QuizProgress } from "../Components/QuizProgress";
 import { useAuth } from "../context/AuthContext";
@@ -22,6 +22,37 @@ function resolveFolder(moduloId) {
     ingles: "ingles",
   };
   return map[moduloId] ?? null;
+}
+
+const DISPLAY_LETTERS = ["a", "b", "c", "d"];
+
+function shuffleArray(items) {
+  const copy = [...items];
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+function prepareQuestion(question) {
+  if (!question || !Array.isArray(question.opciones)) return question;
+
+  const shuffledOptions = shuffleArray(question.opciones).map((option, index) => ({
+    ...option,
+    displayLetter: DISPLAY_LETTERS[index] ?? option.clave,
+  }));
+
+  const displayLetterByKey = shuffledOptions.reduce((acc, option) => {
+    acc[option.clave] = option.displayLetter;
+    return acc;
+  }, {});
+
+  return {
+    ...question,
+    opciones: shuffledOptions,
+    displayLetterByKey,
+  };
 }
 
 
@@ -43,6 +74,10 @@ export function Quiz()
 
   const folder = resolveFolder(moduloId);
   const questions = folder ? getQuiz(folder, topicId) : null;
+  const preparedQuestions = useMemo(() => {
+    if (!Array.isArray(questions)) return questions;
+    return questions.map((question) => prepareQuestion(question));
+  }, [questions, moduloId, topicId]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [roundQuestionIndexes, setRoundQuestionIndexes] = useState([]);
@@ -59,13 +94,13 @@ export function Quiz()
     solvedRef.current = solvedQuestionIndexes;
   }, [solvedQuestionIndexes]);
 
-  const totalQuestions = questions?.length ?? 0;
+  const totalQuestions = preparedQuestions?.length ?? 0;
   const answerCorrect = solvedQuestionIndexes.length;
 
   useEffect(() => {
     setCurrentIndex(0);
     setRoundQuestionIndexes(
-      Array.isArray(questions) ? questions.map((_, idx) => idx) : []
+      Array.isArray(preparedQuestions) ? preparedQuestions.map((_, idx) => idx) : []
     );
     setPendingQuestionIndexes([]);
     setSolvedQuestionIndexes([]);
@@ -81,7 +116,9 @@ export function Quiz()
   const originalIndex =
     roundLength > 0 ? roundQuestionIndexes[currentIndex] : null;
   const currentQuestion =
-    questions && originalIndex !== null ? questions?.[originalIndex] ?? null : null;
+    preparedQuestions && originalIndex !== null
+      ? preparedQuestions?.[originalIndex] ?? null
+      : null;
 
   function handleOptionChange(optionKey) {
     if (hasAnsweredCurrent) return;
@@ -91,7 +128,7 @@ export function Quiz()
   function handleSubmit(event) {
     event.preventDefault();
 
-    if (!questions) return;
+    if (!preparedQuestions) return;
     if (hasAnsweredCurrent) return;
     if (!selectedOption) return;
 
@@ -99,7 +136,7 @@ export function Quiz()
       roundLength > 0 ? roundQuestionIndexes[currentIndex] : null;
     if (idxInOriginal === null) return;
 
-    const question = questions[idxInOriginal];
+    const question = preparedQuestions[idxInOriginal];
     if (!question) return;
 
     const correctArray = Array.isArray(question.respuesta_correcta)
@@ -128,7 +165,7 @@ export function Quiz()
   }
 
   function handleNext() {
-    if (!questions) return;
+    if (!preparedQuestions) return;
     if (quizFinished) return;
     if (!hasAnsweredCurrent) return;
 
@@ -172,7 +209,7 @@ export function Quiz()
     return <p>Módulo no soportado: {moduloId}</p>;
   }
 
-  if (!questions) {
+  if (!preparedQuestions) {
     return (
       <p>
         No existe: src/data/{folder}/{topicId}.json
@@ -180,7 +217,7 @@ export function Quiz()
     );
   }
 
-  if (questions.length === 0) {
+  if (preparedQuestions.length === 0) {
     return (
       <p>
         El test existe pero no tiene preguntas: {folder}/{topicId}
