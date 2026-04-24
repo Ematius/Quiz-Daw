@@ -11,6 +11,14 @@ export function TopicCard({
   attempts = 0,
   lastTestIncorrectCount = 0,
 }) {
+  function calcularNota() {
+    if(attempts === 0) {
+      return "Test sin hacer";
+    }
+    return (((30 - lastTestIncorrectCount) / 30) * 10).toFixed(2);
+  }
+ 
+
   return (
     <Link to={to} className="topic-card">
       <span className="topic-card__badge">{id}</span>
@@ -19,6 +27,9 @@ export function TopicCard({
       <p className="topic-card__meta">Hecho {attempts} veces</p>
       <p className="topic-card__meta">
         En el ultimo test: {lastTestIncorrectCount} incorrectas
+      </p>
+      <p className="topic-card__meta">
+      Nota: {calcularNota()}
       </p>
     </Link>
   );
