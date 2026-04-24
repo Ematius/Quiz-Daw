@@ -99,9 +99,10 @@ export function Quiz()
 
   useEffect(() => {
     setCurrentIndex(0);
-    setRoundQuestionIndexes(
-      Array.isArray(preparedQuestions) ? preparedQuestions.map((_, idx) => idx) : []
-    );
+    const initialIndexes = Array.isArray(preparedQuestions)
+      ? preparedQuestions.map((_, idx) => idx)
+      : [];
+    setRoundQuestionIndexes(shuffleArray(initialIndexes));
     setPendingQuestionIndexes([]);
     setSolvedQuestionIndexes([]);
     setQuizFinished(false);
@@ -109,7 +110,7 @@ export function Quiz()
     setFeedback(null);
     setHasAnsweredCurrent(false);
     completionRecordedRef.current = false;
-  }, [moduloId, topicId]);
+  }, [moduloId, topicId, preparedQuestions]);
 
 
   const roundLength = roundQuestionIndexes.length;
