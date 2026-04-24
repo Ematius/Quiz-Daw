@@ -153,6 +153,7 @@ export function Quiz()
     setSelectedOption(null);
     setFeedback(null);
     setHasAnsweredCurrent(false);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
   function handleLess() {
