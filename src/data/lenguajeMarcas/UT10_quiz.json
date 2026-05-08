@@ -1,0 +1,1052 @@
+[
+  {
+    "id": "UT10-Q01",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un documento usa etiquetas para indicar que un dato es un precio, una fecha o un cliente, pero no realiza cálculos ni ejecuta algoritmos. ¿Qué idea diferencia correctamente a este tipo de lenguaje frente a un lenguaje de programación?",
+    "contexto": "Diferencia entre lenguajes de marcas y lenguajes de programación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Describe y estructura información, pero no ejecuta lógica compleja por sí mismo"
+      },
+      {
+        "clave": "b",
+        "texto": "Compila siempre el documento en código máquina"
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituye completamente a JavaScript en la lógica de una web"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo puede usarse para crear bases de datos relacionales"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario distingue los lenguajes de marcas de los lenguajes de programación porque su misión es descriptiva y estructural.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "Los lenguajes de marcas describen o estructuran datos; no están pensados para ejecutar algoritmos complejos.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "Los lenguajes de marcas describen o estructuran datos; no están pensados para ejecutar algoritmos complejos."
+    }
+  },
+  {
+    "id": "UT10-Q02",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Cuando un navegador abre una página web, interpreta el código HTML, CSS y JavaScript para mostrar una experiencia visual e interactiva. ¿Qué es técnicamente una página web según esta perspectiva?",
+    "contexto": "Concepto técnico de página web y papel del navegador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un documento electrónico, normalmente HTML, alojado en un servidor y accesible mediante navegador"
+      },
+      {
+        "clave": "b",
+        "texto": "Un programa binario instalado obligatoriamente en el sistema operativo"
+      },
+      {
+        "clave": "c",
+        "texto": "Una base de datos local que se ejecuta sin servidor"
+      },
+      {
+        "clave": "d",
+        "texto": "Un protocolo de cifrado para intercambiar datos bancarios"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define la página web como un documento generalmente HTML que vive en un servidor y se consulta mediante un navegador.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "Una página web es un documento electrónico accesible por Internet e interpretado por un navegador.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "Una página web es un documento electrónico accesible por Internet e interpretado por un navegador."
+    }
+  },
+  {
+    "id": "UT10-Q03",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En un documento HTML, un técnico necesita colocar el título de la pestaña, metadatos, enlaces a CSS y configuración no visible directamente para el usuario. ¿En qué sección debe situar esta información?",
+    "contexto": "Estructura básica de un documento HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dentro de <head>"
+      },
+      {
+        "clave": "b",
+        "texto": "Dentro de <body>"
+      },
+      {
+        "clave": "c",
+        "texto": "Dentro de <footer>"
+      },
+      {
+        "clave": "d",
+        "texto": "Después del cierre de </html>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario separa la cabecera técnica del contenido visible: <head> para metadatos y enlaces; <body> para lo que ve el usuario.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "La sección <head> contiene información técnica del documento, no el contenido visible principal.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "La sección <head> contiene información técnica del documento, no el contenido visible principal."
+    }
+  },
+  {
+    "id": "UT10-Q04",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Una web antigua usa frames para dividir la ventana del navegador en varias zonas independientes. ¿Qué tipo de declaración DTD correspondería a ese modelo histórico?",
+    "contexto": "Tipos clásicos de DTD en HTML/XHTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DTD Frameset"
+      },
+      {
+        "clave": "b",
+        "texto": "DTD Strict"
+      },
+      {
+        "clave": "c",
+        "texto": "DTD Relacional"
+      },
+      {
+        "clave": "d",
+        "texto": "DTD Semántico"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario distingue Strict, Transitional y Frameset; Frameset se usa cuando el documento trabaja con marcos.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "Frameset se asocia a documentos antiguos organizados mediante marcos.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "Frameset se asocia a documentos antiguos organizados mediante marcos."
+    }
+  },
+  {
+    "id": "UT10-Q05",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Una empresa cambia por completo los colores, fuentes y márgenes de su web modificando solo un archivo externo, sin tocar el contenido HTML. ¿Qué principio técnico está aplicando?",
+    "contexto": "Relación entre HTML y CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Separación entre contenido y presentación mediante CSS"
+      },
+      {
+        "clave": "b",
+        "texto": "Compilación del HTML en XML"
+      },
+      {
+        "clave": "c",
+        "texto": "Normalización de bases de datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Cifrado de las etiquetas del documento"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que CSS nace para separar el contenido de la presentación, facilitando cambios visuales globales.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "CSS permite separar el contenido estructural del diseño visual.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "CSS permite separar el contenido estructural del diseño visual."
+    }
+  },
+  {
+    "id": "UT10-Q06",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En CSS, un maquetador escribe la regla * { margin: 0; padding: 0; }. ¿Qué tipo de selector está utilizando?",
+    "contexto": "Selectores CSS básicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Selector universal"
+      },
+      {
+        "clave": "b",
+        "texto": "Selector descendiente"
+      },
+      {
+        "clave": "c",
+        "texto": "Selector de ID"
+      },
+      {
+        "clave": "d",
+        "texto": "Selector adyacente"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el selector universal usa * y aplica la regla a todos los elementos del documento.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "El asterisco representa el selector universal y afecta a todos los elementos.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "El asterisco representa el selector universal y afecta a todos los elementos."
+    }
+  },
+  {
+    "id": "UT10-Q07",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un estilo debe aplicarse a muchos elementos distintos que comparten el atributo class=\"aviso\". ¿Qué selector CSS es el adecuado?",
+    "contexto": "Diferencia entre selectores de clase e ID.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": ".aviso"
+      },
+      {
+        "clave": "b",
+        "texto": "#aviso"
+      },
+      {
+        "clave": "c",
+        "texto": "*aviso"
+      },
+      {
+        "clave": "d",
+        "texto": "aviso()"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario muestra que el selector de clase usa el atributo class y se escribe en CSS con punto: .nombreClase.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "Las clases se seleccionan con un punto delante del nombre.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "Las clases se seleccionan con un punto delante del nombre."
+    }
+  },
+  {
+    "id": "UT10-Q08",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En CSS, una regla aplicada al elemento body establece font-family: Arial. Después, los párrafos heredan esa fuente sin declararla uno a uno. ¿Qué comportamiento se está produciendo?",
+    "contexto": "Herencia en CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Herencia de propiedades desde un elemento padre"
+      },
+      {
+        "clave": "b",
+        "texto": "Conversión automática de HTML a XML"
+      },
+      {
+        "clave": "c",
+        "texto": "Validación mediante DTD"
+      },
+      {
+        "clave": "d",
+        "texto": "Uso de un selector adyacente"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que propiedades como color o fuente pueden heredarse desde elementos padre hacia elementos hijos.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "Muchas propiedades de texto pueden heredarse de padres a hijos en CSS.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "Muchas propiedades de texto pueden heredarse de padres a hijos en CSS."
+    }
+  },
+  {
+    "id": "UT10-Q09",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un diseñador quiere que un tamaño dependa del tamaño de fuente del elemento raíz del documento, no del padre inmediato. ¿Qué unidad relativa debe usar?",
+    "contexto": "Unidades de medida en CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "rem"
+      },
+      {
+        "clave": "b",
+        "texto": "cm"
+      },
+      {
+        "clave": "c",
+        "texto": "pt"
+      },
+      {
+        "clave": "d",
+        "texto": "px absoluto obligatorio"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia unidades absolutas y relativas; rem se usa como referencia estable respecto al elemento raíz.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "rem es una unidad relativa basada en el tamaño de fuente raíz.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "rem es una unidad relativa basada en el tamaño de fuente raíz."
+    }
+  },
+  {
+    "id": "UT10-Q10",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En HTML, un enlace debe abrirse en una pestaña nueva para no sacar al usuario de la página actual. ¿Qué valor debe darse al atributo target?",
+    "contexto": "Atributos de enlaces HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "_blank"
+      },
+      {
+        "clave": "b",
+        "texto": "_self"
+      },
+      {
+        "clave": "c",
+        "texto": "new-tab"
+      },
+      {
+        "clave": "d",
+        "texto": "external"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta target como el atributo que indica dónde se abre el enlace; _blank se usa para nueva pestaña.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "target=\"_blank\" abre el enlace en una nueva pestaña o ventana.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "target=\"_blank\" abre el enlace en una nueva pestaña o ventana."
+    }
+  },
+  {
+    "id": "UT10-Q11",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Una imagen HTML debe ser accesible para lectores de pantalla y comprensible si no se carga el recurso gráfico. ¿Qué atributo aporta esa descripción textual alternativa?",
+    "contexto": "Accesibilidad en imágenes HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "alt"
+      },
+      {
+        "clave": "b",
+        "texto": "href"
+      },
+      {
+        "clave": "c",
+        "texto": "target"
+      },
+      {
+        "clave": "d",
+        "texto": "bgcolor"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario asocia alt a la descripción accesible de imágenes, útil para lectores de pantalla y carga fallida.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "El atributo alt proporciona texto alternativo para imágenes.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "El atributo alt proporciona texto alternativo para imágenes."
+    }
+  },
+  {
+    "id": "UT10-Q12",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un documento XML de logística contiene <Ruta></Ruta> y <ruta></ruta> como si fueran etiquetas diferentes. ¿Por qué el procesador puede distinguirlas?",
+    "contexto": "Sensibilidad a mayúsculas y minúsculas en XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque XML es sensible a mayúsculas y minúsculas"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque XML ignora todos los cierres de etiqueta"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque las etiquetas XML solo pueden escribirse en minúscula"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque XML transforma automáticamente etiquetas en CSS"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario insiste en que apertura y cierre deben coincidir exactamente, respetando mayúsculas y minúsculas.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "XML es case sensitive: Ruta y ruta son nombres distintos.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "XML es case sensitive: Ruta y ruta son nombres distintos."
+    }
+  },
+  {
+    "id": "UT10-Q13",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un archivo XML tiene dos elementos raíz al mismo nivel: <clientes>...</clientes><pedidos>...</pedidos>. ¿Qué regla básica incumple?",
+    "contexto": "Estructura arborescente de XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Todo documento XML debe tener una única raíz"
+      },
+      {
+        "clave": "b",
+        "texto": "XML no permite elementos hijos"
+      },
+      {
+        "clave": "c",
+        "texto": "XML exige siempre tres prólogos"
+      },
+      {
+        "clave": "d",
+        "texto": "XML no permite texto dentro de etiquetas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define XML como estructura arborescente que nace de un único elemento padre o raíz.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "Un XML bien formado debe partir de un único elemento raíz.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "Un XML bien formado debe partir de un único elemento raíz."
+    }
+  },
+  {
+    "id": "UT10-Q14",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En el prólogo <?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>, ¿qué dato indica la codificación utilizada para interpretar caracteres?",
+    "contexto": "Datos principales del prólogo XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "encoding"
+      },
+      {
+        "clave": "b",
+        "texto": "version"
+      },
+      {
+        "clave": "c",
+        "texto": "standalone"
+      },
+      {
+        "clave": "d",
+        "texto": "doctype"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario identifica version, encoding y standalone como datos principales del prólogo XML.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "encoding indica la codificación de caracteres usada en el documento.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "encoding indica la codificación de caracteres usada en el documento."
+    }
+  },
+  {
+    "id": "UT10-Q15",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un programador necesita incluir dentro de un XML un fragmento que contiene símbolos < y > sin que el parser los interprete como etiquetas. ¿Qué recurso debe usar?",
+    "contexto": "Uso de CDATA en XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una sección CDATA"
+      },
+      {
+        "clave": "b",
+        "texto": "Un selector CSS universal"
+      },
+      {
+        "clave": "c",
+        "texto": "Un atributo target"
+      },
+      {
+        "clave": "d",
+        "texto": "Una tabla HTML"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta CDATA como texto no analizado por el motor de lectura.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "CDATA permite incluir texto sin que sea interpretado como marcado XML.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "CDATA permite incluir texto sin que sea interpretado como marcado XML."
+    }
+  },
+  {
+    "id": "UT10-Q16",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En una DTD, se quiere declarar un elemento que no puede contener ningún dato interno. ¿Qué tipo de contenido debe indicarse?",
+    "contexto": "Tipos de contenido en DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "EMPTY"
+      },
+      {
+        "clave": "b",
+        "texto": "#PCDATA"
+      },
+      {
+        "clave": "c",
+        "texto": "ANY"
+      },
+      {
+        "clave": "d",
+        "texto": "#REQUIRED"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia tipos como EMPTY, ANY, #PCDATA y #CDATA dentro de definiciones DTD.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "EMPTY declara un elemento vacío, sin contenido interno.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "EMPTY declara un elemento vacío, sin contenido interno."
+    }
+  },
+  {
+    "id": "UT10-Q17",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En una DTD, un elemento debe aparecer obligatoriamente una o varias veces dentro de otro. ¿Qué operador de ocurrencia representa esa condición?",
+    "contexto": "Operadores de repetición en DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "+"
+      },
+      {
+        "clave": "b",
+        "texto": "?"
+      },
+      {
+        "clave": "c",
+        "texto": "*"
+      },
+      {
+        "clave": "d",
+        "texto": "|"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario usa operadores de ocurrencia: ? para cero o una, * para cero o varias, + para una o varias y | para alternativas.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "El signo + indica una o varias apariciones.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "El signo + indica una o varias apariciones."
+    }
+  },
+  {
+    "id": "UT10-Q18",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un atributo declarado en una DTD debe aparecer siempre para que el documento sea válido. ¿Qué palabra reservada expresa esa obligatoriedad?",
+    "contexto": "Declaración de atributos en DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "#REQUIRED"
+      },
+      {
+        "clave": "b",
+        "texto": "#IMPLIED"
+      },
+      {
+        "clave": "c",
+        "texto": "#FIXED"
+      },
+      {
+        "clave": "d",
+        "texto": "EMPTY"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia atributos obligatorios, opcionales y fijos en DTD mediante palabras reservadas.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "#REQUIRED indica que el atributo es obligatorio.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "#REQUIRED indica que el atributo es obligatorio."
+    }
+  },
+  {
+    "id": "UT10-Q19",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Frente a una DTD, un esquema XSD permite controlar tipos de datos con más precisión, como fechas, números o cadenas. ¿Qué ventaja general refleja este caso?",
+    "contexto": "Comparación entre DTD y XML Schema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mayor capacidad de restricción y tipado de datos"
+      },
+      {
+        "clave": "b",
+        "texto": "Imposibilidad de validar documentos XML"
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminación de la estructura jerárquica"
+      },
+      {
+        "clave": "d",
+        "texto": "Conversión automática del XML en una imagen"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario trabaja DTD y XSD como mecanismos de definición y validación, destacando XSD por su mayor riqueza de tipos.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "XSD ofrece un control más preciso sobre tipos y restricciones que DTD.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "XSD ofrece un control más preciso sobre tipos y restricciones que DTD."
+    }
+  },
+  {
+    "id": "UT10-Q20",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Antes de enviar un XML de producción, el equipo lo compara contra su XSD para detectar etiquetas mal cerradas o atributos inválidos. ¿Qué proceso está realizando?",
+    "contexto": "Validación de documentos XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Validación del documento"
+      },
+      {
+        "clave": "b",
+        "texto": "Renderizado CSS"
+      },
+      {
+        "clave": "c",
+        "texto": "Compilación a código máquina"
+      },
+      {
+        "clave": "d",
+        "texto": "Normalización de tablas SQL"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define la validación como la prueba del XML frente a esquemas de restricciones mediante validadores o parsers.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "Validar consiste en comprobar el documento frente a reglas o esquemas para localizar errores.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "Validar consiste en comprobar el documento frente a reglas o esquemas para localizar errores."
+    }
+  },
+  {
+    "id": "UT10-Q21",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un archivo XML de productos debe convertirse en una tabla HTML para el navegador. ¿Qué tecnología estándar permite aplicar reglas de transformación para producir esa salida?",
+    "contexto": "Transformación de XML a otros formatos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XSLT"
+      },
+      {
+        "clave": "b",
+        "texto": "SMTP"
+      },
+      {
+        "clave": "c",
+        "texto": "RAID"
+      },
+      {
+        "clave": "d",
+        "texto": "OLAP"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define XSLT como lenguaje estándar de transformación de documentos XML.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "XSLT transforma documentos XML en HTML, XML u otros formatos.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "XSLT transforma documentos XML en HTML, XML u otros formatos."
+    }
+  },
+  {
+    "id": "UT10-Q22",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Dentro de una hoja XSL, se necesita extraer el contenido textual de la etiqueta <precio> del XML origen. ¿Qué instrucción XSLT se usa para obtener ese valor?",
+    "contexto": "Plantillas XSLT y extracción de valores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:value-of>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:empty>"
+      },
+      {
+        "clave": "c",
+        "texto": "<rss>"
+      },
+      {
+        "clave": "d",
+        "texto": "<doctype>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta <xsl:value-of> como la etiqueta que obtiene el valor del elemento referenciado en el XML.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "<xsl:value-of> extrae el valor de un nodo seleccionado.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "<xsl:value-of> extrae el valor de un nodo seleccionado."
+    }
+  },
+  {
+    "id": "UT10-Q23",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Para mostrar todos los productos de un inventario XML sin escribir el mismo bloque HTML manualmente para cada uno, ¿qué instrucción XSLT permite recorrer repetidamente un conjunto de nodos?",
+    "contexto": "Iteración en XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:for-each>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:single>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:doctype>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:root>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que <xsl:for-each> selecciona y recorre de forma repetitiva los elementos especificados.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "<xsl:for-each> recorre un conjunto de nodos y repite una acción por cada uno.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "<xsl:for-each> recorre un conjunto de nodos y repite una acción por cada uno."
+    }
+  },
+  {
+    "id": "UT10-Q24",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un catálogo XML debe mostrarse ordenado por precio antes de imprimirse como HTML. ¿Qué instrucción XSLT se utiliza dentro del recorrido para ordenar según un campo?",
+    "contexto": "Ordenación con XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:sort select=\"precio\"/>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:filter order=\"precio\"/>"
+      },
+      {
+        "clave": "c",
+        "texto": "<order-by>precio</order-by>"
+      },
+      {
+        "clave": "d",
+        "texto": "<sort-css>precio</sort-css>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que <xsl:sort> ordena por el valor indicado en select, por ejemplo precio.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "<xsl:sort> permite ordenar el contenido procesado según el atributo select.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "<xsl:sort> permite ordenar el contenido procesado según el atributo select."
+    }
+  },
+  {
+    "id": "UT10-Q25",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Dentro de un atributo XML de una condición XSLT, se necesita comparar si precio es menor que 1. ¿Qué debe hacerse con el símbolo de menor que para evitar que el procesador lo interprete como apertura de etiqueta?",
+    "contexto": "Entidades y escape de caracteres en XML/XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Escaparlo como entidad, por ejemplo &lt;"
+      },
+      {
+        "clave": "b",
+        "texto": "Escribirlo tres veces seguidas"
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminar la condición"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiarlo por una etiqueta HTML <small>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario advierte que escribir < directamente dentro de un atributo puede hacer que el procesador crea que empieza una etiqueta.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "En atributos XML, el símbolo < debe escaparse para no romper la sintaxis.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "En atributos XML, el símbolo < debe escaparse para no romper la sintaxis."
+    }
+  },
+  {
+    "id": "UT10-Q26",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En XPath, se quiere seleccionar todos los elementos <producto> cuyo atributo categoria tenga el valor \"hardware\". ¿Qué expresión sigue correctamente la lógica de predicados y atributos?",
+    "contexto": "XPath con atributos y predicados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "//producto[@categoria='hardware']"
+      },
+      {
+        "clave": "b",
+        "texto": "//producto[categoria@='hardware']"
+      },
+      {
+        "clave": "c",
+        "texto": "/@producto[categoria='hardware']"
+      },
+      {
+        "clave": "d",
+        "texto": "producto->categoria('hardware')"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los predicados filtran nodos y que @ se usa para trabajar con atributos.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "En XPath, @ selecciona atributos y los predicados se escriben entre corchetes.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "En XPath, @ selecciona atributos y los predicados se escriben entre corchetes."
+    }
+  },
+  {
+    "id": "UT10-Q27",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "En una consulta XQuery con sintaxis FLWOR, ¿qué cláusula se usa para filtrar los resultados antes de devolverlos?",
+    "contexto": "Sintaxis FLWOR en XQuery.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "where"
+      },
+      {
+        "clave": "b",
+        "texto": "return"
+      },
+      {
+        "clave": "c",
+        "texto": "html"
+      },
+      {
+        "clave": "d",
+        "texto": "stylesheet"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta FLWOR como estructura de XQuery para recorrer, enlazar, filtrar, ordenar y devolver información.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "where filtra los datos dentro de una consulta FLWOR.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "where filtra los datos dentro de una consulta FLWOR."
+    }
+  },
+  {
+    "id": "UT10-Q28",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Para ejecutar eXist-db desde consola una vez instalado, el técnico utiliza el comando java -jar start.jar. ¿Qué requisito base debe tener previamente instalado el sistema?",
+    "contexto": "Instalación y ejecución de eXist-db.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Java"
+      },
+      {
+        "clave": "b",
+        "texto": "Adobe Dreamweaver"
+      },
+      {
+        "clave": "c",
+        "texto": "Un servidor FTP obligatorio"
+      },
+      {
+        "clave": "d",
+        "texto": "Un lector RSS"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que eXist-db es de fácil instalación y su requisito base es disponer de Java además del sistema operativo.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "eXist-db requiere tener Java instalado para ejecutarse.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "eXist-db requiere tener Java instalado para ejecutarse."
+    }
+  },
+  {
+    "id": "UT10-Q29",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Un feed RSS se genera automáticamente desde un blog, pero un carácter & no codificado rompe la lectura del canal. ¿Qué herramienta o proceso debe usarse antes de publicarlo?",
+    "contexto": "Validación de feeds RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Validarlo con un servicio como W3C Feed Validator"
+      },
+      {
+        "clave": "b",
+        "texto": "Comprimirlo como ZIP sin revisarlo"
+      },
+      {
+        "clave": "c",
+        "texto": "Insertarlo directamente en una tabla SQL"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar todas las etiquetas por <div>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda pasar los feeds por validadores como W3C o Feed Validator para localizar fallos de XML/RSS/Atom.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "Los feeds deben validarse para detectar errores sintácticos o caracteres ilegales antes de publicarse.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "Los feeds deben validarse para detectar errores sintácticos o caracteres ilegales antes de publicarse."
+    }
+  },
+  {
+    "id": "UT10-Q30",
+    "tema": "UT10 — Repaso global del módulo Lenguajes de Marcas (Bloque 2)",
+    "pregunta": "Una empresa desea analizar grandes cantidades de datos históricos desde varias dimensiones, como ventas por zona, trimestre y producto, para apoyar decisiones directivas. ¿Qué tipo de sistema se asocia a este análisis avanzado de información?",
+    "contexto": "Sistemas de gestión empresarial e inteligencia de negocio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "BI"
+      },
+      {
+        "clave": "b",
+        "texto": "RSS"
+      },
+      {
+        "clave": "c",
+        "texto": "CDATA"
+      },
+      {
+        "clave": "d",
+        "texto": "KompoZer"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario relaciona BI con análisis avanzado de información dentro del entorno empresarial junto a CRM y ERP.",
+      "analisis_incorrectas": [],
+      "resumen_didactico": "BI se asocia al análisis avanzado de información para la toma de decisiones.",
+      "ejemplo_practico": "Aplicación directa del concepto en un documento o sistema real del módulo.",
+      "conclusion_final": "BI se asocia al análisis avanzado de información para la toma de decisiones."
+    }
+  }
+]

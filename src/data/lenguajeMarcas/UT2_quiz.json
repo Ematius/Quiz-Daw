@@ -1,0 +1,1023 @@
+[
+    {
+        "id": "UT2-Q01",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Durante la configuración de un nuevo entorno de desarrollo corporativo, el equipo de arquitectura técnica evalúa qué editor implementar para maximizar la productividad y permitir la integración de asistentes basados en inteligencia artificial. ¿Qué herramienta domina el mercado actual para este propósito?",
+        "contexto": "Elección de un editor moderno para desarrollo web, productividad, extensiones e integración con asistentes de IA.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Bluefish por su fiabilidad en sistemas antiguos" },
+          { "clave": "b", "texto": "Visual Studio Code debido a su ecosistema de complementos" },
+          { "clave": "c", "texto": "KompoZer con su editor visual integrado" },
+          { "clave": "d", "texto": "Adobe Dreamweaver CC para mantener compatibilidad heredada" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario presenta Visual Studio Code como la realidad del mercado actual. Se describe como un editor ligero, gratuito, multiplataforma y desarrollado por Microsoft, cuya característica principal es su gran capacidad de personalización mediante complementos. Además, se menciona su integración con herramientas de productividad e inteligencia artificial como GitHub Copilot.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Bluefish se menciona como un editor gratuito, ligero y fiable, especialmente útil en entornos antiguos o Linux, pero no como la herramienta dominante del mercado actual ni como la más orientada a asistentes de inteligencia artificial."
+            },
+            {
+              "clave": "c",
+              "motivo": "KompoZer se presenta como una herramienta de código abierto e intuitiva, pero su desarrollo está detenido y no soporta tecnologías modernas como HTML5 o CSS3."
+            },
+            {
+              "clave": "d",
+              "motivo": "Adobe Dreamweaver CC aparece como una herramienta comercial con funciones avanzadas, pero el temario indica que actualmente está relegada sobre todo al mantenimiento de proyectos antiguos o legacy."
+            }
+          ],
+          "resumen_didactico": "Para el desarrollo web moderno, la herramienta clave es Visual Studio Code porque combina ligereza, extensiones, productividad e integración con IA.",
+          "ejemplo_practico": "Un equipo puede instalar VS Code, añadir extensiones como Live Server para ver cambios en tiempo real y usar GitHub Copilot para recibir sugerencias automáticas de código.",
+          "conclusion_final": "La herramienta que domina el mercado actual para maximizar productividad e integrar asistentes de inteligencia artificial es Visual Studio Code."
+        }
+      },
+      {
+        "id": "UT2-Q02",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Qué software de diseño web es conocido históricamente por ser de código abierto e intuitivo, pero cuyo desarrollo se abandonó hace más de una década dejándolo obsoleto frente a lenguajes modernos?",
+        "contexto": "Identificación de herramientas históricas de diseño web y su vigencia actual frente a tecnologías modernas como HTML5 y CSS3.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Visual Studio Code" },
+          { "clave": "b", "texto": "KompoZer" },
+          { "clave": "c", "texto": "Dreamweaver CC" },
+          { "clave": "d", "texto": "Bluefis" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que KompoZer es un software de diseño web de código abierto, intuitivo y fácil de usar. También indica que su desarrollo se detuvo hace muchos años, con última versión estable en 2007, por lo que no soporta correctamente tecnologías modernas como HTML5 o CSS3.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Visual Studio Code no está obsoleto. Al contrario, el temario lo presenta como el estándar actual del mercado por su ligereza, extensiones e integración con herramientas modernas."
+            },
+            {
+              "clave": "c",
+              "motivo": "Dreamweaver CC es una herramienta comercial de Adobe. Aunque actualmente se considera poco usada en agencias modernas y más orientada a proyectos legacy, no es el software descrito como código abierto e intuitivo con desarrollo abandonado."
+            },
+            {
+              "clave": "d",
+              "motivo": "Bluefish es un editor gratuito, ligero y multiplataforma con licencia GNU, pero el temario no lo presenta como el caso principal de software abandonado que no soporta HTML5 y CSS3. Esa descripción corresponde a KompoZer."
+            }
+          ],
+          "resumen_didactico": "KompoZer fue una herramienta sencilla y de código abierto, útil en su época, pero hoy está obsoleta porque no evolucionó con los estándares modernos de la web.",
+          "ejemplo_practico": "Intentar crear una web actual con KompoZer sería problemático porque no entiende bien características modernas de HTML5 o CSS3, mientras que VS Code sí permite trabajar con ellas mediante extensiones y soporte actualizado.",
+          "conclusion_final": "La respuesta correcta es KompoZer, porque el temario lo identifica como software de código abierto, intuitivo y actualmente obsoleto por abandono de desarrollo."
+        }
+      },
+      {
+        "id": "UT2-Q03",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Un desarrollador front-end necesita verificar rápidamente el comportamiento de un bloque de código sin afectar el entorno local ni generar archivos temporales en el servidor principal. ¿Qué tipo de herramienta resulta ideal para esta prueba rápida?",
+        "contexto": "Uso de herramientas online para probar fragmentos de código HTML, CSS o JavaScript sin modificar el proyecto real.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Un sistema de control de versiones" },
+          { "clave": "b", "texto": "Un editor HTML WYSIWYG online" },
+          { "clave": "c", "texto": "Un validador estricto de DTD" },
+          { "clave": "d", "texto": "Un servidor de bases de datos relacionales" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que los editores HTML WYSIWYG online permiten escribir o probar código y ver el resultado visual al instante. También se presentan como un laboratorio de pruebas útil para experimentar con fragmentos de HTML o CSS sin ensuciar el código del proyecto real.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Un sistema de control de versiones sirve para gestionar cambios en el código, guardar historial y colaborar, pero no es la herramienta ideal para probar visualmente un bloque de código de forma rápida."
+            },
+            {
+              "clave": "c",
+              "motivo": "Un validador estricto de DTD sirve para comprobar si un documento cumple unas reglas concretas de estructura, pero no para experimentar rápidamente con el comportamiento visual o funcional de un bloque de código."
+            },
+            {
+              "clave": "d",
+              "motivo": "Un servidor de bases de datos relacionales se usa para almacenar y consultar datos estructurados, no para probar fragmentos de código front-end."
+            }
+          ],
+          "resumen_didactico": "Para probar código front-end de forma rápida y sin tocar el proyecto real, lo adecuado es usar un editor online tipo WYSIWYG o laboratorio web.",
+          "ejemplo_practico": "Un desarrollador puede abrir una herramienta online, pegar un fragmento de HTML y CSS, ver el resultado al momento y después copiar solo el código limpio si funciona correctamente.",
+          "conclusion_final": "La opción correcta es un editor HTML WYSIWYG online, porque permite probar código de forma rápida, visual y sin afectar al entorno principal."
+        }
+      },
+      {
+        "id": "UT2-Q04",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Al realizar el mantenimiento de un portal web institucional muy antiguo, un equipo detecta que el sistema requiere soporte para PHP 7 y control de versiones nativo para código heredado complejo. ¿Qué herramienta comercial, aunque relegada en proyectos nuevos, ofrece estas capacidades específicas?",
+        "contexto": "Mantenimiento de proyectos web antiguos o legacy con necesidad de soporte para PHP 7 y control de versiones.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "KompoZer clásico" },
+          { "clave": "b", "texto": "Adobe Dreamweaver CC" },
+          { "clave": "c", "texto": "Bluefish en entorno Linux" },
+          { "clave": "d", "texto": "Editor WYSIWYG básico" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario presenta Adobe Dreamweaver CC como un software comercial desarrollado por Adobe Systems. Entre sus características se mencionan la compatibilidad avanzada con lenguajes como PHP 7, el diseño responsivo y la integración con sistemas de control de versiones como Git. Aunque actualmente está relegado principalmente al mantenimiento de proyectos antiguos, sigue siendo la opción correcta en este contexto.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "KompoZer era una herramienta de código abierto e intuitiva, pero su desarrollo está abandonado desde hace años y no está orientada al soporte moderno de PHP 7 ni al control de versiones."
+            },
+            {
+              "clave": "c",
+              "motivo": "Bluefish es un editor ligero, gratuito y útil en algunos entornos Linux, pero el temario no lo identifica como herramienta comercial ni destaca en él soporte específico para PHP 7 y control de versiones nativo."
+            },
+            {
+              "clave": "d",
+              "motivo": "Un editor WYSIWYG básico permite editar visualmente contenido HTML, pero no ofrece las capacidades avanzadas descritas en la pregunta, como compatibilidad con PHP 7 y control de versiones."
+            }
+          ],
+          "resumen_didactico": "Dreamweaver CC no domina el desarrollo web moderno, pero el temario lo asocia con proyectos antiguos, soporte para PHP 7 y control de versiones.",
+          "ejemplo_practico": "Una administración pública con una web antigua hecha en PHP podría seguir usando Dreamweaver CC para mantener ese código heredado y controlar los cambios mediante Git.",
+          "conclusion_final": "La respuesta correcta es Adobe Dreamweaver CC, porque es la herramienta comercial mencionada en el temario con soporte para PHP 7 y control de versiones."
+        }
+      },
+      {
+        "id": "UT2-Q05",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Cuál es la característica principal que diferencia a editores modernos como VS Code de sus predecesores, convirtiéndolos en la elección estándar de la industria web?",
+        "contexto": "Comparación entre editores web modernos y herramientas antiguas de diseño o edición web.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Su dependencia de licencias comerciales de alto coste para funcionar" },
+          { "clave": "b", "texto": "Su capacidad exclusiva para diseñar interfaces mediante arrastrar y soltar" },
+          { "clave": "c", "texto": "La inclusión obligatoria de un servidor web Apache preinstalado" },
+          { "clave": "d", "texto": "Su inmensa capacidad de personalización a través de un ecosistema de complementos" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario presenta Visual Studio Code como el estándar actual del mercado. Se destaca que es un editor ligero, gratuito, multiplataforma y muy personalizable gracias a su ecosistema de complementos. Esa capacidad de añadir extensiones para productividad, detección de errores, actualización en vivo o integración con inteligencia artificial es lo que lo diferencia de herramientas más antiguas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "VS Code no depende de licencias comerciales de alto coste. El temario lo define como una herramienta gratuita desarrollada por Microsoft."
+            },
+            {
+              "clave": "b",
+              "motivo": "El diseño mediante arrastrar y soltar es más propio de herramientas visuales o WYSIWYG antiguas. VS Code destaca por ser un editor de código extensible, no por diseñar exclusivamente arrastrando elementos."
+            },
+            {
+              "clave": "c",
+              "motivo": "VS Code no incluye obligatoriamente un servidor Apache preinstalado. Puede usar extensiones como Live Server para desarrollo local, pero eso no equivale a traer Apache integrado de forma obligatoria."
+            }
+          ],
+          "resumen_didactico": "La clave de VS Code es que se adapta al proyecto mediante extensiones: puede servir para HTML, CSS, JavaScript, Git, IA, depuración y muchas otras tareas.",
+          "ejemplo_practico": "Un desarrollador puede instalar Live Server para ver cambios en tiempo real, Prettier para formatear código y GitHub Copilot para recibir sugerencias con inteligencia artificial.",
+          "conclusion_final": "La respuesta correcta es la opción d: VS Code domina porque permite una enorme personalización mediante complementos."
+        }
+      },
+      {
+        "id": "UT2-Q06",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Al estructurar un nuevo documento desde cero, un técnico necesita insertar metadatos clave para asegurar el correcto posicionamiento en los motores de búsqueda. ¿Dentro de qué elemento fundamental debe anidarse esta información técnica?",
+        "contexto": "Estructura básica de un documento HTML y ubicación de la información técnica no visible para el usuario.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Dentro de la etiqueta head del documento" },
+          { "clave": "b", "texto": "Justo antes de la declaración doctype" },
+          { "clave": "c", "texto": "En el primer elemento de párrafo" },
+          { "clave": "d", "texto": "En la etiqueta body de la página" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que la etiqueta <head> es la cabecera del documento HTML. Dentro de ella se coloca la información técnica que no se muestra directamente en la página, como <title>, <meta>, <style> y <link>. Por eso, los metadatos relacionados con el posicionamiento o la configuración del documento deben ir dentro de <head>.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La declaración doctype debe ir al principio del documento para indicar el tipo de documento, pero los metadatos no se colocan antes de ella."
+            },
+            {
+              "clave": "c",
+              "motivo": "Un párrafo <p> sirve para mostrar contenido textual visible dentro del cuerpo de la página, no para almacenar información técnica del documento."
+            },
+            {
+              "clave": "d",
+              "motivo": "La etiqueta <body> contiene el contenido visible para el usuario, como textos, imágenes, enlaces o formularios. Los metadatos técnicos deben ir en <head>, no en <body>."
+            }
+          ],
+          "resumen_didactico": "La estructura básica de HTML separa la información técnica de la información visible: <head> contiene configuración y metadatos; <body> contiene lo que ve el usuario.",
+          "ejemplo_practico": "Una etiqueta como <meta name=\"description\" content=\"Web de servicios digitales\"> se colocaría dentro de <head> para ayudar a describir la página a buscadores y navegadores.",
+          "conclusion_final": "La respuesta correcta es la opción a: los metadatos deben anidarse dentro de la etiqueta <head> del documento."
+        }
+      },
+      {
+        "id": "UT2-Q07",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Qué versión oficial del estándar introdujo elementos que proporcionan un significado semántico a la estructura del documento, permitiendo a los navegadores entender exactamente qué representa cada bloque de contenido?",
+        "contexto": "Evolución de HTML y aparición de etiquetas semánticas que dan significado estructural al contenido.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "HTML 5" },
+          { "clave": "b", "texto": "XHTML Básico" },
+          { "clave": "c", "texto": "HTML 4.01" },
+          { "clave": "d", "texto": "HTML 2.0" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que HTML5 fue la versión que modernizó las páginas web añadiendo nuevos elementos semánticos como <header>, <footer>, <nav>, <article>, <section> o <aside>. Estas etiquetas permiten que la estructura del documento tenga significado real, no solo apariencia visual.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "XHTML Básico es una versión simplificada de XHTML pensada para dispositivos con menos capacidad, pero no es la versión que introduce la web semántica moderna."
+            },
+            {
+              "clave": "c",
+              "motivo": "HTML 4.01 fue una revisión importante con soporte para tablas, formularios, scripts, CSS y accesibilidad, pero no introdujo los elementos semánticos modernos propios de HTML5."
+            },
+            {
+              "clave": "d",
+              "motivo": "HTML 2.0 fue uno de los primeros estándares oficiales, pero era mucho más básico y no incluía la estructura semántica moderna."
+            }
+          ],
+          "resumen_didactico": "HTML5 no solo añade etiquetas nuevas: añade etiquetas con significado. Por eso el navegador puede distinguir mejor qué parte es navegación, cabecera, pie, artículo o sección.",
+          "ejemplo_practico": "En HTML antiguo se usaban muchos <div> sin significado claro. En HTML5 puedes usar <header> para la cabecera, <nav> para el menú, <article> para una noticia y <footer> para el pie de página.",
+          "conclusion_final": "La respuesta correcta es HTML 5, porque es la versión que introduce los elementos semánticos modernos."
+        }
+      },
+      {
+        "id": "UT2-Q08",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "En un entorno gubernamental con normativas técnicas muy rígidas, se exige que un documento prohíba el uso de etiquetas de presentación visual y utilice exclusivamente etiquetas estructurales puras. ¿Qué declaración de tipo de documento debe incluirse en la primera línea?",
+        "contexto": "Uso de una declaración DTD estricta para validar documentos HTML o XHTML con reglas rígidas y sin etiquetas orientadas al diseño visual.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "DTD Frameset" },
+          { "clave": "b", "texto": "DTD Transicional" },
+          { "clave": "c", "texto": "DTD Estricto" },
+          { "clave": "d", "texto": "DTD Semántico" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que el DTD Estricto obliga a usar etiquetas puras del lenguaje y prohíbe elementos antiguos orientados a la presentación visual. En este tipo de documento, el diseño debe separarse del contenido y realizarse mediante CSS.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El DTD Frameset se usaba para documentos antiguos basados en marcos o frames, no para exigir una estructura pura sin etiquetas de presentación."
+            },
+            {
+              "clave": "b",
+              "motivo": "El DTD Transicional es más flexible y permite elementos o atributos antiguos en desuso, por lo que no cumple una normativa rígida."
+            },
+            {
+              "clave": "d",
+              "motivo": "DTD Semántico no aparece como tipo oficial de DTD en el temario. La clasificación explicada es Strict, Transitional y Frameset."
+            }
+          ],
+          "resumen_didactico": "Si el documento debe ser rígido, limpio y sin etiquetas antiguas de diseño, se usa DTD Estricto.",
+          "ejemplo_practico": "En vez de usar una etiqueta antigua como <font color=\"red\">, con DTD Estricto se debe usar HTML estructural y aplicar el color mediante CSS.",
+          "conclusion_final": "La respuesta correcta es DTD Estricto, porque es el tipo de documento que prohíbe etiquetas de presentación visual y obliga a separar estructura y diseño."
+        }
+      },
+      {
+        "id": "UT2-Q09",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Durante la auditoría de un sitio web de noticias, se observa que ciertos elementos insertan saltos de línea y recursos gráficos sin envolver ningún texto interno, omitiendo la etiqueta de cierre. ¿A qué concepto técnico pertenecen estos elementos estructurales?",
+        "contexto": "Identificación de etiquetas HTML que no envuelven contenido interno y que insertan elementos directamente en la página.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Selectores de clase" },
+          { "clave": "b", "texto": "Atributos booleanos" },
+          { "clave": "c", "texto": "Elementos de bloque" },
+          { "clave": "d", "texto": "Etiquetas vacías" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que existen etiquetas vacías como <br> o <img>. Estas etiquetas no necesitan envolver texto ni contenido interno, porque su función es insertar algo en un punto concreto del documento, como un salto de línea o una imagen.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Los selectores de clase pertenecen a CSS y sirven para aplicar estilos a elementos con un atributo class, no para describir etiquetas HTML sin contenido interno."
+            },
+            {
+              "clave": "b",
+              "motivo": "Los atributos booleanos son atributos que pueden funcionar por presencia o ausencia, como checked o disabled, pero la pregunta habla de etiquetas que insertan elementos sin envolver contenido."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los elementos de bloque ocupan una línea o bloque completo dentro del flujo del documento, como <div> o <p>, pero no necesariamente son etiquetas vacías."
+            }
+          ],
+          "resumen_didactico": "Una etiqueta vacía no contiene texto entre apertura y cierre. Simplemente coloca algo en la página, como una imagen o un salto de línea.",
+          "ejemplo_practico": "La etiqueta <br> inserta un salto de línea y la etiqueta <img src=\"foto.jpg\" alt=\"Foto\"> inserta una imagen. Ninguna necesita envolver texto interno.",
+          "conclusion_final": "La respuesta correcta es etiquetas vacías, porque son elementos que no envuelven contenido y se usan para insertar algo directamente en el documento."
+        }
+      },
+      {
+        "id": "UT2-Q10",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Cuál es la función técnica de la declaración DTD al inicio de un documento estructural?",
+        "contexto": "Uso de la declaración DTD para indicar al navegador qué reglas debe seguir el documento.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Añadir reglas sintácticas para definir qué versión del lenguaje se utiliza" },
+          { "clave": "b", "texto": "Crear animaciones tridimensionales en la cabecera" },
+          { "clave": "c", "texto": "Encriptar el contenido del documento para navegadores no autorizados" },
+          { "clave": "d", "texto": "Aplicar colores y fuentes a los textos principale" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que la declaración DTD, o declaración de tipo de documento, sirve para añadir reglas sintácticas que indican qué versión del lenguaje se está utilizando. Debe colocarse al principio del documento para que el navegador pueda interpretar y validar el código según esas reglas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La DTD no sirve para crear animaciones. Las animaciones visuales pertenecen al ámbito de CSS3, JavaScript u otras tecnologías gráficas."
+            },
+            {
+              "clave": "c",
+              "motivo": "La DTD no cifra ni protege el contenido del documento. Su función es declarar reglas estructurales, no aplicar seguridad o encriptación."
+            },
+            {
+              "clave": "d",
+              "motivo": "Aplicar colores y fuentes corresponde a CSS o a etiquetas antiguas de presentación, no a la declaración DTD."
+            }
+          ],
+          "resumen_didactico": "La DTD funciona como el manual de reglas del documento: le dice al navegador qué versión de HTML o XHTML debe usar para interpretar el código.",
+          "ejemplo_practico": "En HTML 4.01, una declaración DTD Strict indica que el documento debe seguir reglas estrictas y evitar etiquetas antiguas de presentación visual.",
+          "conclusion_final": "La respuesta correcta es la opción a: la DTD añade reglas sintácticas para definir qué versión del lenguaje se utiliza."
+        }
+      },
+      {
+        "id": "UT2-Q11",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Para cumplir con las normativas internacionales de accesibilidad, un desarrollador debe garantizar que los lectores de pantalla puedan interpretar el contenido visual. ¿Qué atributo es obligatorio en los elementos de imagen para cumplir este requerimiento?",
+        "contexto": "Uso de atributos en la etiqueta <img> para mejorar la accesibilidad y permitir que el contenido visual sea interpretado por tecnologías de asistencia.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Atributo align" },
+          { "clave": "b", "texto": "Atributo alt" },
+          { "clave": "c", "texto": "Atributo src" },
+          { "clave": "d", "texto": "Atributo href" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que la etiqueta <img> sirve para insertar imágenes y que uno de sus atributos principales es alt, un texto alternativo que describe la imagen. Este atributo es vital para accesibilidad y SEO, porque permite que lectores de pantalla o sistemas automáticos comprendan el contenido visual. :contentReference[oaicite:0]{index=0}",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El atributo align sirve para alinear la imagen respecto al texto, por ejemplo a la izquierda, derecha, arriba o abajo, pero no describe el contenido visual para lectores de pantalla."
+            },
+            {
+              "clave": "c",
+              "motivo": "El atributo src indica la ruta donde se encuentra la imagen. Es necesario para cargar el archivo gráfico, pero no cumple la función de describirlo para accesibilidad."
+            },
+            {
+              "clave": "d",
+              "motivo": "El atributo href pertenece principalmente a los enlaces <a>, no a la descripción accesible de imágenes."
+            }
+          ],
+          "resumen_didactico": "En una imagen, src carga la imagen, pero alt la explica. Para accesibilidad, lo importante es que el lector de pantalla pueda leer una descripción alternativa.",
+          "ejemplo_practico": "En <img src=\"logo.png\" alt=\"Logotipo de la empresa\">, el navegador carga logo.png, pero el lector de pantalla puede comunicar al usuario que esa imagen representa el logotipo de la empresa.",
+          "conclusion_final": "La respuesta correcta es alt, porque es el atributo que proporciona una descripción textual de la imagen para accesibilidad."
+        }
+      },
+      {
+        "id": "UT2-Q12",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Al diseñar un manual de marca digital utilizando el modelo de color RGB, ¿cuál es el rango de valores numéricos que el sistema admite para cada uno de los colores primarios?",
+        "contexto": "Uso del modelo RGB para representar colores mediante los valores de rojo, verde y azul.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Desde 0 hasta 255" },
+          { "clave": "b", "texto": "Desde 00 hasta FF" },
+          { "clave": "c", "texto": "Desde -128 hasta 127" },
+          { "clave": "d", "texto": "Desde 1 hasta 100" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que el modelo RGB se basa en tres colores primarios aditivos: rojo, verde y azul. Cada uno de estos colores tiene un valor numérico que va desde 0 hasta 255. Al combinar los tres valores se pueden generar diferentes colores; por ejemplo, rgb(0,0,0) representa negro y rgb(255,255,255) representa blanco.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Desde 00 hasta FF corresponde al sistema hexadecimal, no al rango numérico decimal propio del modelo RGB explicado en la pregunta."
+            },
+            {
+              "clave": "c",
+              "motivo": "El rango desde -128 hasta 127 pertenece a una representación informática de números con signo, pero no se usa para definir colores RGB en HTML."
+            },
+            {
+              "clave": "d",
+              "motivo": "Desde 1 hasta 100 podría recordar a un porcentaje, pero el modelo RGB estándar explicado en el temario trabaja con valores de 0 a 255."
+            }
+          ],
+          "resumen_didactico": "RGB significa rojo, verde y azul. Cada color se controla con un número entre 0 y 255.",
+          "ejemplo_practico": "rgb(255,0,0) genera rojo puro, rgb(0,255,0) genera verde puro y rgb(0,0,255) genera azul puro.",
+          "conclusion_final": "La respuesta correcta es la opción a: cada color primario en RGB admite valores desde 0 hasta 255."
+        }
+      },
+      {
+        "id": "UT2-Q13",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Un técnico necesita configurar un menú de navegación donde un enlace debe apuntar a un documento situado exactamente un nivel por encima del directorio actual en el servidor local. ¿Qué sintaxis relativa debe emplear en la ruta?",
+        "contexto": "Uso de enlaces relativos en HTML para acceder a archivos situados en otras carpetas del mismo servidor.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Utilizar el protocolo http completo" },
+          { "clave": "b", "texto": "Utilizar una barra diagonal al inicio" },
+          { "clave": "c", "texto": "Utilizar dos puntos seguidos antes de la barra" },
+          { "clave": "d", "texto": "Utilizar el nombre del archivo directamente" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que los enlaces relativos se usan para acceder a archivos alojados dentro del mismo servidor web. Para subir un nivel en la estructura de carpetas se utiliza ../, es decir, dos puntos seguidos antes de la barra.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Usar el protocolo http completo corresponde a un enlace absoluto, no a una ruta relativa dentro del propio servidor."
+            },
+            {
+              "clave": "b",
+              "motivo": "Una barra diagonal al inicio puede indicar una ruta desde la raíz del sitio, pero no representa específicamente subir un nivel desde la carpeta actual."
+            },
+            {
+              "clave": "d",
+              "motivo": "Usar solo el nombre del archivo sirve cuando el documento está en la misma carpeta, no cuando está un nivel por encima."
+            }
+          ],
+          "resumen_didactico": "En rutas relativas, ../ significa subir una carpeta respecto a la ubicación actual.",
+          "ejemplo_practico": "Si estás en /productos/detalle.html y quieres enlazar a /contacto.html, puedes usar href=\"../contacto.html\".",
+          "conclusion_final": "La respuesta correcta es la opción c: se deben usar dos puntos seguidos antes de la barra, es decir, ../."
+        }
+      },
+      {
+        "id": "UT2-Q14",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Al estructurar un diccionario técnico online, el equipo requiere un formato semántico que vincule claramente cada término específico con su bloque de definición correspondiente. ¿Qué conjunto de etiquetas soluciona esta necesidad organizativa?",
+        "contexto": "Uso de listas de definición en HTML para organizar términos y sus descripciones.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Las etiquetas ul y li" },
+          { "clave": "b", "texto": "Las etiquetas dl, dt y dd" },
+          { "clave": "c", "texto": "Las etiquetas table, tr y td" },
+          { "clave": "d", "texto": "Las etiquetas ol y li" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que las listas de definición se crean con la etiqueta <dl>. Dentro de ella, <dt> representa el término que se quiere definir y <dd> representa la descripción o definición de ese término.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Las etiquetas <ul> y <li> sirven para crear listas desordenadas con viñetas, pero no relacionan específicamente un término con su definición."
+            },
+            {
+              "clave": "c",
+              "motivo": "Las etiquetas <table>, <tr> y <td> sirven para crear tablas de datos, filas y celdas, pero no son el formato semántico específico para diccionarios o glosarios."
+            },
+            {
+              "clave": "d",
+              "motivo": "Las etiquetas <ol> y <li> sirven para crear listas ordenadas o numeradas, pero no estructuran pares de término y definición."
+            }
+          ],
+          "resumen_didactico": "Para un glosario o diccionario técnico, la estructura correcta es <dl> para la lista, <dt> para el término y <dd> para la definición.",
+          "ejemplo_practico": "<dl><dt>HTML</dt><dd>Lenguaje de marcas para estructurar páginas web.</dd></dl>",
+          "conclusion_final": "La respuesta correcta es la opción b: las etiquetas <dl>, <dt> y <dd> son las adecuadas para vincular términos con sus definiciones."
+        }
+      },
+      {
+        "id": "UT2-Q15",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Qué función cumple el atributo colspan cuando se aplica en la estructura interna de una tabla de datos?",
+        "contexto": "Uso de atributos avanzados en tablas HTML para combinar celdas horizontalmente.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Combina varias columnas contiguas en una sola celda" },
+          { "clave": "b", "texto": "Alinea el texto verticalmente en el centro" },
+          { "clave": "c", "texto": "Fusiona varias filas verticales en una sola fila" },
+          { "clave": "d", "texto": "Añade un borde perimetral de un grosor específico" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que el atributo colspan se usa en tablas HTML para combinar varias columnas contiguas en una sola celda. Se aplica normalmente en etiquetas <td> o <th> cuando una celda debe ocupar el espacio horizontal de varias columnas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La alineación vertical del contenido se realiza con el atributo valign, no con colspan."
+            },
+            {
+              "clave": "c",
+              "motivo": "Fusionar varias filas verticales corresponde al atributo rowspan, no a colspan."
+            },
+            {
+              "clave": "d",
+              "motivo": "El borde de una tabla se controla con el atributo border o mediante CSS, no con colspan."
+            }
+          ],
+          "resumen_didactico": "colspan une columnas; rowspan une filas.",
+          "ejemplo_practico": "Si una cabecera debe ocupar tres columnas, se puede escribir <td colspan=\"3\">Cabecera combinada</td>.",
+          "conclusion_final": "La respuesta correcta es la opción a: colspan combina varias columnas contiguas en una sola celda."
+        }
+      },
+      {
+        "id": "UT2-Q16",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Para proteger el acceso a un panel de administración, el formulario de inicio de sesión debe enviar las credenciales sin que los parámetros queden expuestos en la barra de direcciones del navegador. ¿Qué configuración debe aplicarse a la etiqueta del formulario?",
+        "contexto": "Configuración del atributo method en formularios HTML para controlar cómo se envían los datos al servidor.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Configurar el atributo method con el valor get" },
+          { "clave": "b", "texto": "Establecer el atributo action en modo oculto" },
+          { "clave": "c", "texto": "Modificar el atributo target a una nueva pestaña" },
+          { "clave": "d", "texto": "Configurar el atributo method con el valor post" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que la etiqueta <form> puede usar el atributo method con los valores get o post. Con get, los datos se envían visibles en la URL. Con post, los datos se envían ocultos en la petición, por eso es la opción adecuada para contraseñas o credenciales.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "method=\"get\" muestra los datos en la barra de direcciones, por lo que no es adecuado para enviar credenciales de acceso."
+            },
+            {
+              "clave": "b",
+              "motivo": "El atributo action indica la dirección del programa o recurso del servidor que procesará los datos, pero no existe un 'modo oculto' para action."
+            },
+            {
+              "clave": "c",
+              "motivo": "El atributo target solo indica dónde se mostrará la respuesta del servidor, por ejemplo en la misma pestaña o en una nueva, pero no oculta los datos enviados."
+            }
+          ],
+          "resumen_didactico": "Para formularios sensibles, como un login, se usa method=\"post\" porque evita que los datos aparezcan directamente en la URL.",
+          "ejemplo_practico": "<form action=\"login.php\" method=\"post\"> enviaría usuario y contraseña al servidor sin mostrarlos como parámetros visibles en la barra de direcciones.",
+          "conclusion_final": "La respuesta correcta es la opción d: configurar el atributo method con el valor post."
+        }
+      },
+      {
+        "id": "UT2-Q17",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Qué elemento específico especifica una lista de opciones predefinidas asociadas a un campo de entrada de texto, proporcionando una función de autocompletado nativo al usuario?",
+        "contexto": "Uso de elementos HTML5 para mejorar formularios mediante opciones predefinidas y autocompletado nativo.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El elemento select" },
+          { "clave": "b", "texto": "El atributo textarea" },
+          { "clave": "c", "texto": "El elemento datalist" },
+          { "clave": "d", "texto": "El atributo checkbox" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que el elemento <datalist> permite especificar una lista de opciones predefinidas asociadas a un campo de entrada de texto. Su función es ofrecer autocompletado nativo al usuario mientras escribe.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El elemento <select> crea una lista desplegable cerrada donde el usuario elige una opción, pero no funciona como autocompletado asociado a un campo de texto."
+            },
+            {
+              "clave": "b",
+              "motivo": "<textarea> no es un atributo, sino un elemento para escribir texto de varias líneas. No proporciona una lista de sugerencias predefinidas."
+            },
+            {
+              "clave": "d",
+              "motivo": "checkbox no es un atributo de autocompletado, sino un tipo de input que permite marcar o desmarcar opciones."
+            }
+          ],
+          "resumen_didactico": "Si quieres que el usuario escriba en un campo de texto y reciba sugerencias predefinidas, se usa <datalist>.",
+          "ejemplo_practico": "Un formulario puede tener <input list=\"ciudades\"> y debajo un <datalist id=\"ciudades\"> con opciones como Madrid, Valencia o Barcelona.",
+          "conclusion_final": "La respuesta correcta es el elemento datalist, porque proporciona autocompletado nativo con opciones predefinidas."
+        }
+      },
+      {
+        "id": "UT2-Q18",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Un cotizador de seguros online requiere mostrar el precio final que se actualiza dinámicamente mientras el usuario ajusta la cobertura mediante un control deslizante. ¿Qué etiqueta está diseñada específicamente para mostrar el resultado de este cálculo?",
+        "contexto": "Uso de formularios inteligentes en HTML5 para mostrar resultados calculados en tiempo real.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "La etiqueta output" },
+          { "clave": "b", "texto": "La etiqueta mark" },
+          { "clave": "c", "texto": "La etiqueta meter" },
+          { "clave": "d", "texto": "La etiqueta progress" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que la etiqueta <output> es un elemento de formulario diseñado específicamente para mostrar el resultado de un cálculo o de una acción del usuario en tiempo real. Se usa, por ejemplo, cuando un valor cambia al mover un control tipo range.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La etiqueta <mark> sirve para resaltar texto, como si se marcara con un rotulador, pero no para mostrar resultados de cálculos dinámicos."
+            },
+            {
+              "clave": "c",
+              "motivo": "La etiqueta <meter> representa una medida dentro de un rango conocido, pero no está pensada específicamente para mostrar el resultado calculado de una operación del formulario."
+            },
+            {
+              "clave": "d",
+              "motivo": "La etiqueta <progress> indica el avance de una tarea, como una carga o proceso, pero no el resultado de un cálculo actualizado por el usuario."
+            }
+          ],
+          "resumen_didactico": "Para mostrar un resultado calculado dentro de un formulario HTML5, la etiqueta adecuada es <output>.",
+          "ejemplo_practico": "Si el usuario mueve un control <input type=\"range\"> para elegir la cobertura del seguro, <output> puede mostrar automáticamente el precio final calculado.",
+          "conclusion_final": "La respuesta correcta es la etiqueta output, porque está diseñada para mostrar resultados de cálculos o acciones del usuario en tiempo real."
+        }
+      },
+      {
+        "id": "UT2-Q19",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Durante el desarrollo de una herramienta de análisis estadístico, se necesita un contenedor gráfico que permita dibujar diagramas interactivos en tiempo real utilizando scripts de programación. ¿Qué elemento semántico cumple esta función?",
+        "contexto": "Uso de elementos gráficos de HTML5 para dibujar contenido dinámico mediante JavaScript u otros scripts.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El elemento embed" },
+          { "clave": "b", "texto": "El elemento video" },
+          { "clave": "c", "texto": "El elemento canvas" },
+          { "clave": "d", "texto": "El elemento figure" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que el elemento <canvas> es un contenedor gráfico de mapa de bits que permite renderizar formas, líneas, textos y animaciones en tiempo real mediante lenguajes de scripting, especialmente JavaScript.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El elemento <embed> se utiliza para incrustar contenido externo, pero no es el contenedor gráfico específico explicado en el temario para dibujar mediante scripts."
+            },
+            {
+              "clave": "b",
+              "motivo": "El elemento <video> sirve para reproducir vídeos de forma nativa en HTML5, no para dibujar diagramas interactivos."
+            },
+            {
+              "clave": "d",
+              "motivo": "El elemento <figure> sirve para agrupar contenido ilustrativo, como imágenes, gráficos o diagramas junto con su descripción, pero no permite dibujar dinámicamente mediante scripts."
+            }
+          ],
+          "resumen_didactico": "Si necesitas una zona de la página donde JavaScript pueda dibujar gráficos, líneas, formas o animaciones, el elemento correcto es <canvas>.",
+          "ejemplo_practico": "Una aplicación estadística puede usar <canvas id=\"grafico\"></canvas> y después JavaScript para dibujar barras, líneas o puntos de un gráfico dinámico.",
+          "conclusion_final": "La respuesta correcta es el elemento canvas, porque funciona como un lienzo gráfico que permite dibujar contenido interactivo en tiempo real mediante scripts."
+        }
+      },
+      {
+        "id": "UT2-Q20",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Cómo se redacta la instrucción oficial simplificada en la primera línea de un documento para indicar a los navegadores modernos que deben procesar el archivo bajo los estándares de la quinta versión del lenguaje?",
+        "contexto": "Declaración simplificada de tipo de documento en HTML5.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "< !DOCTYPE HTML PUBLIC >" },
+          { "clave": "b", "texto": "< ?xml version=\"1.0\"? >" },
+          { "clave": "c", "texto": "< meta charset=\"UTF-8\" >" },
+          { "clave": "d", "texto": "< !DOCTYPE html >" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que HTML5 simplifica mucho la declaración inicial del documento. En lugar de usar declaraciones largas como en HTML 4.01 o XHTML, basta con escribir <!DOCTYPE html> al inicio del archivo para indicar al navegador que debe interpretar el documento como HTML5.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Esa forma recuerda a declaraciones antiguas basadas en DTD público, pero no corresponde a la declaración oficial simplificada de HTML5."
+            },
+            {
+              "clave": "b",
+              "motivo": "La instrucción <?xml version=\"1.0\"?> pertenece al contexto de documentos XML o XHTML, no a la declaración simplificada propia de HTML5."
+            },
+            {
+              "clave": "c",
+              "motivo": "La etiqueta <meta charset=\"UTF-8\"> sirve para indicar la codificación de caracteres del documento, pero no declara el tipo de documento ni activa el estándar HTML5."
+            }
+          ],
+          "resumen_didactico": "En HTML5, la declaración inicial se simplifica a <!DOCTYPE html>. Es corta, directa y debe ir al principio del documento.",
+          "ejemplo_practico": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Mi página</title>\n</head>\n<body>\n  <h1>Hola HTML5</h1>\n</body>\n</html>",
+          "conclusion_final": "La respuesta correcta es la opción d: <!DOCTYPE html> es la declaración oficial simplificada de HTML5."
+        }
+      },
+      {
+        "id": "UT2-Q21",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Una plataforma de comercio electrónico en fase de expansión necesita aplicar un rediseño completo a cientos de subpáginas. ¿Cuál es la metodología más eficiente y profesional para integrar las nuevas reglas de diseño minimizando el impacto en el código estructural?",
+        "contexto": "Aplicación profesional de CSS mediante un archivo externo para separar estructura y presentación visual.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Crear un archivo independiente y vincularlo externamente desde la cabecera" },
+          { "clave": "b", "texto": "Utilizar marcos obsoletos para cargar el diseño gráfico" },
+          { "clave": "c", "texto": "Aplicar las propiedades en cada etiqueta con el atributo style" },
+          { "clave": "d", "texto": "Escribir un bloque interno de estilos en la cabecera de cada página" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que la forma más recomendada de aplicar CSS es mediante un documento externo. Se crea un archivo .css independiente y se vincula desde el <head> del HTML con la etiqueta <link>. Esta es la práctica profesional porque mantiene el HTML limpio, permite reutilizar el mismo diseño en muchas páginas y facilita el mantenimiento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Los marcos o frames pertenecen a formas antiguas y obsoletas de estructurar páginas, no son una metodología moderna para aplicar diseño visual."
+            },
+            {
+              "clave": "c",
+              "motivo": "Usar el atributo style directamente en cada etiqueta es CSS inline. El temario lo considera la peor práctica para mantenimiento general, útil solo para casos muy puntuales."
+            },
+            {
+              "clave": "d",
+              "motivo": "Escribir CSS interno en cada página puede servir para pruebas o páginas pequeñas, pero no es eficiente para rediseñar cientos de subpáginas, porque habría que modificar muchos archivos."
+            }
+          ],
+          "resumen_didactico": "Para muchos documentos HTML, lo profesional es usar un CSS externo. Cambias un solo archivo y el rediseño afecta a todas las páginas vinculadas.",
+          "ejemplo_practico": "Una tienda online puede tener cientos de páginas enlazadas a estilos.css. Si cambia el color de los botones en ese archivo, el cambio se refleja automáticamente en todos los productos y secciones.",
+          "conclusion_final": "La respuesta correcta es la opción a: crear un archivo CSS independiente y vincularlo externamente desde la cabecera."
+        }
+      },
+      {
+        "id": "UT2-Q22",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Para qué propósito fundamental fue concebido el lenguaje de hojas de estilo en cascada por el consorcio internacional?",
+        "contexto": "Finalidad principal de CSS dentro del desarrollo web y separación entre estructura y presentación visual.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Para compilar bases de datos relacionales complejas" },
+          { "clave": "b", "texto": "Para validar la sintaxis estricta de documentos estructurados" },
+          { "clave": "c", "texto": "Para separar el contenido de la presentación visual" },
+          { "clave": "d", "texto": "Para sustituir la lógica de programación en servidores backend" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que CSS, creado por el W3C, sirve para añadir estilos y formatos a documentos HTML o XHTML. Su finalidad principal es separar el contenido de la presentación visual, permitiendo modificar el diseño de una página sin alterar la estructura HTML.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "CSS no sirve para compilar ni gestionar bases de datos relacionales. Las bases de datos pertenecen a otro ámbito técnico."
+            },
+            {
+              "clave": "b",
+              "motivo": "La validación estricta de documentos estructurados se relaciona con DTD, XML Schema o XHTML, no con la función principal de CSS."
+            },
+            {
+              "clave": "d",
+              "motivo": "CSS no sustituye la lógica de programación del backend. Su función está en la capa visual del frontend, no en la lógica del servidor."
+            }
+          ],
+          "resumen_didactico": "HTML organiza el contenido; CSS define cómo se ve. La gran idea de CSS es separar estructura y diseño.",
+          "ejemplo_practico": "Una web puede tener un archivo HTML con títulos, párrafos e imágenes, y un archivo CSS externo que cambie colores, fuentes, tamaños y márgenes sin tocar el HTML.",
+          "conclusion_final": "La respuesta correcta es la opción c: CSS fue concebido para separar el contenido de la presentación visual."
+        }
+      },
+      {
+        "id": "UT2-Q23",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Un maquetador requiere dar formato exclusivamente a los elementos de lista que se encuentran un nivel jerárquico directamente inferior a su contenedor principal, ignorando cualquier sublista anidada. ¿Qué selector debe implementar?",
+        "contexto": "Uso de selectores CSS para aplicar estilos solo a elementos hijos directos dentro de una estructura HTML.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El selector descendiente con un espacio" },
+          { "clave": "b", "texto": "El selector adyacente con el signo más" },
+          { "clave": "c", "texto": "El selector de clase con un punto" },
+          { "clave": "d", "texto": "El selector hijo con el signo mayor que" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que el selector hijo se escribe con el signo mayor que (>). Este selector solo afecta a los elementos que son hijos directos de otro elemento, es decir, los que están exactamente un nivel por debajo del contenedor padre.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El selector descendiente con un espacio afecta a todos los elementos internos que coincidan, aunque estén varios niveles por debajo. Por eso también afectaría a elementos dentro de sublistas anidadas."
+            },
+            {
+              "clave": "b",
+              "motivo": "El selector adyacente con el signo más (+) afecta a un elemento hermano que aparece inmediatamente después de otro, no a hijos directos dentro de un contenedor."
+            },
+            {
+              "clave": "c",
+              "motivo": "El selector de clase con un punto (.) aplica estilos a los elementos que tengan una clase concreta, pero no selecciona por relación jerárquica padre-hijo."
+            }
+          ],
+          "resumen_didactico": "Si quieres seleccionar solo los hijos directos, usa el selector hijo >. Si usas un espacio, seleccionarás descendientes a cualquier nivel.",
+          "ejemplo_practico": "ul > li aplica estilos solo a los <li> que están directamente dentro de un <ul>, ignorando los <li> que estén dentro de sublistas anidadas.",
+          "conclusion_final": "La respuesta correcta es la opción d: el selector hijo con el signo mayor que."
+        }
+      },
+      {
+        "id": "UT2-Q24",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Durante una auditoría de rendimiento, se identifican múltiples declaraciones de estilo aplicadas de forma directa mediante el atributo style dentro de las etiquetas estructurales. ¿Por qué se considera esta práctica perjudicial en proyectos a gran escala?",
+        "contexto": "Uso de estilos inline en HTML y problemas de mantenimiento al mezclar estructura y presentación visual.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Porque impide que el documento sea indexado por motores de búsqueda" },
+          { "clave": "b", "texto": "Porque requiere el pago de licencias de uso comerciales" },
+          { "clave": "c", "texto": "Porque es la peor práctica para el mantenimiento general al mezclar estructura y diseño" },
+          { "clave": "d", "texto": "Porque bloquea la carga de imágenes en resoluciones móviles" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que aplicar estilos directamente en la etiqueta mediante el atributo style se conoce como estilo inline. Esta forma puede servir para casos urgentes o muy puntuales, pero se considera la peor práctica para el mantenimiento general porque mezcla el código estructural HTML con el diseño visual CSS.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El uso de style inline no impide automáticamente que una página sea indexada por motores de búsqueda. El problema principal es de organización, mantenimiento y separación entre contenido y presentación."
+            },
+            {
+              "clave": "b",
+              "motivo": "El atributo style forma parte de HTML/CSS y no requiere licencias comerciales de pago."
+            },
+            {
+              "clave": "d",
+              "motivo": "El uso de estilos inline no bloquea por sí mismo la carga de imágenes en móviles. Puede dificultar el diseño responsive, pero no impide directamente la carga de imágenes."
+            }
+          ],
+          "resumen_didactico": "Los estilos inline ensucian el HTML y dificultan cambiar el diseño de muchas páginas a la vez. En proyectos grandes, lo correcto es usar CSS externo.",
+          "ejemplo_practico": "Si cien botones tienen style=\"color: red\" escrito directamente en el HTML, cambiar todos a azul obliga a modificar cien etiquetas. Si usan una clase CSS externa, basta con cambiar una regla.",
+          "conclusion_final": "La respuesta correcta es la opción c: los estilos inline son perjudiciales porque mezclan estructura y diseño, dificultando el mantenimiento en proyectos grandes."
+        }
+      },
+      {
+        "id": "UT2-Q25",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Qué versión del lenguaje de presentación introdujo un sistema basado en módulos independientes capaces de generar efectos visuales complejos, como animaciones y sombras, reduciendo la dependencia de imágenes pre-renderizadas?",
+        "contexto": "Evolución de CSS y aparición de efectos visuales modernos como sombras, animaciones, degradados y transiciones.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "CSS 3" },
+          { "clave": "b", "texto": "CSS 2.1" },
+          { "clave": "c", "texto": "XHTML Básico" },
+          { "clave": "d", "texto": "CSS 1" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que CSS 3 supuso la revolución del diseño visual. Introdujo módulos independientes y propiedades modernas capaces de crear efectos como sombras, animaciones, transiciones, degradados, opacidad y esquinas redondeadas, reduciendo la necesidad de usar imágenes creadas previamente en programas externos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "CSS 2.1 fue una revisión de CSS 2 que corrigió errores y eliminó funcionalidades en desuso, pero no es la versión asociada a la gran revolución visual de animaciones, sombras y degradados."
+            },
+            {
+              "clave": "c",
+              "motivo": "XHTML Básico no es una versión de CSS. Es una versión simplificada de XHTML pensada para dispositivos con menos capacidad."
+            },
+            {
+              "clave": "d",
+              "motivo": "CSS 1 fue la primera versión y permitía estilos básicos como color, tamaño de fuente y alineación, pero no efectos visuales complejos."
+            }
+          ],
+          "resumen_didactico": "CSS 3 es la versión que moderniza el diseño visual de la web con efectos avanzados sin depender tanto de imágenes externas.",
+          "ejemplo_practico": "Antes, para crear un botón con sombra o degradado se usaba una imagen preparada en Photoshop. Con CSS 3 se puede hacer directamente con propiedades como box-shadow, linear-gradient, border-radius y transition.",
+          "conclusion_final": "La respuesta correcta es CSS 3, porque introdujo los módulos y efectos visuales modernos como sombras, animaciones y degradados."
+        }
+      },
+      {
+        "id": "UT2-Q26",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Al diseñar una interfaz de usuario fluida, se requiere que un panel modifique su tamaño y color de fondo de manera progresiva a lo largo de medio segundo tras la interacción del usuario. ¿Qué propiedad moderna controla este comportamiento de transición temporal?",
+        "contexto": "Uso de propiedades modernas de CSS3 para crear cambios visuales suaves a lo largo del tiempo.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "La propiedad opacity" },
+          { "clave": "b", "texto": "La propiedad transition" },
+          { "clave": "c", "texto": "La propiedad border-radius" },
+          { "clave": "d", "texto": "La propiedad box-shadow" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que CSS3 introdujo propiedades visuales modernas como opacidad, esquinas redondeadas, sombras, gradientes, animaciones y transiciones. La propiedad transition permite que los cambios de diseño se produzcan suavemente a lo largo del tiempo, en lugar de aplicarse de golpe.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "opacity controla la transparencia de un elemento, pero no define por sí misma la duración ni la suavidad temporal del cambio."
+            },
+            {
+              "clave": "c",
+              "motivo": "border-radius sirve para redondear las esquinas de un elemento, pero no controla transiciones temporales."
+            },
+            {
+              "clave": "d",
+              "motivo": "box-shadow permite aplicar sombras a una caja, pero no controla cómo se anima progresivamente un cambio de estilo."
+            }
+          ],
+          "resumen_didactico": "Si quieres que un cambio visual ocurra de forma suave durante un tiempo concreto, usas transition.",
+          "ejemplo_practico": "Un botón puede tener transition: all 0.5s ease; para que al pasar el ratón cambie su tamaño y color suavemente durante medio segundo.",
+          "conclusion_final": "La respuesta correcta es la opción b: transition es la propiedad que controla los cambios visuales progresivos en el tiempo."
+        }
+      },
+      {
+        "id": "UT2-Q27",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Cómo se define conceptualmente el estándar que forzó la adaptación del vocabulario web clásico para cumplir rigurosamente con las normas estructurales de los lenguajes de marcas extensibles?",
+        "contexto": "Definición conceptual de XHTML como adaptación de HTML a las reglas estrictas de XML.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Como la evolución visual directa de las hojas de estilo" },
+          { "clave": "b", "texto": "Como la adaptación del HTML clásico a las estrictas normas del XML" },
+          { "clave": "c", "texto": "Como un puente de transición hacia lenguajes procedimentales puros" },
+          { "clave": "d", "texto": "Como un subconjunto de herramientas para entornos WYSIWYG" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario define XHTML como la adaptación del HTML clásico a las estrictas normas del XML. Mantiene características visuales y estructurales propias de HTML, pero obliga a escribir el documento con mayor rigor sintáctico, siguiendo reglas más estrictas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "XHTML no es una evolución visual de CSS. CSS se encarga de la presentación visual, mientras que XHTML se centra en la estructura del documento siguiendo reglas XML."
+            },
+            {
+              "clave": "c",
+              "motivo": "XHTML no es un puente hacia lenguajes procedimentales. Sigue siendo un lenguaje de marcas, no un lenguaje de programación basado en procedimientos."
+            },
+            {
+              "clave": "d",
+              "motivo": "XHTML no es un conjunto de herramientas WYSIWYG. Los editores WYSIWYG son herramientas de edición visual, mientras que XHTML es un estándar de marcado."
+            }
+          ],
+          "resumen_didactico": "XHTML es HTML escrito con disciplina XML: menos permisivo, más rígido y más fácil de validar por máquinas.",
+          "ejemplo_practico": "En HTML un navegador puede tolerar ciertos errores, como etiquetas mal cerradas. En XHTML, una etiqueta abierta debe cerrarse correctamente y los atributos deben ir entre comillas.",
+          "conclusion_final": "La respuesta correcta es la opción b: XHTML se define como la adaptación del HTML clásico a las estrictas normas del XML."
+        }
+      },
+      {
+        "id": "UT2-Q28",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Al migrar un sistema de reservas hacia una arquitectura validada automáticamente por máquinas gubernamentales, un formulario contiene el código <input type=\"checkbox\" checked>. ¿Qué corrección sintáctica es obligatoria para cumplir con la norma estricta?",
+        "contexto": "Aplicación de las reglas estrictas de XHTML frente a HTML, especialmente la prohibición de atributos minimizados.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Reemplazar la etiqueta por un elemento select múltiple" },
+          { "clave": "b", "texto": "Asegurar que el atributo tenga un valor explícito coincidente con su nombre" },
+          { "clave": "c", "texto": "Cambiar el nombre del atributo a mayúsculas sostenidas" },
+          { "clave": "d", "texto": "Eliminar la etiqueta de cierre final" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que en XHTML no se permiten atributos minimizados. Esto significa que no basta con escribir checked, sino que el atributo debe tener un valor explícito coincidente con su nombre: checked=\"checked\". Además, en XHTML las etiquetas y atributos deben escribirse en minúsculas, los valores deben ir entre comillas y las etiquetas vacías deben cerrarse correctamente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "No es necesario cambiar el checkbox por un select múltiple. El problema no está en el tipo de control, sino en la sintaxis del atributo checked."
+            },
+            {
+              "clave": "c",
+              "motivo": "En XHTML ocurre lo contrario: las etiquetas y atributos deben escribirse en minúsculas. Usar mayúsculas provocaría un error sintáctico."
+            },
+            {
+              "clave": "d",
+              "motivo": "XHTML exige cerrar correctamente las etiquetas. En el caso de un input, al ser una etiqueta vacía, debería escribirse con cierre automático: <input type=\"checkbox\" checked=\"checked\" />."
+            }
+          ],
+          "resumen_didactico": "En HTML se puede escribir checked de forma abreviada, pero en XHTML hay que escribir checked=\"checked\".",
+          "ejemplo_practico": "La forma correcta en XHTML sería: <input type=\"checkbox\" checked=\"checked\" />.",
+          "conclusion_final": "La respuesta correcta es la opción b: en XHTML los atributos no pueden estar minimizados y deben tener un valor explícito."
+        }
+      },
+      {
+        "id": "UT2-Q29",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "Un analista de sistemas revisa un bloque de código heredado donde múltiples contenedores principales están redactados con etiquetas como <BODY> y <TABLE>. ¿Qué regla sintáctica crítica infringe esta escritura bajo el estándar extensible estricto?",
+        "contexto": "Aplicación de las reglas estrictas de XHTML, especialmente la sensibilidad a mayúsculas y minúsculas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "La obligación de omitir comillas en valores numéricos" },
+          { "clave": "b", "texto": "La prohibición de solapamiento en etiquetas adyacentes" },
+          { "clave": "c", "texto": "La necesidad de declarar atributos booleanos minimizados" },
+          { "clave": "d", "texto": "La sensibilidad a mayúsculas y minúsculas que exige usar siempre minúsculas" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que XHTML hereda reglas estrictas de XML. Una de ellas es la sensibilidad a mayúsculas y minúsculas: todas las etiquetas y atributos deben escribirse en minúsculas. Por tanto, etiquetas como <BODY> o <TABLE> son incorrectas en XHTML; deben escribirse como <body> y <table>.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "En XHTML ocurre lo contrario: los valores de los atributos deben ir siempre entre comillas. No existe una obligación de omitir comillas en valores numéricos."
+            },
+            {
+              "clave": "b",
+              "motivo": "La prohibición de solapamiento se refiere a cerrar las etiquetas en el orden correcto, por ejemplo <b><i>Texto</i></b>. La pregunta trata sobre el uso incorrecto de mayúsculas."
+            },
+            {
+              "clave": "c",
+              "motivo": "XHTML no exige atributos booleanos minimizados. Al contrario, prohíbe los atributos minimizados y obliga a escribirlos con valor explícito, como checked=\"checked\"."
+            }
+          ],
+          "resumen_didactico": "En HTML clásico el navegador puede perdonar etiquetas en mayúsculas, pero en XHTML las etiquetas deben ir siempre en minúsculas.",
+          "ejemplo_practico": "Incorrecto en XHTML: <BODY><TABLE></TABLE></BODY>. Correcto: <body><table></table></body>.",
+          "conclusion_final": "La respuesta correcta es la opción d: XHTML distingue mayúsculas y minúsculas, por eso exige escribir etiquetas y atributos en minúsculas."
+        }
+      },
+      {
+        "id": "UT2-Q30",
+        "tema": "UT2 Lenguajes para la visualización de información",
+        "pregunta": "¿Qué ventaja operativa justifica que las grandes bases de datos y sistemas interconectados prefieran procesar archivos bajo normativas estrictas en lugar del formato web clásico permisivo?",
+        "contexto": "Ventajas de XHTML y documentos estrictos frente al HTML clásico permisivo en sistemas automatizados e interconectados.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Que las máquinas lo leen más rápido al no tener que adivinar ni corregir errores sobre la marcha" },
+          { "clave": "b", "texto": "Su total independencia del uso de comillas y cierres de etiquetas" },
+          { "clave": "c", "texto": "Que permite saltarse reglas gramaticales sin provocar fallos de sistema" },
+          { "clave": "d", "texto": "Su capacidad para añadir diseño visual sin hojas de estilo" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que XHTML y los documentos escritos bajo normas estrictas son más adecuados para entornos profesionales, masivos y automatizados porque las máquinas no tienen que interpretar, adivinar ni corregir errores del código. Esto mejora la validación, la integración con sistemas y el rendimiento de lectura.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Es incorrecta porque XHTML exige precisamente el uso riguroso de comillas en los atributos y el cierre correcto de las etiquetas."
+            },
+            {
+              "clave": "c",
+              "motivo": "Es incorrecta porque describe el comportamiento permisivo del HTML clásico. XHTML no permite saltarse reglas: si hay errores sintácticos, el documento puede fallar."
+            },
+            {
+              "clave": "d",
+              "motivo": "Es incorrecta porque el diseño visual corresponde a CSS. XHTML no se usa para añadir presentación visual sin hojas de estilo, sino para estructurar documentos de forma estricta."
+            }
+          ],
+          "resumen_didactico": "Los sistemas automatizados prefieren documentos estrictos porque son más fáciles de validar, procesar e integrar. La máquina no pierde tiempo interpretando código mal escrito.",
+          "ejemplo_practico": "En un portal gubernamental conectado con varias bases de datos, un documento XHTML bien formado permite que los sistemas procesen la información sin tener que corregir etiquetas mal cerradas o atributos escritos de forma ambigua.",
+          "conclusion_final": "La respuesta correcta es la opción a: las máquinas leen más rápido los documentos estrictos porque no tienen que adivinar ni corregir errores sobre la marcha."
+        }
+      }
+
+]

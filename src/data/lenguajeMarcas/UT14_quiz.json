@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT14-Q01",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué estándar se considera el metalenguaje del que descienden históricamente muchos lenguajes de marcas modernos?",
+    "contexto": "Origen teórico de los lenguajes de marcas y papel de los metalenguajes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SGML"
+      },
+      {
+        "clave": "b",
+        "texto": "CSS"
+      },
+      {
+        "clave": "c",
+        "texto": "XPath"
+      },
+      {
+        "clave": "d",
+        "texto": "JDBC"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta SGML como Standard Generalized Markup Language y lo define como un metalenguaje del que derivan otros lenguajes de marcas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "CSS es un lenguaje de hojas de estilo para presentación visual, no el metalenguaje origen."
+        },
+        {
+          "clave": "c",
+          "motivo": "XPath es un lenguaje de rutas y selección sobre XML, no un lenguaje base de toda la familia."
+        },
+        {
+          "clave": "d",
+          "motivo": "JDBC se usa para conectividad con bases de datos relacionales, sin relación con el origen de los lenguajes de marcas."
+        }
+      ],
+      "resumen_didactico": "SGML actúa como “lenguaje padre” en la historia de los lenguajes de marcas.",
+      "ejemplo_practico": "Cuando estudias XML o HTML, conceptualmente estás dentro de una familia que históricamente se conecta con SGML.",
+      "conclusion_final": "La respuesta correcta es SGML, porque el temario lo sitúa como metalenguaje de referencia."
+    }
+  },
+  {
+    "id": "UT14-Q02",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Cuando un navegador abre un archivo HTML, ¿qué operación técnica realiza realmente sobre ese documento?",
+    "contexto": "Función del navegador frente al código de un lenguaje de marcas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Lo interpreta para representar visualmente su estructura y contenido"
+      },
+      {
+        "clave": "b",
+        "texto": "Lo compila en código máquina nativo"
+      },
+      {
+        "clave": "c",
+        "texto": "Lo convierte automáticamente en una base de datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Lo cifra para protegerlo del usuario"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el navegador interpreta el código de marcas y lo muestra como debe verse al usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Compilar a código máquina es propio de otros entornos, no del funcionamiento habitual del navegador con HTML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un navegador no transforma el documento en una base de datos; simplemente lo procesa para mostrarlo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El cifrado no es la función principal del navegador al abrir un documento HTML."
+        }
+      ],
+      "resumen_didactico": "El navegador actúa como intérprete del documento web.",
+      "ejemplo_practico": "Al abrir una página con títulos, párrafos e imágenes, el navegador traduce las etiquetas en elementos visibles.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el navegador interpreta el código y lo presenta visualmente."
+    }
+  },
+  {
+    "id": "UT14-Q03",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "En CSS, ¿qué selector debe utilizarse para aplicar estilo a un elemento que aparece inmediatamente después de otro elemento hermano concreto?",
+    "contexto": "Selectores CSS para hermanos adyacentes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El selector adyacente con el signo +"
+      },
+      {
+        "clave": "b",
+        "texto": "El selector universal con *"
+      },
+      {
+        "clave": "c",
+        "texto": "El selector hijo con >"
+      },
+      {
+        "clave": "d",
+        "texto": "El selector de clase con ."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el selector adyacente usa el signo más (+) y afecta al hermano que aparece inmediatamente después.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El selector universal afecta a todos los elementos, no a un hermano inmediato."
+        },
+        {
+          "clave": "c",
+          "motivo": "El selector hijo actúa sobre descendientes directos, no sobre hermanos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El selector de clase apunta a elementos con una clase concreta, pero no expresa vecindad inmediata."
+        }
+      ],
+      "resumen_didactico": "El signo + en CSS significa “el siguiente hermano inmediato”.",
+      "ejemplo_practico": "h1 + h3 aplica estilo a un h3 solo si aparece justo después de un h1.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el selector adyacente se escribe con +."
+    }
+  },
+  {
+    "id": "UT14-Q04",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué selector CSS se utiliza cuando un estilo debe aplicarse a un único elemento identificado de forma irrepetible en la página?",
+    "contexto": "Uso del atributo id en HTML y su representación en CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El selector por ID con #"
+      },
+      {
+        "clave": "b",
+        "texto": "El selector por clase con ."
+      },
+      {
+        "clave": "c",
+        "texto": "El selector descendiente con espacio"
+      },
+      {
+        "clave": "d",
+        "texto": "El selector universal con *"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el selector por ID se escribe con almohadilla (#) y apunta a un elemento único del documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La clase puede repetirse en muchos elementos; no identifica uno irrepetible."
+        },
+        {
+          "clave": "c",
+          "motivo": "El selector descendiente expresa jerarquía, no unicidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "El selector universal afecta a todos los elementos, justo lo contrario de seleccionar uno solo."
+        }
+      ],
+      "resumen_didactico": "Si el HTML usa id, en CSS se referencia con #.",
+      "ejemplo_practico": "#cabecera-principal { text-align: center; } aplica solo al elemento cuyo id sea cabecera-principal.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el selector por ID se representa con #."
+    }
+  },
+  {
+    "id": "UT14-Q05",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Cuando varios selectores CSS deben compartir exactamente las mismas declaraciones, ¿cómo recomienda el temario escribirlos?",
+    "contexto": "Agrupación de selectores para evitar repetición de código.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Separándolos por comas en una misma regla"
+      },
+      {
+        "clave": "b",
+        "texto": "Uniéndolos con el signo +"
+      },
+      {
+        "clave": "c",
+        "texto": "Escribiéndolos cada uno dentro de una regla distinta obligatoriamente"
+      },
+      {
+        "clave": "d",
+        "texto": "Agrupándolos dentro del atributo style de HTML"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el agrupamiento en CSS se realiza separando los selectores con comas para compartir la misma declaración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El signo + expresa adyacencia entre hermanos, no agrupación general de selectores."
+        },
+        {
+          "clave": "c",
+          "motivo": "Precisamente el agrupamiento evita repetir reglas separadas cuando el estilo es el mismo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El atributo style es una forma en línea, no la técnica de agrupación recomendada para varios selectores."
+        }
+      ],
+      "resumen_didactico": "La coma en CSS sirve para decir: estos selectores comparten el mismo bloque de estilo.",
+      "ejemplo_practico": "h1, h2, h3 { color: #333; } evita repetir tres veces la misma declaración.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque los selectores se agrupan mediante comas."
+    }
+  },
+  {
+    "id": "UT14-Q06",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué unidad relativa de CSS toma como referencia el tamaño de fuente del elemento padre inmediato?",
+    "contexto": "Unidades de medida relativas en hojas de estilo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "em"
+      },
+      {
+        "clave": "b",
+        "texto": "px"
+      },
+      {
+        "clave": "c",
+        "texto": "pt"
+      },
+      {
+        "clave": "d",
+        "texto": "cm"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario distingue entre valores absolutos y relativos, e indica que em es relativo al tamaño de fuente del padre.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "px es una unidad absoluta basada en píxeles, no relativa al padre."
+        },
+        {
+          "clave": "c",
+          "motivo": "pt es una unidad absoluta de puntos tipográficos."
+        },
+        {
+          "clave": "d",
+          "motivo": "cm es una unidad absoluta física, no una medida relativa del diseño web."
+        }
+      ],
+      "resumen_didactico": "em escala en función del tamaño del elemento padre.",
+      "ejemplo_practico": "Si el padre tiene 20px y un hijo usa 1.5em, el resultado será 30px.",
+      "conclusion_final": "La respuesta correcta es em, porque depende del tamaño de fuente del padre inmediato."
+    }
+  },
+  {
+    "id": "UT14-Q07",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "En HTML clásico, ¿qué pareja de etiquetas se emplea en una lista de definición para escribir el término y su descripción?",
+    "contexto": "Estructuras de listas semánticas en HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<dt> y <dd>"
+      },
+      {
+        "clave": "b",
+        "texto": "<ol> y <li>"
+      },
+      {
+        "clave": "c",
+        "texto": "<ul> y <li>"
+      },
+      {
+        "clave": "d",
+        "texto": "<thead> y <tbody>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las listas de definición usan <dl> como contenedor, <dt> para el término y <dd> para la definición.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<ol> y <li> corresponden a listas ordenadas, no a glosarios o definiciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "<ul> y <li> corresponden a listas desordenadas."
+        },
+        {
+          "clave": "d",
+          "motivo": "<thead> y <tbody> pertenecen a tablas HTML, no a listas de definición."
+        }
+      ],
+      "resumen_didactico": "En una lista de definición, dt nombra el concepto y dd lo explica.",
+      "ejemplo_practico": "<dt>XML</dt><dd>Lenguaje de marcas extensible</dd>.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <dt> y <dd> forman la pareja propia de las listas de definición."
+    }
+  },
+  {
+    "id": "UT14-Q08",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Si un enlace HTML apunta a una página externa incluyendo protocolo y dominio completos, ¿qué tipo de enlace es?",
+    "contexto": "Diferencia entre enlaces absolutos y relativos en HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enlace absoluto"
+      },
+      {
+        "clave": "b",
+        "texto": "Enlace relativo"
+      },
+      {
+        "clave": "c",
+        "texto": "Enlace de definición"
+      },
+      {
+        "clave": "d",
+        "texto": "Enlace incrustado"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los enlaces absolutos incluyen la dirección completa de destino, con protocolo y dominio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El enlace relativo se usa dentro del mismo servidor o estructura local, sin dominio completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe esa categoría como clasificación principal en el tema."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es el nombre técnico usado para esta distinción en el temario."
+        }
+      ],
+      "resumen_didactico": "Si aparece algo como https://www.ejemplo.com, el enlace es absoluto.",
+      "ejemplo_practico": "<a href=\"https://www.google.com\">Google</a> es un enlace absoluto.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque un enlace con protocolo y dominio completos es absoluto."
+    }
+  },
+  {
+    "id": "UT14-Q09",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Cómo se vincula externamente una DTD a un documento XML cuando se quiere reutilizar el mismo conjunto de reglas en varios archivos?",
+    "contexto": "Asociación de DTD externa para validación compartida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Mediante una declaración DOCTYPE con SYSTEM y el nombre del archivo .dtd"
+      },
+      {
+        "clave": "b",
+        "texto": "Usando una etiqueta <schema> dentro de <body>"
+      },
+      {
+        "clave": "c",
+        "texto": "Añadiendo el atributo href en la etiqueta raíz sin más datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Colocando las reglas DTD siempre dentro de CDATA"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario muestra que la forma externa se declara con DOCTYPE y SYSTEM apuntando al archivo DTD, lo que facilita reutilizarlo en varios XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<body> pertenece a HTML y no es el lugar ni el mecanismo para vincular una DTD a XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "href no es el mecanismo estándar de asociación de DTD externa en XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "CDATA sirve para texto no interpretado, no para enlazar reglas estructurales externas."
+        }
+      ],
+      "resumen_didactico": "La DTD externa se enlaza con DOCTYPE ... SYSTEM \"archivo.dtd\".",
+      "ejemplo_practico": "<!DOCTYPE flota_vehiculos SYSTEM \"reglas_flota.dtd\">.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque esa es la sintaxis estándar mostrada en el temario."
+    }
+  },
+  {
+    "id": "UT14-Q10",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Cuál es la etiqueta raíz obligatoria de un archivo XSD según el temario?",
+    "contexto": "Estructura básica de un esquema XML Schema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xs:schema>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsd:root>"
+      },
+      {
+        "clave": "c",
+        "texto": "<schema:xsd>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xml:schema>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que la raíz de un archivo XSD es <xs:schema>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la etiqueta raíz mostrada en el temario ni la forma estándar utilizada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Invierte el orden del prefijo y no corresponde a la sintaxis presentada."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la forma canónica de declarar la raíz de un documento XSD."
+        }
+      ],
+      "resumen_didactico": "Todo XSD comienza con la raíz <xs:schema>.",
+      "ejemplo_practico": "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"> ... </xs:schema>.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <xs:schema> es la raíz obligatoria de un XSD."
+    }
+  },
+  {
+    "id": "UT14-Q11",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "En XML Schema, si un elemento solo puede contener texto y no puede incluir atributos ni elementos hijos, ¿cómo se clasifica?",
+    "contexto": "Diferencia entre elementos simples y complejos en XSD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Elemento simple"
+      },
+      {
+        "clave": "b",
+        "texto": "Elemento complejo"
+      },
+      {
+        "clave": "c",
+        "texto": "Elemento vacío por defecto"
+      },
+      {
+        "clave": "d",
+        "texto": "Elemento derivado por referencia"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define los elementos simples en XSD como aquellos que solo contienen texto, sin atributos ni elementos subordinados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los elementos complejos pueden contener hijos, atributos o incluso estar vacíos, por lo que no encajan con la definición dada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Vacío no significa necesariamente “solo texto”; además no es la clasificación principal usada aquí."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la categoría explicada por el temario para esta distinción básica."
+        }
+      ],
+      "resumen_didactico": "Simple en XSD significa “solo texto”.",
+      "ejemplo_practico": "<xs:element name=\"provincia_envio\" type=\"xs:string\"/> representa un elemento simple.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque un elemento simple solo contiene texto."
+    }
+  },
+  {
+    "id": "UT14-Q12",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué valor de XSD debe usarse en maxOccurs cuando se desea indicar que un elemento puede repetirse sin límite predefinido?",
+    "contexto": "Control de ocurrencias en XML Schema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "unbounded"
+      },
+      {
+        "clave": "b",
+        "texto": "infinite"
+      },
+      {
+        "clave": "c",
+        "texto": "many"
+      },
+      {
+        "clave": "d",
+        "texto": "unlimited-occurs"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que maxOccurs usa por defecto 1 y que el valor “unbounded” expresa que no hay límite de apariciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el literal estándar indicado por XSD en el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una palabra informal, no el valor técnico correcto."
+        },
+        {
+          "clave": "d",
+          "motivo": "No corresponde a la sintaxis estándar de XML Schema."
+        }
+      ],
+      "resumen_didactico": "En XSD, repetición sin límite se expresa con unbounded.",
+      "ejemplo_practico": "<xs:element name=\"item\" type=\"xs:string\" maxOccurs=\"unbounded\"/>.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque unbounded indica repetición ilimitada."
+    }
+  },
+  {
+    "id": "UT14-Q13",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Dentro de un xs:complexType, ¿qué indicador se utiliza cuando todos los elementos hijos deben aparecer respetando el orden exacto definido?",
+    "contexto": "Modelado del orden de elementos complejos en XSD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xs:sequence>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xs:choice>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xs:all>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xs:default>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que <xs:sequence> obliga a que los elementos hijos aparezcan según la secuencia indicada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<xs:choice> permite elegir solo uno de varios elementos, no mantener todos en orden."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xs:all> implica que deben aparecer todos, pero sin importar el orden."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un indicador estructural de orden dentro de complexType."
+        }
+      ],
+      "resumen_didactico": "sequence significa “todos y en este orden”.",
+      "ejemplo_practico": "Si el esquema define contenido y luego seguro dentro de sequence, el XML debe respetar ese orden.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <xs:sequence> controla el orden exacto de los hijos."
+    }
+  },
+  {
+    "id": "UT14-Q14",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Cómo denomina el temario a los filtros precisos de XSD que restringen el formato de los datos introducidos?",
+    "contexto": "Restricciones sobre valores en XML Schema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Facetas o restricciones"
+      },
+      {
+        "clave": "b",
+        "texto": "Entidades expansivas"
+      },
+      {
+        "clave": "c",
+        "texto": "Bloques CDATA"
+      },
+      {
+        "clave": "d",
+        "texto": "Namespaces secundarios"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario llama facetas o restricciones a los filtros precisos que se aplican a los datos en XSD para asegurar un formato válido.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las entidades pertenecen al ámbito de DTD y sirven para referencias o atajos, no para restringir formatos en XSD."
+        },
+        {
+          "clave": "c",
+          "motivo": "CDATA protege texto de ser interpretado como marcado, pero no define restricciones de tipo o formato."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los namespaces organizan vocabularios, pero no son filtros de validación del valor."
+        }
+      ],
+      "resumen_didactico": "En XSD, las facetas afinan qué valores son aceptables.",
+      "ejemplo_practico": "Un campo puede restringirse para aceptar solo un patrón de coordenadas GPS o una longitud concreta.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el temario usa el término facetas o restricciones."
+    }
+  },
+  {
+    "id": "UT14-Q15",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué entidad de carácter debe utilizarse en XML para representar un ampersand sin romper el documento?",
+    "contexto": "Entidades predefinidas para caracteres especiales en XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "&amp;"
+      },
+      {
+        "clave": "b",
+        "texto": "&and;"
+      },
+      {
+        "clave": "c",
+        "texto": "&symbol;"
+      },
+      {
+        "clave": "d",
+        "texto": "&et;"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario muestra que el ampersand (&) debe escribirse como &amp; para no confundirse con el inicio de una entidad o romper el XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la entidad predefinida estándar para ampersand."
+        },
+        {
+          "clave": "c",
+          "motivo": "No corresponde a ninguna entidad XML predefinida del temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la sintaxis válida mostrada para este carácter especial."
+        }
+      ],
+      "resumen_didactico": "El símbolo & no se escribe directamente en XML si debe tratarse como texto.",
+      "ejemplo_practico": "<empresa>Smith &amp; Sons</empresa> es correcto; usar & directamente puede romper el parser.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque &amp; representa el ampersand en XML."
+    }
+  },
+  {
+    "id": "UT14-Q16",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "En una hoja XSLT, ¿qué elemento establece la regla de plantilla que indica a qué nodos del XML origen debe aplicarse un bloque de transformación?",
+    "contexto": "Mecanismo básico de coincidencia de plantillas en XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:template> con el atributo match"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:output> con el atributo method"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:sort> con el atributo select"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:value-of> con el atributo node"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que xsl:template con el atributo match define la regla de plantilla y determina qué nodos del árbol XML activan ese bloque.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "xsl:output define el formato de salida, no la coincidencia de nodos de origen."
+        },
+        {
+          "clave": "c",
+          "motivo": "xsl:sort ordena resultados dentro de un recorrido, pero no establece la regla general de aplicación."
+        },
+        {
+          "clave": "d",
+          "motivo": "xsl:value-of extrae valores; además “node” no es el atributo descrito en el temario para esta función."
+        }
+      ],
+      "resumen_didactico": "template + match le dice al motor XSLT dónde debe actuar.",
+      "ejemplo_practico": "<xsl:template match=\"/\"> arranca la transformación desde la raíz del documento.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque ese es el mecanismo de coincidencia de plantillas explicado en el temario."
+    }
+  },
+  {
+    "id": "UT14-Q17",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Si una hoja de estilo debe generar una página web como resultado, ¿qué método suele declararse en <xsl:output>?",
+    "contexto": "Configuración del formato final de salida en una transformación XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "html"
+      },
+      {
+        "clave": "b",
+        "texto": "binary"
+      },
+      {
+        "clave": "c",
+        "texto": "sql"
+      },
+      {
+        "clave": "d",
+        "texto": "css"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario muestra ejemplos con <xsl:output method=\"html\" .../> cuando la transformación genera una página HTML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "binary no es el método de salida mostrado en el temario para generar páginas web."
+        },
+        {
+          "clave": "c",
+          "motivo": "SQL no es un método de salida de XSLT para representación web."
+        },
+        {
+          "clave": "d",
+          "motivo": "CSS puede estilizar un HTML, pero no es el método de salida de xsl:output."
+        }
+      ],
+      "resumen_didactico": "Si el resultado final es una web, el método habitual es html.",
+      "ejemplo_practico": "<xsl:output method=\"html\" encoding=\"UTF-8\"/> prepara la salida para el navegador.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque method=\"html\" es el valor apropiado para generar una página web."
+    }
+  },
+  {
+    "id": "UT14-Q18",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Dentro de un <xsl:for-each>, ¿en qué posición debe colocarse <xsl:sort> para evitar errores y ordenar correctamente el conjunto procesado?",
+    "contexto": "Orden correcto de instrucciones XSLT dentro de un bucle.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Inmediatamente después de abrir el <xsl:for-each>"
+      },
+      {
+        "clave": "b",
+        "texto": "Siempre al final, después de cerrar la tabla HTML"
+      },
+      {
+        "clave": "c",
+        "texto": "Antes del propio <xsl:for-each>"
+      },
+      {
+        "clave": "d",
+        "texto": "Dentro de <xsl:otherwise> para que no afecte a todos los nodos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario advierte que <xsl:sort> debe colocarse justo después de abrir <xsl:for-each>; si se inserta otra etiqueta en medio, el procesador lanzará error.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Colocarlo al final no cumple el orden sintáctico indicado por el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:sort> debe ir dentro del for-each, no antes de él como instrucción externa."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:otherwise> pertenece a choose y no define la posición sintáctica válida de sort en este caso."
+        }
+      ],
+      "resumen_didactico": "En XSLT, sort va primero dentro del for-each.",
+      "ejemplo_practico": "<xsl:for-each select=\"inventario/planta\"><xsl:sort select=\"precio\"/> ... </xsl:for-each>.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <xsl:sort> debe ir inmediatamente después de abrir el bucle."
+    }
+  },
+  {
+    "id": "UT14-Q19",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué expresión XPath representa la raíz y, por tanto, todo el documento desde su inicio?",
+    "contexto": "Rutas XPath básicas para navegar por XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/"
+      },
+      {
+        "clave": "b",
+        "texto": "//"
+      },
+      {
+        "clave": "c",
+        "texto": "../"
+      },
+      {
+        "clave": "d",
+        "texto": "@root"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario muestra que la expresión / representa la raíz y, por extensión, el documento completo desde su inicio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "// busca elementos en cualquier parte del documento, pero no expresa por sí sola la raíz completa como /. "
+        },
+        {
+          "clave": "c",
+          "motivo": "../ se usa para subir al nodo padre desde el contexto actual, no para referirse a la raíz absoluta."
+        },
+        {
+          "clave": "d",
+          "motivo": "@ se usa con atributos en XPath, no para expresar la raíz del árbol."
+        }
+      ],
+      "resumen_didactico": "Una sola barra / equivale a la raíz del documento XML.",
+      "ejemplo_practico": "En template match=\"/\", la transformación empieza desde la raíz.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque / representa la raíz del documento."
+    }
+  },
+  {
+    "id": "UT14-Q20",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Si una ruta XPath debe seleccionar el elemento padre inmediato del nodo actual, ¿qué notación utiliza?",
+    "contexto": "Navegación relativa dentro del árbol XML mediante XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": ".."
+      },
+      {
+        "clave": "b",
+        "texto": "//"
+      },
+      {
+        "clave": "c",
+        "texto": "*"
+      },
+      {
+        "clave": "d",
+        "texto": "@"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El comportamiento estándar de XPath usa .. para subir al nodo padre desde la posición actual del árbol.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "// sirve para búsqueda en cualquier nivel, no para subir al padre inmediato."
+        },
+        {
+          "clave": "c",
+          "motivo": "* es un comodín que selecciona cualquier elemento, no el padre."
+        },
+        {
+          "clave": "d",
+          "motivo": "@ introduce atributos, no movimientos ascendentes en la jerarquía."
+        }
+      ],
+      "resumen_didactico": "En XPath, dos puntos dobles significan “sube al padre”.",
+      "ejemplo_practico": "Si estás en /pedido/cliente/nombre, usar .. te llevaría a /pedido/cliente.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque .. selecciona el padre inmediato."
+    }
+  },
+  {
+    "id": "UT14-Q21",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Cómo define el temario a XQuery en relación con XPath?",
+    "contexto": "Relación conceptual entre lenguajes de consulta XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como un superconjunto más potente que XPath para consultas complejas"
+      },
+      {
+        "clave": "b",
+        "texto": "Como un reemplazo exclusivo de CSS en la web moderna"
+      },
+      {
+        "clave": "c",
+        "texto": "Como una DTD avanzada para validar atributos"
+      },
+      {
+        "clave": "d",
+        "texto": "Como un parser binario propietario de eXist-db"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario describe XQuery como un lenguaje de consulta más potente y lo presenta como un superconjunto de XPath.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "CSS pertenece al diseño visual y no guarda esa relación con XQuery."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una DTD valida estructura, pero XQuery sirve para consultar y transformar información XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un parser binario ni una herramienta propietaria, sino un lenguaje de consulta."
+        }
+      ],
+      "resumen_didactico": "XPath localiza nodos; XQuery amplía esa capacidad para consultas y salidas más complejas.",
+      "ejemplo_practico": "Con XQuery puedes filtrar, ordenar y devolver una lista HTML a partir de datos XML.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque XQuery se presenta como superconjunto de XPath."
+    }
+  },
+  {
+    "id": "UT14-Q22",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Dentro de FLWOR, ¿qué cláusula se utiliza para ordenar los resultados antes de devolverlos?",
+    "contexto": "Sintaxis FLWOR en consultas XQuery.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "order by"
+      },
+      {
+        "clave": "b",
+        "texto": "where"
+      },
+      {
+        "clave": "c",
+        "texto": "return"
+      },
+      {
+        "clave": "d",
+        "texto": "let"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la sintaxis FLWOR, la cláusula order by es la encargada de ordenar los resultados de la consulta antes del retorno final.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "where filtra por condición, pero no establece el orden."
+        },
+        {
+          "clave": "c",
+          "motivo": "return devuelve el resultado final ya preparado, no realiza la ordenación."
+        },
+        {
+          "clave": "d",
+          "motivo": "let enlaza secuencias o valores a variables, sin ordenar por sí mismo."
+        }
+      ],
+      "resumen_didactico": "Si quieres ordenar en FLWOR, piensas en order by.",
+      "ejemplo_practico": "Una consulta puede ordenar pacientes por apellido o productos por precio usando order by.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque order by controla la ordenación de resultados."
+    }
+  },
+  {
+    "id": "UT14-Q23",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué comando de consola aparece en el temario para lanzar el instalador empaquetado de eXist-db?",
+    "contexto": "Proceso de instalación de una base de datos XML nativa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "java -jar exist-db-setup-xxx.jar"
+      },
+      {
+        "clave": "b",
+        "texto": "existdb --install now"
+      },
+      {
+        "clave": "c",
+        "texto": "npm install exist-db"
+      },
+      {
+        "clave": "d",
+        "texto": "systemctl setup existdb"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el instalador descargado de eXist-db se ejecuta en consola con java -jar exist-db-setup-xxx.jar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el comando mostrado en el material para lanzar la instalación."
+        },
+        {
+          "clave": "c",
+          "motivo": "npm pertenece al ecosistema JavaScript, no al procedimiento descrito para eXist-db."
+        },
+        {
+          "clave": "d",
+          "motivo": "systemctl gestiona servicios en Linux, pero no es el comando de instalación indicado en el temario."
+        }
+      ],
+      "resumen_didactico": "El instalador de eXist-db se ejecuta como .jar usando Java.",
+      "ejemplo_practico": "Tras descargar el instalador, el técnico abre la consola y ejecuta java -jar exist-db-setup-xxx.jar.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque ese es el comando de instalación indicado en el temario."
+    }
+  },
+  {
+    "id": "UT14-Q24",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué puerto utiliza eXist-db por defecto para el acceso HTTPS cifrado con SSL según el temario?",
+    "contexto": "Puertos por defecto de eXist-db en su despliegue básico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "8443"
+      },
+      {
+        "clave": "b",
+        "texto": "8080"
+      },
+      {
+        "clave": "c",
+        "texto": "3306"
+      },
+      {
+        "clave": "d",
+        "texto": "1521"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el puerto 8443 se usa por defecto para HTTPS con SSL cifrado en eXist-db, mientras que 8080 corresponde a HTTP.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "8080 es el puerto HTTP estándar en la instalación mostrada, no el HTTPS cifrado."
+        },
+        {
+          "clave": "c",
+          "motivo": "3306 se asocia típicamente a MySQL/MariaDB, no a eXist-db HTTPS."
+        },
+        {
+          "clave": "d",
+          "motivo": "1521 es un puerto asociado a otros entornos, como Oracle, no al acceso HTTPS mostrado aquí."
+        }
+      ],
+      "resumen_didactico": "En eXist-db: 8080 suele ser HTTP y 8443 HTTPS.",
+      "ejemplo_practico": "Para entrar por navegador con cifrado, se usaría una URL con https y el puerto 8443.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque 8443 es el puerto HTTPS con SSL indicado por el temario."
+    }
+  },
+  {
+    "id": "UT14-Q25",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué alternativa abierta menciona el temario como base de datos XML bastante fiable y muy usada para desarrollo de aplicaciones web?",
+    "contexto": "Otras opciones de almacenamiento XML además de eXist-db.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "BaseX"
+      },
+      {
+        "clave": "b",
+        "texto": "Power BI"
+      },
+      {
+        "clave": "c",
+        "texto": "Odoo"
+      },
+      {
+        "clave": "d",
+        "texto": "XML Notepad"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario menciona BaseX como una base de datos XML fiable y muy utilizada para el desarrollo de aplicaciones web por tratarse de código abierto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Power BI es una herramienta de visualización e inteligencia empresarial, no una base de datos XML nativa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Odoo es un ERP, no una base de datos XML para consultas XQuery."
+        },
+        {
+          "clave": "d",
+          "motivo": "XML Notepad es un editor, no un motor de base de datos XML."
+        }
+      ],
+      "resumen_didactico": "Si buscas otra base XML abierta además de eXist-db, el nombre clave es BaseX.",
+      "ejemplo_practico": "Un equipo puede usar BaseX para almacenar y consultar documentos XML en una aplicación web documental.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque BaseX es la alternativa abierta señalada en el temario."
+    }
+  },
+  {
+    "id": "UT14-Q26",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "Dentro de un documento RSS, ¿qué etiqueta representa cada noticia o actualización individual del canal?",
+    "contexto": "Estructura interna de un feed RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<item>"
+      },
+      {
+        "clave": "b",
+        "texto": "<channel>"
+      },
+      {
+        "clave": "c",
+        "texto": "<feed>"
+      },
+      {
+        "clave": "d",
+        "texto": "<summary>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario muestra que en RSS las noticias individuales se representan mediante elementos <item> dentro de <channel>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<channel> engloba la información general del canal y sus items, pero no es la noticia individual."
+        },
+        {
+          "clave": "c",
+          "motivo": "<feed> es el elemento raíz de Atom, no la unidad de noticia en RSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la etiqueta estándar del temario para representar una entrada RSS."
+        }
+      ],
+      "resumen_didactico": "En RSS, cada noticia concreta vive dentro de un <item>.",
+      "ejemplo_practico": "Un canal puede tener varios <item>, uno por cada alerta o noticia publicada.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <item> representa cada entrada individual del RSS."
+    }
+  },
+  {
+    "id": "UT14-Q27",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "En Atom, ¿cómo se denomina la unidad que equivale a una entrada o publicación individual dentro del feed?",
+    "contexto": "Comparación estructural entre RSS y Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<entry>"
+      },
+      {
+        "clave": "b",
+        "texto": "<channel-item>"
+      },
+      {
+        "clave": "c",
+        "texto": "<postdata>"
+      },
+      {
+        "clave": "d",
+        "texto": "<pubDate>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Atom, la información individual se organiza en elementos <entry>, equivalentes a las noticias o entradas del canal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es una etiqueta estándar del modelo Atom presentado en el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "No corresponde a la sintaxis oficial de Atom."
+        },
+        {
+          "clave": "d",
+          "motivo": "pubDate es una etiqueta de fecha asociada a RSS, no la unidad de entrada Atom."
+        }
+      ],
+      "resumen_didactico": "Si en RSS la noticia es item, en Atom la noticia es entry.",
+      "ejemplo_practico": "Un feed Atom puede tener un <feed> general y dentro varios <entry> con sus actualizaciones.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <entry> es la unidad individual de publicación en Atom."
+    }
+  },
+  {
+    "id": "UT14-Q28",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué herramienta se menciona como software de creación de feeds que incorpora su propio validador en un flujo unificado?",
+    "contexto": "Herramientas para crear y validar feeds RSS o Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FeedForAll"
+      },
+      {
+        "clave": "b",
+        "texto": "Dreamweaver CC"
+      },
+      {
+        "clave": "c",
+        "texto": "XMLSpear"
+      },
+      {
+        "clave": "d",
+        "texto": "BaseX"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario menciona FeedForAll como una herramienta de creación de feeds que incorpora su propio validador, permitiendo crear y corregir en la misma aplicación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Dreamweaver está orientado al diseño web, no a la creación específica de feeds con validador integrado."
+        },
+        {
+          "clave": "c",
+          "motivo": "XMLSpear es un editor XML, no la herramienta destacada aquí como creador de feeds con validador integrado."
+        },
+        {
+          "clave": "d",
+          "motivo": "BaseX es una base de datos XML, no un generador de RSS/Atom con validador propio."
+        }
+      ],
+      "resumen_didactico": "FeedForAll une creación y validación de feeds en un mismo entorno.",
+      "ejemplo_practico": "Un usuario puede redactar un feed RSS y detectar sus errores sintácticos sin salir de FeedForAll.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque FeedForAll es la herramienta mencionada con validador integrado."
+    }
+  },
+  {
+    "id": "UT14-Q29",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué herramienta analítica muestra métricas actuales, incluso en tiempo real, mientras que su contraparte compara el rendimiento con objetivos previos o históricos?",
+    "contexto": "Diferencia conceptual entre dashboard y scorecard.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El dashboard"
+      },
+      {
+        "clave": "b",
+        "texto": "El DTD externo"
+      },
+      {
+        "clave": "c",
+        "texto": "El CRM"
+      },
+      {
+        "clave": "d",
+        "texto": "El feed Atom"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el dashboard muestra métricas, incluso en tiempo real, mientras que el scorecard sirve para comparar la situación actual con objetivos o información anterior.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un DTD externo valida estructura XML; no es una herramienta de inteligencia empresarial."
+        },
+        {
+          "clave": "c",
+          "motivo": "El CRM gestiona relaciones con clientes, no cuadros de mando en tiempo real."
+        },
+        {
+          "clave": "d",
+          "motivo": "Atom es un formato de sindicación, sin relación con cuadros de mando analíticos."
+        }
+      ],
+      "resumen_didactico": "Dashboard = ahora mismo. Scorecard = comparación con metas o histórico.",
+      "ejemplo_practico": "Un dashboard puede mostrar incidencias activas en este instante; un scorecard puede indicar si el mes va por encima o por debajo del objetivo.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el dashboard es la herramienta centrada en métricas actuales o en tiempo real."
+    }
+  },
+  {
+    "id": "UT14-Q30",
+    "tema": "UT14 — Repaso global del módulo Lenguajes de Marcas (Bloque 6)",
+    "pregunta": "¿Qué tecnología permite extraer y visualizar datos seleccionados desde bases de datos analizándolos desde múltiples ángulos y dimensiones?",
+    "contexto": "Análisis multidimensional de información empresarial.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "OLAP"
+      },
+      {
+        "clave": "b",
+        "texto": "FTP"
+      },
+      {
+        "clave": "c",
+        "texto": "DTD"
+      },
+      {
+        "clave": "d",
+        "texto": "WYSIWYG"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define OLAP como online analytical processing y lo describe como un modo de extraer y visualizar datos desde múltiples dimensiones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "FTP es un protocolo de transferencia de archivos, no una herramienta de análisis multidimensional."
+        },
+        {
+          "clave": "c",
+          "motivo": "DTD valida estructura XML, pero no realiza análisis de datos empresariales."
+        },
+        {
+          "clave": "d",
+          "motivo": "WYSIWYG describe un tipo de edición visual, sin relación con análisis multidimensional."
+        }
+      ],
+      "resumen_didactico": "OLAP sirve para “girar” los datos y analizarlos por distintas dimensiones.",
+      "ejemplo_practico": "Una empresa puede cruzar ventas por región, mes y producto para detectar patrones de incidencias o rentabilidad.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque OLAP es la tecnología analítica multidimensional descrita en el temario."
+    }
+  }
+]

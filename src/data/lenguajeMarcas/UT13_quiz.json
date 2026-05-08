@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT13-Q01",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué significa el acrónimo WYSIWYG aplicado a ciertos editores HTML visuales?",
+    "contexto": "Concepto de editores web que muestran en pantalla un resultado muy parecido al que obtendrá el usuario final.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "What You Send Is What You Get"
+      },
+      {
+        "clave": "b",
+        "texto": "What You See Is What You Get"
+      },
+      {
+        "clave": "c",
+        "texto": "Write Your Style In Web Graphic Yield"
+      },
+      {
+        "clave": "d",
+        "texto": "Web Yield System In Window Graphic"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que WYSIWYG significa “What You See Is What You Get”, es decir, “lo que ves es lo que obtienes”, porque el editor permite trabajar visualmente mientras genera el código por detrás.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es la expansión correcta del acrónimo ni refleja el enfoque visual del editor."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una combinación inventada de palabras que no corresponde al término técnico real."
+        },
+        {
+          "clave": "d",
+          "motivo": "No existe como expansión reconocida en el ámbito de los editores web."
+        }
+      ],
+      "resumen_didactico": "WYSIWYG describe a los editores que permiten diseñar viendo un resultado visual inmediato.",
+      "ejemplo_practico": "Un editor online muestra el texto centrado, la imagen y los colores mientras él mismo va generando el HTML en segundo plano.",
+      "conclusion_final": "La respuesta correcta es la opción b porque WYSIWYG significa “What You See Is What You Get”."
+    }
+  },
+  {
+    "id": "UT13-Q02",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "Si una página enlaza con otro archivo alojado dentro del mismo servidor web sin indicar un dominio completo, ¿qué tipo de enlace está utilizando?",
+    "contexto": "Tipos de enlaces HTML según apunten a una ruta interna del propio sitio o a una dirección completa externa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enlace absoluto"
+      },
+      {
+        "clave": "b",
+        "texto": "Enlace relativo"
+      },
+      {
+        "clave": "c",
+        "texto": "Enlace semántico"
+      },
+      {
+        "clave": "d",
+        "texto": "Enlace sindicado"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que los enlaces relativos se usan para acceder a archivos o rutas alojadas dentro del propio servidor web, sin necesidad de escribir la dirección completa con protocolo y dominio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El enlace absoluto sí incluye la dirección completa, como https://dominio/ruta."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es una categoría estándar de enlaces HTML explicada en el tema."
+        },
+        {
+          "clave": "d",
+          "motivo": "La sindicación se relaciona con RSS o Atom, no con la clasificación básica de enlaces HTML."
+        }
+      ],
+      "resumen_didactico": "Si el recurso está en tu propio sitio y usas solo la ruta interna, el enlace es relativo.",
+      "ejemplo_practico": "href=\"productos/catalogo.html\" es un enlace relativo; href=\"https://empresa.com/productos/catalogo.html\" es absoluto.",
+      "conclusion_final": "La respuesta correcta es la opción b porque un enlace interno sin dominio completo es relativo."
+    }
+  },
+  {
+    "id": "UT13-Q03",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué selector CSS aplica una regla a absolutamente todos los elementos del documento?",
+    "contexto": "Selectores CSS básicos usados para aplicar estilos con distinto nivel de generalidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "#"
+      },
+      {
+        "clave": "b",
+        "texto": "."
+      },
+      {
+        "clave": "c",
+        "texto": "*"
+      },
+      {
+        "clave": "d",
+        "texto": "+"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta el selector universal como el asterisco (*), que aplica la regla a todos los elementos del documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "# se usa para seleccionar un elemento por su id."
+        },
+        {
+          "clave": "b",
+          "motivo": ". se usa para seleccionar elementos por clase."
+        },
+        {
+          "clave": "d",
+          "motivo": "+ se utiliza en el selector adyacente, no como selector universal."
+        }
+      ],
+      "resumen_didactico": "El asterisco es el selector más general de CSS.",
+      "ejemplo_practico": "* { margin: 0; padding: 0; } intenta afectar a todos los elementos de la página.",
+      "conclusion_final": "La respuesta correcta es la opción c porque * es el selector universal."
+    }
+  },
+  {
+    "id": "UT13-Q04",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "En CSS, si una regla debe afectar a un elemento solo cuando aparece dentro de otro elemento determinado, sin exigir que sea hijo directo, ¿qué tipo de selector se utiliza?",
+    "contexto": "Diferencia entre el selector descendiente y el selector hijo directo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Selector descendiente"
+      },
+      {
+        "clave": "b",
+        "texto": "Selector por id"
+      },
+      {
+        "clave": "c",
+        "texto": "Selector universal"
+      },
+      {
+        "clave": "d",
+        "texto": "Selector hijo directo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el selector descendiente aplica estilos a un elemento solo si está dentro de otro elemento específico, sin exigir que sea su hijo directo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El selector por id apunta a un único elemento identificado con #id, no a una relación jerárquica."
+        },
+        {
+          "clave": "c",
+          "motivo": "El selector universal afecta a todos los elementos, sin depender de estar dentro de otro."
+        },
+        {
+          "clave": "d",
+          "motivo": "El selector hijo directo exige la relación inmediata padre > hijo, que no es lo que pide el enunciado."
+        }
+      ],
+      "resumen_didactico": "Si un elemento debe estar dentro de otro, pero no necesariamente justo un nivel por debajo, se usa el selector descendiente.",
+      "ejemplo_practico": "h3 i { color: red; } afectaría a la cursiva que esté dentro de un h3 aunque no sea hija directa.",
+      "conclusion_final": "La respuesta correcta es la opción a porque el selector descendiente funciona sin exigir hijo directo."
+    }
+  },
+  {
+    "id": "UT13-Q05",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Con qué símbolo se identifica en CSS una clase definida en HTML mediante el atributo class?",
+    "contexto": "Sintaxis básica de selectores CSS por clase.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "."
+      },
+      {
+        "clave": "b",
+        "texto": "#"
+      },
+      {
+        "clave": "c",
+        "texto": "@"
+      },
+      {
+        "clave": "d",
+        "texto": "&"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el selector de clase se representa en CSS mediante un punto (.) seguido del nombre de la clase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "# se usa para ids, no para clases."
+        },
+        {
+          "clave": "c",
+          "motivo": "@ se usa en reglas especiales como @media o @import, no en clases."
+        },
+        {
+          "clave": "d",
+          "motivo": "& no es el prefijo estándar de una clase en CSS básico."
+        }
+      ],
+      "resumen_didactico": "Clase en HTML, punto en CSS.",
+      "ejemplo_practico": "Si un elemento tiene class=\"destacado\", en CSS se selecciona con .destacado.",
+      "conclusion_final": "La respuesta correcta es la opción a porque las clases CSS se identifican con un punto."
+    }
+  },
+  {
+    "id": "UT13-Q06",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "Cuando varios selectores CSS deben compartir exactamente las mismas declaraciones, ¿cómo se recomienda escribirlos para evitar repetir código?",
+    "contexto": "Buenas prácticas de sintaxis CSS para agrupar reglas comunes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Separándolos con punto y coma"
+      },
+      {
+        "clave": "b",
+        "texto": "Escribiéndolos entre corchetes"
+      },
+      {
+        "clave": "c",
+        "texto": "Separándolos con comas"
+      },
+      {
+        "clave": "d",
+        "texto": "Repitiendo la misma regla una vez por cada selector"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, si varios selectores van a tener el mismo diseño, se agrupan separándolos por comas para no repetir código.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El punto y coma separa declaraciones propiedad: valor, no selectores agrupados."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los corchetes no son la sintaxis estándar para agrupar selectores en CSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso funciona, pero contradice la práctica recomendada de evitar repeticiones."
+        }
+      ],
+      "resumen_didactico": "En CSS, varios selectores con el mismo estilo se agrupan con comas.",
+      "ejemplo_practico": "h1, h2, h3 { color: #333; } aplica la misma regla a los tres niveles de encabezado.",
+      "conclusion_final": "La respuesta correcta es la opción c porque la agrupación de selectores se hace con comas."
+    }
+  },
+  {
+    "id": "UT13-Q07",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué fenómeno de CSS permite que muchos elementos hijos adopten automáticamente propiedades como el color o la fuente definidas en su elemento padre?",
+    "contexto": "Comportamiento natural de ciertas propiedades CSS dentro del árbol del documento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Herencia"
+      },
+      {
+        "clave": "b",
+        "texto": "Compilación"
+      },
+      {
+        "clave": "c",
+        "texto": "Serialización"
+      },
+      {
+        "clave": "d",
+        "texto": "Normalización XML"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que muchos elementos hijos heredan automáticamente propiedades como color o tipo de letra de sus padres, especialmente si se han definido en contenedores amplios como body.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La compilación pertenece a otros contextos, no a la transmisión automática de estilos en CSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "La serialización se relaciona con convertir datos a un formato persistente o transmisible."
+        },
+        {
+          "clave": "d",
+          "motivo": "La normalización XML no describe el comportamiento visual de CSS."
+        }
+      ],
+      "resumen_didactico": "En CSS, muchas propiedades pasan de padres a hijos sin escribirlas una por una.",
+      "ejemplo_practico": "Si body tiene font-family: Arial, los párrafos y títulos suelen usar esa misma fuente por herencia.",
+      "conclusion_final": "La respuesta correcta es la opción a porque ese comportamiento se denomina herencia."
+    }
+  },
+  {
+    "id": "UT13-Q08",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué regla estructural básica debe cumplir siempre un documento XML bien formado respecto a su nivel más alto?",
+    "contexto": "Condición esencial de la jerarquía XML para que el documento sea válido sintácticamente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Debe tener exactamente una única raíz"
+      },
+      {
+        "clave": "b",
+        "texto": "Debe comenzar por una tabla HTML"
+      },
+      {
+        "clave": "c",
+        "texto": "Debe contener al menos dos raíces paralelas"
+      },
+      {
+        "clave": "d",
+        "texto": "Debe incluir una sección CDATA obligatoria"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que un documento XML solo permite una única raíz de la que dependen el resto de ramas o elementos hijos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una tabla HTML no forma parte de la estructura obligatoria de XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Tener varias raíces rompe la estructura arborescente del documento XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "CDATA es opcional y solo se usa en casos concretos."
+        }
+      ],
+      "resumen_didactico": "Un XML correcto se organiza como un árbol con una sola raíz.",
+      "ejemplo_practico": "<inventario> ... </inventario> puede ser la raíz; no podrías tener además otra raíz separada <clientes> al mismo nivel.",
+      "conclusion_final": "La respuesta correcta es la opción a porque XML exige una única raíz."
+    }
+  },
+  {
+    "id": "UT13-Q09",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Entre qué delimitadores debe escribirse el prólogo o instrucción de procesamiento inicial de un documento XML?",
+    "contexto": "Sintaxis formal del prólogo XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Entre < y >"
+      },
+      {
+        "clave": "b",
+        "texto": "Entre { y }"
+      },
+      {
+        "clave": "c",
+        "texto": "Entre <? y ?>"
+      },
+      {
+        "clave": "d",
+        "texto": "Entre [ y ]"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario señala que el prólogo XML comienza con los caracteres <? y termina con ?>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "< y > delimitan etiquetas normales, pero el prólogo usa signos de interrogación."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las llaves no son delimitadores válidos del prólogo XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los corchetes no delimitan la instrucción inicial del documento XML."
+        }
+      ],
+      "resumen_didactico": "El prólogo XML se reconoce por empezar con <?xml y cerrar con ?>.",
+      "ejemplo_practico": "<?xml version=\"1.0\" encoding=\"utf-8\"?>",
+      "conclusion_final": "La respuesta correcta es la opción c porque el prólogo XML se escribe entre <? y ?>."
+    }
+  },
+  {
+    "id": "UT13-Q10",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "En XML, ¿qué se entiende por elemento?",
+    "contexto": "Concepto básico de estructura XML más allá de la mera etiqueta aislada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo el nombre de una etiqueta escrito entre signos < >"
+      },
+      {
+        "clave": "b",
+        "texto": "El conjunto formado por apertura, contenido y cierre"
+      },
+      {
+        "clave": "c",
+        "texto": "Únicamente un atributo escrito en la cabecera"
+      },
+      {
+        "clave": "d",
+        "texto": "Un comentario no visible para el parser"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario define los elementos XML como el conjunto de etiquetas de entrada y cierre más lo que contienen dentro: texto, otros elementos o atributos asociados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Eso describe solo la etiqueta, no el elemento completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un atributo complementa a un elemento, pero no equivale al elemento completo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un comentario es otra estructura distinta, no un elemento XML."
+        }
+      ],
+      "resumen_didactico": "Elemento no es solo etiqueta: es la unidad completa con apertura, contenido y cierre.",
+      "ejemplo_practico": "<nombre>Teclado</nombre> es un elemento; la apertura sola <nombre> no lo es por sí misma.",
+      "conclusion_final": "La respuesta correcta es la opción b porque un elemento XML es el conjunto completo de apertura, contenido y cierre."
+    }
+  },
+  {
+    "id": "UT13-Q11",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué función cumplen los atributos dentro de una etiqueta XML?",
+    "contexto": "Uso de atributos para complementar información sin crear subelementos adicionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Añadir propiedades o datos complementarios al elemento"
+      },
+      {
+        "clave": "b",
+        "texto": "Sustituir siempre a los elementos hijos"
+      },
+      {
+        "clave": "c",
+        "texto": "Cerrar automáticamente cualquier etiqueta abierta"
+      },
+      {
+        "clave": "d",
+        "texto": "Validar por sí solos toda la estructura del documento"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los atributos añaden información extra o propiedades a un elemento y se escriben dentro de la etiqueta de apertura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un atributo no sustituye siempre a un elemento hijo; depende del diseño del documento."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los atributos no cierran etiquetas ni controlan la sintaxis de cierre."
+        },
+        {
+          "clave": "d",
+          "motivo": "La validación estructural corresponde a DTD, XSD o parsers, no a los atributos por sí mismos."
+        }
+      ],
+      "resumen_didactico": "Los atributos enriquecen al elemento con datos adicionales.",
+      "ejemplo_practico": "<producto id=\"P01\" categoria=\"hardware\"> añade dos propiedades al elemento producto.",
+      "conclusion_final": "La respuesta correcta es la opción a porque los atributos sirven para añadir propiedades complementarias."
+    }
+  },
+  {
+    "id": "UT13-Q12",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué herramienta de edición XML destaca en el temario por ofrecer validación DTD, resaltado de sintaxis, plegado de elementos y autocompletado de cierres?",
+    "contexto": "Reconocimiento de características concretas de editores XML del tema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XML Copy Editor"
+      },
+      {
+        "clave": "b",
+        "texto": "KompoZer"
+      },
+      {
+        "clave": "c",
+        "texto": "FeedForAll"
+      },
+      {
+        "clave": "d",
+        "texto": "eXide"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta XML Copy Editor como una herramienta ligera que permite validación DTD, resaltado de sintaxis, plegado de elementos y terminación automática de etiquetas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "KompoZer es un editor de diseño web, no el editor XML descrito con esas funciones específicas."
+        },
+        {
+          "clave": "c",
+          "motivo": "FeedForAll se relaciona con la creación y validación de feeds RSS, no con edición XML general."
+        },
+        {
+          "clave": "d",
+          "motivo": "eXide es el IDE web de eXist-db orientado a XQuery, no el editor de escritorio descrito."
+        }
+      ],
+      "resumen_didactico": "XML Copy Editor se usa para escribir XML con ayuda visual y validación DTD.",
+      "ejemplo_practico": "Un estudiante puede escribir un XML largo y detectar enseguida etiquetas mal cerradas gracias al resaltado y al autocompletado.",
+      "conclusion_final": "La respuesta correcta es la opción a porque XML Copy Editor es la herramienta con esas funciones."
+    }
+  },
+  {
+    "id": "UT13-Q13",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué editor XML es descrito en el temario como el más vendido y uno de los más implantados en grandes corporaciones por sus funciones avanzadas de modelado, edición, transformación y depuración?",
+    "contexto": "Herramientas profesionales de edición XML en entornos corporativos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XML Notepad"
+      },
+      {
+        "clave": "b",
+        "texto": "Altova XMLSpy"
+      },
+      {
+        "clave": "c",
+        "texto": "Online XML Editor"
+      },
+      {
+        "clave": "d",
+        "texto": "XMLSpear"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario señala que Altova XMLSpy es uno de los editores XML más implantados en grandes corporaciones y destaca por sus funciones avanzadas de modelado, edición, transformación y depuración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XML Notepad es un editor intuitivo, pero no se presenta como el gran referente corporativo del tema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Online XML Editor es una herramienta web simple, no la solución corporativa avanzada mencionada."
+        },
+        {
+          "clave": "d",
+          "motivo": "XMLSpear ofrece validación en tiempo real y otras funciones, pero el temario no lo presenta como el editor más vendido en grandes corporaciones."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta habla del editor XML más potente y corporativo del tema, piensa en XMLSpy.",
+      "ejemplo_practico": "Una gran empresa puede usar XMLSpy para editar XML, validar esquemas, transformar con XSLT y depurar procesos complejos.",
+      "conclusion_final": "La respuesta correcta es la opción b porque Altova XMLSpy es el editor destacado como referencia corporativa."
+    }
+  },
+  {
+    "id": "UT13-Q14",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué característica visual distingue especialmente a XML Notepad según el temario?",
+    "contexto": "Diferencias de interfaz entre varios editores XML mencionados en la unidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un modo exclusivo de terminal sin paneles gráficos"
+      },
+      {
+        "clave": "b",
+        "texto": "Una interfaz de doble ventana con texto y estructura en árbol"
+      },
+      {
+        "clave": "c",
+        "texto": "La ejecución obligatoria sobre un servidor remoto"
+      },
+      {
+        "clave": "d",
+        "texto": "La imposibilidad de deshacer cambios previos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario describe XML Notepad como un editor con interfaz intuitiva de doble ventana: una vista textual y otra en forma de árbol para visualizar y editar mejor el documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XML Notepad no se presenta como editor exclusivo de terminal."
+        },
+        {
+          "clave": "c",
+          "motivo": "No necesita ejecutarse obligatoriamente en un servidor remoto."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario menciona precisamente undo infinito, así que esta opción contradice su descripción."
+        }
+      ],
+      "resumen_didactico": "XML Notepad destaca por permitir ver el XML como texto y como árbol al mismo tiempo.",
+      "ejemplo_practico": "Mientras editas una etiqueta en el panel de texto, puedes comprobar en la otra ventana cómo queda la jerarquía del documento.",
+      "conclusion_final": "La respuesta correcta es la opción b porque XML Notepad se caracteriza por su doble ventana texto/árbol."
+    }
+  },
+  {
+    "id": "UT13-Q15",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Cómo denomina el temario a los programas encargados de comprobar un documento XML frente a sus restricciones y detectar errores estructurales?",
+    "contexto": "Proceso de validación XML y nombre técnico de las herramientas que lo realizan.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Compiladores o ensambladores"
+      },
+      {
+        "clave": "b",
+        "texto": "Validadores o parsers"
+      },
+      {
+        "clave": "c",
+        "texto": "Servidores de sindicación"
+      },
+      {
+        "clave": "d",
+        "texto": "Motores OLAP"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que la validación compara el XML con sus esquemas de restricciones y que los programas que realizan esta labor se conocen como validadores o parsers.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los compiladores y ensambladores pertenecen a otros ámbitos del desarrollo de software."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los servidores de sindicación gestionan feeds y publicaciones, no validación general de XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "OLAP pertenece al análisis empresarial multidimensional, no a la validación XML."
+        }
+      ],
+      "resumen_didactico": "Para comprobar si un XML está bien estructurado y cumple sus reglas, se usan validadores o parsers.",
+      "ejemplo_practico": "Antes de enviar un XML masivo al servidor, un parser detecta si una etiqueta quedó mal cerrada o un atributo incumple el esquema.",
+      "conclusion_final": "La respuesta correcta es la opción b porque los programas de comprobación se llaman validadores o parsers."
+    }
+  },
+  {
+    "id": "UT13-Q16",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "En una DTD, ¿qué tipo de contenido se debe indicar si un elemento no puede contener absolutamente nada en su interior?",
+    "contexto": "Definición de elementos DTD según el contenido que admiten.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ANY"
+      },
+      {
+        "clave": "b",
+        "texto": "EMPTY"
+      },
+      {
+        "clave": "c",
+        "texto": "#PCDATA"
+      },
+      {
+        "clave": "d",
+        "texto": "#CDATA"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que EMPTY se usa en DTD para declarar elementos vacíos, es decir, sin contenido interno.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "ANY permite contenido amplio o variable, no ausencia total de contenido."
+        },
+        {
+          "clave": "c",
+          "motivo": "#PCDATA indica texto analizado por el parser."
+        },
+        {
+          "clave": "d",
+          "motivo": "#CDATA se refiere a texto no analizado, no a un elemento vacío."
+        }
+      ],
+      "resumen_didactico": "Si un elemento no debe tener contenido, en DTD se declara como EMPTY.",
+      "ejemplo_practico": "<!ELEMENT salto EMPTY> indicaría que el elemento salto no lleva texto ni hijos dentro.",
+      "conclusion_final": "La respuesta correcta es la opción b porque EMPTY representa un elemento sin contenido."
+    }
+  },
+  {
+    "id": "UT13-Q17",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué palabra clave de una DTD indica que un elemento puede contener cualquier contenido permitido sin especificarlo de forma cerrada?",
+    "contexto": "Modelos de contenido DTD con diferente nivel de restricción.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ANY"
+      },
+      {
+        "clave": "b",
+        "texto": "EMPTY"
+      },
+      {
+        "clave": "c",
+        "texto": "#REQUIRED"
+      },
+      {
+        "clave": "d",
+        "texto": "#FIXED"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta ANY como el tipo de contenido que permite cualquier valor o contenido admitido, sin cerrarlo a una estructura concreta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "EMPTY es lo contrario: contenido nulo."
+        },
+        {
+          "clave": "c",
+          "motivo": "#REQUIRED se usa con atributos obligatorios, no como modelo de contenido de un elemento."
+        },
+        {
+          "clave": "d",
+          "motivo": "#FIXED también se usa en atributos, no para indicar contenido libre de un elemento."
+        }
+      ],
+      "resumen_didactico": "En DTD, ANY significa contenido no restringido de manera cerrada.",
+      "ejemplo_practico": "<!ELEMENT ficha ANY> permitiría que ficha contuviera texto, hijos u otras combinaciones válidas.",
+      "conclusion_final": "La respuesta correcta es la opción a porque ANY indica contenido libre o no restringido de forma estricta."
+    }
+  },
+  {
+    "id": "UT13-Q18",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "Si una DTD exige que un atributo aparezca obligatoriamente en el documento XML, ¿qué valor especial debe declararse en su definición?",
+    "contexto": "Obligatoriedad de atributos dentro de una DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "#IMPLIED"
+      },
+      {
+        "clave": "b",
+        "texto": "#REQUIRED"
+      },
+      {
+        "clave": "c",
+        "texto": "#OPTIONAL"
+      },
+      {
+        "clave": "d",
+        "texto": "#DEFAULT"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que #REQUIRED marca un atributo como obligatorio en la DTD; si no aparece en el XML, el documento no validará correctamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "#IMPLIED significa atributo opcional."
+        },
+        {
+          "clave": "c",
+          "motivo": "#OPTIONAL no es la palabra clave estándar explicada en el tema."
+        },
+        {
+          "clave": "d",
+          "motivo": "#DEFAULT no es el valor obligatorio estándar; la idea de valor por defecto es distinta."
+        }
+      ],
+      "resumen_didactico": "Atributo obligatorio en DTD = #REQUIRED.",
+      "ejemplo_practico": "<!ATTLIST producto id CDATA #REQUIRED> obliga a que todo producto tenga atributo id.",
+      "conclusion_final": "La respuesta correcta es la opción b porque #REQUIRED indica obligatoriedad."
+    }
+  },
+  {
+    "id": "UT13-Q19",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué mecanismo de la DTD permite crear un atajo reutilizable para insertar textos o referencias repetidas dentro de un XML?",
+    "contexto": "Reutilización de fragmentos o valores repetidos mediante DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las entidades"
+      },
+      {
+        "clave": "b",
+        "texto": "Los namespaces"
+      },
+      {
+        "clave": "c",
+        "texto": "Los nodos comentario"
+      },
+      {
+        "clave": "d",
+        "texto": "Los selectores CSS"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las entidades funcionan como variables o marcadores de posición reutilizables dentro del documento XML o su DTD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los namespaces distinguen vocabularios XML, pero no actúan como atajos textuales reutilizables."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los comentarios no se usan para insertar contenido reutilizable."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los selectores CSS no pertenecen al mecanismo estructural de una DTD."
+        }
+      ],
+      "resumen_didactico": "Entidad en DTD equivale a un atajo o referencia reutilizable.",
+      "ejemplo_practico": "Si defines una entidad para un correo repetido, luego puedes insertarla varias veces sin escribir el texto completo cada vez.",
+      "conclusion_final": "La respuesta correcta es la opción a porque las entidades sirven como marcadores reutilizables."
+    }
+  },
+  {
+    "id": "UT13-Q20",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué ventaja conceptual presenta XML Schema (XSD) frente a DTD según el enfoque habitual del módulo?",
+    "contexto": "Comparación entre DTD y XSD como mecanismos de restricción y validación XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XSD se escribe usando sintaxis XML y permite una definición más rica de tipos y restricciones"
+      },
+      {
+        "clave": "b",
+        "texto": "XSD solo sirve para aplicar colores y formato visual a los nodos"
+      },
+      {
+        "clave": "c",
+        "texto": "XSD sustituye por completo a los parsers y validadores"
+      },
+      {
+        "clave": "d",
+        "texto": "XSD elimina la necesidad de usar una raíz única en el documento"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el módulo se trabaja XSD como una evolución más potente que DTD, con la ventaja de estar escrito en XML y de permitir definir tipos y restricciones de forma más expresiva.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XSD no estiliza visualmente documentos; su función es estructural y de validación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los validadores siguen siendo necesarios para comprobar el cumplimiento del esquema."
+        },
+        {
+          "clave": "d",
+          "motivo": "La raíz única sigue siendo una regla básica de XML, independientemente de usar XSD."
+        }
+      ],
+      "resumen_didactico": "Frente a DTD, XSD es más expresivo y además usa la propia sintaxis XML.",
+      "ejemplo_practico": "Con XSD puedes definir mejor si un dato debe ser entero, fecha o cadena con ciertas restricciones.",
+      "conclusion_final": "La respuesta correcta es la opción a porque XSD usa sintaxis XML y ofrece una definición más rica de tipos y restricciones."
+    }
+  },
+  {
+    "id": "UT13-Q21",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué instrucción XSLT se utiliza para extraer el valor de un nodo referenciado desde el XML original?",
+    "contexto": "Plantillas XSLT básicas para recuperar datos concretos del árbol XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:for-each>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:value-of>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:choose>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:sort>"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que <xsl:value-of> extrae el valor del elemento referenciado en el XML original.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xsl:for-each> recorre conjuntos de nodos, pero no se limita a extraer un valor puntual."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:choose> sirve para lógica condicional con varias opciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:sort> ordena resultados, no extrae por sí mismo el valor de un nodo."
+        }
+      ],
+      "resumen_didactico": "Si quieres sacar el contenido de una etiqueta XML en XSLT, piensas en <xsl:value-of>.",
+      "ejemplo_practico": "<xsl:value-of select=\"precio\"/> mostraría el valor del nodo precio.",
+      "conclusion_final": "La respuesta correcta es la opción b porque <xsl:value-of> extrae el valor de un nodo."
+    }
+  },
+  {
+    "id": "UT13-Q22",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué instrucción XSLT permite recorrer repetidamente todos los elementos seleccionados en un conjunto de nodos?",
+    "contexto": "Recorrido iterativo de nodos XML durante una transformación XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:for-each>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:value-of>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:output>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:template> sin match"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta <xsl:for-each> como la etiqueta que selecciona y recorre de forma repetitiva todos los elementos especificados en el conjunto de nodos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<xsl:value-of> extrae un valor, pero no recorre iterativamente un conjunto completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:output> define el formato de salida, no el bucle sobre nodos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La plantilla necesita match y, en cualquier caso, no es la instrucción explícita de recorrido repetitivo explicada aquí."
+        }
+      ],
+      "resumen_didactico": "Para hacer un bucle sobre varios nodos en XSLT, se usa <xsl:for-each>.",
+      "ejemplo_practico": "Se puede recorrer una lista de plantas y mostrar especie y precio para cada una.",
+      "conclusion_final": "La respuesta correcta es la opción a porque <xsl:for-each> recorre nodos repetidamente."
+    }
+  },
+  {
+    "id": "UT13-Q23",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "Si <xsl:sort> se aplica sobre valores numéricos sin indicar otra configuración adicional, ¿cómo ordena por defecto los resultados?",
+    "contexto": "Ordenación de contenido en XSLT con la instrucción específica de clasificación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "De mayor a menor"
+      },
+      {
+        "clave": "b",
+        "texto": "De menor a mayor"
+      },
+      {
+        "clave": "c",
+        "texto": "En orden aleatorio"
+      },
+      {
+        "clave": "d",
+        "texto": "Solo agrupa valores repetidos, pero no ordena números"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que, cuando se trata de números, <xsl:sort> ordena por defecto de menor a mayor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El orden descendente requeriría otra configuración; no es el comportamiento por defecto descrito."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe un orden aleatorio como comportamiento normal de <xsl:sort>."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario sí señala que ordena números, concretamente de menor a mayor por defecto."
+        }
+      ],
+      "resumen_didactico": "En XSLT, <xsl:sort> con números ordena por defecto ascendentemente.",
+      "ejemplo_practico": "Si ordenas precios 12, 4 y 8, el resultado por defecto sería 4, 8 y 12.",
+      "conclusion_final": "La respuesta correcta es la opción b porque <xsl:sort> numérico ordena de menor a mayor."
+    }
+  },
+  {
+    "id": "UT13-Q24",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué estructura XSLT se utiliza cuando hay que elegir entre varias condiciones excluyentes y ejecutar solo una de ellas?",
+    "contexto": "Lógica condicional múltiple en transformaciones XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:choose> con <xsl:when> y opcionalmente <xsl:otherwise>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:for-each> con <xsl:sort>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:value-of> con <xsl:template>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:output> con <xsl:include>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que <xsl:choose> permite seleccionar una única salida entre varias opciones evaluadas con <xsl:when> y completar los demás casos con <xsl:otherwise>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esa combinación sirve para recorrer y ordenar, no para elegir entre condiciones excluyentes."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es la estructura estándar para decisiones múltiples."
+        },
+        {
+          "clave": "d",
+          "motivo": "Son instrucciones de otra naturaleza y no resuelven la lógica condicional múltiple descrita."
+        }
+      ],
+      "resumen_didactico": "Si en XSLT necesitas un equivalente a varias ramas condicionales, usas choose/when/otherwise.",
+      "ejemplo_practico": "Puedes marcar una planta como Premium si el precio supera 10 y como Económica en caso contrario.",
+      "conclusion_final": "La respuesta correcta es la opción a porque <xsl:choose> es la estructura de decisión múltiple."
+    }
+  },
+  {
+    "id": "UT13-Q25",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "Dentro del atributo test de una condición XSLT, ¿por qué debe escribirse &lt; en lugar del símbolo < cuando se compara un valor numérico?",
+    "contexto": "Restricciones de sintaxis XML dentro de atributos usados en XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque el símbolo < podría interpretarse como inicio de una nueva etiqueta XML"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el procesador XSLT solo admite comparaciones escritas en hexadecimal"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque el operador < está prohibido en cualquier lenguaje de marcas"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque &lt; ordena los datos de menor a mayor automáticamente"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario advierte que, dentro de atributos XML como test, escribir < directamente haría que el procesador creyera que empieza una etiqueta nueva. Por eso debe escaparse como &lt;.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No existe esa restricción sobre hexadecimal en XSLT."
+        },
+        {
+          "clave": "c",
+          "motivo": "El operador de comparación sí puede usarse, pero escapado cuando está dentro de un atributo XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "&lt; no ordena datos; simplemente representa el signo menor que de forma segura."
+        }
+      ],
+      "resumen_didactico": "Dentro de atributos XML, ciertos símbolos deben escaparse para no romper la sintaxis.",
+      "ejemplo_practico": "En <xsl:if test=\"precio &lt; 1\">, &lt; permite comparar sin que el parser confunda el signo con una etiqueta.",
+      "conclusion_final": "La respuesta correcta es la opción a porque < debe escaparse para no interpretarse como inicio de etiqueta."
+    }
+  },
+  {
+    "id": "UT13-Q26",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué requisito base señala el temario como imprescindible antes de instalar eXist-db en Windows, Mac OS o Linux?",
+    "contexto": "Requisitos previos de instalación de una base de datos XML nativa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Tener instalado Java"
+      },
+      {
+        "clave": "b",
+        "texto": "Disponer de Microsoft SQL Server"
+      },
+      {
+        "clave": "c",
+        "texto": "Haber configurado un servicio FTP"
+      },
+      {
+        "clave": "d",
+        "texto": "Tener compilado previamente un esquema DTD"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que, para instalar eXist-db, el requisito base es disponer de un sistema operativo compatible y tener Java instalado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "eXist-db no depende de Microsoft SQL Server para su instalación básica."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un servicio FTP puede ser útil en otros contextos, pero no es el requisito base señalado para instalar eXist-db."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es necesario compilar una DTD antes de instalar la base de datos."
+        }
+      ],
+      "resumen_didactico": "eXist-db necesita Java como requisito previo principal.",
+      "ejemplo_practico": "Antes de ejecutar el instalador .jar de eXist-db, el sistema debe tener una JVM disponible.",
+      "conclusion_final": "La respuesta correcta es la opción a porque Java es el requisito base de instalación."
+    }
+  },
+  {
+    "id": "UT13-Q27",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué puerto usa por defecto eXist-db para ofrecer acceso HTTPS con SSL cifrado?",
+    "contexto": "Puertos de red predeterminados del motor eXist-db.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "3306"
+      },
+      {
+        "clave": "b",
+        "texto": "8080"
+      },
+      {
+        "clave": "c",
+        "texto": "8443"
+      },
+      {
+        "clave": "d",
+        "texto": "1521"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que eXist-db utiliza por defecto el puerto 8080 para HTTP y el 8443 para HTTPS con SSL cifrado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "3306 se asocia habitualmente a MySQL/MariaDB, no al acceso HTTPS de eXist-db."
+        },
+        {
+          "clave": "b",
+          "motivo": "8080 corresponde al acceso HTTP estándar, no a HTTPS cifrado."
+        },
+        {
+          "clave": "d",
+          "motivo": "1521 suele asociarse a Oracle, no al puerto HTTPS por defecto de eXist-db."
+        }
+      ],
+      "resumen_didactico": "En eXist-db: 8080 para HTTP y 8443 para HTTPS.",
+      "ejemplo_practico": "Si el administrador quiere entrar con conexión cifrada al panel web, debe usar el puerto 8443.",
+      "conclusion_final": "La respuesta correcta es la opción c porque el HTTPS cifrado usa el puerto 8443."
+    }
+  },
+  {
+    "id": "UT13-Q28",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Cómo define el temario a eXide dentro del ecosistema de eXist-db?",
+    "contexto": "Herramientas de trabajo diarias para escribir y ejecutar consultas sobre una base XML nativa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un IDE web específico para escribir, compilar y ejecutar consultas XQuery sobre la base activa"
+      },
+      {
+        "clave": "b",
+        "texto": "Un validador exclusivo de feeds RSS y Atom"
+      },
+      {
+        "clave": "c",
+        "texto": "Un cliente de correo interno para el envío de alertas XML"
+      },
+      {
+        "clave": "d",
+        "texto": "Una biblioteca CSS para diseñar paneles de administración"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta eXide como el IDE web oficial de eXist-db, diseñado para escribir, compilar y ejecutar consultas XQuery directamente sobre la base de datos activa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La validación de feeds RSS y Atom se relaciona con otras herramientas como W3C Validator o Feed Validator."
+        },
+        {
+          "clave": "c",
+          "motivo": "eXide no es un cliente de correo; es una herramienta de desarrollo web para consultas XQuery."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una biblioteca CSS ni una herramienta visual de maquetación."
+        }
+      ],
+      "resumen_didactico": "eXide es el entorno web de trabajo de eXist-db para operar con XQuery.",
+      "ejemplo_practico": "Un técnico abre eXide en el navegador, escribe una consulta FLWOR y ve los resultados al instante sobre la base XML activa.",
+      "conclusion_final": "La respuesta correcta es la opción a porque eXide es el IDE web específico de eXist-db."
+    }
+  },
+  {
+    "id": "UT13-Q29",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "¿Qué servicio online mencionado en el temario permite validar un feed RSS o Atom a partir de una URI o pegando directamente el código, indicando además la línea donde se detecta el error?",
+    "contexto": "Herramientas de validación de canales de sindicación antes de su publicación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Servicio de validación del W3C"
+      },
+      {
+        "clave": "b",
+        "texto": "DriverManager"
+      },
+      {
+        "clave": "c",
+        "texto": "XML Notepad"
+      },
+      {
+        "clave": "d",
+        "texto": "OLAP Viewer"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario menciona el servicio de validación online del W3C como herramienta capaz de comprobar archivos RSS y Atom desde una URI o a partir del código pegado, indicando línea y tipo de error.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DriverManager pertenece a JDBC y conexiones con bases de datos relacionales."
+        },
+        {
+          "clave": "c",
+          "motivo": "XML Notepad es un editor XML, no el servicio web concreto descrito para validar feeds."
+        },
+        {
+          "clave": "d",
+          "motivo": "OLAP Viewer no es una herramienta de validación de RSS o Atom del temario."
+        }
+      ],
+      "resumen_didactico": "Antes de publicar un feed, conviene pasarlo por el validador del W3C para localizar errores exactos.",
+      "ejemplo_practico": "Si un canal RSS tiene un ampersand mal codificado, el validador del W3C puede señalar la línea exacta del fallo.",
+      "conclusion_final": "La respuesta correcta es la opción a porque el servicio del W3C permite validar feeds e identificar errores por línea."
+    }
+  },
+  {
+    "id": "UT13-Q30",
+    "tema": "UT13 — Repaso global del módulo Lenguajes de Marcas (Bloque 5)",
+    "pregunta": "Según la nota de contexto laboral del tema, ¿cuál es el flujo profesional moderno recomendado para publicar un feed en producción en lugar de subirlo manualmente por FTP?",
+    "contexto": "Diferencia entre la publicación clásica de feeds y el despliegue moderno en entornos profesionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Copiar el archivo al escritorio del administrador y enviarlo por correo"
+      },
+      {
+        "clave": "b",
+        "texto": "Guardar el XML en un repositorio y publicarlo mediante una pipeline CI/CD"
+      },
+      {
+        "clave": "c",
+        "texto": "Renombrar el archivo a .txt y abrirlo desde el navegador"
+      },
+      {
+        "clave": "d",
+        "texto": "Insertarlo manualmente dentro de una base de datos relacional por consola"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario actualiza el enfoque clásico y señala que, en entornos modernos, el feed se guarda en un repositorio de control de versiones y una pipeline CI/CD se encarga de publicarlo de forma segura en servidores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Enviar archivos por correo no es el flujo profesional recomendado para despliegue en producción."
+        },
+        {
+          "clave": "c",
+          "motivo": "Cambiar la extensión a .txt no publica el feed ni automatiza su despliegue."
+        },
+        {
+          "clave": "d",
+          "motivo": "La inserción manual en una base de datos relacional no corresponde al flujo moderno de publicación descrito."
+        }
+      ],
+      "resumen_didactico": "Hoy lo normal es versionar el feed en Git y desplegarlo con CI/CD, no tocar producción por FTP manualmente.",
+      "ejemplo_practico": "Un cambio en el feed se sube al repositorio; después, una pipeline valida y publica automáticamente el XML en el servidor correcto.",
+      "conclusion_final": "La respuesta correcta es la opción b porque el flujo moderno recomendado combina repositorio y despliegue CI/CD."
+    }
+  }
+]

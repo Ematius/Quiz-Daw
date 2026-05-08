@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT3-Q01",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un técnico de sistemas se encuentra auditando la base de una aplicación y necesita comprender la arquitectura de sus lenguajes. ¿Qué estándar generalizado, considerado como un metalenguaje, es el origen de los lenguajes de marcas utilizados para configurar aplicaciones?",
+    "contexto": "Origen de los lenguajes de marcas usados para configurar aplicaciones y almacenar información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El protocolo de transferencia de hipertexto seguro"
+      },
+      {
+        "clave": "b",
+        "texto": "El lenguaje de marcado generalizado estándar o SGML"
+      },
+      {
+        "clave": "c",
+        "texto": "El sistema de encriptación de datos asimétricos"
+      },
+      {
+        "clave": "d",
+        "texto": "El modelo de objetos de documento jerárquico"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que SGML significa Standard Generalized Markup Language, en español lenguaje de marcado generalizado estándar. Se considera un metalenguaje porque sirve como base para definir otros lenguajes de marcas. Por eso se presenta como el origen de los lenguajes utilizados para estructurar, almacenar y configurar información.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El protocolo de transferencia de hipertexto seguro hace referencia a HTTPS, que sirve para transmitir información de forma segura en la web, pero no es el origen de los lenguajes de marcas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La encriptación de datos asimétricos pertenece al ámbito de la seguridad y la criptografía. No tiene relación directa con la creación o definición de lenguajes de marcas."
+        },
+        {
+          "clave": "d",
+          "motivo": "El modelo de objetos de documento jerárquico se relaciona con la representación estructurada de documentos, como el DOM en páginas web, pero no es el metalenguaje origen de los lenguajes de marcas."
+        }
+      ],
+      "resumen_didactico": "SGML es importante porque funciona como una base general desde la que se pueden crear lenguajes de marcas más concretos. Por eso el temario lo presenta como el origen de estos lenguajes.",
+      "ejemplo_practico": "Si una empresa usa archivos XML para configurar una aplicación, XML no aparece de la nada: pertenece a una familia de lenguajes de marcas cuya base histórica y conceptual está en SGML.",
+      "conclusion_final": "La respuesta correcta es SGML, porque es el lenguaje de marcado generalizado estándar y está considerado como el metalenguaje origen de los lenguajes de marcas."
+    }
+  },
+  {
+    "id": "UT3-Q02",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Durante la fase de pruebas de una interfaz de usuario, es fundamental comprobar cómo se procesa el código estructurado en diferentes plataformas. ¿Cuál es la función técnica de los navegadores web en este proceso?",
+    "contexto": "Función de los navegadores web al trabajar con documentos escritos en lenguajes de marcas como HTML o XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Compilar el código fuente en binarios ejecutables para el sistema operativo"
+      },
+      {
+        "clave": "b",
+        "texto": "Generar automáticamente bases de datos relacionales a partir del código plano"
+      },
+      {
+        "clave": "c",
+        "texto": "Interpretar el código del lenguaje de marcas y presentar la página web como debería verse"
+      },
+      {
+        "clave": "d",
+        "texto": "Encriptar las etiquetas para proteger la información de accesos no autorizados"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los navegadores web, también llamados browsers, son necesarios para la correcta visualización de documentos HTML, XML y otros lenguajes de marcas. Su función es interpretar el código escrito con etiquetas y presentar al usuario la página web como debería verse.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los navegadores no compilan el código de marcas en binarios ejecutables. HTML y XML no se convierten en programas ejecutables del sistema operativo, sino que son interpretados para mostrar o estructurar información."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un navegador no genera bases de datos relacionales automáticamente. Las bases de datos pertenecen a otra capa del sistema y no se crean simplemente por abrir código HTML o XML en el navegador."
+        },
+        {
+          "clave": "d",
+          "motivo": "El navegador puede participar en comunicaciones seguras cuando se usa HTTPS, pero no tiene como función principal encriptar etiquetas de lenguajes de marcas. Su papel en este tema es interpretar y mostrar el documento."
+        }
+      ],
+      "resumen_didactico": "El navegador actúa como intérprete del lenguaje de marcas: lee las etiquetas y transforma ese código en una representación visual o estructurada comprensible para el usuario.",
+      "ejemplo_practico": "Cuando escribes un archivo HTML con un título, un párrafo y una imagen, el navegador interpreta esas etiquetas y muestra una página con texto e imagen en lugar de enseñar solo el código plano.",
+      "conclusion_final": "La respuesta correcta es la c, porque los navegadores interpretan el código de los lenguajes de marcas y presentan la página web como debe visualizarse."
+    }
+  },
+  {
+    "id": "UT3-Q03",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un departamento de facturación requiere automatizar la creación de documentos para sus clientes. ¿Qué ventaja operativa justifica el uso de formatos estructurados para esta tarea?",
+    "contexto": "Uso de formatos estructurados como XML para generar diferentes documentos o salidas a partir de una única fuente de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La ejecución de bucles lógicos complejos en el servidor de aplicaciones"
+      },
+      {
+        "clave": "b",
+        "texto": "La generación de múltiples vistas y salidas como WML, HTML o PDF desde un solo fichero"
+      },
+      {
+        "clave": "c",
+        "texto": "La traducción automática del contenido a múltiples idiomas"
+      },
+      {
+        "clave": "d",
+        "texto": "El bloqueo automático de conexiones de red no seguras"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que una de las ventajas de los lenguajes de marcas y de formatos estructurados como XML es que permiten generar múltiples salidas desde un solo fichero. Por ejemplo, desde un único documento XML se pueden obtener diferentes formatos como WML, HTML o PDF, lo que resulta útil para departamentos como facturación, donde los mismos datos pueden reutilizarse en distintos documentos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La ejecución de bucles lógicos complejos pertenece a la programación del servidor, no a la ventaja principal de un formato estructurado como XML. XML organiza datos, pero no ejecuta lógica de programación por sí mismo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un formato estructurado puede facilitar la organización del contenido, pero no implica automáticamente la traducción del contenido a varios idiomas. Esa tarea requeriría otro sistema o herramienta adicional."
+        },
+        {
+          "clave": "d",
+          "motivo": "El bloqueo de conexiones de red no seguras pertenece al ámbito de la seguridad de red, no al uso de XML o lenguajes de marcas para generar documentos."
+        }
+      ],
+      "resumen_didactico": "La clave está en que un solo fichero estructurado puede servir como fuente común para crear varias salidas diferentes. Así se evita duplicar información y se automatiza mejor el trabajo.",
+      "ejemplo_practico": "Una empresa puede guardar los datos de una factura en XML y, a partir de ese mismo archivo, generar un PDF para el cliente, una vista HTML para la intranet y otro formato para enviarlo a un sistema externo.",
+      "conclusion_final": "La respuesta correcta es la b, porque el temario destaca que los formatos estructurados permiten generar múltiples vistas y salidas desde un único fichero."
+    }
+  },
+  {
+    "id": "UT3-Q04",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Al desarrollar las vistas de usuario nativas para una nueva aplicación móvil orientada a transporte, ¿qué estructura estándar es utilizada habitualmente por los entornos de desarrollo para guardar este diseño?",
+    "contexto": "Uso de XML en entornos de desarrollo de aplicaciones móviles para guardar la estructura de las vistas de usuario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un archivo binario precompilado y cerrado"
+      },
+      {
+        "clave": "b",
+        "texto": "Un formato de marcas jerárquicas basado en XML"
+      },
+      {
+        "clave": "c",
+        "texto": "Un documento de texto sin formato ni etiquetas"
+      },
+      {
+        "clave": "d",
+        "texto": "Un esquema de bases de datos no relacionales"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que una de las aplicaciones de XML es el desarrollo de aplicaciones móviles. Entornos como Android Studio utilizan estructuras basadas en XML para guardar las vistas, es decir, la disposición de elementos de la interfaz como botones, textos, formularios o zonas de contenido.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un archivo binario precompilado y cerrado no permite describir de forma clara y editable la estructura de una vista. El temario se centra en formatos legibles y estructurados mediante etiquetas, no en binarios cerrados."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un documento de texto sin etiquetas no serviría para representar correctamente una interfaz jerárquica. Para describir elementos visuales y su relación entre ellos se necesita una estructura organizada, como la que ofrece XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un esquema de bases de datos no relacionales sirve para almacenar datos, no para definir directamente la estructura visual de una pantalla de aplicación móvil."
+        }
+      ],
+      "resumen_didactico": "XML permite guardar interfaces de forma estructurada porque organiza los elementos mediante etiquetas jerárquicas. Por eso puede usarse para describir vistas en entornos de desarrollo móvil.",
+      "ejemplo_practico": "En una app de transporte, una pantalla de login podría tener un campo para el usuario, otro para la contraseña y un botón de acceso. Esa disposición puede describirse en un archivo XML donde cada elemento aparece representado mediante etiquetas.",
+      "conclusion_final": "La respuesta correcta es la b, porque los entornos de desarrollo móvil pueden utilizar formatos de marcas jerárquicas basados en XML para guardar el diseño de las vistas."
+    }
+  },
+  {
+    "id": "UT3-Q05",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "En una integración entre plataformas bancarias y aplicaciones móviles de terceros, los ingenieros requieren un formato neutro. ¿Por qué este tipo de lenguajes se aplica de manera tan extensa en estos escenarios?",
+    "contexto": "Uso de lenguajes de marcas como formato neutro para intercambiar información entre sistemas distintos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque ejecutan algoritmos de inteligencia artificial en el servidor de destino"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque posibilitan el intercambio de información sin importar las tecnologías o la plataforma que utilicen"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque comprimen el tamaño de los datos para que ocupen menos espacio en el disco"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque fuerzan a ambas plataformas a utilizar el mismo sistema operativo"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los lenguajes de marcas se aplican en muchos ámbitos porque permiten el intercambio de información entre aplicaciones de distinto tipo, sin importar las tecnologías usadas para crearlas ni la plataforma que utilicen. Por eso son útiles en integraciones entre sistemas diferentes, como plataformas bancarias, servidores, aplicaciones móviles o sistemas empresariales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los lenguajes de marcas no tienen como función ejecutar algoritmos de inteligencia artificial. Su papel principal es estructurar información para que pueda ser leída e intercambiada por diferentes sistemas."
+        },
+        {
+          "clave": "c",
+          "motivo": "XML y otros lenguajes de marcas no se usan principalmente para comprimir datos. De hecho, al usar etiquetas, pueden ocupar más espacio que otros formatos. Su ventaja está en la estructura y la interoperabilidad, no en la compresión."
+        },
+        {
+          "clave": "d",
+          "motivo": "La ventaja de estos lenguajes es justamente la contraria: no obligan a las plataformas a usar el mismo sistema operativo. Permiten que sistemas distintos se comuniquen aunque estén hechos con tecnologías diferentes."
+        }
+      ],
+      "resumen_didactico": "Los lenguajes de marcas funcionan como un formato común que diferentes sistemas pueden entender. Por eso son útiles cuando hay que conectar aplicaciones, servidores o plataformas que no han sido desarrollados con la misma tecnología.",
+      "ejemplo_practico": "Una aplicación móvil puede enviar datos de una operación bancaria a un servidor usando un formato estructurado. Aunque la app esté hecha con una tecnología y el servidor con otra, ambos pueden interpretar los datos si respetan la misma estructura.",
+      "conclusion_final": "La respuesta correcta es la b, porque estos lenguajes permiten intercambiar información entre sistemas distintos sin depender de la tecnología o plataforma utilizada."
+    }
+  },
+  {
+    "id": "UT3-Q06",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un equipo de analistas necesita exportar registros de clientes de forma que el documento no solo muestre el diseño visual, sino que indique claramente qué representa cada dato numérico. ¿Qué tecnología surgió como método de resolución para dotar de significado real a los datos?",
+    "contexto": "Necesidad de representar datos con significado propio, no solo con formato visual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El estándar procedimental de formato de impresión"
+      },
+      {
+        "clave": "b",
+        "texto": "Las hojas de estilo en cascada modernas"
+      },
+      {
+        "clave": "c",
+        "texto": "Los sistemas de control de versiones distribuidos"
+      },
+      {
+        "clave": "d",
+        "texto": "El lenguaje de marcas extensibles o XML"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XML significa Extensible Markup Language, en español lenguaje de marcas extensibles. Surgió como respuesta a una limitación de HTML: HTML permite indicar cómo se muestra algo visualmente, pero no explica qué significado real tienen los datos. XML permite crear etiquetas propias para identificar qué representa cada dato dentro del documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un estándar de formato de impresión estaría relacionado con la presentación o salida impresa de un documento, no con dar significado estructurado a los datos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las hojas de estilo en cascada, CSS, sirven para definir el aspecto visual de una página: colores, tamaños, posiciones o estilos. No sirven para indicar semánticamente qué representa cada dato."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los sistemas de control de versiones distribuidos, como Git, sirven para gestionar cambios en archivos y código fuente. No son una tecnología destinada a estructurar el significado de los datos dentro de un documento."
+        }
+      ],
+      "resumen_didactico": "XML no se centra en cómo se ve la información, sino en qué significa. Permite etiquetar los datos para que una persona o un programa pueda entender su contenido de forma clara.",
+      "ejemplo_practico": "En lugar de tener solo el número 1500 dentro de un documento, XML permite escribirlo dentro de una etiqueta como <saldo>1500</saldo> o <importe>1500</importe>, dejando claro qué representa ese dato.",
+      "conclusion_final": "La respuesta correcta es la d, porque XML surgió para estructurar datos con significado real mediante etiquetas propias."
+    }
+  },
+  {
+    "id": "UT3-Q07",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Al configurar un sistema de mensajería para el mercado hispanohablante, se requiere que los archivos de configuración soporten de forma nativa caracteres especiales sin corromper la lectura automática. ¿Qué codificación específica permite utilizar la letra ñ y los acentos correctamente?",
+    "contexto": "Uso de la codificación en el prólogo de un documento XML para representar correctamente caracteres propios del castellano.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La codificación de seguridad AES-256"
+      },
+      {
+        "clave": "b",
+        "texto": "El estándar de compresión ZIP"
+      },
+      {
+        "clave": "c",
+        "texto": "El protocolo de transporte asíncrono"
+      },
+      {
+        "clave": "d",
+        "texto": "El formato de codificación ISO 8859-1"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en el prólogo de un documento XML puede declararse la codificación de caracteres. En el ejemplo del documento XML aparece encoding=\"iso-8859-1\", y se explica que ISO 8859-1 permite utilizar correctamente caracteres como la letra ñ y los acentos. Esto evita que el archivo sea interpretado de forma incorrecta por otros sistemas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "AES-256 es un sistema de cifrado utilizado para proteger información, pero no es una codificación de caracteres para representar letras como ñ o vocales acentuadas en un documento XML."
+        },
+        {
+          "clave": "b",
+          "motivo": "ZIP es un formato de compresión de archivos. Sirve para reducir tamaño o agrupar ficheros, pero no define cómo se representan caracteres especiales dentro de un documento XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un protocolo de transporte asíncrono estaría relacionado con la comunicación o transmisión de datos, no con la codificación de caracteres dentro de un archivo XML."
+        }
+      ],
+      "resumen_didactico": "La codificación indica al sistema cómo debe interpretar los caracteres del documento. Si el archivo contiene ñ o acentos, declarar una codificación adecuada evita errores de lectura.",
+      "ejemplo_practico": "En un archivo XML para clientes españoles, una etiqueta podría contener <municipio>A Coruña</municipio>. Si la codificación no está bien indicada, la ñ o los acentos podrían mostrarse mal o provocar errores al procesar el archivo.",
+      "conclusion_final": "La respuesta correcta es la d, porque ISO 8859-1 permite representar correctamente caracteres como la ñ y los acentos en documentos XML."
+    }
+  },
+  {
+    "id": "UT3-Q08",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Durante la creación de un nuevo protocolo de intercambio de datos, el equipo de arquitectura debe respetar la estructura fundamental del estándar. ¿Cuáles son las dos partes bien diferenciadas que conforman la jerarquía en árbol de un documento XML?",
+    "contexto": "Estructura básica de un documento XML y sus partes principales dentro de una organización jerárquica en árbol.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La sección de variables globales y el bloque de funciones privadas"
+      },
+      {
+        "clave": "b",
+        "texto": "La cabecera visual y el pie de página de metadatos"
+      },
+      {
+        "clave": "c",
+        "texto": "El prólogo, como parte principal que puede estar formada por varias líneas, y el cuerpo"
+      },
+      {
+        "clave": "d",
+        "texto": "El módulo de estilos en cascada y el bloque de código funcional"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los documentos XML tienen una estructura jerárquica en árbol y que están formados por dos partes bien diferenciadas: el prólogo y el cuerpo. El prólogo aparece al inicio del documento y puede contener información como la versión de XML y la codificación de caracteres. El cuerpo contiene los datos estructurados mediante etiquetas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las variables globales y las funciones privadas pertenecen a lenguajes de programación, no a la estructura de un documento XML. XML organiza datos mediante etiquetas, pero no define funciones como haría JavaScript, Java o PHP."
+        },
+        {
+          "clave": "b",
+          "motivo": "La cabecera visual y el pie de página pertenecen más al diseño de documentos o páginas web, pero no son las dos partes estructurales fundamentales de XML según el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los estilos en cascada hacen referencia a CSS, y el bloque de código funcional pertenece a lenguajes de programación. XML no se basa en estilos ni en código ejecutable, sino en una estructura de datos con prólogo y cuerpo."
+        }
+      ],
+      "resumen_didactico": "Un documento XML se divide principalmente en prólogo y cuerpo. El prólogo informa sobre el documento, y el cuerpo contiene la información organizada en forma de árbol mediante etiquetas.",
+      "ejemplo_practico": "En un XML, la línea <?xml version=\"1.0\" encoding=\"utf-8\"?> sería el prólogo. Después vendría el cuerpo, por ejemplo <banco><usuario><nombre>Pedro</nombre></usuario></banco>.",
+      "conclusion_final": "La respuesta correcta es la c, porque el temario indica que la estructura fundamental de un documento XML se compone de prólogo y cuerpo."
+    }
+  },
+  {
+    "id": "UT3-Q09",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un administrador configura las opciones de red de un servidor utilizando una marca que indica el estado activo de una función, pero que no contiene texto en su interior. ¿Cómo se estructuran los atributos dentro de este tipo de etiquetas vacías?",
+    "contexto": "Uso de etiquetas vacías en XML y colocación de atributos dentro de la propia etiqueta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se colocan en una etiqueta de cierre independiente"
+      },
+      {
+        "clave": "b",
+        "texto": "Aportan propiedades a los elementos y se encuentran integrados en la etiqueta de apertura"
+      },
+      {
+        "clave": "c",
+        "texto": "Se almacenan en un archivo de configuración separado"
+      },
+      {
+        "clave": "d",
+        "texto": "Se redactan como comentarios invisibles al final de la línea"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las etiquetas vacías en XML no contienen texto interior, pero pueden incluir atributos que aportan información suficiente para que el programa sepa cómo actuar. Los atributos aportan propiedades a los elementos y se encuentran integrados en la etiqueta de apertura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En una etiqueta vacía no se usa una etiqueta de cierre independiente. La propia etiqueta se abre y se cierra en una sola estructura, como <servidor_activo estado=\"si\" />."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los atributos no se almacenan necesariamente en un archivo separado. En XML se escriben dentro de la propia etiqueta a la que pertenecen."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los atributos no son comentarios invisibles. Son información real que el sistema puede leer e interpretar para conocer propiedades del elemento."
+        }
+      ],
+      "resumen_didactico": "Una etiqueta vacía no tiene contenido entre apertura y cierre, pero puede llevar atributos dentro de la propia etiqueta. Esos atributos describen propiedades o valores del elemento.",
+      "ejemplo_practico": "En <servidor_activo estado=\"si\" />, la etiqueta no contiene texto interior, pero el atributo estado=\"si\" indica que el servidor debe considerarse activo.",
+      "conclusion_final": "La respuesta correcta es la b, porque los atributos aportan propiedades al elemento y se escriben dentro de la etiqueta de apertura, incluso cuando la etiqueta está vacía."
+    }
+  },
+  {
+    "id": "UT3-Q10",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Al analizar el contenido de un intercambio de datos entre diferentes programas de forma segura, un desarrollador junior observa que los datos están rodeados de etiquetas descriptivas personalizadas. ¿Qué ventaja técnica aporta este formato en el entorno empresarial?",
+    "contexto": "Uso de XML para intercambiar datos entre programas mediante etiquetas propias y estructuras organizadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sustituye por completo la necesidad de servidores en la nube"
+      },
+      {
+        "clave": "b",
+        "texto": "Convierte automáticamente los textos en gráficos tridimensionales"
+      },
+      {
+        "clave": "c",
+        "texto": "Facilita la creación de etiquetas propias y la presentación de estructuras independientes"
+      },
+      {
+        "clave": "d",
+        "texto": "Requiere un compilador de pago para poder generar el archivo final"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XML facilita el intercambio de datos entre diferentes programas de forma segura. Una de sus ventajas es que permite crear etiquetas propias, adaptadas al significado de los datos que se quieren representar. Esto permite estructurar la información de manera clara, independiente y comprensible tanto para las máquinas como para las personas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XML no sustituye la necesidad de servidores en la nube. Puede usarse para intercambiar o almacenar información, pero los servidores siguen siendo necesarios para alojar, procesar o transmitir esos datos."
+        },
+        {
+          "clave": "b",
+          "motivo": "XML no convierte textos en gráficos tridimensionales. Su función es estructurar información mediante etiquetas, no generar representaciones visuales complejas de forma automática."
+        },
+        {
+          "clave": "d",
+          "motivo": "Para crear un documento XML no se necesita un compilador de pago. El temario indica que incluso se puede generar un documento XML simple sin conocimientos de programación y usando editores de texto."
+        }
+      ],
+      "resumen_didactico": "XML permite crear etiquetas propias para describir los datos con significado. Por eso es útil en empresas que necesitan intercambiar información entre programas diferentes de forma estructurada.",
+      "ejemplo_practico": "En una aplicación bancaria, en lugar de enviar solo el número 1500, se puede escribir <importe>1500</importe>. Así el sistema receptor entiende que ese dato representa un importe y no otro tipo de valor.",
+      "conclusion_final": "La respuesta correcta es la c, porque XML permite crear etiquetas propias y organizar la información en estructuras claras e independientes."
+    }
+  },
+  {
+    "id": "UT3-Q11",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un administrador de bases de datos necesita revisar un volcado de miles de líneas de configuración estructurada en un entorno local. ¿Qué características principales aporta un editor offline clásico como Notepad++ para facilitar esta tarea?",
+    "contexto": "Uso de herramientas de edición offline, especialmente Notepad++, para revisar documentos XML o archivos estructurados extensos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El alojamiento directo y publicación de la página en un servidor remoto"
+      },
+      {
+        "clave": "b",
+        "texto": "La compilación directa del documento en una aplicación de escritorio"
+      },
+      {
+        "clave": "c",
+        "texto": "La generación automática de contenido mediante algoritmos predictivos"
+      },
+      {
+        "clave": "d",
+        "texto": "Colorear el texto en función de la sintaxis del lenguaje y numerar las líneas"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que Notepad++ es una herramienta offline gratuita y libre, disponible para Windows, que facilita la edición de documentos estructurados. Entre sus características destacan el resaltado de sintaxis, la numeración de líneas, el autocompletado, buscar y reemplazar, y la ampliación o reducción de texto. Estas funciones son especialmente útiles cuando se trabaja con documentos XML grandes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Notepad++ es un editor local de código y texto, pero no tiene como función principal alojar ni publicar directamente páginas en servidores remotos."
+        },
+        {
+          "clave": "b",
+          "motivo": "XML y los lenguajes de marcas no se compilan directamente en aplicaciones de escritorio desde Notepad++. El editor ayuda a escribir y revisar el documento, pero no lo transforma en una aplicación ejecutable."
+        },
+        {
+          "clave": "c",
+          "motivo": "La generación automática mediante algoritmos predictivos se relaciona más con herramientas modernas con inteligencia artificial, como Cursor. Notepad++ destaca principalmente por funciones clásicas como coloreado de sintaxis y numeración de líneas."
+        }
+      ],
+      "resumen_didactico": "Notepad++ ayuda a trabajar con archivos largos porque permite ver mejor la estructura del documento: colorea las etiquetas, numera las líneas y facilita encontrar errores.",
+      "ejemplo_practico": "Si un administrador revisa un XML de 5.000 líneas y falta cerrar una etiqueta, el resaltado de sintaxis y la numeración de líneas le ayudan a localizar el problema mucho más rápido que usando un bloc de notas simple.",
+      "conclusion_final": "La respuesta correcta es la d, porque Notepad++ facilita la revisión de documentos estructurados coloreando la sintaxis y mostrando la numeración de líneas."
+    }
+  },
+  {
+    "id": "UT3-Q12",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "En un entorno corporativo basado estrictamente en sistemas operativos Linux y escritorios GNOME, un técnico requiere un editor de texto plano que permita introducir colores asociados a los elementos estructurales. ¿Qué herramienta nativa se ajusta a esta descripción?",
+    "contexto": "Uso de editores offline para crear y revisar documentos estructurados en entornos Linux/GNOME.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un sistema de gestión de bases de datos relacionales"
+      },
+      {
+        "clave": "b",
+        "texto": "Un entorno de diseño visual basado en arrastrar y soltar"
+      },
+      {
+        "clave": "c",
+        "texto": "Gedit, utilizado como bloc de notas y entorno de desarrollo"
+      },
+      {
+        "clave": "d",
+        "texto": "El bloc de notas tradicional de Windows"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que Gedit es un editor de texto que puede encontrarse para Windows, pero que está especialmente vinculado al entorno de escritorio GNOME. Se utiliza como bloc de notas y también como entorno para el desarrollo. Entre sus características se mencionan funciones básicas como guardar, copiar o imprimir, además de numeración de líneas de código y colores asociados a los distintos elementos del programa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un sistema de gestión de bases de datos relacionales sirve para almacenar y gestionar datos mediante tablas, no para editar documentos XML o archivos de texto plano en un entorno GNOME."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un entorno visual de arrastrar y soltar sirve para diseñar interfaces de forma gráfica, pero la pregunta se refiere a un editor de texto plano con colores asociados a elementos estructurales."
+        },
+        {
+          "clave": "d",
+          "motivo": "El bloc de notas tradicional de Windows es un editor de texto plano básico propio de Windows. El caso plantea un entorno Linux con escritorio GNOME, donde la herramienta ajustada es Gedit."
+        }
+      ],
+      "resumen_didactico": "Gedit es una herramienta clásica en entornos GNOME que permite trabajar con texto plano y facilita la lectura del código mediante numeración de líneas y coloreado de elementos.",
+      "ejemplo_practico": "Si un técnico trabaja en un servidor Linux con escritorio GNOME y necesita revisar un archivo XML, puede abrirlo en Gedit para ver las etiquetas con colores y localizar mejor la estructura del documento.",
+      "conclusion_final": "La respuesta correcta es la c, porque Gedit es el editor asociado al entorno GNOME y puede usarse como bloc de notas o entorno de desarrollo con ayuda visual para el código."
+    }
+  },
+  {
+    "id": "UT3-Q13",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Para maximizar la productividad en una gran consultora de software, la dirección técnica decide abandonar los editores de texto plano tradicionales. ¿Qué tipo de herramientas modernas constituyen el estándar absoluto de la industria actual para escribir código de manera eficiente?",
+    "contexto": "Evolución desde editores clásicos de texto plano hacia herramientas modernas de desarrollo profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gestores de archivos en línea sin capacidad de autocompletado"
+      },
+      {
+        "clave": "b",
+        "texto": "Entornos de Desarrollo Integrados (IDE) y editores con Inteligencia Artificial"
+      },
+      {
+        "clave": "c",
+        "texto": "Sistemas de control de versiones alojados en servidores locales"
+      },
+      {
+        "clave": "d",
+        "texto": "Procesadores de texto orientados a la maquetación de revistas impresas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, aunque herramientas como Bloc de notas, Gedit o Notepad++ sirven para entender la base, en el día a día profesional se utilizan herramientas más potentes. Se menciona que el estándar actual de la industria son los Entornos de Desarrollo Integrados, IDE, y editores modernos como Visual Studio Code o Cursor, que ofrecen extensiones, productividad, autocompletado e incluso inteligencia artificial.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un gestor de archivos en línea sin autocompletado no está pensado como herramienta profesional para escribir código de forma eficiente. No ofrece las ayudas modernas que aumentan la productividad del desarrollador."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los sistemas de control de versiones, como Git, sirven para gestionar cambios en el código y colaborar, pero no son el tipo de herramienta principal para escribir código de forma directa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los procesadores de texto para maquetación de revistas están orientados a documentos visuales o editoriales, no al desarrollo de software ni a la escritura eficiente de código."
+        }
+      ],
+      "resumen_didactico": "Los editores clásicos ayudan a entender la sintaxis básica, pero en el trabajo profesional se usan IDEs y editores modernos porque aceleran la escritura, detectan errores y ofrecen herramientas avanzadas.",
+      "ejemplo_practico": "Un programador puede escribir XML o código web en VS Code y aprovechar extensiones, autocompletado, resaltado de errores y herramientas integradas. En Cursor, además, puede recibir ayuda de inteligencia artificial mientras programa.",
+      "conclusion_final": "La respuesta correcta es la b, porque el temario señala que los IDE y editores modernos con inteligencia artificial representan el estándar actual de la industria para trabajar de forma eficiente."
+    }
+  },
+  {
+    "id": "UT3-Q14",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "¿Cuál es uno de los principales problemas operativos de codificar grandes arquitecturas de datos estructurados utilizando únicamente un bloc de notas básico sin características avanzadas?",
+    "contexto": "Limitaciones de los editores de texto básicos al trabajar con documentos XML o estructuras de datos extensas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La necesidad de pagar licencias mensuales por el uso del editor de texto"
+      },
+      {
+        "clave": "b",
+        "texto": "El bloqueo automático del archivo por parte del sistema operativo central"
+      },
+      {
+        "clave": "c",
+        "texto": "La encriptación forzosa del documento al momento de guardarlo en disco"
+      },
+      {
+        "clave": "d",
+        "texto": "La imposibilidad de distinguir visualmente los elementos al mostrarse todo el código del mismo color y formato"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el Bloc de notas de Windows es un editor de texto plano básico. Aunque permite escribir archivos de texto, no es la mejor opción para trabajar de forma habitual con documentos estructurados grandes, porque todo el código se muestra con el mismo color y formato. Esto dificulta distinguir etiquetas, atributos, contenido y posibles errores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El Bloc de notas básico no requiere licencias mensuales. Es una herramienta simple que viene incluida en Windows, por lo que el problema no está relacionado con el coste."
+        },
+        {
+          "clave": "b",
+          "motivo": "El sistema operativo no bloquea automáticamente el archivo por usar un bloc de notas básico. El problema descrito por el temario es de legibilidad y detección de errores, no de bloqueo del archivo."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Bloc de notas no encripta forzosamente los documentos al guardarlos. Puede guardar archivos de texto plano, pero no aplica cifrado automático como parte de su funcionamiento normal."
+        }
+      ],
+      "resumen_didactico": "El problema principal de usar un editor demasiado básico es que no ayuda visualmente al programador. Si todo aparece igual, es más fácil perderse en documentos largos y cometer errores de sintaxis.",
+      "ejemplo_practico": "Si un XML tiene miles de líneas y falta cerrar una etiqueta, en un bloc de notas básico puede ser muy difícil localizar el error porque etiquetas, atributos y texto aparecen sin colores ni ayudas visuales.",
+      "conclusion_final": "La respuesta correcta es la d, porque un bloc de notas básico muestra todo el código del mismo color y formato, dificultando la lectura y el mantenimiento de documentos estructurados grandes."
+    }
+  },
+  {
+    "id": "UT3-Q15",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Al generar automáticamente archivos de configuración para nuevos servidores, el script de despliegue debe asegurar que la estructura cumpla las normativas internacionales desde la primera línea. ¿Qué instrucción obligatoria debe figurar al inicio del documento?",
+    "contexto": "Creación de documentos XML bien formados y uso de la instrucción inicial de procesamiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La firma digital del programador que diseñó la estructura"
+      },
+      {
+        "clave": "b",
+        "texto": "El listado completo de todos los atributos que se van a utilizar"
+      },
+      {
+        "clave": "c",
+        "texto": "El número total de bytes que ocupa el archivo en memoria"
+      },
+      {
+        "clave": "d",
+        "texto": "La instrucción de procesamiento que indica la versión con la que trabajaremos"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, por recomendación del W3C, la primera línea de un documento XML debe indicar el tipo de versión con la que se está trabajando. Esta instrucción de procesamiento suele escribirse al inicio del documento, por ejemplo: <?xml version=\"1.0\" encoding=\"utf-8\"?>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La firma digital del programador no forma parte de la estructura obligatoria inicial de un documento XML bien formado. Puede existir en otros contextos de seguridad, pero no es la instrucción requerida por el temario."
+        },
+        {
+          "clave": "b",
+          "motivo": "XML no exige listar al principio todos los atributos que se van a utilizar. Los atributos se escriben dentro de las etiquetas correspondientes cuando son necesarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "El número total de bytes del archivo no se declara como primera línea del documento XML. Ese dato pertenece al sistema de archivos o al almacenamiento, no a la estructura XML."
+        }
+      ],
+      "resumen_didactico": "Un documento XML debe comenzar indicando información básica sobre sí mismo, especialmente la versión de XML y, normalmente, la codificación de caracteres.",
+      "ejemplo_practico": "Un archivo XML correcto puede comenzar así: <?xml version=\"1.0\" encoding=\"utf-8\"?>. Después de esa línea ya se escribe el elemento raíz y el resto del cuerpo del documento.",
+      "conclusion_final": "La respuesta correcta es la d, porque al inicio del documento debe figurar la instrucción de procesamiento que indica la versión XML con la que se trabaja."
+    }
+  },
+  {
+    "id": "UT3-Q16",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un validador de código rechaza un lote de archivos de intercambio porque los datos de los clientes están sueltos y no están envueltos en un contenedor principal. ¿Qué regla de la estructura jerárquica se ha vulnerado en esta transmisión?",
+    "contexto": "Documento XML rechazado porque los datos no están dentro de un único elemento raíz.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El uso obligatorio de letras mayúsculas en todas las etiquetas de apertura"
+      },
+      {
+        "clave": "b",
+        "texto": "La obligación de incluir un comentario por cada línea de datos generada"
+      },
+      {
+        "clave": "c",
+        "texto": "La necesidad de contar con solo un elemento principal o raíz que englobe todo"
+      },
+      {
+        "clave": "d",
+        "texto": "La prohibición de utilizar comillas dobles en el cuerpo del documento"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que un documento XML bien formado debe tener una estructura jerárquica con un único elemento principal o raíz. Ese elemento raíz debe ser el primero en abrirse y el último en cerrarse, funcionando como contenedor de todos los demás elementos del documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XML no obliga a escribir todas las etiquetas en mayúsculas. Lo que sí ocurre es que distingue entre mayúsculas y minúsculas, por lo que <cliente> y <Cliente> serían etiquetas diferentes."
+        },
+        {
+          "clave": "b",
+          "motivo": "No existe una obligación de incluir comentarios por cada línea de datos. Los comentarios son opcionales y, además, deben colocarse correctamente fuera de las etiquetas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las comillas dobles no están prohibidas. De hecho, los valores de los atributos deben ir entrecomillados, usando comillas simples o dobles."
+        }
+      ],
+      "resumen_didactico": "Un XML no puede tener datos sueltos sin una etiqueta principal que los agrupe. Todo el contenido debe estar dentro de un único elemento raíz.",
+      "ejemplo_practico": "Sería incorrecto tener <nombre>Pedro</nombre><correo>pedro@email.com</correo> sin contenedor principal. Lo correcto sería envolverlo todo dentro de una raíz, por ejemplo: <usuario><nombre>Pedro</nombre><correo>pedro@email.com</correo></usuario>.",
+      "conclusion_final": "La respuesta correcta es la c, porque se ha vulnerado la regla que exige un único elemento principal o raíz que englobe todo el documento XML."
+    }
+  },
+  {
+    "id": "UT3-Q17",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Durante la depuración de una pasarela de pagos, se detecta que los contenedores de datos fallan al intentar leer las subcategorías. ¿Qué principio fundamental del anidamiento correcto dicta cómo deben relacionarse las etiquetas no vacías?",
+    "contexto": "Regla de anidamiento correcto en documentos XML bien formados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Deben ordenarse alfabéticamente para que el servidor las reconozca"
+      },
+      {
+        "clave": "b",
+        "texto": "Deben abrirse y cerrarse en el orden correcto, sin cruzar las jerarquías"
+      },
+      {
+        "clave": "c",
+        "texto": "Deben excluir cualquier etiqueta de cierre para ahorrar espacio en disco"
+      },
+      {
+        "clave": "d",
+        "texto": "Deben compartir el mismo nombre en todos los niveles del documento"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, para que un documento XML esté bien formado, las etiquetas deben anidarse correctamente. Esto significa que las etiquetas que se abren dentro de otras deben cerrarse antes de cerrar la etiqueta exterior. Además, todos los elementos que no sean vacíos deben contar con su etiqueta de apertura y su etiqueta de cierre correspondiente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XML no exige que las etiquetas estén ordenadas alfabéticamente. Lo importante no es el orden alfabético, sino que la estructura jerárquica esté correctamente abierta y cerrada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las etiquetas no vacías sí necesitan etiqueta de cierre. Solo las etiquetas vacías pueden cerrarse en una única marca, como <telefono movil=\"655123456\" />."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las etiquetas no deben compartir el mismo nombre en todos los niveles. Cada etiqueta puede tener su propio nombre según el dato que represente. Lo obligatorio es que cada apertura coincida correctamente con su cierre."
+        }
+      ],
+      "resumen_didactico": "Anidar bien significa respetar el orden de apertura y cierre de las etiquetas. Si una etiqueta se abre dentro de otra, debe cerrarse antes de cerrar la etiqueta que la contiene.",
+      "ejemplo_practico": "Correcto: <pago><importe>150</importe></pago>. Incorrecto: <pago><importe>150</pago></importe>, porque se cruzan las jerarquías y el XML deja de estar bien formado.",
+      "conclusion_final": "La respuesta correcta es la b, porque las etiquetas no vacías deben abrirse y cerrarse en el orden correcto, respetando la jerarquía del documento."
+    }
+  },
+  {
+    "id": "UT3-Q18",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un programa de exportación contable genera etiquetas con múltiples propiedades descriptivas en su interior. ¿Qué limitación sintáctica estricta debe respetar el programa al generar los atributos dentro de un mismo elemento?",
+    "contexto": "Reglas sintácticas de los atributos dentro de un mismo elemento XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo pueden contener valores numéricos enteros"
+      },
+      {
+        "clave": "b",
+        "texto": "Deben escribirse siempre en mayúsculas sostenidas"
+      },
+      {
+        "clave": "c",
+        "texto": "Deben carecer por completo de comillas o delimitadores de texto"
+      },
+      {
+        "clave": "d",
+        "texto": "No pueden existir dos atributos con el mismo nombre dentro del mismo elemento"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los valores de los atributos deben ir entrecomillados y que, además, no pueden existir dos atributos con el mismo nombre dentro del mismo elemento. Esta regla evita ambigüedades al interpretar las propiedades de una etiqueta XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los atributos no están limitados a valores numéricos enteros. Pueden contener texto, números u otros valores, siempre que se escriban correctamente entre comillas."
+        },
+        {
+          "clave": "b",
+          "motivo": "XML no obliga a escribir los atributos en mayúsculas. Además, XML distingue entre mayúsculas y minúsculas, por lo que conviene mantener una nomenclatura coherente, pero no existe esa obligación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esta opción dice justo lo contrario de la regla correcta. En XML, los valores de los atributos deben ir entrecomillados, usando comillas simples o dobles."
+        }
+      ],
+      "resumen_didactico": "Dentro de una misma etiqueta XML no puedes repetir dos atributos con el mismo nombre, porque el sistema no sabría cuál de los dos valores debe interpretar como válido.",
+      "ejemplo_practico": "Incorrecto: <factura importe=\"150\" importe=\"200\" />. Correcto: <factura importe=\"150\" moneda=\"EUR\" />.",
+      "conclusion_final": "La respuesta correcta es la d, porque un mismo elemento XML no puede tener dos atributos con el mismo nombre."
+    }
+  },
+  {
+    "id": "UT3-Q19",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Al modelar los datos de un inventario logístico, un técnico define un elemento con el código < 1er_producto > para clasificar la mercancía. ¿Por qué el validador estricto marcará este nombre de etiqueta como inválido?",
+    "contexto": "Reglas de nomenclatura en documentos XML bien formados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque los elementos, atributos y etiquetas no pueden empezar por un número"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque no se ha incluido un salto de línea antes del cierre"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque excede la longitud máxima permitida para las etiquetas"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque carece de un atributo descriptivo en su interior"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los elementos, atributos y etiquetas en XML deben respetar unas reglas de nomenclatura. Una de esas reglas es que no pueden empezar por un número. Por eso una etiqueta como <1er_producto> sería inválida en un documento XML bien formado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XML no exige incluir un salto de línea antes del cierre de una etiqueta. Los saltos de línea pueden ayudar a leer mejor el documento, pero no son la causa del error sintáctico."
+        },
+        {
+          "clave": "c",
+          "motivo": "El problema no es la longitud del nombre de la etiqueta. El nombre 1er_producto no es inválido por ser demasiado largo, sino porque empieza por un número."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una etiqueta XML no necesita obligatoriamente tener atributos en su interior. Puede contener texto, otros elementos o incluso estar vacía. La ausencia de atributos no hace inválido el nombre de la etiqueta."
+        }
+      ],
+      "resumen_didactico": "En XML no puedes empezar el nombre de una etiqueta con un número. Los nombres de etiquetas deben cumplir reglas estrictas para que el documento pueda ser interpretado sin errores.",
+      "ejemplo_practico": "Incorrecto: <1er_producto>Teclado</1er_producto>. Correcto: <primer_producto>Teclado</primer_producto>.",
+      "conclusion_final": "La respuesta correcta es la a, porque las etiquetas, elementos y atributos XML no pueden comenzar por un número."
+    }
+  },
+  {
+    "id": "UT3-Q20",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un sistema de altas médicas colapsa debido a que el software antiguo envía el nombre del paciente en la etiqueta < Paciente > y el nuevo servidor busca la etiqueta < paciente >. ¿A qué regla de procesamiento se debe este conflicto de lectura?",
+    "contexto": "Conflicto por diferencia entre mayúsculas y minúsculas en nombres de etiquetas XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A la falta de un comentario explicativo antes de la etiqueta principal"
+      },
+      {
+        "clave": "b",
+        "texto": "A la limitación de procesamiento de caracteres en español"
+      },
+      {
+        "clave": "c",
+        "texto": "Al uso incorrecto de atributos de estilo en línea"
+      },
+      {
+        "clave": "d",
+        "texto": "A la distinción estricta entre mayúsculas y minúsculas que hacen estos lenguajes"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los documentos XML distinguen entre mayúsculas y minúsculas. Para el sistema, una etiqueta escrita como <Paciente> no es igual que una etiqueta escrita como <paciente>. Por eso, si un programa genera una etiqueta con mayúscula y otro espera leerla en minúscula, se produce un conflicto de lectura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los comentarios no son obligatorios antes de la etiqueta principal. Además, un comentario no solucionaría que el sistema esté buscando una etiqueta con un nombre distinto."
+        },
+        {
+          "clave": "b",
+          "motivo": "La pregunta no trata sobre caracteres especiales del español, como la ñ o los acentos. El problema está en la diferencia entre letras mayúsculas y minúsculas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los atributos de estilo en línea no tienen relación con este conflicto. El error se produce por el nombre de la etiqueta, no por atributos de presentación visual."
+        }
+      ],
+      "resumen_didactico": "En XML, cambiar una letra de mayúscula a minúscula cambia el nombre de la etiqueta. Por eso <Paciente> y <paciente> son interpretadas como etiquetas diferentes.",
+      "ejemplo_practico": "Incorrecto si el sistema espera minúsculas: <Paciente>Laura</Paciente>. Correcto para ese sistema: <paciente>Laura</paciente>.",
+      "conclusion_final": "La respuesta correcta es la d, porque XML distingue estrictamente entre mayúsculas y minúsculas."
+    }
+  },
+  {
+    "id": "UT3-Q21",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Para mejorar la legibilidad de un código heredado, un desarrollador inserta notas explicativas directamente sobre el texto de las marcas de cierre. ¿Qué restricción sintáctica hace que esta práctica genere un error en el procesamiento del documento?",
+    "contexto": "Uso incorrecto de comentarios dentro de etiquetas XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El uso obligatorio de un archivo separado para la documentación técnica"
+      },
+      {
+        "clave": "b",
+        "texto": "La necesidad de compilar las notas antes de guardarlas"
+      },
+      {
+        "clave": "c",
+        "texto": "La imposibilidad de escribir notas de más de diez palabras de longitud"
+      },
+      {
+        "clave": "d",
+        "texto": "La prohibición explícita de escribir los comentarios dentro de etiquetas"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en XML no se pueden escribir comentarios dentro de las etiquetas. Los comentarios pueden usarse para aclarar partes del documento, pero deben colocarse fuera de las marcas de apertura o cierre. Si se insertan notas dentro de una etiqueta, el procesador XML puede interpretar la estructura como inválida.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XML no exige usar un archivo separado para la documentación técnica. Se pueden incluir comentarios dentro del propio documento, pero deben estar correctamente colocados fuera de las etiquetas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los comentarios no se compilan antes de guardarse. XML no funciona como un lenguaje de programación compilado; se procesa como un documento estructurado."
+        },
+        {
+          "clave": "c",
+          "motivo": "El problema no está en la longitud del comentario. Un comentario puede ser más largo o más corto, siempre que respete la sintaxis correcta y no se escriba dentro de una etiqueta."
+        }
+      ],
+      "resumen_didactico": "Los comentarios ayudan a explicar el código, pero no pueden colocarse dentro de las etiquetas XML. Si se meten dentro de una marca de apertura o cierre, rompen la estructura del documento.",
+      "ejemplo_practico": "Incorrecto: <telefono <!-- número móvil --> movil=\"655123456\" />. Correcto: <!-- número móvil --><telefono movil=\"655123456\" />.",
+      "conclusion_final": "La respuesta correcta es la d, porque XML prohíbe escribir comentarios dentro de las etiquetas."
+    }
+  },
+  {
+    "id": "UT3-Q22",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un analista de datos carece de herramientas de desarrollo especializadas y necesita comprobar rápidamente si un archivo estructurado cumple con las normas básicas de formación. ¿Qué comportamiento visual observará al abrir el archivo en un navegador web estándar si el documento es correcto?",
+    "contexto": "Verificación rápida de un documento XML bien formado usando un navegador web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una tabla relacional con colores alternos y gráficos estadísticos"
+      },
+      {
+        "clave": "b",
+        "texto": "Una pantalla negra con el código fuente en texto plano corrido"
+      },
+      {
+        "clave": "c",
+        "texto": "Una alerta de seguridad indicando que el archivo contiene macros"
+      },
+      {
+        "clave": "d",
+        "texto": "Una estructura jerárquica arborescente donde se pueden desplegar y plegar los elementos"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que una forma sencilla de comprobar si un documento XML está bien formado es guardarlo con extensión .xml y abrirlo en un navegador como Chrome o Firefox. Si el documento es correcto, el navegador muestra una estructura jerárquica arborescente, con elementos que se pueden desplegar y plegar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El navegador no convierte automáticamente un XML correcto en una tabla relacional con gráficos estadísticos. XML muestra una estructura de datos, no una visualización analítica."
+        },
+        {
+          "clave": "b",
+          "motivo": "Aunque el navegador puede mostrar el contenido del XML, el temario indica que cuando el documento está bien formado se representa como una estructura jerárquica, no como una pantalla negra de texto plano corrido."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un archivo XML correcto no debería generar una alerta de macros. Las macros pertenecen a otros tipos de documentos, como algunos archivos de ofimática, no a la validación básica de XML."
+        }
+      ],
+      "resumen_didactico": "Si un XML está bien formado, el navegador puede mostrar su estructura como un árbol. Esto permite comprobar visualmente que las etiquetas están correctamente organizadas.",
+      "ejemplo_practico": "Si abres un archivo XML con <banco><usuario><nombre>Pedro</nombre></usuario></banco>, el navegador puede mostrar banco como raíz, usuario como elemento interno y nombre como subelemento desplegable.",
+      "conclusion_final": "La respuesta correcta es la d, porque un navegador estándar muestra un XML correcto como una estructura jerárquica arborescente desplegable."
+    }
+  },
+  {
+    "id": "UT3-Q23",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Al revisar los registros de error de un servidor web, un técnico encuentra múltiples alertas que impiden el procesamiento de los archivos de configuración de usuarios. ¿Qué mensaje de error específico suele mostrar el navegador cuando las mayúsculas de apertura y cierre no coinciden?",
+    "contexto": "Error producido en XML cuando una etiqueta de apertura y su etiqueta de cierre no coinciden por diferencia entre mayúsculas y minúsculas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Fallo de conexión de red local"
+      },
+      {
+        "clave": "b",
+        "texto": "Las etiquetas de apertura y cierre no coinciden (Opening and ending tag mismatch)"
+      },
+      {
+        "clave": "c",
+        "texto": "Exceso de tiempo de ejecución del servidor"
+      },
+      {
+        "clave": "d",
+        "texto": "Error de sintaxis en consulta de base de datos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XML distingue entre mayúsculas y minúsculas. Por eso, si una etiqueta se abre como <municipio> y se cierra como </Municipio>, el navegador detecta que la etiqueta de apertura y la de cierre no coinciden. El mensaje indicado en el temario es Opening and ending tag mismatch, es decir, las etiquetas de apertura y cierre no coinciden.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un fallo de conexión de red local tendría relación con problemas de comunicación o conectividad, no con un error de sintaxis dentro de un documento XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "El exceso de tiempo de ejecución del servidor se produciría por problemas de rendimiento o procesos demasiado largos, no por una diferencia entre mayúsculas y minúsculas en etiquetas XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un error de sintaxis en una consulta de base de datos pertenece al ámbito de SQL u otros lenguajes de consulta, no a la validación de etiquetas en un documento XML."
+        }
+      ],
+      "resumen_didactico": "Cuando XML encuentra una etiqueta abierta con un nombre y cerrada con otro distinto, aunque solo cambie una mayúscula, considera que no coinciden.",
+      "ejemplo_practico": "Incorrecto: <municipio>Madrid</Municipio>. Correcto: <municipio>Madrid</municipio>. En el primer caso, el navegador puede mostrar el error Opening and ending tag mismatch.",
+      "conclusion_final": "La respuesta correcta es la b, porque ese es el mensaje asociado a etiquetas de apertura y cierre que no coinciden."
+    }
+  },
+  {
+    "id": "UT3-Q24",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un sistema de control de accesos genera archivos de registro donde la identificación de las puertas se muestra como id=puertaPrincipal. ¿Por qué esta línea de código provocará la paralización de las validaciones automatizadas?",
+    "contexto": "Error en la escritura de atributos XML por ausencia de comillas en el valor del atributo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque la etiqueta no cuenta con un elemento raíz asociado"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el nombre de la puerta excede el límite de caracteres del estándar"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque los valores de los atributos se deben entrecomillar, ya sea mediante comillas simples o dobles"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque falta un salto de línea entre el atributo y la etiqueta de cierre"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los valores de los atributos en XML deben escribirse entre comillas, ya sean simples o dobles. Si un atributo aparece como id=puertaPrincipal, el valor puertaPrincipal está sin entrecomillar, por lo que el documento no cumple las reglas de XML bien formado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La existencia de un elemento raíz es una regla importante de XML, pero el error señalado en la pregunta está dentro del atributo id=puertaPrincipal. El problema concreto es que el valor del atributo no está entre comillas."
+        },
+        {
+          "clave": "b",
+          "motivo": "El valor puertaPrincipal no es inválido por longitud. El temario no plantea este caso como un problema de límite de caracteres, sino como un problema de sintaxis de atributos."
+        },
+        {
+          "clave": "d",
+          "motivo": "XML no exige un salto de línea entre el atributo y el cierre de la etiqueta. Los saltos de línea pueden mejorar la legibilidad, pero no son obligatorios para que el atributo sea válido."
+        }
+      ],
+      "resumen_didactico": "En XML, los atributos siempre deben tener su valor delimitado con comillas. Sin comillas, el procesador no puede identificar correctamente dónde empieza y dónde termina el valor.",
+      "ejemplo_practico": "Incorrecto: <puerta id=puertaPrincipal />. Correcto: <puerta id=\"puertaPrincipal\" /> o <puerta id='puertaPrincipal' />.",
+      "conclusion_final": "La respuesta correcta es la c, porque los valores de los atributos XML deben ir entrecomillados con comillas simples o dobles."
+    }
+  },
+  {
+    "id": "UT3-Q25",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Si un especialista en integración de sistemas necesita verificar el código sin depender de un navegador web, ¿qué tipo de programa específico offline se recomienda en los manuales técnicos para comprobar si el documento está escrito correctamente de forma interna?",
+    "contexto": "Uso de herramientas específicas offline para validar internamente documentos XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un programa de diseño vectorial y retoque fotográfico"
+      },
+      {
+        "clave": "b",
+        "texto": "Un procesador de textos orientado a redacción publicitaria"
+      },
+      {
+        "clave": "c",
+        "texto": "Una hoja de cálculo para análisis estadístico"
+      },
+      {
+        "clave": "d",
+        "texto": "Una herramienta específica como XML Copy Editor"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, además de abrir un archivo XML en el navegador para comprobar si muestra correctamente la estructura jerárquica, también pueden usarse programas específicos para verificar si el documento está escrito correctamente de forma interna. Como ejemplo de este tipo de herramienta se menciona XML Copy Editor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un programa de diseño vectorial o retoque fotográfico sirve para crear o modificar imágenes, no para comprobar la estructura interna de un documento XML."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un procesador de textos está pensado para redactar documentos, no para validar la sintaxis estricta de un archivo XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una hoja de cálculo puede servir para organizar datos en tablas o hacer análisis estadístico, pero no es la herramienta adecuada para validar internamente la correcta formación de un documento XML."
+        }
+      ],
+      "resumen_didactico": "Para comprobar un XML puedes usar el navegador, pero si quieres una herramienta específica de validación, el temario menciona XML Copy Editor.",
+      "ejemplo_practico": "Si tienes un archivo XML de configuración y no quieres abrirlo constantemente en Chrome o Firefox, puedes revisarlo con XML Copy Editor para detectar errores internos de estructura.",
+      "conclusion_final": "La respuesta correcta es la d, porque XML Copy Editor es una herramienta específica recomendada para comprobar si un documento XML está escrito correctamente."
+    }
+  },
+  {
+    "id": "UT3-Q26",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Al unificar las bases de datos de dos empresas fusionadas, el departamento técnico se enfrenta a etiquetas idénticas que significan cosas distintas en cada sistema. ¿Qué mecanismo estructural permite diferenciar entre etiquetas que tengan la misma denominación?",
+    "contexto": "Conflicto entre etiquetas XML con el mismo nombre pero distinto significado según el sistema de origen.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La compresión del archivo mediante algoritmos de pérdida"
+      },
+      {
+        "clave": "b",
+        "texto": "El uso de espacios de nombres o namespaces"
+      },
+      {
+        "clave": "c",
+        "texto": "La encriptación de la etiqueta de cierre"
+      },
+      {
+        "clave": "d",
+        "texto": "La declaración de hojas de estilo independientes"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los espacios de nombres en XML sirven para evitar ambigüedades cuando existen etiquetas con la misma denominación en distintos documentos o sistemas. Mediante un prefijo asociado a una URI, cada etiqueta queda vinculada a un contexto concreto, permitiendo diferenciar significados aunque el nombre de la etiqueta sea igual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La compresión del archivo reduce o modifica el tamaño del archivo, pero no sirve para diferenciar el significado de etiquetas con el mismo nombre. Además, los algoritmos con pérdida no son apropiados para documentos estructurados donde no se debe perder información."
+        },
+        {
+          "clave": "c",
+          "motivo": "La encriptación protege información frente a accesos no autorizados, pero no resuelve conflictos semánticos entre etiquetas iguales. El problema no es de seguridad, sino de ambigüedad en el significado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las hojas de estilo pueden modificar la presentación visual de un documento, pero no sirven para diferenciar estructuralmente dos etiquetas iguales con significados distintos."
+        }
+      ],
+      "resumen_didactico": "Cuando dos sistemas usan la misma etiqueta para cosas diferentes, XML puede usar espacios de nombres para añadir contexto mediante prefijos. Así el sistema sabe exactamente a qué significado pertenece cada etiqueta.",
+      "ejemplo_practico": "Si dos sistemas usan <cargo>, uno para el cargo laboral de un empleado y otro para un cargo bancario, se pueden diferenciar como <rh:cargo> y <fac:cargo>, usando espacios de nombres distintos.",
+      "conclusion_final": "La respuesta correcta es la b, porque los espacios de nombres o namespaces permiten diferenciar etiquetas con la misma denominación pero distinto significado."
+    }
+  },
+  {
+    "id": "UT3-Q27",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Un archivo central consolida las facturas y los historiales clínicos, utilizando la etiqueta < alta > en ambos contextos. Para que el sistema interprete la información correctamente, ¿cómo se aplica el mecanismo de desambiguación en las etiquetas?",
+    "contexto": "Uso de espacios de nombres en XML para diferenciar etiquetas iguales que pertenecen a contextos distintos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Duplicando el documento para que cada departamento tenga su propia versión"
+      },
+      {
+        "clave": "b",
+        "texto": "Eliminando la etiqueta conflictiva y reemplazándola por comentarios"
+      },
+      {
+        "clave": "c",
+        "texto": "Anteponiendo un prefijo a aquellos atributos y elementos que pertenezcan a etiquetas ambiguas"
+      },
+      {
+        "clave": "d",
+        "texto": "Ejecutando una macro que renombre todas las etiquetas de forma aleatoria"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los espacios de nombres permiten diferenciar etiquetas que tienen la misma denominación pero pertenecen a contextos distintos. Para aplicarlos, se declara un prefijo asociado a una URI y después se antepone ese prefijo a los elementos o atributos ambiguos. Así, una etiqueta como <alta> puede diferenciarse como <med:alta> para el contexto médico y <fac:alta> para el contexto de facturación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Duplicar el documento no resuelve correctamente el conflicto dentro de un archivo central consolidado. El objetivo de los espacios de nombres es poder mantener la información junta sin mezclar sus significados."
+        },
+        {
+          "clave": "b",
+          "motivo": "Eliminar la etiqueta conflictiva y sustituirla por comentarios haría que se perdiera estructura útil para el procesamiento automático. Los comentarios no son datos estructurados interpretables como elementos XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Renombrar etiquetas de forma aleatoria empeoraría la integración, porque los sistemas necesitan nombres estables y significativos. La solución correcta es usar prefijos controlados mediante espacios de nombres."
+        }
+      ],
+      "resumen_didactico": "Cuando una misma etiqueta aparece con significados distintos, se le añade un prefijo para indicar a qué contexto pertenece. Esa es la función de los espacios de nombres.",
+      "ejemplo_practico": "En un sistema sanitario con facturación, <med:alta>Recuperación completa</med:alta> puede representar el alta médica, mientras que <fac:alta>1500</fac:alta> puede representar el alta de una factura.",
+      "conclusion_final": "La respuesta correcta es la c, porque los espacios de nombres se aplican anteponiendo prefijos a los elementos o atributos ambiguos."
+    }
+  },
+  {
+    "id": "UT3-Q28",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Durante la configuración inicial de un proyecto de intercambio logístico, es necesario definir el entorno contextual de las etiquetas para evitar futuros solapamientos. ¿Cuál es la sintaxis correcta para declarar esta separación jerárquica en el elemento?",
+    "contexto": "Declaración de espacios de nombres en XML mediante xmlns para diferenciar contextos de etiquetas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "< elemento class=\"separador_global\" >"
+      },
+      {
+        "clave": "b",
+        "texto": "< elemento xmlns:prefijo =\"URI\" >"
+      },
+      {
+        "clave": "c",
+        "texto": "< elemento name=\"espacio_reservado\" >"
+      },
+      {
+        "clave": "d",
+        "texto": "< elemento href=\"URI\" >"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la declaración de un espacio de nombres en XML se realiza con la sintaxis <elemento xmlns:prefijo=\"URI\">. Esta declaración asocia un prefijo a una URI para que las etiquetas puedan diferenciarse cuando exista ambigüedad entre nombres iguales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El atributo class se usa habitualmente en HTML o CSS para aplicar estilos o clasificar elementos, pero no declara un espacio de nombres XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "El atributo name puede servir para nombrar elementos en algunos contextos, pero no establece un namespace ni resuelve conflictos entre etiquetas ambiguas."
+        },
+        {
+          "clave": "d",
+          "motivo": "El atributo href se usa normalmente para indicar enlaces o referencias, pero no es la sintaxis correcta para declarar un espacio de nombres en XML."
+        }
+      ],
+      "resumen_didactico": "Para declarar un espacio de nombres en XML se usa xmlns seguido de un prefijo. Ese prefijo permite identificar a qué contexto pertenece cada etiqueta.",
+      "ejemplo_practico": "Si una empresa logística necesita distinguir productos de almacén y productos de facturación, podría declarar: <datos xmlns:alm=\"http://empresa.es/almacen\" xmlns:fac=\"http://empresa.es/facturacion\">.",
+      "conclusion_final": "La respuesta correcta es la b, porque la sintaxis correcta para declarar un espacio de nombres es <elemento xmlns:prefijo=\"URI\">."
+    }
+  },
+  {
+    "id": "UT3-Q29",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "Al definir la ruta de un espacio de nombres para un sistema de reservas cerrado, el desarrollador introduce un texto identificativo que no corresponde a un dominio real en internet. ¿Por qué el validador acepta esta estructura sin generar un error de conexión?",
+    "contexto": "Uso de URI en la declaración de espacios de nombres XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque el sistema ignora cualquier configuración que contenga prefijos"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque la dirección web (URI) se utiliza simplemente como una cadena de texto única a nivel mundial para dar contexto"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque la validación de dominios está obsoleta en los lenguajes de marcas"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque la máquina crea automáticamente la página web en el servidor remoto"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la URI usada en un espacio de nombres XML no tiene por qué ser una página web real ni funcionar en internet. El sistema no intenta entrar en esa dirección. Se utiliza como una cadena de texto única para identificar el contexto de las etiquetas y evitar ambigüedades.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El sistema no ignora los prefijos. Al contrario, los prefijos son importantes porque permiten distinguir a qué espacio de nombres pertenece cada etiqueta."
+        },
+        {
+          "clave": "c",
+          "motivo": "No se trata de que la validación de dominios esté obsoleta. La razón correcta es que la URI del namespace no se usa como conexión real a una web, sino como identificador único."
+        },
+        {
+          "clave": "d",
+          "motivo": "La máquina no crea automáticamente ninguna página web en un servidor remoto. La URI solo sirve como identificador textual del espacio de nombres."
+        }
+      ],
+      "resumen_didactico": "En los espacios de nombres XML, la URI no funciona como una URL que el navegador deba visitar. Su función es identificar de forma única un contexto para las etiquetas.",
+      "ejemplo_practico": "Puedes declarar xmlns:res=\"http://reservas.local/sistema\" aunque esa dirección no exista realmente en internet. Lo importante es que sirva como identificador único para etiquetas como <res:cliente> o <res:habitacion>.",
+      "conclusion_final": "La respuesta correcta es la b, porque la URI de un espacio de nombres se usa como una cadena de texto única para dar contexto, no como una dirección web que deba existir."
+    }
+  },
+  {
+    "id": "UT3-Q30",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "En la fase final de consolidación de datos de un proyecto interdepartamental, el ingeniero a cargo debe implementar un archivo maestro que integre componentes con nombres coincidentes. ¿Cuál es la solución estandarizada para garantizar que el servidor distinga correctamente cada segmento de información?",
+    "contexto": "Integración de información procedente de distintos departamentos con etiquetas XML coincidentes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enviar los datos en formato de texto plano sin ningún tipo de estructuración"
+      },
+      {
+        "clave": "b",
+        "texto": "Establecer prefijos específicos en el contenedor principal y aplicarlos a los elementos ambiguos"
+      },
+      {
+        "clave": "c",
+        "texto": "Modificar manualmente el orden alfabético de todas las etiquetas internas"
+      },
+      {
+        "clave": "d",
+        "texto": "Borrar el historial de versiones para reiniciar el conteo de etiquetas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, cuando se integran documentos XML con etiquetas que tienen el mismo nombre pero significados distintos, se deben utilizar espacios de nombres. Para ello, se declaran prefijos específicos en el elemento principal mediante xmlns y después se aplican esos prefijos a los elementos ambiguos. Así el servidor puede distinguir correctamente a qué contexto pertenece cada dato.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Enviar los datos en texto plano sin estructuración eliminaría la organización del documento y dificultaría aún más que el servidor interpretara correctamente la información."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ordenar las etiquetas alfabéticamente no resuelve la ambigüedad entre nombres coincidentes. El problema no está en el orden, sino en que una misma etiqueta puede significar cosas distintas según el contexto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Borrar el historial de versiones no tiene relación con la interpretación de etiquetas XML. El conflicto se soluciona mediante espacios de nombres, no reiniciando ningún conteo."
+        }
+      ],
+      "resumen_didactico": "Cuando varias áreas usan etiquetas iguales para datos diferentes, hay que añadir contexto mediante prefijos. Esos prefijos se declaran en el contenedor principal y se aplican a las etiquetas ambiguas.",
+      "ejemplo_practico": "Si un archivo maestro contiene <cargo> de Recursos Humanos y <cargo> de Facturación, se puede declarar xmlns:rh=\"http://empresa.es/rrhh\" y xmlns:fac=\"http://empresa.es/facturacion\". Después se usarían <rh:cargo> y <fac:cargo> para que el servidor no los confunda.",
+      "conclusion_final": "La respuesta correcta es la b, porque la solución estandarizada consiste en declarar prefijos específicos en el contenedor principal y aplicarlos a los elementos ambiguos mediante espacios de nombres."
+    }
+  }
+]

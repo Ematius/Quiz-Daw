@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT7-Q01",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Un administrador de sistemas necesita monitorizar docenas de registros de seguridad y actualizaciones de diferentes proveedores. ¿Qué tecnología se debe implementar para centralizar y recibir esta información automáticamente sin visitar cada sitio web individualmente?",
+    "contexto": "Monitorización automática de información procedente de múltiples proveedores sin consultar manualmente cada página web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Herramientas de transformación visual XSLT"
+      },
+      {
+        "clave": "b",
+        "texto": "Sistemas de encriptación asimétrica"
+      },
+      {
+        "clave": "c",
+        "texto": "Sindicación de contenidos"
+      },
+      {
+        "clave": "d",
+        "texto": "Bases de datos relacionales puras"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la sindicación de contenidos permite recibir información actualizada de distintas fuentes en una plataforma centralizada, evitando visitar manualmente cada sitio web.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XSLT sirve para transformar documentos XML, pero no es la tecnología principal para recibir automáticamente noticias o actualizaciones de varias fuentes."
+        },
+        {
+          "clave": "b",
+          "motivo": "La encriptación asimétrica se relaciona con seguridad y cifrado, no con centralizar noticias, alertas o actualizaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una base de datos relacional almacena datos, pero no es el sistema usado para suscribirse automáticamente a contenidos publicados por distintas webs."
+        }
+      ],
+      "resumen_didactico": "Cuando se quiere recibir información actualizada de muchas páginas sin visitarlas una a una, la idea clave es la sindicación de contenidos.",
+      "ejemplo_practico": "Un técnico puede recibir alertas de vulnerabilidades, parches y avisos de seguridad en un agregador RSS sin abrir manualmente las webs de cada proveedor.",
+      "conclusion_final": "La respuesta correcta es sindicación de contenidos porque permite centralizar y automatizar la recepción de información actualizada."
+    }
+  },
+  {
+    "id": "UT7-Q02",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "¿Cuál es el formato de datos estructurado subyacente que utilizan los estándares de sindicación modernos para transmitir la información de manera unificada?",
+    "contexto": "Formato base usado por RSS y Atom para estructurar y transmitir información sindicada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Archivos de texto plano no jerárquico"
+      },
+      {
+        "clave": "b",
+        "texto": "Código HTML5 de presentación"
+      },
+      {
+        "clave": "c",
+        "texto": "Estructuras basadas en XML"
+      },
+      {
+        "clave": "d",
+        "texto": "Bases de datos SQL"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que los principales estándares de sindicación, como RSS y Atom, están basados en XML. XML permite organizar la información mediante etiquetas y una estructura jerárquica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El texto plano no jerárquico no permite organizar los datos con etiquetas estructuradas como exige RSS o Atom."
+        },
+        {
+          "clave": "b",
+          "motivo": "HTML5 se usa principalmente para presentar contenido en páginas web, no como formato base de los feeds de sindicación."
+        },
+        {
+          "clave": "d",
+          "motivo": "SQL se relaciona con bases de datos relacionales, no con el formato de transmisión de canales RSS o Atom."
+        }
+      ],
+      "resumen_didactico": "RSS y Atom funcionan sobre XML, que estructura la información mediante etiquetas.",
+      "ejemplo_practico": "Un feed RSS puede tener etiquetas como <channel>, <title>, <link> e <item> para organizar las noticias.",
+      "conclusion_final": "La respuesta correcta es estructuras basadas en XML porque es el formato base usado por los estándares de sindicación."
+    }
+  },
+  {
+    "id": "UT7-Q03",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Al configurar un canal de noticias corporativo, los empleados desean suscribirse sin proporcionar su correo electrónico en listas de distribución. ¿Qué ventaja inherente a la sindicación resuelve esta necesidad de privacidad?",
+    "contexto": "Suscripción a actualizaciones corporativas sin entregar correo electrónico personal ni formar parte de una lista de distribución.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite recibir las actualizaciones de forma anónima mediante un agregador sin necesidad de facilitar datos personales"
+      },
+      {
+        "clave": "b",
+        "texto": "Requiere autenticación biométrica en lugar de direcciones de correo estándar"
+      },
+      {
+        "clave": "c",
+        "texto": "Encripta automáticamente el correo electrónico del usuario en el servidor central"
+      },
+      {
+        "clave": "d",
+        "texto": "Genera un correo electrónico temporal desechable para cada suscripción solicitada"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La sindicación de contenidos permite que el usuario reciba actualizaciones mediante un agregador sin tener que registrarse en una lista de correo ni proporcionar necesariamente datos personales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La autenticación biométrica no forma parte de la sindicación de contenidos explicada en el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "El temario no plantea que RSS o Atom cifren automáticamente el correo electrónico del usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "La sindicación no genera correos temporales; simplemente permite suscribirse al feed desde un agregador."
+        }
+      ],
+      "resumen_didactico": "Una ventaja de los feeds es que puedes recibir información sin dar tu correo como harías en una newsletter.",
+      "ejemplo_practico": "Un empleado añade el RSS corporativo a Feedly o Thunderbird y recibe las noticias sin apuntarse a una lista de correo.",
+      "conclusion_final": "La respuesta correcta es la opción a porque la sindicación permite recibir actualizaciones mediante agregadores sin facilitar datos personales."
+    }
+  },
+  {
+    "id": "UT7-Q04",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Un equipo de desarrollo está creando un script para publicar alertas de red. Si deciden utilizar el formato estándar RSS 2.0, ¿qué elemento raíz debe declararse obligatoriamente al inicio del documento tras el prólogo?",
+    "contexto": "Creación de un documento RSS 2.0 después de la declaración inicial XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<rss version=\"2.0\">"
+      },
+      {
+        "clave": "b",
+        "texto": "<feed xmlns=\"http://www.w3.org/2005/Atom\">"
+      },
+      {
+        "clave": "c",
+        "texto": "<syndication type=\"rss\">"
+      },
+      {
+        "clave": "d",
+        "texto": "<channel version=\"2.0\">"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que un archivo RSS 2.0 comienza con el prólogo XML y después debe declarar el elemento raíz <rss version=\"2.0\">. Dentro de este elemento se incluye posteriormente <channel>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Ese elemento pertenece a Atom, no a RSS 2.0."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es una etiqueta estándar usada como raíz en RSS 2.0."
+        },
+        {
+          "clave": "d",
+          "motivo": "<channel> es una etiqueta importante dentro de RSS, pero no sustituye al elemento raíz <rss version=\"2.0\">."
+        }
+      ],
+      "resumen_didactico": "En RSS 2.0, después de la línea XML inicial, la raíz correcta es <rss version=\"2.0\">.",
+      "ejemplo_practico": "Un RSS básico empezaría con <?xml version=\"1.0\" encoding=\"utf-8\"?> y después <rss version=\"2.0\">.",
+      "conclusion_final": "La respuesta correcta es la opción a porque <rss version=\"2.0\"> identifica el documento como un feed RSS 2.0."
+    }
+  },
+  {
+    "id": "UT7-Q05",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "En la arquitectura de un documento RSS, ¿qué etiqueta actúa como el contenedor principal que engloba tanto los metadatos generales del sitio como las actualizaciones individuales?",
+    "contexto": "Identificación de la etiqueta principal interna de un canal RSS que agrupa información general y entradas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<channel>"
+      },
+      {
+        "clave": "b",
+        "texto": "<feed>"
+      },
+      {
+        "clave": "c",
+        "texto": "<main>"
+      },
+      {
+        "clave": "d",
+        "texto": "<item>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En RSS, la etiqueta <channel> funciona como contenedor principal del canal. Dentro de ella se incluyen los datos generales del feed, como <title>, <link> y <description>, y también las entradas individuales mediante elementos <item>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<feed> es la etiqueta raíz utilizada en Atom, no el contenedor principal de RSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "<main> es una etiqueta relacionada con HTML, no con la estructura estándar de RSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "<item> representa una noticia o entrada individual dentro del canal, pero no engloba todo el contenido del RSS."
+        }
+      ],
+      "resumen_didactico": "En RSS, <channel> es el bloque que contiene la información general del canal y sus noticias.",
+      "ejemplo_practico": "Un canal RSS tendría <channel> y dentro varias etiquetas como <title>, <link>, <description> y varios <item>.",
+      "conclusion_final": "La respuesta correcta es la opción a porque <channel> es el contenedor principal interno de un documento RSS."
+    }
+  },
+  {
+    "id": "UT7-Q06",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Para que un documento RSS valide correctamente y sea reconocido por cualquier software lector, ¿cuáles son los tres elementos estrictamente obligatorios que deben definirse dentro de la cabecera del canal?",
+    "contexto": "Elementos obligatorios dentro de <channel> en un documento RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<title>, <link> y <description>"
+      },
+      {
+        "clave": "b",
+        "texto": "<id>, <title> y <updated>"
+      },
+      {
+        "clave": "c",
+        "texto": "<name>, <email> y <uri>"
+      },
+      {
+        "clave": "d",
+        "texto": "<author>, <pubDate> y <category>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que dentro de <channel> en RSS hay tres elementos obligatorios: <title>, <link> y <description>. Estos identifican el canal, enlazan con la fuente y describen su contenido.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<id>, <title> y <updated> son elementos propios de Atom, no los tres obligatorios de la cabecera RSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "<name>, <email> y <uri> aparecen asociados a la información del autor en Atom, pero no son la cabecera obligatoria de RSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "<author>, <pubDate> y <category> pueden aportar información adicional, pero no son los tres elementos estrictamente obligatorios dentro de <channel>."
+        }
+      ],
+      "resumen_didactico": "Para que un canal RSS básico sea válido, dentro de <channel> deben aparecer <title>, <link> y <description>.",
+      "ejemplo_practico": "Un RSS de alertas tendría un título del canal, un enlace a la web de alertas y una descripción breve del servicio.",
+      "conclusion_final": "La respuesta correcta es la opción a porque <title>, <link> y <description> son los tres elementos obligatorios de <channel> en RSS."
+    }
+  },
+  {
+    "id": "UT7-Q07",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Un sistema automático de registro genera un canal RSS, pero los auditores de seguridad no pueden identificar cuándo se generó exactamente cada alerta en el lector. ¿Qué etiqueta específica se debe incluir dentro de cada bloque de noticia para solucionar este fallo?",
+    "contexto": "Cada noticia o alerta del feed RSS necesita mostrar su fecha y hora exacta de publicación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<pubDate>"
+      },
+      {
+        "clave": "b",
+        "texto": "<date>"
+      },
+      {
+        "clave": "c",
+        "texto": "<timestamp>"
+      },
+      {
+        "clave": "d",
+        "texto": "<time>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que dentro de cada <item> de RSS puede usarse <pubDate> para marcar la fecha y hora exactas de publicación de esa entrada concreta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<date> no es la etiqueta específica indicada por el estándar RSS para la fecha de publicación de una noticia."
+        },
+        {
+          "clave": "c",
+          "motivo": "<timestamp> puede sonar lógico en programación, pero no es la etiqueta RSS explicada en el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "<time> tampoco es la etiqueta usada en RSS para indicar la fecha de publicación de un <item>."
+        }
+      ],
+      "resumen_didactico": "En RSS, si quieres indicar cuándo se publicó una noticia concreta, usas <pubDate> dentro del <item>.",
+      "ejemplo_practico": "Una alerta podría incluir <pubDate>Wed, 16 Mar 2022 12:16:10 +0100</pubDate> para mostrar cuándo fue publicada.",
+      "conclusion_final": "La respuesta correcta es la opción a porque <pubDate> es la etiqueta RSS que indica la fecha y hora de publicación de cada noticia."
+    }
+  },
+  {
+    "id": "UT7-Q08",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Dentro de una entrada de actualización en formato RSS, ¿cuál es el propósito técnico del elemento <guid> en entornos de bases de datos distribuidas?",
+    "contexto": "Uso de un identificador único dentro de cada noticia o alerta de un feed RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Definir la codificación de caracteres estricta del documento"
+      },
+      {
+        "clave": "b",
+        "texto": "Proporcionar un identificador único global para asegurar que el artículo no se confunda o duplique con otro"
+      },
+      {
+        "clave": "c",
+        "texto": "Clasificar la noticia dentro de un árbol de categorías temáticas"
+      },
+      {
+        "clave": "d",
+        "texto": "Enlazar el artículo directamente con el perfil de red social del administrador"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que <guid> significa identificador global único. Sirve para dar a cada entrada del feed una referencia irrepetible, evitando que se confunda con otra o que se procese dos veces.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La codificación de caracteres se define en la declaración inicial XML, no mediante <guid>."
+        },
+        {
+          "clave": "c",
+          "motivo": "La clasificación temática se realiza con <category>, no con <guid>."
+        },
+        {
+          "clave": "d",
+          "motivo": "<guid> no enlaza con perfiles sociales; su función es identificar de forma única una entrada."
+        }
+      ],
+      "resumen_didactico": "<guid> sirve como identificador único de una noticia dentro de un feed RSS.",
+      "ejemplo_practico": "Si llegan dos alertas parecidas sobre ataques DDoS, el sistema puede usar el <guid> para saber si son avisos distintos o si uno ya había sido recibido.",
+      "conclusion_final": "La respuesta correcta es la opción b porque <guid> evita confusiones y duplicados identificando cada entrada de forma única."
+    }
+  },
+  {
+    "id": "UT7-Q09",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Una corporación desea migrar su infraestructura de sindicación desde RSS a un formato más moderno, diseñado específicamente por el IETF para corregir inconsistencias y estandarizar el proceso. ¿Qué formato debe adoptar?",
+    "contexto": "Migración desde RSS hacia un estándar de sindicación más moderno y formalmente estandarizado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HTML5"
+      },
+      {
+        "clave": "b",
+        "texto": "SOAP"
+      },
+      {
+        "clave": "c",
+        "texto": "Atom"
+      },
+      {
+        "clave": "d",
+        "texto": "JSON-LD"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que Atom es una alternativa moderna a RSS, desarrollada formalmente por el IETF en 2005 para corregir problemas estructurales de RSS y mejorar su estandarización.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "HTML5 se usa para estructurar y presentar páginas web, pero no es el estándar de sindicación moderno que sustituye a RSS."
+        },
+        {
+          "clave": "b",
+          "motivo": "SOAP es un protocolo de intercambio de mensajes, no el formato de sindicación explicado en el tema."
+        },
+        {
+          "clave": "d",
+          "motivo": "JSON-LD sirve para datos enlazados y metadatos estructurados, pero no es el formato tratado en el temario como alternativa moderna a RSS."
+        }
+      ],
+      "resumen_didactico": "Atom es el formato moderno de sindicación basado en XML que nació para mejorar y estandarizar lo que RSS hacía de forma más antigua.",
+      "ejemplo_practico": "Una empresa que antes publicaba alertas en RSS puede pasar a Atom para tener una estructura más clara y fechas mejor normalizadas.",
+      "conclusion_final": "La respuesta correcta es la opción c porque Atom fue desarrollado por el IETF como alternativa más moderna y estandarizada a RSS."
+    }
+  },
+  {
+    "id": "UT7-Q10",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "¿Cuál es el elemento raíz principal que define y engloba toda la estructura de un documento de sindicación bajo el estándar moderno Atom?",
+    "contexto": "Identificación de la etiqueta principal usada como raíz en documentos Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<document>"
+      },
+      {
+        "clave": "b",
+        "texto": "<feed>"
+      },
+      {
+        "clave": "c",
+        "texto": "<rss>"
+      },
+      {
+        "clave": "d",
+        "texto": "<channel>"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom la estructura general del documento se engloba dentro del elemento raíz <feed>, que además incluye el atributo xmlns para declarar el espacio de nombres de Atom.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<document> no es la etiqueta raíz usada por el estándar Atom."
+        },
+        {
+          "clave": "c",
+          "motivo": "<rss> es la etiqueta raíz de un documento RSS, no de Atom."
+        },
+        {
+          "clave": "d",
+          "motivo": "<channel> pertenece a la estructura interna de RSS, pero no es el elemento raíz de Atom."
+        }
+      ],
+      "resumen_didactico": "En Atom, la etiqueta que engloba todo el documento es <feed>.",
+      "ejemplo_practico": "Un documento Atom comienza con <feed xmlns=\"http://www.w3.org/2005/Atom\"> y dentro contiene elementos como <title> y <entry>.",
+      "conclusion_final": "La respuesta correcta es la opción b porque <feed> es el elemento raíz principal de Atom."
+    }
+  },
+  {
+    "id": "UT7-Q11",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Al estructurar la información general de un canal en formato Atom, el desarrollador debe asegurar que cumple con los requisitos del RFC 4287. ¿Qué tres elementos son estrictamente obligatorios en la declaración del canal?",
+    "contexto": "Elementos obligatorios dentro de la estructura general de un canal Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<guid>, <pubDate> y <source>"
+      },
+      {
+        "clave": "b",
+        "texto": "<title>, <link> y <description>"
+      },
+      {
+        "clave": "c",
+        "texto": "<author>, <category> y <content>"
+      },
+      {
+        "clave": "d",
+        "texto": "<id>, <title> y <updated>"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en Atom los elementos principales obligatorios del canal son <id>, <title> y <updated>. <id> identifica de forma única el canal, <title> marca su nombre y <updated> indica la última modificación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<guid> y <pubDate> son propios de RSS, no los elementos obligatorios principales de Atom."
+        },
+        {
+          "clave": "b",
+          "motivo": "<title>, <link> y <description> son los elementos obligatorios de <channel> en RSS, no de Atom."
+        },
+        {
+          "clave": "c",
+          "motivo": "<author>, <category> y <content> pueden aparecer en Atom, pero no son los tres elementos estrictamente obligatorios de la declaración general del canal."
+        }
+      ],
+      "resumen_didactico": "En Atom, recuerda la combinación clave: <id>, <title> y <updated>.",
+      "ejemplo_practico": "Un feed Atom debe tener un identificador único del canal, un título visible y una fecha de última actualización.",
+      "conclusion_final": "La respuesta correcta es la opción d porque <id>, <title> y <updated> son los elementos obligatorios principales en la estructura general de Atom."
+    }
+  },
+  {
+    "id": "UT7-Q12",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Un programador junior necesita registrar la última vez que se modificó un canal Atom en los servidores, debiendo usar obligatoriamente el formato de fecha RFC 3339. ¿Qué etiqueta estructural debe utilizar?",
+    "contexto": "Registro de la última modificación de un canal Atom usando el formato de fecha propio del estándar.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<updated>"
+      },
+      {
+        "clave": "b",
+        "texto": "<pubDate>"
+      },
+      {
+        "clave": "c",
+        "texto": "<lastBuildDate>"
+      },
+      {
+        "clave": "d",
+        "texto": "<modification>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom la etiqueta <updated> marca la última modificación del canal o de una entrada, usando obligatoriamente el formato RFC 3339.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<pubDate> se usa en RSS para indicar la fecha de publicación, no la última modificación en Atom."
+        },
+        {
+          "clave": "c",
+          "motivo": "<lastBuildDate> pertenece a RSS y señala la última modificación del canal RSS, no de Atom."
+        },
+        {
+          "clave": "d",
+          "motivo": "<modification> no es la etiqueta estructural indicada por el estándar Atom en el temario."
+        }
+      ],
+      "resumen_didactico": "En Atom, la fecha de última modificación se indica con <updated>.",
+      "ejemplo_practico": "Un canal Atom podría incluir <updated>2026-04-27T16:12:57Z</updated> para indicar cuándo fue actualizado.",
+      "conclusion_final": "La respuesta correcta es la opción a porque <updated> es la etiqueta de Atom usada para registrar la última modificación con formato RFC 3339."
+    }
+  },
+  {
+    "id": "UT7-Q13",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Un microservicio perimetral genera informes de intrusión estructurados. Para cumplir con el protocolo Atom, ¿qué etiqueta contenedora debe albergar los datos individuales de cada uno de estos incidentes?",
+    "contexto": "Cada incidente o informe individual debe representarse como una entrada dentro de un feed Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<record>"
+      },
+      {
+        "clave": "b",
+        "texto": "<item>"
+      },
+      {
+        "clave": "c",
+        "texto": "<entry>"
+      },
+      {
+        "clave": "d",
+        "texto": "<article>"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom las publicaciones o noticias individuales se representan mediante la etiqueta <entry>. Es el equivalente funcional a los <item> de RSS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<record> puede sonar a registro, pero no es la etiqueta contenedora estándar de Atom."
+        },
+        {
+          "clave": "b",
+          "motivo": "<item> se usa en RSS para representar cada noticia o entrada, pero en Atom se usa <entry>."
+        },
+        {
+          "clave": "d",
+          "motivo": "<article> es una etiqueta propia del entorno HTML, no la etiqueta de entrada individual en Atom."
+        }
+      ],
+      "resumen_didactico": "En Atom, cada noticia, alerta o incidente individual va dentro de <entry>.",
+      "ejemplo_practico": "Un feed Atom de seguridad tendría varias etiquetas <entry>, una por cada informe de intrusión publicado.",
+      "conclusion_final": "La respuesta correcta es la opción c porque <entry> es la etiqueta que contiene cada entrada individual en Atom."
+    }
+  },
+  {
+    "id": "UT7-Q14",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "En un reporte con formato Atom, ¿qué elemento se utiliza específicamente para proporcionar un extracto breve o unas pocas líneas resumidas del contenido principal, aliviando la carga de red?",
+    "contexto": "Uso de una etiqueta Atom para mostrar un resumen breve del contenido principal de una entrada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<content>"
+      },
+      {
+        "clave": "b",
+        "texto": "<subtitle>"
+      },
+      {
+        "clave": "c",
+        "texto": "<summary>"
+      },
+      {
+        "clave": "d",
+        "texto": "<description>"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom la etiqueta <summary> contiene un resumen o algunas líneas extraídas del contenido principal de la publicación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<content> muestra el contenido principal completo o enlazado, no específicamente un extracto breve."
+        },
+        {
+          "clave": "b",
+          "motivo": "<subtitle> sirve para indicar un subtítulo del canal Atom, no para resumir el contenido principal de una entrada."
+        },
+        {
+          "clave": "d",
+          "motivo": "<description> es una etiqueta típica de RSS, no la etiqueta específica de Atom para un resumen breve."
+        }
+      ],
+      "resumen_didactico": "En Atom, el resumen breve de una entrada se indica con <summary>.",
+      "ejemplo_practico": "Una entrada Atom sobre una intrusión podría usar <summary>Intento de acceso detectado desde IP externa.</summary>.",
+      "conclusion_final": "La respuesta correcta es la opción c porque <summary> proporciona un extracto breve del contenido principal en Atom."
+    }
+  },
+  {
+    "id": "UT7-Q15",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Si una plataforma central redistribuye notificaciones que han sido extraídas originalmente de un proveedor externo mediante Atom, ¿qué etiqueta del estándar permite documentar y especificar los metadatos de esa fuente original?",
+    "contexto": "Redistribución de entradas Atom que proceden de una fuente externa original.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<reference>"
+      },
+      {
+        "clave": "b",
+        "texto": "<source>"
+      },
+      {
+        "clave": "c",
+        "texto": "<origin>"
+      },
+      {
+        "clave": "d",
+        "texto": "<link rel=\"via\">"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom el elemento <source> se utiliza para especificar los datos de origen cuando una entrada <entry> procede de otra fuente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<reference> no es la etiqueta indicada en el temario para documentar la fuente original en Atom."
+        },
+        {
+          "clave": "c",
+          "motivo": "<origin> puede parecer lógica por su significado, pero no es la etiqueta estándar explicada para Atom."
+        },
+        {
+          "clave": "d",
+          "motivo": "<link rel=\"via\"> puede relacionarse con enlaces de procedencia, pero el temario señala específicamente <source> para documentar los metadatos de la fuente original."
+        }
+      ],
+      "resumen_didactico": "En Atom, cuando una entrada viene de otra fuente, se usa <source> para indicar su origen.",
+      "ejemplo_practico": "Una plataforma que recoge alertas de varios proveedores puede incluir <source> para señalar de qué feed externo procede una alerta concreta.",
+      "conclusion_final": "La respuesta correcta es la opción b porque <source> permite documentar la fuente original de una entrada Atom redistribuida."
+    }
+  },
+  {
+    "id": "UT7-Q16",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "El departamento de TI está configurando una herramienta de software encargada de recopilar, interpretar y mostrar de forma unificada los archivos XML provenientes de distintos servidores. ¿Cómo se denomina técnicamente a este tipo de software de lectura?",
+    "contexto": "Uso de una herramienta para leer y organizar feeds procedentes de distintas fuentes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Agregador o lector de feeds"
+      },
+      {
+        "clave": "b",
+        "texto": "Entorno de desarrollo integrado"
+      },
+      {
+        "clave": "c",
+        "texto": "Validador de esquemas XSD"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestor de bases de datos relacionales"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define los agregadores o lectores de feeds como programas que permiten al usuario suscribirse, leer y administrar de forma centralizada noticias o contenidos publicados mediante feeds.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un entorno de desarrollo integrado sirve para programar, no para recopilar y leer feeds de distintas fuentes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un validador XSD comprueba estructuras XML, pero no funciona como lector centralizado de noticias o actualizaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un gestor de bases de datos relacionales almacena y consulta datos, pero no es el software específico para leer feeds RSS o Atom."
+        }
+      ],
+      "resumen_didactico": "El software que lee y organiza feeds se llama agregador o lector de feeds.",
+      "ejemplo_practico": "Feedly, Inoreader, Outlook o Thunderbird pueden actuar como lectores para recibir varios canales RSS en un solo sitio.",
+      "conclusion_final": "La respuesta correcta es la opción a porque un agregador o lector de feeds recopila, interpreta y muestra contenidos sindicados de forma unificada."
+    }
+  },
+  {
+    "id": "UT7-Q17",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "¿Cuál es la diferencia operativa fundamental que ofrecen los agregadores de contenido basados en web frente a los programas de escritorio tradicionales en un entorno de movilidad laboral?",
+    "contexto": "Comparación entre agregadores online o web y agregadores instalados en el escritorio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo pueden leer formatos de sindicación antiguos que carecen de encriptación"
+      },
+      {
+        "clave": "b",
+        "texto": "Almacenan obligatoriamente los metadatos en el disco duro físico del empleado"
+      },
+      {
+        "clave": "c",
+        "texto": "Requieren la instalación de complementos de seguridad en el sistema operativo local"
+      },
+      {
+        "clave": "d",
+        "texto": "Permiten acceder a todas las suscripciones sincronizadas desde cualquier dispositivo simplemente utilizando un navegador"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los agregadores online o web tienen la ventaja de no requerir instalación local y de permitir el uso desde varios equipos al vincular la información a una cuenta en la nube.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los agregadores web no se limitan a formatos antiguos ni el temario los relaciona con falta de encriptación."
+        },
+        {
+          "clave": "b",
+          "motivo": "Esta idea encaja más con almacenamiento local, pero los agregadores web se apoyan en la nube y permiten sincronización entre dispositivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La ventaja principal de los agregadores web es precisamente que no requieren instalación local para funcionar."
+        }
+      ],
+      "resumen_didactico": "Un agregador web permite tener tus feeds sincronizados y disponibles desde cualquier equipo con navegador.",
+      "ejemplo_practico": "Un empleado puede consultar sus suscripciones en Feedly desde el ordenador del trabajo, el portátil de casa o el móvil usando la misma cuenta.",
+      "conclusion_final": "La respuesta correcta es la opción d porque los agregadores web facilitan la movilidad al sincronizar las suscripciones en la nube y permitir acceso desde cualquier dispositivo."
+    }
+  },
+  {
+    "id": "UT7-Q18",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Una corporación con normativas estrictas de aislamiento de red prohíbe el uso de servicios en la nube para procesar canales de inteligencia de amenazas. ¿Qué arquitectura de agregador debe desplegar el equipo de seguridad para cumplir la norma?",
+    "contexto": "Uso de agregadores en un entorno donde no se permite depender de servicios en la nube.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Visores de páginas HTML estáticas"
+      },
+      {
+        "clave": "b",
+        "texto": "Extensiones de navegador con sincronización automática en la nube"
+      },
+      {
+        "clave": "c",
+        "texto": "Agregadores web gestionados por terceros"
+      },
+      {
+        "clave": "d",
+        "texto": "Software cliente o aplicaciones instaladas localmente en el escritorio de cada equipo"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia entre agregadores online o web, que funcionan vinculados a una cuenta en la nube, y agregadores de escritorio, que requieren instalación en el equipo. Si la empresa prohíbe servicios en la nube, la opción adecuada es usar software cliente instalado localmente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un visor de páginas HTML estáticas no es un agregador de feeds ni sirve para gestionar canales RSS o Atom de forma centralizada."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las extensiones con sincronización en la nube incumplen la restricción principal del caso: no usar servicios en la nube."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los agregadores web gestionados por terceros dependen precisamente de servicios externos en la nube, por lo que no cumplen la norma de aislamiento."
+        }
+      ],
+      "resumen_didactico": "Si no puedes usar la nube, debes usar un agregador instalado localmente en el equipo.",
+      "ejemplo_practico": "Una empresa podría instalar un lector RSS de escritorio en los equipos internos para consultar alertas sin depender de Feedly, Inoreader u otros servicios externos.",
+      "conclusion_final": "La respuesta correcta es la opción d porque los agregadores de escritorio funcionan como software local y se ajustan mejor a entornos con aislamiento de red."
+    }
+  },
+  {
+    "id": "UT7-Q19",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "¿Por qué es una competencia fundamental que un administrador de sistemas conozca la estructura en crudo de las etiquetas XML, incluso cuando la generación de la sindicación está totalmente automatizada por scripts?",
+    "contexto": "Importancia de saber leer XML manualmente aunque los feeds se generen de forma automática.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque los lenguajes de marcas reemplazan a los lenguajes de programación en el backend"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque es vital para diagnosticar fallos de parseo e identificar exactamente en qué línea falla la integración cuando cambian los formatos"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque deben compilar manualmente el archivo XML antes de subirlo al servidor de producción"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque el XML no permite el uso de herramientas de automatización sin supervisión humana"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que, aunque en entornos reales se automaticen los feeds con scripts, un administrador debe conocer la estructura XML para poder detectar errores cuando falla un parser o cambia el formato de un proveedor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los lenguajes de marcas no reemplazan a los lenguajes de programación; sirven para estructurar información."
+        },
+        {
+          "clave": "c",
+          "motivo": "XML no se compila como un lenguaje de programación; se valida y se interpreta."
+        },
+        {
+          "clave": "d",
+          "motivo": "El XML sí puede generarse y procesarse automáticamente mediante scripts o herramientas."
+        }
+      ],
+      "resumen_didactico": "Aunque el XML se genere solo, debes saber leerlo para encontrar fallos cuando algo no se interpreta bien.",
+      "ejemplo_practico": "Si un proveedor cambia una etiqueta del feed y el script deja de leer alertas, el técnico debe abrir el XML y localizar dónde falla la estructura.",
+      "conclusion_final": "La respuesta correcta es la opción b porque conocer el XML en crudo permite diagnosticar errores de integración y parseo."
+    }
+  },
+  {
+    "id": "UT7-Q20",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Durante una migración de sistemas, un canal de notificaciones falla en todos los clientes. El reporte del validador advierte de un error de \"malformación sintáctica\". ¿Cuál es el error humano más habitual que provoca la caída total de esta estructura estricta?",
+    "contexto": "Error de sintaxis en un documento XML usado para un canal RSS o Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Redactar todo el texto del contenido utilizando únicamente letras mayúsculas"
+      },
+      {
+        "clave": "b",
+        "texto": "Escribir las fechas en formato europeo en lugar de aplicar el RFC 3339"
+      },
+      {
+        "clave": "c",
+        "texto": "Olvidar cerrar correctamente una etiqueta mediante su barra diagonal correspondiente"
+      },
+      {
+        "clave": "d",
+        "texto": "Exceder el límite máximo de caracteres permitidos en la descripción"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario recalca que XML tiene una sintaxis estricta y que un error típico es olvidar cerrar una etiqueta, por ejemplo escribir <link> sin su correspondiente </link>. Ese tipo de fallo rompe la estructura y hace que el feed no valide correctamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Usar mayúsculas en el contenido no provoca por sí solo una malformación sintáctica del XML."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un formato de fecha incorrecto puede causar problemas de validación semántica o de estándar, pero el error humano típico de malformación sintáctica es una etiqueta mal cerrada."
+        },
+        {
+          "clave": "d",
+          "motivo": "Exceder caracteres puede ser una limitación de algún campo concreto, pero no es el fallo básico de estructura XML que suele romper todo el documento."
+        }
+      ],
+      "resumen_didactico": "En XML, si abres una etiqueta, debes cerrarla correctamente. Si falta el cierre, el documento queda mal formado.",
+      "ejemplo_practico": "El error <link>https://empresa.com/alerta sin </link> al final puede hacer que el validador rechace todo el feed.",
+      "conclusion_final": "La respuesta correcta es la opción c porque olvidar cerrar una etiqueta es uno de los errores sintácticos más habituales y graves en XML."
+    }
+  },
+  {
+    "id": "UT7-Q21",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Un departamento de análisis necesita categorizar los informes de rendimiento dentro de su canal RSS para que los técnicos puedan filtrar por servidor. ¿Qué etiqueta específica debe añadirse dentro de cada elemento iterativo para lograr esto?",
+    "contexto": "Clasificación de cada noticia o informe dentro de un canal RSS para facilitar el filtrado por categorías.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<group>"
+      },
+      {
+        "clave": "b",
+        "texto": "<tag>"
+      },
+      {
+        "clave": "c",
+        "texto": "<classification>"
+      },
+      {
+        "clave": "d",
+        "texto": "<category>"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que dentro de los elementos <item> de RSS puede usarse <category> para determinar la categoría específica de una entrada. Esta etiqueta permite clasificar noticias, informes o alertas dentro del canal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<group> no es la etiqueta RSS indicada para clasificar entradas por categorías."
+        },
+        {
+          "clave": "b",
+          "motivo": "<tag> puede sonar a etiqueta clasificatoria, pero no es el elemento estándar explicado en el temario para RSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "<classification> no es la etiqueta usada en RSS para categorizar elementos individuales."
+        }
+      ],
+      "resumen_didactico": "En RSS, para clasificar una noticia o informe dentro de un <item>, se usa <category>.",
+      "ejemplo_practico": "Un informe de rendimiento podría incluir <category>Servidor-04</category> para que los técnicos filtren las alertas de ese servidor.",
+      "conclusion_final": "La respuesta correcta es la opción d porque <category> permite categorizar cada entrada dentro de un canal RSS."
+    }
+  },
+  {
+    "id": "UT7-Q22",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Al auditar el cumplimiento legal de un feed Atom público, ¿qué elemento está diseñado específicamente por el estándar para contener la información sobre derechos de autor y licencias aplicables al contenido?",
+    "contexto": "Uso de una etiqueta Atom para indicar derechos de autor o información legal del contenido publicado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<license>"
+      },
+      {
+        "clave": "b",
+        "texto": "<copyright>"
+      },
+      {
+        "clave": "c",
+        "texto": "<rights>"
+      },
+      {
+        "clave": "d",
+        "texto": "<legal>"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom el elemento <rights> contiene los detalles de los derechos de autor que aplican al canal o a una entrada concreta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<license> puede parecer lógica por hablar de licencias, pero no es la etiqueta indicada en el temario para Atom."
+        },
+        {
+          "clave": "b",
+          "motivo": "<copyright> aparece en RSS, pero en Atom el elemento específico para derechos es <rights>."
+        },
+        {
+          "clave": "d",
+          "motivo": "<legal> no es la etiqueta estándar explicada para indicar derechos legales en Atom."
+        }
+      ],
+      "resumen_didactico": "En Atom, los derechos de autor y licencias se indican con <rights>.",
+      "ejemplo_practico": "Un feed Atom público puede incluir <rights>Copyright 2026 Empresa X</rights> para aclarar los derechos aplicables.",
+      "conclusion_final": "La respuesta correcta es la opción c porque <rights> es el elemento de Atom destinado a contener información sobre derechos de autor."
+    }
+  },
+  {
+    "id": "UT7-Q23",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Al analizar un flujo Atom de mantenimiento, una aplicación de mensajería solo muestra el título, omitiendo los detalles técnicos del trabajo realizado. ¿Qué etiqueta estructural completa debe extraer la aplicación para obtener el texto íntegro del reporte?",
+    "contexto": "Obtención del contenido completo de una entrada Atom, no solo su título o resumen.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<body>"
+      },
+      {
+        "clave": "b",
+        "texto": "<content>"
+      },
+      {
+        "clave": "c",
+        "texto": "<summary>"
+      },
+      {
+        "clave": "d",
+        "texto": "<description>"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom la etiqueta <content> muestra el contenido en sí de la entrada, ya sea escrito directamente o proporcionado mediante un enlace.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<body> puede recordar al cuerpo de una página HTML, pero no es la etiqueta estructural de Atom para el contenido completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "<summary> solo contiene un resumen o extracto breve, no el texto íntegro del reporte."
+        },
+        {
+          "clave": "d",
+          "motivo": "<description> es propia de RSS para descripciones o resúmenes, pero en Atom el contenido completo se maneja con <content>."
+        }
+      ],
+      "resumen_didactico": "En Atom, el contenido completo de una entrada se encuentra en <content>.",
+      "ejemplo_practico": "Una entrada Atom de mantenimiento puede tener el título 'Servidor actualizado' y dentro de <content> el detalle completo de los cambios realizados.",
+      "conclusion_final": "La respuesta correcta es la opción b porque <content> permite obtener el texto íntegro del reporte en Atom."
+    }
+  },
+  {
+    "id": "UT7-Q24",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Al utilizar la etiqueta de hipervínculo dentro de un canal Atom para referenciar la ubicación exacta del registro web original, ¿qué atributo es obligatoriamente requerido por el validador?",
+    "contexto": "Uso de la etiqueta <link> en Atom para enlazar un recurso web relacionado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "href"
+      },
+      {
+        "clave": "b",
+        "texto": "title"
+      },
+      {
+        "clave": "c",
+        "texto": "type"
+      },
+      {
+        "clave": "d",
+        "texto": "rel"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom el elemento <link> se usa para enlazar páginas web relacionadas y que su atributo obligatorio es href, que marca la URI del recurso empleado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "title puede usarse como atributo opcional para indicar el título del recurso, pero no es obligatorio."
+        },
+        {
+          "clave": "c",
+          "motivo": "type puede indicar el tipo específico de recurso, pero el temario lo presenta como atributo opcional."
+        },
+        {
+          "clave": "d",
+          "motivo": "rel puede indicar la relación del enlace, como alternate, enclosure, related, self o via, pero también es opcional."
+        }
+      ],
+      "resumen_didactico": "En Atom, todo <link> necesita obligatoriamente el atributo href.",
+      "ejemplo_practico": "Un enlace Atom correcto sería <link href=\"https://empresa.com/registro/123\" type=\"text/html\" />.",
+      "conclusion_final": "La respuesta correcta es la opción a porque href es el atributo obligatorio de <link> en Atom."
+    }
+  },
+  {
+    "id": "UT7-Q25",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Para garantizar el correcto procesamiento por parte de herramientas de accesibilidad y cumplir con los estándares internacionales, se requiere declarar el idioma de un canal RSS. ¿Qué etiqueta opcional de la cabecera se encarga de esto?",
+    "contexto": "Declaración del idioma usado en un canal RSS mediante una etiqueta opcional de <channel>.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<lang>"
+      },
+      {
+        "clave": "b",
+        "texto": "<locale>"
+      },
+      {
+        "clave": "c",
+        "texto": "<charset>"
+      },
+      {
+        "clave": "d",
+        "texto": "<language>"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en RSS la etiqueta <language> se usa para indicar el idioma en el que está escrito el feed, utilizando un código aprobado como es para español.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<lang> puede recordar al atributo lang de HTML, pero no es la etiqueta RSS indicada en el temario para declarar el idioma del canal."
+        },
+        {
+          "clave": "b",
+          "motivo": "<locale> no es la etiqueta RSS usada para indicar el idioma del feed."
+        },
+        {
+          "clave": "c",
+          "motivo": "<charset> se relaciona con la codificación de caracteres, pero no declara el idioma del canal RSS."
+        }
+      ],
+      "resumen_didactico": "En RSS, el idioma del canal se indica con la etiqueta <language>.",
+      "ejemplo_practico": "Un canal RSS en español podría incluir <language>es</language> dentro de <channel>.",
+      "conclusion_final": "La respuesta correcta es la opción d porque <language> es la etiqueta opcional de RSS que declara el idioma del canal."
+    }
+  },
+  {
+    "id": "UT7-Q26",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Un pipeline de integración continua publica un canal con los detalles de cada compilación de código finalizada. En el formato RSS clásico, ¿qué etiqueta actúa como contenedor iterativo para representar cada uno de estos eventos de compilación?",
+    "contexto": "Representación de cada evento, noticia o actualización individual dentro de un canal RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<entry>"
+      },
+      {
+        "clave": "b",
+        "texto": "<record>"
+      },
+      {
+        "clave": "c",
+        "texto": "<update>"
+      },
+      {
+        "clave": "d",
+        "texto": "<item>"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en RSS los elementos <item> son los bloques que contienen la información relacionada directamente con cada noticia, alerta o entrada individual del feed.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<entry> es la etiqueta usada en Atom para cada entrada individual, no en RSS clásico."
+        },
+        {
+          "clave": "b",
+          "motivo": "<record> puede sonar a registro o evento, pero no es la etiqueta estándar de RSS para representar entradas individuales."
+        },
+        {
+          "clave": "c",
+          "motivo": "<update> no es la etiqueta RSS explicada en el temario para contener cada actualización del canal."
+        }
+      ],
+      "resumen_didactico": "En RSS, cada noticia, alerta o evento individual se representa con <item>.",
+      "ejemplo_practico": "Un RSS de compilaciones podría tener un <item> para la build 102, otro <item> para la build 103 y así sucesivamente.",
+      "conclusion_final": "La respuesta correcta es la opción d porque <item> es el contenedor iterativo de cada entrada individual en RSS."
+    }
+  },
+  {
+    "id": "UT7-Q27",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "¿Cuál es el propósito técnico y principal de someter un archivo de sindicación automatizado a un proceso estricto de validación antes de su publicación en el entorno de producción?",
+    "contexto": "Validación previa de un archivo RSS o Atom antes de publicarlo para que pueda ser leído correctamente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicar instrucciones visuales para mejorar la interfaz de lectura humana"
+      },
+      {
+        "clave": "b",
+        "texto": "Someter el documento a un escáner sintáctico para garantizar el cumplimiento del estándar y evitar roturas estructurales"
+      },
+      {
+        "clave": "c",
+        "texto": "Comprimir los nodos del archivo para reducir su peso de transferencia en la red"
+      },
+      {
+        "clave": "d",
+        "texto": "Traducir dinámicamente el contenido de las alertas al idioma del navegador del cliente"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que validar un feed consiste en someter el documento a una revisión sintáctica para comprobar que cumple el estándar XML y que no contiene errores, caracteres ilegales o malformaciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La validación no sirve para mejorar la apariencia visual, sino para comprobar que la estructura del documento es correcta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Comprimir el archivo puede reducir tamaño, pero no es el objetivo de validar un feed RSS o Atom."
+        },
+        {
+          "clave": "d",
+          "motivo": "La validación no traduce contenidos; solo verifica que el documento está bien formado y cumple el estándar."
+        }
+      ],
+      "resumen_didactico": "Validar un feed significa revisar que su XML está bien escrito antes de publicarlo.",
+      "ejemplo_practico": "Si falta cerrar una etiqueta como </link>, el validador detecta el error antes de que el feed llegue roto a los lectores.",
+      "conclusion_final": "La respuesta correcta es la opción b porque la validación comprueba la sintaxis y evita errores estructurales en producción."
+    }
+  },
+  {
+    "id": "UT7-Q28",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Al documentar la autoría de un parche de seguridad dentro de una entrada Atom, el sistema exige proporcionar la identidad del responsable. ¿Qué subelemento es estrictamente obligatorio incluir dentro de la etiqueta <author>?",
+    "contexto": "Declaración del autor de una entrada Atom y sus subelementos internos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<id>"
+      },
+      {
+        "clave": "b",
+        "texto": "<uri>"
+      },
+      {
+        "clave": "c",
+        "texto": "<name>"
+      },
+      {
+        "clave": "d",
+        "texto": "<email>"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en Atom la etiqueta <author> puede contener tres subelementos: <name>, <email> y <uri>. De ellos, <name> es obligatorio porque identifica el nombre del autor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<id> se usa como identificador único del canal o de una entrada, pero no es el subelemento obligatorio dentro de <author>."
+        },
+        {
+          "clave": "b",
+          "motivo": "<uri> puede indicar la página web del autor, pero es opcional dentro de <author>."
+        },
+        {
+          "clave": "d",
+          "motivo": "<email> puede indicar el correo del autor, pero también es opcional; el obligatorio es <name>."
+        }
+      ],
+      "resumen_didactico": "Dentro de <author> en Atom, el dato mínimo obligatorio es <name>.",
+      "ejemplo_practico": "Una autoría válida podría ser <author><name>Equipo de Seguridad</name><email>security@empresa.com</email></author>.",
+      "conclusion_final": "La respuesta correcta es la opción c porque <name> es el subelemento obligatorio dentro de <author> en Atom."
+    }
+  },
+  {
+    "id": "UT7-Q29",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "En la declaración inicial de un canal RSS válido, es obligatorio indicar la dirección hacia el recurso web principal asociado al contenido del canal. ¿Qué etiqueta cumple con esta función estructural?",
+    "contexto": "Elemento obligatorio dentro de <channel> que indica la dirección web principal asociada al canal RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<link>"
+      },
+      {
+        "clave": "b",
+        "texto": "<href>"
+      },
+      {
+        "clave": "c",
+        "texto": "<url>"
+      },
+      {
+        "clave": "d",
+        "texto": "<source>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que dentro de <channel> en RSS uno de los elementos obligatorios es <link>, que contiene el enlace o hipervínculo hacia el recurso web principal del canal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "href es un atributo usado en enlaces, especialmente en Atom dentro de <link>, pero no es la etiqueta RSS obligatoria del canal."
+        },
+        {
+          "clave": "c",
+          "motivo": "<url> puede aparecer en otros contextos, como dentro de <image>, pero no es el elemento obligatorio principal de <channel> para enlazar el canal."
+        },
+        {
+          "clave": "d",
+          "motivo": "<source> se usa para indicar una fuente original en ciertos contextos, pero no es la etiqueta obligatoria que enlaza el canal RSS principal."
+        }
+      ],
+      "resumen_didactico": "En RSS, la etiqueta <link> indica la dirección web principal asociada al canal.",
+      "ejemplo_practico": "Un canal RSS corporativo podría incluir <link>https://empresa.com/alertas</link> dentro de <channel>.",
+      "conclusion_final": "La respuesta correcta es la opción a porque <link> es la etiqueta RSS obligatoria que apunta al recurso web principal del canal."
+    }
+  },
+  {
+    "id": "UT7-Q30",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "En la arquitectura de automatización de infraestructuras corporativas, ¿qué ventaja fundamental proporciona el uso de los estándares de sindicación para transmitir eventos del sistema frente a correos electrónicos no estructurados?",
+    "contexto": "Uso de RSS o Atom para transmitir eventos del sistema de forma estructurada y procesable automáticamente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La ejecución autónoma de algoritmos de corrección de errores en la memoria del servidor"
+      },
+      {
+        "clave": "b",
+        "texto": "La total dependencia de entornos de desarrollo integrados de pago"
+      },
+      {
+        "clave": "c",
+        "texto": "La generación nativa de gráficos estadísticos en tiempo real dentro del propio archivo"
+      },
+      {
+        "clave": "d",
+        "texto": "La presentación de datos limpios bajo una jerarquía universal que permite que cualquier software los procese y categorice automáticamente"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que RSS y Atom están basados en XML, lo que permite estructurar la información mediante etiquetas claras y jerárquicas. Esto facilita que distintos programas puedan leer, procesar, filtrar y categorizar automáticamente los contenidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La sindicación no ejecuta algoritmos de corrección de errores en memoria; su función es estructurar y distribuir información."
+        },
+        {
+          "clave": "b",
+          "motivo": "RSS y Atom no dependen de entornos de desarrollo integrados de pago; son estándares abiertos basados en XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un feed no genera gráficos estadísticos en tiempo real por sí mismo; simplemente transmite datos estructurados."
+        }
+      ],
+      "resumen_didactico": "La gran ventaja de RSS y Atom es que convierten la información en datos ordenados y fáciles de leer por máquinas.",
+      "ejemplo_practico": "Un sistema puede recibir alertas de servidores en formato RSS, leer sus etiquetas <title>, <link>, <description> o <category>, y clasificarlas automáticamente según su importancia.",
+      "conclusion_final": "La respuesta correcta es la opción d porque los estándares de sindicación organizan los datos bajo una estructura jerárquica que cualquier software compatible puede procesar."
+    }
+  }
+]

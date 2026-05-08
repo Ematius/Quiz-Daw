@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT5-Q01",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Un equipo de desarrollo necesita coger una base de datos en crudo y decidir cómo estructurarla visualmente para que el usuario final la entienda en su navegador. ¿Qué lenguaje estándar se utiliza para convertir ese documento de origen en otro tipo de formato aplicando reglas de estilo?",
+    "contexto": "Transformación de datos XML en bruto para presentarlos visualmente al usuario final en el navegador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El sistema de hojas de estilo en cascada"
+      },
+      {
+        "clave": "b",
+        "texto": "La transformación XSLT"
+      },
+      {
+        "clave": "c",
+        "texto": "El lenguaje de consultas estructuradas"
+      },
+      {
+        "clave": "d",
+        "texto": "El modelo de objetos de documento"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, XSLT significa eXtensible Stylesheet Language Transformations y es un lenguaje estándar utilizado para convertir un documento XML de origen en otro tipo de documento, como XML, HTML o texto plano, aplicando reglas de estilo y transformación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El sistema de hojas de estilo en cascada corresponde a CSS. CSS sirve para aplicar estilos visuales a documentos HTML, pero no es el lenguaje estándar encargado de transformar un documento XML de origen en otro formato."
+        },
+        {
+          "clave": "c",
+          "motivo": "El lenguaje de consultas estructuradas es SQL. SQL se utiliza para consultar y gestionar bases de datos relacionales, no para transformar documentos XML mediante reglas de estilo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El modelo de objetos de documento es el DOM. El DOM representa la estructura de un documento en forma de árbol para poder manipularlo, pero no es el lenguaje estándar de transformación de XML."
+        }
+      ],
+      "resumen_didactico": "Cuando el objetivo es coger datos XML en bruto y convertirlos en una salida más útil o visual, como HTML para el navegador, el lenguaje clave es XSLT.",
+      "ejemplo_practico": "Una floristería tiene un inventario en XML con etiquetas como especie, precio y stock. Con XSLT se puede transformar ese XML en una tabla HTML ordenada y comprensible para el usuario.",
+      "conclusion_final": "La respuesta correcta es XSLT, porque es el lenguaje estándar que permite transformar documentos XML aplicando reglas de estilo y estructura."
+    }
+  },
+  {
+    "id": "UT5-Q02",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Cómo se define técnicamente la función del lenguaje XPath en el ecosistema de transformación de datos?",
+    "contexto": "Uso de XPath dentro de la transformación de documentos XML para localizar información concreta dentro del árbol de nodos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un compilador que traduce el código a lenguaje de máquina"
+      },
+      {
+        "clave": "b",
+        "texto": "Un lenguaje de consultas que permite seleccionar y navegar con precisión entre los distintos nodos de un documento XML"
+      },
+      {
+        "clave": "c",
+        "texto": "Un sistema de encriptación para asegurar la transferencia de paquetes"
+      },
+      {
+        "clave": "d",
+        "texto": "Un procesador de texto que genera esquemas de bases de datos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, XPath es un lenguaje de consultas que permite seleccionar y navegar con precisión entre los distintos nodos de un documento XML. Dentro de XSLT, XPath funciona como el sistema que indica exactamente dónde están los datos que queremos extraer, recorrer, filtrar u ordenar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un compilador traduce código fuente a otro lenguaje, normalmente código máquina o bytecode. XPath no compila programas: sirve para localizar nodos dentro de un documento XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "La encriptación se utiliza para proteger información durante su almacenamiento o transmisión. XPath no cifra datos ni asegura paquetes; su función es seleccionar partes concretas de un XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un procesador de texto sirve para editar documentos escritos, y la generación de esquemas de bases de datos pertenece a otro ámbito. XPath no genera esquemas: permite navegar por la estructura jerárquica de un XML."
+        }
+      ],
+      "resumen_didactico": "XPath es el sistema de rutas del XML. Permite decirle a XSLT exactamente qué nodo, etiqueta o conjunto de elementos debe utilizar.",
+      "ejemplo_practico": "Si tienes un XML con un inventario de plantas, una ruta XPath puede indicar que quieres seleccionar todos los nodos especie dentro de inventario, por ejemplo /inventario//especie.",
+      "conclusion_final": "La respuesta correcta es la b, porque XPath se define como un lenguaje de consultas para seleccionar y navegar por los nodos de un documento XML."
+    }
+  },
+  {
+    "id": "UT5-Q03",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Durante la creación de un escaparate digital, un analista necesita aplicar colores y fuentes directamente mediante la hoja de transformación. ¿Qué limitación técnica debe considerar respecto al diseño visual final?",
+    "contexto": "Uso de XSLT para transformar XML en una salida visual y relación entre XSLT y CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La transformación XSLT no procesa CSS directamente, sino que genera un archivo de salida que posteriormente podrá ser estilizado con CSS tradicional"
+      },
+      {
+        "clave": "b",
+        "texto": "El formato de salida prohíbe terminantemente el uso de propiedades de color o fuentes"
+      },
+      {
+        "clave": "c",
+        "texto": "Las reglas de estilo visual solo pueden aplicarse mediante bases de datos relacionales"
+      },
+      {
+        "clave": "d",
+        "texto": "El sistema requiere compilar el CSS dentro de un archivo binario independiente"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, XSLT permite transformar un documento XML y generar una salida, normalmente HTML, XML, XHTML o texto plano. Sin embargo, XSLT no procesa CSS directamente. Lo que hace es generar un documento de salida, por ejemplo HTML, que después puede ser estilizado con CSS tradicional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es correcto porque el formato de salida no prohíbe usar colores o fuentes. De hecho, si la salida es HTML, se puede aplicar diseño visual mediante CSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las bases de datos relacionales no son el mecanismo para aplicar reglas visuales. Su función principal es almacenar y consultar datos estructurados, no definir colores, fuentes o estilos de presentación."
+        },
+        {
+          "clave": "d",
+          "motivo": "CSS no necesita compilarse en un archivo binario independiente para aplicarse a una página web. Normalmente se usa como archivo .css, como estilos internos o como estilos en línea dentro del HTML."
+        }
+      ],
+      "resumen_didactico": "XSLT transforma los datos y puede generar la estructura HTML, pero el diseño visual final se trabaja normalmente con CSS sobre el documento resultante.",
+      "ejemplo_practico": "Un XML de plantas puede transformarse con XSLT en una tabla HTML. Después, esa tabla puede recibir estilos CSS para poner precios en verde, títulos con una fuente concreta o bordes en las celdas.",
+      "conclusion_final": "La respuesta correcta es la a, porque XSLT genera la salida estructurada, pero el estilizado visual completo se realiza después con CSS tradicional."
+    }
+  },
+  {
+    "id": "UT5-Q04",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "En una infraestructura de alta disponibilidad, un arquitecto de software requiere procesar un documento en vivo, aunque la descarga del mismo esté aún incompleta. ¿Qué característica introducida en la versión 2.0 del lenguaje de transformación permite esta operativa?",
+    "contexto": "Procesamiento de documentos XML en vivo mientras la descarga o generación del documento todavía no ha finalizado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La ejecución de rutinas en servidores locales desconectados"
+      },
+      {
+        "clave": "b",
+        "texto": "El uso de variables globales estáticas"
+      },
+      {
+        "clave": "c",
+        "texto": "El soporte para bases de datos no relacionales"
+      },
+      {
+        "clave": "d",
+        "texto": "La posibilidad de hacer streaming de documentos"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, en la versión 2.0 de XSLT aparece la posibilidad de hacer streaming de documentos. Esta característica permite trabajar y procesar un documento aunque su descarga o generación todavía esté incompleta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La ejecución de rutinas en servidores locales desconectados no es la característica descrita en el temario. El caso habla de procesar un documento mientras todavía se está recibiendo o generando, no de trabajar sin conexión."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las variables globales estáticas pueden formar parte de la lógica de una transformación, pero no explican la capacidad de procesar un documento incompleto en vivo."
+        },
+        {
+          "clave": "c",
+          "motivo": "El soporte para bases de datos no relacionales pertenece al ámbito de almacenamiento de datos, no a la característica de XSLT que permite procesar documentos durante su descarga o generación."
+        }
+      ],
+      "resumen_didactico": "El streaming permite empezar a procesar un documento antes de tenerlo completo. Es útil cuando se trabaja con documentos grandes o flujos de datos que llegan poco a poco.",
+      "ejemplo_practico": "Una empresa recibe un catálogo XML enorme desde un servidor externo. Gracias al streaming, el sistema puede empezar a transformar los primeros productos mientras el resto del documento sigue descargándose.",
+      "conclusion_final": "La respuesta correcta es la d, porque el streaming de documentos permite procesar información XML en vivo aunque el documento todavía no esté completo."
+    }
+  },
+  {
+    "id": "UT5-Q05",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Qué instrucción específica introducida en versiones avanzadas de XSLT funciona como un escudo, evitando el bloqueo total del sistema a causa de errores puntuales durante la transformación?",
+    "contexto": "Uso de instrucciones avanzadas de XSLT para controlar errores durante una transformación y evitar que un fallo puntual bloquee todo el proceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "xsl:global-context-item"
+      },
+      {
+        "clave": "b",
+        "texto": "xsl:evaluate"
+      },
+      {
+        "clave": "c",
+        "texto": "xsl:try"
+      },
+      {
+        "clave": "d",
+        "texto": "xsl:assert"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, xsl:try funciona como un escudo que evita el bloqueo total del sistema a causa de errores puntuales durante la transformación. Su función es permitir controlar errores para que un fallo concreto no detenga todo el procesamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "xsl:global-context-item permite especificar un elemento en un contexto global, pero no está pensado específicamente para evitar bloqueos por errores puntuales."
+        },
+        {
+          "clave": "b",
+          "motivo": "xsl:evaluate sirve para evaluar expresiones XPath que llegan en formato de cadena de texto. Su función principal no es controlar errores ni evitar que el sistema se bloquee."
+        },
+        {
+          "clave": "d",
+          "motivo": "xsl:assert ayuda a construir código más robusto comprobando condiciones, pero la instrucción que el temario compara directamente con un escudo frente a errores puntuales es xsl:try."
+        }
+      ],
+      "resumen_didactico": "Cuando el temario habla de una instrucción que actúa como escudo frente a errores durante la transformación, se refiere a xsl:try.",
+      "ejemplo_practico": "Si durante una transformación XSLT se intenta procesar un dato defectuoso dentro de un catálogo XML, xsl:try permite controlar ese fallo para que no se caiga toda la transformación.",
+      "conclusion_final": "La respuesta correcta es la c, porque xsl:try es la instrucción asociada al control de errores y a evitar bloqueos totales por fallos puntuales."
+    }
+  },
+  {
+    "id": "UT5-Q06",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Un programador front-end necesita desplegar una transformación directamente en el navegador web del cliente sin pasar por el servidor. ¿Qué restricción de compatibilidad técnica presentan los navegadores modernos hoy en día para ejecutar estas instrucciones nativamente?",
+    "contexto": "Ejecución de transformaciones XSLT directamente en el navegador del usuario dentro del front-end.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo soportan nativamente la versión 1.0 del lenguaje"
+      },
+      {
+        "clave": "b",
+        "texto": "Requieren el uso de plugins de terceros para interpretar las etiquetas"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo admiten transformaciones a formato de texto plano sin estilos"
+      },
+      {
+        "clave": "d",
+        "texto": "Bloquean cualquier tipo de transformación por motivos de seguridad"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, aunque XSLT 3.0 es un estándar oficial y funcional en herramientas backend empresariales como Saxon, los navegadores web modernos siguen soportando nativamente solo XSLT 1.0 cuando la transformación se ejecuta directamente en el front-end.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El temario no indica que los navegadores necesiten plugins de terceros para interpretar XSLT de forma nativa. La restricción principal mencionada es la versión soportada: XSLT 1.0."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es correcto porque una transformación XSLT en navegador puede generar salida HTML, no solo texto plano. La limitación no está en el tipo de salida, sino en la versión de XSLT soportada nativamente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los navegadores no bloquean cualquier tipo de transformación XSLT por defecto. El problema señalado por el temario es que su soporte nativo se limita a XSLT 1.0."
+        }
+      ],
+      "resumen_didactico": "En backend puedes usar procesadores modernos como Saxon con versiones avanzadas de XSLT, pero en navegador el soporte nativo sigue limitado a XSLT 1.0.",
+      "ejemplo_practico": "Si enlazas un XML con una hoja XSL para que Chrome o Firefox hagan la transformación directamente, debes escribirla pensando en XSLT 1.0, no en instrucciones modernas de XSLT 2.0 o 3.0.",
+      "conclusion_final": "La respuesta correcta es la a, porque los navegadores modernos solo soportan nativamente XSLT 1.0 para transformaciones ejecutadas directamente en el cliente."
+    }
+  },
+  {
+    "id": "UT5-Q07",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Cómo se denomina al formato que define la estructura y extensión final del archivo generado una vez que los datos crudos han sido procesados por el motor de transformación?",
+    "contexto": "Resultado generado después de aplicar una transformación XSLT sobre datos XML en bruto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Documento de tipo procedimental"
+      },
+      {
+        "clave": "b",
+        "texto": "Formato de salida"
+      },
+      {
+        "clave": "c",
+        "texto": "Árbol de origen"
+      },
+      {
+        "clave": "d",
+        "texto": "Esquema de validación"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, un formato de salida en XSLT es la estructura y extensión final del archivo generado una vez que los datos crudos han sido procesados por el motor de transformación. Puede ser, por ejemplo, XML, XHTML, HTML5 o texto plano.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Documento de tipo procedimental no es el término usado en el temario. Además, XSLT no se define aquí como un documento procedimental, sino como un lenguaje de transformación que genera una salida."
+        },
+        {
+          "clave": "c",
+          "motivo": "El árbol de origen es la estructura inicial del documento XML antes de aplicar la transformación. No representa el archivo final generado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un esquema de validación sirve para comprobar si un documento XML cumple una estructura determinada, pero no define el formato final generado tras la transformación."
+        }
+      ],
+      "resumen_didactico": "El formato de salida es el resultado final de la transformación: decide si los datos procesados acabarán como HTML, XML, XHTML o texto plano.",
+      "ejemplo_practico": "Si tienes un inventario XML de una floristería y lo transformas en una tabla HTML para mostrarlo en una web, HTML sería el formato de salida.",
+      "conclusion_final": "La respuesta correcta es la b, porque el formato de salida define la estructura y extensión final del documento generado tras procesar los datos."
+    }
+  },
+  {
+    "id": "UT5-Q08",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Al extraer información de una arquitectura compleja, un analista de datos debe recuperar todos los elementos denominados \"factura\", sin importar si están dentro de otras carpetas o nodos anidados. ¿Qué expresión de consulta logra este objetivo?",
+    "contexto": "Uso de expresiones XPath para seleccionar elementos XML sin importar su posición dentro del documento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/factura/nodo"
+      },
+      {
+        "clave": "b",
+        "texto": "//factura"
+      },
+      {
+        "clave": "c",
+        "texto": "factura//"
+      },
+      {
+        "clave": "d",
+        "texto": "/factura"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la expresión XPath //Objeto selecciona todos los elementos llamados Objeto en cualquier parte del documento, sin importar si están dentro de otras carpetas o nodos. Aplicado al caso de la pregunta, //factura selecciona todos los elementos factura estén donde estén dentro del XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La expresión /factura/nodo buscaría un nodo llamado nodo dentro de un elemento factura situado desde la raíz. No selecciona todas las facturas del documento en cualquier nivel."
+        },
+        {
+          "clave": "c",
+          "motivo": "factura// no es la forma correcta para seleccionar todos los elementos factura. El doble slash debe colocarse antes del nombre del elemento cuando queremos buscarlo en cualquier parte del documento."
+        },
+        {
+          "clave": "d",
+          "motivo": "La expresión /factura selecciona un elemento factura situado directamente en la raíz del documento. No sirve para encontrar facturas anidadas en distintos niveles."
+        }
+      ],
+      "resumen_didactico": "En XPath, //nombreElemento significa: busca todos los elementos con ese nombre en cualquier parte del documento XML.",
+      "ejemplo_practico": "Si un XML tiene facturas dentro de /empresa/ventas/factura y también dentro de /empresa/historico/factura, la expresión //factura recupera ambas.",
+      "conclusion_final": "La respuesta correcta es la b, porque //factura permite seleccionar todos los elementos factura sin importar dónde estén anidados."
+    }
+  },
+  {
+    "id": "UT5-Q09",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Un administrador de sistemas nota que al abrir un archivo de inventario estructurado, el navegador muestra un bloque de texto ilegible en lugar de la tabla visual esperada. ¿Qué elemento estructural falta o está mal configurado en el archivo origen?",
+    "contexto": "Vinculación entre un archivo XML de origen y su hoja de estilo XSL para que el navegador pueda transformar los datos en una salida visual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La directiva de vinculación de hoja de estilo con la ruta correcta en el atributo href"
+      },
+      {
+        "clave": "b",
+        "texto": "El parámetro de codificación establecido en la primera línea"
+      },
+      {
+        "clave": "c",
+        "texto": "La declaración del espacio de nombres en el nodo superior"
+      },
+      {
+        "clave": "d",
+        "texto": "El cierre de la etiqueta raíz del documento principal"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el archivo XML debe vincularse con su hoja de estilo XSL mediante una directiva de procesamiento como <?xml-stylesheet type=\"text/xsl\" href=\"estilo_floristeria.xsl\"?>. El atributo href debe indicar correctamente el nombre y la ruta del archivo XSL. Si la ruta falla, el XML puede mostrarse en blanco o como un bloque de texto ilegible.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La codificación, como UTF-8, es importante para interpretar correctamente los caracteres del documento, pero el problema descrito no apunta principalmente a caracteres mal codificados, sino a que no se está aplicando la transformación visual XSL."
+        },
+        {
+          "clave": "c",
+          "motivo": "La declaración del espacio de nombres es importante dentro de la hoja XSL para que el procesador reconozca las instrucciones XSLT, pero la pregunta habla del archivo origen y de que no se carga la tabla visual esperada."
+        },
+        {
+          "clave": "d",
+          "motivo": "Si faltara el cierre de la etiqueta raíz, el documento XML estaría mal formado y produciría un error estructural. En este caso, el síntoma descrito es que el navegador muestra el XML como texto ilegible porque no encuentra o no aplica correctamente la hoja XSL."
+        }
+      ],
+      "resumen_didactico": "Para que un XML se transforme visualmente, no basta con tener los datos bien escritos: el XML debe apuntar correctamente a su hoja XSL mediante la directiva xml-stylesheet y el atributo href.",
+      "ejemplo_practico": "Si el XML contiene href=\"estilo_floristeria.xsl\" pero el archivo real está dentro de una carpeta llamada css, el navegador no encontrará la hoja de estilo. La ruta correcta sería href=\"css/estilo_floristeria.xsl\".",
+      "conclusion_final": "La respuesta correcta es la a, porque el fallo más probable es que falte o esté mal configurada la directiva que vincula el XML con la hoja XSL mediante href."
+    }
+  },
+  {
+    "id": "UT5-Q10",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "En el mercado laboral moderno, ¿cuál es el estándar absoluto de salida que se utiliza para generar interfaces web a partir de transformaciones de datos estructurados?",
+    "contexto": "Formatos de salida en XSLT y uso actual de HTML5 como estándar para la web moderna.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HTML5"
+      },
+      {
+        "clave": "b",
+        "texto": "Documentos PDF interactivos"
+      },
+      {
+        "clave": "c",
+        "texto": "Texto plano sin formato"
+      },
+      {
+        "clave": "d",
+        "texto": "XHTML básico"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, aunque XHTML tiene valor pedagógico porque obliga a escribir código de forma estricta, el estándar absoluto de salida para la web en el mundo laboral actual es HTML5.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los documentos PDF pueden generarse en ciertos contextos, como informes o facturas, pero no son el estándar principal para construir interfaces web modernas en el navegador."
+        },
+        {
+          "clave": "c",
+          "motivo": "El texto plano puede ser útil para exportaciones simples o logs, pero no permite construir una interfaz web visual completa como sí lo hace HTML5."
+        },
+        {
+          "clave": "d",
+          "motivo": "XHTML se estudia por su valor pedagógico y por su relación estricta con XML, pero el temario indica que en el mundo laboral actual el estándar web es HTML5."
+        }
+      ],
+      "resumen_didactico": "XHTML ayuda a aprender rigor porque exige una sintaxis estricta, pero para crear interfaces web modernas el estándar práctico es HTML5.",
+      "ejemplo_practico": "Si transformas un inventario XML de una floristería en una página web con una tabla de productos, precios y stock, lo normal en un entorno actual sería generar HTML5.",
+      "conclusion_final": "La respuesta correcta es la a, porque HTML5 es el estándar absoluto de salida para interfaces web en el mercado laboral moderno."
+    }
+  },
+  {
+    "id": "UT5-Q11",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Al preparar la arquitectura de un nuevo proyecto, un técnico necesita indicar a qué nodos específicos del árbol de origen se les debe aplicar un bloque de transformación. ¿Qué mecanismo establece esta regla inicial en la hoja de estilo?",
+    "contexto": "Definición de reglas de plantilla dentro de una hoja XSL para aplicar transformaciones sobre nodos concretos del documento XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El elemento template con el atributo match"
+      },
+      {
+        "clave": "b",
+        "texto": "El atributo type dentro de la instrucción de procesamiento"
+      },
+      {
+        "clave": "c",
+        "texto": "La etiqueta output configurada con el método adecuado"
+      },
+      {
+        "clave": "d",
+        "texto": "La directiva stylesheet definiendo la versión"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el elemento xsl:template con el atributo match establece una regla de plantilla que indica a qué nodos específicos del árbol XML de origen se les debe aplicar el bloque de transformación que contiene en su interior.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El atributo type aparece en la directiva de procesamiento que vincula el XML con la hoja de estilo, por ejemplo type=\"text/xsl\". Sirve para indicar el tipo de hoja asociada, pero no define sobre qué nodos se aplica una transformación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La etiqueta xsl:output sirve para indicar el formato de salida de la transformación, como html, xml o texto. No selecciona los nodos del XML sobre los que se ejecutará una plantilla."
+        },
+        {
+          "clave": "d",
+          "motivo": "La directiva xsl:stylesheet declara que el documento es una hoja XSL válida y define su versión y espacio de nombres, pero no establece por sí sola qué nodos concretos serán transformados."
+        }
+      ],
+      "resumen_didactico": "Para aplicar una transformación a una parte concreta del XML, XSLT utiliza plantillas. La plantilla se define con xsl:template y el atributo match indica sobre qué nodo o ruta XPath actúa.",
+      "ejemplo_practico": "Si se escribe <xsl:template match=\"/\">, se está indicando que la transformación empieza desde la raíz del documento XML y se aplica al documento completo.",
+      "conclusion_final": "La respuesta correcta es la a, porque xsl:template con el atributo match es el mecanismo que establece la regla de aplicación sobre nodos concretos del XML."
+    }
+  },
+  {
+    "id": "UT5-Q12",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Qué instrucción se utiliza obligatoriamente para marcar y habilitar un archivo como una hoja de estilo válida, definiendo su espacio de nombres y versión?",
+    "contexto": "Estructura básica de una hoja de estilo XSL y declaración obligatoria para que el procesador la reconozca como válida.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:template match=\"/\">"
+      },
+      {
+        "clave": "b",
+        "texto": "<?xml-stylesheet type=\"text/xsl\" href=\"estilo.xsl\"?>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:output method=\"html\" encoding=\"UTF-8\"/>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, los archivos XSL deben contener una línea obligatoria que los marca y habilita como hojas de estilo válidas: <xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">. Esta instrucción declara la versión de XSLT y el espacio de nombres necesario para que el procesador reconozca las etiquetas XSL.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xsl:template match=\"/\"> sirve para definir una plantilla y aplicar una transformación a determinados nodos del XML, normalmente desde la raíz. No es la instrucción que habilita todo el archivo como hoja de estilo XSL válida."
+        },
+        {
+          "clave": "b",
+          "motivo": "<?xml-stylesheet type=\"text/xsl\" href=\"estilo.xsl\"?> se coloca en el archivo XML de origen para vincularlo con una hoja XSL externa. No es la declaración interna que marca el archivo XSL como hoja de estilo válida."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:output method=\"html\" encoding=\"UTF-8\"/> indica el formato de salida de la transformación, por ejemplo HTML, pero no declara el espacio de nombres ni habilita por sí sola el archivo como hoja XSL válida."
+        }
+      ],
+      "resumen_didactico": "La etiqueta principal de una hoja XSL es <xsl:stylesheet>. Sin ella, el procesador no sabe que está leyendo una hoja de estilo XSLT válida.",
+      "ejemplo_practico": "En una hoja llamada estilo_floristeria.xsl, después de la declaración XML inicial, se escribe <xsl:stylesheet version=\"1.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"> para indicar que ese archivo contiene reglas XSLT.",
+      "conclusion_final": "La respuesta correcta es la d, porque <xsl:stylesheet> con version y xmlns:xsl es la instrucción obligatoria que identifica y habilita el archivo como hoja de estilo XSL válida."
+    }
+  },
+  {
+    "id": "UT5-Q13",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Para poblar una página web comercial con los precios exactos de un catálogo, un desarrollador debe indicar al sistema la ruta para recuperar esa información. ¿Qué instrucción extrae el valor del elemento referenciado desde el archivo original?",
+    "contexto": "Extracción de valores concretos desde un archivo XML original usando instrucciones XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:for-each>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:sort>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:choose>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:value-of>"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, <xsl:value-of> es una instrucción XSLT que extrae el valor del elemento referenciado desde el archivo XML original. Para ello se usa el atributo select, donde se indica la ruta del dato que se quiere recuperar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xsl:for-each> se utiliza para recorrer de forma repetitiva un conjunto de nodos, por ejemplo todas las plantas de un inventario. No sirve directamente para extraer el valor concreto de un elemento."
+        },
+        {
+          "clave": "b",
+          "motivo": "<xsl:sort> sirve para ordenar el contenido procesado según el valor indicado en su atributo select. No extrae por sí mismo el valor de un nodo para mostrarlo."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:choose> permite ejecutar diferentes bloques de acciones según varias condiciones. Se usa para lógica condicional múltiple, no para recuperar directamente el valor de un elemento XML."
+        }
+      ],
+      "resumen_didactico": "Cuando quieres sacar un dato concreto del XML y mostrarlo en la salida, la instrucción clave es <xsl:value-of>.",
+      "ejemplo_practico": "Si una planta tiene un nodo <precio>4.50</precio>, se puede usar <xsl:value-of select=\"precio\"/> para mostrar ese precio en una tabla HTML.",
+      "conclusion_final": "La respuesta correcta es la d, porque <xsl:value-of> es la instrucción que extrae el valor del elemento indicado desde el XML original."
+    }
+  },
+  {
+    "id": "UT5-Q14",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Durante la generación de un informe masivo, se requiere listar quinientos registros sin escribir el código manualmente para cada uno. ¿Qué etiqueta se debe implementar para seleccionar y recorrer de forma repetitiva todos los elementos de un conjunto?",
+    "contexto": "Recorrido repetitivo de múltiples nodos XML para generar una salida automática sin duplicar código manualmente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:if>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:for-each>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:when>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:template>"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, <xsl:for-each> selecciona y recorre de forma repetitiva todos los elementos especificados dentro de un conjunto de nodos. Es la etiqueta que permite aplicar una misma acción a muchos registros sin escribir el código uno por uno.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xsl:if> sirve para ejecutar un bloque solo si se cumple una condición. No está pensado para recorrer de forma repetitiva una lista completa de elementos."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:when> se utiliza dentro de <xsl:choose> para evaluar una condición concreta entre varias opciones. No sirve por sí solo para iterar sobre quinientos registros."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:template> define una regla de transformación aplicable a determinados nodos, pero la etiqueta específica para recorrer repetidamente un conjunto de elementos es <xsl:for-each>."
+        }
+      ],
+      "resumen_didactico": "Cuando necesitas repetir una misma estructura para muchos elementos XML, usas <xsl:for-each>. Es el equivalente a un bucle aplicado sobre nodos.",
+      "ejemplo_practico": "Si un inventario XML contiene quinientas plantas, puedes usar <xsl:for-each select=\"inventario/planta\"> para generar una fila de tabla por cada planta sin escribir quinientas filas manualmente.",
+      "conclusion_final": "La respuesta correcta es la b, porque <xsl:for-each> es la etiqueta XSLT que permite seleccionar y recorrer repetitivamente todos los elementos de un conjunto."
+    }
+  },
+  {
+    "id": "UT5-Q15",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Qué función cumple el atributo select cuando se utiliza junto a la instrucción de ordenamiento en una hoja de transformación?",
+    "contexto": "Uso de <xsl:sort> junto con el atributo select para ordenar contenido procesado en una transformación XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite ordenar el contenido procesado según el valor añadido a dicho atributo"
+      },
+      {
+        "clave": "b",
+        "texto": "Selecciona automáticamente la primera coincidencia dentro de una lista de opciones"
+      },
+      {
+        "clave": "c",
+        "texto": "Permite acotar la selección principal eliminando los nodos vacíos del documento"
+      },
+      {
+        "clave": "d",
+        "texto": "Establece la condición estricta que debe cumplir un nodo para ser procesado"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, <xsl:sort> permite ordenar el contenido procesado según el valor indicado en el atributo select. Es decir, select marca el campo o nodo que se tomará como referencia para aplicar la ordenación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Seleccionar automáticamente la primera coincidencia no es la función de <xsl:sort>. La etiqueta no busca la primera opción, sino que ordena un conjunto de nodos según un criterio."
+        },
+        {
+          "clave": "c",
+          "motivo": "Acotar la selección eliminando nodos vacíos no es la función principal del atributo select dentro de <xsl:sort>. Para filtrar nodos se usan expresiones XPath con condiciones, no la instrucción de ordenamiento como tal."
+        },
+        {
+          "clave": "d",
+          "motivo": "Establecer una condición estricta corresponde más al uso de instrucciones como <xsl:if test=\"...\"> o <xsl:when test=\"...\">. En <xsl:sort>, el atributo select indica el valor por el que se ordena."
+        }
+      ],
+      "resumen_didactico": "En <xsl:sort>, el atributo select responde a la pregunta: ¿por qué campo quieres ordenar estos datos?",
+      "ejemplo_practico": "Si tienes varias plantas en un inventario XML y escribes <xsl:sort select=\"precio\"/>, el sistema ordenará las plantas tomando como referencia el valor del nodo precio.",
+      "conclusion_final": "La respuesta correcta es la a, porque el atributo select en <xsl:sort> indica el valor usado para ordenar el contenido procesado."
+    }
+  },
+  {
+    "id": "UT5-Q16",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Un cliente exige que los productos de su tienda en línea aparezcan organizados desde el precio más bajo al más alto. Para evitar errores de compilación en el motor de transformación, ¿dónde debe ubicarse exactamente la instrucción de ordenamiento?",
+    "contexto": "Uso correcto de <xsl:sort> dentro de un bloque <xsl:for-each> para ordenar registros XML sin provocar errores de compilación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Al final del bloque de instrucciones, justo antes de cerrar la plantilla principal"
+      },
+      {
+        "clave": "b",
+        "texto": "En la cabecera del documento, junto a la declaración de salida HTML"
+      },
+      {
+        "clave": "c",
+        "texto": "Dentro de la condición evaluativa de una etiqueta if o when"
+      },
+      {
+        "clave": "d",
+        "texto": "Inmediatamente después de abrir la etiqueta de repetición for-each"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, cuando se combina <xsl:for-each> con <xsl:sort>, la etiqueta <xsl:sort> debe colocarse inmediatamente después de abrir <xsl:for-each>. Si se coloca cualquier otra etiqueta antes, el motor XSLT puede lanzar un error de compilación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Colocar <xsl:sort> al final del bloque no es correcto. La ordenación debe declararse al inicio del recorrido, justo después de abrir <xsl:for-each>, antes de generar filas, celdas u otros elementos de salida."
+        },
+        {
+          "clave": "b",
+          "motivo": "La cabecera del documento puede incluir declaraciones como <xsl:output>, pero <xsl:sort> no se coloca ahí. La ordenación pertenece al bloque donde se recorren los nodos."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:sort> no debe colocarse dentro de una condición <xsl:if> o <xsl:when>. Su función es ordenar el conjunto de nodos que se está recorriendo, no ejecutarse como una condición."
+        }
+      ],
+      "resumen_didactico": "Cuando ordenas elementos dentro de un bucle XSLT, primero abres <xsl:for-each> y justo después colocas <xsl:sort>. Después ya puedes escribir el HTML o las instrucciones que generan la salida.",
+      "ejemplo_practico": "Para ordenar plantas por precio, la estructura correcta sería: <xsl:for-each select=\"inventario/planta\">, después <xsl:sort select=\"precio\"/>, y luego las filas de la tabla HTML.",
+      "conclusion_final": "La respuesta correcta es la d, porque <xsl:sort> debe ir inmediatamente después de abrir <xsl:for-each> para que la transformación sea válida."
+    }
+  },
+  {
+    "id": "UT5-Q17",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Qué operador se utiliza en los códigos de filtrado para delimitar una búsqueda indicando que un valor debe ser \"desigual\" al parámetro establecido?",
+    "contexto": "Uso de operadores de filtrado en XSLT/XPath para seleccionar nodos según condiciones concretas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "="
+      },
+      {
+        "clave": "b",
+        "texto": "!="
+      },
+      {
+        "clave": "c",
+        "texto": "<"
+      },
+      {
+        "clave": "d",
+        "texto": ">"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, los filtros permiten trabajar con una parte concreta del documento XML usando operadores específicos. El operador != significa desigual, es decir, selecciona los elementos cuyo valor no coincide con el parámetro indicado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El operador = significa igual. Se usa cuando queremos que el valor coincida exactamente con el parámetro establecido."
+        },
+        {
+          "clave": "c",
+          "motivo": "El operador < significa menor que. Sirve para comparar valores numéricos inferiores, no para indicar desigualdad."
+        },
+        {
+          "clave": "d",
+          "motivo": "El operador > significa mayor que. Sirve para seleccionar valores superiores a un límite, no valores diferentes."
+        }
+      ],
+      "resumen_didactico": "En los filtros, != se lee como 'distinto de' o 'desigual a'. Sirve para excluir un valor concreto de la selección.",
+      "ejemplo_practico": "Si quieres recorrer todas las plantas excepto las rosas, podrías usar una condición como inventario/planta[especie!='Rosa'].",
+      "conclusion_final": "La respuesta correcta es la b, porque != es el operador que representa desigualdad en los filtros."
+    }
+  },
+  {
+    "id": "UT5-Q18",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Un analista necesita imprimir en un informe únicamente aquellos registros cuyo stock sea inferior a una cantidad crítica. ¿Qué etiqueta permite delimitar estos filtrados mediante condiciones estrictas evaluando un test?",
+    "contexto": "Uso de condiciones estrictas en XSLT para imprimir solo los registros XML que cumplen una condición concreta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:if>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:otherwise>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:choose>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:sort>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, <xsl:if> permite realizar filtrados de mayor precisión mediante el atributo test. Esta etiqueta evalúa una condición estricta y solo ejecuta su contenido si dicha condición se cumple.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<xsl:otherwise> se utiliza dentro de <xsl:choose> para definir qué ocurre cuando no se cumple ninguna de las condiciones anteriores. No evalúa por sí sola una condición mediante test."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:choose> permite trabajar con varias opciones condicionales, normalmente junto con <xsl:when> y <xsl:otherwise>. Aunque sirve para lógica condicional múltiple, la etiqueta que el temario asocia directamente con una condición estricta mediante test es <xsl:if>."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:sort> sirve para ordenar el contenido procesado según un valor, por ejemplo ordenar productos por precio. No se usa para ejecutar un bloque solo si se cumple una condición."
+        }
+      ],
+      "resumen_didactico": "Cuando quieres que una parte de la transformación solo se ejecute si se cumple una condición concreta, usas <xsl:if> con el atributo test.",
+      "ejemplo_practico": "Si quieres mostrar solo las plantas cuyo stock sea inferior a 5 unidades, puedes usar <xsl:if test=\"stock < 5\"> dentro de un <xsl:for-each> para imprimir únicamente esos registros.",
+      "conclusion_final": "La respuesta correcta es la a, porque <xsl:if> permite delimitar filtrados mediante condiciones estrictas evaluadas con el atributo test."
+    }
+  },
+  {
+    "id": "UT5-Q19",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Para evitar fallos críticos al evaluar condiciones numéricas, un desarrollador debe incluir el símbolo \"menor que\" dentro de un atributo XML. ¿Cómo debe escribirse este carácter para que el procesador no lo confunda con la apertura de una nueva etiqueta?",
+    "contexto": "Uso correcto del símbolo menor que dentro de atributos XML en condiciones XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Escapándolo usando entidades HTML como &lt;"
+      },
+      {
+        "clave": "b",
+        "texto": "Escribiendo la palabra reservada en inglés en lugar del símbolo"
+      },
+      {
+        "clave": "c",
+        "texto": "Utilizando barras invertidas antes del símbolo"
+      },
+      {
+        "clave": "d",
+        "texto": "Encerrando la expresión completa entre comillas simples"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, si se escribe directamente el símbolo menor que dentro de un atributo XML, el procesador puede interpretarlo como el inicio de una nueva etiqueta y provocar un fallo. Por eso debe escaparse usando entidades HTML, escribiéndolo como &lt;.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No se soluciona escribiendo una palabra reservada en inglés. El temario indica que el problema se resuelve escapando el carácter mediante una entidad HTML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las barras invertidas no son la forma correcta de escapar el símbolo menor que dentro de un atributo XML. La forma correcta es usar la entidad &lt;."
+        },
+        {
+          "clave": "d",
+          "motivo": "Encerrar la expresión entre comillas simples no evita que el procesador XML interprete el símbolo menor que como apertura de etiqueta. El carácter debe escaparse igualmente."
+        }
+      ],
+      "resumen_didactico": "Dentro de atributos XML, el símbolo < no debe escribirse directamente. Para evitar errores de interpretación, se escribe como &lt;.",
+      "ejemplo_practico": "En lugar de escribir <xsl:if test=\"precio < 1\">, lo correcto es escribir <xsl:if test=\"precio &lt; 1\">.",
+      "conclusion_final": "La respuesta correcta es la a, porque el símbolo menor que debe escaparse como &lt; para que el procesador XML no lo confunda con el inicio de una etiqueta."
+    }
+  },
+  {
+    "id": "UT5-Q20",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Cuál es el propósito operativo de la etiqueta <xsl:choose> en el diseño de lógicas condicionales?",
+    "contexto": "Uso de <xsl:choose> para construir lógicas condicionales con varias posibilidades dentro de una transformación XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite seleccionar y ejecutar un bloque de acciones entre múltiples opciones, evaluando un conjunto de elementos"
+      },
+      {
+        "clave": "b",
+        "texto": "Extrae el valor numérico más alto de una lista de nodos predefinida en el esquema"
+      },
+      {
+        "clave": "c",
+        "texto": "Detiene la ejecución del procesamiento si se encuentra un error de validación en la ruta"
+      },
+      {
+        "clave": "d",
+        "texto": "Genera automáticamente una estructura de tablas para presentar datos tabulados"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, <xsl:choose> permite seleccionar y ejecutar un bloque de acciones entre múltiples opciones. Funciona junto con <xsl:when>, que evalúa condiciones, y puede incluir <xsl:otherwise> para definir qué ocurre cuando no se cumple ninguna de las condiciones anteriores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<xsl:choose> no extrae el valor numérico más alto de una lista. Para trabajar con valores concretos se usan otras instrucciones o expresiones, pero esta etiqueta está pensada para controlar ramas condicionales."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:choose> no se utiliza para detener la ejecución ante errores de validación. Su función es decidir qué bloque ejecutar según las condiciones definidas."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:choose> no genera automáticamente tablas. Puede usarse dentro de una tabla HTML para decidir qué contenido mostrar, pero no crea por sí sola una estructura tabular."
+        }
+      ],
+      "resumen_didactico": "<xsl:choose> es una estructura condicional múltiple. Sirve cuando no tienes una sola condición, sino varias posibilidades entre las que el sistema debe elegir.",
+      "ejemplo_practico": "En un catálogo XML, puedes usar <xsl:choose> para mostrar \"Producto Premium\" si el precio es mayor que 10, y usar <xsl:otherwise> para mostrar \"Producto Económico\" en el resto de casos.",
+      "conclusion_final": "La respuesta correcta es la a, porque <xsl:choose> permite seleccionar y ejecutar un bloque entre varias opciones condicionales."
+    }
+  },
+  {
+    "id": "UT5-Q21",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Al configurar una estructura de decisiones múltiples para clasificar el inventario, el sistema debe asignar una categoría genérica a cualquier elemento que no cumpla las condiciones principales. ¿Qué etiqueta delimita este conjunto de casos restantes?",
+    "contexto": "Uso de estructuras condicionales múltiples en XSLT mediante <xsl:choose>, <xsl:when> y <xsl:otherwise>.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:when>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:if>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:otherwise>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:template>"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, dentro de una estructura <xsl:choose>, la etiqueta <xsl:otherwise> se utiliza para delimitar el resto de casos que no han sido recogidos por las condiciones principales definidas con <xsl:when>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xsl:when> sirve para definir una condición concreta dentro de <xsl:choose>. No representa los casos restantes, sino una de las condiciones principales."
+        },
+        {
+          "clave": "b",
+          "motivo": "<xsl:if> permite ejecutar un bloque si se cumple una condición específica, pero no sirve como bloque genérico para todos los casos que no cumplen varias condiciones anteriores."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:template> define una plantilla de transformación aplicable a ciertos nodos del XML. No se usa para representar el bloque residual de una estructura condicional múltiple."
+        }
+      ],
+      "resumen_didactico": "En una decisión múltiple, <xsl:when> marca los casos concretos y <xsl:otherwise> marca el caso general cuando ninguno de los anteriores se cumple.",
+      "ejemplo_practico": "Si un producto cuesta más de 10 euros, puedes clasificarlo como \"Producto Premium\" con <xsl:when>. Si no cumple esa condición, <xsl:otherwise> puede clasificarlo como \"Producto Económico\".",
+      "conclusion_final": "La respuesta correcta es la c, porque <xsl:otherwise> delimita los casos restantes que no cumplen las condiciones principales."
+    }
+  },
+  {
+    "id": "UT5-Q22",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Cómo se define a la herramienta de software diseñada para rastrear, detener y analizar paso a paso la ejecución de un programa con el objetivo de identificar fallos lógicos o de sintaxis?",
+    "contexto": "Uso de herramientas de procesamiento, verificación y depuración para detectar errores en transformaciones XML/XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evaluador de expresiones regulares"
+      },
+      {
+        "clave": "b",
+        "texto": "Compilador de código fuente"
+      },
+      {
+        "clave": "c",
+        "texto": "Generador de hojas de estilo en cascada"
+      },
+      {
+        "clave": "d",
+        "texto": "Depurador de código o debugger"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, un depurador de código o debugger es un programa informático diseñado para rastrear, detener y analizar paso a paso la ejecución de otro programa con el objetivo de identificar fallos lógicos o de sintaxis.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un evaluador de expresiones regulares sirve para comprobar patrones de texto, pero no para rastrear y detener paso a paso la ejecución completa de un programa."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un compilador transforma código fuente a otro formato ejecutable o intermedio. No está diseñado principalmente para analizar paso a paso la ejecución con el objetivo de encontrar errores lógicos o de sintaxis."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un generador de hojas de estilo en cascada estaría relacionado con CSS, no con la depuración paso a paso de un programa o transformación."
+        }
+      ],
+      "resumen_didactico": "El debugger permite ver qué está pasando dentro del programa mientras se ejecuta, localizar dónde falla y entender por qué se produce el error.",
+      "ejemplo_practico": "Si una transformación XSLT deja la pantalla en blanco, un depurador permite ejecutar el proceso paso a paso para detectar si falla una ruta XPath, una etiqueta mal cerrada o una condición incorrecta.",
+      "conclusion_final": "La respuesta correcta es la d, porque el depurador de código o debugger es la herramienta diseñada para rastrear, detener y analizar la ejecución paso a paso."
+    }
+  },
+  {
+    "id": "UT5-Q23",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Un equipo de consultoría requiere un software corporativo que permita validar en tiempo real y ofrezca herramientas avanzadas de modelado en múltiples plataformas. ¿Qué editor comercial es considerado un estándar en la industria para estas tareas?",
+    "contexto": "Uso de editores profesionales para trabajar con XML/XSLT, validar documentos y depurar transformaciones en entornos corporativos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XMLSpear"
+      },
+      {
+        "clave": "b",
+        "texto": "XPontus XML Editor"
+      },
+      {
+        "clave": "c",
+        "texto": "Oxygen XML Editor"
+      },
+      {
+        "clave": "d",
+        "texto": "Notepad++"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, Oxygen XML Editor es uno de los editores XML más usados a nivel profesional. Proporciona una amplia gama de herramientas de creación y desarrollo XML en múltiples plataformas, incluyendo edición XML estructurada, validación en tiempo real y depuración XSLT.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XMLSpear puede ser una herramienta relacionada con XML, pero no es la que el temario presenta como editor profesional estándar con amplia gama de herramientas, validación en tiempo real y uso multiplataforma."
+        },
+        {
+          "clave": "b",
+          "motivo": "XPontus XML Editor aparece en el temario como una alternativa sencilla y gratuita de código abierto. No se presenta como el editor comercial corporativo estándar de la industria."
+        },
+        {
+          "clave": "d",
+          "motivo": "Notepad++ es un editor de texto útil para editar código, pero no es una solución corporativa especializada en XML/XSLT con validación en tiempo real, depuración XSLT y herramientas avanzadas de modelado."
+        }
+      ],
+      "resumen_didactico": "Oxygen XML Editor es la herramienta profesional destacada en el temario para trabajar con XML/XSLT en entornos serios, especialmente cuando se necesita validar, depurar y desarrollar en varias plataformas.",
+      "ejemplo_practico": "Si una consultora trabaja con grandes catálogos XML y hojas XSLT complejas, Oxygen XML Editor permite cargar los archivos, validar errores en tiempo real y depurar la transformación antes de entregarla al cliente.",
+      "conclusion_final": "La respuesta correcta es la c, porque Oxygen XML Editor es el editor comercial señalado en el temario como uno de los estándares profesionales para XML/XSLT."
+    }
+  },
+  {
+    "id": "UT5-Q24",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Durante el procesamiento de catálogos multinacionales extremadamente pesados, el tiempo de ejecución se convierte en un cuello de botella. ¿Qué característica técnica de los editores profesionales soluciona este problema específico?",
+    "contexto": "Procesamiento de documentos XML/XSLT muy grandes donde la velocidad de transformación es un factor crítico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El uso de herramientas online basadas en la nube pública"
+      },
+      {
+        "clave": "b",
+        "texto": "La posibilidad de personalizar fuentes y colores en la interfaz de usuario"
+      },
+      {
+        "clave": "c",
+        "texto": "La generación de aplicaciones web ASPX a partir de diseños visuales"
+      },
+      {
+        "clave": "d",
+        "texto": "La inclusión de un motor de transformación de alta velocidad"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, Altova Editor XSLT incluye un motor de transformación de alta velocidad. Esta característica es especialmente útil cuando se trabaja con documentos muy largos, como un catálogo multinacional, porque el proceso de transformación puede tardar bastante tiempo si no está optimizado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las herramientas online pueden servir para comprobaciones rápidas, pero el temario indica que suelen tener menos prestaciones y no son ideales para programación profesional con archivos de gran envergadura."
+        },
+        {
+          "clave": "b",
+          "motivo": "Personalizar fuentes y colores de la interfaz puede mejorar la comodidad del usuario, pero no soluciona el cuello de botella del tiempo de ejecución durante una transformación pesada."
+        },
+        {
+          "clave": "c",
+          "motivo": "La generación de aplicaciones web ASPX es una funcionalidad mencionada en el temario, pero no está relacionada directamente con acelerar el procesamiento de catálogos XML extremadamente pesados."
+        }
+      ],
+      "resumen_didactico": "Cuando el problema es que una transformación tarda demasiado por el tamaño del documento, lo importante es contar con un motor de transformación rápido y optimizado.",
+      "ejemplo_practico": "Si una empresa tiene un XML con miles de productos repartidos por países, un motor de transformación de alta velocidad permite generar la salida final con más rapidez que una herramienta básica.",
+      "conclusion_final": "La respuesta correcta es la d, porque un motor de transformación de alta velocidad es la característica técnica pensada para mejorar el rendimiento en documentos XML muy grandes."
+    }
+  },
+  {
+    "id": "UT5-Q25",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Qué procesador independiente cuenta con una edición de código abierto gratuita y permite a los desarrolladores trabajar en múltiples plataformas con varios lenguajes por debajo?",
+    "contexto": "Uso de procesadores XSLT independientes para transformar documentos XML en distintos entornos y plataformas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Stylus Studio"
+      },
+      {
+        "clave": "b",
+        "texto": "Saxon"
+      },
+      {
+        "clave": "c",
+        "texto": "Altova Editor"
+      },
+      {
+        "clave": "d",
+        "texto": "XML Copy Editor"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, Saxon es un procesador XSLT desarrollado por Saxonica Limited. Permite trabajar en múltiples plataformas y con varios lenguajes de programación por debajo. Además, cuenta con varias ediciones, entre ellas Saxon Home Edition, que es de código abierto y completamente gratuita.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Stylus Studio puede ser una herramienta relacionada con XML, pero no es el procesador destacado en el temario como multiplataforma, con varias ediciones y una versión gratuita de código abierto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Altova Editor es un editor profesional con muchas herramientas para XSLT, como evaluador XPath y motor de transformación de alta velocidad, pero la pregunta se refiere a un procesador independiente con edición Home Edition gratuita, que corresponde a Saxon."
+        },
+        {
+          "clave": "d",
+          "motivo": "XML Copy Editor es un editor XML, pero no es el procesador XSLT independiente descrito en el temario con ediciones HE, PE y EE."
+        }
+      ],
+      "resumen_didactico": "Saxon no se presenta principalmente como un editor visual, sino como un procesador XSLT potente que puede ejecutarse en distintos entornos y plataformas.",
+      "ejemplo_practico": "Si una empresa necesita transformar XML en el servidor sin depender de una interfaz gráfica, puede usar Saxon para ejecutar las transformaciones XSLT directamente como motor de procesamiento.",
+      "conclusion_final": "La respuesta correcta es la b, porque Saxon es el procesador XSLT independiente que cuenta con una edición gratuita de código abierto y soporte multiplataforma."
+    }
+  },
+  {
+    "id": "UT5-Q26",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Un técnico se encuentra desplazado en las instalaciones de un cliente y necesita realizar una comprobación ágil de una transformación utilizando una herramienta basada en la nube. ¿Qué desventaja profesional presentan estas soluciones frente a los programas de escritorio?",
+    "contexto": "Uso de herramientas online para comprobar transformaciones XSLT de forma rápida frente a programas de escritorio profesionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Son incompatibles con cualquier versión del lenguaje XSLT posterior a la 1.0"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo permiten procesar archivos con un máximo de diez líneas de código"
+      },
+      {
+        "clave": "c",
+        "texto": "Suelen carecer de depuradores profundos que son imprescindibles para archivos de gran envergadura"
+      },
+      {
+        "clave": "d",
+        "texto": "Requieren el pago de licencias por cada hora de uso de la CPU del servidor"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, las herramientas online son útiles para comprobaciones rápidas por la comodidad que ofrecen las aplicaciones en la nube. Sin embargo, para programación profesional pueden no ser ideales porque suelen tener menos prestaciones y, especialmente, carecen de depuradores profundos, imprescindibles cuando se trabaja con archivos de gran tamaño.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El temario no afirma que todas las herramientas online sean incompatibles con cualquier versión posterior a XSLT 1.0. La desventaja destacada es la falta de prestaciones avanzadas y depuración profunda."
+        },
+        {
+          "clave": "b",
+          "motivo": "No se indica que estas herramientas solo permitan archivos de diez líneas. Esa limitación concreta no aparece en el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario no menciona un sistema de pago por hora de CPU como desventaja principal de las herramientas online. El problema señalado es su menor capacidad profesional, especialmente en depuración."
+        }
+      ],
+      "resumen_didactico": "Las herramientas online sirven para probar rápido, pero no sustituyen a un entorno profesional cuando el proyecto es grande y necesitas depurar en profundidad.",
+      "ejemplo_practico": "Si estás en casa de un cliente y quieres comprobar si una pequeña transformación XSLT funciona, una herramienta online puede servir. Pero si el XML tiene miles de registros y la transformación falla, necesitarás un editor como Oxygen o Altova con depurador completo.",
+      "conclusion_final": "La respuesta correcta es la c, porque las herramientas online suelen carecer de depuradores profundos necesarios para trabajar profesionalmente con archivos XML/XSLT grandes."
+    }
+  },
+  {
+    "id": "UT5-Q27",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Cómo se definen técnicamente tecnologías modernas de desarrollo como React o Angular en la construcción de proyectos web actuales?",
+    "contexto": "Relación entre datos estructurados XML/JSON y frameworks modernos usados para construir interfaces web dinámicas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Como procesadores nativos de XSLT integrados en los navegadores móviles"
+      },
+      {
+        "clave": "b",
+        "texto": "Como librerías y frameworks de JavaScript orientados a la construcción de interfaces de usuario dinámicas mediante componentes modulares"
+      },
+      {
+        "clave": "c",
+        "texto": "Como editores de texto plano con soporte para arrastrar y soltar elementos"
+      },
+      {
+        "clave": "d",
+        "texto": "Como validadores de esquemas DTD de alta velocidad para entornos locales"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, React y Angular son librerías y frameworks de JavaScript orientados a la construcción de interfaces de usuario dinámicas, especialmente aplicaciones de una sola página o Single Page Applications, mediante componentes modulares y reactivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "React y Angular no son procesadores nativos de XSLT. Son tecnologías JavaScript para construir interfaces, no motores de transformación XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "React y Angular no son editores de texto plano ni herramientas de arrastrar y soltar. Son tecnologías de desarrollo para crear aplicaciones web basadas en componentes."
+        },
+        {
+          "clave": "d",
+          "motivo": "React y Angular no son validadores de esquemas DTD. La validación de esquemas XML pertenece a otro ámbito distinto al de la construcción de interfaces dinámicas."
+        }
+      ],
+      "resumen_didactico": "React y Angular se usan en el frontend moderno para pintar interfaces dinámicas a partir de datos que pueden venir del servidor en formatos como XML o JSON.",
+      "ejemplo_practico": "Una floristería puede enviar los datos de sus plantas en XML o JSON desde el servidor, y Angular puede leer esos datos para mostrarlos como tarjetas interactivas en una aplicación web.",
+      "conclusion_final": "La respuesta correcta es la b, porque React y Angular son tecnologías JavaScript enfocadas en construir interfaces de usuario dinámicas mediante componentes modulares."
+    }
+  },
+  {
+    "id": "UT5-Q28",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "En una arquitectura de software empresarial moderna, ¿cuál es la mejor práctica para dividir las responsabilidades entre el procesamiento de datos masivos y la interfaz del cliente final?",
+    "contexto": "Separación de responsabilidades entre backend y frontend en proyectos modernos que trabajan con datos estructurados XML/JSON.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar XSLT en la capa visual para animar los componentes y JavaScript puro en el backend para consultar la base de datos"
+      },
+      {
+        "clave": "b",
+        "texto": "Emplear hojas de estilo en cascada para filtrar la información del servidor y XSLT para los colores de la pantalla"
+      },
+      {
+        "clave": "c",
+        "texto": "Programar toda la lógica exclusivamente con herramientas WYSIWYG que generen código unificado sin separar las capas"
+      },
+      {
+        "clave": "d",
+        "texto": "Utilizar XSLT en el backend para transformar bases de datos e informes, y usar esos datos para alimentar aplicaciones en React o Angular en la capa visual"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, en la carrera profesional se pueden usar ambas vías: XSLT en el backend para transformar grandes cantidades de datos, generar informes PDF o intercambiar facturas electrónicas entre empresas; y React o Angular en el frontend para construir la capa visual que verá el cliente final.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XSLT no se usa principalmente para animar componentes visuales. Su función es transformar datos estructurados. Las animaciones e interacción de componentes pertenecen más al frontend moderno con JavaScript, React, Angular o CSS."
+        },
+        {
+          "clave": "b",
+          "motivo": "CSS no filtra información del servidor. CSS se usa para aplicar estilos visuales. Además, XSLT no se limita a aplicar colores de pantalla, sino que transforma documentos XML en otros formatos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las herramientas WYSIWYG pueden generar interfaces visuales, pero no representan la mejor práctica de arquitectura moderna. El temario insiste en separar los datos puros de la interfaz visual."
+        }
+      ],
+      "resumen_didactico": "La arquitectura moderna separa responsabilidades: el backend prepara, transforma y estructura los datos; el frontend los presenta de forma dinámica e interactiva al usuario.",
+      "ejemplo_practico": "Una empresa puede usar XSLT en el servidor para transformar un XML enorme de facturas y después enviar esos datos limpios a una aplicación Angular que los muestre en tablas, filtros o tarjetas interactivas.",
+      "conclusion_final": "La respuesta correcta es la d, porque refleja la división moderna: XSLT para procesamiento de datos en backend y React o Angular para la interfaz visual en frontend."
+    }
+  },
+  {
+    "id": "UT5-Q29",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "¿Qué concepto describe el proceso computacional mediante el cual un motor transforma un conjunto de datos jerárquicos de entrada en un árbol de salida completamente nuevo fusionando reglas y datos?",
+    "contexto": "Transformación de datos XML jerárquicos mediante un motor XSLT que genera un nuevo árbol de salida combinando reglas de transformación y datos de origen.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Generación de esquemas de validación estrictos"
+      },
+      {
+        "clave": "b",
+        "texto": "Plegado de elementos sintácticos"
+      },
+      {
+        "clave": "c",
+        "texto": "Sincronización de bases de datos relacionales"
+      },
+      {
+        "clave": "d",
+        "texto": "Evaluación de contexto estructurado"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la evaluación de contexto estructurado es el proceso computacional mediante el cual un motor transforma un conjunto de datos jerárquicos de entrada en un árbol de salida completamente nuevo, fusionando las reglas estéticas o de transformación con la información en crudo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La generación de esquemas de validación sirve para definir o comprobar la estructura permitida de un documento XML, pero no describe el proceso de transformar datos jerárquicos en un nuevo árbol de salida."
+        },
+        {
+          "clave": "b",
+          "motivo": "El plegado de elementos sintácticos es una función típica de editores de código para ocultar o mostrar bloques, pero no es el concepto del temario que describe una transformación computacional de datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La sincronización de bases de datos relacionales pertenece al ámbito de bases de datos. No describe la transformación de un árbol XML de entrada en otro árbol de salida mediante reglas XSLT."
+        }
+      ],
+      "resumen_didactico": "La evaluación de contexto estructurado explica lo que hace el motor de transformación: toma datos jerárquicos de entrada, aplica reglas y produce una nueva estructura de salida.",
+      "ejemplo_practico": "Un XML de inventario con plantas, precios y stock entra en el motor XSLT. El motor aplica reglas de ordenación, filtros y condiciones, y genera una tabla HTML nueva como árbol de salida.",
+      "conclusion_final": "La respuesta correcta es la d, porque evaluación de contexto estructurado es el concepto que describe la transformación de datos jerárquicos en un nuevo árbol de salida fusionando reglas y datos."
+    }
+  },
+  {
+    "id": "UT5-Q30",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "En el ámbito de las aplicaciones de una sola página (Single Page Applications), ¿qué ventaja operativa ofrecen los frameworks reactivos al procesar la información recibida del servidor?",
+    "contexto": "Uso de frameworks modernos como React o Angular para construir interfaces dinámicas que actualizan partes concretas de la pantalla sin recargar toda la página.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Traducen automáticamente el contenido de la web a múltiples idiomas sin conexión"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo actualizan la pieza exacta que ha cambiado de forma instantánea sin recargar la página entera"
+      },
+      {
+        "clave": "c",
+        "texto": "Obligan al usuario a descargar un archivo ejecutable antes de mostrar la página"
+      },
+      {
+        "clave": "d",
+        "texto": "Recargan y solicitan al servidor una página entera nueva cada vez que se hace clic"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, React y Angular permiten construir interfaces de usuario dinámicas mediante componentes modulares y reactivos. En lugar de recargar una página completa cada vez que el usuario interactúa, estas tecnologías actualizan solo la parte concreta que ha cambiado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La traducción automática a múltiples idiomas no es la ventaja operativa descrita en el temario. React y Angular se centran en construir interfaces dinámicas, no en traducir contenido de forma automática sin conexión."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las aplicaciones web modernas no obligan al usuario a descargar un archivo ejecutable antes de mostrar la página. Funcionan en el navegador mediante HTML, CSS y JavaScript."
+        },
+        {
+          "clave": "d",
+          "motivo": "Esta opción describe el comportamiento contrario al de una Single Page Application. En una SPA no se pide una página completa nueva al servidor en cada clic; se actualizan partes concretas de la interfaz."
+        }
+      ],
+      "resumen_didactico": "Una SPA evita recargar toda la página. Su ventaja es actualizar de forma rápida solo el componente o fragmento de pantalla que necesita cambiar.",
+      "ejemplo_practico": "En una app de floristería hecha con Angular, si cambia el precio de una planta, la aplicación puede actualizar solo esa tarjeta o celda de precio sin recargar todo el catálogo.",
+      "conclusion_final": "La respuesta correcta es la b, porque los frameworks reactivos como React o Angular actualizan solo la pieza exacta que cambia, ofreciendo una experiencia rápida y dinámica."
+    }
+  }
+]

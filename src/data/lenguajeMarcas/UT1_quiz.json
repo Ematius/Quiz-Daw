@@ -1,0 +1,1056 @@
+[
+    {
+        "id": "UT1-Q01",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Un técnico necesita redactar manuales técnicos que se imprimirán directamente desde la terminal con un formato específico, utilizando comandos explícitos para la presentación directa del texto. ¿Qué clasificación de lenguaje de marcas está utilizando en este escenario profesional?",
+        "contexto": "Redacción de manuales técnicos desde terminal usando comandos explícitos para controlar cómo se presenta el texto.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Lenguaje de marcas de tipo 1 o de procedimiento" },
+          { "clave": "b", "texto": "Lenguaje de marcas de tipo 2 o de presentación" },
+          { "clave": "c", "texto": "Lenguaje de marcas de tipo 3 o descriptivo" },
+          { "clave": "d", "texto": "Lenguaje de programación orientado a objetos" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario clasifica los lenguajes de marcas de tipo 1 o de procedimiento como aquellos en los que se usan comandos explícitos para indicar directamente cómo debe dibujarse o presentarse el texto. El ejemplo del tema menciona precisamente el uso de Nroff para redactar manuales técnicos que se imprimen con un formato específico desde la terminal.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Los lenguajes de tipo 2 o de presentación también se relacionan con el formato del texto, pero el temario los describe como marcas generalmente invisibles para el usuario y difíciles de mantener. En la pregunta se habla de comandos explícitos visibles y uso directo desde terminal, lo que encaja con el tipo 1."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los lenguajes de tipo 3 o descriptivos no se centran en decir cómo se ve la información, sino en describir qué es cada dato. Ejemplos de este grupo serían HTML o XML cuando estructuran información de forma semántica."
+            },
+            {
+              "clave": "d",
+              "motivo": "Un lenguaje de programación orientado a objetos sirve para crear lógica, clases, objetos y comportamientos. El escenario no describe programación orientada a objetos, sino marcado para presentación de documentos."
+            }
+          ],
+          "resumen_didactico": "Si el lenguaje usa comandos explícitos para controlar directamente la presentación del texto, pertenece al tipo 1: lenguaje de marcas de procedimiento.",
+          "ejemplo_practico": "Un técnico escribe un manual en la terminal usando instrucciones que indican que cierto título debe ir en negrita, que un párrafo debe alinearse de una forma concreta o que una sección debe imprimirse con un formato específico.",
+          "conclusion_final": "La clasificación correcta es lenguaje de marcas de tipo 1 o de procedimiento, porque el caso describe el uso de comandos explícitos para la presentación directa del texto."
+        }
+      },
+      {
+        "id": "UT1-Q02",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Cómo se definen los lenguajes de tipo 2 o de presentación en el ecosistema del desarrollo de software?",
+        "contexto": "Clasificación de los lenguajes de marcas según su función dentro del tratamiento y presentación de la información.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Estructuras que se preocupan de decir qué es la información sin indicar cómo se ve" },
+          { "clave": "b", "texto": "Lenguajes que se usan para dar formato al texto dictaminando los espaciados y saltos de línea, resultando invisibles para el usuario" },
+          { "clave": "c", "texto": "Modelos orientados a crear animaciones complejas en la interfaz de usuario" },
+          { "clave": "d", "texto": "Sistemas donde se escriben comandos explícitos que el lector puede ver si no se procesan" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario define los lenguajes de tipo 2 o de presentación como aquellos que se utilizan para dar formato al texto, indicando aspectos como espaciados, saltos de línea u otros elementos de presentación. Además, señala que estas marcas suelen resultar invisibles para el usuario.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Esta opción describe los lenguajes descriptivos o semánticos, es decir, los de tipo 3. Estos lenguajes se centran en indicar qué es la información, no necesariamente cómo debe representarse visualmente."
+            },
+            {
+              "clave": "c",
+              "motivo": "Las animaciones complejas de interfaz no forman parte de la clasificación básica de lenguajes de marcas del temario. Eso estaría más relacionado con tecnologías de estilo, scripting o frameworks de interfaz."
+            },
+            {
+              "clave": "d",
+              "motivo": "Esta opción corresponde a los lenguajes de tipo 1 o de procedimiento, donde se escriben comandos explícitos que pueden ser visibles si no son procesados."
+            }
+          ],
+          "resumen_didactico": "Los lenguajes de tipo 2 sirven para controlar la presentación del texto, como espacios y saltos de línea, pero esas marcas no suelen verse directamente por el usuario.",
+          "ejemplo_practico": "Un procesador de textos puede guardar internamente información sobre márgenes, saltos de línea o distribución del contenido sin que el usuario vea directamente esas marcas internas.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque los lenguajes de presentación se encargan de dar formato al texto mediante marcas invisibles para el usuario."
+        }
+      },
+      {
+        "id": "UT1-Q03",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Al recibir un documento en el que las etiquetas se utilizan para indicar qué es la información sin necesidad de especificar un orden o su manera de representación visual, ¿qué tipo de lenguaje se está aplicando?",
+        "contexto": "Documento cuyas etiquetas describen el significado de la información, sin centrarse directamente en su apariencia visual.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Lenguaje de tipo 3 o descriptivo" },
+          { "clave": "b", "texto": "Lenguaje de configuración binaria" },
+          { "clave": "c", "texto": "Lenguaje de tipo 1" },
+          { "clave": "d", "texto": "Lenguaje de tipo 2" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario define los lenguajes de tipo 3 o descriptivos, también llamados semánticos, como aquellos cuyas etiquetas indican qué es la información, sin obligar a especificar directamente cómo debe verse o representarse visualmente.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El lenguaje de configuración binaria no forma parte de la clasificación de lenguajes de marcas explicada en el tema. Además, el enunciado habla de etiquetas y significado de la información, no de datos binarios."
+            },
+            {
+              "clave": "c",
+              "motivo": "El lenguaje de tipo 1 o de procedimiento utiliza comandos explícitos para indicar cómo debe presentarse el texto. Aquí no se está indicando cómo se debe mostrar, sino qué representa cada dato."
+            },
+            {
+              "clave": "d",
+              "motivo": "El lenguaje de tipo 2 o de presentación se centra en dar formato al texto, como espaciados o saltos de línea. En este caso, las etiquetas no están enfocadas en el formato, sino en el significado de la información."
+            }
+          ],
+          "resumen_didactico": "Cuando las etiquetas sirven para decir qué es cada dato y no cómo debe verse, estamos ante un lenguaje descriptivo o semántico.",
+          "ejemplo_practico": "En XML, una etiqueta como <precio>25.50</precio> indica que el dato 25.50 es un precio. No dice si debe verse en rojo, grande o centrado; solo describe el significado del dato.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque los lenguajes de tipo 3 o descriptivos se basan en describir semánticamente la información."
+        }
+      },
+      {
+        "id": "UT1-Q04",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Durante el mantenimiento de un servidor corporativo, un administrador debe editar un archivo que solo almacena caracteres básicos sin guardar información sobre el tamaño ni el color de las letras. ¿A qué característica común de los lenguajes de marcas corresponde este formato?",
+        "contexto": "Edición de un archivo de servidor formado solo por caracteres básicos, sin formato visual como tamaño, color o estilo de letra.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Lenguaje de marcado procedimental" },
+          { "clave": "b", "texto": "Documento de texto plano" },
+          { "clave": "c", "texto": "Transformación de formatos dinámicos" },
+          { "clave": "d", "texto": "Sistema de encriptación de datos" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que los documentos de texto plano son aquellos que no incluyen formatos añadidos. No guardan información sobre tamaño, color o estilo de letra, sino únicamente caracteres básicos almacenados en un formato estándar.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Un lenguaje de marcado procedimental pertenece a la clasificación de lenguajes de marcas de tipo 1, donde se usan comandos explícitos para controlar la presentación. La pregunta no habla de comandos de presentación, sino de un archivo sin formato visual."
+            },
+            {
+              "clave": "c",
+              "motivo": "La transformación de formatos consiste en generar diferentes salidas a partir de una misma fuente de datos, por ejemplo transformar XML en HTML o PDF. Aquí no se está transformando nada, solo se describe un archivo básico."
+            },
+            {
+              "clave": "d",
+              "motivo": "La encriptación de datos se relaciona con proteger información mediante cifrado. El enunciado no habla de seguridad ni cifrado, sino de almacenamiento simple de caracteres."
+            }
+          ],
+          "resumen_didactico": "Si un archivo solo contiene caracteres básicos y no guarda información sobre tamaño, color o formato de letra, estamos ante un documento de texto plano.",
+          "ejemplo_practico": "Un archivo de configuración de servidor como config.xml o settings.conf puede abrirse con un editor simple y contener solo texto, etiquetas y valores, sin colores ni tamaños de fuente guardados dentro del propio archivo.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque el formato descrito corresponde a un documento de texto plano."
+        }
+      },
+      {
+        "id": "UT1-Q05",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Qué implica la interoperabilidad o independencia como característica fundamental en los lenguajes de marcas actuales?",
+        "contexto": "Característica común de los lenguajes de marcas relacionada con la posibilidad de usar documentos en diferentes máquinas, sistemas operativos o plataformas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Solo permiten combinarse con lenguajes de programación visuales" },
+          { "clave": "b", "texto": "Los documentos pueden abrirse y editarse desde cualquier máquina y son independientes de la plataforma" },
+          { "clave": "c", "texto": "Requieren un compilador específico para cada sistema operativo instalado en la red" },
+          { "clave": "d", "texto": "Los archivos son totalmente dependientes del procesador de textos utilizado para crearlos" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que el texto plano se considera un formato universal porque puede abrirse y editarse desde cualquier máquina, siempre teniendo en cuenta la codificación utilizada. Esta independencia permite que los documentos de lenguajes de marcas no dependan de una plataforma concreta ni de un sistema de representación específico.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La interoperabilidad no significa que los lenguajes de marcas solo puedan combinarse con lenguajes visuales. Significa que sus documentos pueden ser utilizados por distintos sistemas y plataformas."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los lenguajes de marcas no requieren normalmente un compilador específico para cada sistema operativo. Al estar basados en texto plano, pueden abrirse y procesarse en distintos entornos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Esta opción contradice la idea de independencia. Un documento interoperable no debe depender completamente del programa concreto con el que fue creado."
+            }
+          ],
+          "resumen_didactico": "Interoperabilidad significa que un documento puede viajar entre sistemas diferentes sin quedar atado a una máquina, sistema operativo o aplicación concreta.",
+          "ejemplo_practico": "Un archivo XML creado en Windows puede abrirse y editarse en Linux o macOS con cualquier editor de texto compatible, manteniendo su estructura y contenido.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque la interoperabilidad implica independencia de plataforma y posibilidad de abrir o editar los documentos desde diferentes máquinas."
+        }
+      },
+      {
+        "id": "UT1-Q06",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Un equipo de desarrollo necesita generar un informe en formato PDF para el control de aduanas y, simultáneamente, una vista en HTML a partir del mismo archivo central de datos. ¿Qué capacidad tecnológica justifica y permite este flujo de trabajo?",
+        "contexto": "Generación de varias salidas, como PDF y HTML, a partir de un único archivo central de datos estructurado.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El sistema de encriptación asimétrica" },
+          { "clave": "b", "texto": "La transformación de formatos a partir de un único origen de datos estructurado" },
+          { "clave": "c", "texto": "El uso de lenguajes de tipo 1 o procedimentales" },
+          { "clave": "d", "texto": "La compilación cruzada en servidores backend" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que la transformación de formatos permite generar múltiples documentos o vistas de salida a partir de un único origen de datos estructurado. En el ejemplo del tema, desde un fichero XML central se puede generar un PDF para aduanas y una vista HTML para que el cliente consulte la información online.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La encriptación asimétrica está relacionada con la seguridad y el cifrado de información, no con generar distintos formatos de salida a partir de los mismos datos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los lenguajes de tipo 1 o procedimentales se basan en comandos explícitos para la presentación directa del texto. No explican la capacidad de reutilizar un mismo origen de datos para producir PDF y HTML."
+            },
+            {
+              "clave": "d",
+              "motivo": "La compilación cruzada consiste en compilar software para una plataforma distinta a aquella en la que se está desarrollando. No tiene relación directa con transformar datos estructurados en distintos formatos documentales."
+            }
+          ],
+          "resumen_didactico": "Cuando un mismo archivo estructurado sirve para generar varias salidas diferentes, como PDF, HTML u otros formatos, hablamos de transformación de formatos.",
+          "ejemplo_practico": "Una empresa guarda los datos de un pedido en XML. Desde ese mismo XML genera un PDF para imprimirlo, una página HTML para verlo en la web y otro archivo para enviarlo a un sistema externo.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque el caso describe claramente la transformación de formatos desde un único origen de datos estructurado."
+        }
+      },
+      {
+        "id": "UT1-Q07",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Cuál es la principal función de los lenguajes de marcas en la arquitectura de los sistemas de software actuales?",
+        "contexto": "Uso de los lenguajes de marcas dentro de sistemas modernos para estructurar, transportar e intercambiar información entre aplicaciones.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Reemplazar a los lenguajes de programación en la creación de algoritmos" },
+          { "clave": "b", "texto": "Permitir el intercambio de datos entre distintas aplicaciones de manera independiente de la plataforma y tecnología" },
+          { "clave": "c", "texto": "Diseñar exclusivamente interfaces gráficas en tres dimensiones" },
+          { "clave": "d", "texto": "Ejecutar bucles lógicos en las bases de datos relacionales" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que una de las funciones principales de los lenguajes de marcas es permitir el intercambio de datos entre distintas aplicaciones de forma independiente de la plataforma utilizada y de la tecnología con la que hayan sido creadas. Por eso son importantes en sistemas empresariales, servicios web, aplicaciones móviles, configuración de software y comunicación entre sistemas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Los lenguajes de marcas no reemplazan a los lenguajes de programación. No están pensados para crear algoritmos complejos, sino para estructurar, describir y transportar información."
+            },
+            {
+              "clave": "c",
+              "motivo": "Aunque algunos lenguajes de marcas pueden participar en la definición de interfaces, su función no es diseñar exclusivamente interfaces gráficas en tres dimensiones. Esa afirmación es demasiado específica y no corresponde al objetivo general del tema."
+            },
+            {
+              "clave": "d",
+              "motivo": "Ejecutar bucles lógicos es tarea de lenguajes de programación o de lenguajes de consulta/procedimientos en bases de datos, no de los lenguajes de marcas."
+            }
+          ],
+          "resumen_didactico": "Los lenguajes de marcas actúan como un idioma común entre sistemas: permiten que aplicaciones diferentes puedan entender, leer e intercambiar datos aunque estén hechas con tecnologías distintas.",
+          "ejemplo_practico": "Una aplicación móvil puede enviar datos en XML a un servidor Java, y ese servidor puede procesarlos aunque la app y el backend estén construidos con tecnologías diferentes.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque los lenguajes de marcas permiten intercambiar datos entre aplicaciones de forma independiente de la plataforma y la tecnología utilizadas."
+        }
+      },
+      {
+        "id": "UT1-Q08",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Al configurar la comunicación entre agencias de transporte mediante la creación de servicios web en un entorno de desarrollo integrado, ¿qué formato estructurado se genera de forma automática con mayor frecuencia?",
+        "contexto": "Creación de servicios web en un entorno de desarrollo integrado para permitir la comunicación entre sistemas de distintas agencias de transporte.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Bases de datos relacionales completas" },
+          { "clave": "b", "texto": "Archivos ejecutables binarios" },
+          { "clave": "c", "texto": "Varios documentos con estructura XML" },
+          { "clave": "d", "texto": "Documentos de texto sin formato" }
+        ],
+        "respuesta_correcta": ["c"],
+        "explicacion": {
+          "temario": "El temario explica que, en el ámbito de los servicios web, al conectarse con agencias externas usando entornos como Visual Studio, el propio entorno puede generar automáticamente varios documentos con estructura XML. XML se utiliza porque permite organizar los datos de forma estructurada e interoperable entre sistemas distintos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Una base de datos relacional completa no se genera automáticamente como formato de comunicación de un servicio web. Las bases de datos almacenan información, pero no son el formato habitual que se intercambia directamente entre servicios."
+            },
+            {
+              "clave": "b",
+              "motivo": "Los archivos ejecutables binarios sirven para ejecutar programas, no para estructurar documentos de comunicación entre servicios web."
+            },
+            {
+              "clave": "d",
+              "motivo": "Aunque XML está basado en texto, no es simplemente texto sin formato. Tiene una estructura marcada mediante etiquetas, elementos y atributos que permite identificar claramente cada dato."
+            }
+          ],
+          "resumen_didactico": "En servicios web, XML aparece como un formato habitual porque permite que sistemas diferentes intercambien información de forma estructurada y comprensible.",
+          "ejemplo_practico": "Una agencia de transporte puede enviar a otra un documento XML con datos como <envio>, <origen>, <destino> y <peso>, permitiendo que ambos sistemas entiendan la información aunque usen tecnologías distintas.",
+          "conclusion_final": "La respuesta correcta es la opción c, porque los servicios web suelen generar y utilizar documentos con estructura XML para intercambiar datos entre aplicaciones."
+        }
+      },
+      {
+        "id": "UT1-Q09",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Un programador junior debe almacenar el diseño de las pantallas y las vistas para una nueva aplicación móvil nativa orientada a camioneros. ¿Qué tipo de estructura estándar utilizan habitualmente los entornos de desarrollo para esta tarea?",
+        "contexto": "Almacenamiento del diseño de pantallas y vistas en una aplicación móvil nativa mediante una estructura reconocible por el entorno de desarrollo.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Estructuras de marcas basadas en formato XML" },
+          { "clave": "b", "texto": "Archivos de procesamiento por lotes" },
+          { "clave": "c", "texto": "Algoritmos de inteligencia artificial" },
+          { "clave": "d", "texto": "Lenguajes de programación procedurales puros" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que, en el desarrollo de aplicaciones móviles, entornos como Android Studio emplean estructuras de marcas basadas en XML para guardar el diseño de las pantallas y las vistas. XML permite describir la estructura de una interfaz de forma ordenada mediante etiquetas, elementos y atributos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Los archivos de procesamiento por lotes se usan para automatizar comandos o tareas del sistema, no para definir de forma estándar el diseño de pantallas de una aplicación móvil."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los algoritmos de inteligencia artificial pueden usarse para tareas avanzadas como predicción, reconocimiento o automatización, pero no son la estructura estándar habitual para almacenar vistas de una aplicación móvil."
+            },
+            {
+              "clave": "d",
+              "motivo": "Un lenguaje de programación procedural puro sirve para escribir instrucciones y lógica de ejecución, pero el temario señala que el diseño de pantallas suele almacenarse mediante estructuras de marcas, especialmente XML."
+            }
+          ],
+          "resumen_didactico": "Cuando un entorno móvil necesita guardar la estructura visual de una pantalla, puede usar XML para describir qué elementos aparecen y qué propiedades tienen.",
+          "ejemplo_practico": "En Android, una pantalla puede definirse con XML usando etiquetas como <LinearLayout>, <TextView> o <Button>, indicando la estructura y propiedades visuales de la interfaz.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque los entornos de desarrollo móvil utilizan habitualmente estructuras de marcas basadas en XML para guardar pantallas y vistas."
+        }
+      },
+      {
+        "id": "UT1-Q10",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Por qué los desarrolladores consideran que dominar formatos como XML o JSON es vital para la integración en empresas tecnológicas?",
+        "contexto": "Importancia de XML y JSON como formatos usados para que distintos sistemas informáticos puedan intercambiar información entre plataformas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Porque todo el mundo los usa para que los sistemas informáticos se entiendan y la información viaje entre plataformas" },
+          { "clave": "b", "texto": "Porque son exclusivos de la programación frontend" },
+          { "clave": "c", "texto": "Porque son los lenguajes con los que se desarrollan los videojuegos modernos" },
+          { "clave": "d", "texto": "Porque reemplazan la necesidad de usar sistemas de bases de datos" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que formatos como XML o JSON funcionan como un idioma común entre sistemas informáticos. Son importantes porque permiten que la información viaje entre aplicaciones, servidores, móviles, bases de datos y servicios externos aunque cada uno esté creado con tecnologías diferentes.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "XML y JSON no son exclusivos del frontend. Se usan también en backend, servicios web, APIs, configuración de aplicaciones, intercambio de datos y comunicación entre sistemas."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los videojuegos modernos pueden usar muchos formatos y lenguajes, pero XML y JSON no se estudian aquí como lenguajes principales de desarrollo de videojuegos, sino como formatos de estructuración e intercambio de información."
+            },
+            {
+              "clave": "d",
+              "motivo": "XML y JSON no sustituyen a las bases de datos. Pueden transportar, configurar o estructurar datos, pero las bases de datos siguen siendo necesarias para almacenar, consultar y gestionar información de forma persistente."
+            }
+          ],
+          "resumen_didactico": "XML y JSON son vitales porque permiten que sistemas distintos compartan información de forma estructurada, aunque estén hechos con tecnologías diferentes.",
+          "ejemplo_practico": "Una app móvil puede enviar los datos de un pedido en JSON a un servidor, y ese servidor puede procesarlos y guardarlos en una base de datos. También podría recibir un XML de otra empresa externa con información de productos o envíos.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque XML y JSON permiten que los sistemas informáticos se entiendan y que la información viaje entre plataformas."
+        }
+      },
+      {
+        "id": "UT1-Q11",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Al analizar el soporte de sistemas en una empresa de logística, un consultor encuentra documentación electrónica que requiere software excesivamente complejo e imposible de mantener por los estándares de su época. ¿A qué estándar de los años ochenta, descendiente de GML, se enfrenta?",
+        "contexto": "Análisis de documentación electrónica antigua basada en un estándar descendiente de GML, caracterizado por su complejidad y dificultad de mantenimiento.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "SGML" },
+          { "clave": "b", "texto": "HTML" },
+          { "clave": "c", "texto": "Relax NG" },
+          { "clave": "d", "texto": "XML Schema" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que SGML, Standard Generalized Markup Language, fue un estándar descendiente directo de GML, propuesto originalmente por IBM. Aunque tuvo gran aceptación teórica, no consiguió asentarse completamente por su enorme complejidad, ya que el software necesario era excesivamente extenso, lento y difícil de mantener.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "HTML aparece después, a finales de los años ochenta, en el contexto del CERN y la publicación de información en la web. Aunque se basa en principios de SGML, no es el estándar complejo descendiente directo de GML al que se refiere el enunciado."
+            },
+            {
+              "clave": "c",
+              "motivo": "Relax NG es una gramática o lenguaje de esquema posterior, usado para validar documentos de forma más intuitiva y flexible. No pertenece al origen histórico de los años ochenta ni desciende directamente de GML en el sentido planteado por la pregunta."
+            },
+            {
+              "clave": "d",
+              "motivo": "XML Schema o XSD es una tecnología posterior creada para validar documentos XML con mayor potencia expresiva que DTD. No es el estándar histórico descendiente de GML descrito en el enunciado."
+            }
+          ],
+          "resumen_didactico": "SGML fue un estándar muy importante en la historia de los lenguajes de marcas, pero resultaba demasiado complejo para muchos usos prácticos.",
+          "ejemplo_practico": "Una empresa antigua podía tener documentación técnica basada en SGML, pero mantenerla requería herramientas muy pesadas y difíciles de manejar en comparación con soluciones posteriores como HTML o XML.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque SGML fue el estándar de los años ochenta descendiente de GML y destacado en el temario por su gran complejidad."
+        }
+      },
+      {
+        "id": "UT1-Q12",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Cuál fue el objetivo inicial por el que comenzaron a utilizarse los lenguajes de marcas a finales de la década de 1960?",
+        "contexto": "Origen histórico de los lenguajes de marcas y su uso inicial en documentos electrónicos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Poder introducir anotaciones dentro de los documentos electrónicos de la misma forma que se hacía en papel" },
+          { "clave": "b", "texto": "Desarrollar sistemas operativos portátiles" },
+          { "clave": "c", "texto": "Configurar conexiones inalámbricas entre servidores" },
+          { "clave": "d", "texto": "Crear páginas web interactivas para el comercio electrónico" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que los lenguajes de marcas comenzaron a utilizarse a finales de la década de 1960 con el objetivo de introducir anotaciones dentro de los documentos electrónicos, de forma parecida a como se hacían anotaciones sobre documentos en papel.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El desarrollo de sistemas operativos portátiles no es el objetivo inicial de los lenguajes de marcas. Estos nacen para marcar y anotar documentos, no para crear sistemas operativos."
+            },
+            {
+              "clave": "c",
+              "motivo": "Las conexiones inalámbricas entre servidores no tienen relación con el origen histórico de los lenguajes de marcas. Además, el contexto de finales de los años 60 se centra en documentación electrónica, no en redes inalámbricas modernas."
+            },
+            {
+              "clave": "d",
+              "motivo": "Las páginas web interactivas y el comercio electrónico aparecieron mucho después. A finales de los años 60 todavía no se hablaba de HTML ni de la web comercial como la entendemos hoy."
+            }
+          ],
+          "resumen_didactico": "Los lenguajes de marcas nacen para añadir marcas o anotaciones a documentos electrónicos, igual que antes se podían hacer indicaciones sobre documentos en papel.",
+          "ejemplo_practico": "Igual que en un documento en papel alguien podía señalar 'esto es un título' o 'esto debe ir destacado', en un documento electrónico se empezaron a usar marcas para indicar la función de cada parte del texto.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque el origen de los lenguajes de marcas está en la necesidad de anotar documentos electrónicos de forma estructurada."
+        }
+      },
+      {
+        "id": "UT1-Q13",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Para publicar documentación estandarizada en una red informática priorizando una sintaxis de enorme sencillez y la utilización de software ligero para interpretarlo, ¿qué derivado del CERN se debe emplear?",
+        "contexto": "Publicación de documentación en red usando un lenguaje nacido en el CERN, sencillo de escribir y fácil de interpretar por software ligero.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "XML Schema" },
+          { "clave": "b", "texto": "HTML" },
+          { "clave": "c", "texto": "XMPP" },
+          { "clave": "d", "texto": "SGML" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que HTML nació a finales de los años 80 dentro del CERN, pensado para compartir información a través de Internet. Su éxito se debió a la sencillez de su sintaxis y a que el software necesario para interpretarlo, es decir, los primeros navegadores, era ligero.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "XML Schema no es un lenguaje nacido en el CERN para publicar documentación web. Es una gramática de validación usada para definir reglas y tipos de datos en documentos XML."
+            },
+            {
+              "clave": "c",
+              "motivo": "XMPP es un protocolo relacionado con mensajería e intercambio de datos en tiempo real, pero no es el lenguaje derivado del CERN usado para publicar documentación en la web."
+            },
+            {
+              "clave": "d",
+              "motivo": "SGML es anterior y mucho más complejo. HTML se basa en algunos principios de SGML, pero el enunciado pregunta por el lenguaje sencillo nacido en el CERN para compartir información en Internet."
+            }
+          ],
+          "resumen_didactico": "Cuando el test mencione CERN, finales de los años 80, sencillez de sintaxis, navegadores ligeros y publicación de información en Internet, la respuesta es HTML.",
+          "ejemplo_practico": "Una página básica escrita en HTML puede usar etiquetas como <h1>Manual técnico</h1> y <p>Contenido del documento</p>, que el navegador interpreta fácilmente para mostrar la información al usuario.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque HTML fue el lenguaje creado en el CERN para compartir información en Internet con una sintaxis sencilla y software ligero."
+        }
+      },
+      {
+        "id": "UT1-Q14",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Una arquitectura de comercio electrónico requiere un lenguaje estructurado que dote a sus bases de datos de una jerarquía semántica, combinando la sencillez de HTML con la robustez de un sistema descriptivo. ¿Qué lenguaje normalizado en 1998 debe seleccionarse?",
+        "contexto": "Selección de un lenguaje de marcas estructurado, semántico y normalizado en 1998 para organizar información en una arquitectura de comercio electrónico.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "JSON" },
+          { "clave": "b", "texto": "DTD" },
+          { "clave": "c", "texto": "C++" },
+          { "clave": "d", "texto": "XML" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que XML fue publicado por el W3C en 1998 como un lenguaje de marcas que buscaba combinar la robustez de SGML con una sencillez similar a HTML. XML permite estructurar información de forma semántica mediante etiquetas, creando documentos jerárquicos y adecuados para el intercambio de datos entre sistemas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "JSON también se usa mucho para intercambiar datos, pero en el temario de esta unidad el lenguaje normalizado en 1998 por el W3C, basado en marcas y con estructura semántica, es XML."
+            },
+            {
+              "clave": "b",
+              "motivo": "DTD no es el lenguaje principal para estructurar datos, sino una gramática usada para definir y validar la estructura de documentos, especialmente XML o HTML antiguos."
+            },
+            {
+              "clave": "c",
+              "motivo": "C++ es un lenguaje de programación, no un lenguaje de marcas. Sirve para programar lógica y algoritmos, no para describir jerárquicamente información mediante etiquetas."
+            }
+          ],
+          "resumen_didactico": "Cuando el enunciado menciona 1998, W3C, estructura semántica, sencillez parecida a HTML y robustez heredada de SGML, la respuesta es XML.",
+          "ejemplo_practico": "En una tienda online, XML podría representar un producto así: <producto><nombre>Aceite premium</nombre><precio>12.99</precio><stock>50</stock></producto>. Cada etiqueta indica qué significa cada dato dentro de una estructura jerárquica.",
+          "conclusion_final": "La respuesta correcta es la opción d, porque XML fue normalizado en 1998 y permite estructurar información de forma semántica, jerárquica e interoperable."
+        }
+      },
+      {
+        "id": "UT1-Q15",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Qué motivación técnica llevó al consorcio W3C a intervenir a mediados de la década de 1990 en la evolución de los estándares de internet?",
+        "contexto": "Intervención del W3C en los años 90 para ordenar la evolución de la web y crear un lenguaje más potente y semántico.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El intento de dotar a la web de un lenguaje mucho más potente que aportara una estructura semántica" },
+          { "clave": "b", "texto": "El deseo de volver al uso exclusivo del estándar complejo SGML" },
+          { "clave": "c", "texto": "La necesidad de cobrar derechos de autor por cada página web publicada" },
+          { "clave": "d", "texto": "El abandono definitivo de los navegadores web por parte de las grandes empresas" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que, a mediados de los años 90, el W3C intervino porque HTML había crecido rápidamente y de forma descontrolada. El objetivo era dotar a la web de un lenguaje más potente, con una estructura semántica más clara, basado en la robustez de SGML pero con una sencillez cercana a HTML. Esa evolución terminó dando lugar a XML en 1998.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El W3C no quería volver al uso exclusivo de SGML, porque SGML era demasiado complejo. La idea era aprovechar su robustez, pero crear algo más sencillo y práctico."
+            },
+            {
+              "clave": "c",
+              "motivo": "La intervención del W3C no tenía como objetivo cobrar derechos de autor por cada página web publicada. Su función era ordenar y normalizar la evolución técnica de la web."
+            },
+            {
+              "clave": "d",
+              "motivo": "Los navegadores web no fueron abandonados definitivamente. Al contrario, eran una pieza clave en la expansión de HTML y de la web."
+            }
+          ],
+          "resumen_didactico": "El W3C intervino porque la web necesitaba orden, potencia y estructura semántica. HTML se había extendido mucho, pero hacía falta un estándar más robusto para describir datos.",
+          "ejemplo_practico": "Una tienda online no solo necesita mostrar un producto en pantalla con HTML; también puede necesitar estructurar sus datos con XML para indicar claramente qué es el nombre, el precio, el stock o el identificador del producto.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque el W3C buscaba dotar a la web de un lenguaje más potente y semántico, lo que desembocó en la creación de XML."
+        }
+      },
+      {
+        "id": "UT1-Q16",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Durante la depuración de una interfaz de turismo inteligente, un especialista necesita verificar las propiedades asociadas a un elemento estructural sin alterar su contenido textual. ¿Dónde se ubica exactamente esta información dentro de las marcas?",
+        "contexto": "Revisión de propiedades asociadas a un elemento de un documento de marcas sin modificar el contenido que aparece entre la etiqueta de inicio y la etiqueta de fin.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Al final del documento en la sección de metadatos" },
+          { "clave": "b", "texto": "Como un par nombre-valor que se encuentra dentro de la etiqueta de inicio" },
+          { "clave": "c", "texto": "Exclusivamente en la etiqueta de cierre del elemento" },
+          { "clave": "d", "texto": "Entre la etiqueta de inicio y la etiqueta de fin" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que los atributos son información adicional asociada a un elemento. Se escriben como un par nombre-valor dentro de la etiqueta de inicio. Sirven para indicar propiedades del elemento sin modificar directamente el contenido textual que hay dentro de él.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Los atributos no se colocan necesariamente al final del documento ni en una sección general de metadatos. Se escriben directamente dentro de la etiqueta de inicio del elemento al que pertenecen."
+            },
+            {
+              "clave": "c",
+              "motivo": "Los atributos no se colocan en la etiqueta de cierre. La etiqueta de cierre solo marca el final del elemento y normalmente no contiene propiedades."
+            },
+            {
+              "clave": "d",
+              "motivo": "Entre la etiqueta de inicio y la etiqueta de fin se coloca el contenido del elemento. Las propiedades adicionales del elemento se colocan dentro de la etiqueta de inicio como atributos."
+            }
+          ],
+          "resumen_didactico": "Si la información adicional describe propiedades de un elemento, pero no forma parte de su contenido principal, se coloca como atributo dentro de la etiqueta de inicio.",
+          "ejemplo_practico": "En <lugar siglo=\"XI\">Alcazaba de Málaga</lugar>, el atributo siglo=\"XI\" está dentro de la etiqueta de inicio <lugar>. El contenido textual del elemento es Alcazaba de Málaga.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque los atributos se escriben como pares nombre-valor dentro de la etiqueta de inicio."
+        }
+      },
+      {
+        "id": "UT1-Q17",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "En el vocabulario técnico de los lenguajes de marcado, ¿cómo se define específicamente al texto que va encerrado entre los símbolos menor que y mayor que?",
+        "contexto": "Identificación del término técnico utilizado para nombrar el texto encerrado entre los símbolos < y > dentro de un lenguaje de marcas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Atributo" },
+          { "clave": "b", "texto": "Gramática" },
+          { "clave": "c", "texto": "Esquema de validación" },
+          { "clave": "d", "texto": "Etiqueta" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario define una etiqueta, también llamada tag, como el texto que aparece encerrado entre el símbolo menor que < y el símbolo mayor que >. Las etiquetas sirven para marcar el inicio o el fin de una parte del documento.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Un atributo no es todo el texto encerrado entre < y >. Es una información adicional que aparece dentro de la etiqueta de inicio en forma de par nombre-valor, por ejemplo siglo=\"XI\"."
+            },
+            {
+              "clave": "b",
+              "motivo": "La gramática no es una marca concreta del documento. Es el conjunto de reglas que define qué marcado está permitido, qué marcado es obligatorio y cómo debe usarse."
+            },
+            {
+              "clave": "c",
+              "motivo": "Un esquema de validación sirve para comprobar si un documento cumple unas reglas, como ocurre con DTD o XML Schema. No es el nombre del texto encerrado entre < y >."
+            }
+          ],
+          "resumen_didactico": "Todo texto encerrado entre < y > recibe el nombre de etiqueta. Puede ser una etiqueta de inicio, como <lugar>, o una etiqueta de fin, como </lugar>.",
+          "ejemplo_practico": "En <nombre>Camisa de Lino</nombre>, <nombre> es una etiqueta de inicio y </nombre> es una etiqueta de fin.",
+          "conclusion_final": "La respuesta correcta es la opción d, porque el texto encerrado entre los símbolos menor que y mayor que se llama etiqueta."
+        }
+      },
+      {
+        "id": "UT1-Q18",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Al desarrollar la estructura de un boletín promocional, se requiere cargar el logotipo corporativo utilizando una marca que no contiene texto en su interior. ¿Cómo se clasifica y formatea esta estructura según las reglas formales?",
+        "contexto": "Uso de una marca para insertar un logotipo o imagen dentro de un documento de marcas, sin contenido textual entre etiqueta de inicio y etiqueta de fin.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Etiqueta procedural anidada" },
+          { "clave": "b", "texto": "Elemento vacío que no debe llevar etiqueta de fin" },
+          { "clave": "c", "texto": "Elemento con cierre implícito" },
+          { "clave": "d", "texto": "Atributo estructural con comillas dobles" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que algunos elementos no tienen contenido; a estos se les denomina elementos vacíos y no deben llevar etiqueta de fin. El ejemplo típico es una imagen, ya que la marca sirve para insertar o referenciar un recurso, pero no contiene texto entre una etiqueta de apertura y una etiqueta de cierre.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Una etiqueta procedural anidada no es la clasificación que usa el temario para una marca sin contenido. Además, el caso no describe comandos de procedimiento ni anidamiento de estructuras."
+            },
+            {
+              "clave": "c",
+              "motivo": "El temario no define este caso como elemento con cierre implícito, sino como elemento vacío. La idea importante es que no contiene contenido interno y no debe llevar etiqueta de fin."
+            },
+            {
+              "clave": "d",
+              "motivo": "Los atributos pueden llevar comillas dobles, por ejemplo src=\"logo.png\" o alt=\"Logotipo\", pero eso no clasifica la estructura completa. La pregunta pregunta por la marca que no contiene texto en su interior, no por un atributo concreto."
+            }
+          ],
+          "resumen_didactico": "Cuando una marca no contiene texto ni contenido interno, como ocurre con una imagen, se considera un elemento vacío y no lleva etiqueta de cierre.",
+          "ejemplo_practico": "En HTML, un logotipo puede cargarse así: <img src=\"logo.png\" alt=\"Logotipo corporativo\">. La etiqueta <img> no encierra texto interno, por eso funciona como elemento vacío.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque una imagen o logotipo insertado mediante una marca sin contenido interno se clasifica como elemento vacío que no debe llevar etiqueta de fin."
+        }
+      },
+      {
+        "id": "UT1-Q19",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Durante la validación de un fichero de configuración crítico, el sistema rechaza el documento alertando sobre una sintaxis defectuosa al definir una propiedad dentro de una marca. ¿Qué error común suele provocar esta caída en lenguajes estrictos?",
+        "contexto": "Validación de un fichero de configuración en un lenguaje de marcas estricto, donde una propiedad dentro de una etiqueta provoca un error de sintaxis.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Utilizar caracteres estándar en formato texto plano" },
+          { "clave": "b", "texto": "Omitir las comillas en los valores de los atributos" },
+          { "clave": "c", "texto": "Escribir las etiquetas en mayúsculas sostenidas" },
+          { "clave": "d", "texto": "Añadir tabulaciones entre diferentes elementos" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario advierte que un error clásico al trabajar con atributos es escribir sus valores sin comillas. Aunque algunos navegadores pueden tolerarlo en HTML, los lenguajes más estrictos, como XML, pueden rechazar completamente el documento si los atributos no están correctamente escritos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Utilizar caracteres estándar en texto plano no provoca por sí mismo un error. De hecho, el texto plano es una característica común de muchos lenguajes de marcas."
+            },
+            {
+              "clave": "c",
+              "motivo": "Escribir etiquetas en mayúsculas puede ser incorrecto o problemático según el lenguaje y sus reglas, pero el error común señalado en el temario para propiedades dentro de una marca es omitir las comillas en los atributos."
+            },
+            {
+              "clave": "d",
+              "motivo": "Las tabulaciones o espacios en blanco suelen considerarse caracteres, pero no son normalmente el motivo principal de caída al definir una propiedad dentro de una etiqueta."
+            }
+          ],
+          "resumen_didactico": "Cuando una propiedad se coloca dentro de una etiqueta, normalmente hablamos de un atributo. En lenguajes estrictos, sus valores deben ir entre comillas.",
+          "ejemplo_practico": "Incorrecto en XML: <producto id=C001>. Correcto: <producto id=\"C001\">. La segunda forma evita el error porque el valor del atributo está entre comillas.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque omitir las comillas en los valores de los atributos es un error típico que puede hacer fallar la validación en lenguajes estrictos."
+        }
+      },
+      {
+        "id": "UT1-Q20",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Cómo se denomina técnicamente a la estructura completa que consta de la etiqueta de inicio, la etiqueta de fin y todo aquello que se encuentra entre ambas?",
+        "contexto": "Identificación del término técnico que describe el bloque completo formado por apertura, contenido y cierre en un lenguaje de marcas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Atributo" },
+          { "clave": "b", "texto": "DTD" },
+          { "clave": "c", "texto": "Declaración de codificación" },
+          { "clave": "d", "texto": "Elemento" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario define los elementos como las estructuras que organizan el contenido del documento. Un elemento está formado por la etiqueta de inicio, la etiqueta de fin y todo lo que se encuentra entre ambas.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Un atributo no es la estructura completa. Es una información adicional en forma de par nombre-valor que se coloca dentro de la etiqueta de inicio."
+            },
+            {
+              "clave": "b",
+              "motivo": "Una DTD no es un bloque del documento, sino una gramática que define qué elementos y estructuras están permitidos en un documento."
+            },
+            {
+              "clave": "c",
+              "motivo": "La declaración de codificación indica cómo deben interpretarse los caracteres del documento, pero no representa la estructura formada por etiqueta de inicio, contenido y etiqueta de fin."
+            }
+          ],
+          "resumen_didactico": "La etiqueta es solo la marca; el elemento es el bloque completo formado por apertura, contenido y cierre.",
+          "ejemplo_practico": "En <nombre>Camisa de Lino</nombre>, <nombre> es la etiqueta de inicio, </nombre> es la etiqueta de fin y todo el conjunto completo es el elemento.",
+          "conclusion_final": "La respuesta correcta es la opción d, porque la estructura completa con etiqueta de inicio, contenido y etiqueta de fin se denomina elemento."
+        }
+      },
+      {
+        "id": "UT1-Q21",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Un departamento de control de calidad industrial requiere estandarizar sus procesos bajo la norma internacional original que reguló el intercambio de textos informáticos. ¿Qué lenguaje publicado en 1986 utilizarán bajo el amparo de la ISO?",
+        "contexto": "Uso de un estándar internacional publicado por ISO en 1986 para regular documentos estructurados e intercambio de textos informáticos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "HTML 5" },
+          { "clave": "b", "texto": "Relax NG" },
+          { "clave": "c", "texto": "XML" },
+          { "clave": "d", "texto": "SGML" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que la ISO publicó en 1986 el Standard Generalized Markup Language, conocido como SGML, con rango de Estándar Internacional bajo el código ISO 8879. SGML fue uno de los primeros intentos formales de crear un estándar para documentos estructurados e intercambio de textos informáticos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "HTML 5 es una versión moderna de HTML, no el estándar internacional publicado por ISO en 1986. HTML nace después, en el contexto del CERN y la web."
+            },
+            {
+              "clave": "b",
+              "motivo": "Relax NG es una gramática de validación más moderna y flexible, no el lenguaje publicado originalmente por ISO en 1986 para estandarizar documentos informáticos."
+            },
+            {
+              "clave": "c",
+              "motivo": "XML fue publicado por el W3C en 1998 como una evolución más sencilla y potente para estructurar datos, pero no es el estándar ISO de 1986."
+            }
+          ],
+          "resumen_didactico": "Cuando el enunciado menciona ISO, año 1986, estandarización internacional e intercambio de textos informáticos, la respuesta correcta es SGML.",
+          "ejemplo_practico": "Una organización industrial antigua podía usar SGML para definir documentos técnicos estructurados de manera normalizada, de forma que distintos sistemas pudieran interpretar esos textos siguiendo una misma norma.",
+          "conclusion_final": "La respuesta correcta es la opción d, porque SGML fue publicado por la ISO en 1986 como estándar internacional para documentos estructurados."
+        }
+      },
+      {
+        "id": "UT1-Q22",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Qué papel principal desempeña el World Wide Web Consortium en la estandarización tecnológica global?",
+        "contexto": "Función del W3C como organismo encargado de ordenar, normalizar y guiar la evolución técnica de la web.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Vender el acceso a los estándares mediante derechos de copyright estrictos" },
+          { "clave": "b", "texto": "Tutelar el crecimiento y organización de la web mediante reglas y sintaxis comunes" },
+          { "clave": "c", "texto": "Desarrollar algoritmos criptográficos para los navegadores de internet" },
+          { "clave": "d", "texto": "Promover normas internacionales de fabricación para las ramas industriales no electrónicas" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que el World Wide Web Consortium, conocido como W3C, fue creado para tutelar el crecimiento y la organización de la web. Su función principal es establecer reglas, recomendaciones y sintaxis comunes para que las tecnologías web puedan evolucionar de forma ordenada y compatible.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Esta opción se parece más a una característica asociada a los estándares de ISO, cuyo contenido puede estar protegido por copyright. El W3C, según el temario, se centra en organizar y normalizar la web."
+            },
+            {
+              "clave": "c",
+              "motivo": "El W3C no se define en el temario como un organismo dedicado principalmente a desarrollar algoritmos criptográficos. Su papel está relacionado con estándares web, lenguajes de marcas y reglas comunes."
+            },
+            {
+              "clave": "d",
+              "motivo": "Esta función corresponde a la ISO, que promueve normas internacionales de fabricación, comercio y comunicación para ramas industriales, excepto la eléctrica y electrónica."
+            }
+          ],
+          "resumen_didactico": "El W3C es el organismo que ayuda a que la web no crezca de forma caótica, estableciendo recomendaciones y estándares comunes.",
+          "ejemplo_practico": "Cuando se define cómo debe escribirse correctamente HTML o XML para que distintos navegadores y herramientas lo interpreten de forma compatible, intervienen estándares y recomendaciones del W3C.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque el W3C se encarga de tutelar el crecimiento y la organización de la web mediante reglas y sintaxis comunes."
+        }
+      },
+      {
+        "id": "UT1-Q22",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Qué papel principal desempeña el World Wide Web Consortium en la estandarización tecnológica global?",
+        "contexto": "Función del W3C como organismo encargado de ordenar, normalizar y guiar la evolución técnica de la web.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Vender el acceso a los estándares mediante derechos de copyright estrictos" },
+          { "clave": "b", "texto": "Tutelar el crecimiento y organización de la web mediante reglas y sintaxis comunes" },
+          { "clave": "c", "texto": "Desarrollar algoritmos criptográficos para los navegadores de internet" },
+          { "clave": "d", "texto": "Promover normas internacionales de fabricación para las ramas industriales no electrónicas" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que el World Wide Web Consortium, conocido como W3C, fue creado para tutelar el crecimiento y la organización de la web. Su función principal es establecer reglas, recomendaciones y sintaxis comunes para que las tecnologías web puedan evolucionar de forma ordenada y compatible.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Esta opción se parece más a una característica asociada a los estándares de ISO, cuyo contenido puede estar protegido por copyright. El W3C, según el temario, se centra en organizar y normalizar la web."
+            },
+            {
+              "clave": "c",
+              "motivo": "El W3C no se define en el temario como un organismo dedicado principalmente a desarrollar algoritmos criptográficos. Su papel está relacionado con estándares web, lenguajes de marcas y reglas comunes."
+            },
+            {
+              "clave": "d",
+              "motivo": "Esta función corresponde a la ISO, que promueve normas internacionales de fabricación, comercio y comunicación para ramas industriales, excepto la eléctrica y electrónica."
+            }
+          ],
+          "resumen_didactico": "El W3C es el organismo que ayuda a que la web no crezca de forma caótica, estableciendo recomendaciones y estándares comunes.",
+          "ejemplo_practico": "Cuando se define cómo debe escribirse correctamente HTML o XML para que distintos navegadores y herramientas lo interpreten de forma compatible, intervienen estándares y recomendaciones del W3C.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque el W3C se encarga de tutelar el crecimiento y la organización de la web mediante reglas y sintaxis comunes."
+        }
+      },
+      {
+        "id": "UT1-Q23",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Si un equipo técnico necesita diseñar un lenguaje de marcas propio adecuado a sus necesidades de logística, garantizando compatibilidad estructural con otras herramientas, ¿qué conjunto de reglas creado por el W3C debe tomar como base fundamental?",
+        "contexto": "Creación de un lenguaje de marcas adaptado a necesidades propias, pero siguiendo reglas comunes para mantener compatibilidad con otras herramientas y sistemas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "XML" },
+          { "clave": "b", "texto": "DTD estricta" },
+          { "clave": "c", "texto": "ISO 8879" },
+          { "clave": "d", "texto": "GML" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que el W3C decidió crear unas reglas para que cualquiera pudiera crear lenguajes de marcas adecuados a sus necesidades, pero manteniendo estructuras y sintaxis comunes que permitieran compatibilizarlos y tratarlos con las mismas herramientas. Ese conjunto de reglas es XML.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "La DTD estricta es una definición concreta usada en HTML 4.0 para limitar los elementos y atributos permitidos. No es la base general creada por el W3C para diseñar lenguajes de marcas propios compatibles."
+            },
+            {
+              "clave": "c",
+              "motivo": "ISO 8879 corresponde al estándar SGML publicado por la ISO en 1986. Aunque SGML es importante históricamente, el temario señala que XML fue la solución posterior del W3C para crear lenguajes de marcas con reglas comunes y más sencillas."
+            },
+            {
+              "clave": "d",
+              "motivo": "GML fue un antecedente histórico propuesto por IBM, pero no es el conjunto de reglas del W3C que permite crear lenguajes de marcas propios con compatibilidad estructural moderna."
+            }
+          ],
+          "resumen_didactico": "XML no es solo un formato concreto: también funciona como una base de reglas para crear lenguajes de marcas personalizados, manteniendo una sintaxis común y compatible.",
+          "ejemplo_practico": "Una empresa logística podría crear un XML propio con etiquetas como <envio>, <contenedor>, <peso> y <destino>, de forma que sus sistemas puedan interpretar esos datos siguiendo una estructura común.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque XML es el conjunto de reglas creado por el W3C para diseñar lenguajes de marcas adaptados a distintas necesidades manteniendo compatibilidad estructural."
+        }
+      },
+      {
+        "id": "UT1-Q24",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Un servidor central que controla una flota de robots de almacén colapsa porque los archivos de estado contienen etiquetas requeridas fuera del orden establecido. ¿Qué componente estructural del lenguaje ha fallado o falta por implementar correctamente?",
+        "contexto": "Archivos de estado de robots con etiquetas obligatorias colocadas fuera del orden permitido, provocando fallos en el procesamiento del servidor.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "El formato de compresión de los elementos vacíos" },
+          { "clave": "b", "texto": "La gramática que define el marcado permitido y requerido" },
+          { "clave": "c", "texto": "La codificación base en caracteres UTF-16" },
+          { "clave": "d", "texto": "La encriptación asimétrica de los paquetes de datos" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que una gramática en lenguajes de marcas define el marcado permitido, el marcado requerido y cómo debe utilizarse dicho marcado dentro de la instancia del documento. Si las etiquetas obligatorias aparecen fuera del orden establecido o no respetan la estructura esperada, el problema está relacionado con la gramática del lenguaje o con su validación.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "El formato de compresión de elementos vacíos no tiene relación con el orden de las etiquetas requeridas. Los elementos vacíos son aquellos que no contienen contenido interno, como una imagen, pero aquí el problema es estructural."
+            },
+            {
+              "clave": "c",
+              "motivo": "La codificación UTF-16 afecta a cómo se representan los caracteres, no a si las etiquetas aparecen en el orden correcto dentro del documento."
+            },
+            {
+              "clave": "d",
+              "motivo": "La encriptación asimétrica pertenece al ámbito de la seguridad y el cifrado de datos. No define qué etiquetas son obligatorias ni en qué orden deben aparecer."
+            }
+          ],
+          "resumen_didactico": "La gramática es el conjunto de reglas que indica qué etiquetas pueden aparecer, cuáles son obligatorias y cómo deben organizarse dentro del documento.",
+          "ejemplo_practico": "Si un archivo XML de un robot debe tener <robot><bateria>80</bateria><estado>activo</estado></robot>, pero llega como <robot><estado>activo</estado><bateria>80</bateria></robot> y el orden no está permitido, la validación falla por no respetar la gramática definida.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque el fallo descrito afecta a la gramática que define el marcado permitido, requerido y su orden dentro del documento."
+        }
+      },
+      {
+        "id": "UT1-Q25",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Cómo se define el mecanismo heredado de SGML que establece las reglas de formación del lenguaje formal indicando qué combinaciones de símbolos son sintácticamente correctas?",
+        "contexto": "Identificación del mecanismo de validación heredado de SGML que define la estructura permitida de un documento de marcas.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "DTD o Definición de Tipo de Documento" },
+          { "clave": "b", "texto": "Document Schema Definition Language" },
+          { "clave": "c", "texto": "Post-Schema-Validation Infoset" },
+          { "clave": "d", "texto": "XML Schema Definition" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que la DTD, o Definición de Tipo de Documento, establece las reglas de formación del lenguaje formal. Es decir, indica qué combinaciones de símbolos elementales son sintácticamente correctas. Además, se presenta como el formato de esquema nativo y más antiguo para validar documentos XML, heredado de SGML.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "Document Schema Definition Language, o DSDL, no es el mecanismo heredado de SGML que el temario define como encargado de establecer las reglas básicas de formación. En el tema aparece relacionado con RELAX NG como parte de un estándar ISO más moderno."
+            },
+            {
+              "clave": "c",
+              "motivo": "Post-Schema-Validation Infoset, o PSVI, no define las reglas de formación del documento. Se refiere a la información resultante después de validar un documento con XML Schema, permitiendo expresar su estructura y contenido según el modelo de datos del esquema."
+            },
+            {
+              "clave": "d",
+              "motivo": "XML Schema Definition, o XSD, también sirve para validar documentos XML, pero es una evolución más potente y compleja que la DTD. El enunciado pregunta por el mecanismo heredado de SGML y más antiguo, por lo que corresponde a DTD."
+            }
+          ],
+          "resumen_didactico": "La DTD es una gramática antigua que indica qué elementos puede tener un documento, dónde pueden aparecer y qué estructura debe respetar para ser válido.",
+          "ejemplo_practico": "Una DTD podría indicar que un documento <producto> debe contener obligatoriamente un <nombre>, un <precio> y un <stock>. Si falta alguno o aparece en una posición no permitida, el documento no cumple la estructura definida.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque la DTD es el mecanismo heredado de SGML que define las reglas sintácticas de formación de un documento."
+        }
+      },
+      {
+        "id": "UT1-Q26",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Al actualizar una plataforma web heredada, el equipo debe mantener provisionalmente estructuras que ya no se recomiendan para nuevos proyectos. ¿Qué especificación oficial permite integrar estos elementos desaprobados en HTML 4.0?",
+        "contexto": "Mantenimiento de una plataforma web antigua que todavía necesita usar elementos y atributos desaprobados en HTML 4.0.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "DTD para documentos con marcos" },
+          { "clave": "b", "texto": "DTD transicional o flexible" },
+          { "clave": "c", "texto": "DTD estricta" },
+          { "clave": "d", "texto": "XML Schema avanzado" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que HTML 4.0 contempla tres DTD principales: la estricta, la transicional o flexible y la de documentos con marcos. La DTD transicional o flexible incluye todo lo permitido por la DTD estricta, pero además permite elementos y atributos desaprobados, es decir, aquellos cuyo uso ya no se recomienda para nuevos proyectos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La DTD para documentos con marcos incluye lo relativo a frames o marcos. Aunque engloba elementos adicionales, su finalidad específica es permitir documentos con marcos, no mantener de forma general elementos desaprobados durante una transición."
+            },
+            {
+              "clave": "c",
+              "motivo": "La DTD estricta incluye los elementos y atributos que no han sido declarados desaprobados. Por tanto, no es la adecuada si el equipo necesita mantener provisionalmente estructuras antiguas no recomendadas."
+            },
+            {
+              "clave": "d",
+              "motivo": "XML Schema avanzado no corresponde a las DTD oficiales de HTML 4.0. XML Schema o XSD se usa para validar documentos XML con reglas más potentes, especialmente tipos de datos, no para seleccionar una variante de HTML 4.0."
+            }
+          ],
+          "resumen_didactico": "Si una web antigua necesita seguir usando elementos obsoletos o desaprobados de HTML 4.0 mientras se actualiza, la DTD adecuada es la transicional o flexible.",
+          "ejemplo_practico": "Una empresa puede tener una web antigua que todavía usa atributos o etiquetas que ya no se recomiendan. Mientras migra el proyecto a una versión más moderna, puede validar el documento con una DTD transicional.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque la DTD transicional o flexible permite integrar elementos y atributos desaprobados en HTML 4.0."
+        }
+      },
+      {
+        "id": "UT1-Q27",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Cuál es uno de los principales motivos por los que la definición mediante DTD presenta limitaciones en arquitecturas de integración de datos modernas?",
+        "contexto": "Evaluación de las limitaciones de DTD como mecanismo antiguo de validación frente a necesidades modernas de integración de datos.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "No soporta nuevas ampliaciones de XML y no es capaz de describir ciertos aspectos formales a nivel expresivo" },
+          { "clave": "b", "texto": "Exige el pago de licencias al W3C por cada validación realizada" },
+          { "clave": "c", "texto": "Su sintaxis consume excesivos recursos de procesamiento en el servidor" },
+          { "clave": "d", "texto": "Solo permite validar documentos de texto plano sin etiquetas" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que la DTD es el formato de esquema nativo y más antiguo para validar documentos XML, heredado de SGML. Aunque permite definir elementos, relaciones, atributos, entidades y notaciones, presenta limitaciones importantes: no soporta nuevas ampliaciones de XML y no puede describir ciertos aspectos formales de un documento con suficiente potencia expresiva.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "El temario no indica que la DTD exija pagar licencias al W3C por cada validación. La limitación de DTD es técnica, no económica."
+            },
+            {
+              "clave": "c",
+              "motivo": "El consumo elevado de recursos y la complejidad sintáctica se asocian más a XML Schema o XSD, que es más potente pero también más complejo. DTD se caracteriza precisamente por ser más sencilla, aunque limitada."
+            },
+            {
+              "clave": "d",
+              "motivo": "DTD no valida documentos sin etiquetas. Al contrario, se usa para validar la estructura de documentos de marcas, especialmente XML, definiendo qué elementos y atributos están permitidos."
+            }
+          ],
+          "resumen_didactico": "DTD sirve para validar estructuras básicas, pero se queda corta cuando se necesitan reglas modernas, ampliaciones de XML o validaciones más expresivas.",
+          "ejemplo_practico": "Una DTD puede indicar que un producto debe tener un elemento <stock>, pero no valida con la misma potencia que ese stock sea obligatoriamente un número entero. Para ese tipo de control moderno sería más adecuado XSD.",
+          "conclusion_final": "La respuesta correcta es la opción a, porque DTD es un mecanismo antiguo y limitado que no soporta bien nuevas ampliaciones de XML ni ciertos controles formales avanzados."
+        }
+      },
+      {
+        "id": "UT1-Q28",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Para proteger un inventario automatizado, se exige que un campo específico de mercancía acepte exclusivamente valores numéricos enteros en lugar de cadenas de texto. ¿Qué lenguaje de esquema basado en gramática ofrece la potencia expresiva para forzar este requisito de tipado?",
+        "contexto": "Validación de un inventario automatizado donde un campo debe aceptar solo números enteros y rechazar texto incorrecto.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "DTD estricta" },
+          { "clave": "b", "texto": "XML Schema o XSD" },
+          { "clave": "c", "texto": "SGML clásico" },
+          { "clave": "d", "texto": "HTML procedural" }
+        ],
+        "respuesta_correcta": ["b"],
+        "explicacion": {
+          "temario": "El temario explica que XML Schema, también llamado XSD, es una evolución más potente que la DTD. Su principal ventaja es que permite especificar de forma más detallada los tipos de datos. Por eso puede obligar a que un campo como stock, peso o cantidad acepte únicamente valores numéricos enteros y rechace cadenas de texto.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "La DTD permite definir la estructura básica de un documento, sus elementos y relaciones, pero tiene limitaciones expresivas importantes. No es adecuada para forzar tipos de datos estrictos como integer con la precisión que permite XSD."
+            },
+            {
+              "clave": "c",
+              "motivo": "SGML clásico es un estándar histórico de lenguajes de marcas, muy importante en la evolución del marcado, pero no es la herramienta moderna indicada en el temario para validar tipos de datos concretos en XML."
+            },
+            {
+              "clave": "d",
+              "motivo": "HTML no es un lenguaje de esquema para validar inventarios ni forzar tipos de datos en documentos XML. Además, la expresión 'HTML procedural' no corresponde a la solución técnica planteada por el temario."
+            }
+          ],
+          "resumen_didactico": "Cuando la pregunta habla de validar tipos de datos concretos, como exigir que un valor sea entero, la respuesta correcta suele ser XML Schema o XSD.",
+          "ejemplo_practico": "Si un proveedor envía <stock>Cien</stock>, un XSD puede rechazarlo porque esperaba un número entero. En cambio, aceptaría <stock>100</stock>.",
+          "conclusion_final": "La respuesta correcta es la opción b, porque XML Schema o XSD permite validar tipos de datos estrictos, como números enteros, protegiendo así la calidad del inventario."
+        }
+      },
+      {
+        "id": "UT1-Q29",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "Una infraestructura de sensores industriales experimenta latencia de red, provocando que los bloques de información estructurada lleguen completos pero en orden aleatorio. ¿Qué alternativa estandarizada permite validar fácilmente estos elementos intercalados?",
+        "contexto": "Validación de información estructurada que llega completa, pero con los elementos en orden aleatorio debido a latencia de red.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Gestores de bases relacionales" },
+          { "clave": "b", "texto": "Hojas de estilo en cascada" },
+          { "clave": "c", "texto": "HTML 4.0 Strict DTD" },
+          { "clave": "d", "texto": "Relax NG" }
+        ],
+        "respuesta_correcta": ["d"],
+        "explicacion": {
+          "temario": "El temario explica que Relax NG es un lenguaje de esquema basado en gramática, más intuitivo y fácil de entender que XML Schema. Una de sus ventajas principales es que permite validar elementos intercalados que pueden aparecer en cualquier orden, siempre que estén presentes los datos necesarios.",
+          "analisis_incorrectas": [
+            {
+              "clave": "a",
+              "motivo": "Los gestores de bases relacionales sirven para almacenar, consultar y relacionar datos en tablas, pero no son la alternativa de validación de documentos de marcas que el temario asocia con elementos intercalados en orden flexible."
+            },
+            {
+              "clave": "b",
+              "motivo": "Las hojas de estilo en cascada, CSS, sirven para definir la presentación visual de documentos estructurados, especialmente HTML. No validan la estructura de elementos intercalados."
+            },
+            {
+              "clave": "c",
+              "motivo": "HTML 4.0 Strict DTD define una validación estricta para documentos HTML 4.0, excluyendo elementos desaprobados. No es la alternativa flexible indicada para validar elementos que pueden llegar en cualquier orden."
+            }
+          ],
+          "resumen_didactico": "Relax NG es útil cuando importa que los datos estén completos, pero no necesariamente que aparezcan en un orden rígido.",
+          "ejemplo_practico": "Si un sensor envía primero <temperatura>, luego <estado> y después <bateria>, pero otro sensor los envía en distinto orden, Relax NG puede validar el documento siempre que todos los elementos obligatorios estén presentes.",
+          "conclusion_final": "La respuesta correcta es la opción d, porque Relax NG permite validar de forma flexible elementos intercalados que pueden aparecer en cualquier orden."
+        }
+      },
+      {
+        "id": "UT1-Q30",
+        "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+        "pregunta": "¿Qué ventaja técnica proporciona a los desarrolladores el uso de la funcionalidad Post-Schema-Validation Infoset tras validar un documento con XML Schema?",
+        "contexto": "Uso de PSVI después de validar un documento XML mediante XML Schema para facilitar el tratamiento de la información desde lenguajes de programación.",
+        "tipo": "single",
+        "opciones": [
+          { "clave": "a", "texto": "Permite transformar el documento en una jerarquía de objetos para acceder a ellos mediante programación orientada a objetos" },
+          { "clave": "b", "texto": "Transforma directamente el documento en una página web visual" },
+          { "clave": "c", "texto": "Comprime el tamaño del archivo a la mitad de bytes" },
+          { "clave": "d", "texto": "Traduce automáticamente las etiquetas a múltiples idiomas" }
+        ],
+        "respuesta_correcta": ["a"],
+        "explicacion": {
+          "temario": "El temario explica que, después de validar un documento con XML Schema, la funcionalidad Post-Schema-Validation Infoset permite expresar su estructura y contenido según el modelo de datos usado por el esquema de validación. Esto puede utilizarse para transformar el documento en una jerarquía de objetos, accesibles desde lenguajes de programación orientada a objetos.",
+          "analisis_incorrectas": [
+            {
+              "clave": "b",
+              "motivo": "PSVI no convierte directamente un documento XML en una página web visual. Para generar una vista web normalmente habría que transformar o procesar el XML con otras tecnologías, como una transformación hacia HTML."
+            },
+            {
+              "clave": "c",
+              "motivo": "PSVI no tiene como finalidad comprimir el archivo ni reducir su tamaño en bytes. Su función está relacionada con la interpretación estructurada del documento después de la validación."
+            },
+            {
+              "clave": "d",
+              "motivo": "PSVI no traduce automáticamente etiquetas a otros idiomas. Las etiquetas siguen siendo las definidas en el documento y en el esquema; lo que aporta PSVI es información estructural y tipada tras la validación."
+            }
+          ],
+          "resumen_didactico": "PSVI sirve para que, tras validar un XML con XSD, el programa pueda trabajar con esa información como una estructura más clara, incluso como objetos dentro de un lenguaje orientado a objetos.",
+          "ejemplo_practico": "Si un XML de un robot contiene <bateria>80</bateria> y el XSD valida que bateria es un número, PSVI permite que el sistema trate ese dato de forma estructurada y pueda acceder a él desde código como robot.getBateria().",
+          "conclusion_final": "La respuesta correcta es la opción a, porque PSVI permite transformar la información validada en una jerarquía de objetos útil para la programación orientada a objetos."
+        }
+      }
+]

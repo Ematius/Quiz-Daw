@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT15-Q01",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué objetivo técnico cumple un metalenguaje dentro del estudio de los lenguajes de marcas?",
+    "contexto": "Concepto teórico básico sobre la función de un metalenguaje en la definición de otros lenguajes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Definir reglas y estructuras para crear otros lenguajes de marcas"
+      },
+      {
+        "clave": "b",
+        "texto": "Sustituir a los navegadores en la interpretación del HTML"
+      },
+      {
+        "clave": "c",
+        "texto": "Convertir automáticamente XML en PDF"
+      },
+      {
+        "clave": "d",
+        "texto": "Ejecutar algoritmos matemáticos complejos sobre bases de datos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El módulo presenta los metalenguajes como lenguajes base capaces de definir la estructura y reglas de otros lenguajes de marcas. SGML es el ejemplo clásico de esta idea.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los navegadores interpretan documentos web, pero no son metalenguajes ni definen otros lenguajes de marcas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La conversión XML a PDF pertenece a procesos de transformación o formateo, no a la definición de metalenguaje."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los metalenguajes no se orientan al cálculo algorítmico, sino a la definición estructural de otros lenguajes."
+        }
+      ],
+      "resumen_didactico": "Un metalenguaje sirve para construir o describir otros lenguajes.",
+      "ejemplo_practico": "SGML actúa como lenguaje padre del que históricamente derivan otras tecnologías de marcas.",
+      "conclusion_final": "La respuesta correcta es la a, porque un metalenguaje define reglas y estructuras para crear otros lenguajes de marcas."
+    }
+  },
+  {
+    "id": "UT15-Q02",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "En HTML, ¿qué etiqueta es la adecuada para crear un marcador interno al que después puede apuntar un enlace dentro de la misma página?",
+    "contexto": "Navegación interna en documentos HTML largos mediante anclajes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<a> usando un identificador o punto de anclaje"
+      },
+      {
+        "clave": "b",
+        "texto": "<link> con rel=\"anchor\""
+      },
+      {
+        "clave": "c",
+        "texto": "<meta> con name=\"jump\""
+      },
+      {
+        "clave": "d",
+        "texto": "<section> sin atributos adicionales"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema de HTML explica que la etiqueta <a> no solo crea hipervínculos externos o relativos, sino también enlaces internos hacia marcadores del propio documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<link> se usa en la cabecera para asociar recursos como hojas de estilo, no para crear anclajes navegables dentro del cuerpo."
+        },
+        {
+          "clave": "c",
+          "motivo": "<meta> aporta metadatos y no crea puntos de salto internos visibles para la navegación."
+        },
+        {
+          "clave": "d",
+          "motivo": "<section> organiza contenido, pero por sí sola no define el comportamiento de enlace interno."
+        }
+      ],
+      "resumen_didactico": "Los anclajes internos en HTML se trabajan con la etiqueta <a>.",
+      "ejemplo_practico": "Un índice de documentación puede enlazar con distintas secciones de la misma página mediante anclas internas.",
+      "conclusion_final": "La respuesta correcta es la a, porque la etiqueta <a> es la que permite crear y utilizar marcadores internos."
+    }
+  },
+  {
+    "id": "UT15-Q03",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué selector CSS se debe usar si se quiere aplicar un estilo solamente al hermano inmediato que aparece justo después de otro elemento?",
+    "contexto": "Relaciones entre selectores CSS y su alcance sobre elementos vecinos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Selector adyacente con el signo +"
+      },
+      {
+        "clave": "b",
+        "texto": "Selector universal con el asterisco"
+      },
+      {
+        "clave": "c",
+        "texto": "Selector descendiente con un espacio"
+      },
+      {
+        "clave": "d",
+        "texto": "Selector hijo con el signo >"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El bloque de CSS explica que el selector adyacente usa el signo + y actúa sobre el hermano que aparece inmediatamente después del primer elemento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El selector universal afecta a todos los elementos y no expresa vecindad inmediata entre hermanos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El selector descendiente busca elementos anidados dentro de otro, no hermanos consecutivos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El selector hijo solo afecta a hijos directos, no a hermanos contiguos."
+        }
+      ],
+      "resumen_didactico": "El signo + en CSS sirve para seleccionar el hermano inmediato siguiente.",
+      "ejemplo_practico": "h1 + p aplica estilo al primer párrafo que aparece justo después de un h1.",
+      "conclusion_final": "La respuesta correcta es la a, porque el selector adyacente utiliza + para apuntar al hermano inmediato."
+    }
+  },
+  {
+    "id": "UT15-Q04",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué ventaja aporta agrupar varios selectores en una misma regla CSS separados por comas?",
+    "contexto": "Optimización y legibilidad del código CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evitar repetir declaraciones idénticas para varios elementos"
+      },
+      {
+        "clave": "b",
+        "texto": "Convertir automáticamente los estilos en JavaScript"
+      },
+      {
+        "clave": "c",
+        "texto": "Crear una herencia obligatoria entre todos los elementos del documento"
+      },
+      {
+        "clave": "d",
+        "texto": "Hacer que el navegador ignore las propiedades duplicadas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema de CSS muestra que el agrupamiento permite escribir una sola regla para varios selectores cuando comparten el mismo formato.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Agrupar selectores no transforma CSS en JavaScript ni cambia el lenguaje usado."
+        },
+        {
+          "clave": "c",
+          "motivo": "La herencia es un comportamiento distinto de CSS y no depende de separar selectores por comas."
+        },
+        {
+          "clave": "d",
+          "motivo": "El agrupamiento no existe para que el navegador ignore propiedades, sino para evitar código repetido."
+        }
+      ],
+      "resumen_didactico": "Agrupar selectores ahorra escritura y mejora el mantenimiento del CSS.",
+      "ejemplo_practico": "h1, h2, h3 { color: #333; } aplica el mismo color a varios niveles de encabezado sin duplicar reglas.",
+      "conclusion_final": "La respuesta correcta es la a, porque agrupar selectores evita repetir declaraciones idénticas."
+    }
+  },
+  {
+    "id": "UT15-Q05",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "En XML, ¿qué diferencia existe entre un elemento y un atributo desde el punto de vista estructural?",
+    "contexto": "Distinción conceptual entre contenido principal y propiedades añadidas en XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El elemento forma parte del árbol como nodo; el atributo añade una propiedad en la etiqueta de apertura"
+      },
+      {
+        "clave": "b",
+        "texto": "El atributo puede contener hijos y el elemento nunca"
+      },
+      {
+        "clave": "c",
+        "texto": "Los elementos solo sirven para comentarios y los atributos para datos obligatorios"
+      },
+      {
+        "clave": "d",
+        "texto": "No existe diferencia técnica entre ambos en XML"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema de XML distingue los elementos como nodos del árbol jerárquico y los atributos como información adicional escrita dentro de la apertura del elemento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los atributos no generan hijos dentro del árbol como lo hacen los elementos; no se usan como contenedores jerárquicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los elementos no se limitan a comentarios y los atributos no son solo datos obligatorios; ambos cumplen funciones estructurales distintas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí existe diferencia: los elementos son nodos y los atributos son propiedades asociadas a esos nodos."
+        }
+      ],
+      "resumen_didactico": "Elemento = nodo del árbol; atributo = propiedad del elemento.",
+      "ejemplo_practico": "En <producto id=\"A1\">Teclado</producto>, producto es el elemento e id es un atributo.",
+      "conclusion_final": "La respuesta correcta es la a, porque el elemento pertenece a la jerarquía y el atributo añade propiedades en la apertura."
+    }
+  },
+  {
+    "id": "UT15-Q06",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué función cumple una DTD dentro del trabajo con documentos XML?",
+    "contexto": "Validación estructural y definición de reglas para documentos XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Definir la estructura permitida del documento y sus restricciones básicas"
+      },
+      {
+        "clave": "b",
+        "texto": "Aplicar estilos visuales del mismo modo que CSS"
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituir a XPath en la selección de nodos"
+      },
+      {
+        "clave": "d",
+        "texto": "Cifrar el contenido del XML antes de enviarlo por red"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad sobre esquemas y vocabularios presenta la DTD como una definición de tipo de documento que marca qué elementos, atributos y ocurrencias son válidos en un XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La DTD no da formato visual al documento; esa tarea pertenece a hojas de estilo como CSS o XSL."
+        },
+        {
+          "clave": "c",
+          "motivo": "XPath selecciona nodos, mientras que la DTD valida estructura. Son funciones diferentes."
+        },
+        {
+          "clave": "d",
+          "motivo": "El cifrado no forma parte del objetivo de la DTD dentro del módulo."
+        }
+      ],
+      "resumen_didactico": "La DTD sirve para decir cómo debe estar estructurado un XML válido.",
+      "ejemplo_practico": "Puede definir que un elemento pedido contenga un cliente y uno o varios productos.",
+      "conclusion_final": "La respuesta correcta es la a, porque la DTD define la estructura permitida y las restricciones básicas del XML."
+    }
+  },
+  {
+    "id": "UT15-Q07",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "Si en una DTD se desea permitir que un elemento contenga cualquier contenido, ¿qué palabra reservada se utiliza?",
+    "contexto": "Tipos de contenido posibles en declaraciones DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ANY"
+      },
+      {
+        "clave": "b",
+        "texto": "EMPTY"
+      },
+      {
+        "clave": "c",
+        "texto": "#PCDATA"
+      },
+      {
+        "clave": "d",
+        "texto": "#IMPLIED"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La DTD incluye distintos tipos de contenido. ANY se usa cuando se permite cualquier contenido válido dentro del elemento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "EMPTY obliga a que el elemento no contenga nada."
+        },
+        {
+          "clave": "c",
+          "motivo": "#PCDATA indica texto analizado, no contenido completamente libre."
+        },
+        {
+          "clave": "d",
+          "motivo": "#IMPLIED se usa para atributos opcionales, no para contenido de elementos."
+        }
+      ],
+      "resumen_didactico": "ANY significa contenido libre dentro de la lógica permitida del documento.",
+      "ejemplo_practico": "<!ELEMENT bloque ANY> permitiría que ese elemento admitiera distintos tipos de contenido.",
+      "conclusion_final": "La respuesta correcta es la a, porque ANY es la palabra reservada que permite cualquier contenido."
+    }
+  },
+  {
+    "id": "UT15-Q08",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué ventaja principal aporta XSD frente a DTD al definir restricciones de datos?",
+    "contexto": "Comparación entre DTD y XML Schema en precisión de validación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite trabajar con tipos de datos más precisos como fechas, enteros o cadenas"
+      },
+      {
+        "clave": "b",
+        "texto": "Elimina completamente la necesidad de validar documentos"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo puede escribirse como comentario dentro del XML"
+      },
+      {
+        "clave": "d",
+        "texto": "Se limita a declarar etiquetas vacías y comentarios"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema destaca que XSD mejora la precisión del control porque permite usar tipos de datos definidos, facetas y restricciones mucho más ricas que DTD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XSD no sustituye la validación; precisamente se usa para validar con mayor detalle."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un esquema XSD no se define como un comentario interno, sino como un documento de esquema formal."
+        },
+        {
+          "clave": "d",
+          "motivo": "XSD no se limita a etiquetas vacías; permite expresar estructuras y tipos de datos complejos."
+        }
+      ],
+      "resumen_didactico": "XSD valida con más detalle porque entiende tipos y restricciones de datos.",
+      "ejemplo_practico": "Puede exigir que un campo fecha tenga formato de fecha real y que un importe sea decimal.",
+      "conclusion_final": "La respuesta correcta es la a, porque XSD aporta tipos de datos y restricciones más precisas."
+    }
+  },
+  {
+    "id": "UT15-Q09",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué editor XML se describe en el temario como una herramienta muy implantada en grandes corporaciones y especialmente potente para modelado, transformación y depuración?",
+    "contexto": "Herramientas profesionales de edición XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Altova XMLSpy"
+      },
+      {
+        "clave": "b",
+        "texto": "XML Notepad"
+      },
+      {
+        "clave": "c",
+        "texto": "XML Copy Editor"
+      },
+      {
+        "clave": "d",
+        "texto": "Online XML Editor"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de herramientas XML presenta Altova XMLSpy como uno de los editores más vendidos y más implantados en grandes corporaciones, con funciones avanzadas de modelado, transformación y depuración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XML Notepad se presenta como una herramienta intuitiva, pero no como la referencia corporativa más avanzada."
+        },
+        {
+          "clave": "c",
+          "motivo": "XML Copy Editor es ligero y útil, aunque no se describe como el más implantado en grandes corporaciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "El editor online es práctico para pruebas rápidas, no la suite avanzada destacada para entornos corporativos."
+        }
+      ],
+      "resumen_didactico": "Cuando el temario habla del editor XML “más corporativo” y potente, apunta a XMLSpy.",
+      "ejemplo_practico": "Un equipo puede usar XMLSpy para editar XML, validar XSD, depurar XSLT y trabajar con JSON en una misma suite.",
+      "conclusion_final": "La respuesta correcta es la a, porque Altova XMLSpy es la herramienta destacada por su implantación y potencia profesional."
+    }
+  },
+  {
+    "id": "UT15-Q10",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué idea resume mejor la validación de un documento XML?",
+    "contexto": "Proceso de comprobación de calidad y cumplimiento de reglas estructurales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Comparar el XML con sus reglas o esquemas para detectar fallos estructurales"
+      },
+      {
+        "clave": "b",
+        "texto": "Transformarlo automáticamente en HTML5 antes de revisarlo"
+      },
+      {
+        "clave": "c",
+        "texto": "Ocultar las etiquetas para que el usuario final no las vea"
+      },
+      {
+        "clave": "d",
+        "texto": "Convertir todos los atributos en texto plano sin restricción"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad sobre validación explica que validar consiste en poner a prueba el XML comparándolo con sus restricciones para detectar errores o carencias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Transformar a HTML puede ser otro proceso, pero no equivale a validar la estructura del XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ocultar etiquetas afecta a la presentación, no a la comprobación de corrección estructural."
+        },
+        {
+          "clave": "d",
+          "motivo": "Convertir atributos en texto plano no define la validación ni asegura corrección del documento."
+        }
+      ],
+      "resumen_didactico": "Validar es comprobar si el XML cumple las reglas que se le exigen.",
+      "ejemplo_practico": "Un parser detecta si falta cerrar una etiqueta o si un atributo obligatorio no aparece.",
+      "conclusion_final": "La respuesta correcta es la a, porque validar significa contrastar el XML con sus reglas para detectar fallos."
+    }
+  },
+  {
+    "id": "UT15-Q11",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "En XSLT, ¿qué instrucción se usa para extraer el valor textual de un nodo del XML origen?",
+    "contexto": "Plantillas XSLT y selección del contenido de nodos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:value-of>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:sort>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:choose>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:attribute>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La parte de plantillas XSLT explica que <xsl:value-of> sirve para extraer el valor del elemento referenciado desde el XML original.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<xsl:sort> ordena resultados, pero no extrae directamente el valor textual de un nodo."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:choose> se usa para lógica condicional con varias alternativas."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:attribute> se relaciona con la creación o manipulación de atributos, no con la simple extracción de texto."
+        }
+      ],
+      "resumen_didactico": "Para sacar el valor de un nodo en XSLT, se usa value-of.",
+      "ejemplo_practico": "<xsl:value-of select=\"precio\"/> puede imprimir el contenido del nodo precio.",
+      "conclusion_final": "La respuesta correcta es la a, porque <xsl:value-of> extrae el valor textual del nodo seleccionado."
+    }
+  },
+  {
+    "id": "UT15-Q12",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué instrucción XSLT permite recorrer repetidamente todos los nodos seleccionados en una ruta?",
+    "contexto": "Procesamiento iterativo de conjuntos de nodos en transformaciones XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:for-each>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:output>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:template match=\"/\">"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:comment>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El bloque de utilización de plantillas presenta <xsl:for-each> como la instrucción que selecciona y recorre de forma repetitiva los elementos indicados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<xsl:output> define características del formato final, no recorre nodos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La plantilla inicial establece una regla de aplicación, pero no reemplaza al bucle de recorrido repetitivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:comment> sirve para generar comentarios, no para iterar."
+        }
+      ],
+      "resumen_didactico": "Cuando una transformación debe repetir la misma acción sobre muchos nodos, usa for-each.",
+      "ejemplo_practico": "Puede recorrer todos los productos de un inventario y crear una fila HTML por cada uno.",
+      "conclusion_final": "La respuesta correcta es la a, porque <xsl:for-each> recorre repetidamente los nodos seleccionados."
+    }
+  },
+  {
+    "id": "UT15-Q13",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "En XPath, ¿qué expresa la ruta /empresa/empleado/nombre?",
+    "contexto": "Interpretación de rutas absolutas dentro de un documento XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una búsqueda absoluta desde la raíz hasta el nodo nombre"
+      },
+      {
+        "clave": "b",
+        "texto": "Una búsqueda de cualquier nombre en cualquier nivel del documento"
+      },
+      {
+        "clave": "c",
+        "texto": "Una selección exclusiva de atributos llamados nombre"
+      },
+      {
+        "clave": "d",
+        "texto": "Una instrucción de borrado sobre el nodo nombre"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El tema de XPath muestra que las rutas absolutas comienzan en la raíz y avanzan paso a paso por la jerarquía del XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esa búsqueda en cualquier nivel se expresaría con // y no con una ruta absoluta detallada desde la raíz."
+        },
+        {
+          "clave": "c",
+          "motivo": "Para atributos se usa @, no una secuencia simple de nombres de elementos."
+        },
+        {
+          "clave": "d",
+          "motivo": "XPath selecciona rutas y nodos; no define aquí una operación de borrado."
+        }
+      ],
+      "resumen_didactico": "Una ruta que empieza por / sigue el camino exacto desde la raíz del documento.",
+      "ejemplo_practico": "/empresa/empleado/nombre localiza el nombre dentro de empleado dentro de empresa.",
+      "conclusion_final": "La respuesta correcta es la a, porque representa una ruta absoluta desde la raíz hasta nombre."
+    }
+  },
+  {
+    "id": "UT15-Q14",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué lenguaje se presenta en el módulo como un superconjunto de XPath orientado a consultas más complejas sobre XML?",
+    "contexto": "Consulta avanzada sobre documentos XML y bases de datos nativas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XQuery"
+      },
+      {
+        "clave": "b",
+        "texto": "XHTML"
+      },
+      {
+        "clave": "c",
+        "texto": "XPointer"
+      },
+      {
+        "clave": "d",
+        "texto": "CSS3"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de almacenamiento de información explica que XQuery amplía las capacidades de XPath y permite consultas complejas, filtrado, ordenación y generación de resultados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XHTML es una variante estructural de HTML, no un lenguaje de consultas sobre XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "XPointer es más específico para referenciar partes de documentos, pero no se presenta como el superconjunto general de XPath para consultas."
+        },
+        {
+          "clave": "d",
+          "motivo": "CSS3 es un lenguaje de estilo visual y no pertenece al ámbito de consultas XML."
+        }
+      ],
+      "resumen_didactico": "XPath localiza; XQuery permite consultar y trabajar con los datos de forma más potente.",
+      "ejemplo_practico": "Con XQuery puedes filtrar documentos XML y devolver una lista HTML generada desde los resultados.",
+      "conclusion_final": "La respuesta correcta es la a, porque XQuery se presenta como un superconjunto de XPath para consultas avanzadas."
+    }
+  },
+  {
+    "id": "UT15-Q15",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué sintaxis de XQuery se usa para recorrer, filtrar, ordenar y devolver resultados de forma estructurada?",
+    "contexto": "Fundamentos de XQuery para construir consultas completas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FLWOR"
+      },
+      {
+        "clave": "b",
+        "texto": "CRUD"
+      },
+      {
+        "clave": "c",
+        "texto": "SOAP"
+      },
+      {
+        "clave": "d",
+        "texto": "REST"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El módulo explica la sintaxis FLWOR como la forma clásica de recorrer secuencias, aplicar filtros, ordenar resultados y devolver una salida en XQuery.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "CRUD resume operaciones de gestión de datos, pero no es la sintaxis de consulta de XQuery."
+        },
+        {
+          "clave": "c",
+          "motivo": "SOAP es un protocolo de mensajería, no una estructura interna de XQuery."
+        },
+        {
+          "clave": "d",
+          "motivo": "REST es un estilo arquitectónico para servicios web, no la sintaxis de consulta sobre XML."
+        }
+      ],
+      "resumen_didactico": "FLWOR es la estructura clásica de trabajo en XQuery.",
+      "ejemplo_practico": "Puede usarse para recorrer pacientes, filtrar por fecha, ordenar por nombre y devolver una lista XHTML.",
+      "conclusion_final": "La respuesta correcta es la a, porque FLWOR es la sintaxis usada para consultas estructuradas en XQuery."
+    }
+  },
+  {
+    "id": "UT15-Q16",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué desventaja principal presentan los ficheros convencionales frente a bases de datos mejor preparadas cuando varios usuarios acceden a la vez?",
+    "contexto": "Limitaciones de los ficheros simples en entornos con acceso simultáneo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Problemas de concurrencia e integridad al trabajar varios usuarios a la vez"
+      },
+      {
+        "clave": "b",
+        "texto": "Imposibilidad total de almacenar texto en formato XML"
+      },
+      {
+        "clave": "c",
+        "texto": "Obligación de usar XSLT en cada lectura"
+      },
+      {
+        "clave": "d",
+        "texto": "Incompatibilidad absoluta con sistemas operativos modernos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de almacenamiento remarca que los ficheros convencionales no mantienen bien estándares como la concurrencia cuando varios procesos acceden o modifican datos simultáneamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Sí pueden almacenar XML como texto, aunque no gestionen bien concurrencia, seguridad o eficiencia."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es obligatorio usar XSLT para leer un fichero XML almacenado en un sistema convencional."
+        },
+        {
+          "clave": "d",
+          "motivo": "El problema destacado no es la incompatibilidad con sistemas modernos, sino su debilidad en gestión concurrente."
+        }
+      ],
+      "resumen_didactico": "Los ficheros simples fallan especialmente cuando varias personas o procesos trabajan sobre ellos al mismo tiempo.",
+      "ejemplo_practico": "Si dos empleados editan el mismo archivo XML compartido, puede haber bloqueos o pérdida de cambios.",
+      "conclusion_final": "La respuesta correcta es la a, porque la gran debilidad es la concurrencia y la integridad con acceso simultáneo."
+    }
+  },
+  {
+    "id": "UT15-Q17",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué base de datos XML nativa se estudia específicamente en el módulo como ejemplo principal de instalación y uso?",
+    "contexto": "Herramientas y motores XML nativos tratados en la parte práctica del módulo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "eXist-db"
+      },
+      {
+        "clave": "b",
+        "texto": "MongoDB"
+      },
+      {
+        "clave": "c",
+        "texto": "PostgreSQL"
+      },
+      {
+        "clave": "d",
+        "texto": "MariaDB"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de almacenamiento XML nativo toma eXist-db como ejemplo principal para explicar instalación, arranque y herramientas de trabajo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "MongoDB aparece como referencia documental moderna, pero no es la base principal instalada paso a paso en el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "PostgreSQL es una base relacional, no la base XML nativa central del tema."
+        },
+        {
+          "clave": "d",
+          "motivo": "MariaDB se asocia a bases de datos relacionales y no al motor XML nativo principal estudiado."
+        }
+      ],
+      "resumen_didactico": "El motor XML nativo de referencia práctica en el módulo es eXist-db.",
+      "ejemplo_practico": "El alumnado estudia cómo descargar el .jar, instalarlo y arrancarlo en local.",
+      "conclusion_final": "La respuesta correcta es la a, porque eXist-db es la base XML nativa estudiada de forma principal."
+    }
+  },
+  {
+    "id": "UT15-Q18",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué herramienta web integrada de eXist-db se describe como un IDE pensado para escribir, ejecutar y probar consultas XQuery directamente sobre la base activa?",
+    "contexto": "Entorno de trabajo integrado asociado a eXist-db.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "eXide"
+      },
+      {
+        "clave": "b",
+        "texto": "XMLSpy Web"
+      },
+      {
+        "clave": "c",
+        "texto": "FeedForAll"
+      },
+      {
+        "clave": "d",
+        "texto": "Power BI Query Studio"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de herramientas presenta eXide como el IDE web oficial de eXist-db para escribir, compilar y ejecutar XQuery directamente sobre la base activa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XMLSpy es un editor XML profesional, pero no el IDE web integrado propio de eXist-db."
+        },
+        {
+          "clave": "c",
+          "motivo": "FeedForAll se relaciona con la creación y validación de feeds, no con bases XML nativas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Power BI pertenece al ámbito analítico y no es la herramienta integrada de consultas XQuery de eXist-db."
+        }
+      ],
+      "resumen_didactico": "eXide es el panel de trabajo web de eXist-db para XQuery.",
+      "ejemplo_practico": "Desde el navegador se puede escribir una consulta FLWOR y ver el resultado al instante.",
+      "conclusion_final": "La respuesta correcta es la a, porque eXide es el IDE web asociado a eXist-db."
+    }
+  },
+  {
+    "id": "UT15-Q19",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "En sindicación de contenidos, ¿qué función cumple un agregador?",
+    "contexto": "Herramientas de recepción y filtrado automático de feeds.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Filtrar y centralizar automáticamente la información que el usuario desea recibir"
+      },
+      {
+        "clave": "b",
+        "texto": "Transformar todos los feeds en consultas SQL"
+      },
+      {
+        "clave": "c",
+        "texto": "Reemplazar por completo a los servidores web"
+      },
+      {
+        "clave": "d",
+        "texto": "Cifrar el contenido del canal antes de publicarlo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad sobre sindicación explica que los agregadores permiten crear un perfil de interés y filtrar automáticamente la información recibida de múltiples fuentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los agregadores no convierten feeds en SQL; su función es consumir y organizar contenidos sindicados."
+        },
+        {
+          "clave": "c",
+          "motivo": "No sustituyen servidores web, sino que leen y centralizan la información publicada por ellos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El cifrado no es la función principal del agregador en el temario."
+        }
+      ],
+      "resumen_didactico": "Un agregador reúne y filtra feeds para mostrar solo la información relevante al usuario.",
+      "ejemplo_practico": "Puede concentrar alertas de seguridad, blogs técnicos y noticias de varias webs en una sola interfaz.",
+      "conclusion_final": "La respuesta correcta es la a, porque un agregador centraliza y filtra automáticamente la información sindicada."
+    }
+  },
+  {
+    "id": "UT15-Q20",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué formato de sindicación se estudia como la alternativa moderna a RSS desarrollada formalmente para corregir ciertas inconsistencias?",
+    "contexto": "Comparación entre RSS y su alternativa moderna.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Atom"
+      },
+      {
+        "clave": "b",
+        "texto": "WML"
+      },
+      {
+        "clave": "c",
+        "texto": "SOAP"
+      },
+      {
+        "clave": "d",
+        "texto": "DTD"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El módulo explica que Atom surge como una alternativa moderna y más formalmente estandarizada frente a RSS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "WML pertenece a otro contexto de representación y no a la sindicación moderna tratada aquí."
+        },
+        {
+          "clave": "c",
+          "motivo": "SOAP es un protocolo de mensajería, no un formato de feed alternativo a RSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "DTD define reglas estructurales, pero no es un estándar de sindicación."
+        }
+      ],
+      "resumen_didactico": "Si RSS es el formato clásico, Atom es la alternativa moderna destacada en el módulo.",
+      "ejemplo_practico": "Un servicio puede publicar noticias técnicas en Atom usando un elemento raíz feed en lugar de rss.",
+      "conclusion_final": "La respuesta correcta es la a, porque Atom se estudia como alternativa moderna a RSS."
+    }
+  },
+  {
+    "id": "UT15-Q21",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué proceso se recomienda realizar siempre antes de publicar un feed RSS o Atom para detectar fallos de sintaxis o estructura?",
+    "contexto": "Buenas prácticas previas a la publicación de canales sindicados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Validarlo con un servicio o herramienta de comprobación"
+      },
+      {
+        "clave": "b",
+        "texto": "Convertirlo primero en PDF para revisar su estética"
+      },
+      {
+        "clave": "c",
+        "texto": "Compilarlo como si fuera una aplicación Java"
+      },
+      {
+        "clave": "d",
+        "texto": "Pasarlo a una base de datos relacional antes de subirlo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de sindicación insiste en validar el feed con herramientas como el validador del W3C u otras similares antes de publicarlo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Revisar un feed como PDF no garantiza que su XML sea correcto ni que un agregador pueda leerlo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un feed no se compila como una aplicación Java; se valida sintácticamente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Subirlo a una base relacional no sustituye la validación del canal XML."
+        }
+      ],
+      "resumen_didactico": "Antes de publicar un feed, hay que validarlo para detectar errores silenciosos o de carga.",
+      "ejemplo_practico": "Un ampersand mal escapado puede romper todo el feed y ser detectado por un validador.",
+      "conclusion_final": "La respuesta correcta es la a, porque la validación previa es la práctica recomendada antes de publicar."
+    }
+  },
+  {
+    "id": "UT15-Q22",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué sistema se especializa en gestionar la relación con los clientes, equilibrando fidelización y captación de nuevos consumidores?",
+    "contexto": "Diferenciación entre sistemas empresariales según su finalidad principal.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CRM"
+      },
+      {
+        "clave": "b",
+        "texto": "OLAP"
+      },
+      {
+        "clave": "c",
+        "texto": "DTD"
+      },
+      {
+        "clave": "d",
+        "texto": "XQuery"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La parte de sistemas de gestión empresarial define el CRM como el sistema orientado específicamente a la relación con clientes, su fidelización y la búsqueda de nuevos consumidores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "OLAP se centra en análisis multidimensional de datos, no en la gestión directa de relaciones con clientes."
+        },
+        {
+          "clave": "c",
+          "motivo": "DTD pertenece al mundo XML y no a la gestión comercial empresarial."
+        },
+        {
+          "clave": "d",
+          "motivo": "XQuery es un lenguaje de consulta XML, sin función de gestión de clientes."
+        }
+      ],
+      "resumen_didactico": "CRM = gestión de la relación con clientes.",
+      "ejemplo_practico": "Permite registrar contactos, campañas, historial comercial y acciones postventa.",
+      "conclusion_final": "La respuesta correcta es la a, porque el CRM se especializa en la relación con clientes."
+    }
+  },
+  {
+    "id": "UT15-Q23",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué diferencia esencial existe entre dashboard y scorecard en el análisis empresarial?",
+    "contexto": "Herramientas visuales de business intelligence y seguimiento de métricas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El dashboard muestra métricas actuales y el scorecard compara resultados con objetivos o referencias previas"
+      },
+      {
+        "clave": "b",
+        "texto": "El dashboard solo funciona en local y el scorecard solo en la nube"
+      },
+      {
+        "clave": "c",
+        "texto": "El dashboard cifra datos y el scorecard los descifra"
+      },
+      {
+        "clave": "d",
+        "texto": "No existe diferencia funcional entre ambos conceptos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de BI explica que el dashboard presenta métricas, incluso en tiempo real, mientras que el scorecard sirve para comparar el rendimiento actual con objetivos o referencias históricas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La diferencia tratada no depende del lugar de ejecución, sino de la función analítica de cada herramienta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ninguno de los dos conceptos se define por cifrado o descifrado de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí existe una diferencia funcional clara: monitorización actual frente a comparación con metas o patrones."
+        }
+      ],
+      "resumen_didactico": "Dashboard = ver qué pasa ahora. Scorecard = comparar contra metas o histórico.",
+      "ejemplo_practico": "Un dashboard muestra incidencias actuales; un scorecard indica si este mes se ha superado el objetivo máximo de fallos.",
+      "conclusion_final": "La respuesta correcta es la a, porque resume correctamente la función de cada herramienta."
+    }
+  },
+  {
+    "id": "UT15-Q24",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué tecnología analítica permite observar datos desde múltiples dimensiones para descubrir patrones combinando variables distintas?",
+    "contexto": "Análisis multidimensional de datos empresariales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "OLAP"
+      },
+      {
+        "clave": "b",
+        "texto": "RSS"
+      },
+      {
+        "clave": "c",
+        "texto": "DTD"
+      },
+      {
+        "clave": "d",
+        "texto": "XHTML"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El módulo empresarial define OLAP como procesamiento analítico en línea, orientado a extraer y visualizar datos seleccionados desde múltiples ángulos o dimensiones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "RSS sirve para sindicación de contenidos y no para análisis multidimensional."
+        },
+        {
+          "clave": "c",
+          "motivo": "DTD valida estructura XML, sin relación con cubos analíticos o análisis dimensional."
+        },
+        {
+          "clave": "d",
+          "motivo": "XHTML se refiere a la estructuración web y no al análisis empresarial multidimensional."
+        }
+      ],
+      "resumen_didactico": "OLAP permite cruzar dimensiones y analizar grandes volúmenes de datos desde varias perspectivas.",
+      "ejemplo_practico": "Puede analizar ventas por provincia, mes, producto y canal comercial al mismo tiempo.",
+      "conclusion_final": "La respuesta correcta es la a, porque OLAP es la tecnología asociada al análisis multidimensional."
+    }
+  },
+  {
+    "id": "UT15-Q25",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué rasgo define a un ERP frente a un CRM dentro de una empresa?",
+    "contexto": "Comparación entre sistemas de gestión empresarial de propósito global y sistemas centrados en clientes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El ERP integra la gestión general de recursos y áreas de la empresa; el CRM se centra en la relación con clientes"
+      },
+      {
+        "clave": "b",
+        "texto": "El ERP solo sirve para marketing y el CRM solo para contabilidad"
+      },
+      {
+        "clave": "c",
+        "texto": "El ERP valida XML y el CRM aplica hojas de estilo"
+      },
+      {
+        "clave": "d",
+        "texto": "No existe diferencia funcional real entre ambos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad explica que el ERP gestiona de forma integral áreas como finanzas, logística o recursos, mientras que el CRM se especializa en el cliente y la actividad comercial.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La descripción es incorrecta porque reduce ambos sistemas a áreas que no representan su función real."
+        },
+        {
+          "clave": "c",
+          "motivo": "Validación XML y hojas de estilo pertenecen al ámbito de lenguajes de marcas, no a la diferencia ERP/CRM."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí existe una diferencia clara: alcance integral de empresa frente a gestión de clientes."
+        }
+      ],
+      "resumen_didactico": "ERP = empresa en conjunto; CRM = cliente y relación comercial.",
+      "ejemplo_practico": "Un ERP controla compras y nóminas; un CRM registra oportunidades, campañas y postventa.",
+      "conclusion_final": "La respuesta correcta es la a, porque resume la diferencia central entre ERP y CRM."
+    }
+  },
+  {
+    "id": "UT15-Q26",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué modelo de implantación se señala como tendencia dominante en la industria actual para muchos ERP?",
+    "contexto": "Evolución de la implantación de software empresarial.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Modelos SaaS completamente alojados en la nube"
+      },
+      {
+        "clave": "b",
+        "texto": "Instalaciones obligatorias en disquete local"
+      },
+      {
+        "clave": "c",
+        "texto": "Sistemas basados solo en archivos XML manuales"
+      },
+      {
+        "clave": "d",
+        "texto": "Aplicaciones de consola sin red ni base de datos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El módulo indica que la realidad actual de la industria se orienta a modelos SaaS, con ERP alojados en la nube y gestionados por proveedores externos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es una opción anacrónica y no refleja la implantación moderna de ERP."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los ERP actuales no se basan solo en archivos XML manuales, sino en plataformas integradas complejas."
+        },
+        {
+          "clave": "d",
+          "motivo": "No describe un ERP moderno ni conectado a la realidad empresarial actual."
+        }
+      ],
+      "resumen_didactico": "La tendencia dominante es usar ERP como servicio en la nube.",
+      "ejemplo_practico": "La empresa paga una suscripción y accede al ERP desde internet sin mantener toda la infraestructura local.",
+      "conclusion_final": "La respuesta correcta es la a, porque el modelo SaaS en la nube se presenta como tendencia dominante."
+    }
+  },
+  {
+    "id": "UT15-Q27",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Cuál es la ventaja técnica de la modularidad en muchos sistemas ERP?",
+    "contexto": "Adaptación del software empresarial a necesidades concretas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permitir activar o contratar solo los servicios necesarios"
+      },
+      {
+        "clave": "b",
+        "texto": "Obligar a instalar todos los módulos posibles desde el inicio"
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminar cualquier relación con bases de datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Sustituir completamente el uso de CRM y BI"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la modularidad permite ensamblar o activar únicamente los módulos necesarios, evitando pagar por funciones innecesarias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eso sería lo contrario de la modularidad: imponer la instalación completa sin adaptación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La modularidad no elimina el uso de bases de datos; simplemente organiza funcionalidades por partes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un ERP modular no sustituye automáticamente otros sistemas, aunque pueda integrarse con ellos."
+        }
+      ],
+      "resumen_didactico": "La modularidad hace que el ERP se adapte a la empresa en lugar de obligar a usarlo todo.",
+      "ejemplo_practico": "Una pyme puede activar ventas y facturación, dejando recursos humanos para una fase posterior.",
+      "conclusion_final": "La respuesta correcta es la a, porque la modularidad permite usar solo los servicios necesarios."
+    }
+  },
+  {
+    "id": "UT15-Q28",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué servicio online se menciona como referencia clásica para validar la sintaxis de feeds RSS y Atom?",
+    "contexto": "Herramientas de validación de canales de sindicación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El validador online del W3C"
+      },
+      {
+        "clave": "b",
+        "texto": "DriverManager"
+      },
+      {
+        "clave": "c",
+        "texto": "phpMyAdmin"
+      },
+      {
+        "clave": "d",
+        "texto": "Saxon-HE"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La unidad de sindicación menciona el servicio de validación online del W3C como una referencia para comprobar la sintaxis de feeds RSS y Atom.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DriverManager pertenece a JDBC y conexión con bases relacionales, no a validación de feeds."
+        },
+        {
+          "clave": "c",
+          "motivo": "phpMyAdmin administra bases de datos MySQL/MariaDB, no canales RSS/Atom."
+        },
+        {
+          "clave": "d",
+          "motivo": "Saxon es un procesador XSLT/XQuery, pero no el validador online clásico citado para feeds."
+        }
+      ],
+      "resumen_didactico": "Para revisar la sintaxis de un feed, el módulo recomienda usar validadores como el del W3C.",
+      "ejemplo_practico": "Permite detectar línea, error y consejos si el XML del feed está mal formado.",
+      "conclusion_final": "La respuesta correcta es la a, porque el validador online del W3C se cita como referencia clásica."
+    }
+  },
+  {
+    "id": "UT15-Q29",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "¿Qué práctica moderna sustituye, según el contexto laboral del módulo, a la subida manual por FTP de un feed a producción?",
+    "contexto": "Publicación profesional de contenidos sindicados en entornos actuales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Guardar el XML en un repositorio y publicarlo mediante un pipeline CI/CD"
+      },
+      {
+        "clave": "b",
+        "texto": "Mandarlo por correo al administrador para que lo copie a mano"
+      },
+      {
+        "clave": "c",
+        "texto": "Imprimirlo en papel y escanearlo en el servidor"
+      },
+      {
+        "clave": "d",
+        "texto": "Subirlo como imagen PNG al portal corporativo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La nota de contexto laboral indica que el flujo profesional moderno consiste en guardar el archivo en un repositorio y dejar que una tubería CI/CD lo despliegue de forma segura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No representa un flujo profesional moderno ni automatizado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una opción absurda para la publicación de un feed XML en producción."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un feed debe publicarse como XML accesible, no como imagen."
+        }
+      ],
+      "resumen_didactico": "Hoy se publica con repositorios y despliegue automatizado, no copiando archivos a mano por FTP.",
+      "ejemplo_practico": "Un commit en Git puede activar una pipeline que valide y publique el feed automáticamente.",
+      "conclusion_final": "La respuesta correcta es la a, porque el flujo moderno recomendado es repositorio más CI/CD."
+    }
+  },
+  {
+    "id": "UT15-Q30",
+    "tema": "UT15 — Repaso global del módulo Lenguajes de Marcas (Bloque 7)",
+    "pregunta": "En el conjunto del módulo, ¿qué idea conecta HTML, XML, RSS, XSD y XSLT como tecnologías relacionadas?",
+    "contexto": "Visión global del papel de los lenguajes de marcas y tecnologías asociadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Todas participan en la estructuración, validación, transformación, transmisión o presentación de información"
+      },
+      {
+        "clave": "b",
+        "texto": "Todas son bases de datos relacionales orientadas a tablas"
+      },
+      {
+        "clave": "c",
+        "texto": "Todas son lenguajes de programación orientados a objetos"
+      },
+      {
+        "clave": "d",
+        "texto": "Todas se usan exclusivamente para diseñar videojuegos 3D"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El módulo completo muestra que estas tecnologías pertenecen al ecosistema de los lenguajes de marcas y sistemas de gestión de información: unas presentan datos, otras los estructuran, otras los validan, transforman o transmiten.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No son bases de datos relacionales; son tecnologías de marcas, validación, transformación o sindicación."
+        },
+        {
+          "clave": "c",
+          "motivo": "No son lenguajes de programación orientados a objetos, aunque puedan convivir con ellos en proyectos reales."
+        },
+        {
+          "clave": "d",
+          "motivo": "No están orientadas exclusivamente al desarrollo de videojuegos 3D."
+        }
+      ],
+      "resumen_didactico": "La gran idea del módulo es gestionar información: estructurarla, validarla, transformarla, mostrarla y transmitirla.",
+      "ejemplo_practico": "Una empresa puede guardar datos en XML, validarlos con XSD, transformarlos con XSLT, mostrarlos en HTML y difundir noticias con RSS.",
+      "conclusion_final": "La respuesta correcta es la a, porque todas estas tecnologías participan en la gestión integral de la información."
+    }
+  }
+]

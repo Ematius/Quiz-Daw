@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT8-Q01",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Una organización requiere centralizar su información, que actualmente se encuentra aislada en departamentos estancos, para que fluya por un canal único automatizando sus procesos operativos. ¿Qué tipo de plataforma de software debe implantar el departamento técnico?",
+    "contexto": "La empresa tiene información separada por departamentos y necesita centralizarla para automatizar procesos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un sistema de gestión empresarial o ERP"
+      },
+      {
+        "clave": "b",
+        "texto": "Un servidor ofimático de procesamiento de textos"
+      },
+      {
+        "clave": "c",
+        "texto": "Un agregador de canales de sindicación web"
+      },
+      {
+        "clave": "d",
+        "texto": "Un sistema de gestión de bases de datos jerárquicas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define los sistemas de gestión empresarial como herramientas de software integradas que automatizan y simplifican los procesos operativos de una organización. También indica que permiten que la información deje de estar aislada en departamentos estancos y fluya por un canal único.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un servidor ofimático de procesamiento de textos sirve para trabajar con documentos, pero no centraliza ni automatiza todos los procesos empresariales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un agregador de canales de sindicación web recopila contenidos o noticias de distintas fuentes, pero no gestiona los recursos internos de una empresa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una base de datos jerárquica puede almacenar información, pero la pregunta habla de una plataforma integrada para automatizar procesos empresariales, no solo de almacenar datos."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta habla de centralizar información de varios departamentos y automatizar procesos de empresa, la respuesta suele ser sistema de gestión empresarial o ERP.",
+      "ejemplo_practico": "Una empresa usa un ERP para conectar ventas, compras, almacén, contabilidad y recursos humanos en una misma plataforma.",
+      "conclusion_final": "La plataforma que debe implantar el departamento técnico es un sistema de gestión empresarial o ERP."
+    }
+  },
+  {
+    "id": "UT8-Q02",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "¿Cómo se define técnicamente un sistema de gestión empresarial en el ámbito del desarrollo y la administración corporativa?",
+    "contexto": "Definición general de sistema de gestión empresarial dentro del temario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un conjunto de herramientas de software integradas que automatizan y simplifican los procesos operativos de una organización en crecimiento"
+      },
+      {
+        "clave": "b",
+        "texto": "Un protocolo de encriptación para asegurar transferencias bancarias"
+      },
+      {
+        "clave": "c",
+        "texto": "Un lenguaje de marcas utilizado exclusivamente para la facturación electrónica"
+      },
+      {
+        "clave": "d",
+        "texto": "Un motor de búsqueda basado en inteligencia artificial predictiva"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define un sistema de gestión empresarial como un conjunto de herramientas de software integradas que automatizan y simplifican los procesos operativos de una organización en crecimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La encriptación puede formar parte de la seguridad de un sistema, pero no define un sistema de gestión empresarial."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un lenguaje de marcas, como XML, puede usarse para intercambiar información, pero no es una plataforma de gestión empresarial."
+        },
+        {
+          "clave": "d",
+          "motivo": "La inteligencia artificial predictiva puede ayudar en el análisis de datos, pero no representa la definición técnica de un sistema de gestión empresarial."
+        }
+      ],
+      "resumen_didactico": "Un sistema de gestión empresarial es software integrado para organizar, automatizar y simplificar procesos de una empresa.",
+      "ejemplo_practico": "Una empresa usa un sistema de gestión empresarial para conectar ventas, compras, almacén y contabilidad sin tener que trabajar con herramientas aisladas.",
+      "conclusion_final": "La definición correcta es la opción a, porque describe exactamente la idea de software integrado que automatiza procesos empresariales."
+    }
+  },
+  {
+    "id": "UT8-Q03",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "El equipo de desarrollo necesita integrar las interacciones bidireccionales de la empresa utilizando la API de WhatsApp Business, bots de Telegram y notificaciones push. ¿Sobre qué sistema de gestión de la información deben conectarse estas herramientas de comunicación?",
+    "contexto": "La empresa quiere conectar canales modernos de comunicación con clientes, como WhatsApp Business, Telegram y notificaciones push.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sobre el módulo de contabilidad financiera"
+      },
+      {
+        "clave": "b",
+        "texto": "Sobre el terminal punto de venta físico"
+      },
+      {
+        "clave": "c",
+        "texto": "Sobre la base de datos ofimática de recursos humanos"
+      },
+      {
+        "clave": "d",
+        "texto": "Sobre el sistema de gestión de relaciones con clientes o CRM"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el CRM gestiona la relación con los clientes y que actualmente puede integrarse con canales como WhatsApp Business, bots de Telegram y notificaciones push para mantener el contacto postventa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El módulo de contabilidad financiera se centra en facturas, cuentas y operaciones económicas, no en la comunicación directa con clientes."
+        },
+        {
+          "clave": "b",
+          "motivo": "El terminal punto de venta físico sirve para gestionar ventas y cobros, pero no es el sistema principal para mantener relaciones e interacciones con clientes."
+        },
+        {
+          "clave": "c",
+          "motivo": "La base de datos de recursos humanos gestiona información de empleados, no canales de comunicación con clientes."
+        }
+      ],
+      "resumen_didactico": "Cuando la pregunta habla de comunicación, relación, postventa o fidelización de clientes, la respuesta suele ser CRM.",
+      "ejemplo_practico": "Una empresa conecta WhatsApp Business a su CRM para enviar avisos, resolver dudas y hacer seguimiento de clientes después de una compra.",
+      "conclusion_final": "Estas herramientas de comunicación deben conectarse sobre el CRM, porque es el sistema encargado de gestionar la relación con los clientes."
+    }
+  },
+  {
+    "id": "UT8-Q04",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Durante el diseño de una estrategia de expansión, el equipo comercial necesita una plataforma informática que permita crear un margen de seguridad manteniendo a los clientes actuales fieles mientras se busca a nuevos consumidores. ¿Qué sistema garantiza este equilibrio?",
+    "contexto": "El equipo comercial necesita fidelizar clientes actuales y captar nuevos consumidores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El Customer Relationship Management (CRM)"
+      },
+      {
+        "clave": "b",
+        "texto": "El sistema OLAP multidimensional"
+      },
+      {
+        "clave": "c",
+        "texto": "El servidor Apache local con MySQL"
+      },
+      {
+        "clave": "d",
+        "texto": "El sistema de Planificación de Recursos Empresariales (ERP)"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el CRM es un sistema informático especializado en gestionar las relaciones con los consumidores, manteniendo el equilibrio entre conservar los clientes actuales y buscar otros nuevos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "OLAP sirve para analizar datos de forma multidimensional, pero no es el sistema específico para gestionar la relación con clientes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Apache con MySQL puede formar parte de una infraestructura técnica, pero no define una plataforma de fidelización y captación de clientes."
+        },
+        {
+          "clave": "d",
+          "motivo": "El ERP gestiona recursos empresariales de forma integral, pero la pregunta se centra específicamente en clientes, fidelización y nuevos consumidores, que corresponde al CRM."
+        }
+      ],
+      "resumen_didactico": "CRM significa gestión de relaciones con clientes: sirve para fidelizar a los actuales y captar nuevos.",
+      "ejemplo_practico": "Una empresa usa un CRM para recordar compras anteriores, enviar ofertas personalizadas y hacer seguimiento de posibles nuevos clientes.",
+      "conclusion_final": "El sistema que garantiza ese equilibrio comercial es el CRM."
+    }
+  },
+  {
+    "id": "UT8-Q05",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Según los fundamentos de la gestión comercial moderna, ¿cuáles son los tres pilares fundamentales sobre los que se basa de manera general un sistema CRM?",
+    "contexto": "La pregunta pide identificar los tres pilares básicos de un CRM según el temario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La recolección de datos, la limpieza de datos y la evaluación de modelos"
+      },
+      {
+        "clave": "b",
+        "texto": "La contabilidad, el almacenamiento y los recursos humanos"
+      },
+      {
+        "clave": "c",
+        "texto": "El marketing, la venta y el servicio postventa"
+      },
+      {
+        "clave": "d",
+        "texto": "La infraestructura, el software como servicio y la plataforma como servicio"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el CRM se basa de manera general en tres pilares fundamentales: el marketing, la venta y el servicio postventa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La recolección, limpieza y evaluación de datos pertenecen más al proceso de minería de datos, no a los pilares del CRM."
+        },
+        {
+          "clave": "b",
+          "motivo": "La contabilidad, el almacenamiento y los recursos humanos son áreas que pueden formar parte de un ERP, pero no son los tres pilares del CRM."
+        },
+        {
+          "clave": "d",
+          "motivo": "Infraestructura, SaaS y plataforma como servicio son conceptos relacionados con modelos tecnológicos o servicios en la nube, no con los pilares comerciales del CRM."
+        }
+      ],
+      "resumen_didactico": "Los tres pilares del CRM son marketing para atraer, venta para generar ingresos y postventa para fidelizar.",
+      "ejemplo_practico": "Una empresa lanza una campaña de marketing, vende un producto y después atiende al cliente para resolver dudas y conseguir que vuelva a comprar.",
+      "conclusion_final": "La respuesta correcta es la opción c: marketing, venta y servicio postventa."
+    }
+  },
+  {
+    "id": "UT8-Q06",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Un técnico junior desea especializarse para asegurar su empleabilidad en los departamentos de operaciones comerciales de grandes empresas tecnológicas. ¿Qué certificaciones oficiales de sistemas CRM reconocidos en el mercado debería priorizar?",
+    "contexto": "La pregunta se refiere a certificaciones útiles en sistemas CRM para mejorar la empleabilidad en empresas tecnológicas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Certificaciones de SugarCRM o SalesBoom"
+      },
+      {
+        "clave": "b",
+        "texto": "Certificaciones de Apache o GNU"
+      },
+      {
+        "clave": "c",
+        "texto": "Certificaciones de Dolibarr o Tryton"
+      },
+      {
+        "clave": "d",
+        "texto": "Certificaciones de Salesforce o Microsoft Dynamics"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario menciona varios CRM del mercado, pero destaca como recomendación profesional priorizar certificaciones oficiales de Salesforce o Microsoft Dynamics para mejorar la empleabilidad en grandes empresas tecnológicas o industriales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "SugarCRM y SalesBoom aparecen como sistemas CRM reconocidos, pero el temario no los señala como las certificaciones prioritarias para asegurar empleabilidad."
+        },
+        {
+          "clave": "b",
+          "motivo": "Apache y GNU no son sistemas CRM. Apache es un servidor web y GNU está relacionado con licencias/software libre."
+        },
+        {
+          "clave": "c",
+          "motivo": "Dolibarr y Tryton son sistemas ERP mencionados en el temario, no las certificaciones CRM prioritarias indicadas para operaciones comerciales."
+        }
+      ],
+      "resumen_didactico": "Para CRM y empleabilidad, el temario destaca Salesforce y Microsoft Dynamics como opciones especialmente importantes.",
+      "ejemplo_practico": "Un técnico que sabe administrar Salesforce o Microsoft Dynamics puede trabajar configurando clientes, campañas, ventas y seguimiento comercial en una gran empresa.",
+      "conclusion_final": "La respuesta correcta es la opción d: certificaciones de Salesforce o Microsoft Dynamics."
+    }
+  },
+  {
+    "id": "UT8-Q07",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "¿Qué modelo de negocio y licenciamiento es frecuente encontrar en los sistemas ERP de código abierto para monetizar su producto en la industria actual?",
+    "contexto": "La pregunta trata sobre cómo suelen monetizarse los ERP de código abierto según el temario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Modelos freemium donde las funciones principales son libres, pero las herramientas avanzadas están bloqueadas tras un muro de pago"
+      },
+      {
+        "clave": "b",
+        "texto": "Modelos de pago único vitalicio"
+      },
+      {
+        "clave": "c",
+        "texto": "Modelos totalmente gratuitos sostenidos por donaciones anónimas"
+      },
+      {
+        "clave": "d",
+        "texto": "Modelos de suscripción exclusiva sin acceso al código fuente"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, aunque existen ERP de código abierto, en la práctica no suelen salir completamente gratis. Es frecuente que sigan un modelo freemium: las funciones básicas son libres, pero las herramientas avanzadas son de pago.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El pago único vitalicio no es el modelo que destaca el temario para los ERP de código abierto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Aunque puede existir software gratuito sostenido por donaciones, el temario indica que los ERP de código abierto suelen monetizarse mediante funciones avanzadas de pago."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una suscripción exclusiva sin acceso al código fuente se acerca más a software propietario o SaaS cerrado, no a un ERP de código abierto."
+        }
+      ],
+      "resumen_didactico": "Muchos ERP de código abierto usan modelo freemium: parte básica gratis y funciones avanzadas de pago.",
+      "ejemplo_practico": "Una empresa puede instalar un ERP gratuito para funciones básicas, pero pagar si necesita módulos avanzados de facturación, automatización o integración.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque describe el modelo freemium mencionado en el temario."
+    }
+  },
+  {
+    "id": "UT8-Q08",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Una pequeña empresa requiere instalar un ERP de código abierto y fuertemente modular para activar servicios individualmente. A nivel de infraestructura técnica, el departamento de IT preparará un servidor web Apache y una base de datos MySQL. ¿Qué software encaja exactamente con estas especificaciones?",
+    "contexto": "La empresa busca un ERP de código abierto, modular, pensado para pymes y que funcione sobre Apache y MySQL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SAP Business ByDesign"
+      },
+      {
+        "clave": "b",
+        "texto": "Dolibarr"
+      },
+      {
+        "clave": "c",
+        "texto": "WorkPLAN"
+      },
+      {
+        "clave": "d",
+        "texto": "Odoo"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario describe Dolibarr como un ERP de código abierto y modular, que incluye CRM, se ejecuta sobre Apache y MySQL, y es ideal para pequeñas y medianas empresas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "SAP Business ByDesign aparece en el temario como una solución en la nube, robusta y segura, pero no como el ERP de código abierto sobre Apache y MySQL."
+        },
+        {
+          "clave": "c",
+          "motivo": "WorkPLAN es una solución de pago especializada en fabricación a medida, no un ERP de código abierto basado en Apache y MySQL."
+        },
+        {
+          "clave": "d",
+          "motivo": "Odoo es un ERP de código abierto, pero el temario no lo asocia específicamente con Apache, MySQL e ideal para pymes; esa descripción corresponde a Dolibarr."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta menciona ERP de código abierto, modular, Apache, MySQL y pymes, la respuesta clave es Dolibarr.",
+      "ejemplo_practico": "Una pyme instala Dolibarr en un servidor Apache con MySQL y activa solo los módulos que necesita, como ventas, facturación o CRM.",
+      "conclusion_final": "El software que encaja exactamente con esas especificaciones es Dolibarr."
+    }
+  },
+  {
+    "id": "UT8-Q09",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Una corporación internacional necesita gestionar grandes volúmenes de datos y redes de negocios complejas sin mantener servidores físicos en sus oficinas. ¿Qué ERP propietario, considerado uno de los más robustos y avanzados, está diseñado por naturaleza para mantenerse en la nube (cloud)?",
+    "contexto": "La empresa necesita un ERP robusto, avanzado, en la nube y preparado para grandes volúmenes de datos y redes de negocios complejas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "WorkPLAN"
+      },
+      {
+        "clave": "b",
+        "texto": "Tryton"
+      },
+      {
+        "clave": "c",
+        "texto": "Odoo"
+      },
+      {
+        "clave": "d",
+        "texto": "SAP Business ByDesign"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario describe SAP Business ByDesign como un ERP en la nube, muy robusto y seguro, ideal para big data y redes de negocios complejas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "WorkPLAN es una solución de pago especializada en fabricación a medida, pero no es el ERP que el temario destaca como cloud, robusto e ideal para big data."
+        },
+        {
+          "clave": "b",
+          "motivo": "Tryton es un ERP de código abierto con licencia GNU y sistema modular, no el ERP propietario en la nube señalado en la pregunta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Odoo es un ERP de código abierto con versión gratuita y de pago, pero no es el sistema descrito en el temario como cloud, robusto e ideal para big data y redes complejas."
+        }
+      ],
+      "resumen_didactico": "Cuando la pregunta menciona ERP en la nube, robustez, seguridad, big data y redes complejas, la respuesta es SAP Business ByDesign.",
+      "ejemplo_practico": "Una multinacional usa SAP Business ByDesign para gestionar datos, procesos y operaciones globales desde la nube sin mantener servidores físicos propios.",
+      "conclusion_final": "El ERP propietario diseñado para trabajar en la nube y gestionar grandes volúmenes de datos es SAP Business ByDesign."
+    }
+  },
+  {
+    "id": "UT8-Q10",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "¿Cuál es la realidad actual de la industria respecto a la arquitectura de implantación de los sistemas ERP, alejándose de los servidores locales con Apache y MySQL?",
+    "contexto": "La pregunta compara el modelo tradicional de ERP instalado en servidores locales con el modelo actual usado en la industria.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El retorno a los sistemas de ficheros de texto plano compartidos en red local"
+      },
+      {
+        "clave": "b",
+        "texto": "La migración masiva a modelos SaaS (Software as a Service) 100% alojados en la nube gestionados por proveedores externos"
+      },
+      {
+        "clave": "c",
+        "texto": "La instalación exclusiva mediante discos físicos en ordenadores sin conexión a internet"
+      },
+      {
+        "clave": "d",
+        "texto": "El uso de redes peer-to-peer descentralizadas para almacenar la contabilidad"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que la realidad actual de la industria es la migración a modelos SaaS, es decir, sistemas ERP alojados completamente en la nube y mantenidos por un proveedor externo mediante suscripción.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los ficheros de texto plano compartidos representan una forma antigua y poco integrada de gestión, justo lo contrario de un ERP moderno."
+        },
+        {
+          "clave": "c",
+          "motivo": "La instalación mediante discos físicos y sin conexión a internet no representa la realidad actual de los ERP empresariales, que tienden a la nube."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las redes peer-to-peer no son el modelo habitual de implantación de ERP descrito en el temario."
+        }
+      ],
+      "resumen_didactico": "La tendencia actual en ERP es usar SaaS: software en la nube, por suscripción y mantenido por un proveedor externo.",
+      "ejemplo_practico": "Una empresa paga una cuota mensual por usar su ERP desde internet, sin tener que mantener servidores físicos propios en la oficina.",
+      "conclusion_final": "La respuesta correcta es la opción b: la migración masiva a modelos SaaS alojados en la nube."
+    }
+  },
+  {
+    "id": "UT8-Q11",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Una empresa decide contratar una plataforma de gestión, pero para evitar encarecer el producto con cientos de características que nunca utilizará, el departamento técnico habilita y ensambla únicamente los servicios necesarios. ¿Qué sistema de arquitectura de software se está aplicando?",
+    "contexto": "La empresa quiere usar solo los servicios necesarios de una plataforma de gestión para no pagar por funciones innecesarias.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El modelo jerárquico de bases de datos"
+      },
+      {
+        "clave": "b",
+        "texto": "La encriptación asimétrica"
+      },
+      {
+        "clave": "c",
+        "texto": "La modularidad"
+      },
+      {
+        "clave": "d",
+        "texto": "El procesamiento analítico en línea"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los ERP pueden tener muchas características, pero para evitar pagar por funciones innecesarias se emplea la modularidad, que permite contratar y ensamblar solo los servicios que la empresa necesita.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El modelo jerárquico de bases de datos se refiere a una forma de organizar datos, no a contratar partes concretas de un ERP."
+        },
+        {
+          "clave": "b",
+          "motivo": "La encriptación asimétrica es un método de seguridad, no una forma de dividir una plataforma en servicios activables."
+        },
+        {
+          "clave": "d",
+          "motivo": "El procesamiento analítico en línea u OLAP sirve para analizar datos, no para ensamblar solo los servicios necesarios de una plataforma."
+        }
+      ],
+      "resumen_didactico": "La modularidad permite usar o contratar solo los módulos necesarios de un ERP.",
+      "ejemplo_practico": "Una empresa activa solo los módulos de ventas, almacén y contabilidad porque no necesita todavía recursos humanos ni marketing.",
+      "conclusion_final": "El sistema aplicado es la modularidad, porque permite adaptar el ERP a las necesidades reales de la empresa."
+    }
+  },
+  {
+    "id": "UT8-Q12",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "En el contexto del módulo de ventas y la gestión de inventarios, ¿qué metodología permite calcular la cantidad óptima de mercancía a fabricar o pedir para evitar la escasez o el desperdicio de espacio de almacenamiento?",
+    "contexto": "La pregunta se refiere al módulo de ventas del ERP y a la gestión eficiente del inventario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El modelo freemium escalable"
+      },
+      {
+        "clave": "b",
+        "texto": "El método de doble entrada"
+      },
+      {
+        "clave": "c",
+        "texto": "La minería de datos predictiva"
+      },
+      {
+        "clave": "d",
+        "texto": "El sistema JIT (Just In Time)"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el módulo de ventas puede gestionar el inventario mediante metodologías avanzadas como el sistema JIT (Just In Time), que permite calcular la cantidad óptima de mercancía que se debe fabricar o pedir, evitando escasez o desperdicio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El modelo freemium se refiere a una forma de licenciamiento o negocio del software, no a la gestión de inventarios."
+        },
+        {
+          "clave": "b",
+          "motivo": "El método de doble entrada pertenece al ámbito de la contabilidad, no al cálculo de mercancía óptima en inventario."
+        },
+        {
+          "clave": "c",
+          "motivo": "La minería de datos predictiva puede ayudar a prever comportamientos, pero el temario señala específicamente el sistema JIT para calcular cantidades óptimas de mercancía."
+        }
+      ],
+      "resumen_didactico": "JIT significa Just In Time y busca tener la mercancía necesaria en el momento justo, evitando exceso o falta de stock.",
+      "ejemplo_practico": "Una empresa pide componentes solo cuando los necesita para fabricar, evitando llenar el almacén con material innecesario.",
+      "conclusion_final": "La metodología correcta es el sistema JIT (Just In Time), porque permite optimizar la fabricación o pedido de mercancía."
+    }
+  },
+  {
+    "id": "UT8-Q13",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "El departamento de tecnología debe configurar equipos en mostradores físicos para actualizar el stock en tiempo real y gestionar cobros electrónicos de forma automática. ¿Qué módulo nativo del ERP debe desplegarse y configurarse en estos terminales?",
+    "contexto": "La empresa necesita terminales físicos que actualicen stock y gestionen cobros electrónicos automáticamente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El módulo TPV (Terminal Punto de Venta)"
+      },
+      {
+        "clave": "b",
+        "texto": "El módulo de proyectos"
+      },
+      {
+        "clave": "c",
+        "texto": "El módulo CRM de postventa"
+      },
+      {
+        "clave": "d",
+        "texto": "El módulo de compras a distribuidores"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el módulo TPV (Terminal Punto de Venta) es imprescindible para la venta física y online, ya que actualiza el stock en tiempo real y gestiona cobros electrónicos desde ordenadores, móviles o tablets de forma automática.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El módulo de proyectos sirve para gestionar tareas o proyectos internos, no ventas en mostrador ni cobros electrónicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El módulo CRM de postventa se centra en la relación con clientes después de la venta, no en cobrar ni actualizar stock en terminales físicos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El módulo de compras a distribuidores gestiona pedidos y compras a proveedores, no ventas directas ni cobros en mostrador."
+        }
+      ],
+      "resumen_didactico": "TPV significa Terminal Punto de Venta y se usa para vender, cobrar y actualizar stock automáticamente.",
+      "ejemplo_practico": "Una tienda usa un TPV en caja para cobrar con tarjeta y descontar automáticamente el producto vendido del inventario.",
+      "conclusion_final": "El módulo que debe desplegarse es el TPV, porque está diseñado para ventas físicas, cobros electrónicos y actualización de stock en tiempo real."
+    }
+  },
+  {
+    "id": "UT8-Q14",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Durante la auditoría de procesos internos, el equipo auditor solicita revisar de forma centralizada las altas, bajas, vacaciones y los registros de los sistemas de marcaje de asistencia diaria de la plantilla. ¿Qué módulo específico del ERP gestiona toda esta información?",
+    "contexto": "La pregunta trata sobre la gestión de información relacionada con empleados, contratos, vacaciones y asistencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El módulo de gestión de almacenes"
+      },
+      {
+        "clave": "b",
+        "texto": "El módulo de recursos humanos (HR)"
+      },
+      {
+        "clave": "c",
+        "texto": "El módulo de gestión financiera"
+      },
+      {
+        "clave": "d",
+        "texto": "El módulo de ventas y comercio electrónico"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el módulo de recursos humanos (HR) gestiona altas, bajas, vacaciones, contratos, nóminas y también puede integrarse con sistemas de marcaje para controlar la asistencia diaria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El módulo de gestión de almacenes controla stock, inventario y espacio de almacenamiento, no información laboral de la plantilla."
+        },
+        {
+          "clave": "c",
+          "motivo": "El módulo de gestión financiera se ocupa de contabilidad, facturas y operaciones económicas, no de altas, bajas, vacaciones o asistencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "El módulo de ventas y comercio electrónico gestiona transacciones, clientes, descuentos o ventas online, no la administración interna de empleados."
+        }
+      ],
+      "resumen_didactico": "Todo lo relacionado con empleados dentro del ERP pertenece al módulo de recursos humanos o HR.",
+      "ejemplo_practico": "Una empresa usa el módulo HR para registrar vacaciones, controlar fichajes y gestionar las altas o bajas de sus trabajadores.",
+      "conclusion_final": "El módulo correcto es el de recursos humanos (HR), porque centraliza la gestión de la plantilla."
+    }
+  },
+  {
+    "id": "UT8-Q15",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "A pesar de sus inmensos beneficios a largo plazo, ¿cuáles son los dos grandes inconvenientes iniciales que conlleva la implantación de un ERP desde cero en cualquier organización?",
+    "contexto": "La pregunta se centra en los problemas iniciales que aparecen al implantar un ERP desde cero.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La pérdida total de los datos anteriores y la obligación de contratar a empresas extranjeras"
+      },
+      {
+        "clave": "b",
+        "texto": "Coste y complejidad técnica, junto con la resistencia al cambio del personal"
+      },
+      {
+        "clave": "c",
+        "texto": "La vulnerabilidad frente a virus informáticos y el espacio físico necesario para los servidores"
+      },
+      {
+        "clave": "d",
+        "texto": "La incompatibilidad con formatos CSV y la dependencia exclusiva del formato XML"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que implantar un ERP desde cero tiene dos grandes inconvenientes: el coste y la complejidad técnica, y la resistencia al cambio de los empleados acostumbrados a herramientas más simples.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El temario no indica que implantar un ERP implique perder todos los datos anteriores ni que sea obligatorio contratar empresas extranjeras."
+        },
+        {
+          "clave": "c",
+          "motivo": "La seguridad y los servidores pueden ser aspectos a considerar, pero no son los dos grandes inconvenientes iniciales destacados en el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario explica que los ERP pueden trabajar con formatos como CSV y XML para importar y exportar información, no que sean incompatibles con ellos."
+        }
+      ],
+      "resumen_didactico": "Implantar un ERP suele costar dinero, ser técnicamente complejo y generar resistencia en trabajadores acostumbrados a otros sistemas.",
+      "ejemplo_practico": "Un encargado que lleva años usando Excel puede sentirse perdido al empezar a usar un ERP nuevo, aunque a largo plazo le facilite el trabajo.",
+      "conclusion_final": "La respuesta correcta es la opción b: coste y complejidad técnica, junto con resistencia al cambio del personal."
+    }
+  },
+  {
+    "id": "UT8-Q16",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Un ingeniero de bases de datos necesita realizar una migración masiva de información histórica desde un sistema de gestión obsoleto hacia un nuevo entorno ERP, primando la eficiencia absoluta por encima de la facilidad de uso. ¿Qué método de importación y exportación deberá emplear?",
+    "contexto": "La pregunta se centra en una migración masiva de datos donde se prioriza la eficiencia técnica por encima de la facilidad de uso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Documentos ofimáticos como PDF"
+      },
+      {
+        "clave": "b",
+        "texto": "Programas de conexión directa a la base de datos"
+      },
+      {
+        "clave": "c",
+        "texto": "Ficheros de valores separados por comas"
+      },
+      {
+        "clave": "d",
+        "texto": "Ficheros de texto enriquecido"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que los programas de conexión directa a la base de datos son el método más complejo, pero también el más eficiente para realizar migraciones masivas de información de un sistema a otro.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los documentos ofimáticos como PDF son útiles para lectura o modificación manual, pero no son el método más eficiente para migraciones masivas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los ficheros CSV son ligeros y sencillos, pero la pregunta prioriza la eficiencia absoluta en una migración masiva, por lo que encaja mejor la conexión directa a base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los ficheros de texto enriquecido no aparecen como método principal del temario para importar o exportar información en un ERP."
+        }
+      ],
+      "resumen_didactico": "Para migraciones grandes y eficientes, lo más potente es conectarse directamente a la base de datos.",
+      "ejemplo_practico": "Un técnico conecta el ERP antiguo y el nuevo a nivel de base de datos para transferir miles de registros de clientes, facturas y productos sin hacerlo manualmente.",
+      "conclusion_final": "El método correcto es usar programas de conexión directa a la base de datos, porque es el más eficiente para migraciones masivas."
+    }
+  },
+  {
+    "id": "UT8-Q17",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Al preparar archivos ligeros y sencillos en texto plano para importar datos tabulares a un ERP, ¿qué requisito geométrico y estructural estricto exigen las plantillas CSV para que el sistema no se rompa al leerlos?",
+    "contexto": "La pregunta trata sobre el uso de ficheros CSV para importar datos tabulares en un ERP.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Todos los archivos deben contener el mismo número de campos y en la misma posición geométrica"
+      },
+      {
+        "clave": "b",
+        "texto": "Deben contener etiquetas de apertura y cierre para cada dato"
+      },
+      {
+        "clave": "c",
+        "texto": "Cada registro debe tener una longitud de caracteres aleatoria y flexible"
+      },
+      {
+        "clave": "d",
+        "texto": "Deben estar encriptados mediante algoritmos de clave pública"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que los ficheros CSV son ligeros y sencillos, pero requieren un orden estricto mediante plantillas. Esto significa que los datos deben respetar siempre la misma estructura de campos y posiciones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las etiquetas de apertura y cierre son propias de XML, no de CSV."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un CSV no debe tener una estructura aleatoria o flexible si se quiere importar correctamente; necesita mantener un orden claro."
+        },
+        {
+          "clave": "d",
+          "motivo": "La encriptación mediante clave pública pertenece al ámbito de la seguridad, no al requisito estructural básico de un CSV."
+        }
+      ],
+      "resumen_didactico": "Un CSV funciona bien si todos los datos respetan la misma estructura: mismos campos y mismo orden.",
+      "ejemplo_practico": "Si una plantilla CSV tiene las columnas nombre, email y teléfono, todos los registros deben seguir ese mismo orden para que el ERP los lea correctamente.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque los CSV necesitan mantener siempre el mismo número de campos y la misma posición estructural."
+    }
+  },
+  {
+    "id": "UT8-Q18",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Analizando el historial de transacciones, un analista de datos descubre mediante el método descriptivo que un artículo específico experimenta un pico de ventas recurrente todos los martes a primera hora. En terminología de descubrimiento de conocimiento, ¿cómo se define este suceso?",
+    "contexto": "La pregunta trata sobre un comportamiento repetido detectado al analizar datos históricos mediante el método descriptivo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un modelo predictivo"
+      },
+      {
+        "clave": "b",
+        "texto": "Un patrón"
+      },
+      {
+        "clave": "c",
+        "texto": "Una base de datos relacional"
+      },
+      {
+        "clave": "d",
+        "texto": "Un dashboard en tiempo real"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario define un patrón como un suceso recurrente extraído de los datos del pasado y del presente. Si se detecta que un producto tiene un pico de ventas todos los martes a primera hora, se trata de un comportamiento repetido, por tanto es un patrón.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un modelo predictivo usa patrones para intentar anticipar comportamientos futuros, pero el caso solo describe un suceso repetido observado en los datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una base de datos relacional es una forma de organizar y almacenar datos, no un comportamiento recurrente descubierto en ellos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un dashboard en tiempo real muestra métricas visuales actuales, pero no es el nombre técnico del suceso recurrente detectado."
+        }
+      ],
+      "resumen_didactico": "Si algo se repite en los datos históricos o actuales, se llama patrón.",
+      "ejemplo_practico": "Si una tienda detecta que todos los martes por la mañana vende más café que el resto de días, ese comportamiento repetido es un patrón.",
+      "conclusion_final": "La respuesta correcta es la opción b: un patrón, porque describe un suceso recurrente encontrado mediante análisis descriptivo."
+    }
+  },
+  {
+    "id": "UT8-Q19",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "A partir de la observación de múltiples eventos recurrentes, un programador diseña un algoritmo informático que cruza esta información con factores externos para adivinar y anticipar futuros comportamientos de compra. ¿Qué elemento técnico ha construido?",
+    "contexto": "La pregunta trata sobre usar patrones detectados y factores externos para anticipar comportamientos futuros.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un patrón descriptivo"
+      },
+      {
+        "clave": "b",
+        "texto": "Un archivo de configuración XML"
+      },
+      {
+        "clave": "c",
+        "texto": "Un registro de auditoría de seguridad"
+      },
+      {
+        "clave": "d",
+        "texto": "Un modelo"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia entre patrón y modelo. Un patrón es un suceso recurrente detectado en los datos, mientras que un modelo usa esos patrones para hacer predicciones. Si el programador crea un algoritmo para anticipar comportamientos futuros, ha construido un modelo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un patrón descriptivo es solo un comportamiento que se repite en los datos, pero no es el algoritmo que permite anticipar comportamientos futuros."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un archivo XML sirve para estructurar o intercambiar información mediante etiquetas, no para predecir comportamientos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un registro de auditoría guarda acciones realizadas en el sistema, pero no sirve para crear predicciones de compra."
+        }
+      ],
+      "resumen_didactico": "Un modelo usa patrones y datos para intentar predecir lo que puede ocurrir en el futuro.",
+      "ejemplo_practico": "Si una tienda sabe que los clientes compran más los viernes y el algoritmo cruza ese dato con el clima o campañas activas para prever ventas, está usando un modelo.",
+      "conclusion_final": "El elemento técnico construido es un modelo, porque transforma patrones observados en predicciones futuras."
+    }
+  },
+  {
+    "id": "UT8-Q20",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "En el proceso estructurado de la minería de datos, ¿qué acciones técnicas específicas se llevan a cabo durante el \"Paso A\" antes de realizar el análisis predictivo?",
+    "contexto": "La pregunta se refiere a una fase previa del proceso de minería de datos, antes de aplicar técnicas de análisis o predicción.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La evaluación de los patrones y su verificación final"
+      },
+      {
+        "clave": "b",
+        "texto": "La aplicación de algoritmos de inteligencia artificial sobre bases de datos no relacionales"
+      },
+      {
+        "clave": "c",
+        "texto": "La recopilación inicial de los datos en bruto generados por los sensores"
+      },
+      {
+        "clave": "d",
+        "texto": "La limpieza, clasificación y agrupación de los datos para su incorporación al almacén de datos o data warehouse"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el Paso A del proceso de minería de datos consiste en la limpieza, clasificación y agrupación de los datos para incorporarlos al data warehouse, filtrando los datos útiles de los no útiles o atípicos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La evaluación y verificación de patrones corresponde al paso final del proceso, no al Paso A."
+        },
+        {
+          "clave": "b",
+          "motivo": "La aplicación de algoritmos corresponde a la fase de data mining o análisis, no a la fase inicial de limpieza y organización de datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La recopilación inicial de datos en bruto ocurre antes del Paso A; el Paso A trabaja ya sobre esos datos para limpiarlos y clasificarlos."
+        }
+      ],
+      "resumen_didactico": "El Paso A prepara los datos: los limpia, clasifica y agrupa antes de analizarlos.",
+      "ejemplo_practico": "Una empresa elimina registros duplicados, corrige datos erróneos y agrupa ventas por fecha o producto antes de llevarlos al almacén de datos.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el Paso A consiste en limpiar, clasificar y agrupar los datos para incorporarlos al data warehouse."
+    }
+  },
+  {
+    "id": "UT8-Q21",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "La directiva de una corporación necesita analizar sus datos cruzando simultáneamente variables de tiempo, productos y regiones para tomar decisiones estratégicas al instante. ¿Qué tecnología deben utilizar para extraer y visualizar los datos desde múltiples ángulos y dimensiones?",
+    "contexto": "La empresa necesita analizar datos desde varias dimensiones a la vez, como tiempo, producto y región.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El servicio de mensajería SMS"
+      },
+      {
+        "clave": "b",
+        "texto": "Un programa de control de versiones"
+      },
+      {
+        "clave": "c",
+        "texto": "OLAP (Online Analytical Processing)"
+      },
+      {
+        "clave": "d",
+        "texto": "Un procesador de texto estándar"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario define OLAP como el modo de extraer y visualizar datos seleccionados desde bases de datos, permitiendo analizarlos desde múltiples ángulos y dimensiones simultáneamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El SMS puede usarse como canal de comunicación, pero no sirve para analizar datos multidimensionales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un programa de control de versiones sirve para gestionar cambios en código o archivos, no para cruzar variables empresariales de análisis."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un procesador de texto permite redactar documentos, pero no realizar análisis multidimensional de datos empresariales."
+        }
+      ],
+      "resumen_didactico": "OLAP permite analizar datos desde varias dimensiones a la vez, como tiempo, producto, zona o cliente.",
+      "ejemplo_practico": "Una empresa usa OLAP para ver qué producto se vende más en cada región durante cada mes del año.",
+      "conclusion_final": "La tecnología correcta es OLAP, porque permite extraer, visualizar y cruzar datos desde múltiples dimensiones."
+    }
+  },
+  {
+    "id": "UT8-Q22",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Dado el carácter multidimensional de la tecnología OLAP, ¿cómo se resuelve técnicamente la integración con las arquitecturas de bases de datos tradicionales en el entorno corporativo?",
+    "contexto": "La pregunta trata sobre cómo se conecta OLAP con bases de datos tradicionales, especialmente relacionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se utiliza la terminal de comandos para ejecutar bucles secuenciales en bases ofimáticas"
+      },
+      {
+        "clave": "b",
+        "texto": "Se obliga a exportar toda la información a ficheros de texto plano para su lectura manual"
+      },
+      {
+        "clave": "c",
+        "texto": "Se descartan las bases de datos relacionales y se utilizan únicamente árboles XML nativos"
+      },
+      {
+        "clave": "d",
+        "texto": "Se prefiere trabajar con bases de datos transaccionales residentes en servidores relacionales, usando intermediarios como ODBC"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que, por el carácter multidimensional de OLAP, se prefiere trabajar con bases de datos transaccionales residentes en servidores relacionales, usando intermediarios como ODBC.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La terminal de comandos y los bucles secuenciales no son la solución técnica indicada en el temario para integrar OLAP con bases de datos tradicionales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Exportar toda la información a texto plano para leerla manualmente elimina la ventaja del análisis OLAP y no corresponde a la solución del temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "El temario no dice que haya que descartar las bases de datos relacionales ni usar únicamente árboles XML; al contrario, menciona servidores relacionales con intermediarios como ODBC."
+        }
+      ],
+      "resumen_didactico": "OLAP puede trabajar con datos en servidores relacionales mediante intermediarios como ODBC.",
+      "ejemplo_practico": "Una empresa mantiene sus datos en una base relacional y usa ODBC para que la herramienta OLAP pueda consultarlos y analizarlos desde varias dimensiones.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque describe la integración técnica indicada en el temario: bases transaccionales en servidores relacionales usando ODBC."
+    }
+  },
+  {
+    "id": "UT8-Q23",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Un equipo de ingeniería de datos necesita desplegar una arquitectura analítica cloud-native de procesamiento masivo. Descartando referentes históricos como Oracle Express Server, ¿qué soluciones de mercado actuales deben considerar para esta infraestructura moderna?",
+    "contexto": "La pregunta trata sobre herramientas actuales de análisis masivo en la nube relacionadas con OLAP y business intelligence.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Apache HTTP Server y MySQL nativo"
+      },
+      {
+        "clave": "b",
+        "texto": "ZOHO y SugarCRM"
+      },
+      {
+        "clave": "c",
+        "texto": "WorkPLAN y Odoo"
+      },
+      {
+        "clave": "d",
+        "texto": "Google BigQuery, Microsoft Power BI o Snowflake"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que, aunque Oracle Express Server e Hyperion Solution Essbase aparecen como referentes históricos de OLAP, actualmente en la industria se usan soluciones cloud-native como Google BigQuery, Microsoft Power BI y Snowflake.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Apache HTTP Server y MySQL son tecnologías de servidor web y base de datos, pero no son las soluciones cloud-native destacadas en el temario para análisis masivo moderno."
+        },
+        {
+          "clave": "b",
+          "motivo": "ZOHO y SugarCRM son sistemas CRM, orientados a la gestión de relaciones con clientes, no a arquitectura analítica cloud-native de procesamiento masivo."
+        },
+        {
+          "clave": "c",
+          "motivo": "WorkPLAN y Odoo son sistemas ERP, no herramientas actuales específicas de análisis masivo en la nube como las señaladas en el temario."
+        }
+      ],
+      "resumen_didactico": "Para análisis moderno en la nube, el temario destaca BigQuery, Power BI y Snowflake.",
+      "ejemplo_practico": "Una empresa usa BigQuery para analizar millones de registros, Snowflake como data warehouse cloud-native y Power BI para visualizar métricas en cuadros de mando.",
+      "conclusion_final": "La respuesta correcta es la opción d: Google BigQuery, Microsoft Power BI o Snowflake."
+    }
+  },
+  {
+    "id": "UT8-Q24",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Un coordinador de operaciones requiere monitorizar en una pantalla la telemetría actual de la infraestructura informática, conociendo cuántos servidores están fallando en ese preciso segundo. ¿Qué herramienta de visualización o cuadro de mando cubre exactamente esta necesidad?",
+    "contexto": "La pregunta trata sobre visualizar métricas actuales o en tiempo real para saber qué está ocurriendo en ese momento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una hoja de cálculo CSV"
+      },
+      {
+        "clave": "b",
+        "texto": "Un fichero XML estático"
+      },
+      {
+        "clave": "c",
+        "texto": "Un dashboard de métricas en tiempo real"
+      },
+      {
+        "clave": "d",
+        "texto": "Un scorecard histórico"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que un dashboard muestra una serie de métricas, incluso en tiempo real, en función de los datos obtenidos. Por eso sirve para monitorizar lo que está ocurriendo en ese preciso momento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una hoja CSV puede almacenar datos en formato tabular, pero no es una herramienta de visualización en tiempo real."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un fichero XML estructura información mediante etiquetas, pero no sirve como cuadro de mando para monitorizar fallos actuales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un scorecard compara información actual con objetivos o datos anteriores, pero la pregunta pide ver fallos en ese preciso segundo, lo cual corresponde a un dashboard."
+        }
+      ],
+      "resumen_didactico": "Dashboard equivale a monitorización actual o en tiempo real; scorecard equivale a comparación con objetivos o histórico.",
+      "ejemplo_practico": "Un dashboard muestra en una pantalla cuántos servidores están caídos ahora mismo, cuánta CPU consumen y cuántas alertas activas hay.",
+      "conclusion_final": "La herramienta correcta es un dashboard de métricas en tiempo real, porque permite ver el estado actual de la infraestructura."
+    }
+  },
+  {
+    "id": "UT8-Q25",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Dentro del ecosistema visual del Business Intelligence, ¿cómo se define conceptualmente la función de un scorecard o cuadro de mando integral?",
+    "contexto": "La pregunta trata sobre la función de un scorecard dentro de las herramientas visuales de Business Intelligence.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es el software encargado de gestionar los pagos del terminal punto de venta"
+      },
+      {
+        "clave": "b",
+        "texto": "Es un motor de transformación de bases de datos jerárquicas a relacionales"
+      },
+      {
+        "clave": "c",
+        "texto": "Es un registro de patrones e información anterior con la que comparar la nueva información"
+      },
+      {
+        "clave": "d",
+        "texto": "Es un panel que muestra únicamente la velocidad de transferencia de la red local"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario define el scorecard como un registro de patrones e información anterior con la que comparar la nueva información. Sirve para evaluar si los resultados actuales cumplen o no los objetivos marcados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La gestión de pagos corresponde al TPV, no al scorecard."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un scorecard no transforma bases de datos; es una herramienta visual de comparación de resultados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Mostrar únicamente velocidad de red sería una métrica técnica puntual, no la función general de un scorecard."
+        }
+      ],
+      "resumen_didactico": "Un scorecard compara datos actuales con información anterior u objetivos definidos.",
+      "ejemplo_practico": "Una empresa compara las ventas de este trimestre con el objetivo anual y marca el resultado en verde, amarillo o rojo.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el scorecard sirve para comparar nueva información con patrones, objetivos o datos anteriores."
+    }
+  },
+  {
+    "id": "UT8-Q26",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Tras detectar la modificación no autorizada de parámetros críticos en la base de datos del ERP, el equipo de ciberseguridad necesita investigar quién alteró el sistema. ¿A qué mecanismo de control informático deben acceder para documentar la trazabilidad de este evento?",
+    "contexto": "La pregunta trata sobre investigar quién realizó una acción dentro del ERP y dejar trazabilidad del evento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Al cuadro de mando integral (Scorecard)"
+      },
+      {
+        "clave": "b",
+        "texto": "Al registro de acciones o log de auditoría"
+      },
+      {
+        "clave": "c",
+        "texto": "Al almacén de datos estructurados (Data warehouse)"
+      },
+      {
+        "clave": "d",
+        "texto": "Al módulo de marketing automatizado"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario define el registro de acciones o log de auditoría como un mecanismo de control informático que documenta de forma secuencial y automatizada cada evento, transacción o modificación realizada dentro de la base de datos de un sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El scorecard sirve para comparar información actual con datos anteriores u objetivos, pero no para investigar quién modificó un dato concreto."
+        },
+        {
+          "clave": "c",
+          "motivo": "El data warehouse almacena datos preparados para análisis, pero no es el mecanismo específico de trazabilidad de acciones realizadas por usuarios."
+        },
+        {
+          "clave": "d",
+          "motivo": "El módulo de marketing automatizado sirve para campañas y comunicación comercial, no para auditar modificaciones críticas en la base de datos."
+        }
+      ],
+      "resumen_didactico": "Si hay que saber quién hizo qué, cuándo y desde dónde dentro del sistema, se consulta el log de auditoría.",
+      "ejemplo_practico": "Si alguien cambia el precio de un producto en el ERP, el log puede mostrar el usuario, la hora, la IP y el valor anterior y nuevo del dato.",
+      "conclusion_final": "El mecanismo correcto es el registro de acciones o log de auditoría, porque permite documentar la trazabilidad del evento."
+    }
+  },
+  {
+    "id": "UT8-Q27",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Para que un registro de auditoría sea efectivo en la resolución de incidentes de seguridad, ¿qué conjunto de datos debe capturar obligatoriamente cada vez que se realiza un evento en el sistema?",
+    "contexto": "La pregunta trata sobre la información que debe guardar un log de auditoría para poder investigar incidentes de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El lenguaje de programación utilizado y la versión del sistema operativo del servidor central"
+      },
+      {
+        "clave": "b",
+        "texto": "Exclusivamente el tamaño en bytes de la transacción realizada"
+      },
+      {
+        "clave": "c",
+        "texto": "El usuario, la acción realizada, fecha y hora, dirección IP, tabla y campo accedido, y el valor anterior y actual del dato"
+      },
+      {
+        "clave": "d",
+        "texto": "Únicamente el nombre de la empresa y la dirección física del servidor"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el registro de auditoría debe capturar información como el usuario que realiza la acción, la acción realizada, fecha y hora, dirección IP o identificador del equipo, tabla, campo y dato accedido, además del valor anterior y actual del dato.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El lenguaje de programación y la versión del sistema operativo pueden ser datos técnicos útiles en otros contextos, pero no son los datos obligatorios que el temario asocia al registro de auditoría."
+        },
+        {
+          "clave": "b",
+          "motivo": "El tamaño en bytes de una transacción no permite saber quién hizo el cambio, cuándo lo hizo ni qué dato fue modificado."
+        },
+        {
+          "clave": "d",
+          "motivo": "El nombre de la empresa y la dirección física del servidor no sirven para reconstruir la trazabilidad concreta de una acción dentro del sistema."
+        }
+      ],
+      "resumen_didactico": "Un buen log de auditoría debe responder a: quién hizo qué, cuándo, desde dónde y qué dato cambió.",
+      "ejemplo_practico": "Si un usuario cambia un precio de 800 a 80 euros, el log debe guardar el usuario, la hora, la IP, la tabla modificada y los valores anterior y nuevo.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque recoge los datos necesarios para investigar y reconstruir un incidente de seguridad."
+    }
+  },
+  {
+    "id": "UT8-Q28",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "El departamento de recursos humanos requiere que cada empleado, al ingresar al sistema de gestión, visualice exclusivamente las herramientas e información pertinentes a su puesto de trabajo, ocultando datos sensibles de otros departamentos. ¿Qué configuración debe aplicarse en la arquitectura del ERP?",
+    "contexto": "La pregunta trata sobre limitar la información y herramientas visibles según el puesto de cada empleado dentro del ERP.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La inclusión de perfiles, roles y grupos a los niveles de acceso"
+      },
+      {
+        "clave": "b",
+        "texto": "El uso de redes privadas virtuales (VPN)"
+      },
+      {
+        "clave": "c",
+        "texto": "La encriptación simétrica de la base de datos"
+      },
+      {
+        "clave": "d",
+        "texto": "La exportación diaria de copias de seguridad en formato CSV"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que la inclusión de perfiles, roles y grupos permite agrupar permisos y restringir la visibilidad de los recursos según las funciones laborales de cada usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una VPN puede ayudar a conectar de forma segura a una red, pero no define qué herramientas o datos ve cada empleado dentro del ERP."
+        },
+        {
+          "clave": "c",
+          "motivo": "El cifrado protege la información para que no sea leída fácilmente, pero no organiza permisos por puesto de trabajo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las copias de seguridad sirven para recuperar datos si hay un fallo, pero no controlan la visibilidad de información dentro del ERP."
+        }
+      ],
+      "resumen_didactico": "Los perfiles, roles y grupos sirven para que cada usuario vea y use solo lo que necesita según su puesto.",
+      "ejemplo_practico": "Un empleado de almacén puede ver stock e inventario, pero no nóminas ni datos financieros del departamento de contabilidad.",
+      "conclusion_final": "La configuración correcta es aplicar perfiles, roles y grupos a los niveles de acceso del ERP."
+    }
+  },
+  {
+    "id": "UT8-Q29",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Una empresa de desarrollo se enfrenta a auditorías de ciberseguridad que clasifican el acceso mediante usuario y contraseña simple como completamente obsoleto. ¿Qué protocolo obligatorio deben implementar para exigir confirmación biométrica o llaves de seguridad físicas (tokens FIDO2)?",
+    "contexto": "La pregunta trata sobre reforzar el acceso al ERP más allá de usuario y contraseña, usando biometría o llaves físicas de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "JIT (Just In Time)"
+      },
+      {
+        "clave": "b",
+        "texto": "OLAP (Online Analytical Processing)"
+      },
+      {
+        "clave": "c",
+        "texto": "ODBC (Open Database Connectivity)"
+      },
+      {
+        "clave": "d",
+        "texto": "MFA (Autenticación Multifactor)"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que una contraseña por sí sola se considera obsoleta y que en entornos corporativos se implementa MFA, autenticación multifactor, usando además confirmación biométrica o llaves físicas de seguridad como tokens FIDO2.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "JIT (Just In Time) es una metodología de gestión de inventario, no un protocolo de autenticación."
+        },
+        {
+          "clave": "b",
+          "motivo": "OLAP sirve para analizar datos desde múltiples dimensiones, no para autenticar usuarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "ODBC sirve como intermediario de conexión con bases de datos, no como sistema de autenticación de usuarios."
+        }
+      ],
+      "resumen_didactico": "MFA añade más factores de seguridad al inicio de sesión, como huella, reconocimiento facial o llave física.",
+      "ejemplo_practico": "Un empleado introduce su contraseña y después confirma el acceso con la huella en el móvil corporativo o con una llave FIDO2 conectada por USB.",
+      "conclusion_final": "La respuesta correcta es MFA, porque permite exigir más de un factor de autenticación y refuerza la seguridad frente a accesos no autorizados."
+    }
+  },
+  {
+    "id": "UT8-Q30",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "En la adaptación de las interfaces de usuario de los sistemas de gestión empresarial, ¿qué objetivo operativo de seguridad y usabilidad cumple la personalización de los menús?",
+    "contexto": "La pregunta trata sobre adaptar los menús del ERP según el nivel de acceso y las necesidades de cada usuario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Elimina la necesidad de utilizar contraseñas de acceso al sistema"
+      },
+      {
+        "clave": "b",
+        "texto": "Permite que un usuario solo pueda acceder a cierta información o herramientas necesarias, evitando que se confunda y mejorando la seguridad"
+      },
+      {
+        "clave": "c",
+        "texto": "Transforma el entorno de escritorio en un modelo SaaS alojado en la nube"
+      },
+      {
+        "clave": "d",
+        "texto": "Permite al usuario modificar libremente el código fuente de la aplicación"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que la personalización de menús permite que, según el nivel de acceso, un usuario solo pueda acceder a cierta información o herramientas. Esto mejora la seguridad y también evita confusiones al mostrar solo lo necesario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La personalización de menús no sustituye las contraseñas; solo limita lo que el usuario puede ver o usar dentro del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "El modelo SaaS se refiere a software alojado en la nube mediante suscripción, no a la configuración de menús dentro del ERP."
+        },
+        {
+          "clave": "d",
+          "motivo": "Personalizar menús no significa permitir al usuario modificar el código fuente de la aplicación."
+        }
+      ],
+      "resumen_didactico": "Personalizar menús sirve para mostrar a cada usuario solo las herramientas e información que necesita.",
+      "ejemplo_practico": "Un empleado de almacén ve opciones de stock e inventario, pero no ve nóminas, contabilidad ni configuración avanzada del ERP.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque la personalización de menús mejora la seguridad y facilita el uso del sistema."
+    }
+  }
+]

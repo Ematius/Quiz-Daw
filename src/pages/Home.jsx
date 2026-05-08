@@ -14,6 +14,7 @@ const modules = [
     subtitle: "14 Tests",
   },
   { id:"introduccionProgramacion", title: "Introducción a la programación", subtitle: "22 Tests"},
+  { id:"lenguajeMarcas", title: "Lenguajes de marcas", subtitle: "8 Tests"},
 ];
 
 

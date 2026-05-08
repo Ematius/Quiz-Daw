@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT6-Q01",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un técnico de sistemas necesita configurar el almacenamiento para datos altamente jerárquicos que, por requerimientos legales, deben ser recuperados exactamente con la misma estructura con la que fueron insertados. ¿Qué modelo de base de datos cumple estrictamente con esta necesidad?",
+    "contexto": "Datos jerárquicos que deben conservar su estructura original al almacenarse y recuperarse.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bases de datos relacionales con mapeo habilitado"
+      },
+      {
+        "clave": "b",
+        "texto": "Sistemas de almacenamiento procedimental secuencial"
+      },
+      {
+        "clave": "c",
+        "texto": "Ficheros de texto plano en discos compartidos"
+      },
+      {
+        "clave": "d",
+        "texto": "Bases de datos nativas basadas íntegramente en marcas"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las bases de datos XML nativas tienen un modelo lógico interno basado íntegramente en XML y usan el propio documento XML como unidad fundamental de almacenamiento. Esto permite guardar documentos jerárquicos sin desmontarlos ni transformar su estructura, de modo que pueden recuperarse exactamente en el mismo estado en el que fueron insertados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las bases de datos relacionales con mapeo habilitado, también llamadas XML enabled o no nativas, transforman el XML en esquemas relacionales. Al hacer esa conversión, la estructura jerárquica original puede fragmentarse y no siempre puede recuperarse exactamente igual."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los sistemas de almacenamiento procedimental secuencial no son el modelo indicado en el tema para conservar documentos XML jerárquicos. La pregunta busca un modelo de base de datos preparado específicamente para estructuras basadas en marcas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los ficheros de texto plano pueden guardar el contenido, pero el temario advierte que no son recomendables para entornos exigentes porque presentan problemas como concurrencia, seguridad, integridad y gestión eficiente de los datos."
+        }
+      ],
+      "resumen_didactico": "Cuando los datos tienen forma de árbol y es obligatorio conservar exactamente su estructura, la opción adecuada es una base de datos XML nativa.",
+      "ejemplo_practico": "Si un hospital guarda un historial clínico en XML con etiquetas como <paciente>, <alergias>, <recetas> e <informes>, una base de datos XML nativa permite recuperar ese documento con la misma jerarquía original, sin haberlo dividido previamente en tablas.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque las bases de datos nativas basadas en marcas están diseñadas específicamente para almacenar y recuperar documentos XML conservando intacta su estructura jerárquica."
+    }
+  },
+  {
+    "id": "UT6-Q02",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "¿Cómo se definen técnicamente las bases de datos \"XML enabled\" o no nativas en la arquitectura de la información?",
+    "contexto": "Definición de las bases de datos XML enabled o no nativas dentro del almacenamiento de información XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Bases que transforman en esquemas relacionales los archivos para volcar los datos"
+      },
+      {
+        "clave": "b",
+        "texto": "Programas que solo permiten la lectura secuencial de etiquetas vacías"
+      },
+      {
+        "clave": "c",
+        "texto": "Sistemas que guardan el documento intacto en su forma original"
+      },
+      {
+        "clave": "d",
+        "texto": "Estructuras que requieren software intermedio para cualquier operación"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define las bases de datos XML enabled, también llamadas no nativas, como bases de datos relacionales que transforman los archivos XML en esquemas relacionales para después volcar esos datos dentro del propio esquema de la base de datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No son programas limitados a leer etiquetas vacías de forma secuencial. El temario no define las bases XML enabled como lectores simples, sino como bases relacionales adaptadas para aceptar y devolver XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Guardar el documento intacto en su forma original corresponde a las bases de datos XML nativas, no a las XML enabled. Las enabled suelen descomponer o transformar la estructura XML para adaptarla al modelo relacional."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario indica precisamente que este tipo de base de datos no requiere middleware para trabajar con XML. Puede aceptar XML como entrada y generar XML como salida, aunque internamente lo transforme al modelo relacional."
+        }
+      ],
+      "resumen_didactico": "Una base XML enabled no guarda el XML como árbol intacto, sino que lo adapta a una estructura relacional, normalmente dividiendo sus partes en tablas o esquemas.",
+      "ejemplo_practico": "Si un historial médico XML tiene etiquetas como <alergias>, <recetas> y <diagnostico>, una base XML enabled puede separar esos datos y llevarlos a tablas distintas, perdiendo la forma jerárquica original del documento.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque las bases XML enabled son bases relacionales adaptadas que transforman los archivos XML en esquemas relacionales para almacenar sus datos."
+    }
+  },
+  {
+    "id": "UT6-Q03",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Durante la creación de una ruta de navegación, un analista necesita extraer todos los atributos denominados \"id\" sin importar en qué nivel de la estructura se encuentren. ¿Qué expresión XPath permite esta selección directa?",
+    "contexto": "Selección de atributos en XPath sin importar su posición dentro del documento XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "//id"
+      },
+      {
+        "clave": "b",
+        "texto": "/@id"
+      },
+      {
+        "clave": "c",
+        "texto": "//@id"
+      },
+      {
+        "clave": "d",
+        "texto": "../id"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en XPath el símbolo @ se utiliza para seleccionar atributos y que // permite seleccionar nodos que coinciden sin importar dónde estén dentro del documento. Por tanto, la expresión //@id selecciona todos los atributos llamados id en cualquier nivel de la estructura XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "//id seleccionaría elementos llamados <id> en cualquier parte del documento, pero no atributos. Falta el símbolo @."
+        },
+        {
+          "clave": "b",
+          "motivo": "/@id intentaría seleccionar un atributo id directamente desde el nodo raíz. No busca en todos los niveles del documento."
+        },
+        {
+          "clave": "d",
+          "motivo": "../id sube al nodo padre del nodo actual y después busca un elemento hijo llamado id. No selecciona atributos ni realiza una búsqueda global."
+        }
+      ],
+      "resumen_didactico": "En XPath, // significa buscar en cualquier nivel y @ significa atributo. Juntos, //@id significa: busca todos los atributos id del documento.",
+      "ejemplo_practico": "En un XML con etiquetas como <paciente id=\"001\">, <doctor id=\"D45\"> y <receta id=\"R90\">, la expresión //@id devolvería los valores 001, D45 y R90.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque //@id selecciona todos los atributos llamados id sin importar dónde aparezcan dentro del documento XML."
+    }
+  },
+  {
+    "id": "UT6-Q04",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un administrador necesita extraer rápidamente una lista de números de teléfono desde un archivo online hacia una hoja de cálculo sin necesidad de escribir un script complejo. ¿Qué herramienta integrada debe utilizar para leer la estructura de marcas?",
+    "contexto": "Extracción rápida de información estructurada desde un archivo online hacia una hoja de cálculo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El procesador de expresiones regulares de JavaScript"
+      },
+      {
+        "clave": "b",
+        "texto": "La herramienta de validación de esquemas DTD"
+      },
+      {
+        "clave": "c",
+        "texto": "La función integrada de extracción estructurada IMPORTXML"
+      },
+      {
+        "clave": "d",
+        "texto": "El motor de transformación XSLT en la consola"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que IMPORTXML es una función integrada en hojas de cálculo que permite extraer información estructurada de páginas web o archivos online mediante consultas XPath, volcando los resultados directamente en las celdas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las expresiones regulares de JavaScript pueden buscar patrones de texto, pero no son la herramienta indicada en el temario para extraer datos estructurados XML directamente hacia una hoja de cálculo."
+        },
+        {
+          "clave": "b",
+          "motivo": "DTD sirve para definir o validar la estructura de un documento XML, no para extraer teléfonos desde un archivo online hacia una hoja de cálculo."
+        },
+        {
+          "clave": "d",
+          "motivo": "XSLT se utiliza para transformar documentos XML, pero la pregunta habla de una herramienta integrada en hojas de cálculo para extraer datos rápidamente sin escribir un script complejo."
+        }
+      ],
+      "resumen_didactico": "IMPORTXML permite traer datos estructurados desde una URL usando una ruta XPath y colocarlos directamente en una hoja de cálculo.",
+      "ejemplo_practico": "Para extraer teléfonos desde un archivo XML online, se podría usar una fórmula como IMPORTXML(\"http://intranet.ejemplo.es/pacientes.xml\"; \"//telefono\").",
+      "conclusion_final": "La respuesta correcta es la opción c, porque IMPORTXML es la función integrada pensada para extraer información estructurada desde archivos online hacia hojas de cálculo."
+    }
+  },
+  {
+    "id": "UT6-Q05",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "En el entorno de la administración de sistemas, ¿cómo se define el concepto de \"concurrencia\" en las bases de datos?",
+    "contexto": "Definición de concurrencia aplicada al acceso simultáneo a datos en bases de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La propiedad que permite a múltiples usuarios acceder y modificar los mismos datos de forma simultánea garantizando la integridad"
+      },
+      {
+        "clave": "b",
+        "texto": "La función que transforma un esquema relacional en un árbol jerárquico de forma automática"
+      },
+      {
+        "clave": "c",
+        "texto": "El proceso de encriptación asimétrica que protege los datos durante las transferencias externas"
+      },
+      {
+        "clave": "d",
+        "texto": "La capacidad del sistema para traducir automáticamente las etiquetas a diferentes idiomas en tiempo real"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define la concurrencia en bases de datos como la propiedad que permite a múltiples usuarios o procesos acceder, leer y modificar los mismos datos de forma simultánea garantizando la integridad de la información.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Transformar un esquema relacional en un árbol jerárquico no define la concurrencia. Esa idea estaría más relacionada con modelos de almacenamiento o conversión de estructuras, no con acceso simultáneo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La encriptación asimétrica pertenece al ámbito de la seguridad y protección de datos durante transferencias, pero no explica cómo varios usuarios acceden al mismo dato a la vez."
+        },
+        {
+          "clave": "d",
+          "motivo": "La traducción automática de etiquetas a distintos idiomas no tiene relación con la concurrencia. La concurrencia trata sobre accesos simultáneos y mantenimiento de la integridad de los datos."
+        }
+      ],
+      "resumen_didactico": "Concurrencia significa que varias personas o procesos pueden trabajar sobre los mismos datos al mismo tiempo sin romperlos, duplicarlos mal o provocar incoherencias.",
+      "ejemplo_practico": "Si un médico actualiza la medicación de un paciente mientras una enfermera consulta ese mismo historial, el sistema debe controlar ambos accesos para evitar que se pierdan o sobrescriban datos importantes.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque la concurrencia permite el acceso y modificación simultánea de datos garantizando su integridad."
+    }
+  },
+  {
+    "id": "UT6-Q06",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un desarrollador consulta una base de datos documental para formatear el resultado directamente como una lista HTML, cruzando datos y ordenándolos. ¿Qué lenguaje específico proporciona todo este conjunto de capacidades avanzadas?",
+    "contexto": "Consulta avanzada sobre datos XML para filtrar, ordenar y generar una salida HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XPath"
+      },
+      {
+        "clave": "b",
+        "texto": "XQuery"
+      },
+      {
+        "clave": "c",
+        "texto": "XSL-FO"
+      },
+      {
+        "clave": "d",
+        "texto": "XPointer"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XQuery es un lenguaje de consulta y extracción de información de archivos XML. Es un superconjunto de XPath y permite realizar consultas complejas, cruzar datos, ordenarlos y transformar datos XML directamente en páginas XHTML o listas HTML mediante la sintaxis FLWOR.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XPath sirve para buscar y seleccionar nodos dentro de un documento XML, pero se queda corto cuando se necesita cruzar datos, ordenar resultados y generar informes completos en HTML."
+        },
+        {
+          "clave": "c",
+          "motivo": "XSL-FO está relacionado con el formateo de documentos para presentación, especialmente en formatos como PDF, pero no es el lenguaje que el temario presenta para consultar bases de datos XML y generar informes mediante FLWOR."
+        },
+        {
+          "clave": "d",
+          "motivo": "XPointer se menciona como un lenguaje más sofisticado para trabajar con información XML, pero el temario señala XQuery como el lenguaje principal para consultas complejas, ordenación y generación de informes."
+        }
+      ],
+      "resumen_didactico": "XPath encuentra datos; XQuery trabaja con ellos de forma más potente: filtra, ordena, cruza información y puede devolver HTML.",
+      "ejemplo_practico": "Un XQuery puede recorrer los pacientes de un archivo XML, quedarse solo con los ingresados después de 2020, ordenarlos por nombre y devolver cada uno dentro de una etiqueta <li> para crear una lista HTML.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque XQuery proporciona las capacidades avanzadas necesarias para consultar, ordenar y transformar datos XML en una salida HTML."
+    }
+  },
+  {
+    "id": "UT6-Q07",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "En la sintaxis del lenguaje de rutas estándar, ¿cómo se define un predicado para filtrar un nodo específico o evaluar una condición dentro de un conjunto de datos?",
+    "contexto": "Uso de predicados en XPath para filtrar nodos concretos dentro de una ruta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se escriben siempre entre llaves para definir funciones matemáticas"
+      },
+      {
+        "clave": "b",
+        "texto": "Se definen utilizando el símbolo del asterisco al inicio del parámetro"
+      },
+      {
+        "clave": "c",
+        "texto": "Se escriben siempre entre corchetes para filtrar nodos concretos"
+      },
+      {
+        "clave": "d",
+        "texto": "Se declaran mediante el uso de comillas dobles estrictas"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los predicados en XPath permiten extraer un nodo concreto de un conjunto y funcionan como filtros precisos. Siempre se escriben entre corchetes [].",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las llaves no se usan para definir predicados en XPath. En el temario, los predicados aparecen entre corchetes, no entre llaves."
+        },
+        {
+          "clave": "b",
+          "motivo": "El asterisco se usa como comodín para seleccionar nodos desconocidos o cualquier nodo del elemento, pero no define predicados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las comillas pueden aparecer dentro de una condición para comparar valores de texto, pero no son la forma de declarar un predicado. El predicado completo se escribe entre corchetes."
+        }
+      ],
+      "resumen_didactico": "Un predicado en XPath es un filtro y se reconoce porque va entre corchetes: [condición].",
+      "ejemplo_practico": "La expresión /ArchivoClinico/pacientes[ingreso>2020]/doctor usa el predicado [ingreso>2020] para seleccionar solo los pacientes ingresados después de 2020.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque los predicados en XPath se escriben siempre entre corchetes para filtrar nodos concretos o evaluar condiciones."
+    }
+  },
+  {
+    "id": "UT6-Q08",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "¿Qué instrucción de la sintaxis FLWOR se encarga de enlazar una secuencia de datos a una variable para su posterior procesamiento?",
+    "contexto": "Identificación de las instrucciones principales de la sintaxis FLWOR en XQuery.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Let"
+      },
+      {
+        "clave": "b",
+        "texto": "Return"
+      },
+      {
+        "clave": "c",
+        "texto": "Where"
+      },
+      {
+        "clave": "d",
+        "texto": "For"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, dentro de la sintaxis FLWOR de XQuery, la instrucción Let sirve para enlazar una secuencia a una variable. Es decir, permite guardar temporalmente una lista, valor o resultado para usarlo después dentro de la consulta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Return no enlaza datos a una variable. Su función es determinar qué resultado final devuelve la consulta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Where no enlaza una secuencia a una variable. Se utiliza para filtrar los nodos según una condición."
+        },
+        {
+          "clave": "d",
+          "motivo": "For recorre o selecciona una secuencia de nodos, pero la instrucción específica para enlazar una secuencia a una variable es Let."
+        }
+      ],
+      "resumen_didactico": "En FLWOR, Let funciona como una asignación: permite asociar una secuencia o valor a una variable para reutilizarlo después.",
+      "ejemplo_practico": "En una consulta XQuery, se podría usar let $pacientes := doc(\"ArchivoClinico.xml\")/ArchivoClinico/pacientes para guardar la lista de pacientes en la variable $pacientes y trabajar luego con ella.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque Let es la instrucción de FLWOR que enlaza una secuencia de datos a una variable."
+    }
+  },
+  {
+    "id": "UT6-Q09",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Durante la instalación de un servidor eXist-db en un entorno Windows de producción, ¿dónde está terminantemente desaconsejado ubicar el directorio de instalación para evitar fallos del sistema?",
+    "contexto": "Instalación de eXist-db en Windows y elección correcta del directorio para evitar problemas de permisos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En el directorio raíz del servidor web nativo"
+      },
+      {
+        "clave": "b",
+        "texto": "En la carpeta de descargas del usuario temporal"
+      },
+      {
+        "clave": "c",
+        "texto": "En el directorio de archivos de programa para evitar conflictos con los permisos de escritura"
+      },
+      {
+        "clave": "d",
+        "texto": "En una partición de disco completamente independiente del sistema"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que durante la instalación de eXist-db se debe elegir el directorio de instalación y advierte expresamente que nunca debe instalarse en \"Program Files\" en Windows, porque puede generar conflictos graves con los permisos de escritura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El temario no señala el directorio raíz del servidor web nativo como el lugar prohibido para instalar eXist-db. La advertencia concreta se refiere a \"Program Files\" en Windows."
+        },
+        {
+          "clave": "b",
+          "motivo": "La carpeta de descargas de un usuario temporal no sería una ubicación recomendable para producción, pero no es la advertencia específica que aparece en el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una partición independiente no aparece como ubicación desaconsejada en el temario. De hecho, separar datos o servicios en particiones puede ser una práctica razonable según el entorno."
+        }
+      ],
+      "resumen_didactico": "En Windows, instalar servicios como eXist-db dentro de \"Program Files\" puede causar problemas porque esa carpeta tiene restricciones de permisos de escritura.",
+      "ejemplo_practico": "Si Hugo instala eXist-db en C:\\Program Files\\eXist-db, el sistema puede impedir que la base de datos escriba correctamente archivos de configuración, logs o datos internos. Por eso conviene usar una ruta como C:\\exist-db o una carpeta dedicada con permisos adecuados.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el temario desaconseja instalar eXist-db en el directorio de archivos de programa de Windows para evitar conflictos con los permisos de escritura."
+    }
+  },
+  {
+    "id": "UT6-Q10",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Dentro de las relaciones familiares entre los nodos que procesa un árbol jerárquico, ¿qué describe exactamente el término \"antecesor\"?",
+    "contexto": "Relaciones jerárquicas entre nodos dentro de un documento XML procesado como árbol por XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El nodo padre de otro nodo padre dentro de la estructura del árbol"
+      },
+      {
+        "clave": "b",
+        "texto": "El elemento base que no posee ni padres ni hijos asociados"
+      },
+      {
+        "clave": "c",
+        "texto": "Los nodos que comparten exactamente un mismo nivel jerárquico y padre"
+      },
+      {
+        "clave": "d",
+        "texto": "El nodo del que desciende otro nodo de forma directa y contigua"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, dentro de las relaciones familiares entre nodos XML, los antecesores son los nodos que están por encima de otro nodo en la jerarquía. Se pone como ejemplo que ArchivoClinico es antecesor de nombre porque está por encima de pacientes, que a su vez contiene nombre.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un elemento que no posee padres ni hijos asociados se relaciona más con la idea de valor atómico, no con el concepto de antecesor dentro de una jerarquía XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los nodos que comparten el mismo padre y están al mismo nivel jerárquico son hermanos, no antecesores."
+        },
+        {
+          "clave": "d",
+          "motivo": "El nodo del que desciende otro de forma directa es el padre. Un antecesor puede estar por encima en la jerarquía, pero no necesariamente de forma directa."
+        }
+      ],
+      "resumen_didactico": "Un antecesor es un nodo superior dentro del árbol XML. Puede ser el padre, el abuelo o cualquier nodo que esté por encima del nodo actual.",
+      "ejemplo_practico": "En la ruta /ArchivoClinico/pacientes/nombre, el nodo pacientes es padre de nombre, pero ArchivoClinico también es antecesor de nombre porque está más arriba en la estructura.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque un antecesor es un nodo superior dentro de la jerarquía, como el padre de otro nodo padre."
+    }
+  },
+  {
+    "id": "UT6-Q11",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un sistema heredado almacena los registros en ficheros de texto en un disco de red, lo que provoca que los archivos se bloqueen o se pierda información si dos operarios intentan guardar al mismo tiempo. ¿Qué estándar fundamental de las bases de datos no cumple este modelo?",
+    "contexto": "Uso de ficheros de texto compartidos que fallan cuando varios usuarios intentan acceder o modificar los datos simultáneamente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La encapsulación de datos"
+      },
+      {
+        "clave": "b",
+        "texto": "La concurrencia"
+      },
+      {
+        "clave": "c",
+        "texto": "La escalabilidad visual"
+      },
+      {
+        "clave": "d",
+        "texto": "El polimorfismo estructural"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que uno de los problemas de almacenar información en ficheros convencionales es que no pueden mantener correctamente estándares como la concurrencia. La concurrencia permite que varios usuarios o procesos accedan, lean o modifiquen los mismos datos de forma simultánea garantizando la integridad de la información.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La encapsulación de datos es un concepto más relacionado con programación orientada a objetos o con ocultar detalles internos de una estructura. No es el problema descrito en el caso."
+        },
+        {
+          "clave": "c",
+          "motivo": "La escalabilidad visual no es un estándar fundamental de bases de datos tratado en el tema. El problema no está en la interfaz ni en la visualización, sino en el acceso simultáneo a los datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El polimorfismo estructural pertenece al ámbito de la programación y los tipos de datos, no al control de accesos simultáneos en almacenamiento de información."
+        }
+      ],
+      "resumen_didactico": "Cuando dos usuarios intentan modificar un mismo fichero al mismo tiempo y el sistema bloquea el archivo o pierde información, el fallo principal es la falta de control de concurrencia.",
+      "ejemplo_practico": "Si un operario guarda una modificación en un archivo XML mientras otro operario también lo está editando, uno de los cambios puede sobrescribir al otro o dejar el fichero corrupto.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el modelo basado en ficheros compartidos no garantiza correctamente la concurrencia."
+    }
+  },
+  {
+    "id": "UT6-Q12",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Al configurar el rendimiento de una base de datos nativa para realizar pruebas iniciales, ¿qué parámetros de memoria máxima y memoria caché se asignan por defecto en la instalación?",
+    "contexto": "Configuración de memoria de eXist-db durante la instalación para pruebas o bases de datos pequeñas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "4096 MB de memoria máxima y 512 MB de caché"
+      },
+      {
+        "clave": "b",
+        "texto": "512 MB de memoria máxima y 64 MB de caché"
+      },
+      {
+        "clave": "c",
+        "texto": "2048 MB de memoria máxima y 256 MB de caché"
+      },
+      {
+        "clave": "d",
+        "texto": "1024 MB de memoria máxima y 128 MB de caché"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que, en la configuración de memoria de eXist-db, el valor por defecto ideal para pruebas o bases de datos pequeñas es 1024 MB de memoria máxima y 128 MB de caché.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "4096 MB de memoria máxima y 512 MB de caché no aparece en la tabla del temario como configuración por defecto. Sería una configuración superior, pero no la indicada para pruebas iniciales."
+        },
+        {
+          "clave": "b",
+          "motivo": "512 MB de memoria máxima y 64 MB de caché se presenta como el mínimo absolutamente necesario para arrancar el programa, no como el valor por defecto."
+        },
+        {
+          "clave": "c",
+          "motivo": "2048 MB o superior de memoria máxima y 256 MB o superior de caché se recomienda para máximo rendimiento en bases de datos grandes, no para pruebas iniciales."
+        }
+      ],
+      "resumen_didactico": "Para pruebas iniciales o bases de datos pequeñas, eXist-db usa como configuración por defecto 1024 MB de memoria máxima y 128 MB de caché.",
+      "ejemplo_practico": "Si Hugo instala eXist-db en un entorno de pruebas para comprobar consultas XPath y XQuery con pocos documentos XML, la configuración adecuada por defecto sería 1024 MB de memoria máxima y 128 MB de caché.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el temario establece 1024 MB de memoria máxima y 128 MB de caché como configuración por defecto para pruebas o bases de datos pequeñas."
+    }
+  },
+  {
+    "id": "UT6-Q13",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un analista necesita seleccionar todos los elementos descendientes directos que cuelgan del nodo \"pacientes\", independientemente de cómo se llamen. ¿Qué expresión XPath con comodines cumple esta función?",
+    "contexto": "Uso de comodines en XPath para seleccionar todos los elementos hijos directos de un nodo concreto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/pacientes/*"
+      },
+      {
+        "clave": "b",
+        "texto": "/pacientes//"
+      },
+      {
+        "clave": "c",
+        "texto": "/pacientes/node"
+      },
+      {
+        "clave": "d",
+        "texto": "/pacientes/@*"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el comodín * en XPath selecciona cualquier nodo del elemento. En concreto, el ejemplo /pacientes/* selecciona todos los hijos directos del nodo pacientes, sin importar el nombre de cada etiqueta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "/pacientes// no es la expresión adecuada para seleccionar hijos directos. El operador // se usa para buscar descendientes en cualquier nivel, pero aquí falta indicar qué se quiere seleccionar después."
+        },
+        {
+          "clave": "c",
+          "motivo": "/pacientes/node no selecciona correctamente cualquier nodo en XPath. La función correcta sería node(), pero además el temario presenta el comodín * para seleccionar cualquier elemento hijo."
+        },
+        {
+          "clave": "d",
+          "motivo": "/pacientes/@* seleccionaría todos los atributos del nodo pacientes, no los elementos hijos directos que cuelgan de él."
+        }
+      ],
+      "resumen_didactico": "Para seleccionar todos los elementos hijos directos de un nodo sin importar su nombre, se usa el comodín * después de la ruta del nodo.",
+      "ejemplo_practico": "Si el XML contiene <pacientes><nombre>Hugo</nombre><doctor>Dra. Elena</doctor><ingreso>2023</ingreso></pacientes>, la expresión /pacientes/* seleccionaría nombre, doctor e ingreso.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque /pacientes/* selecciona todos los elementos hijos directos del nodo pacientes."
+    }
+  },
+  {
+    "id": "UT6-Q14",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Si un ingeniero de datos necesita ejecutar una consulta que muestre todos los doctores y, acto seguido, todos los años de ingreso, ¿qué operador debe utilizar para unir ambas secuencias XPath?",
+    "contexto": "Combinación de varias rutas XPath para mostrar dos secuencias de nodos en una misma consulta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El símbolo de ampersand comercial duplicado"
+      },
+      {
+        "clave": "b",
+        "texto": "La barra vertical o pleca para unir las rutas"
+      },
+      {
+        "clave": "c",
+        "texto": "La barra diagonal invertida para fusionar ramas"
+      },
+      {
+        "clave": "d",
+        "texto": "El operador de suma para concatenar valores"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, para combinar varias rutas en XPath, se utiliza el operador |, conocido como barra vertical o pleca. Este operador permite unir dos rutas, por ejemplo una que seleccione doctores y otra que seleccione años de ingreso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El ampersand duplicado no es el operador que el temario presenta para unir rutas XPath. En XPath se usa la barra vertical | para combinar selecciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "La barra diagonal invertida no se usa en XPath para fusionar ramas. XPath utiliza principalmente / y // para navegar por la jerarquía, no para unir dos rutas independientes."
+        },
+        {
+          "clave": "d",
+          "motivo": "El operador de suma sirve para operaciones numéricas, no para unir secuencias de nodos XPath como doctores e ingresos."
+        }
+      ],
+      "resumen_didactico": "En XPath, si quieres juntar los resultados de dos rutas distintas, usas el operador |.",
+      "ejemplo_practico": "La expresión /ArchivoClinico/pacientes/doctor | /ArchivoClinico/pacientes/ingreso mostraría primero los nodos doctor y después los nodos ingreso.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque la barra vertical o pleca | es el operador utilizado para unir varias rutas XPath."
+    }
+  },
+  {
+    "id": "UT6-Q15",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "¿Cuál es la función específica de la cláusula \"Return\" en una instrucción de consulta avanzada?",
+    "contexto": "Identificación de la función de la cláusula Return dentro de la sintaxis FLWOR de XQuery.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ordena los resultados alfabéticamente o numéricamente antes del envío"
+      },
+      {
+        "clave": "b",
+        "texto": "Enlaza una secuencia de datos crudos a una variable temporal"
+      },
+      {
+        "clave": "c",
+        "texto": "Selecciona una secuencia inicial de nodos para crear el bucle"
+      },
+      {
+        "clave": "d",
+        "texto": "Determina qué devolver como resultado final evaluándose en todos los nódulos procesados"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, dentro de la sintaxis FLWOR de XQuery, la cláusula Return determina qué debe devolver la consulta. Después de seleccionar, filtrar u ordenar los datos, Return construye el resultado final que se mostrará, por ejemplo una lista HTML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ordenar los resultados corresponde a la cláusula Order by, no a Return."
+        },
+        {
+          "clave": "b",
+          "motivo": "Enlazar una secuencia de datos a una variable temporal corresponde a la cláusula Let, no a Return."
+        },
+        {
+          "clave": "c",
+          "motivo": "Seleccionar una secuencia inicial de nodos para recorrerla corresponde a la cláusula For, no a Return."
+        }
+      ],
+      "resumen_didactico": "En FLWOR, Return es la parte que decide la salida final de la consulta: qué datos se devuelven y con qué estructura.",
+      "ejemplo_practico": "En una consulta XQuery, después de recorrer pacientes con For, filtrar con Where y ordenar con Order by, Return puede devolver cada paciente dentro de una etiqueta <li>{data($paciente/nombre)}</li> para generar una lista HTML.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque Return determina qué se devuelve como resultado final tras procesar los nodos de la consulta."
+    }
+  },
+  {
+    "id": "UT6-Q16",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un equipo técnico trabaja con una base de datos eXist-db y necesita escribir, compilar y probar consultas directamente sobre el servidor activo sin depender de aplicaciones de terceros. ¿Qué entorno integrado proporciona el propio sistema para esta tarea?",
+    "contexto": "Uso de herramientas integradas en eXist-db para escribir y ejecutar consultas XQuery directamente sobre la base de datos activa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El editor de texto plano del sistema operativo anfitrión"
+      },
+      {
+        "clave": "b",
+        "texto": "El procesador predeterminado de hojas de estilo en cascada"
+      },
+      {
+        "clave": "c",
+        "texto": "La terminal de comandos mediante parámetros de envío externos"
+      },
+      {
+        "clave": "d",
+        "texto": "El entorno de desarrollo integrado basado en web eXide"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que eXide es la herramienta oficial de eXist-db. Es un entorno de desarrollo integrado, o IDE, basado en web, diseñado específicamente para escribir, compilar y ejecutar consultas XQuery directamente sobre la base de datos activa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un editor de texto plano permite escribir código, pero no es el entorno integrado propio de eXist-db ni permite trabajar directamente sobre la base de datos activa de forma cómoda."
+        },
+        {
+          "clave": "b",
+          "motivo": "El procesador de hojas de estilo en cascada está relacionado con CSS y la presentación visual, no con escribir, compilar y ejecutar consultas XQuery sobre eXist-db."
+        },
+        {
+          "clave": "c",
+          "motivo": "La terminal puede servir para arrancar servicios o ejecutar comandos, pero el temario señala eXide como la herramienta integrada basada en web para trabajar directamente con consultas en eXist-db."
+        }
+      ],
+      "resumen_didactico": "eXide es como el panel de control web de eXist-db: desde ahí puedes escribir y ejecutar consultas XQuery sin tener que usar herramientas externas.",
+      "ejemplo_practico": "Si Hugo necesita generar un informe urgente, puede abrir eXide en el navegador, escribir una consulta FLWOR, ejecutarla y ver el resultado directamente sobre los datos almacenados en eXist-db.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque eXide es el IDE web integrado que proporciona eXist-db para escribir, compilar y probar consultas sobre la base de datos activa."
+    }
+  },
+  {
+    "id": "UT6-Q17",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Por motivos de seguridad y cumplimiento normativo, el acceso a la interfaz web de gestión de datos debe estar cifrado mediante SSL. ¿Qué puerto de red utiliza por defecto eXist-db para este tráfico seguro?",
+    "contexto": "Configuración de puertos de red por defecto en eXist-db para tráfico HTTP y HTTPS con SSL.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El puerto 8443"
+      },
+      {
+        "clave": "b",
+        "texto": "El puerto 8080"
+      },
+      {
+        "clave": "c",
+        "texto": "El puerto 80"
+      },
+      {
+        "clave": "d",
+        "texto": "El puerto 443"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que eXist-db utiliza por defecto el puerto 8080 para tráfico HTTP de la interfaz web estándar y el puerto 8443 para HTTPS con SSL cifrado, indispensable cuando se necesita proteger información sensible.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El puerto 8080 corresponde al tráfico HTTP de la interfaz web estándar, pero no al tráfico seguro HTTPS con SSL."
+        },
+        {
+          "clave": "c",
+          "motivo": "El puerto 80 es el puerto habitual de HTTP en muchos servidores web, pero no es el puerto seguro por defecto indicado en el temario para eXist-db."
+        },
+        {
+          "clave": "d",
+          "motivo": "El puerto 443 es el puerto estándar general para HTTPS en la web, pero el temario especifica que eXist-db usa por defecto el puerto 8443 para HTTPS con SSL."
+        }
+      ],
+      "resumen_didactico": "En eXist-db, 8080 se asocia al acceso web normal por HTTP y 8443 al acceso seguro por HTTPS con SSL.",
+      "ejemplo_practico": "Si Hugo necesita acceder a eXist-db de forma cifrada para proteger datos médicos, debe usar la conexión segura del servidor en el puerto 8443.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque eXist-db utiliza por defecto el puerto 8443 para el tráfico HTTPS cifrado mediante SSL."
+    }
+  },
+  {
+    "id": "UT6-Q18",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Al revisar una lista cronológica, un desarrollador debe extraer la información del penúltimo elemento registrado en un conjunto de nodos. ¿Cómo se redacta correctamente este predicado en XPath?",
+    "contexto": "Uso de predicados en XPath para seleccionar el penúltimo nodo dentro de un conjunto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "[last()-2]"
+      },
+      {
+        "clave": "b",
+        "texto": "[end()-1]"
+      },
+      {
+        "clave": "c",
+        "texto": "[last()-1]"
+      },
+      {
+        "clave": "d",
+        "texto": "[position()-1]"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los predicados en XPath se escriben entre corchetes y permiten filtrar nodos concretos. Para seleccionar el último nodo se usa [last()], y para seleccionar el penúltimo se usa [last()-1].",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "[last()-2] seleccionaría el antepenúltimo elemento, no el penúltimo, porque resta dos posiciones al último nodo."
+        },
+        {
+          "clave": "b",
+          "motivo": "[end()-1] no es la forma correcta indicada por XPath en el temario. La función usada para referirse al último elemento es last(), no end()."
+        },
+        {
+          "clave": "d",
+          "motivo": "[position()-1] no selecciona correctamente el penúltimo elemento. position() indica la posición actual de cada nodo, pero no calcula por sí sola la posición anterior al último nodo."
+        }
+      ],
+      "resumen_didactico": "Para ir al penúltimo elemento en XPath, partes del último con last() y le restas una posición: [last()-1].",
+      "ejemplo_practico": "La expresión /ArchivoClinico/pacientes[last()-1]/doctor seleccionaría el doctor asociado al penúltimo paciente registrado en el conjunto de nodos pacientes.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque [last()-1] es el predicado XPath correcto para seleccionar el penúltimo elemento."
+    }
+  },
+  {
+    "id": "UT6-Q19",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Una aplicación financiera recibe bloques estructurados de información y los almacena en un servidor SQL, desmontando la jerarquía original para repartir las etiquetas en tablas relacionales separadas. ¿A qué modelo de almacenamiento corresponde esta práctica?",
+    "contexto": "Almacenamiento de información XML en una base SQL mediante transformación de la jerarquía original a tablas relacionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Almacenamiento directo en ficheros convencionales"
+      },
+      {
+        "clave": "b",
+        "texto": "Sistemas de gestión de objetos procedimentales"
+      },
+      {
+        "clave": "c",
+        "texto": "Bases de datos habilitadas o no nativas"
+      },
+      {
+        "clave": "d",
+        "texto": "Bases de datos nativas con estructura arbórea"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las bases de datos XML enabled o no nativas son bases de datos relacionales que transforman los archivos XML en esquemas relacionales para volcar los datos. Esto implica desmontar la jerarquía original del documento y repartir sus partes en tablas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El almacenamiento directo en ficheros convencionales guardaría el contenido como archivos del sistema operativo, no en un servidor SQL ni transformado en tablas relacionales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los sistemas de gestión de objetos procedimentales no son el modelo descrito en el temario para almacenar XML transformándolo en tablas SQL."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las bases de datos XML nativas conservan la estructura arbórea original del documento. En el caso planteado ocurre lo contrario: la jerarquía se desmonta y se reparte en tablas relacionales."
+        }
+      ],
+      "resumen_didactico": "Si el XML se transforma para adaptarse a tablas SQL, estamos ante una base XML enabled o no nativa.",
+      "ejemplo_practico": "Si un documento XML financiero contiene <cliente>, <cuentas> y <movimientos>, una base XML enabled podría guardar clientes en una tabla, cuentas en otra y movimientos en otra, rompiendo la estructura original del XML.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque desmontar la jerarquía XML para repartir los datos en tablas relacionales corresponde a bases de datos habilitadas o no nativas."
+    }
+  },
+  {
+    "id": "UT6-Q20",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "En el mercado de sistemas de almacenamiento de código abierto, ¿qué característica principal define al software BaseX?",
+    "contexto": "Identificación de BaseX como alternativa de base de datos XML dentro de las herramientas de almacenamiento XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es un sistema de almacenamiento masivo basado en ficheros de texto simples"
+      },
+      {
+        "clave": "b",
+        "texto": "Es una base de datos relacional orientada a objetos visuales"
+      },
+      {
+        "clave": "c",
+        "texto": "Es un entorno de desarrollo exclusivo para la edición de hojas de estilo"
+      },
+      {
+        "clave": "d",
+        "texto": "Es una base de datos XML fiable y muy utilizada para el desarrollo web por ser de código abierto"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta BaseX como una alternativa a eXist-db. Lo define como una base de datos XML bastante fiable y muy utilizada para el desarrollo de aplicaciones web, destacando además que se trata de una herramienta de código abierto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "BaseX no se define como un sistema basado en ficheros de texto simples. El tema diferencia claramente entre ficheros convencionales y bases de datos XML, y BaseX pertenece a este segundo grupo."
+        },
+        {
+          "clave": "b",
+          "motivo": "BaseX no es una base de datos relacional orientada a objetos visuales. Es una base de datos XML, pensada para trabajar con documentos estructurados en formato XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "BaseX no es un entorno exclusivo para editar hojas de estilo. Su función principal no es editar CSS ni estilos, sino almacenar, consultar y gestionar información XML."
+        }
+      ],
+      "resumen_didactico": "BaseX es una base de datos XML de código abierto, fiable y usada en desarrollo web como alternativa a eXist-db.",
+      "ejemplo_practico": "Si un equipo no quiere usar eXist-db para guardar documentos XML de una aplicación web, puede elegir BaseX como alternativa para almacenar y consultar esos datos estructurados.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque BaseX se define en el temario como una base de datos XML fiable, muy utilizada en desarrollo web y de código abierto."
+    }
+  },
+  {
+    "id": "UT6-Q21",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un administrador accede a la consola de comandos de un servidor Linux y ejecuta la instrucción java -jar start.jar en el directorio correspondiente. ¿Qué acción técnica está realizando?",
+    "contexto": "Arranque de eXist-db desde la consola mediante el comando java -jar start.jar.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Borrar los registros temporales y reiniciar el servicio web"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar la memoria máxima de la máquina virtual del servidor"
+      },
+      {
+        "clave": "c",
+        "texto": "Instalar los paquetes básicos del sistema operativo"
+      },
+      {
+        "clave": "d",
+        "texto": "Encender el motor de la base de datos para permitir la búsqueda de información"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, para encender el motor de eXist-db y permitir que los usuarios puedan buscar datos, se ejecuta en la consola el comando java -jar start.jar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El comando java -jar start.jar no se usa para borrar registros temporales ni para reiniciar un servicio web. Su función en el temario es arrancar el motor de eXist-db."
+        },
+        {
+          "clave": "b",
+          "motivo": "La configuración de memoria se realiza durante la instalación o configuración del servicio, pero no es la acción concreta que representa ejecutar java -jar start.jar."
+        },
+        {
+          "clave": "c",
+          "motivo": "Instalar paquetes básicos del sistema operativo es una tarea previa o externa. El comando indicado no instala el sistema operativo ni sus paquetes, sino que inicia eXist-db."
+        }
+      ],
+      "resumen_didactico": "El comando java -jar start.jar sirve para arrancar eXist-db y dejar activa la base de datos para poder trabajar con ella.",
+      "ejemplo_practico": "Si Hugo necesita que los médicos puedan consultar historiales clínicos almacenados en eXist-db, primero debe iniciar el motor de la base de datos ejecutando java -jar start.jar.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque ejecutar java -jar start.jar en eXist-db enciende el motor de la base de datos y permite la búsqueda de información."
+    }
+  },
+  {
+    "id": "UT6-Q22",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Para construir consultas complejas e informes desde un archivo estructurado, ¿cuántas cláusulas fundamentales conforman el acrónimo de la sintaxis FLWOR?",
+    "contexto": "Identificación del número de cláusulas principales que forman la sintaxis FLWOR en XQuery.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Seis cláusulas"
+      },
+      {
+        "clave": "b",
+        "texto": "Cinco cláusulas"
+      },
+      {
+        "clave": "c",
+        "texto": "Cuatro cláusulas"
+      },
+      {
+        "clave": "d",
+        "texto": "Tres cláusulas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XQuery utiliza la sintaxis FLWOR, formada por cinco cláusulas principales: For, Let, Where, Order by y Return.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FLWOR no está formado por seis cláusulas fundamentales en el temario. El acrónimo recoge cinco partes principales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Cuatro cláusulas sería insuficiente, porque dejaría fuera una de las partes de FLWOR: For, Let, Where, Order by o Return."
+        },
+        {
+          "clave": "d",
+          "motivo": "Tres cláusulas no representan la sintaxis FLWOR completa. El temario presenta cinco instrucciones fundamentales."
+        }
+      ],
+      "resumen_didactico": "FLWOR tiene cinco piezas: For para recorrer, Let para asignar, Where para filtrar, Order by para ordenar y Return para devolver el resultado.",
+      "ejemplo_practico": "Una consulta puede usar For para recorrer pacientes, Let para guardar una secuencia, Where para filtrar los ingresados después de 2020, Order by para ordenarlos por nombre y Return para devolver una lista HTML.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque FLWOR está formado por cinco cláusulas fundamentales."
+    }
+  },
+  {
+    "id": "UT6-Q23",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "En un entorno de ofimática en la nube, un analista escribe la instrucción =IMPORTXML(\"http://servidor/datos.xml\"; \"//email\") en una celda. ¿Qué resultado operativo obtendrá?",
+    "contexto": "Uso de la función IMPORTXML en una hoja de cálculo para extraer datos estructurados desde un archivo online mediante XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Extraerá información estructurada de archivos online mediante el uso de la ruta indicada, volcando los resultados en las celdas"
+      },
+      {
+        "clave": "b",
+        "texto": "Convertirá el código de la página en un documento imprimible en formato portátil"
+      },
+      {
+        "clave": "c",
+        "texto": "Transformará el archivo de origen en un esquema de base de datos relacional listo para MySQL"
+      },
+      {
+        "clave": "d",
+        "texto": "Descargará el archivo XML completo y lo guardará en el disco duro local del usuario"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que IMPORTXML es una función integrada en hojas de cálculo que permite extraer información estructurada desde páginas web o archivos online mediante una consulta XPath. En este caso, la ruta //email indica que se deben buscar todos los nodos email del documento y volcar los resultados directamente en las celdas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "IMPORTXML no convierte el contenido en un documento imprimible ni genera un archivo portátil como PDF. Su función es extraer datos estructurados hacia la hoja de cálculo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Transformar un XML en un esquema relacional para MySQL corresponde a otro tipo de proceso relacionado con bases XML enabled o no nativas, no con la función IMPORTXML."
+        },
+        {
+          "clave": "d",
+          "motivo": "IMPORTXML no descarga el archivo XML completo al disco duro local. Lee la fuente online y extrae únicamente los datos que coinciden con la consulta XPath indicada."
+        }
+      ],
+      "resumen_didactico": "IMPORTXML sirve para traer a una hoja de cálculo datos concretos de un archivo online usando una ruta XPath.",
+      "ejemplo_practico": "Si el archivo datos.xml contiene varios elementos <email>, la fórmula =IMPORTXML(\"http://servidor/datos.xml\"; \"//email\") mostrará esos correos en las celdas de la hoja de cálculo.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque IMPORTXML extrae información estructurada desde archivos online mediante la ruta XPath indicada y vuelca los resultados en las celdas."
+    }
+  },
+  {
+    "id": "UT6-Q24",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Una plataforma logística exige que el procesamiento de datos evite realizar transformaciones complejas entre modelos para no consumir tiempo extra de CPU, manteniendo el formato original de entrada y salida. ¿Qué arquitectura de base de datos resuelve este requerimiento?",
+    "contexto": "Necesidad de almacenar y recuperar datos XML sin transformar su estructura original ni consumir tiempo extra en conversiones entre modelos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Modelo de almacenamiento de base de datos nativa"
+      },
+      {
+        "clave": "b",
+        "texto": "Modelo de almacenamiento en hojas de cálculo compartidas"
+      },
+      {
+        "clave": "c",
+        "texto": "Modelo de almacenamiento habilitado para tablas relacionales"
+      },
+      {
+        "clave": "d",
+        "texto": "Modelo de archivos estructurados mediante comas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las bases de datos XML nativas trabajan de manera jerárquica igual que los propios documentos XML. Al no tener que transformar el documento a otro modelo, evitan conversiones complejas que pueden provocar fallos y consumir tiempo de procesamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las hojas de cálculo compartidas pueden servir para tareas sencillas de extracción o consulta, como con IMPORTXML, pero no son una arquitectura de base de datos pensada para conservar y procesar documentos XML complejos en su forma original."
+        },
+        {
+          "clave": "c",
+          "motivo": "El modelo habilitado para tablas relacionales corresponde a bases XML enabled o no nativas. Estas transforman el XML en esquemas relacionales, lo que implica precisamente realizar conversiones entre modelos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los archivos estructurados mediante comas, como CSV, no conservan una estructura jerárquica XML ni resuelven el problema de mantener el formato original de entrada y salida."
+        }
+      ],
+      "resumen_didactico": "Si se quiere evitar transformar los datos y mantener intacta su estructura jerárquica, la opción correcta es una base de datos nativa.",
+      "ejemplo_practico": "Si una plataforma logística recibe documentos XML con rutas, almacenes, vehículos y paquetes anidados, una base de datos XML nativa puede guardarlos tal cual y consultarlos sin convertirlos antes en tablas SQL.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el modelo de base de datos nativa conserva la estructura original y evita transformaciones complejas entre modelos."
+    }
+  },
+  {
+    "id": "UT6-Q25",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Al analizar la estructura en árbol que se genera tras procesar un documento para realizar consultas de rutas, ¿cómo define la teoría a un \"valor atómico\"?",
+    "contexto": "Definición de valor atómico dentro de la estructura arbórea de nodos procesada por XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A las referencias exclusivas a espacios de nombres del documento"
+      },
+      {
+        "clave": "b",
+        "texto": "Al nodo principal que inicia el archivo completo"
+      },
+      {
+        "clave": "c",
+        "texto": "A los elementos que se encuentran sin padres ni hijos"
+      },
+      {
+        "clave": "d",
+        "texto": "Al contenido real que leemos en formato de texto plano"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, dentro de los nodos en XPath y sus relaciones, un valor atómico hace referencia a elementos sin padres ni hijos. Es decir, no se comporta como un nodo dentro de una relación jerárquica completa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las referencias a espacios de nombres corresponden al concepto de namespace, uno de los tipos de nodos que puede reconocer XPath, pero no definen un valor atómico."
+        },
+        {
+          "clave": "b",
+          "motivo": "El nodo principal que inicia el archivo completo es el nodo raíz, no un valor atómico."
+        },
+        {
+          "clave": "d",
+          "motivo": "El contenido real que leemos, como un nombre, una fecha o un texto, corresponde al nodo texto en el temario, no específicamente al valor atómico."
+        }
+      ],
+      "resumen_didactico": "Un valor atómico es una unidad simple dentro del modelo de datos: no tiene estructura interna de árbol, ni padres ni hijos.",
+      "ejemplo_practico": "En una consulta XPath, un valor simple como 2023 o el texto extraído de una etiqueta puede tratarse como un valor atómico cuando ya no se está trabajando con la etiqueta completa y sus relaciones jerárquicas.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el temario define el valor atómico como un elemento sin padres ni hijos."
+    }
+  },
+  {
+    "id": "UT6-Q26",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un desarrollador debe consultar el inventario y necesita filtrar resultados utilizando condiciones excluyentes e inclusivas, como que un valor sea mayor que X y menor que Y. ¿Qué estándar del W3C incorpora operadores lógicos como \"and\" u \"or\" dentro de sus rutas de consulta?",
+    "contexto": "Uso de operadores lógicos y relacionales dentro de expresiones XPath para filtrar nodos en documentos XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Algoritmos de encriptación asimétrica"
+      },
+      {
+        "clave": "b",
+        "texto": "XPath"
+      },
+      {
+        "clave": "c",
+        "texto": "Funciones de diseño visual en línea"
+      },
+      {
+        "clave": "d",
+        "texto": "Hojas de estilo en cascada"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XPath es un lenguaje de rutas recomendado por la W3C que permite buscar y seleccionar nodos dentro de documentos XML. Además, incorpora predicados y operadores como =, !=, <, <=, >, >=, or y and para afinar las condiciones de búsqueda.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los algoritmos de encriptación asimétrica pertenecen al ámbito de la seguridad y cifrado de datos, no a la búsqueda de nodos dentro de documentos XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las funciones de diseño visual en línea están relacionadas con la presentación o apariencia de una página, no con rutas de consulta ni operadores lógicos para filtrar datos XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las hojas de estilo en cascada, o CSS, sirven para definir estilos visuales en documentos web. No son el estándar usado para recorrer y filtrar nodos XML mediante condiciones como and u or."
+        }
+      ],
+      "resumen_didactico": "XPath permite crear rutas de búsqueda y añadir condiciones con operadores lógicos como and y or dentro de predicados.",
+      "ejemplo_practico": "La expresión //producto[precio > 10 and precio < 50] seleccionaría los productos cuyo precio sea mayor que 10 y menor que 50.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque XPath es el estándar del W3C que permite usar operadores lógicos como and y or en rutas de consulta XML."
+    }
+  },
+  {
+    "id": "UT6-Q27",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Antes de iniciar la instalación de un servidor de almacenamiento nativo multiplataforma en una empresa, ¿qué software de base es el único requisito estricto que debe estar instalado en el sistema operativo?",
+    "contexto": "Requisito previo para instalar eXist-db como base de datos XML nativa en sistemas Windows, Mac OS o Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un intérprete del lenguaje de programación Python"
+      },
+      {
+        "clave": "b",
+        "texto": "El entorno de librerías visuales de Microsoft"
+      },
+      {
+        "clave": "c",
+        "texto": "Un servidor web Apache preconfigurado"
+      },
+      {
+        "clave": "d",
+        "texto": "El entorno de ejecución de Java debidamente instalado"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que eXist-db puede instalarse en Windows, Mac OS o Linux, y que el único requisito base es tener instalado Java en el sistema. También se recomienda mantener la máquina virtual de Java actualizada a una versión LTS por motivos de seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Python no aparece en el temario como requisito necesario para instalar eXist-db. La instalación se realiza mediante un archivo .jar, por lo que el requisito clave es Java."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las librerías visuales de Microsoft no son el requisito indicado para instalar eXist-db. Además, eXist-db es multiplataforma y no depende específicamente de componentes visuales de Microsoft."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es necesario tener un servidor Apache preconfigurado para instalar eXist-db. El temario señala Java como requisito base y después explica cómo arrancar el propio motor de eXist-db."
+        }
+      ],
+      "resumen_didactico": "Para instalar eXist-db, lo imprescindible es tener Java instalado, porque el instalador y el arranque se ejecutan mediante comandos java -jar.",
+      "ejemplo_practico": "Si Hugo descarga el instalador exist-db-setup-xxx.jar, necesitará Java instalado para poder ejecutarlo con el comando java -jar exist-db-setup-xxx.jar.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el requisito estricto para instalar eXist-db es tener el entorno de ejecución de Java debidamente instalado."
+    }
+  },
+  {
+    "id": "UT6-Q28",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Durante una auditoría de código de internacionalización, se necesita extraer el atributo de idioma que podría estar asociado a diferentes etiquetas a lo largo de un documento masivo. ¿Qué ruta debe formularse para recuperar este atributo en cualquier ubicación?",
+    "contexto": "Selección del atributo lang en cualquier parte de un documento XML mediante XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "//@lang"
+      },
+      {
+        "clave": "b",
+        "texto": "/*lang"
+      },
+      {
+        "clave": "c",
+        "texto": "/@lang/all"
+      },
+      {
+        "clave": "d",
+        "texto": "//lang@"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en XPath el símbolo @ sirve para seleccionar atributos y que // permite buscar coincidencias sin importar en qué parte del documento se encuentren. Por eso, //@lang recupera todos los atributos lang existentes en cualquier ubicación del documento XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "/*lang no es una expresión correcta para seleccionar atributos. Además, no usa @, que es el símbolo necesario para acceder a atributos en XPath."
+        },
+        {
+          "clave": "c",
+          "motivo": "/@lang/all intentaría partir desde la raíz hacia un atributo lang y luego hacia un supuesto elemento all, pero no representa una búsqueda global de atributos lang."
+        },
+        {
+          "clave": "d",
+          "motivo": "//lang@ tiene una sintaxis incorrecta. En XPath, el símbolo @ debe colocarse antes del nombre del atributo, no después."
+        }
+      ],
+      "resumen_didactico": "Para buscar un atributo en cualquier parte del XML se combina // con @. La forma correcta es //@nombreAtributo.",
+      "ejemplo_practico": "Si un documento contiene <nombre lang=\"es\">, <descripcion lang=\"en\"> y <titulo lang=\"fr\">, la ruta //@lang recuperaría los valores es, en y fr.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque //@lang selecciona todos los atributos lang sin importar en qué etiqueta o nivel del documento aparezcan."
+    }
+  },
+  {
+    "id": "UT6-Q29",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un equipo directivo requiere extraer datos de extensos archivos de registros, filtrarlos, ordenarlos y transformar directamente ese resumen en páginas web para su presentación en reuniones. ¿Qué tecnología está diseñada específicamente para generar estos informes con datos resumidos?",
+    "contexto": "Generación de informes resumidos a partir de archivos XML extensos, con filtrado, ordenación y transformación directa a páginas web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enlaces XLink"
+      },
+      {
+        "clave": "b",
+        "texto": "XPath básico"
+      },
+      {
+        "clave": "c",
+        "texto": "Rutas relativas simples"
+      },
+      {
+        "clave": "d",
+        "texto": "XQuery"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XQuery permite extraer información de archivos XML extensos, generar informes con datos resumidos y transformar datos XML directamente en páginas web XHTML. Además, mediante la sintaxis FLWOR, permite seleccionar, filtrar, ordenar y devolver resultados estructurados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XLink está relacionado con la creación de enlaces en documentos XML, pero no es la tecnología indicada en el temario para filtrar, ordenar y generar informes web con datos resumidos."
+        },
+        {
+          "clave": "b",
+          "motivo": "XPath básico sirve para buscar y seleccionar nodos dentro de documentos XML, pero se queda corto cuando se necesita generar informes completos, ordenar datos y transformar el resultado en páginas web."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las rutas relativas simples permiten navegar por una estructura, pero no ofrecen por sí solas capacidades avanzadas de filtrado, ordenación y generación de informes."
+        }
+      ],
+      "resumen_didactico": "XPath localiza datos; XQuery permite trabajar con ellos de forma avanzada para crear informes completos y salidas web.",
+      "ejemplo_practico": "Un hospital podría usar XQuery para recorrer todos los pacientes de un archivo XML, filtrar solo los ingresados después de 2023, ordenarlos por nombre y devolver una lista HTML para mostrarla en el navegador.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque XQuery está diseñado para consultar, filtrar, ordenar y transformar datos XML en informes o páginas web."
+    }
+  },
+  {
+    "id": "UT6-Q30",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "En la sintaxis de navegación por nodos, ¿qué selección se ejecuta al introducir el comando de dos puntos seguidos (..) en una expresión de ruta?",
+    "contexto": "Uso de expresiones de ruta en XPath para navegar entre nodos de un documento XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Selecciona la raíz absoluta de toda la estructura de datos"
+      },
+      {
+        "clave": "b",
+        "texto": "Selecciona el nodo padre del nodo actual"
+      },
+      {
+        "clave": "c",
+        "texto": "Selecciona todos los atributos del nivel actual"
+      },
+      {
+        "clave": "d",
+        "texto": "Selecciona el nodo actual en el que nos encontramos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, dentro de las expresiones de ruta de XPath, los dos puntos seguidos .. sirven para seleccionar el nodo padre del nodo actual. Es una forma de subir un nivel dentro de la estructura jerárquica del documento XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La raíz absoluta de la estructura se selecciona con /, no con ..."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los atributos se seleccionan usando @. Por ejemplo, //@lang selecciona atributos lang en cualquier parte del documento."
+        },
+        {
+          "clave": "d",
+          "motivo": "El nodo actual se selecciona con un solo punto ., no con dos puntos seguidos ..."
+        }
+      ],
+      "resumen_didactico": "En XPath, . significa nodo actual y .. significa nodo padre. Es decir, con .. subes un nivel en el árbol XML.",
+      "ejemplo_practico": "Si estás situado en el nodo <nombre> dentro de <pacientes>, usar .. te llevaría al nodo padre <pacientes>.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque .. selecciona el nodo padre del nodo actual en una expresión XPath."
+    }
+  }
+]

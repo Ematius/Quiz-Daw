@@ -373,5 +373,82 @@ export const topicsByModule = {
         numQuestion: 30,
       },
     
+  ],
+  lenguajeMarcas: [
+    {
+      id: "UT1",
+      title: "Reconocimiento de las características de los lenguajes de marcas",
+      numQuestion: 30,
+    },
+    {
+      id: "UT2",
+      title: "Lenguajes para la visualización de información",
+      numQuestion: 30,
+    },
+    {
+      id: "UT3",
+      title: "Lenguajes para el almacenamiento y transmisión de información",
+      numQuestion: 30,
+    },
+    {
+      id: "UT4",
+      title:"Definición de esquemas y vocabularios en XML",
+      numQuestion: 30,  
+    },
+    {
+      id: "UT5",
+      title: "Conversión y adaptación de documentos XML",
+      numQuestion: 30,
+    },
+    {
+      id: "UT6",
+      title: "Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+      numQuestion: 30,
+    },
+    {
+      id: "UT7",
+      title:"Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+      numQuestion: 30,
+    },
+    {
+      id: "UT8",
+      title: "Sistemas de gestión empresarial",
+      numQuestion: 30,
+    },
+    {
+      id: "UT9",
+      title: "Repaso global (Abarca de 0% a 14% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT10",
+      title: "Repaso global (Abarca de 17% a 28% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT11",
+      title: "Repaso global (Abarca de 28% a 42% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT12",
+      title: "Repaso global (Abarca de 42% a 56% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT13",
+      title: "Repaso global (Abarca de 56% a 70% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT14",
+      title: "Repaso global (Abarca de 70% a 84% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT15",
+      title: "Repaso global (Abarca de 84% a 100% del temario)",
+      numQuestion: 30,
+    }
   ]
 };

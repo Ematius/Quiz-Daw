@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT4-Q01",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un equipo de desarrollo necesita diseñar un sistema de intercambio de datos donde las etiquetas se adapten específicamente a la terminología de su sector industrial. ¿Qué característica principal del estándar permite esta flexibilidad operativa?",
+    "contexto": "Diseño de un sistema XML donde las etiquetas deben adaptarse a la terminología concreta de un sector industrial.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El uso de marcas no predefinidas que da libertad para definir etiquetas propias"
+      },
+      {
+        "clave": "b",
+        "texto": "La obligación de compilar el documento en un archivo binario para su lectura"
+      },
+      {
+        "clave": "c",
+        "texto": "Su dependencia exclusiva de un conjunto de etiquetas predefinidas por el consorcio oficial"
+      },
+      {
+        "clave": "d",
+        "texto": "La integración nativa con bases de datos relacionales tradicionales"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XML es un lenguaje de marcas que utiliza marcas no predefinidas. Esto significa que el desarrollador puede crear sus propias etiquetas según las necesidades del sistema, del sector o del tipo de información que quiera representar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XML no necesita compilarse en un archivo binario para poder leerse. Es un formato de texto plano, legible tanto por personas como por programas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esta opción dice justo lo contrario de lo que caracteriza a XML. XML no depende de un conjunto cerrado de etiquetas predefinidas, sino que permite crear etiquetas propias."
+        },
+        {
+          "clave": "d",
+          "motivo": "XML puede intercambiar información con distintos sistemas, pero su flexibilidad no depende de una integración nativa con bases de datos relacionales."
+        }
+      ],
+      "resumen_didactico": "La gran ventaja de XML es que no te obliga a usar etiquetas ya existentes. Puedes crear etiquetas adaptadas a tu propio contexto, como productos, rutas, pedidos, drones, pacientes o facturas.",
+      "ejemplo_practico": "En una empresa logística podrías crear etiquetas como <camion>, <ruta>, <paquete> o <almacen>. En una clínica podrías usar <paciente>, <diagnostico> o <tratamiento>. XML permite adaptar el vocabulario al sector.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque XML permite usar marcas no predefinidas y crear etiquetas propias según las necesidades del sistema."
+    }
+  },
+  {
+    "id": "UT4-Q02",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Cómo se denomina técnicamente a la jerarquía de datos donde toda la información surge de un único elemento principal ramificándose en elementos secundarios?",
+    "contexto": "Organización jerárquica de un documento XML desde una única raíz hacia elementos hijos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Estructura arborescente"
+      },
+      {
+        "clave": "b",
+        "texto": "Estructura orientada a objetos"
+      },
+      {
+        "clave": "c",
+        "texto": "Estructura relacional"
+      },
+      {
+        "clave": "d",
+        "texto": "Estructura procedimental"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XML organiza la información mediante una estructura arborescente. Esto significa que todo el documento parte de un único elemento principal, llamado raíz, y desde él se ramifican los elementos secundarios o hijos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La estructura orientada a objetos pertenece al paradigma de programación basado en clases, objetos, atributos y métodos. No es el término usado para describir la jerarquía de un documento XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "La estructura relacional se asocia a bases de datos organizadas en tablas, filas y columnas. XML no organiza sus datos como tablas relacionales, sino como una jerarquía de nodos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La estructura procedimental se relaciona con una forma de programar basada en pasos o procedimientos. No describe la organización jerárquica de elementos en XML."
+        }
+      ],
+      "resumen_didactico": "En XML todo documento debe tener una única raíz. Desde esa raíz cuelgan los elementos hijos, igual que las ramas de un árbol. Por eso se habla de estructura arborescente.",
+      "ejemplo_practico": "<almacen>\n  <producto>\n    <nombre>Teclado</nombre>\n    <precio>25</precio>\n  </producto>\n</almacen>",
+      "conclusion_final": "La respuesta correcta es la opción a, porque la jerarquía de datos propia de XML se denomina estructura arborescente."
+    }
+  },
+  {
+    "id": "UT4-Q03",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Al configurar el inicio de un documento para el intercambio internacional de datos, se requiere especificar que el archivo no depende de esquemas externos. ¿Qué atributo se debe incluir en la instrucción de procesamiento para indicar esto?",
+    "contexto": "Uso del prólogo o instrucción de procesamiento XML para indicar si el documento depende o no de archivos externos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El atributo encoding configurado como UTF-8"
+      },
+      {
+        "clave": "b",
+        "texto": "El atributo version indicando la última actualización"
+      },
+      {
+        "clave": "c",
+        "texto": "El atributo standalone configurado con un no"
+      },
+      {
+        "clave": "d",
+        "texto": "El atributo schema configurado como interno"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que dentro del prólogo de un documento XML pueden aparecer tres datos principales: version, encoding y standalone. El atributo standalone se usa para indicar si el documento trabaja de forma independiente o si está relacionado con ficheros externos como DTD o XSD. Técnicamente, si se quiere indicar que el documento no depende de esquemas externos, el valor correcto sería standalone=\"yes\". Sin embargo, entre las opciones del test, la única que identifica el atributo adecuado es la opción c.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "encoding sirve para indicar la codificación de caracteres del documento, por ejemplo UTF-8 o ISO-8859-1. No indica si el XML depende o no de esquemas externos."
+        },
+        {
+          "clave": "b",
+          "motivo": "version indica la versión de XML utilizada, normalmente 1.0. No sirve para marcar dependencia de DTD o XSD externos."
+        },
+        {
+          "clave": "d",
+          "motivo": "schema no es un atributo propio de la instrucción de procesamiento inicial del XML. La asociación con esquemas XSD se hace normalmente mediante atributos como xsi:noNamespaceSchemaLocation o xsi:schemaLocation dentro del elemento raíz."
+        }
+      ],
+      "resumen_didactico": "En el prólogo XML, standalone es el atributo relacionado con la independencia del documento respecto a archivos externos. Si el XML no depende de otros ficheros, lo correcto sería usar standalone=\"yes\".",
+      "ejemplo_practico": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<producto>\n  <nombre>Teclado</nombre>\n</producto>",
+      "conclusion_final": "La opción más adecuada del test es la c porque identifica el atributo standalone, aunque técnicamente el valor correcto para indicar que no depende de esquemas externos sería standalone=\"yes\", no standalone=\"no\"."
+    }
+  },
+  {
+    "id": "UT4-Q04",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Durante una auditoría de código, un validador rechaza un archivo de configuración porque un elemento se abre como <Servidor> y se cierra como </servidor>. ¿A qué norma estricta del lenguaje se debe este fallo?",
+    "contexto": "Error de cierre de etiquetas XML por diferencia entre mayúsculas y minúsculas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A que el código es sensible a las mayúsculas y deben coincidir exactamente"
+      },
+      {
+        "clave": "b",
+        "texto": "A la obligación de declarar los elementos en un archivo de estilos externo"
+      },
+      {
+        "clave": "c",
+        "texto": "A la prohibición de utilizar vocales en los nombres de los elementos principales"
+      },
+      {
+        "clave": "d",
+        "texto": "A la limitación de longitud máxima para el nombre de las etiquetas de cierre"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XML es case sensitive, es decir, sensible a mayúsculas y minúsculas. Por tanto, la etiqueta de apertura y la etiqueta de cierre deben escribirse exactamente igual. <Servidor> y </servidor> no coinciden porque una empieza con S mayúscula y la otra con s minúscula.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XML no obliga a declarar los elementos en un archivo de estilos externo. Las hojas de estilo pueden usarse para presentación, pero no solucionan este error de sintaxis."
+        },
+        {
+          "clave": "c",
+          "motivo": "XML no prohíbe utilizar vocales en los nombres de los elementos. Nombres como <servidor>, <usuario> o <producto> son perfectamente válidos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El problema no está en una longitud máxima del nombre de la etiqueta, sino en que la apertura y el cierre no coinciden exactamente."
+        }
+      ],
+      "resumen_didactico": "En XML, <Servidor> y <servidor> son nombres diferentes. Las etiquetas deben abrirse y cerrarse con el mismo nombre exacto, respetando mayúsculas y minúsculas.",
+      "ejemplo_practico": "Incorrecto:\n<Servidor>Apache</servidor>\n\nCorrecto:\n<Servidor>Apache</Servidor>",
+      "conclusion_final": "La respuesta correcta es la opción a, porque XML es sensible a mayúsculas y minúsculas y exige que las etiquetas de apertura y cierre coincidan exactamente."
+    }
+  },
+  {
+    "id": "UT4-Q05",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Según las reglas de formación de los elementos, ¿qué elementos están estrictamente prohibidos al inicio del nombre de una etiqueta?",
+    "contexto": "Reglas de sintaxis para nombrar correctamente etiquetas o elementos XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las letras minúsculas con acentos locales"
+      },
+      {
+        "clave": "b",
+        "texto": "Los espacios y los números como inicio"
+      },
+      {
+        "clave": "c",
+        "texto": "El guion bajo y los caracteres alfanuméricos"
+      },
+      {
+        "clave": "d",
+        "texto": "Las letras mayúsculas de la A a la Z"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que los nombres de las etiquetas XML deben seguir reglas estrictas. No pueden comenzar con números ni contener espacios. Por ejemplo, <1Texto> es incorrecto porque empieza por número, y <Texto 1> es incorrecto porque contiene un espacio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El problema principal indicado en el temario no son las letras minúsculas ni los acentos locales, sino empezar con números o usar espacios dentro del nombre de la etiqueta."
+        },
+        {
+          "clave": "c",
+          "motivo": "El guion bajo y los caracteres alfanuméricos sí pueden formar parte del nombre de un elemento. De hecho, el temario muestra ejemplos válidos como <Texto_1>."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las letras mayúsculas están permitidas en XML. Lo importante es que se respeten exactamente igual en la etiqueta de apertura y cierre porque XML es sensible a mayúsculas y minúsculas."
+        }
+      ],
+      "resumen_didactico": "En XML no debes empezar el nombre de una etiqueta con un número ni usar espacios dentro del nombre. Para separar palabras, es mejor usar guion bajo.",
+      "ejemplo_practico": "Incorrecto:\n<1producto>Teclado</1producto>\n<nombre producto>Teclado</nombre producto>\n\nCorrecto:\n<producto1>Teclado</producto1>\n<nombre_producto>Teclado</nombre_producto>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque los nombres de etiquetas XML no deben empezar por números ni contener espacios."
+    }
+  },
+  {
+    "id": "UT4-Q06",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un técnico necesita añadir un identificador único y una categoría a un elemento sin crear subelementos nuevos. ¿Cuál es la sintaxis correcta para implementar estas propiedades en la etiqueta de apertura?",
+    "contexto": "Uso de atributos XML para añadir información adicional a un elemento sin crear nuevos subelementos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Encerrando cada propiedad entre corchetes dentro del elemento"
+      },
+      {
+        "clave": "b",
+        "texto": "Añadiendo las características con el signo igual y los valores entre comillas"
+      },
+      {
+        "clave": "c",
+        "texto": "Escribiendo las variables en mayúsculas al final del documento de texto"
+      },
+      {
+        "clave": "d",
+        "texto": "Separando las propiedades con comas fuera de la etiqueta principal"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que un atributo es información adicional que se añade dentro de la etiqueta de apertura de un elemento. Su sintaxis consiste en escribir el nombre del atributo, el signo igual y el valor entre comillas. Si hay varios atributos, se separan con espacios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XML no usa corchetes para definir atributos dentro de un elemento. Los atributos se escriben directamente en la etiqueta de apertura."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe una norma que obligue a escribir variables en mayúsculas al final del documento. Además, los atributos deben ir dentro de la etiqueta de apertura correspondiente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los atributos no se escriben fuera de la etiqueta principal ni se separan con comas. Se colocan dentro de la apertura del elemento y se separan con espacios."
+        }
+      ],
+      "resumen_didactico": "Cuando quieres añadir datos como un id, una categoría o un tipo sin crear nuevos elementos hijos, usas atributos dentro de la etiqueta de apertura.",
+      "ejemplo_practico": "<producto id=\"P001\" categoria=\"informatica\">\n  <nombre>Teclado</nombre>\n</producto>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque los atributos XML se escriben en la etiqueta de apertura usando nombre=\"valor\"."
+    }
+  },
+  {
+    "id": "UT4-Q07",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Cuál es la función principal de la sección estructurada con <![CDATA[ ]]> dentro de un documento de intercambio de datos?",
+    "contexto": "Uso de secciones CDATA dentro de documentos XML para incluir texto que no debe ser interpretado como marcado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Encriptar la información para que sea invisible en el navegador web"
+      },
+      {
+        "clave": "b",
+        "texto": "Validar la sintaxis del documento conectándose a un servidor externo"
+      },
+      {
+        "clave": "c",
+        "texto": "Permitir añadir información al archivo sin que sea procesada por el motor de lectura"
+      },
+      {
+        "clave": "d",
+        "texto": "Traducir automáticamente el texto al idioma configurado en el sistema operativo"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la sección CDATA es un bloque de texto no analizado. Sirve para añadir información al archivo XML sin que el motor de lectura la procese como etiquetas o código XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "CDATA no encripta ni oculta información. El contenido sigue siendo visible en el archivo, simplemente no se interpreta como marcado XML."
+        },
+        {
+          "clave": "b",
+          "motivo": "CDATA no valida la sintaxis del documento ni se conecta a servidores externos. La validación corresponde a parsers o validadores usando DTD o XSD."
+        },
+        {
+          "clave": "d",
+          "motivo": "CDATA no traduce texto ni depende del idioma del sistema operativo. Solo protege un bloque de texto para que no sea procesado como XML."
+        }
+      ],
+      "resumen_didactico": "CDATA se usa cuando necesitas meter texto dentro de un XML pero no quieres que el parser lo interprete como etiquetas. Es útil para incluir fragmentos de código, símbolos especiales o texto con caracteres como < y >.",
+      "ejemplo_practico": "<ejemplo>\n  <![CDATA[\n    <producto>\n      Esto parece una etiqueta XML, pero no se interpreta como XML.\n    </producto>\n  ]]>\n</ejemplo>",
+      "conclusion_final": "La respuesta correcta es la opción c, porque CDATA permite incluir información dentro del XML sin que sea procesada por el motor de lectura."
+    }
+  },
+  {
+    "id": "UT4-Q08",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Si se necesita declarar un elemento en un esquema DTD que obligatoriamente contenga texto y que deba ser analizado por un parser, ¿qué tipología se le debe asignar?",
+    "contexto": "Declaración de elementos en DTD y uso de tipos de contenido textual analizado por un parser.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "#PCDATA"
+      },
+      {
+        "clave": "b",
+        "texto": "ANY"
+      },
+      {
+        "clave": "c",
+        "texto": "EMPTY"
+      },
+      {
+        "clave": "d",
+        "texto": "#CDATA"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que, dentro de una DTD, #PCDATA se utiliza para declarar texto que será analizado por un parser. Por tanto, si el elemento debe contener texto procesado por el analizador XML, la tipología correcta es #PCDATA.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "ANY indica que el elemento puede contener cualquier valor o contenido permitido, pero no especifica de forma concreta que sea texto analizado por un parser."
+        },
+        {
+          "clave": "c",
+          "motivo": "EMPTY indica que el elemento no tiene contenido. Por tanto, no sirve para un elemento que obligatoriamente debe contener texto."
+        },
+        {
+          "clave": "d",
+          "motivo": "#CDATA hace referencia a texto que no se analiza con un parser. La pregunta pide justamente lo contrario: texto que sí debe ser analizado."
+        }
+      ],
+      "resumen_didactico": "En DTD, #PCDATA significa texto normal que el parser lee y analiza. Es el tipo que se usa cuando un elemento debe contener texto procesable.",
+      "ejemplo_practico": "<!ELEMENT nombre (#PCDATA)>\n\n<nombre>Teclado</nombre>",
+      "conclusion_final": "La respuesta correcta es la opción a, porque #PCDATA representa texto analizado por un parser dentro de una DTD."
+    }
+  },
+  {
+    "id": "UT4-Q09",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "En el diseño de un inventario, se exige que un tipo de artículo pueda aparecer una vez, varias veces o ninguna dentro del contenedor principal. ¿Qué operador de ocurrencia se debe utilizar en la Definición de Tipo de Documento?",
+    "contexto": "Uso de operadores de ocurrencia en DTD para indicar cuántas veces puede aparecer un elemento dentro de otro.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La barra vertical"
+      },
+      {
+        "clave": "b",
+        "texto": "El símbolo de interrogación"
+      },
+      {
+        "clave": "c",
+        "texto": "El símbolo de suma"
+      },
+      {
+        "clave": "d",
+        "texto": "El asterisco"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en DTD existen operadores para indicar el número de veces que puede aparecer un elemento. El asterisco (*) significa que el elemento puede aparecer cero, una o varias veces.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La barra vertical (|) no indica cantidad de apariciones. Sirve para elegir entre varias opciones posibles, por ejemplo entre <cantidad> o <sin_stock>."
+        },
+        {
+          "clave": "b",
+          "motivo": "El símbolo de interrogación (?) indica que el elemento puede aparecer cero o una vez, pero no varias veces."
+        },
+        {
+          "clave": "c",
+          "motivo": "El símbolo de suma (+) indica que el elemento debe aparecer una o varias veces, pero no permite que no aparezca ninguna vez."
+        }
+      ],
+      "resumen_didactico": "Cuando en DTD quieres decir que un elemento es opcional y además puede repetirse varias veces, se usa el asterisco (*).",
+      "ejemplo_practico": "<!ELEMENT inventario (articulo*)>\n<!ELEMENT articulo (#PCDATA)>\n\n<!-- Esto permite: ningún articulo, un articulo o muchos articulos -->",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el asterisco (*) permite que un elemento aparezca cero, una o varias veces."
+    }
+  },
+  {
+    "id": "UT4-Q10",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Qué valor de atributo en una DTD indica que la propiedad es opcional y no es estrictamente necesaria para validar el documento?",
+    "contexto": "Uso de valores de atributos en DTD para indicar si un atributo es obligatorio, fijo u opcional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "#IMPLIED"
+      },
+      {
+        "clave": "b",
+        "texto": "#DEFAULT"
+      },
+      {
+        "clave": "c",
+        "texto": "#FIXED"
+      },
+      {
+        "clave": "d",
+        "texto": "#REQUIRED"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que en una DTD los atributos pueden tener distintos valores de obligatoriedad. #IMPLIED significa que el atributo es opcional, es decir, puede aparecer o no aparecer en el documento XML sin que eso impida la validación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "#DEFAULT se relaciona con un valor por defecto. No indica simplemente que el atributo sea opcional, sino que existe un valor establecido si no se especifica otro."
+        },
+        {
+          "clave": "c",
+          "motivo": "#FIXED indica que el atributo tiene un valor fijo e inflexible. No es opcional en el sentido de libertad de uso, porque el valor queda predeterminado."
+        },
+        {
+          "clave": "d",
+          "motivo": "#REQUIRED indica que el atributo es obligatorio. Si no aparece en el XML, el documento no será válido."
+        }
+      ],
+      "resumen_didactico": "En DTD, #IMPLIED significa atributo opcional. El XML puede validarse aunque ese atributo no esté escrito.",
+      "ejemplo_practico": "<!ATTLIST producto categoria CDATA #IMPLIED>\n\n<producto categoria=\"informatica\">Teclado</producto>\n<producto>Ratón</producto>",
+      "conclusion_final": "La respuesta correcta es la opción a, porque #IMPLIED indica que el atributo es opcional dentro de una DTD."
+    }
+  },
+  {
+    "id": "UT4-Q11",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Para optimizar la escritura de un contrato legal en formato estructurado, el equipo decide crear atajos para los correos electrónicos que se repiten constantemente. ¿Qué componente de la DTD sirve como marcador de posición para referenciar elementos prefijados?",
+    "contexto": "Uso de componentes DTD para crear referencias reutilizables o atajos dentro de un documento XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las entidades"
+      },
+      {
+        "clave": "b",
+        "texto": "Las enumeraciones"
+      },
+      {
+        "clave": "c",
+        "texto": "Las facetas"
+      },
+      {
+        "clave": "d",
+        "texto": "Los atributos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las entidades en DTD funcionan como variables o marcadores de posición para referenciar elementos prefijados. Se declaran con <!ENTITY> y luego se usan en el XML escribiendo el nombre de la entidad entre & y ;.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las enumeraciones sirven para limitar un valor a una lista cerrada de opciones posibles. No funcionan como atajos reutilizables para texto repetido."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las facetas pertenecen principalmente al uso de restricciones en XSD, como longitud, valores mínimos, máximos o patrones. No son marcadores de posición de DTD."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los atributos añaden información adicional a un elemento, pero no se usan como atajos para sustituir texto repetido dentro del documento."
+        }
+      ],
+      "resumen_didactico": "En DTD, una entidad es como una variable de texto. La defines una vez y luego la reutilizas muchas veces dentro del XML.",
+      "ejemplo_practico": "<!ENTITY emailLegal \"legal@empresa.com\">\n\n<contacto>&emailLegal;</contacto>",
+      "conclusion_final": "La respuesta correcta es la opción a, porque las entidades son el componente de DTD usado como marcador de posición para referenciar contenido prefijado."
+    }
+  },
+  {
+    "id": "UT4-Q12",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Cuál es el formato correcto para vincular externamente un archivo de reglas privado a un documento base según el estándar DTD?",
+    "contexto": "Asociación externa de un archivo DTD a un documento XML mediante una declaración DOCTYPE.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Escribiendo la etiqueta link con la referencia al archivo de estilos"
+      },
+      {
+        "clave": "b",
+        "texto": "Declarando un esquema con el atributo de espacio de nombres"
+      },
+      {
+        "clave": "c",
+        "texto": "Usando la línea DOCTYPE seguida del elemento raíz y la palabra SYSTEM"
+      },
+      {
+        "clave": "d",
+        "texto": "Añadiendo la instrucción de procesamiento con el atributo href"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que un DTD puede vincularse a un documento XML de forma interna o externa. Para asociarlo externamente, se utiliza una declaración DOCTYPE seguida del nombre del elemento raíz, la palabra SYSTEM y la ruta del archivo DTD entre comillas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La etiqueta link se usa habitualmente en HTML para vincular hojas de estilo u otros recursos, pero no es la forma correcta de asociar un DTD externo a un XML."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los espacios de nombres se relacionan principalmente con XML y XSD, pero no son el mecanismo usado para vincular externamente un DTD."
+        },
+        {
+          "clave": "d",
+          "motivo": "El atributo href se usa en otros contextos para enlazar recursos, pero no es la sintaxis estándar para asociar un archivo DTD externo."
+        }
+      ],
+      "resumen_didactico": "Para vincular un DTD externo a un XML, se usa DOCTYPE. La palabra SYSTEM indica que el archivo de reglas se encuentra en una ruta concreta del sistema o del proyecto.",
+      "ejemplo_practico": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE inventario SYSTEM \"reglas_inventario.dtd\">\n\n<inventario>\n  <producto>Teclado</producto>\n</inventario>",
+      "conclusion_final": "La respuesta correcta es la opción c, porque un DTD externo se vincula mediante DOCTYPE, el elemento raíz y la palabra SYSTEM."
+    }
+  },
+  {
+    "id": "UT4-Q13",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Se requiere establecer una restricción en un esquema XSD para asegurar que un campo acepte exclusivamente valores numéricos enteros. ¿Qué tipo de dato base se debe aplicar al elemento simple?",
+    "contexto": "Uso de tipos de datos simples en XSD para limitar el contenido de un elemento a números enteros.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "xs:boolean"
+      },
+      {
+        "clave": "b",
+        "texto": "xs:integer"
+      },
+      {
+        "clave": "c",
+        "texto": "xs:string"
+      },
+      {
+        "clave": "d",
+        "texto": "xs:decimal"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XSD permite definir tipos de datos para los elementos XML. Para valores numéricos enteros se utiliza xs:integer, mientras que otros tipos como xs:string, xs:boolean o xs:decimal tienen usos diferentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "xs:boolean se usa para valores lógicos, normalmente true/false o 1/0. No sirve para representar cualquier número entero."
+        },
+        {
+          "clave": "c",
+          "motivo": "xs:string se usa para texto. Aunque podría contener caracteres numéricos escritos como texto, no garantiza que el dato sea tratado como un número entero."
+        },
+        {
+          "clave": "d",
+          "motivo": "xs:decimal se usa para números decimales, como 2.5 o 19.99. Si se quieren aceptar exclusivamente enteros, el tipo correcto es xs:integer."
+        }
+      ],
+      "resumen_didactico": "En XSD, si un campo debe aceptar solo números enteros, se usa xs:integer. Es ideal para campos como stock, edad, unidades o porcentaje sin decimales.",
+      "ejemplo_practico": "<xs:element name=\"stock\" type=\"xs:integer\"/>\n\n<!-- Válido -->\n<stock>25</stock>\n\n<!-- Inválido si solo se aceptan enteros -->\n<stock>25.5</stock>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque xs:integer es el tipo de dato XSD usado para valores numéricos enteros."
+    }
+  },
+  {
+    "id": "UT4-Q14",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Al migrar una arquitectura de validación desde DTD hacia un sistema moderno, los analistas prefieren un lenguaje que utilice la misma sintaxis del documento base y ofrezca mayor control sobre los tipos de datos. ¿Qué tecnología cumple estos requisitos empresariales?",
+    "contexto": "Comparación entre DTD y XSD como sistemas de validación para documentos XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El protocolo de transferencia de hipertexto"
+      },
+      {
+        "clave": "b",
+        "texto": "El sistema de hojas de estilo en cascada"
+      },
+      {
+        "clave": "c",
+        "texto": "El estándar XML Schema Definition"
+      },
+      {
+        "clave": "d",
+        "texto": "El modelo de objetos del documento"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XML Schema Definition, conocido como XSD, es una alternativa más avanzada al DTD. A diferencia de DTD, XSD utiliza una sintaxis similar a XML y permite controlar mejor los tipos de datos, las ocurrencias, los atributos y las restricciones aplicadas a los elementos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El protocolo de transferencia de hipertexto, HTTP, sirve para la comunicación entre cliente y servidor en la web. No es una tecnología de validación de documentos XML."
+        },
+        {
+          "clave": "b",
+          "motivo": "CSS sirve para definir estilos visuales en documentos como HTML o XML, pero no valida la estructura ni los tipos de datos de un documento XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "El modelo de objetos del documento, DOM, representa la estructura de un documento como un árbol de nodos para poder manipularlo, pero no define reglas de validación como hace XSD."
+        }
+      ],
+      "resumen_didactico": "DTD permite definir reglas básicas, pero XSD es más potente porque trabaja con sintaxis parecida a XML y permite indicar tipos como xs:string, xs:integer, xs:decimal, xs:boolean, xs:date o xs:time.",
+      "ejemplo_practico": "<xs:element name=\"stock\" type=\"xs:integer\"/>\n<xs:element name=\"precio\" type=\"xs:decimal\"/>\n<xs:element name=\"nombre\" type=\"xs:string\"/>",
+      "conclusion_final": "La respuesta correcta es la opción c, porque XML Schema Definition o XSD es la tecnología que sustituye al DTD cuando se necesita mayor control sobre tipos de datos y restricciones."
+    }
+  },
+  {
+    "id": "UT4-Q15",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "En un esquema XSD, ¿qué indicador de orden estipula que los elementos hijos deben aparecer exactamente en la secuencia especificada?",
+    "contexto": "Uso de indicadores de orden en elementos complejos XSD para controlar cómo deben aparecer los elementos hijos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El indicador choice"
+      },
+      {
+        "clave": "b",
+        "texto": "El indicador group"
+      },
+      {
+        "clave": "c",
+        "texto": "El indicador all"
+      },
+      {
+        "clave": "d",
+        "texto": "El indicador sequence"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que dentro de un elemento complejo en XSD se pueden usar indicadores de orden. El indicador <xs:sequence> obliga a que todos los elementos hijos aparezcan siguiendo exactamente el orden indicado en el esquema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xs:choice> permite elegir solo uno de los elementos indicados. No obliga a que todos aparezcan en una secuencia concreta."
+        },
+        {
+          "clave": "b",
+          "motivo": "group no es el indicador de orden explicado en el temario para exigir una secuencia exacta de elementos hijos."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xs:all> permite que aparezcan todos los elementos hijos, pero sin importar el orden. Por eso no sirve cuando el orden debe ser exacto."
+        }
+      ],
+      "resumen_didactico": "Si en XSD quieres que los hijos aparezcan en un orden obligatorio, usas <xs:sequence>. El XML será válido solo si respeta esa secuencia.",
+      "ejemplo_practico": "<xs:element name=\"producto\">\n  <xs:complexType>\n    <xs:sequence>\n      <xs:element name=\"nombre\" type=\"xs:string\"/>\n      <xs:element name=\"precio\" type=\"xs:decimal\"/>\n      <xs:element name=\"stock\" type=\"xs:integer\"/>\n    </xs:sequence>\n  </xs:complexType>\n</xs:element>\n\n<!-- Orden válido en el XML -->\n<producto>\n  <nombre>Teclado</nombre>\n  <precio>25.99</precio>\n  <stock>40</stock>\n</producto>",
+      "conclusion_final": "La respuesta correcta es la opción d, porque <xs:sequence> exige que los elementos hijos aparezcan exactamente en el orden especificado."
+    }
+  },
+  {
+    "id": "UT4-Q16",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Para cumplir con una normativa de calidad, un formulario de registro debe limitar la longitud de un código postal exactamente a cinco caracteres numéricos. ¿Qué mecanismo del esquema XSD se utiliza para aplicar este filtro preciso?",
+    "contexto": "Uso de XSD para restringir el formato exacto de un dato, como un código postal de cinco caracteres numéricos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las declaraciones de espacios de nombres"
+      },
+      {
+        "clave": "b",
+        "texto": "Las entidades de caracteres"
+      },
+      {
+        "clave": "c",
+        "texto": "Los comentarios de procesamiento"
+      },
+      {
+        "clave": "d",
+        "texto": "Las restricciones o facetas"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en XSD las restricciones o facetas son filtros precisos que se aplican a los datos para asegurar que cumplen un formato exacto. Para limitar un código postal a una longitud concreta y a caracteres numéricos, se pueden usar facetas como length y pattern.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las declaraciones de espacios de nombres sirven para identificar de dónde proceden los elementos y evitar conflictos de nombres, pero no limitan la longitud ni el formato de un dato."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las entidades de caracteres sirven para representar caracteres especiales como <, > o &, pero no se usan para validar la longitud de un campo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los comentarios de procesamiento o comentarios sirven para añadir información explicativa, pero no aplican reglas de validación sobre los datos."
+        }
+      ],
+      "resumen_didactico": "En XSD, cuando quieres controlar que un dato tenga una forma exacta, usas restricciones o facetas. Por ejemplo, puedes exigir que mida 5 caracteres y que solo contenga números.",
+      "ejemplo_practico": "<xs:simpleType name=\"CodigoPostal\">\n  <xs:restriction base=\"xs:string\">\n    <xs:length value=\"5\"/>\n    <xs:pattern value=\"[0-9]{5}\"/>\n  </xs:restriction>\n</xs:simpleType>",
+      "conclusion_final": "La respuesta correcta es la opción d, porque las restricciones o facetas permiten aplicar filtros precisos sobre los datos en un esquema XSD."
+    }
+  },
+  {
+    "id": "UT4-Q17",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Qué restricción específica de XML Schema permite obligar al usuario a seleccionar un valor únicamente de una lista de opciones predefinidas?",
+    "contexto": "Uso de restricciones o facetas en XSD para limitar un campo a varios valores permitidos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "enumeration"
+      },
+      {
+        "clave": "b",
+        "texto": "maxInclusive"
+      },
+      {
+        "clave": "c",
+        "texto": "pattern"
+      },
+      {
+        "clave": "d",
+        "texto": "length"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la restricción enumeration en XSD permite definir una lista cerrada de valores admitidos. El dato solo será válido si coincide con uno de los valores indicados en esa lista.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "maxInclusive sirve para establecer un valor máximo permitido, incluyendo ese valor. Es útil para límites numéricos, pero no para crear una lista cerrada de opciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "pattern permite definir un formato mediante un patrón o expresión regular. Puede limitar la forma del dato, pero no es la restricción específica para seleccionar entre una lista de opciones predefinidas."
+        },
+        {
+          "clave": "d",
+          "motivo": "length sirve para fijar la longitud exacta de un valor. No permite establecer una lista cerrada de valores posibles."
+        }
+      ],
+      "resumen_didactico": "Cuando quieres que un campo solo acepte valores concretos, usas enumeration. Es como crear un desplegable lógico dentro del esquema XSD.",
+      "ejemplo_practico": "<xs:simpleType name=\"EstadoEnvio\">\n  <xs:restriction base=\"xs:string\">\n    <xs:enumeration value=\"En almacén\"/>\n    <xs:enumeration value=\"En tránsito\"/>\n    <xs:enumeration value=\"Entregado\"/>\n  </xs:restriction>\n</xs:simpleType>\n\n<!-- Válido -->\n<estado>En tránsito</estado>\n\n<!-- Inválido -->\n<estado>Perdido</estado>",
+      "conclusion_final": "La respuesta correcta es la opción a, porque enumeration permite limitar un valor a una lista predefinida de opciones válidas."
+    }
+  },
+  {
+    "id": "UT4-Q18",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un equipo de desarrollo necesita añadir comentarios oficiales y documentación técnica dentro de un archivo XSD para que otros programadores entiendan su lógica. ¿Qué etiqueta específica se debe utilizar para envolver esta documentación?",
+    "contexto": "Documentación interna dentro de un esquema XSD para explicar su finalidad o lógica a otros desarrolladores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La etiqueta annotation"
+      },
+      {
+        "clave": "b",
+        "texto": "La etiqueta de tipo complejo"
+      },
+      {
+        "clave": "c",
+        "texto": "La sección de datos de caracteres no analizados"
+      },
+      {
+        "clave": "d",
+        "texto": "La etiqueta convencional de comentarios"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XSD permite añadir documentación oficial dentro del esquema mediante xs:annotation. Dentro de esta etiqueta pueden incluirse etiquetas como xs:documentation para comentarios explicativos y xs:appinfo para información relacionada con la aplicación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La etiqueta de tipo complejo, xs:complexType, sirve para definir elementos que contienen otros elementos, atributos o estructuras más avanzadas. No se usa específicamente para documentar el esquema."
+        },
+        {
+          "clave": "c",
+          "motivo": "La sección de datos de caracteres no analizados hace referencia a CDATA, que sirve para incluir texto que no debe ser procesado como XML. No es el mecanismo oficial de documentación técnica dentro de XSD."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los comentarios convencionales pueden servir para dejar notas, pero en XSD la forma específica y estructurada de incluir documentación oficial es mediante xs:annotation y xs:documentation."
+        }
+      ],
+      "resumen_didactico": "En XSD, si quieres documentar el esquema de forma formal, usas xs:annotation. Dentro puedes añadir xs:documentation para explicar qué hace el esquema o una parte concreta.",
+      "ejemplo_practico": "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:annotation>\n    <xs:documentation xml:lang=\"es\">\n      Este esquema valida los datos de productos del almacén.\n    </xs:documentation>\n  </xs:annotation>\n</xs:schema>",
+      "conclusion_final": "La respuesta correcta es la opción a, porque xs:annotation es la etiqueta usada en XSD para envolver documentación oficial del esquema."
+    }
+  },
+  {
+    "id": "UT4-Q19",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Durante el mantenimiento de servidores de alto rendimiento, un administrador requiere utilizar un editor que valide esquemas complejos, realice transformaciones XSLT y soporte JSON de manera nativa. ¿Qué herramienta comercial destaca por incluir estas características avanzadas en entornos corporativos?",
+    "contexto": "Selección de una herramienta profesional de edición XML para entornos corporativos con soporte avanzado de XML, XSD, XSLT y JSON.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XML Notepad"
+      },
+      {
+        "clave": "b",
+        "texto": "El Bloc de notas de Windows"
+      },
+      {
+        "clave": "c",
+        "texto": "Altova XMLSpy"
+      },
+      {
+        "clave": "d",
+        "texto": "XML Copy Editor"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta Altova XMLSpy como uno de los editores XML más completos e implantados en grandes corporaciones. Destaca por funciones avanzadas de modelado, edición, transformación y depuración, además de incluir soporte para JSON, esquemas JSON, XSLT, XQuery, validación XML y corrección de errores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "XML Notepad es un editor XML con interfaz intuitiva de doble ventana y vista en árbol, útil para visualizar y editar documentos, pero no es la herramienta comercial destacada por funciones avanzadas corporativas como XSLT, JSON y depuración."
+        },
+        {
+          "clave": "b",
+          "motivo": "El Bloc de notas de Windows es un editor de texto básico. No ofrece validación avanzada de XML, soporte profesional de esquemas, transformaciones XSLT ni herramientas corporativas de depuración."
+        },
+        {
+          "clave": "d",
+          "motivo": "XML Copy Editor permite trabajar con XML y validar DTD, además de ofrecer funciones como resaltado de sintaxis, plegado de elementos y autocompletado de etiquetas, pero no es la herramienta comercial avanzada descrita en la pregunta."
+        }
+      ],
+      "resumen_didactico": "Altova XMLSpy es presentado en el temario como una herramienta profesional muy potente para entornos empresariales. No es solo un editor simple de XML, sino una suite avanzada para trabajar con XML, XSD, XSLT, JSON y procesos de validación complejos.",
+      "ejemplo_practico": "Un equipo corporativo podría usar Altova XMLSpy para editar un archivo XML, validar su estructura contra un XSD, transformar sus datos con XSLT y trabajar también con documentos JSON dentro del mismo entorno.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque Altova XMLSpy es la herramienta comercial destacada en el temario por sus características avanzadas en entornos corporativos."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Cómo se denomina al programa informático que analiza la estructura de un documento, comprende sus reglas y verifica si cumple con el esquema establecido antes de procesarlo?",
+    "contexto": "Validación de documentos XML mediante un programa que lee la estructura, interpreta sus reglas y detecta errores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Compilador de código"
+      },
+      {
+        "clave": "b",
+        "texto": "Intérprete de estilos visuales"
+      },
+      {
+        "clave": "c",
+        "texto": "Parser o analizador"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestor de bases de datos relacionales"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que un parser o analizador es el programa encargado de leer un documento XML, entender su estructura, comprobar sus etiquetas y verificar si cumple las reglas definidas en un DTD o XSD. Si encuentra errores, los detecta antes de que el documento sea procesado correctamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un compilador transforma código fuente en otro formato ejecutable o intermedio. XML no se compila para validar su estructura; se analiza mediante un parser."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un intérprete de estilos visuales estaría relacionado con la presentación o visualización del documento, no con la validación de su estructura frente a un esquema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un gestor de bases de datos relacionales administra tablas, registros y consultas SQL. No es el programa específico que valida la estructura de un documento XML."
+        }
+      ],
+      "resumen_didactico": "El parser es el lector meticuloso del XML. Comprueba si las etiquetas están bien formadas y si el documento cumple las reglas definidas por su DTD o XSD.",
+      "ejemplo_practico": "Si un XML contiene <bateria>200</bateria> y el XSD permite solo valores entre 0 y 100, el parser detectará que el documento no es válido.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el parser o analizador es el programa que revisa la estructura del XML y valida si cumple el esquema establecido."
+    }
+  },
+  {
+    "id": "UT4-Q21",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un programador novato intenta guardar un registro donde una propiedad describe un estado activo usando un formato incorrecto de atributo. ¿Por qué el validador estricto rechazará esta sintaxis?",
+    "contexto": "Error de sintaxis al declarar atributos XML sin seguir la estructura nombre=\"valor\".",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque los atributos deben escribirse obligatoriamente en mayúsculas"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el valor del atributo carece del signo igual y de las comillas requeridas"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque no se han utilizado guiones bajos en el nombre del elemento"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque las etiquetas vacías están prohibidas en las últimas versiones del estándar"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los atributos XML se escriben dentro de la etiqueta de apertura siguiendo una sintaxis estricta: nombre del atributo, signo igual y valor entre comillas. Si falta el signo igual o las comillas, el documento no está correctamente formado y el validador lo rechazará.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los atributos no tienen que escribirse obligatoriamente en mayúsculas. Pueden escribirse en minúsculas, mayúsculas o combinadas, siempre que se respete la sintaxis correcta."
+        },
+        {
+          "clave": "c",
+          "motivo": "El uso de guion bajo no es obligatorio. Puede usarse para evitar espacios en nombres compuestos, pero el problema de la pregunta está en la mala escritura del atributo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las etiquetas vacías no están prohibidas. XML permite elementos vacíos, por ejemplo <producto/>. El fallo descrito se debe a la sintaxis incorrecta del atributo."
+        }
+      ],
+      "resumen_didactico": "Un atributo XML siempre debe tener esta forma: atributo=\"valor\". Si escribes solo una palabra suelta o no pones comillas, el XML será inválido.",
+      "ejemplo_practico": "Incorrecto:\n<usuario estado activo>\n  <nombre>Carlos</nombre>\n</usuario>\n\nCorrecto:\n<usuario estado=\"activo\">\n  <nombre>Carlos</nombre>\n</usuario>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque los atributos XML necesitan signo igual y valores entre comillas para que el documento sea válido."
+    }
+  },
+  {
+    "id": "UT4-Q22",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Dentro de las tipologías de elementos en una DTD, ¿qué identificador se utiliza para obligar a que una etiqueta no contenga absolutamente ningún contenido en su interior?",
+    "contexto": "Declaración de elementos vacíos en DTD mediante tipologías específicas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El identificador NULL"
+      },
+      {
+        "clave": "b",
+        "texto": "El identificador EMPTY"
+      },
+      {
+        "clave": "c",
+        "texto": "El identificador BLANK"
+      },
+      {
+        "clave": "d",
+        "texto": "El identificador ANY"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, dentro de una DTD, la tipología EMPTY se utiliza para declarar elementos que no tienen contenido. Es decir, la etiqueta puede existir, pero no debe contener texto ni otros elementos en su interior.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "NULL no es el identificador indicado en el temario para declarar un elemento vacío dentro de una DTD."
+        },
+        {
+          "clave": "c",
+          "motivo": "BLANK tampoco es una tipología DTD usada para obligar a que un elemento esté vacío."
+        },
+        {
+          "clave": "d",
+          "motivo": "ANY significa que el elemento puede contener cualquier valor permitido. Es justo lo contrario de EMPTY, que obliga a que no tenga contenido."
+        }
+      ],
+      "resumen_didactico": "En DTD, EMPTY se usa cuando quieres permitir una etiqueta, pero sin contenido interno. Sirve para elementos que funcionan como marcas o indicadores.",
+      "ejemplo_practico": "<!ELEMENT salto_linea EMPTY>\n\n<!-- Uso válido en XML -->\n<salto_linea/>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque EMPTY indica que una etiqueta no debe contener absolutamente ningún contenido."
+    }
+  },
+  {
+    "id": "UT4-Q23",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Si un analista desea permitir en su esquema que un determinado contenedor aloje cualquier tipo de valor disponible sin restricciones, ¿qué directiva debe configurar en la declaración del elemento DTD?",
+    "contexto": "Uso de tipologías de elementos en DTD para permitir contenido libre dentro de un elemento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "#CDATA"
+      },
+      {
+        "clave": "b",
+        "texto": "#PCDATA"
+      },
+      {
+        "clave": "c",
+        "texto": "ANY"
+      },
+      {
+        "clave": "d",
+        "texto": "#IMPLIED"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que, dentro de una DTD, la tipología ANY permite que un elemento contenga cualquier valor disponible. Se usa cuando no se quiere imponer una estructura estricta al contenido de ese elemento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "#CDATA hace referencia a texto que no debe ser analizado por el parser. No significa que el elemento pueda contener cualquier tipo de contenido sin restricciones."
+        },
+        {
+          "clave": "b",
+          "motivo": "#PCDATA se utiliza para texto que sí será analizado por el parser. Limita el contenido a texto analizable, por lo que no equivale a permitir cualquier valor."
+        },
+        {
+          "clave": "d",
+          "motivo": "#IMPLIED se usa en declaraciones de atributos para indicar que un atributo es opcional. No es una directiva de contenido para elementos DTD."
+        }
+      ],
+      "resumen_didactico": "En DTD, ANY significa contenido libre. El elemento puede alojar cualquier contenido permitido sin una estructura concreta definida.",
+      "ejemplo_practico": "<!ELEMENT observaciones ANY>\n\n<observaciones>\n  Texto libre, otros elementos o contenido variable según el caso.\n</observaciones>",
+      "conclusion_final": "La respuesta correcta es la opción c, porque ANY permite que un elemento DTD contenga cualquier valor disponible sin restricciones específicas."
+    }
+  },
+  {
+    "id": "UT4-Q24",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un consultor recibe un lote de archivos con la instrucción standalone=\"yes\" o \"no\" en su encabezado. ¿Qué le indica específicamente esta configuración sobre la arquitectura de los documentos?",
+    "contexto": "Uso del atributo standalone en el prólogo XML para indicar si el documento depende de ficheros externos como DTD o XSD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que los archivos están corruptos y requieren recuperación manual de datos"
+      },
+      {
+        "clave": "b",
+        "texto": "Que la información está encriptada y no puede ser leída por un navegador web"
+      },
+      {
+        "clave": "c",
+        "texto": "Que los documentos contienen ficheros DTD o XSD adjuntos o dependen de ellos"
+      },
+      {
+        "clave": "d",
+        "texto": "Que el código debe ser ejecutado exclusivamente en servidores locales"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el atributo standalone forma parte del prólogo XML junto con version y encoding. Este atributo, configurado con yes o no, indica si el documento funciona de manera independiente o si está relacionado con ficheros externos como DTD o XSD.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "standalone no indica que el archivo esté corrupto. Solo informa sobre la dependencia o independencia del documento respecto a reglas externas."
+        },
+        {
+          "clave": "b",
+          "motivo": "standalone no tiene relación con cifrado, encriptación ni visibilidad en navegadores. XML sigue siendo texto estructurado."
+        },
+        {
+          "clave": "d",
+          "motivo": "standalone no obliga a ejecutar el documento en servidores locales. XML no se ejecuta como un programa, sino que se interpreta o procesa por aplicaciones."
+        }
+      ],
+      "resumen_didactico": "El atributo standalone sirve para saber si el XML depende o no de definiciones externas. Si aparece standalone=\"yes\", el documento declara que puede funcionar de forma independiente. Si aparece standalone=\"no\", indica que puede depender de reglas externas.",
+      "ejemplo_practico": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<producto>\n  <nombre>Teclado</nombre>\n</producto>",
+      "conclusion_final": "La respuesta correcta es la opción c, porque standalone indica si el documento XML contiene o depende de ficheros externos como DTD o XSD."
+    }
+  },
+  {
+    "id": "UT4-Q25",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "En la estructura de un esquema XSD, ¿qué atributo en la etiqueta raíz especifica de dónde provienen los tipos de datos estándar utilizados en el documento?",
+    "contexto": "Uso de atributos en la raíz <xs:schema> de un archivo XSD para declarar el origen de los elementos y tipos estándar del esquema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "targetNamespace"
+      },
+      {
+        "clave": "b",
+        "texto": "xmlns:xs"
+      },
+      {
+        "clave": "c",
+        "texto": "xsi:noNamespaceSchemaLocation"
+      },
+      {
+        "clave": "d",
+        "texto": "elementFormDefault"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en la raíz de un esquema XSD, normalmente <xs:schema>, el atributo xmlns:xs especifica de dónde provienen los elementos y tipos usados en el documento. Habitualmente apunta a la dirección oficial de XML Schema: http://www.w3.org/2001/XMLSchema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "targetNamespace sirve para definir el espacio de nombres propio del esquema, es decir, el ámbito donde se declaran los nombres creados por el desarrollador. No indica directamente el origen de los tipos estándar de XML Schema."
+        },
+        {
+          "clave": "c",
+          "motivo": "xsi:noNamespaceSchemaLocation se utiliza en un documento XML para asociarlo a un archivo XSD cuando no se usan espacios de nombres. No es el atributo de la raíz del XSD que declara el origen de los tipos estándar."
+        },
+        {
+          "clave": "d",
+          "motivo": "elementFormDefault indica si los elementos deben aparecer cualificados o no con un espacio de nombres. No especifica de dónde proceden los tipos estándar como xs:string, xs:integer o xs:decimal."
+        }
+      ],
+      "resumen_didactico": "En un XSD, xmlns:xs es el atributo que conecta el prefijo xs con el vocabulario oficial de XML Schema. Gracias a eso puedes usar tipos como xs:string, xs:integer, xs:decimal o xs:boolean.",
+      "ejemplo_practico": "<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\">\n  <xs:element name=\"edad\" type=\"xs:integer\"/>\n</xs:schema>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque xmlns:xs especifica el origen de los elementos y tipos estándar utilizados en el esquema XSD."
+    }
+  },
+  {
+    "id": "UT4-Q26",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Para garantizar que un archivo de configuración solo acepte identificadores que sigan un formato específico de letras y números mediante expresiones regulares, ¿qué faceta se debe implementar en el esquema de validación?",
+    "contexto": "Uso de restricciones o facetas en XSD para validar que un dato siga un patrón concreto mediante expresiones regulares.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La restricción enumeration"
+      },
+      {
+        "clave": "b",
+        "texto": "La restricción pattern"
+      },
+      {
+        "clave": "c",
+        "texto": "La restricción maxLength"
+      },
+      {
+        "clave": "d",
+        "texto": "La restricción fractionDigits"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en XSD la faceta pattern permite definir un rango o formato de caracteres admitidos usando expresiones regulares. Por eso se utiliza cuando un campo debe seguir una estructura concreta de letras, números u otros caracteres.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "enumeration sirve para limitar el valor a una lista cerrada de opciones predefinidas. No se usa para validar formatos mediante expresiones regulares."
+        },
+        {
+          "clave": "c",
+          "motivo": "maxLength limita la longitud máxima del valor, pero no define un patrón concreto de letras y números."
+        },
+        {
+          "clave": "d",
+          "motivo": "fractionDigits se utiliza para limitar la cantidad de decimales en valores numéricos. No sirve para validar identificadores alfanuméricos."
+        }
+      ],
+      "resumen_didactico": "Cuando en XSD necesitas controlar el formato exacto de un dato mediante una expresión regular, usas pattern. Es la faceta adecuada para códigos, matrículas, identificadores o sectores.",
+      "ejemplo_practico": "<xs:simpleType name=\"IdentificadorProducto\">\n  <xs:restriction base=\"xs:string\">\n    <xs:pattern value=\"[A-Z]{3}[0-9]{3}\"/>\n  </xs:restriction>\n</xs:simpleType>\n\n<!-- Válido -->\n<id>ABC123</id>\n\n<!-- Inválido -->\n<id>AB1234</id>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque pattern es la faceta de XSD que permite validar formatos mediante expresiones regulares."
+    }
+  },
+  {
+    "id": "UT4-Q27",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Qué carácter especial debe utilizarse como prefijo para invocar el valor de una entidad definida previamente en una DTD dentro del cuerpo del documento?",
+    "contexto": "Uso de entidades DTD dentro del cuerpo de un documento XML mediante referencias con caracteres especiales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El asterisco de multiplicación"
+      },
+      {
+        "clave": "b",
+        "texto": "La barra invertida de escape"
+      },
+      {
+        "clave": "c",
+        "texto": "El símbolo de ampersand"
+      },
+      {
+        "clave": "d",
+        "texto": "El signo de dólar"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las entidades en DTD se declaran con <!ENTITY> y luego se invocan dentro del XML usando el nombre de la entidad precedido por el símbolo ampersand, &, y seguido por punto y coma, ;.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El asterisco se usa en DTD como operador de ocurrencia para indicar que un elemento puede aparecer cero, una o varias veces. No se usa para invocar entidades."
+        },
+        {
+          "clave": "b",
+          "motivo": "La barra invertida se usa como carácter de escape en muchos lenguajes de programación, pero no es el prefijo usado en XML para llamar a una entidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "El signo de dólar puede usarse en algunos lenguajes para variables, pero no es el carácter utilizado en XML para referenciar entidades DTD."
+        }
+      ],
+      "resumen_didactico": "Para usar una entidad definida en una DTD, se escribe &nombreEntidad;. El ampersand marca el inicio de la referencia y el punto y coma marca el final.",
+      "ejemplo_practico": "<!ENTITY emailSoporte \"soporte@empresa.com\">\n\n<contacto>&emailSoporte;</contacto>",
+      "conclusion_final": "La respuesta correcta es la opción c, porque las entidades DTD se invocan usando el símbolo ampersand (&) como prefijo."
+    }
+  },
+  {
+    "id": "UT4-Q28",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Al establecer un esquema XSD para un servicio de mensajería, se necesita configurar un elemento complejo que permita que sus hijos aparezcan sin importar el orden exacto de llegada. ¿Qué indicador cumple esta función?",
+    "contexto": "Uso de indicadores de orden en elementos complejos XSD para permitir que los elementos hijos aparezcan sin una secuencia obligatoria.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "choice"
+      },
+      {
+        "clave": "b",
+        "texto": "all"
+      },
+      {
+        "clave": "c",
+        "texto": "group"
+      },
+      {
+        "clave": "d",
+        "texto": "sequence"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en XSD, dentro de elementos complejos, existen indicadores de orden. El indicador <xs:all> permite que aparezcan todos los elementos hijos indicados, pero sin importar el orden en que aparezcan dentro del XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xs:choice> permite elegir solo uno de los elementos indicados, no permite incluir todos en cualquier orden."
+        },
+        {
+          "clave": "c",
+          "motivo": "group no es el indicador explicado en el temario para permitir que los hijos aparezcan sin importar el orden."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xs:sequence> obliga a que los elementos hijos aparezcan exactamente en el orden indicado. Es lo contrario de lo que plantea la pregunta."
+        }
+      ],
+      "resumen_didactico": "Si quieres que los elementos hijos aparezcan todos, pero sin exigir un orden concreto, usas <xs:all>. Si quieres orden obligatorio, usas <xs:sequence>.",
+      "ejemplo_practico": "<xs:element name=\"mensaje\">\n  <xs:complexType>\n    <xs:all>\n      <xs:element name=\"remitente\" type=\"xs:string\"/>\n      <xs:element name=\"destinatario\" type=\"xs:string\"/>\n      <xs:element name=\"contenido\" type=\"xs:string\"/>\n    </xs:all>\n  </xs:complexType>\n</xs:element>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque <xs:all> permite que los elementos hijos aparezcan sin importar el orden exacto."
+    }
+  },
+  {
+    "id": "UT4-Q29",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un desarrollador necesita verificar un archivo de configuración de forma inmediata en un equipo donde no dispone de permisos para instalar software de escritorio. ¿Qué alternativa técnica le permite realizar este testeo rápido de validación?",
+    "contexto": "Validación rápida de un documento XML sin instalar aplicaciones de escritorio en el equipo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enviar el documento por correo electrónico al servidor central"
+      },
+      {
+        "clave": "b",
+        "texto": "Configurar el documento utilizando el procesador de textos nativo del sistema"
+      },
+      {
+        "clave": "c",
+        "texto": "Modificar la extensión del archivo a formato binario ejecutable"
+      },
+      {
+        "clave": "d",
+        "texto": "Utilizar una herramienta online directamente desde el navegador web"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que existen herramientas online para crear, editar o validar documentos XML directamente desde el navegador. Estas herramientas son útiles cuando se necesita hacer una comprobación rápida sin instalar programas en el equipo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Enviar el documento por correo electrónico no valida su estructura ni comprueba si cumple un DTD o XSD. Solo cambia el medio por el que se comparte el archivo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un procesador de textos puede abrir o editar texto, pero no está pensado para validar documentos XML contra esquemas o DTD de forma técnica."
+        },
+        {
+          "clave": "c",
+          "motivo": "Cambiar la extensión del archivo no valida el contenido. Además, XML es un formato de texto, no un archivo binario ejecutable."
+        }
+      ],
+      "resumen_didactico": "Si no puedes instalar software y necesitas comprobar un XML rápidamente, puedes usar una herramienta online desde el navegador.",
+      "ejemplo_practico": "Un programador recibe un archivo XML en un ordenador bloqueado por permisos de empresa. En lugar de instalar un editor, abre un validador XML online, pega el contenido del documento y comprueba si cumple el esquema correspondiente.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque las herramientas online permiten validar XML de forma rápida sin instalar software de escritorio."
+    }
+  },
+  {
+    "id": "UT4-Q30",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Cuál es el propósito fundamental del proceso de validación en la arquitectura de integración de sistemas?",
+    "contexto": "Comprobación de documentos XML frente a sus reglas DTD o XSD antes de procesarlos en un sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicar colores y estilos visuales a las etiquetas para mejorar su lectura humana"
+      },
+      {
+        "clave": "b",
+        "texto": "Generar automáticamente bases de datos relacionales a partir de texto plano"
+      },
+      {
+        "clave": "c",
+        "texto": "Comparar los archivos con sus esquemas de restricciones para detectar posibles fallos o carencias"
+      },
+      {
+        "clave": "d",
+        "texto": "Traducir el documento a lenguaje binario para reducir su tamaño de almacenamiento"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la validación es el proceso informático que permite poner a prueba los archivos XML comparándolos con sus esquemas de restricciones, como DTD o XSD, para detectar fallos, carencias o datos que no cumplen las reglas establecidas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Aplicar colores o estilos visuales puede ayudar a leer el código en un editor, pero no es validar. La validación comprueba reglas estructurales y restricciones del documento."
+        },
+        {
+          "clave": "b",
+          "motivo": "La validación XML no genera automáticamente bases de datos relacionales. Su función es comprobar si el documento cumple las reglas definidas."
+        },
+        {
+          "clave": "d",
+          "motivo": "XML no se valida traduciéndolo a lenguaje binario. La validación trabaja sobre la estructura y los datos del documento frente a un esquema."
+        }
+      ],
+      "resumen_didactico": "Validar un XML significa comprobar si está bien construido y si respeta las reglas que le impone su DTD o XSD.",
+      "ejemplo_practico": "Si un XSD dice que <bateria> debe estar entre 0 y 100, y el XML contiene <bateria>200</bateria>, el proceso de validación detectará el error antes de que el sistema procese ese dato.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque validar consiste en comparar el XML con sus esquemas de restricciones para detectar errores o carencias."
+    }
+  }
+]
