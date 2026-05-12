@@ -450,5 +450,67 @@ export const topicsByModule = {
       title: "Repaso global (Abarca de 84% a 100% del temario)",
       numQuestion: 30,
     }
+  ],
+  empleabilidad:[
+    {
+      id: "UT1",
+      title: "Auto-orientación y plan de carrera",
+      numQuestion: 30,
+    },
+    {
+      id: "UT2",
+      title: "Identidad profesional y herramientas de presentación",
+      numQuestion: 30,
+    },
+    {
+      id: "UT3",
+      title: "El marco jurídico laboral",
+      numQuestion: 30,
+    },
+    {
+      id: "UT4",
+      title: "Salario, seguridad social y conflictos",
+      numQuestion: 30,
+    },
+    {
+      id: "UT5",
+      title: "Prevención de riesgos laborales",
+      numQuestion: 30,
+    },
+    {
+      id: "UT6",
+      title: "Digitalización y aprendizaje (PLE)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT7",
+      title: "Repaso global (Abarca de 0% a 17% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT8",
+      title: "Repaso global (Abarca de 17% a 34% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT9",
+      title: "Repaso global (Abarca el 34% a 51% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT10",
+      title: "Repaso global (Abarca el 51% a 68% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT11",
+      title: "Repaso global (Abarca el 68% a 85% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT12",
+      title: "Repaso global (Abarca el 85% a 100% del temario)",
+      numQuestion: 30,
+    }
   ]
 };

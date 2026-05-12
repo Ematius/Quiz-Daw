@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT3-Q01",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Cómo se define el derecho del trabajo en el entorno empresarial actual?",
+    "contexto": "Definición básica del derecho del trabajo como conjunto de normas que regulan la relación entre empresa y persona trabajadora.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un conjunto de recomendaciones opcionales para mejorar el clima laboral."
+      },
+      {
+        "clave": "b",
+        "texto": "El reglamento oficial que asegura una relación equilibrada y justa entre empresas y trabajadores."
+      },
+      {
+        "clave": "c",
+        "texto": "Un contrato privado que permite al empresario fijar las normas sin límites legales."
+      },
+      {
+        "clave": "d",
+        "texto": "El código ético que solo deben cumplir las grandes multinacionales."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El derecho del trabajo se define en el temario como el conjunto de normas que regulan las relaciones entre las empresas y las personas trabajadoras. Su función es equilibrar esa relación y evitar que la parte más fuerte, normalmente la empresa, imponga siempre su voluntad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el derecho del trabajo no son simples recomendaciones opcionales. Son normas legales que deben cumplirse."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el empresario no puede fijar las normas sin límites. El contrato individual debe respetar la ley, el convenio colectivo y los derechos laborales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el derecho del trabajo no es solo un código ético ni afecta únicamente a grandes multinacionales. Se aplica a cualquier relación laboral ordinaria entre empresa y trabajador."
+        }
+      ],
+      "resumen_didactico": "El derecho del trabajo sirve para poner reglas legales a la relación entre empresa y trabajador, protegiendo al trabajador y asegurando una relación más justa.",
+      "ejemplo_practico": "Si una empresa quiere obligar a un trabajador a hacer jornadas excesivas sin respetar descansos, el derecho del trabajo actúa como límite legal para proteger su salud y sus derechos.",
+      "conclusion_final": "La respuesta correcta es la b porque el derecho del trabajo es el marco normativo que garantiza una relación equilibrada y justa entre empresas y trabajadores."
+    }
+  },
+  {
+    "id": "UT3-Q02",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "En la jerarquía normativa del derecho laboral en España, ¿cuál es la norma suprema que encabeza la pirámide?",
+    "contexto": "Jerarquía normativa laboral y posición de la Constitución española como norma superior.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El Estatuto de los Trabajadores."
+      },
+      {
+        "clave": "b",
+        "texto": "El contrato individual de trabajo."
+      },
+      {
+        "clave": "c",
+        "texto": "La Constitución española."
+      },
+      {
+        "clave": "d",
+        "texto": "El convenio colectivo sectorial."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En la jerarquía normativa laboral, las normas se organizan como una pirámide. En la parte superior está la Constitución española, que es la norma suprema y reconoce derechos fundamentales como la huelga, la libertad sindical y otros derechos básicos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el Estatuto de los Trabajadores es una ley laboral muy importante, pero está por debajo de la Constitución española."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el contrato individual está en la parte más baja de la pirámide normativa. No puede contradecir normas superiores como el convenio, las leyes laborales o la Constitución."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el convenio colectivo regula condiciones laborales de un sector o empresa, pero también debe respetar las leyes del Estado y la Constitución."
+        }
+      ],
+      "resumen_didactico": "La Constitución española es la norma superior del sistema jurídico laboral. Todas las demás normas laborales deben respetarla.",
+      "ejemplo_practico": "Un contrato de trabajo no podría prohibir a un trabajador afiliarse a un sindicato, porque la libertad sindical está protegida por la Constitución española.",
+      "conclusion_final": "La respuesta correcta es la c porque la Constitución española encabeza la pirámide normativa laboral."
+    }
+  },
+  {
+    "id": "UT3-Q03",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "Un técnico descubre que su contrato individual estipula condiciones menos beneficiosas que las marcadas en el convenio colectivo de su sector. ¿Qué principio debe aplicarse?",
+    "contexto": "Conflicto entre contrato individual y convenio colectivo cuando el convenio ofrece mejores condiciones al trabajador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El principio de autonomía del empresario."
+      },
+      {
+        "clave": "b",
+        "texto": "El principio de jerarquía, prevaleciendo el contrato por ser lo más reciente."
+      },
+      {
+        "clave": "c",
+        "texto": "El principio de territorialidad según la provincia."
+      },
+      {
+        "clave": "d",
+        "texto": "El principio de la norma más favorable para el trabajador."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, en caso de conflicto entre dos normas laborales, debe aplicarse la que resulte más beneficiosa para el trabajador. Además, el contrato individual no puede establecer condiciones peores que las recogidas en el convenio colectivo aplicable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el empresario no tiene libertad absoluta para imponer condiciones peores que las reconocidas por el convenio o la ley."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el contrato no prevalece por ser más reciente. Si contiene condiciones menos beneficiosas que el convenio, esas condiciones no deben aplicarse."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la cuestión no depende simplemente del territorio o la provincia, sino de aplicar la norma laboral más beneficiosa para el trabajador."
+        }
+      ],
+      "resumen_didactico": "Si el contrato dice una cosa y el convenio ofrece algo mejor, se aplica lo mejor para el trabajador.",
+      "ejemplo_practico": "Si el contrato marca una jornada de 40 horas semanales pero el convenio del sector establece 37,5 horas, la empresa debe respetar la jornada de 37,5 horas.",
+      "conclusion_final": "La respuesta correcta es la d porque debe aplicarse el principio de la norma más favorable para el trabajador."
+    }
+  },
+  {
+    "id": "UT3-Q04",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Cuál es la función principal de los convenios colectivos en el sistema laboral?",
+    "contexto": "Función de los convenios colectivos dentro de la jerarquía normativa laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Establecer las multas que los trabajadores deben pagar a la empresa."
+      },
+      {
+        "clave": "b",
+        "texto": "Adaptar la ley general a la realidad y necesidades de cada sector profesional específico."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituir a la Constitución en materia de derechos fundamentales."
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar la necesidad de firmar contratos individuales de trabajo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los convenios colectivos son acuerdos entre representantes de los trabajadores y empresarios que regulan condiciones laborales dentro de un sector, empresa o ámbito concreto. Su función es concretar y mejorar las condiciones generales establecidas por la ley, adaptándolas a la realidad específica de cada actividad profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los convenios colectivos no tienen como función principal imponer multas a los trabajadores. Su objetivo es regular condiciones laborales como jornada, salario, permisos, categorías profesionales o complementos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque ningún convenio colectivo puede sustituir a la Constitución. La Constitución española está por encima de los convenios en la jerarquía normativa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el convenio colectivo no elimina el contrato individual. El contrato sigue existiendo, pero sus condiciones no pueden ser peores que las establecidas en el convenio aplicable."
+        }
+      ],
+      "resumen_didactico": "El convenio colectivo sirve para adaptar las normas laborales generales a un sector concreto y puede mejorar las condiciones mínimas reconocidas por la ley.",
+      "ejemplo_practico": "Un convenio de oficinas y despachos puede establecer una jornada semanal inferior a la jornada máxima general o incluir pluses específicos, como un complemento por idiomas.",
+      "conclusion_final": "La respuesta correcta es la b porque los convenios colectivos adaptan y concretan la normativa laboral a las necesidades de cada sector profesional."
+    }
+  },
+  {
+    "id": "UT3-Q05",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué establece el Estatuto de los Trabajadores respecto a la jornada máxima legal?",
+    "contexto": "Jornada ordinaria de trabajo y límite máximo semanal establecido legalmente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una jornada máxima de 40 horas semanales de promedio en cómputo anual."
+      },
+      {
+        "clave": "b",
+        "texto": "Un límite de 60 horas semanales siempre que se paguen como extra."
+      },
+      {
+        "clave": "c",
+        "texto": "Un máximo de 35 horas semanales sin excepciones."
+      },
+      {
+        "clave": "d",
+        "texto": "La libertad total del empresario para fijar las horas según la producción."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la jornada ordinaria de trabajo es el tiempo máximo que una persona dedica a su actividad laboral y que está fijada legalmente en un promedio de 40 horas semanales en cómputo anual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la ley no permite una jornada ordinaria de 60 horas semanales simplemente por pagarlas como horas extra. Las horas extraordinarias tienen límites y no pueden sustituir la jornada legal."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el límite general explicado en el temario no es de 35 horas semanales, sino de 40 horas semanales de promedio en cómputo anual. Un convenio podría mejorar esa jornada, pero no es el límite general del Estatuto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el empresario no tiene libertad total para fijar las horas de trabajo. La jornada está limitada por la ley, el convenio colectivo y los derechos de descanso del trabajador."
+        }
+      ],
+      "resumen_didactico": "La jornada máxima general es de 40 horas semanales de promedio en cómputo anual, aunque un convenio colectivo puede establecer una jornada más favorable para el trabajador.",
+      "ejemplo_practico": "Si un técnico de DAW firma un contrato de 40 horas semanales, esa jornada entra dentro del límite legal general. Pero si su convenio marca 38,5 horas, deberá aplicarse la jornada más favorable del convenio.",
+      "conclusion_final": "La respuesta correcta es la a porque el Estatuto de los Trabajadores fija una jornada máxima de 40 horas semanales de promedio en cómputo anual."
+    }
+  },
+  {
+    "id": "UT3-Q06",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "Para que exista una relación laboral amparada por la ley, ¿cuál de estos requisitos debe cumplirse obligatoriamente?",
+    "contexto": "Requisitos necesarios para que exista una relación laboral protegida por el Estatuto de los Trabajadores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que el trabajo se realice de forma gratuita por motivos de aprendizaje."
+      },
+      {
+        "clave": "b",
+        "texto": "Que el trabajo sea retribuido, es decir, realizado a cambio de un salario."
+      },
+      {
+        "clave": "c",
+        "texto": "Que el trabajador pueda enviar a otra persona en su lugar cuando quiera."
+      },
+      {
+        "clave": "d",
+        "texto": "Que el trabajador ponga sus propias herramientas y asuma los riesgos económicos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que para que exista una relación laboral deben cumplirse varios requisitos, entre ellos la retribución. Esto significa que el trabajo se realiza a cambio de un salario. Si no hay salario, normalmente no estamos ante una relación laboral ordinaria protegida por el Estatuto de los Trabajadores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque si el trabajo se realiza gratuitamente falta el requisito de retribución. Un trabajo sin salario no encaja como relación laboral ordinaria."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque en una relación laboral debe existir personalidad: el trabajo debe realizarlo la persona contratada, no alguien enviado en su lugar libremente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque en la relación laboral existe ajenidad: los riesgos y beneficios del negocio pertenecen al empresario. Si el trabajador pone sus herramientas y asume los riesgos económicos, se parece más a un trabajo autónomo que a una relación laboral ordinaria."
+        }
+      ],
+      "resumen_didactico": "Para que haya relación laboral, el trabajador debe prestar servicios a cambio de un salario. La retribución es uno de los pilares básicos de la relación laboral.",
+      "ejemplo_practico": "Si una programadora trabaja para una empresa siguiendo sus instrucciones y recibe una nómina mensual, existe retribución y puede haber relación laboral. Si ayuda gratis a un familiar con una web, faltaría ese requisito.",
+      "conclusion_final": "La respuesta correcta es la b porque el trabajo retribuido, realizado a cambio de un salario, es un requisito obligatorio para que exista relación laboral."
+    }
+  },
+  {
+    "id": "UT3-Q07",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué significa el concepto de \"ajenidad\" en una relación laboral técnica?",
+    "contexto": "Concepto de ajenidad como uno de los requisitos básicos para que exista una relación laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que el trabajador no tiene ninguna responsabilidad sobre sus tareas."
+      },
+      {
+        "clave": "b",
+        "texto": "Que el trabajador es ajeno a las órdenes del empresario."
+      },
+      {
+        "clave": "c",
+        "texto": "Que los beneficios y los riesgos del trabajo pertenecen exclusivamente al empresario."
+      },
+      {
+        "clave": "d",
+        "texto": "Que el trabajo se realiza en un país extranjero."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la ajenidad significa que los beneficios y los riesgos del trabajo pertenecen al empresario, no al trabajador. El trabajador cobra su salario aunque la empresa gane mucho o aunque el negocio tenga pérdidas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la ajenidad no significa que el trabajador no tenga responsabilidad sobre sus tareas. El trabajador sigue teniendo deberes laborales, como cumplir con diligencia y buena fe."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque en una relación laboral el trabajador sí está sometido a las órdenes y organización del empresario. Eso se relaciona con el requisito de dependencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque ajenidad no tiene relación con trabajar en el extranjero. Es un concepto jurídico sobre quién asume los beneficios y riesgos de la actividad económica."
+        }
+      ],
+      "resumen_didactico": "Ajenidad significa que el trabajador no asume el riesgo económico del negocio: trabaja, cumple su función y cobra su salario; los beneficios y pérdidas corresponden a la empresa.",
+      "ejemplo_practico": "Si una empresa de desarrollo web gana mucho dinero con una aplicación creada por sus técnicos, el beneficio empresarial pertenece a la empresa. Si el proyecto fracasa, los técnicos siguen teniendo derecho a cobrar su nómina.",
+      "conclusion_final": "La respuesta correcta es la c porque la ajenidad implica que los beneficios y riesgos del trabajo pertenecen al empresario."
+    }
+  },
+  {
+    "id": "UT3-Q08",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "Un profesional trabaja bajo el poder de organización y dirección de una empresa, siguiendo sus horarios y usando sus programas informáticos. ¿A qué característica de la relación laboral se refiere esto?",
+    "contexto": "Identificación del requisito de dependencia dentro de una relación laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Voluntariedad."
+      },
+      {
+        "clave": "b",
+        "texto": "Personalidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Dependencia."
+      },
+      {
+        "clave": "d",
+        "texto": "Ajenidad."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la dependencia significa que el trabajador presta sus servicios bajo el poder de organización y dirección del empresario. Esto incluye seguir instrucciones, cumplir horarios, usar los medios de la empresa y trabajar dentro de la estructura organizada por ella.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la voluntariedad significa que el trabajador decide libremente trabajar y puede finalizar la relación laboral mediante dimisión. Aquí la clave no es la libertad de aceptar el trabajo, sino estar sometido a la organización de la empresa."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la personalidad significa que el trabajo debe realizarlo la persona contratada, no otra en su lugar. La pregunta se centra en horarios, órdenes y medios de la empresa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la ajenidad se refiere a que los beneficios y riesgos del negocio pertenecen al empresario. Aunque usar herramientas de la empresa puede relacionarse con la ajenidad, el elemento principal de la pregunta es la subordinación a la organización empresarial."
+        }
+      ],
+      "resumen_didactico": "Cuando el trabajador sigue horarios, instrucciones y métodos fijados por la empresa, hablamos de dependencia.",
+      "ejemplo_practico": "Un desarrollador que debe entrar a una hora concreta, usar el software corporativo y seguir las tareas asignadas por su responsable trabaja en situación de dependencia.",
+      "conclusion_final": "La respuesta correcta es la c porque trabajar bajo el poder de organización y dirección de la empresa corresponde al requisito de dependencia."
+    }
+  },
+  {
+    "id": "UT3-Q09",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Cuál de los siguientes colectivos queda expresamente excluido del ámbito de aplicación del Estatuto de los Trabajadores?",
+    "contexto": "Exclusiones de la relación laboral ordinaria y colectivos que no se rigen por el Estatuto de los Trabajadores.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los trabajadores temporales con contratos de menos de un mes."
+      },
+      {
+        "clave": "b",
+        "texto": "Los técnicos de nivel superior en empresas privadas."
+      },
+      {
+        "clave": "c",
+        "texto": "Los empleados que realizan teletrabajo desde su domicilio."
+      },
+      {
+        "clave": "d",
+        "texto": "Los funcionarios públicos, que se rigen por el Derecho Administrativo."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que hay situaciones que, aunque pueden parecer trabajo, quedan fuera de la relación laboral ordinaria regulada por el Estatuto de los Trabajadores. Entre ellas están los funcionarios públicos, que no se rigen por el Estatuto de los Trabajadores, sino por el Derecho Administrativo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque un trabajador temporal sí puede estar dentro del ámbito del Estatuto de los Trabajadores. La duración corta del contrato no lo excluye automáticamente de la relación laboral ordinaria."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque los técnicos de nivel superior que trabajan para empresas privadas pueden tener una relación laboral ordinaria si cumplen los requisitos de personalidad, voluntariedad, retribución, dependencia y ajenidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el teletrabajo no excluye al empleado del Estatuto de los Trabajadores. Aunque trabaje desde su domicilio, puede seguir existiendo relación laboral si trabaja para una empresa bajo sus condiciones organizativas."
+        }
+      ],
+      "resumen_didactico": "No todo el mundo que trabaja se rige por el Estatuto de los Trabajadores. Los funcionarios públicos están excluidos porque su relación se regula por el Derecho Administrativo.",
+      "ejemplo_practico": "Un profesor funcionario de un instituto público no se rige por las mismas normas que un trabajador contratado por una empresa privada, porque su vínculo pertenece al ámbito administrativo.",
+      "conclusion_final": "La respuesta correcta es la d porque los funcionarios públicos quedan excluidos del Estatuto de los Trabajadores y se rigen por el Derecho Administrativo."
+    }
+  },
+  {
+    "id": "UT3-Q10",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué situación define el concepto de \"falso autónomo\" que un técnico debe saber identificar?",
+    "contexto": "Identificación del falso autónomo cuando una empresa exige alta como autónomo pero mantiene condiciones propias de una relación laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un profesional que trabaja para varios clientes con sus propios medios."
+      },
+      {
+        "clave": "b",
+        "texto": "Una empresa que obliga a un trabajador a darse de alta como autónomo pero le impone horarios y órdenes como a un empleado."
+      },
+      {
+        "clave": "c",
+        "texto": "Un trabajador que decide libremente emprender su propio negocio digital."
+      },
+      {
+        "clave": "d",
+        "texto": "Un funcionario que realiza tareas administrativas en el sector público."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario advierte sobre el falso autónomo: una situación en la que la empresa pide al trabajador que se dé de alta como autónomo, pero en la práctica le impone horarios, órdenes, herramientas o condiciones propias de un empleado. Si existen dependencia y ajenidad, puede tratarse realmente de una relación laboral.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque un profesional que trabaja para varios clientes, con sus propios medios y organización, encaja mejor con un autónomo real."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque emprender libremente un negocio propio no es falso autónomo. En ese caso la persona organiza su actividad, asume riesgos y decide cómo trabajar."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque los funcionarios públicos se rigen por el Derecho Administrativo, no por el Estatuto de los Trabajadores, y no representan el caso típico de falso autónomo."
+        }
+      ],
+      "resumen_didactico": "Hay falso autónomo cuando la persona aparece como autónoma, pero trabaja realmente como empleada: con horarios, órdenes, control empresarial y medios de la empresa.",
+      "ejemplo_practico": "Una empresa tecnológica exige a un programador que facture como autónomo, pero le obliga a entrar todos los días a las 9:00, usar el ordenador de la empresa, seguir instrucciones de un jefe y pedir permiso para ausentarse.",
+      "conclusion_final": "La respuesta correcta es la b porque describe una relación laboral encubierta bajo una falsa apariencia de trabajo autónomo."
+    }
+  },
+  {
+    "id": "UT3-Q11",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿A qué se refiere el derecho a la promoción y formación profesional del trabajador?",
+    "contexto": "Derecho del trabajador a mejorar profesionalmente y recibir formación para adaptarse a los cambios del puesto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A la obligación de trabajar siempre en el mismo puesto para no perder antigüedad."
+      },
+      {
+        "clave": "b",
+        "texto": "A la facultad de ascender y recibir instrucción para adaptarse a las innovaciones del puesto."
+      },
+      {
+        "clave": "c",
+        "texto": "Al derecho a recibir el sueldo sin necesidad de realizar cursos de actualización."
+      },
+      {
+        "clave": "d",
+        "texto": "A la posibilidad de elegir el horario de formación sin consultar con la empresa."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el derecho a la promoción y formación profesional permite al trabajador ascender de categoría y recibir la instrucción necesaria para adaptarse a las innovaciones de su puesto. Es un derecho orientado a que la persona trabajadora pueda mejorar y no quedarse desactualizada profesionalmente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque este derecho no obliga al trabajador a permanecer siempre en el mismo puesto. Al contrario, está relacionado con la posibilidad de progresar profesionalmente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el derecho a la formación no significa cobrar sin actualizarse. Se refiere a recibir preparación para adaptarse a los cambios y mejorar en el puesto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el temario no plantea este derecho como una libertad absoluta para elegir horarios de formación sin coordinación con la empresa."
+        }
+      ],
+      "resumen_didactico": "El derecho a la promoción y formación profesional protege la posibilidad de crecer en el trabajo y recibir formación cuando el puesto cambia o incorpora nuevas herramientas.",
+      "ejemplo_practico": "Si una empresa implanta un nuevo software de gestión, el trabajador tiene derecho a recibir formación para aprender a utilizarlo correctamente y adaptarse a esa innovación.",
+      "conclusion_final": "La respuesta correcta es la b porque este derecho permite ascender profesionalmente y recibir formación para adaptarse a las innovaciones del puesto."
+    }
+  },
+  {
+    "id": "UT3-Q12",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Cuál es la obligación principal de la empresa en materia de prevención de riesgos laborales?",
+    "contexto": "Derecho del trabajador a la integridad física y obligación empresarial de garantizar la seguridad y salud en el trabajo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Delegar toda la responsabilidad de la seguridad en el trabajador más veterano."
+      },
+      {
+        "clave": "b",
+        "texto": "Garantizar un entorno de trabajo seguro y saludable para el personal."
+      },
+      {
+        "clave": "c",
+        "texto": "Pagar un plus económico a cambio de trabajar en condiciones peligrosas."
+      },
+      {
+        "clave": "d",
+        "texto": "Facilitar que el trabajador compre su propio equipo de protección si lo desea."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el derecho a la integridad física y a la prevención de riesgos obliga a la empresa a garantizar un entorno de trabajo seguro y saludable. La empresa debe proteger la salud del trabajador, proporcionar los medios necesarios y evitar riesgos durante la actividad laboral.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la empresa no puede trasladar toda la responsabilidad de la seguridad a un trabajador veterano. La obligación principal de prevención corresponde a la empresa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque pagar un plus no sustituye la obligación de prevenir riesgos. La empresa debe evitar o reducir los peligros, no compensarlos económicamente como solución principal."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el trabajador no debe asumir por su cuenta la compra del equipo de protección necesario. La empresa debe facilitar los medios adecuados para trabajar con seguridad."
+        }
+      ],
+      "resumen_didactico": "La prevención de riesgos laborales busca que el trabajador pueda desarrollar su actividad en condiciones seguras y saludables. La empresa tiene la obligación principal de proteger su salud.",
+      "ejemplo_practico": "Si una técnica de mantenimiento necesita equipos de protección individual para evitar lesiones, la empresa debe proporcionarlos y formar a la trabajadora sobre cómo usarlos correctamente.",
+      "conclusion_final": "La respuesta correcta es la b porque la empresa debe garantizar un entorno de trabajo seguro y saludable para todo el personal."
+    }
+  },
+  {
+    "id": "UT3-Q13",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué garantiza el derecho a la desconexión digital en el mercado laboral actual?",
+    "contexto": "Derecho del trabajador a que se respete su vida privada y su descanso fuera del horario laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La obligación de apagar el teléfono móvil personal durante las reuniones."
+      },
+      {
+        "clave": "b",
+        "texto": "La prohibición de usar ordenadores durante la jornada laboral."
+      },
+      {
+        "clave": "c",
+        "texto": "Que la vida privada fuera del horario laboral sea respetada, sin mensajes o correos de la empresa a deshoras."
+      },
+      {
+        "clave": "d",
+        "texto": "El derecho a no tener internet en el puesto de trabajo para evitar distracciones."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el derecho a la desconexión digital garantiza que la vida privada del trabajador fuera del horario laboral sea respetada. La empresa no debe invadir ese tiempo mediante correos, mensajes o comunicaciones profesionales a deshoras.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la desconexión digital no se refiere a apagar el móvil personal durante reuniones, sino a respetar el descanso y la vida privada fuera del horario laboral."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque este derecho no prohíbe usar ordenadores durante la jornada. Durante el horario laboral, el uso de herramientas digitales puede formar parte normal del trabajo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque no significa trabajar sin internet para evitar distracciones. Se refiere a no estar obligado a atender comunicaciones laborales fuera del tiempo de trabajo."
+        }
+      ],
+      "resumen_didactico": "La desconexión digital protege el tiempo de descanso del trabajador. Cuando termina la jornada, la empresa debe respetar su vida privada.",
+      "ejemplo_practico": "Si una programadora termina su jornada a las seis de la tarde, su jefe no debería exigirle que conteste mensajes sobre el código a las diez de la noche.",
+      "conclusion_final": "La respuesta correcta es la c porque el derecho a la desconexión digital garantiza el respeto de la vida privada y del descanso fuera del horario laboral."
+    }
+  },
+  {
+    "id": "UT3-Q14",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿En qué consiste el deber de \"buena fe\" por parte del trabajador?",
+    "contexto": "Deber laboral del trabajador de actuar con honestidad, lealtad e integridad dentro de la relación laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En trabajar más horas de las contratadas de forma gratuita."
+      },
+      {
+        "clave": "b",
+        "texto": "En actuar con honestidad, lealtad e integridad en el desarrollo de sus funciones."
+      },
+      {
+        "clave": "c",
+        "texto": "En aceptar cualquier orden del empresario aunque sea ilegal."
+      },
+      {
+        "clave": "d",
+        "texto": "En ocultar los errores propios para no perjudicar la imagen de la empresa."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el deber de buena fe obliga al trabajador a actuar con honestidad, lealtad y honradez en el trabajo. Supone comportarse con integridad dentro de la empresa, respetando la confianza que la organización deposita en él.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la buena fe no significa regalar tiempo ni trabajar más horas de las contratadas sin compensación. Las horas extra tienen sus propias reglas y deben registrarse, pagarse o compensarse."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el deber de buena fe no obliga a obedecer órdenes ilegales. La lealtad hacia la empresa no elimina los derechos del trabajador ni los límites legales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque ocultar errores no es actuar con buena fe. La buena fe implica honestidad, por lo que esconder fallos puede romper la confianza laboral."
+        }
+      ],
+      "resumen_didactico": "La buena fe consiste en trabajar con honestidad, lealtad e integridad, sin engañar a la empresa ni usar la información o los recursos del trabajo de forma indebida.",
+      "ejemplo_practico": "Si una trabajadora tiene acceso a datos confidenciales de la empresa, debe usarlos únicamente para su trabajo y no aprovecharlos para beneficio propio o de terceros.",
+      "conclusion_final": "La respuesta correcta es la b porque el deber de buena fe exige actuar con honestidad, lealtad e integridad en el desarrollo del trabajo."
+    }
+  },
+  {
+    "id": "UT3-Q15",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué prohíbe el deber de \"no concurrencia desleal\"?",
+    "contexto": "Deber laboral que impide perjudicar al empleador actual trabajando o compitiendo de forma desleal en el mismo sector.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Trabajar para otra empresa del mismo sector si ello supone un perjuicio para el empleador actual."
+      },
+      {
+        "clave": "b",
+        "texto": "Participar en procesos de selección mientras se está trabajando."
+      },
+      {
+        "clave": "c",
+        "texto": "Colaborar con compañeros de otros departamentos dentro de la misma empresa."
+      },
+      {
+        "clave": "d",
+        "texto": "Trabajar en una empresa diferente tras finalizar el contrato legalmente."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el deber de no concurrencia desleal prohíbe trabajar para otra empresa del mismo sector cuando eso perjudica al empleador actual. No se trata de impedir cualquier otro trabajo, sino de evitar una competencia desleal mientras existe la relación laboral.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque participar en procesos de selección no constituye por sí mismo concurrencia desleal. Buscar otro empleo no equivale a perjudicar activamente a la empresa actual."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque colaborar con compañeros de otros departamentos dentro de la misma empresa no es competencia desleal. Al contrario, puede formar parte normal del trabajo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque trabajar en otra empresa después de finalizar legalmente el contrato no es no concurrencia desleal, salvo que existiera algún pacto específico válido de no competencia posterior."
+        }
+      ],
+      "resumen_didactico": "La no concurrencia desleal significa que, mientras trabajas para una empresa, no puedes realizar otra actividad que compita con ella y le cause un perjuicio.",
+      "ejemplo_practico": "Un desarrollador que trabaja en una empresa creando una aplicación y, al mismo tiempo, desarrolla por su cuenta una app competidora usando ideas, recursos o información de esa empresa estaría incumpliendo este deber.",
+      "conclusion_final": "La respuesta correcta es la a porque el deber de no concurrencia desleal prohíbe trabajar o competir en el mismo sector cuando eso perjudica al empleador actual."
+    }
+  },
+  {
+    "id": "UT3-Q16",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué es el registro de jornada y por qué es obligatorio para todas las empresas en España?",
+    "contexto": "Obligación empresarial de registrar diariamente la hora exacta de inicio y fin de la jornada laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un documento donde se anotan las faltas de ortografía de los empleados."
+      },
+      {
+        "clave": "b",
+        "texto": "Una encuesta de satisfacción que se rellena al salir de la oficina."
+      },
+      {
+        "clave": "c",
+        "texto": "Un listado de las tareas realizadas para controlar la productividad minuto a minuto."
+      },
+      {
+        "clave": "d",
+        "texto": "Una anotación diaria de la hora de inicio y fin de jornada para evitar el fraude en el tiempo de trabajo."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que todas las empresas en España tienen la obligación de llevar un registro de jornada. Este registro consiste en anotar diariamente la hora exacta de inicio y fin de cada trabajador. Sirve como garantía para controlar el tiempo real de trabajo y evitar abusos, especialmente en relación con horas extra no registradas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el registro de jornada no tiene ninguna relación con anotar errores de escritura o faltas de ortografía de los empleados."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque no es una encuesta de satisfacción. Es un control legal del tiempo trabajado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el registro de jornada no consiste en controlar cada tarea ni medir la productividad minuto a minuto. Su función es registrar la entrada y la salida."
+        }
+      ],
+      "resumen_didactico": "El registro de jornada es la prueba diaria de cuándo empieza y cuándo termina realmente el trabajo. Protege al trabajador frente a horas extra ocultas o jornadas superiores a las legales.",
+      "ejemplo_practico": "Si un técnico entra a las 8:00 y sale a las 17:00, esas horas deben quedar registradas. Si la empresa le pide quedarse más tiempo, también debe ficharse para que conste como tiempo trabajado.",
+      "conclusion_final": "La respuesta correcta es la d porque el registro de jornada consiste en anotar diariamente la hora de inicio y fin de la jornada para controlar legalmente el tiempo de trabajo."
+    }
+  },
+  {
+    "id": "UT3-Q17",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "Según la normativa de descanso, ¿cuánto tiempo debe transcurrir como mínimo entre el final de una jornada y el inicio de la siguiente?",
+    "contexto": "Descanso mínimo obligatorio entre una jornada laboral y la siguiente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "10 horas."
+      },
+      {
+        "clave": "b",
+        "texto": "8 horas."
+      },
+      {
+        "clave": "c",
+        "texto": "12 horas."
+      },
+      {
+        "clave": "d",
+        "texto": "24 horas."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que debe respetarse un descanso mínimo de 12 horas entre el final de una jornada laboral y el inicio de la siguiente. Este descanso protege la salud del trabajador y forma parte de las normas sobre tiempo de trabajo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque 10 horas no alcanzan el descanso mínimo obligatorio indicado en el temario."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque 8 horas serían insuficientes para cumplir el descanso legal entre jornadas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque 24 horas puede relacionarse con otros descansos, pero no es el descanso mínimo entre una jornada diaria y la siguiente según el temario."
+        }
+      ],
+      "resumen_didactico": "Entre una jornada y otra deben pasar como mínimo 12 horas. No es una recomendación: es un límite legal para proteger el descanso y la salud.",
+      "ejemplo_practico": "Si un técnico termina de trabajar a las 21:00, no debería empezar su siguiente jornada antes de las 9:00 del día siguiente, porque deben pasar 12 horas completas de descanso.",
+      "conclusion_final": "La respuesta correcta es la c porque el descanso mínimo entre jornadas es de 12 horas."
+    }
+  },
+  {
+    "id": "UT3-Q18",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "Si un técnico trabaja una jornada de más de seis horas seguidas, ¿qué descanso mínimo le garantiza la ley?",
+    "contexto": "Descanso mínimo durante la jornada cuando se trabajan más de seis horas continuadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "5 minutos para estirar las piernas."
+      },
+      {
+        "clave": "b",
+        "texto": "Una hora completa para comer fuera del centro."
+      },
+      {
+        "clave": "c",
+        "texto": "Al menos 15 minutos de descanso."
+      },
+      {
+        "clave": "d",
+        "texto": "No tiene derecho a descanso hasta finalizar la jornada completa."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, cuando una persona trabajadora realiza una jornada de más de seis horas seguidas, tiene derecho a un descanso mínimo de 15 minutos. Este descanso forma parte de las reglas sobre tiempo de trabajo y protección de la salud laboral.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el descanso mínimo indicado en el temario no es de 5 minutos, sino de al menos 15 minutos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el temario no establece una hora completa como descanso mínimo general para jornadas de más de seis horas seguidas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque sí existe derecho a descanso cuando se superan seis horas de trabajo continuado."
+        }
+      ],
+      "resumen_didactico": "Si la jornada supera las seis horas seguidas, el trabajador tiene derecho a parar al menos 15 minutos.",
+      "ejemplo_practico": "Si un técnico de DAW trabaja de 8:00 a 15:00 sin interrupción, al superar las seis horas continuadas tiene derecho a un descanso mínimo de 15 minutos.",
+      "conclusion_final": "La respuesta correcta es la c porque la ley garantiza al menos 15 minutos de descanso cuando se trabaja más de seis horas seguidas."
+    }
+  },
+  {
+    "id": "UT3-Q19",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Cuál es el límite máximo de horas extraordinarias que un trabajador puede realizar al año?",
+    "contexto": "Límite legal anual de horas extraordinarias dentro de la regulación del tiempo de trabajo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un máximo de 40 horas anuales."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo pueden hacerse 10 horas extra al mes."
+      },
+      {
+        "clave": "c",
+        "texto": "No hay límite si se pagan correctamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Un máximo de 80 horas anuales."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las horas extraordinarias son aquellas que se realizan por encima de la jornada ordinaria. También indica que existe un límite anual de 80 horas extraordinarias, que no puede superarse legalmente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el límite indicado en el temario no es de 40 horas anuales, sino de 80 horas anuales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el temario no establece el límite como 10 horas extra al mes, sino como un máximo anual de 80 horas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque sí existe límite legal. Aunque las horas extra se paguen o compensen correctamente, no pueden superar el máximo anual permitido."
+        }
+      ],
+      "resumen_didactico": "Las horas extra no son ilimitadas. La ley permite realizarlas, pero con un máximo general de 80 horas al año.",
+      "ejemplo_practico": "Si un técnico ya ha realizado 80 horas extraordinarias en el año, la empresa no debería seguir pidiéndole más horas extra ordinarias, aunque quiera pagárselas.",
+      "conclusion_final": "La respuesta correcta es la d porque el límite máximo de horas extraordinarias es de 80 horas anuales."
+    }
+  },
+  {
+    "id": "UT3-Q20",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué característica legal tienen las horas extraordinarias con carácter general?",
+    "contexto": "Carácter voluntario de las horas extraordinarias y excepciones cuando existe pacto o fuerza mayor.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Son obligatorias siempre que el jefe las solicite por carga de trabajo."
+      },
+      {
+        "clave": "b",
+        "texto": "Están prohibidas para todos los trabajadores mayores de 45 años."
+      },
+      {
+        "clave": "c",
+        "texto": "Deben pagarse siempre al triple del valor de la hora ordinaria."
+      },
+      {
+        "clave": "d",
+        "texto": "Son voluntarias, salvo que se hayan pactado por contrato o sean por fuerza mayor."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las horas extraordinarias son las que se realizan por encima de la jornada ordinaria. Con carácter general son voluntarias, salvo que el convenio o el contrato indiquen otra cosa, o que se trate de horas necesarias por fuerza mayor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el jefe no puede imponer horas extraordinarias simplemente por carga de trabajo ordinaria. Como norma general, las horas extra son voluntarias."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el temario no establece una prohibición general para trabajadores mayores de 45 años. La prohibición destacada se refiere a menores de edad, que no pueden realizar horas extraordinarias."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el temario indica que las horas extraordinarias deben pagarse o compensarse con descanso equivalente, pero no establece que deban pagarse siempre al triple del valor de la hora ordinaria."
+        }
+      ],
+      "resumen_didactico": "Las horas extraordinarias no forman parte de la jornada normal. En general, el trabajador decide si las hace, salvo que exista pacto previo o una situación de fuerza mayor.",
+      "ejemplo_practico": "Si una empresa pide a un técnico quedarse dos horas más para terminar un proyecto urgente, el trabajador puede negarse si no existe obligación pactada ni una causa de fuerza mayor. Si acepta hacerlas, deben registrarse y compensarse correctamente.",
+      "conclusion_final": "La respuesta correcta es la d porque las horas extraordinarias son voluntarias con carácter general, salvo pacto o fuerza mayor."
+    }
+  },
+  {
+    "id": "UT3-Q21",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Cómo define la ley el trabajo nocturno?",
+    "contexto": "Definición legal del trabajo nocturno dentro de la regulación del tiempo de trabajo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cualquier trabajo que requiera el uso de luz artificial en la oficina."
+      },
+      {
+        "clave": "b",
+        "texto": "Aquel que se realiza entre las diez de la noche y las seis de la mañana."
+      },
+      {
+        "clave": "c",
+        "texto": "El que se realiza entre las seis de la tarde y las doce de la noche."
+      },
+      {
+        "clave": "d",
+        "texto": "El turno que empieza después de la hora de la comida."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el trabajo nocturno es aquel que se realiza entre las 22:00 y las 06:00. Debido al desgaste físico que puede suponer, la ley establece protecciones especiales para las personas trabajadoras que realizan este tipo de jornada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el trabajo nocturno no depende de usar luz artificial, sino de la franja horaria en la que se realiza."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la franja de seis de la tarde a doce de la noche no coincide con la definición legal explicada en el temario. El tramo correcto es de 22:00 a 06:00."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque no todo turno que empieza después de comer es trabajo nocturno. Solo se considera nocturno el trabajo realizado dentro de la franja de 22:00 a 06:00."
+        }
+      ],
+      "resumen_didactico": "El trabajo nocturno se define por la hora en la que se realiza: desde las 22:00 hasta las 06:00.",
+      "ejemplo_practico": "Si un técnico trabaja de 23:00 a 05:00, está realizando trabajo nocturno porque toda su jornada cae dentro de la franja legal nocturna.",
+      "conclusion_final": "La respuesta correcta es la b porque la ley considera trabajo nocturno el realizado entre las diez de la noche y las seis de la mañana."
+    }
+  },
+  {
+    "id": "UT3-Q22",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué restricción legal específica tienen los trabajadores nocturnos debido al desgaste físico?",
+    "contexto": "Protecciones especiales del trabajo nocturno debido al desgaste físico que supone trabajar entre las 22:00 y las 06:00.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Deben cobrar el mismo salario que el turno de mañana sin pluses."
+      },
+      {
+        "clave": "b",
+        "texto": "Tienen prohibido realizar horas extraordinarias."
+      },
+      {
+        "clave": "c",
+        "texto": "Deben trabajar siempre diez horas diarias para compensar el turno."
+      },
+      {
+        "clave": "d",
+        "texto": "No tienen derecho a vacaciones en verano."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el trabajo nocturno, realizado entre las 22:00 y las 06:00, tiene protecciones especiales por el desgaste físico que supone. Una de esas restricciones es que los trabajadores nocturnos tienen prohibido realizar horas extraordinarias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la pregunta se centra en una restricción legal específica del trabajo nocturno. El temario no indica que deban cobrar igual que el turno de mañana sin pluses."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los trabajadores nocturnos no deben trabajar siempre diez horas diarias. El temario señala un máximo de 8 horas diarias de promedio para trabajadores nocturnos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el trabajo nocturno no elimina el derecho a vacaciones. Las vacaciones son un derecho laboral retribuido reconocido para las personas trabajadoras."
+        }
+      ],
+      "resumen_didactico": "El trabajo nocturno tiene límites especiales para proteger la salud del trabajador. Uno de los más importantes es que no se pueden hacer horas extraordinarias en turno nocturno.",
+      "ejemplo_practico": "Si un técnico trabaja habitualmente de 22:00 a 06:00, la empresa no puede pedirle que alargue su jornada con horas extra después de ese turno nocturno.",
+      "conclusion_final": "La respuesta correcta es la b porque los trabajadores nocturnos tienen prohibido realizar horas extraordinarias."
+    }
+  },
+  {
+    "id": "UT3-Q23",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué duración tiene el permiso retribuido por matrimonio o registro de pareja de hecho?",
+    "contexto": "Duración del permiso retribuido reconocido por matrimonio o pareja de hecho.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "10 días naturales."
+      },
+      {
+        "clave": "b",
+        "texto": "5 días hábiles."
+      },
+      {
+        "clave": "c",
+        "texto": "Un mes completo de excedencia."
+      },
+      {
+        "clave": "d",
+        "texto": "15 días naturales."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario incluye los permisos retribuidos como derechos que permiten al trabajador ausentarse del puesto por causas justificadas manteniendo el salario. Para el matrimonio o registro de pareja de hecho, la duración garantizada es de 15 días naturales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el permiso por matrimonio o pareja de hecho no es de 10 días naturales según el temario, sino de 15 días naturales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el temario no establece 5 días hábiles para este permiso. Los 5 días corresponden a otros supuestos, como enfermedad o accidente grave de familiar hasta segundo grado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque no se trata de una excedencia de un mes completo. Es un permiso retribuido concreto de 15 días naturales."
+        }
+      ],
+      "resumen_didactico": "El permiso retribuido por matrimonio o pareja de hecho permite ausentarse del trabajo sin perder salario durante 15 días naturales.",
+      "ejemplo_practico": "Si una trabajadora se casa un sábado, puede disfrutar de 15 días naturales de permiso retribuido, contando días laborables y no laborables dentro de ese periodo.",
+      "conclusion_final": "La respuesta correcta es la d porque el permiso retribuido por matrimonio o registro de pareja de hecho tiene una duración de 15 días naturales."
+    }
+  },
+  {
+    "id": "UT3-Q24",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "Un trabajador necesita ausentarse por el fallecimiento de un familiar de segundo grado. ¿De cuántos días dispone según el cuadro de permisos básicos?",
+    "contexto": "Duración del permiso retribuido por fallecimiento de un familiar hasta segundo grado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una semana completa independientemente del lugar."
+      },
+      {
+        "clave": "b",
+        "texto": "No es un permiso retribuido y debe recuperar las horas."
+      },
+      {
+        "clave": "c",
+        "texto": "2 días, que pueden ampliarse a 4 si hay desplazamiento."
+      },
+      {
+        "clave": "d",
+        "texto": "1 día si no hay desplazamiento."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario recoge que, en caso de fallecimiento de un familiar hasta segundo grado, el trabajador tiene derecho a un permiso retribuido de 2 días. Si necesita desplazarse, ese permiso se amplía a 4 días.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el permiso no es de una semana completa en todos los casos. El temario establece 2 días, ampliables a 4 si hay desplazamiento."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el fallecimiento de un familiar hasta segundo grado sí aparece como permiso retribuido. El trabajador no pierde salario ni debe recuperar esas horas como norma general."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el permiso no es de 1 día sin desplazamiento. Según el cuadro del temario, la duración básica es de 2 días."
+        }
+      ],
+      "resumen_didactico": "Por fallecimiento de un familiar hasta segundo grado, el trabajador tiene derecho a 2 días de permiso retribuido, o 4 días si debe desplazarse.",
+      "ejemplo_practico": "Si fallece el abuelo de un trabajador y el funeral es en su misma ciudad, dispone de 2 días de permiso. Si debe viajar a otra provincia, el permiso puede ampliarse a 4 días.",
+      "conclusion_final": "La respuesta correcta es la c porque el permiso por fallecimiento de un familiar hasta segundo grado es de 2 días, ampliables a 4 si hay desplazamiento."
+    }
+  },
+  {
+    "id": "UT3-Q25",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Cuál es la duración mínima de las vacaciones anuales retribuidas para cualquier trabajador?",
+    "contexto": "Duración mínima legal de las vacaciones anuales retribuidas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Depende exclusivamente de lo que decida el empresario cada año."
+      },
+      {
+        "clave": "b",
+        "texto": "15 días laborables."
+      },
+      {
+        "clave": "c",
+        "texto": "22 días laborables."
+      },
+      {
+        "clave": "d",
+        "texto": "30 días naturales."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las vacaciones anuales son un periodo de descanso retribuido de al menos 30 días naturales por cada año trabajado. Además, indica que la empresa no puede sustituir ese descanso por dinero, porque las vacaciones son un derecho destinado a garantizar la recuperación y desconexión del trabajador.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque las vacaciones no dependen exclusivamente de la voluntad del empresario. Existe un mínimo legal que debe respetarse."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el temario no establece un mínimo de 15 días laborables. La duración mínima indicada es de 30 días naturales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque, aunque 22 días laborables puede equivaler aproximadamente a 30 días naturales en algunos contextos, el temario formula el mínimo como 30 días naturales."
+        }
+      ],
+      "resumen_didactico": "Todo trabajador tiene derecho a vacaciones anuales retribuidas. El mínimo general explicado en el temario es de 30 días naturales por año trabajado.",
+      "ejemplo_practico": "Si un técnico trabaja todo el año en una empresa, tendrá derecho como mínimo a 30 días naturales de vacaciones pagadas.",
+      "conclusion_final": "La respuesta correcta es la d porque la duración mínima de las vacaciones anuales retribuidas es de 30 días naturales."
+    }
+  },
+  {
+    "id": "UT3-Q26",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué establece la ley sobre la compensación económica de las vacaciones no disfrutadas?",
+    "contexto": "Regulación de las vacaciones anuales retribuidas y prohibición de sustituir el descanso por dinero.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La empresa puede obligar al trabajador a cobrarlas para no cerrar el centro."
+      },
+      {
+        "clave": "b",
+        "texto": "Está prohibido sustituir el descanso por dinero, salvo en caso de finalización de contrato."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo se pagan si el trabajador tiene una antigüedad superior a diez años."
+      },
+      {
+        "clave": "d",
+        "texto": "El trabajador puede elegir cobrar dinero en lugar de descansar siempre que quiera."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las vacaciones anuales son un periodo de descanso retribuido de al menos 30 días naturales por cada año trabajado. También indica que la empresa no puede pagar dinero al trabajador a cambio de que no disfrute sus vacaciones, porque el descanso es un derecho protegido.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la empresa no puede obligar al trabajador a cobrar las vacaciones para evitar que descanse o para mantener abierto el centro de trabajo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el derecho a vacaciones no depende de tener más de diez años de antigüedad. Todo trabajador genera derecho a vacaciones por el tiempo trabajado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el trabajador no puede elegir libremente cobrar dinero en lugar de disfrutar las vacaciones. La finalidad principal de las vacaciones es el descanso."
+        }
+      ],
+      "resumen_didactico": "Las vacaciones están pensadas para descansar, no para cambiarlas por dinero. La regla general es que deben disfrutarse, no cobrarse.",
+      "ejemplo_practico": "Si un técnico tiene 30 días naturales de vacaciones, la empresa no puede decirle que se los paga para que siga trabajando todo el año. Debe permitirle disfrutar su descanso.",
+      "conclusion_final": "La respuesta correcta es la b porque la ley prohíbe sustituir las vacaciones por dinero, salvo cuando el contrato finaliza y ya no pueden disfrutarse."
+    }
+  },
+  {
+    "id": "UT3-Q27",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué derecho permite a los trabajadores con hijos menores de 12 años mejorar su conciliación laboral?",
+    "contexto": "Derecho a solicitar adaptaciones de jornada para conciliar la vida laboral y familiar.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Derecho a elegir el puesto de trabajo de sus compañeros."
+      },
+      {
+        "clave": "b",
+        "texto": "Derecho a cobrar el doble de salario por cada hijo."
+      },
+      {
+        "clave": "c",
+        "texto": "Derecho a no asistir al trabajo durante los periodos de vacaciones escolares."
+      },
+      {
+        "clave": "d",
+        "texto": "Derecho a solicitar una adaptación de la jornada (como teletrabajo o cambio de horario) de forma razonable."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los trabajadores con hijos menores de 12 años o familiares a cargo tienen derecho a solicitar una adaptación de su jornada para conciliar. Esta adaptación puede consistir, por ejemplo, en pedir teletrabajo, modificar la hora de entrada o salida, o negociar cambios razonables con la empresa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la conciliación laboral no permite decidir el puesto de trabajo de otros compañeros. Se refiere a adaptar la propia jornada o forma de trabajo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque tener hijos no da derecho a cobrar el doble de salario. El derecho explicado en el temario afecta a la organización del tiempo de trabajo, no a duplicar el sueldo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la adaptación de jornada no significa dejar de asistir al trabajo durante todas las vacaciones escolares. El trabajador puede solicitar medidas razonables, pero no ausentarse libremente sin regulación."
+        }
+      ],
+      "resumen_didactico": "La conciliación permite pedir cambios razonables en la jornada o en la forma de trabajar para compatibilizar el empleo con responsabilidades familiares.",
+      "ejemplo_practico": "Una trabajadora con un hijo menor de 12 años puede solicitar entrar más tarde, salir antes o teletrabajar algunos días para organizar mejor el cuidado familiar, siempre mediante una negociación razonable con la empresa.",
+      "conclusion_final": "La respuesta correcta es la d porque los trabajadores con hijos menores de 12 años pueden solicitar una adaptación de jornada para mejorar la conciliación laboral y familiar."
+    }
+  },
+  {
+    "id": "UT3-Q28",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Cómo debe actuar un profesional ante una orden que considera que vulnera sus derechos o el convenio?",
+    "contexto": "Uso de la comunicación asertiva para defender derechos laborales basándose en la normativa, el convenio y el respeto profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aceptar la orden y no reclamar nunca por miedo al despido."
+      },
+      {
+        "clave": "b",
+        "texto": "Realizar la tarea de forma incorrecta a propósito como protesta silenciosa."
+      },
+      {
+        "clave": "c",
+        "texto": "Gritar y abandonar el puesto de trabajo inmediatamente."
+      },
+      {
+        "clave": "d",
+        "texto": "Utilizar la comunicación asertiva para exponer su postura basándose en la normativa y el convenio."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que conocer el marco jurídico laboral no sirve para pelear, sino para negociar con base. Ante una situación en la que una orden puede vulnerar derechos, descansos, jornada o convenio, lo adecuado es utilizar una comunicación asertiva, exponiendo la postura de forma profesional y apoyándose en la normativa aplicable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque aceptar una orden que vulnera derechos por miedo al despido deja al trabajador desprotegido. El temario insiste en conocer el convenio y la normativa para poder defenderse con fundamento."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque hacer mal el trabajo a propósito incumple el deber de diligencia y buena fe. Protestar de forma silenciosa perjudicando el trabajo no es una respuesta profesional ni legalmente adecuada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque gritar o abandonar el puesto de forma inmediata no representa una comunicación asertiva. Puede generar un conflicto mayor y perjudicar al trabajador."
+        }
+      ],
+      "resumen_didactico": "Si una orden vulnera tus derechos, no debes actuar desde el miedo ni desde la agresividad. Lo correcto es comunicar tu postura con respeto, claridad y apoyo en la normativa o el convenio.",
+      "ejemplo_practico": "Si un jefe pide a un técnico quedarse más horas sin registrarlas, el trabajador puede responder de forma asertiva: entiendo la urgencia del proyecto, pero las horas trabajadas deben registrarse y respetar lo que marca el convenio.",
+      "conclusion_final": "La respuesta correcta es la d porque la comunicación asertiva permite defender los derechos laborales de forma profesional, razonada y basada en la normativa."
+    }
+  },
+  {
+    "id": "UT3-Q29",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "¿Qué papel juega el \"deber de diligencia\" en la marca personal de un técnico?",
+    "contexto": "Deber laboral de cumplir las tareas profesionales con cuidado, atención y responsabilidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es el derecho a exigir que la empresa compre siempre las herramientas más caras."
+      },
+      {
+        "clave": "b",
+        "texto": "Es la obligación de cumplir las tareas con el cuidado, atención y rapidez adecuados."
+      },
+      {
+        "clave": "c",
+        "texto": "Es la posibilidad de delegar el trabajo difícil en los becarios o alumnos en prácticas."
+      },
+      {
+        "clave": "d",
+        "texto": "Es el deber de llegar a la oficina antes que el jefe todos los días."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el deber de diligencia y colaboración consiste en cumplir con las obligaciones del puesto de trabajo con el cuidado y la atención debidos, siguiendo las órdenes del empresario. No basta con estar presente: hay que realizar el trabajo de forma responsable y profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el deber de diligencia no se refiere a exigir herramientas más caras, sino a realizar correctamente las tareas propias del puesto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque delegar el trabajo difícil en becarios o alumnos en prácticas no representa diligencia. El trabajador debe asumir sus propias obligaciones con responsabilidad."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la diligencia no consiste en llegar antes que el jefe todos los días, sino en cumplir bien el trabajo dentro de la jornada y con la atención adecuada."
+        }
+      ],
+      "resumen_didactico": "El deber de diligencia significa trabajar bien: con cuidado, atención, responsabilidad y profesionalidad. Cumplirlo ayuda a construir una marca personal fiable.",
+      "ejemplo_practico": "Un técnico de DAW que revisa su código antes de entregarlo, documenta lo necesario y corrige errores con atención está cumpliendo su deber de diligencia y proyectando una imagen profesional.",
+      "conclusion_final": "La respuesta correcta es la b porque el deber de diligencia obliga a cumplir las tareas con cuidado, atención y responsabilidad adecuados."
+    }
+  },
+  {
+    "id": "UT3-Q30",
+    "tema": "UT3 El marco jurídico laboral",
+    "pregunta": "En conclusión, ¿por qué es fundamental para un futuro titulado conocer el marco jurídico laboral?",
+    "contexto": "Importancia del marco jurídico laboral como herramienta para proteger derechos, evitar abusos y negociar con conocimiento legal.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para poder evitar pagar impuestos durante su carrera profesional."
+      },
+      {
+        "clave": "b",
+        "texto": "Para disponer de un \"mapa de navegación\" que le proteja ante abusos y le permita negociar con base legal."
+      },
+      {
+        "clave": "c",
+        "texto": "Para saber cómo cerrar la empresa si el jefe no le cae bien."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque es el único requisito para que le den el título oficial de técnico."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta el marco jurídico laboral como un mapa de navegación que permite al trabajador conocer sus derechos, entender sus obligaciones, protegerse ante posibles abusos y tomar decisiones inteligentes antes de firmar contratos o aceptar determinadas condiciones laborales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque conocer el marco jurídico laboral no sirve para evitar impuestos. El tema se centra en derechos laborales, deberes, contratos, jornada, descansos, permisos y convenios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el marco jurídico laboral no tiene como finalidad actuar contra la empresa por motivos personales. Su objetivo es regular la relación laboral de forma justa y equilibrada."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque conocer este tema no es el único requisito para obtener el título oficial de técnico. Forma parte de la formación laboral y profesional, pero no sustituye al resto de competencias del ciclo."
+        }
+      ],
+      "resumen_didactico": "Conocer el marco jurídico laboral permite entrar al mundo profesional con más seguridad: saber qué puede hacer la empresa, qué no puede hacer, qué derechos tienes y cómo defenderlos de forma razonada.",
+      "ejemplo_practico": "Si un técnico empieza en una empresa y le piden hacer horas extra sin registrarlas, conocer el marco jurídico laboral le permite saber que debe fichar su jornada real, revisar su convenio y negociar con base legal.",
+      "conclusion_final": "La respuesta correcta es la b porque el marco jurídico laboral funciona como un mapa de navegación que protege al trabajador frente a abusos y le permite negociar con conocimiento legal."
+    }
+  }
+]

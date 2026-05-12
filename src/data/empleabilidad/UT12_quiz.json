@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT12-Q01",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "En el contexto del módulo, ¿cuál es la diferencia fundamental entre un lenguaje de marcas y un lenguaje de programación?",
+    "contexto": "Comparación conceptual entre lenguajes de marcas y lenguajes de programación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El lenguaje de marcas ejecuta algoritmos complejos y el de programación solo describe datos."
+      },
+      {
+        "clave": "b",
+        "texto": "El lenguaje de marcas describe y estructura información, mientras que el de programación define lógica y comportamiento."
+      },
+      {
+        "clave": "c",
+        "texto": "El lenguaje de marcas solo sirve para bases de datos y el de programación solo para páginas web."
+      },
+      {
+        "clave": "d",
+        "texto": "No existe diferencia real, ambos cumplen exactamente la misma función."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia claramente los lenguajes de marcas de los lenguajes de programación. Los de marcas se usan para describir, estructurar o presentar información, mientras que los lenguajes de programación sirven para implementar lógica, cálculos y comportamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Está invertido. Los lenguajes de programación ejecutan algoritmos; los de marcas describen información."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una simplificación falsa. Los lenguajes de marcas no se limitan a bases de datos y los de programación no se limitan a páginas web."
+        },
+        {
+          "clave": "d",
+          "motivo": "Sí existe diferencia: uno describe datos y estructura, el otro implementa lógica y comportamiento."
+        }
+      ],
+      "resumen_didactico": "Los lenguajes de marcas dicen qué es la información o cómo se estructura; los de programación dicen qué hacer con esa información.",
+      "ejemplo_practico": "HTML y XML son lenguajes de marcas. Java, JavaScript o Python son lenguajes de programación.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el lenguaje de marcas estructura información y el de programación implementa lógica."
+    }
+  },
+  {
+    "id": "UT12-Q02",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "Si el navegador actúa como intérprete del código de una web, ¿qué hace exactamente cuando abre un documento HTML?",
+    "contexto": "Papel del navegador en la visualización de documentos web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Compila el HTML a binario ejecutable del sistema operativo."
+      },
+      {
+        "clave": "b",
+        "texto": "Interpreta las etiquetas y construye la representación visual de la página."
+      },
+      {
+        "clave": "c",
+        "texto": "Convierte automáticamente todo el documento a SQL."
+      },
+      {
+        "clave": "d",
+        "texto": "Encripta las etiquetas antes de mostrar la web."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los navegadores interpretan el código de los lenguajes de marcas y presentan la página web tal como debe verse al usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "HTML no se compila como un ejecutable binario del sistema operativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un navegador no traduce HTML a SQL, porque pertenecen a ámbitos distintos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La función principal del navegador no es cifrar etiquetas, sino interpretarlas y mostrarlas."
+        }
+      ],
+      "resumen_didactico": "El navegador lee el código, lo interpreta y lo convierte en una página visible.",
+      "ejemplo_practico": "Cuando encuentra etiquetas como <h1>, <p> o <img>, el navegador decide cómo representarlas en pantalla.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el navegador interpreta las etiquetas y genera la visualización de la página."
+    }
+  },
+  {
+    "id": "UT12-Q03",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "En el trabajo diario actual, ¿qué editor aparece en el temario como estándar del mercado por su ecosistema de extensiones y su adaptabilidad?",
+    "contexto": "Herramientas modernas de edición para desarrollo web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "KompoZer."
+      },
+      {
+        "clave": "b",
+        "texto": "Visual Studio Code."
+      },
+      {
+        "clave": "c",
+        "texto": "XML Notepad."
+      },
+      {
+        "clave": "d",
+        "texto": "Dreamweaver 8."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta Visual Studio Code como la herramienta actual dominante por su ligereza, extensibilidad y adaptación al flujo de trabajo moderno.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "KompoZer aparece como una herramienta histórica y obsoleta, no como el estándar actual."
+        },
+        {
+          "clave": "c",
+          "motivo": "XML Notepad se estudia como herramienta pedagógica, no como editor estándar del mercado para desarrollo moderno."
+        },
+        {
+          "clave": "d",
+          "motivo": "Dreamweaver se menciona como pieza más ligada a entornos legacy que al estándar actual."
+        }
+      ],
+      "resumen_didactico": "VS Code destaca por sus extensiones, ligereza y adaptación al desarrollo moderno.",
+      "ejemplo_practico": "Se le pueden añadir extensiones para HTML, CSS, XML, Git, validación y otras tareas del flujo de trabajo.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque Visual Studio Code es el editor señalado como estándar actual."
+    }
+  },
+  {
+    "id": "UT12-Q04",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué rasgo convierte hoy a KompoZer en una herramienta más útil desde el punto de vista histórico que profesional?",
+    "contexto": "Situación actual de KompoZer en comparación con herramientas modernas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que solo funciona con bases de datos XML nativas."
+      },
+      {
+        "clave": "b",
+        "texto": "Que su desarrollo está detenido y no soporta correctamente HTML5 ni CSS3."
+      },
+      {
+        "clave": "c",
+        "texto": "Que exige una licencia empresarial muy costosa."
+      },
+      {
+        "clave": "d",
+        "texto": "Que solo puede usarse sin conexión a internet."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que KompoZer fue una herramienta intuitiva y de código abierto, pero quedó obsoleta porque su desarrollo se detuvo hace años y no soporta bien tecnologías modernas como HTML5 y CSS3.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No se define por trabajar con bases de datos XML nativas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Precisamente se presenta como software de código abierto, no como una solución cara de licencia empresarial."
+        },
+        {
+          "clave": "d",
+          "motivo": "La obsolescencia de KompoZer no se debe a trabajar sin conexión, sino a su falta de evolución tecnológica."
+        }
+      ],
+      "resumen_didactico": "KompoZer se estudia por contexto histórico y pedagógico, pero no como herramienta adecuada para web moderna.",
+      "ejemplo_practico": "Puede servir para entender el pasado de los editores WYSIWYG, pero no para trabajar cómodamente con estándares actuales.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque su desarrollo detenido lo dejó desfasado frente a HTML5 y CSS3."
+    }
+  },
+  {
+    "id": "UT12-Q05",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "En HTML, ¿qué atributo de la etiqueta <img> resulta clave para la accesibilidad y para describir la imagen cuando no puede mostrarse?",
+    "contexto": "Accesibilidad y atributos fundamentales de imágenes en HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "target"
+      },
+      {
+        "clave": "b",
+        "texto": "alt"
+      },
+      {
+        "clave": "c",
+        "texto": "rel"
+      },
+      {
+        "clave": "d",
+        "texto": "method"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El atributo alt se utiliza para proporcionar un texto alternativo de la imagen, mejorando la accesibilidad y ofreciendo una descripción cuando la imagen no se carga.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "target se usa en enlaces para indicar dónde abrir el destino, no para describir imágenes."
+        },
+        {
+          "clave": "c",
+          "motivo": "rel se utiliza en enlaces u otras relaciones documentales, no como texto alternativo de una imagen."
+        },
+        {
+          "clave": "d",
+          "motivo": "method se emplea en formularios para el envío de datos, no en la etiqueta <img>."
+        }
+      ],
+      "resumen_didactico": "El texto alternativo de una imagen se define con alt.",
+      "ejemplo_practico": "<img src=\"logo.png\" alt=\"Logotipo de la empresa\">",
+      "conclusion_final": "La respuesta correcta es la opción b, porque alt aporta la descripción accesible de la imagen."
+    }
+  },
+  {
+    "id": "UT12-Q06",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "Si un documento XHTML necesita permitir todavía ciertos elementos antiguos de presentación mientras se migra progresivamente a CSS, ¿qué DTD encaja mejor?",
+    "contexto": "Tipos de DTD y grado de rigidez permitido en documentos XHTML o HTML antiguos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DTD Estricto."
+      },
+      {
+        "clave": "b",
+        "texto": "DTD Transicional."
+      },
+      {
+        "clave": "c",
+        "texto": "DTD Root."
+      },
+      {
+        "clave": "d",
+        "texto": "DTD Global."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El DTD Transicional permite convivir con ciertos elementos o atributos antiguos de presentación durante una etapa de transición hacia estructuras más limpias y separadas del diseño.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DTD Estricto prohíbe precisamente esos elementos de presentación antiguos."
+        },
+        {
+          "clave": "c",
+          "motivo": "DTD Root no es una categoría oficial del temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "DTD Global tampoco forma parte de la clasificación explicada."
+        }
+      ],
+      "resumen_didactico": "Si el documento aún mantiene elementos antiguos de presentación, se usa un DTD transicional.",
+      "ejemplo_practico": "En una migración gradual, puede aceptarse temporalmente código heredado mientras el diseño pasa a CSS.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el DTD Transicional es el que admite esa convivencia temporal."
+    }
+  },
+  {
+    "id": "UT12-Q07",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué selector CSS debe utilizarse para aplicar un estilo a cualquier elemento que posea una clase determinada, independientemente de su etiqueta HTML?",
+    "contexto": "Selectores CSS basados en clase.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "#destacado"
+      },
+      {
+        "clave": "b",
+        "texto": ".destacado"
+      },
+      {
+        "clave": "c",
+        "texto": "destacado>"
+      },
+      {
+        "clave": "d",
+        "texto": "*destacado"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que las clases en CSS se seleccionan con un punto delante del nombre. Así se puede aplicar el estilo a cualquier etiqueta que tenga esa clase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "# se utiliza para seleccionar por id, no por clase."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esa sintaxis no corresponde a un selector válido de clase."
+        },
+        {
+          "clave": "d",
+          "motivo": "El asterisco no se usa así para seleccionar clases."
+        }
+      ],
+      "resumen_didactico": "Las clases se escriben con punto en CSS.",
+      "ejemplo_practico": "Si un <p> y un <h2> tienen class=\"destacado\", ambos pueden seleccionarse con .destacado.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque .destacado selecciona cualquier elemento con esa clase."
+    }
+  },
+  {
+    "id": "UT12-Q08",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "Cuando el temario habla de herencia en CSS, ¿qué idea resume mejor ese comportamiento?",
+    "contexto": "Herencia de propiedades en hojas de estilo CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que todos los selectores deben escribirse obligatoriamente dentro de otros selectores."
+      },
+      {
+        "clave": "b",
+        "texto": "Que muchas propiedades de un elemento padre pasan automáticamente a sus hijos."
+      },
+      {
+        "clave": "c",
+        "texto": "Que los estilos se copian físicamente a otro archivo CSS."
+      },
+      {
+        "clave": "d",
+        "texto": "Que las clases duplican siempre sus reglas sobre los id."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que muchas propiedades, como color o tipografía, pueden heredarse desde un elemento padre hacia sus elementos hijos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La herencia no obliga a anidar selectores; se refiere a transmisión de propiedades."
+        },
+        {
+          "clave": "c",
+          "motivo": "No implica copiar reglas a otro archivo, sino que ciertos estilos se aplican por cascada desde el padre."
+        },
+        {
+          "clave": "d",
+          "motivo": "Eso mezcla conceptos de especificidad, no de herencia."
+        }
+      ],
+      "resumen_didactico": "En CSS, algunos estilos del elemento padre pasan automáticamente a los hijos.",
+      "ejemplo_practico": "Si a body se le asigna una fuente, muchos textos internos heredarán esa misma fuente.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque la herencia transmite propiedades desde el padre hacia los hijos."
+    }
+  },
+  {
+    "id": "UT12-Q09",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué unidad CSS se considera relativa al tamaño de fuente del elemento raíz y facilita la escalabilidad global del diseño?",
+    "contexto": "Unidades de medida relativas en CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "px"
+      },
+      {
+        "clave": "b",
+        "texto": "pt"
+      },
+      {
+        "clave": "c",
+        "texto": "rem"
+      },
+      {
+        "clave": "d",
+        "texto": "cm"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario distingue entre unidades absolutas y relativas. rem se toma respecto al tamaño de fuente del elemento raíz del documento, lo que la hace útil para escalabilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "px es una unidad absoluta ligada a píxeles, no a la raíz del documento."
+        },
+        {
+          "clave": "b",
+          "motivo": "pt es una unidad absoluta de puntos tipográficos."
+        },
+        {
+          "clave": "d",
+          "motivo": "cm es una unidad absoluta, no relativa al tamaño de la fuente raíz."
+        }
+      ],
+      "resumen_didactico": "rem toma como referencia la fuente del elemento raíz, no la del padre inmediato.",
+      "ejemplo_practico": "Si html tiene font-size: 16px, entonces 2rem equivalen a 32px.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque rem es la unidad relativa al tamaño de fuente del elemento raíz."
+    }
+  },
+  {
+    "id": "UT12-Q10",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "En XML, ¿qué requisito estructural básico debe cumplir todo documento bien formado respecto a su jerarquía principal?",
+    "contexto": "Condición estructural mínima de los documentos XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Debe tener exactamente una única raíz."
+      },
+      {
+        "clave": "b",
+        "texto": "Debe tener al menos dos raíces paralelas."
+      },
+      {
+        "clave": "c",
+        "texto": "Puede no tener raíz si incluye prólogo."
+      },
+      {
+        "clave": "d",
+        "texto": "La raíz es opcional si se usa XSD."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica la jerarquía arborescente de XML y señala que el documento debe partir de un único elemento principal o raíz.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Dos raíces paralelas invalidarían la estructura arborescente básica de XML."
+        },
+        {
+          "clave": "c",
+          "motivo": "El prólogo no sustituye al elemento raíz; son partes distintas del documento."
+        },
+        {
+          "clave": "d",
+          "motivo": "XSD valida la estructura, pero no elimina la obligación de una única raíz."
+        }
+      ],
+      "resumen_didactico": "XML se organiza como un árbol, y todo árbol documental parte de una sola raíz.",
+      "ejemplo_practico": "<catalogo>...</catalogo> puede ser la raíz única de un documento de productos.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque un XML bien formado debe tener una única raíz."
+    }
+  },
+  {
+    "id": "UT12-Q11",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué dato del prólogo XML se utiliza para indicar cómo deben interpretarse caracteres especiales como acentos o la letra ñ?",
+    "contexto": "Prólogo XML y representación correcta de caracteres.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "version"
+      },
+      {
+        "clave": "b",
+        "texto": "encoding"
+      },
+      {
+        "clave": "c",
+        "texto": "standalone"
+      },
+      {
+        "clave": "d",
+        "texto": "schema"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El prólogo XML contiene datos como version, encoding y standalone. encoding indica la codificación de caracteres empleada y permite interpretar correctamente acentos o la letra ñ.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "version informa sobre la versión de XML, no sobre la codificación de caracteres."
+        },
+        {
+          "clave": "c",
+          "motivo": "standalone indica la dependencia o independencia respecto a declaraciones externas."
+        },
+        {
+          "clave": "d",
+          "motivo": "schema no es uno de los datos del prólogo XML descritos en el temario."
+        }
+      ],
+      "resumen_didactico": "Para que los caracteres especiales se lean bien, el dato clave del prólogo es encoding.",
+      "ejemplo_practico": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque encoding define la codificación de caracteres del XML."
+    }
+  },
+  {
+    "id": "UT12-Q12",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "Si un documento XML incluye un elemento como <servidor_activo estado=\"si\" />, ¿cómo se clasifica esa etiqueta desde el punto de vista estructural?",
+    "contexto": "Sintaxis básica de XML con etiquetas sin contenido interno.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Etiqueta vacía."
+      },
+      {
+        "clave": "b",
+        "texto": "Etiqueta duplicada."
+      },
+      {
+        "clave": "c",
+        "texto": "Etiqueta de validación."
+      },
+      {
+        "clave": "d",
+        "texto": "Etiqueta relacional."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que XML admite etiquetas vacías, es decir, elementos que no contienen texto interno y se cierran en la misma estructura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No se trata de una duplicación, sino de una etiqueta válida sin contenido interno."
+        },
+        {
+          "clave": "c",
+          "motivo": "La validación es un proceso aparte, no la clasificación estructural de esta etiqueta."
+        },
+        {
+          "clave": "d",
+          "motivo": "No existe esa categoría en la sintaxis XML explicada."
+        }
+      ],
+      "resumen_didactico": "Una etiqueta vacía no tiene contenido entre apertura y cierre; se cierra en la misma expresión.",
+      "ejemplo_practico": "<servidor_activo estado=\"si\" /> es comparable a otras etiquetas vacías bien formadas.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque esa sintaxis corresponde a una etiqueta vacía."
+    }
+  },
+  {
+    "id": "UT12-Q13",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué componente de una DTD funciona como una especie de variable o marcador reutilizable para insertar siempre el mismo contenido prefijado?",
+    "contexto": "Componentes reutilizables en una DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las entidades."
+      },
+      {
+        "clave": "b",
+        "texto": "Las facetas."
+      },
+      {
+        "clave": "c",
+        "texto": "Los selectores."
+      },
+      {
+        "clave": "d",
+        "texto": "Las hojas de estilo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las entidades en DTD actúan como marcadores de posición reutilizables para insertar contenido prefijado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las facetas pertenecen al ámbito de XML Schema para restringir tipos, no a DTD como marcadores reutilizables."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los selectores pertenecen a CSS o a mecanismos de consulta, no a DTD."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las hojas de estilo sirven para presentación o transformación, no para declarar entidades en una DTD."
+        }
+      ],
+      "resumen_didactico": "En DTD, una entidad permite reutilizar un valor o fragmento definido previamente.",
+      "ejemplo_practico": "Se puede definir una entidad para repetir siempre el mismo correo corporativo sin reescribirlo entero en cada lugar.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque las entidades son los marcadores reutilizables de una DTD."
+    }
+  },
+  {
+    "id": "UT12-Q14",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué ventaja fundamental ofrece XML Schema frente a DTD según el temario?",
+    "contexto": "Comparación entre DTD y XSD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite definir tipos de datos más ricos y restricciones más precisas."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo puede describir texto plano sin atributos."
+      },
+      {
+        "clave": "c",
+        "texto": "Elimina la necesidad de validación."
+      },
+      {
+        "clave": "d",
+        "texto": "Sirve exclusivamente para aplicar estilos visuales."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "XML Schema amplía la capacidad de definición respecto a DTD, permitiendo tipos de datos más expresivos y restricciones más precisas sobre el contenido.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XML Schema no se limita a texto plano; precisamente destaca por su riqueza descriptiva."
+        },
+        {
+          "clave": "c",
+          "motivo": "No elimina la validación, sino que la hace más potente y precisa."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se usa para aplicar estilos visuales, sino para definir y validar estructura y tipos."
+        }
+      ],
+      "resumen_didactico": "XSD valida con más detalle que DTD, especialmente en tipos y restricciones.",
+      "ejemplo_practico": "Puede restringir valores numéricos, longitudes o formatos de datos con mucha más precisión que una DTD.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque XML Schema aporta tipos de datos y restricciones más precisos."
+    }
+  },
+  {
+    "id": "UT12-Q15",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Cómo se denomina el proceso de comprobar un XML frente a sus restricciones para detectar errores de sintaxis o de estructura?",
+    "contexto": "Control de calidad y comprobación de documentos XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Validación."
+      },
+      {
+        "clave": "b",
+        "texto": "Compilación."
+      },
+      {
+        "clave": "c",
+        "texto": "Serialización."
+      },
+      {
+        "clave": "d",
+        "texto": "Ofuscación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define la validación como el proceso de comparar el documento XML con sus restricciones o esquemas para detectar errores o carencias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Compilar se relaciona con transformar código fuente en otra forma ejecutable o intermedia, no con revisar XML frente a un esquema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Serializar consiste en convertir una estructura de datos a un formato intercambiable, no en comprobar restricciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ofuscar es ocultar o dificultar la lectura del código, no validar un XML."
+        }
+      ],
+      "resumen_didactico": "Validar es revisar si el documento cumple las reglas que debe respetar.",
+      "ejemplo_practico": "Un parser puede avisar si falta una etiqueta de cierre o si un atributo obligatorio no aparece.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el proceso descrito es la validación."
+    }
+  },
+  {
+    "id": "UT12-Q16",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué editor XML aparece en el temario como el más vendido y especialmente fuerte en modelado, transformación y depuración?",
+    "contexto": "Herramientas profesionales de creación y edición XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Altova XMLSpy."
+      },
+      {
+        "clave": "b",
+        "texto": "Online XML Editor."
+      },
+      {
+        "clave": "c",
+        "texto": "XML Notepad."
+      },
+      {
+        "clave": "d",
+        "texto": "XML Copy Editor."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta Altova XMLSpy como uno de los editores XML más vendidos y completos, con funciones avanzadas de modelado, edición, transformación y depuración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Online XML Editor se describe como una herramienta online sencilla, no como la más potente en modelado y depuración."
+        },
+        {
+          "clave": "c",
+          "motivo": "XML Notepad es intuitivo y pedagógico, pero no se presenta como el editor más vendido y potente."
+        },
+        {
+          "clave": "d",
+          "motivo": "XML Copy Editor es ligero y práctico, aunque no alcanza el perfil avanzado atribuido a XMLSpy."
+        }
+      ],
+      "resumen_didactico": "Cuando el temario destaca potencia profesional en XML, la referencia clara es XMLSpy.",
+      "ejemplo_practico": "Puede utilizarse para editar XML, trabajar con esquemas, transformar con XSLT y depurar problemas complejos.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque Altova XMLSpy es el editor destacado por su potencia profesional."
+    }
+  },
+  {
+    "id": "UT12-Q17",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "En XSLT, ¿qué elemento se utiliza para ordenar el contenido procesado según el valor de un nodo seleccionado?",
+    "contexto": "Ordenación de resultados dentro de una transformación XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:sort>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:order>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:arrange>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:group>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que <xsl:sort> permite ordenar el contenido procesado según el valor indicado en su atributo select.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es la instrucción estándar de XSLT explicada para ordenar."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esa etiqueta no corresponde a la sintaxis mostrada en el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "Agrupar y ordenar no son exactamente lo mismo, y no es la instrucción citada para este caso."
+        }
+      ],
+      "resumen_didactico": "Si en XSLT quieres ordenar resultados, la instrucción clave es <xsl:sort>.",
+      "ejemplo_practico": "Puede ordenarse un catálogo por precio o por nombre usando <xsl:sort select=\"precio\"/>.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <xsl:sort> es la instrucción de ordenación de XSLT."
+    }
+  },
+  {
+    "id": "UT12-Q18",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "En una estructura XSLT con <xsl:choose>, ¿qué bloque se utiliza para recoger los casos que no han cumplido ninguno de los <xsl:when>?",
+    "contexto": "Lógica condicional múltiple en XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:default>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:else>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:otherwise>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:fallback-case>"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario muestra que <xsl:choose> se acompaña de varios <xsl:when> y de un bloque <xsl:otherwise> para los casos que no cumplan ninguna condición previa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es el nombre que utiliza XSLT para el caso alternativo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Puede recordar a otros lenguajes, pero no es la etiqueta correcta en XSLT."
+        },
+        {
+          "clave": "d",
+          "motivo": "No forma parte de la sintaxis explicada en el temario."
+        }
+      ],
+      "resumen_didactico": "En la lógica múltiple de XSLT, el camino alternativo se expresa con <xsl:otherwise>.",
+      "ejemplo_practico": "Si un precio no supera el umbral marcado en los <xsl:when>, el resultado puede mostrarse en el bloque <xsl:otherwise>.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque <xsl:otherwise> recoge el caso alternativo de <xsl:choose>."
+    }
+  },
+  {
+    "id": "UT12-Q19",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué gran novedad de XSLT 2.0 resulta especialmente útil para limpiar y validar entradas de usuario con patrones complejos?",
+    "contexto": "Mejoras incorporadas en XSLT 2.0.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Soporte para expresiones regulares."
+      },
+      {
+        "clave": "b",
+        "texto": "Compilación nativa a Java."
+      },
+      {
+        "clave": "c",
+        "texto": "Eliminación total de XPath."
+      },
+      {
+        "clave": "d",
+        "texto": "Obligación de producir siempre PDF."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario destaca entre las novedades de XSLT 2.0 el soporte para expresiones regulares, muy útil para limpiar y validar información.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El temario no presenta esa característica como novedad central de XSLT 2.0."
+        },
+        {
+          "clave": "c",
+          "motivo": "XPath sigue siendo una pieza clave del ecosistema, no se elimina."
+        },
+        {
+          "clave": "d",
+          "motivo": "XSLT no obliga a producir PDF; puede generar distintos formatos de salida."
+        }
+      ],
+      "resumen_didactico": "XSLT 2.0 mejora mucho la validación y tratamiento textual gracias a las expresiones regulares.",
+      "ejemplo_practico": "Sirve para comprobar formatos de textos complejos antes de incorporarlos a la salida transformada.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el soporte para expresiones regulares es una novedad clave de XSLT 2.0."
+    }
+  },
+  {
+    "id": "UT12-Q20",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "En XPath, ¿cómo se denominan los filtros escritos entre corchetes que permiten seleccionar nodos concretos según posición o condición?",
+    "contexto": "Filtros condicionales en expresiones XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Facetas."
+      },
+      {
+        "clave": "b",
+        "texto": "Predicados."
+      },
+      {
+        "clave": "c",
+        "texto": "Entidades."
+      },
+      {
+        "clave": "d",
+        "texto": "Namespaces."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los predicados de XPath van entre corchetes y permiten filtrar nodos concretos por posición o condición.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las facetas se relacionan más con XML Schema y restricciones de tipos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las entidades pertenecen al ámbito de DTD, no a filtros de rutas XPath."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los namespaces sirven para distinguir vocabularios, no para filtrar nodos de una ruta."
+        }
+      ],
+      "resumen_didactico": "En XPath, el filtro entre corchetes recibe el nombre de predicado.",
+      "ejemplo_practico": "Una ruta como /catalogo/producto[precio>10] usa un predicado para filtrar productos.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque esos filtros son los predicados de XPath."
+    }
+  },
+  {
+    "id": "UT12-Q21",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "Dentro de la sintaxis FLWOR de XQuery, ¿qué cláusula sirve para enlazar una secuencia a una variable y reutilizarla después en la consulta?",
+    "contexto": "Cláusulas de la sintaxis FLWOR en XQuery.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "where"
+      },
+      {
+        "clave": "b",
+        "texto": "return"
+      },
+      {
+        "clave": "c",
+        "texto": "let"
+      },
+      {
+        "clave": "d",
+        "texto": "order by"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que la cláusula let permite enlazar una secuencia o valor a una variable para reutilizarla dentro de la consulta FLWOR.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "where sirve para filtrar por condición, no para enlazar secuencias a variables."
+        },
+        {
+          "clave": "b",
+          "motivo": "return construye el resultado final, pero no realiza la vinculación inicial."
+        },
+        {
+          "clave": "d",
+          "motivo": "order by sirve para ordenar, no para almacenar una secuencia en una variable."
+        }
+      ],
+      "resumen_didactico": "En FLWOR, let funciona como una asignación reutilizable.",
+      "ejemplo_practico": "Puede guardarse una lista de nodos en una variable antes de filtrarla o devolverla con otra estructura.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque let enlaza una secuencia a una variable."
+    }
+  },
+  {
+    "id": "UT12-Q22",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué recomendación concreta da el temario para evitar conflictos graves de permisos al instalar eXist-db en Windows?",
+    "contexto": "Instalación de eXist-db y elección del directorio adecuado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Instalarlo siempre dentro de Program Files."
+      },
+      {
+        "clave": "b",
+        "texto": "No instalarlo en Program Files."
+      },
+      {
+        "clave": "c",
+        "texto": "Instalarlo exclusivamente en una memoria USB."
+      },
+      {
+        "clave": "d",
+        "texto": "Instalarlo dentro de la carpeta Descargas del navegador."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario advierte expresamente que en Windows no conviene instalar eXist-db dentro de Program Files porque eso puede provocar problemas de permisos de escritura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es justo lo contrario de la recomendación dada."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe esa obligación en el temario y no sería una práctica normal de instalación."
+        },
+        {
+          "clave": "d",
+          "motivo": "La carpeta Descargas no se propone como ubicación adecuada para una instalación estable."
+        }
+      ],
+      "resumen_didactico": "Para evitar problemas de permisos en Windows, eXist-db no debe instalarse en Program Files.",
+      "ejemplo_practico": "Es preferible elegir una ruta propia de trabajo con permisos de escritura adecuados.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el temario recomienda no instalar eXist-db en Program Files."
+    }
+  },
+  {
+    "id": "UT12-Q23",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué alternativa de base de datos XML de código abierto menciona el temario como especialmente utilizada en desarrollo de aplicaciones web?",
+    "contexto": "Alternativas a eXist-db en almacenamiento XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "BaseX."
+      },
+      {
+        "clave": "b",
+        "texto": "MongoDB."
+      },
+      {
+        "clave": "c",
+        "texto": "SQLite."
+      },
+      {
+        "clave": "d",
+        "texto": "MariaDB."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario menciona BaseX como alternativa a eXist-db, destacando su fiabilidad, su carácter de código abierto y su uso en desarrollo de aplicaciones web.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "MongoDB es una base documental muy conocida, pero no es la alternativa XML concreta citada en este punto."
+        },
+        {
+          "clave": "c",
+          "motivo": "SQLite es una base de datos relacional ligera, no una base XML nativa destacada en el tema."
+        },
+        {
+          "clave": "d",
+          "motivo": "MariaDB es una base relacional, no la alternativa XML de código abierto mencionada en ese apartado."
+        }
+      ],
+      "resumen_didactico": "Entre las alternativas XML citadas, BaseX ocupa un lugar importante.",
+      "ejemplo_practico": "Puede emplearse para trabajar con almacenamiento XML y consultas especializadas en proyectos web.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque BaseX es la alternativa XML de código abierto destacada en el temario."
+    }
+  },
+  {
+    "id": "UT12-Q24",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué es un feed dentro de la sindicación de contenidos según la explicación del temario?",
+    "contexto": "Concepto básico de feed en RSS y Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una base de datos completa de noticias históricas."
+      },
+      {
+        "clave": "b",
+        "texto": "Un pequeño extracto estructurado de contenidos actualizado para ser procesado automáticamente."
+      },
+      {
+        "clave": "c",
+        "texto": "Un navegador especializado en XML."
+      },
+      {
+        "clave": "d",
+        "texto": "Un protocolo de cifrado para boletines internos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta el feed como un extracto o canal de contenidos estructurado, actualizado y pensado para que un software lo procese automáticamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un feed no equivale a una base de datos histórica completa, sino a un canal estructurado de actualizaciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es un navegador, sino el propio contenido estructurado que otros programas leen."
+        },
+        {
+          "clave": "d",
+          "motivo": "La sindicación no se define aquí como un protocolo de cifrado."
+        }
+      ],
+      "resumen_didactico": "Un feed es un canal estructurado de actualizaciones que otros programas pueden leer automáticamente.",
+      "ejemplo_practico": "Un agregador puede mostrar títulos y resúmenes recientes sin que el usuario visite cada web manualmente.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque un feed es un extracto estructurado y actualizado pensado para procesamiento automático."
+    }
+  },
+  {
+    "id": "UT12-Q25",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué función cumplen los agregadores en un sistema de sindicación de contenidos?",
+    "contexto": "Herramientas de recepción y filtrado de feeds.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Crear bases de datos relacionales a partir de noticias."
+      },
+      {
+        "clave": "b",
+        "texto": "Filtrar y presentar automáticamente la información sindicada según los intereses del usuario."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituir el lenguaje XML por HTML."
+      },
+      {
+        "clave": "d",
+        "texto": "Encriptar cada item del canal antes de publicarlo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que los agregadores permiten crear un perfil del usuario y filtrar automáticamente la información sindicada para mostrar solo lo relevante y actualizado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No convierten noticias en bases de datos relacionales como función principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "No sustituyen XML por HTML; simplemente leen y organizan la información de los feeds."
+        },
+        {
+          "clave": "d",
+          "motivo": "La encriptación no es la función descrita de los agregadores."
+        }
+      ],
+      "resumen_didactico": "El agregador recibe muchos feeds y enseña al usuario solo lo que le interesa.",
+      "ejemplo_practico": "Puede centralizar alertas técnicas, parches y noticias en una sola interfaz filtrada.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque los agregadores filtran y presentan automáticamente la información sindicada."
+    }
+  },
+  {
+    "id": "UT12-Q26",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "Si un equipo quiere generar un feed RSS sin escribir manualmente todas las etiquetas XML, ¿qué vía de trabajo describe el temario como la más sencilla?",
+    "contexto": "Creación de feeds RSS mediante herramientas automáticas o manualmente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar una herramienta automática de creación de feeds."
+      },
+      {
+        "clave": "b",
+        "texto": "Escribir siempre todo a mano con XQuery."
+      },
+      {
+        "clave": "c",
+        "texto": "Crear un servidor OLAP previo."
+      },
+      {
+        "clave": "d",
+        "texto": "Transformar primero el feed a PDF."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario contrapone la creación manual con XML a la creación mediante herramienta automática, y define esta última como la forma más sencilla para generar un feed funcional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La escritura manual existe, pero no es la vía más sencilla según el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "OLAP pertenece al análisis empresarial, no a la creación de feeds RSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "Convertir un feed a PDF no es un paso necesario ni lógico para crearlo."
+        }
+      ],
+      "resumen_didactico": "La forma más simple de generar un feed es usar una herramienta automática que traduzca los datos a RSS.",
+      "ejemplo_practico": "El usuario rellena campos como título, enlace y descripción, y la herramienta construye el XML del feed.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el temario presenta la herramienta automática como la vía más sencilla."
+    }
+  },
+  {
+    "id": "UT12-Q27",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué servicio se menciona expresamente como validador online útil para comprobar la sintaxis de feeds RSS y Atom indicando línea y tipo de error?",
+    "contexto": "Validación de canales de contenidos RSS y Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Servicio de validación online del W3C."
+      },
+      {
+        "clave": "b",
+        "texto": "GitHub Actions."
+      },
+      {
+        "clave": "c",
+        "texto": "phpMyAdmin."
+      },
+      {
+        "clave": "d",
+        "texto": "Dreamweaver Validator."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario menciona el servicio de validación online del W3C como herramienta para comprobar feeds RSS y Atom, señalando ubicación del error y tipo de fallo detectado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "GitHub Actions es una herramienta de automatización, no el validador online citado para feeds."
+        },
+        {
+          "clave": "c",
+          "motivo": "phpMyAdmin se relaciona con administración de bases de datos MySQL, no con validación de feeds."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es la herramienta concreta destacada en el temario para esta tarea."
+        }
+      ],
+      "resumen_didactico": "Para validar un feed y localizar fallos, el temario destaca el validador online del W3C.",
+      "ejemplo_practico": "Puede advertir de una comilla mal cerrada o de una etiqueta incorrecta indicando la línea problemática.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el servicio de validación online del W3C es el validador citado expresamente."
+    }
+  },
+  {
+    "id": "UT12-Q28",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Cuáles son los tres pilares generales del CRM que aparecen en el temario?",
+    "contexto": "Fundamentos funcionales de un sistema CRM.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Marketing, venta y servicio postventa."
+      },
+      {
+        "clave": "b",
+        "texto": "Almacén, nóminas y logística."
+      },
+      {
+        "clave": "c",
+        "texto": "OLAP, data mining y dashboards."
+      },
+      {
+        "clave": "d",
+        "texto": "Contabilidad, compras y fabricación."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario resume el CRM en tres pilares fundamentales: marketing, venta y servicio postventa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esos ámbitos se relacionan más con otras áreas de gestión empresarial, no con los tres pilares del CRM."
+        },
+        {
+          "clave": "c",
+          "motivo": "Son conceptos analíticos o de inteligencia de negocio, no la base funcional del CRM."
+        },
+        {
+          "clave": "d",
+          "motivo": "Estas áreas son más propias de un ERP que de la gestión de relaciones con clientes."
+        }
+      ],
+      "resumen_didactico": "CRM gira en torno a atraer, vender y mantener la relación con el cliente.",
+      "ejemplo_practico": "Una empresa usa campañas de marketing, gestiona oportunidades de venta y después atiende al cliente en postventa.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque marketing, venta y servicio postventa son los tres pilares del CRM."
+    }
+  },
+  {
+    "id": "UT12-Q29",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "Si un profesional busca mejorar su empleabilidad en grandes entornos corporativos centrados en CRM, ¿qué certificaciones recomienda priorizar el temario?",
+    "contexto": "Orientación profesional y empleabilidad en sistemas CRM.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Salesforce o Microsoft Dynamics."
+      },
+      {
+        "clave": "b",
+        "texto": "Bluefish o KompoZer."
+      },
+      {
+        "clave": "c",
+        "texto": "Xalan o Saxon."
+      },
+      {
+        "clave": "d",
+        "texto": "RSS Validator o FeedForAll."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario señala como recomendación profesional priorizar certificaciones oficiales de Salesforce o Microsoft Dynamics para aumentar la empleabilidad en entornos corporativos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Son herramientas de edición, no certificaciones CRM de alta empleabilidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Son procesadores vinculados a XSLT, no plataformas CRM."
+        },
+        {
+          "clave": "d",
+          "motivo": "Se relacionan con validación o creación de feeds, no con sistemas CRM."
+        }
+      ],
+      "resumen_didactico": "Para CRM y salida laboral potente, el temario orienta hacia Salesforce y Microsoft Dynamics.",
+      "ejemplo_practico": "Dominar una de estas plataformas puede abrir puertas en áreas comerciales y de relación con clientes.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque esas son las certificaciones CRM recomendadas."
+    }
+  },
+  {
+    "id": "UT12-Q30",
+    "tema": "UT12 — Repaso global del módulo Lenguajes de Marcas (Bloque 4)",
+    "pregunta": "¿Qué ERP se describe en el temario como una solución potente en la nube, robusta y pensada para escenarios empresariales complejos con gran volumen de datos?",
+    "contexto": "Identificación de soluciones ERP destacadas en entornos cloud.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SAP Business ByDesign."
+      },
+      {
+        "clave": "b",
+        "texto": "XML Notepad ERP."
+      },
+      {
+        "clave": "c",
+        "texto": "Feed Validator Enterprise."
+      },
+      {
+        "clave": "d",
+        "texto": "KompoZer Cloud Office."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario destaca SAP Business ByDesign como una solución ERP cloud, robusta y adecuada para escenarios complejos con grandes volúmenes de datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No corresponde a una solución ERP real descrita en el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Está relacionado con feeds, no con gestión empresarial ERP."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una plataforma ERP real del temario."
+        }
+      ],
+      "resumen_didactico": "Cuando la pregunta mezcla ERP, nube, robustez y escenarios complejos, la referencia del temario es SAP Business ByDesign.",
+      "ejemplo_practico": "Puede implantarse en organizaciones que necesitan centralizar procesos y datos sin depender de servidores físicos locales.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque SAP Business ByDesign es el ERP cloud robusto destacado en el temario."
+    }
+  }
+]

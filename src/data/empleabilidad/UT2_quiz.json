@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT2-Q01",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué es el perfil profesional de un técnico al finalizar su formación?",
+    "contexto": "Definición del perfil profesional según las competencias que adquiere un técnico al terminar su formación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El expediente académico con las notas obtenidas en cada módulo"
+      },
+      {
+        "clave": "b",
+        "texto": "El listado de preferencias salariales y geográficas del candidato"
+      },
+      {
+        "clave": "c",
+        "texto": "El conjunto de competencias profesionales, personales y sociales que definen lo que es capaz de hacer"
+      },
+      {
+        "clave": "d",
+        "texto": "La suma de años de experiencia en puestos directivos previos"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El perfil profesional es el conjunto de competencias profesionales, personales y sociales que definen lo que un técnico es capaz de hacer al finalizar su formación. No se centra solo en los estudios realizados, sino en las capacidades reales que puede aportar en un contexto laboral.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El expediente académico recoge las notas obtenidas en los módulos, pero no define por sí mismo lo que el técnico sabe hacer profesionalmente."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las preferencias salariales o geográficas pueden formar parte de una búsqueda de empleo, pero no tienen relación con la definición del perfil profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los años de experiencia pueden reforzar un perfil, pero el perfil profesional de un técnico no se define por puestos directivos previos, sino por sus competencias."
+        }
+      ],
+      "resumen_didactico": "El perfil profesional responde a la pregunta: ¿qué sabe hacer este técnico cuando termina su formación?",
+      "ejemplo_practico": "En DAW, el perfil profesional no sería decir simplemente que tienes el título, sino que sabes desarrollar aplicaciones web, trabajar con bases de datos, resolver problemas técnicos y colaborar en un equipo de desarrollo.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el perfil profesional se basa en las competencias profesionales, personales y sociales que demuestran lo que el técnico es capaz de hacer."
+    }
+  },
+  {
+    "id": "UT2-Q02",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "Un profesional es consciente de que debe demostrar sus capacidades ante un reclutador. ¿A qué concepto se refiere la \"promesa de valor\" al mercado laboral?",
+    "contexto": "Relación entre perfil profesional, competencias y valor que un técnico puede aportar al mercado laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Al listado real de problemas que el técnico sabe resolver y tareas que puede ejecutar"
+      },
+      {
+        "clave": "b",
+        "texto": "Al contrato firmado donde se especifican las vacaciones"
+      },
+      {
+        "clave": "c",
+        "texto": "A la carta de recomendación de un antiguo profesor"
+      },
+      {
+        "clave": "d",
+        "texto": "Al compromiso de no abandonar la empresa en el primer año"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el temario, la \"promesa de valor\" al mercado laboral se refiere a aquello que el técnico puede aportar realmente: los problemas que sabe resolver y las tareas que puede ejecutar con soltura. No basta con tener un título; hay que saber traducir ese título en capacidades útiles para una empresa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El contrato laboral regula condiciones de trabajo como vacaciones, salario u horario, pero no define la promesa de valor profesional del técnico."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una carta de recomendación puede apoyar una candidatura, pero no es la promesa de valor. La promesa de valor se basa en lo que el profesional sabe hacer."
+        },
+        {
+          "clave": "d",
+          "motivo": "El compromiso de permanecer en una empresa puede ser una actitud valorable, pero no expresa las competencias ni las tareas que el técnico puede realizar."
+        }
+      ],
+      "resumen_didactico": "La promesa de valor es la forma clara de decir qué problemas puedes resolver y qué tareas puedes hacer desde tu perfil profesional.",
+      "ejemplo_practico": "En DAW, tu promesa de valor podría ser: sé crear aplicaciones web, conectar frontend con backend, trabajar con bases de datos y documentar mi código para que otros desarrolladores puedan entenderlo.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque la promesa de valor se refiere al conjunto de problemas reales que el técnico sabe resolver y a las tareas que puede ejecutar profesionalmente."
+    }
+  },
+  {
+    "id": "UT2-Q03",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué utilidad tiene el perfil profesional desde el punto de vista de la empresa contratante?",
+    "contexto": "Utilidad del perfil profesional para que una empresa entienda qué puede hacer un técnico y qué valor puede aportar.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Funciona como un manual de instrucciones para saber qué trabajos puede realizar el técnico"
+      },
+      {
+        "clave": "b",
+        "texto": "Es un documento legal para solicitar subvenciones europeas"
+      },
+      {
+        "clave": "c",
+        "texto": "Sirve para calcular automáticamente la nómina del trabajador"
+      },
+      {
+        "clave": "d",
+        "texto": "Determina el horario de entrada y salida del empleado"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el perfil profesional puede entenderse como un manual de instrucciones del técnico. Desde el punto de vista de la empresa, sirve para saber para qué trabajos está preparado, qué tareas puede realizar y qué problemas puede resolver gracias a las competencias adquiridas en su formación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El perfil profesional no es un documento legal destinado a pedir subvenciones europeas. Su función es describir las competencias y capacidades laborales del técnico."
+        },
+        {
+          "clave": "c",
+          "motivo": "La nómina se calcula según salario, contrato, jornada, cotizaciones y otros datos laborales, no según el perfil profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "El horario de entrada y salida depende de la organización de la empresa y del contrato, no del perfil profesional del técnico."
+        }
+      ],
+      "resumen_didactico": "Para una empresa, el perfil profesional sirve para entender qué sabe hacer un técnico y en qué tareas puede aportar valor.",
+      "ejemplo_practico": "Si una empresa contrata a un técnico de DAW, el perfil profesional le ayuda a saber que puede participar en el desarrollo de aplicaciones web, gestionar bases de datos, trabajar con código y colaborar en proyectos tecnológicos.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el perfil profesional funciona como una guía para que la empresa sepa qué trabajos puede realizar el técnico."
+    }
+  },
+  {
+    "id": "UT2-Q04",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "Un candidato desea dejar de ser un estudiante que solo \"sabe cosas\" para ser un técnico que \"sabe hacer cosas\". ¿Qué ejercicio debe realizar?",
+    "contexto": "Transformación de las competencias del título en evidencias reales que puedan demostrarse ante una empresa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Traducir las competencias de su título en ejemplos de acciones reales y evidencias"
+      },
+      {
+        "clave": "b",
+        "texto": "Eliminar las competencias técnicas de su currículum para centrarse en las teóricas"
+      },
+      {
+        "clave": "c",
+        "texto": "Esperar a terminar las prácticas para pensar en sus capacidades"
+      },
+      {
+        "clave": "d",
+        "texto": "Memorizar el Real Decreto del título palabra por palabra"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que no basta con memorizar las competencias del título. El ejercicio importante consiste en traducir esas competencias en ejemplos concretos, acciones reales y evidencias que demuestren lo que el técnico sabe hacer. Así, el estudiante puede mostrar su valor profesional con hechos, no solo con teoría.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eliminar las competencias técnicas sería un error, especialmente en un perfil como DAW. Las competencias técnicas son parte fundamental del valor profesional del candidato."
+        },
+        {
+          "clave": "c",
+          "motivo": "No hay que esperar a terminar las prácticas. El temario insiste en empezar durante el curso a identificar competencias y recopilar evidencias."
+        },
+        {
+          "clave": "d",
+          "motivo": "Memorizar el Real Decreto puede ayudar a conocer el título, pero no demuestra por sí mismo que el técnico sepa aplicar sus competencias en situaciones reales."
+        }
+      ],
+      "resumen_didactico": "Para pasar de \"saber cosas\" a \"saber hacer cosas\", hay que convertir las competencias en pruebas reales: proyectos, prácticas, trabajos o experiencias demostrables.",
+      "ejemplo_practico": "En DAW, no basta con decir \"sé JavaScript\". Una evidencia sería enseñar una aplicación web creada por ti, con su código en GitHub, documentación clara y una explicación de qué problema resuelve.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el ejercicio clave consiste en traducir las competencias del título en acciones reales y evidencias profesionales."
+    }
+  },
+  {
+    "id": "UT2-Q05",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Cuál es la función principal del currículum vitae (CV) en el proceso de selección?",
+    "contexto": "Función del CV como herramienta de presentación profesional ante un reclutador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Resumir de forma estratégica la trayectoria y competencias para conseguir una entrevista"
+      },
+      {
+        "clave": "b",
+        "texto": "Sustituir a la entrevista personal para ahorrar tiempo al reclutador"
+      },
+      {
+        "clave": "c",
+        "texto": "Servir de apoyo legal para la firma del contrato"
+      },
+      {
+        "clave": "d",
+        "texto": "Detallar toda la vida personal del candidato desde la infancia"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta el CV como un documento técnico que resume de forma ordenada la trayectoria formativa, la experiencia previa y las competencias de una persona. Su función es mostrar lo más relevante del candidato para despertar el interés del reclutador y abrir la puerta a la entrevista personal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El CV no sustituye a la entrevista. Su objetivo es conseguir que el reclutador quiera conocer mejor al candidato en una entrevista."
+        },
+        {
+          "clave": "c",
+          "motivo": "El CV puede formar parte del proceso de selección, pero no es un documento legal de apoyo para firmar el contrato."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un CV profesional no debe contar toda la vida personal del candidato. Debe seleccionar la información relevante para el puesto: formación, competencias, experiencia y datos de interés."
+        }
+      ],
+      "resumen_didactico": "El CV funciona como una presentación breve y estratégica: enseña lo más importante de tu perfil para conseguir una entrevista.",
+      "ejemplo_practico": "En DAW, tu CV debería mostrar tu formación, tus tecnologías principales, proyectos destacados, prácticas, GitHub y competencias útiles para una empresa tecnológica.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el CV resume de forma estratégica la trayectoria y competencias del candidato para facilitar el paso a la entrevista."
+    }
+  },
+  {
+    "id": "UT2-Q06",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "Al diseñar la estructura de un currículum vitae base, ¿qué debe incluirse en el apartado de competencias técnicas?",
+    "contexto": "Estructura básica del CV y diferencia entre competencias técnicas, competencias transversales, formación y otros datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Habilidades humanas como la empatía y el liderazgo"
+      },
+      {
+        "clave": "b",
+        "texto": "Habilidades específicas del sector, como el manejo de software especializado o lenguajes técnicos"
+      },
+      {
+        "clave": "c",
+        "texto": "Los pasatiempos y aficiones realizados en el tiempo libre"
+      },
+      {
+        "clave": "d",
+        "texto": "El nombre de los centros educativos donde se cursó la secundaria"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que el CV base debe incluir un apartado de competencias técnicas. En ese apartado se recogen las habilidades específicas del sector profesional, como programas, herramientas, tecnologías, lenguajes de programación o conocimientos técnicos propios del ciclo formativo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La empatía y el liderazgo son competencias transversales o habilidades personales, no competencias técnicas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los pasatiempos y aficiones pueden aparecer en otros datos de interés si aportan valor, pero no forman parte del apartado de competencias técnicas."
+        },
+        {
+          "clave": "d",
+          "motivo": "El nombre de los centros educativos pertenece al apartado de formación académica, no al de competencias técnicas."
+        }
+      ],
+      "resumen_didactico": "Las competencias técnicas son las habilidades concretas que pertenecen a tu sector profesional y que demuestran que sabes usar herramientas o conocimientos propios de tu oficio.",
+      "ejemplo_practico": "En DAW, las competencias técnicas podrían ser HTML, CSS, JavaScript, TypeScript, Angular, Node.js, bases de datos, Git, GitHub o despliegue de aplicaciones web.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque las competencias técnicas son las habilidades específicas del sector, como software especializado, herramientas profesionales o lenguajes técnicos."
+    }
+  },
+  {
+    "id": "UT2-Q07",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué diferencia fundamental existe entre un currículum vitae y un portfolio profesional?",
+    "contexto": "Diferencia entre el CV como presentación resumida del perfil y el portfolio como conjunto de evidencias reales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El CV debe ser largo y el portfolio debe ser de una sola página"
+      },
+      {
+        "clave": "b",
+        "texto": "El CV es para empresas públicas y el portfolio para empresas privadas"
+      },
+      {
+        "clave": "c",
+        "texto": "No existe diferencia; son dos nombres para el mismo documento"
+      },
+      {
+        "clave": "d",
+        "texto": "El CV es una promesa de capacidad y el portfolio es la prueba irrefutable de lo que ya se ha hecho"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia claramente entre CV y portfolio. El CV funciona como una presentación resumida de la trayectoria, la formación y las competencias del candidato. En cambio, el portfolio reúne evidencias reales, como proyectos, trabajos, prácticas o logros, que demuestran de forma concreta lo que la persona ya sabe hacer.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La diferencia entre CV y portfolio no depende de la longitud. Un CV debe ser claro y estratégico, y un portfolio debe organizar evidencias, pero no se define por tener una sola página."
+        },
+        {
+          "clave": "b",
+          "motivo": "El CV y el portfolio pueden usarse tanto en empresas públicas como privadas. La diferencia no está en el tipo de empresa, sino en la función de cada herramienta."
+        },
+        {
+          "clave": "c",
+          "motivo": "No son el mismo documento. El CV resume el perfil profesional, mientras que el portfolio demuestra con evidencias lo que el candidato ha hecho."
+        }
+      ],
+      "resumen_didactico": "El CV dice lo que sabes hacer; el portfolio lo demuestra con pruebas reales.",
+      "ejemplo_practico": "En DAW, el CV puede decir que sabes JavaScript, Angular o bases de datos. El portfolio, en cambio, enseña una aplicación creada por ti, el repositorio en GitHub, capturas del proyecto y una explicación técnica de cómo lo desarrollaste.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el CV presenta la capacidad profesional y el portfolio demuestra esa capacidad mediante evidencias reales."
+    }
+  },
+  {
+    "id": "UT2-Q08",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué tipo de contenido es el más adecuado para incluir en un portfolio profesional técnico?",
+    "contexto": "Contenido adecuado de un portfolio profesional como conjunto organizado de evidencias que demuestran las capacidades reales del técnico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evidencias como proyectos, trabajos realizados, códigos, fotos de actividades o reflexiones de prácticas"
+      },
+      {
+        "clave": "b",
+        "texto": "Los contratos de trabajo de empleos que no tienen relación con el sector"
+      },
+      {
+        "clave": "c",
+        "texto": "Únicamente los datos de contacto y la fotografía del candidato"
+      },
+      {
+        "clave": "d",
+        "texto": "Una lista de todas las asignaturas aprobadas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define el portfolio como un conjunto organizado de evidencias que demuestran lo que el profesional es capaz de hacer. Por eso, debe incluir proyectos, trabajos, prácticas, códigos, actividades, reflexiones o logros que sirvan como prueba real de sus competencias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los contratos de trabajos no relacionados con el sector no son el contenido principal de un portfolio técnico. El portfolio debe centrarse en evidencias útiles para demostrar competencias profesionales relevantes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los datos de contacto y la fotografía pueden aparecer en un CV o en una presentación personal, pero no bastan para construir un portfolio. El portfolio debe demostrar capacidades mediante evidencias."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una lista de asignaturas aprobadas pertenece más al ámbito académico. El portfolio no se limita a decir qué se ha estudiado, sino que muestra qué se ha hecho."
+        }
+      ],
+      "resumen_didactico": "Un portfolio profesional técnico debe contener pruebas reales de trabajo: proyectos, código, prácticas, documentación, actividades o reflexiones que demuestren competencias.",
+      "ejemplo_practico": "En DAW, un portfolio adecuado podría incluir una aplicación web desarrollada por ti, el enlace al repositorio de GitHub, capturas del proyecto, una explicación técnica y una breve reflexión sobre los problemas que resolviste durante el desarrollo.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el portfolio profesional debe reunir evidencias reales que demuestren lo que el técnico sabe hacer."
+    }
+  },
+  {
+    "id": "UT2-Q09",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Cuál es el objetivo de utilizar sistemas estructurados como el modelo Europass?",
+    "contexto": "Uso de modelos estructurados de CV y portfolio para presentar competencias profesionales de forma clara y reconocible.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Facilitar que las empresas de cualquier país entiendan rápidamente las competencias del profesional"
+      },
+      {
+        "clave": "b",
+        "texto": "Cobrar una tasa administrativa por cada currículum enviado a Europa"
+      },
+      {
+        "clave": "c",
+        "texto": "Evitar que los candidatos tengan que hacer entrevistas personales"
+      },
+      {
+        "clave": "d",
+        "texto": "Garantizar que el trabajador solo pueda trabajar en su país de origen"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que sistemas como Europass promueven perfiles estructurados y portfolios para que las empresas puedan entender rápidamente las competencias de un profesional, incluso en contextos internacionales. Su función principal es ordenar y hacer más clara la presentación del perfil profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Europass no se plantea en el temario como un sistema para cobrar tasas administrativas por enviar currículums, sino como una herramienta de presentación profesional estructurada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un modelo estructurado puede facilitar la comprensión del perfil, pero no elimina la entrevista personal. El CV y el portfolio sirven para abrir puertas, no para sustituir todo el proceso de selección."
+        },
+        {
+          "clave": "d",
+          "motivo": "Europass no limita al trabajador a su país de origen. Al contrario, busca facilitar que las competencias sean comprensibles en distintos países europeos."
+        }
+      ],
+      "resumen_didactico": "Europass sirve para presentar el perfil profesional de forma ordenada, clara y fácil de entender para empresas de diferentes países.",
+      "ejemplo_practico": "Un técnico de DAW puede usar Europass para mostrar su formación, competencias técnicas, experiencia, idiomas y portfolio de manera estructurada, facilitando que una empresa de otro país entienda rápidamente su perfil.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque Europass busca facilitar que las empresas comprendan de forma rápida y clara las competencias del profesional."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Por qué se considera que el currículum vitae debe ser un \"documento vivo\"?",
+    "contexto": "El CV como herramienta profesional que debe actualizarse a medida que el candidato aprende, mejora y acumula nuevas evidencias.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque contiene la firma electrónica del candidato"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque debe evolucionar y crecer cada vez que se adquiere una nueva habilidad o se supera un reto"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque es obligatorio cambiar el diseño cada mes por normativa legal"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque debe imprimirse en papel especial de larga duración"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el currículum vitae no debe verse como algo que se escribe una vez y se guarda, sino como una herramienta que evoluciona con el aprendizaje del profesional. Cada nueva habilidad, proyecto, práctica o reto superado puede aportar valor al CV y debe incorporarse cuando sea relevante.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La firma electrónica puede servir para validar ciertos documentos, pero no tiene relación con la idea de que el CV sea un documento vivo."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe en el temario ninguna obligación legal de cambiar el diseño del CV cada mes. La actualización del CV depende de la evolución profesional, no de una normativa de diseño."
+        },
+        {
+          "clave": "d",
+          "motivo": "El tipo de papel no define el valor del CV. La idea de documento vivo se refiere a su actualización continua, no a su impresión física."
+        }
+      ],
+      "resumen_didactico": "Un CV es un documento vivo porque debe actualizarse cada vez que el profesional adquiere nuevas competencias, experiencias o evidencias que mejoren su perfil.",
+      "ejemplo_practico": "En DAW, si aprendes Angular, haces un proyecto con NestJS o publicas una aplicación en GitHub, tu CV debería actualizarse para reflejar esas nuevas capacidades.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el CV debe crecer y evolucionar junto con el aprendizaje y la experiencia profesional del candidato."
+    }
+  },
+  {
+    "id": "UT2-Q11",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Cómo se define la asertividad en el entorno de la comunicación laboral?",
+    "contexto": "Definición de la asertividad como habilidad comunicativa profesional situada entre la pasividad y la agresividad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La habilidad de expresar necesidades y defender derechos de forma directa y honesta sin agredir ni ser pasivo"
+      },
+      {
+        "clave": "b",
+        "texto": "El hábito de aceptar todas las órdenes sin cuestionar la ética de las mismas"
+      },
+      {
+        "clave": "c",
+        "texto": "La capacidad de imponer siempre el criterio propio sobre el de los demás"
+      },
+      {
+        "clave": "d",
+        "texto": "La técnica para evitar hablar con los compañeros y centrarse solo en el trabajo"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define la asertividad como la habilidad comunicativa que permite expresar pensamientos, sentimientos y necesidades de manera directa, honesta y adecuada, defendiendo los propios derechos sin agredir a los demás ni permitir que nos ignoren.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Aceptar todas las órdenes sin cuestionarlas representa una actitud pasiva. La asertividad no consiste en ceder siempre, sino en defender una postura de forma respetuosa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Imponer siempre el criterio propio se acerca a una comunicación agresiva. La asertividad defiende los propios derechos, pero sin dañar la relación con los demás."
+        },
+        {
+          "clave": "d",
+          "motivo": "Evitar hablar con los compañeros no es asertividad. En el entorno laboral, la asertividad implica comunicarse mejor, no aislarse."
+        }
+      ],
+      "resumen_didactico": "La asertividad es el punto medio entre callarse por miedo y atacar por rabia: permite expresar lo que piensas con claridad y respeto.",
+      "ejemplo_practico": "En una empresa, si un compañero te pide saltarte un protocolo técnico, una respuesta asertiva sería: \"Entiendo que quieras ir más rápido, pero debemos seguir el procedimiento para evitar errores o problemas de seguridad\".",
+      "conclusion_final": "La respuesta correcta es la opción a, porque la asertividad consiste en comunicar necesidades y defender derechos de forma directa, honesta y respetuosa."
+    }
+  },
+  {
+    "id": "UT2-Q12",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "Un trabajador recibe una instrucción que vulnera el protocolo de seguridad de la empresa. ¿Qué respuesta sería propia de una persona asertiva?",
+    "contexto": "Aplicación práctica de la asertividad cuando un trabajador debe defender un protocolo profesional sin actuar de forma agresiva ni pasiva.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gritar al responsable para que sepa que está cometiendo un error"
+      },
+      {
+        "clave": "b",
+        "texto": "Explicar con calma que su responsabilidad es seguir el protocolo establecido para asegurar la corrección del proceso"
+      },
+      {
+        "clave": "c",
+        "texto": "Ignorar la instrucción y no decir nada a nadie"
+      },
+      {
+        "clave": "d",
+        "texto": "Ceder ante la presión para no generar un conflicto con el superior"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la asertividad permite expresar pensamientos, necesidades y responsabilidades de manera directa, honesta y adecuada, defendiendo los derechos propios y las normas profesionales sin agredir a los demás ni permitir que se ignoren los procedimientos correctos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Gritar al responsable sería una respuesta agresiva. Aunque el trabajador tenga razón al defender el protocolo, la forma de comunicarlo dañaría la relación profesional."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ignorar la instrucción y no decir nada sería una conducta pasiva. No defiende el protocolo ni ayuda a resolver el problema de forma profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Ceder ante la presión para evitar un conflicto también es una conducta pasiva. La asertividad no consiste en obedecer siempre, sino en defender lo correcto con respeto."
+        }
+      ],
+      "resumen_didactico": "Una respuesta asertiva defiende el protocolo de seguridad con calma, claridad y respeto, sin gritar y sin ceder ante una instrucción incorrecta.",
+      "ejemplo_practico": "En una empresa tecnológica, si alguien pide subir código a producción sin revisar pruebas básicas, una respuesta asertiva sería: \"Entiendo que hay prisa, pero mi responsabilidad es seguir el proceso de revisión para evitar errores en producción\".",
+      "conclusion_final": "La respuesta correcta es la opción b, porque expresa una postura firme y profesional sin agresividad ni pasividad."
+    }
+  },
+  {
+    "id": "UT2-Q13",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿En qué consiste fundamentalmente la técnica de la escucha activa?",
+    "contexto": "Definición de la escucha activa como habilidad comunicativa para comprender completamente el mensaje del interlocutor.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Escuchar mientras se realiza otra tarea técnica para ganar tiempo"
+      },
+      {
+        "clave": "b",
+        "texto": "Oír las palabras del interlocutor mientras se prepara la respuesta mentalmente"
+      },
+      {
+        "clave": "c",
+        "texto": "Realizar el esfuerzo mental de captar la totalidad del mensaje, sentimientos e intención del que habla"
+      },
+      {
+        "clave": "d",
+        "texto": "Grabar las reuniones para escucharlas más tarde con detenimiento"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario define la escucha activa como el esfuerzo físico y mental de captar con atención la totalidad del mensaje que emite otra persona. No consiste solo en oír palabras, sino también en interpretar los sentimientos, la intención y el contexto del interlocutor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Escuchar mientras se hace otra tarea reduce la atención y dificulta comprender correctamente el mensaje. La escucha activa exige presencia y concentración."
+        },
+        {
+          "clave": "b",
+          "motivo": "Preparar la respuesta mientras el otro habla impide escuchar de verdad. La escucha activa prioriza entender antes de responder."
+        },
+        {
+          "clave": "d",
+          "motivo": "Grabar una reunión puede ayudar a revisar información después, pero no es la técnica de escucha activa. La escucha activa ocurre durante la conversación."
+        }
+      ],
+      "resumen_didactico": "La escucha activa consiste en prestar atención real al mensaje completo: palabras, emociones, intención y necesidades de la otra persona.",
+      "ejemplo_practico": "En un equipo de desarrollo, si un compañero explica que está bloqueado con una tarea, escuchar activamente no es solo oír el problema técnico, sino entender también su frustración y reformular: \"Entonces, lo que te está bloqueando es la conexión entre el backend y la base de datos, ¿verdad?\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque la escucha activa implica captar la totalidad del mensaje, incluyendo sentimientos e intención, antes de responder."
+    }
+  },
+  {
+    "id": "UT2-Q14",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "Dentro de la escucha activa, ¿qué objetivo tiene la técnica de la reformulación?",
+    "contexto": "Uso de la reformulación como técnica de comunicación para comprobar que se ha comprendido correctamente el mensaje del interlocutor.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Corregir gramaticalmente al interlocutor para demostrar superioridad técnica"
+      },
+      {
+        "clave": "b",
+        "texto": "Dictar nuevas normas de trabajo basándose en el discurso del otro"
+      },
+      {
+        "clave": "c",
+        "texto": "Cambiar el tema de conversación cuando no interesa lo que el otro dice"
+      },
+      {
+        "clave": "d",
+        "texto": "Repetir con las propias palabras lo que el otro ha dicho para confirmar que se ha entendido correctamente"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta la reformulación como una técnica de comunicación vinculada a la escucha activa. Consiste en repetir con tus propias palabras lo que la otra persona ha dicho para confirmar que has entendido correctamente su mensaje.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La reformulación no sirve para corregir al interlocutor ni para demostrar superioridad. Su objetivo es comprobar la comprensión del mensaje de forma respetuosa."
+        },
+        {
+          "clave": "b",
+          "motivo": "Dictar nuevas normas de trabajo no forma parte de la reformulación. Reformular es aclarar y confirmar lo entendido, no imponer decisiones."
+        },
+        {
+          "clave": "c",
+          "motivo": "Cambiar de tema es lo contrario de escuchar activamente. La reformulación mantiene la atención en lo que la otra persona está comunicando."
+        }
+      ],
+      "resumen_didactico": "Reformular significa decir con tus palabras lo que has entendido para asegurarte de que el mensaje recibido coincide con lo que la otra persona quería transmitir.",
+      "ejemplo_practico": "Si un cliente dice que la web es confusa porque no encuentra el formulario de contacto, puedes reformular así: \"Entonces, lo que necesitas es que el acceso al formulario sea más visible y fácil de localizar, ¿correcto?\".",
+      "conclusion_final": "La respuesta correcta es la opción d, porque la reformulación consiste en repetir con palabras propias el mensaje del interlocutor para confirmar que se ha entendido correctamente."
+    }
+  },
+  {
+    "id": "UT2-Q15",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué importancia tiene el lenguaje no verbal en una entrevista de trabajo o reunión profesional?",
+    "contexto": "Importancia de la coherencia entre el mensaje verbal y el lenguaje no verbal en situaciones profesionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Muy poca, ya que los reclutadores solo se fijan en el currículum impreso"
+      },
+      {
+        "clave": "b",
+        "texto": "Solo es relevante en profesiones relacionadas con el teatro o la danza"
+      },
+      {
+        "clave": "c",
+        "texto": "Ninguna, lo único que importa es el contenido técnico de las palabras"
+      },
+      {
+        "clave": "d",
+        "texto": "Es crucial, pues la postura, gestos y tono deben ser coherentes con el mensaje para generar confianza"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el lenguaje no verbal es una parte fundamental de la comunicación profesional. La postura, los gestos, la mirada y el tono de voz deben ser coherentes con lo que se dice. En una entrevista o reunión, no basta con decir que eres una persona segura, motivada o profesional; tu forma de comunicarlo también debe transmitirlo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los reclutadores no se fijan únicamente en el currículum. También valoran cómo se comunica el candidato durante la entrevista."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el lenguaje no verbal no solo importa en profesiones escénicas. También es clave en entrevistas, reuniones, atención al cliente, trabajo en equipo y cualquier contexto profesional."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el contenido técnico de las palabras es importante, pero no es lo único que comunica. La postura, los gestos y el tono pueden reforzar o contradecir el mensaje."
+        }
+      ],
+      "resumen_didactico": "El lenguaje no verbal ayuda a generar confianza cuando acompaña de forma coherente a lo que se dice verbalmente.",
+      "ejemplo_practico": "Si en una entrevista dices que tienes motivación y seguridad, pero hablas mirando al suelo, con postura cerrada y tono apagado, el reclutador puede percibir incoherencia entre tus palabras y tu actitud.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el lenguaje no verbal es crucial para transmitir confianza y coherencia en una situación profesional."
+    }
+  },
+  {
+    "id": "UT2-Q16",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "En una dinámica de grupo de un proceso de selección, ¿qué perfil suelen buscar las empresas actualmente?",
+    "contexto": "Evaluación de habilidades comunicativas, asertividad, escucha activa y trabajo en equipo en procesos de selección.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Al que critica los fallos de los compañeros para destacar sobre ellos"
+      },
+      {
+        "clave": "b",
+        "texto": "A quien sabe escuchar, integrar las ideas de los demás y exponer la suya con seguridad y respeto"
+      },
+      {
+        "clave": "c",
+        "texto": "A la persona que habla más tiempo y no deja intervenir a los demás"
+      },
+      {
+        "clave": "d",
+        "texto": "Al candidato que permanece en silencio durante toda la prueba para no equivocarse"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que en las dinámicas de grupo las empresas no buscan necesariamente a quien más habla, sino a quien demuestra habilidades comunicativas profesionales: escuchar a los demás, integrar sus ideas y expresar la propia opinión con seguridad, respeto y asertividad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Criticar los fallos de los compañeros para destacar muestra una actitud poco colaborativa. Las empresas valoran la cooperación, la empatía y la capacidad de construir soluciones en grupo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Hablar mucho y no dejar intervenir a los demás no demuestra liderazgo real, sino falta de escucha activa y posible comunicación agresiva."
+        },
+        {
+          "clave": "d",
+          "motivo": "Permanecer en silencio durante toda la prueba puede evitar errores, pero también impide demostrar comunicación, participación, iniciativa y capacidad de aportar al grupo."
+        }
+      ],
+      "resumen_didactico": "En una dinámica de grupo se valora el equilibrio: escuchar, participar, respetar y defender ideas con claridad sin imponerse ni desaparecer.",
+      "ejemplo_practico": "En una dinámica donde el grupo debe resolver un problema, un buen candidato escucha las propuestas, resume puntos importantes y aporta su idea diciendo: \"Creo que podríamos combinar esta propuesta con esta otra para llegar a una solución más completa\".",
+      "conclusion_final": "La respuesta correcta es la opción b, porque las empresas buscan personas capaces de escuchar, integrar ideas y comunicarse con seguridad y respeto."
+    }
+  },
+  {
+    "id": "UT2-Q17",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué es la huella digital en el contexto de la identidad profesional?",
+    "contexto": "Definición de huella digital como parte de la presencia profesional que una persona proyecta en internet.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El rastro de datos e información que dejamos en internet de manera consciente o inconsciente"
+      },
+      {
+        "clave": "b",
+        "texto": "La firma digital necesaria para presentar impuestos de forma telemática"
+      },
+      {
+        "clave": "c",
+        "texto": "El sistema de acceso por biometría a las oficinas de la empresa"
+      },
+      {
+        "clave": "d",
+        "texto": "El escaneo de los dedos que se realiza al obtener el título oficial"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define la huella digital como el rastro de datos e información que dejamos en internet, tanto de manera consciente como inconsciente, al navegar, publicar contenidos, interactuar en redes sociales o usar plataformas digitales. En identidad profesional, esta huella influye en la imagen que una empresa puede formarse de nosotros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La firma digital es una herramienta de identificación electrónica para realizar trámites, pero no equivale a la huella digital en el sentido de presencia e imagen profesional en internet."
+        },
+        {
+          "clave": "c",
+          "motivo": "El acceso por biometría usa características físicas, como la huella dactilar, para entrar en un espacio, pero no tiene relación con el rastro de información que dejamos en internet."
+        },
+        {
+          "clave": "d",
+          "motivo": "El escaneo de dedos se refiere a una huella física o biométrica, no a la huella digital entendida como información visible o rastreable en la red."
+        }
+      ],
+      "resumen_didactico": "La huella digital es todo lo que internet puede mostrar sobre ti: publicaciones, comentarios, fotos, perfiles, cuentas antiguas y cualquier información asociada a tu identidad.",
+      "ejemplo_practico": "Si un reclutador busca tu nombre en Google y encuentra tu LinkedIn, tu GitHub, comentarios antiguos o fotos públicas en redes sociales, todo eso forma parte de tu huella digital.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque la huella digital es el rastro de datos e información que dejamos en internet de forma consciente o inconsciente."
+    }
+  },
+  {
+    "id": "UT2-Q18",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Por qué una huella digital descuidada puede ser un riesgo para la empleabilidad de un técnico?",
+    "contexto": "Importancia de cuidar la presencia digital porque puede influir en la imagen profesional que recibe un reclutador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque los reclutadores suelen investigar el nombre del candidato en internet para verificar su coherencia profesional"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque internet borra automáticamente los currículums de personas con redes sociales activas"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque es obligatorio por ley tener todas las redes sociales en modo público"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque ocupa espacio en los servidores de la empresa"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, en los procesos de selección actuales, los reclutadores pueden buscar el nombre del candidato en internet. Por eso, una huella digital descuidada puede perjudicar la empleabilidad si aparecen publicaciones, comentarios, fotos o perfiles antiguos que no encajan con la imagen profesional que se quiere transmitir.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Internet no borra automáticamente los currículums por tener redes sociales activas. El problema no es tener redes, sino que el contenido público pueda proyectar una imagen negativa o incoherente."
+        },
+        {
+          "clave": "c",
+          "motivo": "No es obligatorio por ley tener las redes sociales en modo público. De hecho, el temario recomienda revisar la privacidad para separar la vida personal de la imagen profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "La huella digital no se considera un riesgo para la empleabilidad porque ocupe espacio en servidores, sino porque puede afectar a la percepción profesional del candidato."
+        }
+      ],
+      "resumen_didactico": "Una huella digital descuidada puede cerrar oportunidades laborales porque el reclutador puede encontrar información que perjudique tu imagen profesional.",
+      "ejemplo_practico": "Un técnico de DAW puede tener un buen CV y buenos proyectos, pero si al buscar su nombre aparecen comentarios ofensivos, fotos inapropiadas o perfiles antiguos abandonados, la empresa puede dudar de su profesionalidad.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque los reclutadores pueden revisar la presencia digital del candidato para comprobar si su imagen en internet es coherente con su perfil profesional."
+    }
+  },
+  {
+    "id": "UT2-Q19",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué se entiende por \"egosurfing\" en el ámbito de la marca personal?",
+    "contexto": "Uso del egosurfing como primera fase de revisión de la presencia digital propia dentro de una estrategia de marca personal.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ignorar las opiniones de los demás en los foros profesionales"
+      },
+      {
+        "clave": "b",
+        "texto": "Publicar fotos diariamente para aumentar el ego personal"
+      },
+      {
+        "clave": "c",
+        "texto": "Crear perfiles falsos para alabar el trabajo de uno mismo"
+      },
+      {
+        "clave": "d",
+        "texto": "Buscar y monitorizar de forma activa y periódica las menciones e información propia en la red"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario define el egosurfing como la acción de buscar y monitorizar de forma activa y periódica las menciones, referencias e información propia que circula en internet. Es una forma de revisar qué imagen proyecta una persona en la red y detectar contenidos que puedan afectar a su identidad profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ignorar opiniones o menciones en foros profesionales es lo contrario del egosurfing. El egosurfing implica revisar activamente qué aparece sobre uno mismo en internet."
+        },
+        {
+          "clave": "b",
+          "motivo": "Publicar fotos diariamente no es egosurfing. El concepto no se refiere a aumentar el ego personal, sino a buscar y controlar la información propia disponible en la red."
+        },
+        {
+          "clave": "c",
+          "motivo": "Crear perfiles falsos para alabarse sería una práctica poco ética y no tiene relación con el egosurfing. El egosurfing consiste en revisar la información real que aparece sobre uno mismo."
+        }
+      ],
+      "resumen_didactico": "El egosurfing consiste en buscar tu propio nombre, apellidos o usuarios en internet para saber qué información aparece sobre ti y cómo puede afectar a tu marca personal.",
+      "ejemplo_practico": "Un técnico de DAW puede buscar su nombre en Google, revisar resultados públicos, comprobar sus antiguos usuarios, mirar si aparece su GitHub y detectar perfiles abandonados que debería cerrar o actualizar.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el egosurfing consiste en buscar y monitorizar de forma activa y periódica la información propia en internet."
+    }
+  },
+  {
+    "id": "UT2-Q20",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Cuál es el primer paso recomendado para realizar una auditoría de presencia digital efectiva?",
+    "contexto": "Primer paso dentro de la limpieza de huella digital y revisión de la presencia profesional en internet.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Buscar el nombre propio en Google usando el modo incógnito para ver qué información es pública"
+      },
+      {
+        "clave": "b",
+        "texto": "Crear diez cuentas nuevas en diferentes redes sociales"
+      },
+      {
+        "clave": "c",
+        "texto": "Enviar un correo a todos los contactos pidiendo que borren nuestras fotos"
+      },
+      {
+        "clave": "d",
+        "texto": "Borrar toda la conexión a internet y no volver a usarla nunca"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el primer paso para realizar una limpieza efectiva de la huella digital es practicar el egosurfing. Esto consiste en buscar el propio nombre, apellidos o antiguos nombres de usuario en Google, preferiblemente en modo incógnito, para comprobar qué información pública aparece sobre nosotros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Crear muchas cuentas nuevas no ayuda a auditar la presencia digital. Antes de construir nuevos perfiles, hay que revisar qué información pública ya existe sobre uno mismo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Pedir a todos los contactos que borren fotos no es el primer paso recomendado. Primero hay que localizar qué contenido aparece públicamente y valorar si realmente afecta a la identidad profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Borrar la conexión a internet o desaparecer de la red no es una estrategia profesional. El temario propone limpiar y gestionar la presencia digital, no dejar de usar internet."
+        }
+      ],
+      "resumen_didactico": "El primer paso de una auditoría digital es buscarte en internet como lo haría un reclutador para saber qué imagen pública estás proyectando.",
+      "ejemplo_practico": "Un estudiante de DAW puede abrir una ventana de incógnito, buscar su nombre completo en Google y revisar si aparecen perfiles antiguos, fotos públicas, comentarios, GitHub, LinkedIn o cualquier información que pueda afectar a su imagen profesional.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el primer paso recomendado es practicar egosurfing buscando el propio nombre en Google en modo incógnito para revisar la información pública disponible."
+    }
+  },
+  {
+    "id": "UT2-Q21",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué acción es aconsejable tomar con las llamadas \"cuentas fantasma\" de redes sociales antiguas que ya no se utilizan?",
+    "contexto": "Gestión de cuentas antiguas dentro de la limpieza de la huella digital y la construcción de una identidad profesional coherente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cambiarles el nombre por uno falso pero mantener el contenido"
+      },
+      {
+        "clave": "b",
+        "texto": "Compartir en ellas el currículum vitae actual sin limpiar el contenido previo"
+      },
+      {
+        "clave": "c",
+        "texto": "Dejarlas abiertas por si se vuelven a poner de moda"
+      },
+      {
+        "clave": "d",
+        "texto": "Cerrarlas, ya que la información antigua puede no representar la identidad profesional actual"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda eliminar o cerrar las cuentas fantasma, es decir, perfiles antiguos en redes sociales que ya no se utilizan. La razón es que la información antigua puede quedarse visible en internet y proyectar una imagen que ya no representa la identidad profesional actual del candidato.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Cambiar el nombre por uno falso no soluciona el problema de fondo. El contenido antiguo puede seguir estando disponible, ser localizable o afectar a la imagen profesional."
+        },
+        {
+          "clave": "b",
+          "motivo": "Compartir el currículum actual en una cuenta antigua sin limpiar el contenido previo puede generar incoherencia entre la imagen profesional que se quiere mostrar y publicaciones antiguas que ya no representan al candidato."
+        },
+        {
+          "clave": "c",
+          "motivo": "Dejarlas abiertas por si vuelven a ponerse de moda mantiene activo un riesgo innecesario. El temario aconseja cerrar las cuentas que ya no se usan porque suelen contener información desactualizada."
+        }
+      ],
+      "resumen_didactico": "Las cuentas antiguas abandonadas pueden perjudicar tu huella digital porque muestran información que quizá ya no encaja con la persona profesional que eres ahora.",
+      "ejemplo_practico": "Un estudiante de DAW puede tener una cuenta antigua de Twitter, Instagram o un foro con comentarios de hace años. Si ya no la usa y no representa su perfil actual, lo más prudente es cerrarla o limpiar su contenido.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque las cuentas fantasma deben cerrarse cuando contienen información antigua que puede no representar la identidad profesional actual."
+    }
+  },
+  {
+    "id": "UT2-Q22",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué significa aplicar la \"prueba del jefe\" antes de publicar algo en internet?",
+    "contexto": "Uso de la prudencia antes de publicar contenido en internet para cuidar la huella digital y la identidad profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pedir permiso a los compañeros de trabajo para subir un comentario"
+      },
+      {
+        "clave": "b",
+        "texto": "Publicar solo contenido que el jefe haya publicado previamente"
+      },
+      {
+        "clave": "c",
+        "texto": "Cuestionarse si uno se sentiría cómodo si la persona que decide su sueldo viera ese contenido"
+      },
+      {
+        "clave": "d",
+        "texto": "Preguntar al responsable de la empresa si le gusta la foto"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario plantea la \"prueba del jefe\" como una forma sencilla de pensar antes de publicar algo en internet. Consiste en preguntarse si uno se sentiría cómodo si una persona con capacidad para contratarte, evaluarte o decidir tu sueldo viera ese contenido. Si la respuesta es no, lo recomendable es no publicarlo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La prueba del jefe no consiste en pedir permiso a los compañeros. Es una reflexión personal sobre si el contenido que vas a publicar encaja con la imagen profesional que quieres proyectar."
+        },
+        {
+          "clave": "b",
+          "motivo": "No significa copiar o publicar solo lo que publique un jefe. La idea es valorar si tu contenido sería adecuado si lo viera alguien importante en tu futuro laboral."
+        },
+        {
+          "clave": "d",
+          "motivo": "No se trata de preguntar directamente al responsable de la empresa si le gusta una foto, sino de anticipar cómo podría interpretarse profesionalmente ese contenido."
+        }
+      ],
+      "resumen_didactico": "La prueba del jefe sirve para filtrar publicaciones: si no te gustaría que lo viera un reclutador, jefe o futuro empleador, mejor no lo publiques.",
+      "ejemplo_practico": "Antes de subir una foto, comentario o broma en una red social pública, un estudiante de DAW puede preguntarse: \"¿Me sentiría cómodo si una empresa que está revisando mi GitHub y mi LinkedIn también viera esto?\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque aplicar la prueba del jefe significa valorar si te sentirías cómodo si una persona con poder de decisión profesional viera ese contenido."
+    }
+  },
+  {
+    "id": "UT2-Q23",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Cuál es la principal ventaja competitiva de tener un perfil activo en LinkedIn?",
+    "contexto": "Uso de LinkedIn como vitrina digital profesional para mejorar la visibilidad ante reclutadores y empresas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Almacenar fotos personales de las vacaciones de forma segura"
+      },
+      {
+        "clave": "b",
+        "texto": "Poder jugar a videojuegos con otros profesionales del sector"
+      },
+      {
+        "clave": "c",
+        "texto": "Ser contactado directamente por reclutadores y demostrar criterio opinando sobre noticias del sector"
+      },
+      {
+        "clave": "d",
+        "texto": "Chatear con amigos de la infancia sin que la empresa se entere"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta LinkedIn como una de las principales vitrinas digitales para proyectar el perfil profesional. Su ventaja competitiva es que permite mostrar el currículum vivo, crear una red de contactos, aparecer en búsquedas de empleo y ser contactado directamente por reclutadores. Además, publicar o comentar contenido relacionado con el sector ayuda a demostrar interés, criterio profesional y actualización constante.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "LinkedIn no está pensado para almacenar fotos personales de vacaciones. Su finalidad principal es profesional, no personal o recreativa."
+        },
+        {
+          "clave": "b",
+          "motivo": "LinkedIn no es una plataforma de videojuegos. Su utilidad está relacionada con la empleabilidad, los contactos profesionales y la visibilidad laboral."
+        },
+        {
+          "clave": "d",
+          "motivo": "Chatear con amigos de la infancia no es la ventaja competitiva de LinkedIn. Para eso existen redes sociales personales; LinkedIn se orienta a la identidad profesional."
+        }
+      ],
+      "resumen_didactico": "LinkedIn sirve para hacer visible tu perfil profesional, conectar con empresas y reclutadores, y demostrar que estás activo en tu sector.",
+      "ejemplo_practico": "Un estudiante de DAW puede tener un perfil de LinkedIn actualizado con su formación, proyectos, GitHub, portfolio y publicaciones sobre tecnologías que está aprendiendo, como Angular, JavaScript o bases de datos.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque LinkedIn permite ser localizado por reclutadores y demostrar una presencia profesional activa en el sector."
+    }
+  },
+  {
+    "id": "UT2-Q24",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "Para un técnico que desea mostrar cómo resuelve problemas técnicos de forma colaborativa, ¿qué plataforma es la más adecuada?",
+    "contexto": "Elección de una vitrina digital adecuada para mostrar proyectos técnicos, código, documentación y trabajo colaborativo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un blog de cocina personal"
+      },
+      {
+        "clave": "b",
+        "texto": "Una red social de mensajería instantánea privada"
+      },
+      {
+        "clave": "c",
+        "texto": "Una plataforma de archivado de código o proyectos compartidos como GitHub"
+      },
+      {
+        "clave": "d",
+        "texto": "El tablón de anuncios físico de su centro de estudios"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta GitHub como una vitrina digital especialmente importante para perfiles técnicos como DAW y DAM. Permite mostrar código, proyectos, documentación, evolución del trabajo y colaboración con otros desarrolladores. Por eso es una plataforma adecuada para demostrar cómo un técnico resuelve problemas reales mediante proyectos compartidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un blog de cocina personal puede servir para una afición, pero no es la plataforma más adecuada para mostrar resolución de problemas técnicos, código o proyectos colaborativos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una red de mensajería instantánea privada puede servir para comunicarse, pero no funciona como portfolio técnico visible ni como repositorio organizado de proyectos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un tablón físico del centro puede anunciar información, pero no permite mostrar código, documentación, historial de cambios ni colaboración técnica de forma profesional."
+        }
+      ],
+      "resumen_didactico": "Para un perfil técnico, GitHub funciona como una prueba visible de cómo programas, documentas y colaboras en proyectos.",
+      "ejemplo_practico": "Un estudiante de DAW puede subir a GitHub una aplicación web, organizar el código en carpetas, escribir un README explicando el proyecto y mostrar commits que reflejen cómo ha ido resolviendo problemas durante el desarrollo.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque GitHub es la plataforma más adecuada para mostrar proyectos técnicos, código y trabajo colaborativo."
+    }
+  },
+  {
+    "id": "UT2-Q25",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué beneficio aporta tener un blog personal o escribir artículos en plataformas como Medium para un administrativo o integrador social?",
+    "contexto": "Uso de blogs personales o plataformas de publicación como vitrinas digitales para demostrar criterio profesional y posicionamiento en el sector.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evitar tener que ir a trabajar de forma presencial"
+      },
+      {
+        "clave": "b",
+        "texto": "Posicionarse como experto demostrando pensamiento crítico y análisis de casos reales de la profesión"
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituir la formación oficial por la escritura de artículos"
+      },
+      {
+        "clave": "d",
+        "texto": "Ganar dinero mediante publicidad masiva"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta Medium o un blog personal como plataformas útiles para publicar artículos y analizar casos reales de la profesión. Su ventaja es que permiten mostrar pensamiento crítico, capacidad de análisis, reflexión profesional y conocimiento del sector, ayudando a posicionar al candidato como alguien con criterio propio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Tener un blog no evita la presencialidad laboral. Su función es mejorar la visibilidad profesional y demostrar conocimiento, no cambiar automáticamente la modalidad de trabajo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Escribir artículos puede reforzar la identidad profesional, pero no sustituye la formación oficial ni las competencias adquiridas en el ciclo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aunque algunos blogs pueden monetizarse, ese no es el beneficio principal tratado en el temario. Aquí el objetivo es construir marca personal y demostrar valor profesional."
+        }
+      ],
+      "resumen_didactico": "Un blog profesional sirve para demostrar que no solo sabes hacer tareas, sino que también sabes analizar, explicar y reflexionar sobre tu sector.",
+      "ejemplo_practico": "Un integrador social puede escribir un artículo sobre cómo abordar conflictos en un grupo vulnerable, mientras que un administrativo puede publicar una guía sobre organización documental o automatización básica de facturas.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque escribir en un blog o en Medium ayuda a posicionarse como profesional con criterio, pensamiento crítico y capacidad de análisis."
+    }
+  },
+  {
+    "id": "UT2-Q26",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué herramienta permite crear portfolios interactivos o micrositios para guiar al reclutador a través de las evidencias de trabajo?",
+    "contexto": "Uso de herramientas digitales sencillas para crear portfolios, micrositios o espacios organizados donde mostrar evidencias profesionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Herramientas de diseño o creación de sitios web sencillos como Canva o Google Sites"
+      },
+      {
+        "clave": "b",
+        "texto": "El correo electrónico enviando cincuenta archivos adjuntos por separado"
+      },
+      {
+        "clave": "c",
+        "texto": "Una hoja de cálculo protegida con contraseña"
+      },
+      {
+        "clave": "d",
+        "texto": "Un procesador de textos básico sin imágenes"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario menciona herramientas como Canva o Google Sites como opciones útiles para crear micrositios o portfolios interactivos de forma sencilla. Estas herramientas permiten reunir en un único enlace la identidad profesional, los proyectos, las evidencias y la información relevante del candidato.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Enviar muchos archivos adjuntos por correo no es una forma ordenada ni profesional de presentar un portfolio. Puede resultar confuso para el reclutador y dificulta seguir las evidencias de trabajo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una hoja de cálculo protegida con contraseña puede servir para organizar datos, pero no es la herramienta más adecuada para presentar un portfolio visual, accesible e interactivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un procesador de textos básico sin imágenes limita mucho la presentación de evidencias. Un portfolio profesional necesita mostrar trabajos, proyectos, enlaces, imágenes o documentación de forma clara y atractiva."
+        }
+      ],
+      "resumen_didactico": "Canva o Google Sites permiten crear un espacio digital sencillo y ordenado donde mostrar las pruebas de lo que sabes hacer.",
+      "ejemplo_practico": "Un estudiante de DAW puede crear un Google Sites con una página de presentación, enlaces a GitHub, capturas de sus proyectos, explicación de las tecnologías usadas y un apartado de contacto.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque Canva y Google Sites permiten crear portfolios interactivos o micrositios profesionales para presentar evidencias de trabajo de forma clara."
+    }
+  },
+  {
+    "id": "UT2-Q27",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Qué estrategia de comunicación digital se recomienda para demostrar honestidad y capacidad de aprendizaje a las empresas?",
+    "contexto": "Estrategia digital basada en mostrar no solo el resultado final, sino también el proceso de aprendizaje, resolución de problemas y mejora profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ocultar cualquier dificultad que se haya tenido durante la formación"
+      },
+      {
+        "clave": "b",
+        "texto": "Publicar solo los títulos y diplomas finales obtenidos"
+      },
+      {
+        "clave": "c",
+        "texto": "Mostrar el proceso de resolución de problemas, lo aprendido de errores y el uso de herramientas nuevas"
+      },
+      {
+        "clave": "d",
+        "texto": "Decir que se sabe usar todas las herramientas del mercado aunque no sea cierto"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda mostrar el proceso, no solo el resultado final. Esto significa compartir cómo se ha resuelto un problema, qué se ha aprendido de un error, cómo se ha superado un reto o cómo se están utilizando herramientas nuevas. Esta estrategia ayuda a demostrar honestidad, capacidad de aprendizaje, iniciativa y evolución profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ocultar todas las dificultades no demuestra aprendizaje. Las empresas valoran que un profesional sepa reconocer problemas, aprender de ellos y explicar cómo los ha solucionado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Publicar títulos y diplomas puede aportar valor, pero el temario insiste en que no debe mostrarse solo el resultado final. También conviene enseñar el proceso y los aprendizajes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Decir que se dominan herramientas que realmente no se conocen es una mala práctica profesional. Perjudica la confianza y puede descubrirse fácilmente en una entrevista técnica o en el trabajo."
+        }
+      ],
+      "resumen_didactico": "Para demostrar capacidad de aprendizaje, no basta con enseñar el resultado final: también hay que mostrar cómo se ha llegado hasta ahí, qué problemas aparecieron y qué se aprendió durante el proceso.",
+      "ejemplo_practico": "Un estudiante de DAW puede publicar en LinkedIn o en su portfolio una explicación de cómo corrigió un error en una aplicación Angular, qué investigó, qué solución aplicó y qué aprendió para futuros proyectos.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque mostrar el proceso de resolución de problemas, los errores superados y el uso de herramientas nuevas demuestra honestidad, aprendizaje e iniciativa profesional."
+    }
+  },
+  {
+    "id": "UT2-Q28",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Cuál es la recomendación profesional respecto al número de plataformas digitales a gestionar?",
+    "contexto": "Gestión estratégica de vitrinas digitales profesionales priorizando la calidad y actualización frente a la cantidad de perfiles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Elegir una o dos plataformas y mantenerlas actualizadas y profesionales"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar de plataforma cada semana para parecer una persona moderna"
+      },
+      {
+        "clave": "c",
+        "texto": "No usar ninguna plataforma digital para evitar riesgos"
+      },
+      {
+        "clave": "d",
+        "texto": "Estar en todas las redes sociales posibles aunque estén abandonadas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda priorizar la calidad sobre la cantidad en la presencia digital. Es mejor elegir una o dos plataformas adecuadas al perfil profesional y mantenerlas cuidadas, actualizadas y coherentes, en lugar de abrir muchas cuentas que después quedan abandonadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Cambiar de plataforma cada semana no construye una identidad profesional sólida. La marca personal necesita coherencia, continuidad y actualización."
+        },
+        {
+          "clave": "c",
+          "motivo": "No usar ninguna plataforma digital evita ciertos riesgos, pero también impide mostrar evidencias, proyectos y presencia profesional. El temario no propone desaparecer, sino gestionar bien la presencia digital."
+        },
+        {
+          "clave": "d",
+          "motivo": "Estar en todas las redes posibles aunque estén abandonadas perjudica la imagen profesional. Una cuenta abandonada puede dar sensación de descuido o mostrar información desactualizada."
+        }
+      ],
+      "resumen_didactico": "La estrategia correcta no es estar en todas partes, sino estar bien en los lugares adecuados.",
+      "ejemplo_practico": "Un estudiante de DAW puede centrarse en LinkedIn y GitHub: LinkedIn para mostrar su perfil profesional y GitHub para enseñar proyectos, código y documentación.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque se recomienda elegir una o dos plataformas digitales y mantenerlas actualizadas, coherentes y profesionales."
+    }
+  },
+  {
+    "id": "UT2-Q29",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "En el mercado laboral actual, ¿qué valor se considera que las máquinas no pueden replicar y que es altamente cotizado?",
+    "contexto": "Importancia de las habilidades humanas, comunicativas y sociales en un mercado laboral cada vez más automatizado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La velocidad para realizar cálculos matemáticos simples"
+      },
+      {
+        "clave": "b",
+        "texto": "La memoria para almacenar bases de datos inmensas"
+      },
+      {
+        "clave": "c",
+        "texto": "La capacidad de conectar, entender y comunicarse asertivamente con otros seres humanos"
+      },
+      {
+        "clave": "d",
+        "texto": "La fuerza física para mover objetos en un almacén"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario destaca que, aunque las máquinas pueden automatizar muchas tareas, hay habilidades humanas que siguen siendo muy valiosas en cualquier empresa. Entre ellas están la capacidad de conectar con otras personas, entender sus necesidades, comunicarse con respeto, practicar la escucha activa y actuar con asertividad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La velocidad para realizar cálculos matemáticos simples sí puede ser replicada e incluso superada por máquinas, calculadoras y programas informáticos."
+        },
+        {
+          "clave": "b",
+          "motivo": "La memoria para almacenar grandes bases de datos es precisamente una de las funciones que los sistemas informáticos realizan mejor que las personas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La fuerza física puede ser sustituida en muchos contextos por maquinaria, robots o herramientas industriales. No representa el valor humano principal que destaca el temario."
+        }
+      ],
+      "resumen_didactico": "En un mundo cada vez más automatizado, lo más difícil de sustituir no es solo el conocimiento técnico, sino la capacidad humana de comunicarse, comprender y colaborar con otros.",
+      "ejemplo_practico": "En DAW, una IA puede ayudar a generar código, pero un técnico necesita entender al cliente, escuchar sus necesidades, explicar soluciones al equipo y defender decisiones técnicas de forma clara y respetuosa.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque la capacidad de conectar, entender y comunicarse asertivamente con otros seres humanos es un valor humano muy cotizado que las máquinas no pueden replicar plenamente."
+    }
+  },
+  {
+    "id": "UT2-Q30",
+    "tema": "UT2 Identidad profesional y herramientas de presentación",
+    "pregunta": "¿Cuál es la conclusión principal sobre el título de Técnico al finalizar el módulo de Identidad Profesional?",
+    "contexto": "Conclusión del tema sobre el valor del título de Técnico y la necesidad de acompañarlo con evidencias, comunicación y presencia profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que es el final del camino y ya no hace falta aprender nada más"
+      },
+      {
+        "clave": "b",
+        "texto": "Que es un manual de un superpoder que debe acompañarse de evidencias y una marca personal sólida"
+      },
+      {
+        "clave": "c",
+        "texto": "Que es un papel que garantiza el éxito sin necesidad de esforzarse en la comunicación"
+      },
+      {
+        "clave": "d",
+        "texto": "Que no tiene ningún valor si no se tiene una carrera universitaria previa"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario concluye que el título de Técnico no debe entenderse solo como un papel, sino como el manual de un superpoder profesional. Ese valor debe construirse y demostrarse mediante competencias convertidas en evidencias, un CV y portfolio cuidados, comunicación asertiva, escucha activa y una presencia digital coherente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El título no es el final del camino. El temario insiste en que la identidad profesional se construye continuamente, actualizando el CV, el portfolio y las competencias."
+        },
+        {
+          "clave": "c",
+          "motivo": "El título por sí solo no garantiza el éxito. También hay que saber comunicar el valor profesional, demostrar capacidades y cuidar la marca personal."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario no afirma que el título carezca de valor sin una carrera universitaria. Al contrario, presenta el título de Técnico como una base real de competencias profesionales."
+        }
+      ],
+      "resumen_didactico": "El título de Técnico tiene valor cuando se acompaña de pruebas reales de lo que sabes hacer y de una identidad profesional bien comunicada.",
+      "ejemplo_practico": "En DAW, tener el título es importante, pero será mucho más potente si lo acompañas de proyectos en GitHub, un portfolio claro, un LinkedIn actualizado y una forma profesional de explicar lo que sabes hacer.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el título de Técnico se entiende como una base de valor profesional que debe demostrarse con evidencias y una marca personal sólida."
+    }
+  }
+]

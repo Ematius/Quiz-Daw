@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT4-Q01",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Cómo se define técnicamente el salario en el marco de una relación laboral por cuenta ajena?",
+    "contexto": "Definición técnica del salario dentro de una relación laboral por cuenta ajena.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El beneficio total que obtiene la empresa gracias a la actividad profesional del técnico."
+      },
+      {
+        "clave": "b",
+        "texto": "La compensación económica que cubre únicamente los gastos realizados por el trabajador para la empresa."
+      },
+      {
+        "clave": "c",
+        "texto": "El conjunto de percepciones económicas por la prestación profesional de servicios y los periodos de descanso computables como trabajo."
+      },
+      {
+        "clave": "d",
+        "texto": "El importe neto que el trabajador recibe exclusivamente por las horas efectivas de producción."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El salario se define como el conjunto de percepciones económicas que recibe la persona trabajadora por la prestación profesional de sus servicios laborales por cuenta ajena. También incluye los periodos de descanso que legalmente se computan como trabajo, como las vacaciones retribuidas o determinados permisos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El beneficio que obtiene la empresa no es el salario. El salario pertenece al trabajador y representa la retribución que recibe por poner su trabajo a disposición de la empresa."
+        },
+        {
+          "clave": "b",
+          "motivo": "Esta opción describe los conceptos extrasalariales, como dietas, gastos de desplazamiento o suplidos. Esos pagos no son salario porque no retribuyen el trabajo, sino que compensan gastos realizados por el trabajador."
+        },
+        {
+          "clave": "d",
+          "motivo": "El salario no se limita al importe neto ni solo a las horas efectivas de producción. También incluye salario base, complementos, pagas extra y descansos computables como trabajo. Además, el neto es el resultado después de aplicar deducciones."
+        }
+      ],
+      "resumen_didactico": "El salario no es solo lo que llega limpio a la cuenta bancaria. Es el conjunto de cantidades económicas que la empresa reconoce al trabajador por su trabajo y por ciertos periodos de descanso que cuentan como tiempo trabajado.",
+      "ejemplo_practico": "Un desarrollador DAW cobra su salario no solo por programar durante su jornada, sino también por sus vacaciones pagadas, porque ese descanso se considera tiempo retribuido dentro de la relación laboral.",
+      "conclusion_final": "La respuesta correcta es la c: el salario es el conjunto de percepciones económicas recibidas por trabajar por cuenta ajena y por los descansos computables como trabajo."
+    }
+  },
+  {
+    "id": "UT4-Q02",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "Un profesional recibe una parte de su retribución mediante el uso de una vivienda proporcionada por la empresa. ¿Qué límite legal establece la normativa para este tipo de salario en especie?",
+    "contexto": "Límite legal del salario en especie cuando la empresa entrega bienes, derechos o servicios al trabajador como parte de su retribución.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No puede superar el 30 % de las percepciones salariales del trabajador."
+      },
+      {
+        "clave": "b",
+        "texto": "Puede ser de cualquier cuantía siempre que se haya pactado por escrito en el contrato."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo está permitido si el salario en dinero resultante es igual al 50 % del Salario Mínimo Interprofesional."
+      },
+      {
+        "clave": "d",
+        "texto": "No puede superar el 50 % del salario bruto total del trabajador."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El salario en especie consiste en la utilización, consumo u obtención de bienes, derechos o servicios para fines particulares de forma gratuita o por un precio inferior al de mercado. El temario indica que este tipo de salario no puede superar el 30 % del total de lo que cobra el trabajador. Además, el salario recibido en dinero nunca puede quedar por debajo del Salario Mínimo Interprofesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Aunque el salario en especie pueda estar pactado, no puede tener cualquier cuantía. La normativa establece un límite: no debe superar el 30 % de la retribución."
+        },
+        {
+          "clave": "c",
+          "motivo": "El temario no establece que el salario en dinero pueda quedarse en el 50 % del Salario Mínimo Interprofesional. Al contrario, protege al trabajador indicando que lo recibido en dinero no puede ser inferior al SMI."
+        },
+        {
+          "clave": "d",
+          "motivo": "El límite no es del 50 %. Según el temario, el salario en especie no puede superar el 30 % del total de la retribución."
+        }
+      ],
+      "resumen_didactico": "El salario en especie permite que parte del sueldo se reciba mediante ventajas no monetarias, como vivienda, coche de empresa o tickets restaurante, pero tiene un límite claro: no puede superar el 30 % de lo que cobra el trabajador.",
+      "ejemplo_practico": "Si un trabajador cobra 1.500 euros al mes en total, la parte correspondiente a salario en especie no podría superar 450 euros. Además, el dinero que recibe directamente no podría quedar por debajo del Salario Mínimo Interprofesional.",
+      "conclusion_final": "La respuesta correcta es la a: el salario en especie no puede superar el 30 % de las percepciones salariales del trabajador."
+    }
+  },
+  {
+    "id": "UT4-Q03",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Cuál es la diferencia fundamental entre un concepto salarial y uno extrasalarial en la nómina?",
+    "contexto": "Diferencia entre cantidades que retribuyen el trabajo y cantidades que compensan gastos realizados por el trabajador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Los salariales se perciben en dinero y los extrasalariales obligatoriamente en bienes o servicios."
+      },
+      {
+        "clave": "b",
+        "texto": "Los salariales son obligatorios por ley y los extrasalariales son siempre voluntarios para el empresario."
+      },
+      {
+        "clave": "c",
+        "texto": "Los salariales se pagan mensualmente y los extrasalariales solo una vez al año como bono de productividad."
+      },
+      {
+        "clave": "d",
+        "texto": "Los salariales tributan y cotizan, mientras que los extrasalariales son indemnizaciones por gastos que generalmente no cotizan."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Los conceptos salariales son cantidades que recibe el trabajador como retribución por su trabajo, como el salario base, los complementos salariales, las horas extra o las pagas extraordinarias. En cambio, los conceptos extrasalariales no pagan el trabajo en sí, sino que compensan gastos que el trabajador ha tenido que realizar para cumplir con su labor, como dietas, desplazamientos o indemnizaciones por traslado. Por eso, no se tratan igual a efectos de cotización e impuestos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los conceptos salariales pueden recibirse tanto en dinero como en especie. Además, los extrasalariales no tienen por qué recibirse en bienes o servicios; normalmente son compensaciones económicas por gastos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque no todos los conceptos salariales son obligatorios en todos los casos, ya que pueden depender del convenio, del contrato o de las circunstancias del puesto. Los extrasalariales tampoco son siempre voluntarios, porque pueden corresponder a gastos que la empresa debe compensar."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la diferencia no está en la frecuencia de pago. Un concepto salarial o extrasalarial puede aparecer en distintos momentos según la situación. Además, un bono de productividad es normalmente un complemento salarial, no un concepto extrasalarial."
+        }
+      ],
+      "resumen_didactico": "La clave está en distinguir si el dinero paga el trabajo o si compensa un gasto. Si paga el trabajo, es salarial. Si devuelve o compensa un gasto necesario para trabajar, es extrasalarial.",
+      "ejemplo_practico": "Si una empresa paga a un trabajador un plus por nocturnidad, eso es salarial porque retribuye una condición del trabajo. Si le paga el billete de tren para ir a una reunión de empresa en otra ciudad, eso es extrasalarial porque solo compensa un gasto de desplazamiento.",
+      "conclusion_final": "La respuesta correcta es la d: los conceptos salariales retribuyen el trabajo y cotizan, mientras que los extrasalariales compensan gastos y generalmente no cotizan igual."
+    }
+  },
+  {
+    "id": "UT4-Q04",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "Al negociar las condiciones económicas de un nuevo puesto de trabajo, ¿por qué es recomendable fijar la cifra en \"Bruto Anual\" en lugar de \"Neto Mensual\"?",
+    "contexto": "Negociación salarial y diferencia entre salario bruto anual y salario neto mensual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque el bruto anual incluye el coste total que la empresa paga a la Seguridad Social por el trabajador."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el salario bruto anual es la cantidad exacta que el trabajador verá ingresada en su cuenta cada mes."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque el neto mensual varía según las circunstancias personales del trabajador y el bruto define la base de sus derechos futuros."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque legalmente está prohibido firmar contratos donde aparezca el salario neto."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda negociar siempre en bruto anual porque el salario bruto es la referencia que define la categoría profesional, la base de cotización y los derechos futuros del trabajador, como la prestación por desempleo o la pensión. En cambio, el neto mensual depende de deducciones y circunstancias personales, como la situación familiar o las retenciones de IRPF.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el bruto anual no incluye toda la aportación empresarial a la Seguridad Social. Esa aportación forma parte del coste total para la empresa, pero no del salario bruto pactado con el trabajador."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el bruto anual no es lo que el trabajador recibe directamente en su cuenta. Lo que se ingresa es el salario neto, después de aplicar deducciones como IRPF y cotización a la Seguridad Social."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el motivo principal no es una prohibición legal de mencionar el neto, sino que el neto es una referencia variable y menos útil para conocer el valor real del salario y los derechos futuros."
+        }
+      ],
+      "resumen_didactico": "El bruto anual es la cifra importante para negociar porque marca el valor laboral real del puesto y afecta a futuras prestaciones. El neto mensual solo indica cuánto llega a la cuenta después de descuentos, y puede cambiar según cada persona.",
+      "ejemplo_practico": "Dos trabajadores pueden tener el mismo bruto anual, pero cobrar distinto neto mensual porque uno tiene una retención de IRPF mayor que el otro. Sin embargo, sus derechos laborales se calculan sobre la base salarial y de cotización, no sobre lo que ven limpio en la cuenta.",
+      "conclusion_final": "La respuesta correcta es la c: conviene negociar en bruto anual porque el neto mensual varía según circunstancias personales y el bruto define derechos futuros."
+    }
+  },
+  {
+    "id": "UT4-Q05",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué parte de la nómina refleja las cantidades que se añaden al salario base por circunstancias relativas a la toxicidad, turnicidad o idiomas?",
+    "contexto": "Identificación de las cantidades que se suman al salario base por circunstancias concretas del puesto, del trabajador o de la actividad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Devengos extrasalariales."
+      },
+      {
+        "clave": "b",
+        "texto": "Deducciones de seguridad social."
+      },
+      {
+        "clave": "c",
+        "texto": "Base de cotización por contingencias profesionales."
+      },
+      {
+        "clave": "d",
+        "texto": "Complementos salariales."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Los complementos salariales son cantidades que se añaden al salario base por circunstancias específicas relacionadas con el trabajador, el puesto de trabajo o los resultados de la empresa. Entre ellos pueden aparecer pluses por turnicidad, nocturnidad, toxicidad, responsabilidad, idiomas o productividad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los devengos extrasalariales no retribuyen directamente el trabajo, sino que compensan gastos o perjuicios, como dietas, desplazamientos o indemnizaciones."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque las deducciones de Seguridad Social son cantidades que se restan de la nómina del trabajador para cotizar al sistema, no cantidades que se suman al salario base."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la base de cotización es la cantidad sobre la que se calculan las cuotas a la Seguridad Social. No es una parte de la nómina que añada directamente pluses al salario base."
+        }
+      ],
+      "resumen_didactico": "Cuando al salario base se le suma una cantidad por una circunstancia especial del trabajo o del trabajador, estamos ante un complemento salarial.",
+      "ejemplo_practico": "Si una persona trabajadora cobra 1.200 euros de salario base y además recibe 100 euros por trabajar en turnos rotativos y 80 euros por saber inglés, esos 180 euros son complementos salariales.",
+      "conclusion_final": "La respuesta correcta es la d: las cantidades añadidas al salario base por toxicidad, turnicidad o idiomas son complementos salariales."
+    }
+  },
+  {
+    "id": "UT4-Q06",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "En la estructura de una nómina, ¿qué representan los \"devengos\"?",
+    "contexto": "Identificación de la columna de la nómina donde aparecen las cantidades que la empresa paga al trabajador antes de aplicar descuentos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La suma de todas las percepciones, salariales y extrasalariales, antes de aplicar deducciones."
+      },
+      {
+        "clave": "b",
+        "texto": "La aportación que la empresa realiza de forma exclusiva a la hucha de las pensiones."
+      },
+      {
+        "clave": "c",
+        "texto": "Las cantidades totales que se restan del sueldo para pagar el impuesto sobre la renta."
+      },
+      {
+        "clave": "d",
+        "texto": "El importe líquido que el trabajador recibe finalmente en su transferencia bancaria"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la nómina, los devengos son todas las cantidades que la empresa reconoce a favor del trabajador antes de aplicar deducciones. Incluyen tanto percepciones salariales, como salario base, complementos, horas extra o pagas extra, como percepciones extrasalariales, por ejemplo dietas, desplazamientos o suplidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la aportación de la empresa a la Seguridad Social no son los devengos del trabajador. Esa aportación forma parte del coste empresarial y no aparece como cantidad que el trabajador cobre directamente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque las cantidades que se restan, como el IRPF o la parte de Seguridad Social del trabajador, pertenecen a las deducciones, no a los devengos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el importe líquido es el resultado final que recibe el trabajador después de restar las deducciones a los devengos. No es lo mismo que los devengos."
+        }
+      ],
+      "resumen_didactico": "Los devengos son la parte de la nómina que suma. Primero se calculan todas las cantidades que corresponden al trabajador y después se aplican las deducciones para obtener el líquido a percibir.",
+      "ejemplo_practico": "Si una trabajadora tiene 1.000 euros de salario base, 100 euros de plus de idiomas, 50 euros de plus de asistencia y 80 euros por desplazamientos, todos esos importes aparecen como devengos antes de aplicar descuentos.",
+      "conclusion_final": "La respuesta correcta es la a: los devengos representan la suma de todas las percepciones salariales y extrasalariales antes de aplicar deducciones."
+    }
+  },
+  {
+    "id": "UT4-Q07",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Cuál es la función principal del sistema de la Seguridad Social en España?",
+    "contexto": "Finalidad general del sistema público de Seguridad Social como red de protección para trabajadores y sus familias.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Garantizar una red de protección ante situaciones de necesidad como enfermedad, desempleo o vejez."
+      },
+      {
+        "clave": "b",
+        "texto": "Gestionar exclusivamente los contratos de formación y aprendizaje de los centros educativos."
+      },
+      {
+        "clave": "c",
+        "texto": "Facilitar préstamos económicos a bajo interés para trabajadores que quieran emprender."
+      },
+      {
+        "clave": "d",
+        "texto": "Actuar como mediador privado en los conflictos entre trabajadores y sindicatos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La Seguridad Social es el sistema público que tiene como objetivo proteger a las personas trabajadoras y a sus familias frente a contingencias o situaciones de necesidad que pueden aparecer a lo largo de la vida laboral o personal. Entre esas situaciones están la enfermedad, los accidentes, el desempleo, la incapacidad temporal o la jubilación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la Seguridad Social no se dedica exclusivamente a gestionar contratos de formación o aprendizaje. Su función es mucho más amplia: proteger frente a situaciones de necesidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la Seguridad Social no tiene como función principal conceder préstamos para emprender. Su finalidad es garantizar prestaciones y protección social."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la mediación en conflictos laborales corresponde a otros órganos o vías, como el SMAC, la conciliación, la mediación o el arbitraje. No es la función principal de la Seguridad Social."
+        }
+      ],
+      "resumen_didactico": "La Seguridad Social funciona como una red de seguridad colectiva: todos aportamos mediante cotizaciones para que, cuando alguien enferma, pierde el empleo o llega a la jubilación, pueda recibir protección.",
+      "ejemplo_practico": "Si un programador se queda temporalmente de baja por una operación, la Seguridad Social puede cubrir una prestación de incapacidad temporal para que no se quede sin ingresos durante ese periodo.",
+      "conclusion_final": "La respuesta correcta es la a: la Seguridad Social garantiza una red de protección ante situaciones de necesidad como enfermedad, desempleo o vejez."
+    }
+  },
+  {
+    "id": "UT4-Q08",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué acto administrativo incorpora por primera vez a una persona al sistema de la Seguridad Social y le otorga un número único y vitalicio?",
+    "contexto": "Diferencia entre afiliación, alta, baja y cotización dentro del sistema de la Seguridad Social.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El alta."
+      },
+      {
+        "clave": "b",
+        "texto": "La inscripción patronal."
+      },
+      {
+        "clave": "c",
+        "texto": "La afiliación."
+      },
+      {
+        "clave": "d",
+        "texto": "La cotización."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La afiliación es el acto administrativo por el cual una persona se incorpora por primera vez al sistema de la Seguridad Social. Mediante la afiliación se le asigna un número único y vitalicio que la identifica durante toda su vida laboral.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el alta no incorpora por primera vez a la persona al sistema. El alta comunica que el trabajador empieza a trabajar de forma efectiva en una empresa o actividad concreta."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la inscripción patronal se refiere a la identificación de la empresa como empleadora ante la Seguridad Social, no a la incorporación inicial del trabajador al sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la cotización es la obligación de aportar cuotas económicas al sistema de la Seguridad Social. No es el acto que asigna el número único y vitalicio."
+        }
+      ],
+      "resumen_didactico": "La afiliación es como obtener el carné de socio de la Seguridad Social: ocurre una vez, al entrar por primera vez en el sistema, y te da un número que te acompaña toda la vida laboral.",
+      "ejemplo_practico": "Si una persona empieza sus primeras prácticas remuneradas y nunca ha trabajado antes, primero queda afiliada a la Seguridad Social y se le asigna su número. Después, la empresa tramita el alta para comunicar que empieza a trabajar.",
+      "conclusion_final": "La respuesta correcta es la c: la afiliación es el acto administrativo que incorpora por primera vez a una persona al sistema de la Seguridad Social y le otorga un número único y vitalicio."
+    }
+  },
+  {
+    "id": "UT4-Q09",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué concepto define la situación de un trabajador que empieza a trabajar efectivamente y genera el derecho a la protección del sistema?",
+    "contexto": "Identificación del acto que comunica que una persona trabajadora comienza a prestar servicios y queda protegida por la Seguridad Social.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Suplido."
+      },
+      {
+        "clave": "b",
+        "texto": "Alta."
+      },
+      {
+        "clave": "c",
+        "texto": "Devengo."
+      },
+      {
+        "clave": "d",
+        "texto": "Baja."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El alta es el acto mediante el cual se comunica que una persona trabajadora empieza a trabajar de forma efectiva. Estar en alta permite cotizar y generar derechos dentro del sistema de la Seguridad Social, como prestaciones por incapacidad temporal, desempleo o jubilación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque un suplido es una cantidad extrasalarial que compensa gastos realizados por el trabajador para cumplir con su labor, como desplazamientos o dietas. No tiene relación con el inicio efectivo de la protección de la Seguridad Social."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los devengos son las cantidades que la empresa reconoce a favor del trabajador en la nómina antes de aplicar deducciones. No indican que el trabajador haya empezado oficialmente a trabajar."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la baja comunica que el trabajador ha dejado de prestar servicios. Es lo contrario del alta."
+        }
+      ],
+      "resumen_didactico": "La afiliación te incorpora por primera vez al sistema, pero el alta indica que ya estás trabajando efectivamente y que empiezas a generar protección y cotización.",
+      "ejemplo_practico": "Si una empresa contrata a una desarrolladora DAW el 1 de marzo, debe tramitar su alta para comunicar que desde ese día empieza a trabajar y a cotizar en la Seguridad Social.",
+      "conclusion_final": "La respuesta correcta es la b: el alta es la situación que indica que el trabajador empieza a trabajar efectivamente y genera derecho a la protección del sistema."
+    }
+  },
+  {
+    "id": "UT4-Q10",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué es la base de cotización en el recibo de salarios?",
+    "contexto": "Definición de la base de cotización como referencia para calcular las cuotas que se aportan a la Seguridad Social.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La remuneración total sobre la que se aplican los tipos de porcentaje para calcular las cuotas a la Seguridad Social."
+      },
+      {
+        "clave": "b",
+        "texto": "El porcentaje fijo que se descuenta a todos los trabajadores por igual."
+      },
+      {
+        "clave": "c",
+        "texto": "El importe que la empresa deduce al trabajador para el pago del IVA."
+      },
+      {
+        "clave": "d",
+        "texto": "La suma del salario base y las indemnizaciones por despido recibidas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La base de cotización es la cantidad económica sobre la que se aplican los porcentajes o tipos de cotización para calcular cuánto deben aportar el trabajador y la empresa a la Seguridad Social. Esta base es importante porque influye en futuras prestaciones, como una baja por incapacidad temporal, el desempleo o la jubilación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la base de cotización no es un porcentaje. Es la cantidad sobre la que después se aplican los porcentajes de cotización."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el IVA no se descuenta en la nómina del trabajador. Las deducciones habituales de una nómina están relacionadas con IRPF y Seguridad Social."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la base de cotización no se calcula simplemente sumando salario base e indemnizaciones por despido. Además, las indemnizaciones por despido tienen un tratamiento específico y no son salario ordinario."
+        }
+      ],
+      "resumen_didactico": "La base de cotización es la cifra de referencia que usa la Seguridad Social para calcular cuánto se cotiza y también para determinar la cuantía de futuras prestaciones.",
+      "ejemplo_practico": "Si un trabajador tiene una base de cotización de 1.500 euros, los porcentajes de cotización se aplican sobre esos 1.500 euros para calcular cuánto aporta él y cuánto aporta la empresa a la Seguridad Social.",
+      "conclusion_final": "La respuesta correcta es la a: la base de cotización es la remuneración total sobre la que se aplican los porcentajes para calcular las cuotas a la Seguridad Social."
+    }
+  },
+  {
+    "id": "UT4-Q11",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Quién tiene la obligación legal de cotizar a la Seguridad Social en una relación laboral común?",
+    "contexto": "Identificación de los sujetos obligados a aportar cuotas económicas al sistema de la Seguridad Social en una relación laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El Estado, a través de los presupuestos generales, sin coste para las partes."
+      },
+      {
+        "clave": "b",
+        "texto": "Exclusivamente el trabajador, para garantizar su propia jubilación."
+      },
+      {
+        "clave": "c",
+        "texto": "Tanto la empresa como el trabajador, aportando cada uno su cuota correspondiente."
+      },
+      {
+        "clave": "d",
+        "texto": "Exclusivamente la empresa, como responsable del negocio."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La cotización es la obligación legal de aportar cuotas económicas al sistema de la Seguridad Social. En una relación laboral común cotizan tanto la empresa como el trabajador. La empresa realiza una aportación propia y, además, descuenta de la nómina del trabajador la parte que le corresponde a este.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el sistema de Seguridad Social no se financia solo mediante presupuestos generales sin coste para empresa y trabajador. En una relación laboral común, ambos deben cotizar."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el trabajador no cotiza en solitario. Aunque se le descuenta una parte de su nómina, la empresa también está obligada a realizar su propia aportación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la empresa no es la única obligada. La empresa aporta una parte importante, pero el trabajador también contribuye mediante las deducciones aplicadas en su nómina."
+        }
+      ],
+      "resumen_didactico": "La Seguridad Social se sostiene mediante aportaciones de ambas partes: empresa y trabajador. No es solo un descuento al trabajador ni solo un gasto empresarial.",
+      "ejemplo_practico": "Si un trabajador cobra un salario bruto, en su nómina aparecerá una deducción por su parte de Seguridad Social. Además, la empresa pagará otra cantidad adicional por ese trabajador, aunque esa parte no se ingrese directamente en su cuenta.",
+      "conclusion_final": "La respuesta correcta es la c: en una relación laboral común cotizan tanto la empresa como el trabajador, cada uno con su cuota correspondiente."
+    }
+  },
+  {
+    "id": "UT4-Q12",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿A qué prestación tiene derecho un técnico que pierde su empleo de forma involuntaria tras haber cotizado el tiempo mínimo exigido?",
+    "contexto": "Identificación de la prestación de Seguridad Social que protege al trabajador cuando pierde su empleo de manera involuntaria.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Incapacidad permanente."
+      },
+      {
+        "clave": "b",
+        "texto": "Subsidio de maternidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Prestación por desempleo."
+      },
+      {
+        "clave": "d",
+        "texto": "Auxilio por defunción."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La prestación por desempleo es la ayuda económica que reciben las personas trabajadoras que pierden su empleo de forma involuntaria, siempre que hayan cotizado el tiempo mínimo exigido. Su finalidad es servir como puente de ingresos mientras la persona busca un nuevo trabajo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la incapacidad permanente protege al trabajador cuando presenta reducciones graves y previsiblemente definitivas en su capacidad laboral, no cuando pierde el empleo de forma involuntaria."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el subsidio de maternidad, actualmente vinculado a la prestación por nacimiento y cuidado del menor, protege una situación relacionada con nacimiento, adopción o cuidado, no la pérdida involuntaria del empleo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el auxilio por defunción es una ayuda relacionada con los gastos derivados del fallecimiento de una persona, no con la pérdida del empleo."
+        }
+      ],
+      "resumen_didactico": "Cuando un trabajador pierde su empleo sin quererlo y ha cotizado lo suficiente, la prestación que le corresponde es el desempleo, también conocido como paro.",
+      "ejemplo_practico": "Un desarrollador DAW contratado por una empresa de software es despedido por causas organizativas. Si ha cotizado el tiempo mínimo necesario, podrá solicitar la prestación por desempleo mientras busca otro puesto.",
+      "conclusion_final": "La respuesta correcta es la c: el técnico tiene derecho a la prestación por desempleo si pierde su empleo de forma involuntaria y cumple el periodo mínimo de cotización."
+    }
+  },
+  {
+    "id": "UT4-Q13",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué es la Incapacidad Temporal (IT)?",
+    "contexto": "Definición de la prestación que protege al trabajador cuando no puede trabajar temporalmente por enfermedad o accidente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El periodo de vacaciones que la empresa otorga tras cinco años de antigüedad."
+      },
+      {
+        "clave": "b",
+        "texto": "Un subsidio diario que recibe el trabajador mientras está imposibilitado para trabajar por enfermedad o accidente."
+      },
+      {
+        "clave": "c",
+        "texto": "Una sanción económica por no asistir al puesto de trabajo de forma injustificada."
+      },
+      {
+        "clave": "d",
+        "texto": "Una pensión vitalicia para quienes no pueden volver a trabajar nunca más."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La Incapacidad Temporal, también llamada IT, es la situación en la que una persona trabajadora no puede trabajar durante un tiempo por enfermedad o accidente. Durante ese periodo, recibe asistencia sanitaria y puede tener derecho a un subsidio diario que sustituye parcialmente su salario mientras dura la baja.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la Incapacidad Temporal no tiene relación con las vacaciones ni con la antigüedad. Las vacaciones son un descanso retribuido, mientras que la IT aparece cuando el trabajador no puede trabajar por motivos de salud."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la IT no es una sanción. Es una situación protegida por la Seguridad Social cuando existe una enfermedad o accidente que impide trabajar temporalmente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque una pensión vitalicia por no poder volver a trabajar se relaciona con la incapacidad permanente, no con la incapacidad temporal. La IT tiene carácter provisional."
+        }
+      ],
+      "resumen_didactico": "La Incapacidad Temporal es una baja médica: el trabajador no puede trabajar durante un tiempo por enfermedad o accidente y recibe protección económica mientras se recupera.",
+      "ejemplo_practico": "Un técnico DAW se fractura la muñeca y el médico le da tres semanas de baja. Durante ese tiempo no trabaja, pero puede recibir una prestación por Incapacidad Temporal si cumple los requisitos.",
+      "conclusion_final": "La respuesta correcta es la b: la Incapacidad Temporal es un subsidio diario que recibe el trabajador mientras está imposibilitado temporalmente para trabajar por enfermedad o accidente."
+    }
+  },
+  {
+    "id": "UT4-Q14",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "Si un trabajador sufre un accidente fuera del horario laboral (accidente no laboral), ¿cuándo comienza a cobrar el subsidio de la Seguridad Social con carácter general?",
+    "contexto": "Inicio del cobro de la prestación por Incapacidad Temporal cuando la baja deriva de un accidente no laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Desde el primer día de la baja."
+      },
+      {
+        "clave": "b",
+        "texto": "A partir del cuarto día de la baja."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo si la baja dura más de un mes consecutivo."
+      },
+      {
+        "clave": "d",
+        "texto": "A partir del día 21 de la baja exclusivamente."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En caso de accidente no laboral o enfermedad común, el temario indica que los tres primeros días de baja no se cobran con carácter general, salvo que el convenio colectivo mejore esta situación. A partir del cuarto día y hasta el día 20, el trabajador cobra el 60 % de la base reguladora. Desde el día 21 en adelante, cobra el 75 %.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque, en un accidente no laboral, los tres primeros días de baja no se cobran con carácter general, salvo mejora establecida por convenio."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque no hace falta que la baja dure más de un mes para empezar a cobrar. El subsidio comienza, con carácter general, a partir del cuarto día."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el día 21 no marca el inicio del cobro, sino el momento a partir del cual aumenta el porcentaje de la prestación al 75 % de la base reguladora."
+        }
+      ],
+      "resumen_didactico": "En una baja por accidente no laboral, los días 1, 2 y 3 no se cobran normalmente. Desde el día 4 empieza el subsidio, primero al 60 %, y desde el día 21 sube al 75 %.",
+      "ejemplo_practico": "Si un técnico DAW se rompe la muñeca jugando al pádel fuera del trabajo y está tres semanas de baja, no cobraría los tres primeros días con carácter general. Empezaría a cobrar desde el cuarto día de baja.",
+      "conclusion_final": "La respuesta correcta es la b: en un accidente no laboral, el subsidio empieza a cobrarse con carácter general a partir del cuarto día de la baja."
+    }
+  },
+  {
+    "id": "UT4-Q15",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué importancia tiene para la empleabilidad el \"Informe de Vida Laboral\"?",
+    "contexto": "Utilidad del Informe de Vida Laboral como documento oficial para comprobar los periodos trabajados y las bases de cotización.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es un currículum que el trabajador redacta para explicar sus funciones."
+      },
+      {
+        "clave": "b",
+        "texto": "Sirve para solicitar días de permiso retribuido por mudanza."
+      },
+      {
+        "clave": "c",
+        "texto": "Es el documento oficial que acredita los periodos de alta y las bases por las que se ha cotizado."
+      },
+      {
+        "clave": "d",
+        "texto": "Es el justificante médico necesario para solicitar una baja por estrés."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El Informe de Vida Laboral es un documento oficial que resume los periodos en los que una persona ha estado dada de alta en la Seguridad Social, las empresas para las que ha trabajado y las bases de cotización. El temario recomienda revisarlo al menos una vez al año para comprobar que todo coincide con los contratos y que los derechos laborales futuros están correctamente registrados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el Informe de Vida Laboral no lo redacta el trabajador ni sirve para explicar funciones como un currículum. Es un documento oficial emitido por la Seguridad Social."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque no se utiliza para solicitar permisos retribuidos por mudanza. Su función es acreditar periodos de alta y cotización."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque una baja médica requiere documentación sanitaria emitida por los servicios médicos correspondientes. El Informe de Vida Laboral no es un justificante médico."
+        }
+      ],
+      "resumen_didactico": "La Vida Laboral es como el historial oficial de tu relación con la Seguridad Social. Permite comprobar si tus trabajos, altas y cotizaciones están bien registrados.",
+      "ejemplo_practico": "Si un trabajador ha estado seis meses contratado en una empresa, puede revisar su Informe de Vida Laboral para asegurarse de que aparece ese periodo de alta y que la empresa cotizó correctamente por él.",
+      "conclusion_final": "La respuesta correcta es la c: el Informe de Vida Laboral acredita oficialmente los periodos de alta y las bases por las que se ha cotizado."
+    }
+  },
+  {
+    "id": "UT4-Q16",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿En qué consiste una modificación sustancial de las condiciones de trabajo?",
+    "contexto": "Cambio importante en las condiciones laborales pactadas cuando existen causas justificadas por parte de la empresa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En un cambio menor en la disposición del mobiliario de la oficina."
+      },
+      {
+        "clave": "b",
+        "texto": "En la prórroga automática de un contrato temporal por un año más."
+      },
+      {
+        "clave": "c",
+        "texto": "En la extinción inmediata del contrato por voluntad del trabajador."
+      },
+      {
+        "clave": "d",
+        "texto": "En la alteración de aspectos fundamentales como el horario, turnos o sistema de sueldo por causas económicas o técnicas."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La modificación sustancial de las condiciones de trabajo consiste en la facultad que tiene el empresario para cambiar aspectos importantes de la relación laboral cuando existen razones económicas, técnicas, organizativas o de producción. Puede afectar a elementos fundamentales como el horario, el régimen de turnos, el sistema de remuneración, las funciones o el centro de trabajo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque cambiar la disposición del mobiliario de la oficina no afecta a una condición esencial del contrato de trabajo. Sería un cambio organizativo menor, no una modificación sustancial."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la prórroga de un contrato temporal afecta a la duración del contrato, pero no define una modificación sustancial de condiciones como horario, turnos, salario o funciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la extinción inmediata del contrato por voluntad del trabajador se relaciona con la dimisión o baja voluntaria, no con una modificación sustancial de las condiciones de trabajo."
+        }
+      ],
+      "resumen_didactico": "Una modificación sustancial ocurre cuando la empresa cambia una parte importante de las condiciones laborales, como el horario, los turnos, el salario o las funciones, y debe justificarlo con causas reales.",
+      "ejemplo_practico": "Una empresa cambia a una trabajadora de jornada intensiva de mañana a turno fijo de tarde por una reorganización del servicio. Como afecta de forma importante a su vida laboral y personal, puede considerarse una modificación sustancial.",
+      "conclusion_final": "La respuesta correcta es la d: una modificación sustancial altera aspectos fundamentales del trabajo, como horario, turnos o sistema de sueldo, por causas justificadas."
+    }
+  },
+  {
+    "id": "UT4-Q17",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "Ante una modificación sustancial de condiciones que le cause un perjuicio, ¿qué opción tiene el trabajador si no desea aceptar el cambio?",
+    "contexto": "Derechos del trabajador cuando una modificación sustancial de las condiciones de trabajo le causa un perjuicio y no quiere aceptar la nueva situación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Obligar a la empresa a cerrar el centro de trabajo de forma permanente."
+      },
+      {
+        "clave": "b",
+        "texto": "Abandonar el puesto sin derecho a ninguna indemnización."
+      },
+      {
+        "clave": "c",
+        "texto": "No asistir al trabajo hasta que la empresa retire la medida."
+      },
+      {
+        "clave": "d",
+        "texto": "Rescindir el contrato con derecho a una indemnización de 20 días por año trabajado."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Cuando una modificación sustancial de las condiciones de trabajo perjudica al trabajador, este no está obligado simplemente a aceptar el cambio sin más. Según el temario, puede aceptar la modificación, impugnarla si considera que no existen causas reales o rescindir el contrato con derecho a una indemnización de 20 días por año trabajado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el trabajador no puede obligar a la empresa a cerrar el centro de trabajo. Sus opciones legales son aceptar, impugnar o rescindir el contrato con indemnización si se dan los requisitos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque abandonar el puesto sin seguir el procedimiento adecuado podría considerarse una baja voluntaria o una ausencia injustificada. En una modificación sustancial perjudicial, la vía correcta puede ser rescindir el contrato con indemnización."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque dejar de asistir al trabajo no es la forma adecuada de oponerse a la medida. Si el trabajador no está conforme, debe impugnar la decisión o solicitar la rescisión indemnizada conforme al procedimiento correspondiente."
+        }
+      ],
+      "resumen_didactico": "Si la empresa cambia una condición importante del contrato y ese cambio perjudica al trabajador, este puede marcharse legalmente con una indemnización de 20 días por año trabajado, siempre que se cumplan los requisitos.",
+      "ejemplo_practico": "Una trabajadora pasa de jornada intensiva de mañana a turno fijo de tarde, lo que le impide conciliar su vida familiar. Si no quiere aceptar el cambio y este le causa un perjuicio, puede solicitar la extinción del contrato con indemnización de 20 días por año trabajado.",
+      "conclusion_final": "La respuesta correcta es la d: ante una modificación sustancial perjudicial, el trabajador puede rescindir el contrato con derecho a una indemnización de 20 días por año trabajado."
+    }
+  },
+  {
+    "id": "UT4-Q18",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué sucede con las obligaciones principales de las partes durante la suspensión del contrato de trabajo?",
+    "contexto": "Efectos de la suspensión del contrato sobre la prestación de servicios del trabajador y el pago del salario por parte de la empresa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El trabajador debe seguir asistiendo pero la empresa no está obligada a pagar."
+      },
+      {
+        "clave": "b",
+        "texto": "El contrato se extingue definitivamente y no hay posibilidad de retorno."
+      },
+      {
+        "clave": "c",
+        "texto": "La empresa debe pagar el salario base pero el trabajador pierde su antigüedad."
+      },
+      {
+        "clave": "d",
+        "texto": "Se interrumpen temporalmente: el trabajador no presta servicios y el empresario no paga el salario."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La suspensión del contrato de trabajo es una pausa temporal de la relación laboral. Durante ese periodo se interrumpen las dos obligaciones principales: el trabajador no tiene que prestar servicios y el empresario no tiene que pagar el salario. Sin embargo, el vínculo laboral no desaparece, sino que queda suspendido hasta que finaliza la causa que provocó la suspensión.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque, durante la suspensión del contrato, el trabajador no tiene obligación de seguir asistiendo al puesto de trabajo. La suspensión afecta precisamente a la obligación de trabajar."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la suspensión no extingue definitivamente el contrato. El contrato sigue existiendo, pero queda en pausa hasta que desaparece la causa de suspensión."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque durante la suspensión, con carácter general, la empresa no está obligada a pagar el salario. Además, el temario no define la suspensión como una pérdida de antigüedad."
+        }
+      ],
+      "resumen_didactico": "Suspender el contrato no significa terminarlo, sino pausarlo. Mientras dura la suspensión, el trabajador no trabaja y la empresa no paga salario, pero la relación laboral sigue viva.",
+      "ejemplo_practico": "Si un trabajador está de baja por una operación durante tres meses, su contrato queda suspendido. No presta servicios durante ese tiempo, pero cuando recibe el alta médica puede volver a su puesto.",
+      "conclusion_final": "La respuesta correcta es la d: durante la suspensión del contrato se interrumpen temporalmente las obligaciones principales de trabajar y pagar salario."
+    }
+  },
+  {
+    "id": "UT4-Q19",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Cuál de las siguientes es una causa común de suspensión del contrato de trabajo con reserva de puesto?",
+    "contexto": "Identificación de una causa de suspensión del contrato en la que la relación laboral queda pausada temporalmente y el trabajador conserva su puesto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La dimisión del trabajador para irse a otra empresa."
+      },
+      {
+        "clave": "b",
+        "texto": "El nacimiento y cuidado de un menor."
+      },
+      {
+        "clave": "c",
+        "texto": "La jubilación total del trabajador."
+      },
+      {
+        "clave": "d",
+        "texto": "El despido disciplinario procedente."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La suspensión del contrato es una pausa temporal de la relación laboral. Durante ese tiempo, el trabajador no presta servicios y la empresa no paga salario, pero el vínculo laboral sigue vivo. El temario incluye como causas comunes de suspensión la incapacidad temporal, el nacimiento de un hijo o adopción, el ejercicio del derecho de huelga y el mutuo acuerdo entre las partes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la dimisión del trabajador no suspende el contrato, sino que lo extingue. Si el trabajador se marcha voluntariamente a otra empresa, la relación laboral finaliza."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la jubilación total del trabajador supone el final definitivo de la relación laboral, no una pausa temporal con reserva de puesto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el despido disciplinario procedente es una forma de extinción del contrato por incumplimiento grave y culpable del trabajador. No es una suspensión."
+        }
+      ],
+      "resumen_didactico": "La suspensión del contrato significa que la relación laboral se queda en pausa, pero no desaparece. Una causa típica es el nacimiento y cuidado de un menor, porque el trabajador deja temporalmente de trabajar y después puede reincorporarse.",
+      "ejemplo_practico": "Una trabajadora tiene un hijo y disfruta del permiso por nacimiento y cuidado del menor. Durante ese periodo no trabaja, pero su contrato no se extingue y conserva su derecho a volver a su puesto.",
+      "conclusion_final": "La respuesta correcta es la b: el nacimiento y cuidado de un menor es una causa común de suspensión del contrato con reserva de puesto."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué define a la extinción del contrato de trabajo?",
+    "contexto": "Identificación del concepto de extinción como final definitivo del vínculo laboral entre empresa y trabajador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La pausa temporal de la relación por motivos de salud."
+      },
+      {
+        "clave": "b",
+        "texto": "El cambio de funciones dentro del mismo departamento."
+      },
+      {
+        "clave": "c",
+        "texto": "La firma de un anexo para aumentar el salario base."
+      },
+      {
+        "clave": "d",
+        "texto": "La terminación definitiva de la relación laboral entre la empresa y el trabajador."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La extinción del contrato de trabajo es la terminación definitiva de la relación laboral entre la empresa y el trabajador. A diferencia de la suspensión, donde el contrato queda en pausa, en la extinción el vínculo laboral finaliza. Según la causa de esa extinción, pueden existir o no derechos como indemnización o prestación por desempleo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque una pausa temporal por motivos de salud se relaciona con la suspensión del contrato, por ejemplo una incapacidad temporal. En ese caso, el contrato sigue vivo y el trabajador puede reincorporarse."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque un cambio de funciones dentro del mismo departamento puede estar relacionado con una modificación de condiciones o con la organización interna de la empresa, pero no supone necesariamente el final del contrato."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque firmar un anexo para aumentar el salario base modifica una condición económica del contrato, pero no extingue la relación laboral."
+        }
+      ],
+      "resumen_didactico": "La extinción es el punto final del contrato. Ya no hay pausa ni modificación: la relación laboral termina definitivamente.",
+      "ejemplo_practico": "Si un trabajador presenta una baja voluntaria para irse a otra empresa, o si la empresa realiza un despido, el contrato se extingue porque deja de existir la relación laboral entre ambas partes.",
+      "conclusion_final": "La respuesta correcta es la d: la extinción del contrato es la terminación definitiva de la relación laboral entre empresa y trabajador."
+    }
+  },
+  {
+    "id": "UT4-Q21",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué consecuencia legal tiene la dimisión o baja voluntaria del trabajador sin que exista un incumplimiento de la empresa?",
+    "contexto": "Consecuencias de la extinción del contrato cuando es el propio trabajador quien decide abandonar voluntariamente la empresa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Da derecho a una indemnización de 33 días por año trabajado."
+      },
+      {
+        "clave": "b",
+        "texto": "Permite cobrar el paro automáticamente al día siguiente de irse."
+      },
+      {
+        "clave": "c",
+        "texto": "Obliga al trabajador a pagar una multa al Estado por abandonar su puesto."
+      },
+      {
+        "clave": "d",
+        "texto": "No genera derecho a indemnización ni a la prestación por desempleo de forma inmediata."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La dimisión o baja voluntaria se produce cuando el trabajador decide poner fin a la relación laboral por su propia voluntad, sin que exista un incumplimiento empresarial que justifique la salida. En este caso, el contrato se extingue, pero el trabajador no tiene derecho a indemnización ni a cobrar la prestación por desempleo de forma inmediata.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la indemnización de 33 días por año trabajado se relaciona con determinados despidos improcedentes, no con una baja voluntaria decidida libremente por el trabajador."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque, si el trabajador se va voluntariamente, no se encuentra en situación legal de desempleo de forma inmediata. Por tanto, no puede cobrar el paro automáticamente al día siguiente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque dimitir no implica pagar una multa al Estado. Lo que sí puede ocurrir es que el trabajador pierda ciertos derechos inmediatos, como indemnización o prestación por desempleo."
+        }
+      ],
+      "resumen_didactico": "Si el trabajador se marcha porque quiere, sin que la empresa haya incumplido, no hay indemnización y no se cobra el paro inmediatamente. La baja voluntaria es una decisión personal del trabajador, no una pérdida involuntaria del empleo.",
+      "ejemplo_practico": "Una programadora DAW recibe una oferta mejor en otra empresa y decide dejar su puesto actual. Como se va voluntariamente, no recibe indemnización y no puede solicitar el paro de forma inmediata por esa salida.",
+      "conclusion_final": "La respuesta correcta es la d: la baja voluntaria no genera derecho a indemnización ni a prestación por desempleo de forma inmediata."
+    }
+  },
+  {
+    "id": "UT4-Q22",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué tipo de despido se fundamenta en causas ajenas a la voluntad del trabajador, como razones económicas o técnicas de la empresa?",
+    "contexto": "Identificación del tipo de despido basado en causas económicas, técnicas, organizativas o de producción ajenas a la voluntad del trabajador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Despido objetivo."
+      },
+      {
+        "clave": "b",
+        "texto": "Despido disciplinario."
+      },
+      {
+        "clave": "c",
+        "texto": "Baja por mutuo acuerdo."
+      },
+      {
+        "clave": "d",
+        "texto": "Excedencia forzosa."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El despido objetivo es una forma de extinción del contrato que se produce por causas ajenas a la voluntad del trabajador, como razones económicas, técnicas, organizativas o de producción de la empresa. En estos casos, la ley reconoce una indemnización de 20 días por año trabajado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el despido disciplinario se basa en un incumplimiento grave y culpable del trabajador, no en causas económicas o técnicas de la empresa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la baja por mutuo acuerdo implica que empresa y trabajador pactan finalizar la relación laboral. No es un despido basado en causas objetivas de la empresa."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la excedencia forzosa no es un despido. Es una situación en la que el contrato queda suspendido por determinadas causas, con derecho a reserva del puesto en los casos previstos."
+        }
+      ],
+      "resumen_didactico": "Cuando la empresa extingue el contrato por motivos económicos, técnicos, organizativos o de producción, sin que el trabajador haya cometido una falta grave, hablamos de despido objetivo.",
+      "ejemplo_practico": "Una empresa pierde varios clientes importantes y necesita reducir plantilla por causas económicas. Si despide a un trabajador por esa razón, estaríamos ante un despido objetivo, no disciplinario.",
+      "conclusion_final": "La respuesta correcta es la a: el despido objetivo se fundamenta en causas ajenas a la voluntad del trabajador, como razones económicas o técnicas de la empresa."
+    }
+  },
+  {
+    "id": "UT4-Q23",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "En un despido objetivo legalmente procedente, ¿qué indemnización garantiza la normativa con carácter general?",
+    "contexto": "Indemnización correspondiente cuando la empresa extingue el contrato mediante un despido objetivo procedente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "45 días por año trabajado con un máximo de 42 mensualidades."
+      },
+      {
+        "clave": "b",
+        "texto": "10 días por año trabajado más un bono de transporte."
+      },
+      {
+        "clave": "c",
+        "texto": "No existe indemnización en los despidos objetivos."
+      },
+      {
+        "clave": "d",
+        "texto": "20 días por año trabajado con un máximo de 12 mensualidades."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El despido objetivo es una forma de extinción del contrato basada en causas ajenas a la voluntad del trabajador, como causas económicas, técnicas, organizativas o de producción. Cuando el despido objetivo es procedente, la normativa garantiza una indemnización de 20 días por año trabajado, con el límite general de 12 mensualidades.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los 45 días por año trabajado con máximo de 42 mensualidades se relacionan con regímenes anteriores de indemnización por despido improcedente, no con el despido objetivo procedente."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la indemnización por despido objetivo no es de 10 días por año ni incluye un bono de transporte. La cantidad correcta es de 20 días por año trabajado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el despido objetivo sí genera derecho a indemnización cuando se realiza correctamente. La ausencia de indemnización se asocia, por ejemplo, al despido disciplinario procedente o a la baja voluntaria."
+        }
+      ],
+      "resumen_didactico": "El despido objetivo no se basa en una falta grave del trabajador, sino en causas justificadas de la empresa. Por eso, aunque sea procedente, el trabajador tiene derecho a indemnización.",
+      "ejemplo_practico": "Si una empresa despide a un técnico DAW por causas económicas acreditadas, no se considera que el trabajador haya hecho nada mal. Por ello, recibirá una indemnización de 20 días por año trabajado, con el límite legal correspondiente.",
+      "conclusion_final": "La respuesta correcta es la d: en un despido objetivo procedente corresponde una indemnización de 20 días por año trabajado con un máximo de 12 mensualidades."
+    }
+  },
+  {
+    "id": "UT4-Q24",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué es el SMAC (Servicio de Mediación, Arbitraje y Conciliación)?",
+    "contexto": "Función del SMAC como vía previa para intentar resolver conflictos laborales antes de acudir al juzgado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El departamento interno de la empresa encargado de pagar las nóminas."
+      },
+      {
+        "clave": "b",
+        "texto": "Una agencia de colocación que busca empleo a los trabajadores despedidos."
+      },
+      {
+        "clave": "c",
+        "texto": "El órgano donde se intenta un acuerdo amistoso entre empresa y trabajador antes de acudir a la vía judicial."
+      },
+      {
+        "clave": "d",
+        "texto": "Un tribunal penal que juzga delitos cometidos dentro de las empresas."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El SMAC, Servicio de Mediación, Arbitraje y Conciliación, es el órgano administrativo donde trabajadores y empresas intentan llegar a un acuerdo antes de acudir a juicio. Se utiliza en muchos conflictos laborales, como despidos o reclamaciones de cantidad, mediante una papeleta de conciliación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el SMAC no pertenece internamente a la empresa ni gestiona el pago ordinario de nóminas. Es un órgano externo utilizado para intentar resolver conflictos laborales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el SMAC no busca empleo a trabajadores despedidos. Su función es facilitar un acuerdo entre trabajador y empresa antes de llegar al juzgado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el SMAC no es un tribunal penal. No juzga delitos, sino que interviene en conflictos laborales intentando una solución previa a la vía judicial."
+        }
+      ],
+      "resumen_didactico": "El SMAC es una vía previa al juzgado: se intenta que trabajador y empresa lleguen a un acuerdo sin necesidad de iniciar un procedimiento judicial.",
+      "ejemplo_practico": "Si una empresa debe dos meses de salario a un trabajador, este puede presentar una papeleta de conciliación ante el SMAC para intentar que la empresa reconozca la deuda y pacte el pago antes de ir a juicio.",
+      "conclusion_final": "La respuesta correcta es la c: el SMAC es el órgano donde se intenta alcanzar un acuerdo amistoso entre empresa y trabajador antes de acudir a la vía judicial."
+    }
+  },
+  {
+    "id": "UT4-Q25",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Cuál es la recomendación profesional si un técnico recibe una carta de despido o modificación con la que no está de acuerdo?",
+    "contexto": "Actuación recomendada ante una comunicación empresarial de despido o modificación sustancial con la que el trabajador no está conforme.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Firmar sin leer para evitar que el conflicto escale a niveles mayores."
+      },
+      {
+        "clave": "b",
+        "texto": "Negarse a firmar el documento para que no tenga validez legal."
+      },
+      {
+        "clave": "c",
+        "texto": "Firmar indicando \"No conforme\" junto a la fecha para preservar el derecho a reclamar."
+      },
+      {
+        "clave": "d",
+        "texto": "Romper el documento delante del responsable para demostrar desacuerdo."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda que, si el trabajador recibe una carta de despido o una comunicación de modificación sustancial con la que no está de acuerdo, firme el documento escribiendo \"No conforme\" junto a la fecha. Esto no significa aceptar el contenido de la carta, sino dejar constancia de que se ha recibido y reservarse el derecho a asesorarse y reclamar legalmente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque firmar sin leer puede perjudicar al trabajador. Aunque firmar no siempre significa aceptar, es recomendable dejar constancia expresa del desacuerdo mediante la expresión \"No conforme\"."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque negarse a firmar no impide necesariamente que el documento tenga efectos. La empresa puede dejar constancia de la entrega mediante testigos u otros medios. Lo más prudente es firmar como recibido, pero indicando \"No conforme\"."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque romper el documento no tiene utilidad legal y puede empeorar la situación. Ante un conflicto laboral, lo importante es actuar con calma, conservar pruebas y proteger el derecho a reclamar."
+        }
+      ],
+      "resumen_didactico": "Firmar \"No conforme\" sirve para dejar claro que has recibido el documento, pero que no aceptas su contenido. Es una forma prudente de proteger tus derechos sin bloquear el procedimiento.",
+      "ejemplo_practico": "Si una empresa entrega a un técnico DAW una carta cambiándole el horario de jornada intensiva a jornada partida y él no está de acuerdo, puede firmar la recepción escribiendo \"No conforme\" y la fecha. Después podrá asesorarse o acudir al SMAC si procede.",
+      "conclusion_final": "La respuesta correcta es la c: ante una carta de despido o modificación con la que no se está de acuerdo, conviene firmar indicando \"No conforme\" junto a la fecha para preservar el derecho a reclamar."
+    }
+  },
+  {
+    "id": "UT4-Q26",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué diferencia a la mediación de la conciliación en la resolución de conflictos?",
+    "contexto": "Diferencia entre dos vías extrajudiciales de resolución de conflictos laborales: conciliación y mediación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La mediación solo la pueden realizar los jueces y la conciliación los administrativos."
+      },
+      {
+        "clave": "b",
+        "texto": "La conciliación es obligatoria para ir a juicio y la mediación está prohibida en España."
+      },
+      {
+        "clave": "c",
+        "texto": "No existe ninguna diferencia; son términos sinónimos en el derecho laboral."
+      },
+      {
+        "clave": "d",
+        "texto": "En la mediación el tercero puede proponer soluciones, mientras que en la conciliación solo facilita el diálogo."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia conciliación y mediación dentro de las vías extrajudiciales de resolución de conflictos. En la conciliación, un tercero facilita que las partes dialoguen e intenten llegar a un acuerdo, pero no propone soluciones. En la mediación, el tercero escucha a las partes y puede proponer posibles soluciones, aunque estas no son obligatorias si las partes no las aceptan.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la mediación no está reservada exclusivamente a los jueces. Además, la conciliación tampoco se define simplemente como una función de administrativos, sino como una vía para intentar alcanzar un acuerdo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la mediación no está prohibida en España. El temario la incluye expresamente como una vía extrajudicial de resolución de conflictos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque conciliación y mediación no son sinónimos. Ambas buscan evitar el juicio, pero el papel del tercero es distinto en cada una."
+        }
+      ],
+      "resumen_didactico": "La diferencia clave está en el papel del tercero: en la conciliación ayuda a que las partes hablen; en la mediación puede además sugerir soluciones.",
+      "ejemplo_practico": "Si un trabajador reclama horas extra, en una conciliación el tercero intenta que empresa y trabajador lleguen a un acuerdo por sí mismos. En una mediación, el tercero podría proponer una fórmula concreta, como pagar una parte ahora y otra en el mes siguiente.",
+      "conclusion_final": "La respuesta correcta es la d: en la mediación el tercero puede proponer soluciones, mientras que en la conciliación solo facilita el diálogo entre las partes."
+    }
+  },
+  {
+    "id": "UT4-Q27",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Qué es un conflicto colectivo de trabajo?",
+    "contexto": "Diferencia entre conflicto individual y conflicto colectivo dentro del ámbito laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El retraso en el pago de la nómina a un único trabajador de la plantilla."
+      },
+      {
+        "clave": "b",
+        "texto": "Una discusión privada entre dos compañeros por motivos personales."
+      },
+      {
+        "clave": "c",
+        "texto": "La decisión de un técnico de solicitar una reducción de jornada."
+      },
+      {
+        "clave": "d",
+        "texto": "Una discrepancia que afecta a un grupo de trabajadores que defienden un interés común."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Un conflicto colectivo de trabajo es aquel que afecta a un grupo de trabajadores que defienden un interés común frente a la empresa. No se trata de un problema aislado de una sola persona, sino de una situación que repercute sobre una parte o la totalidad de la plantilla.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el retraso en el pago de la nómina a un único trabajador sería un conflicto individual, ya que afecta solo a esa persona."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque una discusión privada entre compañeros por motivos personales no representa necesariamente un conflicto laboral colectivo entre trabajadores y empresa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la solicitud de reducción de jornada de un técnico es una situación individual, no un conflicto que afecte a un grupo de trabajadores con un interés común."
+        }
+      ],
+      "resumen_didactico": "El conflicto colectivo aparece cuando el problema no afecta solo a una persona, sino a varios trabajadores que comparten una misma reivindicación laboral.",
+      "ejemplo_practico": "Si una empresa decide eliminar el plus de turnicidad a todo el equipo de trabajadores de un centro, el conflicto sería colectivo porque afecta a un grupo que defiende el mismo derecho o interés.",
+      "conclusion_final": "La respuesta correcta es la d: un conflicto colectivo es una discrepancia que afecta a un grupo de trabajadores que defienden un interés común."
+    }
+  },
+  {
+    "id": "UT4-Q28",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Cómo se denomina la decisión dictada por un tercero en un proceso de arbitraje que las partes están obligadas a cumplir?",
+    "contexto": "Identificación del nombre que recibe la solución obligatoria dictada por un árbitro en un proceso de arbitraje laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Papeleta de conciliación."
+      },
+      {
+        "clave": "b",
+        "texto": "Laudo."
+      },
+      {
+        "clave": "c",
+        "texto": "Sentencia judicial."
+      },
+      {
+        "clave": "d",
+        "texto": "Convenio colectivo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En el arbitraje, las partes aceptan previamente que un tercero neutral, llamado árbitro, dicte una solución obligatoria para resolver el conflicto. Esa decisión recibe el nombre de laudo y debe ser cumplida por las partes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la papeleta de conciliación es el documento que inicia el intento de conciliación ante el SMAC, no la decisión final de un arbitraje."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque una sentencia judicial la dicta un juez dentro de un procedimiento judicial. En el arbitraje, la decisión la dicta un árbitro y se llama laudo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un convenio colectivo es un acuerdo que regula condiciones laborales de un sector, empresa o grupo de trabajadores. No es la decisión concreta dictada en un arbitraje."
+        }
+      ],
+      "resumen_didactico": "En conciliación se intenta que las partes acuerden; en mediación el tercero puede proponer soluciones; en arbitraje el tercero decide. Esa decisión obligatoria se llama laudo.",
+      "ejemplo_practico": "Si una empresa y un grupo de trabajadores aceptan acudir a arbitraje por un conflicto sobre turnos, el árbitro estudiará el caso y dictará un laudo que ambas partes deberán cumplir.",
+      "conclusion_final": "La respuesta correcta es la b: la decisión obligatoria dictada por un tercero en un arbitraje se denomina laudo."
+    }
+  },
+  {
+    "id": "UT4-Q29",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "Un técnico observa que su empresa le paga un \"Plus de nocturnidad\". ¿A qué categoría pertenece este concepto?",
+    "contexto": "Clasificación del plus de nocturnidad dentro de los conceptos que pueden aparecer en una nómina.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Indemnización extrasalarial por gastos de manutención."
+      },
+      {
+        "clave": "b",
+        "texto": "Salario base por unidad de tiempo."
+      },
+      {
+        "clave": "c",
+        "texto": "Mejora voluntaria de la Seguridad Social."
+      },
+      {
+        "clave": "d",
+        "texto": "Complemento salarial de puesto de trabajo."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El plus de nocturnidad es un complemento salarial porque se añade al salario base por una circunstancia específica del puesto de trabajo: realizar la actividad en horario nocturno. No compensa un gasto del trabajador, sino que retribuye una condición especial en la prestación del servicio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque una indemnización extrasalarial por gastos de manutención compensa gastos que el trabajador ha tenido que realizar, como dietas o desplazamientos. El plus de nocturnidad no compensa un gasto, sino una condición del trabajo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el salario base es la cantidad principal fijada por unidad de tiempo o de obra, sin atender a circunstancias especiales. La nocturnidad es una circunstancia añadida y por eso se paga como complemento."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque una mejora voluntaria de la Seguridad Social está relacionada con prestaciones o protección social complementaria. El plus de nocturnidad pertenece a la estructura salarial de la nómina."
+        }
+      ],
+      "resumen_didactico": "Si una cantidad se suma al salario base por una condición especial del puesto, como trabajar de noche, estamos ante un complemento salarial.",
+      "ejemplo_practico": "Un técnico DAW trabaja durante dos semanas en horario de 22:00 a 06:00 para terminar el lanzamiento de una aplicación. La empresa le paga un plus de nocturnidad por realizar su trabajo en ese horario especial.",
+      "conclusion_final": "La respuesta correcta es la d: el plus de nocturnidad es un complemento salarial de puesto de trabajo."
+    }
+  },
+  {
+    "id": "UT4-Q30",
+    "tema": "UT4 Salario, seguridad social y conflictos",
+    "pregunta": "¿Por qué el conflicto laboral puede ser visto como una oportunidad en la gestión de equipos?",
+    "contexto": "Comprensión del conflicto laboral como una señal de ajuste dentro de una empresa y como oportunidad de mejora si se gestiona de forma constructiva.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque obliga a los sindicatos a disolverse para evitar problemas."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque indica que el sistema necesita un ajuste y puede llevar a soluciones constructivas si se gestiona bien."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque permite despedir a los trabajadores sin pagar indemnización."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque garantiza que la empresa no tenga que cumplir el convenio colectivo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el conflicto laboral no debe entenderse siempre como algo negativo. Puede aparecer cuando existen discrepancias de intereses o percepciones entre trabajadores y empresa sobre las condiciones de trabajo. Si se gestiona correctamente, el conflicto permite detectar que algo no funciona bien en la organización y buscar soluciones constructivas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el conflicto laboral no obliga a disolver sindicatos. Los sindicatos pueden intervenir precisamente para representar intereses colectivos y ayudar a canalizar el conflicto."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque un conflicto laboral no permite despedir sin indemnización. Los despidos deben ajustarse a la normativa laboral y sus consecuencias dependen del tipo de despido y de si es procedente o no."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el conflicto laboral no libera a la empresa de cumplir el convenio colectivo. El convenio sigue siendo una norma aplicable a las condiciones laborales del sector o empresa."
+        }
+      ],
+      "resumen_didactico": "Un conflicto laboral bien gestionado puede servir para corregir problemas internos, mejorar la comunicación y evitar que una tensión pequeña se convierta en un problema mayor.",
+      "ejemplo_practico": "En un equipo de desarrollo DAW, los programadores consideran que el plazo de entrega de una aplicación es demasiado corto para probarla bien. Si expresan el conflicto de forma profesional, la empresa puede ajustar el calendario y evitar errores graves en producción.",
+      "conclusion_final": "La respuesta correcta es la b: el conflicto laboral puede ser una oportunidad porque muestra que el sistema necesita un ajuste y puede generar soluciones constructivas si se gestiona bien."
+    }
+  }
+]

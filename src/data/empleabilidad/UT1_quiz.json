@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Una profesional decide analizar sus valores y comportamientos para entender cómo influyen en su toma de decisiones laborales. ¿Qué proceso está llevando a cabo según el temario?",
+    "contexto": "Análisis personal de valores, comportamientos y toma de decisiones laborales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Evaluación de amenazas del mercado"
+      },
+      {
+        "clave": "b",
+        "texto": "Planificación de microacreditaciones"
+      },
+      {
+        "clave": "c",
+        "texto": "Autoconocimiento"
+      },
+      {
+        "clave": "d",
+        "texto": "Análisis de oportunidades externas"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el autoconocimiento es la capacidad de comprender nuestras emociones, pensamientos, valores y comportamientos. Sirve para saber quiénes somos, qué fortalezas tenemos, qué límites debemos reconocer y cómo todo ello influye en nuestras decisiones profesionales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La evaluación de amenazas del mercado pertenece al análisis externo del DAFO. Se centra en factores negativos del entorno laboral, no en el análisis interno de valores y comportamientos personales."
+        },
+        {
+          "clave": "b",
+          "motivo": "La planificación de microacreditaciones está relacionada con la formación profesional y la mejora del perfil mediante cursos breves o especializados, no con comprender los propios valores y comportamientos."
+        },
+        {
+          "clave": "d",
+          "motivo": "El análisis de oportunidades externas también forma parte del DAFO, pero se refiere a posibilidades favorables del entorno, como demanda laboral o nuevas especializaciones. No describe un proceso de reflexión personal interna."
+        }
+      ],
+      "resumen_didactico": "Cuando una persona analiza sus emociones, pensamientos, valores y comportamientos para tomar mejores decisiones laborales, está realizando un proceso de autoconocimiento.",
+      "ejemplo_practico": "Una trabajadora descubre que valora mucho la estabilidad y el trabajo en equipo. Gracias a ese autoconocimiento, decide buscar un puesto en una empresa con buen clima laboral en lugar de aceptar un empleo mejor pagado pero muy individualista.",
+      "conclusion_final": "La respuesta correcta es autoconocimiento, porque el caso describe una reflexión interna sobre valores y comportamientos para orientar decisiones profesionales."
+    }
+  },
+  {
+    "id": "UT1-Q02",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "En el contexto del autoconocimiento, ¿qué implica la fase de aceptación?",
+    "contexto": "Fases del autoconocimiento aplicadas al desarrollo personal y profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Salir de la zona de confort buscando nuevas experiencias"
+      },
+      {
+        "clave": "b",
+        "texto": "Reconocer con honestidad tanto virtudes como defectos"
+      },
+      {
+        "clave": "c",
+        "texto": "Pedir la opinión de terceros para contrastar la imagen propia"
+      },
+      {
+        "clave": "d",
+        "texto": "Reflexionar a diario sobre las reacciones ante retos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la aceptación es uno de los pasos fundamentales del autoconocimiento. Consiste en reconocer con total honestidad las propias virtudes y defectos. No se trata solo de ver lo positivo, sino también de admitir los puntos débiles para poder trabajarlos de forma realista.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Salir de la zona de confort y buscar nuevas experiencias corresponde a la fase de exploración, no a la aceptación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Pedir la opinión de terceros para contrastar la imagen propia corresponde a la fase de retroalimentación, porque implica recibir información externa sobre cómo nos ven los demás."
+        },
+        {
+          "clave": "d",
+          "motivo": "Reflexionar a diario sobre las reacciones ante retos corresponde a la autoobservación, ya que se centra en analizar cómo actuamos o sentimos ante distintas situaciones."
+        }
+      ],
+      "resumen_didactico": "La aceptación consiste en mirar de frente las propias fortalezas y debilidades, sin autoengaño. Es una fase clave porque permite construir un plan de mejora realista.",
+      "ejemplo_practico": "Una estudiante reconoce que se le da muy bien comunicarse con los demás, pero también acepta que suele organizar mal su tiempo. Al admitirlo, puede buscar técnicas de planificación para mejorar.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque la aceptación implica reconocer honestamente tanto las virtudes como los defectos personales."
+    }
+  },
+  {
+    "id": "UT1-Q03",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Un técnico superior solicita a sus compañeros una valoración sobre su capacidad de liderazgo para mejorar su perfil profesional. ¿A qué paso del autoconocimiento corresponde esta acción?",
+    "contexto": "Solicitud de opinión externa para contrastar la propia imagen profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Retroalimentación"
+      },
+      {
+        "clave": "b",
+        "texto": "Exploración"
+      },
+      {
+        "clave": "c",
+        "texto": "Integración"
+      },
+      {
+        "clave": "d",
+        "texto": "Autoobservación"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la retroalimentación consiste en pedir la opinión de los demás para contrastar la propia imagen. A veces, otras personas pueden ver en nosotros capacidades que no hemos identificado claramente, como liderazgo, comunicación o trabajo en equipo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La exploración consiste en salir de la zona de confort y buscar nuevas experiencias para conocerse mejor. En este caso, el técnico no está probando una experiencia nueva, sino pidiendo una valoración externa."
+        },
+        {
+          "clave": "c",
+          "motivo": "La integración es el paso en el que se alinean las decisiones personales y profesionales con los propios valores. Aquí no se habla de alinear decisiones con valores, sino de recibir opinión de otras personas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La autoobservación implica reflexionar sobre las propias reacciones ante retos o situaciones. En este caso, la información no procede de la observación personal, sino de la opinión de los compañeros."
+        }
+      ],
+      "resumen_didactico": "Cuando una persona pide a otros que valoren sus capacidades para contrastar cómo se ve a sí misma, está utilizando la retroalimentación.",
+      "ejemplo_practico": "Un alumno de DAW cree que no destaca liderando equipos, pero sus compañeros le dicen que organiza bien las tareas y ayuda a resolver conflictos. Esa opinión externa le permite reconocer una competencia profesional importante.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque solicitar una valoración a los compañeros corresponde al paso de retroalimentación dentro del autoconocimiento."
+    }
+  },
+  {
+    "id": "UT1-Q04",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Una persona decide alinear sus futuras decisiones laborales con sus principios éticos y de justicia social. ¿Cómo se denomina técnicamente este paso final?",
+    "contexto": "Alineación de decisiones profesionales futuras con valores personales y principios éticos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Integración"
+      },
+      {
+        "clave": "b",
+        "texto": "Aceptación"
+      },
+      {
+        "clave": "c",
+        "texto": "Análisis DAFO"
+      },
+      {
+        "clave": "d",
+        "texto": "Exploración"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la integración es el paso final del autoconocimiento. Consiste en alinear las decisiones personales y profesionales con los propios valores. Si una persona considera fundamental la justicia social, sus decisiones laborales deberían orientarse hacia contextos coherentes con ese principio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La aceptación consiste en reconocer con honestidad las propias virtudes y defectos. No se centra en tomar decisiones futuras alineadas con valores, sino en asumir la realidad personal de forma sincera."
+        },
+        {
+          "clave": "c",
+          "motivo": "El análisis DAFO es una herramienta para estudiar debilidades, amenazas, fortalezas y oportunidades. Aunque puede ayudar a tomar decisiones, no es el nombre técnico del paso final del autoconocimiento descrito en la pregunta."
+        },
+        {
+          "clave": "d",
+          "motivo": "La exploración implica salir de la zona de confort y buscar nuevas experiencias para conocerse mejor. En este caso, la persona no está explorando nuevas experiencias, sino alineando sus decisiones con sus valores."
+        }
+      ],
+      "resumen_didactico": "La integración aparece cuando una persona une lo que sabe de sí misma con sus decisiones profesionales, actuando de forma coherente con sus valores.",
+      "ejemplo_practico": "Una persona que valora profundamente la justicia social decide orientar su carrera hacia una ONG, la intervención comunitaria o la integración social, porque esos ámbitos encajan mejor con sus principios.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque alinear las decisiones laborales con los propios valores corresponde al paso de integración."
+    }
+  },
+  {
+    "id": "UT1-Q05",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Cuál es la definición correcta de competencias transversales en el ámbito de la Formación Profesional?",
+    "contexto": "Definición de competencias transversales dentro del desarrollo profesional y la empleabilidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Conocimientos teóricos necesarios para aprobar un examen oficial"
+      },
+      {
+        "clave": "b",
+        "texto": "Habilidades y actitudes útiles en prácticamente cualquier profesión"
+      },
+      {
+        "clave": "c",
+        "texto": "Procedimientos legales para convalidar títulos universitarios"
+      },
+      {
+        "clave": "d",
+        "texto": "Habilidades técnicas exclusivas de un sector específico como la programación"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, las competencias transversales son habilidades y actitudes útiles en prácticamente cualquier profesión, independientemente del sector. Incluyen capacidades como el trabajo en equipo, la comunicación, la iniciativa o la adaptación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los conocimientos teóricos pueden formar parte de una formación concreta, pero no definen las competencias transversales. Estas no se limitan a aprobar exámenes, sino que sirven para desenvolverse mejor en distintos contextos laborales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los procedimientos legales para convalidar títulos universitarios están relacionados con pasarelas y reconocimiento de estudios, no con competencias transversales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las habilidades técnicas exclusivas de un sector específico son competencias técnicas o profesionales, no transversales. Por ejemplo, programar en JavaScript es una competencia técnica; comunicarse bien con el equipo es una competencia transversal."
+        }
+      ],
+      "resumen_didactico": "Las competencias transversales son capacidades generales que sirven en casi cualquier profesión. No dependen de un sector concreto, sino que mejoran la empleabilidad en muchos ámbitos.",
+      "ejemplo_practico": "Un desarrollador web necesita saber programar, pero también comunicarse con el equipo, adaptarse a cambios del proyecto y resolver problemas. Estas últimas son competencias transversales.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque las competencias transversales son habilidades y actitudes aplicables a prácticamente cualquier profesión."
+    }
+  },
+  {
+    "id": "UT1-Q06",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Según las tendencias actuales de empleabilidad, ¿qué valoran especialmente los reclutadores en un candidato además de sus conocimientos técnicos?",
+    "contexto": "Valor del autoconocimiento en los procesos de selección y empleabilidad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que ignore las debilidades internas para centrarse en las fortalezas"
+      },
+      {
+        "clave": "b",
+        "texto": "Que conozca sus propios límites y potencias"
+      },
+      {
+        "clave": "c",
+        "texto": "Que posea exclusivamente títulos de Grado D"
+      },
+      {
+        "clave": "d",
+        "texto": "Que no haya cambiado nunca de sector profesional"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, los reclutadores actuales no solo buscan a alguien que sepa realizar una tarea, sino también a una persona que sepa quién es. Un candidato que conoce sus límites y sus potencias transmite mayor fiabilidad, madurez profesional y resiliencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Ignorar las debilidades internas es lo contrario del autoconocimiento. El temario insiste en reconocer tanto virtudes como defectos para poder mejorar y tomar mejores decisiones profesionales."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Grado D corresponde a los ciclos formativos de grado básico, medio o superior, pero los reclutadores no valoran exclusivamente el título. También tienen en cuenta competencias transversales, autoconocimiento, actitud y capacidad de adaptación."
+        },
+        {
+          "clave": "d",
+          "motivo": "No haber cambiado nunca de sector profesional no aparece como un valor especial en el temario. De hecho, la Formación Profesional se presenta como un sistema flexible que permite evolucionar, especializarse y construir distintos itinerarios."
+        }
+      ],
+      "resumen_didactico": "Además de los conocimientos técnicos, se valora que el candidato tenga autoconocimiento: saber cuáles son sus fortalezas, sus límites y cómo puede aportar valor en un entorno profesional.",
+      "ejemplo_practico": "Un programador junior puede saber usar Angular, pero si además reconoce que necesita mejorar su gestión del tiempo y sabe explicar sus puntos fuertes al equipo, será percibido como un perfil más fiable y preparado.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el temario destaca que los reclutadores valoran especialmente a las personas que conocen sus propios límites y potencias."
+    }
+  },
+  {
+    "id": "UT1-Q07",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué componente del análisis DAFO se refiere a los factores internos que restan competitividad a un profesional para alcanzar sus objetivos?",
+    "contexto": "Identificación de los elementos internos negativos dentro del análisis DAFO profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Oportunidades"
+      },
+      {
+        "clave": "b",
+        "texto": "Amenazas"
+      },
+      {
+        "clave": "c",
+        "texto": "Debilidades"
+      },
+      {
+        "clave": "d",
+        "texto": "Fortalezas"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el análisis DAFO permite evaluar debilidades, amenazas, fortalezas y oportunidades. Las debilidades son factores internos negativos: aspectos personales, formativos o profesionales que pueden restar competitividad o dificultar el logro de objetivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las oportunidades son factores externos positivos del entorno, como una alta demanda laboral, nuevas especializaciones o tendencias favorables del mercado. No son factores internos negativos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las amenazas son factores externos negativos, como la competencia laboral, los cambios tecnológicos o las exigencias crecientes del mercado. No pertenecen al plano interno del profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las fortalezas son factores internos positivos, es decir, capacidades, habilidades o recursos personales que aumentan la competitividad profesional. Son lo contrario de las debilidades."
+        }
+      ],
+      "resumen_didactico": "Dentro del DAFO, las debilidades son los puntos internos que limitan o dificultan el avance profesional. Identificarlas permite crear un plan de mejora realista.",
+      "ejemplo_practico": "Una estudiante de DAW tiene buena capacidad lógica, pero se organiza mal y entrega tarde sus proyectos. Esa mala gestión del tiempo sería una debilidad interna dentro de su DAFO.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque las debilidades son los factores internos que reducen la competitividad de un profesional."
+    }
+  },
+  {
+    "id": "UT1-Q08",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "En el análisis estratégico personal, ¿cómo se definen las fortalezas?",
+    "contexto": "Identificación de los factores internos positivos dentro del análisis DAFO personal y profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cambios en el mercado laboral que exigen nuevas titulaciones"
+      },
+      {
+        "clave": "b",
+        "texto": "Situaciones externas que no se pueden controlar"
+      },
+      {
+        "clave": "c",
+        "texto": "Atributos internos que permiten sobresalir y dan ventaja competitiva"
+      },
+      {
+        "clave": "d",
+        "texto": "Tendencias del exterior que pueden impulsar el éxito"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el análisis DAFO sirve para evaluar debilidades, amenazas, fortalezas y oportunidades. Las fortalezas son factores internos positivos: capacidades, habilidades, valores, conocimientos o actitudes que ayudan a una persona a destacar y a construir una ventaja competitiva en su desarrollo profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los cambios en el mercado laboral que exigen nuevas titulaciones no son fortalezas, porque pertenecen al entorno externo. Dependiendo del caso, podrían actuar como amenazas si dificultan el acceso al empleo o exigen adaptarse rápidamente."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las situaciones externas que no se pueden controlar pertenecen al análisis del entorno. Si son negativas, se consideran amenazas, no fortalezas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las tendencias externas que pueden impulsar el éxito son oportunidades, porque proceden del entorno y pueden aprovecharse para mejorar la empleabilidad. No son atributos internos de la persona."
+        }
+      ],
+      "resumen_didactico": "Las fortalezas son los puntos fuertes internos de una persona. Representan aquello que ya posee y que puede usar para destacar profesionalmente.",
+      "ejemplo_practico": "Una estudiante de DAW que tiene facilidad para resolver problemas, aprende rápido y sabe comunicarse bien con su equipo posee fortalezas internas que pueden darle ventaja en sus prácticas o en una entrevista laboral.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque las fortalezas son atributos internos positivos que permiten sobresalir y obtener una ventaja competitiva."
+    }
+  },
+  {
+    "id": "UT1-Q09",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Un estudiante de FP detecta que el mercado laboral exige cada vez más competencias en bilingüismo, algo que él aún no domina. ¿En qué cuadrante del DAFO situaría este factor?",
+    "contexto": "Análisis DAFO aplicado a una exigencia externa del mercado laboral relacionada con el bilingüismo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Fortalezas"
+      },
+      {
+        "clave": "b",
+        "texto": "Amenazas"
+      },
+      {
+        "clave": "c",
+        "texto": "Debilidades"
+      },
+      {
+        "clave": "d",
+        "texto": "Oportunidades"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, dentro del análisis DAFO las amenazas son factores externos que pueden dificultar el desarrollo profesional. Si el mercado laboral exige cada vez más bilingüismo y el estudiante todavía no domina esa competencia, esa exigencia externa puede convertirse en un obstáculo para su empleabilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las fortalezas son atributos internos positivos que permiten destacar, como una buena comunicación, capacidad de adaptación o dominio técnico. En este caso, el bilingüismo no es una fortaleza del estudiante porque todavía no lo domina."
+        },
+        {
+          "clave": "c",
+          "motivo": "La falta de dominio del bilingüismo podría considerarse una debilidad interna del estudiante, pero la pregunta se centra en que el mercado laboral exige cada vez más esa competencia. Esa presión del entorno corresponde principalmente a una amenaza."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las oportunidades son factores externos favorables que pueden impulsar el éxito profesional. En este caso, la exigencia del mercado no se presenta como una ventaja inmediata, sino como una dificultad porque el estudiante aún no posee esa competencia."
+        }
+      ],
+      "resumen_didactico": "En el DAFO, si algo viene del entorno y puede perjudicarte o dificultar tu acceso al empleo, se clasifica como amenaza.",
+      "ejemplo_practico": "Si muchas empresas empiezan a pedir inglés B2 para contratar técnicos superiores y un estudiante todavía no tiene ese nivel, esa exigencia del mercado actúa como una amenaza para su empleabilidad.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque la exigencia creciente de bilingüismo procede del entorno laboral y puede dificultar el acceso al empleo si el estudiante aún no domina esa competencia."
+    }
+  },
+  {
+    "id": "UT1-Q10",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué representa una oportunidad dentro de la metodología de análisis DAFO?",
+    "contexto": "Identificación de los factores externos positivos dentro del análisis DAFO aplicado al desarrollo profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un cambio o tendencia externa que puede favorecer nuestra carrera"
+      },
+      {
+        "clave": "b",
+        "texto": "Una característica personal que nos hace mejores que la competencia"
+      },
+      {
+        "clave": "c",
+        "texto": "Un rasgo de la personalidad que dificulta el trabajo en equipo"
+      },
+      {
+        "clave": "d",
+        "texto": "Una carencia formativa que debemos corregir de inmediato"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el análisis DAFO permite estudiar debilidades, amenazas, fortalezas y oportunidades. Las oportunidades son factores externos positivos: cambios, tendencias o situaciones del entorno que pueden favorecer el desarrollo profesional si se saben aprovechar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una característica personal que nos hace mejores que la competencia corresponde a una fortaleza, porque es un factor interno positivo del profesional."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un rasgo de la personalidad que dificulta el trabajo en equipo sería una debilidad, porque es un factor interno negativo que puede limitar el desarrollo profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una carencia formativa que debemos corregir también pertenece a las debilidades, ya que se trata de una limitación interna relacionada con la preparación o las competencias de la persona."
+        }
+      ],
+      "resumen_didactico": "En el DAFO, una oportunidad es algo favorable que viene del entorno y que puede ayudarte a avanzar profesionalmente si lo aprovechas bien.",
+      "ejemplo_practico": "Si en el sector tecnológico aumenta la demanda de especialistas en ciberseguridad, un estudiante de DAW puede verlo como una oportunidad para formarse en esa área y mejorar su empleabilidad.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque una oportunidad es un cambio o tendencia externa que puede favorecer nuestra carrera profesional."
+    }
+  },
+  {
+    "id": "UT1-Q11",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "De acuerdo con la Ley Orgánica 3/2022, ¿cómo se organiza actualmente el sistema de Formación Profesional en España?",
+    "contexto": "Organización actual del sistema de Formación Profesional en España tras la Ley Orgánica 3/2022.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En tres niveles aislados sin conexión entre ellos"
+      },
+      {
+        "clave": "b",
+        "texto": "En un sistema rígido que solo permite el acceso mediante examen"
+      },
+      {
+        "clave": "c",
+        "texto": "En grados universitarios de larga duración exclusivamente"
+      },
+      {
+        "clave": "d",
+        "texto": "En cinco niveles correlativos denominados grados (A, B, C, D y E)"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, desde la entrada en vigor de la Ley Orgánica 3/2022, la Formación Profesional en España se organiza como un sistema flexible y modular dividido en cinco niveles correlativos: los grados A, B, C, D y E. Esta estructura permite construir itinerarios formativos progresivos y adaptados a diferentes necesidades profesionales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No se organiza en tres niveles aislados. El temario señala que el sistema actual es flexible, modular y progresivo, por lo que los distintos grados están conectados y permiten avanzar dentro del itinerario formativo."
+        },
+        {
+          "clave": "b",
+          "motivo": "No se trata de un sistema rígido basado exclusivamente en exámenes. La nueva Formación Profesional busca facilitar el aprendizaje continuo, la acreditación de competencias y la movilidad entre niveles."
+        },
+        {
+          "clave": "c",
+          "motivo": "La Formación Profesional no se organiza exclusivamente en grados universitarios. Los grados universitarios pertenecen al sistema universitario, mientras que la FP se estructura en grados A, B, C, D y E."
+        }
+      ],
+      "resumen_didactico": "La Ley Orgánica 3/2022 transforma la Formación Profesional en un sistema más flexible y modular, organizado en cinco grados progresivos: A, B, C, D y E.",
+      "ejemplo_practico": "Una persona puede empezar con una microacreditación de Grado A, continuar con un certificado profesional de Grado C, cursar después un ciclo formativo de Grado D y finalmente especializarse mediante un Grado E.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el sistema actual de Formación Profesional se organiza en cinco niveles correlativos denominados grados A, B, C, D y E."
+    }
+  },
+  {
+    "id": "UT1-Q12",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué tipo de formación representan los Grados A dentro del nuevo ecosistema de la Formación Profesional?",
+    "contexto": "Clasificación de los Grados A dentro del sistema flexible y modular de Formación Profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Másteres de formación profesional"
+      },
+      {
+        "clave": "b",
+        "texto": "Certificados profesionales de 300 a 600 horas"
+      },
+      {
+        "clave": "c",
+        "texto": "Microacreditaciones de corta duración sobre habilidades específicas"
+      },
+      {
+        "clave": "d",
+        "texto": "Ciclos formativos de grado superior"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, los Grados A dentro del sistema de Formación Profesional son microacreditaciones de corta duración, normalmente de entre 30 y 50 horas, centradas en habilidades muy específicas. Sirven para adquirir competencias concretas que pueden mejorar la empleabilidad de forma rápida y acumulativa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los másteres de formación profesional o cursos de especialización corresponden al Grado E, que representa un nivel avanzado de especialización dentro de la FP."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los certificados profesionales de 300 a 600 horas corresponden al Grado C, no al Grado A. Son formaciones más amplias que una microacreditación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los ciclos formativos de grado básico, medio o superior pertenecen al Grado D. Por tanto, un ciclo formativo de grado superior no es un Grado A."
+        }
+      ],
+      "resumen_didactico": "Los Grados A son pequeñas piezas formativas del sistema de FP. Permiten acreditar habilidades concretas sin necesidad de cursar inicialmente una formación larga.",
+      "ejemplo_practico": "Un estudiante de DAW podría realizar una microacreditación de Grado A sobre una herramienta concreta, como análisis de datos, automatización o uso de un software específico, para reforzar su perfil profesional.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque los Grados A son microacreditaciones de corta duración centradas en habilidades específicas."
+    }
+  },
+  {
+    "id": "UT1-Q13",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Un trabajador necesita acreditar una unidad formativa amplia para mejorar su posición. ¿A qué grado del sistema de FP corresponde esta formación?",
+    "contexto": "Clasificación de una unidad formativa amplia dentro del sistema de grados de la Formación Profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Grado E"
+      },
+      {
+        "clave": "b",
+        "texto": "Grado A"
+      },
+      {
+        "clave": "c",
+        "texto": "Grado B"
+      },
+      {
+        "clave": "d",
+        "texto": "Grado D"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el Grado B corresponde a certificados de competencia vinculados a unidades formativas más amplias. Se sitúa por encima de las microacreditaciones de Grado A y permite reconocer una competencia concreta dentro del sistema modular de Formación Profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El Grado E corresponde a cursos de especialización o másteres de Formación Profesional. Está orientado a una especialización avanzada, no a acreditar una unidad formativa amplia."
+        },
+        {
+          "clave": "b",
+          "motivo": "El Grado A corresponde a microacreditaciones de corta duración, normalmente centradas en habilidades muy específicas. No es el grado asociado a unidades formativas más amplias."
+        },
+        {
+          "clave": "d",
+          "motivo": "El Grado D corresponde a ciclos formativos de grado básico, medio o superior. Es una formación más completa y estructurada que una unidad formativa amplia concreta."
+        }
+      ],
+      "resumen_didactico": "Dentro del sistema de FP, el Grado B acredita competencias asociadas a unidades formativas más amplias que una microacreditación, pero no llega a ser un ciclo formativo completo.",
+      "ejemplo_practico": "Un trabajador que ya domina parte de una profesión puede acreditar una unidad de competencia mediante un certificado de Grado B para mejorar su perfil sin cursar todavía un ciclo completo.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el Grado B corresponde a certificados de competencia vinculados a unidades formativas más amplias."
+    }
+  },
+  {
+    "id": "UT1-Q14",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué equivalencia tienen las formaciones integradas en el Grado C del sistema de FP?",
+    "contexto": "Clasificación de las formaciones de Grado C dentro del sistema modular de Formación Profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Microacreditaciones de 30 horas"
+      },
+      {
+        "clave": "b",
+        "texto": "Certificados profesionales"
+      },
+      {
+        "clave": "c",
+        "texto": "Cursos de especialización de vanguardia"
+      },
+      {
+        "clave": "d",
+        "texto": "Ciclos formativos de grado medio"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el Grado C del sistema de Formación Profesional corresponde a los certificados profesionales, con una duración aproximada de entre 300 y 600 horas. Estas formaciones permiten acreditar competencias profesionales más completas que las microacreditaciones o certificados de competencia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las microacreditaciones de corta duración, normalmente de entre 30 y 50 horas, corresponden al Grado A, no al Grado C."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los cursos de especialización o másteres de Formación Profesional corresponden al Grado E, que representa la cima de la especialización dentro del sistema de FP."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los ciclos formativos de grado básico, medio o superior corresponden al Grado D. Por tanto, un ciclo formativo de grado medio no pertenece al Grado C."
+        }
+      ],
+      "resumen_didactico": "El Grado C equivale a certificados profesionales. Son formaciones más amplias que una microacreditación y permiten acreditar competencias profesionales completas dentro de un área.",
+      "ejemplo_practico": "Una persona que quiere mejorar su empleabilidad puede cursar un certificado profesional de Grado C de 300 a 600 horas para acreditar oficialmente competencias en un sector concreto.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque las formaciones de Grado C equivalen a certificados profesionales."
+    }
+  },
+  {
+    "id": "UT1-Q15",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿En qué nivel de la estructura de grados de FP se encuentran los ciclos formativos de grado básico, medio y superior?",
+    "contexto": "Ubicación de los ciclos formativos dentro de la estructura de grados del sistema de Formación Profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Grado B"
+      },
+      {
+        "clave": "b",
+        "texto": "Grado D"
+      },
+      {
+        "clave": "c",
+        "texto": "Grado E"
+      },
+      {
+        "clave": "d",
+        "texto": "Grado C"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el Grado D corresponde a los ciclos formativos de grado básico, grado medio y grado superior. Es el nivel en el que se encuentra el alumnado que cursa un ciclo formativo dentro del sistema de Formación Profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El Grado B corresponde a certificados de competencia vinculados a unidades formativas más amplias, no a ciclos formativos completos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Grado E corresponde a cursos de especialización o másteres de Formación Profesional. Es un nivel posterior orientado a la especialización avanzada."
+        },
+        {
+          "clave": "d",
+          "motivo": "El Grado C corresponde a certificados profesionales de entre 300 y 600 horas, no a ciclos formativos de grado básico, medio o superior."
+        }
+      ],
+      "resumen_didactico": "Dentro del sistema de FP, los ciclos formativos pertenecen al Grado D. Este grado incluye la formación reglada de grado básico, medio y superior.",
+      "ejemplo_practico": "Un estudiante que está cursando Desarrollo de Aplicaciones Web, Administración y Finanzas o Educación Infantil en grado superior está realizando una formación de Grado D.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque los ciclos formativos de grado básico, medio y superior pertenecen al Grado D."
+    }
+  },
+  {
+    "id": "UT1-Q16",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Cuál es el objetivo principal del Grado E en el sistema de Formación Profesional?",
+    "contexto": "Finalidad del Grado E dentro de la estructura modular de la Formación Profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ofrecer cursos de especialización o másteres de FP para expertos"
+      },
+      {
+        "clave": "b",
+        "texto": "Acreditar la experiencia laboral de más de diez años"
+      },
+      {
+        "clave": "c",
+        "texto": "Iniciar la formación básica en un sector profesional"
+      },
+      {
+        "clave": "d",
+        "texto": "Facilitar el acceso a la universidad desde el grado medio"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el Grado E representa la cima de la especialización dentro del sistema de Formación Profesional. Incluye cursos de especialización o másteres de FP orientados a convertir al alumnado o al profesional en experto en áreas avanzadas o de vanguardia.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La acreditación de la experiencia laboral es un mecanismo que permite reconocer competencias adquiridas trabajando, pero no define el objetivo principal del Grado E."
+        },
+        {
+          "clave": "c",
+          "motivo": "Iniciar la formación básica en un sector profesional no corresponde al Grado E. Este grado está pensado para especializarse después de una base formativa previa, no para comenzar desde cero."
+        },
+        {
+          "clave": "d",
+          "motivo": "El acceso a la universidad y las convalidaciones están relacionados con pasarelas formativas, especialmente desde ciclos superiores, pero no son el objetivo principal del Grado E."
+        }
+      ],
+      "resumen_didactico": "El Grado E sirve para profundizar y especializarse en un área concreta después de haber adquirido una base profesional previa.",
+      "ejemplo_practico": "Una persona titulada en Administración y Finanzas puede realizar un curso de especialización de Grado E en big data para orientar su perfil hacia el análisis financiero avanzado o el control de gestión.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el Grado E está destinado a ofrecer cursos de especialización o másteres de Formación Profesional para alcanzar un perfil experto."
+    }
+  },
+  {
+    "id": "UT1-Q17",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Cómo se denominan los mecanismos que permiten el reconocimiento de créditos entre diferentes enseñanzas para facilitar la movilidad del alumnado?",
+    "contexto": "Reconocimiento de créditos o módulos entre diferentes enseñanzas dentro del sistema de Formación Profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Análisis de microacreditaciones"
+      },
+      {
+        "clave": "b",
+        "texto": "Itinerarios de alto impacto"
+      },
+      {
+        "clave": "c",
+        "texto": "Objetivos SMART de movilidad"
+      },
+      {
+        "clave": "d",
+        "texto": "Pasarelas y convalidaciones"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, las pasarelas y convalidaciones son los mecanismos legales que permiten el reconocimiento de créditos o módulos entre diferentes enseñanzas. Su finalidad es facilitar la movilidad del alumnado y evitar que una persona tenga que volver a estudiar contenidos que ya ha superado previamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El análisis de microacreditaciones no es el nombre técnico de estos mecanismos. Las microacreditaciones pertenecen al Grado A y sirven para acreditar habilidades específicas, no para reconocer créditos entre enseñanzas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los itinerarios de alto impacto se relacionan con la planificación estratégica de la carrera profesional y la especialización, pero no son mecanismos legales de reconocimiento de créditos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los objetivos SMART sirven para formular metas específicas, medibles, alcanzables, relevantes y con tiempo definido. No son procedimientos de reconocimiento académico entre enseñanzas."
+        }
+      ],
+      "resumen_didactico": "Cuando una enseñanza reconoce créditos, módulos o aprendizajes realizados en otra, hablamos de pasarelas y convalidaciones.",
+      "ejemplo_practico": "Una persona que ha cursado un ciclo superior puede acceder a estudios universitarios y obtener el reconocimiento de determinados créditos ECTS, evitando repetir contenidos ya trabajados.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque los mecanismos que permiten reconocer créditos entre enseñanzas se denominan pasarelas y convalidaciones."
+    }
+  },
+  {
+    "id": "UT1-Q18",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué posibilidad ofrece el sistema actual a una persona que posee un título de Grado Universitario y quiere estudiar FP?",
+    "contexto": "Movilidad formativa desde la universidad hacia la Formación Profesional mediante pasarelas y convalidaciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "No puede acceder a la FP si ya tiene estudios universitarios"
+      },
+      {
+        "clave": "b",
+        "texto": "Puede validar contenidos y obtener el título de forma más ágil"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo puede acceder mediante una prueba de acceso de grado básico"
+      },
+      {
+        "clave": "d",
+        "texto": "Debe cursar obligatoriamente todos los módulos del ciclo"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el sistema de pasarelas funciona en ambas direcciones. Una persona que ya posee un grado universitario puede validar contenidos y obtener un título de técnico superior de forma más ágil, evitando repetir aprendizajes o módulos equivalentes que ya ha superado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque tener estudios universitarios no impide acceder a la Formación Profesional. El sistema actual busca facilitar la movilidad entre enseñanzas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el temario no indica que una persona con grado universitario tenga que acceder únicamente mediante una prueba de grado básico. El caso se relaciona con la validación de contenidos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque precisamente las pasarelas y convalidaciones permiten reconocer contenidos ya cursados, evitando tener que repetir obligatoriamente todos los módulos."
+        }
+      ],
+      "resumen_didactico": "El sistema actual permite que una persona con estudios universitarios pueda acceder a la FP y aprovechar parte de su formación previa mediante convalidaciones.",
+      "ejemplo_practico": "Una persona graduada en Administración de Empresas que decide cursar Administración y Finanzas puede solicitar la convalidación de ciertos módulos relacionados con contabilidad, gestión o empresa si ya ha trabajado esos contenidos en la universidad.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque una persona con un grado universitario puede validar contenidos y obtener el título de FP de forma más ágil."
+    }
+  },
+  {
+    "id": "UT1-Q19",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué concepto define el conjunto secuencial de etapas formativas y experiencias laborales que una persona recorre para alcanzar sus metas?",
+    "contexto": "Definición de itinerario profesional dentro de la planificación formativa y laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Competencia transversal"
+      },
+      {
+        "clave": "b",
+        "texto": "Análisis DAFO"
+      },
+      {
+        "clave": "c",
+        "texto": "Diagrama de Gantt"
+      },
+      {
+        "clave": "d",
+        "texto": "Itinerario profesional"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, un itinerario profesional es el conjunto secuencial de etapas formativas y experiencias laborales que una persona recorre para alcanzar sus metas de carrera. Sirve para orientar el camino profesional, decidir qué formación realizar, qué experiencias buscar y hacia qué tipo de perfil se quiere avanzar.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una competencia transversal es una habilidad o actitud útil en muchas profesiones, como la comunicación, el trabajo en equipo o la adaptación. No define una secuencia de etapas formativas y laborales."
+        },
+        {
+          "clave": "b",
+          "motivo": "El análisis DAFO es una herramienta para identificar debilidades, amenazas, fortalezas y oportunidades. Ayuda a tomar decisiones, pero no es el recorrido formativo y laboral de una persona."
+        },
+        {
+          "clave": "c",
+          "motivo": "El diagrama de Gantt es una herramienta gráfica de planificación temporal. Permite organizar tareas en el tiempo, pero no define el conjunto de etapas de una carrera profesional."
+        }
+      ],
+      "resumen_didactico": "El itinerario profesional es la ruta que una persona va construyendo mediante estudios, experiencias laborales, especializaciones y decisiones estratégicas para alcanzar sus objetivos de carrera.",
+      "ejemplo_practico": "Un estudiante de DAW puede diseñar un itinerario profesional que incluya terminar el ciclo, hacer prácticas en una empresa tecnológica, especializarse en ciberseguridad, obtener una certificación y buscar empleo como desarrollador seguro o analista junior.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el conjunto secuencial de etapas formativas y experiencias laborales se denomina itinerario profesional."
+    }
+  },
+  {
+    "id": "UT1-Q20",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "En el mercado laboral actual, ¿cuál es el perfil que suelen premiar las empresas según el temario?",
+    "contexto": "Valoración de perfiles profesionales híbridos en el mercado laboral actual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Perfiles que solo poseen formación teórica universitaria"
+      },
+      {
+        "clave": "b",
+        "texto": "Perfiles híbridos que combinan técnica con competencias digitales o emocionales"
+      },
+      {
+        "clave": "c",
+        "texto": "Perfiles que evitan el uso de herramientas tecnológicas"
+      },
+      {
+        "clave": "d",
+        "texto": "Perfiles generalistas sin especialización alguna"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el mercado laboral actual premia los perfiles híbridos. Esto significa que no basta con tener una base técnica, sino que es muy valioso combinarla con competencias digitales, capacidad de análisis de datos, inteligencia artificial, automatización, habilidades sociales o un trato humano profundo, según el sector profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La formación teórica universitaria puede ser valiosa, pero el temario no señala que las empresas premien especialmente perfiles solo teóricos. Se insiste más en la combinación de formación, especialización, competencias prácticas y adaptación al mercado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Evitar el uso de herramientas tecnológicas va en contra de las tendencias actuales descritas en el temario, donde se destacan áreas como la inteligencia artificial, la automatización, el análisis de datos, el controller digital o el marketing digital."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un perfil generalista sin especialización tiene menos ventaja competitiva. El temario destaca que la empleabilidad mejora cuando el profesional añade una especialización estratégica que resuelve problemas reales del mercado."
+        }
+      ],
+      "resumen_didactico": "Las empresas valoran perfiles híbridos: profesionales que unen conocimientos técnicos con competencias digitales, sociales, emocionales o estratégicas. Esa combinación permite adaptarse mejor a las necesidades reales del mercado.",
+      "ejemplo_practico": "Un estudiante de DAW que además de saber programar se especializa en inteligencia artificial, automatización o ciberseguridad tendrá un perfil más competitivo que alguien que solo domina lo básico del ciclo.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el temario afirma que el mercado actual premia los perfiles híbridos que combinan técnica con competencias digitales o emocionales."
+    }
+  },
+  {
+    "id": "UT1-Q21",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué es un plan de carrera profesional?",
+    "contexto": "Definición de plan de carrera como herramienta de planificación profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un examen final que determina la validez de un título"
+      },
+      {
+        "clave": "b",
+        "texto": "Una lista de deseos sobre el salario que se quiere percibir"
+      },
+      {
+        "clave": "c",
+        "texto": "Un proceso continuo para establecer objetivos y determinar los pasos para alcanzarlos"
+      },
+      {
+        "clave": "d",
+        "texto": "Un documento estático que se entrega al finalizar los estudios"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, un plan de carrera es un proceso sistemático y continuo en el que una persona establece sus objetivos profesionales y determina los pasos, la formación y las experiencias necesarias para alcanzarlos. No se limita a aprobar un ciclo, sino que sirve para convertir la formación en una hoja de ruta hacia el puesto profesional deseado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un plan de carrera no es un examen final ni determina por sí mismo la validez de un título. Es una herramienta de planificación personal y profesional."
+        },
+        {
+          "clave": "b",
+          "motivo": "Aunque el salario puede formar parte de las expectativas laborales, un plan de carrera no es una simple lista de deseos económicos. Debe incluir objetivos, formación, experiencias y pasos concretos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un plan de carrera no es un documento estático que se entrega al final de los estudios. El temario lo define como un proceso continuo, porque puede revisarse y ajustarse según cambien los objetivos, el mercado o la experiencia de la persona."
+        }
+      ],
+      "resumen_didactico": "El plan de carrera es una hoja de ruta profesional. Ayuda a decidir qué objetivos se quieren alcanzar y qué acciones concretas hay que realizar para llegar a ellos.",
+      "ejemplo_practico": "Una estudiante de DAW que quiere ser desarrolladora frontend puede diseñar un plan de carrera que incluya terminar el ciclo, crear un portafolio, publicar una aplicación web real, aprender Angular en profundidad y preparar entrevistas técnicas.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque un plan de carrera profesional es un proceso continuo para establecer objetivos y definir los pasos necesarios para alcanzarlos."
+    }
+  },
+  {
+    "id": "UT1-Q22",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué característica define a la \"S\" dentro de los objetivos de la metodología SMART?",
+    "contexto": "Identificación del significado de la letra S dentro de la metodología SMART aplicada al plan de carrera.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que el objetivo sea socialmente responsable"
+      },
+      {
+        "clave": "b",
+        "texto": "Que el objetivo sea sencillo de cumplir sin esfuerzo"
+      },
+      {
+        "clave": "c",
+        "texto": "Que el objetivo sea supervisado por un tutor externo"
+      },
+      {
+        "clave": "d",
+        "texto": "Que el objetivo sea específico y elimine la ambigüedad"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la S de SMART corresponde a específico. Un objetivo específico responde a la pregunta: qué, exactamente, voy a hacer. Su función es eliminar la ambigüedad y hacer que la meta sea clara, concreta y enfocada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Socialmente responsable no es el significado de la S en la metodología SMART. Aunque un objetivo puede tener valor social, la S se refiere a que sea específico."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un objetivo SMART debe ser alcanzable, pero no necesariamente sencillo ni sin esfuerzo. La idea es que sea realista, no que no suponga ningún reto."
+        },
+        {
+          "clave": "c",
+          "motivo": "La supervisión de un tutor externo puede ayudar en un proceso formativo, pero no forma parte del significado de la S en SMART."
+        }
+      ],
+      "resumen_didactico": "La S de SMART significa específico. Un objetivo específico evita frases vagas como \"quiero mejorar\" y las transforma en metas concretas y orientadas a la acción.",
+      "ejemplo_practico": "En lugar de decir \"quiero mejorar en programación\", un objetivo específico sería: \"voy a practicar componentes de Angular creando una sección de proyectos para mi portafolio\".",
+      "conclusion_final": "La respuesta correcta es la opción d, porque la S de SMART indica que el objetivo debe ser específico y eliminar la ambigüedad."
+    }
+  },
+  {
+    "id": "UT1-Q23",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Si un profesional establece que quiere \"aumentar el alcance de sus publicaciones en un 15 %\", ¿qué criterio SMART está aplicando?",
+    "contexto": "Aplicación del criterio medible dentro de la metodología SMART mediante un porcentaje concreto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Específico"
+      },
+      {
+        "clave": "b",
+        "texto": "Tiempo definido"
+      },
+      {
+        "clave": "c",
+        "texto": "Medible"
+      },
+      {
+        "clave": "d",
+        "texto": "Alcanzable"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la M de SMART corresponde a medible. Un objetivo medible responde a la pregunta: cómo sabré que lo he conseguido. Para ello debe incluir números, porcentajes, cantidades o hitos concretos que permitan comprobar el progreso y el resultado final.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El criterio específico se refiere a definir con claridad qué se quiere hacer, eliminando la ambigüedad. Aunque el objetivo está bastante concreto, lo que destaca en la frase es el porcentaje del 15 %, por tanto el criterio principal es medible."
+        },
+        {
+          "clave": "b",
+          "motivo": "El criterio de tiempo definido exige establecer una fecha límite o un plazo concreto. En la frase no se indica cuándo debe alcanzarse el aumento del 15 %, por lo que no corresponde a este criterio."
+        },
+        {
+          "clave": "d",
+          "motivo": "El criterio alcanzable se refiere a comprobar si el objetivo es realista y si la persona dispone de recursos para lograrlo. La frase no habla de recursos, dificultad o viabilidad, sino de una cantidad medible."
+        }
+      ],
+      "resumen_didactico": "Cuando un objetivo incluye una cifra, porcentaje o indicador que permite comprobar si se ha conseguido, está aplicando el criterio medible de SMART.",
+      "ejemplo_practico": "No es lo mismo decir \"quiero mejorar mis redes sociales\" que decir \"quiero aumentar el alcance de mis publicaciones en un 15 %\". La segunda frase permite medir el resultado con datos concretos.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque aumentar el alcance en un 15 % aplica el criterio medible de la metodología SMART."
+    }
+  },
+  {
+    "id": "UT1-Q24",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué implica el criterio de \"Alcanzable\" (A) al fijar un objetivo profesional?",
+    "contexto": "Aplicación del criterio alcanzable dentro de la metodología SMART para formular objetivos profesionales realistas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que sea la meta más ambiciosa posible aunque sea improbable"
+      },
+      {
+        "clave": "b",
+        "texto": "Que se pueda realizar en menos de una semana"
+      },
+      {
+        "clave": "c",
+        "texto": "Que no requiera ningún tipo de esfuerzo adicional"
+      },
+      {
+        "clave": "d",
+        "texto": "Que sea un reto realista y se tengan los recursos para lograrlo"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la A de SMART corresponde a alcanzable. Esto significa que el objetivo debe ser realista y que la persona debe contar con los recursos, el tiempo, el apoyo o las condiciones necesarias para lograrlo. Puede ser un reto ambicioso, pero debe estar dentro de lo posible.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un objetivo puede ser ambicioso, pero no debe ser improbable o irreal. Si la meta está fuera del alcance real de la persona, deja de ser alcanzable y se convierte en una intención poco práctica."
+        },
+        {
+          "clave": "b",
+          "motivo": "Que un objetivo sea alcanzable no significa que tenga que realizarse en menos de una semana. El tiempo depende de la naturaleza del objetivo y se relaciona más directamente con el criterio T de SMART, es decir, tiempo definido."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un objetivo alcanzable no significa que no requiera esfuerzo. De hecho, puede exigir trabajo, disciplina y constancia, pero debe ser posible con los recursos disponibles."
+        }
+      ],
+      "resumen_didactico": "El criterio alcanzable exige equilibrio: el objetivo debe suponer un desafío, pero también debe ser realista y posible según los medios de la persona.",
+      "ejemplo_practico": "Un estudiante de DAW que quiere aprender React puede plantearse dedicar 6 horas semanales durante varias semanas y terminar una pequeña aplicación funcional. Eso es alcanzable porque ajusta la meta a un tiempo y unos recursos reales.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque un objetivo alcanzable debe ser un reto realista y contar con los recursos necesarios para poder conseguirlo."
+    }
+  },
+  {
+    "id": "UT1-Q25",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Por qué es fundamental el criterio de \"Relevancia\" (R) en la planificación de la carrera?",
+    "contexto": "Aplicación del criterio relevante dentro de la metodología SMART para asegurar que los objetivos profesionales estén alineados con la meta final.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque garantiza que el paso dado acerque al profesional a su meta final de carrera"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque permite comparar el objetivo con el de otros compañeros"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque asegura que el objetivo sea divertido para el alumno"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque obliga a que el objetivo sea conocido por toda la empresa"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la R de SMART corresponde a relevante. Un objetivo relevante debe responder a la pregunta: esto me acerca a mi meta final de carrera. No basta con que el objetivo sea interesante o posible; debe estar alineado con el futuro profesional que se quiere construir.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La relevancia no consiste en comparar el objetivo con el de otros compañeros. Cada plan de carrera debe estar alineado con las metas personales y profesionales de cada persona."
+        },
+        {
+          "clave": "c",
+          "motivo": "Que un objetivo sea divertido puede ayudar a la motivación, pero no define su relevancia. Un objetivo relevante es aquel que aporta valor real al itinerario profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "La relevancia no exige que toda la empresa conozca el objetivo. Lo importante es que el objetivo tenga sentido dentro del plan de carrera y acerque al profesional a su meta final."
+        }
+      ],
+      "resumen_didactico": "Un objetivo relevante es aquel que tiene utilidad estratégica. Sirve porque conecta directamente con la dirección profesional que la persona quiere seguir.",
+      "ejemplo_practico": "Si un estudiante de DAW quiere trabajar en ciberseguridad web, será más relevante estudiar seguridad en aplicaciones, autenticación y protección de datos que aprender una herramienta que no tiene relación con ese objetivo profesional.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque la relevancia garantiza que cada objetivo contribuya realmente a alcanzar la meta final de carrera."
+    }
+  },
+  {
+    "id": "UT1-Q26",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Un estudiante se propone terminar un curso de software antes del 20 de mayo. ¿Qué elemento de la metodología SMART está integrando?",
+    "contexto": "Aplicación del criterio de tiempo definido dentro de la metodología SMART mediante una fecha límite concreta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Relevancia"
+      },
+      {
+        "clave": "b",
+        "texto": "Tiempo definido"
+      },
+      {
+        "clave": "c",
+        "texto": "Medición técnica"
+      },
+      {
+        "clave": "d",
+        "texto": "Especificidad"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la T de SMART corresponde a tiempo definido. Este criterio consiste en poner una fecha límite concreta al objetivo, respondiendo a la pregunta: cuándo, exactamente, voy a terminarlo. Un objetivo sin fecha límite queda como una intención, mientras que un objetivo con plazo permite planificar y genera compromiso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La relevancia se refiere a que el objetivo esté alineado con la meta final de carrera. En la pregunta no se destaca si el curso acerca al estudiante a su objetivo profesional, sino que se indica una fecha concreta de finalización."
+        },
+        {
+          "clave": "c",
+          "motivo": "Medición técnica no es uno de los cinco criterios principales de SMART. El criterio relacionado con medir avances sería medible, pero aquí no aparece un porcentaje, cantidad o indicador de progreso, sino una fecha límite."
+        },
+        {
+          "clave": "d",
+          "motivo": "La especificidad consiste en definir con claridad qué se va a hacer. Aunque se menciona terminar un curso de software, el elemento clave de la frase es el plazo: antes del 20 de mayo."
+        }
+      ],
+      "resumen_didactico": "Cuando un objetivo incluye una fecha límite clara, está aplicando el criterio de tiempo definido de la metodología SMART.",
+      "ejemplo_practico": "No es lo mismo decir \"quiero terminar un curso de software\" que decir \"quiero terminar el curso de software antes del 20 de mayo\". La segunda formulación permite organizar el estudio y controlar el avance.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque fijar como límite el 20 de mayo integra el criterio SMART de tiempo definido."
+    }
+  },
+  {
+    "id": "UT1-Q27",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Qué herramienta gráfica se utiliza para exponer el tiempo de dedicación previsto para diferentes tareas a lo largo de un periodo total?",
+    "contexto": "Identificación de la herramienta gráfica usada para planificar tareas y tiempos dentro de un plan de carrera.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diagrama de Gantt"
+      },
+      {
+        "clave": "b",
+        "texto": "Análisis DAFO"
+      },
+      {
+        "clave": "c",
+        "texto": "Matriz de especialización"
+      },
+      {
+        "clave": "d",
+        "texto": "Mapa de competencias"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el diagrama de Gantt es una herramienta gráfica que expone el tiempo de dedicación previsto para diferentes tareas o actividades a lo largo de un periodo total determinado. Permite visualizar qué tareas deben realizarse, cuándo empiezan, cuánto duran y cómo se distribuyen en el tiempo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El análisis DAFO sirve para identificar debilidades, amenazas, fortalezas y oportunidades. Es una herramienta de diagnóstico estratégico, pero no una herramienta gráfica para organizar tareas en el tiempo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La matriz de especialización puede ayudar a visualizar posibles áreas profesionales o salidas laborales, pero no es la herramienta indicada en el temario para exponer tiempos de dedicación a tareas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un mapa de competencias puede servir para identificar habilidades técnicas o transversales, pero no organiza cronológicamente tareas ni muestra la duración prevista de cada actividad."
+        }
+      ],
+      "resumen_didactico": "El diagrama de Gantt sirve para planificar visualmente tareas a lo largo del tiempo. Es útil para evitar solapamientos, repartir esfuerzos y controlar el avance de un plan.",
+      "ejemplo_practico": "Un estudiante que quiere obtener una microacreditación antes de diciembre puede usar un diagrama de Gantt para reservar semanas de estudio, fechas de evaluación y momentos de repaso.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el diagrama de Gantt es la herramienta gráfica que permite visualizar el tiempo previsto para diferentes tareas dentro de un periodo total."
+    }
+  },
+  {
+    "id": "UT1-Q28",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿Cuál es el papel recomendado de la Inteligencia Artificial en la gestión del plan de carrera?",
+    "contexto": "Uso de la Inteligencia Artificial como apoyo en la organización y mejora del plan de carrera profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Tomar las decisiones finales sobre qué trabajo aceptar"
+      },
+      {
+        "clave": "b",
+        "texto": "Actuar como un copiloto o consultor personal para organizar información"
+      },
+      {
+        "clave": "c",
+        "texto": "Realizar el trabajo técnico para evitar el aprendizaje del alumno"
+      },
+      {
+        "clave": "d",
+        "texto": "Sustituir totalmente el criterio ético del profesional"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la Inteligencia Artificial puede actuar como un aliado en la gestión del plan de carrera. Puede ayudar a simular entrevistas, analizar el mercado laboral, organizar información del sector y sugerir habilidades que añadir al plan profesional. Sin embargo, la IA debe funcionar como copiloto o consultor, no como sustituto del criterio personal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La IA no debe tomar las decisiones finales sobre qué trabajo aceptar. Puede aportar información, comparar opciones o ayudar a reflexionar, pero la decisión final corresponde siempre a la persona."
+        },
+        {
+          "clave": "c",
+          "motivo": "El objetivo de usar IA no es evitar el aprendizaje del alumno. Si la IA realiza todo el trabajo técnico sin que la persona aprenda, deja de ser una herramienta de desarrollo y se convierte en una dependencia negativa."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario indica claramente que la IA es el copiloto, pero el conductor es siempre la persona. Por tanto, no puede sustituir el criterio ético ni la responsabilidad profesional."
+        }
+      ],
+      "resumen_didactico": "La IA puede ayudar a organizar, analizar y practicar aspectos del plan de carrera, pero no debe decidir por la persona ni reemplazar su responsabilidad.",
+      "ejemplo_practico": "Un estudiante de DAW puede usar IA para preparar una entrevista técnica, revisar qué competencias se piden en ofertas de empleo o estructurar un plan de aprendizaje, pero debe decidir por sí mismo qué camino profesional seguir.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque la Inteligencia Artificial debe actuar como copiloto o consultor personal para organizar información y apoyar la toma de decisiones."
+    }
+  },
+  {
+    "id": "UT1-Q29",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "¿A qué se refiere el término \"mercado oculto\" en la búsqueda de empleo?",
+    "contexto": "Concepto de mercado oculto dentro de la búsqueda activa de empleo y la importancia del networking.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A ofertas de trabajo ilegales o sin contrato"
+      },
+      {
+        "clave": "b",
+        "texto": "A las vacantes que solo se ofrecen a personas con Grado E"
+      },
+      {
+        "clave": "c",
+        "texto": "Al 80 % de las ofertas que no se publican en portales y requieren networking"
+      },
+      {
+        "clave": "d",
+        "texto": "A los puestos de trabajo en países extranjeros"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el mercado oculto se refiere a aquellas ofertas de trabajo que no se publican en portales de empleo. Se indica que aproximadamente el 80 % de las ofertas pueden formar parte de este mercado oculto, por lo que el networking se convierte en una herramienta fundamental dentro del plan de carrera.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El mercado oculto no significa que las ofertas sean ilegales o sin contrato. Se refiere a vacantes reales que no llegan a publicarse de forma abierta en portales de empleo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El mercado oculto no está reservado exclusivamente a personas con Grado E. Aunque la especialización puede mejorar la empleabilidad, el concepto se refiere a la forma en que circulan muchas ofertas laborales, no al nivel formativo exigido."
+        },
+        {
+          "clave": "d",
+          "motivo": "El mercado oculto no se limita a puestos de trabajo en países extranjeros. Puede existir en cualquier mercado laboral, también en empresas locales o nacionales."
+        }
+      ],
+      "resumen_didactico": "El mercado oculto está formado por ofertas que no aparecen públicamente en portales de empleo. Para acceder a ellas, es importante crear contactos, hablar con profesionales, asistir a eventos y usar redes como LinkedIn.",
+      "ejemplo_practico": "Una empresa necesita un desarrollador junior, pero antes de publicar la oferta pregunta a trabajadores, profesores o contactos de LinkedIn si conocen a alguien preparado. Esa vacante forma parte del mercado oculto.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el mercado oculto se refiere a muchas ofertas que no se publican en portales y a las que se accede principalmente mediante networking."
+    }
+  },
+  {
+    "id": "UT1-Q30",
+    "tema": "UT1 Autoorientación y plan de carrera",
+    "pregunta": "Según el temario, ¿cuál es la actitud que debe tomar el alumno respecto a su trayectoria profesional?",
+    "contexto": "Actitud activa del alumno ante su desarrollo profesional, su empleabilidad y la gestión de su talento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ser un pasajero que espera a que las ofertas lleguen solas"
+      },
+      {
+        "clave": "b",
+        "texto": "Considerarse el CEO de su propia carrera y gestionar su talento"
+      },
+      {
+        "clave": "c",
+        "texto": "Delegar la toma de decisiones en los servicios públicos de empleo"
+      },
+      {
+        "clave": "d",
+        "texto": "Centrarse únicamente en aprobar los exámenes teóricos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el alumno debe dejar de ser un estudiante pasivo y convertirse en gestor de su propio talento. La unidad insiste en que cada persona debe verse como el CEO de su propia carrera, tomando decisiones estratégicas sobre su formación, especialización, objetivos SMART, networking y plan de carrera.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esperar pasivamente a que las ofertas lleguen solas es lo contrario de lo que plantea el temario. La empleabilidad requiere planificación, autoconocimiento, especialización y acción constante."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los servicios públicos de empleo pueden ser una ayuda, pero no deben sustituir la toma de decisiones personal. El temario destaca que el protagonista de la carrera profesional es el propio alumno."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aprobar los exámenes es importante, pero no basta para construir una carrera profesional sólida. El temario insiste en diseñar un plan de carrera, desarrollar competencias, elegir especializaciones y crear una ventaja competitiva."
+        }
+      ],
+      "resumen_didactico": "El alumno debe adoptar una actitud activa y estratégica: conocerse, planificar, tomar decisiones y construir su propio camino profesional.",
+      "ejemplo_practico": "Un estudiante de DAW no debería limitarse a aprobar módulos. Puede crear un portafolio, especializarse en frontend, aprender ciberseguridad web, usar LinkedIn y planificar sus próximos pasos para mejorar su empleabilidad.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el temario defiende que el alumno debe considerarse el CEO de su propia carrera y gestionar activamente su talento."
+    }
+  }
+]

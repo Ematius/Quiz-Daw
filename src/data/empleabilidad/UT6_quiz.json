@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT6-Q01",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué concepto define la necesidad de actualizar continuamente las competencias profesionales para adaptarse a los cambios del mercado laboral y evitar la obsolescencia?",
+    "contexto": "Actualización continua de competencias profesionales para adaptarse a los cambios tecnológicos, laborales y sociales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gestión del conocimiento corporativo"
+      },
+      {
+        "clave": "b",
+        "texto": "Aprendizaje adaptativo por objetivos"
+      },
+      {
+        "clave": "c",
+        "texto": "Aprendizaje a lo largo de toda la vida (Lifelong Learning)"
+      },
+      {
+        "clave": "d",
+        "texto": "Alfabetización digital básica"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el aprendizaje a lo largo de toda la vida, o Lifelong Learning, es una actitud esencial en cualquier carrera profesional moderna. Consiste en actualizar continuamente las competencias para responder a cambios como la digitalización acelerada, las nuevas tecnologías y las exigencias del mercado laboral. Se compara con el mantenimiento de un software: si no se actualiza, acaba fallando o quedando obsoleto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La gestión del conocimiento corporativo se refiere a cómo una empresa organiza, conserva y comparte su conocimiento interno. No define directamente la necesidad individual de seguir aprendiendo durante toda la vida profesional."
+        },
+        {
+          "clave": "b",
+          "motivo": "El aprendizaje adaptativo por objetivos puede referirse a plataformas o métodos que ajustan el aprendizaje al ritmo del estudiante, pero no es el concepto general que expresa la actualización continua de competencias durante toda la carrera profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "La alfabetización digital básica consiste en saber usar herramientas digitales e identificar información fiable, pero es un concepto más limitado. No abarca por sí solo la idea de formación permanente para evitar la obsolescencia profesional."
+        }
+      ],
+      "resumen_didactico": "Cuando una persona entiende que no basta con obtener un título, sino que debe seguir aprendiendo durante toda su vida profesional para no quedarse atrás, está aplicando el concepto de Lifelong Learning.",
+      "ejemplo_practico": "Un técnico de Desarrollo de Aplicaciones Web que ya domina JavaScript decide seguir aprendiendo Angular, ciberseguridad, Docker o inteligencia artificial para adaptarse a las nuevas demandas del sector tecnológico.",
+      "conclusion_final": "El concepto correcto es el aprendizaje a lo largo de toda la vida, porque representa la necesidad de actualizarse de forma continua para mantener la empleabilidad y evitar la obsolescencia profesional."
+    }
+  },
+  {
+    "id": "UT6-Q02",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "Un profesional decide utilizar la técnica Pomodoro para estudiar una nueva normativa. ¿En qué consiste fundamentalmente este método de autogestión del tiempo?",
+    "contexto": "Uso de una técnica de organización del tiempo para mantener la concentración durante el estudio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "En clasificar las tareas en una matriz según su urgencia e importancia para delegar las secundarias."
+      },
+      {
+        "clave": "b",
+        "texto": "En trabajar durante bloques de 25 minutos seguidos de descansos breves para mantener la concentración."
+      },
+      {
+        "clave": "c",
+        "texto": "En realizar evaluaciones rápidas de lo aprendido al final de cada jornada de trabajo."
+      },
+      {
+        "clave": "d",
+        "texto": "En asignar bloques específicos de tiempo en el calendario para tareas fijas e ineludibles."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta la técnica Pomodoro como una estrategia de autogestión del tiempo basada en trabajar en bloques de 25 minutos de concentración intensa, seguidos de 5 minutos de descanso. Después de varios ciclos, normalmente cuatro, se realiza un descanso más largo. Su objetivo es sostener la atención, evitar la fatiga mental y prevenir el agotamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esta opción describe la matriz de Eisenhower, que sirve para clasificar tareas según si son urgentes, importantes, delegables o eliminables. No corresponde a la técnica Pomodoro."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esta opción se relaciona más con la autoevaluación del aprendizaje, como revisar lo aprendido o reflexionar sobre el progreso. La técnica Pomodoro no consiste en evaluar, sino en organizar intervalos de trabajo y descanso."
+        },
+        {
+          "clave": "d",
+          "motivo": "Esta opción describe el time blocking o bloqueo de tiempo, que consiste en reservar franjas concretas del calendario para tareas determinadas. Aunque también es una técnica de gestión del tiempo, no es Pomodoro."
+        }
+      ],
+      "resumen_didactico": "La técnica Pomodoro divide el trabajo en ciclos cortos de concentración y descanso. Su lógica es sencilla: estudiar intensamente durante un tiempo limitado y descansar antes de perder rendimiento.",
+      "ejemplo_practico": "Un estudiante que tiene que estudiar una normativa laboral puede trabajar 25 minutos leyendo y subrayando, descansar 5 minutos, y repetir el ciclo varias veces antes de hacer una pausa más larga.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque Pomodoro consiste en alternar bloques de 25 minutos de trabajo concentrado con descansos breves para mantener la atención y evitar la saturación."
+    }
+  },
+  {
+    "id": "UT6-Q03",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "Según la Matriz de Eisenhower, ¿qué acción debe tomarse con una tarea que se clasifica como \"Importante, pero no urgente\"?",
+    "contexto": "Clasificación de tareas mediante la matriz de Eisenhower para priorizar correctamente el trabajo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Delegarla en otro compañero para ganar tiempo de ejecución."
+      },
+      {
+        "clave": "b",
+        "texto": "Eliminarla directamente por no aportar valor al proceso."
+      },
+      {
+        "clave": "c",
+        "texto": "Planificarla para ejecutarla en un momento determinado."
+      },
+      {
+        "clave": "d",
+        "texto": "Realizarla de forma inmediata antes que cualquier otra."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la matriz de Eisenhower permite organizar las tareas según dos criterios: urgencia e importancia. Cuando una tarea es importante pero no urgente, no debe abandonarse ni dejarse para el último momento, sino planificarse. Esto significa reservar un momento concreto para realizarla antes de que se convierta en urgente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Delegar corresponde a tareas que son urgentes pero no importantes. En este caso, la tarea sí es importante, por lo que debe gestionarse personalmente o al menos planificarse con cuidado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Eliminar se aplica a tareas que no son ni urgentes ni importantes. Una tarea importante aporta valor, aunque no tenga que resolverse de inmediato."
+        },
+        {
+          "clave": "d",
+          "motivo": "Realizar de forma inmediata corresponde a tareas que son urgentes e importantes. Si la tarea es importante pero no urgente, lo correcto es programarla, no interrumpir todo para hacerla al instante."
+        }
+      ],
+      "resumen_didactico": "En la matriz de Eisenhower, una tarea importante pero no urgente debe planificarse. Es una tarea valiosa, pero no requiere acción inmediata.",
+      "ejemplo_practico": "Un estudiante de DAW quiere preparar con tiempo el examen final del módulo. No es urgente si faltan varias semanas, pero sí es importante, así que debe reservar bloques de estudio en su calendario.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque las tareas importantes pero no urgentes deben planificarse para evitar que se acumulen o se conviertan en problemas urgentes."
+    }
+  },
+  {
+    "id": "UT6-Q04",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué técnica de autoevaluación consiste en revisar periódicamente el proceso de aprendizaje preguntándose qué dejar de hacer, qué empezar a hacer y qué mantener?",
+    "contexto": "Autoevaluación del propio proceso de aprendizaje mediante revisión de hábitos y mejora continua.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Técnica de la reformulación asertiva"
+      },
+      {
+        "clave": "b",
+        "texto": "Diario de aprendizaje o Learning Journal"
+      },
+      {
+        "clave": "c",
+        "texto": "Criterio Stop, Start, Continue"
+      },
+      {
+        "clave": "d",
+        "texto": "Análisis DAFO de salida profesional"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta el criterio Stop, Start, Continue como una técnica de autoevaluación que permite revisar el propio proceso de aprendizaje. Consiste en hacerse tres preguntas: Stop, qué debo dejar de hacer; Start, qué nueva práctica debo empezar; y Continue, qué estoy haciendo bien y debo mantener. Su objetivo es mejorar los hábitos de aprendizaje mediante reflexión periódica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La reformulación asertiva pertenece al ámbito de la comunicación y la gestión de conversaciones, no a las técnicas de autoevaluación del aprendizaje explicadas en esta unidad."
+        },
+        {
+          "clave": "b",
+          "motivo": "El diario de aprendizaje o Learning Journal también es una técnica de autoevaluación, pero consiste en escribir al final de cada sesión qué se ha aprendido, qué se ha hecho bien, qué se puede mejorar y qué ha sorprendido. No se basa específicamente en las tres preguntas Stop, Start y Continue."
+        },
+        {
+          "clave": "d",
+          "motivo": "El análisis DAFO sirve para estudiar debilidades, amenazas, fortalezas y oportunidades, especialmente en contextos estratégicos o profesionales. No es la técnica del temario que plantea dejar de hacer, empezar a hacer y mantener prácticas."
+        }
+      ],
+      "resumen_didactico": "Stop, Start, Continue es una técnica sencilla para revisar tus hábitos: parar lo que te perjudica, empezar nuevas acciones útiles y continuar lo que ya funciona.",
+      "ejemplo_practico": "Un estudiante puede decidir: Stop, dejar de mirar el móvil cada 10 minutos; Start, hacer un pequeño quiz al terminar cada unidad; Continue, seguir usando su e-portfolio para guardar evidencias de progreso.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el criterio Stop, Start, Continue consiste exactamente en revisar qué dejar de hacer, qué empezar a hacer y qué mantener dentro del proceso de aprendizaje."
+    }
+  },
+  {
+    "id": "UT6-Q05",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Cómo se define técnicamente el Entorno Personal de Aprendizaje (PLE)?",
+    "contexto": "Definición del PLE como ecosistema personal de herramientas, fuentes, conexiones y actividades para aprender.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El conjunto de aplicaciones que una empresa instala obligatoriamente a sus empleados."
+      },
+      {
+        "clave": "b",
+        "texto": "La red social profesional donde se publican exclusivamente ofertas de empleo."
+      },
+      {
+        "clave": "c",
+        "texto": "El sistema informático de gestión de archivos y bases de datos de una oficina técnica."
+      },
+      {
+        "clave": "d",
+        "texto": "El conjunto de herramientas, fuentes de información, conexiones y actividades que una persona utiliza para aprender."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario define el Entorno Personal de Aprendizaje, o PLE, como el conjunto de herramientas, fuentes de información, conexiones y actividades que cada persona utiliza de forma habitual para aprender. No es una aplicación concreta, sino una estrategia personal para organizar cómo accedes a la información, cómo la procesas y con quién la compartes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El PLE no es un conjunto de aplicaciones impuesto por una empresa. Es un entorno personal diseñado por cada profesional según sus necesidades de aprendizaje."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una red social profesional, como LinkedIn, puede formar parte del PLE, especialmente dentro de la red personal de aprendizaje, pero no equivale al PLE completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un sistema de gestión de archivos o bases de datos puede ser una herramienta tecnológica, pero el PLE es más amplio: incluye fuentes de información, herramientas de creación, reflexión, conexiones y actividades de aprendizaje."
+        }
+      ],
+      "resumen_didactico": "El PLE es tu ecosistema personal de aprendizaje: dónde buscas información, cómo la organizas, cómo la transformas en conocimiento y con quién la compartes.",
+      "ejemplo_practico": "Un estudiante de DAW puede tener como parte de su PLE Feedly para leer noticias técnicas, Notion para organizar apuntes, GitHub para guardar proyectos y Discord o LinkedIn para aprender con otros profesionales.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el PLE se define como el conjunto personalizado de herramientas, fuentes, conexiones y actividades que una persona utiliza para aprender de forma autónoma y continua."
+    }
+  },
+  {
+    "id": "UT6-Q06",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "Dentro de un PLE, ¿a qué nodo o área pertenecen las relaciones y conexiones que se mantienen para intercambiar conocimientos con otros profesionales?",
+    "contexto": "Identificación de los tres nodos principales del PLE: acceso a la información, creación y reflexión, y red personal de aprendizaje.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Red Personal de Aprendizaje (PLN)"
+      },
+      {
+        "clave": "b",
+        "texto": "Fuentes de acceso a la información"
+      },
+      {
+        "clave": "c",
+        "texto": "Herramientas de creación y reflexión"
+      },
+      {
+        "clave": "d",
+        "texto": "Sistemas de evaluación y retroalimentación"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que un PLE se organiza en tres nodos principales: herramientas y fuentes de acceso a la información, herramientas de creación y reflexión, y red personal de aprendizaje o PLN. El PLN representa el área relacionada con las personas, comunidades, contactos profesionales, foros y redes donde se intercambian conocimientos y se aprende con otros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las fuentes de acceso a la información corresponden al nodo del PLE relacionado con dónde se obtiene información, como blogs, boletines, canales especializados, Feedly o Google Scholar. No se centra en las relaciones con otros profesionales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las herramientas de creación y reflexión corresponden al espacio donde se procesa, organiza y transforma la información en conocimiento propio, por ejemplo mediante Notion, Canva, Obsidian o mapas mentales. No son el área principal de conexión con otras personas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los sistemas de evaluación y retroalimentación pueden ayudar a comprobar el aprendizaje, como Kahoot o Quizizz, pero no forman parte de los tres nodos básicos del PLE explicados en el temario ni representan las conexiones profesionales."
+        }
+      ],
+      "resumen_didactico": "Dentro de un PLE, las relaciones con otras personas forman parte del PLN, es decir, la red personal de aprendizaje. Es el nodo que responde a la pregunta: ¿con quién aprendo?",
+      "ejemplo_practico": "Un estudiante de DAW que participa en foros de Stack Overflow, sigue a desarrolladores en LinkedIn, comparte proyectos en GitHub y resuelve dudas en comunidades de Discord está construyendo su PLN.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque las conexiones y relaciones profesionales dentro de un PLE pertenecen a la Red Personal de Aprendizaje o PLN."
+    }
+  },
+  {
+    "id": "UT6-Q07",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Cuál es la función principal de las herramientas de creación y reflexión en un ecosistema de aprendizaje digital?",
+    "contexto": "Uso de herramientas digitales para procesar, organizar y convertir la información en conocimiento propio dentro de un PLE.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Consultar las noticias de última hora del sector profesional."
+      },
+      {
+        "clave": "b",
+        "texto": "Filtrar automáticamente las noticias falsas de los medios digitales."
+      },
+      {
+        "clave": "c",
+        "texto": "Transformar la información recibida en conocimiento real y conclusiones propias."
+      },
+      {
+        "clave": "d",
+        "texto": "Contactar con reclutadores para enviar el currículum vitae."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, dentro del PLE, las herramientas de creación y reflexión son el espacio donde se trabaja activamente con la información. No basta con leer o recibir datos: hay que organizarlos, interpretarlos, relacionarlos y transformarlos en conocimiento propio. Herramientas como Notion, Canva, Obsidian o los mapas mentales permiten crear apuntes, esquemas, proyectos, reflexiones y materiales que ayudan a convertir la información en aprendizaje real.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Consultar noticias de última hora pertenece al nodo de acceso a la información, es decir, al lugar donde se obtiene información mediante blogs, boletines, Feedly, canales especializados o fuentes académicas. No define la función principal de las herramientas de creación y reflexión."
+        },
+        {
+          "clave": "b",
+          "motivo": "Detectar información falsa forma parte de la alfabetización digital y del pensamiento crítico, pero las herramientas de creación y reflexión no tienen como función principal filtrar automáticamente noticias falsas. Su objetivo es procesar y elaborar conocimiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Contactar con reclutadores se relaciona más con la red profesional o con la marca personal, especialmente mediante plataformas como LinkedIn. No corresponde al nodo de creación y reflexión del PLE."
+        }
+      ],
+      "resumen_didactico": "Las herramientas de creación y reflexión sirven para trabajar la información: ordenar ideas, elaborar apuntes, crear materiales, sacar conclusiones y convertir datos dispersos en conocimiento propio.",
+      "ejemplo_practico": "Un estudiante de DAW lee un artículo sobre inteligencia artificial en programación y después usa Notion para resumirlo, añadir ejemplos de código, anotar dudas y relacionarlo con lo que está aprendiendo en clase.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque las herramientas de creación y reflexión permiten transformar la información recibida en conocimiento real y conclusiones propias."
+    }
+  },
+  {
+    "id": "UT6-Q08",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "Un técnico utiliza un agregador de noticias (RSS) para recibir automáticamente las novedades de su sector sin tener que buscarlas una por una. ¿Qué ventaja competitiva le aporta esto?",
+    "contexto": "Uso de herramientas de acceso a la información dentro del PLE para mantenerse actualizado de forma proactiva.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sustituye la necesidad de realizar formación oficial en el futuro."
+      },
+      {
+        "clave": "b",
+        "texto": "Le permite ser un profesional proactivo con capacidad de autoliderazgo digital."
+      },
+      {
+        "clave": "c",
+        "texto": "Mejora su capacidad de creación de contenidos visuales."
+      },
+      {
+        "clave": "d",
+        "texto": "Garantiza que toda la información que recibe es veraz al cien por cien."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las herramientas de acceso a la información, como Feedly o los agregadores RSS, permiten seguir blogs, diarios, boletines y fuentes especializadas desde un único lugar. Esto ayuda al profesional a no depender de que la información le llegue por casualidad, sino a construir un sistema propio para mantenerse actualizado. Esa capacidad forma parte del autoliderazgo digital y convierte al estudiante o trabajador en un profesional proactivo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un agregador RSS ayuda a mantenerse informado, pero no sustituye la formación oficial ni la necesidad de seguir aprendiendo de manera estructurada. Es una herramienta complementaria dentro del aprendizaje permanente."
+        },
+        {
+          "clave": "c",
+          "motivo": "La creación de contenidos visuales se relaciona con herramientas como Canva, Genially o Powtoon. Un agregador RSS pertenece al nodo de acceso a la información, no al de creación visual."
+        },
+        {
+          "clave": "d",
+          "motivo": "Recibir información mediante RSS no garantiza que todo sea verdadero al cien por cien. El profesional sigue necesitando alfabetización digital y pensamiento crítico para evaluar la fiabilidad de las fuentes."
+        }
+      ],
+      "resumen_didactico": "Un agregador RSS aporta ventaja porque centraliza fuentes profesionales y permite estar al día sin buscar manualmente cada novedad. Esto refuerza la autonomía y la iniciativa del profesional.",
+      "ejemplo_practico": "Un técnico de Desarrollo de Aplicaciones Web configura Feedly con blogs sobre Angular, ciberseguridad y nuevas versiones de JavaScript. Así detecta cambios importantes antes que otros compañeros y puede actualizar sus competencias con rapidez.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque usar un agregador RSS permite construir un sistema propio de actualización profesional y demuestra autoliderazgo digital."
+    }
+  },
+  {
+    "id": "UT6-Q09",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué implica ser \"digitalmente competente\" según el marco europeo DigComp?",
+    "contexto": "Competencia digital entendida no solo como uso técnico de aplicaciones, sino como evaluación crítica de fuentes, privacidad y seguridad de los datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Saber programar en al menos dos lenguajes de alto nivel."
+      },
+      {
+        "clave": "b",
+        "texto": "Saber usar aplicaciones y, además, evaluar la credibilidad de las fuentes y proteger la privacidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Tener perfiles activos en todas las redes sociales disponibles en el mercado."
+      },
+      {
+        "clave": "d",
+        "texto": "Comprar siempre el hardware más avanzado disponible en cada momento."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que, según el marco europeo DigComp, ser digitalmente competente no significa únicamente saber manejar aplicaciones. También implica tener criterio para evaluar si una fuente es creíble, proteger la privacidad, cuidar la seguridad de los datos y elegir herramientas digitales de forma responsable. Por tanto, la competencia digital combina habilidad técnica, pensamiento crítico y responsabilidad en el uso de la tecnología.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Saber programar puede ser una competencia técnica muy valiosa, especialmente en perfiles DAW o DAM, pero DigComp no reduce la competencia digital a programar. Una persona puede ser digitalmente competente sin dominar dos lenguajes de programación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Tener perfiles en muchas redes sociales no demuestra competencia digital. De hecho, el temario recomienda usar las herramientas con criterio, no intentar estar en todas partes sin organización ni propósito profesional."
+        },
+        {
+          "clave": "d",
+          "motivo": "Comprar hardware avanzado no equivale a ser digitalmente competente. La competencia digital depende del uso crítico, seguro y eficaz de la tecnología, no de tener los dispositivos más caros o modernos."
+        }
+      ],
+      "resumen_didactico": "Ser digitalmente competente significa usar la tecnología con criterio: saber manejar herramientas, comprobar la fiabilidad de la información y proteger los datos propios y ajenos.",
+      "ejemplo_practico": "Un estudiante de DAW usa una herramienta de inteligencia artificial para resolver una duda, pero antes de confiar en la respuesta la contrasta con la documentación oficial y evita introducir claves privadas o datos personales en el chat.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque DigComp entiende la competencia digital como una combinación de uso técnico, evaluación crítica de fuentes, privacidad y seguridad."
+    }
+  },
+  {
+    "id": "UT6-Q10",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "En el uso de la Inteligencia Artificial (IA) en el aprendizaje, ¿qué es una \"alucinación\"?",
+    "contexto": "Uso crítico de la inteligencia artificial en el aprendizaje y detección de respuestas falsas generadas por la IA.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El tiempo de espera que tarda el servidor en procesar una consulta compleja."
+      },
+      {
+        "clave": "b",
+        "texto": "El proceso por el cual la IA aprende los sesgos racistas o sexistas de los humanos."
+      },
+      {
+        "clave": "c",
+        "texto": "Un fallo del sistema que hace que el ordenador se apague de forma repentina."
+      },
+      {
+        "clave": "d",
+        "texto": "La generación de respuestas que parecen coherentes pero que son falsas o inventadas por el algoritmo."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la inteligencia artificial puede actuar como un apoyo muy potente en el aprendizaje, pero también puede cometer errores. Una alucinación ocurre cuando la IA genera una respuesta que parece correcta, lógica o bien redactada, pero que en realidad es falsa, inventada o no está verificada. Por eso se insiste en que el profesional debe mantener pensamiento crítico y contrastar la información con fuentes fiables.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El tiempo de espera de un servidor se relaciona con el rendimiento técnico o la latencia de un sistema, no con una alucinación de la IA. Una alucinación afecta al contenido de la respuesta, no al tiempo que tarda en generarse."
+        },
+        {
+          "clave": "b",
+          "motivo": "Esta opción describe el problema de los sesgos en la IA, que también aparece en el temario como un riesgo importante. Sin embargo, los sesgos no son lo mismo que una alucinación. El sesgo implica reproducir prejuicios; la alucinación implica inventar información falsa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un apagado repentino del ordenador sería un fallo técnico del dispositivo o del sistema operativo. No tiene relación con el concepto de alucinación en inteligencia artificial."
+        }
+      ],
+      "resumen_didactico": "Una alucinación de IA es una respuesta que suena convincente, pero que puede ser falsa. Por eso no se debe copiar y pegar sin revisar: la IA ayuda, pero el criterio final debe ser humano.",
+      "ejemplo_practico": "Un estudiante de DAW pregunta a una IA cómo usar una función de Angular y la IA inventa un método que no existe. Aunque la explicación parece profesional, al revisar la documentación oficial descubre que esa función es falsa.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque una alucinación se produce cuando la IA genera información aparentemente coherente pero falsa o inventada."
+    }
+  },
+  {
+    "id": "UT6-Q11",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Cuál es el papel del profesional frente a la Inteligencia Artificial según los principios éticos de la UNESCO?",
+    "contexto": "Uso ético y responsable de la inteligencia artificial en el aprendizaje y en el desarrollo profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Situar a la persona en el centro, usando la IA como soporte pero manteniendo el control y el juicio crítico."
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar el uso de la IA por completo para no perder la esencia de la profesión."
+      },
+      {
+        "clave": "c",
+        "texto": "Delegar la toma de decisiones finales en la capacidad de cálculo de la máquina."
+      },
+      {
+        "clave": "d",
+        "texto": "Utilizarla exclusivamente para tareas que no requieran ningún tipo de ética o responsabilidad."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la IA debe utilizarse como un soporte o copiloto, no como sustituto del pensamiento profesional. Según los principios éticos tratados en la unidad, el uso responsable de la IA exige poner siempre a la persona en el centro, mantener el juicio crítico, revisar los resultados, detectar errores, proteger los datos y actuar con transparencia. La IA puede ayudar a generar ideas, analizar información o acelerar tareas, pero la responsabilidad final sigue siendo del profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El temario no plantea evitar la IA por completo. Al contrario, la presenta como una herramienta potente para el aprendizaje y el trabajo profesional, siempre que se use con criterio ético y pensamiento crítico."
+        },
+        {
+          "clave": "c",
+          "motivo": "Delegar las decisiones finales en la máquina es justo lo contrario del uso ético de la IA. La IA puede generar respuestas, pero puede cometer errores, alucinar información o reproducir sesgos. Por eso el profesional debe validar y controlar el resultado."
+        },
+        {
+          "clave": "d",
+          "motivo": "La IA no debe limitarse a tareas sin ética ni responsabilidad. Precisamente el temario insiste en que su uso siempre debe estar acompañado de transparencia, protección de datos, justicia, no discriminación y revisión humana."
+        }
+      ],
+      "resumen_didactico": "El profesional no debe obedecer ciegamente a la IA ni rechazarla por miedo. Debe usarla como apoyo, pero conservando siempre el control, la responsabilidad y el juicio crítico.",
+      "ejemplo_practico": "Un estudiante de DAW puede pedir a una IA que le ayude a generar una función de código, pero después debe revisar si funciona, si tiene vulnerabilidades, si respeta licencias y si no contiene datos privados. La IA propone, pero el profesional decide y valida.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el uso ético de la IA exige situar a la persona en el centro y utilizar la tecnología como soporte, manteniendo siempre el control profesional y el pensamiento crítico."
+    }
+  },
+  {
+    "id": "UT6-Q12",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué principio ético se vulnera si un técnico utiliza una IA para realizar un informe y lo presenta como propio sin mencionar la asistencia tecnológica?",
+    "contexto": "Uso ético de la inteligencia artificial en trabajos profesionales y necesidad de declarar la asistencia tecnológica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Justicia y no discriminación"
+      },
+      {
+        "clave": "b",
+        "texto": "Transparencia y honestidad"
+      },
+      {
+        "clave": "c",
+        "texto": "Alfabetización mediática"
+      },
+      {
+        "clave": "d",
+        "texto": "Privacidad y protección de dato"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que uno de los pilares del uso ético de la inteligencia artificial es la transparencia y honestidad. Esto significa que el profesional debe ser claro sobre qué parte de su trabajo ha sido generada o asistida por una IA. Usar una IA para elaborar un informe y presentarlo como completamente propio oculta el proceso real de creación y rompe la confianza profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La justicia y no discriminación se relaciona con la detección y corrección de sesgos en los resultados de la IA, por ejemplo cuando reproduce estereotipos racistas, sexistas o excluyentes. En este caso el problema principal no es un sesgo, sino ocultar el uso de la IA."
+        },
+        {
+          "clave": "c",
+          "motivo": "La alfabetización mediática implica comprender, analizar y evaluar críticamente la información y los medios digitales. Aunque es importante para usar tecnología con criterio, no es el principio ético concreto que se vulnera al no declarar la asistencia de la IA."
+        },
+        {
+          "clave": "d",
+          "motivo": "La privacidad y protección de datos se vulneraría si el técnico introdujera información confidencial, datos personales, claves o información sensible en la IA. Aquí el problema descrito es presentar como propio un trabajo realizado con asistencia tecnológica sin indicarlo."
+        }
+      ],
+      "resumen_didactico": "Si usas IA como apoyo, debes reconocerlo cuando sea relevante. La transparencia demuestra que sabes liderar la tecnología y validar sus resultados, no esconder su uso.",
+      "ejemplo_practico": "Un técnico puede escribir en un informe: \"Este documento ha sido elaborado con asistencia de IA para generar un primer borrador, posteriormente revisado, corregido y validado por el autor\". Así actúa con honestidad profesional.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque ocultar el uso de IA en un trabajo vulnera el principio de transparencia y honestidad."
+    }
+  },
+  {
+    "id": "UT6-Q13",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Por qué es un riesgo de privacidad introducir datos sensibles de clientes o usuarios en una herramienta de IA generativa comercial?",
+    "contexto": "Protección de datos personales y confidenciales en el uso de herramientas de inteligencia artificial generativa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque la IA no es capaz de procesar datos que contengan números o nombres propios."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el sistema cobrará una tarifa extra por manejar información de carácter privado."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque esa información puede ser utilizada para entrenar al modelo y ser filtrada involuntariamente a terceros."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque la normativa europea prohíbe que los técnicos de FP usen herramientas en la nube."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que uno de los pilares éticos del uso de la inteligencia artificial es la privacidad y protección de datos. Advierte que nunca deben introducirse en sistemas de IA datos personales, claves de seguridad ni información confidencial de clientes o usuarios, porque esa información podría ser utilizada por el sistema, almacenada o incluso filtrada involuntariamente a terceros. Por eso se insiste en que el profesional debe proteger la confidencialidad de las personas y aplicar un criterio responsable antes de usar estas herramientas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La IA sí puede procesar textos con números, nombres propios o datos estructurados. El problema no es técnico, sino ético y de privacidad: no se debe compartir información sensible con sistemas que pueden almacenarla o reutilizarla."
+        },
+        {
+          "clave": "b",
+          "motivo": "El riesgo principal no es que la herramienta cobre más por manejar datos privados. El problema es que esos datos pueden quedar expuestos, almacenados o utilizados de forma no controlada."
+        },
+        {
+          "clave": "d",
+          "motivo": "La normativa europea no prohíbe de forma general que los técnicos de FP usen herramientas en la nube. Lo que exige es un uso responsable, seguro y respetuoso con la protección de datos personales y la confidencialidad."
+        }
+      ],
+      "resumen_didactico": "No debes introducir datos sensibles en una IA generativa porque pierdes control sobre esa información. Aunque la herramienta parezca útil, puede almacenar, reutilizar o exponer datos confidenciales.",
+      "ejemplo_practico": "Un técnico de integración social no debe pegar en una IA el informe real de un usuario con su nombre, dirección, situación familiar o datos médicos. Si necesita ayuda para redactar, debe anonimizar completamente la información o usar ejemplos ficticios.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque introducir datos sensibles en una IA generativa comercial puede comprometer la privacidad si esa información se usa para entrenar el modelo o se filtra involuntariamente a terceros."
+    }
+  },
+  {
+    "id": "UT6-Q14",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "Un profesional detecta que la IA que utiliza siempre asocia los puestos de dirección a hombres. ¿Cómo se denomina técnicamente este fenómeno?",
+    "contexto": "Detección de respuestas discriminatorias o estereotipadas generadas por una inteligencia artificial.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Vulnerabilidad de seguridad"
+      },
+      {
+        "clave": "b",
+        "texto": "Sesgo algorítmico"
+      },
+      {
+        "clave": "c",
+        "texto": "Alucinación de contenido"
+      },
+      {
+        "clave": "d",
+        "texto": "Error de transparencia"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que uno de los riesgos éticos de la inteligencia artificial es la reproducción de sesgos. Si los datos con los que se ha entrenado una IA contienen prejuicios sociales, estereotipos de género, racismo o discriminaciones previas, el sistema puede repetir esos patrones en sus respuestas. Cuando una IA asocia sistemáticamente los puestos de dirección a hombres, está reproduciendo un sesgo algorítmico relacionado con el género.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una vulnerabilidad de seguridad es un fallo que puede permitir ataques, filtraciones o accesos indebidos a un sistema. En este caso no se describe un problema de seguridad informática, sino una respuesta discriminatoria o estereotipada de la IA."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una alucinación de contenido ocurre cuando la IA genera información falsa o inventada que parece coherente. Aquí el problema no es que invente un dato falso, sino que reproduce un patrón discriminatorio al asociar liderazgo únicamente con hombres."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un error de transparencia estaría relacionado con ocultar el uso de la IA o no explicar cómo se ha empleado. En este caso el problema principal no es la falta de transparencia, sino la existencia de un sesgo en el resultado generado."
+        }
+      ],
+      "resumen_didactico": "Un sesgo algorítmico aparece cuando la IA reproduce prejuicios presentes en los datos o en los patrones sociales de los que ha aprendido.",
+      "ejemplo_practico": "Si una IA genera imágenes de directivos y siempre muestra hombres con traje, mientras representa a mujeres solo en puestos de cuidado o asistencia, está reproduciendo un sesgo de género que el profesional debe detectar y corregir.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque asociar sistemáticamente los puestos de dirección a hombres es un caso de sesgo algorítmico."
+    }
+  },
+  {
+    "id": "UT6-Q15",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué competencia es más valorada por las empresas respecto al uso de la IA en el entorno laboral?",
+    "contexto": "Uso profesional de la inteligencia artificial con pensamiento crítico, revisión humana y criterio propio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El uso de la IA para sustituir el contacto humano con los clientes difíciles."
+      },
+      {
+        "clave": "b",
+        "texto": "La capacidad de copiar y pegar rápidamente los resultados que ofrece la máquina."
+      },
+      {
+        "clave": "c",
+        "texto": "El conocimiento profundo del código fuente con el que se programó la IA."
+      },
+      {
+        "clave": "d",
+        "texto": "La capacidad de auditar los resultados de la IA y corregir sus errores con criterio propio."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las empresas buscan profesionales capaces de usar la IA con criterio, no personas que acepten sus respuestas sin revisión. La IA puede generar borradores, código, análisis o ideas, pero también puede cometer errores, inventar información, reproducir sesgos o proponer soluciones inseguras. Por eso se valora especialmente la capacidad de auditar sus resultados, detectar fallos y corregirlos con juicio profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El temario no plantea la IA como sustituto del contacto humano. De hecho, recuerda que la IA carece de empatía, ética y contexto social, por lo que el contacto humano sigue siendo imprescindible en muchas situaciones profesionales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Copiar y pegar rápidamente lo que ofrece la IA es una práctica poco profesional y peligrosa. La IA puede alucinar, cometer errores o generar respuestas con sesgos, por lo que siempre debe revisarse antes de usar sus resultados."
+        },
+        {
+          "clave": "c",
+          "motivo": "Conocer el código fuente interno de una IA no es la competencia principal que se exige a la mayoría de profesionales. Lo importante en el entorno laboral es saber utilizarla de forma crítica, segura, ética y responsable."
+        }
+      ],
+      "resumen_didactico": "La competencia clave no es usar la IA más rápido, sino usarla mejor: revisar, contrastar, corregir y decidir con criterio propio.",
+      "ejemplo_practico": "Un estudiante de DAW pide a una IA que genere una función para su aplicación. En vez de copiarla directamente, revisa si el código funciona, si tiene vulnerabilidades, si usa librerías correctas y si respeta buenas prácticas antes de incorporarlo al proyecto.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque las empresas valoran a los profesionales capaces de auditar los resultados de la IA y corregir sus errores con pensamiento crítico y responsabilidad."
+    }
+  },
+  {
+    "id": "UT6-Q16",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Cuál es la diferencia entre un PLE y un PLN?",
+    "contexto": "Distinción entre el Entorno Personal de Aprendizaje completo y la red de personas con las que se aprende.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El PLE es el entorno global de aprendizaje y el PLN es la red de personas que forman parte de ese entorno."
+      },
+      {
+        "clave": "b",
+        "texto": "No hay diferencia, son dos siglas para referirse a la inteligencia artificial."
+      },
+      {
+        "clave": "c",
+        "texto": "El PLE es para estudiantes de grado medio y el PLN para estudiantes de grado superior."
+      },
+      {
+        "clave": "d",
+        "texto": "El PLE es el sistema operativo del ordenador y el PLN es la conexión a internet."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario define el PLE, o Entorno Personal de Aprendizaje, como el conjunto de herramientas, fuentes de información, conexiones y actividades que una persona utiliza para aprender. Dentro de ese PLE aparece uno de sus nodos principales: el PLN, o Red Personal de Aprendizaje, que hace referencia específicamente a las personas, comunidades, contactos profesionales, foros y redes con las que se intercambia conocimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "PLE y PLN no son siglas de inteligencia artificial. El PLE se refiere al entorno personal de aprendizaje completo, mientras que el PLN es solo la parte relacionada con la red de personas con las que se aprende."
+        },
+        {
+          "clave": "c",
+          "motivo": "La diferencia entre PLE y PLN no depende del nivel educativo. Ambos conceptos pueden aplicarse a estudiantes de grado medio, grado superior, universidad o profesionales en activo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El PLE no es un sistema operativo y el PLN no es la conexión a internet. Son conceptos de aprendizaje digital: uno describe el ecosistema completo y el otro la red humana de aprendizaje."
+        }
+      ],
+      "resumen_didactico": "El PLE es todo tu ecosistema de aprendizaje: herramientas, fuentes, actividades y conexiones. El PLN es una parte concreta del PLE: las personas y comunidades con las que aprendes.",
+      "ejemplo_practico": "Un estudiante de DAW puede tener un PLE formado por Feedly para leer noticias, Notion para organizar apuntes, GitHub para guardar proyectos y Discord para hablar con otros programadores. En ese caso, Discord, LinkedIn, GitHub como comunidad y los contactos profesionales formarían parte de su PLN.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el PLE es el entorno global de aprendizaje y el PLN es la red de personas que forma parte de ese entorno."
+    }
+  },
+  {
+    "id": "UT6-Q17",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué herramienta digital es la más adecuada para construir una Red Personal de Aprendizaje (PLN) y conectar con referentes del sector?",
+    "contexto": "Construcción de una red personal de aprendizaje mediante conexiones profesionales y comunidades del sector.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un agregador de noticias RSS"
+      },
+      {
+        "clave": "b",
+        "texto": "Un software de diseño gráfico simplificado"
+      },
+      {
+        "clave": "c",
+        "texto": "Una red social profesional como LinkedIn"
+      },
+      {
+        "clave": "d",
+        "texto": "Un procesador de textos local"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la Red Personal de Aprendizaje, o PLN, es el nodo del PLE relacionado con las personas y comunidades con las que se aprende. Incluye contactos profesionales, redes sociales especializadas, foros, comunidades virtuales y espacios donde se intercambia conocimiento. LinkedIn aparece como una herramienta adecuada para conectar con referentes del sector, seguir profesionales, compartir avances y construir marca personal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un agregador de noticias RSS, como Feedly, pertenece principalmente al nodo de acceso a la información. Sirve para recibir novedades de blogs, diarios o fuentes especializadas, pero no es la herramienta más adecuada para construir relaciones profesionales directas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un software de diseño gráfico simplificado, como Canva, pertenece al ámbito de creación de contenidos. Puede servir para elaborar materiales visuales, pero no está orientado principalmente a crear una red de contactos profesionales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un procesador de textos local sirve para redactar documentos, apuntes o informes, pero no facilita por sí mismo la conexión con referentes del sector ni la construcción de una comunidad de aprendizaje."
+        }
+      ],
+      "resumen_didactico": "Para construir un PLN necesitas herramientas que te conecten con personas: profesionales, expertos, comunidades, compañeros y referentes. Por eso LinkedIn encaja mejor que una herramienta de lectura, diseño o redacción local.",
+      "ejemplo_practico": "Un estudiante de DAW puede usar LinkedIn para seguir a desarrolladores senior, comentar publicaciones sobre tecnología, compartir sus proyectos de GitHub y contactar con profesionales del sector web.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque una red social profesional como LinkedIn permite construir una Red Personal de Aprendizaje conectando con referentes y comunidades del sector."
+    }
+  },
+  {
+    "id": "UT6-Q18",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué beneficio aporta la técnica de \"Time Blocking\" (bloqueo de tiempo) frente a las listas de tareas tradicionales?",
+    "contexto": "Organización del tiempo mediante bloques concretos en el calendario para tareas específicas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Elimina la necesidad de descansar entre las diferentes actividades del día."
+      },
+      {
+        "clave": "b",
+        "texto": "Convierte el compromiso de estudio o trabajo en una cita ineludible en el calendario."
+      },
+      {
+        "clave": "c",
+        "texto": "Asegura que la IA realice el trabajo de forma automática en ese horario."
+      },
+      {
+        "clave": "d",
+        "texto": "Permite realizar muchas tareas al mismo tiempo (multitarea)."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que el Time Blocking, o bloqueo de tiempo, consiste en asignar bloques específicos del calendario a tareas concretas. En lugar de tener una simple lista de tareas pendientes, se reserva un espacio real para realizarlas. Esto convierte el estudio o el trabajo en una cita planificada e ineludible, ayudando a organizar mejor el tiempo y evitar la improvisación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El Time Blocking no elimina la necesidad de descansar. Al contrario, una buena planificación puede incluir pausas, descansos y tiempos de recuperación para evitar la saturación."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Time Blocking no hace que la inteligencia artificial trabaje automáticamente por el profesional. Es una técnica de organización personal del tiempo, no una herramienta de automatización mediante IA."
+        },
+        {
+          "clave": "d",
+          "motivo": "El objetivo del Time Blocking no es fomentar la multitarea, sino todo lo contrario: reservar bloques concretos para concentrarse en una tarea determinada y evitar la dispersión."
+        }
+      ],
+      "resumen_didactico": "El Time Blocking convierte una intención en un compromiso real dentro del calendario. No basta con decir \"tengo que estudiar\"; se concreta cuándo se va a estudiar.",
+      "ejemplo_practico": "Un estudiante de DAW puede bloquear en su calendario los martes de 9:00 a 11:00 para estudiar el módulo de Itinerario Personal para la Empleabilidad. Ese bloque deja de ser una idea general y pasa a ser una cita fija de trabajo.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el Time Blocking permite transformar una tarea pendiente en un compromiso concreto dentro del calendario."
+    }
+  },
+  {
+    "id": "UT6-Q19",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Para qué sirve un diario de aprendizaje (Learning Journal) desde el punto de vista académico?",
+    "contexto": "Uso del diario de aprendizaje como técnica de autoevaluación y reflexión sobre el propio proceso de aprendizaje.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para almacenar las contraseñas de todas las herramientas digitales del PLE."
+      },
+      {
+        "clave": "b",
+        "texto": "Para entregar un resumen diario de tareas al responsable de la empresa."
+      },
+      {
+        "clave": "c",
+        "texto": "Para fomentar la metacognición, es decir, pensar sobre el propio proceso de aprendizaje para mejorarlo."
+      },
+      {
+        "clave": "d",
+        "texto": "Para anotar las faltas de asistencia y las notas de los exámenes."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta el diario de aprendizaje, o Learning Journal, como una técnica de autoevaluación. Consiste en escribir al final de cada sesión preguntas como: qué aprendí hoy, qué hice bien, qué puedo mejorar y qué me sorprendió. Su función principal es fomentar la metacognición, es decir, ayudar al estudiante a pensar sobre cómo aprende, detectar errores, identificar avances y convertir la experiencia en conocimiento explícito.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un diario de aprendizaje no sirve para guardar contraseñas. Las contraseñas deben almacenarse en gestores seguros de contraseñas, no en un documento de reflexión académica."
+        },
+        {
+          "clave": "b",
+          "motivo": "Aunque un diario puede recoger tareas realizadas, su finalidad no es entregar un parte diario al responsable de la empresa. Su objetivo principal es la reflexión personal sobre el aprendizaje."
+        },
+        {
+          "clave": "d",
+          "motivo": "Anotar faltas de asistencia o notas de exámenes corresponde a un registro académico administrativo, no a un Learning Journal. El diario de aprendizaje se centra en reflexionar sobre el proceso, no solo en registrar resultados."
+        }
+      ],
+      "resumen_didactico": "El Learning Journal sirve para mirar hacia dentro del propio aprendizaje: qué estoy aprendiendo, cómo lo estoy haciendo, qué debo mejorar y qué estrategias me funcionan.",
+      "ejemplo_practico": "Un estudiante de DAW termina una sesión sobre inteligencia artificial y escribe: \"Hoy he entendido qué es una alucinación de IA. He hecho bien contrastar la respuesta con la documentación oficial. Debo mejorar mi forma de formular prompts. Me sorprendió que una respuesta muy convincente pudiera ser falsa\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el diario de aprendizaje sirve para desarrollar metacognición y mejorar el propio proceso de aprendizaje mediante reflexión periódica."
+    }
+  },
+  {
+    "id": "UT6-Q20",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Por qué se dice que el éxito en el uso de la IA depende del pensamiento crítico del usuario?",
+    "contexto": "Uso responsable de la inteligencia artificial mediante revisión, contraste y detección de errores, alucinaciones o sesgos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque el pensamiento crítico es lo que permite que la IA procese los datos más rápido."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque el usuario debe ser capaz de discernir entre una respuesta válida y una \"alucinación\" o sesgo de la máquina."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque la IA necesita que el usuario le explique cómo funcionan las leyes físicas."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque es obligatorio por ley criticar a la IA en los informes profesionales."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario insiste en que la inteligencia artificial puede ser una herramienta muy potente para aprender, generar borradores, analizar información o proponer soluciones, pero también puede cometer errores. Puede producir alucinaciones, es decir, respuestas aparentemente coherentes pero falsas, y también puede reproducir sesgos aprendidos de los datos con los que fue entrenada. Por eso, el éxito en su uso no depende solo de saber hacer preguntas, sino de mantener pensamiento crítico para revisar, contrastar y validar los resultados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El pensamiento crítico del usuario no hace que la IA procese los datos más rápido. La velocidad de procesamiento depende del sistema técnico, no de la capacidad crítica de quien la usa."
+        },
+        {
+          "clave": "c",
+          "motivo": "La IA no necesita que el usuario le explique las leyes físicas para funcionar. El problema principal no es enseñarle conocimientos básicos, sino revisar si las respuestas que ofrece son correctas, fiables y adecuadas al contexto."
+        },
+        {
+          "clave": "d",
+          "motivo": "El temario no afirma que exista una obligación legal general de criticar a la IA en los informes profesionales. Lo que se defiende es una responsabilidad ética y profesional: usarla con criterio, transparencia y revisión humana."
+        }
+      ],
+      "resumen_didactico": "La IA puede ayudar mucho, pero no debe sustituir el juicio profesional. El usuario debe actuar como filtro humano para detectar errores, información inventada, sesgos o respuestas poco adecuadas.",
+      "ejemplo_practico": "Un estudiante de DAW pide a una IA que le genere código para una aplicación. La respuesta parece correcta, pero antes de usarla revisa la documentación oficial, comprueba si el código tiene vulnerabilidades y verifica que no haya funciones inventadas.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el pensamiento crítico permite distinguir entre respuestas válidas, alucinaciones y sesgos generados por la IA."
+    }
+  },
+  {
+    "id": "UT6-Q21",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué herramienta se utiliza para organizar y jerarquizar fuentes de información de forma que no se pierda ninguna novedad relevante del sector?",
+    "contexto": "Uso de herramientas de acceso a la información dentro del PLE para centralizar novedades profesionales y mantenerse actualizado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Plataforma de colaboración como Slack"
+      },
+      {
+        "clave": "b",
+        "texto": "Herramienta de diseño como Canva"
+      },
+      {
+        "clave": "c",
+        "texto": "Buscador especializado como Google Scholar"
+      },
+      {
+        "clave": "d",
+        "texto": "Agregador de noticias como Feedly"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta Feedly como un agregador de noticias RSS que permite seguir blogs, diarios, boletines y fuentes especializadas desde un único lugar. Su función dentro del PLE pertenece al nodo de acceso a la información: ayuda a organizar fuentes, recibir novedades del sector y evitar depender de búsquedas manuales o de que la información llegue por casualidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Slack es una plataforma de comunicación y colaboración que puede servir para participar en comunidades o equipos, pero no es la herramienta principal para organizar y jerarquizar fuentes de información mediante RSS."
+        },
+        {
+          "clave": "b",
+          "motivo": "Canva es una herramienta de creación de contenidos visuales. Sirve para diseñar presentaciones, infografías o materiales gráficos, pero no para centralizar novedades informativas del sector."
+        },
+        {
+          "clave": "c",
+          "motivo": "Google Scholar es un buscador especializado en literatura científica y académica. Es útil para encontrar estudios o artículos concretos, pero no funciona como agregador continuo de novedades de múltiples fuentes RSS."
+        }
+      ],
+      "resumen_didactico": "Para no perder novedades relevantes del sector, lo más adecuado es usar un agregador como Feedly, porque reúne en un solo lugar distintas fuentes profesionales.",
+      "ejemplo_practico": "Un estudiante de DAW puede configurar Feedly con blogs sobre Angular, ciberseguridad, inteligencia artificial y desarrollo web. Así recibe las novedades en un único panel sin tener que visitar cada página manualmente.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque un agregador de noticias como Feedly permite organizar fuentes de información y mantenerse actualizado de forma ordenada dentro del PLE."
+    }
+  },
+  {
+    "id": "UT6-Q22",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "Al buscar estudios sobre neuroeducación o informes técnicos sobre exclusión social, ¿cuál es la fuente más fiable?",
+    "contexto": "Búsqueda de información académica y técnica fiable dentro del entorno personal de aprendizaje.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un video viral en una red social de entretenimiento."
+      },
+      {
+        "clave": "b",
+        "texto": "El primer resultado que aparezca en un buscador generalista."
+      },
+      {
+        "clave": "c",
+        "texto": "Una opinión en un foro de discusión anónimo."
+      },
+      {
+        "clave": "d",
+        "texto": "Un buscador académico como Google Scholar que indexa literatura científica."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario presenta Google Scholar como un buscador especializado en literatura científica y académica. Dentro del PLE, pertenece al nodo de acceso a la información y resulta adecuado cuando se necesitan estudios, investigaciones, informes técnicos o fuentes con mayor fiabilidad que una publicación informal en redes sociales o foros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un vídeo viral puede ser llamativo o fácil de consumir, pero no garantiza rigor académico, revisión científica ni fiabilidad. Puede servir como punto de partida informal, pero no como fuente principal para estudiar neuroeducación o exclusión social."
+        },
+        {
+          "clave": "b",
+          "motivo": "El primer resultado de un buscador generalista no siempre es el más fiable. Puede aparecer por posicionamiento, publicidad o popularidad, no necesariamente por calidad científica o técnica."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una opinión anónima en un foro puede aportar experiencia personal, pero no tiene por qué estar contrastada ni basada en evidencias. No es una fuente fiable para fundamentar estudios académicos o informes técnicos."
+        }
+      ],
+      "resumen_didactico": "Cuando necesitas información académica o técnica, debes acudir a fuentes especializadas y contrastables. Google Scholar es más adecuado que redes sociales, foros anónimos o resultados generalistas sin verificar.",
+      "ejemplo_practico": "Si una educadora infantil quiere estudiar neuroeducación, puede buscar artículos científicos en Google Scholar en lugar de basarse solo en vídeos virales. Del mismo modo, un técnico de integración social puede localizar informes sobre exclusión social publicados por universidades, revistas científicas o instituciones especializadas.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque Google Scholar indexa literatura científica y académica, lo que lo convierte en una fuente más fiable para buscar estudios e informes técnicos."
+    }
+  },
+  {
+    "id": "UT6-Q23",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué característica define a las herramientas de aprendizaje adaptativo?",
+    "contexto": "Uso de plataformas digitales que ajustan el aprendizaje al ritmo, progreso y necesidades de cada persona.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Adaptan el contenido y el ritmo de enseñanza al progreso real de cada persona."
+      },
+      {
+        "clave": "b",
+        "texto": "Permiten que varios usuarios editen un documento al mismo tiempo."
+      },
+      {
+        "clave": "c",
+        "texto": "Están diseñadas exclusivamente para aprender lenguajes de programación."
+      },
+      {
+        "clave": "d",
+        "texto": "Son herramientas gratuitas que no requieren registro de usuario."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que las herramientas de aprendizaje adaptativo, como Coursera, Khan Academy o Duolingo, son plataformas que ajustan los contenidos al ritmo de cada persona. Su función principal es adaptar el proceso de enseñanza según el progreso real del usuario, reforzando aquello que necesita mejorar y permitiendo avanzar cuando ya domina determinados contenidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Permitir que varios usuarios editen un documento al mismo tiempo corresponde a herramientas de colaboración y comunicación, no a herramientas de aprendizaje adaptativo. Ejemplos de colaboración serían Teams, Miro o Padlet."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las herramientas de aprendizaje adaptativo no están diseñadas exclusivamente para programación. Pueden utilizarse para idiomas, matemáticas, formación profesional, competencias digitales, neurociencia, negocios u otros ámbitos de aprendizaje."
+        },
+        {
+          "clave": "d",
+          "motivo": "Que una herramienta sea gratuita o no requiera registro no define el aprendizaje adaptativo. La característica esencial no es el precio ni el acceso, sino la capacidad de ajustar el contenido y el ritmo al progreso del usuario."
+        }
+      ],
+      "resumen_didactico": "Una herramienta de aprendizaje adaptativo no ofrece el mismo camino a todos los usuarios. Analiza el progreso de cada persona y adapta el contenido, la dificultad o el ritmo según sus necesidades.",
+      "ejemplo_practico": "Si un estudiante usa Duolingo para aprender inglés y falla varias veces en los tiempos verbales, la plataforma puede repetir ejercicios similares o reforzar esa parte antes de avanzar a contenidos más complejos.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque las herramientas de aprendizaje adaptativo se caracterizan por ajustar el contenido y el ritmo de enseñanza al progreso real de cada persona."
+    }
+  },
+  {
+    "id": "UT6-Q24",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Cuál es la recomendación profesional para gestionar un PLE de forma eficiente sin sentirse abrumado?",
+    "contexto": "Gestión eficiente del Entorno Personal de Aprendizaje mediante selección progresiva de herramientas y creación de hábitos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Utilizar solo herramientas físicas como papel y bolígrafo para evitar distracciones."
+      },
+      {
+        "clave": "b",
+        "texto": "Seleccionar una herramienta por cada nodo (acceso, creación y red) y dominarlas con hábito."
+      },
+      {
+        "clave": "c",
+        "texto": "Delegar la construcción del PLE en un consultor externo o en la propia empresa."
+      },
+      {
+        "clave": "d",
+        "texto": "Usar todas las herramientas nuevas que aparezcan cada semana en el mercado."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario recomienda no intentar usar todas las herramientas digitales a la vez, porque eso puede generar saturación y desorganización. Para construir un PLE eficiente, lo adecuado es elegir una herramienta para cada nodo principal: una para acceder a la información, como Feedly; una para crear y organizar conocimiento, como Notion u Obsidian; y una para conectar con otras personas del sector, como LinkedIn. La clave no está en acumular aplicaciones, sino en usarlas con hábito y criterio profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El papel y el bolígrafo pueden ser útiles como apoyo, pero el PLE tratado en el temario es un ecosistema digital de aprendizaje. Limitarse solo a herramientas físicas impediría aprovechar fuentes digitales, redes profesionales y herramientas de organización online."
+        },
+        {
+          "clave": "c",
+          "motivo": "El PLE es personal y debe construirse según las necesidades, objetivos y sector de cada profesional. Delegarlo completamente en una empresa o consultor externo iría contra la idea de autonomía y autoliderazgo digital."
+        },
+        {
+          "clave": "d",
+          "motivo": "Usar todas las herramientas nuevas que aparecen genera dispersión y saturación. El temario insiste en lo contrario: seleccionar pocas herramientas, dominarlas y convertir su uso en un hábito estable."
+        }
+      ],
+      "resumen_didactico": "Un PLE eficiente no se construye acumulando aplicaciones, sino eligiendo pocas herramientas bien seleccionadas y usándolas de forma constante.",
+      "ejemplo_practico": "Un estudiante de DAW puede empezar con Feedly para seguir blogs técnicos, Notion para organizar apuntes y errores resueltos, y LinkedIn o GitHub para conectar con profesionales y mostrar sus avances. Con solo esas tres herramientas ya tiene un PLE funcional y manejable.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque la recomendación profesional es elegir una herramienta por cada nodo del PLE y dominarla mediante el hábito, evitando la saturación digital."
+    }
+  },
+  {
+    "id": "UT6-Q25",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué valor aporta un e-portfolio en el contexto del aprendizaje autónomo?",
+    "contexto": "Uso del e-portfolio como herramienta para documentar evidencias, reflexionar sobre el progreso y observar la evolución de las competencias profesionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite recopilar evidencias de progreso y reflexionar sobre la evolución de las competencias."
+      },
+      {
+        "clave": "b",
+        "texto": "Sirve de almacén para todos los archivos personales que no caben en el móvil."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituye al título oficial de Formación Profesional en las entrevistas."
+      },
+      {
+        "clave": "d",
+        "texto": "Es un requisito legal para poder cobrar el salario en especie."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario relaciona el e-portfolio con la autogestión, la autoevaluación y el aprendizaje autónomo. Un e-portfolio permite recopilar trabajos, proyectos, prácticas, campañas, evidencias y reflexiones que muestran la evolución del estudiante o profesional. Su valor no está solo en guardar archivos, sino en ayudar a analizar el propio progreso, detectar mejoras y demostrar competencias desarrolladas a lo largo del tiempo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un e-portfolio no es simplemente un almacén de archivos personales. Aunque puede contener documentos o proyectos, su finalidad principal es organizar evidencias significativas del aprendizaje y reflexionar sobre ellas."
+        },
+        {
+          "clave": "c",
+          "motivo": "El e-portfolio no sustituye al título oficial de Formación Profesional. Puede complementar el currículum y demostrar competencias reales mediante evidencias, pero no reemplaza la acreditación académica oficial."
+        },
+        {
+          "clave": "d",
+          "motivo": "No existe relación entre el e-portfolio y el cobro del salario en especie. Esta opción pertenece al ámbito laboral y retributivo, no al aprendizaje autónomo ni a la gestión del conocimiento."
+        }
+      ],
+      "resumen_didactico": "El e-portfolio sirve para mostrar y revisar el camino recorrido: qué has hecho, qué has aprendido, cómo has mejorado y qué competencias puedes demostrar con evidencias reales.",
+      "ejemplo_practico": "Un estudiante de DAW puede incluir en su e-portfolio proyectos web, capturas de aplicaciones, enlaces a GitHub, explicaciones de errores resueltos y reflexiones sobre lo que ha aprendido en cada práctica.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el e-portfolio permite recopilar evidencias de progreso y reflexionar sobre la evolución de las competencias dentro del aprendizaje autónomo."
+    }
+  },
+  {
+    "id": "UT6-Q26",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "En el ámbito de la colaboración digital, ¿qué función cumplen herramientas como Microsoft Teams o Slack?",
+    "contexto": "Uso de herramientas digitales de colaboración y comunicación para facilitar el trabajo en equipo sin depender de la presencia física.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Son buscadores especializados en ofertas de empleo internacional."
+      },
+      {
+        "clave": "b",
+        "texto": "Actúan como una oficina virtual que elimina las barreras de tiempo y espacio para el trabajo en equipo."
+      },
+      {
+        "clave": "c",
+        "texto": "Sirven para realizar copias de seguridad de las fotos personales."
+      },
+      {
+        "clave": "d",
+        "texto": "Permiten editar videos de alta resolución de forma colaborativa."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El temario clasifica herramientas como Microsoft Teams, Miro, Padlet, Discord o Slack dentro del ámbito de la colaboración y la comunicación digital. Su función principal es facilitar el trabajo en equipo, la coordinación de tareas, la comunicación entre personas y la organización de proyectos sin necesidad de estar físicamente en el mismo lugar ni coincidir siempre en el mismo horario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Microsoft Teams o Slack no son buscadores de ofertas de empleo. Aunque pueden usarse en entornos profesionales, su función principal no es buscar empleo, sino facilitar la comunicación y la colaboración entre personas o equipos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Realizar copias de seguridad de fotos personales corresponde a servicios de almacenamiento en la nube o backup, no a herramientas de colaboración como Teams o Slack."
+        },
+        {
+          "clave": "d",
+          "motivo": "La edición colaborativa de vídeo de alta resolución corresponde a herramientas específicas de edición multimedia. Teams o Slack pueden servir para coordinar un equipo que trabaja en un vídeo, pero no son principalmente editores de vídeo colaborativos."
+        }
+      ],
+      "resumen_didactico": "Las herramientas de colaboración digital funcionan como espacios de trabajo compartidos: permiten comunicarse, organizar tareas, compartir archivos y coordinar proyectos aunque las personas estén en lugares distintos.",
+      "ejemplo_practico": "Un equipo de estudiantes de DAW puede usar Slack para organizar un proyecto web: crear canales por módulos, resolver dudas, compartir enlaces, coordinar entregas y mantener la comunicación sin reunirse físicamente todos los días.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque herramientas como Microsoft Teams o Slack actúan como oficinas virtuales que eliminan barreras de tiempo y espacio para el trabajo en equipo."
+    }
+  },
+  {
+    "id": "UT6-Q27",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué riesgo ético existe al usar imágenes generadas por IA para materiales educativos sin revisión previa?",
+    "contexto": "Uso responsable de imágenes generadas por inteligencia artificial y revisión crítica para evitar sesgos o estereotipos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que la IA cobre derechos de autor por cada vez que se visualice la imagen."
+      },
+      {
+        "clave": "b",
+        "texto": "Que las imágenes se borren automáticamente al cabo de veinticuatro horas."
+      },
+      {
+        "clave": "c",
+        "texto": "Que las imágenes tengan demasiada calidad y distraigan al alumnado."
+      },
+      {
+        "clave": "d",
+        "texto": "Que las imágenes perpetúen estereotipos y sesgos de género o raza presentes en los datos de entrenamiento."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que uno de los pilares éticos del uso de la inteligencia artificial es la justicia y la no discriminación. La IA puede reproducir sesgos presentes en los datos con los que fue entrenada, como estereotipos de género, raza, profesión o roles sociales. Por eso, cuando se usan imágenes generadas por IA en materiales educativos, el profesional debe revisarlas antes de utilizarlas para evitar transmitir mensajes discriminatorios o poco inclusivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El problema ético descrito en el temario no es que la IA cobre derechos de autor cada vez que se visualice una imagen. Aunque la propiedad intelectual puede ser un tema relevante en contenidos generados por IA, esta opción no responde al riesgo concreto de usar imágenes sin revisión previa."
+        },
+        {
+          "clave": "b",
+          "motivo": "Que una imagen se borre automáticamente sería una cuestión técnica o de funcionamiento de una plataforma concreta, no un riesgo ético relacionado con la justicia, la inclusión o la no discriminación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La calidad visual de una imagen no es el problema ético principal. Una imagen puede ser técnicamente excelente y, aun así, transmitir estereotipos o sesgos si no se revisa críticamente."
+        }
+      ],
+      "resumen_didactico": "Las imágenes generadas por IA deben revisarse porque pueden parecer correctas visualmente, pero reproducir prejuicios sociales aprendidos de sus datos de entrenamiento.",
+      "ejemplo_practico": "Una educadora usa IA para crear imágenes de profesiones y observa que los médicos aparecen siempre como hombres y las cuidadoras siempre como mujeres. Antes de usar ese material en clase, debe corregirlo para evitar reforzar estereotipos de género.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque el principal riesgo ético es que las imágenes generadas por IA perpetúen estereotipos y sesgos de género, raza u otros prejuicios presentes en los datos de entrenamiento."
+    }
+  },
+  {
+    "id": "UT6-Q28",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Qué significa que la IA debe tener a la \"persona en el centro\"?",
+    "contexto": "Principio ético del uso responsable de la inteligencia artificial basado en derechos humanos, bienestar, juicio crítico y control humano.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que la tecnología debe estar al servicio de los derechos humanos y el bienestar de las personas."
+      },
+      {
+        "clave": "b",
+        "texto": "Que los humanos deben aprender a pensar como las máquinas para ser eficientes."
+      },
+      {
+        "clave": "c",
+        "texto": "Que la IA debe decidir qué es lo mejor para el humano en cada situación."
+      },
+      {
+        "clave": "d",
+        "texto": "Que el usuario debe estar siempre conectado a la IA para poder trabajar."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que la inteligencia artificial debe usarse de forma responsable, poniendo siempre a la persona en el centro. Esto significa que la IA no debe sustituir el juicio humano ni dirigir las decisiones profesionales, sino servir como herramienta de apoyo. La tecnología debe respetar la dignidad, la privacidad, los derechos humanos, la igualdad y el bienestar de las personas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El principio de poner a la persona en el centro no significa que los humanos deban imitar el pensamiento de las máquinas. Al contrario, el valor humano está en el criterio, la ética, la empatía y la capacidad de contextualizar."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esta opción contradice el principio ético del temario. La IA puede ayudar a analizar información o proponer respuestas, pero no debe tomar las decisiones finales por el ser humano. La responsabilidad debe seguir siendo humana."
+        },
+        {
+          "clave": "d",
+          "motivo": "Poner a la persona en el centro no significa depender permanentemente de la IA. El temario insiste en usar la IA como copiloto, no como una herramienta que controle o condicione todo el trabajo profesional."
+        }
+      ],
+      "resumen_didactico": "Que la IA tenga a la persona en el centro significa que la tecnología debe servir al ser humano, no dominarlo ni sustituir su responsabilidad profesional.",
+      "ejemplo_practico": "Un técnico de integración social puede usar IA para mejorar la redacción de un informe, pero debe proteger los datos personales, revisar el resultado y asegurarse de que el informe respeta la dignidad y la situación real de la persona atendida.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque situar a la persona en el centro significa que la IA debe estar al servicio de los derechos humanos, el bienestar y la responsabilidad ética de las personas."
+    }
+  },
+  {
+    "id": "UT6-Q29",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "Un técnico quiere estar al día de los cambios en el BOE sin entrar cada día en la web. ¿Cómo puede integrarlo en su PLE?",
+    "contexto": "Integración de fuentes normativas en el Entorno Personal de Aprendizaje mediante alertas o canales RSS para mantenerse actualizado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Preguntando cada mañana a la inteligencia artificial si hay cambios."
+      },
+      {
+        "clave": "b",
+        "texto": "Comprando el periódico físico todos los días antes de entrar a la oficina."
+      },
+      {
+        "clave": "c",
+        "texto": "Esperando a que la empresa le envíe un resumen por correo postal."
+      },
+      {
+        "clave": "d",
+        "texto": "Configurando alertas o canales RSS de la normativa en su agregador de noticias."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que uno de los nodos del PLE es el acceso a la información. Para mantenerse actualizado de forma profesional, no basta con esperar a que las novedades lleguen por casualidad, sino que conviene configurar fuentes fiables, alertas y agregadores de noticias como Feedly. En el caso de un técnico que necesita seguir cambios normativos del BOE, lo adecuado es integrar esas fuentes mediante alertas o canales RSS dentro de su sistema personal de aprendizaje.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Preguntar a una IA puede servir como apoyo, pero no es la forma más fiable ni sistemática de seguir cambios normativos. La IA puede cometer errores, alucinar información o no estar actualizada. Para normativa oficial, es mejor acudir a fuentes primarias como el BOE mediante alertas o RSS."
+        },
+        {
+          "clave": "b",
+          "motivo": "Comprar el periódico físico no es una estrategia eficiente ni específica para seguir cambios normativos del BOE. El PLE digital busca precisamente organizar fuentes actualizadas de forma ágil y automatizada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esperar a que la empresa envíe información por correo postal implica una actitud pasiva y dependiente. El temario defiende el autoliderazgo digital: el profesional debe construir su propio sistema para acceder al conocimiento."
+        }
+      ],
+      "resumen_didactico": "Integrar el BOE en el PLE significa convertir una fuente normativa oficial en un canal habitual de actualización profesional, usando alertas o RSS para recibir novedades sin buscarlas manualmente cada día.",
+      "ejemplo_practico": "Un técnico de Administración y Finanzas puede configurar en Feedly o en un sistema de alertas las novedades del BOE relacionadas con normativa fiscal, laboral o contable. Así recibe los cambios importantes en su panel de lectura y puede reaccionar antes.",
+      "conclusion_final": "La respuesta correcta es la opción d, porque configurar alertas o canales RSS de normativa en un agregador de noticias permite mantenerse actualizado de forma autónoma, ordenada y profesional dentro del PLE."
+    }
+  },
+  {
+    "id": "UT6-Q30",
+    "tema": "UT6 Digitalización y aprendizaje (PLE)",
+    "pregunta": "¿Cuál es el resultado final de gestionar correctamente el propio aprendizaje y las herramientas digitales?",
+    "contexto": "Resultado de aplicar aprendizaje autónomo, PLE, herramientas digitales, pensamiento crítico y uso ético de la inteligencia artificial.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Convertirse en un experto en informática independientemente del ciclo estudiado."
+      },
+      {
+        "clave": "b",
+        "texto": "Conseguir que la IA realice todo el trabajo profesional sin supervisión humana."
+      },
+      {
+        "clave": "c",
+        "texto": "Ser un gestor del conocimiento autónomo, ético y preparado para los retos de un mercado cambiante."
+      },
+      {
+        "clave": "d",
+        "texto": "Garantizar que nunca se tendrá que volver a estudiar tras obtener el título."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario concluye que el objetivo de la digitalización y del aprendizaje autónomo no es acumular herramientas, sino convertirse en un profesional capaz de gestionar su propio conocimiento. Esto implica aprender durante toda la vida, construir un PLE ordenado, seleccionar fuentes fiables, usar herramientas digitales con criterio, auditar los resultados de la IA y actuar con ética, privacidad, transparencia y pensamiento crítico. El resultado final es un profesional autónomo, responsable y preparado para adaptarse a los cambios del mercado laboral.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Gestionar bien el aprendizaje digital no convierte automáticamente a cualquier persona en experta en informática. El objetivo es desarrollar autonomía, criterio y capacidad de actualización dentro del propio sector profesional, no transformar todos los perfiles en especialistas informáticos."
+        },
+        {
+          "clave": "b",
+          "motivo": "El temario insiste en que la IA debe actuar como copiloto, no como sustituto del profesional. Dejar que realice todo el trabajo sin supervisión humana sería irresponsable, porque la IA puede cometer errores, alucinar información o reproducir sesgos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Esta opción contradice directamente el concepto de Lifelong Learning. Obtener un título no significa dejar de estudiar; al contrario, el mercado cambiante exige actualizar competencias de forma continua para evitar la obsolescencia profesional."
+        }
+      ],
+      "resumen_didactico": "Gestionar correctamente el aprendizaje digital significa pasar de ser un consumidor pasivo de información a ser un profesional que busca, filtra, organiza, crea, comparte y revisa conocimiento con autonomía y responsabilidad.",
+      "ejemplo_practico": "Un estudiante de DAW que usa Feedly para seguir novedades, Notion para organizar aprendizajes, GitHub para mostrar proyectos, LinkedIn para conectar con profesionales y una IA como apoyo revisado críticamente está construyendo un perfil autónomo, ético y adaptable.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el resultado final es convertirse en un gestor del conocimiento autónomo, ético y preparado para afrontar los cambios constantes del mercado laboral."
+    }
+  }
+]

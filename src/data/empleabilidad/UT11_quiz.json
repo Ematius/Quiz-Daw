@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT11-Q01",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "En una página HTML, el equipo SEO necesita indicar una descripción breve del sitio, la codificación de caracteres y otras instrucciones no visibles para el usuario. ¿En qué sección del documento deben colocarse esos datos?",
+    "contexto": "Ubicación de metadatos e información técnica de una página web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dentro de <head>."
+      },
+      {
+        "clave": "b",
+        "texto": "Dentro de <body>."
+      },
+      {
+        "clave": "c",
+        "texto": "Al final de la etiqueta <footer>."
+      },
+      {
+        "clave": "d",
+        "texto": "Dentro de la primera etiqueta <p>."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La cabecera del documento HTML, representada por <head>, contiene información técnica como título, metadatos, enlaces a hojas de estilo o scripts.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<body> contiene el contenido visible de la página, no los metadatos técnicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "<footer> es un elemento de contenido semántico dentro del cuerpo, no la zona reservada a metadatos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un párrafo sirve para texto visible, no para declarar información técnica del documento."
+        }
+      ],
+      "resumen_didactico": "Los datos técnicos y no visibles se colocan en <head>.",
+      "ejemplo_practico": "Etiquetas como <meta charset=\"UTF-8\"> o <meta name=\"description\" ...> van dentro de <head>.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque la sección <head> almacena la información técnica del documento HTML."
+    }
+  },
+  {
+    "id": "UT11-Q02",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué selector CSS debe utilizarse si se quiere aplicar un estilo solo a los elementos <li> que sean hijos directos de un <ul>?",
+    "contexto": "Uso de selectores hijo en CSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ul li"
+      },
+      {
+        "clave": "b",
+        "texto": "ul + li"
+      },
+      {
+        "clave": "c",
+        "texto": "ul > li"
+      },
+      {
+        "clave": "d",
+        "texto": "ul.li"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El selector hijo en CSS usa el signo > para afectar solo a los descendientes directos de un elemento padre.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "ul li selecciona cualquier li descendiente, aunque esté más profundo y no sea hijo directo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El signo + representa un selector adyacente, no un hijo directo."
+        },
+        {
+          "clave": "d",
+          "motivo": "ul.li buscaría un elemento ul con clase li, que no es lo pedido."
+        }
+      ],
+      "resumen_didactico": "Para hijos directos en CSS se usa el operador >.",
+      "ejemplo_practico": "ul > li { list-style-type: square; } solo afecta a los li que cuelgan inmediatamente del ul.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque ul > li representa el selector hijo directo."
+    }
+  },
+  {
+    "id": "UT11-Q03",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "Un documento debe validarse con reglas muy estrictas y sin permitir etiquetas antiguas de presentación visual. ¿Qué tipo de DTD encaja con ese requisito?",
+    "contexto": "Elección del tipo de DTD según el grado de rigidez estructural.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DTD Frameset."
+      },
+      {
+        "clave": "b",
+        "texto": "DTD Transicional."
+      },
+      {
+        "clave": "c",
+        "texto": "DTD Estricto."
+      },
+      {
+        "clave": "d",
+        "texto": "DTD Flexible."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El DTD Estricto obliga a usar estructura limpia y evita elementos antiguos orientados al diseño visual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Frameset está relacionado con documentos basados en marcos, no con máxima rigidez semántica."
+        },
+        {
+          "clave": "b",
+          "motivo": "Transicional es más permisivo y acepta elementos en desuso."
+        },
+        {
+          "clave": "d",
+          "motivo": "DTD Flexible no forma parte de la clasificación oficial del temario."
+        }
+      ],
+      "resumen_didactico": "Si el documento debe ser rígido y limpio, se usa DTD Estricto.",
+      "ejemplo_practico": "Un HTML que deba separar completamente estructura y presentación usaría un DTD Strict.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el DTD Estricto es el que impone las reglas más duras."
+    }
+  },
+  {
+    "id": "UT11-Q04",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "En XML, ¿qué nombre recibe el bloque completo formado por etiqueta de apertura, contenido y etiqueta de cierre?",
+    "contexto": "Terminología básica de estructura XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Atributo."
+      },
+      {
+        "clave": "b",
+        "texto": "Elemento."
+      },
+      {
+        "clave": "c",
+        "texto": "Entidad."
+      },
+      {
+        "clave": "d",
+        "texto": "Prólogo."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Un elemento XML engloba la apertura, el contenido y el cierre. Es la unidad estructural básica del documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El atributo añade propiedades al elemento, pero no es el bloque completo."
+        },
+        {
+          "clave": "c",
+          "motivo": "La entidad es un recurso reutilizable o marcador de posición, no el bloque principal de apertura-contenido-cierre."
+        },
+        {
+          "clave": "d",
+          "motivo": "El prólogo es la cabecera inicial del XML, no el conjunto de etiquetas con contenido."
+        }
+      ],
+      "resumen_didactico": "Etiqueta no es lo mismo que elemento: el elemento es el conjunto completo.",
+      "ejemplo_practico": "En <nombre>Teclado</nombre>, todo el bloque constituye un elemento.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el bloque completo se denomina elemento."
+    }
+  },
+  {
+    "id": "UT11-Q05",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué atributo del prólogo XML sirve para indicar si el documento depende o no de declaraciones externas como DTD o XSD?",
+    "contexto": "Identificación de atributos del prólogo XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "encoding"
+      },
+      {
+        "clave": "b",
+        "texto": "version"
+      },
+      {
+        "clave": "c",
+        "texto": "standalone"
+      },
+      {
+        "clave": "d",
+        "texto": "type"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El atributo standalone del prólogo XML indica si el documento puede tratarse de forma independiente o si depende de recursos externos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "encoding especifica la codificación de caracteres, no la dependencia de ficheros externos."
+        },
+        {
+          "clave": "b",
+          "motivo": "version indica la versión de XML utilizada."
+        },
+        {
+          "clave": "d",
+          "motivo": "type no es uno de los atributos básicos de la declaración inicial XML."
+        }
+      ],
+      "resumen_didactico": "La independencia frente a esquemas externos se expresa con standalone.",
+      "ejemplo_practico": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>",
+      "conclusion_final": "La respuesta correcta es la opción c, porque standalone es el atributo asociado a la independencia del documento."
+    }
+  },
+  {
+    "id": "UT11-Q06",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "Si en una DTD un elemento debe contener texto analizado por el parser, ¿qué declaración de contenido se utiliza?",
+    "contexto": "Tipos de contenido en DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "EMPTY"
+      },
+      {
+        "clave": "b",
+        "texto": "ANY"
+      },
+      {
+        "clave": "c",
+        "texto": "#PCDATA"
+      },
+      {
+        "clave": "d",
+        "texto": "#CDATA"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "#PCDATA se usa en DTD para declarar texto normal analizado por el parser XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "EMPTY indica que el elemento no tiene contenido."
+        },
+        {
+          "clave": "b",
+          "motivo": "ANY permite contenido genérico, pero no especifica texto analizado como tal."
+        },
+        {
+          "clave": "d",
+          "motivo": "#CDATA hace referencia a texto no analizado como marcado, no al texto parseado habitual del contenido de un elemento."
+        }
+      ],
+      "resumen_didactico": "En DTD, el texto normal que el parser procesa se declara con #PCDATA.",
+      "ejemplo_practico": "<!ELEMENT nombre (#PCDATA)> permite que <nombre>contenga texto</nombre>.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque #PCDATA representa texto analizado por el parser."
+    }
+  },
+  {
+    "id": "UT11-Q07",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "En una DTD, ¿qué valor indica que un atributo es opcional y puede no aparecer en el documento sin invalidarlo?",
+    "contexto": "Valores de obligatoriedad en atributos DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "#REQUIRED"
+      },
+      {
+        "clave": "b",
+        "texto": "#IMPLIED"
+      },
+      {
+        "clave": "c",
+        "texto": "#FIXED"
+      },
+      {
+        "clave": "d",
+        "texto": "#MANDATORY"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "#IMPLIED señala que el atributo es opcional dentro de una declaración ATTLIST.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "#REQUIRED indica justo lo contrario: que el atributo es obligatorio."
+        },
+        {
+          "clave": "c",
+          "motivo": "#FIXED obliga a un valor fijo concreto si el atributo se declara."
+        },
+        {
+          "clave": "d",
+          "motivo": "#MANDATORY no es una palabra clave estándar de DTD."
+        }
+      ],
+      "resumen_didactico": "Atributo opcional en DTD equivale a #IMPLIED.",
+      "ejemplo_practico": "<!ATTLIST producto categoria CDATA #IMPLIED>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque #IMPLIED marca un atributo opcional."
+    }
+  },
+  {
+    "id": "UT11-Q08",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué símbolo de ocurrencia de DTD debe utilizarse para indicar que un elemento puede aparecer cero, una o muchas veces?",
+    "contexto": "Operadores de cardinalidad en DTD.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "?"
+      },
+      {
+        "clave": "b",
+        "texto": "+"
+      },
+      {
+        "clave": "c",
+        "texto": "*"
+      },
+      {
+        "clave": "d",
+        "texto": "|"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El asterisco en DTD indica cero o más apariciones del elemento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "? indica cero o una vez, pero no múltiples repeticiones."
+        },
+        {
+          "clave": "b",
+          "motivo": "+ indica una o más veces; exige al menos una aparición."
+        },
+        {
+          "clave": "d",
+          "motivo": "| se usa para alternativas, no para número de ocurrencias."
+        }
+      ],
+      "resumen_didactico": "Para opcionalidad con repetición múltiple, en DTD se usa *.",
+      "ejemplo_practico": "<!ELEMENT inventario (articulo*)> permite ningún artículo, uno o muchos.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque * expresa cero o más ocurrencias."
+    }
+  },
+  {
+    "id": "UT11-Q09",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "Si una hoja XSLT debe extraer el valor de un nodo concreto del XML y mostrarlo en la salida, ¿qué instrucción es la más adecuada?",
+    "contexto": "Extracción de valores individuales en XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:if>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:choose>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:value-of>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:sort>"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "<xsl:value-of> es la instrucción XSLT destinada a extraer y mostrar el valor de un nodo seleccionado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xsl:if> sirve para condicionar la ejecución, no para extraer directamente un valor."
+        },
+        {
+          "clave": "b",
+          "motivo": "<xsl:choose> gestiona decisiones entre varios casos."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:sort> ordena resultados, pero no imprime por sí misma el contenido de un nodo."
+        }
+      ],
+      "resumen_didactico": "Cuando quieres mostrar el texto o valor de un nodo, la etiqueta clave es <xsl:value-of>.",
+      "ejemplo_practico": "<xsl:value-of select=\"precio\"/> imprime el contenido del nodo precio en la salida.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque <xsl:value-of> extrae el valor del nodo seleccionado."
+    }
+  },
+  {
+    "id": "UT11-Q10",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué instrucción XSLT se utiliza para recorrer repetidamente todos los nodos de una colección seleccionada?",
+    "contexto": "Iteración de nodos en XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:for-each>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:template>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:apply-imports>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:output>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "<xsl:for-each> permite recorrer de forma repetitiva un conjunto de nodos y ejecutar sobre cada uno la misma lógica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<xsl:template> define plantillas, pero no es la instrucción específica de iteración pedida."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:apply-imports> no recorre colecciones como mecanismo básico de bucle."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:output> configura el tipo de salida de la transformación."
+        }
+      ],
+      "resumen_didactico": "Para recorrer muchos nodos en XSLT se usa <xsl:for-each>.",
+      "ejemplo_practico": "<xsl:for-each select=\"inventario/plantas\"> ... </xsl:for-each>",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <xsl:for-each> es la instrucción de iteración."
+    }
+  },
+  {
+    "id": "UT11-Q11",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "En XSLT, si se desea mostrar solo los elementos cuyo precio sea menor que un valor concreto, ¿qué instrucción condicional debe emplearse dentro del recorrido?",
+    "contexto": "Filtrado condicional en XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:sort>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:if>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:stylesheet>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:comment>"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "<xsl:if> permite ejecutar un bloque solo cuando se cumple una condición expresada en el atributo test.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<xsl:sort> ordena, pero no filtra condicionalmente por sí sola."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:stylesheet> declara la hoja de estilo completa, no una condición."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:comment> se usa para insertar comentarios en la salida."
+        }
+      ],
+      "resumen_didactico": "Para mostrar algo solo si se cumple una condición, se usa <xsl:if>.",
+      "ejemplo_practico": "<xsl:if test=\"precio &lt; 1\"> ... </xsl:if>",
+      "conclusion_final": "La respuesta correcta es la opción b, porque <xsl:if> permite filtrar por condiciones dentro de la transformación."
+    }
+  },
+  {
+    "id": "UT11-Q12",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué instrucción de XSLT permite escoger entre varios caminos posibles, acompañada normalmente de bloques <xsl:when> y <xsl:otherwise>?",
+    "contexto": "Selección múltiple en XSLT.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<xsl:choose>"
+      },
+      {
+        "clave": "b",
+        "texto": "<xsl:for-each>"
+      },
+      {
+        "clave": "c",
+        "texto": "<xsl:value-of>"
+      },
+      {
+        "clave": "d",
+        "texto": "<xsl:copy>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "<xsl:choose> se utiliza para tomar decisiones entre varias alternativas usando <xsl:when> y, opcionalmente, <xsl:otherwise>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<xsl:for-each> recorre nodos, pero no gestiona varios caminos condicionales por sí mismo."
+        },
+        {
+          "clave": "c",
+          "motivo": "<xsl:value-of> extrae un valor, no selecciona entre diferentes casos."
+        },
+        {
+          "clave": "d",
+          "motivo": "<xsl:copy> copia nodos, no resuelve lógica condicional múltiple."
+        }
+      ],
+      "resumen_didactico": "Cuando hay varios casos posibles, la estructura típica es <xsl:choose> con <xsl:when> y <xsl:otherwise>.",
+      "ejemplo_practico": "Se puede usar para mostrar 'Premium' si precio > 10 y 'Económica' en caso contrario.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <xsl:choose> es la instrucción de selección múltiple en XSLT."
+    }
+  },
+  {
+    "id": "UT11-Q13",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "Si en XPath se quiere seleccionar todos los elementos llamados factura sin importar su posición exacta dentro del documento, ¿qué expresión debe utilizarse?",
+    "contexto": "Selección global de nodos en XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/factura"
+      },
+      {
+        "clave": "b",
+        "texto": "factura//"
+      },
+      {
+        "clave": "c",
+        "texto": "//factura"
+      },
+      {
+        "clave": "d",
+        "texto": "../factura"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En XPath, //nombreNodo permite buscar todos los nodos con ese nombre en cualquier parte del documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "/factura solo buscaría un elemento factura directamente desde la raíz."
+        },
+        {
+          "clave": "b",
+          "motivo": "No es la sintaxis correcta de búsqueda global en XPath."
+        },
+        {
+          "clave": "d",
+          "motivo": "../factura se mueve respecto al nodo actual y no expresa una búsqueda global."
+        }
+      ],
+      "resumen_didactico": "El doble slash antes del nombre del elemento significa: búscalo en cualquier nivel del árbol.",
+      "ejemplo_practico": "//factura recupera facturas situadas en /ventas, /historico o cualquier otra rama del XML.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque //factura selecciona todas las facturas sin importar dónde estén."
+    }
+  },
+  {
+    "id": "UT11-Q14",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué expresión XPath selecciona todos los atributos llamados id presentes en cualquier nodo del documento?",
+    "contexto": "Consulta global de atributos en XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "//@id"
+      },
+      {
+        "clave": "b",
+        "texto": "//id"
+      },
+      {
+        "clave": "c",
+        "texto": "/@id"
+      },
+      {
+        "clave": "d",
+        "texto": "id//@"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En XPath, @ indica atributo y // indica búsqueda en cualquier nivel. Juntos forman //@id.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "//id buscaría elementos llamados id, no atributos."
+        },
+        {
+          "clave": "c",
+          "motivo": "/@id solo apunta a un atributo desde la raíz inmediata, no de forma global."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es una sintaxis válida de XPath."
+        }
+      ],
+      "resumen_didactico": "Para atributos globales en XPath: doble slash y arroba.",
+      "ejemplo_practico": "//@id devuelve los id de <paciente id=\"1\">, <receta id=\"R4\"> o cualquier otro nodo.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque //@id selecciona todos los atributos id del documento."
+    }
+  },
+  {
+    "id": "UT11-Q15",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "Dentro de la sintaxis FLWOR de XQuery, ¿qué cláusula se encarga de devolver el resultado final de la consulta?",
+    "contexto": "Identificación de instrucciones FLWOR en XQuery.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "for"
+      },
+      {
+        "clave": "b",
+        "texto": "where"
+      },
+      {
+        "clave": "c",
+        "texto": "return"
+      },
+      {
+        "clave": "d",
+        "texto": "order by"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En FLWOR, return marca qué contenido se entrega como salida final de la consulta XQuery.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "for se usa para recorrer secuencias, no para devolver el resultado final."
+        },
+        {
+          "clave": "b",
+          "motivo": "where filtra por condiciones."
+        },
+        {
+          "clave": "d",
+          "motivo": "order by ordena la secuencia antes de la salida, pero no es la cláusula final que devuelve el resultado."
+        }
+      ],
+      "resumen_didactico": "En FLWOR, la consulta termina conceptualmente en lo que indique return.",
+      "ejemplo_practico": "for $p in ... return <li>{$p/nombre}</li>",
+      "conclusion_final": "La respuesta correcta es la opción c, porque return define el resultado final de la consulta."
+    }
+  },
+  {
+    "id": "UT11-Q16",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Cuál es una ventaja clave de una base de datos XML nativa frente a una XML enabled?",
+    "contexto": "Comparación entre almacenamiento XML nativo y XML enabled.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Transforma el XML en tablas para acelerar cualquier consulta."
+      },
+      {
+        "clave": "b",
+        "texto": "Recupera el documento en su estado original sin destruir su jerarquía."
+      },
+      {
+        "clave": "c",
+        "texto": "Obliga a usar middleware para aceptar XML como entrada."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo admite documentos muy cortos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las bases de datos XML nativas almacenan el documento respetando su estructura original y permiten recuperarlo intacto, trabajando de manera jerárquica como el propio XML.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esa transformación al modelo relacional es típica de XML enabled, no de XML nativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las XML enabled se caracterizan precisamente por no requerir middleware para aceptar o devolver XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las bases nativas no se limitan a documentos cortos; de hecho, manejan bien documentos extensos."
+        }
+      ],
+      "resumen_didactico": "Si se quiere conservar la forma de árbol del documento, la opción adecuada es una base XML nativa.",
+      "ejemplo_practico": "Un informe clínico XML guardado en eXist-db puede recuperarse con la misma jerarquía con la que fue insertado.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque una base XML nativa conserva el documento en su estado original."
+    }
+  },
+  {
+    "id": "UT11-Q17",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué comando se utiliza en eXist-db para arrancar el motor una vez instalada la aplicación?",
+    "contexto": "Puesta en marcha básica de eXist-db.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "java -jar start.jar"
+      },
+      {
+        "clave": "b",
+        "texto": "exist-db --run"
+      },
+      {
+        "clave": "c",
+        "texto": "service xmlboot on"
+      },
+      {
+        "clave": "d",
+        "texto": "basex start -xml"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario indica que para arrancar eXist-db se emplea el comando java -jar start.jar desde la consola correspondiente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "No es el comando mostrado en el proceso de arranque del temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "No corresponde a la sintaxis real descrita para eXist-db."
+        },
+        {
+          "clave": "d",
+          "motivo": "Hace referencia a BaseX, no al arranque de eXist-db."
+        }
+      ],
+      "resumen_didactico": "Para encender eXist-db, el temario destaca un arranque mediante Java y start.jar.",
+      "ejemplo_practico": "Tras instalar la aplicación, el administrador ejecuta java -jar start.jar y accede luego a los puertos web del servicio.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque es el comando de arranque indicado para eXist-db."
+    }
+  },
+  {
+    "id": "UT11-Q18",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué puerto usa por defecto eXist-db para la interfaz web HTTP estándar?",
+    "contexto": "Puertos básicos de eXist-db.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "3306"
+      },
+      {
+        "clave": "b",
+        "texto": "8443"
+      },
+      {
+        "clave": "c",
+        "texto": "8080"
+      },
+      {
+        "clave": "d",
+        "texto": "5432"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El puerto 8080 aparece como el puerto HTTP por defecto de la interfaz web estándar de eXist-db.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "3306 se asocia habitualmente a MySQL, no a la interfaz HTTP de eXist-db."
+        },
+        {
+          "clave": "b",
+          "motivo": "8443 corresponde a HTTPS cifrado, no al HTTP estándar."
+        },
+        {
+          "clave": "d",
+          "motivo": "5432 se asocia típicamente a PostgreSQL."
+        }
+      ],
+      "resumen_didactico": "En eXist-db, HTTP estándar y 8080 van de la mano; HTTPS seguro usa 8443.",
+      "ejemplo_practico": "Un acceso web local a eXist-db puede hacerse con una URL que incluya el puerto 8080.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque el puerto HTTP por defecto de eXist-db es 8080."
+    }
+  },
+  {
+    "id": "UT11-Q19",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué herramienta web integrada en eXist-db está pensada para escribir, compilar y ejecutar consultas XQuery directamente sobre la base activa?",
+    "contexto": "Herramienta de trabajo diaria sobre eXist-db.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "eXide"
+      },
+      {
+        "clave": "b",
+        "texto": "XML Notepad"
+      },
+      {
+        "clave": "c",
+        "texto": "FeedForAll"
+      },
+      {
+        "clave": "d",
+        "texto": "XML Copy Editor"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "eXide se presenta como el IDE web oficial de eXist-db para escribir, compilar y ejecutar consultas XQuery directamente contra la base de datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "XML Notepad es un editor de XML, no el IDE web integrado de eXist-db."
+        },
+        {
+          "clave": "c",
+          "motivo": "FeedForAll se relaciona con creación y validación de feeds RSS, no con bases XML nativas."
+        },
+        {
+          "clave": "d",
+          "motivo": "XML Copy Editor es un editor XML general, no la herramienta web integrada específica de eXist-db."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta menciona IDE web oficial de eXist-db y XQuery, la respuesta es eXide.",
+      "ejemplo_practico": "Un técnico abre su navegador, accede a eXide, escribe una consulta FLWOR y ve el resultado al instante.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque eXide es el IDE web integrado de eXist-db."
+    }
+  },
+  {
+    "id": "UT11-Q20",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "En RSS 2.0, ¿qué etiqueta interna agrupa la información general del canal y sus noticias individuales?",
+    "contexto": "Estructura básica de un feed RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<channel>"
+      },
+      {
+        "clave": "b",
+        "texto": "<feed>"
+      },
+      {
+        "clave": "c",
+        "texto": "<entry>"
+      },
+      {
+        "clave": "d",
+        "texto": "<head>"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Dentro del elemento raíz RSS, la etiqueta <channel> agrupa los metadatos generales del canal y los <item> que representan las noticias o entradas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "<feed> es la raíz propia de Atom, no el contenedor interno de RSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "<entry> representa una entrada de Atom, no el contenedor del canal RSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "<head> pertenece al ámbito HTML, no a RSS."
+        }
+      ],
+      "resumen_didactico": "En RSS, la raíz es <rss> y el contenedor principal interno del canal es <channel>.",
+      "ejemplo_practico": "Un RSS puede tener <channel><title>...</title><item>...</item></channel>.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <channel> engloba la información general y las entradas del feed RSS."
+    }
+  },
+  {
+    "id": "UT11-Q21",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Cuál de estos conjuntos corresponde a los tres elementos obligatorios de la cabecera de un canal RSS?",
+    "contexto": "Elementos obligatorios en RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<title>, <link> y <description>."
+      },
+      {
+        "clave": "b",
+        "texto": "<id>, <title> y <updated>."
+      },
+      {
+        "clave": "c",
+        "texto": "<author>, <uri> y <email>."
+      },
+      {
+        "clave": "d",
+        "texto": "<guid>, <pubDate> y <source>."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En RSS, los tres elementos obligatorios dentro de <channel> son <title>, <link> y <description>.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Ese trío pertenece a Atom, no a RSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "Se relaciona con información de autor, no con la cabecera mínima obligatoria del canal RSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "Son etiquetas útiles en entradas concretas, pero no el conjunto obligatorio de la cabecera."
+        }
+      ],
+      "resumen_didactico": "Para RSS básico y válido: título, enlace y descripción.",
+      "ejemplo_practico": "Un canal de alertas necesita nombre del servicio, URL de referencia y una breve descripción de lo que publica.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <title>, <link> y <description> son los obligatorios de la cabecera RSS."
+    }
+  },
+  {
+    "id": "UT11-Q22",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué etiqueta de RSS se utiliza para asignar a cada noticia un identificador global único y así evitar confusiones o duplicados?",
+    "contexto": "Identificación única de entradas RSS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<category>"
+      },
+      {
+        "clave": "b",
+        "texto": "<guid>"
+      },
+      {
+        "clave": "c",
+        "texto": "<itemid>"
+      },
+      {
+        "clave": "d",
+        "texto": "<source>"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "<guid> significa identificador global único y sirve para distinguir inequívocamente una entrada de otras dentro del ecosistema RSS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<category> clasifica temáticamente el contenido, pero no lo identifica de forma única."
+        },
+        {
+          "clave": "c",
+          "motivo": "<itemid> no es la etiqueta estándar de RSS explicada en el temario."
+        },
+        {
+          "clave": "d",
+          "motivo": "<source> puede referenciar la fuente, pero no es el identificador único principal de la entrada."
+        }
+      ],
+      "resumen_didactico": "Si la misión es evitar duplicados o confusiones entre noticias, RSS usa <guid>.",
+      "ejemplo_practico": "Dos alertas sobre eventos parecidos pueden distinguirse porque cada una lleva su propio <guid> irrepetible.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque <guid> actúa como identificador único global en RSS."
+    }
+  },
+  {
+    "id": "UT11-Q23",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "En Atom, ¿qué elemento raíz envuelve toda la estructura del documento de sindicación?",
+    "contexto": "Estructura general de un documento Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<channel>"
+      },
+      {
+        "clave": "b",
+        "texto": "<rss>"
+      },
+      {
+        "clave": "c",
+        "texto": "<feed>"
+      },
+      {
+        "clave": "d",
+        "texto": "<entryset>"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El estándar Atom organiza el documento completo bajo el elemento raíz <feed>, normalmente acompañado del espacio de nombres correspondiente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "<channel> pertenece a RSS, no a Atom."
+        },
+        {
+          "clave": "b",
+          "motivo": "<rss> es la raíz propia del estándar RSS."
+        },
+        {
+          "clave": "d",
+          "motivo": "<entryset> no es una etiqueta raíz estándar de Atom."
+        }
+      ],
+      "resumen_didactico": "RSS y Atom se distinguen rápido por sus raíces: <rss> frente a <feed>.",
+      "ejemplo_practico": "Un Atom comienza con <feed xmlns=\"http://www.w3.org/2005/Atom\">.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque <feed> es el elemento raíz de Atom."
+    }
+  },
+  {
+    "id": "UT11-Q24",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué conjunto identifica los elementos principales obligatorios del canal Atom según el temario?",
+    "contexto": "Elementos obligatorios de Atom.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "<id>, <title> y <updated>."
+      },
+      {
+        "clave": "b",
+        "texto": "<title>, <link> y <description>."
+      },
+      {
+        "clave": "c",
+        "texto": "<author>, <category> y <content>."
+      },
+      {
+        "clave": "d",
+        "texto": "<guid>, <pubDate> y <source>."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Atom, el canal debe incluir al menos <id>, <title> y <updated> como elementos principales obligatorios.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Ese conjunto corresponde a RSS, no a Atom."
+        },
+        {
+          "clave": "c",
+          "motivo": "Son etiquetas posibles en entradas o metadatos, pero no el trío obligatorio principal del canal."
+        },
+        {
+          "clave": "d",
+          "motivo": "Son etiquetas asociadas a RSS y a entradas concretas, no a la base obligatoria del canal Atom."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta es Atom, la combinación clave es id, title y updated.",
+      "ejemplo_practico": "Un feed Atom válido debe identificarse, tener nombre y fecha de última actualización.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque <id>, <title> y <updated> son los elementos obligatorios del canal Atom."
+    }
+  },
+  {
+    "id": "UT11-Q25",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "Una empresa necesita una plataforma que unifique ventas, compras, almacén, contabilidad y otros procesos internos en un único flujo de información. ¿Qué sistema debe implantar?",
+    "contexto": "Centralización de procesos y datos empresariales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un CRM."
+      },
+      {
+        "clave": "b",
+        "texto": "Un ERP."
+      },
+      {
+        "clave": "c",
+        "texto": "Un feed Atom."
+      },
+      {
+        "clave": "d",
+        "texto": "Un parser XML."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El ERP es el sistema de gestión empresarial que integra y automatiza procesos internos de la organización, haciendo circular la información por un canal único.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El CRM se centra en la relación con clientes, no en toda la gestión integrada de recursos y procesos internos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Atom es un formato de sindicación de contenidos, no una plataforma de gestión empresarial."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un parser XML analiza documentos, pero no gestiona compras, ventas o contabilidad."
+        }
+      ],
+      "resumen_didactico": "Si la clave es integrar departamentos y automatizar procesos globales, se habla de ERP.",
+      "ejemplo_practico": "Una empresa conecta almacén, facturación y compras mediante un ERP para evitar datos aislados en departamentos distintos.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el ERP unifica y automatiza la gestión empresarial interna."
+    }
+  },
+  {
+    "id": "UT11-Q26",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué sistema es el más adecuado cuando la prioridad es gestionar campañas, ventas, servicio postventa y fidelización de clientes?",
+    "contexto": "Gestión de relaciones con clientes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CRM."
+      },
+      {
+        "clave": "b",
+        "texto": "DTD."
+      },
+      {
+        "clave": "c",
+        "texto": "ERP documental puro."
+      },
+      {
+        "clave": "d",
+        "texto": "XSLT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El CRM se orienta específicamente a la relación con clientes, apoyándose en marketing, venta y servicio postventa como pilares básicos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "DTD sirve para definir estructuras de documentos XML, no para gestionar clientes."
+        },
+        {
+          "clave": "c",
+          "motivo": "ERP cubre más procesos globales de empresa, pero la pregunta se centra en relación y fidelización de clientes."
+        },
+        {
+          "clave": "d",
+          "motivo": "XSLT transforma documentos XML y no cumple funciones de seguimiento comercial."
+        }
+      ],
+      "resumen_didactico": "Si la pregunta habla de clientes, ventas, campañas o postventa, la respuesta suele ser CRM.",
+      "ejemplo_practico": "Un CRM permite registrar contactos, historial comercial y comunicaciones con clientes para mejorar la fidelización.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el CRM es el sistema orientado a gestionar la relación con clientes."
+    }
+  },
+  {
+    "id": "UT11-Q27",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué modelo de implantación domina actualmente en la industria para muchos ERP, evitando mantener servidores locales propios?",
+    "contexto": "Tendencia actual de implantación de ERP.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SaaS en la nube."
+      },
+      {
+        "clave": "b",
+        "texto": "Ficheros de texto compartidos."
+      },
+      {
+        "clave": "c",
+        "texto": "Instalación exclusiva en disquetes locales."
+      },
+      {
+        "clave": "d",
+        "texto": "Red peer-to-peer contable."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario destaca la migración masiva a modelos SaaS, donde el ERP se aloja en la nube y lo mantiene un proveedor externo mediante suscripción.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los ficheros de texto compartidos representan un modelo antiguo y poco integrado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es una opción absurda y alejada de la realidad tecnológica actual."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es el modelo habitual de implantación de ERP descrito en el temario."
+        }
+      ],
+      "resumen_didactico": "La tendencia dominante es usar ERP como servicio, en la nube y por suscripción.",
+      "ejemplo_practico": "La empresa accede a su ERP por navegador sin instalar el sistema completo en servidores físicos propios.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque el modelo SaaS en la nube domina actualmente en muchos ERP."
+    }
+  },
+  {
+    "id": "UT11-Q28",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "Si una pyme quiere activar solo los módulos que realmente necesita para no pagar funciones innecesarias, ¿qué principio arquitectónico está aprovechando en su ERP?",
+    "contexto": "Activación selectiva de servicios dentro de un sistema de gestión.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Herencia múltiple."
+      },
+      {
+        "clave": "b",
+        "texto": "Modularidad."
+      },
+      {
+        "clave": "c",
+        "texto": "Concurrencia optimista."
+      },
+      {
+        "clave": "d",
+        "texto": "Sindicación empresarial."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La modularidad permite contratar, activar o ensamblar solo los servicios necesarios de un ERP, ajustándolo a las necesidades reales de la organización.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La herencia múltiple es un concepto de programación orientada a objetos, no de implantación de ERP."
+        },
+        {
+          "clave": "c",
+          "motivo": "La concurrencia optimista pertenece al acceso simultáneo a datos, no a la activación selectiva de módulos."
+        },
+        {
+          "clave": "d",
+          "motivo": "No es un concepto técnico del ERP tratado en el temario."
+        }
+      ],
+      "resumen_didactico": "Un ERP modular permite crecer por piezas, sin desplegar todo desde el principio.",
+      "ejemplo_practico": "Una empresa puede activar facturación y almacén hoy, y recursos humanos dentro de unos meses.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque el principio que permite activar solo lo necesario es la modularidad."
+    }
+  },
+  {
+    "id": "UT11-Q29",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué ERP de código abierto, modular y orientado especialmente a pequeñas y medianas empresas aparece en el temario asociado a Apache y MySQL?",
+    "contexto": "Identificación de ERP open source para pymes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dolibarr."
+      },
+      {
+        "clave": "b",
+        "texto": "SAP Business ByDesign."
+      },
+      {
+        "clave": "c",
+        "texto": "WorkPLAN."
+      },
+      {
+        "clave": "d",
+        "texto": "Salesforce."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Dolibarr se presenta como un ERP de código abierto y modular, pensado para pymes y ejecutable sobre infraestructuras como Apache y MySQL.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "SAP Business ByDesign es una solución cloud propietaria orientada a organizaciones con necesidades más amplias y complejas."
+        },
+        {
+          "clave": "c",
+          "motivo": "WorkPLAN es de pago y especializado en fabricación a medida."
+        },
+        {
+          "clave": "d",
+          "motivo": "Salesforce es una referencia CRM, no el ERP open source descrito en la pregunta."
+        }
+      ],
+      "resumen_didactico": "Si aparecen Apache, MySQL, open source, modular y pyme, la respuesta clave es Dolibarr.",
+      "ejemplo_practico": "Una pyme puede instalar Dolibarr y usar módulos de ventas, facturación y CRM desde una infraestructura web estándar.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque Dolibarr es el ERP open source y modular asociado a ese contexto."
+    }
+  },
+  {
+    "id": "UT11-Q30",
+    "tema": "UT11 — Repaso global del módulo Lenguajes de Marcas (Bloque 3)",
+    "pregunta": "¿Qué solución ERP propietaria destaca en el temario por su naturaleza cloud y por estar pensada para escenarios robustos con grandes volúmenes de datos y redes de negocio complejas?",
+    "contexto": "ERP cloud propietario orientado a organizaciones complejas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Tryton."
+      },
+      {
+        "clave": "b",
+        "texto": "SAP Business ByDesign."
+      },
+      {
+        "clave": "c",
+        "texto": "Bluefish ERP."
+      },
+      {
+        "clave": "d",
+        "texto": "XML Copy ERP."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "SAP Business ByDesign aparece como una solución ERP en la nube, robusta y segura, adecuada para escenarios de gran complejidad y grandes volúmenes de datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Tryton es un ERP de código abierto, no la solución cloud propietaria destacada por el temario en ese contexto."
+        },
+        {
+          "clave": "c",
+          "motivo": "No existe como ERP en el temario; Bluefish es un editor de código."
+        },
+        {
+          "clave": "d",
+          "motivo": "Tampoco existe como ERP del temario; XML Copy Editor es una herramienta XML."
+        }
+      ],
+      "resumen_didactico": "Cuando el enunciado combina ERP propietario, nube, robustez y big data, la respuesta es SAP Business ByDesign.",
+      "ejemplo_practico": "Una multinacional puede usar SAP Business ByDesign para centralizar procesos y datos sin mantener toda la infraestructura localmente.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque SAP Business ByDesign es la solución cloud robusta destacada en el temario."
+    }
+  }
+]

@@ -21,6 +21,7 @@ function resolveFolder(moduloId) {
     introduccionProgramacion: "introduccionProgramacion",
     ingles: "ingles",
     lenguajeMarcas: "lenguajeMarcas",
+    empleabilidad: "empleabilidad",
   };
   return map[moduloId] ?? null;
 }

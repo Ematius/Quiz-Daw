@@ -1,0 +1,1442 @@
+[
+  {
+    "id": "UT5-Q01",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Cómo se define técnicamente el concepto de riesgo laboral según la normativa vigente?",
+    "contexto": "Definición técnica del riesgo laboral dentro de la prevención de riesgos laborales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La materialización efectiva de una lesión o enfermedad durante la jornada de trabajo."
+      },
+      {
+        "clave": "b",
+        "texto": "El conjunto de factores ambientales que rodean el puesto de trabajo de un técnico."
+      },
+      {
+        "clave": "c",
+        "texto": "La obligación del empresario de indemnizar al trabajador tras un accidente de gravedad."
+      },
+      {
+        "clave": "d",
+        "texto": "La posibilidad de que un trabajador sufra un daño derivado del trabajo, valorada por su probabilidad y gravedad."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El riesgo laboral se define como la posibilidad de que un trabajador sufra un daño derivado de su trabajo. Para valorar ese riesgo se tienen en cuenta dos elementos fundamentales: la probabilidad de que ocurra y la gravedad de sus posibles consecuencias.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esta opción describe el daño profesional, no el riesgo laboral. El daño aparece cuando el riesgo ya se ha materializado en una enfermedad, patología o lesión."
+        },
+        {
+          "clave": "b",
+          "motivo": "Esta opción se refiere de forma general a las condiciones de trabajo o a ciertos factores de riesgo del entorno, pero no define técnicamente el concepto de riesgo laboral."
+        },
+        {
+          "clave": "c",
+          "motivo": "La indemnización puede estar relacionada con las consecuencias legales de un accidente, pero no forma parte de la definición técnica de riesgo laboral."
+        }
+      ],
+      "resumen_didactico": "El riesgo laboral no es el daño en sí, sino la posibilidad de que ese daño ocurra. Por eso se valora combinando la probabilidad de que suceda con la gravedad de sus consecuencias.",
+      "ejemplo_practico": "Si en una oficina hay cables sueltos por el suelo, existe riesgo laboral porque un trabajador podría tropezar y lesionarse. La valoración dependerá de cuántas veces pasa por esa zona y de lo grave que podría ser la caída.",
+      "conclusion_final": "La respuesta correcta es la d, porque el riesgo laboral es la posibilidad de sufrir un daño derivado del trabajo, valorada según su probabilidad y gravedad."
+    }
+  },
+  {
+    "id": "UT5-Q02",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "Un técnico detecta que su monitor parpadea y le genera fatiga visual tras varias horas de uso. ¿A qué concepto técnico se refiere esta situación si el daño aún no ha ocurrido?",
+    "contexto": "Identificación de una situación peligrosa en el puesto de trabajo antes de que se materialice en una lesión o enfermedad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Planificación preventiva"
+      },
+      {
+        "clave": "b",
+        "texto": "Riesgo laboral"
+      },
+      {
+        "clave": "c",
+        "texto": "Daño profesional"
+      },
+      {
+        "clave": "d",
+        "texto": "Condición de trabajo"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el riesgo laboral es la posibilidad de que un trabajador sufra un daño derivado de su trabajo. Si el monitor parpadea y puede provocar fatiga visual, pero todavía no se ha producido una lesión o patología concreta, estamos ante un riesgo laboral, no ante un daño profesional ya materializado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La planificación preventiva aparece después de evaluar los riesgos y consiste en organizar medidas, plazos, responsables y recursos para corregirlos. En el caso planteado aún se está identificando una situación de riesgo, no planificando actuaciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "El daño profesional es la enfermedad, lesión o patología que ya ha sufrido el trabajador como consecuencia del trabajo. Como el enunciado indica que el daño aún no ha ocurrido, esta opción no es correcta."
+        },
+        {
+          "clave": "d",
+          "motivo": "El monitor y sus características forman parte de las condiciones de trabajo, pero la pregunta se centra en la posibilidad de que esa situación produzca un daño. Por eso el concepto técnico más preciso es riesgo laboral."
+        }
+      ],
+      "resumen_didactico": "Si existe una situación que puede afectar a la salud del trabajador, pero todavía no se ha convertido en lesión o enfermedad, hablamos de riesgo laboral.",
+      "ejemplo_practico": "Un monitor que parpadea puede provocar fatiga visual, dolor de cabeza o molestias oculares. Mientras esas consecuencias no se hayan producido como daño real, la empresa debe tratarlo como un riesgo que debe evaluarse y corregirse.",
+      "conclusion_final": "La respuesta correcta es la b, porque el monitor defectuoso representa un riesgo laboral: una posibilidad de daño derivado del trabajo antes de que el daño se materialice."
+    }
+  },
+  {
+    "id": "UT5-Q03",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Cuál es la diferencia fundamental entre un riesgo y un daño profesional?",
+    "contexto": "Diferenciación entre la posibilidad de sufrir un daño y la materialización real de ese daño en el ámbito laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El riesgo es la probabilidad de que ocurra un suceso y el daño es la consecuencia física o psíquica ya materializada."
+      },
+      {
+        "clave": "b",
+        "texto": "Los riesgos son siempre físicos y los daños son exclusivamente de naturaleza psicosocial."
+      },
+      {
+        "clave": "c",
+        "texto": "El riesgo es responsabilidad del trabajador y el daño es responsabilidad exclusiva de la empresa."
+      },
+      {
+        "clave": "d",
+        "texto": "No existe diferencia técnica, ambos términos se utilizan para describir un accidente de trabajo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario diferencia claramente entre riesgo laboral y daño profesional. El riesgo laboral es la posibilidad de que un trabajador sufra un daño derivado de su trabajo, valorando la probabilidad de que ocurra y la gravedad de sus consecuencias. El daño profesional, en cambio, aparece cuando ese riesgo se materializa en una enfermedad, patología o lesión sufrida con motivo o a consecuencia del trabajo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque los riesgos no son siempre físicos. El temario distingue varias familias de riesgos: de seguridad, físicos, químicos, biológicos y psicosociales. Además, los daños tampoco son exclusivamente psicosociales, pueden ser lesiones físicas, enfermedades o patologías de distinto tipo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la prevención de riesgos laborales implica obligaciones tanto para la empresa como para los trabajadores. La empresa debe proteger, evaluar y prevenir, mientras que el trabajador debe usar correctamente los medios facilitados y cuidar de sí mismo y de sus compañeros."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque sí existe una diferencia técnica. El riesgo es una posibilidad previa al daño; el daño profesional es la consecuencia real cuando ese riesgo ya se ha producido."
+        }
+      ],
+      "resumen_didactico": "El riesgo es lo que puede pasar; el daño es lo que ya ha pasado. Primero existe una situación peligrosa con cierta probabilidad de causar perjuicio, y después, si esa situación se materializa, aparece la lesión, enfermedad o patología.",
+      "ejemplo_practico": "Si un programador usa durante meses un ratón no ergonómico, existe riesgo de lesión en la muñeca. Si finalmente desarrolla una tendinitis, esa tendinitis ya es un daño profesional.",
+      "conclusion_final": "La respuesta correcta es la a, porque el riesgo se refiere a la posibilidad de sufrir un daño, mientras que el daño profesional es la consecuencia física o psíquica ya materializada."
+    }
+  },
+  {
+    "id": "UT5-Q04",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "En una oficina donde el ruido de los equipos impide la comunicación fluida, se decide instalar paneles fonoabsorbentes en el techo. ¿Qué principio de la acción preventiva se está aplicando?",
+    "contexto": "Aplicación de una medida preventiva para reducir el ruido ambiental en el propio entorno de trabajo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Combatir los riesgos en su origen."
+      },
+      {
+        "clave": "b",
+        "texto": "Adaptar el trabajo a la persona de forma individual."
+      },
+      {
+        "clave": "c",
+        "texto": "Sustituir lo peligroso por lo que entrañe poco o ningún peligro."
+      },
+      {
+        "clave": "d",
+        "texto": "Evaluar los riesgos que no se pueden evitar."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los principios de la acción preventiva establecen que, siempre que sea posible, los riesgos deben combatirse en su origen. En este caso, el problema es el ruido ambiental producido por los equipos, y la instalación de paneles fonoabsorbentes actúa directamente sobre ese ruido, reduciendo su transmisión en el entorno de trabajo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Adaptar el trabajo a la persona consiste en ajustar el puesto o las condiciones laborales a las necesidades concretas del trabajador, por ejemplo mediante mobiliario ergonómico o ajustes individuales. Aquí la medida no se dirige a una persona concreta, sino al origen del ruido en el espacio común."
+        },
+        {
+          "clave": "c",
+          "motivo": "Sustituir lo peligroso por lo que entrañe poco o ningún peligro implicaría cambiar una máquina, sustancia, herramienta o procedimiento peligroso por otro más seguro. En este caso no se sustituye el equipo ruidoso, sino que se reduce el ruido mediante paneles."
+        },
+        {
+          "clave": "d",
+          "motivo": "Evaluar los riesgos que no se pueden evitar consiste en analizar y medir el riesgo cuando no puede eliminarse. Sin embargo, el enunciado ya plantea una actuación concreta para reducir el ruido, no solo una evaluación."
+        }
+      ],
+      "resumen_didactico": "Cuando la empresa actúa directamente sobre la causa del riesgo, aplica el principio de combatir los riesgos en su origen. No espera a que cada trabajador se proteja individualmente, sino que mejora el entorno para reducir el problema desde la fuente.",
+      "ejemplo_practico": "Si una sala de servidores genera mucho ruido, instalar aislamiento acústico o paneles fonoabsorbentes reduce el riesgo para todos los trabajadores que comparten ese espacio.",
+      "conclusion_final": "La respuesta correcta es la a, porque instalar paneles fonoabsorbentes reduce el ruido desde su origen o desde su medio de transmisión, aplicando el principio de combatir los riesgos en su origen."
+    }
+  },
+  {
+    "id": "UT5-Q05",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Cuál es el orden de prioridad correcto que debe seguir una empresa al implementar medidas de protección?",
+    "contexto": "Jerarquía de medidas preventivas y prioridad entre protección colectiva y protección individual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La protección colectiva es prioritaria frente a la protección individual (EPI)."
+      },
+      {
+        "clave": "b",
+        "texto": "El trabajador debe elegir qué medida prefiere usar según su comodidad personal."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo se deben aplicar medidas colectivas si el riesgo es calificado como muy grave."
+      },
+      {
+        "clave": "d",
+        "texto": "Siempre se debe priorizar la protección individual sobre la colectiva para reducir costes."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El temario establece que la jerarquía de medidas preventivas debe priorizar las actuaciones que atacan el riesgo en su origen y las que protegen simultáneamente a todos los trabajadores expuestos. Por eso, la protección colectiva tiene prioridad frente a la protección individual. Los Equipos de Protección Individual, o EPI, se consideran la última línea de defensa y solo deben utilizarse cuando no ha sido posible eliminar o limitar suficientemente el riesgo mediante medidas colectivas u otros medios más eficaces.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la elección de medidas preventivas no depende de la comodidad personal del trabajador, sino de criterios técnicos y legales. La empresa debe aplicar una jerarquía preventiva adecuada, priorizando la eliminación del riesgo, su control en origen y la protección colectiva."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque las medidas colectivas no se reservan solo para riesgos muy graves. Siempre que sea posible, deben priorizarse porque protegen a todos los trabajadores expuestos, independientemente de que el riesgo sea leve, moderado o grave."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque contradice la jerarquía preventiva. No se debe priorizar el EPI por motivos económicos. La protección individual se utiliza como último recurso cuando las medidas colectivas no son suficientes o no pueden eliminar completamente el riesgo."
+        }
+      ],
+      "resumen_didactico": "Primero se intenta eliminar o reducir el riesgo desde su origen y mediante medidas que protejan a todo el grupo. Solo cuando eso no basta, se recurre a los EPI como protección individual.",
+      "ejemplo_practico": "Si en una sala hay mucho ruido, lo correcto sería primero insonorizar la sala o instalar paneles fonoabsorbentes para proteger a todos. Solo si el ruido no puede reducirse lo suficiente, se utilizarían protectores auditivos individuales.",
+      "conclusion_final": "La respuesta correcta es la a, porque la protección colectiva siempre tiene prioridad frente a la protección individual, que actúa como última línea de defensa."
+    }
+  },
+  {
+    "id": "UT5-Q06",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué documento define la estructura organizativa, las responsabilidades y las funciones de prevención dentro de una empresa?",
+    "contexto": "Identificación del documento que integra la prevención en la organización general de la empresa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La evaluación de riesgos"
+      },
+      {
+        "clave": "b",
+        "texto": "El plan de prevención de riesgos laborales"
+      },
+      {
+        "clave": "c",
+        "texto": "El protocolo de primeros auxilios"
+      },
+      {
+        "clave": "d",
+        "texto": "La planificación de la actividad preventiva"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El plan de prevención de riesgos laborales es el documento que integra la prevención en el sistema general de gestión de la empresa. En él se define la estructura organizativa, las responsabilidades, las funciones, los procedimientos y los recursos necesarios para aplicar la prevención dentro de la empresa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La evaluación de riesgos no define la organización preventiva de la empresa. Su función es identificar y valorar los peligros existentes en cada puesto de trabajo para saber qué riesgos deben corregirse o controlarse."
+        },
+        {
+          "clave": "c",
+          "motivo": "El protocolo de primeros auxilios sirve para actuar ante una emergencia o accidente, pero no organiza de forma general la prevención dentro de la empresa."
+        },
+        {
+          "clave": "d",
+          "motivo": "La planificación de la actividad preventiva se realiza después de detectar riesgos en la evaluación. Sirve para establecer medidas concretas, plazos, responsables y recursos, pero no es el documento principal que define toda la estructura preventiva de la empresa."
+        }
+      ],
+      "resumen_didactico": "El plan de prevención es como el mapa organizativo de la prevención en la empresa: indica quién hace qué, con qué medios y bajo qué responsabilidades.",
+      "ejemplo_practico": "En una empresa de desarrollo web, el plan de prevención puede indicar quién es responsable de revisar los puestos con pantallas, quién organiza la formación preventiva, qué recursos se destinan a ergonomía y cómo se comunica un riesgo detectado.",
+      "conclusion_final": "La respuesta correcta es la b, porque el plan de prevención de riesgos laborales es el documento que define la estructura organizativa, las responsabilidades y las funciones preventivas de la empresa."
+    }
+  },
+  {
+    "id": "UT5-Q07",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Con qué frecuencia mínima debe revisarse la evaluación de riesgos de un puesto de trabajo técnico?",
+    "contexto": "Revisión de la evaluación de riesgos cuando cambian las condiciones del puesto o aparecen nuevos factores que pueden afectar a la salud laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Solo cuando el trabajador lo solicite formalmente por escrito a la dirección."
+      },
+      {
+        "clave": "b",
+        "texto": "Semanalmente, independientemente de si existen cambios o no en el entorno."
+      },
+      {
+        "clave": "c",
+        "texto": "Una única vez al inicio de la actividad de la empresa."
+      },
+      {
+        "clave": "d",
+        "texto": "Cada vez que cambien las condiciones de trabajo, se incorpore nueva tecnología o se detecten daños a la salud."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La evaluación de riesgos no es un documento fijo que se realiza una sola vez y se olvida. Según el temario, la empresa debe identificar los peligros de cada puesto y revisar la evaluación cada vez que las condiciones cambien. Esto incluye modificaciones en el puesto, incorporación de nuevas tecnologías, cambios en los equipos, aparición de nuevos procedimientos o detección de daños en la salud de los trabajadores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la revisión de la evaluación de riesgos no depende únicamente de que el trabajador la solicite por escrito. La empresa tiene la obligación preventiva de revisar los riesgos cuando cambian las condiciones o aparecen indicios de que las medidas existentes no son suficientes."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la normativa no exige una revisión semanal automática si no hay cambios relevantes. La revisión debe hacerse cuando existan modificaciones, nuevos riesgos, daños a la salud o circunstancias que lo justifiquen."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la evaluación de riesgos no se realiza una única vez al inicio de la actividad. Debe mantenerse actualizada para reflejar la realidad del puesto de trabajo."
+        }
+      ],
+      "resumen_didactico": "La evaluación de riesgos debe estar viva y actualizada. Si cambia el puesto, cambian los equipos, se introduce nueva tecnología o se detecta un problema de salud relacionado con el trabajo, hay que revisar la evaluación.",
+      "ejemplo_practico": "Si una empresa de desarrollo web cambia los monitores antiguos por pantallas nuevas, incorpora inteligencia artificial que modifica los ritmos de trabajo o varios técnicos empiezan a sufrir fatiga visual, debe revisar la evaluación de riesgos del puesto.",
+      "conclusion_final": "La respuesta correcta es la d, porque la evaluación de riesgos debe revisarse cada vez que cambien las condiciones de trabajo, se incorpore nueva tecnología o se detecten daños a la salud."
+    }
+  },
+  {
+    "id": "UT5-Q08",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué requisito debe cumplir obligatoriamente la formación en prevención de riesgos que recibe un trabajador?",
+    "contexto": "Características obligatorias de la formación preventiva que debe proporcionar la empresa al trabajador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El coste de la formación debe ser compartido al 50% entre el técnico y la empresa."
+      },
+      {
+        "clave": "b",
+        "texto": "Solo es obligatoria para trabajadores que manejen maquinaria pesada o productos químicos."
+      },
+      {
+        "clave": "c",
+        "texto": "Debe realizarse fuera del horario laboral para no interrumpir la productividad."
+      },
+      {
+        "clave": "d",
+        "texto": "Debe ser teórica, práctica, específica para el puesto y realizarse dentro de la jornada laboral."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La formación en prevención de riesgos laborales es una obligación del empresario y un derecho del trabajador. Según el temario, debe ser teórica y práctica, específica para el puesto de trabajo, actualizarse cuando cambien las tareas o condiciones, realizarse dentro de la jornada laboral y no suponer ningún coste para el trabajador.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la formación preventiva no debe tener coste para el trabajador. La empresa tiene la obligación de proporcionarla gratuitamente."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la formación en prevención no se limita a puestos con maquinaria pesada o productos químicos. Todos los trabajadores deben recibir formación adecuada a los riesgos de su puesto, aunque trabajen en oficinas, administración, programación, marketing, educación infantil o integración social."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la formación debe realizarse dentro de la jornada laboral. No puede imponerse como una carga extra fuera del horario de trabajo."
+        }
+      ],
+      "resumen_didactico": "La formación preventiva debe servir para que el trabajador sepa actuar de forma segura en su puesto concreto. Por eso no basta con una explicación general: debe ser específica, práctica, actualizada, gratuita y dentro del tiempo de trabajo.",
+      "ejemplo_practico": "Si un técnico de DAW empieza a trabajar muchas horas con pantallas, la empresa debe formarle sobre ergonomía, pausas visuales, postura correcta, ajuste del monitor y prevención de fatiga visual durante su jornada laboral, no pedirle que estudie un documento en casa.",
+      "conclusion_final": "La respuesta correcta es la d, porque la formación en prevención debe ser teórica, práctica, específica para el puesto y realizarse dentro de la jornada laboral, sin coste para el trabajador."
+    }
+  },
+  {
+    "id": "UT5-Q09",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué se entiende por riesgos psicosociales en el entorno laboral de un técnico superior?",
+    "contexto": "Identificación de los riesgos relacionados con la organización del trabajo, la carga mental, las relaciones laborales y sus efectos sobre la salud.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Lesiones musculares producidas por una mala postura al sentarse frente al ordenador."
+      },
+      {
+        "clave": "b",
+        "texto": "Aquellos derivados del contacto con bacterias o virus en el centro de trabajo."
+      },
+      {
+        "clave": "c",
+        "texto": "Factores de la organización del trabajo y la tarea que afectan a la salud mental y física, como el estrés o el burnout."
+      },
+      {
+        "clave": "d",
+        "texto": "Daños producidos por la exposición a radiaciones no ionizantes de las pantallas."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Los riesgos psicosociales son factores relacionados con la organización del trabajo, el contenido de la tarea y las relaciones humanas que pueden afectar tanto a la salud psíquica como física del trabajador. Incluyen situaciones como la carga excesiva de trabajo, la falta de control sobre las tareas, la presión por plazos, un liderazgo autoritario, el estrés, la ansiedad o el síndrome de burnout.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esta opción describe un riesgo ergonómico o postural, relacionado con la posición corporal y el uso prolongado del ordenador, no un riesgo psicosocial."
+        },
+        {
+          "clave": "b",
+          "motivo": "Esta opción se refiere a riesgos biológicos, que aparecen cuando existe contacto con bacterias, virus u otros agentes biológicos en el entorno laboral."
+        },
+        {
+          "clave": "d",
+          "motivo": "Esta opción se relaciona con riesgos físicos, concretamente con radiaciones no ionizantes o condiciones ambientales que pueden afectar al cuerpo, pero no con la organización del trabajo ni con la carga mental."
+        }
+      ],
+      "resumen_didactico": "Los riesgos psicosociales no dependen tanto de una máquina, una sustancia o una postura concreta, sino de cómo está organizado el trabajo y de cómo esa organización afecta a la mente y al cuerpo del trabajador.",
+      "ejemplo_practico": "Un técnico de desarrollo web que trabaja con plazos imposibles, interrupciones constantes, presión por entregas y poca autonomía puede desarrollar estrés crónico, ansiedad, insomnio o burnout.",
+      "conclusion_final": "La respuesta correcta es la c, porque los riesgos psicosociales son factores de la organización del trabajo y de la tarea que afectan a la salud mental y física del trabajador."
+    }
+  },
+  {
+    "id": "UT5-Q10",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "Un técnico siente agotamiento extremo y falta de motivación debido a la presión constante por los plazos de entrega y la falta de control sobre sus tareas. ¿Qué tipo de riesgo está sufriendo?",
+    "contexto": "Identificación de un riesgo derivado de la organización del trabajo, la presión por plazos y la falta de control sobre las tareas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Riesgo ergonómico"
+      },
+      {
+        "clave": "b",
+        "texto": "Riesgo de seguridad"
+      },
+      {
+        "clave": "c",
+        "texto": "Riesgo físico por fatiga"
+      },
+      {
+        "clave": "d",
+        "texto": "Riesgo psicosocial"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Los riesgos psicosociales son aquellos relacionados con la organización del trabajo, el contenido de la tarea y las relaciones laborales. Pueden afectar tanto a la salud mental como física del trabajador. En el temario se incluyen factores como la carga de trabajo, la presión por plazos, la falta de control sobre las tareas, el estrés, la ansiedad y el burnout o síndrome de estar quemado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El riesgo ergonómico está relacionado con posturas inadecuadas, movimientos repetitivos, manipulación de cargas o mala adaptación física del puesto de trabajo. En este caso, el problema principal no es postural, sino organizativo y mental."
+        },
+        {
+          "clave": "b",
+          "motivo": "El riesgo de seguridad se refiere a situaciones como caídas, golpes, choques, incendios o accidentes derivados de condiciones inseguras. El enunciado no describe un peligro físico inmediato, sino agotamiento por presión laboral."
+        },
+        {
+          "clave": "c",
+          "motivo": "Aunque el trabajador pueda sentir fatiga, la causa descrita no es un agente físico como ruido, vibraciones, temperatura o radiación. La fatiga procede de la presión por plazos y de la falta de control sobre el trabajo, por lo que corresponde a un riesgo psicosocial."
+        }
+      ],
+      "resumen_didactico": "Cuando el problema nace de cómo está organizado el trabajo, de la presión constante, de la carga mental o de la falta de autonomía, hablamos de riesgo psicosocial.",
+      "ejemplo_practico": "Un desarrollador que tiene entregas urgentes todos los días, cambios constantes de prioridades y ninguna capacidad para organizar sus tareas puede acabar sufriendo estrés crónico, agotamiento extremo y burnout.",
+      "conclusion_final": "La respuesta correcta es la d, porque el agotamiento extremo, la falta de motivación, la presión por plazos y la falta de control sobre las tareas son manifestaciones claras de un riesgo psicosocial."
+    }
+  },
+  {
+    "id": "UT5-Q11",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Cuál es el objetivo principal de la ergonomía en el diseño de un puesto de trabajo administrativo o técnico?",
+    "contexto": "Aplicación de la ergonomía para adaptar el puesto de trabajo a las características físicas y necesidades del trabajador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reducir el consumo de energía eléctrica de los equipos informáticos."
+      },
+      {
+        "clave": "b",
+        "texto": "Adaptar los muebles, herramientas y el entorno a las capacidades y necesidades del trabajador."
+      },
+      {
+        "clave": "c",
+        "texto": "Garantizar que el trabajador no hable con sus compañeros para evitar distracciones."
+      },
+      {
+        "clave": "d",
+        "texto": "Aumentar la velocidad de procesamiento de datos por encima de la media."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La ergonomía busca adaptar el trabajo a la persona. En un puesto administrativo o técnico, esto implica ajustar el mobiliario, las herramientas, la pantalla, la iluminación, la silla, la mesa y la organización del espacio para evitar fatiga, malas posturas, lesiones musculares, sobrecargas visuales o molestias derivadas del trabajo prolongado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Reducir el consumo eléctrico puede ser una medida de eficiencia energética, pero no es el objetivo principal de la ergonomía. La ergonomía se centra en la salud, comodidad y adaptación del puesto al trabajador."
+        },
+        {
+          "clave": "c",
+          "motivo": "Evitar que el trabajador hable con sus compañeros no tiene relación con la ergonomía. Además, una buena organización del trabajo debe favorecer la comunicación adecuada, no aislar al trabajador sin motivo preventivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aumentar la velocidad de procesamiento de datos es un objetivo de productividad o rendimiento técnico, pero no define la ergonomía. La ergonomía puede mejorar el bienestar y reducir errores, pero su finalidad principal es adaptar el puesto a la persona."
+        }
+      ],
+      "resumen_didactico": "La ergonomía no consiste en que el trabajador se adapte forzadamente al puesto, sino en diseñar el puesto para que se ajuste a sus capacidades, necesidades y límites físicos.",
+      "ejemplo_practico": "Un técnico que trabaja muchas horas frente al ordenador necesita una silla regulable, una pantalla a la altura correcta, buena iluminación, teclado y ratón adecuados, y pausas para reducir la fatiga visual y muscular.",
+      "conclusion_final": "La respuesta correcta es la b, porque la ergonomía tiene como objetivo adaptar los muebles, herramientas y entorno de trabajo a las capacidades y necesidades del trabajador."
+    }
+  },
+  {
+    "id": "UT5-Q12",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué vía de entrada es la más común para los contaminantes químicos en un entorno de oficina o laboratorio técnico?",
+    "contexto": "Identificación de las vías por las que los agentes químicos pueden penetrar en el organismo del trabajador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Vía parenteral"
+      },
+      {
+        "clave": "b",
+        "texto": "Vía respiratoria"
+      },
+      {
+        "clave": "c",
+        "texto": "Vía cutánea"
+      },
+      {
+        "clave": "d",
+        "texto": "Vía digestiva"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los riesgos químicos se producen cuando el trabajador está expuesto a agentes químicos que pueden penetrar en el organismo y causar daños. El temario destaca varias vías de entrada: respiratoria, cutánea y digestiva. La vía respiratoria es una de las más importantes y habituales, porque permite la entrada de contaminantes al inhalar vapores, gases, aerosoles o partículas en suspensión.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La vía parenteral implica la entrada del contaminante a través de heridas, pinchazos o cortes. Aunque puede existir en determinados trabajos, no es la vía principal señalada en el temario para contaminantes químicos en oficinas o laboratorios técnicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La vía cutánea también es una vía importante, ya que algunos productos químicos pueden penetrar por contacto directo con la piel. Sin embargo, en el contexto general de exposición a vapores, partículas o sustancias en suspensión, la vía respiratoria suele ser la más común."
+        },
+        {
+          "clave": "d",
+          "motivo": "La vía digestiva se produce cuando el contaminante entra por ingestión accidental, por ejemplo al comer con las manos contaminadas. Es posible, pero no suele ser la vía más común si se comparan las exposiciones habituales a vapores o partículas químicas."
+        }
+      ],
+      "resumen_didactico": "Los contaminantes químicos pueden entrar en el cuerpo por varias vías, pero la respiratoria es especialmente relevante porque basta con inhalar vapores, gases o partículas presentes en el ambiente de trabajo.",
+      "ejemplo_practico": "En un laboratorio técnico, si una trabajadora manipula reactivos sin ventilación adecuada o sin mascarilla cuando es necesaria, puede inhalar vapores químicos que entren directamente por las vías respiratorias.",
+      "conclusion_final": "La respuesta correcta es la b, porque la vía respiratoria es la vía más común y relevante para la entrada de contaminantes químicos en entornos donde pueden existir vapores, gases o partículas en suspensión."
+    }
+  },
+  {
+    "id": "UT5-Q13",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "Ante una situación de emergencia en la empresa, ¿cuál es la primera acción que debe realizar un profesional según el protocolo PAS?",
+    "contexto": "Aplicación del protocolo PAS ante una emergencia laboral: Proteger, Alertar y Socorrer.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Llamar inmediatamente al 112 sin mirar alrededor."
+      },
+      {
+        "clave": "b",
+        "texto": "Proteger el lugar del accidente para asegurar la integridad propia, de la víctima y de terceros."
+      },
+      {
+        "clave": "c",
+        "texto": "Buscar el botiquín de primeros auxilios en otra planta del edificio."
+      },
+      {
+        "clave": "d",
+        "texto": "Socorrer a la víctima realizando maniobras de reanimación avanzada."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El protocolo PAS establece una secuencia clara de actuación ante una emergencia: Proteger, Alertar y Socorrer. La primera acción siempre es proteger, es decir, asegurar el lugar del accidente para evitar nuevas víctimas o que el daño sea mayor. Antes de ayudar directamente a la víctima, el profesional debe comprobar que el entorno es seguro para sí mismo, para la persona accidentada y para terceros.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Llamar al 112 es fundamental, pero no es lo primero si el entorno sigue siendo peligroso. Antes de alertar, hay que proteger la zona para evitar que el accidente se agrave o que haya más víctimas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Buscar el botiquín puede ser útil en algunos casos, pero no es la primera acción del protocolo PAS. Además, abandonar la zona sin asegurar el entorno o sin valorar la situación puede aumentar el riesgo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Socorrer es la tercera fase del protocolo PAS, no la primera. Además, las maniobras avanzadas solo deben realizarlas personas con formación específica. La regla básica es no hacer más daño."
+        }
+      ],
+      "resumen_didactico": "En una emergencia no se debe actuar de forma impulsiva. Primero se protege el entorno, después se alerta a los servicios de emergencia y finalmente se socorre a la víctima dentro de los conocimientos y límites de cada persona.",
+      "ejemplo_practico": "Si un compañero recibe una descarga eléctrica, no debes tocarlo inmediatamente. Primero debes cortar la corriente o separarlo con un objeto aislante. Solo cuando el entorno sea seguro, podrás llamar al 112 y prestar ayuda básica.",
+      "conclusion_final": "La respuesta correcta es la b, porque la primera fase del protocolo PAS es proteger el lugar del accidente para asegurar la integridad propia, de la víctima y de terceros."
+    }
+  },
+  {
+    "id": "UT5-Q14",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "Al realizar la fase de Alerta (A) del protocolo PAS tras un accidente, ¿qué información es vital facilitar al 112?",
+    "contexto": "Información esencial que debe comunicarse a los servicios de emergencia durante la fase de alerta del protocolo PAS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El nombre completo de todos los trabajadores de la empresa."
+      },
+      {
+        "clave": "b",
+        "texto": "El lugar exacto del suceso, qué ha pasado, número de afectados y su estado."
+      },
+      {
+        "clave": "c",
+        "texto": "La opinión personal del trabajador sobre quién ha tenido la culpa del error."
+      },
+      {
+        "clave": "d",
+        "texto": "La marca y modelo de los equipos informáticos involucrados en el incidente."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En la fase de alerta del protocolo PAS, el trabajador debe contactar con los servicios de emergencia, normalmente llamando al 112, y facilitar información clara, precisa y útil. El temario indica que debe comunicarse el lugar exacto del accidente, qué ha ocurrido, cuántas personas están afectadas y cuál es el estado aproximado de las víctimas, por ejemplo si respiran, si están conscientes o si presentan lesiones visibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "No es necesario informar al 112 del nombre completo de todos los trabajadores de la empresa. Lo importante es facilitar datos útiles para la intervención de emergencia, no información administrativa general."
+        },
+        {
+          "clave": "c",
+          "motivo": "La opinión personal sobre quién tuvo la culpa no ayuda a resolver la emergencia. En ese momento lo prioritario es informar de forma objetiva sobre el accidente y el estado de las personas afectadas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La marca y modelo de los equipos informáticos solo sería relevante en casos muy concretos, pero no forma parte de la información vital que debe comunicarse al 112. Lo esencial es la localización, el tipo de incidente, el número de víctimas y su estado."
+        }
+      ],
+      "resumen_didactico": "Alertar no significa solo llamar al 112, sino comunicar bien. Una llamada eficaz debe permitir que los servicios de emergencia sepan dónde ir, qué ha pasado, cuántas personas necesitan ayuda y en qué estado se encuentran.",
+      "ejemplo_practico": "Si un trabajador cae de una escalera en una oficina, al llamar al 112 se debe decir la dirección exacta, la planta o sala, que ha sufrido una caída, cuántas personas están afectadas y si la víctima está consciente, respira o tiene dolor intenso.",
+      "conclusion_final": "La respuesta correcta es la b, porque en la fase de alerta del protocolo PAS es vital facilitar al 112 el lugar exacto, qué ha pasado, el número de afectados y su estado."
+    }
+  },
+  {
+    "id": "UT5-Q15",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué es un Equipo de Protección Individual (EPI)?",
+    "contexto": "Definición de los Equipos de Protección Individual dentro de las medidas de protección frente a riesgos laborales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cualquier dispositivo o prenda destinado a ser llevado por el trabajador para protegerlo de riesgos que amenacen su seguridad."
+      },
+      {
+        "clave": "b",
+        "texto": "Una herramienta colectiva que protege a todo el departamento de administración."
+      },
+      {
+        "clave": "c",
+        "texto": "Un software de seguridad que protege los datos de la empresa frente a ciberataques."
+      },
+      {
+        "clave": "d",
+        "texto": "Un manual de instrucciones sobre cómo evacuar el edificio en caso de incendio."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un Equipo de Protección Individual, o EPI, es cualquier dispositivo o prenda destinado a ser llevado o sujetado por el trabajador para que le proteja de uno o varios riesgos que puedan amenazar su seguridad o su salud. El temario también recuerda que los EPI son la última línea de defensa y deben utilizarse cuando las medidas colectivas no son suficientes para eliminar o reducir el riesgo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque un EPI no es una medida colectiva. La protección colectiva actúa sobre el entorno o sobre la organización del trabajo y protege simultáneamente a todos los trabajadores expuestos. El EPI protege individualmente a quien lo lleva."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque un software de ciberseguridad protege sistemas o datos informáticos, pero no es un equipo físico destinado a proteger directamente la seguridad o salud del trabajador frente a riesgos laborales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un manual de evacuación o protocolo de emergencia sirve para orientar la actuación ante incendios u otras emergencias, pero no es una prenda o dispositivo individual de protección."
+        }
+      ],
+      "resumen_didactico": "Un EPI es una protección individual que el trabajador lleva puesta o sujeta para reducir el daño que podría sufrir ante un riesgo laboral. No elimina el riesgo desde el origen, sino que protege a la persona expuesta.",
+      "ejemplo_practico": "Un casco, unos guantes, unas gafas de seguridad, unos tapones auditivos o un arnés son ejemplos de EPI cuando se utilizan para proteger al trabajador frente a golpes, cortes, ruido, caídas u otros riesgos.",
+      "conclusion_final": "La respuesta correcta es la a, porque un EPI es un dispositivo o prenda individual destinado a proteger al trabajador frente a riesgos que puedan amenazar su seguridad o su salud."
+    }
+  },
+  {
+    "id": "UT5-Q16",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Por qué los EPI se consideran la \"última línea de defensa\" en prevención?",
+    "contexto": "Uso de los Equipos de Protección Individual dentro de la jerarquía preventiva, después de intentar eliminar o reducir el riesgo mediante medidas más eficaces.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque solo deben usarse cuando los riesgos no se han podido evitar o limitar mediante medidas técnicas o colectivas."
+      },
+      {
+        "clave": "b",
+        "texto": "Porque dificultan la movilidad del técnico y reducen siempre su productividad."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque su uso es opcional y depende de la voluntad del trabajador en cada momento."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque son los elementos más caros y la empresa intenta no comprarlos."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los Equipos de Protección Individual, o EPI, se consideran la última línea de defensa porque no eliminan el riesgo desde su origen, sino que protegen individualmente al trabajador cuando ese riesgo sigue existiendo. Según la jerarquía preventiva, primero deben aplicarse medidas que eviten el riesgo, lo reduzcan en su origen o protejan colectivamente a todos los trabajadores. Solo cuando esas medidas no son suficientes, se recurre a los EPI.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque los EPI no se definen por reducir la productividad ni por dificultar siempre la movilidad. Su función es proteger la seguridad y salud del trabajador frente a riesgos que no se han podido eliminar completamente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el uso de los EPI no es opcional cuando son necesarios. El trabajador tiene el deber de utilizarlos correctamente y la empresa debe proporcionarlos, formar sobre su uso y garantizar que estén en buen estado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la razón de que sean la última línea de defensa no es su precio, sino su posición dentro de la jerarquía preventiva. Antes de recurrir a la protección individual, deben priorizarse medidas colectivas y técnicas más eficaces."
+        }
+      ],
+      "resumen_didactico": "Los EPI son el último recurso porque protegen al trabajador expuesto, pero no eliminan el peligro. Por eso se usan después de intentar evitar, reducir o controlar el riesgo mediante medidas colectivas o técnicas.",
+      "ejemplo_practico": "Si en una zona hay mucho ruido, primero se debe intentar reducirlo con aislamiento acústico o paneles fonoabsorbentes. Si aun así el nivel de ruido sigue siendo peligroso, entonces se proporcionan protectores auditivos como EPI.",
+      "conclusion_final": "La respuesta correcta es la a, porque los EPI se consideran la última línea de defensa al utilizarse solo cuando el riesgo no se ha podido evitar o limitar suficientemente mediante medidas técnicas o colectivas."
+    }
+  },
+  {
+    "id": "UT5-Q17",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "Un técnico sufre una laringitis crónica tras años de forzar la voz en su entorno laboral. ¿Cómo se clasifica legalmente este daño?",
+    "contexto": "Clasificación de un daño profesional producido de forma progresiva por la exposición continuada a una exigencia propia del puesto de trabajo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Incidente laboral sin baja médica."
+      },
+      {
+        "clave": "b",
+        "texto": "Riesgo inminente de seguridad."
+      },
+      {
+        "clave": "c",
+        "texto": "Enfermedad profesional derivada de la actividad."
+      },
+      {
+        "clave": "d",
+        "texto": "Accidente de trabajo por causas externas"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El temario explica que cuando un riesgo laboral se materializa hablamos de daño profesional: enfermedades, patologías o lesiones que el trabajador sufre con motivo o a consecuencia de su trabajo. En el caso de una laringitis crónica desarrollada tras años de forzar la voz en el entorno laboral, el daño no aparece por un hecho repentino, sino por una exposición prolongada vinculada a la actividad profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque un incidente laboral es un suceso que podría haber causado daño, pero en este caso sí existe un daño real: una laringitis crónica."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el riesgo inminente se refiere a una situación peligrosa próxima o inmediata, no a una patología que ya se ha producido tras años de exposición laboral."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un accidente de trabajo suele estar asociado a un hecho repentino o puntual, como una caída, un golpe o una descarga eléctrica. Aquí el daño se ha generado de forma progresiva por el uso continuado de la voz en el trabajo."
+        }
+      ],
+      "resumen_didactico": "Cuando una enfermedad aparece poco a poco como consecuencia de la actividad laboral habitual, se clasifica como enfermedad profesional o daño profesional derivado del trabajo.",
+      "ejemplo_practico": "Una educadora infantil, un docente o un técnico que debe hablar en voz alta durante años puede desarrollar laringitis crónica, afonías frecuentes o problemas en las cuerdas vocales por el esfuerzo continuado de la voz.",
+      "conclusion_final": "La respuesta correcta es la c, porque una laringitis crónica causada por años de forzar la voz en el trabajo se clasifica como una enfermedad profesional derivada de la actividad."
+    }
+  },
+  {
+    "id": "UT5-Q18",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Cuál es la función de la señalización de seguridad en un centro de trabajo?",
+    "contexto": "Función preventiva de la señalización de seguridad como medida para advertir de riesgos, orientar actuaciones y evitar accidentes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Indicar exclusivamente las zonas donde está permitido el uso de teléfonos móviles."
+      },
+      {
+        "clave": "b",
+        "texto": "Decorar las zonas comunes de la empresa para mejorar el clima laboral."
+      },
+      {
+        "clave": "c",
+        "texto": "Llamar la atención de forma rápida sobre objetos o situaciones que puedan provocar peligros."
+      },
+      {
+        "clave": "d",
+        "texto": "Sustituir a las medidas de protección colectiva e individual para ahorrar costes."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La señalización de seguridad sirve para advertir de forma clara, rápida y visible sobre riesgos, zonas peligrosas, obligaciones, prohibiciones, salidas de emergencia o ubicación de equipos de protección y primeros auxilios. Dentro de la prevención de riesgos laborales, ayuda a que los trabajadores identifiquen situaciones peligrosas y actúen correctamente antes de que se produzca un daño.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la señalización de seguridad no se limita al uso de teléfonos móviles. Puede indicar riesgos eléctricos, salidas de emergencia, zonas de paso, uso obligatorio de EPI, prohibiciones, equipos contra incendios o zonas peligrosas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la señalización de seguridad no tiene una finalidad decorativa. Su función es preventiva: informar, advertir y orientar para evitar accidentes o daños."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la señalización no sustituye a las medidas de protección colectiva ni a los EPI. Es una medida complementaria que ayuda a identificar riesgos, pero no elimina por sí sola el peligro."
+        }
+      ],
+      "resumen_didactico": "La señalización de seguridad permite reconocer rápidamente un peligro o una instrucción preventiva. No elimina el riesgo, pero ayuda a evitar accidentes porque informa de manera inmediata y visible.",
+      "ejemplo_practico": "En una oficina técnica, una señal de riesgo eléctrico junto a un cuadro de conexiones advierte a los trabajadores de que no deben manipularlo sin autorización. También una señal de salida de emergencia indica por dónde evacuar en caso de incendio.",
+      "conclusion_final": "La respuesta correcta es la c, porque la señalización de seguridad tiene la función de llamar la atención rápidamente sobre objetos, zonas o situaciones que pueden provocar peligros."
+    }
+  },
+  {
+    "id": "UT5-Q19",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué debe hacer un trabajador si detecta que su silla de trabajo está rota y le provoca dolores de espalda?",
+    "contexto": "Actuación responsable del trabajador ante una condición ergonómica deficiente que puede afectar a su salud laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Comprarse una silla nueva por su cuenta y traerla a la oficina."
+      },
+      {
+        "clave": "b",
+        "texto": "Irse a casa inmediatamente sin avisar a nadie alegando riesgo grave."
+      },
+      {
+        "clave": "c",
+        "texto": "Aguantar el dolor para demostrar compromiso con la empresa."
+      },
+      {
+        "clave": "d",
+        "texto": "Informar a su superior o al servicio de prevención para que se apliquen medidas de adaptación."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario insiste en que la prevención requiere una actitud activa por parte del trabajador. Si un elemento del puesto, como una silla rota, provoca molestias o puede causar daños, el trabajador debe comunicarlo a su superior o al servicio de prevención para que se evalúe el riesgo y se apliquen medidas de adaptación del puesto. La ergonomía busca adaptar el trabajo a la persona mediante mobiliario, herramientas y condiciones adecuadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque no corresponde al trabajador asumir por su cuenta el coste de una silla adecuada. La empresa debe proporcionar los medios necesarios para trabajar con seguridad y salud."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque abandonar el puesto sin comunicar la situación no es la actuación adecuada. Lo correcto es informar del problema para que se valore y se tomen medidas preventivas. Solo ante un riesgo grave e inminente claramente justificado se aplicarían protocolos específicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque aguantar el dolor no demuestra profesionalidad. Al contrario, puede convertir un riesgo ergonómico en un daño profesional, como una lesión lumbar o cervical."
+        }
+      ],
+      "resumen_didactico": "Cuando un trabajador detecta una condición insegura o perjudicial para su salud, debe comunicarla. La prevención funciona cuando los riesgos se identifican antes de que se conviertan en daños.",
+      "ejemplo_practico": "Si un técnico trabaja ocho horas al día en una silla rota y empieza a notar dolor lumbar, debe avisar para que la empresa sustituya la silla, revise el puesto y adapte el mobiliario a criterios ergonómicos.",
+      "conclusion_final": "La respuesta correcta es la d, porque el trabajador debe informar a su superior o al servicio de prevención para que se apliquen medidas de adaptación y se evite un daño profesional."
+    }
+  },
+  {
+    "id": "UT5-Q20",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "En el protocolo PAS, ¿qué significa la fase de Socorrer (S)?",
+    "contexto": "Aplicación de la tercera fase del protocolo PAS ante una emergencia laboral, centrada en los primeros auxilios básicos hasta la llegada de los servicios sanitarios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicar cuidados básicos, calmar a la víctima y evitar maniobras que puedan agravar las lesiones hasta que llegue ayuda."
+      },
+      {
+        "clave": "b",
+        "texto": "Realizar fotografías del accidente para publicarlas en las redes sociales de la empresa."
+      },
+      {
+        "clave": "c",
+        "texto": "Trasladar al accidentado al hospital más cercano en el coche particular del técnico."
+      },
+      {
+        "clave": "d",
+        "texto": "Administrar medicamentos o comida al herido para que recupere fuerzas."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el protocolo PAS, la fase de Socorrer consiste en aplicar primeros auxilios básicos a la víctima hasta que lleguen los profesionales sanitarios. El temario insiste en una regla fundamental: lo primero es no hacer más daño. Por eso, si no se tiene formación específica, la actuación debe centrarse en acompañar, calmar, vigilar el estado de la víctima y evitar maniobras que puedan agravar sus lesiones.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque fotografiar el accidente para publicarlo no forma parte de ningún protocolo de primeros auxilios. Además, puede vulnerar la intimidad de la víctima y distraer de la atención urgente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque trasladar al accidentado por cuenta propia puede agravar lesiones, especialmente si hay sospecha de fractura, lesión de columna, pérdida de conocimiento o traumatismo. Lo correcto es esperar a los servicios sanitarios salvo instrucciones específicas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque no se debe dar comida, bebida ni medicamentos a una persona accidentada. Podría empeorar su estado, provocar atragantamiento o interferir con la atención médica posterior."
+        }
+      ],
+      "resumen_didactico": "Socorrer no significa hacer cualquier cosa para ayudar, sino actuar con calma, aplicar cuidados básicos y evitar acciones peligrosas. La prioridad es mantener estable a la víctima hasta que llegue ayuda profesional.",
+      "ejemplo_practico": "Si un compañero cae al suelo y está consciente pero se queja de dolor intenso en la pierna, lo adecuado es no moverlo, hablarle con calma, abrigarlo si es necesario, vigilar que respire bien y permanecer a su lado hasta que llegue la ambulancia.",
+      "conclusion_final": "La respuesta correcta es la a, porque socorrer significa aplicar cuidados básicos, calmar a la víctima y evitar maniobras que puedan agravar sus lesiones hasta que llegue ayuda profesional."
+    }
+  },
+  {
+    "id": "UT5-Q21",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué tipo de riesgo físico se asocia habitualmente al manejo de carretillas o herramientas que transmiten movimientos oscilatorios al cuerpo?",
+    "contexto": "Identificación de un riesgo físico producido por movimientos oscilatorios transmitidos al cuerpo a través de herramientas, máquinas o vehículos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Radiaciones ionizantes"
+      },
+      {
+        "clave": "b",
+        "texto": "Condiciones térmicas extremas"
+      },
+      {
+        "clave": "c",
+        "texto": "Ruido de impacto"
+      },
+      {
+        "clave": "d",
+        "texto": "Vibraciones"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Las vibraciones son un tipo de riesgo físico producido por movimientos oscilatorios que se transmiten al cuerpo humano desde herramientas, máquinas o vehículos. El temario las relaciona con trabajos como el manejo de carretillas industriales, donde la exposición continuada puede provocar lumbalgias, lesiones en las muñecas, pérdida de fuerza de agarre o problemas articulares.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque las radiaciones ionizantes son otro tipo de riesgo físico, asociado a rayos X u otras fuentes capaces de producir daños graves como cáncer, pero no a movimientos oscilatorios transmitidos por carretillas o herramientas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque las condiciones térmicas extremas se relacionan con calor o frío excesivo, como golpes de calor o hipotermia, no con la transmisión mecánica de movimientos al cuerpo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el ruido de impacto afecta principalmente a la audición y al estrés acústico. Aunque puede aparecer junto a maquinaria, no describe el movimiento oscilatorio que se transmite al cuerpo."
+        }
+      ],
+      "resumen_didactico": "Cuando una herramienta, máquina o vehículo transmite movimientos repetidos u oscilatorios al cuerpo del trabajador, hablamos de riesgo físico por vibraciones.",
+      "ejemplo_practico": "Una trabajadora que conduce una carretilla industrial durante muchas horas puede sufrir molestias lumbares o lesiones en las muñecas por la vibración constante del vehículo.",
+      "conclusion_final": "La respuesta correcta es la d, porque el manejo de carretillas o herramientas que transmiten movimientos oscilatorios al cuerpo se asocia al riesgo físico por vibraciones."
+    }
+  },
+  {
+    "id": "UT5-Q22",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué derecho garantiza la LPRL al trabajador en caso de riesgo grave e inminente para su vida o salud?",
+    "contexto": "Derecho del trabajador a proteger su vida y salud cuando existe una situación de riesgo grave e inminente en el puesto de trabajo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Derecho a despedir al responsable de seguridad de la empresa."
+      },
+      {
+        "clave": "b",
+        "texto": "Derecho a teletrabajar de forma permanente sin autorización previa."
+      },
+      {
+        "clave": "c",
+        "texto": "Derecho a exigir un aumento de salario inmediato."
+      },
+      {
+        "clave": "d",
+        "texto": "Derecho a interrumpir su actividad y, si fuera necesario, abandonar el puesto de trabajo."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La Ley de Prevención de Riesgos Laborales reconoce que, ante una situación de riesgo grave e inminente para la vida o la salud, el trabajador tiene derecho a interrumpir su actividad y, si fuera necesario, abandonar el lugar de trabajo. Este derecho existe porque la protección de la salud y la seguridad del trabajador está por encima de la continuidad inmediata de la tarea.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el trabajador no tiene derecho a despedir al responsable de seguridad. Puede comunicar el riesgo, informar a sus superiores o a los representantes de prevención, pero no adoptar decisiones disciplinarias sobre otros trabajadores."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el riesgo grave e inminente no concede automáticamente un derecho a teletrabajar de forma permanente. La medida inmediata es interrumpir la actividad peligrosa o abandonar el puesto si es necesario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la existencia de un riesgo grave e inminente no genera un derecho automático a un aumento salarial. La respuesta legal está relacionada con la protección de la vida y la salud, no con una compensación económica inmediata."
+        }
+      ],
+      "resumen_didactico": "Cuando el riesgo es grave, inmediato y puede afectar a la vida o salud del trabajador, este no debe seguir trabajando como si nada. Tiene derecho a parar la actividad y salir del lugar peligroso si es necesario.",
+      "ejemplo_practico": "Si un técnico detecta humo, cables eléctricos expuestos y riesgo de incendio en una sala de servidores, no debe continuar trabajando allí. Debe interrumpir la actividad, alejarse de la zona peligrosa y activar el protocolo correspondiente.",
+      "conclusion_final": "La respuesta correcta es la d, porque ante un riesgo grave e inminente la LPRL garantiza el derecho a interrumpir la actividad y abandonar el puesto de trabajo si fuera necesario."
+    }
+  },
+  {
+    "id": "UT5-Q23",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Cómo contribuye la participación activa en prevención a la empleabilidad de un técnico?",
+    "contexto": "Relación entre la actitud preventiva del trabajador y su valor profesional dentro de una organización.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es la única forma de conseguir un ascenso rápido a puestos de dirección."
+      },
+      {
+        "clave": "b",
+        "texto": "Permite evitar que la empresa le asigne tareas difíciles."
+      },
+      {
+        "clave": "c",
+        "texto": "Garantiza que el trabajador nunca sea despedido por causas económicas."
+      },
+      {
+        "clave": "d",
+        "texto": "Proyecta una imagen de profesional responsable, maduro y capaz de cuidar el capital humano de la organización."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El temario insiste en que la prevención no es algo pasivo que simplemente recibe el trabajador, sino una cultura en la que debe participar activamente. Un técnico que identifica riesgos, usa correctamente los medios de protección, comunica problemas y propone mejoras demuestra responsabilidad, madurez profesional y capacidad para cuidar de sí mismo, de sus compañeros y del capital humano de la empresa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque participar activamente en prevención puede mejorar la imagen profesional del trabajador, pero no garantiza un ascenso rápido ni es la única vía para acceder a puestos de dirección."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la prevención no sirve para evitar tareas difíciles, sino para realizarlas en condiciones seguras y saludables. Un trabajador preventivo no rechaza responsabilidades, sino que sabe identificar y controlar riesgos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque ninguna actitud preventiva garantiza que un trabajador nunca pueda ser despedido por causas económicas. La empleabilidad mejora su valor profesional, pero no elimina todos los riesgos laborales o empresariales."
+        }
+      ],
+      "resumen_didactico": "Participar en prevención mejora la empleabilidad porque muestra que el técnico no solo sabe hacer su trabajo, sino que también sabe proteger su salud, colaborar con el equipo y actuar con criterio ante riesgos o emergencias.",
+      "ejemplo_practico": "Un técnico que detecta una mala organización de cables, avisa al responsable, propone ordenar el cableado y respeta las normas de seguridad transmite una imagen profesional mucho más sólida que alguien que ignora el problema hasta que ocurre un accidente.",
+      "conclusion_final": "La respuesta correcta es la d, porque la participación activa en prevención proyecta una imagen de profesional responsable, maduro y capaz de cuidar el capital humano de la organización."
+    }
+  },
+  {
+    "id": "UT5-Q24",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué factor se considera un riesgo de seguridad en el diseño de una oficina?",
+    "contexto": "Identificación de riesgos de seguridad relacionados con el espacio físico y las condiciones materiales de una oficina.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El nivel de estrés por el volumen de llamadas telefónicas."
+      },
+      {
+        "clave": "b",
+        "texto": "Los cables sueltos en zonas de paso que pueden provocar caídas."
+      },
+      {
+        "clave": "c",
+        "texto": "La iluminación deficiente que provoca fatiga visual."
+      },
+      {
+        "clave": "d",
+        "texto": "La temperatura del aire acondicionado."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los riesgos de seguridad son aquellos relacionados con condiciones materiales que pueden provocar accidentes, como caídas, golpes, choques, atrapamientos, incendios o contactos eléctricos. En una oficina, los cables sueltos en zonas de paso constituyen un riesgo de seguridad porque pueden provocar tropiezos y caídas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El estrés por volumen de llamadas no es un riesgo de seguridad, sino un riesgo psicosocial, porque deriva de la organización del trabajo, la carga mental y la presión laboral."
+        },
+        {
+          "clave": "c",
+          "motivo": "La iluminación deficiente puede provocar fatiga visual y molestias, pero se relaciona más con condiciones ambientales o ergonómicas del puesto, no con un riesgo de seguridad por accidente inmediato como una caída o golpe."
+        },
+        {
+          "clave": "d",
+          "motivo": "La temperatura del aire acondicionado se asocia a condiciones térmicas del entorno laboral, que pertenecen a los riesgos físicos o ambientales, no específicamente a los riesgos de seguridad."
+        }
+      ],
+      "resumen_didactico": "Un riesgo de seguridad suele estar relacionado con accidentes físicos directos: caerse, golpearse, cortarse, quemarse o sufrir un contacto eléctrico. En una oficina, los cables mal colocados son un ejemplo claro.",
+      "ejemplo_practico": "Si en una oficina de desarrollo web hay cables de monitores y regletas atravesando el pasillo, un técnico puede tropezar, caer al suelo y lesionarse. Ese peligro debe corregirse organizando el cableado o usando canaletas.",
+      "conclusion_final": "La respuesta correcta es la b, porque los cables sueltos en zonas de paso pueden provocar caídas y constituyen un riesgo de seguridad."
+    }
+  },
+  {
+    "id": "UT5-Q25",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "Ante una hemorragia externa de un compañero, ¿cuál es la medida de auxilio recomendada tras proteger y alertar?",
+    "contexto": "Aplicación de primeros auxilios básicos durante la fase de socorrer del protocolo PAS ante una hemorragia externa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Presionar directamente sobre la herida con gasas o paños limpios."
+      },
+      {
+        "clave": "b",
+        "texto": "Lavar la herida con agua muy caliente para desinfectar."
+      },
+      {
+        "clave": "c",
+        "texto": "Aplicar un torniquete inmediatamente por encima de la herida."
+      },
+      {
+        "clave": "d",
+        "texto": "Dar de beber agua con azúcar al accidentado para evitar el desmayo."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Dentro de la fase de Socorrer del protocolo PAS, el temario indica que, ante una hemorragia, debe presionarse la herida con fuerza usando gasas limpias o un paño limpio. La prioridad es controlar la pérdida de sangre sin realizar maniobras peligrosas ni administrar sustancias al accidentado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque lavar una herida con agua muy caliente no es una medida adecuada de primeros auxilios. Puede aumentar el daño en los tejidos, provocar dolor y no controla la hemorragia."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el torniquete no debe aplicarse de forma inmediata como primera medida general. Es una técnica específica que puede causar daños si se realiza mal. La primera actuación recomendada ante una hemorragia externa es la presión directa sobre la herida."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque no se debe dar comida, bebida ni medicamentos a una persona accidentada. Podría atragantarse, empeorar su estado o complicar la atención sanitaria posterior."
+        }
+      ],
+      "resumen_didactico": "Ante una hemorragia externa, después de proteger el entorno y alertar al 112, la medida básica es presionar directamente sobre la herida con material limpio para intentar detener o reducir la pérdida de sangre.",
+      "ejemplo_practico": "Si un compañero se corta profundamente con un cristal en la oficina, debes asegurarte primero de que no hay más peligro, llamar al 112 si la hemorragia es importante y después presionar la herida con gasas o un paño limpio hasta que llegue ayuda.",
+      "conclusion_final": "La respuesta correcta es la a, porque ante una hemorragia externa la medida de auxilio recomendada es presionar directamente sobre la herida con gasas o paños limpios."
+    }
+  },
+  {
+    "id": "UT5-Q26",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué es la Posición Lateral de Seguridad (PLS) y cuándo debe usarse?",
+    "contexto": "Aplicación de una maniobra básica de primeros auxilios durante la fase de socorrer del protocolo PAS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una maniobra para colocar a una víctima inconsciente que respira, evitando que se asfixie."
+      },
+      {
+        "clave": "b",
+        "texto": "Una técnica de defensa personal para evitar agresiones en el entorno laboral."
+      },
+      {
+        "clave": "c",
+        "texto": "La posición que debe adoptar el personal durante un simulacro de incendio."
+      },
+      {
+        "clave": "d",
+        "texto": "Una postura para sentarse correctamente frente al ordenador y evitar dolores de cuello."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La Posición Lateral de Seguridad, o PLS, es una maniobra básica de primeros auxilios que se utiliza cuando una persona está inconsciente pero respira. Su finalidad es mantener la vía aérea despejada y evitar que la víctima se asfixie, por ejemplo, si vomita o si la lengua obstruye la respiración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la PLS no tiene relación con técnicas de defensa personal ni con la prevención de agresiones. Es una maniobra sanitaria básica de primeros auxilios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque durante un simulacro de incendio el personal debe seguir las rutas de evacuación y las instrucciones del plan de emergencia, no colocarse en Posición Lateral de Seguridad."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque esta opción se refiere a ergonomía postural frente al ordenador. La PLS no sirve para sentarse correctamente, sino para proteger a una víctima inconsciente que respira."
+        }
+      ],
+      "resumen_didactico": "La PLS se usa cuando una víctima está inconsciente pero mantiene la respiración. Permite colocarla de lado para reducir el riesgo de asfixia mientras llegan los servicios sanitarios.",
+      "ejemplo_practico": "Si un compañero pierde el conocimiento en la oficina, respira y no hay sospecha clara de lesión grave de columna, se le puede colocar en Posición Lateral de Seguridad para mantener abierta la vía respiratoria y evitar que se ahogue si vomita.",
+      "conclusion_final": "La respuesta correcta es la a, porque la Posición Lateral de Seguridad es una maniobra para colocar a una víctima inconsciente que respira, evitando que se asfixie."
+    }
+  },
+  {
+    "id": "UT5-Q27",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué responsabilidad tiene el trabajador respecto a los medios de protección proporcionados por la empresa?",
+    "contexto": "Obligaciones del trabajador en el uso adecuado de los medios de protección y dispositivos de seguridad facilitados por la empresa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Puede decidir no usarlos si considera que no son estéticos o le dan calor."
+      },
+      {
+        "clave": "b",
+        "texto": "Usarlos correctamente, cuidar de su estado y no desactivar los dispositivos de seguridad."
+      },
+      {
+        "clave": "c",
+        "texto": "Debe pagarlos de su propio sueldo si se desgastan por el uso normal."
+      },
+      {
+        "clave": "d",
+        "texto": "Ninguna, el mantenimiento corresponde exclusivamente al empresario."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La prevención de riesgos laborales implica obligaciones tanto para la empresa como para el trabajador. La empresa debe proporcionar medios de protección adecuados, formación y condiciones seguras, pero el trabajador tiene la responsabilidad de usarlos correctamente, cuidar de su estado, seguir las instrucciones recibidas y no inutilizar ni desactivar los dispositivos de seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el uso de los medios de protección no depende de criterios estéticos ni de la comodidad subjetiva del trabajador. Si un equipo de protección es necesario, debe utilizarse correctamente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los medios de protección necesarios para trabajar con seguridad deben ser proporcionados por la empresa y no deben suponer un coste para el trabajador por su uso normal."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el trabajador sí tiene responsabilidades. Aunque la empresa debe garantizar la seguridad y el mantenimiento adecuado, el trabajador debe usar correctamente los medios, conservarlos de forma adecuada y comunicar cualquier defecto o problema."
+        }
+      ],
+      "resumen_didactico": "El trabajador no es un sujeto pasivo en prevención. Debe colaborar activamente usando bien los equipos de protección, respetando las normas de seguridad y evitando conductas que puedan poner en peligro su salud o la de sus compañeros.",
+      "ejemplo_practico": "Si la empresa entrega gafas de seguridad para una tarea concreta, el técnico debe ponérselas cuando corresponda, guardarlas correctamente, avisar si están dañadas y no retirarlas por simple incomodidad mientras exista el riesgo.",
+      "conclusion_final": "La respuesta correcta es la b, porque el trabajador debe usar correctamente los medios de protección, cuidar de su estado y no desactivar los dispositivos de seguridad."
+    }
+  },
+  {
+    "id": "UT5-Q28",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿A qué familia de riesgos pertenece el \"sedentarismo\" prolongado en puestos de administración o programación?",
+    "contexto": "Identificación del sedentarismo prolongado como riesgo asociado a puestos técnicos o administrativos con muchas horas de trabajo sentado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Riesgos biológicos"
+      },
+      {
+        "clave": "b",
+        "texto": "Riesgos físicos por radiación"
+      },
+      {
+        "clave": "c",
+        "texto": "Riesgos ergonómicos"
+      },
+      {
+        "clave": "d",
+        "texto": "Riesgos de seguridad por incendio"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El sedentarismo prolongado en puestos de administración o programación se relaciona con los riesgos ergonómicos, porque afecta a la adaptación del puesto de trabajo a la persona. Pasar muchas horas sentado, mantener posturas estáticas, no realizar pausas o trabajar con mobiliario mal ajustado puede provocar dolores musculares, molestias lumbares, fatiga, problemas circulatorios o lesiones derivadas de una mala organización física del puesto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los riesgos biológicos se relacionan con la exposición a bacterias, virus u otros agentes biológicos, no con permanecer muchas horas sentado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque los riesgos físicos por radiación se refieren a la exposición a radiaciones ionizantes o no ionizantes, como rayos X, ultravioleta, láser o microondas. El sedentarismo no es un problema de radiación."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque los riesgos de seguridad por incendio se relacionan con situaciones que pueden provocar fuego, explosiones, quemaduras o evacuaciones. El sedentarismo prolongado no pertenece a esta familia de riesgos."
+        }
+      ],
+      "resumen_didactico": "El sedentarismo en trabajos de oficina o programación es un riesgo ergonómico porque está relacionado con la postura, la organización física del puesto y la necesidad de adaptar el trabajo al cuerpo humano.",
+      "ejemplo_practico": "Un programador que pasa ocho horas sentado sin pausas, con una silla mal ajustada y la pantalla a una altura incorrecta puede desarrollar dolor lumbar, tensión cervical o molestias en las piernas.",
+      "conclusion_final": "La respuesta correcta es la c, porque el sedentarismo prolongado en puestos de administración o programación pertenece a los riesgos ergonómicos."
+    }
+  },
+  {
+    "id": "UT5-Q29",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Qué establece la normativa sobre la vigilancia de la salud (reconocimientos médicos) en la empresa?",
+    "contexto": "Derecho del trabajador a la vigilancia periódica de su salud en relación con los riesgos derivados del trabajo y límites de obligatoriedad de los reconocimientos médicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Es siempre obligatoria para el trabajador, quien no puede negarse nunca."
+      },
+      {
+        "clave": "b",
+        "texto": "Es generalmente voluntaria para el trabajador, salvo que sea imprescindible para evaluar efectos de las condiciones de trabajo."
+      },
+      {
+        "clave": "c",
+        "texto": "Los resultados del examen médico son públicos y pueden ser consultados por cualquier compañero."
+      },
+      {
+        "clave": "d",
+        "texto": "Debe ser pagada íntegramente por el sistema público de salud, no por la empresa."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La vigilancia de la salud forma parte de la prevención de riesgos laborales. La empresa debe garantizar reconocimientos médicos relacionados con los riesgos del puesto, pero, como norma general, estos son voluntarios para el trabajador. Solo pueden ser obligatorios en casos concretos, por ejemplo cuando sean imprescindibles para evaluar los efectos de las condiciones de trabajo sobre la salud, para verificar si el estado del trabajador puede constituir un peligro para él mismo o para otras personas, o cuando una norma específica lo establezca.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los reconocimientos médicos no son siempre obligatorios. La regla general es la voluntariedad del trabajador, salvo excepciones justificadas por razones preventivas o legales."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los resultados médicos son confidenciales. No pueden ser consultados por compañeros ni difundidos dentro de la empresa. La empresa solo puede recibir conclusiones sobre la aptitud del trabajador o sobre la necesidad de adaptar el puesto, no detalles clínicos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la vigilancia de la salud vinculada a la prevención de riesgos laborales corresponde a la empresa. No debe suponer un coste para el trabajador."
+        }
+      ],
+      "resumen_didactico": "La vigilancia de la salud es un derecho preventivo del trabajador, no un control médico libre de la empresa. Normalmente requiere consentimiento, debe estar relacionada con los riesgos del puesto y debe respetar la confidencialidad de los datos médicos.",
+      "ejemplo_practico": "Un técnico que trabaja muchas horas con pantallas puede recibir un reconocimiento médico orientado a detectar problemas visuales o molestias derivadas del puesto. En principio puede aceptarlo o rechazarlo, salvo que exista una justificación legal o preventiva que lo haga imprescindible.",
+      "conclusion_final": "La respuesta correcta es la b, porque la vigilancia de la salud es generalmente voluntaria para el trabajador, salvo casos excepcionales en los que sea imprescindible para valorar los efectos de las condiciones de trabajo o proteger la seguridad."
+    }
+  },
+  {
+    "id": "UT5-Q30",
+    "tema": "UT5 Prevención de riesgos laborales",
+    "pregunta": "¿Cuál es la principal lección aprendida sobre la seguridad laboral para un futuro titulado?",
+    "contexto": "Reflexión final sobre la importancia de la prevención de riesgos laborales en la vida profesional de un técnico superior.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Que los accidentes ocurren siempre por mala suerte y no se pueden prevenir."
+      },
+      {
+        "clave": "b",
+        "texto": "Que las normas de prevención solo sirven para evitar que la Inspección de Trabajo ponga multas."
+      },
+      {
+        "clave": "c",
+        "texto": "Que la salud es el activo más valioso del profesional y su protección es una inversión tanto personal como empresarial."
+      },
+      {
+        "clave": "d",
+        "texto": "Que la seguridad es un coste innecesario que frena la competitividad de la empresa."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La conclusión principal del temario es que la Prevención de Riesgos Laborales no debe entenderse como una simple obligación burocrática, sino como una herramienta esencial para proteger la salud física y mental del trabajador. La salud es el recurso más importante de cualquier profesional, porque sin ella no puede desarrollar correctamente su carrera, mantener su rendimiento ni aportar valor a la empresa. Por eso, invertir en prevención beneficia tanto al trabajador como a la organización.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el temario insiste precisamente en que muchos accidentes y daños profesionales pueden prevenirse si se identifican los riesgos, se evalúan correctamente y se aplican medidas preventivas adecuadas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la prevención no existe solo para evitar sanciones. Su finalidad principal es proteger la seguridad, la salud y el bienestar de las personas trabajadoras."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la seguridad no debe verse como un coste innecesario. Al contrario, una buena prevención reduce bajas, accidentes, errores, pérdida de productividad y deterioro del clima laboral."
+        }
+      ],
+      "resumen_didactico": "La prevención de riesgos laborales enseña que cuidar la salud no es algo secundario: es una condición básica para trabajar bien, desarrollarse profesionalmente y construir una carrera larga y sostenible.",
+      "ejemplo_practico": "Un técnico que cuida su postura, respeta sus descansos, comunica riesgos, usa correctamente los equipos de protección y sabe actuar ante emergencias está protegiendo su futuro profesional y también contribuyendo a una empresa más segura y eficiente.",
+      "conclusion_final": "La respuesta correcta es la c, porque la gran lección de la seguridad laboral es que la salud es el activo más valioso del profesional y protegerla es una inversión personal y empresarial."
+    }
+  }
+]
