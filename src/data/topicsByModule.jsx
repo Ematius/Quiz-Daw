@@ -512,5 +512,18 @@ export const topicsByModule = {
       title: "Repaso global (Abarca el 85% a 100% del temario)",
       numQuestion: 30,
     }
+  ],
+  repasoGlobal: [
+    {
+      id: "UT1",
+      title: "Repaso global (Abarca de 0% a 17% del temario)",
+      numQuestion: 30,
+    },
+    {
+      id: "UT2",
+      title: "Repaso global (Abarca de 17% a 34% del temario)",
+      numQuestion: 30,
+    }
+
   ]
 };
