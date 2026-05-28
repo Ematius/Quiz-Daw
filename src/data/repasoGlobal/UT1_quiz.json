@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 Técnicas de comprensión oral y escrita",
+    "pregunta": "Read the following paragraph and identify the main idea: \"The company is developing a new customer service platform to improve user satisfaction. This system will provide faster responses and personalized support, enhancing the overall experience.\"",
+    "contexto": "Identificación de la idea principal en un texto breve sobre una nueva plataforma de atención al cliente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "The company wants to reduce the number of customer complaints."
+      },
+      {
+        "clave": "b",
+        "texto": "The platform will replace all current communication channels."
+      },
+      {
+        "clave": "c",
+        "texto": "The company is creating a platform to improve customer service and satisfaction."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La idea principal es el núcleo del mensaje, es decir, aquello de lo que trata el texto en conjunto. En este caso, el párrafo explica que la empresa está desarrollando una nueva plataforma de atención al cliente para mejorar la satisfacción de los usuarios. Los detalles sobre respuestas más rápidas y soporte personalizado son ideas secundarias que amplían esa idea principal.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Reducir quejas podría ser una consecuencia indirecta de mejorar el servicio, pero el texto no dice que ese sea el objetivo principal. La idea central es mejorar la atención al cliente y la satisfacción del usuario."
+        },
+        {
+          "clave": "b",
+          "motivo": "El texto no menciona que la nueva plataforma vaya a sustituir todos los canales de comunicación actuales. Esa información no aparece en el párrafo."
+        }
+      ],
+      "resumen_didactico": "Para encontrar la idea principal hay que preguntarse de qué trata el texto en conjunto. Aquí no se centra en una queja concreta ni en sustituir canales, sino en crear una plataforma para mejorar el servicio al cliente.",
+      "ejemplo_practico": "Si una empresa crea una app para responder más rápido a sus clientes y ofrecer ayuda personalizada, la idea principal sería que la empresa mejora su servicio de atención al cliente.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque resume el mensaje central del párrafo: la empresa está creando una plataforma para mejorar el servicio al cliente y la satisfacción del usuario."
+    }
+  },
+  {
+    "id": "UT1-Q02",
+    "tema": "UT1 Técnicas de comprensión oral y escrita",
+    "pregunta": "Which of the following is a supporting detail from the previous paragraph?",
+    "contexto": "Identificación de una idea secundaria o detalle de apoyo a partir del párrafo anterior sobre una plataforma de atención al cliente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "The platform will be available worldwide."
+      },
+      {
+        "clave": "b",
+        "texto": "The system will offer faster responses and personalized support."
+      },
+      {
+        "clave": "c",
+        "texto": "Customers will have to download an app to use the platform."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Las ideas secundarias o supporting details amplían, explican o respaldan la idea principal. En el párrafo anterior, la idea principal era que la empresa está desarrollando una plataforma para mejorar el servicio al cliente y la satisfacción del usuario. El detalle de apoyo es que el sistema ofrecerá respuestas más rápidas y soporte personalizado, porque explica cómo se conseguirá esa mejora.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El párrafo no indica que la plataforma vaya a estar disponible en todo el mundo. Es una información añadida que no aparece en el texto."
+        },
+        {
+          "clave": "c",
+          "motivo": "El texto no menciona que los clientes tengan que descargar una aplicación para usar la plataforma. Por tanto, no puede considerarse un detalle secundario del párrafo."
+        }
+      ],
+      "resumen_didactico": "Una idea secundaria aporta información que desarrolla la idea principal. En este caso, las respuestas rápidas y el soporte personalizado explican de qué manera la plataforma mejorará la satisfacción del usuario.",
+      "ejemplo_practico": "Si la idea principal es que una empresa mejora su atención al cliente, un detalle secundario puede ser que responderá más rápido, ofrecerá ayuda personalizada o resolverá dudas de forma más eficaz.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque es el detalle que apoya directamente la idea principal del párrafo anterior."
+    }
+  },
+  {
+    "id": "UT1-Q03",
+    "tema": "UT1 Técnicas de comprensión oral y escrita",
+    "pregunta": "Identify the main idea of the following passage: \"Cloud storage services allow users to save and access their files from any device with an internet connection. This technology helps businesses collaborate more efficiently and reduces the need for physical storage devices.\"",
+    "contexto": "Identificación de la idea principal en un texto breve sobre servicios de almacenamiento en la nube.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cloud storage replaces the need for physical storage devices."
+      },
+      {
+        "clave": "b",
+        "texto": "Cloud storage enables remote access and improves collaboration."
+      },
+      {
+        "clave": "c",
+        "texto": "Businesses need cloud storage to store large amounts of data."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La idea principal es el núcleo del mensaje y resume el contenido global del texto. En este caso, el párrafo explica que los servicios de almacenamiento en la nube permiten guardar y acceder a archivos desde cualquier dispositivo con conexión a internet, además de mejorar la colaboración empresarial. Por eso, la opción más completa es la que recoge el acceso remoto y la mejora de la colaboración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Reducir la necesidad de dispositivos físicos aparece en el texto, pero es una idea secundaria. No resume todo el contenido del párrafo, porque deja fuera el acceso desde cualquier dispositivo y la mejora de la colaboración."
+        },
+        {
+          "clave": "c",
+          "motivo": "El texto no dice que las empresas necesiten almacenamiento en la nube para guardar grandes cantidades de datos. Habla de acceso remoto, colaboración y menor dependencia de dispositivos físicos."
+        }
+      ],
+      "resumen_didactico": "La idea principal debe recoger el sentido global del texto, no solo un detalle. Aquí el tema central es que el almacenamiento en la nube permite acceder a archivos desde cualquier lugar y mejora la colaboración.",
+      "ejemplo_practico": "Una empresa que usa Google Drive, OneDrive o Dropbox puede acceder a documentos desde distintos dispositivos y trabajar en equipo sin depender de memorias USB o discos externos.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque resume mejor la idea principal del párrafo: el almacenamiento en la nube permite acceso remoto y mejora la colaboración."
+    }
+  },
+  {
+    "id": "UT1-Q04",
+    "tema": "UT1 Técnicas de comprensión oral y escrita",
+    "pregunta": "What is the purpose of supporting details in a text?",
+    "contexto": "Función de las ideas secundarias o detalles de apoyo dentro de un texto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "They help explain or provide evidence for the main idea."
+      },
+      {
+        "clave": "b",
+        "texto": "They make the text longer without adding relevant information."
+      },
+      {
+        "clave": "c",
+        "texto": "They provide examples that contradict the main idea."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, las ideas secundarias amplían, explican o respaldan la idea principal. Pueden incluir ejemplos, datos, estadísticas, descripciones o información complementaria que ayuda a comprender mejor el núcleo del mensaje.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Los detalles de apoyo no sirven para alargar el texto sin aportar información. Su función es añadir información relevante que explique o refuerce la idea principal."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los detalles de apoyo no contradicen la idea principal. Al contrario, deben ayudar a desarrollarla, aclararla o demostrarla."
+        }
+      ],
+      "resumen_didactico": "La idea principal dice de qué trata el texto; los supporting details explican, amplían o justifican esa idea con información concreta.",
+      "ejemplo_practico": "Si la idea principal es que una campaña de redes sociales aumentó la visibilidad de una marca, un detalle de apoyo puede ser que el tráfico web creció un 40% o que hubo 150 interacciones diarias.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque los supporting details sirven para explicar o aportar evidencia que refuerza la idea principal."
+    }
+  },
+  {
+    "id": "UT1-Q05",
+    "tema": "UT1 Técnicas de comprensión oral y escrita",
+    "pregunta": "Which strategy helps identify the main idea of a text?",
+    "contexto": "Estrategias para identificar la idea principal de un texto mediante conceptos repetidos, palabras clave y frases temáticas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Read only the introduction and conclusion."
+      },
+      {
+        "clave": "b",
+        "texto": "Focus on adjectives and descriptive words."
+      },
+      {
+        "clave": "c",
+        "texto": "Look for repeated concepts and key sentences."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, para identificar la idea principal de un texto conviene buscar palabras clave, conceptos repetidos y frases temáticas. Estas suelen aparecer en títulos, introducciones, conclusiones o al inicio de los párrafos, y ayudan a reconocer el núcleo del mensaje.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La introducción y la conclusión pueden ayudar, pero leer solo esas partes no siempre es suficiente. También hay que observar el desarrollo del texto y las frases clave que organizan la información."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los adjetivos y palabras descriptivas pueden aportar detalles, pero normalmente no indican por sí solos la idea principal. Suelen formar parte de ideas secundarias o descripciones."
+        }
+      ],
+      "resumen_didactico": "Para encontrar la idea principal hay que localizar los conceptos que se repiten, las palabras clave y las frases que resumen el contenido central del texto.",
+      "ejemplo_practico": "Si en un texto aparecen varias veces expresiones como cloud storage, remote access y collaboration, probablemente la idea principal estará relacionada con cómo el almacenamiento en la nube permite acceder a archivos y colaborar mejor.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque buscar conceptos repetidos y frases clave es una estrategia adecuada para identificar la idea principal."
+    }
+  },
+  {
+    "id": "UT1-Q06",
+    "tema": "UT1 Técnicas de comprensión oral y escrita",
+    "pregunta": "Choose the best summary of the following passage: \"E-learning platforms offer flexible learning opportunities for students worldwide. With online courses, people can study at their own pace, access diverse resources, and connect with instructors from different countries.\"",
+    "contexto": "Elección del mejor resumen de un texto breve sobre plataformas de aprendizaje online.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "E-learning replaces traditional classroom education."
+      },
+      {
+        "clave": "b",
+        "texto": "E-learning provides flexible and accessible education for students globally."
+      },
+      {
+        "clave": "c",
+        "texto": "Online courses are only available to university students."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Un buen resumen debe recoger la idea principal del texto de forma breve y completa, sin añadir información que no aparece. En este caso, el párrafo explica que las plataformas de e-learning ofrecen oportunidades flexibles de aprendizaje para estudiantes de todo el mundo, permitiendo estudiar al propio ritmo, acceder a recursos diversos y contactar con docentes de distintos países.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El texto no afirma que el e-learning sustituya la educación presencial tradicional. Solo explica sus ventajas: flexibilidad, acceso a recursos y conexión con instructores."
+        },
+        {
+          "clave": "c",
+          "motivo": "El texto no dice que los cursos online sean solo para estudiantes universitarios. Al contrario, habla de estudiantes de todo el mundo de forma general."
+        }
+      ],
+      "resumen_didactico": "Para elegir el mejor resumen hay que seleccionar la opción que recoja la idea global del texto sin limitarla ni añadir datos inventados.",
+      "ejemplo_practico": "Si una plataforma online permite estudiar desde casa, avanzar al propio ritmo y acceder a profesores internacionales, el resumen correcto sería que ofrece educación flexible y accesible globalmente.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque resume de forma completa la idea principal del párrafo: el e-learning proporciona educación flexible y accesible para estudiantes de todo el mundo."
+    }
+  },
+  {
+    "id": "UT1-Q07",
+    "tema": "UT1 Técnicas de comprensión oral y escrita",
+    "pregunta": "Identify the technical term in the following sentence: \"The company uses a content management system (CMS) to organize and publish digital content on its website.\"",
+    "contexto": "Identificación de terminología técnica específica dentro de una frase relacionada con el entorno digital y la gestión de contenidos web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Organize and publish."
+      },
+      {
+        "clave": "b",
+        "texto": "Content management system (CMS)."
+      },
+      {
+        "clave": "c",
+        "texto": "Website."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la terminología específica incluye palabras o expresiones técnicas que tienen un significado concreto dentro de un campo profesional. En este caso, \"content management system (CMS)\" es un término técnico del ámbito digital y web que se refiere a un sistema utilizado para organizar, gestionar y publicar contenido en una página web.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "\"Organize and publish\" describe acciones que realiza el sistema, pero no es el término técnico principal de la frase."
+        },
+        {
+          "clave": "c",
+          "motivo": "\"Website\" es una palabra común dentro del ámbito digital, pero en esta frase el término técnico específico es \"content management system (CMS)\", porque nombra una herramienta concreta de gestión de contenidos."
+        }
+      ],
+      "resumen_didactico": "Un término técnico suele nombrar una herramienta, concepto o proceso especializado de un sector. Aquí, CMS es el concepto técnico porque identifica un tipo concreto de sistema usado en desarrollo y gestión web.",
+      "ejemplo_practico": "WordPress, Joomla o Drupal son ejemplos de content management systems, porque permiten crear, organizar y publicar contenido en una web sin programar todo desde cero.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque \"content management system (CMS)\" es el término técnico específico de la frase."
+    }
+  },
+  {
+    "id": "UT1-Q08",
+    "tema": "UT1 Técnicas de comprensión oral y escrita",
+    "pregunta": "What does the suffix \"-ment\" indicate in the word \"improvement\"?",
+    "contexto": "Interpretación de sufijos técnicos y formación de palabras en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A tool used to complete a task."
+      },
+      {
+        "clave": "b",
+        "texto": "The speed at which something happens."
+      },
+      {
+        "clave": "c",
+        "texto": "The result or process of an action."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, algunos sufijos comunes ayudan a deducir el significado de palabras técnicas o generales. El sufijo \"-ment\" indica acción, resultado o proceso. En la palabra \"improvement\", se refiere al proceso o resultado de mejorar algo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El sufijo \"-ment\" no indica una herramienta. Una herramienta sería un instrumento usado para realizar una tarea, pero \"improvement\" expresa una acción o resultado."
+        },
+        {
+          "clave": "b",
+          "motivo": "El sufijo \"-ment\" no se relaciona con la velocidad a la que ocurre algo. No indica rapidez, duración ni frecuencia."
+        }
+      ],
+      "resumen_didactico": "El sufijo \"-ment\" suele transformar un verbo en un sustantivo que expresa el proceso o resultado de una acción.",
+      "ejemplo_practico": "Improve significa mejorar; improvement significa mejora, es decir, el resultado o proceso de mejorar algo.",
+      "conclusion_final": "La respuesta correcta es la opción c, porque \"-ment\" indica el resultado o proceso de una acción."
+    }
+  },
+  {
+    "id": "UT2-Q09",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "Which of the following shows active listening during a conversation?",
+    "contexto": "Identificación de conductas propias de la escucha activa en una conversación profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Waiting for your turn to speak without paying attention."
+      },
+      {
+        "clave": "b",
+        "texto": "Nodding, maintaining eye contact, and summarizing key points."
+      },
+      {
+        "clave": "c",
+        "texto": "Interrupting to give your opinion quickly."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la escucha activa consiste en prestar atención de manera intencionada y comprometida al interlocutor. Incluye demostrar interés y empatía mediante señales verbales y no verbales, mantener contacto visual, asentir, parafrasear o resumir lo escuchado y confirmar la comprensión con preguntas o resúmenes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esperar el turno para hablar sin prestar atención no es escucha activa. Aunque no se interrumpa, falta la parte esencial: escuchar de forma consciente, comprender el mensaje y demostrar interés."
+        },
+        {
+          "clave": "c",
+          "motivo": "Interrumpir para dar una opinión rápidamente va contra la escucha activa, porque impide que el interlocutor termine su mensaje y puede dificultar la comprensión."
+        }
+      ],
+      "resumen_didactico": "La escucha activa se demuestra prestando atención, usando señales como asentir o mantener contacto visual, y confirmando que se ha entendido el mensaje mediante resúmenes o preguntas.",
+      "ejemplo_practico": "Si un compañero explica un problema con un cliente, una respuesta de escucha activa sería: \"So, the client is unhappy because the delivery was delayed. Is that correct?\".",
+      "conclusion_final": "La respuesta correcta es la opción b, porque asentir, mantener contacto visual y resumir puntos clave son conductas propias de la escucha activa."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "What is the most appropriate way to ask a boss for clarification in a formal email?",
+    "contexto": "Uso de lenguaje formal y preguntas clarificadoras en un contexto profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Hey, what exactly do you mean? Too many numbers or what?"
+      },
+      {
+        "clave": "b",
+        "texto": "Could you specify which sections need additional data? Would you prefer more statistics or case studies?"
+      },
+      {
+        "clave": "c",
+        "texto": "I don’t get it. Can you make it simpler?"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, en el entorno laboral es importante usar un lenguaje claro, profesional y adaptado al destinatario. Para pedir aclaraciones, especialmente a un superior o en un correo formal, conviene utilizar preguntas clarificadoras educadas y precisas, como \"Could you specify...?\" o \"Would you prefer...?\".",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es una frase demasiado informal y poco profesional para dirigirse a un jefe en un correo formal. Expresiones como \"Hey\" o \"Too many numbers or what?\" pueden sonar bruscas o poco respetuosas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Aunque pide aclaración, la frase \"I don’t get it\" es demasiado informal y poco adecuada para un contexto profesional formal. Además, no concreta qué parte necesita explicación."
+        }
+      ],
+      "resumen_didactico": "En una comunicación formal se debe pedir aclaración con cortesía, precisión y tono profesional. Las mejores preguntas no solo dicen que hay una duda, sino que especifican qué información se necesita.",
+      "ejemplo_practico": "Si tu jefe te dice que una presentación necesita más datos, una respuesta adecuada sería: \"Could you specify which sections need additional data? Would you prefer more statistics or case studies?\".",
+      "conclusion_final": "La respuesta correcta es la opción b, porque utiliza un tono formal, educado y claro para pedir una aclaración profesional."
+    }
+  },
+  {
+    "id": "UT2-Q11",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "Which of the following demonstrates effective paraphrasing?",
+    "contexto": "Identificación de una paráfrasis efectiva como técnica de escucha activa en una conversación profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "I understand what you mean, but I have a different opinion."
+      },
+      {
+        "clave": "b",
+        "texto": "Let’s just move forward without changing anything."
+      },
+      {
+        "clave": "c",
+        "texto": "So, you’re suggesting we adjust the deadline to meet client expectations. Is that correct?"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, parafrasear consiste en repetir con palabras propias lo que la otra persona ha dicho para confirmar que se ha entendido correctamente el mensaje. Es una técnica de escucha activa porque ayuda a evitar malentendidos y permite validar la información con el interlocutor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esta opción expresa comprensión y desacuerdo, pero no reformula el mensaje del interlocutor ni confirma si se ha entendido correctamente. Por tanto, no es una paráfrasis efectiva."
+        },
+        {
+          "clave": "b",
+          "motivo": "Esta opción propone continuar sin hacer cambios. No demuestra escucha activa ni reformula la idea del interlocutor."
+        }
+      ],
+      "resumen_didactico": "Una paráfrasis efectiva resume la idea de la otra persona con tus propias palabras y suele terminar con una pregunta de confirmación, como \"Is that correct?\".",
+      "ejemplo_practico": "Si un cliente dice que necesita más tiempo porque el equipo no llegará al plazo previsto, una paráfrasis adecuada sería: \"So, you need to extend the deadline to ensure the work meets expectations. Is that correct?\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque reformula la idea principal del interlocutor y confirma la comprensión del mensaje."
+    }
+  },
+  {
+    "id": "UT2-Q12",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "In which scenario is informal language most appropriate?",
+    "contexto": "Elección del contexto adecuado para usar lenguaje informal en el entorno laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Presenting a project to the board of directors."
+      },
+      {
+        "clave": "b",
+        "texto": "Chatting with a colleague on Slack."
+      },
+      {
+        "clave": "c",
+        "texto": "Writing an email to a client."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el lenguaje informal puede utilizarse en interacciones con compañeros de equipo o mensajes internos, siempre manteniendo el profesionalismo. En cambio, con clientes, directivos o en presentaciones formales se debe usar un lenguaje más formal, claro y estructurado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Presentar un proyecto ante la junta directiva requiere lenguaje formal, estructura clara y tono profesional, porque se trata de una situación seria y de alta responsabilidad."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un correo a un cliente debe mantener un tono formal o profesional, con saludos y cierres adecuados, evitando expresiones demasiado coloquiales."
+        }
+      ],
+      "resumen_didactico": "El lenguaje informal es más adecuado en conversaciones internas con compañeros, por ejemplo en Slack o Teams, pero siempre debe conservar respeto y profesionalidad.",
+      "ejemplo_practico": "A un compañero podrías escribirle por Slack: \"Hey John, can we catch up about the project later?\". En cambio, a un cliente sería mejor escribir: \"Dear Mr. Johnson, I would like to request a meeting to discuss the project.\"",
+      "conclusion_final": "La respuesta correcta es la opción b, porque chatear con un compañero por Slack es el contexto donde el lenguaje informal resulta más apropiado."
+    }
+  },
+  {
+    "id": "UT2-Q13",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "Choose the best introduction for a business presentation:",
+    "contexto": "Selección de una introducción adecuada para una presentación profesional en el entorno laboral.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "This presentation might be a bit long, but I’ll try to make it quick."
+      },
+      {
+        "clave": "b",
+        "texto": "Good afternoon, everyone. Today, I’ll share our progress and outline the next steps for this project."
+      },
+      {
+        "clave": "c",
+        "texto": "Hi everyone, let’s get started and see where we go."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, una presentación profesional debe tener una estructura clara: introducción, desarrollo y conclusión. En la introducción conviene saludar al público, presentar el tema y explicar el objetivo de la presentación. La opción correcta cumple estos elementos porque saluda de forma profesional, indica que se hablará del progreso y anuncia los próximos pasos del proyecto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Aunque intenta preparar al público, transmite inseguridad y presenta la exposición como algo potencialmente largo o pesado. No es una introducción profesional ni orientada claramente al objetivo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es demasiado informal e imprecisa. La frase \"see where we go\" no presenta un objetivo claro ni una estructura profesional para la presentación."
+        }
+      ],
+      "resumen_didactico": "Una buena introducción profesional debe saludar, presentar el tema y explicar qué se va a tratar. Debe transmitir claridad, seguridad y organización.",
+      "ejemplo_practico": "En una reunión de proyecto, una introducción adecuada sería: \"Good afternoon, everyone. Today, I’ll present the results of our recent improvements and discuss the next steps.\"",
+      "conclusion_final": "La respuesta correcta es la opción b, porque es clara, formal y presenta correctamente el objetivo de la presentación."
+    }
+  },
+  {
+    "id": "UT2-Q14",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "What is the main purpose of the conclusion in a presentation?",
+    "contexto": "Función de la conclusión dentro de una presentación profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "To summarize key points and provide a final takeaway."
+      },
+      {
+        "clave": "b",
+        "texto": "To thank the audience without restating the main ideas."
+      },
+      {
+        "clave": "c",
+        "texto": "To introduce new concepts for future discussion."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, una presentación profesional debe tener una estructura clara: introducción, desarrollo y conclusión. La conclusión sirve para resumir las ideas clave, cerrar el mensaje principal y dejar una impresión final en la audiencia. También puede incluir una llamada a la acción, una frase inspiradora o abrir espacio para preguntas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Agradecer a la audiencia puede formar parte del cierre, pero no es la función principal de la conclusión. Una conclusión efectiva debe recuperar las ideas principales y cerrar el mensaje de forma clara."
+        },
+        {
+          "clave": "c",
+          "motivo": "La conclusión no debe introducir conceptos nuevos, porque eso puede confundir a la audiencia. Los conceptos principales deben desarrollarse antes, en el cuerpo de la presentación."
+        }
+      ],
+      "resumen_didactico": "La conclusión sirve para cerrar la presentación, recordar los puntos principales y dejar una idea final clara en la audiencia.",
+      "ejemplo_practico": "Después de presentar un proyecto, una buena conclusión sería: \"In summary, we improved efficiency, reduced delivery times, and increased customer satisfaction. Now, let’s apply these results to the next phase.\"",
+      "conclusion_final": "La respuesta correcta es la opción a, porque la conclusión debe resumir los puntos clave y ofrecer una idea final clara."
+    }
+  },
+  {
+    "id": "UT2-Q15",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "Which response is most professional when handling a customer complaint?",
+    "contexto": "Selección de una respuesta profesional y empática ante una queja de un cliente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "We appreciate your feedback. Let me investigate the issue and offer a solution."
+      },
+      {
+        "clave": "b",
+        "texto": "Sometimes delays happen, and there’s not much we can do about it."
+      },
+      {
+        "clave": "c",
+        "texto": "It’s not our fault, but I’ll see what I can do."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, en la resolución de problemas y atención al usuario se debe aplicar escucha activa, empatía, tono profesional y orientación a soluciones. Una respuesta adecuada debe agradecer que el cliente comunique el problema, investigar lo ocurrido y ofrecer una solución clara.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esta respuesta minimiza el problema y transmite falta de responsabilidad. Decir que no hay mucho que hacer no muestra orientación a soluciones ni atención profesional al cliente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Aunque indica cierta intención de ayudar, empieza culpando o desvinculándose del problema. En atención al cliente se recomienda evitar culpar a otros y centrarse en resolver la situación."
+        }
+      ],
+      "resumen_didactico": "Ante una queja, la respuesta profesional debe reconocer el problema, mantener un tono respetuoso, investigar la situación y proponer una solución.",
+      "ejemplo_practico": "Si un cliente dice que un envío llegó tarde, una respuesta adecuada sería: \"We apologize for the delay. Let me check the details of your shipment and provide a solution right away.\"",
+      "conclusion_final": "La respuesta correcta es la opción a, porque muestra profesionalidad, escucha activa y orientación clara a la solución del problema."
+    }
+  },
+  {
+    "id": "UT2-Q16",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "Identify the best way to contribute during a business meeting:",
+    "contexto": "Participación activa y profesional en reuniones de trabajo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Prepare in advance, listen actively, and present your ideas clearly."
+      },
+      {
+        "clave": "b",
+        "texto": "Only contribute if directly asked a question."
+      },
+      {
+        "clave": "c",
+        "texto": "Speak as much as possible to ensure your voice is heard."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, para contribuir activamente en una reunión laboral es importante prepararse previamente, revisar la agenda, recopilar información relevante, expresar las ideas de forma clara, escuchar activamente, tomar notas y hacer preguntas cuando sea necesario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Participar solo si te preguntan directamente limita la contribución profesional. En una reunión se espera una actitud activa, con preparación, escucha y aportación de ideas cuando sea oportuno."
+        },
+        {
+          "clave": "c",
+          "motivo": "Hablar mucho no significa contribuir mejor. Una buena participación no consiste en ocupar el turno de palabra, sino en aportar ideas claras, relevantes y bien estructuradas."
+        }
+      ],
+      "resumen_didactico": "Contribuir bien en una reunión implica llegar preparado, escuchar con atención y expresar ideas útiles de forma clara y profesional.",
+      "ejemplo_practico": "Antes de una reunión sobre un proyecto, revisas la agenda, preparas tus datos y durante la reunión dices: \"In my opinion, the best approach would be to implement tracking tools to improve efficiency.\"",
+      "conclusion_final": "La respuesta correcta es la opción a, porque resume las acciones más adecuadas para participar de forma profesional en una reunión de trabajo."
+    }
+  },
+  {
+    "id": "UT3-Q17",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Which sentence is in the past continuous tense?",
+    "contexto": "Identificación del tiempo verbal past continuous en una oración en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "She visited her grandmother last weekend."
+      },
+      {
+        "clave": "b",
+        "texto": "She was writing a report all morning."
+      },
+      {
+        "clave": "c",
+        "texto": "She studies every evening."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El past continuous se utiliza para expresar una acción que estaba en progreso en un momento del pasado. Su estructura es: sujeto + was/were + verbo terminado en -ing. En la oración \"She was writing a report all morning\", aparece la forma \"was writing\", que indica una acción en desarrollo durante un periodo pasado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "\"She visited her grandmother last weekend\" está en past simple, porque usa el verbo en pasado \"visited\" para hablar de una acción terminada en el pasado."
+        },
+        {
+          "clave": "c",
+          "motivo": "\"She studies every evening\" está en present simple, porque expresa una rutina habitual mediante el verbo \"studies\"."
+        }
+      ],
+      "resumen_didactico": "El past continuous se reconoce por la combinación \"was\" o \"were\" más un verbo con terminación \"-ing\". Sirve para hablar de acciones que estaban ocurriendo en el pasado.",
+      "ejemplo_practico": "Otro ejemplo sería: \"They were working on the project yesterday afternoon\", porque \"were working\" indica una acción en progreso en el pasado.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque \"She was writing a report all morning\" contiene la estructura propia del past continuous: \"was\" + verbo en \"-ing\"."
+    }
+  },
+  {
+    "id": "UT3-Q18",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Choose the correct sentence using \"should\" for advice:",
+    "contexto": "Uso del verbo modal \"should\" para expresar consejo en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "You should to visit the doctor."
+      },
+      {
+        "clave": "b",
+        "texto": "You should drink more water."
+      },
+      {
+        "clave": "c",
+        "texto": "You should be go to the meeting."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, los verbos modales como \"should\" se utilizan para expresar consejo, recomendación u obligación suave. La estructura correcta es: sujeto + should + verbo en forma base, sin \"to\" y sin añadir \"be\" si no corresponde. Por eso, \"You should drink more water\" es la forma correcta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque después de \"should\" no se usa \"to\". La forma correcta sería: \"You should visit the doctor.\""
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque mezcla \"should be\" con el verbo \"go\" sin una estructura válida. La forma correcta sería: \"You should go to the meeting.\""
+        }
+      ],
+      "resumen_didactico": "Después de \"should\" siempre se usa el verbo principal en forma base: \"should drink\", \"should go\", \"should study\", \"should call\".",
+      "ejemplo_practico": "Si quieres aconsejar a alguien que descanse más, dirías: \"You should rest more\", no \"You should to rest more\".",
+      "conclusion_final": "La respuesta correcta es la opción b, porque usa correctamente la estructura \"should\" + verbo en forma base."
+    }
+  },
+  {
+    "id": "UT3-Q19",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Identify the correct example of a future plan with \"going to\":",
+    "contexto": "Uso de la estructura \"going to\" para expresar planes futuros en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "She will going to visit her parents."
+      },
+      {
+        "clave": "b",
+        "texto": "I am going travel next summer."
+      },
+      {
+        "clave": "c",
+        "texto": "They are going to renovate their house."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el futuro con \"going to\" se utiliza para expresar planes futuros. Su estructura correcta es: sujeto + am/is/are + going to + verbo en forma base. En la oración \"They are going to renovate their house\", aparece correctamente \"are going to\" seguido del verbo base \"renovate\".",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque mezcla \"will\" con \"going to\". La forma correcta sería: \"She is going to visit her parents\" o \"She will visit her parents\", pero no \"will going to\"."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque falta \"to\" después de \"going\". La forma correcta sería: \"I am going to travel next summer\"."
+        }
+      ],
+      "resumen_didactico": "Para formar el futuro con \"going to\", necesitas el verbo \"to be\" conjugado, después \"going to\" y finalmente el verbo principal en forma base.",
+      "ejemplo_practico": "Si quieres decir que tienes un plan para estudiar mañana, dirías: \"I am going to study tomorrow\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque usa correctamente la estructura \"am/is/are\" + \"going to\" + verbo base."
+    }
+  },
+  {
+    "id": "UT3-Q20",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Which sentence shows a polite request?",
+    "contexto": "Identificación de una petición educada en inglés dentro de un contexto profesional o formal.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Can you fix this problem now?"
+      },
+      {
+        "clave": "b",
+        "texto": "Help me with this issue, please."
+      },
+      {
+        "clave": "c",
+        "texto": "Would you mind helping me with this report?"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, las normas de cortesía son esenciales para mantener un tono profesional en inglés. Para hacer peticiones educadas se utilizan estructuras como \"Could you please...?\" o fórmulas más corteses como \"Would you mind...?\". La oración \"Would you mind helping me with this report?\" es una petición formal y respetuosa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "\"Can you fix this problem now?\" es comprensible, pero suena demasiado directa y urgente. No es la opción más educada para una petición profesional."
+        },
+        {
+          "clave": "b",
+          "motivo": "\"Help me with this issue, please\" incluye \"please\", pero sigue teniendo forma de imperativo. Es menos cortés que una estructura indirecta como \"Would you mind...?\"."
+        }
+      ],
+      "resumen_didactico": "En inglés, una petición suele sonar más educada cuando se formula de manera indirecta. \"Would you mind...?\" es más cortés que una orden directa o una pregunta demasiado brusca.",
+      "ejemplo_practico": "En lugar de decir \"Send me the file now\", sería más profesional decir: \"Could you please send me the updated file?\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque \"Would you mind helping me with this report?\" es la forma más educada y profesional de pedir ayuda."
+    }
+  },
+  {
+    "id": "UT3-Q21",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Which sentence is a correct example of the third conditional?",
+    "contexto": "Identificación de la estructura correcta del third conditional en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "If I studied harder, I will pass the exam."
+      },
+      {
+        "clave": "b",
+        "texto": "If I had known, I would have helped you."
+      },
+      {
+        "clave": "c",
+        "texto": "If she calls earlier, we could have arrived on time."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El third conditional se utiliza para hablar de situaciones hipotéticas del pasado que no ocurrieron y de sus posibles consecuencias. Su estructura correcta es: If + past perfect, would have + past participle. En la frase \"If I had known, I would have helped you\", aparece correctamente \"had known\" y \"would have helped\".",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque mezcla una forma de pasado simple, \"studied\", con \"will\", que pertenece al futuro. Para una condición real de futuro sería: \"If I study harder, I will pass the exam\". Para third conditional sería: \"If I had studied harder, I would have passed the exam\"."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque usa \"calls\" en presente simple, pero después aparece \"could have arrived\", que pertenece a una estructura hipotética de pasado. La forma correcta sería: \"If she had called earlier, we could have arrived on time\"."
+        }
+      ],
+      "resumen_didactico": "El third conditional mira hacia el pasado y expresa algo que ya no se puede cambiar: una condición que no ocurrió y un resultado hipotético.",
+      "ejemplo_practico": "Si no estudiaste y suspendiste, podrías decir: \"If I had studied more, I would have passed the exam\".",
+      "conclusion_final": "La respuesta correcta es la opción b, porque utiliza correctamente la estructura del third conditional: \"If\" + past perfect + \"would have\" + past participle."
+    }
+  },
+  {
+    "id": "UT3-Q22",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Choose the correct sentence using a contrast connector:",
+    "contexto": "Uso de conectores de contraste para expresar oposición entre dos ideas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "He was tired. As a result, he worked faster."
+      },
+      {
+        "clave": "b",
+        "texto": "He was tired. However, he completed the task."
+      },
+      {
+        "clave": "c",
+        "texto": "He was tired. Moreover, he finished the project."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, los conectores sirven para dar cohesión a la comunicación. \"However\" es un conector de contraste y se utiliza para introducir una idea que se opone o contrasta con la anterior. En la frase \"He was tired. However, he completed the task\", hay contraste entre estar cansado y aun así completar la tarea.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "\"As a result\" es un conector de causa y consecuencia, no de contraste. Además, la relación entre estar cansado y trabajar más rápido no expresa una consecuencia lógica clara."
+        },
+        {
+          "clave": "c",
+          "motivo": "\"Moreover\" es un conector de adición, no de contraste. Sirve para añadir información, pero no para marcar oposición entre dos ideas."
+        }
+      ],
+      "resumen_didactico": "Para expresar contraste en inglés se usan conectores como \"However\" u \"On the other hand\". Estos conectores muestran que la segunda idea se opone parcialmente a la primera.",
+      "ejemplo_practico": "Ejemplo: \"The project was difficult. However, the team finished it on time.\" Aquí se contrasta la dificultad del proyecto con el hecho de terminarlo a tiempo.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque \"However\" es el conector de contraste adecuado."
+    }
+  },
+  {
+    "id": "UT3-Q23",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "What is the correct intonation for WH-questions?",
+    "contexto": "Identificación de la entonación adecuada en preguntas WH en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "It stays the same."
+      },
+      {
+        "clave": "b",
+        "texto": "It falls at the end of the question."
+      },
+      {
+        "clave": "c",
+        "texto": "It rises at the end of the question."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, la entonación ayuda a transmitir intención y claridad en la comunicación oral. En inglés, las preguntas cerradas suelen subir el tono al final, pero las WH-questions, como \"What...?\", \"Where...?\", \"When...?\", \"Why...?\" o \"How...?\", normalmente bajan la entonación al final porque solicitan información concreta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La entonación no se mantiene igual en todas las preguntas. El tipo de pregunta influye en el tono final, especialmente al distinguir preguntas cerradas de preguntas WH."
+        },
+        {
+          "clave": "c",
+          "motivo": "La subida de tono al final suele asociarse a preguntas cerradas de respuesta sí/no, como \"Are you ready?\". No es la entonación habitual de las WH-questions."
+        }
+      ],
+      "resumen_didactico": "Las WH-questions normalmente terminan con entonación descendente, mientras que muchas preguntas cerradas terminan con entonación ascendente.",
+      "ejemplo_practico": "En la pregunta \"Where is the meeting?\", la voz suele bajar al final, porque se pide una información concreta. En cambio, en \"Is this the final version?\", la voz puede subir al final.",
+      "conclusion_final": "La respuesta correcta es la opción b, porque las WH-questions normalmente tienen entonación descendente al final."
+    }
+  },
+  {
+    "id": "UT3-Q24",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Identify the correct closing for a semi-formal email:",
+    "contexto": "Selección de una despedida adecuada para un correo electrónico semi-formal en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "See you later, Emily."
+      },
+      {
+        "clave": "b",
+        "texto": "Thanks, Emily Watson."
+      },
+      {
+        "clave": "c",
+        "texto": "Kind regards, Emily Watson."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, en correos electrónicos profesionales se deben usar saludos y cierres adecuados. Expresiones como \"Best regards\", \"Sincerely\" o \"Kind regards\" son fórmulas apropiadas para mantener un tono profesional o semi-formal. \"Kind regards, Emily Watson\" es una despedida correcta porque combina cortesía, profesionalidad y firma completa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "\"See you later\" es demasiado informal para un correo semi-formal. Puede ser adecuado entre compañeros cercanos, pero no en un contexto profesional donde se requiere más cortesía."
+        },
+        {
+          "clave": "b",
+          "motivo": "\"Thanks\" puede usarse en algunos correos, pero es menos completo y menos formal que \"Kind regards\". Para una despedida semi-formal, la opción más adecuada es una fórmula de cierre profesional."
+        }
+      ],
+      "resumen_didactico": "En correos semi-formales conviene usar cierres educados y profesionales, como \"Kind regards\", \"Best regards\" o \"Sincerely\", seguidos del nombre de la persona.",
+      "ejemplo_practico": "Un cierre correcto para un correo profesional sería: \"Kind regards, Sarah Johnson\" o \"Best regards, Michael Brown\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque \"Kind regards, Emily Watson\" es una despedida adecuada para un correo semi-formal."
+    }
+  },
+  {
+    "id": "UT3-Q25",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Identify the sentence using the present perfect correctly:",
+    "contexto": "Identificación del uso correcto del present perfect en una oración en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "She has finished her report yesterday."
+      },
+      {
+        "clave": "b",
+        "texto": "She is finishing the task right now."
+      },
+      {
+        "clave": "c",
+        "texto": "She has just completed the task."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El present perfect se forma con \"have\" o \"has\" + participio pasado. Se usa para hablar de acciones completadas que tienen relación con el presente, especialmente cuando no se indica un momento pasado cerrado. En la oración \"She has just completed the task\", la estructura es correcta: \"has\" + \"completed\", y el adverbio \"just\" encaja bien con el present perfect.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque mezcla present perfect con un marcador temporal cerrado del pasado: \"yesterday\". Lo correcto sería usar past simple: \"She finished her report yesterday.\""
+        },
+        {
+          "clave": "b",
+          "motivo": "\"She is finishing the task right now\" está en present continuous, no en present perfect. Indica una acción que está ocurriendo ahora mismo."
+        }
+      ],
+      "resumen_didactico": "El present perfect se reconoce por la estructura \"has/have\" + participio pasado. No suele usarse con expresiones de tiempo pasado cerrado como \"yesterday\".",
+      "ejemplo_practico": "Correcto: \"I have just sent the email.\" Incorrecto: \"I have sent the email yesterday.\" Para \"yesterday\" se usa past simple: \"I sent the email yesterday.\"",
+      "conclusion_final": "La respuesta correcta es la opción c, porque \"She has just completed the task\" usa correctamente la estructura del present perfect."
+    }
+  },
+  {
+    "id": "UT3-Q26",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Which of the following sentences shows a polite suggestion?",
+    "contexto": "Identificación de una sugerencia educada en inglés dentro de un contexto profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Check the numbers now."
+      },
+      {
+        "clave": "b",
+        "texto": "You might want to check the figures again."
+      },
+      {
+        "clave": "c",
+        "texto": "You must repeat the calculations."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, en la comunicación profesional es importante usar fórmulas de cortesía y estructuras adecuadas para mantener un tono respetuoso. La expresión \"You might want to...\" se utiliza para hacer una sugerencia de forma educada e indirecta, sin sonar como una orden.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "\"Check the numbers now\" es una orden directa en imperativo. Puede ser clara, pero no es la opción más educada porque suena demasiado brusca."
+        },
+        {
+          "clave": "c",
+          "motivo": "\"You must repeat the calculations\" expresa obligación fuerte mediante \"must\". No es una sugerencia educada, sino una instrucción o exigencia."
+        }
+      ],
+      "resumen_didactico": "Una sugerencia educada suele formularse de manera indirecta, usando expresiones como \"You might want to...\", \"Could you...?\" o \"Maybe we should...\".",
+      "ejemplo_practico": "En lugar de decir \"Correct this now\", sería más profesional decir: \"You might want to review this section again.\"",
+      "conclusion_final": "La respuesta correcta es la opción b, porque \"You might want to check the figures again\" expresa una sugerencia de forma educada y profesional."
+    }
+  },
+  {
+    "id": "UT2-Q27",
+    "tema": "UT2 Técnicas de producción oral y escrita",
+    "pregunta": "What is the correct structure of a formal business letter?",
+    "contexto": "Identificación de la estructura básica de una carta formal profesional en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Opening, main body, closing, and signature."
+      },
+      {
+        "clave": "b",
+        "texto": "Introduction, examples, and final opinion."
+      },
+      {
+        "clave": "c",
+        "texto": "Greeting, short message, and goodbye."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, una carta formal o carta de presentación debe tener una estructura clara: saludo formal, introducción, cuerpo, cierre y firma. Esta organización permite presentar el motivo del contacto, desarrollar la información principal y finalizar de forma profesional.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esta estructura puede servir para algunos textos argumentativos o reflexivos, pero no corresponde a una carta formal profesional. Una carta de negocios necesita apertura, cuerpo, cierre y firma."
+        },
+        {
+          "clave": "c",
+          "motivo": "Esta estructura es demasiado simple y se parece más a un mensaje breve o informal. Una carta formal requiere una organización más completa y profesional."
+        }
+      ],
+      "resumen_didactico": "Una carta formal debe estar organizada en partes claras: apertura o saludo, cuerpo principal, cierre y firma. Así el mensaje resulta ordenado, profesional y fácil de entender.",
+      "ejemplo_practico": "Una carta de presentación empezaría con \"Dear Hiring Team\", después explicaría el motivo del contacto y los logros relevantes, y terminaría con una despedida como \"Sincerely\" seguida del nombre.",
+      "conclusion_final": "La respuesta correcta es la opción a, porque recoge la estructura adecuada de una carta formal profesional: apertura, cuerpo principal, cierre y firma."
+    }
+  },
+  {
+    "id": "UT3-Q28",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Choose the correct example of an if-clause expressing possibility (first conditional):",
+    "contexto": "Identificación del primer condicional para expresar una posibilidad real o probable en el futuro.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "If I had more time, I would visit you."
+      },
+      {
+        "clave": "b",
+        "texto": "If you study harder, you passed the exam."
+      },
+      {
+        "clave": "c",
+        "texto": "If it rains tomorrow, we will cancel the event."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el primer condicional se usa para expresar situaciones posibles en el futuro. Su estructura habitual es: If + presente simple, will + verbo en forma base. En la oración \"If it rains tomorrow, we will cancel the event\", la condición aparece en presente simple, \"rains\", y la consecuencia futura aparece con \"will cancel\".",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Esta oración corresponde al segundo condicional, no al primero. Usa \"If I had\" y \"would visit\", una estructura propia de situaciones hipotéticas o poco reales."
+        },
+        {
+          "clave": "b",
+          "motivo": "La estructura es incorrecta porque mezcla presente simple en la condición, \"If you study\", con pasado simple en el resultado, \"you passed\". Para primer condicional debería ser: \"If you study harder, you will pass the exam\"."
+        }
+      ],
+      "resumen_didactico": "El primer condicional expresa una posibilidad futura realista: si ocurre una condición, habrá una consecuencia probable.",
+      "ejemplo_practico": "Otro ejemplo correcto sería: \"If we reduce costs, we will increase our profit\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque usa correctamente la estructura del primer condicional: \"If\" + presente simple + \"will\" + verbo base."
+    }
+  },
+  {
+    "id": "UT3-Q29",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Which of the following is an example of formal spoken language?",
+    "contexto": "Identificación de lenguaje formal oral en una situación profesional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Don’t worry, we’ll take care of that."
+      },
+      {
+        "clave": "b",
+        "texto": "Hey, no problem, we’ll fix it!"
+      },
+      {
+        "clave": "c",
+        "texto": "We appreciate your feedback and will address the issue immediately."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, el lenguaje formal se utiliza en contextos profesionales que requieren respeto, claridad y seriedad. La frase \"We appreciate your feedback and will address the issue immediately\" mantiene un tono profesional, cortés y orientado a resolver el problema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "\"Don’t worry, we’ll take care of that\" es comprensible y transmite ayuda, pero tiene un tono más informal y conversacional. No es la opción más formal."
+        },
+        {
+          "clave": "b",
+          "motivo": "\"Hey, no problem, we’ll fix it!\" es claramente informal por el uso de \"Hey\" y el tono relajado. Puede servir entre compañeros, pero no como lenguaje formal profesional."
+        }
+      ],
+      "resumen_didactico": "El lenguaje formal evita expresiones demasiado coloquiales y utiliza fórmulas profesionales como \"We appreciate...\", \"We will address...\" o \"Thank you for...\".",
+      "ejemplo_practico": "Ante una queja de un cliente, es más profesional decir: \"We appreciate your feedback and will investigate the issue\" que decir: \"Hey, no problem, we’ll fix it\".",
+      "conclusion_final": "La respuesta correcta es la opción c, porque usa un tono formal, profesional y adecuado para una situación laboral."
+    }
+  },
+  {
+    "id": "UT3-Q30",
+    "tema": "UT3 Recursos comunicativos",
+    "pregunta": "Choose the correct example of an imperative sentence:",
+    "contexto": "Identificación de una oración imperativa utilizada para dar una instrucción o petición en inglés.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Please submit the report by Friday."
+      },
+      {
+        "clave": "b",
+        "texto": "He should submit the report by Friday."
+      },
+      {
+        "clave": "c",
+        "texto": "She is submitting the report now."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según el temario, los imperativos se utilizan para dar órdenes, instrucciones, sugerencias o indicaciones. Normalmente comienzan directamente con el verbo en forma base. En la oración \"Please submit the report by Friday\", el verbo \"submit\" aparece en forma imperativa, y \"please\" suaviza la instrucción para que suene más educada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "\"He should submit the report by Friday\" no es un imperativo, sino una oración con el modal \"should\", que expresa recomendación o consejo."
+        },
+        {
+          "clave": "c",
+          "motivo": "\"She is submitting the report now\" está en present continuous. Describe una acción que está ocurriendo ahora, pero no da una orden ni una instrucción."
+        }
+      ],
+      "resumen_didactico": "Una oración imperativa da una instrucción directa. Suele empezar con el verbo principal en forma base, como \"Submit\", \"Send\", \"Check\" o \"Review\".",
+      "ejemplo_practico": "En un contexto laboral, una instrucción imperativa sería: \"Please send the updated file before the meeting.\"",
+      "conclusion_final": "La respuesta correcta es la opción a, porque \"Please submit the report by Friday\" es una oración imperativa usada para dar una instrucción de forma educada."
+    }
+  }
+]

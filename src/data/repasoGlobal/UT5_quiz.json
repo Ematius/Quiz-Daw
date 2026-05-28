@@ -1,0 +1,1930 @@
+[
+    {
+        "id": "UT1-Q01",
+        "tema": "UT1 Introducci\u00f3n a la programaci\u00f3n",
+        "pregunta": "En el dise\u00f1o de algoritmos, \u00bfqu\u00e9 porcentaje de tiempo recomienda la metodolog\u00eda profesional dedicar al dise\u00f1o de la l\u00f3gica frente a la escritura del c\u00f3digo?",
+        "contexto": "Se pregunta por la recomendaci\u00f3n metodol\u00f3gica sobre cu\u00e1nto tiempo dedicar al dise\u00f1o del algoritmo antes de escribir el c\u00f3digo.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "80% dise\u00f1o y 20% c\u00f3digo."
+            },
+            {
+                "clave": "b",
+                "texto": "100% c\u00f3digo para agilizar la entrega."
+            },
+            {
+                "clave": "c",
+                "texto": "50% dise\u00f1o y 50% c\u00f3digo."
+            },
+            {
+                "clave": "d",
+                "texto": "20% dise\u00f1o y 80% c\u00f3digo."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "El temario recomienda dedicar el 80% del tiempo a dise\u00f1ar el algoritmo y el 20% a escribir el c\u00f3digo, porque un error de l\u00f3gica en el dise\u00f1o suele ser m\u00e1s dif\u00edcil de corregir que un error de sintaxis en la implementaci\u00f3n.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "Dedicar el 100% al c\u00f3digo ignora la fase de an\u00e1lisis y dise\u00f1o l\u00f3gico, lo que puede provocar errores estructurales dif\u00edciles de corregir."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Aunque parece equilibrado, no coincide con la recomendaci\u00f3n del temario, que da m\u00e1s peso al dise\u00f1o de la l\u00f3gica."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Invierte la proporci\u00f3n correcta. El temario no recomienda escribir mucho c\u00f3digo antes de haber dise\u00f1ado bien el algoritmo."
+                }
+            ],
+            "resumen_didactico": "Antes de programar, conviene pensar bien la soluci\u00f3n. Dise\u00f1ar el algoritmo evita errores l\u00f3gicos graves y hace que la codificaci\u00f3n sea m\u00e1s r\u00e1pida y segura.",
+            "ejemplo_practico": "Antes de crear un programa que calcule una n\u00f3mina, primero se dise\u00f1a el algoritmo: pedir salario base, aplicar complementos, calcular retenciones y obtener el resultado final. Despu\u00e9s se escribe el c\u00f3digo.",
+            "conclusion_final": "La respuesta correcta es 80% dise\u00f1o y 20% c\u00f3digo, porque el dise\u00f1o l\u00f3gico del algoritmo es la base de una programaci\u00f3n correcta."
+        }
+    },
+    {
+        "id": "UT1-Q02",
+        "tema": "UT1 Introducci\u00f3n a la programaci\u00f3n",
+        "pregunta": "\u00bfCu\u00e1l es el s\u00edmbolo universal de la norma ISO utilizado en los diagramas de flujo para representar una bifurcaci\u00f3n l\u00f3gica o decisi\u00f3n?",
+        "contexto": "Se pregunta por la forma gr\u00e1fica usada en los diagramas de flujo para representar una decisi\u00f3n l\u00f3gica, normalmente con salidas como S\u00ed/No o Verdadero/Falso.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "\u00d3valo."
+            },
+            {
+                "clave": "b",
+                "texto": "Rect\u00e1ngulo."
+            },
+            {
+                "clave": "c",
+                "texto": "Rombo."
+            },
+            {
+                "clave": "d",
+                "texto": "C\u00edrculo."
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "En los diagramas de flujo, el rombo representa una decisi\u00f3n o bifurcaci\u00f3n l\u00f3gica. Se utiliza cuando el algoritmo debe evaluar una condici\u00f3n y seguir un camino u otro seg\u00fan el resultado.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El \u00f3valo suele representar el inicio o el final de un diagrama de flujo, no una decisi\u00f3n l\u00f3gica."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "El rect\u00e1ngulo se utiliza para representar procesos o instrucciones, no bifurcaciones."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "El c\u00edrculo puede utilizarse como conector en algunos diagramas, pero no es el s\u00edmbolo principal para representar una decisi\u00f3n."
+                }
+            ],
+            "resumen_didactico": "Cuando un algoritmo necesita elegir entre dos caminos seg\u00fan una condici\u00f3n, se usa un rombo en el diagrama de flujo.",
+            "ejemplo_practico": "Si el algoritmo pregunta: \u00bfla edad es mayor o igual que 18?, esa decisi\u00f3n se representa con un rombo del que salen dos caminos: S\u00ed y No.",
+            "conclusion_final": "La respuesta correcta es el rombo, porque es el s\u00edmbolo usado para representar decisiones o bifurcaciones l\u00f3gicas en diagramas de flujo."
+        }
+    },
+    {
+        "id": "UT2-Q03",
+        "tema": "UT2 Programaci\u00f3n orientada a objetos",
+        "pregunta": "\u00bfC\u00f3mo se define t\u00e9cnicamente una \"Clase\" en el paradigma de la programaci\u00f3n orientada a objetos?",
+        "contexto": "Se pregunta por el concepto t\u00e9cnico de clase dentro del paradigma de la programaci\u00f3n orientada a objetos.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Una variable global que no puede modificarse."
+            },
+            {
+                "clave": "b",
+                "texto": "Un molde, plantilla o plano que define atributos y m\u00e9todos."
+            },
+            {
+                "clave": "c",
+                "texto": "Una instancia concreta de un dato en la memoria RAM."
+            },
+            {
+                "clave": "d",
+                "texto": "Un error de sintaxis detectado por el compilador."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "En programaci\u00f3n orientada a objetos, una clase se define como un molde, plantilla o plano que establece qu\u00e9 atributos y m\u00e9todos tendr\u00e1n los objetos creados a partir de ella. La clase no es el objeto real, sino la estructura que permite construir objetos con una misma forma y comportamiento.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Una variable global es un dato accesible desde distintas partes del programa, pero no define la estructura ni el comportamiento de objetos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Eso describe mejor a un objeto, que es una instancia concreta creada a partir de una clase y almacenada en memoria."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Un error de sintaxis es un fallo en la escritura del c\u00f3digo detectado por el compilador, no tiene relaci\u00f3n con la definici\u00f3n de clase."
+                }
+            ],
+            "resumen_didactico": "La clase es el dise\u00f1o general; el objeto es la entidad concreta creada a partir de ese dise\u00f1o.",
+            "ejemplo_practico": "Una clase Vehiculo puede definir atributos como matricula y nivelBateria, y m\u00e9todos como arrancar() o cargarBateria(). Cada coche concreto creado a partir de esa clase ser\u00eda un objeto distinto.",
+            "conclusion_final": "La respuesta correcta es que una clase es un molde, plantilla o plano que define atributos y m\u00e9todos."
+        }
+    },
+    {
+        "id": "UT2-Q04",
+        "tema": "UT2 Programaci\u00f3n orientada a objetos",
+        "pregunta": "En la jerarqu\u00eda visual de un sistema, \u00bfqu\u00e9 disposici\u00f3n de diagrama UML es el est\u00e1ndar para representar \u00e1rboles geneal\u00f3gicos y herencia?",
+        "contexto": "Se pregunta por la disposici\u00f3n visual m\u00e1s adecuada en UML para representar relaciones jer\u00e1rquicas, como la herencia entre clases padre e hijas.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Disposici\u00f3n vertical (Top-Down)."
+            },
+            {
+                "clave": "b",
+                "texto": "Disposici\u00f3n circular."
+            },
+            {
+                "clave": "c",
+                "texto": "Disposici\u00f3n horizontal."
+            },
+            {
+                "clave": "d",
+                "texto": "Disposici\u00f3n aleatoria."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "En UML, cuando se representa una jerarqu\u00eda de clases o una relaci\u00f3n de herencia, lo habitual es utilizar una disposici\u00f3n vertical de arriba hacia abajo, tambi\u00e9n llamada Top-Down. La clase m\u00e1s general o clase padre se coloca arriba, y las clases hijas o especializadas se colocan debajo.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "La disposici\u00f3n circular no es la forma est\u00e1ndar para representar herencia, porque dificulta ver claramente qu\u00e9 clase es la superior y cu\u00e1les dependen de ella."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La disposici\u00f3n horizontal puede usarse en algunos diagramas, pero no es la representaci\u00f3n m\u00e1s t\u00edpica para \u00e1rboles geneal\u00f3gicos o jerarqu\u00edas de herencia."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Una disposici\u00f3n aleatoria no permite interpretar correctamente la jerarqu\u00eda ni las relaciones entre clases."
+                }
+            ],
+            "resumen_didactico": "Las relaciones de herencia se entienden mejor como un \u00e1rbol: arriba est\u00e1 la clase general y debajo las clases m\u00e1s espec\u00edficas.",
+            "ejemplo_practico": "En un diagrama UML, la clase Animal estar\u00eda arriba, y debajo aparecer\u00edan Perro, Gato y Ave como clases hijas que heredan de ella.",
+            "conclusion_final": "La respuesta correcta es la disposici\u00f3n vertical Top-Down, porque es la forma est\u00e1ndar de representar jerarqu\u00edas y herencia en UML."
+        }
+    },
+    {
+        "id": "UT3-Q05",
+        "tema": "UT3 Lenguajes de programaci\u00f3n y entornos de desarrollo integrado",
+        "pregunta": "\u00bfCu\u00e1l es la tecnolog\u00eda de Java que permite que el c\u00f3digo sea independiente del hardware y funcione en cualquier sistema operativo (JVM)?",
+        "contexto": "Se pregunta por el mecanismo que permite a Java ejecutar el mismo programa en distintos sistemas operativos sin depender directamente del hardware concreto.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El compilador de C++."
+            },
+            {
+                "clave": "b",
+                "texto": "El Bytecode ejecutado en la M\u00e1quina Virtual de Java."
+            },
+            {
+                "clave": "c",
+                "texto": "El c\u00f3digo fuente .java le\u00eddo por el monitor."
+            },
+            {
+                "clave": "d",
+                "texto": "La tarjeta de red del servidor"
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "La tecnolog\u00eda Java se basa en compilar el c\u00f3digo fuente .java a Bytecode, que se guarda normalmente en archivos .class. Ese Bytecode no est\u00e1 preparado para un procesador concreto, sino para ser ejecutado por la M\u00e1quina Virtual de Java o JVM. Gracias a esto, el mismo programa puede ejecutarse en diferentes sistemas operativos siempre que tengan una JVM compatible.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El compilador de C++ pertenece a otro lenguaje y normalmente genera c\u00f3digo m\u00e1s dependiente de la plataforma concreta, no es el mecanismo propio de Java."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El c\u00f3digo fuente .java no lo lee el monitor ni se ejecuta directamente. Primero debe compilarse a Bytecode."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La tarjeta de red permite la comunicaci\u00f3n del equipo en una red, pero no tiene relaci\u00f3n con la portabilidad de Java entre sistemas operativos."
+                }
+            ],
+            "resumen_didactico": "Java consigue independencia del hardware porque no ejecuta directamente el c\u00f3digo fuente, sino Bytecode interpretado o ejecutado por la JVM.",
+            "ejemplo_practico": "Un programa Java compilado en Windows puede ejecutarse tambi\u00e9n en Linux o macOS si esos sistemas tienen instalada una JVM compatible.",
+            "conclusion_final": "La respuesta correcta es el Bytecode ejecutado en la M\u00e1quina Virtual de Java, porque es el mecanismo que permite la portabilidad de Java."
+        }
+    },
+    {
+        "id": "UT3-Q06",
+        "tema": "UT3 Lenguajes de programaci\u00f3n y entornos de desarrollo integrado",
+        "pregunta": "\u00bfQu\u00e9 herramienta de desarrollo (JDK) es indispensable para que un programador pueda compilar y empaquetar sus aplicaciones?",
+        "contexto": "Se pregunta por el conjunto de herramientas necesario para desarrollar aplicaciones Java, incluyendo compilaci\u00f3n, depuraci\u00f3n y empaquetado.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "JVM (Java Virtual Machine)."
+            },
+            {
+                "clave": "b",
+                "texto": "JDK (Java Development Kit)."
+            },
+            {
+                "clave": "c",
+                "texto": "JRE (Java Runtime Environment)."
+            },
+            {
+                "clave": "d",
+                "texto": "Plugin de navegador."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "El JDK, Java Development Kit, es el conjunto de herramientas que necesita un programador para desarrollar aplicaciones en Java. Incluye el compilador, herramientas de depuraci\u00f3n y bibliotecas necesarias para crear, compilar y empaquetar programas.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "La JVM ejecuta el Bytecode Java, pero no es el kit completo de desarrollo ni proporciona por s\u00ed sola las herramientas para compilar y empaquetar aplicaciones."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El JRE permite ejecutar aplicaciones Java, pero no est\u00e1 pensado para desarrollarlas. No incluye todas las herramientas necesarias para compilar y empaquetar."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Un plugin de navegador no es una herramienta de desarrollo Java y no sirve para compilar ni empaquetar aplicaciones."
+                }
+            ],
+            "resumen_didactico": "Para ejecutar programas Java basta con un entorno de ejecuci\u00f3n, pero para programarlos, compilarlos y empaquetarlos se necesita el JDK.",
+            "ejemplo_practico": "Si escribes una clase Main.java, necesitas el JDK para compilarla con javac y generar el archivo .class que despu\u00e9s podr\u00e1 ejecutar la JVM.",
+            "conclusion_final": "La respuesta correcta es JDK, porque es el kit de desarrollo indispensable para crear, compilar y empaquetar aplicaciones Java."
+        }
+    },
+    {
+        "id": "UT4-Q07",
+        "tema": "UT4 Elementos de un programa inform\u00e1tico",
+        "pregunta": "\u00bfCu\u00e1l es la convenci\u00f3n de estilo profesional (Case) recomendada en Java para nombrar las Clases?",
+        "contexto": "Se pregunta por la convenci\u00f3n profesional de nomenclatura utilizada en Java para escribir nombres de clases.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "PascalCase (UpperCamelCase)."
+            },
+            {
+                "clave": "b",
+                "texto": "camelCase."
+            },
+            {
+                "clave": "c",
+                "texto": "snake_case."
+            },
+            {
+                "clave": "d",
+                "texto": "lowercase."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "En Java, la convenci\u00f3n profesional para nombrar clases es PascalCase, tambi\u00e9n llamada UpperCamelCase. Esto significa que cada palabra comienza con may\u00fascula y no se usan guiones bajos entre palabras.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "camelCase se utiliza normalmente para m\u00e9todos y variables, empezando con min\u00fascula, por ejemplo calcularImpuestos() o saldoActual."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "snake_case separa las palabras con guiones bajos y no es la convenci\u00f3n habitual para nombrar clases en Java."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "lowercase se usa normalmente para paquetes, no para clases. Una clase escrita completamente en min\u00fasculas no seguir\u00eda la convenci\u00f3n profesional de Java."
+                }
+            ],
+            "resumen_didactico": "Las clases en Java se nombran con PascalCase: primera letra en may\u00fascula y cada nueva palabra tambi\u00e9n en may\u00fascula.",
+            "ejemplo_practico": "Ejemplos correctos de nombres de clases ser\u00edan ClienteVip, ProcesadorPagos o GestorUsuarios.",
+            "conclusion_final": "La respuesta correcta es PascalCase (UpperCamelCase), porque es la convenci\u00f3n recomendada para nombrar clases en Java."
+        }
+    },
+    {
+        "id": "UT4-Q08",
+        "tema": "UT4 Elementos de un programa inform\u00e1tico",
+        "pregunta": "En Java, \u00bfcu\u00e1l es el \u00e1mbito o \"scope\" de una variable declarada dentro de un bloque de llaves { }?",
+        "contexto": "Se pregunta por la visibilidad y duraci\u00f3n l\u00f3gica de una variable local declarada dentro de un bloque de c\u00f3digo delimitado por llaves.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Solo es visible para el m\u00e9todo main."
+            },
+            {
+                "clave": "b",
+                "texto": "Es visible en todo el proyecto de forma global."
+            },
+            {
+                "clave": "c",
+                "texto": "Nace donde se declara y muere al cerrarse su llave correspondiente."
+            },
+            {
+                "clave": "d",
+                "texto": "Se mantiene activa hasta que se apaga el ordenador."
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "En Java, una variable declarada dentro de un bloque de llaves tiene \u00e1mbito local. Esto significa que solo puede utilizarse desde el punto en el que se declara hasta que se cierra el bloque de llaves correspondiente. Fuera de ese bloque, la variable deja de existir para el programa.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "No depende \u00fanicamente del m\u00e9todo main. Una variable local puede declararse dentro de cualquier m\u00e9todo, bucle, condicional o bloque, y su visibilidad depende de las llaves donde se encuentre."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Una variable local no es global ni visible en todo el proyecto. Solo existe dentro del bloque donde ha sido declarada."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La duraci\u00f3n de una variable local no depende de que el ordenador est\u00e9 encendido, sino del \u00e1mbito del bloque de c\u00f3digo en el que se declara."
+                }
+            ],
+            "resumen_didactico": "El scope de una variable local est\u00e1 limitado por las llaves { }. La variable nace cuando se declara y deja de poder usarse cuando termina ese bloque.",
+            "ejemplo_practico": "Si declaras int edad = 20; dentro de un if, solo podr\u00e1s usar edad dentro de ese if. Al cerrarse la llave del if, esa variable ya no ser\u00e1 accesible.",
+            "conclusion_final": "La respuesta correcta es que la variable nace donde se declara y muere al cerrarse su llave correspondiente."
+        }
+    },
+    {
+        "id": "UT5-Q09",
+        "tema": "UT5 Estructura de control",
+        "pregunta": "\u00bfC\u00f3mo se define el canal de salida de error est\u00e1ndar en Java, que suele mostrar el texto en color rojo en los IDEs?",
+        "contexto": "Se pregunta por el flujo est\u00e1ndar utilizado en Java para mostrar mensajes de error o avisos cr\u00edticos por consola.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "System.err"
+            },
+            {
+                "clave": "b",
+                "texto": "System.out"
+            },
+            {
+                "clave": "c",
+                "texto": "System.exit"
+            },
+            {
+                "clave": "d",
+                "texto": "System.in"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "En Java, System.err es el canal de salida de error est\u00e1ndar. Se utiliza para mostrar mensajes de error o avisos importantes. En muchos IDEs, los mensajes enviados por System.err aparecen destacados en color rojo para diferenciarlos de la salida normal.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "System.out es la salida est\u00e1ndar normal. Se usa para mostrar mensajes habituales por consola, pero no representa espec\u00edficamente la salida de error."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "System.exit se utiliza para finalizar la ejecuci\u00f3n del programa, no para mostrar mensajes de error por consola."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "System.in es la entrada est\u00e1ndar. Sirve para recibir datos, normalmente desde el teclado, no para mostrar errores."
+                }
+            ],
+            "resumen_didactico": "Java distingue entre la salida normal y la salida de error. System.out muestra informaci\u00f3n general, mientras que System.err se reserva para errores o avisos cr\u00edticos.",
+            "ejemplo_practico": "Si un programa no puede abrir un archivo, podr\u00eda mostrar el aviso con System.err.println(\"Error: no se pudo abrir el archivo\"); para indicar claramente que se trata de un problema.",
+            "conclusion_final": "La respuesta correcta es System.err, porque es el canal de salida de error est\u00e1ndar en Java."
+        }
+    },
+    {
+        "id": "UT5-Q10",
+        "tema": "UT5 Estructura de control",
+        "pregunta": "\u00bfQu\u00e9 estructura de repetici\u00f3n garantiza que el c\u00f3digo se ejecutar\u00e1 al menos una vez, independientemente de si la condici\u00f3n es falsa inicialmente?",
+        "contexto": "Se pregunta por la estructura de repetici\u00f3n que eval\u00faa la condici\u00f3n despu\u00e9s de ejecutar el bloque de c\u00f3digo.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "if-else"
+            },
+            {
+                "clave": "b",
+                "texto": "while"
+            },
+            {
+                "clave": "c",
+                "texto": "do-while"
+            },
+            {
+                "clave": "d",
+                "texto": "for"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "La estructura do-while ejecuta primero el bloque de instrucciones y despu\u00e9s comprueba la condici\u00f3n. Por eso garantiza que el c\u00f3digo se ejecuta al menos una vez, aunque la condici\u00f3n sea falsa desde el principio.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "if-else no es una estructura de repetici\u00f3n, sino una estructura condicional que permite elegir entre caminos distintos."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "while comprueba la condici\u00f3n antes de ejecutar el bloque. Si la condici\u00f3n es falsa inicialmente, el c\u00f3digo no se ejecuta ninguna vez."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "for tambi\u00e9n comprueba su condici\u00f3n antes de ejecutar cada iteraci\u00f3n. Si la condici\u00f3n inicial no se cumple, el bloque puede no ejecutarse nunca."
+                }
+            ],
+            "resumen_didactico": "La diferencia clave es cu\u00e1ndo se eval\u00faa la condici\u00f3n: while y for la comprueban antes; do-while la comprueba despu\u00e9s.",
+            "ejemplo_practico": "Un men\u00fa de consola puede usar do-while para mostrar las opciones al usuario al menos una vez y despu\u00e9s repetir mientras no elija salir.",
+            "conclusion_final": "La respuesta correcta es do-while, porque garantiza una primera ejecuci\u00f3n antes de evaluar la condici\u00f3n."
+        }
+    },
+    {
+        "id": "UT6-Q11",
+        "tema": "UT6 Clases y utilizaci\u00f3n de objetos",
+        "pregunta": "\u00bfCu\u00e1l es la funci\u00f3n t\u00e9cnica de un m\u00e9todo \"Constructor\" en una clase Java?",
+        "contexto": "Se pregunta por la finalidad de los constructores en Java dentro del proceso de creaci\u00f3n de objetos a partir de una clase.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Inicializar los atributos de un objeto en el momento de su creaci\u00f3n."
+            },
+            {
+                "clave": "b",
+                "texto": "Copiar el c\u00f3digo fuente a un servidor remoto."
+            },
+            {
+                "clave": "c",
+                "texto": "Eliminar el objeto de la memoria RAM."
+            },
+            {
+                "clave": "d",
+                "texto": "Cambiar la visibilidad de la clase de p\u00fablica a privada."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "En Java, un constructor es un m\u00e9todo especial que se ejecuta autom\u00e1ticamente cuando se crea un objeto con new. Su funci\u00f3n principal es inicializar los atributos del objeto, dej\u00e1ndolo en un estado v\u00e1lido desde el momento de su creaci\u00f3n.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "Copiar c\u00f3digo fuente a un servidor remoto no tiene relaci\u00f3n con los constructores. Eso pertenece a tareas de despliegue o control de versiones, no a la creaci\u00f3n de objetos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Eliminar objetos de memoria no es funci\u00f3n del constructor. En Java, la liberaci\u00f3n de memoria la gestiona el recolector de basura cuando los objetos dejan de estar referenciados."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La visibilidad de una clase se define con modificadores como public, private o protected, pero un constructor no cambia la visibilidad de la clase."
+                }
+            ],
+            "resumen_didactico": "El constructor sirve para preparar un objeto justo cuando nace: recibe valores si es necesario y asigna esos valores a sus atributos.",
+            "ejemplo_practico": "Si una clase Empleado tiene los atributos nombre y sueldo, su constructor puede recibir esos datos y asignarlos al crear un objeto: new Empleado(\"Laura\", 1800).",
+            "conclusion_final": "La respuesta correcta es inicializar los atributos de un objeto en el momento de su creaci\u00f3n."
+        }
+    },
+    {
+        "id": "UT6-Q12",
+        "tema": "UT6 Clases y utilizaci\u00f3n de objetos",
+        "pregunta": "En el desarrollo profesional, \u00bfpor qu\u00e9 se recomienda que los campos de una clase sean \"private\"?",
+        "contexto": "Se pregunta por la raz\u00f3n t\u00e9cnica de declarar privados los atributos o campos de una clase en Java.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Para aplicar el pilar de la encapsulaci\u00f3n y proteger la integridad de los datos."
+            },
+            {
+                "clave": "b",
+                "texto": "Para impedir que el Garbage Collector borre el objeto."
+            },
+            {
+                "clave": "c",
+                "texto": "Para que el programa ocupe menos espacio en el disco duro."
+            },
+            {
+                "clave": "d",
+                "texto": "Porque las variables privadas son m\u00e1s r\u00e1pidas que las p\u00fablicas."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "En Java, se recomienda declarar los campos de una clase como private para aplicar la encapsulaci\u00f3n. Esto protege los datos internos del objeto e impide que otras clases los modifiquen directamente sin control. El acceso debe hacerse mediante m\u00e9todos controlados, como getters y setters, cuando sea necesario.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "El modificador private no impide que el Garbage Collector elimine objetos. La recolecci\u00f3n de basura depende de si el objeto sigue teniendo referencias activas, no de la visibilidad de sus campos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Declarar campos como private no tiene como finalidad reducir el espacio ocupado en disco. Es una decisi\u00f3n de dise\u00f1o y seguridad del c\u00f3digo."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La recomendaci\u00f3n no se basa en que las variables privadas sean m\u00e1s r\u00e1pidas, sino en proteger la integridad del estado interno del objeto."
+                }
+            ],
+            "resumen_didactico": "Los campos private permiten controlar c\u00f3mo se leen y modifican los datos de un objeto, evitando cambios externos incorrectos.",
+            "ejemplo_practico": "En una clase CuentaBancaria, el campo saldo deber\u00eda ser private para evitar que cualquier parte del programa pueda modificarlo directamente. En su lugar, se usar\u00edan m\u00e9todos como ingresar() o retirar(), que pueden validar las operaciones.",
+            "conclusion_final": "La respuesta correcta es que los campos se declaran private para aplicar encapsulaci\u00f3n y proteger la integridad de los datos."
+        }
+    },
+    {
+        "id": "UT7-Q13",
+        "tema": "UT7 Clases avanzadas y utilizaci\u00f3n de objetos",
+        "pregunta": "\u00bfQu\u00e9 palabra clave se utiliza en una subclase para invocar expl\u00edcitamente a un constructor o m\u00e9todo de la clase padre?",
+        "contexto": "Se pregunta por la palabra clave usada en Java dentro de una clase hija para acceder expl\u00edcitamente a elementos heredados de la superclase.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "this"
+            },
+            {
+                "clave": "b",
+                "texto": "super"
+            },
+            {
+                "clave": "c",
+                "texto": "extends"
+            },
+            {
+                "clave": "d",
+                "texto": "new"
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "En Java, la palabra clave super se utiliza dentro de una subclase para hacer referencia a la clase padre. Puede emplearse para invocar expl\u00edcitamente un constructor de la superclase, mediante super(...), o para acceder a m\u00e9todos o atributos heredados de la clase padre.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "this hace referencia al objeto actual, es decir, a la propia instancia de la clase donde se est\u00e1 escribiendo el c\u00f3digo, no directamente a la clase padre."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "extends se utiliza para declarar que una clase hereda de otra, pero no sirve para invocar constructores o m\u00e9todos de la clase padre."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "new se utiliza para crear nuevos objetos en memoria, no para llamar a constructores o m\u00e9todos de la superclase desde una subclase."
+                }
+            ],
+            "resumen_didactico": "Cuando una clase hija necesita llamar expl\u00edcitamente a algo de su clase padre, se usa super.",
+            "ejemplo_practico": "Si una clase Repartidor hereda de Empleado, el constructor de Repartidor puede usar super(nombre) para inicializar primero la parte heredada de Empleado.",
+            "conclusion_final": "La respuesta correcta es super, porque permite invocar constructores, m\u00e9todos o atributos de la clase padre desde una subclase."
+        }
+    },
+    {
+        "id": "UT7-Q14",
+        "tema": "UT7 Clases avanzadas y utilizaci\u00f3n de objetos",
+        "pregunta": "\u00bfQu\u00e9 capacidad t\u00e9cnica define al \"Polimorfismo\" en Java?",
+        "contexto": "Se pregunta por la capacidad propia del polimorfismo dentro de la programaci\u00f3n orientada a objetos en Java.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El proceso de convertir un texto en un n\u00famero entero."
+            },
+            {
+                "clave": "b",
+                "texto": "La capacidad de un objeto para adoptar diferentes formas en tiempo de ejecuci\u00f3n bajo una referencia com\u00fan."
+            },
+            {
+                "clave": "c",
+                "texto": "La capacidad de una clase para heredar de m\u00faltiples padres."
+            },
+            {
+                "clave": "d",
+                "texto": "La eliminaci\u00f3n autom\u00e1tica de errores de l\u00f3gica."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "El polimorfismo en Java permite que una referencia de un tipo general pueda apuntar a objetos de distintas clases hijas, y que cada objeto responda de forma diferente seg\u00fan su implementaci\u00f3n real en tiempo de ejecuci\u00f3n. Es una capacidad esencial de la programaci\u00f3n orientada a objetos porque permite trabajar con una referencia com\u00fan y obtener comportamientos distintos.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Convertir un texto en un n\u00famero entero es una operaci\u00f3n de conversi\u00f3n de tipos o parseo, no polimorfismo."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Java no permite herencia m\u00faltiple directa entre clases. Adem\u00e1s, el polimorfismo no consiste en heredar de varios padres, sino en tratar objetos distintos mediante una referencia com\u00fan."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "El polimorfismo no elimina errores de l\u00f3gica autom\u00e1ticamente. Es una t\u00e9cnica de dise\u00f1o orientado a objetos para reutilizar c\u00f3digo y permitir comportamientos diferentes."
+                }
+            ],
+            "resumen_didactico": "El polimorfismo significa que una misma referencia puede representar distintos tipos de objetos relacionados por herencia o interfaces, y cada uno puede comportarse de manera espec\u00edfica.",
+            "ejemplo_practico": "Una referencia Animal puede apuntar a un objeto Perro o a un objeto Gato. Si ambos tienen el m\u00e9todo hacerSonido(), el perro puede ladrar y el gato maullar, aunque se llamen desde una referencia com\u00fan de tipo Animal.",
+            "conclusion_final": "La respuesta correcta es la capacidad de un objeto para adoptar diferentes formas en tiempo de ejecuci\u00f3n bajo una referencia com\u00fan."
+        }
+    },
+    {
+        "id": "UT8-Q15",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "\u00bfCu\u00e1l es el \u00edndice de la primera posici\u00f3n de cualquier array est\u00e1tico en Java?",
+        "contexto": "Se pregunta por la posici\u00f3n inicial desde la que comienzan a numerarse los elementos de un array en Java.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "1"
+            },
+            {
+                "clave": "b",
+                "texto": "0"
+            },
+            {
+                "clave": "c",
+                "texto": "-1"
+            },
+            {
+                "clave": "d",
+                "texto": "El tama\u00f1o total del array."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "En Java, los arrays empiezan siempre en el \u00edndice 0. Esto significa que la primera posici\u00f3n de un array no es la posici\u00f3n 1, sino la posici\u00f3n 0. Si un array tiene tama\u00f1o 5, sus posiciones v\u00e1lidas ser\u00e1n 0, 1, 2, 3 y 4.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El \u00edndice 1 corresponde a la segunda posici\u00f3n del array, no a la primera."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El \u00edndice -1 no es v\u00e1lido en los arrays de Java. Intentar acceder a esa posici\u00f3n producir\u00eda un error de \u00edndice fuera de rango."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "El tama\u00f1o total del array no representa una posici\u00f3n v\u00e1lida inicial. Adem\u00e1s, en un array de tama\u00f1o n, el \u00faltimo \u00edndice v\u00e1lido es n - 1."
+                }
+            ],
+            "resumen_didactico": "Los arrays en Java se numeran desde 0. La primera casilla es la posici\u00f3n 0 y la \u00faltima es el tama\u00f1o del array menos 1.",
+            "ejemplo_practico": "Si declaras String[] nombres = new String[3]; las posiciones v\u00e1lidas son nombres[0], nombres[1] y nombres[2].",
+            "conclusion_final": "La respuesta correcta es 0, porque en Java la primera posici\u00f3n de cualquier array empieza en el \u00edndice cero."
+        }
+    },
+    {
+        "id": "UT8-Q16",
+        "tema": "UT8 Estructura de almacenamiento. Arrays y cadenas de caracteres",
+        "pregunta": "\u00bfQu\u00e9 m\u00e9todo de la clase String se utiliza para eliminar los espacios en blanco innecesarios al principio y al final de un texto?",
+        "contexto": "Se pregunta por el m\u00e9todo de String que limpia los espacios sobrantes situados antes y despu\u00e9s del contenido real de una cadena.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "trim()"
+            },
+            {
+                "clave": "b",
+                "texto": "charAt()"
+            },
+            {
+                "clave": "c",
+                "texto": "substring()"
+            },
+            {
+                "clave": "d",
+                "texto": "length()"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "El m\u00e9todo trim() de la clase String se utiliza para eliminar los espacios en blanco situados al principio y al final de una cadena de texto. No elimina los espacios internos entre palabras, solo los sobrantes de los extremos.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "charAt() sirve para obtener el car\u00e1cter situado en una posici\u00f3n concreta de la cadena, no para eliminar espacios."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "substring() permite extraer una parte de una cadena indicando posiciones de inicio y fin, pero no est\u00e1 dise\u00f1ado espec\u00edficamente para limpiar espacios iniciales y finales."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "length() devuelve la longitud de la cadena, es decir, el n\u00famero de caracteres, pero no modifica ni limpia el texto."
+                }
+            ],
+            "resumen_didactico": "trim() limpia los espacios sobrantes de los extremos de un String, pero mantiene intacto el contenido interno.",
+            "ejemplo_practico": "Si tienes el texto \"  Java  \", al aplicar trim() el resultado ser\u00e1 \"Java\", sin los espacios iniciales ni finales.",
+            "conclusion_final": "La respuesta correcta es trim(), porque es el m\u00e9todo usado para eliminar espacios en blanco al principio y al final de una cadena."
+        }
+    },
+    {
+        "id": "UT9-Q17",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "\u00bfQu\u00e9 interfaz de la jerarqu\u00eda de colecciones debe elegirse si el requisito de negocio proh\u00edbe la existencia de elementos duplicados?",
+        "contexto": "Se pregunta por la interfaz de colecciones adecuada cuando se necesita almacenar elementos \u00fanicos, sin permitir duplicados.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Set"
+            },
+            {
+                "clave": "b",
+                "texto": "List"
+            },
+            {
+                "clave": "c",
+                "texto": "Queue"
+            },
+            {
+                "clave": "d",
+                "texto": "Map"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "Dentro de la jerarqu\u00eda de colecciones de Java, la interfaz Set se utiliza cuando se necesita almacenar elementos \u00fanicos, es decir, cuando no se permiten duplicados. Es adecuada para representar conjuntos donde cada elemento solo puede aparecer una vez.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "List permite elementos duplicados y mantiene un orden de inserci\u00f3n o posici\u00f3n, por lo que no es la opci\u00f3n correcta si el requisito principal es impedir repetidos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Queue se utiliza para gestionar colas, prioridades o turnos de acceso, no espec\u00edficamente para evitar duplicados."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Map almacena pares clave-valor y las claves no pueden repetirse, pero no pertenece directamente a la rama Collection ni se usa como conjunto simple de elementos \u00fanicos."
+                }
+            ],
+            "resumen_didactico": "Si el requisito es que no haya elementos repetidos, se debe usar Set. Si importa el orden y se aceptan repetidos, se usar\u00eda List.",
+            "ejemplo_practico": "Para guardar una lista de DNI de asistentes a un evento, usar\u00edas un Set porque cada DNI debe aparecer una sola vez.",
+            "conclusion_final": "La respuesta correcta es Set, porque es la interfaz pensada para almacenar elementos \u00fanicos sin duplicados."
+        }
+    },
+    {
+        "id": "UT9-Q18",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "\u00bfCu\u00e1l es la ventaja principal de un HashMap frente a otras estructuras de almacenamiento de datos?",
+        "contexto": "Se pregunta por la ventaja t\u00e9cnica principal de HashMap como estructura basada en pares clave-valor.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Ofrece una velocidad de b\u00fasqueda extremadamente r\u00e1pida mediante claves \u00fanicas (O(1))."
+            },
+            {
+                "clave": "b",
+                "texto": "Permite la herencia m\u00faltiple de interfaces."
+            },
+            {
+                "clave": "c",
+                "texto": "No consume memoria RAM."
+            },
+            {
+                "clave": "d",
+                "texto": "Mantiene los datos ordenados alfab\u00e9ticamente"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "HashMap permite almacenar datos mediante pares clave-valor. Su principal ventaja es que permite acceder r\u00e1pidamente a un valor usando una clave \u00fanica. En condiciones normales, las operaciones de b\u00fasqueda, inserci\u00f3n y eliminaci\u00f3n tienen una complejidad aproximada O(1), es decir, tiempo constante.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "La herencia m\u00faltiple de interfaces es una caracter\u00edstica del dise\u00f1o de clases e interfaces en Java, no una ventaja espec\u00edfica de HashMap como estructura de almacenamiento."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "HashMap s\u00ed consume memoria RAM, ya que necesita almacenar las claves, los valores y su estructura interna de dispersi\u00f3n."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "HashMap no garantiza orden alfab\u00e9tico ni orden de inserci\u00f3n. Si se necesita ordenaci\u00f3n por clave, ser\u00eda m\u00e1s adecuado usar TreeMap."
+                }
+            ],
+            "resumen_didactico": "HashMap destaca porque permite buscar valores de forma muy r\u00e1pida usando una clave, sin tener que recorrer todos los elementos uno por uno.",
+            "ejemplo_practico": "Si tienes un HashMap donde la clave es el DNI de un empleado y el valor es su ficha personal, puedes obtener directamente la informaci\u00f3n usando el DNI como clave.",
+            "conclusion_final": "La respuesta correcta es que HashMap ofrece una b\u00fasqueda extremadamente r\u00e1pida mediante claves \u00fanicas, normalmente con complejidad O(1)."
+        }
+    },
+    {
+        "id": "UT10-Q19",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "En la jerarqu\u00eda de excepciones, \u00bfcu\u00e1l es la clase ra\u00edz de la que heredan todos los objetos que pueden ser capturados con un bloque catch?",
+        "contexto": "Se pregunta por la clase superior de la jerarqu\u00eda de excepciones en Java, de la que derivan tanto Exception como Error.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Error"
+            },
+            {
+                "clave": "b",
+                "texto": "RuntimeException"
+            },
+            {
+                "clave": "c",
+                "texto": "Exception"
+            },
+            {
+                "clave": "d",
+                "texto": "Throwable"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "En Java, la clase ra\u00edz de la jerarqu\u00eda de objetos que pueden lanzarse y capturarse es Throwable. De Throwable heredan dos grandes ramas: Error y Exception. Las excepciones que normalmente se manejan en los programas pertenecen a la rama Exception, pero la ra\u00edz com\u00fan de todos los objetos capturables es Throwable.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Error hereda de Throwable, pero no es la ra\u00edz de toda la jerarqu\u00eda. Representa errores graves del sistema o de la JVM que normalmente no se capturan en la l\u00f3gica habitual del programa."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "RuntimeException es una subclase de Exception. Representa excepciones no comprobadas, pero est\u00e1 varios niveles por debajo de Throwable."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Exception es una rama muy importante de Throwable y agrupa las excepciones que normalmente se manejan con try-catch, pero no es la clase ra\u00edz de toda la jerarqu\u00eda."
+                }
+            ],
+            "resumen_didactico": "La jerarqu\u00eda empieza en Throwable. De ah\u00ed salen Error y Exception. Por eso, todo lo que puede lanzarse o capturarse en Java pertenece directa o indirectamente a Throwable.",
+            "ejemplo_practico": "Una ArithmeticException hereda de RuntimeException, RuntimeException hereda de Exception y Exception hereda de Throwable. Por eso puede ser capturada con un bloque catch.",
+            "conclusion_final": "La respuesta correcta es Throwable, porque es la clase ra\u00edz de todos los objetos que pueden ser lanzados y capturados en Java."
+        }
+    },
+    {
+        "id": "UT10-Q20",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "\u00bfQu\u00e9 bloque de una estructura de control de errores se ejecuta siempre, ocurra o no una excepci\u00f3n, y es vital para cerrar recursos?",
+        "contexto": "Se pregunta por el bloque de la estructura try-catch-finally que garantiza la ejecuci\u00f3n de instrucciones finales, especialmente la liberaci\u00f3n o cierre de recursos.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "catch"
+            },
+            {
+                "clave": "b",
+                "texto": "try"
+            },
+            {
+                "clave": "c",
+                "texto": "throw"
+            },
+            {
+                "clave": "d",
+                "texto": "finally"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "En Java, el bloque finally se ejecuta siempre al finalizar una estructura de control de excepciones, tanto si se produce una excepci\u00f3n como si no. Es especialmente importante para liberar recursos, cerrar ficheros, cerrar conexiones o realizar tareas de limpieza que deben ejecutarse en cualquier caso.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "catch solo se ejecuta si se produce una excepci\u00f3n compatible con el tipo capturado. No se ejecuta siempre."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "try contiene el c\u00f3digo que puede provocar una excepci\u00f3n, pero no es el bloque destinado espec\u00edficamente a la limpieza final de recursos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "throw se utiliza para lanzar expl\u00edcitamente una excepci\u00f3n, no para ejecutar c\u00f3digo final ni cerrar recursos."
+                }
+            ],
+            "resumen_didactico": "El bloque finally act\u00faa como una zona de limpieza obligatoria: pase lo que pase en el try o en el catch, su c\u00f3digo se ejecuta.",
+            "ejemplo_practico": "Si un programa abre un fichero dentro de un try, puede usar finally para cerrarlo aunque ocurra un error durante la lectura.",
+            "conclusion_final": "La respuesta correcta es finally, porque es el bloque que se ejecuta siempre y permite liberar recursos de forma segura."
+        }
+    },
+    {
+        "id": "UT11-Q21",
+        "tema": "UT11 Recursividad y complejidad algor\u00edtmica",
+        "pregunta": "\u00bfC\u00f3mo se denomina t\u00e9cnicamente el \"Caso Base\" en un algoritmo recursivo?",
+        "contexto": "Se pregunta por la parte imprescindible de un algoritmo recursivo que permite detener las llamadas sucesivas del m\u00e9todo.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "La condici\u00f3n que detiene las llamadas recursivas y evita el desbordamiento de la pila."
+            },
+            {
+                "clave": "b",
+                "texto": "La variable que almacena el resultado final en el disco."
+            },
+            {
+                "clave": "c",
+                "texto": "El momento en que el programa pide datos al usuario."
+            },
+            {
+                "clave": "d",
+                "texto": "La instrucci\u00f3n que hace que el m\u00e9todo se llame a s\u00ed mismo."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "En un algoritmo recursivo, el caso base es la condici\u00f3n que detiene las llamadas recursivas. Es imprescindible porque marca el punto en el que el problema ya se puede resolver directamente. Sin caso base, el m\u00e9todo se llamar\u00eda a s\u00ed mismo indefinidamente hasta provocar un desbordamiento de la pila, conocido como StackOverflowError.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "El caso base no es una variable ni almacena el resultado en disco. La recursividad trabaja normalmente en memoria durante la ejecuci\u00f3n del programa."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Pedir datos al usuario pertenece a la entrada de informaci\u00f3n, no a la definici\u00f3n t\u00e9cnica del caso base en recursividad."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La instrucci\u00f3n que hace que el m\u00e9todo se llame a s\u00ed mismo corresponde al caso recursivo o recurrente, no al caso base."
+                }
+            ],
+            "resumen_didactico": "Todo algoritmo recursivo necesita dos partes: un caso base que detiene el proceso y un caso recursivo que vuelve a llamar al m\u00e9todo con un problema m\u00e1s peque\u00f1o.",
+            "ejemplo_practico": "En el factorial, factorial(1) = 1 ser\u00eda el caso base, porque ah\u00ed la funci\u00f3n deja de llamarse a s\u00ed misma.",
+            "conclusion_final": "La respuesta correcta es que el caso base es la condici\u00f3n que detiene las llamadas recursivas y evita el desbordamiento de la pila."
+        }
+    },
+    {
+        "id": "UT11-Q22",
+        "tema": "UT11 Recursividad y complejidad algor\u00edtmica",
+        "pregunta": "En la notaci\u00f3n Big-O, \u00bfqu\u00e9 complejidad representa a un algoritmo cuyo tiempo de ejecuci\u00f3n no cambia sin importar el volumen de datos?",
+        "contexto": "Se pregunta por la complejidad algor\u00edtmica que indica tiempo constante, es decir, cuando el n\u00famero de datos de entrada no altera el tiempo de ejecuci\u00f3n del algoritmo.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "O( n ) - Lineal."
+            },
+            {
+                "clave": "b",
+                "texto": "O(1) - Constante."
+            },
+            {
+                "clave": "c",
+                "texto": "O(n\u00b2) - Cuadr\u00e1tica."
+            },
+            {
+                "clave": "d",
+                "texto": "O(log n) - Logar\u00edtmica."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "En la notaci\u00f3n Big-O, O(1) representa una complejidad constante. Esto significa que el algoritmo tarda aproximadamente lo mismo independientemente del tama\u00f1o de la entrada. No importa si hay 10, 1.000 o 1.000.000 de elementos: la operaci\u00f3n se realiza en un n\u00famero fijo de pasos.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "O(n) representa complejidad lineal. El tiempo de ejecuci\u00f3n crece proporcionalmente al n\u00famero de elementos de entrada."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "O(n\u00b2) representa complejidad cuadr\u00e1tica. El tiempo de ejecuci\u00f3n crece mucho m\u00e1s r\u00e1pido, normalmente cuando hay bucles anidados sobre la misma colecci\u00f3n de datos."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "O(log n) representa complejidad logar\u00edtmica. Aunque es muy eficiente, el tiempo s\u00ed cambia al aumentar el volumen de datos, aunque lo haga lentamente."
+                }
+            ],
+            "resumen_didactico": "Si el tiempo de ejecuci\u00f3n no depende del tama\u00f1o de los datos, hablamos de complejidad constante: O(1).",
+            "ejemplo_practico": "Acceder directamente a una posici\u00f3n concreta de un array, como numeros[3], suele considerarse O(1), porque no hace falta recorrer todo el array.",
+            "conclusion_final": "La respuesta correcta es O(1) - Constante, porque el tiempo de ejecuci\u00f3n no var\u00eda aunque aumente el volumen de datos."
+        }
+    },
+    {
+        "id": "UT12-Q23",
+        "tema": "UT12 Lectura y escritura de informaci\u00f3n",
+        "pregunta": "\u00bfQu\u00e9 jerarqu\u00eda de clases de Java est\u00e1 optimizada espec\u00edficamente para la lectura y escritura de archivos de texto (caracteres)?",
+        "contexto": "Se pregunta por la familia de clases de Java preparada para trabajar con flujos de caracteres, especialmente en archivos de texto.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "InputStream / OutputStream"
+            },
+            {
+                "clave": "b",
+                "texto": "Scanner / PrintStream"
+            },
+            {
+                "clave": "c",
+                "texto": "Reader / Writer"
+            },
+            {
+                "clave": "d",
+                "texto": "File / Path"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "En Java, la jerarqu\u00eda Reader / Writer est\u00e1 pensada para trabajar con flujos de caracteres. Se utiliza para leer y escribir texto, ya que maneja datos de tipo car\u00e1cter y tiene en cuenta la codificaci\u00f3n. Por eso es la opci\u00f3n adecuada cuando se trabaja con archivos de texto.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "InputStream / OutputStream pertenece a la jerarqu\u00eda de flujos de bytes. Se usa principalmente para datos binarios como im\u00e1genes, audio, ejecutables o archivos no textuales."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Scanner puede leer datos de entrada y PrintStream puede escribir salida, pero no son la jerarqu\u00eda principal optimizada para lectura y escritura de archivos de texto mediante caracteres."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "File y Path representan rutas, archivos o elementos del sistema de ficheros, pero no son las clases encargadas directamente de leer o escribir el contenido textual."
+                }
+            ],
+            "resumen_didactico": "Para texto se usan flujos de caracteres: Reader para leer y Writer para escribir. Para datos binarios se usan flujos de bytes: InputStream y OutputStream.",
+            "ejemplo_practico": "Para leer un archivo .txt podr\u00edas usar FileReader, que deriva de Reader. Para escribir texto en un archivo podr\u00edas usar FileWriter, que deriva de Writer.",
+            "conclusion_final": "La respuesta correcta es Reader / Writer, porque es la jerarqu\u00eda dise\u00f1ada para leer y escribir informaci\u00f3n textual basada en caracteres."
+        }
+    },
+    {
+        "id": "UT12-Q24",
+        "tema": "UT12 Lectura y escritura de informaci\u00f3n",
+        "pregunta": "\u00bfQu\u00e9 proceso permite convertir un objeto de la RAM en un flujo de bytes para guardarlo de forma persistente en un archivo?",
+        "contexto": "Se pregunta por el proceso que permite transformar un objeto existente en memoria en una secuencia de bytes para almacenarlo en un fichero y recuperarlo posteriormente.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Compilaci\u00f3n."
+            },
+            {
+                "clave": "b",
+                "texto": "Deserializaci\u00f3n."
+            },
+            {
+                "clave": "c",
+                "texto": "Casting descendente."
+            },
+            {
+                "clave": "d",
+                "texto": "Serializaci\u00f3n."
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "La serializaci\u00f3n es el proceso mediante el cual un objeto que existe en memoria RAM se convierte en un flujo de bytes. Ese flujo puede guardarse en un archivo, enviarse por red o almacenarse de forma persistente para reconstruir el objeto m\u00e1s adelante.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "La compilaci\u00f3n transforma c\u00f3digo fuente en c\u00f3digo ejecutable o bytecode, pero no convierte objetos en memoria en flujos de bytes para guardarlos."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La deserializaci\u00f3n es el proceso inverso: reconstruir un objeto en memoria a partir de un flujo de bytes previamente guardado."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El casting descendente consiste en convertir una referencia de una clase padre a una subclase, cuando es v\u00e1lido. No tiene relaci\u00f3n con guardar objetos en archivos."
+                }
+            ],
+            "resumen_didactico": "Serializar es guardar el estado de un objeto convirti\u00e9ndolo en bytes. Deserializar es recuperar ese objeto a partir de esos bytes.",
+            "ejemplo_practico": "Si tienes un objeto Usuario con nombre, email y edad, puedes serializarlo para guardarlo en un archivo y volver a cargarlo m\u00e1s tarde cuando el programa se reinicie.",
+            "conclusion_final": "La respuesta correcta es serializaci\u00f3n, porque es el proceso que convierte un objeto de la RAM en un flujo de bytes persistente."
+        }
+    },
+    {
+        "id": "UT13-Q25",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "\u00bfQu\u00e9 significan las siglas JPA en el desarrollo de aplicaciones backend profesionales?",
+        "contexto": "Se pregunta por el significado t\u00e9cnico de las siglas JPA dentro del trabajo con persistencia de datos en aplicaciones Java.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Java Persistence API."
+            },
+            {
+                "clave": "b",
+                "texto": "Java Project Architecture."
+            },
+            {
+                "clave": "c",
+                "texto": "Java Protocol Assistant."
+            },
+            {
+                "clave": "d",
+                "texto": "Joint Process Application."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "JPA significa Java Persistence API. Es una especificaci\u00f3n de Java utilizada para gestionar la persistencia de datos, permitiendo mapear objetos Java a una base de datos y trabajar con entidades de forma m\u00e1s cercana al paradigma orientado a objetos.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "Java Project Architecture no es el significado de JPA. Aunque suena relacionado con estructura de proyectos, no corresponde a la tecnolog\u00eda de persistencia."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Java Protocol Assistant no es una denominaci\u00f3n real de JPA y no tiene relaci\u00f3n con la persistencia de objetos en Java."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Joint Process Application no corresponde a ninguna tecnolog\u00eda est\u00e1ndar de persistencia en Java."
+                }
+            ],
+            "resumen_didactico": "JPA es la especificaci\u00f3n est\u00e1ndar de Java para trabajar con persistencia de datos usando entidades y objetos, evitando manejar directamente toda la l\u00f3gica de almacenamiento de forma manual.",
+            "ejemplo_practico": "En una aplicaci\u00f3n backend, una clase Usuario puede convertirse en una entidad persistente mediante JPA para que sus datos se guarden y recuperen desde una base de datos.",
+            "conclusion_final": "La respuesta correcta es Java Persistence API, porque JPA es la especificaci\u00f3n de Java usada para gestionar la persistencia de datos en aplicaciones profesionales."
+        }
+    },
+    {
+        "id": "UT13-Q26",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "En JPA, \u00bfqu\u00e9 anotaci\u00f3n es obligatoria colocar sobre una clase para que el motor de persistencia la gestione como una tabla?",
+        "contexto": "Se pregunta por la anotaci\u00f3n principal de JPA que convierte una clase Java en una entidad gestionada por el motor de persistencia.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "@Id"
+            },
+            {
+                "clave": "b",
+                "texto": "@Entity"
+            },
+            {
+                "clave": "c",
+                "texto": "@Persistent"
+            },
+            {
+                "clave": "d",
+                "texto": "@TableOnly"
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "En JPA, la anotaci\u00f3n @Entity se coloca sobre una clase Java para indicar que esa clase ser\u00e1 gestionada por el motor de persistencia como una entidad. Esto permite que sus objetos puedan almacenarse, recuperarse, actualizarse o eliminarse en la base de datos.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "@Id es necesaria para marcar el atributo que act\u00faa como identificador o clave primaria de la entidad, pero no convierte por s\u00ed sola la clase en una entidad gestionada."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "@Persistent no es la anotaci\u00f3n est\u00e1ndar de JPA para declarar una entidad."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "@TableOnly no es una anotaci\u00f3n est\u00e1ndar de JPA. La anotaci\u00f3n relacionada con tablas es @Table, pero se usa para configurar detalles de la tabla, no para declarar la clase como entidad principal."
+                }
+            ],
+            "resumen_didactico": "Para que JPA reconozca una clase como entidad persistente, debe llevar @Entity. Despu\u00e9s, normalmente se a\u00f1ade @Id en uno de sus campos para identificar cada registro.",
+            "ejemplo_practico": "Si tienes una clase Usuario y quieres guardarla en la base de datos mediante JPA, debes anotarla con @Entity para que el motor de persistencia la gestione.",
+            "conclusion_final": "La respuesta correcta es @Entity, porque es la anotaci\u00f3n obligatoria que indica que una clase Java ser\u00e1 tratada como entidad persistente."
+        }
+    },
+    {
+        "id": "UT14-Q27",
+        "tema": "UT14 Gesti\u00f3n de bases de datos relacionales",
+        "pregunta": "\u00bfQu\u00e9 tecnolog\u00eda act\u00faa como el est\u00e1ndar para conectar Java con cualquier motor de base de datos relacional (MySQL, Oracle, etc.)?",
+        "contexto": "Se pregunta por la tecnolog\u00eda est\u00e1ndar que permite a una aplicaci\u00f3n Java comunicarse con distintos sistemas gestores de bases de datos relacionales mediante drivers.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "JPA"
+            },
+            {
+                "clave": "b",
+                "texto": "JRE"
+            },
+            {
+                "clave": "c",
+                "texto": "HTTP"
+            },
+            {
+                "clave": "d",
+                "texto": "JDBC (Java Database Connectivity)"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "JDBC, Java Database Connectivity, es la tecnolog\u00eda est\u00e1ndar de Java para conectar aplicaciones con bases de datos relacionales. Permite establecer conexiones, enviar consultas SQL, recibir resultados y trabajar con distintos motores como MySQL, MariaDB, Oracle o PostgreSQL mediante sus correspondientes drivers.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "JPA est\u00e1 relacionada con la persistencia de objetos y el mapeo objeto-relacional, pero se apoya normalmente en tecnolog\u00edas de conexi\u00f3n como JDBC. No es el est\u00e1ndar b\u00e1sico de conexi\u00f3n directa con motores relacionales."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "JRE es el entorno de ejecuci\u00f3n de Java. Sirve para ejecutar programas Java, pero no es la tecnolog\u00eda espec\u00edfica para conectar con bases de datos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "HTTP es un protocolo de comunicaci\u00f3n web, no la tecnolog\u00eda est\u00e1ndar de Java para conectar con bases de datos relacionales."
+                }
+            ],
+            "resumen_didactico": "JDBC es el puente est\u00e1ndar entre Java y una base de datos relacional. Java usa JDBC junto con un driver espec\u00edfico para comunicarse con cada motor de base de datos.",
+            "ejemplo_practico": "Para conectar una aplicaci\u00f3n Java con MariaDB, se usa JDBC mediante una URL como jdbc:mariadb://localhost:3306/mi_base_de_datos y el driver correspondiente.",
+            "conclusion_final": "La respuesta correcta es JDBC, porque es la tecnolog\u00eda est\u00e1ndar que permite conectar Java con motores de bases de datos relacionales."
+        }
+    },
+    {
+        "id": "UT14-Q28",
+        "tema": "UT14 Gesti\u00f3n de bases de datos relacionales",
+        "pregunta": "\u00bfQu\u00e9 comando de JDBC debe utilizarse para confirmar de forma definitiva todos los cambios realizados durante una transacci\u00f3n manual?",
+        "contexto": "Se pregunta por el m\u00e9todo utilizado en JDBC para validar y hacer permanentes los cambios realizados dentro de una transacci\u00f3n cuando el modo autom\u00e1tico de confirmaci\u00f3n est\u00e1 desactivado.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "save()"
+            },
+            {
+                "clave": "b",
+                "texto": "rollback()"
+            },
+            {
+                "clave": "c",
+                "texto": "commit()"
+            },
+            {
+                "clave": "d",
+                "texto": "finish()"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "En JDBC, cuando se trabaja con transacciones manuales, los cambios realizados no quedan confirmados definitivamente hasta ejecutar commit(). Este m\u00e9todo valida la transacci\u00f3n y hace permanentes todas las operaciones realizadas desde el inicio de la transacci\u00f3n.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "save() no es el m\u00e9todo est\u00e1ndar de JDBC para confirmar una transacci\u00f3n."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "rollback() hace lo contrario de commit(): deshace los cambios realizados durante la transacci\u00f3n y devuelve la base de datos al estado anterior."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "finish() no es el m\u00e9todo est\u00e1ndar de JDBC para finalizar o confirmar transacciones."
+                }
+            ],
+            "resumen_didactico": "commit() confirma los cambios; rollback() los deshace. En una transacci\u00f3n manual, commit() es el paso que guarda definitivamente las operaciones en la base de datos.",
+            "ejemplo_practico": "Si una aplicaci\u00f3n bancaria resta dinero de una cuenta y lo suma en otra, solo debe ejecutar commit() cuando ambas operaciones se hayan realizado correctamente.",
+            "conclusion_final": "La respuesta correcta es commit(), porque es el m\u00e9todo de JDBC que confirma definitivamente los cambios de una transacci\u00f3n manual."
+        }
+    },
+    {
+        "id": "UT15-Q29",
+        "tema": "UT15 Creaci\u00f3n de interfaces gr\u00e1ficas",
+        "pregunta": "\u00bfC\u00f3mo se denomina la librer\u00eda ligera de Java que permite crear interfaces gr\u00e1ficas independientes de la est\u00e9tica del sistema operativo?",
+        "contexto": "Se pregunta por la librer\u00eda de Java usada para crear interfaces gr\u00e1ficas ligeras, con componentes propios y apariencia independiente del sistema operativo.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Hibernate"
+            },
+            {
+                "clave": "b",
+                "texto": "JavaSQL"
+            },
+            {
+                "clave": "c",
+                "texto": "Swing"
+            },
+            {
+                "clave": "d",
+                "texto": "AWT"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "Swing es la librer\u00eda de Java para crear interfaces gr\u00e1ficas mediante componentes ligeros. A diferencia de AWT, no depende directamente de los componentes nativos del sistema operativo, por lo que permite una apariencia m\u00e1s uniforme e independiente de la est\u00e9tica propia de Windows, Linux o macOS.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Hibernate es una tecnolog\u00eda relacionada con persistencia de datos y mapeo objeto-relacional, no con la creaci\u00f3n de interfaces gr\u00e1ficas."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "JavaSQL no es la librer\u00eda de interfaces gr\u00e1ficas de Java. Las tecnolog\u00edas relacionadas con bases de datos son JDBC o JPA, no JavaSQL como interfaz visual."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "AWT permite crear interfaces gr\u00e1ficas, pero utiliza componentes m\u00e1s ligados al sistema operativo. No es la librer\u00eda ligera e independiente de la est\u00e9tica del sistema que se pregunta."
+                }
+            ],
+            "resumen_didactico": "AWT es la base m\u00e1s nativa y dependiente del sistema operativo; Swing es m\u00e1s ligera, flexible y permite interfaces con una apariencia m\u00e1s independiente.",
+            "ejemplo_practico": "Si creas una ventana con JButton, JLabel y JTextField, est\u00e1s usando componentes Swing que pueden mantener una apariencia com\u00fan aunque la aplicaci\u00f3n se ejecute en distintos sistemas operativos.",
+            "conclusion_final": "La respuesta correcta es Swing, porque es la librer\u00eda ligera de Java para crear interfaces gr\u00e1ficas independientes de la est\u00e9tica del sistema operativo."
+        }
+    },
+    {
+        "id": "UT15-Q30",
+        "tema": "UT15 Creaci\u00f3n de interfaces gr\u00e1ficas",
+        "pregunta": "\u00bfQu\u00e9 interfaz debe implementar una clase para poder reaccionar cuando el usuario hace clic en un bot\u00f3n (JButton)?",
+        "contexto": "Se pregunta por la interfaz de manejo de eventos que permite responder a acciones del usuario, como pulsar un bot\u00f3n en una interfaz gr\u00e1fica Java.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "KeyListener"
+            },
+            {
+                "clave": "b",
+                "texto": "WindowListener"
+            },
+            {
+                "clave": "c",
+                "texto": "MouseMotionListener"
+            },
+            {
+                "clave": "d",
+                "texto": "ActionListener"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "En Java Swing, para reaccionar cuando el usuario pulsa un bot\u00f3n como JButton, se utiliza la interfaz ActionListener. Esta interfaz permite capturar eventos de acci\u00f3n, como clics sobre botones, y ejecutar c\u00f3digo dentro del m\u00e9todo actionPerformed().",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "KeyListener se utiliza para detectar eventos del teclado, como pulsar o soltar teclas, no para gestionar directamente el clic de un bot\u00f3n."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "WindowListener se utiliza para eventos de ventana, como abrir, cerrar, activar o desactivar una ventana, no para responder a un JButton."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "MouseMotionListener detecta movimientos del rat\u00f3n, como moverlo o arrastrarlo, pero no es la interfaz est\u00e1ndar para capturar la acci\u00f3n de pulsar un bot\u00f3n."
+                }
+            ],
+            "resumen_didactico": "Para botones en Swing, la interfaz habitual es ActionListener. El bot\u00f3n genera un evento de acci\u00f3n y el c\u00f3digo de respuesta se escribe en actionPerformed().",
+            "ejemplo_practico": "Si tienes un JButton llamado botonGuardar, puedes asociarle un ActionListener para que al hacer clic se ejecute el c\u00f3digo que guarda los datos del formulario.",
+            "conclusion_final": "La respuesta correcta es ActionListener, porque es la interfaz usada para reaccionar ante clics y acciones sobre botones en Java Swing."
+        }
+    },
+    {
+        "id": "UT7-Q31",
+        "tema": "UT7 Clases avanzadas y utilizaci\u00f3n de objetos",
+        "pregunta": "Al dise\u00f1ar una API profesional, \u00bfqu\u00e9 implicaci\u00f3n tiene marcar un m\u00e9todo como final en una superclase?",
+        "contexto": "Se pregunta por el efecto t\u00e9cnico del modificador final cuando se aplica a un m\u00e9todo heredado desde una superclase.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Que el m\u00e9todo no puede devolver ning\u00fan valor."
+            },
+            {
+                "clave": "b",
+                "texto": "Que el m\u00e9todo no puede ser sobrescrito (Override) por ninguna subclase."
+            },
+            {
+                "clave": "c",
+                "texto": "Que el m\u00e9todo solo puede llamarse una vez durante la ejecuci\u00f3n."
+            },
+            {
+                "clave": "d",
+                "texto": "Que el m\u00e9todo es invisible para el resto de clases del paquete."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "En Java, marcar un m\u00e9todo como final impide que las subclases puedan sobrescribirlo mediante override. Esto se usa cuando una superclase define un comportamiento que debe mantenerse fijo por seguridad, coherencia o dise\u00f1o de la API.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Que un m\u00e9todo devuelva o no un valor depende de su tipo de retorno, por ejemplo void, int o String, no del modificador final."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "final no limita el n\u00famero de veces que un m\u00e9todo puede ejecutarse. Un m\u00e9todo final puede llamarse tantas veces como sea necesario."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La visibilidad del m\u00e9todo depende de modificadores como public, protected, private o la visibilidad de paquete, no de final."
+                }
+            ],
+            "resumen_didactico": "Un m\u00e9todo final se hereda, pero no se puede modificar en las clases hijas. Sirve para bloquear la sobrescritura de un comportamiento importante.",
+            "ejemplo_practico": "Si una clase CuentaBancaria tiene un m\u00e9todo final validarOperacion(), ninguna subclase podr\u00e1 redefinirlo para saltarse las reglas de validaci\u00f3n.",
+            "conclusion_final": "La respuesta correcta es que el m\u00e9todo no puede ser sobrescrito por ninguna subclase."
+        }
+    },
+    {
+        "id": "UT10-Q32",
+        "tema": "UT10 Control y manejo de excepciones",
+        "pregunta": "\u00bfPor qu\u00e9 se considera una mala pr\u00e1ctica de empleabilidad capturar la clase gen\u00e9rica Exception en lugar de excepciones espec\u00edficas?",
+        "contexto": "Se pregunta por la mala pr\u00e1ctica de capturar excepciones demasiado generales en vez de capturar los errores concretos que pueden producirse.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Porque ralentiza la conexi\u00f3n a la base de datos."
+            },
+            {
+                "clave": "b",
+                "texto": "Porque oculta errores espec\u00edficos y dificulta el diagn\u00f3stico preciso de fallos (pescar con dinamita)."
+            },
+            {
+                "clave": "c",
+                "texto": "Porque el c\u00f3digo se vuelve m\u00e1s largo y dif\u00edcil de leer."
+            },
+            {
+                "clave": "d",
+                "texto": "Porque Java proh\u00edbe el uso de la palabra Exception en bloques catch"
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "Capturar la clase gen\u00e9rica Exception se considera una mala pr\u00e1ctica cuando existen excepciones m\u00e1s espec\u00edficas que pueden tratarse de forma precisa. Al capturar Exception de forma general, se mezclan errores distintos bajo un mismo bloque catch, se pierde informaci\u00f3n \u00fatil sobre la causa real del fallo y se dificulta el diagn\u00f3stico. Por eso se recomienda capturar primero excepciones concretas y dejar las m\u00e1s generales al final solo si es necesario.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Capturar Exception no ralentiza por s\u00ed mismo una conexi\u00f3n a base de datos. El problema principal no es de rendimiento, sino de diagn\u00f3stico y claridad en el manejo del error."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Capturar excepciones espec\u00edficas puede hacer que haya m\u00e1s bloques catch, pero eso no es necesariamente malo. La mala pr\u00e1ctica no se basa en que el c\u00f3digo sea m\u00e1s largo, sino en que capturar Exception oculta la causa concreta del fallo."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Java no proh\u00edbe usar Exception en bloques catch. Es v\u00e1lido sint\u00e1cticamente, pero puede ser una mala pr\u00e1ctica si se usa de forma abusiva o antes que excepciones m\u00e1s espec\u00edficas."
+                }
+            ],
+            "resumen_didactico": "No conviene capturar Exception de forma gen\u00e9rica si puedes capturar errores concretos. Cuanto m\u00e1s espec\u00edfica sea la excepci\u00f3n capturada, m\u00e1s claro ser\u00e1 el tratamiento del fallo.",
+            "ejemplo_practico": "Si un programa puede fallar por NumberFormatException o por FileNotFoundException, es mejor capturarlas por separado para mostrar mensajes distintos: uno por dato num\u00e9rico incorrecto y otro por archivo inexistente.",
+            "conclusion_final": "La respuesta correcta es que capturar Exception de forma gen\u00e9rica oculta errores espec\u00edficos y dificulta el diagn\u00f3stico preciso de fallos."
+        }
+    },
+    {
+        "id": "UT13-Q33",
+        "tema": "UT13 Mantenimiento de la persistencia de los datos",
+        "pregunta": "En la arquitectura de bases de datos, \u00bfcu\u00e1l es la diferencia clave entre una consulta SQL y una consulta JPQL?",
+        "contexto": "Se pregunta por la diferencia entre el lenguaje SQL tradicional, orientado a tablas relacionales, y JPQL, usado en JPA para consultar entidades Java persistentes.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "JPQL solo permite realizar inserciones, no consultas de selecci\u00f3n."
+            },
+            {
+                "clave": "b",
+                "texto": "No existe diferencia t\u00e9cnica entre ambas lenguajes."
+            },
+            {
+                "clave": "c",
+                "texto": "SQL es para archivos de texto y JPQL para archivos binarios."
+            },
+            {
+                "clave": "d",
+                "texto": "SQL opera sobre tablas y columnas; JPQL opera sobre entidades y atributos de objetos Java."
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "SQL trabaja directamente sobre la estructura relacional de la base de datos: tablas, columnas y registros. JPQL, en cambio, se utiliza dentro del contexto de JPA y trabaja sobre entidades Java y sus atributos. Es decir, JPQL no consulta directamente nombres de tablas y columnas, sino clases anotadas como entidades y sus propiedades.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "JPQL s\u00ed permite realizar consultas de selecci\u00f3n. De hecho, su uso principal es consultar entidades persistentes mediante sentencias similares a SELECT."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "S\u00ed existe diferencia t\u00e9cnica. Aunque su sintaxis pueda parecerse, SQL trabaja con el modelo relacional y JPQL trabaja con el modelo de objetos gestionado por JPA."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La diferencia entre SQL y JPQL no tiene relaci\u00f3n con archivos de texto o archivos binarios. Ambos son lenguajes de consulta vinculados a persistencia de datos."
+                }
+            ],
+            "resumen_didactico": "SQL consulta tablas y columnas de una base de datos relacional. JPQL consulta entidades Java y atributos definidos en clases persistentes.",
+            "ejemplo_practico": "En SQL podr\u00edas escribir SELECT * FROM usuarios. En JPQL escribir\u00edas algo como SELECT u FROM Usuario u, donde Usuario es una entidad Java, no directamente una tabla.",
+            "conclusion_final": "La respuesta correcta es que SQL opera sobre tablas y columnas, mientras que JPQL opera sobre entidades y atributos de objetos Java."
+        }
+    },
+    {
+        "id": "UT12-Q34",
+        "tema": "UT12 Lectura y escritura de informaci\u00f3n",
+        "pregunta": "\u00bfQu\u00e9 sucede con los recursos del sistema (ficheros, puertos de red) si un programa finaliza sin invocar el m\u00e9todo close()?",
+        "contexto": "Se pregunta por la importancia de cerrar correctamente los flujos y recursos externos utilizados por un programa, como archivos, sockets o conexiones.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Se liberan autom\u00e1ticamente en microsegundos."
+            },
+            {
+                "clave": "b",
+                "texto": "Pueden quedar bloqueados o \"zombies\", impidiendo su uso por otros programas o saturando el servidor."
+            },
+            {
+                "clave": "c",
+                "texto": "si un programa finaliza sin invocar el m\u00e9todo close()?"
+            },
+            {
+                "clave": "d",
+                "texto": "El archivo se encripta para evitar p\u00e9rdidas de datos."
+            },
+            {
+                "clave": "e",
+                "texto": "El ordenador se apaga por seguridad."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "En Java, los flujos y recursos externos deben cerrarse correctamente con close() cuando dejan de usarse. Si un programa no cierra ficheros, conexiones o puertos de red, esos recursos pueden quedar bloqueados, ocupados o sin liberar correctamente, impidiendo que otros procesos los utilicen y pudiendo saturar el sistema.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "No debe confiarse en que los recursos se liberen autom\u00e1ticamente de forma inmediata. Aunque el sistema pueda liberar algunos recursos al finalizar el proceso, la buena pr\u00e1ctica profesional exige cerrarlos expl\u00edcitamente."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Esta opci\u00f3n no es una respuesta t\u00e9cnica v\u00e1lida; parece una repetici\u00f3n incompleta del enunciado."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "No cerrar un recurso no provoca que el archivo se encripte. El cierre de recursos est\u00e1 relacionado con liberar el acceso y asegurar la escritura correcta, no con cifrado."
+                },
+                {
+                    "clave": "e",
+                    "motivo": "El sistema operativo no apaga el ordenador por seguridad si un programa no invoca close(). El problema real es el posible bloqueo o fuga de recursos."
+                }
+            ],
+            "resumen_didactico": "El m\u00e9todo close() sirve para liberar correctamente recursos externos. Si no se llama, pueden quedar archivos, conexiones o puertos bloqueados.",
+            "ejemplo_practico": "Si una aplicaci\u00f3n abre un fichero de configuraci\u00f3n y no lo cierra, otro programa podr\u00eda no poder modificarlo porque el sistema lo sigue considerando en uso.",
+            "conclusion_final": "La respuesta correcta es que los recursos pueden quedar bloqueados o como recursos no liberados, afectando a otros programas o al rendimiento del servidor."
+        }
+    },
+    {
+        "id": "UT7-Q35",
+        "tema": "UT7 Clases avanzadas y utilizaci\u00f3n de objetos",
+        "pregunta": "\u00bfCu\u00e1l es la \"Regla de Oro\" al realizar un casting descendente (Downcasting) de un objeto tras una asignaci\u00f3n polimorfa?",
+        "contexto": "Se pregunta por la buena pr\u00e1ctica necesaria antes de convertir una referencia general a un tipo m\u00e1s espec\u00edfico en una jerarqu\u00eda de herencia.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Verificar primero el tipo real del objeto usando el operador instanceof."
+            },
+            {
+                "clave": "b",
+                "texto": "Realizarlo siempre de forma directa para ganar velocidad."
+            },
+            {
+                "clave": "c",
+                "texto": "Convertir el objeto a tipo String antes del casting."
+            },
+            {
+                "clave": "d",
+                "texto": "No se puede realizar casting descendente en Java."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "En Java, el casting descendente o downcasting consiste en convertir una referencia de una clase padre a una subclase. La regla de oro es comprobar antes el tipo real del objeto con instanceof para evitar errores en tiempo de ejecuci\u00f3n, especialmente ClassCastException.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "Hacer el casting directamente puede provocar una ClassCastException si el objeto real no pertenece al tipo al que se quiere convertir. No es una pr\u00e1ctica segura."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Convertir el objeto a String no tiene relaci\u00f3n con el downcasting. El casting descendente trabaja con tipos dentro de una jerarqu\u00eda de clases."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "S\u00ed se puede realizar casting descendente en Java, pero debe hacerse con precauci\u00f3n y comprobando primero el tipo real del objeto."
+                }
+            ],
+            "resumen_didactico": "Antes de hacer downcasting, hay que verificar con instanceof que el objeto realmente pertenece a la subclase esperada.",
+            "ejemplo_practico": "Si tienes Animal animal = new Perro(); antes de hacer Perro perro = (Perro) animal; conviene comprobar if (animal instanceof Perro) para asegurarte de que la conversi\u00f3n es v\u00e1lida.",
+            "conclusion_final": "La respuesta correcta es verificar primero el tipo real del objeto usando instanceof."
+        }
+    },
+    {
+        "id": "UT11-Q36",
+        "tema": "UT11 Recursividad y complejidad algor\u00edtmica",
+        "pregunta": "En t\u00e9rminos de rendimiento y complejidad espacial, \u00bfcu\u00e1l es el principal coste de utilizar algoritmos recursivos frente a iterativos?",
+        "contexto": "Se pregunta por el coste principal de la recursividad en memoria frente a una soluci\u00f3n basada en bucles.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El consumo excesivo de espacio en la pila de llamadas (Stack) de la memoria."
+            },
+            {
+                "clave": "b",
+                "texto": "Que solo funcionan con n\u00fameros enteros."
+            },
+            {
+                "clave": "c",
+                "texto": "El borrado accidental de la base de datos."
+            },
+            {
+                "clave": "d",
+                "texto": "La necesidad de usar monitores de alta resoluci\u00f3n."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "Los algoritmos recursivos realizan llamadas sucesivas al mismo m\u00e9todo. Cada llamada queda almacenada temporalmente en la pila de llamadas o Stack, junto con sus variables locales y el punto de retorno. Si la recursividad es muy profunda, el consumo de memoria puede crecer demasiado y provocar un StackOverflowError.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "La recursividad no funciona solo con n\u00fameros enteros. Puede aplicarse a \u00e1rboles, carpetas, grafos, listas, estructuras jer\u00e1rquicas y muchos otros problemas."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La recursividad no borra bases de datos por s\u00ed misma. Ese problema depender\u00eda de instrucciones concretas de acceso a datos, no del uso de recursividad."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "El uso de algoritmos recursivos no tiene ninguna relaci\u00f3n con la resoluci\u00f3n del monitor ni con elementos gr\u00e1ficos."
+                }
+            ],
+            "resumen_didactico": "La recursividad puede hacer el c\u00f3digo m\u00e1s claro, pero cada llamada consume memoria en la pila. Por eso, si hay demasiadas llamadas encadenadas, puede ser menos eficiente que una soluci\u00f3n iterativa.",
+            "ejemplo_practico": "Calcular un factorial recursivo de un n\u00famero peque\u00f1o es sencillo, pero si el n\u00famero es muy grande, cada llamada queda apilada hasta llegar al caso base, aumentando el consumo de memoria.",
+            "conclusion_final": "La respuesta correcta es el consumo excesivo de espacio en la pila de llamadas, porque ese es el principal coste espacial de la recursividad frente a la iteraci\u00f3n."
+        }
+    },
+    {
+        "id": "UT14-Q37",
+        "tema": "UT14 Gesti\u00f3n de bases de datos relacionales",
+        "pregunta": "\u00bfQu\u00e9 beneficio aporta el uso de PreparedStatement frente a Statement en el desarrollo de aplicaciones seguras?",
+        "contexto": "Se pregunta por la ventaja de utilizar consultas preparadas en JDBC frente a sentencias SQL construidas directamente como texto.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "No requiere una conexi\u00f3n activa a internet."
+            },
+            {
+                "clave": "b",
+                "texto": "Permite usar colores en la consola de comandos."
+            },
+            {
+                "clave": "c",
+                "texto": "Hace que el c\u00f3digo fuente sea ilegible para otros humanos."
+            },
+            {
+                "clave": "d",
+                "texto": "Previene ataques de inyecci\u00f3n SQL y permite la pre-compilaci\u00f3n de la consulta en la base de datos."
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "PreparedStatement permite crear consultas SQL parametrizadas, separando la estructura de la consulta de los valores introducidos por el usuario. Esto reduce el riesgo de inyecci\u00f3n SQL, ya que los datos no se interpretan como parte del c\u00f3digo SQL. Adem\u00e1s, la consulta puede ser precompilada por la base de datos, mejorando la eficiencia cuando se ejecuta varias veces.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "PreparedStatement no elimina la necesidad de conexi\u00f3n con la base de datos. Para ejecutar cualquier consulta JDBC sigue siendo necesaria una conexi\u00f3n activa al servidor de base de datos."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "PreparedStatement no tiene relaci\u00f3n con la apariencia visual de la consola ni con el uso de colores."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "PreparedStatement no busca hacer ilegible el c\u00f3digo fuente. Al contrario, suele mejorar la claridad y seguridad del c\u00f3digo al separar consulta y par\u00e1metros."
+                }
+            ],
+            "resumen_didactico": "Statement ejecuta SQL construido directamente como texto. PreparedStatement trabaja con par\u00e1metros, evita concatenar datos del usuario dentro del SQL y ayuda a prevenir inyecciones SQL.",
+            "ejemplo_practico": "En lugar de construir una consulta como \"SELECT * FROM usuarios WHERE email = '\" + email + \"'\", se usa PreparedStatement con un par\u00e1metro: \"SELECT * FROM usuarios WHERE email = ?\" y luego se asigna el valor con setString().",
+            "conclusion_final": "La respuesta correcta es que PreparedStatement previene ataques de inyecci\u00f3n SQL y permite la pre-compilaci\u00f3n de la consulta en la base de datos."
+        }
+    },
+    {
+        "id": "UT9-Q38",
+        "tema": "UT9 Colecciones y tipos abstractos de datos",
+        "pregunta": "Al trabajar con colecciones, \u00bfcu\u00e1l es la diferencia de comportamiento entre un HashMap y un TreeMap?",
+        "contexto": "Se pregunta por la diferencia principal entre dos implementaciones de Map en Java: una basada en tabla hash y otra basada en estructura ordenada por clave.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "HashMap no garantiza ning\u00fan orden; TreeMap ordena los elementos por su orden natural de clave."
+            },
+            {
+                "clave": "b",
+                "texto": "TreeMap es una estructura est\u00e1tica de tama\u00f1o fijo."
+            },
+            {
+                "clave": "c",
+                "texto": "HashMap es m\u00e1s lento pero m\u00e1s seguro."
+            },
+            {
+                "clave": "d",
+                "texto": "HashMap solo permite guardar datos de tipo booleano"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "HashMap y TreeMap son implementaciones de la interfaz Map, pero tienen comportamientos distintos. HashMap almacena pares clave-valor sin garantizar un orden concreto de recorrido. TreeMap, en cambio, mantiene las claves ordenadas seg\u00fan su orden natural o mediante un comparador definido.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "TreeMap no es una estructura est\u00e1tica de tama\u00f1o fijo. Es una colecci\u00f3n din\u00e1mica que puede crecer o reducirse seg\u00fan se a\u00f1adan o eliminen elementos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "No es correcto afirmar que HashMap sea m\u00e1s lento por norma general. De hecho, HashMap suele ser m\u00e1s r\u00e1pido para b\u00fasquedas directas por clave, mientras que TreeMap aporta ordenaci\u00f3n."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "HashMap no est\u00e1 limitado a datos booleanos. Puede almacenar claves y valores de distintos tipos de objeto, por ejemplo String, Integer, Usuario o Producto."
+                }
+            ],
+            "resumen_didactico": "HashMap se usa cuando interesa rapidez y no importa el orden. TreeMap se usa cuando necesitas que las claves est\u00e9n ordenadas.",
+            "ejemplo_practico": "Si guardas empleados por ID y solo quieres buscarlos r\u00e1pido, puedes usar HashMap. Si quieres recorrerlos ordenados por ID, TreeMap ser\u00eda m\u00e1s adecuado.",
+            "conclusion_final": "La respuesta correcta es que HashMap no garantiza ning\u00fan orden, mientras que TreeMap ordena los elementos por el orden natural de sus claves."
+        }
+    },
+    {
+        "id": "UT12-Q39",
+        "tema": "UT12 Lectura y escritura de informaci\u00f3n",
+        "pregunta": "\u00bfQu\u00e9 caracter\u00edstica define a una \"Interfaz de Marcado\" como Serializable?",
+        "contexto": "Se pregunta por el concepto de interfaz de marcado en Java, especialmente aplicado a Serializable dentro del proceso de serializaci\u00f3n de objetos.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Que impide que la clase sea instanciada."
+            },
+            {
+                "clave": "b",
+                "texto": "Que solo puede usarse en interfaces gr\u00e1ficas Swing."
+            },
+            {
+                "clave": "c",
+                "texto": "Que tiene al menos diez m\u00e9todos abstractos."
+            },
+            {
+                "clave": "d",
+                "texto": "Que no contiene ning\u00fan m\u00e9todo y solo sirve para dar una \"etiqueta\" de capacidad a la clase."
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "Una interfaz de marcado, como Serializable, no contiene m\u00e9todos que la clase deba implementar. Su funci\u00f3n es actuar como una etiqueta que indica a Java que la clase posee una capacidad especial. En el caso de Serializable, indica que los objetos de esa clase pueden convertirse en un flujo de bytes para ser guardados o transmitidos.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Serializable no impide instanciar una clase. Una clase que implementa Serializable puede seguir creando objetos normalmente."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Serializable no pertenece exclusivamente a Swing ni a interfaces gr\u00e1ficas. Se usa en procesos de serializaci\u00f3n de objetos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Una interfaz de marcado se caracteriza precisamente por no tener m\u00e9todos abstractos que implementar."
+                }
+            ],
+            "resumen_didactico": "Una interfaz de marcado no obliga a escribir m\u00e9todos; simplemente marca una clase con una capacidad reconocida por Java.",
+            "ejemplo_practico": "Si una clase Usuario implements Serializable, Java entiende que sus objetos pueden serializarse y guardarse en un archivo mediante ObjectOutputStream.",
+            "conclusion_final": "La respuesta correcta es que no contiene ning\u00fan m\u00e9todo y solo sirve para dar una etiqueta de capacidad a la clase."
+        }
+    },
+    {
+        "id": "UT15-Q40",
+        "tema": "UT15 Creaci\u00f3n de interfaces gr\u00e1ficas",
+        "pregunta": "\u00bfCu\u00e1l es la funci\u00f3n del Layout Manager en una interfaz gr\u00e1fica de Java?",
+        "contexto": "Se pregunta por el componente encargado de gestionar la distribuci\u00f3n visual de los elementos dentro de una ventana o contenedor gr\u00e1fico en Java.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Dibujar iconos personalizados en el escritorio."
+            },
+            {
+                "clave": "b",
+                "texto": "Gestionar las contrase\u00f1as de los usuarios."
+            },
+            {
+                "clave": "c",
+                "texto": "Organizar autom\u00e1ticamente el tama\u00f1o y la posici\u00f3n de los componentes en la ventana."
+            },
+            {
+                "clave": "d",
+                "texto": "Conectar los botones con la base de datos relacional."
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "En Java, un Layout Manager se encarga de organizar autom\u00e1ticamente los componentes gr\u00e1ficos dentro de un contenedor, como una ventana, panel o formulario. Gestiona la posici\u00f3n y el tama\u00f1o de elementos como botones, etiquetas, campos de texto o listas, evitando tener que colocarlos manualmente con coordenadas fijas.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Dibujar iconos personalizados no es la funci\u00f3n principal de un Layout Manager. Eso estar\u00eda relacionado con gr\u00e1ficos, im\u00e1genes o personalizaci\u00f3n visual."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Gestionar contrase\u00f1as pertenece a la l\u00f3gica de seguridad o autenticaci\u00f3n de una aplicaci\u00f3n, no a la organizaci\u00f3n visual de una interfaz gr\u00e1fica."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Conectar botones con una base de datos forma parte de la l\u00f3gica de eventos y acceso a datos, no del trabajo del Layout Manager."
+                }
+            ],
+            "resumen_didactico": "El Layout Manager decide c\u00f3mo se colocan y ajustan los componentes dentro de la interfaz gr\u00e1fica.",
+            "ejemplo_practico": "Si una ventana tiene un bot\u00f3n, una etiqueta y un campo de texto, el Layout Manager puede distribuirlos autom\u00e1ticamente en filas, columnas o zonas sin que el programador tenga que indicar coordenadas exactas.",
+            "conclusion_final": "La respuesta correcta es organizar autom\u00e1ticamente el tama\u00f1o y la posici\u00f3n de los componentes en la ventana."
+        }
+    }
+]

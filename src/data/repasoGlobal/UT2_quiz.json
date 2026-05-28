@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 Explotación de sistemas microinformáticos",
+    "pregunta": "¿Qué define mejor a “software de aplicación”?",
+    "contexto": "Clasificación del software según su función dentro de un sistema informático.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Conjunto de módulos del kernel"
+      },
+      {
+        "clave": "b",
+        "texto": "Programas para tareas específicas como ofimática o juegos"
+      },
+      {
+        "clave": "c",
+        "texto": "Tabla de particiones"
+      },
+      {
+        "clave": "d",
+        "texto": "Firmware de la PSU"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El software de aplicación es un tipo de software diseñado para realizar tareas específicas y de uso cotidiano, como aplicaciones ofimáticas, juegos, navegadores o programas de diseño. Se diferencia del software de sistema, que actúa como intermediario entre el usuario y el hardware.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El kernel forma parte del sistema operativo y pertenece al software de sistema, no al software de aplicación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una tabla de particiones pertenece a la organización del almacenamiento de un disco, no es un programa destinado a tareas específicas del usuario."
+        },
+        {
+          "clave": "d",
+          "motivo": "El firmware es software integrado en un dispositivo hardware para controlar su funcionamiento básico; no corresponde al software de aplicación."
+        }
+      ],
+      "resumen_didactico": "El software de aplicación es el que utiliza directamente el usuario para realizar tareas concretas, como escribir documentos, editar imágenes, navegar por Internet o jugar.",
+      "ejemplo_practico": "Microsoft Word, Excel, Photoshop, un navegador web o un videojuego son ejemplos de software de aplicación porque sirven para tareas específicas del usuario.",
+      "conclusion_final": "La respuesta correcta es la b, porque el software de aplicación se define como programas destinados a tareas específicas como ofimática o juegos."
+    }
+  },
+  {
+    "id": "UT2-Q02",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "En un PC con SSD y 8 GB de RAM, se abren varias apps pesadas y el sistema empieza a usar mucho disco. ¿Qué decisión mejora la experiencia con bajo coste?",
+    "contexto": "Uso intensivo de memoria RAM y aumento del intercambio con disco mediante memoria virtual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aumentar la RAM para reducir el intercambio con disco"
+      },
+      {
+        "clave": "b",
+        "texto": "Pasar de UEFI a Legacy sin motivo"
+      },
+      {
+        "clave": "c",
+        "texto": "Desinstalar la BIOS"
+      },
+      {
+        "clave": "d",
+        "texto": "Cambiar de monitor"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El sistema operativo gestiona la memoria RAM y, cuando esta no es suficiente, utiliza memoria virtual en el disco como extensión temporal. Si se abren muchas aplicaciones pesadas y el equipo empieza a usar mucho disco, significa que está intercambiando datos entre RAM y almacenamiento, lo que ralentiza el sistema. Aumentar la RAM reduce ese intercambio y mejora la experiencia con un coste relativamente bajo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Cambiar de UEFI a Legacy afecta al modo de arranque del sistema, pero no soluciona un problema de falta de memoria RAM ni reduce el uso intensivo del disco."
+        },
+        {
+          "clave": "c",
+          "motivo": "La BIOS/UEFI no se desinstala; es el firmware básico de la placa base encargado de iniciar el equipo y preparar el arranque."
+        },
+        {
+          "clave": "d",
+          "motivo": "Cambiar de monitor no mejora la gestión de memoria ni reduce el intercambio con disco provocado por falta de RAM."
+        }
+      ],
+      "resumen_didactico": "Cuando falta RAM, el sistema usa el disco como memoria virtual. Aunque haya SSD, el acceso al disco sigue siendo más lento que la RAM. Por eso, ampliar la memoria reduce la carga sobre el disco y mejora el rendimiento.",
+      "ejemplo_practico": "Si un equipo con 8 GB de RAM abre navegador con muchas pestañas, editor de imágenes y varias aplicaciones de oficina, puede empezar a usar memoria virtual. Al ampliar a 16 GB, más datos permanecen en RAM y el sistema responde con mayor fluidez.",
+      "conclusion_final": "La respuesta correcta es la a, porque aumentar la RAM reduce el intercambio con disco y mejora el rendimiento cuando se ejecutan varias aplicaciones pesadas."
+    }
+  },
+  {
+    "id": "UT1-Q03",
+    "tema": "UT1 Explotación de sistemas microinformáticos",
+    "pregunta": "¿Qué herramienta de Windows centraliza la visualización y actualización de controladores de dispositivos?",
+    "contexto": "Gestión de dispositivos y actualización de drivers en Microsoft Windows.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Administrador de dispositivos"
+      },
+      {
+        "clave": "b",
+        "texto": "Programador de tareas"
+      },
+      {
+        "clave": "c",
+        "texto": "Administrador de tareas"
+      },
+      {
+        "clave": "d",
+        "texto": "Editor del Registro"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Windows, el Administrador de dispositivos permite visualizar los componentes hardware instalados, detectar dispositivos con problemas o sin controlador y acceder a la pestaña Controlador para instalar, actualizar o administrar drivers.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El Programador de tareas sirve para automatizar la ejecución de tareas en momentos concretos, no para visualizar ni actualizar controladores de dispositivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El Administrador de tareas permite ver procesos, rendimiento y aplicaciones en ejecución, pero no es la herramienta principal para gestionar drivers."
+        },
+        {
+          "clave": "d",
+          "motivo": "El Editor del Registro permite modificar configuraciones internas avanzadas de Windows, pero no se usa como herramienta central para actualizar controladores."
+        }
+      ],
+      "resumen_didactico": "Para revisar dispositivos, detectar errores de drivers o actualizar controladores en Windows, la herramienta correcta es el Administrador de dispositivos.",
+      "ejemplo_practico": "Si una tarjeta gráfica aparece con un icono de advertencia, puedes abrir el Administrador de dispositivos, entrar en sus propiedades y actualizar el controlador desde la pestaña correspondiente.",
+      "conclusion_final": "La respuesta correcta es la a, porque el Administrador de dispositivos centraliza la visualización y actualización de controladores en Windows."
+    }
+  },
+  {
+    "id": "UT1-Q04",
+    "tema": "UT1 Explotación de sistemas microinformáticos",
+    "pregunta": "En un laboratorio de pruebas, necesitas ejecutar varios sistemas en la misma máquina física sin que un fallo afecte a los demás. ¿Qué tecnología empleas?",
+    "contexto": "Ejecución de varios sistemas operativos aislados sobre una misma máquina física para pruebas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Empalmar dos PSUs"
+      },
+      {
+        "clave": "b",
+        "texto": "RAID 0"
+      },
+      {
+        "clave": "c",
+        "texto": "Virtualización con hipervisor tipo 2 como VirtualBox"
+      },
+      {
+        "clave": "d",
+        "texto": "Overclock sin control"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La virtualización permite ejecutar sistemas operativos o aplicaciones en entornos aislados llamados máquinas virtuales. Un hipervisor o VMM gestiona esas máquinas. En el caso de VirtualBox, se trata de un hipervisor de tipo 2, porque funciona sobre un sistema operativo anfitrión. Esta tecnología permite probar varios sistemas en la misma máquina física sin que un fallo en una máquina virtual afecte directamente a las demás.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Empalmar dos fuentes de alimentación no permite ejecutar sistemas aislados y además sería una práctica peligrosa e inadecuada."
+        },
+        {
+          "clave": "b",
+          "motivo": "RAID 0 combina discos para mejorar rendimiento, pero no proporciona aislamiento de sistemas operativos ni evita que un fallo lógico afecte al entorno."
+        },
+        {
+          "clave": "d",
+          "motivo": "El overclock aumenta frecuencias de componentes para obtener más rendimiento, pero no sirve para ejecutar varios sistemas aislados y puede provocar inestabilidad si se hace sin control."
+        }
+      ],
+      "resumen_didactico": "Si necesitas varios sistemas funcionando en una misma máquina física y separados entre sí, debes usar virtualización. Cada máquina virtual actúa como un entorno independiente.",
+      "ejemplo_practico": "En un PC con Windows como sistema anfitrión, puedes instalar VirtualBox y crear una máquina virtual con Debian, otra con Windows Server y otra con Ubuntu para hacer pruebas sin modificar el equipo principal.",
+      "conclusion_final": "La respuesta correcta es la c, porque la virtualización con un hipervisor tipo 2 como VirtualBox permite ejecutar sistemas aislados en una misma máquina física."
+    }
+  },
+  {
+    "id": "UT1-Q05",
+    "tema": "UT1 Explotación de sistemas microinformáticos",
+    "pregunta": "En un taller de Valencia, un PC no arranca y emite tres pitidos cortos tras encenderse. El cliente necesita el equipo para facturar en una hora. ¿Qué harías primero?",
+    "contexto": "Diagnóstico inicial de un fallo de arranque mediante códigos de pitidos del POST en BIOS/UEFI.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Probar con otra tarjeta gráfica"
+      },
+      {
+        "clave": "b",
+        "texto": "Cambiar la fuente de alimentación"
+      },
+      {
+        "clave": "c",
+        "texto": "Consultar el manual de la BIOS/UEFI para códigos de pitidos y revisar la RAM"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el sistema operativo desde USB"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Durante el arranque, la BIOS/UEFI realiza el POST, una comprobación inicial de componentes como CPU, memoria RAM, gráfica, almacenamiento y puertos. Si detecta un fallo, puede emitir pitidos cuyo significado depende del fabricante. Por eso, ante tres pitidos cortos, lo primero es consultar el manual de la BIOS/UEFI o de la placa base para interpretar el código y revisar el componente indicado, que normalmente puede estar relacionado con la RAM.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Probar otra tarjeta gráfica podría tener sentido si el código de pitidos indicara fallo gráfico, pero no debe ser el primer paso sin interpretar antes el código de la BIOS/UEFI."
+        },
+        {
+          "clave": "b",
+          "motivo": "Cambiar la fuente de alimentación no es lo primero si el equipo enciende y emite pitidos, porque eso indica que al menos hay alimentación suficiente para iniciar el POST."
+        },
+        {
+          "clave": "d",
+          "motivo": "Reinstalar el sistema operativo no resolvería un fallo detectado antes de cargar el sistema. Si el POST falla, el problema está en hardware o configuración básica, no en Windows o Linux."
+        }
+      ],
+      "resumen_didactico": "Los pitidos al arrancar son códigos de diagnóstico del POST. Antes de cambiar piezas o reinstalar el sistema, hay que interpretar el código según el manual de la BIOS/UEFI y revisar el componente afectado.",
+      "ejemplo_practico": "Si un PC emite tres pitidos cortos y el manual de la placa indica error de memoria, lo correcto sería apagar el equipo, revisar que los módulos RAM estén bien colocados, probarlos uno a uno o cambiar de ranura.",
+      "conclusion_final": "La respuesta correcta es la c, porque ante pitidos del POST lo primero es consultar el código en el manual de la BIOS/UEFI y revisar el componente indicado, especialmente la RAM si el código apunta a memoria."
+    }
+  },
+  {
+    "id": "UT1-Q06",
+    "tema": "UT1 Explotación de sistemas microinformáticos",
+    "pregunta": "¿Qué función del sistema operativo evita conflictos al asignar CPU a programas?",
+    "contexto": "Funciones del sistema operativo relacionadas con la ejecución de programas y el uso del procesador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gestión de usuarios"
+      },
+      {
+        "clave": "b",
+        "texto": "Gestión de dispositivos"
+      },
+      {
+        "clave": "c",
+        "texto": "Gestión de archivos"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestión de procesos"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La gestión de procesos es la función del sistema operativo encargada de controlar la ejecución de los programas, asignar tiempo de CPU, iniciar, pausar, reanudar y finalizar procesos. Su objetivo es garantizar que los programas puedan utilizar los recursos del sistema sin producir conflictos entre ellos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La gestión de usuarios se ocupa de cuentas, permisos y seguridad de acceso, pero no de repartir la CPU entre programas."
+        },
+        {
+          "clave": "b",
+          "motivo": "La gestión de dispositivos controla periféricos y hardware mediante controladores, pero no organiza directamente la ejecución de procesos en la CPU."
+        },
+        {
+          "clave": "c",
+          "motivo": "La gestión de archivos se encarga de crear, leer, modificar, eliminar y organizar archivos, no de asignar procesador a programas."
+        }
+      ],
+      "resumen_didactico": "Cuando varios programas quieren ejecutarse al mismo tiempo, el sistema operativo usa la gestión de procesos para decidir cuál usa la CPU y durante cuánto tiempo.",
+      "ejemplo_practico": "Si tienes abierto un navegador, un editor de texto y un antivirus, el sistema operativo reparte el uso del procesador entre esos procesos para que todos funcionen sin bloquearse entre sí.",
+      "conclusion_final": "La respuesta correcta es la d, porque la gestión de procesos evita conflictos al controlar cómo se asigna la CPU a los programas en ejecución."
+    }
+  },
+  {
+    "id": "UT1-Q07",
+    "tema": "UT1 Explotación de sistemas microinformáticos",
+    "pregunta": "¿Qué componente de placa base conecta CPU con RAM y dispositivos coordinando el tráfico?",
+    "contexto": "Componentes principales de la placa base y coordinación entre procesador, memoria y dispositivos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ventilador frontal"
+      },
+      {
+        "clave": "b",
+        "texto": "Disipador"
+      },
+      {
+        "clave": "c",
+        "texto": "Convertidor de vídeo"
+      },
+      {
+        "clave": "d",
+        "texto": "Chipset"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El chipset es uno de los componentes principales de la placa base. Su función es coordinar y sincronizar la comunicación entre los distintos componentes del sistema, como la CPU, la memoria RAM, los dispositivos de almacenamiento, las ranuras de expansión y otros elementos conectados a la placa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El ventilador frontal ayuda a mover aire dentro de la caja para mejorar la refrigeración, pero no coordina la comunicación entre CPU, RAM y dispositivos."
+        },
+        {
+          "clave": "b",
+          "motivo": "El disipador se encarga de extraer calor del procesador u otros componentes, pero no gestiona el tráfico de datos de la placa base."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un convertidor de vídeo sirve para adaptar una señal de imagen entre distintos conectores o formatos, pero no coordina los componentes internos del sistema."
+        }
+      ],
+      "resumen_didactico": "El chipset actúa como un centro de coordinación dentro de la placa base, permitiendo que CPU, RAM, almacenamiento y dispositivos se comuniquen correctamente.",
+      "ejemplo_practico": "Cuando el procesador necesita acceder a datos de la RAM o comunicarse con un dispositivo conectado por PCIe o SATA, el chipset interviene coordinando esa comunicación según la arquitectura de la placa.",
+      "conclusion_final": "La respuesta correcta es la d, porque el chipset es el componente de la placa base que coordina el tráfico entre CPU, RAM y dispositivos."
+    }
+  },
+  {
+    "id": "UT2-Q08",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "¿Qué sistema de Apple gestiona ordenadores de sobremesa y portátiles?",
+    "contexto": "Sistemas operativos actuales de Apple según el tipo de dispositivo en el que se utilizan.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "macOS"
+      },
+      {
+        "clave": "b",
+        "texto": "tvOS"
+      },
+      {
+        "clave": "c",
+        "texto": "watchOS"
+      },
+      {
+        "clave": "d",
+        "texto": "iOS"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Apple desarrolla varios sistemas operativos según el dispositivo. macOS es el sistema operativo destinado a ordenadores de sobremesa y portátiles de Apple, como iMac y MacBook. En cambio, otros sistemas como iOS, watchOS o tvOS están orientados a dispositivos diferentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "tvOS es el sistema operativo utilizado en Apple TV, no en ordenadores de sobremesa ni portátiles."
+        },
+        {
+          "clave": "c",
+          "motivo": "watchOS es el sistema operativo del Apple Watch, por tanto está asociado a relojes inteligentes, no a ordenadores."
+        },
+        {
+          "clave": "d",
+          "motivo": "iOS es el sistema operativo de los iPhone, no el sistema usado en los ordenadores Mac."
+        }
+      ],
+      "resumen_didactico": "Para ordenadores Apple se usa macOS. Para móviles se usa iOS, para relojes watchOS y para Apple TV tvOS.",
+      "ejemplo_practico": "Un MacBook Air o un iMac utilizan macOS como sistema operativo principal para gestionar aplicaciones, archivos, usuarios y recursos del equipo.",
+      "conclusion_final": "La respuesta correcta es la a, porque macOS es el sistema operativo de Apple para ordenadores de sobremesa y portátiles."
+    }
+  },
+  {
+    "id": "UT2-Q09",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "Estás automatizando despliegues de Windows 10 en 50 equipos idénticos. Además de Windows SIM, ¿qué pieza clave debes distribuir?",
+    "contexto": "Instalación desatendida de Windows 10 mediante Windows System Image Manager y archivo de respuestas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Script de GParted"
+      },
+      {
+        "clave": "b",
+        "texto": "Archivo hosts global"
+      },
+      {
+        "clave": "c",
+        "texto": "ISO de macOS"
+      },
+      {
+        "clave": "d",
+        "texto": "Archivo de respuestas Autounattend.xml integrado en el medio"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En una instalación desatendida de Windows 10, Windows SIM permite crear un archivo de respuestas que automatiza partes del proceso de instalación. Ese archivo, normalmente llamado Autounattend.xml, debe integrarse o distribuirse junto al medio de instalación para que los equipos puedan instalarse automáticamente siguiendo la configuración definida.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "GParted es una herramienta de particionado, especialmente asociada a entornos Linux, pero no es la pieza clave de una instalación desatendida de Windows 10 con Windows SIM."
+        },
+        {
+          "clave": "b",
+          "motivo": "El archivo hosts sirve para resolver nombres de dominio de forma local, pero no automatiza la instalación del sistema operativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una ISO de macOS pertenece al sistema operativo de Apple y no tiene relación con el despliegue automatizado de Windows 10 en equipos idénticos."
+        }
+      ],
+      "resumen_didactico": "Para automatizar instalaciones de Windows se necesita un archivo de respuestas. Windows SIM ayuda a generarlo, pero el archivo que se distribuye con el medio es Autounattend.xml.",
+      "ejemplo_practico": "En una empresa con 50 ordenadores iguales, se prepara un USB de instalación de Windows 10 que incluye Autounattend.xml. Al arrancar desde ese USB, la instalación aplica automáticamente idioma, particionado, usuario, clave o configuración definida.",
+      "conclusion_final": "La respuesta correcta es la d, porque el archivo Autounattend.xml integrado en el medio permite que la instalación de Windows 10 se ejecute de forma desatendida."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "En Windows 10, ¿dónde activar o desactivar “Características” del sistema además de desinstalar programas?",
+    "contexto": "Gestión de aplicaciones instaladas y características opcionales del sistema en Windows 10.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Servicios"
+      },
+      {
+        "clave": "b",
+        "texto": "Directiva de seguridad local"
+      },
+      {
+        "clave": "c",
+        "texto": "Aplicaciones y características → Programas y características"
+      },
+      {
+        "clave": "d",
+        "texto": "Firewall avanzado"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En Windows 10, la gestión de programas instalados y de características del sistema se realiza desde el apartado de Aplicaciones y características, accediendo después a Programas y características. Desde ahí se pueden desinstalar programas y también activar o desactivar características de Windows.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Servicios permite iniciar, detener o configurar servicios del sistema, pero no es la ubicación principal para desinstalar programas ni activar características de Windows."
+        },
+        {
+          "clave": "b",
+          "motivo": "La Directiva de seguridad local sirve para configurar políticas de seguridad del equipo, no para gestionar programas instalados o características del sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Firewall avanzado se utiliza para configurar reglas de entrada y salida de red, no para activar o desactivar características generales de Windows."
+        }
+      ],
+      "resumen_didactico": "Para desinstalar programas o activar y desactivar características de Windows, se accede a Aplicaciones y características y después a Programas y características.",
+      "ejemplo_practico": "Si necesitas activar una característica como Hyper-V o desactivar una función opcional de Windows, puedes hacerlo desde Programas y características, en la opción de activar o desactivar características de Windows.",
+      "conclusion_final": "La respuesta correcta es la c, porque Aplicaciones y características → Programas y características es la ruta adecuada para gestionar programas y características del sistema en Windows 10."
+    }
+  },
+  {
+    "id": "UT2-Q11",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "En una oficina de Vigo, un técnico necesita instalar software en Debian de forma visual porque el cliente no domina la terminal. ¿Qué herramienta gráfica puede usar para gestionar paquetes .deb?",
+    "contexto": "Gestión gráfica de software y paquetes en sistemas Debian.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "dnfdragora"
+      },
+      {
+        "clave": "b",
+        "texto": "Synaptic"
+      },
+      {
+        "clave": "c",
+        "texto": "YaST"
+      },
+      {
+        "clave": "d",
+        "texto": "Chocolatey"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En Debian, además de instalar software mediante comandos en terminal, se pueden usar herramientas gráficas para gestionar paquetes. Synaptic es un gestor gráfico de paquetes que permite buscar, instalar, actualizar y eliminar software basado en paquetes .deb de forma visual.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "dnfdragora es una herramienta gráfica asociada al gestor DNF, usado en distribuciones como Fedora, no es la opción propia para gestionar paquetes .deb en Debian."
+        },
+        {
+          "clave": "c",
+          "motivo": "YaST es una herramienta de administración característica de SUSE/openSUSE, no de Debian."
+        },
+        {
+          "clave": "d",
+          "motivo": "Chocolatey es un gestor de paquetes para Windows, no para Debian ni para paquetes .deb."
+        }
+      ],
+      "resumen_didactico": "Si el usuario no domina la terminal en Debian, Synaptic permite instalar y gestionar paquetes de forma gráfica.",
+      "ejemplo_practico": "Un técnico puede abrir Synaptic, buscar un programa, marcarlo para instalar y aplicar los cambios sin escribir comandos como apt install en la terminal.",
+      "conclusion_final": "La respuesta correcta es la b, porque Synaptic es una herramienta gráfica adecuada para gestionar paquetes .deb en Debian."
+    }
+  },
+  {
+    "id": "UT2-Q12",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "¿Qué función del sistema operativo organiza el acceso ordenado a CPU por parte de procesos e hilos?",
+    "contexto": "Funciones del sistema operativo relacionadas con la planificación de procesos e hilos y el uso del procesador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gestión de procesos"
+      },
+      {
+        "clave": "b",
+        "texto": "Gestión de entrada/salida"
+      },
+      {
+        "clave": "c",
+        "texto": "Gestión de la interfaz de usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "Gestión del almacenamiento secundario"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La gestión de procesos es la función del sistema operativo que organiza qué procesos e hilos acceden a la CPU y en qué momento. El sistema operativo reparte el tiempo del procesador entre varias tareas, aplica políticas de planificación y coordina la ejecución para evitar conflictos y mantener el sistema funcionando correctamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La gestión de entrada/salida se encarga de coordinar periféricos, drivers, búferes y dispositivos como impresoras, discos o tarjetas de red, pero no organiza directamente el acceso de procesos e hilos a la CPU."
+        },
+        {
+          "clave": "c",
+          "motivo": "La gestión de la interfaz de usuario permite que el usuario interactúe con el sistema mediante entorno gráfico o línea de comandos, pero no planifica la ejecución en el procesador."
+        },
+        {
+          "clave": "d",
+          "motivo": "La gestión del almacenamiento secundario organiza archivos, directorios y sistemas de archivos en disco, pero no decide qué proceso o hilo usa la CPU."
+        }
+      ],
+      "resumen_didactico": "Cuando varios procesos o hilos quieren usar el procesador, el sistema operativo utiliza la gestión de procesos para repartir el tiempo de CPU de forma ordenada.",
+      "ejemplo_practico": "Si tienes abierto un navegador, un antivirus y un editor de texto, el sistema operativo decide qué proceso usa la CPU en cada momento para que todos puedan ejecutarse sin bloquear el equipo.",
+      "conclusion_final": "La respuesta correcta es la a, porque la gestión de procesos organiza el acceso ordenado a la CPU por parte de procesos e hilos."
+    }
+  },
+  {
+    "id": "UT2-Q13",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "¿Cuál es una ventaja clave de GPT frente a MBR?",
+    "contexto": "Comparación entre esquemas de particionado de discos GPT y MBR.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite mayor número de particiones y redundancia de la tabla"
+      },
+      {
+        "clave": "b",
+        "texto": "GPT no necesita particiones"
+      },
+      {
+        "clave": "c",
+        "texto": "Solo funciona con BIOS heredado"
+      },
+      {
+        "clave": "d",
+        "texto": "Impide el uso de SSD"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "GPT es un esquema de particionado más moderno que MBR. Frente a MBR, permite trabajar con discos de mayor tamaño, admite más particiones y mantiene copias redundantes de la información de la tabla de particiones, lo que mejora la fiabilidad ante errores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "GPT sí utiliza particiones; lo que cambia respecto a MBR es la forma de organizarlas y gestionarlas."
+        },
+        {
+          "clave": "c",
+          "motivo": "GPT se asocia normalmente a sistemas modernos con UEFI, no a BIOS heredado como única opción."
+        },
+        {
+          "clave": "d",
+          "motivo": "GPT no impide el uso de SSD. Al contrario, es habitual usar GPT en discos modernos, incluidos SSD."
+        }
+      ],
+      "resumen_didactico": "MBR es un sistema de particionado más antiguo y limitado. GPT es más moderno, permite más particiones y guarda información redundante para mejorar la recuperación ante fallos.",
+      "ejemplo_practico": "En un equipo actual con UEFI y un SSD grande, usar GPT permite crear varias particiones sin las limitaciones clásicas de MBR y con mayor seguridad en la estructura del disco.",
+      "conclusion_final": "La respuesta correcta es la a, porque GPT permite mayor número de particiones y redundancia de la tabla frente a MBR."
+    }
+  },
+  {
+    "id": "UT2-Q14",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "¿Qué edición de Windows Server se orienta a entornos muy virtualizados?",
+    "contexto": "Ediciones de Windows Server según el tipo de entorno empresarial y nivel de virtualización.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Essentials"
+      },
+      {
+        "clave": "b",
+        "texto": "Datacenter"
+      },
+      {
+        "clave": "c",
+        "texto": "Standard"
+      },
+      {
+        "clave": "d",
+        "texto": "Home"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Windows Server Datacenter está orientado a entornos empresariales avanzados, especialmente centros de datos, nube y escenarios con alta virtualización. Es la edición adecuada cuando se necesitan muchas máquinas virtuales o una infraestructura muy virtualizada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Essentials está pensado para pequeños negocios con un número limitado de usuarios y dispositivos, no para entornos muy virtualizados."
+        },
+        {
+          "clave": "c",
+          "motivo": "Standard está orientado a entornos con poca virtualización, por lo que no es la opción más adecuada para escenarios muy virtualizados."
+        },
+        {
+          "clave": "d",
+          "motivo": "Home es una edición de Windows de escritorio, no una edición de Windows Server."
+        }
+      ],
+      "resumen_didactico": "Si el entorno tiene mucha virtualización, la edición adecuada de Windows Server es Datacenter. Si la virtualización es baja, se suele asociar a Standard.",
+      "ejemplo_practico": "Una empresa que necesita ejecutar muchos servidores virtuales sobre una misma infraestructura física usaría Windows Server Datacenter para soportar mejor ese entorno virtualizado.",
+      "conclusion_final": "La respuesta correcta es la b, porque Windows Server Datacenter se orienta a entornos muy virtualizados."
+    }
+  },
+  {
+    "id": "UT2-Q15",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "Se requiere mayor tolerancia (dos discos pueden fallar) en un chasis con muchos discos, aceptando escrituras más lentas. ¿Qué nivel propones?",
+    "contexto": "Selección de nivel RAID según tolerancia a fallos, número de discos y rendimiento de escritura.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "RAID 10"
+      },
+      {
+        "clave": "b",
+        "texto": "RAID 0+1 con 2 discos"
+      },
+      {
+        "clave": "c",
+        "texto": "RAID 6"
+      },
+      {
+        "clave": "d",
+        "texto": "RAID 1"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "RAID 6 utiliza paridad doble distribuida, lo que permite que puedan fallar hasta dos discos sin perder los datos. Es adecuado para sistemas con muchos discos donde se prioriza la tolerancia a fallos, aunque las escrituras son más lentas porque hay que calcular y escribir doble paridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "RAID 10 combina espejo y distribución, ofrece buen rendimiento y tolerancia, pero no garantiza de forma general la caída de dos discos cualesquiera; depende de qué discos fallen."
+        },
+        {
+          "clave": "b",
+          "motivo": "RAID 0+1 necesita más de dos discos para tener sentido y no es la opción adecuada si se busca tolerancia clara a dos fallos en un chasis con muchos discos."
+        },
+        {
+          "clave": "d",
+          "motivo": "RAID 1 duplica datos en espejo y suele tolerar el fallo de un disco en una pareja, pero no está pensado para aprovechar muchos discos con doble tolerancia mediante paridad."
+        }
+      ],
+      "resumen_didactico": "Si necesitas que puedan fallar dos discos y aceptas menor velocidad de escritura, RAID 6 es la opción más adecuada porque usa doble paridad.",
+      "ejemplo_practico": "En un servidor con muchos discos para almacenar copias o datos importantes, RAID 6 permite seguir funcionando aunque fallen dos unidades, dando margen para sustituirlas sin pérdida de información.",
+      "conclusion_final": "La respuesta correcta es la c, porque RAID 6 ofrece tolerancia al fallo de dos discos mediante doble paridad, aunque penaliza el rendimiento de escritura."
+    }
+  },
+  {
+    "id": "UT2-Q16",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "En Windows, necesitas crear un volumen reflejado para redundancia desde la interfaz. ¿Qué herramienta usarás?",
+    "contexto": "Creación de volúmenes reflejados en Windows para aumentar la redundancia de datos mediante interfaz gráfica.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diskpart en Linux"
+      },
+      {
+        "clave": "b",
+        "texto": "Administrador de discos"
+      },
+      {
+        "clave": "c",
+        "texto": "CMD con more"
+      },
+      {
+        "clave": "d",
+        "texto": "BIOS/UEFI"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En Windows, el Administrador de discos permite gestionar unidades, particiones y volúmenes desde una interfaz gráfica. Desde esta herramienta se pueden crear distintos tipos de volúmenes, entre ellos volúmenes reflejados, que duplican la información en otro disco para aportar redundancia frente a fallos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Diskpart es una herramienta de línea de comandos de Windows, no de Linux. Además, la pregunta pide hacerlo desde la interfaz gráfica."
+        },
+        {
+          "clave": "c",
+          "motivo": "CMD con more sirve para mostrar información paginada en consola, pero no para crear volúmenes reflejados desde una interfaz gráfica."
+        },
+        {
+          "clave": "d",
+          "motivo": "La BIOS/UEFI permite configurar aspectos básicos del hardware y del arranque, pero no es la herramienta de Windows para crear volúmenes reflejados."
+        }
+      ],
+      "resumen_didactico": "Para crear o administrar volúmenes en Windows desde una interfaz gráfica, la herramienta adecuada es el Administrador de discos.",
+      "ejemplo_practico": "Si tienes dos discos y quieres que los datos se dupliquen automáticamente para protegerte ante el fallo de uno de ellos, puedes crear un volumen reflejado desde el Administrador de discos.",
+      "conclusion_final": "La respuesta correcta es la b, porque el Administrador de discos es la herramienta gráfica de Windows para crear un volumen reflejado con redundancia."
+    }
+  },
+  {
+    "id": "UT3-Q17",
+    "tema": "UT3 Gestión de la Información",
+    "pregunta": "En una asesoría de Vigo, una tarjeta SD formateada para cámaras 4K debe usarse en Windows y macOS sin límites de 4 GB por archivo. ¿Qué formato eliges para prepararla?",
+    "contexto": "Elección de sistema de archivos para una tarjeta SD usada en cámaras 4K y compatible con Windows y macOS.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "FAT32"
+      },
+      {
+        "clave": "b",
+        "texto": "ext4"
+      },
+      {
+        "clave": "c",
+        "texto": "exFAT"
+      },
+      {
+        "clave": "d",
+        "texto": "NTFS"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "exFAT es una evolución de FAT pensada para dispositivos portátiles y almacenamiento externo. Supera la limitación práctica de FAT32 de no poder manejar archivos de más de 4 GB y es adecuado para tarjetas SD usadas en cámaras que graban vídeo 4K. Además, ofrece buena compatibilidad entre Windows y macOS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "FAT32 tiene una limitación importante: no permite archivos de más de 4 GB, por lo que no es adecuado para vídeos 4K de gran tamaño."
+        },
+        {
+          "clave": "b",
+          "motivo": "ext4 es un sistema de archivos propio de Linux, muy útil en servidores y sistemas GNU/Linux, pero no es la opción más compatible para intercambiar datos entre Windows y macOS."
+        },
+        {
+          "clave": "d",
+          "motivo": "NTFS es propio de Windows y permite archivos grandes, pero puede presentar problemas de compatibilidad o escritura en macOS sin controladores adicionales."
+        }
+      ],
+      "resumen_didactico": "Para tarjetas SD o discos externos que deben mover archivos grandes entre Windows y macOS, exFAT es la opción adecuada porque elimina el límite de 4 GB de FAT32 y mantiene buena compatibilidad.",
+      "ejemplo_practico": "Una cámara 4K puede generar vídeos de 8 GB, 20 GB o más. Si la tarjeta está en FAT32, esos archivos pueden dar problemas por el límite de tamaño. Con exFAT, se pueden guardar y copiar entre Windows y macOS sin esa limitación.",
+      "conclusion_final": "La respuesta correcta es la c, porque exFAT permite archivos grandes y es adecuado para tarjetas SD usadas en cámaras 4K con compatibilidad entre Windows y macOS."
+    }
+  },
+  {
+    "id": "UT3-Q18",
+    "tema": "UT3 Gestión de la Información",
+    "pregunta": "¿Qué tipo de enlace reutiliza el mismo i-nodo con distintos nombres?",
+    "contexto": "Tipos de enlaces en sistemas de archivos Linux y relación con los i-nodos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enlace duro"
+      },
+      {
+        "clave": "b",
+        "texto": "Alias de shell"
+      },
+      {
+        "clave": "c",
+        "texto": "Montaje bind"
+      },
+      {
+        "clave": "d",
+        "texto": "Enlace simbólico"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Linux, los enlaces duros reutilizan el mismo i-nodo con distintos nombres dentro del sistema de archivos. Esto significa que varios nombres de archivo pueden apuntar al mismo contenido real. En cambio, un enlace simbólico guarda una referencia o ruta hacia otro archivo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un alias de shell es un nombre abreviado para ejecutar un comando en la terminal, pero no tiene relación con i-nodos ni con enlaces del sistema de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un montaje bind permite montar una ruta del sistema de archivos en otra ubicación, pero no se define como un enlace que reutiliza el mismo i-nodo con distintos nombres de archivo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un enlace simbólico no reutiliza directamente el mismo i-nodo del archivo original; almacena una ruta o referencia hacia él."
+        }
+      ],
+      "resumen_didactico": "El enlace duro crea otro nombre para el mismo archivo real, compartiendo el mismo i-nodo. El enlace simbólico, en cambio, funciona como un acceso directo que apunta a una ruta.",
+      "ejemplo_practico": "Si creas un enlace duro de informe.txt llamado copia_informe.txt, ambos nombres apuntan al mismo i-nodo. Si modificas el contenido desde uno, el cambio se ve desde el otro.",
+      "conclusion_final": "La respuesta correcta es la a, porque el enlace duro reutiliza el mismo i-nodo con distintos nombres."
+    }
+  },
+  {
+    "id": "UT2-Q19",
+    "tema": "UT2 Instalación de sistemas operativos y máquinas virtuales",
+    "pregunta": "Una clínica pide tolerancia a fallo de un disco sin perder servicio y con buen equilibrio capacidad/seguridad mínimo de 3 discos. ¿Qué RAID sugiere?",
+    "contexto": "Selección de nivel RAID según tolerancia a fallos, capacidad útil y número mínimo de discos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "JBOD"
+      },
+      {
+        "clave": "b",
+        "texto": "RAID 5"
+      },
+      {
+        "clave": "c",
+        "texto": "RAID 0"
+      },
+      {
+        "clave": "d",
+        "texto": "RAID 50 (siempre con 2 discos)"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "RAID 5 distribuye los datos y la paridad entre varios discos. Requiere un mínimo de 3 discos y permite que falle un disco sin perder la información ni detener el servicio, siempre que el disco averiado sea sustituido y el volumen se reconstruya correctamente. Ofrece un buen equilibrio entre capacidad aprovechable, rendimiento y seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "JBOD agrupa discos como si fueran una sola unidad lógica, pero no aporta tolerancia a fallos. Si falla un disco, puede perderse información."
+        },
+        {
+          "clave": "c",
+          "motivo": "RAID 0 mejora el rendimiento al repartir datos entre discos, pero no ofrece redundancia. Si falla un disco, se pierde el conjunto."
+        },
+        {
+          "clave": "d",
+          "motivo": "RAID 50 combina RAID 5 con RAID 0 y requiere más discos; además, la afirmación de que funciona siempre con 2 discos es incorrecta."
+        }
+      ],
+      "resumen_didactico": "Si necesitas tolerar el fallo de un disco, usar al menos 3 discos y mantener un buen equilibrio entre capacidad y seguridad, RAID 5 es la opción adecuada.",
+      "ejemplo_practico": "Una clínica con tres discos puede usar RAID 5 para guardar historiales o documentos importantes. Si uno de los discos falla, el sistema puede seguir funcionando mientras se reemplaza el disco dañado.",
+      "conclusion_final": "La respuesta correcta es la b, porque RAID 5 ofrece tolerancia al fallo de un disco con un mínimo de 3 discos y buen equilibrio entre capacidad y seguridad."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4 Configuración de sistemas operativos",
+    "pregunta": "Una empresa quiere establecer permisos predeterminados más restrictivos al crear archivos en Linux. ¿Qué variable del sistema configura esto?",
+    "contexto": "Configuración de permisos por defecto en Linux al crear nuevos archivos y directorios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "LD_LIBRARY_PATH"
+      },
+      {
+        "clave": "b",
+        "texto": "PATH"
+      },
+      {
+        "clave": "c",
+        "texto": "HOME"
+      },
+      {
+        "clave": "d",
+        "texto": "umask"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En Linux, la máscara umask define los permisos por defecto que tendrán los archivos y directorios cuando se crean. Sirve para restringir permisos iniciales y evitar que los nuevos elementos nazcan con accesos demasiado abiertos. Puede consultarse o modificarse con el comando umask.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "LD_LIBRARY_PATH indica rutas donde el sistema busca bibliotecas compartidas, pero no configura permisos por defecto de archivos o directorios."
+        },
+        {
+          "clave": "b",
+          "motivo": "PATH define las rutas donde el sistema busca comandos ejecutables, pero no controla los permisos de creación de archivos."
+        },
+        {
+          "clave": "c",
+          "motivo": "HOME indica el directorio personal del usuario, pero no establece los permisos predeterminados de nuevos archivos o carpetas."
+        }
+      ],
+      "resumen_didactico": "umask actúa como una máscara de permisos: resta permisos a los valores máximos con los que se crearían archivos y directorios nuevos.",
+      "ejemplo_practico": "Si una empresa usa una umask más restrictiva como 0077, los archivos nuevos pueden quedar accesibles solo para su propietario, evitando que otros usuarios los lean accidentalmente.",
+      "conclusion_final": "La respuesta correcta es la d, porque umask es la configuración que determina los permisos predeterminados al crear archivos y directorios en Linux."
+    }
+  },
+  {
+    "id": "UT4-Q21",
+    "tema": "UT4 Configuración de sistemas operativos",
+    "pregunta": "¿Qué archivo en Linux define variables globales que se cargan al inicio de sesión de todos los usuarios?",
+    "contexto": "Configuración de perfiles globales en Linux y carga de variables al iniciar sesión.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "/etc/skel/.bashrc"
+      },
+      {
+        "clave": "b",
+        "texto": "/etc/profile"
+      },
+      {
+        "clave": "c",
+        "texto": "/etc/shadow"
+      },
+      {
+        "clave": "d",
+        "texto": "/var/log/syslog"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En Linux, los archivos de configuración global afectan a todos los usuarios y se cargan al iniciar sesión. El archivo /etc/profile permite definir variables globales, rutas, comandos o configuraciones que se aplican de forma general a los usuarios del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "/etc/skel/.bashrc sirve como plantilla para crear archivos de configuración en nuevos usuarios, pero no es el archivo global que se carga para todos los usuarios al iniciar sesión."
+        },
+        {
+          "clave": "c",
+          "motivo": "/etc/shadow almacena contraseñas cifradas e información de caducidad de cuentas, no variables globales de sesión."
+        },
+        {
+          "clave": "d",
+          "motivo": "/var/log/syslog es un archivo de registro del sistema donde se guardan eventos y mensajes, no un archivo de configuración de perfiles."
+        }
+      ],
+      "resumen_didactico": "/etc/profile se usa para configurar el entorno global de los usuarios cuando inician sesión en Linux.",
+      "ejemplo_practico": "Si un administrador quiere añadir una variable común para todos los usuarios, puede definirla en /etc/profile para que se cargue automáticamente al iniciar sesión.",
+      "conclusion_final": "La respuesta correcta es la b, porque /etc/profile es el archivo que define configuraciones globales cargadas al inicio de sesión de todos los usuarios."
+    }
+  },
+  {
+    "id": "UT4-Q22",
+    "tema": "UT4 Configuración de sistemas operativos",
+    "pregunta": "Una empresa quiere endurecer la seguridad y forzar a los usuarios de Linux a cambiar la contraseña cada 90 días. ¿Qué utilidad se emplea?",
+    "contexto": "Configuración de caducidad y envejecimiento de contraseñas en cuentas de usuario Linux.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "chage"
+      },
+      {
+        "clave": "b",
+        "texto": "chattr"
+      },
+      {
+        "clave": "c",
+        "texto": "lsattr"
+      },
+      {
+        "clave": "d",
+        "texto": "tee"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Linux, la utilidad chage se emplea para consultar y modificar la información de caducidad de las contraseñas de los usuarios. Permite establecer políticas como duración máxima de la contraseña, fecha de expiración, aviso previo antes de caducar o bloqueo tras inactividad. Para obligar a cambiar la contraseña cada 90 días, se configura el envejecimiento de la contraseña con chage.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "chattr sirve para cambiar atributos especiales de archivos en sistemas Linux, como hacer un archivo inmutable, pero no gestiona la caducidad de contraseñas."
+        },
+        {
+          "clave": "c",
+          "motivo": "lsattr muestra los atributos especiales de archivos, pero no modifica políticas de contraseña ni fuerza cambios periódicos."
+        },
+        {
+          "clave": "d",
+          "motivo": "tee se utiliza para redirigir la salida de un comando hacia pantalla y archivo al mismo tiempo, pero no gestiona cuentas ni contraseñas."
+        }
+      ],
+      "resumen_didactico": "Para controlar cada cuánto debe cambiarse una contraseña en Linux se usa chage, porque gestiona la caducidad y el envejecimiento de contraseñas.",
+      "ejemplo_practico": "Un administrador puede usar chage para configurar que el usuario ana tenga que cambiar su contraseña cada 90 días, reforzando así la política de seguridad de la empresa.",
+      "conclusion_final": "La respuesta correcta es la a, porque chage es la utilidad de Linux empleada para configurar la caducidad de contraseñas."
+    }
+  },
+  {
+    "id": "UT4-Q23",
+    "tema": "UT4 Configuración de sistemas operativos",
+    "pregunta": "Una clínica quiere limpiar historiales de navegación y archivos temporales en Linux para mantener la privacidad de sus pacientes. ¿Qué herramienta gráfica recomiendas?",
+    "contexto": "Limpieza de archivos temporales, cachés e historiales en Linux para mejorar privacidad y mantenimiento del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "UFW"
+      },
+      {
+        "clave": "b",
+        "texto": "CHKDSK"
+      },
+      {
+        "clave": "c",
+        "texto": "BleachBit"
+      },
+      {
+        "clave": "d",
+        "texto": "iptables"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "BleachBit es una herramienta gráfica de limpieza en Linux que permite eliminar archivos temporales, cachés, historiales de navegación y otros restos del sistema o de aplicaciones. Es útil cuando se quiere mejorar la privacidad y liberar espacio eliminando información innecesaria o sensible.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "UFW es una herramienta para gestionar el cortafuegos en Linux de forma sencilla, pero no sirve para limpiar historiales ni archivos temporales."
+        },
+        {
+          "clave": "b",
+          "motivo": "CHKDSK es una herramienta de Windows para comprobar y reparar errores en discos, no una herramienta gráfica de limpieza en Linux."
+        },
+        {
+          "clave": "d",
+          "motivo": "iptables se utiliza para configurar reglas de filtrado de red y cortafuegos en Linux, pero no limpia archivos temporales ni historiales de navegación."
+        }
+      ],
+      "resumen_didactico": "Para limpiar rastros de uso, cachés, temporales e historiales en Linux mediante una herramienta gráfica, la opción adecuada es BleachBit.",
+      "ejemplo_practico": "En un equipo compartido de una clínica, BleachBit puede usarse para eliminar caché del navegador, historial, archivos temporales y otros restos que podrían comprometer la privacidad de los pacientes.",
+      "conclusion_final": "La respuesta correcta es la c, porque BleachBit es la herramienta gráfica adecuada para limpiar historiales y archivos temporales en Linux."
+    }
+  },
+  {
+    "id": "UT4-Q24",
+    "tema": "UT4 Configuración de sistemas operativos",
+    "pregunta": "¿Qué comando en Linux muestra la memoria RAM libre y usada?",
+    "contexto": "Monitorización de recursos del sistema en Linux mediante línea de comandos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "free -m"
+      },
+      {
+        "clave": "b",
+        "texto": "uname -a"
+      },
+      {
+        "clave": "c",
+        "texto": "ls -la"
+      },
+      {
+        "clave": "d",
+        "texto": "whoami"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Linux, el comando free permite consultar el uso de memoria del sistema, mostrando memoria total, usada, libre, compartida, caché y disponible. La opción -m muestra los valores en megabytes, facilitando la lectura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "uname -a muestra información del sistema y del kernel, como versión, arquitectura y nombre del equipo, pero no muestra la memoria RAM libre y usada."
+        },
+        {
+          "clave": "c",
+          "motivo": "ls -la lista archivos y directorios con información detallada, incluyendo ocultos, pero no sirve para consultar el uso de memoria RAM."
+        },
+        {
+          "clave": "d",
+          "motivo": "whoami muestra el nombre del usuario actual, pero no ofrece información sobre memoria del sistema."
+        }
+      ],
+      "resumen_didactico": "Para ver la memoria RAM libre y usada en Linux se utiliza free. Con la opción -m, los datos aparecen en megabytes.",
+      "ejemplo_practico": "Si un servidor Linux va lento, puedes ejecutar free -m para comprobar cuánta RAM está usada, cuánta queda disponible y si el sistema está bajo presión de memoria.",
+      "conclusion_final": "La respuesta correcta es la a, porque free -m muestra la memoria RAM libre y usada en Linux en megabytes."
+    }
+  },
+  {
+    "id": "UT5-Q25",
+    "tema": "UT5 Conexión de Sistemas en Red",
+    "pregunta": "En un taller de reparación, un técnico necesita verificar la conectividad paso a paso hasta un servidor remoto. ¿Qué comando usaría?",
+    "contexto": "Diagnóstico de conectividad de red y comprobación de la ruta seguida por los paquetes hasta un destino remoto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "tracert (Windows) o traceroute (Linux)"
+      },
+      {
+        "clave": "b",
+        "texto": "arp -a"
+      },
+      {
+        "clave": "c",
+        "texto": "nslookup"
+      },
+      {
+        "clave": "d",
+        "texto": "netstat"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Para verificar la conectividad paso a paso hasta un servidor remoto se utilizan comandos que muestran la ruta que siguen los paquetes por la red. En Windows se usa tracert y en Linux traceroute. Estos comandos permiten ver los saltos intermedios entre el equipo origen y el destino, ayudando a localizar en qué punto puede estar fallando la comunicación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "arp -a muestra la tabla ARP, es decir, la relación entre direcciones IP y direcciones MAC conocidas en la red local, pero no muestra la ruta completa hasta un servidor remoto."
+        },
+        {
+          "clave": "c",
+          "motivo": "nslookup sirve para consultar información DNS y comprobar la resolución de nombres de dominio, pero no verifica los saltos de conectividad hasta el destino."
+        },
+        {
+          "clave": "d",
+          "motivo": "netstat muestra conexiones activas, puertos y estadísticas de red, pero no permite comprobar paso a paso la ruta hasta un servidor remoto."
+        }
+      ],
+      "resumen_didactico": "Si quieres saber por dónde viajan los paquetes hasta un servidor y en qué salto puede fallar la conexión, debes usar tracert en Windows o traceroute en Linux.",
+      "ejemplo_practico": "Si un equipo no llega a servidor.empresa.com, el técnico puede ejecutar tracert servidor.empresa.com en Windows para ver cada router intermedio y detectar dónde se corta la comunicación.",
+      "conclusion_final": "La respuesta correcta es la a, porque tracert en Windows y traceroute en Linux permiten verificar la conectividad paso a paso hasta un servidor remoto."
+    }
+  },
+  {
+    "id": "UT7-Q26",
+    "tema": "UT7 Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué malware se propaga aprovechando vulnerabilidades de red sin intervención del usuario?",
+    "contexto": "Clasificación de malware según su forma de propagación e infección en sistemas informáticos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gusano"
+      },
+      {
+        "clave": "b",
+        "texto": "Rootkit"
+      },
+      {
+        "clave": "c",
+        "texto": "Spyware"
+      },
+      {
+        "clave": "d",
+        "texto": "Troyano"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un gusano es un tipo de malware capaz de propagarse automáticamente por la red aprovechando vulnerabilidades de los sistemas, sin necesitar que el usuario ejecute manualmente un archivo infectado. Su peligro principal está en la expansión rápida entre equipos conectados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un rootkit se usa para ocultar la presencia de malware o mantener acceso privilegiado en un sistema, pero no se define principalmente por propagarse automáticamente por la red."
+        },
+        {
+          "clave": "c",
+          "motivo": "El spyware se centra en espiar al usuario y recopilar información, como hábitos de navegación o datos personales, pero no es el malware característico de propagación autónoma por vulnerabilidades de red."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un troyano se presenta como un programa aparentemente legítimo para engañar al usuario, pero normalmente requiere que el usuario lo instale o ejecute."
+        }
+      ],
+      "resumen_didactico": "El gusano es el malware que se propaga solo por la red, aprovechando fallos de seguridad y sin necesitar intervención directa del usuario.",
+      "ejemplo_practico": "Si un equipo vulnerable está conectado a una red y un gusano explota una vulnerabilidad del sistema, puede infectarlo y seguir propagándose a otros equipos sin que nadie abra un archivo.",
+      "conclusion_final": "La respuesta correcta es la a, porque el gusano se propaga automáticamente aprovechando vulnerabilidades de red sin intervención del usuario."
+    }
+  },
+  {
+    "id": "UT5-Q27",
+    "tema": "UT5 Conexión de Sistemas en Red",
+    "pregunta": "Una oficina sospecha que un virus genera tráfico saliente inusual. ¿Qué comando básico permite comprobar la puerta de enlace y rutas activas en Windows?",
+    "contexto": "Diagnóstico de red en Windows para revisar rutas activas, puerta de enlace y posible tráfico saliente anómalo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "route print"
+      },
+      {
+        "clave": "b",
+        "texto": "netsh int ipv4"
+      },
+      {
+        "clave": "c",
+        "texto": "ping -t"
+      },
+      {
+        "clave": "d",
+        "texto": "arp -s"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Windows, el comando route print permite mostrar la tabla de enrutamiento del equipo. Con esta información se pueden comprobar las rutas activas, la puerta de enlace predeterminada y por dónde se está dirigiendo el tráfico de red. Es útil cuando se sospecha de tráfico saliente extraño o de una configuración de rutas anómala.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "netsh int ipv4 permite consultar o modificar parámetros de IPv4, pero no es el comando básico más directo para mostrar la tabla de rutas activas y la puerta de enlace."
+        },
+        {
+          "clave": "c",
+          "motivo": "ping -t comprueba conectividad enviando paquetes de forma continua a un destino, pero no muestra la tabla de rutas ni la puerta de enlace configurada."
+        },
+        {
+          "clave": "d",
+          "motivo": "arp -s sirve para crear una entrada ARP estática, asociando una IP a una MAC, pero no muestra las rutas activas del sistema."
+        }
+      ],
+      "resumen_didactico": "Para revisar por dónde sale el tráfico de un equipo Windows y comprobar la puerta de enlace, se utiliza route print.",
+      "ejemplo_practico": "Si un técnico sospecha que un equipo está enviando tráfico por una ruta incorrecta, puede ejecutar route print y revisar la puerta de enlace predeterminada y las rutas configuradas.",
+      "conclusion_final": "La respuesta correcta es la a, porque route print muestra la tabla de enrutamiento de Windows, incluyendo rutas activas y puerta de enlace."
+    }
+  },
+  {
+    "id": "UT5-Q28",
+    "tema": "UT5 Conexión de Sistemas en Red",
+    "pregunta": "En un cibercafé de Barcelona, los clientes acceden a la red sin autenticación. ¿Qué riesgo de seguridad aumenta?",
+    "contexto": "Red abierta o sin control de acceso donde los usuarios pueden conectarse sin identificarse ni autenticarse.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Acceso no autorizado y sniffing de tráfico"
+      },
+      {
+        "clave": "b",
+        "texto": "Mejor cobertura"
+      },
+      {
+        "clave": "c",
+        "texto": "Menor latencia"
+      },
+      {
+        "clave": "d",
+        "texto": "Más estabilidad en la red"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Cuando una red permite el acceso sin autenticación, aumenta el riesgo de que usuarios no autorizados se conecten y puedan observar, capturar o analizar tráfico de red. En redes abiertas o mal protegidas, un atacante puede intentar interceptar comunicaciones, realizar sniffing o aprovechar la falta de control de acceso para comprometer la seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La cobertura depende de la potencia de señal, ubicación de puntos de acceso, interferencias y estructura física, no de que exista o no autenticación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La latencia depende de la calidad de la red, saturación, equipos y conexión a Internet, pero eliminar la autenticación no garantiza menor latencia."
+        },
+        {
+          "clave": "d",
+          "motivo": "La estabilidad de la red no mejora por permitir acceso libre; de hecho, más usuarios no controlados pueden saturar la red y hacerla menos estable."
+        }
+      ],
+      "resumen_didactico": "Una red sin autenticación es más vulnerable porque cualquiera puede conectarse. Eso facilita accesos no autorizados y posibles capturas de tráfico.",
+      "ejemplo_practico": "Si un cibercafé deja la Wi-Fi abierta, una persona externa podría conectarse desde la calle y usar herramientas de análisis de red para intentar capturar tráfico de otros clientes.",
+      "conclusion_final": "La respuesta correcta es la a, porque una red sin autenticación aumenta el riesgo de acceso no autorizado y sniffing de tráfico."
+    }
+  },
+  {
+    "id": "UT5-Q29",
+    "tema": "UT5 Conexión de Sistemas en Red",
+    "pregunta": "¿Qué protocolo traduce direcciones IP a direcciones físicas (MAC) en una red local?",
+    "contexto": "Resolución de direcciones dentro de una red local para asociar direcciones IP con direcciones físicas de tarjetas de red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DNS"
+      },
+      {
+        "clave": "b",
+        "texto": "ARP"
+      },
+      {
+        "clave": "c",
+        "texto": "ICMP"
+      },
+      {
+        "clave": "d",
+        "texto": "DHCP"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "ARP, Address Resolution Protocol, es el protocolo encargado de relacionar una dirección IP con la dirección física MAC correspondiente dentro de una red local. Cuando un equipo necesita comunicarse con otro dentro de la misma red, usa ARP para descubrir qué dirección MAC corresponde a una IP concreta.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DNS traduce nombres de dominio a direcciones IP, por ejemplo de www.ejemplo.com a una IP, pero no traduce IP a MAC."
+        },
+        {
+          "clave": "c",
+          "motivo": "ICMP se utiliza para mensajes de control y diagnóstico de red, como los usados por ping, pero no resuelve direcciones MAC."
+        },
+        {
+          "clave": "d",
+          "motivo": "DHCP asigna automáticamente direcciones IP y otros datos de configuración de red, como puerta de enlace o DNS, pero no traduce IP a MAC."
+        }
+      ],
+      "resumen_didactico": "ARP sirve para que un equipo descubra la dirección MAC asociada a una dirección IP dentro de una red local.",
+      "ejemplo_practico": "Si un ordenador quiere enviar datos a 192.168.1.20 en la misma LAN, primero puede usar ARP para averiguar qué dirección MAC tiene ese equipo y así enviar correctamente la trama Ethernet.",
+      "conclusion_final": "La respuesta correcta es la b, porque ARP es el protocolo que traduce direcciones IP a direcciones físicas MAC en una red local."
+    }
+  },
+  {
+    "id": "UT6-Q30",
+    "tema": "UT6 Gestión de recursos en una red",
+    "pregunta": "¿Qué identificador único se usa en Windows para distinguir usuarios, grupos y equipos?",
+    "contexto": "Identificación de cuentas, grupos y equipos en Windows mediante identificadores de seguridad.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ACL"
+      },
+      {
+        "clave": "b",
+        "texto": "SID"
+      },
+      {
+        "clave": "c",
+        "texto": "Token VPN"
+      },
+      {
+        "clave": "d",
+        "texto": "GUID de Office"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En Windows, el SID, Security Identifier, es el identificador único que permite distinguir usuarios, grupos y equipos. El sistema lo utiliza para reconocer de forma interna a cada entidad de seguridad y aplicar correctamente permisos, derechos y controles de acceso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una ACL es una lista de control de acceso que define qué usuarios o grupos pueden acceder a un recurso y con qué permisos, pero no es el identificador único del usuario, grupo o equipo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un token VPN puede estar relacionado con autenticación o acceso remoto, pero no es el identificador interno usado por Windows para distinguir usuarios, grupos y equipos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un GUID puede identificar objetos o componentes concretos, pero un GUID de Office no es el identificador de seguridad usado por Windows para usuarios, grupos y equipos."
+        }
+      ],
+      "resumen_didactico": "Windows no identifica realmente a los usuarios solo por su nombre visible, sino por su SID. Por eso, aunque cambie el nombre de una cuenta, el sistema puede seguir reconociendo su identidad interna.",
+      "ejemplo_practico": "Si un usuario llamado ana tiene permisos sobre una carpeta, Windows asocia esos permisos a su SID. Si se cambia el nombre visible de ana, el SID sigue siendo el mismo y los permisos continúan funcionando.",
+      "conclusion_final": "La respuesta correcta es la b, porque el SID es el identificador único usado en Windows para distinguir usuarios, grupos y equipos."
+    }
+  },
+  {
+    "id": "UT6-Q31",
+    "tema": "UT6 Gestión de recursos en una red",
+    "pregunta": "¿Qué lista controla los permisos efectivos que un usuario tiene sobre un archivo o carpeta en NTFS?",
+    "contexto": "Control de acceso en volúmenes NTFS mediante listas de control de acceso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "ACL híbrida"
+      },
+      {
+        "clave": "b",
+        "texto": "GPO"
+      },
+      {
+        "clave": "c",
+        "texto": "SACL"
+      },
+      {
+        "clave": "d",
+        "texto": "DACL"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En NTFS, cada archivo o carpeta tiene una ACL de protección. Dentro de ella, la DACL, Discretionary Access Control List, contiene las entradas ACE que vinculan usuarios o grupos con permisos concretos. Por eso, la DACL es la lista que determina qué permisos efectivos tiene un usuario sobre un recurso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "ACL híbrida no es la lista específica utilizada en NTFS para definir los permisos efectivos de acceso a un archivo o carpeta."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una GPO es una directiva de grupo que permite aplicar configuraciones de seguridad y administración en un dominio o equipo, pero no es la lista interna que controla los permisos directos sobre un archivo o carpeta NTFS."
+        },
+        {
+          "clave": "c",
+          "motivo": "La SACL se usa para auditoría, es decir, para registrar qué acciones deben quedar reflejadas en eventos de seguridad, pero no define los permisos efectivos de acceso."
+        }
+      ],
+      "resumen_didactico": "La DACL decide quién puede acceder a un archivo o carpeta NTFS y qué puede hacer: leer, escribir, modificar, ejecutar o tener control total.",
+      "ejemplo_practico": "Si una carpeta tiene una DACL donde el grupo Contabilidad tiene permiso de lectura y escritura, los usuarios de ese grupo podrán abrir y modificar los archivos de esa carpeta según esas entradas de permisos.",
+      "conclusion_final": "La respuesta correcta es la d, porque la DACL es la lista que controla los permisos efectivos de acceso sobre archivos y carpetas en NTFS."
+    }
+  },
+  {
+    "id": "UT6-Q32",
+    "tema": "UT6 Gestión de recursos en una red",
+    "pregunta": "Una empresa teme un DoS contra su web. ¿Qué papel puede desempeñar el firewall?",
+    "contexto": "Uso del firewall como herramienta de seguridad para controlar tráfico de red y reducir riesgos ante ataques de denegación de servicio.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Convertir tráfico en UDP"
+      },
+      {
+        "clave": "b",
+        "texto": "Evitar que los clientes accedan"
+      },
+      {
+        "clave": "c",
+        "texto": "Bloquearlo al 100%"
+      },
+      {
+        "clave": "d",
+        "texto": "Mitigar el ataque según reglas configuradas"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Un firewall controla el tráfico de red aplicando reglas de filtrado. Ante un posible ataque DoS, puede ayudar a mitigar el impacto bloqueando conexiones sospechosas, limitando determinados accesos o filtrando tráfico según origen, destino, puerto o protocolo. Sin embargo, no garantiza bloquear el ataque al 100%, especialmente si el volumen de tráfico supera la capacidad de la infraestructura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El firewall no tiene como función convertir tráfico en UDP. Su función principal es permitir, bloquear o filtrar tráfico según reglas configuradas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Evitar que los clientes accedan no sería una solución correcta en condiciones normales, porque una web debe seguir disponible para usuarios legítimos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un firewall puede reducir o filtrar parte del tráfico malicioso, pero no puede garantizar por sí solo el bloqueo total de un ataque DoS."
+        }
+      ],
+      "resumen_didactico": "El firewall no elimina mágicamente un DoS, pero puede mitigarlo aplicando reglas que bloqueen o limiten tráfico sospechoso.",
+      "ejemplo_practico": "Si una web recibe muchas conexiones desde una misma IP o desde rangos sospechosos, el firewall puede bloquear esas IP, limitar conexiones o cerrar puertos no necesarios.",
+      "conclusion_final": "La respuesta correcta es la d, porque el firewall puede mitigar un ataque DoS según las reglas configuradas, aunque no garantiza bloquearlo al 100%."
+    }
+  },
+  {
+    "id": "UT6-Q33",
+    "tema": "UT6 Gestión de recursos en una red",
+    "pregunta": "¿Qué opción del panel de control de Windows permite agregar una impresora compartida?",
+    "contexto": "Configuración de clientes de impresión en Windows para añadir impresoras compartidas en red.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Dispositivos e impresoras"
+      },
+      {
+        "clave": "b",
+        "texto": "Programas y características"
+      },
+      {
+        "clave": "c",
+        "texto": "Firewall"
+      },
+      {
+        "clave": "d",
+        "texto": "Centro de sincronización"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En Windows, para agregar una impresora compartida desde un cliente se accede al Panel de control, después a Hardware y sonido y finalmente a Dispositivos e impresoras. Desde ahí se puede seleccionar la opción de agregar una impresora y buscar una impresora compartida por nombre o por dirección IP.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Programas y características sirve para desinstalar programas o activar y desactivar características de Windows, pero no para agregar impresoras compartidas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Firewall permite configurar reglas de seguridad de red, pero no es la opción del Panel de control usada para añadir una impresora compartida."
+        },
+        {
+          "clave": "d",
+          "motivo": "Centro de sincronización se relaciona con sincronizar archivos o datos sin conexión, no con instalar impresoras compartidas."
+        }
+      ],
+      "resumen_didactico": "Para añadir una impresora compartida en Windows desde la interfaz gráfica, se utiliza Dispositivos e impresoras.",
+      "ejemplo_practico": "Si una impresora está compartida desde un servidor de impresión, el usuario puede ir a Panel de control → Hardware y sonido → Dispositivos e impresoras → Agregar una impresora y conectarse a ella por nombre o IP.",
+      "conclusion_final": "La respuesta correcta es la a, porque Dispositivos e impresoras es la opción del Panel de control que permite agregar una impresora compartida."
+    }
+  },
+  {
+    "id": "UT6-Q34",
+    "tema": "UT6 Gestión de recursos en una red",
+    "pregunta": "¿Qué tipo de directiva aplica en un único equipo Windows que no pertenece a un dominio?",
+    "contexto": "Aplicación de directivas de seguridad en equipos Windows independientes, sin pertenencia a dominio ni Active Directory.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Directiva de seguridad local"
+      },
+      {
+        "clave": "b",
+        "texto": "Políticas de Azure AD"
+      },
+      {
+        "clave": "c",
+        "texto": "GPO de unidad organizativa"
+      },
+      {
+        "clave": "d",
+        "texto": "Directiva de dominio"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las directivas de seguridad local se aplican a equipos Windows individuales que no pertenecen a un dominio. Permiten configurar el comportamiento de seguridad del propio equipo, como políticas de contraseñas, derechos de usuario o auditoría, sin depender de Active Directory.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Las políticas de Azure AD están relacionadas con la gestión de identidades y dispositivos en entornos cloud de Microsoft, no con la directiva local básica de un equipo Windows aislado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una GPO de unidad organizativa se aplica dentro de un dominio con Active Directory, sobre objetos organizados en unidades organizativas, no sobre un equipo independiente sin dominio."
+        },
+        {
+          "clave": "d",
+          "motivo": "La directiva de dominio se aplica a equipos integrados en un dominio de Windows Server con Active Directory, no a un único equipo aislado."
+        }
+      ],
+      "resumen_didactico": "Si el equipo Windows no pertenece a un dominio, la configuración de seguridad se gestiona mediante la directiva de seguridad local.",
+      "ejemplo_practico": "Un PC de una pequeña oficina que no está unido a un dominio puede configurar sus reglas de contraseña o derechos de inicio de sesión desde Directiva de seguridad local.",
+      "conclusion_final": "La respuesta correcta es la a, porque la directiva de seguridad local se aplica a un único equipo Windows que no pertenece a un dominio."
+    }
+  },
+  {
+    "id": "UT7-Q35",
+    "tema": "UT7 Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué tipo de copia copia todos los cambios desde la última copia completa?",
+    "contexto": "Tipos de copias de seguridad según la información que guardan desde una copia completa previa.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Snapshot"
+      },
+      {
+        "clave": "b",
+        "texto": "RAID 0"
+      },
+      {
+        "clave": "c",
+        "texto": "Diferencial"
+      },
+      {
+        "clave": "d",
+        "texto": "Incremental"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Una copia diferencial guarda todos los archivos o datos modificados desde la última copia completa. A diferencia de la incremental, no toma como referencia la copia inmediatamente anterior, sino siempre la última copia completa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un snapshot es una instantánea del estado de un sistema o volumen en un momento concreto, pero no define específicamente el tipo de copia que guarda todos los cambios desde la última copia completa."
+        },
+        {
+          "clave": "b",
+          "motivo": "RAID 0 es una configuración de discos orientada al rendimiento mediante distribución de datos, pero no es un tipo de copia de seguridad."
+        },
+        {
+          "clave": "d",
+          "motivo": "La copia incremental guarda solo los cambios desde la última copia realizada, ya sea completa o incremental, no todos los cambios desde la última copia completa."
+        }
+      ],
+      "resumen_didactico": "La copia diferencial siempre mira hacia la última copia completa y guarda todo lo que ha cambiado desde entonces.",
+      "ejemplo_practico": "Si el lunes haces una copia completa y el martes, miércoles y jueves haces copias diferenciales, la copia del jueves incluirá todos los cambios acumulados desde el lunes.",
+      "conclusion_final": "La respuesta correcta es la c, porque la copia diferencial guarda todos los cambios realizados desde la última copia completa."
+    }
+  },
+  {
+    "id": "UT7-Q36",
+    "tema": "UT7 Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "Para restaurar un sistema con copias incrementales, ¿qué pasos son necesarios?",
+    "contexto": "Procedimiento correcto de recuperación de datos cuando se han realizado copias completas e incrementales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Restaurar solo la copia más reciente"
+      },
+      {
+        "clave": "b",
+        "texto": "Restaurar la última incremental"
+      },
+      {
+        "clave": "c",
+        "texto": "Restaurar la completa y luego todas las incrementales en orden"
+      },
+      {
+        "clave": "d",
+        "texto": "Restaurar todas las diferenciales"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Para restaurar un sistema con copias incrementales, primero se debe restaurar la última copia completa. Después, se aplican todas las copias incrementales realizadas posteriormente, siguiendo el orden cronológico desde la más antigua hasta la más reciente. Esto es necesario porque cada incremental contiene solo los cambios desde la copia anterior.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Restaurar solo la copia más reciente no es suficiente, porque una copia incremental no contiene todo el sistema, sino solo los cambios desde la copia anterior."
+        },
+        {
+          "clave": "b",
+          "motivo": "La última incremental depende de la copia completa y de las incrementales anteriores. Restaurarla sola dejaría el sistema incompleto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las copias diferenciales son otro tipo de copia. Si el sistema usa incrementales, no se restauran todas las diferenciales, sino la completa y las incrementales en orden."
+        }
+      ],
+      "resumen_didactico": "Las copias incrementales forman una cadena. Para recuperar correctamente, necesitas la copia completa inicial y después cada incremental en el orden en que se creó.",
+      "ejemplo_practico": "Si el lunes haces una copia completa y de martes a viernes haces copias incrementales, para restaurar el sistema del viernes debes recuperar primero la copia completa del lunes y luego aplicar las incrementales del martes, miércoles, jueves y viernes.",
+      "conclusion_final": "La respuesta correcta es la c, porque con copias incrementales hay que restaurar la copia completa y después todas las incrementales en orden."
+    }
+  },
+  {
+    "id": "UT7-Q37",
+    "tema": "UT7 Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué regla de copias recomienda mantener 3 copias, en 2 soportes distintos y 1 fuera del sitio?",
+    "contexto": "Buenas prácticas de copias de seguridad para proteger la información ante fallos, borrados, ataques o desastres físicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Copia espejo"
+      },
+      {
+        "clave": "b",
+        "texto": "Backup diferencial"
+      },
+      {
+        "clave": "c",
+        "texto": "RAID 5"
+      },
+      {
+        "clave": "d",
+        "texto": "Regla 3-2-1"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La regla 3-2-1 de copias de seguridad recomienda mantener 3 copias de los datos, almacenadas en 2 soportes o medios distintos, y conservar 1 copia fuera del sitio principal. Esta estrategia reduce el riesgo de pérdida total ante fallos de hardware, borrados accidentales, malware, incendios, robos u otros incidentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una copia espejo replica información en otro destino, pero no expresa la regla completa de mantener tres copias, en dos soportes y una fuera del sitio."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un backup diferencial copia los cambios desde la última copia completa, pero no define una estrategia general de distribución de copias en distintos soportes y ubicaciones."
+        },
+        {
+          "clave": "c",
+          "motivo": "RAID 5 aporta tolerancia al fallo de un disco mediante paridad, pero no sustituye a una política de copias de seguridad ni cumple por sí mismo la regla 3-2-1."
+        }
+      ],
+      "resumen_didactico": "La regla 3-2-1 busca evitar depender de una sola copia o de un único lugar físico. Por eso propone tres copias, dos medios distintos y una copia externa.",
+      "ejemplo_practico": "Una empresa puede tener los datos originales en el servidor, una copia en un disco externo local y otra copia cifrada en la nube o en una sede diferente.",
+      "conclusion_final": "La respuesta correcta es la d, porque la regla 3-2-1 recomienda mantener 3 copias, en 2 soportes distintos y 1 fuera del sitio."
+    }
+  },
+  {
+    "id": "UT7-Q38",
+    "tema": "UT7 Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué tipo de copia de seguridad guarda todos los datos cada vez?",
+    "contexto": "Tipos de copias de seguridad según la cantidad de información que se guarda en cada ejecución.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diferencial"
+      },
+      {
+        "clave": "b",
+        "texto": "Completa"
+      },
+      {
+        "clave": "c",
+        "texto": "Incremental"
+      },
+      {
+        "clave": "d",
+        "texto": "RAID 1"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una copia de seguridad completa guarda todos los datos seleccionados cada vez que se realiza. Es el tipo de backup más sencillo de restaurar porque contiene toda la información en una única copia, aunque ocupa más espacio y tarda más tiempo que otros tipos como la incremental o la diferencial.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La copia diferencial no guarda todos los datos cada vez, sino los cambios realizados desde la última copia completa."
+        },
+        {
+          "clave": "c",
+          "motivo": "La copia incremental solo guarda los cambios realizados desde la última copia, ya sea completa o incremental, por lo que no copia todos los datos en cada ejecución."
+        },
+        {
+          "clave": "d",
+          "motivo": "RAID 1 es una técnica de redundancia por espejo entre discos, pero no es un tipo de copia de seguridad."
+        }
+      ],
+      "resumen_didactico": "La copia completa guarda todo cada vez. Es más pesada, pero más fácil de restaurar porque no depende de otras copias posteriores.",
+      "ejemplo_practico": "Si una empresa realiza una copia completa el viernes, esa copia incluye todos los documentos, bases de datos y archivos seleccionados, aunque muchos no hayan cambiado desde la copia anterior.",
+      "conclusion_final": "La respuesta correcta es la b, porque la copia completa guarda todos los datos cada vez que se realiza."
+    }
+  },
+  {
+    "id": "UT7-Q39",
+    "tema": "UT7 Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué fases básicas incluye el ciclo de un software antimalware?",
+    "contexto": "Funciones principales de un software antimalware dentro del mantenimiento de la seguridad del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Descarga, instalación y licencia"
+      },
+      {
+        "clave": "b",
+        "texto": "Prevención, análisis, detección y eliminación"
+      },
+      {
+        "clave": "c",
+        "texto": "Borrado, instalación y bloqueo"
+      },
+      {
+        "clave": "d",
+        "texto": "Hashing, cifrado y firma"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El software antimalware protege frente a software malicioso mediante un ciclo básico de actuación que incluye prevención, análisis, detección y eliminación. Primero intenta evitar la infección, después analiza archivos o procesos, detecta posibles amenazas y, si encuentra malware, procede a eliminarlo o neutralizarlo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Descarga, instalación y licencia son pasos relacionados con obtener o activar un programa, pero no describen el ciclo funcional de protección de un antimalware."
+        },
+        {
+          "clave": "c",
+          "motivo": "Borrado, instalación y bloqueo no forman el ciclo básico del antimalware. El borrado puede aparecer como parte de la eliminación, pero faltan fases esenciales como prevención, análisis y detección."
+        },
+        {
+          "clave": "d",
+          "motivo": "Hashing, cifrado y firma son técnicas de seguridad o criptografía, pero no son las fases básicas del funcionamiento de un software antimalware."
+        }
+      ],
+      "resumen_didactico": "Un antimalware no solo borra virus: primero previene, luego analiza, después detecta amenazas y finalmente las elimina o neutraliza.",
+      "ejemplo_practico": "Si un usuario descarga un archivo sospechoso, el antimalware puede bloquearlo preventivamente, analizarlo, detectar código malicioso y eliminarlo antes de que infecte el sistema.",
+      "conclusion_final": "La respuesta correcta es la b, porque el ciclo básico de un software antimalware incluye prevención, análisis, detección y eliminación."
+    }
+  },
+  {
+    "id": "UT7-Q40",
+    "tema": "UT7 Explotación de aplicaciones informáticas de propósito general",
+    "pregunta": "¿Qué característica define la comunicación asíncrona en mensajería instantánea?",
+    "contexto": "Clasificación de la mensajería instantánea según si los usuarios están conectados al mismo tiempo o no.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ambos deben estar conectados a la vez"
+      },
+      {
+        "clave": "b",
+        "texto": "Siempre es solo por voz"
+      },
+      {
+        "clave": "c",
+        "texto": "Elimina el historial automáticamente"
+      },
+      {
+        "clave": "d",
+        "texto": "Los mensajes se reciben aunque el destinatario no esté conectado"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En mensajería instantánea, la comunicación asíncrona permite que el mensaje llegue o quede pendiente aunque el destinatario no esté conectado en ese momento. Cuando vuelva a conectarse, podrá recibir o consultar los mensajes pendientes. Se diferencia de la comunicación síncrona, en la que ambas partes deben estar conectadas al mismo tiempo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Que ambos usuarios estén conectados a la vez define la comunicación síncrona, no la asíncrona."
+        },
+        {
+          "clave": "b",
+          "motivo": "La mensajería instantánea puede transmitir texto, voz, vídeo o formatos mixtos. La asincronía no significa que sea solo por voz."
+        },
+        {
+          "clave": "c",
+          "motivo": "Eliminar el historial automáticamente no define la comunicación asíncrona; es una función de privacidad o configuración de algunas aplicaciones."
+        }
+      ],
+      "resumen_didactico": "La comunicación asíncrona permite enviar mensajes aunque la otra persona no esté conectada en ese momento.",
+      "ejemplo_practico": "Si envías un mensaje por WhatsApp o Telegram a una persona que tiene el móvil apagado, el mensaje queda pendiente y lo recibirá cuando vuelva a conectarse.",
+      "conclusion_final": "La respuesta correcta es la d, porque la comunicación asíncrona permite recibir mensajes aunque el destinatario no esté conectado en ese momento."
+    }
+  }
+]

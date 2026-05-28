@@ -1,0 +1,1930 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 Desarrollo de Software",
+    "pregunta": "¿Qué fase abordas cuando el cliente exige fechas, recursos y riesgos claros antes de programar?",
+    "contexto": "El cliente solicita planificación previa antes de iniciar la programación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pruebas estructurales"
+      },
+      {
+        "clave": "b",
+        "texto": "Mantenimiento"
+      },
+      {
+        "clave": "c",
+        "texto": "Fase inicial con planificación y elección tecnológica"
+      },
+      {
+        "clave": "d",
+        "texto": "Explotación"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En la fase inicial del desarrollo de una aplicación se definen las bases del proyecto antes de programar: qué se va a hacer, con qué recursos, con qué personas, qué tecnología se utilizará y qué posibles problemas o riesgos pueden aparecer.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las pruebas estructurales pertenecen a la fase de pruebas y sirven para comprobar aspectos técnicos del software, no para definir fechas, recursos o riesgos antes de programar."
+        },
+        {
+          "clave": "b",
+          "motivo": "El mantenimiento ocurre cuando el software ya existe y necesita correcciones, adaptaciones o actualizaciones. No corresponde a la planificación previa del proyecto."
+        },
+        {
+          "clave": "d",
+          "motivo": "La explotación es la fase en la que el software se pone en producción y empieza a usarse realmente. No es la fase previa a la programación."
+        }
+      ],
+      "resumen_didactico": "Antes de programar, el proyecto debe organizarse: recursos, tecnología, riesgos y planificación. Esa etapa corresponde a la fase inicial.",
+      "ejemplo_practico": "Si una empresa pide crear una aplicación y antes de escribir código exige saber cuánto tardará, qué equipo hará falta, qué tecnología se usará y qué riesgos existen, se está trabajando en la fase inicial.",
+      "conclusion_final": "La respuesta correcta es la fase inicial con planificación y elección tecnológica, porque es la etapa donde se organiza el proyecto antes de empezar la programación."
+    }
+  },
+  {
+    "id": "UT1-Q02",
+    "tema": "UT1 Desarrollo de Software",
+    "pregunta": "¿Qué actividad corresponde al análisis si estás cerrando entregables con el cliente para evitar cambios imprevistos?",
+    "contexto": "Se está trabajando con el cliente para dejar claros los requisitos antes de avanzar en el desarrollo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Documentar requisitos y acordarlos con firma"
+      },
+      {
+        "clave": "b",
+        "texto": "Diseñar pruebas de carga"
+      },
+      {
+        "clave": "c",
+        "texto": "Escribir drivers"
+      },
+      {
+        "clave": "d",
+        "texto": "Publicar en producción"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la fase de análisis se recogen y documentan los requisitos del cliente. Es importante definir con claridad qué quiere exactamente el cliente y dejarlo reflejado en un documento de requisitos, que puede acordarse y firmarse para evitar cambios improvisados durante el desarrollo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Diseñar pruebas de carga pertenece a la fase de pruebas, especialmente cuando se quiere comprobar cómo responde el sistema ante una determinada cantidad de trabajo o usuarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Escribir drivers no corresponde a la fase de análisis. Es una tarea técnica de programación o integración, no una actividad de recogida y validación de requisitos con el cliente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Publicar en producción corresponde a la fase de explotación, cuando el software ya está desarrollado y empieza a usarse realmente."
+        }
+      ],
+      "resumen_didactico": "El análisis sirve para entender, recoger y documentar lo que necesita el cliente. Si se firma un documento de requisitos, se reducen malentendidos y cambios no planificados.",
+      "ejemplo_practico": "Antes de crear una aplicación de reservas, el equipo se reúne con el cliente y deja por escrito funciones como registrar usuarios, consultar disponibilidad, reservar mesa y cancelar reserva. Ese documento se valida con el cliente antes de programar.",
+      "conclusion_final": "La respuesta correcta es documentar requisitos y acordarlos con firma, porque esa actividad pertenece directamente a la fase de análisis."
+    }
+  },
+  {
+    "id": "UT4-Q03",
+    "tema": "UT4 Optimización y documentación",
+    "pregunta": "¿Qué documentos facilitan el aterrizaje de un nuevo compañero a mitad del proyecto?",
+    "contexto": "Se incorpora una persona nueva al equipo y necesita comprender la estructura interna, el código y el funcionamiento técnico del proyecto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Capturas sin contexto"
+      },
+      {
+        "clave": "b",
+        "texto": "Código objeto sin comentarios"
+      },
+      {
+        "clave": "c",
+        "texto": "Manual de usuario y manual de instalación"
+      },
+      {
+        "clave": "d",
+        "texto": "Manual técnico"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El manual técnico está dirigido a desarrolladores o personal técnico. Contiene información sobre el código, la arquitectura, los componentes, las bases de datos, las APIs y otros elementos necesarios para entender, mantener o ampliar el software.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las capturas sin contexto no permiten comprender realmente el proyecto. Pueden servir como apoyo visual, pero no explican la lógica, la arquitectura ni las decisiones técnicas."
+        },
+        {
+          "clave": "b",
+          "motivo": "El código objeto es el resultado intermedio de la compilación y no está pensado para que una persona entienda el proyecto. Además, si no tiene comentarios ni documentación, dificulta todavía más el mantenimiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "El manual de usuario explica cómo usar la aplicación y el manual de instalación explica cómo instalarla. Son útiles, pero no son los documentos principales para que un nuevo desarrollador comprenda el funcionamiento interno del proyecto."
+        }
+      ],
+      "resumen_didactico": "Cuando se incorpora un compañero técnico a mitad de proyecto, necesita documentación interna: arquitectura, código, componentes, decisiones técnicas y funcionamiento del sistema. Eso corresponde al manual técnico.",
+      "ejemplo_practico": "Si un nuevo programador entra en un proyecto Java, el manual técnico le ayuda a entender qué módulos existen, cómo se conectan, qué clases son importantes, qué base de datos se usa y cómo mantener el código.",
+      "conclusion_final": "La respuesta correcta es manual técnico, porque es el documento pensado para facilitar la comprensión interna del software a desarrolladores y personal técnico."
+    }
+  },
+  {
+    "id": "UT1-Q04",
+    "tema": "UT1 Desarrollo de Software",
+    "pregunta": "¿Qué está ocurriendo al ejecutar un script en Python y ver el resultado al instante?",
+    "contexto": "Se ejecuta código Python y el resultado aparece inmediatamente, sin generar previamente un archivo ejecutable.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El compilador genera un ejecutable"
+      },
+      {
+        "clave": "b",
+        "texto": "El intérprete traduce y ejecuta línea a línea"
+      },
+      {
+        "clave": "c",
+        "texto": "La JVM produce código nativo"
+      },
+      {
+        "clave": "d",
+        "texto": "El enlazador combina objetos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Python es un lenguaje interpretado. Esto significa que el intérprete traduce el código línea a línea y lo ejecuta en el momento, por eso se puede ver el resultado de forma inmediata sin generar antes un ejecutable como ocurre en los lenguajes compilados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un compilador traduce todo el código fuente de una vez y genera un archivo ejecutable. Esa descripción corresponde a lenguajes compilados como C++."
+        },
+        {
+          "clave": "c",
+          "motivo": "La JVM está relacionada con Java. Java genera bytecode que se ejecuta sobre la Máquina Virtual de Java, no es el funcionamiento propio de un script Python ejecutado directamente."
+        },
+        {
+          "clave": "d",
+          "motivo": "El enlazador forma parte del proceso de compilación, donde se combinan objetos y librerías para crear el ejecutable final. No describe la ejecución inmediata de un script interpretado."
+        }
+      ],
+      "resumen_didactico": "Si escribes código y el programa lo va traduciendo y ejecutando al instante, estás ante un lenguaje interpretado. Python funciona de esta forma.",
+      "ejemplo_practico": "Si escribes en Python print('Hola mundo') y al ejecutar el script ves directamente el mensaje en pantalla, el intérprete ha leído esa línea, la ha traducido y la ha ejecutado en ese momento.",
+      "conclusion_final": "La respuesta correcta es que el intérprete traduce y ejecuta línea a línea, porque Python se comporta como un lenguaje interpretado."
+    }
+  },
+  {
+    "id": "UT1-Q05",
+    "tema": "UT1 Desarrollo de Software",
+    "pregunta": "¿Cuál es el orden correcto del pipeline de compilación?",
+    "contexto": "Se pregunta por las fases que sigue el proceso de compilación hasta generar el ejecutable final.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Enlazado → Preprocesado → Compilación → Ensamblado"
+      },
+      {
+        "clave": "b",
+        "texto": "Ensamblado → Preprocesado → Enlazado → Compilación"
+      },
+      {
+        "clave": "c",
+        "texto": "Compilación → Enlazado → Preprocesado → Ensamblado"
+      },
+      {
+        "clave": "d",
+        "texto": "Preprocesado → Compilación → Ensamblado → Enlazado"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El proceso de compilación sigue varias fases: primero el preprocesado, que prepara el código eliminando comentarios e incluyendo dependencias; después la compilación, que traduce el código fuente a un código intermedio; luego el ensamblado, que convierte ese código en código objeto; y finalmente el enlazado, que une el código objeto con las librerías necesarias para generar el ejecutable final.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El enlazado no puede ir al principio, porque necesita que antes exista código objeto generado por las fases anteriores."
+        },
+        {
+          "clave": "b",
+          "motivo": "El ensamblado no es la primera fase. Antes debe prepararse el código mediante el preprocesado y traducirse mediante la compilación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La compilación no va antes del preprocesado, y el enlazado no puede hacerse antes del ensamblado porque todavía no se habría generado el código objeto necesario."
+        }
+      ],
+      "resumen_didactico": "El pipeline correcto de compilación empieza preparando el código, luego lo traduce, después lo convierte en código objeto y finalmente lo une con librerías para crear el ejecutable.",
+      "ejemplo_practico": "En un programa en C++, primero se procesan directivas y dependencias, luego se compila el código fuente, después se genera código objeto y al final se enlazan las librerías para obtener el archivo ejecutable.",
+      "conclusion_final": "La respuesta correcta es Preprocesado → Compilación → Ensamblado → Enlazado, porque ese es el orden lógico del proceso de compilación."
+    }
+  },
+  {
+    "id": "UT1-Q06",
+    "tema": "UT1 Desarrollo de Software",
+    "pregunta": "¿Qué enfoque ayuda primero a ordenar la investigación cuando el sistema se bloquea al iniciar sesión varios usuarios a la vez?",
+    "contexto": "El sistema falla en una situación de uso concurrente y es necesario investigar el problema de forma ordenada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Cambiar de lenguaje de programación sin análisis"
+      },
+      {
+        "clave": "b",
+        "texto": "Revisar correos antiguos de la empresa"
+      },
+      {
+        "clave": "c",
+        "texto": "Empezar por comprender ciclo de vida y documentación del software"
+      },
+      {
+        "clave": "d",
+        "texto": "Reiniciar todos los equipos sin registrar nada"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Cuando aparece un problema en un sistema software, lo primero es abordarlo de forma ordenada: comprender el ciclo de vida del software, revisar la documentación disponible y seguir un protocolo profesional. Esto permite localizar si el fallo pertenece al diseño, a la implementación, a las pruebas, a la explotación o al mantenimiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Cambiar de lenguaje de programación sin analizar el problema no es una solución profesional. Puede generar más errores y no garantiza detectar la causa real del bloqueo."
+        },
+        {
+          "clave": "b",
+          "motivo": "Revisar correos antiguos puede aportar información secundaria, pero no es el enfoque principal para investigar técnicamente un fallo del sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Reiniciar equipos sin registrar nada puede ocultar el problema temporalmente, pero no permite analizar la causa ni dejar trazabilidad para futuras correcciones."
+        }
+      ],
+      "resumen_didactico": "Ante un fallo de software, no se debe actuar al azar. Primero hay que entender el sistema, revisar su documentación y situar el problema dentro del ciclo de vida del software.",
+      "ejemplo_practico": "Si una aplicación de almacén se bloquea cuando varios usuarios inician sesión a la vez, el equipo debe revisar la documentación, los requisitos, el diseño, los logs y la fase en la que puede haberse originado el fallo antes de modificar código.",
+      "conclusion_final": "La respuesta correcta es empezar por comprender ciclo de vida y documentación del software, porque permite investigar el fallo con método y no mediante acciones improvisadas."
+    }
+  },
+  {
+    "id": "UT2-Q07",
+    "tema": "UT2 Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué categoría debe seleccionar en NetBeans para crear un nuevo módulo desde cero?",
+    "contexto": "Se quiere crear un módulo nuevo en NetBeans siguiendo el asistente de creación de proyectos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "NetBeans Modules (dentro de Java with Ant)"
+      },
+      {
+        "clave": "b",
+        "texto": "Samples"
+      },
+      {
+        "clave": "c",
+        "texto": "Java with Maven"
+      },
+      {
+        "clave": "d",
+        "texto": "JavaFX"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Para añadir un módulo nuevo en NetBeans, el proceso indicado es ir a New → New Project y, dentro del árbol de proyectos, seleccionar la categoría NetBeans Modules, que se encuentra dentro de Java with Ant. Después se elige la opción Module.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Samples contiene ejemplos o proyectos de muestra, pero no es la categoría indicada para crear un módulo nuevo desde cero."
+        },
+        {
+          "clave": "c",
+          "motivo": "Java with Maven sirve para crear proyectos Java gestionados con Maven, pero el temario especifica que los módulos de NetBeans se crean desde NetBeans Modules dentro de Java with Ant."
+        },
+        {
+          "clave": "d",
+          "motivo": "JavaFX se utiliza para crear aplicaciones con interfaces gráficas en JavaFX, no para crear módulos de NetBeans."
+        }
+      ],
+      "resumen_didactico": "Para crear un módulo nuevo en NetBeans hay que usar la categoría específica de módulos, no una categoría genérica de Java ni de ejemplos.",
+      "ejemplo_practico": "Si quieres ampliar NetBeans con una funcionalidad propia, entras en New Project, buscas Java with Ant, seleccionas NetBeans Modules y después eliges Module.",
+      "conclusion_final": "La respuesta correcta es NetBeans Modules dentro de Java with Ant, porque es la categoría indicada para crear un nuevo módulo en NetBeans."
+    }
+  },
+  {
+    "id": "UT2-Q08",
+    "tema": "UT2 Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Cuál es la diferencia fundamental entre desactivar y desinstalar un módulo en NetBeans?",
+    "contexto": "Se pregunta por la gestión de módulos o plugins instalados en NetBeans.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "\"Desactivar\" oculta el módulo temporalmente, mientras que \"Desinstalar\" lo actualiza a su última versión."
+      },
+      {
+        "clave": "b",
+        "texto": "No hay ninguna diferencia, son dos términos para la misma acción."
+      },
+      {
+        "clave": "c",
+        "texto": "Ambas eliminan el módulo del disco duro, pero \"Desactivar\" guarda una copia de seguridad."
+      },
+      {
+        "clave": "d",
+        "texto": "\"Desactivar\" lo mantiene instalado pero no usable, mientras que \"Desinstalar\" lo elimina permanentemente."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En NetBeans, desactivar un módulo significa que el módulo sigue instalado en el ordenador, pero deja de estar disponible dentro del entorno. En cambio, desinstalarlo implica eliminarlo por completo del disco; si se quiere volver a usar más adelante, habrá que instalarlo otra vez.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Desinstalar no significa actualizar el módulo. Actualizar sería instalar una versión más reciente, mientras que desinstalar implica eliminarlo."
+        },
+        {
+          "clave": "b",
+          "motivo": "No son la misma acción. Desactivar conserva el módulo instalado, mientras que desinstalar lo borra del sistema."
+        },
+        {
+          "clave": "c",
+          "motivo": "Desactivar no elimina el módulo del disco duro. Lo mantiene instalado, solo que no disponible para su uso dentro del IDE."
+        }
+      ],
+      "resumen_didactico": "Desactivar es poner el módulo en pausa; desinstalar es quitarlo completamente.",
+      "ejemplo_practico": "Si tienes un plugin de NetBeans que ya no usas pero quizá quieras recuperar después, puedes desactivarlo. Si sabes que no lo necesitas más y quieres liberar el entorno, puedes desinstalarlo.",
+      "conclusion_final": "La respuesta correcta es que desactivar mantiene el módulo instalado pero no usable, mientras que desinstalar lo elimina permanentemente."
+    }
+  },
+  {
+    "id": "UT2-Q09",
+    "tema": "UT2 Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué debe hacer un programador si quiere inhabilitar temporalmente un plugin de NetBeans sin eliminarlo?",
+    "contexto": "El programador quiere que el plugin deje de estar disponible temporalmente, pero sin borrarlo del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Desactivar el módulo"
+      },
+      {
+        "clave": "b",
+        "texto": "Actualizar el módulo"
+      },
+      {
+        "clave": "c",
+        "texto": "Desinstalar el módulo"
+      },
+      {
+        "clave": "d",
+        "texto": "Reinstalar el IDE"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En NetBeans, desactivar un módulo significa que el módulo sigue instalado en el ordenador, pero deja de estar disponible dentro del entorno. Es la opción adecuada cuando se quiere inhabilitar temporalmente un plugin sin eliminarlo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Actualizar el módulo sirve para instalar una versión más reciente, no para inhabilitarlo temporalmente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Desinstalar el módulo lo elimina del sistema. Si se quisiera usar otra vez, habría que volver a instalarlo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Reinstalar el IDE es una medida innecesaria y no corresponde a la gestión normal de módulos o plugins."
+        }
+      ],
+      "resumen_didactico": "Si quieres dejar de usar un plugin sin borrarlo, debes desactivarlo. Si lo desinstalas, lo eliminas por completo.",
+      "ejemplo_practico": "Si un plugin de NetBeans está dando problemas pero quizá quieras volver a usarlo más adelante, lo correcto es desactivarlo para dejarlo en pausa sin borrarlo.",
+      "conclusion_final": "La respuesta correcta es desactivar el módulo, porque permite inhabilitar temporalmente el plugin sin eliminarlo."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "UT2 Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué operación realiza un desarrollador al eliminar permanentemente un módulo en NetBeans?",
+    "contexto": "Se quiere quitar un módulo de NetBeans de forma definitiva, eliminándolo del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La compilación del módulo"
+      },
+      {
+        "clave": "b",
+        "texto": "La desactivación del módulo"
+      },
+      {
+        "clave": "c",
+        "texto": "La desinstalación del módulo"
+      },
+      {
+        "clave": "d",
+        "texto": "La actualización del módulo"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En NetBeans, desinstalar un módulo significa eliminarlo por completo del sistema. A diferencia de la desactivación, donde el módulo sigue instalado pero no disponible, la desinstalación lo borra permanentemente y habría que volver a instalarlo si se quisiera usar otra vez.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La compilación consiste en traducir código fuente para generar código ejecutable o intermedio, pero no tiene relación con eliminar un módulo del IDE."
+        },
+        {
+          "clave": "b",
+          "motivo": "La desactivación solo inhabilita temporalmente el módulo, pero lo mantiene instalado en el sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "La actualización sirve para instalar una versión más reciente del módulo, no para eliminarlo permanentemente."
+        }
+      ],
+      "resumen_didactico": "Si el módulo se quiere dejar instalado pero sin usar, se desactiva. Si se quiere eliminar de forma definitiva, se desinstala.",
+      "ejemplo_practico": "Si un plugin de NetBeans ya no se necesita nunca más y se quiere quitar del ordenador, el programador debe desinstalarlo desde el gestor de complementos.",
+      "conclusion_final": "La respuesta correcta es la desinstalación del módulo, porque es la operación que lo elimina permanentemente."
+    }
+  },
+  {
+    "id": "UT2-Q11",
+    "tema": "UT2 Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué IDE pionero en los 80 es recordado por su velocidad de compilación?",
+    "contexto": "Se pregunta por uno de los primeros entornos de desarrollo destacados históricamente por compilar muy rápido.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Delphi"
+      },
+      {
+        "clave": "b",
+        "texto": "Visual Basic 6"
+      },
+      {
+        "clave": "c",
+        "texto": "Visual C++"
+      },
+      {
+        "clave": "d",
+        "texto": "Turbo Pascal"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Turbo Pascal fue lanzado por Borland en 1983 y es recordado como uno de los entornos pioneros por su gran velocidad de compilación. Permitía escribir, compilar y corregir de forma muy rápida, lo que lo convirtió en una herramienta muy popular en su época.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Delphi fue una evolución posterior de Turbo Pascal adaptada al desarrollo en Windows, pero no es el IDE pionero de los años 80 destacado por esa velocidad de compilación."
+        },
+        {
+          "clave": "b",
+          "motivo": "Visual Basic 6 destacó por popularizar el desarrollo rápido de aplicaciones con interfaces gráficas, pero no es el entorno de los años 80 recordado por la velocidad de compilación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Visual C++ está relacionado con el desarrollo en C/C++ y bibliotecas de Windows, .NET y MFC, pero no corresponde al IDE pionero señalado en el temario por su compilación rapidísima."
+        }
+      ],
+      "resumen_didactico": "Turbo Pascal fue un entorno histórico de Borland muy valorado porque permitía compilar de forma extremadamente rápida para su época.",
+      "ejemplo_practico": "En un laboratorio de programación, un estudiante podía escribir un programa en Pascal, compilarlo casi al instante, corregir errores y volver a probarlo rápidamente.",
+      "conclusion_final": "La respuesta correcta es Turbo Pascal, porque fue el IDE pionero de los años 80 recordado especialmente por su velocidad de compilación."
+    }
+  },
+  {
+    "id": "UT2-Q12",
+    "tema": "UT2 Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué IDE es el origen del dialecto utilizado por las macros VBA en Excel?",
+    "contexto": "Se pregunta por el entorno relacionado históricamente con Visual Basic for Applications, usado en macros de Microsoft Office como Excel.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Delphi"
+      },
+      {
+        "clave": "b",
+        "texto": "Visual C++"
+      },
+      {
+        "clave": "c",
+        "texto": "JBuilder"
+      },
+      {
+        "clave": "d",
+        "texto": "Visual Basic 6"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Visual Basic 6 popularizó el desarrollo rápido de aplicaciones y su legado sigue presente en VBA, el lenguaje utilizado para crear macros en aplicaciones de Microsoft Office como Excel.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Delphi procede de la evolución de Turbo Pascal y está vinculado al desarrollo de aplicaciones Windows, pero no es el origen del dialecto VBA usado en macros de Excel."
+        },
+        {
+          "clave": "b",
+          "motivo": "Visual C++ está orientado al desarrollo en C y C++, con bibliotecas como MFC, Windows y .NET, pero no es el origen de VBA."
+        },
+        {
+          "clave": "c",
+          "motivo": "JBuilder fue un entorno orientado a Java, no al lenguaje Visual Basic ni a las macros de Microsoft Office."
+        }
+      ],
+      "resumen_didactico": "Las macros de Excel se escriben en VBA, que deriva del entorno y lenguaje Visual Basic. Por eso la referencia correcta es Visual Basic 6.",
+      "ejemplo_practico": "Cuando automatizas una hoja de cálculo en Excel con una macro como Sub CalcularTotales(), estás usando VBA, una tecnología relacionada con Visual Basic.",
+      "conclusion_final": "La respuesta correcta es Visual Basic 6, porque es el entorno asociado al origen del dialecto usado por las macros VBA en Excel."
+    }
+  },
+  {
+    "id": "UT2-Q13",
+    "tema": "UT2 Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué IDE tiene licencia propietaria?",
+    "contexto": "Se pregunta por la clasificación de entornos de desarrollo según sean libres o propietarios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "JDeveloper"
+      },
+      {
+        "clave": "b",
+        "texto": "Eclipse"
+      },
+      {
+        "clave": "c",
+        "texto": "NetBeans"
+      },
+      {
+        "clave": "d",
+        "texto": "KDevelop"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la clasificación de entornos de desarrollo libres y propietarios, JDeveloper aparece como un IDE propietario. En cambio, Eclipse, NetBeans y KDevelop se presentan como entornos con licencias libres o de código abierto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Eclipse no es propietario. El temario lo presenta como un IDE open source con licencia EPL."
+        },
+        {
+          "clave": "c",
+          "motivo": "NetBeans no corresponde a la opción propietaria. El temario lo asocia a licencias libres como CDDL/GPL2."
+        },
+        {
+          "clave": "d",
+          "motivo": "KDevelop aparece como un entorno libre con licencia GPL, no como un IDE propietario."
+        }
+      ],
+      "resumen_didactico": "Un IDE propietario es aquel cuyo uso, distribución o modificación está controlado por su propietario. En el temario, JDeveloper se clasifica como propietario.",
+      "ejemplo_practico": "Si una empresa decide usar JDeveloper, está eligiendo un entorno controlado por su proveedor, a diferencia de Eclipse o NetBeans, que pertenecen al ecosistema open source.",
+      "conclusion_final": "La respuesta correcta es JDeveloper, porque es el IDE de la lista que el temario clasifica como propietario."
+    }
+  },
+  {
+    "id": "UT2-Q14",
+    "tema": "UT2 Instalación y uso de entornos de desarrollo",
+    "pregunta": "¿Qué herramienta genera documentación HTML a partir de comentarios en Java?",
+    "contexto": "Se pregunta por la herramienta que transforma comentarios escritos en el código Java en documentación navegable en formato HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El Profiler"
+      },
+      {
+        "clave": "b",
+        "texto": "El compilador javac"
+      },
+      {
+        "clave": "c",
+        "texto": "El depurador de NetBeans"
+      },
+      {
+        "clave": "d",
+        "texto": "Javadoc"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Javadoc es la herramienta de Java que recoge los comentarios estructurados escritos en el propio código y los transforma en documentación HTML para poder consultarla en formato web.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El Profiler sirve para analizar el rendimiento de una aplicación, como consumo de memoria o tiempo de ejecución, pero no genera documentación HTML desde comentarios."
+        },
+        {
+          "clave": "b",
+          "motivo": "El compilador javac traduce código fuente Java a bytecode, pero no se encarga de generar documentación HTML."
+        },
+        {
+          "clave": "c",
+          "motivo": "El depurador de NetBeans permite ejecutar el programa paso a paso, observar variables y localizar errores, pero no convierte comentarios en documentación."
+        }
+      ],
+      "resumen_didactico": "Javadoc permite documentar el código Java desde dentro del propio código y generar automáticamente una página HTML con esa documentación.",
+      "ejemplo_practico": "Si escribes comentarios especiales con /** ... */ sobre una clase o método Java, Javadoc puede convertir esa información en una página HTML con la descripción, parámetros, autor, versión y valores de retorno.",
+      "conclusion_final": "La respuesta correcta es Javadoc, porque es la herramienta específica para generar documentación HTML a partir de comentarios en Java."
+    }
+  },
+  {
+    "id": "UT3-Q15",
+    "tema": "UT3 Diseño y realización de pruebas",
+    "pregunta": "¿Cómo se denomina la prueba que mide tiempos de respuesta con miles de usuarios simultáneos?",
+    "contexto": "Se quiere comprobar cómo responde el sistema cuando muchos usuarios lo utilizan al mismo tiempo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Prueba de carga"
+      },
+      {
+        "clave": "b",
+        "texto": "Prueba unitaria"
+      },
+      {
+        "clave": "c",
+        "texto": "Prueba de usabilidad"
+      },
+      {
+        "clave": "d",
+        "texto": "Prueba de estabilidad"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las pruebas de carga permiten comprobar el comportamiento del sistema ante escenarios reales con baja, media o alta carga. Sirven para medir tiempos de respuesta, consumo de recursos y capacidad del sistema cuando muchos usuarios acceden simultáneamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La prueba unitaria verifica partes pequeñas del software, como funciones, métodos u objetos individuales. No está pensada para medir miles de usuarios simultáneos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La prueba de usabilidad analiza si una interfaz es cómoda, clara y fácil de usar, pero no mide rendimiento bajo concurrencia masiva."
+        },
+        {
+          "clave": "d",
+          "motivo": "La prueba de estabilidad comprueba si el sistema se mantiene funcionando durante un tiempo prolongado o ante cargas constantes, pero la pregunta se centra en medir tiempos de respuesta con muchos usuarios simultáneos, lo que corresponde mejor a carga."
+        }
+      ],
+      "resumen_didactico": "Cuando se simulan muchos usuarios usando el sistema a la vez para medir tiempos de respuesta y rendimiento, se habla de prueba de carga.",
+      "ejemplo_practico": "Si una tienda online espera miles de accesos durante el Black Friday, puede ejecutar una prueba de carga para comprobar si la web responde rápido y no se cae.",
+      "conclusion_final": "La respuesta correcta es prueba de carga, porque mide cómo se comporta el sistema cuando soporta muchos usuarios o peticiones simultáneas."
+    }
+  },
+  {
+    "id": "UT3-Q16",
+    "tema": "UT3 Diseño y realización de pruebas",
+    "pregunta": "¿Cuál es el objetivo de una prueba de estrés?",
+    "contexto": "Se quiere comprobar cómo responde una aplicación cuando se somete a cargas cada vez mayores hasta llegar a situaciones extremas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Comprobar que la interfaz de usuario es fácil de entender y manejar."
+      },
+      {
+        "clave": "b",
+        "texto": "Verificar que los cambios en el código no hayan introducido nuevos errores."
+      },
+      {
+        "clave": "c",
+        "texto": "Mantener una carga constante en el sistema durante un largo periodo de tiempo."
+      },
+      {
+        "clave": "d",
+        "texto": "Elevar la carga del equipo poco a poco hasta niveles extremos para ver cómo responde la aplicación."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Las pruebas de estrés consisten en aumentar progresivamente la carga del sistema hasta acercarlo a su límite. Su objetivo es comprobar cómo responde la aplicación en condiciones extremas y detectar en qué punto empieza a degradarse, fallar o dejar de responder correctamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Comprobar si la interfaz es fácil de entender y manejar corresponde a pruebas de usabilidad, no a pruebas de estrés."
+        },
+        {
+          "clave": "b",
+          "motivo": "Verificar que los cambios no introducen errores nuevos corresponde a pruebas de regresión."
+        },
+        {
+          "clave": "c",
+          "motivo": "Mantener una carga constante durante mucho tiempo se relaciona más con pruebas de estabilidad o resistencia prolongada, no con elevar progresivamente la carga hasta el límite."
+        }
+      ],
+      "resumen_didactico": "La prueba de estrés busca llevar el sistema a condiciones extremas aumentando la carga poco a poco para observar su comportamiento y sus límites.",
+      "ejemplo_practico": "Una plataforma online puede simular 100 usuarios, luego 500, después 1000 y seguir aumentando hasta comprobar en qué momento la aplicación empieza a responder lentamente o se cae.",
+      "conclusion_final": "La respuesta correcta es elevar la carga del equipo poco a poco hasta niveles extremos para ver cómo responde la aplicación."
+    }
+  },
+  {
+    "id": "UT3-Q17",
+    "tema": "UT3 Diseño y realización de pruebas",
+    "pregunta": "¿Qué representa este criterio: \"no más de 3 revisiones por función del módulo de transacciones\"?",
+    "contexto": "Se define un criterio medible relacionado con el número máximo de revisiones permitidas en una función o módulo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una prueba de estrés"
+      },
+      {
+        "clave": "b",
+        "texto": "Una prueba de integración"
+      },
+      {
+        "clave": "c",
+        "texto": "Un caso de prueba de caja negra"
+      },
+      {
+        "clave": "d",
+        "texto": "Una medida o métrica de calidad del software"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Las métricas de calidad del software son criterios medibles que permiten evaluar la calidad del programa. Entre las métricas comunes aparecen los errores por cierto número de líneas de código y las revisiones medias realizadas a una función o módulo. Por eso, limitar las revisiones a un máximo concreto es una métrica de calidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una prueba de estrés consiste en aumentar progresivamente la carga del sistema hasta niveles extremos para comprobar cómo responde. No mide el número de revisiones de una función."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una prueba de integración comprueba que varios módulos o componentes funcionan correctamente juntos. No define un umbral de revisiones por función."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un caso de prueba de caja negra verifica entradas y salidas sin analizar el código interno. El criterio indicado no describe una entrada, una salida esperada ni una validación funcional externa."
+        }
+      ],
+      "resumen_didactico": "Cuando un criterio se expresa como un número máximo, una media o un umbral evaluable, estamos ante una métrica de calidad del software.",
+      "ejemplo_practico": "Si el equipo establece que una función del módulo de pagos no debe necesitar más de 3 revisiones antes de aprobarse, está usando ese número como indicador de calidad y mantenibilidad.",
+      "conclusion_final": "La respuesta correcta es una medida o métrica de calidad del software, porque el criterio establece un valor medible para evaluar la calidad del módulo."
+    }
+  },
+  {
+    "id": "UT3-Q18",
+    "tema": "UT3 Diseño y realización de pruebas",
+    "pregunta": "¿Qué criterio de calidad se prioriza al dividir una aplicación en componentes pequeños e independientes?",
+    "contexto": "Se busca mejorar la estructura interna del software separándolo en partes pequeñas, claras e independientes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Tolerancia a errores"
+      },
+      {
+        "clave": "b",
+        "texto": "Independencia de la plataforma del hardware"
+      },
+      {
+        "clave": "c",
+        "texto": "Estandarización de los datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Modularidad"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La modularidad es un atributo de calidad del software que consiste en dividir una aplicación en módulos o componentes pequeños, independientes y bien organizados. Esto facilita el mantenimiento, la comprensión, la reutilización y la evolución del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La tolerancia a errores se refiere a la capacidad del sistema para seguir funcionando o recuperarse ante fallos, no directamente a dividir la aplicación en componentes pequeños."
+        },
+        {
+          "clave": "b",
+          "motivo": "La independencia de la plataforma del hardware indica que el software puede funcionar en distintos entornos o dispositivos, pero no describe la división interna del programa en módulos."
+        },
+        {
+          "clave": "c",
+          "motivo": "La estandarización de los datos busca usar formatos, estructuras o reglas comunes para representar la información, pero no se centra en separar la aplicación en componentes independientes."
+        }
+      ],
+      "resumen_didactico": "Cuando un sistema se divide en partes pequeñas, separadas y manejables, se está priorizando la modularidad.",
+      "ejemplo_practico": "En una tienda online, separar el sistema en módulos como usuarios, productos, carrito, pagos y facturación mejora la organización y permite modificar una parte sin afectar directamente a todas las demás.",
+      "conclusion_final": "La respuesta correcta es modularidad, porque este criterio busca organizar el software en componentes independientes y fáciles de mantener."
+    }
+  },
+  {
+    "id": "UT3-Q19",
+    "tema": "UT3 Diseño y realización de pruebas",
+    "pregunta": "¿A qué categoría pertenecen las pruebas que evalúan tiempos de respuesta y consumo de recursos?",
+    "contexto": "Se pregunta por las pruebas que no verifican una función concreta del sistema, sino su rendimiento y comportamiento técnico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Pruebas funcionales"
+      },
+      {
+        "clave": "b",
+        "texto": "Pruebas de clases de equivalencia"
+      },
+      {
+        "clave": "c",
+        "texto": "Pruebas no funcionales"
+      },
+      {
+        "clave": "d",
+        "texto": "Pruebas de aceptación del usuario"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Las pruebas no funcionales evalúan cómo se comporta el sistema, no qué función realiza. Dentro de este tipo de pruebas se analizan aspectos como el rendimiento, los tiempos de respuesta, la fiabilidad, la resistencia al estrés y el consumo de recursos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las pruebas funcionales comprueban si el sistema cumple las funcionalidades solicitadas, es decir, qué hace el sistema. No se centran principalmente en tiempos de respuesta o consumo de recursos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Las pruebas de clases de equivalencia son una técnica de caja negra que agrupa entradas que deberían comportarse igual. Sirven para reducir casos de prueba, no para medir rendimiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las pruebas de aceptación del usuario validan si el sistema completo cumple los requisitos y expectativas del cliente o usuario final. Aunque pueden incluir carga o estrés en algunos escenarios, la categoría general que mide rendimiento y recursos es la de pruebas no funcionales."
+        }
+      ],
+      "resumen_didactico": "Si la prueba mide cómo responde el sistema, cuántos recursos consume o si aguanta determinada carga, hablamos de pruebas no funcionales.",
+      "ejemplo_practico": "Si una aplicación tarda 4 segundos en cargar una pantalla cuando hay muchos usuarios conectados, esa medición pertenece a una prueba no funcional de rendimiento.",
+      "conclusion_final": "La respuesta correcta es pruebas no funcionales, porque evalúan rendimiento, tiempos de respuesta y consumo de recursos."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4 Optimización y documentación",
+    "pregunta": "¿Qué documento necesita un usuario sin conocimientos técnicos para usar un programa?",
+    "contexto": "Se pregunta por el tipo de documentación dirigida a personas que necesitan utilizar la aplicación sin conocer su funcionamiento interno.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Documento de diseño"
+      },
+      {
+        "clave": "b",
+        "texto": "Manual técnico"
+      },
+      {
+        "clave": "c",
+        "texto": "Manual de usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "Documentación de la fase de pruebas"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El manual de usuario está escrito en un lenguaje sencillo y está pensado para que cualquier persona, incluso sin conocimientos técnicos, pueda entender para qué sirve el programa y cómo utilizarlo correctamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El documento de diseño describe cómo se plantea la estructura o arquitectura del software. Está más orientado al equipo de desarrollo o al cliente en fases previas, no al usuario final."
+        },
+        {
+          "clave": "b",
+          "motivo": "El manual técnico está dirigido a desarrolladores o personal de sistemas. Contiene información interna del software, como arquitectura, código, componentes o bases de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "La documentación de la fase de pruebas recoge casos de prueba, resultados y validaciones. No está pensada para enseñar al usuario final a manejar el programa."
+        }
+      ],
+      "resumen_didactico": "El usuario final necesita instrucciones claras, sencillas y orientadas al uso práctico del programa. Ese documento es el manual de usuario.",
+      "ejemplo_practico": "Si una persona instala una aplicación de facturación y no sabe cómo crear una factura, consultar clientes o generar un informe, debe acudir al manual de usuario.",
+      "conclusion_final": "La respuesta correcta es manual de usuario, porque es el documento destinado a personas sin conocimientos técnicos que necesitan aprender a usar el programa."
+    }
+  },
+  {
+    "id": "UT4-Q21",
+    "tema": "UT4 Optimización y documentación",
+    "pregunta": "¿Cuál es la razón principal para usar herramientas como Javadoc?",
+    "contexto": "Se pregunta por la utilidad de generar documentación automática a partir de comentarios estructurados dentro del propio código.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite escribir la documentación en un procesador de textos."
+      },
+      {
+        "clave": "b",
+        "texto": "Evita que la documentación quede desactualizada, ya que los comentarios se modifican junto con el código."
+      },
+      {
+        "clave": "c",
+        "texto": "Genera únicamente documentos de carácter funcional para el cliente."
+      },
+      {
+        "clave": "d",
+        "texto": "Reemplaza la necesidad de un manual de usuario."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Herramientas como Javadoc permiten generar documentación automáticamente a partir de comentarios estructurados escritos en el propio código. Esto ayuda a que la documentación técnica esté más cerca del código y se actualice junto con él, evitando que quede obsoleta con facilidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Javadoc no se basa en escribir documentación en un procesador de textos, sino en extraer comentarios del propio código fuente y convertirlos en documentación HTML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Javadoc genera documentación técnica, no únicamente documentos funcionales para el cliente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Javadoc no sustituye al manual de usuario. El manual de usuario explica cómo usar el programa a personas sin conocimientos técnicos, mientras que Javadoc documenta el código para desarrolladores."
+        }
+      ],
+      "resumen_didactico": "La documentación automática es útil porque vive cerca del código. Si el código cambia, los comentarios pueden actualizarse en el mismo lugar y la documentación generada refleja mejor el estado real del proyecto.",
+      "ejemplo_practico": "Si un método Java cambia sus parámetros, el programador puede actualizar los comentarios @param en el mismo archivo. Después, Javadoc genera de nuevo la documentación HTML con la información actualizada.",
+      "conclusion_final": "La respuesta correcta es que evita que la documentación quede desactualizada, porque Javadoc genera documentación desde comentarios mantenidos junto al código."
+    }
+  },
+  {
+    "id": "UT4-Q22",
+    "tema": "UT4 Optimización y documentación",
+    "pregunta": "¿Qué etiquetas debe usar un programador para indicar autor y versión en Javadoc?",
+    "contexto": "Se pregunta por las etiquetas específicas de Javadoc usadas para documentar quién creó el código y qué versión tiene.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "@return y @param"
+      },
+      {
+        "clave": "b",
+        "texto": "@see y @link"
+      },
+      {
+        "clave": "c",
+        "texto": "@deprecated y @since"
+      },
+      {
+        "clave": "d",
+        "texto": "@author y @version"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En Javadoc, la etiqueta @author sirve para indicar quién es el autor del código, mientras que @version permite señalar la versión de ese fragmento o componente documentado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "@return se usa para explicar qué valor devuelve un método y @param para describir sus parámetros. No sirven para indicar autor y versión."
+        },
+        {
+          "clave": "b",
+          "motivo": "@see se usa para crear referencias relacionadas dentro de la documentación. @link se utiliza para enlazar elementos, pero no indica autor ni versión."
+        },
+        {
+          "clave": "c",
+          "motivo": "@deprecated se usa para marcar elementos obsoletos o no recomendados, y @since indica desde qué versión o fecha existe un elemento. No son las etiquetas de autor y versión."
+        }
+      ],
+      "resumen_didactico": "Para documentar quién creó el código y qué versión tiene en Javadoc, se usan las etiquetas @author y @version.",
+      "ejemplo_practico": "En un comentario Javadoc se podría escribir: @author Ana García para indicar la autora, y @version 1.2 para señalar la versión del código documentado.",
+      "conclusion_final": "La respuesta correcta es @author y @version, porque son las etiquetas específicas de Javadoc para indicar autoría y versión."
+    }
+  },
+  {
+    "id": "UT4-Q23",
+    "tema": "UT4 Optimización y documentación",
+    "pregunta": "¿Qué etiqueta de Javadoc permite incluir una URL en la documentación?",
+    "contexto": "Se pregunta por la etiqueta de Javadoc usada para incluir enlaces dentro de la documentación generada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "@see"
+      },
+      {
+        "clave": "b",
+        "texto": "@return"
+      },
+      {
+        "clave": "c",
+        "texto": "@param"
+      },
+      {
+        "clave": "d",
+        "texto": "@link"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En Javadoc, la etiqueta @link se utiliza para insertar enlaces dentro de la documentación, permitiendo relacionar el texto documentado con otros elementos o referencias enlazadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "@see se utiliza para crear referencias relacionadas o apartados de consulta adicional, pero en esta pregunta la etiqueta esperada para incluir un enlace directamente en la documentación es @link."
+        },
+        {
+          "clave": "b",
+          "motivo": "@return sirve para explicar qué valor devuelve un método. No se usa para incluir URL o enlaces."
+        },
+        {
+          "clave": "c",
+          "motivo": "@param se utiliza para describir los parámetros que recibe un método. No sirve para insertar enlaces en la documentación."
+        }
+      ],
+      "resumen_didactico": "Si quieres insertar un enlace dentro del texto de una documentación Javadoc, la etiqueta correcta en esta pregunta es @link.",
+      "ejemplo_practico": "En un comentario Javadoc, @link puede usarse para enlazar una referencia relacionada dentro de la explicación de una clase o método.",
+      "conclusion_final": "La respuesta correcta es @link, porque es la etiqueta indicada en esta pregunta para incluir una URL o enlace dentro de la documentación Javadoc."
+    }
+  },
+  {
+    "id": "UT4-Q24",
+    "tema": "UT4 Optimización y documentación",
+    "pregunta": "¿Qué patrón aplica un programador al hacer un atributo privado y usar get/set?",
+    "contexto": "Se modifica una clase para proteger sus atributos internos y acceder a ellos mediante métodos controlados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Autoencapsular campos (getters y setters)"
+      },
+      {
+        "clave": "b",
+        "texto": "Mover métodos entre clases"
+      },
+      {
+        "clave": "c",
+        "texto": "Reemplazar valores con objetos"
+      },
+      {
+        "clave": "d",
+        "texto": "Extraer clases"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Autoencapsular campos consiste en hacer privados los atributos de una clase y proporcionar acceso controlado mediante métodos públicos, normalmente getters y setters. Esta técnica protege la información interna del objeto y evita modificaciones directas no controladas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Mover métodos entre clases consiste en trasladar una operación a la clase donde tiene más sentido o donde se usa más, pero no trata específicamente de hacer atributos privados ni usar get/set."
+        },
+        {
+          "clave": "c",
+          "motivo": "Reemplazar valores con objetos se aplica cuando un dato simple empieza a necesitar más estructura y conviene convertirlo en una clase propia. No describe el uso de getters y setters."
+        },
+        {
+          "clave": "d",
+          "motivo": "Extraer clases consiste en dividir una clase demasiado grande en clases más pequeñas y cohesionadas. No se refiere directamente a encapsular atributos."
+        }
+      ],
+      "resumen_didactico": "Cuando un atributo deja de ser accesible directamente y se controla mediante getters y setters, se está aplicando encapsulación mediante autoencapsulación de campos.",
+      "ejemplo_practico": "En vez de permitir modificar directamente persona.edad, se declara edad como privada y se crean métodos getEdad() y setEdad() para leerla o cambiarla de forma controlada.",
+      "conclusion_final": "La respuesta correcta es autoencapsular campos (getters y setters), porque consiste en proteger los atributos y acceder a ellos mediante métodos controlados."
+    }
+  },
+  {
+    "id": "UT5-Q25",
+    "tema": "UT5 Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Qué componente de una herramienta CASE permite generar código automáticamente?",
+    "contexto": "Se pregunta por el componente de una herramienta CASE que permite transformar información del modelo en código o realizar el proceso inverso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La carga o descarga de datos (generación de código)"
+      },
+      {
+        "clave": "b",
+        "texto": "La comprobación de errores"
+      },
+      {
+        "clave": "c",
+        "texto": "La interfaz de usuario"
+      },
+      {
+        "clave": "d",
+        "texto": "El repositorio"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En una herramienta CASE con soporte UML, la carga y descarga de datos permite generar el esqueleto del código en un lenguaje de programación a partir de un diagrama, o realizar el proceso inverso: crear un diagrama a partir de código existente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La comprobación de errores analiza los diagramas y avisa de posibles inconsistencias o fallos de diseño, pero no es el componente encargado de generar código automáticamente."
+        },
+        {
+          "clave": "c",
+          "motivo": "La interfaz de usuario permite trabajar gráficamente con la herramienta, usando editores, menús y ventanas, pero no es el componente específico que genera código."
+        },
+        {
+          "clave": "d",
+          "motivo": "El repositorio almacena la información del modelo, como diagramas, clases y relaciones, pero no realiza por sí mismo la generación automática de código."
+        }
+      ],
+      "resumen_didactico": "Cuando una herramienta CASE convierte un diagrama UML en código, está usando su capacidad de carga o descarga de datos, también relacionada con la generación automática de código.",
+      "ejemplo_practico": "Si creas un diagrama de clases con Cliente, Pedido y Producto, una herramienta CASE puede generar automáticamente el esqueleto de esas clases en Java o TypeScript.",
+      "conclusion_final": "La respuesta correcta es la carga o descarga de datos, porque es el componente que permite generar código a partir de modelos o crear modelos desde código existente."
+    }
+  },
+  {
+    "id": "UT5-Q26",
+    "tema": "UT5 Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Cuál es uno de los objetivos clave de usar herramientas CASE respecto a documentación?",
+    "contexto": "Se pregunta por una de las finalidades de las herramientas CASE dentro del desarrollo de software y el modelado UML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Generar únicamente documentación funcional"
+      },
+      {
+        "clave": "b",
+        "texto": "Hacer que la documentación sea opcional"
+      },
+      {
+        "clave": "c",
+        "texto": "Mejorar y estandarizar la documentación"
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar la necesidad de crear manuales de usuario"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Las herramientas CASE ayudan a los analistas e ingenieros de software durante el ciclo de vida del proyecto. Uno de sus objetivos principales es mejorar y estandarizar la documentación, además de automatizar tareas como la generación de código, el chequeo de errores y la gestión del proyecto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Las herramientas CASE no generan únicamente documentación funcional. También pueden apoyar documentación técnica, diagramas, modelos, código y otros elementos del desarrollo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El objetivo no es hacer que la documentación sea opcional, sino facilitarla, mejorarla y hacerla más homogénea."
+        },
+        {
+          "clave": "d",
+          "motivo": "Las herramientas CASE no eliminan la necesidad de manuales de usuario. Pueden ayudar a documentar el sistema, pero cada tipo de documentación sigue teniendo su función."
+        }
+      ],
+      "resumen_didactico": "Las herramientas CASE sirven para apoyar el desarrollo de software, automatizar tareas y conseguir una documentación más clara, uniforme y profesional.",
+      "ejemplo_practico": "Si un equipo crea diagramas UML con una herramienta CASE, puede mantener la información del modelo organizada en un repositorio y generar documentación más coherente para todo el proyecto.",
+      "conclusion_final": "La respuesta correcta es mejorar y estandarizar la documentación, porque es uno de los objetivos principales de las herramientas CASE."
+    }
+  },
+  {
+    "id": "UT5-Q27",
+    "tema": "UT5 Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Qué objetivo persigue la capacidad de prototipado en herramientas CASE?",
+    "contexto": "Se pregunta por uno de los objetivos de las herramientas CASE dentro del desarrollo asistido de software.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Facilitar la realización de prototipos"
+      },
+      {
+        "clave": "b",
+        "texto": "Aumentar la portabilidad de las aplicaciones"
+      },
+      {
+        "clave": "c",
+        "texto": "Estandarizar la documentación"
+      },
+      {
+        "clave": "d",
+        "texto": "Simplificar el mantenimiento"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Las herramientas CASE ayudan a los analistas e ingenieros de software durante el ciclo de vida del proyecto. Entre sus objetivos está facilitar la creación de prototipos para poder representar o enseñar rápidamente una primera versión del sistema antes de desarrollarlo por completo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Aumentar la portabilidad de las aplicaciones no es el objetivo específico de la capacidad de prototipado. La portabilidad se relaciona con que una aplicación pueda funcionar en distintos entornos o plataformas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Estandarizar la documentación sí puede ser un objetivo de las herramientas CASE, pero no responde específicamente a la capacidad de prototipado."
+        },
+        {
+          "clave": "d",
+          "motivo": "Simplificar el mantenimiento también puede ser un objetivo general de las herramientas CASE, pero la pregunta se centra en el prototipado, cuya finalidad directa es facilitar la creación de prototipos."
+        }
+      ],
+      "resumen_didactico": "El prototipado permite crear una versión inicial o maqueta del sistema para visualizarlo, enseñarlo y validarlo antes de construirlo completamente.",
+      "ejemplo_practico": "Antes de programar una aplicación de reservas, el equipo puede crear un prototipo con las pantallas principales y el flujo básico para que el cliente valide la idea.",
+      "conclusion_final": "La respuesta correcta es facilitar la realización de prototipos, porque esa es la finalidad directa de la capacidad de prototipado en herramientas CASE."
+    }
+  },
+  {
+    "id": "UT5-Q28",
+    "tema": "UT5 Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Cómo se denomina el marco que define reglas y metodologías en una herramienta CASE?",
+    "contexto": "Se pregunta por el marco conceptual que organiza las reglas, métodos y estructura que una herramienta CASE utiliza para trabajar con modelos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Generador de código"
+      },
+      {
+        "clave": "b",
+        "texto": "Repositorio"
+      },
+      {
+        "clave": "c",
+        "texto": "Metamodelo"
+      },
+      {
+        "clave": "d",
+        "texto": "Interfaz de usuario"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El metamodelo es el marco que define las reglas, estructuras y metodologías que permiten construir y organizar los modelos dentro de una herramienta CASE. Sirve como base para que los elementos del modelado tengan coherencia y sigan unas normas comunes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El generador de código permite transformar modelos o diagramas en código, pero no define las reglas generales ni la metodología de modelado."
+        },
+        {
+          "clave": "b",
+          "motivo": "El repositorio almacena la información del modelo, como diagramas, clases, relaciones y otros datos, pero no es el marco que define las reglas de construcción."
+        },
+        {
+          "clave": "d",
+          "motivo": "La interfaz de usuario permite manejar visualmente la herramienta mediante menús, ventanas y editores, pero no define la estructura conceptual del modelado."
+        }
+      ],
+      "resumen_didactico": "El metamodelo funciona como la base normativa de una herramienta CASE: define cómo deben organizarse los elementos del modelo y qué reglas siguen.",
+      "ejemplo_practico": "En una herramienta UML, el metamodelo determina qué es una clase, qué es una relación, cómo se conectan los elementos y qué reglas deben respetar los diagramas.",
+      "conclusion_final": "La respuesta correcta es metamodelo, porque es el marco que define las reglas y metodologías usadas por la herramienta CASE."
+    }
+  },
+  {
+    "id": "UT5-Q29",
+    "tema": "UT5 Introducción al lenguaje unificado de modelado (UML)",
+    "pregunta": "¿Cómo se agrupan los 14 diagramas UML según su perspectiva?",
+    "contexto": "Se pregunta por la clasificación general de los diagramas UML según representen la parte estática o dinámica del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Diagramas simples y diagramas complejos"
+      },
+      {
+        "clave": "b",
+        "texto": "Diagramas lógicos y diagramas físicos"
+      },
+      {
+        "clave": "c",
+        "texto": "Diagramas de usuario y diagramas de desarrollador"
+      },
+      {
+        "clave": "d",
+        "texto": "Diagramas de estructura y diagramas de comportamiento"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "UML permite crear 14 tipos de diagramas, que se agrupan en dos grandes categorías: diagramas de estructura y diagramas de comportamiento. Los diagramas de estructura muestran la parte estática del sistema, como clases, objetos, componentes o paquetes. Los diagramas de comportamiento muestran la parte dinámica, como procesos, interacciones, estados o actividades.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "UML no clasifica oficialmente sus diagramas en simples y complejos. Esa división no corresponde a la perspectiva explicada en el temario."
+        },
+        {
+          "clave": "b",
+          "motivo": "Aunque algunos diagramas pueden representar aspectos lógicos o físicos, esa no es la agrupación general de los 14 diagramas UML según el temario."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los diagramas UML no se agrupan en diagramas de usuario y de desarrollador. Muchos pueden ser útiles para ambos perfiles, pero no es su clasificación principal."
+        }
+      ],
+      "resumen_didactico": "Los diagramas UML se dividen principalmente en dos perspectivas: estructura, para mostrar de qué está hecho el sistema, y comportamiento, para mostrar qué hace y cómo evoluciona.",
+      "ejemplo_practico": "Un diagrama de clases pertenece a los diagramas de estructura porque muestra clases y relaciones. Un diagrama de actividades pertenece a los diagramas de comportamiento porque muestra el flujo de un proceso.",
+      "conclusion_final": "La respuesta correcta es diagramas de estructura y diagramas de comportamiento, porque esa es la clasificación general de los 14 diagramas UML."
+    }
+  },
+  {
+    "id": "UT6-Q30",
+    "tema": "UT6 Elaboración de diagramas de clases",
+    "pregunta": "¿Qué tipo de relación existe si una Facultad depende de la Universidad para existir?",
+    "contexto": "Se plantea una relación todo-parte en la que una parte no tiene sentido o no puede existir de forma independiente al todo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Asociación"
+      },
+      {
+        "clave": "b",
+        "texto": "Agregación"
+      },
+      {
+        "clave": "c",
+        "texto": "Herencia"
+      },
+      {
+        "clave": "d",
+        "texto": "Composición"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La composición es una relación fuerte de tipo todo-parte. En ella, la parte depende del todo para existir. Si el todo desaparece, la parte también pierde su sentido dentro del modelo. Por eso, si una Facultad depende de la Universidad para existir, se trata de una composición.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La asociación indica una relación general entre clases, pero no expresa necesariamente dependencia de existencia entre una parte y un todo."
+        },
+        {
+          "clave": "b",
+          "motivo": "La agregación también representa una relación todo-parte, pero más débil: las partes pueden existir de forma independiente al todo. Aquí la Facultad depende de la Universidad, por eso no es agregación."
+        },
+        {
+          "clave": "c",
+          "motivo": "La herencia representa una relación de tipo 'es un/a'. Una Facultad no es un tipo de Universidad, sino una parte de ella."
+        }
+      ],
+      "resumen_didactico": "Si una parte puede existir por separado, hablamos de agregación. Si la parte depende del todo para existir, hablamos de composición.",
+      "ejemplo_practico": "Una Universidad puede estar formada por varias Facultades. Si en el modelo una Facultad solo existe dentro de una Universidad concreta, la relación es de composición.",
+      "conclusion_final": "La respuesta correcta es composición, porque la Facultad depende de la Universidad como parte inseparable del todo."
+    }
+  },
+  {
+    "id": "UT6-Q31",
+    "tema": "UT6 Elaboración de diagramas de clases",
+    "pregunta": "¿Qué relación conceptual existe entre una clase y un objeto?",
+    "contexto": "Se pregunta por la diferencia entre el modelo general que define características y comportamientos, y el elemento concreto creado a partir de ese modelo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una clase es una plantilla, y un objeto es una instancia concreta de esa clase."
+      },
+      {
+        "clave": "b",
+        "texto": "Un objeto es la representación visual de una clase en un diagrama."
+      },
+      {
+        "clave": "c",
+        "texto": "Son sinónimos."
+      },
+      {
+        "clave": "d",
+        "texto": "Una clase es un conjunto de objetos no relacionados."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En programación orientada a objetos y en diagramas de clases UML, una clase funciona como una plantilla o molde que define atributos y métodos comunes. Un objeto es una instancia concreta creada a partir de esa clase, con valores específicos en sus atributos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Un objeto no es simplemente la representación visual de una clase. Es una entidad concreta creada a partir de una clase, con datos propios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Clase y objeto no son sinónimos. La clase es el modelo general; el objeto es un caso concreto creado desde ese modelo."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una clase no es un conjunto de objetos no relacionados. Al contrario, define la estructura común que comparten todos los objetos creados a partir de ella."
+        }
+      ],
+      "resumen_didactico": "La clase es el molde; el objeto es el elemento real creado con ese molde.",
+      "ejemplo_practico": "La clase Vehiculo puede definir atributos como matricula, marca y kilometraje. Un SEAT León con matrícula 1234ABC y 50000 km sería un objeto concreto de esa clase.",
+      "conclusion_final": "La respuesta correcta es que una clase es una plantilla y un objeto es una instancia concreta de esa clase."
+    }
+  },
+  {
+    "id": "UT6-Q32",
+    "tema": "UT6 Elaboración de diagramas de clases",
+    "pregunta": "¿Qué capacidad necesita una herramienta CASE para generar diagramas UML desde código Java?",
+    "contexto": "Se pregunta por la capacidad de una herramienta CASE para crear automáticamente un diagrama UML a partir de código ya existente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Soporte para trabajo colaborativo"
+      },
+      {
+        "clave": "b",
+        "texto": "Generación de código a diagrama"
+      },
+      {
+        "clave": "c",
+        "texto": "Generación de diagrama a código"
+      },
+      {
+        "clave": "d",
+        "texto": "Interfaz de usuario intuitiva"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una herramienta CASE adecuada debe permitir ingeniería de ida y vuelta. Esto significa que puede generar código a partir de un diagrama, pero también crear un diagrama UML desde código ya existente. Cuando se parte de código Java para obtener un diagrama, se está usando la capacidad de generación de código a diagrama, también conocida como ingeniería inversa.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El soporte para trabajo colaborativo permite que varias personas trabajen sobre el mismo modelo o archivo, pero no es la capacidad específica para generar diagramas desde código."
+        },
+        {
+          "clave": "c",
+          "motivo": "La generación de diagrama a código permite crear el esqueleto de clases a partir del diagrama UML. Es el proceso contrario al que plantea la pregunta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una interfaz intuitiva facilita el uso de la herramienta, pero no describe la función técnica de transformar código Java en diagramas UML."
+        }
+      ],
+      "resumen_didactico": "Si partes de un diagrama y obtienes código, es generación de diagrama a código. Si partes de código y obtienes un diagrama UML, es generación de código a diagrama.",
+      "ejemplo_practico": "Si tienes varias clases Java ya programadas, como Usuario, Pedido y Producto, una herramienta CASE con ingeniería inversa puede analizarlas y crear automáticamente el diagrama de clases correspondiente.",
+      "conclusion_final": "La respuesta correcta es generación de código a diagrama, porque esa capacidad permite crear diagramas UML a partir de código Java existente."
+    }
+  },
+  {
+    "id": "UT6-Q33",
+    "tema": "UT6 Elaboración de diagramas de clases",
+    "pregunta": "¿Cómo se denomina en UML un \"Ford Focus con matrícula 1234ABC\" respecto a la clase Vehículo?",
+    "contexto": "Se pregunta por un elemento concreto creado a partir de la clase general Vehículo, con valores específicos en sus atributos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Una clase abstracta"
+      },
+      {
+        "clave": "b",
+        "texto": "Una instancia u objeto"
+      },
+      {
+        "clave": "c",
+        "texto": "Una asociación"
+      },
+      {
+        "clave": "d",
+        "texto": "Una superclase"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En UML y en programación orientada a objetos, una clase es una plantilla general, mientras que un objeto o instancia es un elemento concreto creado a partir de esa clase. Si Vehículo es la clase, un Ford Focus con matrícula 1234ABC es un objeto concreto de esa clase.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una clase abstracta es una clase general que sirve como plantilla y de la que no se crean objetos directamente. Un Ford Focus concreto no es una clase abstracta."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una asociación es una relación entre clases, por ejemplo entre Vehículo y Propietario. No describe un objeto concreto creado desde una clase."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una superclase es una clase general de la que pueden heredar otras clases. Vehículo podría actuar como superclase, pero el Ford Focus con una matrícula concreta es una instancia, no una superclase."
+        }
+      ],
+      "resumen_didactico": "La clase define el modelo general; el objeto o instancia es un caso concreto con datos propios.",
+      "ejemplo_practico": "La clase Vehículo puede tener atributos como matrícula, marca y modelo. Un objeto concreto sería: marca Ford, modelo Focus, matrícula 1234ABC.",
+      "conclusion_final": "La respuesta correcta es una instancia u objeto, porque representa un vehículo concreto creado a partir de la clase Vehículo."
+    }
+  },
+  {
+    "id": "UT6-Q34",
+    "tema": "UT6 Elaboración de diagramas de clases",
+    "pregunta": "¿Qué nivel de visibilidad debe tener un atributo password según principios de encapsulamiento?",
+    "contexto": "Se pregunta por el nivel de acceso adecuado para un atributo sensible dentro de una clase.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Privado (-)"
+      },
+      {
+        "clave": "b",
+        "texto": "Público (+)"
+      },
+      {
+        "clave": "c",
+        "texto": ")"
+      },
+      {
+        "clave": "d",
+        "texto": "Paquete ("
+      },
+      {
+        "clave": "e",
+        "texto": "Protegido ("
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Según los principios de encapsulamiento, los atributos de una clase deben protegerse evitando el acceso directo desde fuera. En UML, la visibilidad privada se representa con el símbolo -, y significa que solo la propia clase puede acceder directamente a ese atributo. Un campo sensible como password debe ser privado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Público (+) permitiría que cualquier parte del programa accediera al atributo directamente, lo cual rompe el encapsulamiento y es especialmente peligroso para un dato sensible como una contraseña."
+        },
+        {
+          "clave": "c",
+          "motivo": "La opción aparece incompleta y no representa correctamente un nivel de visibilidad válido en UML."
+        },
+        {
+          "clave": "d",
+          "motivo": "La visibilidad de paquete permite el acceso desde clases del mismo paquete o módulo. No es la opción más segura para un dato sensible como password."
+        },
+        {
+          "clave": "e",
+          "motivo": "Protegido permite el acceso desde la propia clase y sus subclases. Para un atributo sensible, el acceso debería restringirse más, usando visibilidad privada."
+        }
+      ],
+      "resumen_didactico": "Los atributos sensibles deben ocultarse mediante visibilidad privada. En UML, privado se representa con el símbolo -.",
+      "ejemplo_practico": "En una clase Usuario, el atributo password debería declararse como privado y no exponerse directamente. Si fuera necesario trabajar con él, se haría mediante métodos controlados, validaciones o funciones de autenticación.",
+      "conclusion_final": "La respuesta correcta es Privado (-), porque el atributo password debe estar protegido según los principios de encapsulamiento."
+    }
+  },
+  {
+    "id": "UT7-Q35",
+    "tema": "UT7 Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué similitud hay entre un diagrama de actividades UML y un diagrama de flujo tradicional?",
+    "contexto": "Se pregunta por la semejanza entre los diagramas de actividades UML y los diagramas de flujo usados para representar procesos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ambos muestran la interacción temporal entre objetos."
+      },
+      {
+        "clave": "b",
+        "texto": "Ambos modelan los estados de un objeto."
+      },
+      {
+        "clave": "c",
+        "texto": "Ambos permiten visualizar el funcionamiento de un proceso secuencialmente."
+      },
+      {
+        "clave": "d",
+        "texto": "Ambos usan la misma notación."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El diagrama de actividades UML funciona de forma parecida a un diagrama de flujo tradicional, porque representa el flujo de trabajo de un proceso u operación. Su objetivo es mostrar la secuencia de actividades paso a paso, incluyendo decisiones y posibles caminos dentro del proceso.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La interacción temporal entre objetos corresponde principalmente a los diagramas de secuencia, no a los diagramas de actividades."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los estados de un objeto se representan mediante diagramas de estados, no mediante diagramas de actividades."
+        },
+        {
+          "clave": "d",
+          "motivo": "Aunque ambos representan procesos, no necesariamente usan exactamente la misma notación. UML tiene su propia notación formal para actividades, decisiones, concurrencia e inicio/fin."
+        }
+      ],
+      "resumen_didactico": "Un diagrama de actividades y un diagrama de flujo se parecen porque ambos muestran cómo avanza un proceso paso a paso.",
+      "ejemplo_practico": "En un proceso de login, ambos podrían representar la secuencia: introducir usuario y contraseña, comprobar datos, decidir si son correctos y permitir o denegar el acceso.",
+      "conclusion_final": "La respuesta correcta es que ambos permiten visualizar el funcionamiento de un proceso secuencialmente."
+    }
+  },
+  {
+    "id": "UT7-Q36",
+    "tema": "UT7 Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cómo se representa la sincronización de dos ramas en un diagrama de actividades?",
+    "contexto": "Se pregunta por la forma de unir dos actividades que se han ejecutado en paralelo dentro de un diagrama de actividades UML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Con otra barra de concurrencia que recibe las flechas de las ramas."
+      },
+      {
+        "clave": "b",
+        "texto": "Con un rombo de decisión."
+      },
+      {
+        "clave": "c",
+        "texto": "Con una relación de inclusión."
+      },
+      {
+        "clave": "d",
+        "texto": "Con un estado final."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En los diagramas de actividades, la concurrencia se representa mediante una barra gruesa. Esta barra puede dividir el flujo en varias ramas paralelas y también puede usarse para sincronizarlas de nuevo, recibiendo las flechas de las ramas antes de continuar con el flujo común.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El rombo de decisión se usa cuando el flujo debe elegir una ruta en función de una condición. No sirve para sincronizar ramas paralelas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La relación de inclusión pertenece a los diagramas de casos de uso, donde un caso de uso incluye obligatoriamente otro. No corresponde a diagramas de actividades."
+        },
+        {
+          "clave": "d",
+          "motivo": "El estado final indica el cierre del proceso o actividad, pero no representa la unión sincronizada de dos ramas paralelas."
+        }
+      ],
+      "resumen_didactico": "Cuando un proceso se divide en ramas paralelas, se puede usar una barra de concurrencia para separarlas y otra barra para volver a unirlas cuando ambas hayan terminado.",
+      "ejemplo_practico": "En una compra online, el sistema puede autorizar el pago y reservar el stock en paralelo. Cuando ambas tareas terminan, una barra de sincronización une las dos ramas antes de continuar con la confirmación del pedido.",
+      "conclusion_final": "La respuesta correcta es con otra barra de concurrencia que recibe las flechas de las ramas, porque así se sincronizan actividades paralelas en un diagrama de actividades."
+    }
+  },
+  {
+    "id": "UT7-Q37",
+    "tema": "UT7 Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué tipo de relación hay entre el actor Bibliotecario y el caso de uso \"Registrar libro\"?",
+    "contexto": "Se pregunta por la relación que une a un actor externo con una funcionalidad del sistema en un diagrama de casos de uso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Generalización"
+      },
+      {
+        "clave": "b",
+        "texto": "Inclusión"
+      },
+      {
+        "clave": "c",
+        "texto": "Asociación"
+      },
+      {
+        "clave": "d",
+        "texto": "Herencia"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En un diagrama de casos de uso, la línea que une a un actor con un caso de uso se denomina asociación. Representa la interacción entre el actor externo y una funcionalidad concreta del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La generalización se usa para representar una relación de especialización entre actores o entre casos de uso, no la conexión directa entre un actor y una funcionalidad."
+        },
+        {
+          "clave": "b",
+          "motivo": "La inclusión se usa cuando un caso de uso incluye obligatoriamente a otro caso de uso. No describe la relación entre un actor y un caso de uso."
+        },
+        {
+          "clave": "d",
+          "motivo": "La herencia es un concepto propio de jerarquías entre clases o de generalización entre elementos. No es la relación directa entre el actor Bibliotecario y el caso de uso Registrar libro."
+        }
+      ],
+      "resumen_didactico": "Cuando un actor participa en una funcionalidad del sistema, la relación que los une en el diagrama de casos de uso se llama asociación.",
+      "ejemplo_practico": "Si el Bibliotecario puede registrar libros en el sistema, se dibuja una línea entre el actor Bibliotecario y el caso de uso Registrar libro. Esa línea representa una asociación.",
+      "conclusion_final": "La respuesta correcta es asociación, porque es la relación que conecta a un actor con un caso de uso."
+    }
+  },
+  {
+    "id": "UT7-Q38",
+    "tema": "UT7 Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Cuál es la principal diferencia entre un diagrama de secuencia y uno de colaboración?",
+    "contexto": "Se comparan dos diagramas UML de interacción que representan mensajes entre objetos, pero desde perspectivas distintas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El diagrama de secuencia se centra en la temporalidad, el de colaboración en la estructura."
+      },
+      {
+        "clave": "b",
+        "texto": "El de secuencia no puede mostrar mensajes."
+      },
+      {
+        "clave": "c",
+        "texto": "El de colaboración usa líneas de vida."
+      },
+      {
+        "clave": "d",
+        "texto": "El diagrama de secuencia no puede mostrar actores, el de colaboración s"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El diagrama de secuencia muestra la temporalización y el orden en que ocurren los mensajes entre actores u objetos. En cambio, el diagrama de colaboración, también llamado diagrama de comunicación, muestra información similar pero se centra más en la organización, las relaciones y la estructura de los objetos que interactúan.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El diagrama de secuencia sí puede mostrar mensajes. De hecho, los mensajes son uno de sus elementos principales, representados mediante flechas entre líneas de vida."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las líneas de vida son propias del diagrama de secuencia. El diagrama de colaboración no se organiza principalmente mediante líneas de vida verticales, sino mediante objetos conectados y mensajes numerados."
+        },
+        {
+          "clave": "d",
+          "motivo": "El diagrama de secuencia sí puede mostrar actores y objetos participantes. La diferencia principal no está en si puede mostrar actores, sino en que el de secuencia prioriza el orden temporal y el de colaboración prioriza la estructura de interacción."
+        }
+      ],
+      "resumen_didactico": "Ambos diagramas representan interacciones, pero el de secuencia ordena los mensajes en el tiempo y el de colaboración muestra mejor cómo se relacionan los objetos entre sí.",
+      "ejemplo_practico": "En una compra online, el diagrama de secuencia mostraría primero Cliente → Web, después Web → Servidor y luego Servidor → Base de datos. El de colaboración mostraría esos mismos objetos conectados, destacando quién se comunica con quién.",
+      "conclusion_final": "La respuesta correcta es que el diagrama de secuencia se centra en la temporalidad, mientras que el de colaboración se centra en la estructura."
+    }
+  },
+  {
+    "id": "UT7-Q39",
+    "tema": "UT7 Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Qué elemento representa una bifurcación condicional en un diagrama de actividades?",
+    "contexto": "Se pregunta por el símbolo que permite dividir el flujo de un proceso según una condición.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un estado final"
+      },
+      {
+        "clave": "b",
+        "texto": "Un estado inicial"
+      },
+      {
+        "clave": "c",
+        "texto": "Una barra de concurrencia"
+      },
+      {
+        "clave": "d",
+        "texto": "Un rombo de decisión"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "En un diagrama de actividades, una decisión se representa mediante un rombo. Este elemento indica un punto del flujo donde el proceso se bifurca según una condición, eligiendo una de las rutas posibles.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El estado final representa el cierre o terminación del proceso, no una bifurcación condicional."
+        },
+        {
+          "clave": "b",
+          "motivo": "El estado inicial indica el punto desde el que comienza el flujo de actividades, pero no divide el proceso según una condición."
+        },
+        {
+          "clave": "c",
+          "motivo": "La barra de concurrencia se usa para dividir o sincronizar actividades paralelas, no para elegir entre caminos según una condición."
+        }
+      ],
+      "resumen_didactico": "Cuando el flujo debe tomar un camino u otro dependiendo de una condición, se utiliza un rombo de decisión.",
+      "ejemplo_practico": "En un proceso de login, tras comprobar la contraseña, un rombo de decisión puede dividir el flujo: si la contraseña es correcta, se concede acceso; si es incorrecta, se deniega.",
+      "conclusion_final": "La respuesta correcta es un rombo de decisión, porque representa una bifurcación condicional en un diagrama de actividades."
+    }
+  },
+  {
+    "id": "UT7-Q40",
+    "tema": "UT7 Elaboración de diagramas de comportamiento",
+    "pregunta": "¿Por qué se evita usar notas complejas en diagramas de casos de uso?",
+    "contexto": "Se pregunta por la necesidad de mantener claros y comprensibles los diagramas de casos de uso.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para que el diagrama mantenga un fuerte impacto visual y sea intuitivo."
+      },
+      {
+        "clave": "b",
+        "texto": "Para que ocupe menos espacio."
+      },
+      {
+        "clave": "c",
+        "texto": "Porque las herramientas CASE no lo permiten."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque UML lo prohíbe."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los diagramas de casos de uso sirven para mostrar de forma clara qué funcionalidades ofrece un sistema y qué actores interactúan con ellas. Su utilidad principal está en ofrecer una visión visual, sencilla e intuitiva del sistema, por eso se evita sobrecargarlos con notas complejas que dificulten su lectura.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El problema principal no es ocupar más o menos espacio, sino perder claridad visual y comprensión rápida del diagrama."
+        },
+        {
+          "clave": "c",
+          "motivo": "Las herramientas CASE sí pueden permitir añadir notas o comentarios. La razón para evitarlas no es una limitación técnica de la herramienta."
+        },
+        {
+          "clave": "d",
+          "motivo": "UML no prohíbe añadir notas. El criterio es práctico: no sobrecargar el diagrama para mantenerlo claro, visual e intuitivo."
+        }
+      ],
+      "resumen_didactico": "Un diagrama de casos de uso debe ser fácil de entender de un vistazo. Si se llena de notas largas o complejas, pierde su función principal como representación visual clara.",
+      "ejemplo_practico": "En un sistema de biblioteca, es mejor mostrar al actor Bibliotecario conectado a casos de uso como Registrar libro, Prestar libro o Devolver libro, y dejar las reglas detalladas para otro documento, no dentro del diagrama.",
+      "conclusion_final": "La respuesta correcta es que se evita usar notas complejas para que el diagrama mantenga un fuerte impacto visual y sea intuitivo."
+    }
+  }
+]

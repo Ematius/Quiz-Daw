@@ -1,0 +1,1930 @@
+[
+  {
+    "id": "UT0-Q01",
+    "tema": "UT0 Introducción a las bases de datos",
+    "pregunta": "En el contexto de la evolución del almacenamiento, ¿cuál es la razón fundamental para usar una Base de Datos en lugar de sistemas de ficheros tradicionales?",
+    "contexto": "Comparación entre sistemas de ficheros tradicionales y bases de datos como forma estructurada, centralizada y segura de gestionar información.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Para ahorrar espacio en disco duro y reducir el coste de licencias."
+      },
+      {
+        "clave": "b",
+        "texto": "Para eliminar la necesidad de un Sistema Operativo intermedio."
+      },
+      {
+        "clave": "c",
+        "texto": "Para garantizar la integridad, evitar la redundancia y permitir la concurrencia."
+      },
+      {
+        "clave": "d",
+        "texto": "Porque permiten usar archivos de texto plano legibles por humanos."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Una base de datos se usa frente a los sistemas de ficheros tradicionales porque permite organizar la información de forma estructurada, centralizada y controlada. Esto ayuda a evitar datos duplicados, mantener la coherencia de la información, garantizar la integridad y permitir que varios usuarios o aplicaciones accedan a los datos de forma controlada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Aunque una base de datos puede optimizar el almacenamiento, su razón fundamental no es simplemente ahorrar espacio ni reducir costes de licencias. Su objetivo principal es gestionar los datos de forma segura, coherente y eficiente."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una base de datos no elimina la necesidad del sistema operativo. El SGBD funciona sobre un sistema operativo y lo utiliza para acceder al hardware, gestionar memoria, procesos y almacenamiento."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los archivos de texto plano son precisamente una forma básica de almacenamiento tradicional. Las bases de datos no se justifican por ser legibles como texto plano, sino por ofrecer estructura, control, integridad, seguridad y acceso concurrente."
+        }
+      ],
+      "resumen_didactico": "La diferencia clave entre ficheros tradicionales y bases de datos es que una base de datos evita el caos de archivos aislados: centraliza la información, reduce duplicidades, mantiene la coherencia y permite accesos controlados por varios usuarios.",
+      "ejemplo_practico": "Si una empresa guarda los datos de clientes en varios Excel distintos, puede haber teléfonos antiguos, direcciones duplicadas o datos contradictorios. Con una base de datos centralizada, todos los departamentos consultan la misma información actualizada.",
+      "conclusion_final": "La razón fundamental para usar una base de datos es garantizar la integridad de los datos, evitar redundancias y permitir el acceso concurrente de forma segura y controlada."
+    }
+  },
+  {
+    "id": "UT0-Q02",
+    "tema": "UT0 Introducción a las bases de datos",
+    "pregunta": "Tienes un sistema antiguo que almacena datos en una cinta magnética. Para leer el registro número 100, el sistema debe pasar obligatoriamente por los 99 anteriores. ¿Qué método de acceso utiliza?",
+    "contexto": "Sistema de almacenamiento en cinta magnética donde los registros deben leerse en orden hasta llegar al dato buscado.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Acceso directo."
+      },
+      {
+        "clave": "b",
+        "texto": "Acceso hash."
+      },
+      {
+        "clave": "c",
+        "texto": "Acceso secuencial."
+      },
+      {
+        "clave": "d",
+        "texto": "Acceso aleatorio."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "El acceso secuencial consiste en leer los registros siguiendo el orden en el que están almacenados. En soportes como la cinta magnética, para llegar a un registro concreto es necesario recorrer antes los registros anteriores, porque no se puede saltar directamente al dato deseado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El acceso directo permite llegar a un registro concreto sin recorrer necesariamente todos los anteriores. No encaja con una cinta magnética donde hay que avanzar registro por registro."
+        },
+        {
+          "clave": "b",
+          "motivo": "El acceso hash utiliza una función de transformación para calcular la ubicación de un registro a partir de una clave. No describe la lectura ordenada propia de una cinta magnética."
+        },
+        {
+          "clave": "d",
+          "motivo": "El acceso aleatorio permite acceder a cualquier posición de forma independiente, como ocurre en discos o memorias donde se puede saltar directamente a una ubicación. En el caso descrito no se puede acceder de forma aleatoria."
+        }
+      ],
+      "resumen_didactico": "Si para llegar a un dato tienes que leer antes todos los anteriores, estás ante un acceso secuencial.",
+      "ejemplo_practico": "En una cinta de vídeo antigua, para llegar al minuto 50 tenías que avanzar desde el principio o desde la posición actual pasando por todo lo anterior. No podías saltar instantáneamente como en un archivo digital moderno.",
+      "conclusion_final": "El método utilizado es el acceso secuencial, porque los datos se leen en orden y no se puede acceder directamente al registro número 100 sin pasar por los anteriores."
+    }
+  },
+  {
+    "id": "UT0-Q03",
+    "tema": "UT0 Introducción a las bases de datos",
+    "pregunta": "Estás implementando una caché de alto rendimiento tipo Redis. Utilizas un método donde aplicas una fórmula matemática a la clave para obtener la dirección exacta del dato. ¿Cómo se llama este método?",
+    "contexto": "Método de acceso a datos basado en aplicar una función matemática sobre una clave para localizar directamente la posición del registro.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Acceso calculado o hash."
+      },
+      {
+        "clave": "b",
+        "texto": "Acceso por punteros encadenados."
+      },
+      {
+        "clave": "c",
+        "texto": "Acceso jerárquico."
+      },
+      {
+        "clave": "d",
+        "texto": "Acceso secuencial indexado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El acceso calculado o hash consiste en aplicar una función matemática a una clave para obtener la dirección o posición donde se encuentra almacenado el dato. Es un método pensado para localizar información de forma muy rápida sin recorrer todos los registros uno por uno.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El acceso por punteros encadenados se basa en enlazar registros mediante referencias o punteros, no en calcular directamente una dirección mediante una función matemática."
+        },
+        {
+          "clave": "c",
+          "motivo": "El acceso jerárquico organiza los datos siguiendo una estructura de árbol o niveles padre-hijo. No describe el cálculo directo de una posición a partir de una clave."
+        },
+        {
+          "clave": "d",
+          "motivo": "El acceso secuencial indexado combina lectura secuencial con estructuras de índice, pero no se basa principalmente en aplicar una función hash para obtener la dirección exacta del dato."
+        }
+      ],
+      "resumen_didactico": "Cuando una clave pasa por una fórmula matemática para calcular dónde está guardado el dato, hablamos de acceso calculado o acceso hash.",
+      "ejemplo_practico": "Si guardas el usuario con clave 'user:25', el sistema puede aplicar una función hash a esa clave para saber en qué posición de memoria o estructura interna debe buscar el valor asociado.",
+      "conclusion_final": "El método descrito es el acceso calculado o hash, porque usa una función matemática sobre la clave para localizar directamente el dato."
+    }
+  },
+  {
+    "id": "UT0-Q04",
+    "tema": "UT0 Introducción a las bases de datos",
+    "pregunta": "Estás trabajando con \"Big Data\" y necesitas procesar datasets enormes en formato .csv o .json para entrenar una IA. ¿A qué categoría de estructura de ficheros pertenecen?",
+    "contexto": "Uso de archivos .csv o .json como conjuntos de datos legibles y procesables para análisis, Big Data o entrenamiento de modelos de IA.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Ficheros de Acceso Directo."
+      },
+      {
+        "clave": "b",
+        "texto": "Ficheros Secuenciales Encadenados."
+      },
+      {
+        "clave": "c",
+        "texto": "Ficheros de Texto Plano (Human-Readable)."
+      },
+      {
+        "clave": "d",
+        "texto": "Ficheros Binarios."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Los archivos .csv y .json son ficheros de texto plano porque su contenido está escrito en caracteres legibles por humanos y puede abrirse con un editor de texto. Aunque se usen para procesar grandes volúmenes de datos en contextos de Big Data o inteligencia artificial, su estructura básica sigue siendo textual y legible.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Los ficheros de acceso directo permiten acceder a posiciones concretas del archivo sin recorrerlo completo, pero la pregunta se centra en el formato .csv o .json, no en una técnica de acceso."
+        },
+        {
+          "clave": "b",
+          "motivo": "Los ficheros secuenciales encadenados se basan en una organización donde los registros se recorren siguiendo una secuencia o enlaces. No es la categoría que define a formatos como .csv o .json."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los ficheros binarios almacenan datos en un formato no directamente legible por humanos, como imágenes, ejecutables o ciertos archivos comprimidos. Un .csv o un .json pueden leerse como texto."
+        }
+      ],
+      "resumen_didactico": "CSV y JSON pertenecen a los ficheros de texto plano porque se pueden leer con un editor de texto y representan la información mediante caracteres comprensibles.",
+      "ejemplo_practico": "Un dataset de entrenamiento puede contener miles de líneas en un archivo CSV con columnas como id, edad, ciudad y resultado. También puede estar en JSON con objetos como { \"usuario\": \"Ana\", \"edad\": 30 }. Ambos siguen siendo texto plano.",
+      "conclusion_final": "La respuesta correcta es ficheros de texto plano, porque los formatos .csv y .json son legibles por humanos aunque se utilicen en procesos avanzados de Big Data o IA."
+    }
+  },
+  {
+    "id": "UT0-Q05",
+    "tema": "UT0 Introducción a las bases de datos",
+    "pregunta": "En la anatomía de un fichero, ¿cómo se denomina técnicamente a la cantidad de datos (número de registros lógicos) que caben en un bloque físico de lectura/escritura?",
+    "contexto": "Organización física de ficheros y relación entre registros lógicos y bloques físicos de almacenamiento.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Índice de transferencia."
+      },
+      {
+        "clave": "b",
+        "texto": "Factor de bloqueo."
+      },
+      {
+        "clave": "c",
+        "texto": "Área de desbordamiento."
+      },
+      {
+        "clave": "d",
+        "texto": "Puntero de cabecera."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El factor de bloqueo indica cuántos registros lógicos caben dentro de un bloque físico de lectura o escritura. Es un concepto importante en la organización de ficheros porque el sistema no suele leer registro a registro de forma aislada, sino bloques completos desde el almacenamiento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El índice de transferencia no es el término técnico usado para indicar cuántos registros lógicos caben en un bloque físico. La idea de transferencia se relaciona más con el movimiento de datos, no con la cantidad de registros por bloque."
+        },
+        {
+          "clave": "c",
+          "motivo": "El área de desbordamiento se utiliza cuando no hay espacio en la ubicación principal de un registro y se necesita una zona adicional para almacenar datos. No mide cuántos registros caben en un bloque."
+        },
+        {
+          "clave": "d",
+          "motivo": "Un puntero de cabecera sirve para señalar o enlazar posiciones dentro de una estructura de datos o fichero, pero no representa la cantidad de registros que caben en un bloque físico."
+        }
+      ],
+      "resumen_didactico": "Si hablamos de cuántos registros lógicos entran dentro de un bloque físico, el concepto clave es factor de bloqueo.",
+      "ejemplo_practico": "Si cada registro lógico ocupa 100 bytes y cada bloque físico tiene 1000 bytes, en cada bloque caben 10 registros. Por tanto, el factor de bloqueo sería 10.",
+      "conclusion_final": "El término correcto es factor de bloqueo, porque expresa la cantidad de registros lógicos que pueden almacenarse dentro de un bloque físico."
+    }
+  },
+  {
+    "id": "UT2-Q06",
+    "tema": "UT2 Bases de datos relacionales",
+    "pregunta": "¿Qué propuesta revolucionaria de Edgar Frank Codd en 1970 solucionó el caos de los sistemas de archivos aislados en los grandes bancos de datos?",
+    "contexto": "Origen del modelo relacional como solución a los sistemas de archivos aislados y desorganizados usados antes de las bases de datos relacionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El modelo relacional, organizando datos en tablas conectadas lógicamente."
+      },
+      {
+        "clave": "b",
+        "texto": "El modelo jerárquico basado en árboles."
+      },
+      {
+        "clave": "c",
+        "texto": "La creación de discos duros SSD."
+      },
+      {
+        "clave": "d",
+        "texto": "El lenguaje de programación Java."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Edgar Frank Codd propuso en 1970 el modelo relacional, una forma de organizar los datos mediante relaciones, es decir, tablas conectadas lógicamente. Esta propuesta permitió superar el caos de los sistemas de archivos aislados y de los modelos anteriores, ofreciendo una estructura más lógica, flexible y sencilla para gestionar grandes bancos de datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El modelo jerárquico basado en árboles es anterior al modelo relacional y era precisamente uno de los modelos más rígidos que el modelo de Codd ayudó a superar."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los discos SSD son una tecnología de almacenamiento físico mucho más moderna. No fueron la propuesta de Codd ni solucionan por sí mismos la organización lógica de los datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Java es un lenguaje de programación creado muchos años después. No tiene relación directa con la propuesta de Codd de 1970 sobre la organización relacional de los datos."
+        }
+      ],
+      "resumen_didactico": "Codd revolucionó las bases de datos al proponer que la información se organizara en tablas relacionadas lógicamente, en lugar de depender de archivos aislados o estructuras rígidas.",
+      "ejemplo_practico": "En vez de guardar clientes, cuentas y préstamos en archivos separados difíciles de cruzar, el modelo relacional permite tener tablas como CLIENTES, CUENTAS y PRESTAMOS conectadas mediante claves.",
+      "conclusion_final": "La propuesta revolucionaria de Codd fue el modelo relacional, basado en tablas conectadas lógicamente."
+    }
+  },
+  {
+    "id": "UT2-Q07",
+    "tema": "UT2 Bases de datos relacionales",
+    "pregunta": "En una relación \"Cliente - Tarjeta VIP\", determinas que un cliente puede no tener tarjeta o tener una sola. ¿Cómo expresas esta modalidad (mínimos y máximos)?",
+    "contexto": "Relación entre entidades donde se analiza la participación mínima y máxima de un cliente respecto a una tarjeta VIP.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "(0,1)."
+      },
+      {
+        "clave": "b",
+        "texto": "(0,N)."
+      },
+      {
+        "clave": "c",
+        "texto": "(1,1)."
+      },
+      {
+        "clave": "d",
+        "texto": "(1,N)."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En el modelo entidad-relación, la modalidad o cardinalidad mínima y máxima indica cuántas veces puede participar una entidad en una relación. Si un cliente puede no tener tarjeta VIP, el mínimo es 0. Si como máximo puede tener una sola tarjeta VIP, el máximo es 1. Por tanto, la modalidad se expresa como (0,1).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La modalidad (0,N) indica que el cliente podría no tener ninguna tarjeta o podría tener muchas. No es correcta porque el enunciado dice que como máximo puede tener una sola."
+        },
+        {
+          "clave": "c",
+          "motivo": "La modalidad (1,1) indica participación obligatoria y única: todo cliente tendría exactamente una tarjeta VIP. No es correcta porque el cliente puede no tener tarjeta."
+        },
+        {
+          "clave": "d",
+          "motivo": "La modalidad (1,N) indica que el cliente debe tener al menos una tarjeta y puede tener varias. No es correcta porque el enunciado permite que no tenga ninguna y limita el máximo a una."
+        }
+      ],
+      "resumen_didactico": "El primer número indica el mínimo y el segundo el máximo. Si puede tener cero o una tarjeta, se representa como (0,1).",
+      "ejemplo_practico": "Un cliente normal de una tienda puede no estar inscrito en el programa VIP. Si se inscribe, solo puede tener una tarjeta VIP asociada a su cuenta.",
+      "conclusion_final": "La modalidad correcta es (0,1), porque la participación es opcional y como máximo puede existir una tarjeta VIP por cliente."
+    }
+  },
+  {
+    "id": "UT2-Q08",
+    "tema": "UT2 Bases de datos relacionales",
+    "pregunta": "Estás modelando una flota de vehículos. Un vehículo puede tener motor para GASOIL o para GASOLINA, pero no ambos a la vez. ¿Qué tipo de restricción de exclusividad es esta?",
+    "contexto": "Especialización o clasificación de una entidad donde una instancia solo puede pertenecer a una de varias categorías posibles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reflexiva."
+      },
+      {
+        "clave": "b",
+        "texto": "Disjunta."
+      },
+      {
+        "clave": "c",
+        "texto": "Inclusiva."
+      },
+      {
+        "clave": "d",
+        "texto": "Solapada."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una restricción disjunta indica que una entidad solo puede pertenecer a una de las subclases o categorías posibles. En este caso, un vehículo puede tener motor de gasoil o motor de gasolina, pero no ambos a la vez. Por tanto, las categorías se excluyen mutuamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una relación reflexiva se produce cuando una entidad se relaciona consigo misma, por ejemplo, un empleado que supervisa a otro empleado. No describe una exclusión entre tipos de motor."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una restricción inclusiva permitiría una participación más amplia o compatible entre categorías. No expresa la idea de que elegir una opción impide pertenecer a la otra."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una restricción solapada permite que una misma entidad pertenezca simultáneamente a varias subclases. No es correcta porque el enunciado indica que el vehículo no puede tener ambos tipos de motor a la vez."
+        }
+      ],
+      "resumen_didactico": "Si una entidad solo puede estar en una categoría y no en varias al mismo tiempo, hablamos de una restricción disjunta.",
+      "ejemplo_practico": "Un coche concreto puede registrarse como vehículo de gasolina o como vehículo de gasoil. Si el sistema no permite que esté en las dos categorías al mismo tiempo, la especialización es disjunta.",
+      "conclusion_final": "La restricción correcta es disjunta, porque las opciones GASOIL y GASOLINA son excluyentes entre sí."
+    }
+  },
+  {
+    "id": "UT2-Q09",
+    "tema": "UT2 Bases de datos relacionales",
+    "pregunta": "Según la arquitectura ANSI/SPARC, ¿qué nivel representa la visión global de la información, independientemente de cómo se guarde físicamente?",
+    "contexto": "Arquitectura ANSI/SPARC y sus tres niveles de abstracción: externo, conceptual e interno.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Nivel de Usuario."
+      },
+      {
+        "clave": "b",
+        "texto": "Nivel Externo."
+      },
+      {
+        "clave": "c",
+        "texto": "Nivel Conceptual."
+      },
+      {
+        "clave": "d",
+        "texto": "Nivel Interno."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En la arquitectura ANSI/SPARC, el nivel conceptual representa la visión global lógica de la base de datos. Describe qué información existe, cómo se estructura y cómo se relacionan los datos, pero sin entrar en cómo se almacenan físicamente en disco ni en cómo los ve cada usuario concreto.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Nivel de Usuario no es la denominación técnica principal dentro de la arquitectura ANSI/SPARC. La visión de cada usuario se corresponde con el nivel externo."
+        },
+        {
+          "clave": "b",
+          "motivo": "El nivel externo representa las vistas particulares de los usuarios o aplicaciones. Cada usuario puede ver una parte diferente de la base de datos, pero no es la visión global completa."
+        },
+        {
+          "clave": "d",
+          "motivo": "El nivel interno describe cómo se almacenan físicamente los datos: archivos, índices, organización en disco y estructuras físicas. No representa la visión lógica global."
+        }
+      ],
+      "resumen_didactico": "ANSI/SPARC divide la base de datos en tres niveles: externo para las vistas de usuario, conceptual para la estructura global lógica e interno para el almacenamiento físico.",
+      "ejemplo_practico": "En una app de pedidos, el nivel conceptual define que existen entidades como CLIENTE, PEDIDO y PRODUCTO, y cómo se relacionan. No indica aún en qué archivo, bloque o sector del disco se guardan esos datos.",
+      "conclusion_final": "La respuesta correcta es nivel conceptual, porque representa la visión global de la información independientemente de su almacenamiento físico."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "UT2 Bases de datos relacionales",
+    "pregunta": "Estás diseñando un diagrama E/R. Si una entidad \"EJEMPLAR\" desaparece automáticamente cuando se elimina el \"LIBRO\" al que pertenece, ¿qué tipo de entidad es?",
+    "contexto": "Modelo entidad-relación donde una entidad depende de otra para existir y no tiene sentido de forma independiente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Entidad Reflexiva."
+      },
+      {
+        "clave": "b",
+        "texto": "Entidad Débil."
+      },
+      {
+        "clave": "c",
+        "texto": "Entidad Padre."
+      },
+      {
+        "clave": "d",
+        "texto": "Entidad Fuerte."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Una entidad débil es aquella que no puede existir por sí sola, porque depende de una entidad fuerte o propietaria. En este caso, EJEMPLAR depende de LIBRO: si se elimina el libro al que pertenece, sus ejemplares dejan de tener sentido y desaparecen también.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Una entidad reflexiva no es un tipo de entidad dependiente. Lo reflexivo se refiere normalmente a una relación en la que una entidad se relaciona consigo misma, por ejemplo, un empleado que supervisa a otro empleado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Entidad padre puede usarse informalmente para referirse a la entidad principal de la que otra depende, pero no es la denominación técnica que responde al caso de EJEMPLAR. En este ejemplo, LIBRO sería la entidad fuerte o propietaria."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una entidad fuerte existe de forma independiente y tiene identificador propio suficiente. EJEMPLAR no encaja porque depende de LIBRO para existir dentro del modelo."
+        }
+      ],
+      "resumen_didactico": "Si una entidad desaparece cuando desaparece otra entidad principal, estamos ante una entidad débil.",
+      "ejemplo_practico": "En una biblioteca, el libro \"Don Quijote\" puede tener varios ejemplares físicos. Si se elimina el registro del libro del catálogo, los ejemplares asociados a ese libro ya no tienen sentido dentro del sistema.",
+      "conclusion_final": "La entidad EJEMPLAR es una entidad débil, porque depende de la existencia de la entidad LIBRO."
+    }
+  },
+  {
+    "id": "UT3-Q11",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Entras en un proyecto con datos duplicados y desordenados. ¿Qué técnica aplicas para diseñar las tablas eliminando redundancias?",
+    "contexto": "Diseño de bases de datos relacionales con datos duplicados, desorganizados o redundantes que necesitan estructurarse correctamente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La concurrencia optimista."
+      },
+      {
+        "clave": "b",
+        "texto": "La normalización."
+      },
+      {
+        "clave": "c",
+        "texto": "La integridad referencial."
+      },
+      {
+        "clave": "d",
+        "texto": "La indexación masiva."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La normalización es la técnica utilizada en el modelo relacional para organizar correctamente las tablas, eliminar redundancias, evitar duplicidades innecesarias y reducir errores de actualización. Consiste en aplicar formas normales, como la primera, segunda y tercera forma normal, para que cada dato esté ubicado en el lugar que le corresponde.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La concurrencia optimista se relaciona con el control de accesos simultáneos a los datos, no con el diseño de tablas para eliminar redundancias."
+        },
+        {
+          "clave": "c",
+          "motivo": "La integridad referencial garantiza que las relaciones entre tablas sean coherentes mediante claves primarias y foráneas, pero no es la técnica principal para rediseñar tablas duplicadas y desordenadas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La indexación mejora la velocidad de búsqueda, pero no elimina duplicidades ni corrige un mal diseño lógico de las tablas. Indexar una base de datos mal normalizada solo haría más rápidas algunas consultas, pero no solucionaría el problema estructural."
+        }
+      ],
+      "resumen_didactico": "Cuando una base de datos tiene datos repetidos, mezclados o mal organizados, se aplica normalización para dividir correctamente la información en tablas relacionadas y evitar redundancias.",
+      "ejemplo_practico": "Si una tabla de pedidos repite en cada fila el nombre, dirección y teléfono del cliente, lo correcto sería separar CLIENTES y PEDIDOS. Así, los datos del cliente se guardan una sola vez y los pedidos se relacionan con él mediante una clave.",
+      "conclusion_final": "La técnica correcta es la normalización, porque permite diseñar tablas limpias, coherentes y sin redundancias innecesarias."
+    }
+  },
+  {
+    "id": "UT3-Q12",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "En la celda \"Mentores\" aparece una lista: \"Roberto, Ana, Carlos\". ¿Qué regla de la 1FN se está violando?",
+    "contexto": "Aplicación de la Primera Forma Normal a una tabla donde una celda contiene varios valores dentro del mismo campo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La atomicidad."
+      },
+      {
+        "clave": "b",
+        "texto": "La integridad de entidad."
+      },
+      {
+        "clave": "c",
+        "texto": "La dependencia transitiva."
+      },
+      {
+        "clave": "d",
+        "texto": "La dependencia funcional completa."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La Primera Forma Normal exige que cada celda contenga un único valor, es decir, que los atributos sean atómicos. Si en una celda aparece una lista como \"Roberto, Ana, Carlos\", se está guardando más de un dato en el mismo campo, por lo que se viola la atomicidad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La integridad de entidad se relaciona con que cada fila tenga una clave primaria válida, única y no nula. El problema del enunciado no está en la clave primaria, sino en que una celda contiene varios valores."
+        },
+        {
+          "clave": "c",
+          "motivo": "La dependencia transitiva pertenece al análisis de la Tercera Forma Normal. Ocurre cuando un atributo no clave depende de otro atributo no clave, no cuando una celda contiene una lista."
+        },
+        {
+          "clave": "d",
+          "motivo": "La dependencia funcional completa está relacionada con la Segunda Forma Normal y las claves primarias compuestas. No es el problema descrito, porque aquí el fallo es que el campo no es indivisible."
+        }
+      ],
+      "resumen_didactico": "La 1FN exige una idea básica: una celda, un dato. Si metes una lista dentro de una celda, rompes la atomicidad.",
+      "ejemplo_practico": "En lugar de guardar \"Roberto, Ana, Carlos\" en una sola celda, lo correcto sería crear una tabla EMPLEADOS_MENTORES con una fila para cada mentor asignado al empleado.",
+      "conclusion_final": "La regla violada es la atomicidad, porque la celda contiene varios valores en lugar de un único dato indivisible."
+    }
+  },
+  {
+    "id": "UT3-Q13",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Con integridad referencial en cascada, ¿qué ocurre si borras un cliente?",
+    "contexto": "Comportamiento de una relación entre tablas cuando se aplica borrado en cascada desde una tabla principal hacia una tabla dependiente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La base de datos lo impide."
+      },
+      {
+        "clave": "b",
+        "texto": "Se borran automáticamente todos sus pedidos."
+      },
+      {
+        "clave": "c",
+        "texto": "Pasan a otro cliente."
+      },
+      {
+        "clave": "d",
+        "texto": "Los pedidos quedan huérfanos."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La integridad referencial garantiza que las relaciones entre tablas sean coherentes. Cuando se define una acción en cascada, si se elimina un registro de la tabla principal, también se eliminan automáticamente los registros relacionados en la tabla dependiente. En este caso, si se borra un cliente, se borrarían también sus pedidos asociados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La base de datos impediría el borrado si la restricción estuviera configurada como restrictiva o sin acción en cascada. Pero el enunciado indica específicamente integridad referencial en cascada."
+        },
+        {
+          "clave": "c",
+          "motivo": "Los pedidos no pasan automáticamente a otro cliente. Para reasignarlos haría falta una operación específica de actualización, no una regla de borrado en cascada."
+        },
+        {
+          "clave": "d",
+          "motivo": "Los pedidos no quedan huérfanos porque precisamente la integridad referencial evita que existan registros dependientes apuntando a un registro principal inexistente."
+        }
+      ],
+      "resumen_didactico": "En una eliminación en cascada, al borrar el registro principal se eliminan también los registros dependientes relacionados.",
+      "ejemplo_practico": "Si tienes una tabla CLIENTES y una tabla PEDIDOS relacionada por id_cliente, al borrar el cliente con id 15, todos los pedidos cuyo id_cliente sea 15 se eliminarán automáticamente si la relación está definida con borrado en cascada.",
+      "conclusion_final": "Con integridad referencial en cascada, al borrar un cliente se borran automáticamente todos sus pedidos asociados."
+    }
+  },
+  {
+    "id": "UT3-Q14",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "Para eliminar una dependencia transitiva, ¿qué forma normal aplicas?",
+    "contexto": "Aplicación de las formas normales para corregir una tabla donde un atributo no clave depende de otro atributo no clave.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "3FN."
+      },
+      {
+        "clave": "b",
+        "texto": "1FN."
+      },
+      {
+        "clave": "c",
+        "texto": "4FN."
+      },
+      {
+        "clave": "d",
+        "texto": "2FN."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La Tercera Forma Normal, o 3FN, se aplica para eliminar dependencias transitivas. Una dependencia transitiva aparece cuando un atributo no clave no depende directamente de la clave primaria, sino de otro atributo que tampoco es clave. Para cumplir 3FN, los atributos no clave deben depender directamente de la clave primaria.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "La 1FN se centra en la atomicidad: cada celda debe contener un único valor. No trata específicamente las dependencias transitivas."
+        },
+        {
+          "clave": "c",
+          "motivo": "La 4FN trata dependencias multivaluadas y problemas más avanzados de normalización. No es la forma normal básica que se aplica para eliminar dependencias transitivas."
+        },
+        {
+          "clave": "d",
+          "motivo": "La 2FN elimina dependencias parciales respecto a claves primarias compuestas. No elimina dependencias transitivas; eso corresponde a la 3FN."
+        }
+      ],
+      "resumen_didactico": "1FN elimina campos no atómicos, 2FN elimina dependencias parciales y 3FN elimina dependencias transitivas.",
+      "ejemplo_practico": "Si una tabla USUARIOS contiene DNI, nombre, código postal y ciudad, puede haber una dependencia transitiva: DNI determina el código postal y el código postal determina la ciudad. Para corregirlo, se separa la ciudad en otra tabla asociada al código postal.",
+      "conclusion_final": "La forma normal que se aplica para eliminar una dependencia transitiva es la 3FN."
+    }
+  },
+  {
+    "id": "UT3-Q15",
+    "tema": "UT3 El modelo relacional. Normalización",
+    "pregunta": "¿Qué ocurre siempre al transformar una relación M:N?",
+    "contexto": "Transformación del modelo entidad-relación al modelo relacional cuando existe una relación muchos a muchos entre dos entidades.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Se propaga una clave."
+      },
+      {
+        "clave": "b",
+        "texto": "Se crea una vista."
+      },
+      {
+        "clave": "c",
+        "texto": "Se usa un BLOB."
+      },
+      {
+        "clave": "d",
+        "texto": "Se crea una tabla intermedia con clave compuesta."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Cuando una relación muchos a muchos, o M:N, se transforma al modelo relacional, no puede representarse simplemente colocando una clave foránea en una de las dos tablas. Es necesario crear una tabla intermedia que contenga las claves primarias de las dos entidades relacionadas. Normalmente, esas claves forman una clave compuesta, y además pueden añadirse atributos propios de la relación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Propagar una clave es habitual en relaciones 1:N, donde la clave primaria de la entidad del lado 1 pasa como clave foránea a la tabla del lado N. En una relación M:N esto no basta, porque habría múltiples valores en ambos lados."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una vista es una consulta almacenada o representación lógica de datos, pero no es el mecanismo estructural usado para transformar una relación muchos a muchos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un BLOB sirve para almacenar objetos binarios grandes, como imágenes o documentos. No tiene relación con la transformación de relaciones M:N."
+        }
+      ],
+      "resumen_didactico": "Toda relación M:N se resuelve creando una tabla intermedia que conecta las dos entidades mediante sus claves.",
+      "ejemplo_practico": "Si tienes ALUMNOS y ASIGNATURAS, un alumno puede matricularse en muchas asignaturas y una asignatura puede tener muchos alumnos. Para resolverlo se crea una tabla MATRICULAS con id_alumno e id_asignatura como clave compuesta.",
+      "conclusion_final": "Al transformar una relación M:N siempre se crea una tabla intermedia con las claves de ambas entidades, normalmente formando una clave compuesta."
+    }
+  },
+  {
+    "id": "UT4-Q16",
+    "tema": "UT4 El lenguaje SQL. DDL",
+    "pregunta": "¿Por qué SQL es un lenguaje no procedimental?",
+    "contexto": "Características generales del lenguaje SQL y diferencia entre indicar el resultado deseado y definir paso a paso cómo debe obtenerse.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usa bucles y variables."
+      },
+      {
+        "clave": "b",
+        "texto": "Define cómo acceder al disco."
+      },
+      {
+        "clave": "c",
+        "texto": "Indicas qué quieres, no cómo hacerlo."
+      },
+      {
+        "clave": "d",
+        "texto": "Solo permite SELECT."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "SQL se considera un lenguaje no procedimental porque el usuario indica qué datos quiere obtener o qué operación quiere realizar, pero no especifica paso a paso cómo debe ejecutarse internamente. El SGBD se encarga de decidir el mejor modo de acceder a los datos, optimizar la consulta y devolver el resultado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El uso de bucles y variables es propio de lenguajes procedimentales o extensiones como PL/SQL, no de la característica básica de SQL como lenguaje no procedimental."
+        },
+        {
+          "clave": "b",
+          "motivo": "SQL no obliga al usuario a definir cómo acceder físicamente al disco. Esa tarea corresponde al motor del SGBD, que gestiona internamente índices, bloques, almacenamiento y optimización."
+        },
+        {
+          "clave": "d",
+          "motivo": "SQL no solo permite SELECT. También incluye sentencias DDL, DML y DCL, como CREATE, INSERT, UPDATE, DELETE, GRANT o REVOKE."
+        }
+      ],
+      "resumen_didactico": "SQL es no procedimental porque tú dices el resultado que quieres, y el sistema decide internamente cómo conseguirlo.",
+      "ejemplo_practico": "Cuando escribes SELECT nombre FROM clientes WHERE ciudad = 'Madrid', no le dices al sistema cómo recorrer los archivos, qué bloques leer o qué índice usar. Solo le dices que quieres los nombres de los clientes de Madrid.",
+      "conclusion_final": "SQL es no procedimental porque indicas qué quieres obtener o modificar, pero no describes paso a paso cómo debe hacerlo el sistema."
+    }
+  },
+  {
+    "id": "UT4-Q17",
+    "tema": "UT4 El lenguaje SQL. DDL",
+    "pregunta": "Tipo de dato más eficiente para un DNI de longitud fija:",
+    "contexto": "Elección del tipo de dato SQL más adecuado para almacenar un valor textual que siempre tiene la misma longitud.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CHAR."
+      },
+      {
+        "clave": "b",
+        "texto": "TEXT."
+      },
+      {
+        "clave": "c",
+        "texto": "CLOB."
+      },
+      {
+        "clave": "d",
+        "texto": "VARCHAR."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "CHAR se utiliza para cadenas de caracteres de longitud fija. Es adecuado cuando sabemos que todos los valores tendrán siempre el mismo tamaño, como ocurre con un DNI, que tiene una estructura fija de números y letra. Al definirlo como CHAR(9), el sistema reserva siempre el mismo espacio.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "TEXT se usa para textos largos o de longitud amplia, no para valores pequeños y fijos como un DNI."
+        },
+        {
+          "clave": "c",
+          "motivo": "CLOB se utiliza para almacenar grandes objetos de texto, como artículos, documentos largos o cuerpos de noticias. Sería excesivo e ineficiente para un DNI."
+        },
+        {
+          "clave": "d",
+          "motivo": "VARCHAR sirve para cadenas de longitud variable. Aunque podría almacenar un DNI, no es la opción más específica cuando el dato tiene siempre una longitud fija."
+        }
+      ],
+      "resumen_didactico": "Si el texto siempre ocupa el mismo número de caracteres, usamos CHAR. Si el texto puede variar de tamaño, usamos VARCHAR.",
+      "ejemplo_practico": "Para guardar un DNI como \"12345678A\", lo adecuado sería definir el campo como CHAR(9), porque siempre tendrá 9 caracteres.",
+      "conclusion_final": "El tipo de dato más eficiente para un DNI de longitud fija es CHAR."
+    }
+  },
+  {
+    "id": "UT4-Q18",
+    "tema": "UT4 El lenguaje SQL. DDL",
+    "pregunta": "Comando para eliminar completamente una tabla:",
+    "contexto": "Uso de sentencias DDL para eliminar objetos de la base de datos, concretamente una tabla completa con su estructura.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DELETE TABLE."
+      },
+      {
+        "clave": "b",
+        "texto": "DROP TABLE."
+      },
+      {
+        "clave": "c",
+        "texto": "REMOVE TABLE."
+      },
+      {
+        "clave": "d",
+        "texto": "TRUNCATE TABLE."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "DROP TABLE es la sentencia DDL que elimina completamente una tabla de la base de datos. Al usar DROP TABLE, desaparece la estructura de la tabla junto con sus datos, por lo que deja de existir como objeto dentro del esquema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DELETE TABLE no es la sintaxis correcta en SQL. DELETE se usa para borrar registros de una tabla, normalmente con DELETE FROM nombre_tabla, pero no elimina la tabla como estructura."
+        },
+        {
+          "clave": "c",
+          "motivo": "REMOVE TABLE no es un comando SQL estándar para eliminar tablas. La sentencia correcta para eliminar una tabla completa es DROP TABLE."
+        },
+        {
+          "clave": "d",
+          "motivo": "TRUNCATE TABLE elimina todos los registros de una tabla, pero conserva la estructura de la tabla. No la elimina completamente del esquema."
+        }
+      ],
+      "resumen_didactico": "DELETE borra filas, TRUNCATE vacía la tabla y DROP elimina la tabla entera, incluida su estructura.",
+      "ejemplo_practico": "Si ejecutas DROP TABLE clientes;, la tabla clientes desaparece completamente de la base de datos y ya no podrás hacer SELECT, INSERT o UPDATE sobre ella.",
+      "conclusion_final": "El comando correcto para eliminar completamente una tabla es DROP TABLE."
+    }
+  },
+  {
+    "id": "UT4-Q19",
+    "tema": "UT4 El lenguaje SQL. DDL",
+    "pregunta": "Vaciar una tabla manteniendo estructura, de forma rápida:",
+    "contexto": "Diferencia entre comandos SQL para eliminar datos, vaciar una tabla o eliminar completamente su estructura.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DROP TABLE."
+      },
+      {
+        "clave": "b",
+        "texto": "DELETE FROM."
+      },
+      {
+        "clave": "c",
+        "texto": "TRUNCATE TABLE."
+      },
+      {
+        "clave": "d",
+        "texto": "UPDATE TABLE."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "TRUNCATE TABLE se utiliza para vaciar una tabla de forma rápida, eliminando todos sus registros pero manteniendo su estructura. Es decir, la tabla sigue existiendo con sus columnas, restricciones y definición, pero queda sin datos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DROP TABLE elimina completamente la tabla, incluida su estructura. No sirve si queremos conservar la tabla vacía para seguir usándola."
+        },
+        {
+          "clave": "b",
+          "motivo": "DELETE FROM también puede borrar registros, pero lo hace como una operación de manipulación de datos y suele ser menos rápida si se eliminan todos los registros. Además, DELETE puede usarse con WHERE para borrar solo algunas filas."
+        },
+        {
+          "clave": "d",
+          "motivo": "UPDATE TABLE no es el comando adecuado para vaciar una tabla. UPDATE se utiliza para modificar valores existentes, no para eliminar todos los registros."
+        }
+      ],
+      "resumen_didactico": "DROP elimina la tabla completa, DELETE borra filas y TRUNCATE vacía la tabla rápidamente conservando su estructura.",
+      "ejemplo_practico": "Si tienes una tabla temporal llamada logs_importacion y quieres dejarla vacía para reutilizarla en una nueva carga de datos, usarías TRUNCATE TABLE logs_importacion;",
+      "conclusion_final": "El comando correcto para vaciar una tabla manteniendo su estructura de forma rápida es TRUNCATE TABLE."
+    }
+  },
+  {
+    "id": "UT4-Q20",
+    "tema": "UT4 El lenguaje SQL. DDL",
+    "pregunta": "PRIMARY KEY implica automáticamente:",
+    "contexto": "Restricción de clave primaria en SQL y propiedades que garantiza sobre los valores de una columna o conjunto de columnas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DEFAULT y INDEX."
+      },
+      {
+        "clave": "b",
+        "texto": "NUMERIC y AUTO_INCREMENT."
+      },
+      {
+        "clave": "c",
+        "texto": "NULL y UNIQUE."
+      },
+      {
+        "clave": "d",
+        "texto": "NOT NULL y UNIQUE."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Una clave primaria, o PRIMARY KEY, identifica de forma única cada registro de una tabla. Por eso sus valores no pueden repetirse y tampoco pueden quedar vacíos. Técnicamente, una PRIMARY KEY implica automáticamente las restricciones UNIQUE y NOT NULL.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "DEFAULT sirve para asignar un valor por defecto si no se introduce ninguno, pero no forma parte obligatoria de una clave primaria. Aunque muchos SGBD crean un índice asociado a la clave primaria, la respuesta conceptual correcta es que garantiza unicidad y ausencia de nulos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una clave primaria no tiene por qué ser NUMERIC ni AUTO_INCREMENT. Puede ser un número, un texto, un código o incluso una clave compuesta. AUTO_INCREMENT es una opción adicional, no una consecuencia obligatoria de PRIMARY KEY."
+        },
+        {
+          "clave": "c",
+          "motivo": "UNIQUE sí forma parte del comportamiento de una clave primaria, pero NULL es incorrecto. Una PRIMARY KEY no permite valores NULL porque cada fila debe poder identificarse de forma segura."
+        }
+      ],
+      "resumen_didactico": "PRIMARY KEY significa que cada fila queda identificada de forma única. Para conseguirlo, el campo no puede repetirse y no puede estar vacío.",
+      "ejemplo_practico": "En una tabla CLIENTES, si id_cliente es PRIMARY KEY, no puede haber dos clientes con el mismo id_cliente y tampoco puede existir un cliente con id_cliente vacío o NULL.",
+      "conclusion_final": "PRIMARY KEY implica automáticamente NOT NULL y UNIQUE."
+    }
+  },
+  {
+    "id": "UT5-Q21",
+    "tema": "UT5 El lenguaje SQL. DML y DCL",
+    "pregunta": "Condición del operador AND:",
+    "contexto": "Uso de operadores lógicos en SQL para combinar varias condiciones dentro de una cláusula WHERE.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Todas deben ser verdaderas."
+      },
+      {
+        "clave": "b",
+        "texto": "Una condición verdadera basta."
+      },
+      {
+        "clave": "c",
+        "texto": "Solo la última importa."
+      },
+      {
+        "clave": "d",
+        "texto": "Invierte el significado."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El operador AND se utiliza para combinar varias condiciones y exige que todas ellas sean verdaderas para que un registro aparezca en el resultado. Si una sola condición es falsa, la fila queda descartada.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Esta descripción corresponde al operador OR, no a AND. Con OR basta con que una de las condiciones sea verdadera."
+        },
+        {
+          "clave": "c",
+          "motivo": "En SQL no funciona así. Cuando se usa AND, no importa solo la última condición: todas las condiciones combinadas deben cumplirse."
+        },
+        {
+          "clave": "d",
+          "motivo": "Invertir el significado de una condición corresponde al operador NOT, no al operador AND."
+        }
+      ],
+      "resumen_didactico": "AND es el operador más restrictivo: solo devuelve registros cuando todas las condiciones indicadas se cumplen al mismo tiempo.",
+      "ejemplo_practico": "SELECT * FROM clientes WHERE ciudad = 'Madrid' AND activo = TRUE; Esta consulta solo devuelve clientes que sean de Madrid y que además estén activos.",
+      "conclusion_final": "La condición del operador AND es que todas las condiciones deben ser verdaderas."
+    }
+  },
+  {
+    "id": "UT5-Q22",
+    "tema": "UT5 El lenguaje SQL. DML y DCL",
+    "pregunta": "JOIN para mostrar clientes sin pedidos:",
+    "contexto": "Consulta SQL sobre varias tablas donde se necesita mostrar registros de una tabla principal aunque no tengan correspondencia en la tabla relacionada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "LEFT JOIN."
+      },
+      {
+        "clave": "b",
+        "texto": "EQUI JOIN."
+      },
+      {
+        "clave": "c",
+        "texto": "CROSS JOIN."
+      },
+      {
+        "clave": "d",
+        "texto": "INNER JOIN."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "LEFT JOIN permite mostrar todos los registros de la tabla situada a la izquierda de la consulta, aunque no tengan coincidencia en la tabla de la derecha. Por eso se utiliza cuando queremos ver clientes aunque no tengan pedidos asociados. Para obtener solo los clientes sin pedidos, normalmente se combina LEFT JOIN con una condición IS NULL sobre la tabla de pedidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "EQUI JOIN es una unión basada en igualdad entre campos, pero no garantiza mostrar registros sin correspondencia. No es la opción adecuada para localizar clientes sin pedidos."
+        },
+        {
+          "clave": "c",
+          "motivo": "CROSS JOIN genera un producto cartesiano, combinando cada cliente con cada pedido. No sirve para mostrar clientes sin pedidos y puede generar muchos resultados incorrectos."
+        },
+        {
+          "clave": "d",
+          "motivo": "INNER JOIN solo muestra los registros que tienen coincidencia en ambas tablas. Si un cliente no tiene pedidos, quedaría excluido del resultado."
+        }
+      ],
+      "resumen_didactico": "INNER JOIN muestra solo coincidencias. LEFT JOIN muestra todos los registros de la tabla izquierda, incluso los que no tienen relación en la tabla derecha.",
+      "ejemplo_practico": "SELECT clientes.nombre FROM clientes LEFT JOIN pedidos ON clientes.id = pedidos.id_cliente WHERE pedidos.id IS NULL; Esta consulta mostraría los clientes que no tienen ningún pedido asociado.",
+      "conclusion_final": "El JOIN adecuado para mostrar clientes sin pedidos es LEFT JOIN."
+    }
+  },
+  {
+    "id": "UT5-Q23",
+    "tema": "UT5 El lenguaje SQL. DML y DCL",
+    "pregunta": "Sublenguaje de SQL para permisos:",
+    "contexto": "Clasificación de los sublenguajes de SQL según su función: definición de estructura, manipulación de datos y control de permisos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "DCL."
+      },
+      {
+        "clave": "b",
+        "texto": "TCL."
+      },
+      {
+        "clave": "c",
+        "texto": "DML."
+      },
+      {
+        "clave": "d",
+        "texto": "DDL."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "DCL significa Data Control Language o Lenguaje de Control de Datos. Es el sublenguaje de SQL encargado de gestionar la seguridad mediante permisos y usuarios. Sus sentencias principales son GRANT, para conceder permisos, y REVOKE, para retirarlos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "TCL significa Transaction Control Language y se relaciona con el control de transacciones, como COMMIT o ROLLBACK. No es el sublenguaje principal para gestionar permisos."
+        },
+        {
+          "clave": "c",
+          "motivo": "DML significa Data Manipulation Language y sirve para consultar, insertar, modificar o borrar datos mediante sentencias como SELECT, INSERT, UPDATE y DELETE. No se encarga de los permisos."
+        },
+        {
+          "clave": "d",
+          "motivo": "DDL significa Data Definition Language y se usa para crear, modificar o eliminar estructuras de la base de datos, como tablas o esquemas. No es el sublenguaje específico para conceder o retirar permisos."
+        }
+      ],
+      "resumen_didactico": "DDL define estructuras, DML manipula datos y DCL controla permisos de acceso.",
+      "ejemplo_practico": "Si quieres permitir que un usuario pueda consultar una tabla, usarías una sentencia como GRANT SELECT ON clientes TO usuario1;",
+      "conclusion_final": "El sublenguaje de SQL utilizado para gestionar permisos es DCL."
+    }
+  },
+  {
+    "id": "UT5-Q24",
+    "tema": "UT5 El lenguaje SQL. DML y DCL",
+    "pregunta": "Buscar apellidos que empiecen por \"Gar\":",
+    "contexto": "Uso del operador LIKE en SQL para buscar cadenas de texto que siguen un patrón concreto.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "'Gar*'"
+      },
+      {
+        "clave": "b",
+        "texto": "apellido IS 'Gar?'"
+      },
+      {
+        "clave": "c",
+        "texto": "apellido LIKE 'Gar%'"
+      },
+      {
+        "clave": "d",
+        "texto": "apellido"
+      },
+      {
+        "clave": "e",
+        "texto": "apellido CONTAINS 'Gar'"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En SQL, el operador LIKE permite buscar patrones dentro de cadenas de texto. El comodín % representa cero, uno o varios caracteres. Por tanto, apellido LIKE 'Gar%' busca todos los apellidos que empiezan por Gar, sin importar qué caracteres aparezcan después.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "En SQL estándar el comodín habitual para varios caracteres es %, no *. Aunque algunos sistemas o herramientas usan *, en SQL se utiliza LIKE 'Gar%'."
+        },
+        {
+          "clave": "b",
+          "motivo": "IS no se usa para buscar patrones de texto. Además, el comodín ? no es el comodín estándar de SQL para un carácter; en SQL se usa _ para un único carácter."
+        },
+        {
+          "clave": "d",
+          "motivo": "La opción solo indica el nombre del campo, pero no contiene ninguna condición de búsqueda ni patrón."
+        },
+        {
+          "clave": "e",
+          "motivo": "CONTAINS puede existir en algunos sistemas para búsquedas de texto completo, pero no es la forma básica estudiada para buscar apellidos que empiezan por una cadena concreta. La forma correcta es usar LIKE con el comodín %."
+        }
+      ],
+      "resumen_didactico": "Para buscar textos que empiezan por una cadena concreta se usa LIKE 'texto%'. El símbolo % significa cualquier continuación posible.",
+      "ejemplo_practico": "SELECT * FROM clientes WHERE apellido LIKE 'Gar%'; Esta consulta encontraría apellidos como García, Garrido, Garcés o Garrote.",
+      "conclusion_final": "La opción correcta es apellido LIKE 'Gar%', porque busca apellidos que comienzan por Gar."
+    }
+  },
+  {
+    "id": "UT5-Q25",
+    "tema": "UT5 El lenguaje SQL. DML y DCL",
+    "pregunta": "Filtro sobre grupos:",
+    "contexto": "Uso de cláusulas SQL en consultas con agrupación de registros mediante GROUP BY.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HAVING."
+      },
+      {
+        "clave": "b",
+        "texto": "ORDER BY."
+      },
+      {
+        "clave": "c",
+        "texto": "WHERE."
+      },
+      {
+        "clave": "d",
+        "texto": "SELECT."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "HAVING es la cláusula que se utiliza para filtrar grupos después de aplicar GROUP BY. Mientras WHERE filtra registros individuales antes de agrupar, HAVING filtra los resultados ya agrupados, normalmente usando funciones de agregación como COUNT, SUM, AVG, MAX o MIN.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "ORDER BY sirve para ordenar los resultados de una consulta, no para filtrar grupos."
+        },
+        {
+          "clave": "c",
+          "motivo": "WHERE filtra filas individuales antes de que se formen los grupos. No es el filtro específico para grupos ya calculados."
+        },
+        {
+          "clave": "d",
+          "motivo": "SELECT indica qué columnas o expresiones se muestran en el resultado, pero no filtra grupos."
+        }
+      ],
+      "resumen_didactico": "WHERE filtra registros antes de agrupar; HAVING filtra grupos después de aplicar GROUP BY.",
+      "ejemplo_practico": "SELECT id_categoria, COUNT(*) FROM productos GROUP BY id_categoria HAVING COUNT(*) > 10; Esta consulta muestra solo las categorías que tienen más de 10 productos.",
+      "conclusion_final": "El filtro sobre grupos se realiza con HAVING."
+    }
+  },
+  {
+    "id": "UT6-Q26",
+    "tema": "UT6 Lenguaje de programación: construcción de guiones",
+    "pregunta": "En la analogía del restaurante, PL/SQL es:",
+    "contexto": "Comparación didáctica entre SQL y PL/SQL para entender la diferencia entre un lenguaje declarativo y uno procedimental.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El cocinero."
+      },
+      {
+        "clave": "b",
+        "texto": "El camarero."
+      },
+      {
+        "clave": "c",
+        "texto": "El cliente."
+      },
+      {
+        "clave": "d",
+        "texto": "El menú."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En la analogía del restaurante, SQL se compara con el camarero porque recibe una petición declarativa: se le dice qué se quiere. PL/SQL, en cambio, se compara con el cocinero porque ejecuta pasos, aplica lógica, toma decisiones y sigue un procedimiento para conseguir el resultado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "El camarero representa mejor a SQL, porque SQL recibe una petición del tipo 'quiero estos datos', sin indicar paso a paso cómo debe obtenerlos."
+        },
+        {
+          "clave": "c",
+          "motivo": "El cliente sería quien solicita algo, pero no representa a PL/SQL. PL/SQL no pide el resultado, sino que ejecuta lógica procedimental para producirlo."
+        },
+        {
+          "clave": "d",
+          "motivo": "El menú sería una lista de opciones disponibles, pero no representa la ejecución de instrucciones, condiciones, variables o procedimientos propios de PL/SQL."
+        }
+      ],
+      "resumen_didactico": "SQL dice qué quiere obtener; PL/SQL define pasos, condiciones y lógica para realizar una tarea. Por eso PL/SQL se compara con el cocinero.",
+      "ejemplo_practico": "SQL sería pedir 'dame los clientes VIP'. PL/SQL sería ejecutar una lógica completa: revisar ventas, calcular puntos, comprobar condiciones y actualizar automáticamente qué clientes pasan a ser VIP.",
+      "conclusion_final": "PL/SQL es el cocinero, porque representa la parte procedimental que ejecuta instrucciones paso a paso."
+    }
+  },
+  {
+    "id": "UT6-Q27",
+    "tema": "UT6 Lenguaje de programación: construcción de guiones",
+    "pregunta": "Estructura para recorrer filas una a una:",
+    "contexto": "Uso de estructuras de PL/SQL para manejar el resultado de una consulta y procesar sus filas individualmente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Trigger."
+      },
+      {
+        "clave": "b",
+        "texto": "Array."
+      },
+      {
+        "clave": "c",
+        "texto": "Bloque anónimo."
+      },
+      {
+        "clave": "d",
+        "texto": "Cursor."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Un cursor es la estructura utilizada en PL/SQL para recorrer el resultado de una consulta fila a fila. Permite abrir una consulta, recuperar cada registro individualmente, trabajar con sus valores y avanzar hasta que no queden más filas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un trigger o disparador es un bloque que se ejecuta automáticamente cuando ocurre un evento en la base de datos, como un INSERT, UPDATE o DELETE. No es la estructura específica para recorrer filas una a una."
+        },
+        {
+          "clave": "b",
+          "motivo": "Un array almacena varios valores en una estructura de datos, pero no es el mecanismo propio de PL/SQL para recorrer el resultado de una consulta fila por fila."
+        },
+        {
+          "clave": "c",
+          "motivo": "Un bloque anónimo permite ejecutar código PL/SQL sin guardarlo como objeto permanente en la base de datos, pero por sí mismo no representa la estructura específica de recorrido de filas."
+        }
+      ],
+      "resumen_didactico": "Cuando necesitas procesar los registros devueltos por una consulta uno a uno, la estructura adecuada es el cursor.",
+      "ejemplo_practico": "Si una consulta devuelve 500 empleados y quieres calcular una bonificación diferente para cada uno, puedes usar un cursor para ir leyendo cada fila y aplicar la lógica correspondiente.",
+      "conclusion_final": "La estructura utilizada para recorrer filas una a una en PL/SQL es el cursor."
+    }
+  },
+  {
+    "id": "UT6-Q28",
+    "tema": "UT6 Lenguaje de programación: construcción de guiones",
+    "pregunta": "¿Qué es un Trigger?",
+    "contexto": "Concepto de disparador en PL/SQL como bloque asociado a eventos producidos en la base de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Procedimiento manual."
+      },
+      {
+        "clave": "b",
+        "texto": "Excepción."
+      },
+      {
+        "clave": "c",
+        "texto": "Variable constante."
+      },
+      {
+        "clave": "d",
+        "texto": "Bloque automático ante eventos."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Un trigger, también llamado disparador, es un bloque de código que se ejecuta automáticamente cuando ocurre un evento determinado en la base de datos, como un INSERT, UPDATE o DELETE. Su característica principal es que no se llama manualmente, sino que se activa por el propio evento asociado.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Un trigger no es un procedimiento manual. Un procedimiento se invoca explícitamente cuando se necesita, mientras que un trigger se ejecuta automáticamente al producirse un evento."
+        },
+        {
+          "clave": "b",
+          "motivo": "Una excepción sirve para capturar y gestionar errores durante la ejecución de un bloque PL/SQL. No es un bloque automático asociado a eventos de la base de datos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una variable constante es un dato declarado con un valor que no cambia durante la ejecución. No tiene relación con la ejecución automática ante eventos."
+        }
+      ],
+      "resumen_didactico": "Un trigger es como un vigilante automático de la base de datos: cuando ocurre un evento concreto, se ejecuta sin que el usuario tenga que llamarlo directamente.",
+      "ejemplo_practico": "Puedes crear un trigger para que, cada vez que se inserte un nuevo pedido, se actualice automáticamente el stock del producto correspondiente.",
+      "conclusion_final": "Un trigger es un bloque automático ante eventos de la base de datos."
+    }
+  },
+  {
+    "id": "UT6-Q29",
+    "tema": "UT6 Lenguaje de programación: construcción de guiones",
+    "pregunta": "Palabras clave del bloque ejecutable:",
+    "contexto": "Estructura básica de un bloque PL/SQL y delimitación de la zona donde se ejecutan las instrucciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "BEGIN y END."
+      },
+      {
+        "clave": "b",
+        "texto": "IF y THEN."
+      },
+      {
+        "clave": "c",
+        "texto": "DECLARE y FINISH."
+      },
+      {
+        "clave": "d",
+        "texto": "START y STOP."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En PL/SQL, el bloque ejecutable está delimitado por las palabras clave BEGIN y END. Dentro de ese bloque se escriben las sentencias que se van a ejecutar, como operaciones SQL, asignaciones, llamadas a procedimientos, estructuras de control o salidas por pantalla.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "IF y THEN se usan para construir una estructura condicional, pero no delimitan el bloque ejecutable principal de PL/SQL."
+        },
+        {
+          "clave": "c",
+          "motivo": "DECLARE puede aparecer en la zona declarativa opcional del bloque, pero FINISH no es la palabra clave correcta para cerrar un bloque PL/SQL."
+        },
+        {
+          "clave": "d",
+          "motivo": "START y STOP no son las palabras clave utilizadas en PL/SQL para delimitar el bloque ejecutable."
+        }
+      ],
+      "resumen_didactico": "La estructura básica de un bloque PL/SQL tiene una zona opcional de declaración y una zona ejecutable obligatoria. Esa zona ejecutable empieza con BEGIN y termina con END.",
+      "ejemplo_practico": "BEGIN DBMS_OUTPUT.PUT_LINE('Hola desde PL/SQL'); END; / En este ejemplo, la instrucción que imprime el mensaje está dentro del bloque ejecutable BEGIN-END.",
+      "conclusion_final": "Las palabras clave del bloque ejecutable son BEGIN y END."
+    }
+  },
+  {
+    "id": "UT6-Q30",
+    "tema": "UT6 Lenguaje de programación: construcción de guiones",
+    "pregunta": "Bucle ideal para rangos fijos:",
+    "contexto": "Uso de estructuras iterativas en PL/SQL según si se conoce o no de antemano el número de repeticiones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "REPEAT."
+      },
+      {
+        "clave": "b",
+        "texto": "FOR."
+      },
+      {
+        "clave": "c",
+        "texto": "WHILE."
+      },
+      {
+        "clave": "d",
+        "texto": "LOOP."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El bucle FOR es ideal cuando conocemos de antemano el rango de valores o el número de repeticiones que queremos ejecutar. En PL/SQL, el contador se gestiona automáticamente, por lo que no es necesario declararlo ni incrementarlo manualmente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "REPEAT no es el bucle básico estudiado en PL/SQL dentro del temario. En PL/SQL se trabajan principalmente LOOP, WHILE y FOR."
+        },
+        {
+          "clave": "c",
+          "motivo": "WHILE se usa cuando la repetición depende de una condición que se evalúa antes de cada vuelta. Es útil cuando no siempre sabemos exactamente cuántas veces se repetirá el bloque."
+        },
+        {
+          "clave": "d",
+          "motivo": "LOOP es un bucle básico que puede repetirse indefinidamente hasta que se indique una salida con EXIT o EXIT WHEN. No es el más adecuado cuando ya tenemos un rango fijo."
+        }
+      ],
+      "resumen_didactico": "Si sabes cuántas veces se va a repetir algo o tienes un rango definido, usa FOR. Si dependes de una condición, usa WHILE. Si necesitas controlar manualmente la salida, usa LOOP.",
+      "ejemplo_practico": "FOR num IN 1..10 LOOP DBMS_OUTPUT.PUT_LINE(num); END LOOP; Este bucle recorre un rango fijo del 1 al 10 sin tener que declarar ni incrementar manualmente el contador.",
+      "conclusion_final": "El bucle ideal para rangos fijos es FOR."
+    }
+  },
+  {
+    "id": "UT7-Q31",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Principio que garantiza acceso autorizado:",
+    "contexto": "Principios básicos de seguridad de la información dentro del estándar CIDAN aplicado a bases de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Integridad."
+      },
+      {
+        "clave": "b",
+        "texto": "No repudio."
+      },
+      {
+        "clave": "c",
+        "texto": "Confidencialidad."
+      },
+      {
+        "clave": "d",
+        "texto": "Disponibilidad."
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La confidencialidad es el principio de seguridad que garantiza que la información solo sea accesible para las personas, usuarios o sistemas autorizados. En bases de datos, implica controlar permisos, usuarios, roles y accesos para evitar que alguien vea información que no le corresponde.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La integridad garantiza que los datos sean correctos, completos y que no hayan sido modificados de forma indebida. No se centra en quién puede acceder, sino en que la información no se altere incorrectamente."
+        },
+        {
+          "clave": "b",
+          "motivo": "El no repudio garantiza que un usuario no pueda negar una acción realizada, por ejemplo, gracias a registros o logs. No trata directamente sobre limitar el acceso a usuarios autorizados."
+        },
+        {
+          "clave": "d",
+          "motivo": "La disponibilidad garantiza que la información esté accesible cuando se necesita, pero no define quién tiene permiso para verla."
+        }
+      ],
+      "resumen_didactico": "Confidencialidad significa que cada usuario solo puede acceder a la información que está autorizado a consultar.",
+      "ejemplo_practico": "En una empresa, un trabajador puede ver sus propios datos personales, pero no debería poder consultar la nómina de otros empleados. Ese control pertenece al principio de confidencialidad.",
+      "conclusion_final": "El principio que garantiza el acceso solo a usuarios autorizados es la confidencialidad."
+    }
+  },
+  {
+    "id": "UT7-Q32",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Tecnología de discos redundantes:",
+    "contexto": "Medidas de recuperación y prevención ante fallos físicos en sistemas de bases de datos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SQL Injection."
+      },
+      {
+        "clave": "b",
+        "texto": "CDC."
+      },
+      {
+        "clave": "c",
+        "texto": "Ransomware."
+      },
+      {
+        "clave": "d",
+        "texto": "RAID."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "RAID significa Redundant Array of Independent Disks, es decir, conjunto redundante de discos independientes. Es una tecnología que utiliza varios discos para mejorar la tolerancia a fallos, el rendimiento o ambos. Su objetivo principal es evitar que la pérdida de un disco provoque automáticamente la pérdida de la información o la caída del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "SQL Injection es un ataque lógico que consiste en insertar código SQL malicioso en una aplicación vulnerable. No es una tecnología de discos redundantes."
+        },
+        {
+          "clave": "b",
+          "motivo": "CDC significa Centro de Contingencia de Datos. Es una ubicación secundaria preparada para recuperar el servicio ante desastres, pero no es una tecnología específica de discos redundantes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Ransomware es un tipo de malware que cifra los datos y exige un rescate para recuperarlos. Es una amenaza de seguridad, no una tecnología de redundancia de discos."
+        }
+      ],
+      "resumen_didactico": "RAID protege frente a fallos físicos de discos usando varios discos coordinados. Si uno falla, el sistema puede seguir funcionando según el tipo de RAID utilizado.",
+      "ejemplo_practico": "En un servidor con RAID 1, los datos se escriben en dos discos a la vez. Si uno de los discos falla, el otro conserva una copia completa de la información.",
+      "conclusion_final": "La tecnología de discos redundantes es RAID."
+    }
+  },
+  {
+    "id": "UT7-Q33",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Backup que copia solo cambios y desactiva flag:",
+    "contexto": "Tipos de copias de seguridad según el uso del flag de modificado o archive bit.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Espejo."
+      },
+      {
+        "clave": "b",
+        "texto": "Diferencial."
+      },
+      {
+        "clave": "c",
+        "texto": "Total."
+      },
+      {
+        "clave": "d",
+        "texto": "Incremental."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La copia incremental guarda solo los archivos o datos que han cambiado desde la última copia realizada, ya sea completa o incremental. Después de copiarlos, desactiva el flag de modificado, indicando que esos cambios ya han sido respaldados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "El espejo o mirroring consiste en replicar los datos en tiempo real en otro sistema o servidor. No se define por copiar solo cambios ni por el comportamiento del flag de modificado."
+        },
+        {
+          "clave": "b",
+          "motivo": "La copia diferencial también copia cambios, pero normalmente toma como referencia la última copia completa y no desactiva el flag de modificado. Por eso cada copia diferencial acumula los cambios desde la última total."
+        },
+        {
+          "clave": "c",
+          "motivo": "La copia total copia todos los datos, no solo los cambios. Aunque puede desactivar el flag, no encaja con la parte clave del enunciado: copiar solo lo modificado."
+        }
+      ],
+      "resumen_didactico": "La incremental copia únicamente lo que ha cambiado desde la última copia y después marca esos archivos como ya respaldados desactivando el flag.",
+      "ejemplo_practico": "Si el lunes haces una copia completa y el martes cambian 10 archivos, la copia incremental del martes guarda solo esos 10 archivos y desactiva su flag de modificado.",
+      "conclusion_final": "El backup que copia solo los cambios y desactiva el flag es el incremental."
+    }
+  },
+  {
+    "id": "UT7-Q34",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Principio que impide negar una acción:",
+    "contexto": "Principios de seguridad de la información dentro del estándar CIDAN aplicado a bases de datos y auditoría de acciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Integridad."
+      },
+      {
+        "clave": "b",
+        "texto": "No repudio."
+      },
+      {
+        "clave": "c",
+        "texto": "Autenticación."
+      },
+      {
+        "clave": "d",
+        "texto": "Confidencialidad."
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El no repudio es el principio de seguridad que garantiza que un usuario no pueda negar la autoría de una acción realizada. En bases de datos, se relaciona con registros de auditoría, logs y mecanismos que permiten demostrar quién hizo una operación y cuándo la hizo.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La integridad garantiza que la información sea correcta y no se altere de forma indebida. No se centra en demostrar la autoría de una acción."
+        },
+        {
+          "clave": "c",
+          "motivo": "La autenticación verifica que un usuario es quien dice ser, por ejemplo mediante usuario, contraseña, token o doble factor. Es necesaria para identificar, pero el principio que impide negar una acción es el no repudio."
+        },
+        {
+          "clave": "d",
+          "motivo": "La confidencialidad garantiza que solo usuarios autorizados accedan a la información. No trata sobre impedir que alguien niegue haber realizado una operación."
+        }
+      ],
+      "resumen_didactico": "Autenticación identifica al usuario; confidencialidad controla el acceso; integridad protege la corrección del dato; no repudio deja prueba de que una acción fue realizada por alguien concreto.",
+      "ejemplo_practico": "Si un administrador borra una tabla crítica, los logs del sistema deben permitir demostrar que esa acción fue ejecutada por su usuario a una hora concreta.",
+      "conclusion_final": "El principio que impide negar una acción realizada es el no repudio."
+    }
+  },
+  {
+    "id": "UT7-Q35",
+    "tema": "UT7 Gestión de seguridad",
+    "pregunta": "Copia en ubicación distinta sirve para:",
+    "contexto": "Uso de copias de seguridad almacenadas fuera del servidor principal o en una ubicación secundaria para proteger los datos ante incidentes físicos.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Descarga rápida."
+      },
+      {
+        "clave": "b",
+        "texto": "Cumplir la ley."
+      },
+      {
+        "clave": "c",
+        "texto": "Ahorrar espacio."
+      },
+      {
+        "clave": "d",
+        "texto": "Evitar pérdida por desastre físico."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Guardar una copia de seguridad en una ubicación distinta permite proteger la información frente a desastres físicos como incendios, inundaciones, robos, apagones graves o fallos del centro principal. Si la copia estuviera en el mismo lugar que el sistema original, podría perderse junto con los datos principales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "La finalidad principal de una copia en otra ubicación no es descargar más rápido, sino garantizar que los datos sigan existiendo si ocurre un desastre en el lugar principal."
+        },
+        {
+          "clave": "b",
+          "motivo": "En algunos contextos puede haber obligaciones legales sobre copias y conservación de datos, pero la razón técnica principal de guardar una copia en otra ubicación es la recuperación ante desastres físicos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Guardar una copia en otra ubicación no ahorra espacio; de hecho, requiere almacenamiento adicional. Su objetivo es la seguridad y recuperación de la información."
+        }
+      ],
+      "resumen_didactico": "Una copia externa o en ubicación distinta evita que un único desastre físico destruya tanto los datos originales como sus copias de seguridad.",
+      "ejemplo_practico": "Si una empresa tiene el servidor principal en Madrid y guarda una copia en un centro de contingencia o en almacenamiento en la nube, podrá recuperar los datos aunque el servidor principal sufra un incendio o una avería grave.",
+      "conclusion_final": "Una copia en ubicación distinta sirve para evitar la pérdida de datos ante un desastre físico."
+    }
+  },
+  {
+    "id": "UT8-Q36",
+    "tema": "UT8 Las bases de datos objeto-relacionales",
+    "pregunta": "Crear tabla de objetos Persona_T:",
+    "contexto": "Creación de una tabla basada en un tipo objeto previamente definido en una base de datos objeto-relacional.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "CREATE TABLE Personas OF Persona_T;"
+      },
+      {
+        "clave": "b",
+        "texto": "ALTER TYPE..."
+      },
+      {
+        "clave": "c",
+        "texto": "INSERT INTO Persona_T..."
+      },
+      {
+        "clave": "d",
+        "texto": "CREATE TYPE BODY..."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En una base de datos objeto-relacional, después de definir un tipo objeto, se puede crear una tabla cuyos registros sean objetos de ese tipo. Para ello se utiliza la sintaxis CREATE TABLE nombre_tabla OF nombre_tipo. Por tanto, si el tipo objeto se llama Persona_T, la tabla de objetos se crea con CREATE TABLE Personas OF Persona_T;",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "ALTER TYPE se utiliza para modificar un tipo objeto ya existente, no para crear una tabla basada en ese tipo."
+        },
+        {
+          "clave": "c",
+          "motivo": "INSERT INTO se utiliza para insertar datos en una tabla, pero antes la tabla debe haber sido creada. Además, Persona_T es el tipo objeto, no necesariamente el nombre de una tabla."
+        },
+        {
+          "clave": "d",
+          "motivo": "CREATE TYPE BODY se usa para definir el cuerpo de métodos asociados a un tipo objeto, cuando existen métodos declarados. No sirve para crear una tabla de objetos."
+        }
+      ],
+      "resumen_didactico": "Primero se define el tipo objeto con CREATE TYPE. Después, si quieres crear una tabla cuyos registros sigan ese tipo, usas CREATE TABLE nombre_tabla OF nombre_tipo.",
+      "ejemplo_practico": "Si existe el tipo Persona_T con atributos como nombre, apellidos y edad, la instrucción CREATE TABLE Personas OF Persona_T; crea una tabla donde cada fila representa un objeto Persona_T.",
+      "conclusion_final": "La sentencia correcta para crear una tabla de objetos Persona_T es CREATE TABLE Personas OF Persona_T;"
+    }
+  },
+  {
+    "id": "UT8-Q37",
+    "tema": "UT8 Las bases de datos objeto-relacionales",
+    "pregunta": "Lista de teléfonos con orden y límite:",
+    "contexto": "Elección del tipo de colección adecuado en una base de datos objeto-relacional cuando se necesita guardar varios valores manteniendo orden y con un tamaño máximo definido.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "VARRAY."
+      },
+      {
+        "clave": "b",
+        "texto": "Tabla Anidada."
+      },
+      {
+        "clave": "c",
+        "texto": "Lista enlazada."
+      },
+      {
+        "clave": "d",
+        "texto": "Tabla hash."
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Un VARRAY es una colección de tamaño variable, pero con un límite máximo definido. Además, conserva el orden de los elementos. Por eso es adecuado para representar una lista controlada de valores, como varios teléfonos de una persona, cuando queremos mantener su posición y limitar cuántos puede haber.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Una tabla anidada también permite almacenar varios valores, pero no es la opción más precisa cuando se exige mantener orden y establecer un límite máximo claro. Se usa mejor para colecciones más flexibles o sin un tamaño máximo tan definido."
+        },
+        {
+          "clave": "c",
+          "motivo": "Una lista enlazada es una estructura de datos propia de programación, basada en nodos enlazados mediante punteros. No es el tipo de colección objeto-relacional esperado en este contexto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Una tabla hash se basa en asociar claves a posiciones mediante funciones hash. No representa una lista ordenada y limitada de teléfonos dentro de un tipo objeto-relacional."
+        }
+      ],
+      "resumen_didactico": "Si necesitas una colección ordenada y con número máximo de elementos, la opción adecuada es VARRAY.",
+      "ejemplo_practico": "Una persona puede tener como máximo tres teléfonos: móvil personal, móvil de trabajo y fijo. Se podría definir un VARRAY de teléfonos con límite 3 para guardar esos valores en orden.",
+      "conclusion_final": "La respuesta correcta es VARRAY, porque permite guardar una lista ordenada con un límite máximo de elementos."
+    }
+  },
+  {
+    "id": "UT8-Q38",
+    "tema": "UT8 Las bases de datos objeto-relacionales",
+    "pregunta": "Ventaja de usar REF:",
+    "contexto": "Uso de referencias en bases de datos objeto-relacionales para relacionar objetos almacenados de forma independiente.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Permite borrados invisibles."
+      },
+      {
+        "clave": "b",
+        "texto": "Va más lento."
+      },
+      {
+        "clave": "c",
+        "texto": "Duplica datos."
+      },
+      {
+        "clave": "d",
+        "texto": "Refleja cambios automáticamente."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "REF permite crear una referencia o enlace hacia un objeto almacenado en otra tabla, evitando copiar todos sus datos. Una de sus ventajas es que, si el objeto referenciado cambia en su tabla de origen, las tablas que apuntan a él pueden acceder a la información actualizada sin tener que modificar copias duplicadas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "REF no se define por permitir borrados invisibles. Su función principal es establecer una referencia entre objetos almacenados de forma independiente."
+        },
+        {
+          "clave": "b",
+          "motivo": "Que vaya más lento no es una ventaja. Las referencias se usan para mejorar la organización, evitar redundancias y facilitar la reutilización de objetos."
+        },
+        {
+          "clave": "c",
+          "motivo": "REF precisamente evita duplicar datos. En lugar de copiar los datos completos de un objeto en varias tablas, se guarda una referencia al objeto original."
+        }
+      ],
+      "resumen_didactico": "REF funciona como un enlace hacia un objeto existente. Si el objeto original cambia, quienes lo referencian acceden al dato actualizado.",
+      "ejemplo_practico": "Si varios libros referencian al mismo autor mediante REF, y se actualiza la biografía del autor en su tabla, todos los libros seguirán apuntando al autor actualizado sin duplicar esa información.",
+      "conclusion_final": "La ventaja correcta de usar REF es que refleja los cambios automáticamente al trabajar sobre el objeto referenciado."
+    }
+  },
+  {
+    "id": "UT8-Q39",
+    "tema": "UT8 Las bases de datos objeto-relacionales",
+    "pregunta": "Función constructora para Direccion_T:",
+    "contexto": "Uso de constructores en bases de datos objeto-relacionales para crear valores de un tipo objeto previamente definido.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Direccion_T(...)"
+      },
+      {
+        "clave": "b",
+        "texto": "NEW Direccion_T(...)"
+      },
+      {
+        "clave": "c",
+        "texto": "TO_OBJECT(...)"
+      },
+      {
+        "clave": "d",
+        "texto": "CREATE(...)"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En una base de datos objeto-relacional, cuando se define un tipo objeto como Direccion_T, se puede crear un valor de ese tipo utilizando su función constructora. La forma habitual es llamar al nombre del tipo como si fuera una función, pasando entre paréntesis los valores de sus atributos: Direccion_T(...).",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "NEW Direccion_T(...) puede recordar a la creación de objetos en lenguajes como Java, pero en SQL objeto-relacional la forma esperada en el temario es usar directamente el constructor con el nombre del tipo: Direccion_T(...)."
+        },
+        {
+          "clave": "c",
+          "motivo": "TO_OBJECT(...) no es la sintaxis estándar estudiada para construir un objeto de tipo Direccion_T."
+        },
+        {
+          "clave": "d",
+          "motivo": "CREATE se utiliza para crear objetos de base de datos, como tipos, tablas o vistas, pero no para instanciar un valor concreto de un tipo objeto dentro de una sentencia."
+        }
+      ],
+      "resumen_didactico": "Para crear un objeto de un tipo definido por el usuario, se llama al constructor usando el nombre del tipo seguido de sus valores entre paréntesis.",
+      "ejemplo_practico": "Si Direccion_T tiene los atributos calle, ciudad y codigo_postal, podrías crear una dirección con Direccion_T('Calle Mayor', 'Madrid', '28013').",
+      "conclusion_final": "La función constructora correcta para Direccion_T es Direccion_T(...)."
+    }
+  },
+  {
+    "id": "UT8-Q40",
+    "tema": "UT8 Las bases de datos objeto-relacionales",
+    "pregunta": "Método para ordenar por valor escalar:",
+    "contexto": "Uso de métodos especiales en tipos objeto para permitir la comparación y ordenación de objetos en bases de datos objeto-relacionales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SORT."
+      },
+      {
+        "clave": "b",
+        "texto": "COMPARE."
+      },
+      {
+        "clave": "c",
+        "texto": "ORDER."
+      },
+      {
+        "clave": "d",
+        "texto": "MAP."
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "El método MAP se utiliza en tipos objeto para devolver un valor escalar que representa al objeto y permite compararlo u ordenarlo. Es decir, convierte el objeto en un valor simple, como un número o una cadena, que el sistema puede usar para establecer un orden.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "SORT no es el método especial usado en tipos objeto para definir la ordenación mediante un valor escalar."
+        },
+        {
+          "clave": "b",
+          "motivo": "COMPARE puede parecer lógico por su significado, pero no es la palabra clave estudiada para devolver un valor escalar de ordenación en tipos objeto."
+        },
+        {
+          "clave": "c",
+          "motivo": "ORDER también existe como mecanismo de comparación entre objetos, pero no devuelve un valor escalar directo. Para ordenar por un valor escalar, el método específico es MAP."
+        }
+      ],
+      "resumen_didactico": "MAP transforma un objeto en un valor simple que puede usarse para comparar y ordenar objetos.",
+      "ejemplo_practico": "Si tienes un tipo Persona_T con nombre, edad y DNI, un método MAP podría devolver la edad o el DNI para que las personas puedan ordenarse según ese valor.",
+      "conclusion_final": "El método correcto para ordenar por valor escalar es MAP."
+    }
+  }
+]

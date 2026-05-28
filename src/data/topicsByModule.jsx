@@ -516,13 +516,38 @@ export const topicsByModule = {
   repasoGlobal: [
     {
       id: "UT1",
-      title: "Repaso global (Abarca de 0% a 17% del temario)",
+      title: "Examen final Ingles",
       numQuestion: 30,
     },
     {
       id: "UT2",
-      title: "Repaso global (Abarca de 17% a 34% del temario)",
-      numQuestion: 30,
+      title: "Examen final Sistemas informáticos",
+      numQuestion: 40,
+    },
+    {
+      id: "UT3",
+      title: "Examen final Entornos de desarrollo",
+      numQuestion: 40,
+    },
+    {
+      id: "UT4",
+      title: "Examen final Base de datos",
+      numQuestion: 40,
+    },
+    {
+      id: "UT5",
+      title: "Examen final Introducción a la programación",
+      numQuestion: 40,
+    },
+    {
+      id: "UT6",
+      title: "Examen final Lenguaje de marcas",
+      numQuestion: 40,
+    },
+    {
+      id: "UT7",
+      title: "Examen final Empleabilidad",
+      numQuestion: 40,
     }
 
   ]

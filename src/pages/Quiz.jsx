@@ -22,6 +22,7 @@ function resolveFolder(moduloId) {
     ingles: "ingles",
     lenguajeMarcas: "lenguajeMarcas",
     empleabilidad: "empleabilidad",
+    repasoGlobal: "repasoGlobal"
   };
   return map[moduloId] ?? null;
 }
