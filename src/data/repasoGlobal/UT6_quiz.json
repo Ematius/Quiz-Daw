@@ -1,0 +1,1922 @@
+[
+  {
+    "id": "UT1-Q01",
+    "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+    "pregunta": "¿Cuál es la principal función de los lenguajes de marcas en la arquitectura de los sistemas de software actuales?",
+    "contexto": "Se pregunta por la utilidad principal de los lenguajes de marcas dentro de sistemas informáticos actuales, especialmente en relación con la comunicación entre aplicaciones distintas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Reemplazar a los lenguajes de programación en la creación de algoritmos"
+      },
+      {
+        "clave": "b",
+        "texto": "Diseñar exclusivamente interfaces gráficas en tres dimensiones"
+      },
+      {
+        "clave": "c",
+        "texto": "Ejecutar bucles lógicos en las bases de datos relacionales"
+      },
+      {
+        "clave": "d",
+        "texto": "Permitir el intercambio de datos entre distintas aplicaciones de manera independiente de la plataforma y tecnología"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Los lenguajes de marcas tienen como una de sus funciones principales permitir el intercambio de datos entre distintas aplicaciones de forma independiente de la plataforma utilizada y de la tecnología con la que hayan sido creadas. Esto los convierte en un mecanismo clave para estructurar, transmitir y compartir información entre sistemas diferentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los lenguajes de marcas no sustituyen a los lenguajes de programación. No ejecutan algoritmos complejos ni realizan cálculos lógicos; su función es estructurar, describir o presentar información."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque los lenguajes de marcas no se limitan al diseño de interfaces gráficas, y mucho menos exclusivamente en tres dimensiones. Pueden usarse para páginas web, intercambio de datos, sindicación de contenidos, documentos XML, configuración y almacenamiento."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque ejecutar bucles lógicos corresponde a lenguajes de programación o lenguajes de consulta/procedimentales, no a los lenguajes de marcas como función principal."
+        }
+      ],
+      "resumen_didactico": "Los lenguajes de marcas sirven para estructurar información de manera que pueda ser interpretada y compartida por distintos sistemas, aunque usen tecnologías o plataformas diferentes.",
+      "ejemplo_practico": "Una empresa puede guardar los datos de un pedido en XML y enviarlos desde una aplicación web a un sistema de gestión empresarial, aunque cada aplicación esté desarrollada con tecnologías distintas.",
+      "conclusion_final": "La función principal es permitir el intercambio de datos entre distintas aplicaciones de forma independiente de la plataforma y la tecnología."
+    }
+  },
+  {
+    "id": "UT1-Q02",
+    "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+    "pregunta": "¿Por qué los desarrolladores consideran que dominar formatos como XML o JSON es vital para la integración en empresas tecnológicas?",
+    "contexto": "Se pregunta por la importancia profesional de formatos de intercambio de datos como XML o JSON en la integración de sistemas empresariales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque son los lenguajes con los que se desarrollan los videojuegos modernos"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque todo el mundo los usa para que los sistemas informáticos se entiendan y la información viaje entre plataformas"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque son exclusivos de la programación frontend"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque reemplazan la necesidad de usar sistemas de bases de datos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Formatos como XML o JSON son fundamentales porque permiten estructurar y transportar información entre aplicaciones, servicios y plataformas distintas. En una empresa tecnológica, muchos sistemas están desarrollados con tecnologías diferentes, por lo que necesitan formatos comunes para intercambiar datos de forma ordenada e interoperable.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque XML y JSON no son lenguajes específicos para desarrollar videojuegos. Pueden usarse en videojuegos para configuración o transmisión de datos, pero esa no es su función principal en la arquitectura de software empresarial."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque XML y JSON no son exclusivos del frontend. Se utilizan también en backend, APIs, bases de datos, configuración de aplicaciones, servicios web e integración entre sistemas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque XML y JSON no sustituyen a las bases de datos. Sirven para representar, intercambiar o transportar datos, pero el almacenamiento persistente y la gestión avanzada de la información siguen correspondiendo a sistemas de bases de datos."
+        }
+      ],
+      "resumen_didactico": "XML y JSON son importantes porque funcionan como formatos comunes de comunicación entre sistemas. Gracias a ellos, aplicaciones distintas pueden intercambiar información aunque estén hechas con tecnologías diferentes.",
+      "ejemplo_practico": "Una aplicación móvil puede enviar los datos de un usuario en JSON a un servidor, y ese servidor puede transformar o guardar parte de esa información en otro sistema empresarial que trabaja con XML.",
+      "conclusion_final": "Dominar XML y JSON es vital porque permiten que la información viaje entre plataformas y que distintos sistemas informáticos se entiendan entre sí."
+    }
+  },
+  {
+    "id": "UT2-Q03",
+    "tema": "UT2 Lenguajes para la visualización de información",
+    "pregunta": "Durante la depuración de una interfaz de turismo inteligente, un especialista necesita verificar las propiedades asociadas a un elemento estructural sin alterar su contenido textual. ¿Dónde se ubica exactamente esta información dentro de las marcas?",
+    "contexto": "Se pregunta por la ubicación de los atributos dentro de una etiqueta HTML o XML. Los atributos sirven para añadir información adicional a un elemento sin modificar directamente el contenido textual que aparece entre la apertura y el cierre.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Al final del documento en la sección de metadatos"
+      },
+      {
+        "clave": "b",
+        "texto": "Exclusivamente en la etiqueta de cierre del elemento"
+      },
+      {
+        "clave": "c",
+        "texto": "Entre la etiqueta de inicio y la etiqueta de fin"
+      },
+      {
+        "clave": "d",
+        "texto": "Como un par nombre-valor que se encuentra dentro de la etiqueta de inicio"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Los atributos son información adicional asociada a una etiqueta. Se escriben dentro de la etiqueta de inicio del elemento y normalmente aparecen como un par nombre-valor, por ejemplo: href=\"pagina.html\", src=\"imagen.jpg\" o class=\"destacado\". No forman parte del texto visible del elemento, sino que modifican o precisan sus propiedades.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los atributos no se colocan al final del documento ni en una sección general de metadatos. Van asociados directamente al elemento concreto que modifican."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la etiqueta de cierre solo marca el final del elemento. No contiene atributos. Por ejemplo, en </a> o </p> no se añaden propiedades."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque entre la etiqueta de inicio y la etiqueta de fin se coloca normalmente el contenido del elemento, no sus atributos. Por ejemplo, en <p class=\"aviso\">Texto</p>, el contenido es Texto, pero el atributo class está en la apertura."
+        }
+      ],
+      "resumen_didactico": "Los atributos se escriben dentro de la etiqueta de inicio y sirven para añadir propiedades o información adicional al elemento.",
+      "ejemplo_practico": "En el enlace <a href=\"https://turismo.es\" target=\"_blank\">Ver ruta turística</a>, los atributos href y target están dentro de la etiqueta de inicio <a> y definen el destino del enlace y cómo se abrirá.",
+      "conclusion_final": "La información asociada al elemento se ubica como un par nombre-valor dentro de la etiqueta de inicio."
+    }
+  },
+  {
+    "id": "UT4-Q04",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Durante la validación de un fichero de configuración crítico, el sistema rechaza el documento alertando sobre una sintaxis defectuosa al definir una propiedad dentro de una marca. ¿Qué error común suele provocar esta caída en lenguajes estrictos?",
+    "contexto": "Se pregunta por un error frecuente al escribir atributos dentro de una etiqueta en lenguajes de marcas estrictos como XML o XHTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Utilizar caracteres estándar en formato texto plano"
+      },
+      {
+        "clave": "b",
+        "texto": "Añadir tabulaciones entre diferentes elementos"
+      },
+      {
+        "clave": "c",
+        "texto": "Omitir las comillas en los valores de los atributos"
+      },
+      {
+        "clave": "d",
+        "texto": "Escribir las etiquetas en mayúsculas sostenidas"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En lenguajes de marcas estrictos como XML, los atributos deben escribirse correctamente como pares nombre-valor y el valor debe ir entre comillas. Si se omiten las comillas en un atributo, el documento puede dejar de estar bien formado y ser rechazado por el parser o validador.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque usar caracteres estándar en texto plano no provoca por sí mismo un error de sintaxis. Los lenguajes de marcas se basan precisamente en texto plano estructurado mediante etiquetas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque las tabulaciones se usan habitualmente para mejorar la legibilidad y representar visualmente la jerarquía del documento. No suelen provocar errores si la estructura de etiquetas y atributos es correcta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque escribir etiquetas en mayúsculas no es necesariamente un error por sí solo. En XML lo importante es respetar exactamente el mismo nombre en apertura y cierre, ya que es sensible a mayúsculas y minúsculas."
+        }
+      ],
+      "resumen_didactico": "En XML y lenguajes estrictos, un atributo debe tener forma nombre=\"valor\". Quitar las comillas del valor rompe la sintaxis del documento.",
+      "ejemplo_practico": "Incorrecto: <usuario rol=admin>. Correcto: <usuario rol=\"admin\">. En el primer caso, el validador puede rechazar el documento porque el valor del atributo no está entre comillas.",
+      "conclusion_final": "El error común que provoca la caída es omitir las comillas en los valores de los atributos."
+    }
+  },
+  {
+    "id": "UT2-Q05",
+    "tema": "UT2 Lenguajes para la visualización de información",
+    "pregunta": "Durante la configuración de un nuevo entorno de desarrollo corporativo, el equipo de arquitectura técnica evalúa qué editor implementar para maximizar la productividad y permitir la integración de asistentes basados en inteligencia artificial. ¿Qué herramienta domina el mercado actual para este propósito?",
+    "contexto": "Se pregunta por la herramienta de edición más adecuada en un entorno moderno de desarrollo web, especialmente por su ecosistema de extensiones, productividad e integración con herramientas actuales.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "KompoZer con su editor visual integrado"
+      },
+      {
+        "clave": "b",
+        "texto": "Bluefish por su fiabilidad en sistemas antiguos"
+      },
+      {
+        "clave": "c",
+        "texto": "Visual Studio Code debido a su ecosistema de complementos"
+      },
+      {
+        "clave": "d",
+        "texto": "Adobe Dreamweaver CC para mantener compatibilidad heredada"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Visual Studio Code se presenta como el estándar actual dentro del desarrollo web moderno. Destaca por ser un editor ligero, potente y extensible, con un gran ecosistema de complementos que permite trabajar con HTML, CSS, JavaScript, XML, control de versiones, depuración e integración con asistentes basados en inteligencia artificial.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque KompoZer es una herramienta antigua de código abierto, intuitiva y con editor visual, pero su desarrollo está detenido y no es la opción dominante para entornos corporativos actuales."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque Bluefish puede ser ligero y fiable, especialmente en sistemas antiguos o entornos Linux, pero no domina el mercado actual ni destaca especialmente por integración moderna con asistentes de inteligencia artificial."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque Adobe Dreamweaver CC puede servir para mantener proyectos heredados, pero actualmente ha quedado relegado frente a editores modernos más ligeros y extensibles como Visual Studio Code."
+        }
+      ],
+      "resumen_didactico": "Para desarrollo web actual, la herramienta más usada y flexible es Visual Studio Code, sobre todo por sus extensiones, integración con Git, soporte para múltiples lenguajes y compatibilidad con herramientas modernas de IA.",
+      "ejemplo_practico": "Un equipo puede instalar en Visual Studio Code extensiones para HTML, CSS, XML, validación, Prettier, GitHub Copilot o asistentes de IA, centralizando gran parte del flujo de trabajo en un solo entorno.",
+      "conclusion_final": "La herramienta que domina el mercado actual para maximizar la productividad e integrar asistentes de IA es Visual Studio Code."
+    }
+  },
+  {
+    "id": "UT2-Q06",
+    "tema": "UT2 Lenguajes para la visualización de información",
+    "pregunta": "Para cumplir con las normativas internacionales de accesibilidad, un desarrollador debe garantizar que los lectores de pantalla puedan interpretar el contenido visual. ¿Qué atributo es obligatorio en los elementos de imagen para cumplir este requerimiento?",
+    "contexto": "Se pregunta por el atributo que permite describir el contenido de una imagen para que pueda ser interpretado por lectores de pantalla y tecnologías de asistencia.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Atributo src"
+      },
+      {
+        "clave": "b",
+        "texto": "Atributo href"
+      },
+      {
+        "clave": "c",
+        "texto": "Atributo alt"
+      },
+      {
+        "clave": "d",
+        "texto": "Atributo align"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En los elementos de imagen, el atributo alt proporciona un texto alternativo que describe la imagen. Este texto es fundamental para la accesibilidad, ya que permite que los lectores de pantalla transmitan al usuario el significado del contenido visual cuando la imagen no puede verse o interpretarse visualmente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque src indica la ruta o ubicación del archivo de imagen, pero no ofrece una descripción accesible de su contenido."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque href se utiliza principalmente en enlaces para indicar el destino al que se dirige el hipervínculo, no en imágenes para describir su contenido."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque align se usaba antiguamente para alinear elementos, pero no cumple una función de accesibilidad y además está obsoleto frente al uso de CSS."
+        }
+      ],
+      "resumen_didactico": "El atributo alt es el que permite describir una imagen mediante texto alternativo, haciendo que el contenido visual sea accesible para personas que usan lectores de pantalla.",
+      "ejemplo_practico": "En <img src=\"playa-malaga.jpg\" alt=\"Vista de una playa de Málaga al atardecer\">, el atributo src carga la imagen, pero el atributo alt explica su contenido a un lector de pantalla.",
+      "conclusion_final": "El atributo obligatorio para que los lectores de pantalla puedan interpretar el contenido visual de una imagen es alt."
+    }
+  },
+  {
+    "id": "UT2-Q07",
+    "tema": "UT2 Lenguajes para la visualización de información",
+    "pregunta": "Una plataforma de comercio electrónico en fase de expansión necesita aplicar un rediseño completo a cientos de subpáginas. ¿Cuál es la metodología más eficiente y profesional para integrar las nuevas reglas de diseño minimizando el impacto en el código estructural?",
+    "contexto": "Se pregunta por la forma más eficiente de aplicar estilos CSS a muchas páginas web manteniendo separada la estructura HTML de la presentación visual.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Aplicar las propiedades en cada etiqueta con el atributo style"
+      },
+      {
+        "clave": "b",
+        "texto": "Utilizar marcos obsoletos para cargar el diseño gráfico"
+      },
+      {
+        "clave": "c",
+        "texto": "Escribir un bloque interno de estilos en la cabecera de cada página"
+      },
+      {
+        "clave": "d",
+        "texto": "Crear un archivo independiente y vincularlo externamente desde la cabecera"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La forma más eficiente y profesional de aplicar estilos a muchas páginas es crear una hoja de estilos CSS externa y vincularla desde la cabecera del documento HTML mediante la etiqueta <link>. Esto permite separar el contenido estructural de la presentación visual y modificar el diseño de muchas páginas cambiando un único archivo CSS.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque aplicar estilos con el atributo style en cada etiqueta mezcla estructura y presentación. Además, dificulta el mantenimiento, ya que habría que modificar manualmente cada elemento afectado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque los marcos o frames son una técnica obsoleta y no representan una metodología profesional actual para aplicar diseño gráfico a una plataforma moderna."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque escribir estilos internos en la cabecera de cada página puede funcionar en casos pequeños, pero no es eficiente para cientos de subpáginas. Obliga a repetir código y complica el mantenimiento."
+        }
+      ],
+      "resumen_didactico": "Cuando una web tiene muchas páginas, lo correcto es centralizar el diseño en un archivo CSS externo. Así se puede cambiar toda la apariencia del sitio sin tocar la estructura HTML de cada página.",
+      "ejemplo_practico": "Una tienda online puede tener cientos de páginas de productos enlazando al mismo archivo estilos.css. Si se cambia el color principal de los botones en ese archivo, el cambio se aplica automáticamente en toda la plataforma.",
+      "conclusion_final": "La metodología más eficiente es crear un archivo CSS independiente y vincularlo externamente desde la cabecera del documento HTML."
+    }
+  },
+  {
+    "id": "UT2-Q08",
+    "tema": "UT2 Lenguajes para la visualización de información",
+    "pregunta": "¿Qué ventaja operativa justifica que las grandes bases de datos y sistemas interconectados prefieran procesar archivos bajo normativas estrictas en lugar del formato web clásico permisivo?",
+    "contexto": "Se pregunta por la ventaja de usar lenguajes o formatos más estrictos, como XHTML o XML, frente a formatos más permisivos como HTML clásico.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su total independencia del uso de comillas y cierres de etiquetas"
+      },
+      {
+        "clave": "b",
+        "texto": "Su capacidad para añadir diseño visual sin hojas de estilo"
+      },
+      {
+        "clave": "c",
+        "texto": "Que permite saltarse reglas gramaticales sin provocar fallos de sistema"
+      },
+      {
+        "clave": "d",
+        "texto": "Que las máquinas lo leen más rápido al no tener que adivinar ni corregir errores sobre la marcha"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Los lenguajes basados en reglas estrictas obligan a escribir una sintaxis correcta: etiquetas bien cerradas, atributos correctamente definidos, jerarquía clara y estructura bien formada. Esto facilita el procesamiento automático por parte de máquinas, validadores, bases de datos y sistemas interconectados, porque no tienen que interpretar errores ni intentar corregir ambigüedades como ocurre en formatos más permisivos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los formatos estrictos no son independientes del uso de comillas y cierres de etiquetas. Al contrario, exigen respetarlos correctamente para que el documento sea válido o esté bien formado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la ventaja principal no es añadir diseño visual. El diseño se gestiona normalmente mediante CSS, mientras que la sintaxis estricta se relaciona con estructura, validación e interpretación automática."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los formatos estrictos no permiten saltarse reglas gramaticales. Precisamente su utilidad está en obligar a cumplirlas para evitar errores de interpretación."
+        }
+      ],
+      "resumen_didactico": "Cuanto más estricta es la sintaxis, menos tiene que interpretar la máquina. Si el documento está bien formado, el sistema puede procesarlo de forma más rápida, segura y fiable.",
+      "ejemplo_practico": "En un sistema empresarial que recibe miles de documentos XML de facturación, si todos siguen una estructura estricta, el servidor puede validarlos automáticamente sin tener que corregir etiquetas mal cerradas o atributos ambiguos.",
+      "conclusion_final": "La ventaja operativa es que las máquinas pueden leer y procesar el documento más rápido y con menos errores porque no tienen que adivinar ni corregir fallos de sintaxis."
+    }
+  },
+  {
+    "id": "UT3-Q09",
+    "tema": "UT3 Lenguajes para el almacenamiento y transmisión de información",
+    "pregunta": "En una integración entre plataformas bancarias y aplicaciones móviles de terceros, los ingenieros requieren un formato neutro. ¿Por qué este tipo de lenguajes se aplica de manera tan extensa en estos escenarios?",
+    "contexto": "Se pregunta por la utilidad de los lenguajes de marcas como formato neutral para intercambiar información entre sistemas diferentes, como plataformas bancarias, servidores y aplicaciones móviles.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque posibilitan el intercambio de información sin importar las tecnologías o la plataforma que utilicen"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque fuerzan a ambas plataformas a utilizar el mismo sistema operativo"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque ejecutan algoritmos de inteligencia artificial en el servidor de destino"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque comprimen el tamaño de los datos para que ocupen menos espacio en el disco"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los lenguajes de marcas se aplican ampliamente en escenarios de integración porque permiten el intercambio de información entre aplicaciones de distinto tipo, sin importar las tecnologías usadas para crearlas ni la plataforma en la que se ejecutan. Por eso son útiles en comunicaciones entre servidores, aplicaciones móviles, servicios web y sistemas empresariales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque estos lenguajes no obligan a las plataformas a usar el mismo sistema operativo. Precisamente su ventaja es que pueden intercambiar datos aunque cada sistema use tecnologías o plataformas diferentes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los lenguajes de marcas no ejecutan algoritmos de inteligencia artificial. Su función es estructurar, almacenar o transmitir información, no procesar lógica inteligente."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la compresión del tamaño de los datos no es la función principal de los lenguajes de marcas. Aunque los datos puedan optimizarse por otros medios, su valor principal está en la interoperabilidad y la estructura."
+        }
+      ],
+      "resumen_didactico": "Los lenguajes de marcas funcionan como un formato común que permite que sistemas distintos se entiendan entre sí. No importa si una aplicación está hecha en una tecnología y el servidor en otra: el formato estructurado permite intercambiar datos.",
+      "ejemplo_practico": "Una app móvil de banca puede enviar una solicitud de transferencia a un servidor bancario usando un formato estructurado como XML o JSON. Aunque la app y el servidor estén desarrollados con tecnologías distintas, ambos pueden interpretar los datos enviados.",
+      "conclusion_final": "Se aplican de forma extensa porque permiten intercambiar información entre aplicaciones sin depender de la tecnología ni de la plataforma utilizada."
+    }
+  },
+  {
+    "id": "UT2-Q10",
+    "tema": "UT2 Lenguajes para la visualización de información",
+    "pregunta": "Para maximizar la productividad en una gran consultora de software, la dirección técnica decide abandonar los editores de texto plano tradicionales. ¿Qué tipo de herramientas modernas constituyen el estándar absoluto de la industria actual para escribir código de manera eficiente?",
+    "contexto": "Se pregunta por las herramientas modernas más adecuadas para escribir código de forma productiva en entornos profesionales actuales, superando el uso básico de editores de texto plano.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Gestores de archivos en línea sin capacidad de autocompletado"
+      },
+      {
+        "clave": "b",
+        "texto": "Entornos de Desarrollo Integrados (IDE) y editores con Inteligencia Artificial"
+      },
+      {
+        "clave": "c",
+        "texto": "Sistemas de control de versiones alojados en servidores locales"
+      },
+      {
+        "clave": "d",
+        "texto": "Procesadores de texto orientados a la maquetación de revistas impresas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En el desarrollo actual, el estándar profesional está formado por entornos de desarrollo integrados y editores modernos como Visual Studio Code, WebStorm o herramientas impulsadas por inteligencia artificial como Cursor. Estas herramientas aumentan la productividad mediante autocompletado, resaltado de sintaxis, extensiones, depuración, integración con Git y asistentes inteligentes.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque un gestor de archivos en línea sin autocompletado no está pensado como herramienta profesional principal para escribir código de manera eficiente."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los sistemas de control de versiones sirven para gestionar cambios en el código, pero no son herramientas de edición o escritura de código por sí mismos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque los procesadores de texto para maquetación impresa están pensados para documentos visuales o editoriales, no para programar ni trabajar con lenguajes de marcas de forma técnica."
+        }
+      ],
+      "resumen_didactico": "Hoy en día, el trabajo profesional de desarrollo se apoya en IDEs y editores avanzados, especialmente aquellos que permiten extensiones, autocompletado, depuración e integración con herramientas de inteligencia artificial.",
+      "ejemplo_practico": "Un desarrollador puede usar Visual Studio Code o Cursor para escribir HTML, CSS, XML y JavaScript, recibir sugerencias automáticas, validar errores y trabajar con Git desde el mismo entorno.",
+      "conclusion_final": "El estándar actual de la industria son los Entornos de Desarrollo Integrados y los editores modernos con capacidades de inteligencia artificial."
+    }
+  },
+  {
+    "id": "UT4-Q11",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un sistema de altas médicas colapsa debido a que el software antiguo envía el nombre del paciente en una etiqueta y el nuevo servidor busca esa misma etiqueta escrita con diferente uso de mayúsculas y minúsculas. ¿A qué regla de procesamiento se debe este conflicto de lectura?",
+    "contexto": "Se pregunta por la sensibilidad a mayúsculas y minúsculas en lenguajes estrictos como XML, donde una etiqueta escrita de forma distinta no se interpreta como la misma etiqueta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "A la falta de un comentario explicativo antes de la etiqueta principal"
+      },
+      {
+        "clave": "b",
+        "texto": "Al uso incorrecto de atributos de estilo en línea"
+      },
+      {
+        "clave": "c",
+        "texto": "A la distinción estricta entre mayúsculas y minúsculas que hacen estos lenguajes"
+      },
+      {
+        "clave": "d",
+        "texto": "A la limitación de procesamiento de caracteres en español"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En XML y otros lenguajes estrictos, las etiquetas son sensibles a mayúsculas y minúsculas. Esto significa que una etiqueta escrita como <Paciente> no es igual que <paciente>. Si un sistema envía una etiqueta con una combinación de letras y otro sistema espera otra distinta, el documento puede no ser leído correctamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los comentarios no determinan la lectura estructural de las etiquetas. Un comentario puede ayudar a documentar el código, pero no soluciona un conflicto entre nombres de etiquetas diferentes."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque los atributos de estilo en línea afectan a la presentación visual, no a la identificación estructural de una etiqueta XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el problema no está relacionado con caracteres en español como tildes o la ñ, sino con la diferencia entre mayúsculas y minúsculas en el nombre de la etiqueta."
+        }
+      ],
+      "resumen_didactico": "En XML, <Nombre> y <nombre> no son lo mismo. El sistema interpreta cada forma como una etiqueta distinta, por eso hay que respetar exactamente la misma escritura en todos los sistemas conectados.",
+      "ejemplo_practico": "Si un sistema médico genera <Paciente>Laura</Paciente> pero el servidor busca <paciente>, no encontrará el dato porque XML considera que Paciente y paciente son nombres diferentes.",
+      "conclusion_final": "El conflicto se debe a la distinción estricta entre mayúsculas y minúsculas propia de estos lenguajes."
+    }
+  },
+  {
+    "id": "UT4-Q12",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Al unificar las bases de datos de dos empresas fusionadas, el departamento técnico se enfrenta a etiquetas idénticas que significan cosas distintas en cada sistema. ¿Qué mecanismo estructural permite diferenciar entre etiquetas que tengan la misma denominación?",
+    "contexto": "Se pregunta por el mecanismo que permite evitar conflictos cuando dos vocabularios XML utilizan etiquetas con el mismo nombre pero con significados diferentes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El uso de espacios de nombres o namespaces"
+      },
+      {
+        "clave": "b",
+        "texto": "La encriptación de la etiqueta de cierre"
+      },
+      {
+        "clave": "c",
+        "texto": "La declaración de hojas de estilo independientes"
+      },
+      {
+        "clave": "d",
+        "texto": "La compresión del archivo mediante algoritmos de pérdida"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "Los espacios de nombres o namespaces permiten diferenciar etiquetas que tienen el mismo nombre pero pertenecen a vocabularios distintos. Se utilizan para evitar ambigüedades cuando se combinan documentos XML procedentes de diferentes sistemas, empresas o áreas funcionales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque encriptar una etiqueta de cierre no es un mecanismo estructural de XML para diferenciar significados. La etiqueta de cierre solo marca el final del elemento."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque las hojas de estilo sirven para transformar o presentar información, pero no resuelven por sí mismas conflictos de significado entre etiquetas iguales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la compresión del archivo afecta al tamaño o almacenamiento del documento, no a la identificación semántica de las etiquetas."
+        }
+      ],
+      "resumen_didactico": "Cuando dos sistemas usan la misma etiqueta con significados distintos, los namespaces permiten indicar a qué vocabulario pertenece cada una.",
+      "ejemplo_practico": "Una empresa puede usar <cliente> para referirse a un comprador y otra puede usar <cliente> para referirse a una cuenta bancaria. Con namespaces, podrían diferenciarse como <ventas:cliente> y <banco:cliente>.",
+      "conclusion_final": "El mecanismo correcto para diferenciar etiquetas con la misma denominación es el uso de espacios de nombres o namespaces."
+    }
+  },
+  {
+    "id": "UT4-Q13",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un equipo de desarrollo necesita diseñar un sistema de intercambio de datos donde las etiquetas se adapten específicamente a la terminología de su sector industrial. ¿Qué característica principal del estándar permite esta flexibilidad operativa?",
+    "contexto": "Se pregunta por la característica de XML que permite crear etiquetas personalizadas según las necesidades de cada sector, empresa o sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La obligación de compilar el documento en un archivo binario para su lectura"
+      },
+      {
+        "clave": "b",
+        "texto": "El uso de marcas no predefinidas que da libertad para definir etiquetas propias"
+      },
+      {
+        "clave": "c",
+        "texto": "La integración nativa con bases de datos relacionales tradicionales"
+      },
+      {
+        "clave": "d",
+        "texto": "Su dependencia exclusiva de un conjunto de etiquetas predefinidas por el consorcio oficial"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "XML utiliza marcas no predefinidas, lo que permite crear etiquetas propias según las necesidades concretas de cada sistema. Esta característica da libertad para adaptar el documento a la terminología de un sector industrial, una empresa o una aplicación específica.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque XML no necesita compilarse en un archivo binario para ser leído. Es un lenguaje basado en texto plano, legible tanto por personas como por máquinas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la flexibilidad de XML no depende de su integración con bases de datos relacionales. Su ventaja principal está en poder definir etiquetas propias y estructurar datos de forma jerárquica."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque XML no depende exclusivamente de un conjunto cerrado de etiquetas predefinidas. Al contrario, permite que el desarrollador cree las etiquetas que necesite."
+        }
+      ],
+      "resumen_didactico": "XML es extensible porque no obliga a usar solo etiquetas ya existentes. Cada equipo puede crear marcas adaptadas a su propio contexto.",
+      "ejemplo_practico": "Una empresa logística puede crear etiquetas como <ruta>, <palet>, <almacen> o <temperatura_carga> para representar datos específicos de su actividad.",
+      "conclusion_final": "La flexibilidad operativa se debe al uso de marcas no predefinidas, que permite definir etiquetas propias."
+    }
+  },
+  {
+    "id": "UT4-Q14",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Al migrar una arquitectura de validación desde DTD hacia un sistema moderno, los analistas prefieren un lenguaje que utilice la misma sintaxis del documento base y ofrezca mayor control sobre los tipos de datos. ¿Qué tecnología cumple estos requisitos empresariales?",
+    "contexto": "Se pregunta por la tecnología de validación XML que supera las limitaciones de DTD, utiliza sintaxis XML y permite definir con mayor precisión tipos de datos, restricciones y estructuras.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El sistema de hojas de estilo en cascada"
+      },
+      {
+        "clave": "b",
+        "texto": "El protocolo de transferencia de hipertexto"
+      },
+      {
+        "clave": "c",
+        "texto": "El estándar XML Schema Definition"
+      },
+      {
+        "clave": "d",
+        "texto": "El modelo de objetos del documento"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "XML Schema Definition, también conocido como XSD, es una tecnología utilizada para definir la estructura y las restricciones de un documento XML. A diferencia de DTD, XML Schema utiliza sintaxis XML y permite un control más preciso sobre los tipos de datos, los elementos, los atributos y las reglas que debe cumplir el documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque CSS sirve para aplicar estilos visuales a documentos HTML o XML, pero no para validar formalmente la estructura ni los tipos de datos de un documento XML."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque HTTP es un protocolo de comunicación usado para transferir información en la web, no una tecnología de validación de documentos XML."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque el DOM representa el documento como una estructura de objetos que puede ser manipulada por programas, pero no define por sí mismo un esquema de validación con tipos de datos."
+        }
+      ],
+      "resumen_didactico": "DTD permite definir reglas básicas para un XML, pero XML Schema es más moderno y potente porque usa sintaxis XML y permite controlar mejor los tipos de datos y las restricciones.",
+      "ejemplo_practico": "En un sistema bancario, un XSD puede exigir que el campo <importe> sea numérico, que <fecha_operacion> tenga formato de fecha y que ciertos elementos sean obligatorios dentro de cada transacción.",
+      "conclusion_final": "La tecnología que cumple esos requisitos es XML Schema Definition o XSD."
+    }
+  },
+  {
+    "id": "UT4-Q15",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Para cumplir con una normativa de calidad, un formulario de registro debe limitar la longitud de un código postal exactamente a cinco caracteres numéricos. ¿Qué mecanismo del esquema XSD se utiliza para aplicar este filtro preciso?",
+    "contexto": "Se pregunta por el mecanismo de XML Schema que permite restringir los valores permitidos de un elemento o atributo, por ejemplo limitando longitud, tipo de dato o patrón.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las declaraciones de espacios de nombres"
+      },
+      {
+        "clave": "b",
+        "texto": "Las entidades de caracteres"
+      },
+      {
+        "clave": "c",
+        "texto": "Las restricciones o facetas"
+      },
+      {
+        "clave": "d",
+        "texto": "Los comentarios de procesamiento"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En XSD, las restricciones o facetas permiten limitar los valores válidos de un dato. Pueden controlar aspectos como la longitud mínima, la longitud máxima, la longitud exacta, los valores permitidos o un patrón concreto. Para un código postal de cinco caracteres numéricos, se podrían usar facetas como length y pattern.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los espacios de nombres sirven para diferenciar vocabularios XML y evitar conflictos entre etiquetas con el mismo nombre, pero no limitan directamente la longitud o el formato de un dato."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque las entidades de caracteres se usan para representar caracteres especiales, como &lt;, &gt; o &amp;, no para validar que un campo tenga exactamente cinco números."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque los comentarios o instrucciones de procesamiento no aplican restricciones de validación sobre los datos del documento."
+        }
+      ],
+      "resumen_didactico": "Las facetas de XSD sirven para poner filtros precisos a los datos: longitud, rango, formato, patrón o valores permitidos.",
+      "ejemplo_practico": "Un esquema XSD puede definir que <codigo_postal> solo sea válido si contiene exactamente cinco dígitos, por ejemplo 28013, usando una restricción de longitud y un patrón numérico.",
+      "conclusion_final": "El mecanismo correcto para aplicar este filtro preciso en XSD son las restricciones o facetas."
+    }
+  },
+  {
+    "id": "UT4-Q16",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "¿Cuál es el propósito fundamental del proceso de validación en la arquitectura de integración de sistemas?",
+    "contexto": "Se pregunta por la finalidad de validar documentos XML dentro de sistemas informáticos que intercambian información estructurada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Traducir el documento a lenguaje binario para reducir su tamaño de almacenamiento"
+      },
+      {
+        "clave": "b",
+        "texto": "Generar automáticamente bases de datos relacionales a partir de texto plano"
+      },
+      {
+        "clave": "c",
+        "texto": "Comparar los archivos con sus esquemas de restricciones para detectar posibles fallos o carencias"
+      },
+      {
+        "clave": "d",
+        "texto": "Aplicar colores y estilos visuales a las etiquetas para mejorar su lectura humana"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "La validación es el proceso que permite comprobar si un documento XML cumple las reglas definidas en su esquema de restricciones, como un DTD o un XSD. Su objetivo es detectar errores, carencias, etiquetas mal estructuradas, atributos incorrectos o datos que no respeten las reglas establecidas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la validación no consiste en convertir el documento a binario ni en reducir su tamaño. Su función es comprobar si el documento cumple una estructura y unas restricciones determinadas."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la validación no genera automáticamente bases de datos relacionales. Puede ayudar a comprobar la calidad de los datos antes de almacenarlos, pero no crea la base de datos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque aplicar colores o estilos visuales corresponde a herramientas de edición, resaltado de sintaxis o CSS, no al proceso de validación estructural del documento."
+        }
+      ],
+      "resumen_didactico": "Validar significa comprobar que un documento respeta las reglas que se le han impuesto. En XML, esas reglas suelen estar definidas mediante DTD o XSD.",
+      "ejemplo_practico": "Antes de enviar un fichero XML con altas médicas a un servidor central, el sistema puede validarlo contra un XSD para comprobar que contiene todos los campos obligatorios y que datos como fecha, número de historia clínica o código postal tienen el formato correcto.",
+      "conclusion_final": "El propósito fundamental de la validación es comparar los archivos con sus esquemas de restricciones para detectar posibles fallos o carencias."
+    }
+  },
+  {
+    "id": "UT5-Q17",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "Un equipo de desarrollo necesita coger una base de datos en crudo y decidir cómo estructurarla visualmente para que el usuario final la entienda en su navegador. ¿Qué lenguaje estándar se utiliza para convertir ese documento de origen en otro tipo de formato aplicando reglas de estilo?",
+    "contexto": "Se pregunta por el lenguaje estándar utilizado para transformar documentos XML de origen en otros formatos, como HTML, XML o texto plano, aplicando reglas de transformación y presentación.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El sistema de hojas de estilo en cascada"
+      },
+      {
+        "clave": "b",
+        "texto": "La transformación XSLT"
+      },
+      {
+        "clave": "c",
+        "texto": "El modelo de objetos de documento"
+      },
+      {
+        "clave": "d",
+        "texto": "El lenguaje de consultas estructuradas"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "XSLT, eXtensible Stylesheet Language Transformations, es el lenguaje estándar utilizado para transformar un documento XML de origen en otro tipo de documento, como HTML, XML o texto plano, aplicando reglas de estilo y transformación. Permite reorganizar la información, seleccionar datos concretos y generar una salida comprensible para el usuario final.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque CSS sirve para aplicar estilos visuales a documentos HTML o XML, pero no transforma por sí mismo la estructura de un documento XML en otro formato como HTML."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el DOM representa el documento como una estructura de objetos manipulable por programas, pero no es el lenguaje estándar de transformación de XML a otros formatos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque SQL se utiliza para consultar y manipular bases de datos relacionales, no para transformar documentos XML aplicando reglas de estilo."
+        }
+      ],
+      "resumen_didactico": "XSLT actúa como un traductor entre los datos XML en bruto y el formato final que queremos mostrar, por ejemplo una página HTML entendible para el usuario.",
+      "ejemplo_practico": "Una empresa puede tener un archivo XML con un catálogo de productos y usar XSLT para convertirlo automáticamente en una tabla HTML visible en el navegador, mostrando nombre, precio y descripción de cada producto.",
+      "conclusion_final": "El lenguaje estándar utilizado para convertir el documento de origen en otro formato aplicando reglas de estilo es XSLT."
+    }
+  },
+  {
+    "id": "UT5-Q18",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "En el mercado laboral moderno, ¿cuál es el estándar absoluto de salida que se utiliza para generar interfaces web a partir de transformaciones de datos estructurados?",
+    "contexto": "Se pregunta por el formato de salida más utilizado actualmente cuando se transforman datos estructurados, como XML, para generar interfaces web visibles en el navegador.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "HTML5"
+      },
+      {
+        "clave": "b",
+        "texto": "XHTML básico"
+      },
+      {
+        "clave": "c",
+        "texto": "Texto plano sin formato"
+      },
+      {
+        "clave": "d",
+        "texto": "Documentos PDF interactivos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En transformaciones de datos estructurados orientadas a la web, el formato de salida más habitual y profesional es HTML5, ya que es el estándar actual para construir interfaces web modernas interpretables por los navegadores. XSLT puede transformar un documento XML en HTML, y en el contexto actual esa salida web se entiende principalmente como HTML5.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque XHTML fue importante como reformulación de HTML basada en XML, pero no es el estándar dominante actual para generar interfaces web modernas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el texto plano puede ser una salida posible en algunas transformaciones, pero no sirve como estándar para construir interfaces web completas y visuales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque los PDF interactivos pueden usarse para documentos finales o informes, pero no son el estándar principal para generar interfaces web navegables."
+        }
+      ],
+      "resumen_didactico": "Cuando se transforman datos estructurados para mostrarlos en una web moderna, lo normal es generar HTML5, porque es el lenguaje estándar que entiende el navegador para representar la interfaz.",
+      "ejemplo_practico": "Una empresa puede tener un XML con productos y usar una transformación XSLT para generar una página HTML5 con tarjetas de producto, precios, imágenes y botones de compra.",
+      "conclusion_final": "El estándar de salida utilizado actualmente para generar interfaces web a partir de datos estructurados es HTML5."
+    }
+  },
+  {
+    "id": "UT4-Q19",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un equipo de consultoría requiere un software corporativo que permita validar en tiempo real y ofrezca herramientas avanzadas de modelado en múltiples plataformas. ¿Qué editor comercial es considerado un estándar en la industria para estas tareas?",
+    "contexto": "Se pregunta por un editor XML profesional y comercial utilizado en entornos corporativos para trabajar con documentos XML, validación, esquemas, modelado y herramientas avanzadas.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XPontus XML Editor"
+      },
+      {
+        "clave": "b",
+        "texto": "XMLSpear"
+      },
+      {
+        "clave": "c",
+        "texto": "Notepad++"
+      },
+      {
+        "clave": "d",
+        "texto": "Oxygen XML Editor"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "Oxygen XML Editor es una herramienta comercial profesional muy utilizada en la industria para la creación, edición, validación y trabajo avanzado con documentos XML. Destaca por sus funciones corporativas, soporte multiplataforma, validación contra esquemas y herramientas avanzadas para trabajar con XML, XSD, XSLT y otros estándares relacionados.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque XPontus XML Editor no se considera el estándar comercial corporativo principal para tareas avanzadas de modelado y validación en tiempo real."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque XMLSpear es un editor XML gratuito construido en Java, útil para validación y aprendizaje, pero no es el editor comercial estándar de la industria."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque Notepad++ es un editor de texto ligero y muy útil, pero no es una solución corporativa especializada en modelado XML avanzado."
+        }
+      ],
+      "resumen_didactico": "Para trabajar profesionalmente con XML en empresas, se suelen utilizar editores especializados. Oxygen XML Editor destaca como herramienta comercial avanzada para validar, modelar y editar XML en entornos corporativos.",
+      "ejemplo_practico": "Una consultora que trabaja con facturación electrónica, esquemas XSD y transformaciones XSLT puede usar Oxygen XML Editor para validar documentos en tiempo real y detectar errores antes de enviarlos a producción.",
+      "conclusion_final": "El editor comercial considerado estándar profesional para estas tareas es Oxygen XML Editor."
+    }
+  },
+  {
+    "id": "UT5-Q20",
+    "tema": "UT5 Conversión y adaptación de documentos XML",
+    "pregunta": "En una arquitectura de software empresarial moderna, ¿cuál es la mejor práctica para dividir las responsabilidades entre el procesamiento de datos masivos y la interfaz del cliente final?",
+    "contexto": "Se pregunta por la separación correcta de responsabilidades entre la capa de procesamiento o backend y la capa visual o frontend en una arquitectura empresarial moderna que trabaja con datos estructurados.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Usar XSLT en la capa visual para animar los componentes y JavaScript puro en el backend para consultar la base de datos"
+      },
+      {
+        "clave": "b",
+        "texto": "Utilizar XSLT en el backend para transformar bases de datos e informes, y usar esos datos para alimentar aplicaciones en React o Angular en la capa visual"
+      },
+      {
+        "clave": "c",
+        "texto": "Programar toda la lógica exclusivamente con herramientas WYSIWYG que generen código unificado sin separar las capas"
+      },
+      {
+        "clave": "d",
+        "texto": "Emplear hojas de estilo en cascada para filtrar la información del servidor y XSLT para los colores de la pantalla"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "En una arquitectura moderna, lo correcto es separar responsabilidades. XSLT puede utilizarse en la capa de procesamiento para transformar documentos XML, generar informes o preparar datos estructurados. Después, esos datos pueden alimentar aplicaciones frontend modernas desarrolladas con frameworks como React o Angular, que se encargan de la interfaz visual y la interacción con el usuario.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque XSLT no se usa principalmente para animar componentes visuales. Su función es transformar documentos XML en otros formatos. Las animaciones e interacciones visuales pertenecen más al frontend mediante CSS, JavaScript o frameworks especializados."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque una arquitectura profesional no debe unificar toda la lógica sin separar capas. Separar backend, transformación de datos y frontend mejora el mantenimiento, la escalabilidad y la claridad del sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque CSS no filtra información del servidor; se encarga de la presentación visual. XSLT tampoco se usa para definir colores de pantalla como función principal, sino para transformar documentos estructurados."
+        }
+      ],
+      "resumen_didactico": "La mejor práctica es separar la transformación de datos de la interfaz. El backend procesa y transforma la información, mientras que el frontend la presenta al usuario de forma interactiva.",
+      "ejemplo_practico": "Una empresa puede transformar grandes documentos XML de facturación mediante XSLT en el backend y después enviar los datos resultantes a una aplicación Angular que muestre tablas, filtros, gráficos y paneles de consulta para el usuario final.",
+      "conclusion_final": "La opción correcta es utilizar XSLT en el backend para transformar datos e informes, y emplear frameworks como React o Angular para construir la capa visual."
+    }
+  },
+  {
+    "id": "UT6-Q21",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "En el entorno de la administración de sistemas, ¿cómo se define el concepto de \"concurrencia\" en las bases de datos?",
+    "contexto": "Se pregunta por el concepto de concurrencia dentro de los sistemas de almacenamiento y bases de datos, especialmente cuando varios usuarios o procesos trabajan sobre los mismos datos al mismo tiempo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El proceso de encriptación asimétrica que protege los datos durante las transferencias externas"
+      },
+      {
+        "clave": "b",
+        "texto": "La capacidad del sistema para traducir automáticamente las etiquetas a diferentes idiomas en tiempo real"
+      },
+      {
+        "clave": "c",
+        "texto": "La función que transforma un esquema relacional en un árbol jerárquico de forma automática"
+      },
+      {
+        "clave": "d",
+        "texto": "La propiedad que permite a múltiples usuarios acceder y modificar los mismos datos de forma simultánea garantizando la integridad"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La concurrencia en bases de datos es la propiedad que permite que varios usuarios o procesos puedan acceder, leer y modificar los mismos datos al mismo tiempo, manteniendo la integridad de la información. Es fundamental para evitar pérdidas de datos, sobrescrituras incorrectas o inconsistencias cuando varias operaciones se realizan simultáneamente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la encriptación asimétrica está relacionada con la seguridad y protección de datos durante la comunicación, no con el acceso simultáneo a una base de datos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque traducir etiquetas a diferentes idiomas no tiene relación con la concurrencia. La concurrencia trata sobre usuarios o procesos que acceden a los mismos datos al mismo tiempo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque transformar un esquema relacional en una estructura jerárquica se relaciona con modelos de datos o conversión de estructuras, no con el control de accesos simultáneos."
+        }
+      ],
+      "resumen_didactico": "Concurrencia significa que varias personas o procesos pueden trabajar con los mismos datos a la vez sin romper la coherencia del sistema.",
+      "ejemplo_practico": "Si un médico actualiza la medicación de un paciente mientras una enfermera consulta el mismo historial, la base de datos debe gestionar ambos accesos sin perder información ni mostrar datos corruptos.",
+      "conclusion_final": "La concurrencia es la propiedad que permite el acceso y modificación simultánea de los mismos datos garantizando su integridad."
+    }
+  },
+  {
+    "id": "UT6-Q22",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un desarrollador consulta una base de datos documental para formatear el resultado directamente como una lista HTML, cruzando datos y ordenándolos. ¿Qué lenguaje específico proporciona todo este conjunto de capacidades avanzadas?",
+    "contexto": "Se pregunta por el lenguaje de consulta utilizado en bases de datos XML o documentales para recuperar, cruzar, ordenar y generar resultados estructurados, incluso en formato HTML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "XPointer"
+      },
+      {
+        "clave": "b",
+        "texto": "XQuery"
+      },
+      {
+        "clave": "c",
+        "texto": "XPath"
+      },
+      {
+        "clave": "d",
+        "texto": "XSL-FO"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "XQuery es un lenguaje de consulta diseñado para trabajar con datos XML y bases de datos documentales. Permite recuperar información, filtrarla, cruzarla, ordenarla y construir nuevos resultados estructurados. Gracias a expresiones como FLWOR, puede generar salidas complejas, incluyendo fragmentos HTML como listas o tablas.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque XPointer se utiliza para localizar o señalar partes concretas dentro de un documento XML, pero no proporciona por sí mismo capacidades completas de consulta, ordenación y generación de resultados."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque XPath sirve para navegar y seleccionar nodos dentro de un documento XML. Es muy importante, pero no ofrece el mismo nivel de capacidad que XQuery para construir resultados complejos, cruzar datos y formatear salidas."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque XSL-FO se orienta al formateo de documentos para salida visual o impresa, como PDF, no a la consulta avanzada de bases de datos documentales."
+        }
+      ],
+      "resumen_didactico": "XPath localiza nodos; XQuery consulta, filtra, cruza, ordena y construye resultados nuevos. Por eso XQuery es más adecuado cuando se necesita trabajar con datos XML de forma avanzada.",
+      "ejemplo_practico": "En una base de datos XML de historiales clínicos, XQuery puede buscar todos los pacientes de una provincia, ordenarlos por fecha de alta y devolver el resultado como una lista HTML <ul><li>...</li></ul>.",
+      "conclusion_final": "El lenguaje específico que proporciona ese conjunto avanzado de capacidades es XQuery."
+    }
+  },
+  {
+    "id": "UT6-Q23",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un equipo técnico trabaja con una base de datos eXist-db y necesita escribir, compilar y probar consultas directamente sobre el servidor activo sin depender de aplicaciones de terceros. ¿Qué entorno integrado proporciona el propio sistema para esta tarea?",
+    "contexto": "Se pregunta por la herramienta integrada de eXist-db que permite trabajar directamente con consultas XQuery desde un entorno web propio del sistema.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El procesador predeterminado de hojas de estilo en cascada"
+      },
+      {
+        "clave": "b",
+        "texto": "El entorno de desarrollo integrado basado en web eXide"
+      },
+      {
+        "clave": "c",
+        "texto": "La terminal de comandos mediante parámetros de envío externos"
+      },
+      {
+        "clave": "d",
+        "texto": "El editor de texto plano del sistema operativo anfitrión"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "eXist-db incorpora eXide, un entorno de desarrollo integrado basado en web que permite escribir, compilar y ejecutar consultas XQuery directamente sobre la base de datos activa. Esta herramienta evita depender únicamente de editores externos o aplicaciones de terceros para probar consultas sobre el servidor.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque CSS se utiliza para aplicar estilos visuales, no para escribir, compilar o ejecutar consultas XQuery sobre una base de datos XML nativa."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la terminal puede servir para ejecutar comandos o arrancar servicios, pero la herramienta integrada específica para desarrollar consultas dentro de eXist-db es eXide."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un editor de texto plano permite escribir código, pero no proporciona por sí mismo un entorno integrado para compilar y ejecutar consultas directamente contra la base de datos activa."
+        }
+      ],
+      "resumen_didactico": "eXide es el IDE web propio de eXist-db. Sirve para trabajar directamente con consultas XQuery sobre la base de datos sin tener que depender de herramientas externas.",
+      "ejemplo_practico": "Un técnico puede abrir eXide desde el navegador, escribir una consulta FLWOR para buscar historiales clínicos en XML y ejecutar la consulta directamente contra la base de datos eXist-db.",
+      "conclusion_final": "El entorno integrado que proporciona eXist-db para esta tarea es eXide."
+    }
+  },
+  {
+    "id": "UT6-Q24",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "En la sintaxis de navegación por nodos, ¿qué selección se ejecuta al introducir el comando de dos puntos seguidos (..) en una expresión de ruta?",
+    "contexto": "Se pregunta por el significado del operador .. dentro de expresiones de ruta usadas para navegar por nodos en documentos XML, especialmente en XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Selecciona el nodo padre del nodo actual"
+      },
+      {
+        "clave": "b",
+        "texto": "Selecciona el nodo actual en el que nos encontramos"
+      },
+      {
+        "clave": "c",
+        "texto": "Selecciona la raíz absoluta de toda la estructura de datos"
+      },
+      {
+        "clave": "d",
+        "texto": "Selecciona todos los atributos del nivel actual"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En XPath, el operador .. se utiliza para seleccionar el nodo padre del nodo actual. Forma parte de la sintaxis de navegación por rutas dentro de una estructura XML jerárquica, permitiendo subir un nivel en el árbol de nodos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el nodo actual se representa con un solo punto ., no con dos puntos seguidos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la raíz absoluta de la estructura se selecciona normalmente con la barra /, no con ..."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque los atributos se seleccionan mediante el símbolo @. Para seleccionar todos los atributos se usaría una expresión como @*, no ..."
+        }
+      ],
+      "resumen_didactico": "En navegación XPath, . significa nodo actual y .. significa nodo padre. Es decir, con .. subimos un nivel en la jerarquía del documento XML.",
+      "ejemplo_practico": "Si estamos situados en el nodo <precio> dentro de <producto>, usar .. seleccionaría el nodo padre <producto>.",
+      "conclusion_final": "El comando .. selecciona el nodo padre del nodo actual."
+    }
+  },
+  {
+    "id": "UT7-Q25",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "¿Cuál es el formato de datos estructurado subyacente que utilizan los estándares de sindicación modernos para transmitir la información de manera unificada?",
+    "contexto": "Se pregunta por la base estructural que utilizan estándares de sindicación como RSS y Atom para distribuir información organizada entre sitios web, agregadores y aplicaciones.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Código HTML5 de presentación"
+      },
+      {
+        "clave": "b",
+        "texto": "Estructuras basadas en XML"
+      },
+      {
+        "clave": "c",
+        "texto": "Archivos de texto plano no jerárquico"
+      },
+      {
+        "clave": "d",
+        "texto": "Bases de datos SQL"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los estándares de sindicación de contenidos, como RSS y Atom, se basan en estructuras XML. Un feed o canal de contenidos es un documento estructurado que contiene información actualizada de un sitio web y que puede ser procesado automáticamente por programas lectores o agregadores.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque HTML5 se usa principalmente para estructurar y presentar contenido en páginas web, pero no es el formato base de los feeds de sindicación."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los feeds no son simples archivos de texto plano sin jerarquía. Aunque XML se escribe en texto plano, mantiene una estructura jerárquica con etiquetas, elementos y subelementos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque SQL se utiliza para consultar y gestionar bases de datos relacionales, no como formato de transmisión de feeds RSS o Atom."
+        }
+      ],
+      "resumen_didactico": "RSS y Atom transmiten información mediante documentos estructurados basados en XML, lo que permite que los agregadores lean automáticamente títulos, enlaces, fechas y descripciones.",
+      "ejemplo_practico": "Un blog puede publicar un feed RSS en XML con las últimas entradas. Un agregador lee ese XML y muestra automáticamente el título, el resumen y el enlace de cada noticia.",
+      "conclusion_final": "El formato estructurado subyacente que utilizan los estándares de sindicación modernos son las estructuras basadas en XML."
+    }
+  },
+  {
+    "id": "UT7-Q26",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Una corporación desea migrar su infraestructura de sindicación desde RSS a un formato más moderno, diseñado específicamente por el IETF para corregir inconsistencias y estandarizar el proceso. ¿Qué formato debe adoptar?",
+    "contexto": "Se pregunta por el estándar de sindicación creado como alternativa más moderna y normalizada frente a RSS, con el objetivo de resolver problemas de inconsistencias entre versiones y mejorar la estandarización.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "SOAP"
+      },
+      {
+        "clave": "b",
+        "texto": "Atom"
+      },
+      {
+        "clave": "c",
+        "texto": "HTML5"
+      },
+      {
+        "clave": "d",
+        "texto": "JSON-LD"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Atom es un formato de sindicación basado en XML que surge como alternativa moderna a RSS. Fue diseñado para corregir inconsistencias existentes en las distintas versiones de RSS y ofrecer un estándar más uniforme para la publicación y distribución de contenidos.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque SOAP es un protocolo basado en XML usado para intercambio de mensajes entre servicios web, pero no es el formato de sindicación moderno que sustituye o mejora RSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque HTML5 se utiliza para estructurar páginas web e interfaces visibles en el navegador, no como estándar específico de sindicación de contenidos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque JSON-LD sirve para representar datos enlazados en formato JSON, especialmente en contextos semánticos, pero no es el estándar de sindicación diseñado por el IETF para corregir las inconsistencias de RSS."
+        }
+      ],
+      "resumen_didactico": "RSS y Atom sirven para sindicar contenidos, pero Atom aparece como una alternativa más moderna y estandarizada para evitar problemas derivados de las distintas versiones de RSS.",
+      "ejemplo_practico": "Una empresa que publica noticias técnicas puede migrar de un feed RSS antiguo a un feed Atom para distribuir sus publicaciones con una estructura más uniforme y normalizada.",
+      "conclusion_final": "El formato que debe adoptar es Atom."
+    }
+  },
+  {
+    "id": "UT7-Q27",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "¿Por qué es una competencia fundamental que un administrador de sistemas conozca la estructura en crudo de las etiquetas XML, incluso cuando la generación de la sindicación está totalmente automatizada por scripts?",
+    "contexto": "Se pregunta por la importancia de conocer la estructura interna de XML en procesos de sindicación automatizados, especialmente para detectar errores técnicos cuando un feed RSS o Atom falla.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Porque los lenguajes de marcas reemplazan a los lenguajes de programación en el backend"
+      },
+      {
+        "clave": "b",
+        "texto": "Porque es vital para diagnosticar fallos de parseo e identificar exactamente en qué línea falla la integración cuando cambian los formatos"
+      },
+      {
+        "clave": "c",
+        "texto": "Porque el XML no permite el uso de herramientas de automatización sin supervisión humana"
+      },
+      {
+        "clave": "d",
+        "texto": "Porque deben compilar manualmente el archivo XML antes de subirlo al servidor de producción"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Aunque muchos feeds RSS o Atom se generan automáticamente mediante scripts o herramientas de publicación, siguen estando basados en XML. Por eso, un administrador de sistemas debe conocer la estructura en crudo de las etiquetas para poder detectar errores de sintaxis, problemas de parseo, etiquetas mal cerradas, caracteres ilegales o incompatibilidades cuando cambia el formato de origen.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los lenguajes de marcas no reemplazan a los lenguajes de programación. XML estructura y transmite información, mientras que los lenguajes de programación ejecutan lógica, automatizan procesos y controlan el backend."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque XML sí puede generarse mediante herramientas automáticas, scripts, gestores de contenido o plataformas de publicación. El problema es que, si algo falla, el técnico debe saber interpretar el XML resultante."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque XML no se compila manualmente antes de subirse al servidor. Es un formato de texto estructurado que se valida o se procesa, pero no se compila como un lenguaje de programación tradicional."
+        }
+      ],
+      "resumen_didactico": "Aunque la generación de feeds esté automatizada, el técnico debe saber leer XML porque los fallos reales suelen aparecer en etiquetas mal formadas, caracteres no escapados o errores de estructura que impiden al parser interpretar el documento.",
+      "ejemplo_practico": "Si un script genera un RSS con un ampersand sin escapar en el título de una noticia, el feed puede dejar de cargarse. Un administrador que conoce XML puede localizar la línea del error, corregir el carácter y restaurar la integración.",
+      "conclusion_final": "Es fundamental conocer la estructura XML en crudo porque permite diagnosticar fallos de parseo e identificar con precisión dónde se rompe la integración automatizada."
+    }
+  },
+  {
+    "id": "UT8-Q28",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "¿Cómo se define técnicamente un sistema de gestión empresarial en el ámbito del desarrollo y la administración corporativa?",
+    "contexto": "Se pregunta por la definición general de un sistema de gestión empresarial dentro de una organización, especialmente desde el punto de vista del software corporativo.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Un lenguaje de marcas utilizado exclusivamente para la facturación electrónica"
+      },
+      {
+        "clave": "b",
+        "texto": "Un conjunto de herramientas de software integradas que automatizan y simplifican los procesos operativos de una organización en crecimiento"
+      },
+      {
+        "clave": "c",
+        "texto": "Un motor de búsqueda basado en inteligencia artificial predictiva"
+      },
+      {
+        "clave": "d",
+        "texto": "Un protocolo de encriptación para asegurar transferencias bancarias"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Un sistema de gestión empresarial se define como un conjunto de herramientas de software integradas que permiten automatizar, coordinar y simplificar los procesos operativos de una organización. Su finalidad es evitar la dispersión de información entre departamentos y facilitar una gestión más eficiente de áreas como ventas, clientes, finanzas, logística, marketing o administración.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque un sistema de gestión empresarial no es un lenguaje de marcas ni se limita exclusivamente a la facturación electrónica. Puede incluir muchos procesos corporativos diferentes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque un sistema de gestión empresarial no se define como un motor de búsqueda predictivo. Puede incorporar análisis de datos o inteligencia empresarial, pero su función principal es integrar y automatizar procesos de negocio."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un protocolo de encriptación pertenece al ámbito de la seguridad en las comunicaciones, no a la definición general de un sistema de gestión empresarial."
+        }
+      ],
+      "resumen_didactico": "Un sistema de gestión empresarial centraliza herramientas y procesos para que la empresa trabaje de forma más organizada, integrada y eficiente.",
+      "ejemplo_practico": "Una empresa puede usar un sistema de gestión empresarial para controlar ventas, facturación, almacén, atención al cliente y compras desde una misma plataforma, evitando que cada departamento trabaje con datos aislados.",
+      "conclusion_final": "Un sistema de gestión empresarial es un conjunto de herramientas de software integradas que automatizan y simplifican los procesos operativos de una organización."
+    }
+  },
+  {
+    "id": "UT8-Q29",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "El equipo de desarrollo necesita integrar las interacciones bidireccionales de la empresa utilizando la API de WhatsApp Business, bots de Telegram y notificaciones push. ¿Sobre qué sistema de gestión de la información deben conectarse estas herramientas de comunicación?",
+    "contexto": "Se pregunta por el sistema empresarial encargado de gestionar la relación con los clientes y los canales de comunicación postventa, incluyendo herramientas modernas como WhatsApp Business, Telegram o notificaciones push.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Sobre la base de datos ofimática de recursos humanos"
+      },
+      {
+        "clave": "b",
+        "texto": "Sobre el sistema de gestión de relaciones con clientes o CRM"
+      },
+      {
+        "clave": "c",
+        "texto": "Sobre el módulo de contabilidad financiera"
+      },
+      {
+        "clave": "d",
+        "texto": "Sobre el terminal punto de venta físico"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "El CRM, Customer Relationship Management, es el sistema de gestión especializado en administrar la relación con los clientes. Permite centralizar información de contacto, historial de interacciones, campañas de marketing, ventas y servicio postventa. Por eso, herramientas como la API de WhatsApp Business, bots de Telegram o notificaciones push deben integrarse sobre el CRM, ya que forman parte de los canales de comunicación con el cliente.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque una base de datos de recursos humanos se orienta a empleados, nóminas, contratos o gestión interna del personal, no a la relación comercial y postventa con clientes."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el módulo de contabilidad financiera gestiona facturación, pagos, cobros o balances, pero no es el sistema principal para administrar comunicaciones bidireccionales con clientes."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque un terminal punto de venta físico sirve para realizar ventas presenciales, pero no centraliza la gestión completa de las relaciones con clientes ni los canales digitales de comunicación."
+        }
+      ],
+      "resumen_didactico": "Las herramientas de comunicación con clientes deben conectarse al CRM, porque este sistema centraliza la información comercial, el seguimiento de clientes y el servicio postventa.",
+      "ejemplo_practico": "Si un cliente escribe por WhatsApp preguntando por una instalación, el CRM puede mostrar su historial, compras anteriores, incidencias abiertas y próximas acciones comerciales.",
+      "conclusion_final": "Estas herramientas de comunicación deben conectarse sobre el sistema de gestión de relaciones con clientes o CRM."
+    }
+  },
+  {
+    "id": "UT8-Q30",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "¿Cuál es la realidad actual de la industria respecto a la arquitectura de implantación de los sistemas ERP, alejándose de los servidores locales con Apache y MySQL?",
+    "contexto": "Se pregunta por la tendencia actual en la implantación de sistemas ERP empresariales, especialmente frente al modelo tradicional de instalación local en servidores propios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La migración masiva a modelos SaaS (Software as a Service) 100% alojados en la nube gestionados por proveedores externos"
+      },
+      {
+        "clave": "b",
+        "texto": "El uso de redes peer-to-peer descentralizadas para almacenar la contabilidad"
+      },
+      {
+        "clave": "c",
+        "texto": "El retorno a los sistemas de ficheros de texto plano compartidos en red local"
+      },
+      {
+        "clave": "d",
+        "texto": "La instalación exclusiva mediante discos físicos en ordenadores sin conexión a internet"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "La tendencia actual en la implantación de sistemas ERP se aleja del modelo clásico de servidores locales administrados internamente y se orienta hacia soluciones SaaS alojadas en la nube. En este modelo, el proveedor externo gestiona la infraestructura, las actualizaciones, la disponibilidad, la seguridad y el mantenimiento técnico del sistema.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque las redes peer-to-peer descentralizadas no constituyen el modelo estándar de implantación de ERP empresariales. La contabilidad corporativa requiere control, trazabilidad, seguridad y cumplimiento normativo."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque volver a ficheros de texto plano compartidos en red local supondría perder integración, control de concurrencia, seguridad, automatización y centralización de procesos."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la industria no se dirige hacia instalaciones físicas aisladas sin conexión a internet. Los ERP modernos suelen requerir conectividad, actualizaciones, integración con otros servicios y acceso remoto seguro."
+        }
+      ],
+      "resumen_didactico": "Los ERP actuales tienden a funcionar como servicios en la nube. La empresa utiliza el software a través de internet mientras el proveedor se encarga de la infraestructura y el mantenimiento.",
+      "ejemplo_practico": "Una empresa puede contratar un ERP en la nube para gestionar ventas, inventario, facturación y recursos humanos sin montar servidores propios con Apache, MySQL o mantenimiento local permanente.",
+      "conclusion_final": "La realidad actual de la industria es la migración masiva hacia modelos SaaS alojados en la nube y gestionados por proveedores externos."
+    }
+  },
+  {
+    "id": "UT1-Q31",
+    "tema": "UT1 Reconocimiento de las características de los lenguajes de marcas",
+    "pregunta": "Un programador envía un documento de texto plano que, al abrirse en el servidor de producción, muestra caracteres extraños en lugar de vocales acentuadas. ¿Qué aspecto fundamental de los archivos de texto ha ignorado el desarrollador?",
+    "contexto": "Se pregunta por un problema típico en documentos de texto plano cuando la codificación usada al guardar el archivo no coincide con la codificación esperada por el sistema que lo interpreta.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "El nivel de compresión del sistema operativo"
+      },
+      {
+        "clave": "b",
+        "texto": "La codificación empleada al guardar el archivo"
+      },
+      {
+        "clave": "c",
+        "texto": "La declaración de hojas de estilo en cascada"
+      },
+      {
+        "clave": "d",
+        "texto": "La validación mediante un esquema de base de datos"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "Los documentos de texto plano almacenan caracteres usando una codificación concreta, como UTF-8, UTF-16 o ISO-8859-1. Si el archivo se guarda con una codificación y el servidor lo interpreta con otra diferente, pueden aparecer caracteres extraños en lugar de vocales acentuadas, eñes u otros caracteres especiales.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la compresión del sistema operativo afecta al tamaño o almacenamiento del archivo, pero no explica por sí misma que aparezcan caracteres extraños al interpretar acentos."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque CSS sirve para aplicar estilos visuales, no para determinar cómo se codifican o interpretan los caracteres de un archivo de texto."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la validación mediante esquemas comprueba estructuras y restricciones, pero el problema descrito se debe a la interpretación incorrecta de caracteres por una codificación inadecuada."
+        }
+      ],
+      "resumen_didactico": "Cuando aparecen símbolos raros en lugar de acentos, normalmente hay un problema de codificación: el archivo fue guardado con un sistema de caracteres y leído con otro.",
+      "ejemplo_practico": "Si un archivo XML contiene la palabra \"Málaga\" pero se guarda en ISO-8859-1 y el servidor lo interpreta como UTF-8 sin indicarlo correctamente, puede mostrarse con caracteres corruptos.",
+      "conclusion_final": "El desarrollador ha ignorado la codificación empleada al guardar el archivo."
+    }
+  },
+  {
+    "id": "UT2-Q32",
+    "tema": "UT2 Lenguajes para la visualización de información",
+    "pregunta": "Al maquetar una interfaz web corporativa orientada a mejorar el posicionamiento SEO, un diseñador sustituye las clásicas agrupaciones genéricas por elementos que indican explícitamente su función, como artículos o menús. ¿Qué característica fundamental define a estos nuevos elementos introducidos en la última versión del estándar?",
+    "contexto": "Se pregunta por los elementos semánticos introducidos en HTML5, como article, section, nav, header o footer, que permiten describir mejor la función de cada parte de una página web.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Su compatibilidad exclusiva con aplicaciones móviles nativas"
+      },
+      {
+        "clave": "b",
+        "texto": "Su diseño visual predeterminado en alta resolución"
+      },
+      {
+        "clave": "c",
+        "texto": "Su capacidad para compilar código fuente en servidores"
+      },
+      {
+        "clave": "d",
+        "texto": "Su significado semántico que ayuda a los navegadores a entender el contenido"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "HTML5 incorporó elementos semánticos que permiten indicar la función real de cada bloque de contenido dentro de una página. Etiquetas como <article>, <section>, <nav>, <header> o <footer> no solo agrupan contenido, sino que aportan significado estructural, ayudando a navegadores, buscadores y tecnologías de asistencia a interpretar mejor la página.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los elementos semánticos de HTML5 no son exclusivos de aplicaciones móviles nativas. Se utilizan en páginas web accesibles desde cualquier navegador moderno."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque estos elementos no se definen por tener un diseño visual predeterminado en alta resolución. Su función principal es estructural y semántica; el diseño visual se controla mediante CSS."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque HTML5 no compila código fuente en servidores. HTML es un lenguaje de marcas utilizado para estructurar contenido, no para compilar lógica de programación."
+        }
+      ],
+      "resumen_didactico": "Los elementos semánticos de HTML5 sirven para que el código diga qué representa cada parte de la página, no solo cómo se agrupa.",
+      "ejemplo_practico": "En lugar de usar solo <div> para todo, una web corporativa puede usar <nav> para el menú, <article> para una noticia y <footer> para el pie de página. Esto mejora la claridad del documento y ayuda al SEO.",
+      "conclusion_final": "La característica fundamental de estos elementos es su significado semántico, que ayuda a los navegadores y buscadores a entender mejor el contenido."
+    }
+  },
+  {
+    "id": "UT4-Q33",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Un analista de ciberseguridad revisa los archivos de registro generados por un servidor web y observa que la estructura jerárquica está intacta, pero las propiedades de ciertos elementos carecen de protección frente a inyecciones de código al estar escritas como valores libres. ¿Qué regla estricta de formación exige el estándar para solucionar la declaración de estos valores asociados?",
+    "contexto": "Se pregunta por la regla de escritura correcta de los atributos en lenguajes de marcas estrictos como XML, donde los valores asociados a una etiqueta deben declararse de forma controlada.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Encerrar obligatoriamente los valores de los atributos entre comillas dobles o simples"
+      },
+      {
+        "clave": "b",
+        "texto": "Convertir los atributos en entidades de caracteres no analizables"
+      },
+      {
+        "clave": "c",
+        "texto": "Declarar cada atributo como un nuevo archivo independiente"
+      },
+      {
+        "clave": "d",
+        "texto": "Eliminar completamente el uso de atributos dentro de las etiquetas"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En XML, los atributos deben declararse dentro de la etiqueta de inicio como pares nombre-valor, y el valor debe ir obligatoriamente entre comillas dobles o simples. Esta regla forma parte de la sintaxis estricta del documento y evita ambigüedades al procesar las propiedades asociadas a cada elemento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque las entidades de caracteres sirven para representar caracteres especiales, como &lt;, &gt; o &amp;, pero no sustituyen la regla general de declarar correctamente los atributos con valores entre comillas."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque los atributos no se declaran como archivos independientes. Forman parte de la etiqueta de inicio del elemento al que pertenecen."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque XML permite el uso de atributos. No hay que eliminarlos, sino escribirlos correctamente siguiendo la sintaxis estricta del lenguaje."
+        }
+      ],
+      "resumen_didactico": "En XML, un atributo correcto tiene la forma nombre=\"valor\" o nombre='valor'. Si el valor queda libre, sin comillas, el documento puede dejar de estar bien formado.",
+      "ejemplo_practico": "Incorrecto: <usuario rol=admin>. Correcto: <usuario rol=\"admin\">. En el segundo caso, el valor del atributo está correctamente delimitado.",
+      "conclusion_final": "La regla estricta exige encerrar obligatoriamente los valores de los atributos entre comillas dobles o simples."
+    }
+  },
+  {
+    "id": "UT4-Q34",
+    "tema": "UT4 Definición de esquemas y vocabularios en XML",
+    "pregunta": "Para optimizar el tiempo de respuesta de una pasarela de pagos, los ingenieros configuran el documento de intercambio para que el motor de validación ignore procesar un bloque de información que contiene descripciones enriquecidas con caracteres especiales. ¿Qué etiqueta estructural habilita este comportamiento en el sistema?",
+    "contexto": "Se pregunta por la estructura XML que permite incluir texto con caracteres especiales sin que el parser lo interprete como etiquetas o código XML.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La directiva de procesamiento inicial"
+      },
+      {
+        "clave": "b",
+        "texto": "La etiqueta de comentario estándar"
+      },
+      {
+        "clave": "c",
+        "texto": "La sección CDATA"
+      },
+      {
+        "clave": "d",
+        "texto": "La declaración del esquema XSD"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En XML, una sección CDATA permite incluir bloques de texto que no deben ser interpretados como marcado XML. Esto resulta útil cuando el contenido incluye caracteres especiales como <, > o &, ya que dentro de CDATA el parser los trata como texto literal y no como parte de la estructura del documento.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque la directiva o instrucción de procesamiento inicial aporta información al procesador, como versión o codificación, pero no sirve para encapsular bloques de texto con caracteres especiales sin interpretarlos como marcado."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque los comentarios sirven para añadir notas que no forman parte de los datos procesables del documento. No se utilizan para transportar contenido estructural o descriptivo que deba conservarse como dato."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque XSD define reglas de validación para la estructura y los tipos de datos del XML, pero no es la estructura encargada de proteger un bloque de texto para que no sea interpretado como marcado."
+        }
+      ],
+      "resumen_didactico": "CDATA se usa cuando queremos meter texto dentro de XML sin que ciertos caracteres especiales sean interpretados como etiquetas o entidades.",
+      "ejemplo_practico": "Si una descripción contiene texto como \"precio < 100 & descuento activo\", puede incluirse dentro de <![CDATA[precio < 100 & descuento activo]]> para evitar errores de interpretación.",
+      "conclusion_final": "La estructura que permite este comportamiento es la sección CDATA."
+    }
+  },
+  {
+    "id": "UT6-Q35",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Durante la extracción de métricas, un desarrollador utiliza un lenguaje de consultas para seleccionar un nodo específico evaluando de forma dinámica las propiedades de los nodos contiguos en tiempo real. ¿Cómo se denomina a estas condiciones estrictas escritas habitualmente entre corchetes para filtrar información?",
+    "contexto": "Se pregunta por el nombre de las condiciones utilizadas en expresiones XPath para filtrar nodos según una condición concreta, normalmente escritas entre corchetes.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Predicados"
+      },
+      {
+        "clave": "b",
+        "texto": "Macros de formato"
+      },
+      {
+        "clave": "c",
+        "texto": "Reglas de validación DTD"
+      },
+      {
+        "clave": "d",
+        "texto": "Cláusulas FLWOR"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "En XPath, los predicados son condiciones que se escriben habitualmente entre corchetes para filtrar los nodos seleccionados. Permiten seleccionar elementos según su posición, atributos, valores internos u otras propiedades del contexto de navegación.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque las macros de formato no son el mecanismo propio de XPath para filtrar nodos. El filtrado mediante condiciones entre corchetes se denomina predicado."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque las reglas DTD sirven para definir y validar la estructura permitida de un documento XML, no para seleccionar dinámicamente nodos dentro de una expresión de consulta."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque las cláusulas FLWOR pertenecen a XQuery y permiten construir consultas más complejas mediante for, let, where, order by y return. No son las condiciones entre corchetes propias de XPath."
+        }
+      ],
+      "resumen_didactico": "Los predicados son filtros dentro de una ruta XPath. Van entre corchetes y permiten concretar qué nodos se seleccionan.",
+      "ejemplo_practico": "En la expresión /tienda/producto[precio > 20], el predicado [precio > 20] filtra solo los productos cuyo precio sea mayor que 20.",
+      "conclusion_final": "Las condiciones estrictas escritas entre corchetes para filtrar información se denominan predicados."
+    }
+  },
+  {
+    "id": "UT6-Q36",
+    "tema": "UT6 Almacenamiento de información",
+    "pregunta": "Un responsable de logística necesita extraer información rápida de la página web de su proveedor hacia su propio Excel sin escribir código en el servidor. ¿Qué instrucción integrada en las hojas de cálculo modernas permite rastrear y volcar esa información estructurada utilizando el estándar de rutas de navegación?",
+    "contexto": "Se pregunta por la función de hojas de cálculo que permite importar información estructurada desde una página web usando rutas XPath.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "La macro XSLT de transformación"
+      },
+      {
+        "clave": "b",
+        "texto": "El comando SQL SELECT"
+      },
+      {
+        "clave": "c",
+        "texto": "La función condicional de búsqueda avanzada"
+      },
+      {
+        "clave": "d",
+        "texto": "La función IMPORTXML"
+      }
+    ],
+    "respuesta_correcta": [
+      "d"
+    ],
+    "explicacion": {
+      "temario": "La función IMPORTXML permite extraer datos estructurados desde una página web o documento XML utilizando expresiones XPath. Es útil en hojas de cálculo modernas porque permite recuperar información concreta sin tener que programar en el servidor, siempre que la página permita acceder a esos datos de forma compatible.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque XSLT se utiliza para transformar documentos XML en otros formatos, pero no es una función integrada de hoja de cálculo para extraer directamente datos desde una URL mediante rutas XPath."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque SELECT pertenece a SQL y se usa para consultar bases de datos relacionales, no para rastrear datos de una página web desde una hoja de cálculo usando XPath."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque una función condicional de búsqueda no representa el mecanismo específico para importar datos web estructurados mediante rutas de navegación XPath."
+        }
+      ],
+      "resumen_didactico": "IMPORTXML conecta una hoja de cálculo con una fuente web y usa XPath para indicar qué parte concreta del documento se quiere extraer.",
+      "ejemplo_practico": "Un responsable de logística puede usar IMPORTXML para extraer automáticamente de la web de un proveedor una tabla de precios, estados de envío o referencias de productos y volcarlas en su hoja de cálculo.",
+      "conclusion_final": "La instrucción integrada que permite rastrear y volcar información estructurada usando rutas XPath es IMPORTXML."
+    }
+  },
+  {
+    "id": "UT7-Q37",
+    "tema": "UT7 Aplicación de los lenguajes de marcas a la sindicación de contenidos",
+    "pregunta": "Ante una caída crítica de los servicios de alojamiento, los administradores reciben instantáneamente un resumen técnico en sus dispositivos sin haber solicitado la información ni proporcionado sus correos. ¿Qué estándar tecnológico permite distribuir este contenido a múltiples usuarios de forma privada y estructurada?",
+    "contexto": "Se pregunta por la tecnología que permite distribuir información actualizada a múltiples usuarios mediante canales estructurados, sin depender necesariamente del correo electrónico ni de la navegación manual por cada página.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Las transformaciones visuales en cascada"
+      },
+      {
+        "clave": "b",
+        "texto": "La sindicación de contenidos"
+      },
+      {
+        "clave": "c",
+        "texto": "La replicación de bases de datos relacionales"
+      },
+      {
+        "clave": "d",
+        "texto": "El protocolo de transferencia de archivos seguro"
+      }
+    ],
+    "respuesta_correcta": [
+      "b"
+    ],
+    "explicacion": {
+      "temario": "La sindicación de contenidos permite distribuir publicaciones, avisos o resúmenes actualizados mediante canales estructurados como RSS o Atom. Estos canales pueden ser leídos automáticamente por agregadores, aplicaciones o sistemas internos, permitiendo que múltiples usuarios reciban información relevante sin tener que visitar manualmente cada página ni depender del correo electrónico.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque las hojas de estilo en cascada, CSS, sirven para aplicar presentación visual a documentos web, no para distribuir avisos técnicos o contenidos actualizados a múltiples usuarios."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque la replicación de bases de datos relacionales consiste en copiar o sincronizar datos entre servidores, pero no es el estándar destinado a distribuir resúmenes de contenido a usuarios finales."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque SFTP permite transferir archivos de forma segura, pero no define un sistema de publicación y recepción automática de contenidos estructurados como ocurre con la sindicación."
+        }
+      ],
+      "resumen_didactico": "La sindicación de contenidos permite que una fuente publique información estructurada y que los usuarios o sistemas suscritos la reciban automáticamente mediante canales como RSS o Atom.",
+      "ejemplo_practico": "Un centro de datos puede publicar un feed RSS con alertas de caídas, mantenimiento o vulnerabilidades. Los administradores lo reciben en su agregador o panel interno sin tener que consultar manualmente la web del proveedor.",
+      "conclusion_final": "El estándar tecnológico que permite distribuir este contenido de forma estructurada a múltiples usuarios es la sindicación de contenidos."
+    }
+  },
+  {
+    "id": "UT8-Q38",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Al configurar el módulo de inventario físico de una tienda minorista, el equipo informático requiere sincronizar las ventas del mostrador con la base de datos central de forma instantánea. ¿Qué módulo específico se debe activar en los terminales de los dependientes para gestionar los cobros y actualizar el stock?",
+    "contexto": "Se pregunta por el módulo de gestión empresarial utilizado en comercios físicos para realizar ventas, gestionar cobros y actualizar automáticamente el inventario.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Módulo TPV o Terminal Punto de Venta"
+      },
+      {
+        "clave": "b",
+        "texto": "Módulo de inteligencia de negocios"
+      },
+      {
+        "clave": "c",
+        "texto": "Módulo de recursos humanos"
+      },
+      {
+        "clave": "d",
+        "texto": "Módulo de encriptación de pagos"
+      }
+    ],
+    "respuesta_correcta": [
+      "a"
+    ],
+    "explicacion": {
+      "temario": "El TPV o Terminal Punto de Venta es el módulo utilizado en comercios físicos para gestionar las operaciones de venta en el mostrador. Permite registrar cobros, emitir tickets o facturas y sincronizar esas ventas con la base de datos central, actualizando el stock de forma automática.",
+      "analisis_incorrectas": [
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el módulo de inteligencia de negocios se utiliza para analizar datos, generar informes, detectar patrones y apoyar la toma de decisiones, pero no es el módulo operativo de cobro en mostrador."
+        },
+        {
+          "clave": "c",
+          "motivo": "Es incorrecta porque el módulo de recursos humanos gestiona empleados, nóminas, horarios o contratos, pero no registra ventas ni actualiza inventario en tiempo real."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la encriptación de pagos puede formar parte de la seguridad del sistema, pero no es el módulo encargado de gestionar ventas, cobros y actualización de stock."
+        }
+      ],
+      "resumen_didactico": "El TPV conecta la venta física con el sistema central de gestión: cuando se cobra un producto, el sistema registra la operación y descuenta automáticamente el stock.",
+      "ejemplo_practico": "Si un dependiente vende una camiseta desde el TPV, el sistema cobra al cliente, genera el ticket y reduce en una unidad el inventario disponible en la base de datos central.",
+      "conclusion_final": "El módulo que debe activarse es el TPV o Terminal Punto de Venta."
+    }
+  },
+  {
+    "id": "UT8-Q39",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "Para auditar la eficiencia del departamento de ventas, un analista recolecta grandes volúmenes de datos históricos e implementa un proceso de limpieza y agrupación antes de su almacenamiento centralizado. ¿A qué fase inicial del descubrimiento de conocimiento corresponde esta operativa técnica?",
+    "contexto": "Se pregunta por una fase inicial del proceso de descubrimiento de conocimiento y análisis empresarial en la que los datos son recopilados, limpiados, organizados y cargados en un repositorio central para su posterior análisis.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Despliegue de cuadros de mando integrales"
+      },
+      {
+        "clave": "b",
+        "texto": "Evaluación del modelo predictivo"
+      },
+      {
+        "clave": "c",
+        "texto": "Incorporación de datos al data warehouse"
+      },
+      {
+        "clave": "d",
+        "texto": "Transformación de esquemas XML nativos"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "En los procesos de análisis empresarial y descubrimiento de conocimiento, una fase inicial consiste en recopilar datos desde distintas fuentes, limpiarlos, agruparlos y prepararlos para su almacenamiento centralizado en un data warehouse. Este almacén de datos permite después aplicar análisis, minería de datos, informes, OLAP o cuadros de mando.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque los cuadros de mando integrales se utilizan en fases posteriores para visualizar indicadores y resultados, no para realizar la limpieza, agrupación y carga inicial de datos históricos."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque la evaluación del modelo predictivo pertenece a una etapa posterior, cuando ya se han preparado los datos y se ha construido o entrenado un modelo de análisis."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque transformar esquemas XML nativos se relaciona con documentos XML y estructuras de datos, pero no describe la fase general de limpieza, agrupación y carga de datos históricos en un almacén central."
+        }
+      ],
+      "resumen_didactico": "Antes de analizar datos empresariales, hay que reunirlos, limpiarlos y organizarlos en un repositorio central. Esa fase corresponde a la incorporación de datos al data warehouse.",
+      "ejemplo_practico": "Una empresa puede extraer datos de ventas de tiendas físicas, comercio online y CRM, limpiarlos para eliminar duplicados y cargarlos en un data warehouse para analizar posteriormente la eficiencia comercial.",
+      "conclusion_final": "La operativa descrita corresponde a la incorporación de datos al data warehouse."
+    }
+  },
+  {
+    "id": "UT8-Q40",
+    "tema": "UT8 Sistemas de gestión empresarial",
+    "pregunta": "En la investigación de una brecha de datos departamental, los auditores necesitan saber exactamente qué operario modificó el precio de un artículo, cuándo lo hizo y desde qué ordenador. ¿A qué herramienta de seguridad nativa de los sistemas empresariales deben recurrir?",
+    "contexto": "Se pregunta por la herramienta de seguridad y control que permite registrar las acciones realizadas dentro de un sistema empresarial, identificando usuarios, fechas, operaciones y origen de los cambios.",
+    "tipo": "single",
+    "opciones": [
+      {
+        "clave": "a",
+        "texto": "Al módulo de compras y distribución"
+      },
+      {
+        "clave": "b",
+        "texto": "Al sistema de gestión de relaciones con el cliente"
+      },
+      {
+        "clave": "c",
+        "texto": "Al registro de acciones o log de auditoría"
+      },
+      {
+        "clave": "d",
+        "texto": "Al modelo predictivo de minería de datos"
+      }
+    ],
+    "respuesta_correcta": [
+      "c"
+    ],
+    "explicacion": {
+      "temario": "Los sistemas empresariales suelen incorporar mecanismos de seguridad y trazabilidad que registran las acciones realizadas por los usuarios. El log de auditoría permite saber quién hizo una modificación, cuándo se realizó, desde qué equipo o sesión y qué dato fue alterado. Es fundamental para investigar errores, accesos indebidos, cambios no autorizados o brechas de seguridad.",
+      "analisis_incorrectas": [
+        {
+          "clave": "a",
+          "motivo": "Es incorrecta porque el módulo de compras y distribución gestiona procesos operativos como pedidos, proveedores, compras o movimientos de mercancía, pero no es la herramienta específica para investigar quién modificó un dato."
+        },
+        {
+          "clave": "b",
+          "motivo": "Es incorrecta porque el CRM gestiona relaciones con clientes, ventas, marketing y postventa, pero no es el mecanismo principal para rastrear cambios técnicos sobre precios o registros internos del sistema."
+        },
+        {
+          "clave": "d",
+          "motivo": "Es incorrecta porque la minería de datos sirve para descubrir patrones, tendencias o relaciones dentro de grandes volúmenes de información, pero no para identificar directamente qué usuario realizó una acción concreta en el sistema."
+        }
+      ],
+      "resumen_didactico": "Cuando una empresa necesita saber quién hizo un cambio, cuándo lo hizo y desde dónde, debe consultar el log de auditoría. Este registro aporta trazabilidad y control sobre las acciones realizadas en el sistema.",
+      "ejemplo_practico": "Si el precio de un producto cambia de 20 a 5 euros sin autorización, el log de auditoría puede mostrar que el usuario operador03 realizó el cambio a las 10:42 desde un equipo concreto del departamento de ventas.",
+      "conclusion_final": "La herramienta adecuada para investigar esa modificación es el registro de acciones o log de auditoría."
+    }
+  }
+]

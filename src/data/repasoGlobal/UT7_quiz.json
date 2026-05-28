@@ -1,0 +1,1922 @@
+[
+    {
+        "id": "UT1-Q01",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "Una profesional decide analizar sus valores y comportamientos para entender c\u00f3mo influyen en su toma de decisiones laborales. \u00bfQu\u00e9 proceso est\u00e1 llevando a cabo?",
+        "contexto": "La pregunta describe un proceso de reflexi\u00f3n personal sobre valores, comportamientos y toma de decisiones profesionales.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "An\u00e1lisis de oportunidades externas"
+            },
+            {
+                "clave": "b",
+                "texto": "Evaluaci\u00f3n de amenazas del mercado"
+            },
+            {
+                "clave": "c",
+                "texto": "Planificaci\u00f3n de microacreditaciones"
+            },
+            {
+                "clave": "d",
+                "texto": "Autoconocimiento"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "El autoconocimiento consiste en comprender las propias emociones, pensamientos, valores y comportamientos. En el \u00e1mbito laboral permite entender c\u00f3mo esos elementos personales influyen en la forma de decidir, actuar y construir un plan de carrera.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El an\u00e1lisis de oportunidades externas forma parte del an\u00e1lisis del entorno, especialmente dentro del DAFO, pero no se centra en los valores y comportamientos personales."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La evaluaci\u00f3n de amenazas del mercado analiza factores externos que pueden dificultar la carrera profesional, no el mundo interior de la persona."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La planificaci\u00f3n de microacreditaciones se relaciona con la formaci\u00f3n complementaria y la mejora del perfil profesional, pero no con el an\u00e1lisis interno de valores y comportamientos."
+                }
+            ],
+            "resumen_didactico": "Cuando una persona se observa a s\u00ed misma para entender sus valores, emociones, comportamientos y forma de decidir, est\u00e1 trabajando el autoconocimiento.",
+            "ejemplo_practico": "Una t\u00e9cnica reconoce que valora mucho la estabilidad y que se bloquea bajo presi\u00f3n. Gracias a ese an\u00e1lisis, decide buscar puestos con buena organizaci\u00f3n del tiempo y equipos colaborativos.",
+            "conclusion_final": "El proceso descrito es el autoconocimiento, porque la profesional est\u00e1 analizando su dimensi\u00f3n personal para orientar mejor sus decisiones laborales."
+        }
+    },
+    {
+        "id": "UT1-Q02",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfCu\u00e1l es la definici\u00f3n correcta de competencias transversales en el \u00e1mbito de la Formaci\u00f3n Profesional?",
+        "contexto": "La pregunta busca identificar qu\u00e9 son las competencias transversales dentro del desarrollo profesional y la empleabilidad.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Habilidades y actitudes \u00fatiles en pr\u00e1cticamente cualquier profesi\u00f3n"
+            },
+            {
+                "clave": "b",
+                "texto": "Procedimientos legales para convalidar t\u00edtulos universitarios"
+            },
+            {
+                "clave": "c",
+                "texto": "Habilidades t\u00e9cnicas exclusivas de un sector espec\u00edfico como la programaci\u00f3n"
+            },
+            {
+                "clave": "d",
+                "texto": "Conocimientos te\u00f3ricos necesarios para aprobar un examen oficial"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "Las competencias transversales son habilidades y actitudes \u00fatiles en pr\u00e1cticamente cualquier profesi\u00f3n, independientemente del sector. Incluyen capacidades como el trabajo en equipo, la comunicaci\u00f3n, la iniciativa, la adaptaci\u00f3n, la empat\u00eda o la capacidad de resolver problemas.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "Los procedimientos legales para convalidar t\u00edtulos universitarios se relacionan con pasarelas, convalidaciones o reconocimiento de estudios, no con competencias transversales."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Las habilidades t\u00e9cnicas exclusivas de un sector son competencias profesionales espec\u00edficas. Por ejemplo, programar en JavaScript ser\u00eda una competencia t\u00e9cnica de DAW, no una competencia transversal."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Los conocimientos te\u00f3ricos para aprobar un examen forman parte del aprendizaje acad\u00e9mico, pero las competencias transversales se orientan a habilidades aplicables en distintos contextos laborales."
+                }
+            ],
+            "resumen_didactico": "Las competencias transversales son habilidades generales que sirven en muchos trabajos distintos. No dependen de un sector concreto, sino que mejoran la empleabilidad en cualquier \u00e1mbito profesional.",
+            "ejemplo_practico": "Una persona que sabe comunicarse bien, trabajar en equipo y adaptarse a cambios ser\u00e1 valiosa tanto en una oficina de administraci\u00f3n como en un equipo de desarrollo web o en un centro educativo.",
+            "conclusion_final": "La definici\u00f3n correcta es que las competencias transversales son habilidades y actitudes \u00fatiles en pr\u00e1cticamente cualquier profesi\u00f3n."
+        }
+    },
+    {
+        "id": "UT1-Q03",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfQu\u00e9 componente del an\u00e1lisis DAFO se refiere a los factores internos que restan competitividad a un profesional para alcanzar sus objetivos?",
+        "contexto": "La pregunta se centra en identificar dentro del an\u00e1lisis DAFO qu\u00e9 elemento representa los aspectos internos negativos de una persona o profesional.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Oportunidades"
+            },
+            {
+                "clave": "b",
+                "texto": "Fortalezas"
+            },
+            {
+                "clave": "c",
+                "texto": "Debilidades"
+            },
+            {
+                "clave": "d",
+                "texto": "Amenazas"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "En el an\u00e1lisis DAFO, las debilidades son factores internos que dificultan el logro de los objetivos profesionales o reducen la competitividad de una persona. Pueden ser carencias de formaci\u00f3n, mala gesti\u00f3n del tiempo, falta de experiencia, inseguridad comunicativa o escaso dominio de herramientas digitales.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Las oportunidades son factores externos positivos del entorno que pueden favorecer el desarrollo profesional, como una alta demanda de un perfil o nuevas posibilidades de formaci\u00f3n."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Las fortalezas son factores internos positivos que aumentan la competitividad, como la creatividad, la capacidad de adaptaci\u00f3n o el dominio de una herramienta."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Las amenazas son factores externos negativos que pueden dificultar el desarrollo profesional, como mucha competencia, cambios tecnol\u00f3gicos o exigencias crecientes del mercado."
+                }
+            ],
+            "resumen_didactico": "En el DAFO, lo interno puede ser positivo o negativo. Si es interno y ayuda, es una fortaleza. Si es interno y perjudica, es una debilidad.",
+            "ejemplo_practico": "Una estudiante de DAW quiere trabajar como desarrolladora frontend, pero todav\u00eda no domina bien TypeScript. Esa carencia interna es una debilidad que debe trabajar en su plan de carrera.",
+            "conclusion_final": "El componente del DAFO que recoge los factores internos que restan competitividad es la debilidad."
+        }
+    },
+    {
+        "id": "UT1-Q04",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfQu\u00e9 representa una oportunidad dentro de la metodolog\u00eda de an\u00e1lisis DAFO?",
+        "contexto": "La pregunta se centra en identificar qu\u00e9 elemento del an\u00e1lisis DAFO corresponde a un factor externo positivo que puede beneficiar el desarrollo profesional.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Una carencia formativa que debemos corregir de inmediato"
+            },
+            {
+                "clave": "b",
+                "texto": "Un rasgo de la personalidad que dificulta el trabajo en equipo"
+            },
+            {
+                "clave": "c",
+                "texto": "Un cambio o tendencia externa que puede favorecer nuestra carrera"
+            },
+            {
+                "clave": "d",
+                "texto": "Una caracter\u00edstica personal que nos hace mejores que la competencia"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "Dentro del an\u00e1lisis DAFO, las oportunidades son factores externos positivos que pueden favorecer el desarrollo profesional. Pueden ser tendencias del mercado, nuevas demandas laborales, avances tecnol\u00f3gicos, sectores en crecimiento o posibilidades formativas que ayudan a mejorar la empleabilidad.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Una carencia formativa es un factor interno negativo, por tanto corresponde a una debilidad, no a una oportunidad."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Un rasgo personal que dificulta el trabajo en equipo tambi\u00e9n es un factor interno negativo, por lo que se clasifica como debilidad."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Una caracter\u00edstica personal positiva que nos hace destacar frente a otros profesionales es una fortaleza, porque pertenece al \u00e1mbito interno de la persona."
+                }
+            ],
+            "resumen_didactico": "En el DAFO, una oportunidad es algo externo y favorable. No depende directamente de la persona, pero puede aprovecharse para mejorar su carrera profesional.",
+            "ejemplo_practico": "Si aumenta la demanda de desarrolladores web con conocimientos de inteligencia artificial, esa tendencia del mercado es una oportunidad para un estudiante de DAW que quiera especializarse en ese campo.",
+            "conclusion_final": "Una oportunidad dentro del DAFO es un cambio o tendencia externa que puede favorecer nuestra carrera profesional."
+        }
+    },
+    {
+        "id": "UT1-Q05",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "De acuerdo con la Ley Org\u00e1nica 3/2022, \u00bfc\u00f3mo se organiza actualmente el sistema de Formaci\u00f3n Profesional en Espa\u00f1a?",
+        "contexto": "La pregunta se refiere a la organizaci\u00f3n actual del sistema de Formaci\u00f3n Profesional en Espa\u00f1a tras la Ley Org\u00e1nica 3/2022.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "En tres niveles aislados sin conexi\u00f3n entre ellos"
+            },
+            {
+                "clave": "b",
+                "texto": "En cinco niveles correlativos denominados grados (A, B, C, D y E)"
+            },
+            {
+                "clave": "c",
+                "texto": "En un sistema r\u00edgido que solo permite el acceso mediante examen"
+            },
+            {
+                "clave": "d",
+                "texto": "En grados universitarios de larga duraci\u00f3n exclusivamente"
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "Seg\u00fan el temario, desde la entrada en vigor de la Ley Org\u00e1nica 3/2022, la Formaci\u00f3n Profesional en Espa\u00f1a se organiza como un sistema flexible y modular compuesto por cinco niveles correlativos: Grado A, Grado B, Grado C, Grado D y Grado E. Esta estructura permite construir itinerarios formativos progresivos, desde microacreditaciones hasta cursos de especializaci\u00f3n.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "No son tres niveles aislados. El sistema se organiza en cinco grados conectados entre s\u00ed, pensados para facilitar la progresi\u00f3n formativa."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El sistema actual no se presenta como r\u00edgido ni limitado \u00fanicamente al acceso mediante examen, sino como flexible, modular y acumulable."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La Formaci\u00f3n Profesional no se organiza exclusivamente en grados universitarios. Los grados A, B, C, D y E pertenecen al sistema de FP, no al sistema universitario."
+                }
+            ],
+            "resumen_didactico": "La nueva FP se entiende como un sistema modular: puedes empezar por formaciones peque\u00f1as y seguir avanzando hacia titulaciones o especializaciones superiores.",
+            "ejemplo_practico": "Una persona puede empezar con una microacreditaci\u00f3n de Grado A, continuar con un certificado profesional de Grado C, cursar un ciclo formativo de Grado D y m\u00e1s adelante realizar un curso de especializaci\u00f3n de Grado E.",
+            "conclusion_final": "El sistema de Formaci\u00f3n Profesional se organiza actualmente en cinco niveles correlativos denominados grados A, B, C, D y E."
+        }
+    },
+    {
+        "id": "UT1-Q06",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfQu\u00e9 caracter\u00edstica define a la \"S\" dentro de los objetivos de la metodolog\u00eda SMART?",
+        "contexto": "La pregunta se refiere al significado de la letra S dentro de la metodolog\u00eda SMART para formular objetivos profesionales claros y eficaces.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Que el objetivo sea socialmente responsable"
+            },
+            {
+                "clave": "b",
+                "texto": "Que el objetivo sea sencillo de cumplir sin esfuerzo"
+            },
+            {
+                "clave": "c",
+                "texto": "Que el objetivo sea supervisado por un tutor externo"
+            },
+            {
+                "clave": "d",
+                "texto": "Que el objetivo sea espec\u00edfico y elimine la ambig\u00fcedad"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "Dentro de la metodolog\u00eda SMART, la letra S corresponde a \"Specific\", es decir, espec\u00edfico. Un objetivo espec\u00edfico debe responder con claridad a qu\u00e9 se quiere conseguir exactamente, evitando formulaciones vagas o ambiguas. Cuanto m\u00e1s concreto sea el objetivo, m\u00e1s f\u00e1cil ser\u00e1 planificar los pasos necesarios para alcanzarlo.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "La S de SMART no significa socialmente responsable. Aunque un objetivo puede tener valor social, esa no es la caracter\u00edstica que define esta letra dentro de la metodolog\u00eda."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "SMART no exige que el objetivo sea sencillo ni que se logre sin esfuerzo. Debe ser alcanzable, pero puede requerir disciplina, planificaci\u00f3n y trabajo."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La supervisi\u00f3n por un tutor externo puede ayudar en un proceso formativo, pero no forma parte del significado de la S en SMART."
+                }
+            ],
+            "resumen_didactico": "La S de SMART significa espec\u00edfico: el objetivo debe estar formulado de manera concreta, clara y sin ambig\u00fcedad.",
+            "ejemplo_practico": "No ser\u00eda espec\u00edfico decir: \"quiero mejorar mi perfil profesional\". En cambio, s\u00ed ser\u00eda espec\u00edfico decir: \"quiero crear un portfolio con tres proyectos de DAW antes de finalizar el curso\".",
+            "conclusion_final": "La caracter\u00edstica que define a la S dentro de SMART es que el objetivo sea espec\u00edfico y elimine la ambig\u00fcedad."
+        }
+    },
+    {
+        "id": "UT1-Q07",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "Un estudiante se propone terminar un curso de software antes del 20 de mayo. \u00bfQu\u00e9 elemento de la metodolog\u00eda SMART est\u00e1 integrando?",
+        "contexto": "La pregunta describe un objetivo que incorpora una fecha l\u00edmite concreta para su cumplimiento.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Tiempo definido"
+            },
+            {
+                "clave": "b",
+                "texto": "Relevancia"
+            },
+            {
+                "clave": "c",
+                "texto": "Especificidad"
+            },
+            {
+                "clave": "d",
+                "texto": "Medici\u00f3n t\u00e9cnica"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "Dentro de la metodolog\u00eda SMART, la T corresponde a tiempo definido. Esto significa que el objetivo debe tener una fecha l\u00edmite clara que indique cu\u00e1ndo debe estar cumplido. Al decir que quiere terminar el curso antes del 20 de mayo, el estudiante est\u00e1 incorporando un plazo concreto.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "La relevancia indica que el objetivo debe estar conectado con la meta profesional de la persona, pero en este caso lo que destaca es la existencia de una fecha l\u00edmite."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La especificidad exige que el objetivo sea claro y concreto, pero la parte clave de la pregunta es el plazo \"antes del 20 de mayo\", no solo la concreci\u00f3n del objetivo."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La medici\u00f3n t\u00e9cnica no es uno de los elementos cl\u00e1sicos de SMART. La M corresponde a medible, es decir, que pueda comprobarse si se ha conseguido o no."
+                }
+            ],
+            "resumen_didactico": "Cuando un objetivo incluye una fecha l\u00edmite concreta, est\u00e1 aplicando el elemento de tiempo definido de la metodolog\u00eda SMART.",
+            "ejemplo_practico": "No es lo mismo decir \"quiero hacer un curso de software\" que decir \"voy a terminar el curso de software antes del 20 de mayo\". La segunda formulaci\u00f3n permite organizar el tiempo y comprobar si se ha cumplido.",
+            "conclusion_final": "El elemento SMART que est\u00e1 integrando es el tiempo definido, porque el objetivo tiene una fecha l\u00edmite clara."
+        }
+    },
+    {
+        "id": "UT2-Q08",
+        "tema": "UT2 Identidad profesional y herramientas de presentaci\u00f3n",
+        "pregunta": "\u00bfC\u00f3mo se define t\u00e9cnicamente el perfil profesional de un t\u00e9cnico al finalizar su formaci\u00f3n?",
+        "contexto": "La pregunta se refiere a la definici\u00f3n de perfil profesional dentro del \u00e1mbito de la Formaci\u00f3n Profesional y la empleabilidad.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El conjunto de competencias profesionales, personales y sociales que definen lo que es capaz de hacer"
+            },
+            {
+                "clave": "b",
+                "texto": "La suma de a\u00f1os de experiencia en puestos directivos previos"
+            },
+            {
+                "clave": "c",
+                "texto": "El expediente acad\u00e9mico con las notas obtenidas en cada m\u00f3dulo"
+            },
+            {
+                "clave": "d",
+                "texto": "El listado de preferencias salariales y geogr\u00e1ficas del candidato"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "El perfil profesional es el conjunto de competencias profesionales, personales y sociales que definen lo que un t\u00e9cnico es capaz de hacer al finalizar su formaci\u00f3n. No se limita a lo que ha estudiado de forma te\u00f3rica, sino que expresa qu\u00e9 tareas, responsabilidades y problemas puede resolver en un contexto laboral real.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "Los a\u00f1os de experiencia pueden mejorar un perfil profesional, pero no son su definici\u00f3n t\u00e9cnica dentro de la Formaci\u00f3n Profesional. Adem\u00e1s, un t\u00e9cnico puede tener perfil profesional aunque todav\u00eda no haya ocupado puestos directivos."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El expediente acad\u00e9mico recoge calificaciones, pero no define por s\u00ed mismo las competencias profesionales, personales y sociales que una persona puede aplicar en el trabajo."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Las preferencias salariales o geogr\u00e1ficas pueden formar parte de una b\u00fasqueda de empleo, pero no definen t\u00e9cnicamente el perfil profesional de un t\u00e9cnico."
+                }
+            ],
+            "resumen_didactico": "El perfil profesional responde a la pregunta: \u00bfqu\u00e9 sabe hacer esta persona al terminar su formaci\u00f3n? Por eso se define mediante competencias, no solo mediante notas, preferencias o experiencia previa.",
+            "ejemplo_practico": "Un t\u00e9cnico de DAW puede mostrar en su perfil profesional que sabe desarrollar aplicaciones web, trabajar en equipo, documentar proyectos y resolver problemas t\u00e9cnicos de forma organizada.",
+            "conclusion_final": "La definici\u00f3n correcta es que el perfil profesional es el conjunto de competencias profesionales, personales y sociales que definen lo que un t\u00e9cnico es capaz de hacer."
+        }
+    },
+    {
+        "id": "UT2-Q09",
+        "tema": "UT2 Identidad profesional y herramientas de presentaci\u00f3n",
+        "pregunta": "\u00bfCu\u00e1l es la funci\u00f3n principal del curr\u00edculum vitae (CV) en el proceso de selecci\u00f3n?",
+        "contexto": "La pregunta se refiere al papel del CV como herramienta de presentaci\u00f3n profesional dentro de un proceso de selecci\u00f3n.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Detallar toda la vida personal del candidato desde la infancia"
+            },
+            {
+                "clave": "b",
+                "texto": "Sustituir a la entrevista personal para ahorrar tiempo al reclutador"
+            },
+            {
+                "clave": "c",
+                "texto": "Servir de apoyo legal para la firma del contrato"
+            },
+            {
+                "clave": "d",
+                "texto": "Resumir de forma estrat\u00e9gica la trayectoria y competencias para conseguir una entrevista"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "El curr\u00edculum vitae es un documento t\u00e9cnico que resume de forma ordenada la trayectoria formativa, la experiencia previa y las competencias de una persona. Su funci\u00f3n principal es presentar el perfil profesional de manera clara y estrat\u00e9gica para despertar el inter\u00e9s del reclutador y facilitar el acceso a una entrevista personal.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El CV no debe detallar toda la vida personal del candidato. Debe seleccionar informaci\u00f3n relevante para el puesto, como formaci\u00f3n, competencias, experiencia y datos profesionales."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "El CV no sustituye a la entrevista. Su funci\u00f3n es abrir la puerta a ella, ofreciendo una primera imagen ordenada del candidato."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El CV no es un documento legal para firmar un contrato. El contrato laboral tiene otra funci\u00f3n jur\u00eddica distinta."
+                }
+            ],
+            "resumen_didactico": "El CV es como una presentaci\u00f3n estrat\u00e9gica del candidato: no cuenta todo, sino lo m\u00e1s relevante para que el reclutador quiera conocerlo en una entrevista.",
+            "ejemplo_practico": "Una estudiante de DAW incluye en su CV su formaci\u00f3n, sus proyectos web, sus competencias t\u00e9cnicas en JavaScript y Angular, y sus habilidades de trabajo en equipo para optar a unas pr\u00e1cticas.",
+            "conclusion_final": "La funci\u00f3n principal del CV es resumir estrat\u00e9gicamente la trayectoria y competencias del candidato para conseguir una entrevista."
+        }
+    },
+    {
+        "id": "UT2-Q10",
+        "tema": "UT2 Identidad profesional y herramientas de presentaci\u00f3n",
+        "pregunta": "\u00bfQu\u00e9 diferencia fundamental existe entre un curr\u00edculum vitae y un portfolio profesional?",
+        "contexto": "La pregunta compara dos herramientas de presentaci\u00f3n profesional: el CV y el portfolio.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El CV debe ser largo y el portfolio debe ser de una sola p\u00e1gina"
+            },
+            {
+                "clave": "b",
+                "texto": "El CV es para empresas p\u00fablicas y el portfolio para empresas privadas"
+            },
+            {
+                "clave": "c",
+                "texto": "El CV es una promesa de capacidad y el portfolio es la prueba irrefutable de lo que ya se ha hecho"
+            },
+            {
+                "clave": "d",
+                "texto": "No existe diferencia; son dos nombres para el mismo documento"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "El curr\u00edculum vitae resume la formaci\u00f3n, experiencia y competencias de una persona, funcionando como una presentaci\u00f3n inicial de lo que el candidato sabe hacer. El portfolio, en cambio, re\u00fane evidencias reales como proyectos, trabajos, pr\u00e1cticas, reflexiones o logros que demuestran de forma concreta esas capacidades. Por eso, el CV es una promesa de capacidad y el portfolio es la prueba de que esa capacidad ya se ha aplicado.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "La diferencia entre CV y portfolio no depende de la extensi\u00f3n. Un CV debe ser claro y estrat\u00e9gico, y un portfolio puede tener varias p\u00e1ginas o secciones seg\u00fan las evidencias que incluya."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Ambos pueden utilizarse tanto en empresas p\u00fablicas como privadas. La diferencia no est\u00e1 en el tipo de empresa, sino en la funci\u00f3n de cada herramienta."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "No son el mismo documento. El CV resume la trayectoria y competencias, mientras que el portfolio muestra pruebas concretas del trabajo realizado."
+                }
+            ],
+            "resumen_didactico": "El CV dice lo que sabes hacer; el portfolio lo demuestra con evidencias reales.",
+            "ejemplo_practico": "Un estudiante de DAW puede indicar en su CV que sabe JavaScript, pero en su portfolio puede mostrar una aplicaci\u00f3n web real, el enlace a GitHub y una breve explicaci\u00f3n t\u00e9cnica del proyecto.",
+            "conclusion_final": "La diferencia fundamental es que el CV funciona como una promesa de capacidad, mientras que el portfolio demuestra con pruebas lo que ya se ha hecho."
+        }
+    },
+    {
+        "id": "UT2-Q11",
+        "tema": "UT2 Identidad profesional y herramientas de presentaci\u00f3n",
+        "pregunta": "\u00bfC\u00f3mo se define la asertividad en el entorno de la comunicaci\u00f3n laboral?",
+        "contexto": "La pregunta se refiere a la habilidad comunicativa que permite expresar ideas, necesidades y derechos de forma equilibrada dentro del entorno profesional.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "La t\u00e9cnica para evitar hablar con los compa\u00f1eros y centrarse solo en el trabajo"
+            },
+            {
+                "clave": "b",
+                "texto": "La capacidad de imponer siempre el criterio propio sobre el de los dem\u00e1s"
+            },
+            {
+                "clave": "c",
+                "texto": "La habilidad de expresar necesidades y defender derechos de forma directa y honesta sin agredir ni ser pasivo"
+            },
+            {
+                "clave": "d",
+                "texto": "El h\u00e1bito de aceptar todas las \u00f3rdenes sin cuestionar la \u00e9tica de las mismas"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "La asertividad es la habilidad comunicativa que permite expresar pensamientos, sentimientos y necesidades de manera directa, honesta y adecuada, defendiendo los propios derechos sin agredir a los dem\u00e1s y sin caer en la pasividad. En el entorno laboral ayuda a resolver conflictos, comunicar l\u00edmites y mantener relaciones profesionales sanas.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Evitar hablar con los compa\u00f1eros no es asertividad. La asertividad implica comunicarse de forma clara y respetuosa, no aislarse ni evitar la comunicaci\u00f3n."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Imponer siempre el criterio propio corresponde a una actitud agresiva, no asertiva. La asertividad defiende los derechos propios respetando tambi\u00e9n los de los dem\u00e1s."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Aceptar todas las \u00f3rdenes sin cuestionarlas refleja una actitud pasiva. La asertividad permite expresar desacuerdos o l\u00edmites cuando sea necesario, especialmente si hay implicaciones \u00e9ticas o profesionales."
+                }
+            ],
+            "resumen_didactico": "La asertividad se sit\u00faa entre la pasividad y la agresividad: no consiste en callarse ni en imponerse, sino en expresarse con claridad, respeto y seguridad.",
+            "ejemplo_practico": "Si un proveedor pide saltarse un protocolo, una respuesta asertiva ser\u00eda: \"Entiendo que tengas prisa, pero mi responsabilidad es seguir el procedimiento para garantizar que todo sea correcto\".",
+            "conclusion_final": "La asertividad es la habilidad de expresar necesidades y defender derechos de forma directa y honesta, sin agredir ni ser pasivo."
+        }
+    },
+    {
+        "id": "UT2-Q12",
+        "tema": "UT2 Identidad profesional y herramientas de presentaci\u00f3n",
+        "pregunta": "\u00bfQu\u00e9 es la huella digital en el contexto de la identidad profesional?",
+        "contexto": "La pregunta se refiere al rastro de informaci\u00f3n que una persona deja en internet y que puede influir en su imagen profesional.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El sistema de acceso por biometr\u00eda a las oficinas de la empresa"
+            },
+            {
+                "clave": "b",
+                "texto": "El escaneo de los dedos que se realiza al obtener el t\u00edtulo oficial"
+            },
+            {
+                "clave": "c",
+                "texto": "El rastro de datos e informaci\u00f3n que dejamos en internet de manera consciente o inconsciente"
+            },
+            {
+                "clave": "d",
+                "texto": "La firma digital necesaria para presentar impuestos de forma telem\u00e1tica"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "La huella digital es el rastro de datos e informaci\u00f3n que dejamos en internet de manera consciente o inconsciente al navegar, interactuar en redes sociales, publicar contenidos o aparecer mencionados en espacios digitales. En el contexto profesional, esta huella influye en la imagen que proyectamos ante reclutadores, empresas y contactos laborales.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El acceso por biometr\u00eda a una oficina utiliza datos f\u00edsicos como la huella dactilar, pero no se refiere a la huella digital entendida como presencia e identidad en internet."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "El escaneo de los dedos es una identificaci\u00f3n biom\u00e9trica, no el concepto de huella digital relacionado con la informaci\u00f3n que dejamos en la red."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La firma digital es una herramienta legal y t\u00e9cnica para identificarse o firmar documentos electr\u00f3nicamente, pero no equivale al rastro de informaci\u00f3n personal y profesional que queda en internet."
+                }
+            ],
+            "resumen_didactico": "La huella digital es todo lo que internet puede mostrar sobre una persona: publicaciones, comentarios, perfiles, fotos, menciones y datos asociados a su actividad online.",
+            "ejemplo_practico": "Un reclutador busca el nombre de una candidata en Google y encuentra su perfil de LinkedIn actualizado, su portfolio profesional y antiguos comentarios p\u00fablicos en redes sociales. Todo eso forma parte de su huella digital.",
+            "conclusion_final": "La huella digital es el rastro de datos e informaci\u00f3n que dejamos en internet, y gestionarla correctamente es clave para construir una identidad profesional coherente."
+        }
+    },
+    {
+        "id": "UT2-Q13",
+        "tema": "UT2 Identidad profesional y herramientas de presentaci\u00f3n",
+        "pregunta": "\u00bfCu\u00e1l es la principal ventaja competitiva de tener un perfil activo en LinkedIn?",
+        "contexto": "La pregunta se refiere al uso de LinkedIn como vitrina digital profesional para mejorar la visibilidad, la empleabilidad y el contacto con reclutadores.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Poder jugar a videojuegos con otros profesionales del sector"
+            },
+            {
+                "clave": "b",
+                "texto": "Chatear con amigos de la infancia sin que la empresa se entere"
+            },
+            {
+                "clave": "c",
+                "texto": "Almacenar fotos personales de las vacaciones de forma segura"
+            },
+            {
+                "clave": "d",
+                "texto": "Ser contactado directamente por reclutadores y demostrar criterio opinando sobre noticias del sector"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "LinkedIn es una red profesional que permite construir una identidad digital orientada al empleo. Su principal ventaja competitiva es que facilita ser encontrado y contactado por reclutadores, adem\u00e1s de mostrar actividad profesional, criterio, intereses del sector, competencias y evoluci\u00f3n formativa.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "LinkedIn no est\u00e1 pensado como plataforma de videojuegos, sino como red profesional para mostrar perfil, competencias, experiencia y contactos laborales."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Chatear con amigos de la infancia pertenece m\u00e1s al uso personal de redes sociales, no a la funci\u00f3n profesional de LinkedIn."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "LinkedIn no tiene como finalidad almacenar fotos personales de vacaciones. Para una identidad profesional, el contenido debe ser coherente con el perfil laboral que se quiere proyectar."
+                }
+            ],
+            "resumen_didactico": "LinkedIn funciona como una vitrina profesional: permite que los reclutadores encuentren tu perfil y que t\u00fa demuestres tu valor mediante publicaciones, contactos, experiencia y participaci\u00f3n en temas del sector.",
+            "ejemplo_practico": "Un estudiante de DAW mantiene actualizado su LinkedIn, comparte avances de sus proyectos, comenta noticias sobre desarrollo web y enlaza su GitHub. Un reclutador puede encontrarlo y contactarlo para unas pr\u00e1cticas.",
+            "conclusion_final": "La principal ventaja competitiva de LinkedIn es ser contactado directamente por reclutadores y demostrar criterio profesional participando en contenidos relacionados con el sector."
+        }
+    },
+    {
+        "id": "UT2-Q14",
+        "tema": "UT2 Identidad profesional y herramientas de presentaci\u00f3n",
+        "pregunta": "En el mercado laboral actual, \u00bfqu\u00e9 valor se considera que las m\u00e1quinas no pueden replicar y que es altamente cotizado?",
+        "contexto": "La pregunta se refiere al valor diferencial de las habilidades humanas en un mercado laboral cada vez m\u00e1s automatizado.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "La memoria para almacenar bases de datos inmensas"
+            },
+            {
+                "clave": "b",
+                "texto": "La fuerza f\u00edsica para mover objetos en un almac\u00e9n"
+            },
+            {
+                "clave": "c",
+                "texto": "La capacidad de conectar, entender y comunicarse asertivamente con otros seres humanos"
+            },
+            {
+                "clave": "d",
+                "texto": "La velocidad para realizar c\u00e1lculos matem\u00e1ticos simples"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "El temario destaca que, aunque las m\u00e1quinas pueden automatizar muchas tareas, la capacidad humana de conectar, entender y comunicarse con otras personas sigue siendo un valor altamente cotizado en cualquier empresa. Por eso habilidades como la asertividad, la escucha activa, la empat\u00eda y la comunicaci\u00f3n profesional son fundamentales para la empleabilidad.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "La memoria para almacenar grandes cantidades de datos es precisamente una capacidad en la que las m\u00e1quinas superan ampliamente a las personas, por lo que no representa el valor humano diferencial."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La fuerza f\u00edsica puede ser sustituida o complementada por maquinaria, robots o sistemas automatizados, por lo que no es el valor m\u00e1s cotizado en el contexto del temario."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La velocidad para realizar c\u00e1lculos matem\u00e1ticos simples es una tarea f\u00e1cilmente automatizable por ordenadores, calculadoras o sistemas inform\u00e1ticos."
+                }
+            ],
+            "resumen_didactico": "Lo que m\u00e1s diferencia a una persona en el mercado laboral no es competir con las m\u00e1quinas en velocidad o memoria, sino aportar habilidades humanas: comunicaci\u00f3n, empat\u00eda, escucha, criterio y conexi\u00f3n interpersonal.",
+            "ejemplo_practico": "Un programador puede saber escribir c\u00f3digo, pero si adem\u00e1s sabe explicar sus ideas al equipo, escuchar al cliente y defender una soluci\u00f3n de forma asertiva, tendr\u00e1 mucho m\u00e1s valor profesional.",
+            "conclusion_final": "El valor que las m\u00e1quinas no pueden replicar plenamente y que sigue siendo muy cotizado es la capacidad de conectar, entender y comunicarse asertivamente con otros seres humanos."
+        }
+    },
+    {
+        "id": "UT3-Q15",
+        "tema": "UT3 El marco jur\u00eddico laboral",
+        "pregunta": "En la jerarqu\u00eda normativa del derecho laboral en Espa\u00f1a, \u00bfcu\u00e1l es la norma suprema que encabeza la pir\u00e1mide?",
+        "contexto": "La pregunta se refiere a la pir\u00e1mide normativa laboral y al orden jer\u00e1rquico de las fuentes del derecho del trabajo.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El convenio colectivo sectorial"
+            },
+            {
+                "clave": "b",
+                "texto": "El contrato individual de trabajo"
+            },
+            {
+                "clave": "c",
+                "texto": "La Constituci\u00f3n espa\u00f1ola"
+            },
+            {
+                "clave": "d",
+                "texto": "El Estatuto de los Trabajadores"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "En la jerarqu\u00eda normativa laboral, las normas se organizan como una pir\u00e1mide. En la parte superior se encuentra la Constituci\u00f3n espa\u00f1ola, que es la norma suprema y recoge derechos fundamentales como la libertad sindical, el derecho a la huelga y otros principios b\u00e1sicos que deben respetar todas las normas inferiores.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El convenio colectivo sectorial es una fuente laboral importante, pero est\u00e1 por debajo de la Constituci\u00f3n y de las leyes del Estado. No puede contradecir normas superiores."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "El contrato individual de trabajo se encuentra en la parte inferior de la pir\u00e1mide normativa. Puede mejorar derechos, pero no empeorar lo establecido por normas superiores."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "El Estatuto de los Trabajadores es una ley laboral fundamental, pero no est\u00e1 por encima de la Constituci\u00f3n espa\u00f1ola."
+                }
+            ],
+            "resumen_didactico": "La jerarqu\u00eda normativa laboral funciona como una pir\u00e1mide: arriba est\u00e1 la Constituci\u00f3n, despu\u00e9s las leyes del Estado, luego los convenios colectivos y finalmente el contrato individual.",
+            "ejemplo_practico": "Un contrato de trabajo no puede eliminar el derecho a la huelga o la libertad sindical, porque estos derechos est\u00e1n protegidos por la Constituci\u00f3n espa\u00f1ola.",
+            "conclusion_final": "La norma suprema que encabeza la pir\u00e1mide normativa laboral es la Constituci\u00f3n espa\u00f1ola."
+        }
+    },
+    {
+        "id": "UT3-Q16",
+        "tema": "UT3 El marco jur\u00eddico laboral",
+        "pregunta": "\u00bfCu\u00e1l es la funci\u00f3n principal de los convenios colectivos en el sistema laboral?",
+        "contexto": "La pregunta se refiere al papel de los convenios colectivos dentro de las fuentes del derecho laboral y su relaci\u00f3n con la ley general.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Sustituir a la Constituci\u00f3n en materia de derechos fundamentales"
+            },
+            {
+                "clave": "b",
+                "texto": "Adaptar la ley general a la realidad y necesidades de cada sector profesional espec\u00edfico"
+            },
+            {
+                "clave": "c",
+                "texto": "Establecer las multas que los trabajadores deben pagar a la empresa"
+            },
+            {
+                "clave": "d",
+                "texto": "Eliminar la necesidad de firmar contratos individuales de trabajo"
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "Los convenios colectivos son acuerdos entre representantes de los trabajadores y empresarios que regulan condiciones laborales concretas de un sector, empresa o \u00e1mbito profesional. Su funci\u00f3n principal es adaptar la normativa laboral general a la realidad espec\u00edfica de cada sector, pudiendo mejorar condiciones como jornada, salario, permisos, pluses o descansos.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Los convenios colectivos no sustituyen a la Constituci\u00f3n. La Constituci\u00f3n espa\u00f1ola es la norma suprema y los convenios no pueden contradecirla."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Los convenios no tienen como funci\u00f3n principal establecer multas que los trabajadores deban pagar a la empresa. Su finalidad es regular condiciones laborales y derechos dentro de un sector o empresa."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "El convenio colectivo no elimina la necesidad del contrato individual. El contrato sigue siendo necesario para concretar la relaci\u00f3n entre empresa y trabajador, aunque debe respetar lo establecido por la ley y el convenio aplicable."
+                }
+            ],
+            "resumen_didactico": "El convenio colectivo concreta y mejora las condiciones laborales generales para adaptarlas a un sector profesional concreto.",
+            "ejemplo_practico": "El Estatuto de los Trabajadores puede fijar una jornada m\u00e1xima general, pero un convenio de oficinas y despachos puede establecer una jornada menor o a\u00f1adir pluses espec\u00edficos como idiomas, turnicidad o nocturnidad.",
+            "conclusion_final": "La funci\u00f3n principal de los convenios colectivos es adaptar la ley general a la realidad y necesidades de cada sector profesional espec\u00edfico."
+        }
+    },
+    {
+        "id": "UT3-Q17",
+        "tema": "UT3 El marco jur\u00eddico laboral",
+        "pregunta": "\u00bfQu\u00e9 significa el concepto de \"ajenidad\" en una relaci\u00f3n laboral t\u00e9cnica?",
+        "contexto": "La pregunta se refiere a uno de los requisitos fundamentales de la relaci\u00f3n laboral: la ajenidad.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Que el trabajador es ajeno a las \u00f3rdenes del empresario"
+            },
+            {
+                "clave": "b",
+                "texto": "Que el trabajador no tiene ninguna responsabilidad sobre sus tareas"
+            },
+            {
+                "clave": "c",
+                "texto": "Que el trabajo se realiza en un pa\u00eds extranjero"
+            },
+            {
+                "clave": "d",
+                "texto": "Que los beneficios y los riesgos del trabajo pertenecen exclusivamente al empresario"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "La ajenidad significa que los beneficios y los riesgos derivados del trabajo pertenecen al empresario, no al trabajador. La persona trabajadora presta sus servicios y recibe un salario pactado, pero no asume directamente las p\u00e9rdidas de la empresa ni se queda con los beneficios extraordinarios del negocio.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Es incorrecta porque en una relaci\u00f3n laboral existe dependencia: el trabajador s\u00ed est\u00e1 sujeto al poder de organizaci\u00f3n y direcci\u00f3n del empresario."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "El trabajador s\u00ed tiene responsabilidad sobre sus tareas y debe cumplir sus funciones con diligencia, aunque no asuma los riesgos econ\u00f3micos del negocio."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La palabra ajenidad no se refiere a trabajar en el extranjero, sino a que los frutos, beneficios y riesgos de la actividad laboral son ajenos al trabajador y corresponden al empresario."
+                }
+            ],
+            "resumen_didactico": "Ajenidad significa que el trabajador trabaja para otro: cobra su salario, pero los beneficios y p\u00e9rdidas de la actividad empresarial corresponden al empresario.",
+            "ejemplo_practico": "Un programador contratado por una empresa desarrolla una aplicaci\u00f3n. Si la aplicaci\u00f3n genera mucho dinero, el beneficio es de la empresa; si el proyecto fracasa, el trabajador mantiene su derecho a cobrar su n\u00f3mina.",
+            "conclusion_final": "La ajenidad consiste en que los beneficios y los riesgos del trabajo pertenecen exclusivamente al empresario."
+        }
+    },
+    {
+        "id": "UT5-Q18",
+        "tema": "UT5 Prevenci\u00f3n de riesgos laborales",
+        "pregunta": "\u00bfCu\u00e1l es la obligaci\u00f3n principal de la empresa en materia de prevenci\u00f3n de riesgos laborales?",
+        "contexto": "La pregunta se refiere al deber b\u00e1sico de la empresa respecto a la seguridad y salud de las personas trabajadoras.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Garantizar un entorno de trabajo seguro y saludable para el personal"
+            },
+            {
+                "clave": "b",
+                "texto": "Facilitar que el trabajador compre su propio equipo de protecci\u00f3n si lo desea"
+            },
+            {
+                "clave": "c",
+                "texto": "Delegar toda la responsabilidad de la seguridad en el trabajador m\u00e1s veterano"
+            },
+            {
+                "clave": "d",
+                "texto": "Pagar un plus econ\u00f3mico a cambio de trabajar en condiciones peligrosas"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "La empresa tiene la obligaci\u00f3n principal de proteger la seguridad y la salud de las personas trabajadoras. Esto implica identificar los riesgos, evaluarlos, planificar medidas preventivas, formar al personal, proporcionar los medios adecuados y garantizar un entorno de trabajo seguro y saludable.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "El trabajador no debe comprar por su cuenta los equipos de protecci\u00f3n necesarios. La empresa debe proporcionar los medios preventivos y los EPI cuando sean necesarios."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La responsabilidad preventiva no puede delegarse completamente en un trabajador veterano. La empresa debe integrar la prevenci\u00f3n en su gesti\u00f3n y asumir sus obligaciones legales."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "No se puede sustituir la prevenci\u00f3n por dinero. La empresa no debe pagar un plus para aceptar condiciones peligrosas, sino eliminar o reducir los riesgos."
+                }
+            ],
+            "resumen_didactico": "La prevenci\u00f3n de riesgos laborales no consiste en compensar el peligro, sino en evitarlo, reducirlo y controlar las condiciones de trabajo para proteger la salud del personal.",
+            "ejemplo_practico": "Si en una oficina hay cables por el suelo, la empresa debe reorganizar el espacio para evitar ca\u00eddas, no limitarse a advertir a los trabajadores o pagarles un complemento.",
+            "conclusion_final": "La obligaci\u00f3n principal de la empresa es garantizar un entorno de trabajo seguro y saludable para el personal."
+        }
+    },
+    {
+        "id": "UT3-Q19",
+        "tema": "UT3 El marco jur\u00eddico laboral",
+        "pregunta": "\u00bfQu\u00e9 garantiza el derecho a la desconexi\u00f3n digital en el mercado laboral actual?",
+        "contexto": "La pregunta se refiere al derecho laboral que protege la vida privada y el descanso de la persona trabajadora fuera de su jornada.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "La prohibici\u00f3n de usar ordenadores durante la jornada laboral"
+            },
+            {
+                "clave": "b",
+                "texto": "El derecho a no tener internet en el puesto de trabajo para evitar distracciones"
+            },
+            {
+                "clave": "c",
+                "texto": "Que la vida privada fuera del horario laboral sea respetada, sin mensajes o correos de la empresa a deshoras"
+            },
+            {
+                "clave": "d",
+                "texto": "La obligaci\u00f3n de apagar el tel\u00e9fono m\u00f3vil personal durante las reuniones"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "El derecho a la desconexi\u00f3n digital garantiza que la vida privada y el tiempo de descanso de la persona trabajadora sean respetados fuera del horario laboral. La empresa no debe exigir disponibilidad permanente mediante correos, llamadas o mensajes fuera de la jornada ordinaria.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "No se proh\u00edbe usar ordenadores durante la jornada laboral. De hecho, en muchos puestos son herramientas necesarias para trabajar."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La desconexi\u00f3n digital no significa trabajar sin internet, sino no estar obligado a responder comunicaciones laborales fuera del horario de trabajo."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Apagar el tel\u00e9fono personal durante reuniones puede ser una norma interna o de educaci\u00f3n profesional, pero no define el derecho a la desconexi\u00f3n digital."
+                }
+            ],
+            "resumen_didactico": "La desconexi\u00f3n digital protege el descanso: cuando termina la jornada, la empresa debe respetar el tiempo personal del trabajador.",
+            "ejemplo_practico": "Una programadora termina su jornada a las 18:00. Su jefe no puede exigirle que conteste mensajes de trabajo a las 22:00 como si siguiera disponible.",
+            "conclusion_final": "El derecho a la desconexi\u00f3n digital garantiza que la vida privada fuera del horario laboral sea respetada, evitando comunicaciones laborales a deshoras."
+        }
+    },
+    {
+        "id": "UT3-Q20",
+        "tema": "UT3 El marco jur\u00eddico laboral",
+        "pregunta": "\u00bfQu\u00e9 es el registro de jornada y por qu\u00e9 es obligatorio para todas las empresas en Espa\u00f1a?",
+        "contexto": "La pregunta se refiere a la obligaci\u00f3n empresarial de anotar diariamente el inicio y fin de la jornada laboral de cada trabajador.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Una encuesta de satisfacci\u00f3n que se rellena al salir de la oficina"
+            },
+            {
+                "clave": "b",
+                "texto": "Un listado de las tareas realizadas para controlar la productividad minuto a minuto"
+            },
+            {
+                "clave": "c",
+                "texto": "Una anotaci\u00f3n diaria de la hora de inicio y fin de jornada para evitar el fraude en el tiempo de trabajo"
+            },
+            {
+                "clave": "d",
+                "texto": "Un documento donde se anotan las faltas de ortograf\u00eda de los empleados"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "El registro de jornada es la obligaci\u00f3n que tienen todas las empresas de anotar diariamente la hora exacta de inicio y fin de la jornada de cada persona trabajadora. Sirve para controlar que se respeten los l\u00edmites legales de jornada, descansos y horas extraordinarias, evitando fraudes como trabajar m\u00e1s horas de las declaradas o no registrar horas extra.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "No es una encuesta de satisfacci\u00f3n. El registro de jornada no mide opiniones del trabajador, sino el tiempo real de trabajo."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "No se trata de controlar la productividad minuto a minuto ni de listar tareas realizadas, sino de registrar la hora de entrada y salida para proteger los derechos laborales."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "No tiene ninguna relaci\u00f3n con faltas de ortograf\u00eda ni con el rendimiento ling\u00fc\u00edstico del empleado."
+                }
+            ],
+            "resumen_didactico": "El registro de jornada funciona como una prueba objetiva del tiempo trabajado: indica cu\u00e1ndo empieza y cu\u00e1ndo termina la jornada laboral.",
+            "ejemplo_practico": "Si una trabajadora entra a las 8:00 y sale a las 16:00, la empresa debe registrar esos horarios. Si un d\u00eda sale a las 18:00, esas horas adicionales deben quedar reflejadas para poder comprobar si son horas extraordinarias.",
+            "conclusion_final": "El registro de jornada es una anotaci\u00f3n diaria de la hora de inicio y fin de la jornada, obligatoria para evitar fraudes y proteger los derechos sobre el tiempo de trabajo."
+        }
+    },
+    {
+        "id": "UT4-Q21",
+        "tema": "UT4 Salario, seguridad social y conflictos",
+        "pregunta": "Un profesional recibe una parte de su retribuci\u00f3n mediante el uso de una vivienda proporcionada por la empresa. \u00bfQu\u00e9 l\u00edmite legal establece la normativa para este tipo de salario en especie?",
+        "contexto": "La pregunta se refiere al salario en especie, es decir, a retribuciones no dinerarias como vivienda, coche de empresa, tickets restaurante u otros beneficios proporcionados por la empresa.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Solo est\u00e1 permitido si el salario en dinero resultante es igual al 50 % del Salario M\u00ednimo Interprofesional."
+            },
+            {
+                "clave": "b",
+                "texto": "Puede ser de cualquier cuant\u00eda siempre que se haya pactado por escrito en el contrato."
+            },
+            {
+                "clave": "c",
+                "texto": "No puede superar el 50 % del salario bruto total del trabajador."
+            },
+            {
+                "clave": "d",
+                "texto": "No puede superar el 30 % de las percepciones salariales del trabajador."
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "El salario en especie consiste en la utilizaci\u00f3n, consumo u obtenci\u00f3n para fines particulares de bienes, derechos o servicios proporcionados por la empresa de forma gratuita o por precio inferior al de mercado. Puede incluir vivienda, coche de empresa, tickets restaurante u otros beneficios. La normativa establece que el salario en especie no puede superar el 30 % del total de las percepciones salariales del trabajador y, adem\u00e1s, el salario en dinero no puede quedar por debajo del Salario M\u00ednimo Interprofesional.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Es incorrecta porque no se establece que el salario en dinero deba ser igual al 50 % del Salario M\u00ednimo Interprofesional. Lo que exige la normativa es que el salario en dinero no quede por debajo del SMI."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Aunque el salario en especie pueda pactarse, no puede ser de cualquier cuant\u00eda. Existe un l\u00edmite legal: no puede superar el 30 % de las percepciones salariales."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El l\u00edmite no es del 50 %. El temario establece expresamente que el salario en especie no puede superar el 30 %."
+                }
+            ],
+            "resumen_didactico": "El salario en especie es una forma de retribuci\u00f3n no dineraria, pero tiene l\u00edmites: no puede superar el 30 % del salario y no puede hacer que el dinero cobrado quede por debajo del SMI.",
+            "ejemplo_practico": "Si una empresa ofrece a un trabajador una vivienda como parte de su salario, el valor de esa vivienda no puede representar m\u00e1s del 30 % de sus percepciones salariales totales.",
+            "conclusion_final": "El l\u00edmite legal del salario en especie es que no puede superar el 30 % de las percepciones salariales del trabajador."
+        }
+    },
+    {
+        "id": "UT4-Q22",
+        "tema": "UT4 Salario, seguridad social y conflictos",
+        "pregunta": "Al negociar las condiciones econ\u00f3micas de un nuevo puesto de trabajo, \u00bfpor qu\u00e9 es recomendable fijar la cifra en \"Bruto Anual\" en lugar de \"Neto Mensual\"?",
+        "contexto": "La pregunta se refiere a la forma m\u00e1s correcta de negociar el salario, diferenciando entre salario bruto anual y salario neto mensual.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Porque legalmente est\u00e1 prohibido firmar contratos donde aparezca el salario neto."
+            },
+            {
+                "clave": "b",
+                "texto": "Porque el bruto anual incluye el coste total que la empresa paga a la Seguridad Social por el trabajador."
+            },
+            {
+                "clave": "c",
+                "texto": "Porque el salario bruto anual es la cantidad exacta que el trabajador ver\u00e1 ingresada en su cuenta cada mes."
+            },
+            {
+                "clave": "d",
+                "texto": "Porque el neto mensual var\u00eda seg\u00fan las circunstancias personales del trabajador y el bruto define la base de sus derechos futuros."
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "El temario recomienda negociar siempre en bruto anual porque el salario bruto es la referencia real de la categor\u00eda profesional, la base de cotizaci\u00f3n y los derechos futuros del trabajador, como prestaciones, desempleo o jubilaci\u00f3n. El neto mensual, en cambio, puede variar seg\u00fan las retenciones, la situaci\u00f3n familiar, el IRPF u otras circunstancias personales.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "No es correcta porque la raz\u00f3n principal no es que est\u00e9 prohibido mencionar el neto, sino que el neto no refleja con precisi\u00f3n el valor salarial ni los derechos futuros."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "El bruto anual no incluye exactamente todo el coste empresarial de Seguridad Social. La empresa adem\u00e1s paga una aportaci\u00f3n adicional a la Seguridad Social que forma parte del coste total de empresa, pero no del salario bruto del trabajador."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El salario bruto anual no es la cantidad que el trabajador cobra en su cuenta cada mes. Lo que se ingresa es el salario neto, despu\u00e9s de aplicar deducciones como IRPF y Seguridad Social."
+                }
+            ],
+            "resumen_didactico": "El bruto anual es la cifra importante para negociar porque marca el valor real del salario y afecta a derechos futuros. El neto mensual puede cambiar por factores personales y fiscales.",
+            "ejemplo_practico": "Dos trabajadores con el mismo bruto anual pueden cobrar netos mensuales distintos si uno tiene una retenci\u00f3n de IRPF diferente por su situaci\u00f3n familiar. Sin embargo, su referencia salarial pactada sigue siendo el bruto anual.",
+            "conclusion_final": "Es recomendable negociar en bruto anual porque el neto mensual var\u00eda seg\u00fan circunstancias personales, mientras que el bruto define la base salarial y los derechos futuros del trabajador."
+        }
+    },
+    {
+        "id": "UT4-Q23",
+        "tema": "UT4 Salario, seguridad social y conflictos",
+        "pregunta": "\u00bfQu\u00e9 acto administrativo incorpora por primera vez a una persona al sistema de la Seguridad Social y le otorga un n\u00famero \u00fanico y vitalicio?",
+        "contexto": "La pregunta se refiere a los actos administrativos b\u00e1sicos de la Seguridad Social: afiliaci\u00f3n, alta, baja y cotizaci\u00f3n.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "La afiliaci\u00f3n."
+            },
+            {
+                "clave": "b",
+                "texto": "El alta."
+            },
+            {
+                "clave": "c",
+                "texto": "La cotizaci\u00f3n."
+            },
+            {
+                "clave": "d",
+                "texto": "La inscripci\u00f3n patronal."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "La afiliaci\u00f3n es el acto administrativo por el cual una persona se incorpora por primera vez al sistema de la Seguridad Social. Mediante la afiliaci\u00f3n se le asigna un n\u00famero \u00fanico y vitalicio que la identificar\u00e1 durante toda su vida laboral.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "El alta no incorpora por primera vez a la persona al sistema, sino que comunica que empieza a trabajar de forma efectiva en una empresa o actividad concreta."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La cotizaci\u00f3n es la aportaci\u00f3n econ\u00f3mica que realizan empresa y trabajador al sistema de la Seguridad Social, pero no es el acto que asigna el n\u00famero \u00fanico y vitalicio."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La inscripci\u00f3n patronal corresponde a la empresa o empresario que se registra en la Seguridad Social, no al trabajador que entra por primera vez en el sistema."
+                }
+            ],
+            "resumen_didactico": "Afiliaci\u00f3n significa entrada inicial en la Seguridad Social. Alta significa inicio de una actividad laboral concreta. Cotizaci\u00f3n significa aportar dinero al sistema.",
+            "ejemplo_practico": "Una persona que empieza su primera pr\u00e1ctica remunerada necesita estar afiliada a la Seguridad Social para tener su n\u00famero propio. Despu\u00e9s, la empresa tramitar\u00e1 el alta cuando comience a trabajar.",
+            "conclusion_final": "El acto administrativo que incorpora por primera vez a una persona al sistema de la Seguridad Social y le da un n\u00famero \u00fanico y vitalicio es la afiliaci\u00f3n."
+        }
+    },
+    {
+        "id": "UT4-Q24",
+        "tema": "UT4 Salario, seguridad social y conflictos",
+        "pregunta": "\u00bfQu\u00e9 es la Incapacidad Temporal (IT)?",
+        "contexto": "La pregunta se refiere a una prestaci\u00f3n de la Seguridad Social que protege al trabajador cuando no puede trabajar temporalmente por enfermedad o accidente.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Una sanci\u00f3n econ\u00f3mica por no asistir al puesto de trabajo de forma injustificada."
+            },
+            {
+                "clave": "b",
+                "texto": "Un subsidio diario que recibe el trabajador mientras est\u00e1 imposibilitado para trabajar por enfermedad o accidente."
+            },
+            {
+                "clave": "c",
+                "texto": "El periodo de vacaciones que la empresa otorga tras cinco a\u00f1os de antig\u00fcedad."
+            },
+            {
+                "clave": "d",
+                "texto": "Una pensi\u00f3n vitalicia para quienes no pueden volver a trabajar nunca m\u00e1s."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "La Incapacidad Temporal es la situaci\u00f3n en la que se encuentra el trabajador cuando est\u00e1 imposibilitado temporalmente para trabajar por enfermedad o accidente y recibe asistencia sanitaria. Durante ese periodo puede percibir un subsidio diario que sustituye total o parcialmente su salario mientras dura la baja.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "No es una sanci\u00f3n. La Incapacidad Temporal es una situaci\u00f3n protegida por la Seguridad Social cuando existe una causa m\u00e9dica justificada que impide trabajar."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "No tiene relaci\u00f3n con vacaciones ni con la antig\u00fcedad. Las vacaciones son un derecho de descanso retribuido, mientras que la IT se produce por enfermedad o accidente."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "No es una pensi\u00f3n vitalicia. La Incapacidad Temporal tiene car\u00e1cter provisional; si la imposibilidad para trabajar fuera permanente, se valorar\u00eda otro tipo de prestaci\u00f3n, como la incapacidad permanente."
+                }
+            ],
+            "resumen_didactico": "La IT es una protecci\u00f3n temporal: el trabajador no puede trabajar por motivos de salud, pero sigue protegido econ\u00f3micamente mediante un subsidio.",
+            "ejemplo_practico": "Un programador se fractura la mu\u00f1eca y el m\u00e9dico le da la baja durante tres semanas. Durante ese tiempo no trabaja, pero puede recibir una prestaci\u00f3n por Incapacidad Temporal.",
+            "conclusion_final": "La Incapacidad Temporal es un subsidio diario que recibe el trabajador mientras est\u00e1 imposibilitado temporalmente para trabajar por enfermedad o accidente."
+        }
+    },
+    {
+        "id": "UT4-Q25",
+        "tema": "UT4 Salario, seguridad social y conflictos",
+        "pregunta": "\u00bfQu\u00e9 tipo de despido se fundamenta en causas ajenas a la voluntad del trabajador, como razones econ\u00f3micas o t\u00e9cnicas de la empresa?",
+        "contexto": "La pregunta se refiere a los tipos de extinci\u00f3n del contrato de trabajo y, concretamente, al despido basado en causas econ\u00f3micas, t\u00e9cnicas, organizativas o de producci\u00f3n.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Despido disciplinario."
+            },
+            {
+                "clave": "b",
+                "texto": "Despido objetivo."
+            },
+            {
+                "clave": "c",
+                "texto": "Excedencia forzosa."
+            },
+            {
+                "clave": "d",
+                "texto": "Baja por mutuo acuerdo."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "El despido objetivo es la extinci\u00f3n del contrato por causas ajenas a la voluntad del trabajador, como razones econ\u00f3micas, t\u00e9cnicas, organizativas o de producci\u00f3n de la empresa. A diferencia del despido disciplinario, no se basa en una falta grave del trabajador, sino en circunstancias justificadas de la empresa.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El despido disciplinario se produce por un incumplimiento grave y culpable del trabajador, como faltas repetidas, indisciplina o transgresi\u00f3n de la buena fe contractual. No se basa en causas econ\u00f3micas o t\u00e9cnicas de la empresa."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La excedencia forzosa no es un despido. Es una situaci\u00f3n en la que se suspende la relaci\u00f3n laboral por una causa legal, conservando ciertos derechos de reincorporaci\u00f3n."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La baja por mutuo acuerdo implica que empresa y trabajador pactan la finalizaci\u00f3n de la relaci\u00f3n laboral, pero no equivale a un despido por causas objetivas."
+                }
+            ],
+            "resumen_didactico": "Si el trabajador incumple gravemente, hablamos de despido disciplinario. Si la empresa extingue el contrato por causas econ\u00f3micas, t\u00e9cnicas, organizativas o de producci\u00f3n, hablamos de despido objetivo.",
+            "ejemplo_practico": "Una empresa pierde varios clientes importantes y necesita reducir plantilla por motivos econ\u00f3micos. Si extingue el contrato de un trabajador por esa causa justificada, se tratar\u00eda de un despido objetivo.",
+            "conclusion_final": "El despido basado en causas ajenas a la voluntad del trabajador, como razones econ\u00f3micas o t\u00e9cnicas de la empresa, es el despido objetivo."
+        }
+    },
+    {
+        "id": "UT4-Q26",
+        "tema": "UT4 Salario, seguridad social y conflictos",
+        "pregunta": "\u00bfQu\u00e9 es el SMAC (Servicio de Mediaci\u00f3n, Arbitraje y Conciliaci\u00f3n)?",
+        "contexto": "La pregunta se refiere a una v\u00eda extrajudicial de resoluci\u00f3n de conflictos laborales entre empresa y trabajador.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Un tribunal penal que juzga delitos cometidos dentro de las empresas."
+            },
+            {
+                "clave": "b",
+                "texto": "El \u00f3rgano donde se intenta un acuerdo amistoso entre empresa y trabajador antes de acudir a la v\u00eda judicial."
+            },
+            {
+                "clave": "c",
+                "texto": "El departamento interno de la empresa encargado de pagar las n\u00f3minas."
+            },
+            {
+                "clave": "d",
+                "texto": "Una agencia de colocaci\u00f3n que busca empleo a los trabajadores despedidos"
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "El SMAC, Servicio de Mediaci\u00f3n, Arbitraje y Conciliaci\u00f3n, es el \u00f3rgano administrativo al que se acude para intentar resolver un conflicto laboral antes de llegar al juzgado. Su finalidad es que empresa y trabajador puedan alcanzar un acuerdo mediante conciliaci\u00f3n o mediaci\u00f3n, evitando as\u00ed un proceso judicial m\u00e1s largo y costoso.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El SMAC no es un tribunal penal. No juzga delitos ni impone condenas penales, sino que interviene en conflictos laborales como despidos, reclamaciones de cantidad o modificaciones de condiciones."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "No es un departamento interno de la empresa. Es un \u00f3rgano externo de car\u00e1cter administrativo que interviene cuando existe un conflicto entre trabajador y empresa."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "No es una agencia de colocaci\u00f3n ni busca empleo a trabajadores despedidos. Su funci\u00f3n es intentar resolver conflictos laborales antes de acudir a juicio."
+                }
+            ],
+            "resumen_didactico": "El SMAC es una v\u00eda previa al juzgado que busca solucionar conflictos laborales mediante acuerdo entre empresa y trabajador.",
+            "ejemplo_practico": "Si una empresa despide a un trabajador y este no est\u00e1 conforme, puede presentar una papeleta de conciliaci\u00f3n ante el SMAC para intentar llegar a un acuerdo antes de demandar judicialmente.",
+            "conclusion_final": "El SMAC es el \u00f3rgano donde se intenta alcanzar un acuerdo amistoso entre empresa y trabajador antes de acudir a la v\u00eda judicial."
+        }
+    },
+    {
+        "id": "UT4-Q27",
+        "tema": "UT4 Salario, seguridad social y conflictos",
+        "pregunta": "\u00bfCu\u00e1l es la recomendaci\u00f3n profesional si un t\u00e9cnico recibe una carta de despido o modificaci\u00f3n con la que no est\u00e1 de acuerdo?",
+        "contexto": "La pregunta se refiere a c\u00f3mo debe actuar un trabajador cuando recibe una comunicaci\u00f3n laboral importante, como un despido o una modificaci\u00f3n sustancial de condiciones, y quiere conservar su derecho a reclamar.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Firmar sin leer para evitar que el conflicto escale a niveles mayores."
+            },
+            {
+                "clave": "b",
+                "texto": "Negarse a firmar el documento para que no tenga validez legal."
+            },
+            {
+                "clave": "c",
+                "texto": "Firmar indicando \"No conforme\" junto a la fecha para preservar el derecho a reclamar."
+            },
+            {
+                "clave": "d",
+                "texto": "Romper el documento delante del responsable para demostrar desacuerdo."
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "Cuando un trabajador recibe una carta de despido o una modificaci\u00f3n de condiciones con la que no est\u00e1 de acuerdo, la recomendaci\u00f3n profesional es firmar escribiendo \"No conforme\" junto a la fecha. Esto no significa aceptar el contenido del documento, sino dejar constancia de que se ha recibido sin renunciar al derecho a asesorarse y reclamar posteriormente.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Firmar sin leer es una mala pr\u00e1ctica, porque puede dificultar la defensa posterior del trabajador y generar confusi\u00f3n sobre si acepta o no la decisi\u00f3n empresarial."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Negarse a firmar no impide necesariamente que el documento tenga efectos. La empresa puede acreditar la entrega por otros medios o mediante testigos. Es m\u00e1s seguro firmar como recibido indicando \"No conforme\"."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Romper el documento es una conducta impulsiva y poco profesional. No protege jur\u00eddicamente al trabajador y puede empeorar el conflicto."
+                }
+            ],
+            "resumen_didactico": "Firmar una carta laboral no siempre significa estar de acuerdo. Si se escribe \"No conforme\" y la fecha, se deja constancia de la recepci\u00f3n, pero se conserva la posibilidad de reclamar.",
+            "ejemplo_practico": "Una empresa entrega a un trabajador una carta de despido. El trabajador la firma escribiendo \"No conforme, 28/05/2026\". As\u00ed demuestra que la ha recibido, pero no acepta necesariamente las causas del despido.",
+            "conclusion_final": "La actuaci\u00f3n correcta es firmar indicando \"No conforme\" junto a la fecha para preservar el derecho a reclamar."
+        }
+    },
+    {
+        "id": "UT5-Q28",
+        "tema": "UT5 Prevenci\u00f3n de riesgos laborales",
+        "pregunta": "\u00bfC\u00f3mo se define t\u00e9cnicamente el concepto de riesgo laboral seg\u00fan la normativa vigente?",
+        "contexto": "La pregunta se refiere a la definici\u00f3n de riesgo laboral dentro de la prevenci\u00f3n de riesgos laborales, diferenci\u00e1ndolo del da\u00f1o profesional y de las condiciones de trabajo.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "La materializaci\u00f3n efectiva de una lesi\u00f3n o enfermedad durante la jornada de trabajo."
+            },
+            {
+                "clave": "b",
+                "texto": "La obligaci\u00f3n del empresario de indemnizar al trabajador tras un accidente de gravedad."
+            },
+            {
+                "clave": "c",
+                "texto": "La posibilidad de que un trabajador sufra un da\u00f1o derivado del trabajo, valorada por su probabilidad y gravedad."
+            },
+            {
+                "clave": "d",
+                "texto": "El conjunto de factores ambientales que rodean el puesto de trabajo de un t\u00e9cnico."
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "El riesgo laboral se define como la posibilidad de que una persona trabajadora sufra un da\u00f1o derivado de su trabajo. Para valorar ese riesgo se tienen en cuenta dos elementos fundamentales: la probabilidad de que ocurra y la gravedad de sus posibles consecuencias.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Esta opci\u00f3n describe el da\u00f1o profesional, no el riesgo. El riesgo es la posibilidad de que ocurra el da\u00f1o; el da\u00f1o es la lesi\u00f3n, enfermedad o patolog\u00eda cuando ya se ha producido."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La indemnizaci\u00f3n puede aparecer en determinados casos tras un accidente o incumplimiento, pero no define t\u00e9cnicamente qu\u00e9 es un riesgo laboral."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Esta opci\u00f3n se acerca al concepto de condiciones de trabajo o factores de riesgo, pero no define el riesgo laboral en s\u00ed. El riesgo exige valorar la posibilidad de da\u00f1o y su gravedad."
+                }
+            ],
+            "resumen_didactico": "El riesgo laboral no es el accidente ya ocurrido, sino la posibilidad de que ese accidente o da\u00f1o se produzca. Se mide teniendo en cuenta la probabilidad y la gravedad.",
+            "ejemplo_practico": "Si en una oficina hay cables sueltos por el suelo, existe riesgo de ca\u00edda. Si una persona tropieza y se lesiona, entonces el riesgo se ha materializado en un da\u00f1o profesional.",
+            "conclusion_final": "El riesgo laboral es la posibilidad de que un trabajador sufra un da\u00f1o derivado del trabajo, valorada seg\u00fan su probabilidad y gravedad."
+        }
+    },
+    {
+        "id": "UT5-Q29",
+        "tema": "UT5 Prevenci\u00f3n de riesgos laborales",
+        "pregunta": "\u00bfCu\u00e1l es el orden de prioridad correcto que debe seguir una empresa al implementar medidas de protecci\u00f3n?",
+        "contexto": "La pregunta se refiere a la jerarqu\u00eda de medidas preventivas y a la prioridad entre protecci\u00f3n colectiva y protecci\u00f3n individual en prevenci\u00f3n de riesgos laborales.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Siempre se debe priorizar la protecci\u00f3n individual sobre la colectiva para reducir costes."
+            },
+            {
+                "clave": "b",
+                "texto": "El trabajador debe elegir qu\u00e9 medida prefiere usar seg\u00fan su comodidad personal."
+            },
+            {
+                "clave": "c",
+                "texto": "Solo se deben aplicar medidas colectivas si el riesgo es calificado como muy grave."
+            },
+            {
+                "clave": "d",
+                "texto": "La protecci\u00f3n colectiva es prioritaria frente a la protecci\u00f3n individual (EPI)"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "La normativa preventiva establece que deben priorizarse las medidas que act\u00faan sobre el origen del riesgo y las que protegen simult\u00e1neamente a todas las personas trabajadoras. Por eso, la protecci\u00f3n colectiva tiene prioridad sobre la protecci\u00f3n individual. Los Equipos de Protecci\u00f3n Individual o EPI se consideran la \u00faltima l\u00ednea de defensa y deben utilizarse cuando no ha sido posible eliminar o reducir suficientemente el riesgo mediante medidas colectivas u organizativas.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Es incorrecta porque la protecci\u00f3n individual no debe priorizarse por razones de coste. La empresa debe buscar primero medidas m\u00e1s eficaces, especialmente las colectivas, que protegen a todo el grupo."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La elecci\u00f3n de medidas preventivas no depende solo de la comodidad personal del trabajador, sino de una evaluaci\u00f3n t\u00e9cnica de riesgos y de la obligaci\u00f3n empresarial de proteger la seguridad y salud del personal."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Las medidas colectivas no se aplican solo en riesgos muy graves. Deben priorizarse siempre que sea posible, porque act\u00faan sobre el entorno o la organizaci\u00f3n y protegen a varias personas a la vez."
+                }
+            ],
+            "resumen_didactico": "Primero se intenta eliminar o reducir el riesgo en su origen. Despu\u00e9s se aplican medidas colectivas. Solo si esto no es suficiente se recurre a los EPI como protecci\u00f3n individual.",
+            "ejemplo_practico": "Si en una sala hay mucho ruido, la empresa debe intentar aislar ac\u00fasticamente la zona o instalar paneles fonoabsorbentes antes de limitarse a entregar tapones a cada trabajador.",
+            "conclusion_final": "El orden correcto es priorizar la protecci\u00f3n colectiva frente a la protecci\u00f3n individual, utilizando los EPI como \u00faltimo recurso cuando las medidas colectivas no sean suficientes."
+        }
+    },
+    {
+        "id": "UT5-Q30",
+        "tema": "UT5 Prevenci\u00f3n de riesgos laborales",
+        "pregunta": "\u00bfQu\u00e9 requisito debe cumplir obligatoriamente la formaci\u00f3n en prevenci\u00f3n de riesgos que recibe un trabajador?",
+        "contexto": "La pregunta se refiere a las caracter\u00edsticas obligatorias de la formaci\u00f3n preventiva que la empresa debe proporcionar al trabajador.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El coste de la formaci\u00f3n debe ser compartido al 50% entre el t\u00e9cnico y la empresa."
+            },
+            {
+                "clave": "b",
+                "texto": "Debe realizarse fuera del horario laboral para no interrumpir la productividad."
+            },
+            {
+                "clave": "c",
+                "texto": "Solo es obligatoria para trabajadores que manejen maquinaria pesada o productos qu\u00edmicos."
+            },
+            {
+                "clave": "d",
+                "texto": "Debe ser te\u00f3rica, pr\u00e1ctica, espec\u00edfica para el puesto y realizarse dentro de la jornada laboral."
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "La formaci\u00f3n en prevenci\u00f3n de riesgos laborales debe ser te\u00f3rica y pr\u00e1ctica, suficiente y adecuada, espec\u00edfica para el puesto de trabajo y adaptada a las funciones reales que realiza la persona trabajadora. Adem\u00e1s, debe impartirse dentro de la jornada laboral y no debe suponer ning\u00fan coste para el trabajador.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Es incorrecta porque la formaci\u00f3n preventiva no debe pagarse entre trabajador y empresa. La empresa tiene la obligaci\u00f3n de proporcionarla sin coste para el trabajador."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Es incorrecta porque la formaci\u00f3n debe realizarse dentro de la jornada laboral. No puede imponerse como una carga fuera del horario de trabajo."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Es incorrecta porque la formaci\u00f3n preventiva no solo es obligatoria para puestos con maquinaria pesada o productos qu\u00edmicos. Todo trabajador debe recibir formaci\u00f3n adecuada a los riesgos de su puesto, aunque trabaje en una oficina."
+                }
+            ],
+            "resumen_didactico": "La formaci\u00f3n preventiva debe estar conectada con el puesto real de trabajo, combinar teor\u00eda y pr\u00e1ctica, impartirse en horario laboral y ser gratuita para el trabajador.",
+            "ejemplo_practico": "Un t\u00e9cnico de DAW no necesita la misma formaci\u00f3n preventiva que una persona que trabaja en un laboratorio, pero s\u00ed debe recibir formaci\u00f3n sobre ergonom\u00eda, pantallas de visualizaci\u00f3n, pausas, riesgos el\u00e9ctricos b\u00e1sicos y organizaci\u00f3n segura del puesto.",
+            "conclusion_final": "La formaci\u00f3n en prevenci\u00f3n de riesgos debe ser te\u00f3rica, pr\u00e1ctica, espec\u00edfica para el puesto y realizarse dentro de la jornada laboral."
+        }
+    },
+    {
+        "id": "UT5-Q31",
+        "tema": "UT5 Prevenci\u00f3n de riesgos laborales",
+        "pregunta": "\u00bfQu\u00e9 se entiende por riesgos psicosociales en el entorno laboral de un t\u00e9cnico superior?",
+        "contexto": "La pregunta se refiere a los factores de riesgo relacionados con la organizaci\u00f3n del trabajo, la carga mental, las relaciones laborales y el contenido de la tarea.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Factores de la organizaci\u00f3n del trabajo y la tarea que afectan a la salud mental y f\u00edsica, como el estr\u00e9s o el burnout."
+            },
+            {
+                "clave": "b",
+                "texto": "Aquellos derivados del contacto con bacterias o virus en el centro de trabajo."
+            },
+            {
+                "clave": "c",
+                "texto": "Da\u00f1os producidos por la exposici\u00f3n a radiaciones no ionizantes de las pantallas."
+            },
+            {
+                "clave": "d",
+                "texto": "Lesiones musculares producidas por una mala postura al sentarse frente al ordenador."
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "Los riesgos psicosociales son factores relacionados con la organizaci\u00f3n del trabajo, el contenido de la tarea y las relaciones humanas que pueden afectar tanto a la salud mental como f\u00edsica del trabajador. Incluyen situaciones como la sobrecarga de trabajo, la falta de control sobre las tareas, el liderazgo autoritario, el estr\u00e9s cr\u00f3nico, la ansiedad o el burnout.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "El contacto con bacterias o virus corresponde a riesgos biol\u00f3gicos, no a riesgos psicosociales."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "La exposici\u00f3n a radiaciones no ionizantes pertenece a los riesgos f\u00edsicos. Adem\u00e1s, las pantallas se relacionan m\u00e1s habitualmente con fatiga visual o ergonom\u00eda, no con la definici\u00f3n de riesgo psicosocial."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Las lesiones musculares por mala postura se relacionan con riesgos ergon\u00f3micos o f\u00edsicos, no con riesgos psicosociales."
+                }
+            ],
+            "resumen_didactico": "Los riesgos psicosociales no proceden de una m\u00e1quina, una sustancia o una bacteria, sino de c\u00f3mo est\u00e1 organizado el trabajo y de c\u00f3mo esa organizaci\u00f3n afecta a la mente y al cuerpo.",
+            "ejemplo_practico": "Un t\u00e9cnico superior que trabaja con plazos imposibles, presi\u00f3n constante, falta de apoyo del equipo y liderazgo autoritario puede acabar sufriendo estr\u00e9s cr\u00f3nico o burnout.",
+            "conclusion_final": "Los riesgos psicosociales son factores de la organizaci\u00f3n del trabajo y de la tarea que afectan a la salud mental y f\u00edsica, como el estr\u00e9s o el burnout."
+        }
+    },
+    {
+        "id": "UT5-Q32",
+        "tema": "UT5 Prevenci\u00f3n de riesgos laborales",
+        "pregunta": "Ante una situaci\u00f3n de emergencia en la empresa, \u00bfcu\u00e1l es la primera acci\u00f3n que debe realizar un profesional seg\u00fan el protocolo PAS?",
+        "contexto": "La pregunta se refiere al protocolo PAS de actuaci\u00f3n ante emergencias: Proteger, Alertar y Socorrer.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Llamar inmediatamente al 112 sin mirar alrededor."
+            },
+            {
+                "clave": "b",
+                "texto": "Proteger el lugar del accidente para asegurar la integridad propia, de la v\u00edctima y de terceros."
+            },
+            {
+                "clave": "c",
+                "texto": "Buscar el botiqu\u00edn de primeros auxilios en otra planta del edificio."
+            },
+            {
+                "clave": "d",
+                "texto": "Socorrer a la v\u00edctima realizando maniobras de reanimaci\u00f3n avanzada."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "El protocolo PAS establece el orden correcto de actuaci\u00f3n ante una emergencia: Proteger, Alertar y Socorrer. La primera acci\u00f3n siempre es proteger, es decir, asegurar el lugar del accidente para evitar nuevos da\u00f1os, nuevas v\u00edctimas o que la situaci\u00f3n empeore. Antes de ayudar directamente, el profesional debe comprobar que el entorno es seguro para s\u00ed mismo, para la v\u00edctima y para terceros.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Alertar al 112 es fundamental, pero no es la primera acci\u00f3n si el entorno sigue siendo peligroso. Antes de llamar, hay que proteger la zona para evitar m\u00e1s v\u00edctimas o da\u00f1os."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Buscar el botiqu\u00edn puede ser \u00fatil en determinados casos, pero no es la primera fase del protocolo PAS. Primero hay que asegurar el lugar del accidente."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Socorrer es la tercera fase del protocolo PAS. Adem\u00e1s, las maniobras avanzadas solo deben realizarlas personas con formaci\u00f3n adecuada. Lo primero es proteger."
+                }
+            ],
+            "resumen_didactico": "PAS significa Proteger, Alertar y Socorrer. El orden es importante: primero se evita que el peligro contin\u00fae, despu\u00e9s se avisa a emergencias y finalmente se ayuda a la v\u00edctima.",
+            "ejemplo_practico": "Si un compa\u00f1ero sufre una descarga el\u00e9ctrica, no se le debe tocar directamente. Primero hay que cortar la corriente o separar el peligro con seguridad. Despu\u00e9s se llama al 112 y, finalmente, se socorre.",
+            "conclusion_final": "La primera acci\u00f3n ante una emergencia seg\u00fan el protocolo PAS es proteger el lugar del accidente para asegurar la integridad propia, de la v\u00edctima y de terceros."
+        }
+    },
+    {
+        "id": "UT5-Q33",
+        "tema": "UT5 Prevenci\u00f3n de riesgos laborales",
+        "pregunta": "\u00bfPor qu\u00e9 los EPI se consideran la \"\u00faltima l\u00ednea de defensa\" en prevenci\u00f3n?",
+        "contexto": "La pregunta se refiere al papel de los Equipos de Protecci\u00f3n Individual dentro de la jerarqu\u00eda de medidas preventivas.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Porque son los elementos m\u00e1s caros y la empresa intenta no comprarlos."
+            },
+            {
+                "clave": "b",
+                "texto": "Porque solo deben usarse cuando los riesgos no se han podido evitar o limitar mediante medidas t\u00e9cnicas o colectivas."
+            },
+            {
+                "clave": "c",
+                "texto": "Porque su uso es opcional y depende de la voluntad del trabajador en cada momento."
+            },
+            {
+                "clave": "d",
+                "texto": "Porque dificultan la movilidad del t\u00e9cnico y reducen siempre su productividad."
+            }
+        ],
+        "respuesta_correcta": [
+            "b"
+        ],
+        "explicacion": {
+            "temario": "Los Equipos de Protecci\u00f3n Individual, o EPI, se consideran la \u00faltima l\u00ednea de defensa porque no eliminan el riesgo en su origen, sino que protegen al trabajador cuando el riesgo sigue existiendo. La prevenci\u00f3n debe priorizar primero evitar el riesgo, evaluarlo, combatirlo en su origen y aplicar medidas colectivas. Solo cuando esas medidas no son suficientes se recurre a los EPI.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El motivo no es que sean caros ni que la empresa quiera evitarlos por coste. La raz\u00f3n preventiva es que antes deben aplicarse medidas m\u00e1s eficaces, especialmente las que eliminan el riesgo o protegen colectivamente."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "El uso de EPI no es opcional si la evaluaci\u00f3n de riesgos determina que son necesarios. El trabajador tiene el deber de utilizarlos correctamente y la empresa debe proporcionarlos y formar sobre su uso."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Aunque algunos EPI puedan resultar inc\u00f3modos, no se consideran \u00faltima l\u00ednea de defensa por reducir la movilidad o la productividad, sino porque act\u00faan cuando el riesgo no ha podido eliminarse o controlarse por otros medios."
+                }
+            ],
+            "resumen_didactico": "Los EPI no son la primera soluci\u00f3n preventiva. Primero se intenta eliminar o reducir el riesgo con medidas t\u00e9cnicas, organizativas o colectivas; si el riesgo permanece, entonces se usan EPI.",
+            "ejemplo_practico": "Si hay mucho ruido en una sala, la empresa debe intentar aislar ac\u00fasticamente la zona o instalar paneles fonoabsorbentes. Si aun as\u00ed queda exposici\u00f3n al ruido, entonces se entregan protectores auditivos como EPI.",
+            "conclusion_final": "Los EPI son la \u00faltima l\u00ednea de defensa porque solo deben utilizarse cuando los riesgos no se han podido evitar o limitar suficientemente mediante medidas t\u00e9cnicas o colectivas."
+        }
+    },
+    {
+        "id": "UT5-Q34",
+        "tema": "UT5 Prevenci\u00f3n de riesgos laborales",
+        "pregunta": "\u00bfQu\u00e9 es la Posici\u00f3n Lateral de Seguridad (PLS) y cu\u00e1ndo debe usarse?",
+        "contexto": "La pregunta se refiere a una maniobra b\u00e1sica de primeros auxilios dentro de la fase de socorrer del protocolo PAS.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Una postura para sentarse correctamente frente al ordenador y evitar dolores de cuello."
+            },
+            {
+                "clave": "b",
+                "texto": "Una t\u00e9cnica de defensa personal para evitar agresiones en el entorno laboral."
+            },
+            {
+                "clave": "c",
+                "texto": "La posici\u00f3n que debe adoptar el personal durante un simulacro de incendio."
+            },
+            {
+                "clave": "d",
+                "texto": "Una maniobra para colocar a una v\u00edctima inconsciente que respira, evitando que se asfixie."
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "La Posici\u00f3n Lateral de Seguridad, o PLS, es una maniobra b\u00e1sica de primeros auxilios que se utiliza cuando una v\u00edctima est\u00e1 inconsciente pero respira. Consiste en colocarla de lado para mantener la v\u00eda a\u00e9rea libre y evitar que se asfixie, por ejemplo, si vomita o si la lengua obstruye la respiraci\u00f3n.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Esta opci\u00f3n describe una postura ergon\u00f3mica frente al ordenador, relacionada con la prevenci\u00f3n de riesgos posturales, pero no con la Posici\u00f3n Lateral de Seguridad."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La PLS no es una t\u00e9cnica de defensa personal. Es una maniobra de primeros auxilios para proteger la respiraci\u00f3n de una v\u00edctima inconsciente."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Durante un simulacro de incendio se siguen normas de evacuaci\u00f3n, pero la PLS no es una postura general para el personal, sino una maniobra aplicada a una v\u00edctima concreta."
+                }
+            ],
+            "resumen_didactico": "La PLS se usa cuando una persona est\u00e1 inconsciente pero sigue respirando. Su finalidad es evitar la asfixia y mantener la v\u00eda respiratoria despejada hasta que lleguen los servicios sanitarios.",
+            "ejemplo_practico": "Si un compa\u00f1ero pierde el conocimiento en la oficina, pero comprobamos que respira, debemos colocarlo en Posici\u00f3n Lateral de Seguridad y permanecer con \u00e9l hasta que llegue la ayuda m\u00e9dica.",
+            "conclusion_final": "La Posici\u00f3n Lateral de Seguridad es una maniobra para colocar a una v\u00edctima inconsciente que respira, evitando que se asfixie."
+        }
+    },
+    {
+        "id": "UT1-Q35",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfQu\u00e9 concepto define la necesidad de actualizar continuamente las competencias profesionales para adaptarse a los cambios del mercado laboral y evitar la obsolescencia?",
+        "contexto": "La pregunta se refiere a la necesidad de formaci\u00f3n continua para mantener la empleabilidad en un mercado laboral cambiante.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Aprendizaje adaptativo por objetivos"
+            },
+            {
+                "clave": "b",
+                "texto": "Gesti\u00f3n del conocimiento corporativo"
+            },
+            {
+                "clave": "c",
+                "texto": "Aprendizaje a lo largo de toda la vida (Lifelong Learning)"
+            },
+            {
+                "clave": "d",
+                "texto": "Alfabetizaci\u00f3n digital b\u00e1sica"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "El aprendizaje a lo largo de toda la vida, tambi\u00e9n llamado Lifelong Learning, es la idea de que una persona debe seguir actualizando sus conocimientos, habilidades y competencias durante toda su trayectoria profesional. En un mercado laboral cambiante, donde aparecen nuevas tecnolog\u00edas, herramientas y formas de trabajo, esta formaci\u00f3n continua evita la obsolescencia profesional y mejora la empleabilidad.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "El aprendizaje adaptativo por objetivos puede referirse a una forma de organizar el aprendizaje, pero no es el concepto general que define la actualizaci\u00f3n permanente de competencias durante toda la vida profesional."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La gesti\u00f3n del conocimiento corporativo se relaciona con c\u00f3mo una organizaci\u00f3n organiza, comparte y aprovecha su conocimiento interno, no con la obligaci\u00f3n personal de seguir aprendiendo durante toda la vida laboral."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La alfabetizaci\u00f3n digital b\u00e1sica es una competencia importante, pero se limita al manejo elemental de herramientas digitales. No abarca toda la idea de formaci\u00f3n continua y adaptaci\u00f3n permanente al mercado laboral."
+                }
+            ],
+            "resumen_didactico": "El Lifelong Learning significa que aprender no termina al obtener un t\u00edtulo. Un profesional debe seguir form\u00e1ndose para adaptarse a nuevas tecnolog\u00edas, nuevas demandas y nuevas oportunidades.",
+            "ejemplo_practico": "Un t\u00e9cnico de DAW que ya sabe programar puede seguir aprendiendo frameworks modernos, ciberseguridad, cloud o inteligencia artificial para no quedarse atr\u00e1s en el mercado laboral.",
+            "conclusion_final": "El concepto que define la actualizaci\u00f3n continua de competencias para evitar la obsolescencia profesional es el aprendizaje a lo largo de toda la vida o Lifelong Learning."
+        }
+    },
+    {
+        "id": "UT1-Q36",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfC\u00f3mo se define t\u00e9cnicamente el Entorno Personal de Aprendizaje (PLE)?",
+        "contexto": "La pregunta se refiere al concepto de PLE como sistema personal de aprendizaje permanente, formado por recursos, herramientas, fuentes y conexiones que una persona usa para aprender y mantenerse actualizada.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "La red social profesional donde se publican exclusivamente ofertas de empleo."
+            },
+            {
+                "clave": "b",
+                "texto": "El conjunto de aplicaciones que una empresa instala obligatoriamente a sus empleados."
+            },
+            {
+                "clave": "c",
+                "texto": "El sistema inform\u00e1tico de gesti\u00f3n de archivos y bases de datos de una oficina t\u00e9cnica."
+            },
+            {
+                "clave": "d",
+                "texto": "El conjunto de herramientas, fuentes de informaci\u00f3n, conexiones y actividades que una persona utiliza para aprender"
+            }
+        ],
+        "respuesta_correcta": [
+            "d"
+        ],
+        "explicacion": {
+            "temario": "El Entorno Personal de Aprendizaje, o PLE, es el conjunto de herramientas, fuentes de informaci\u00f3n, conexiones personales y actividades que una persona utiliza de forma habitual para aprender, actualizarse y gestionar su propio conocimiento. Est\u00e1 relacionado con el aprendizaje permanente y con la capacidad de construir una estrategia aut\u00f3noma de formaci\u00f3n.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Una red social profesional, como LinkedIn, puede formar parte de un PLE, pero el PLE no se limita a una red social ni sirve exclusivamente para publicar ofertas de empleo."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "El PLE no es un paquete de aplicaciones impuesto por una empresa. Es personal y lo construye cada individuo seg\u00fan sus necesidades de aprendizaje."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Un sistema inform\u00e1tico de gesti\u00f3n de archivos o bases de datos puede ser una herramienta de trabajo, pero no define el Entorno Personal de Aprendizaje."
+                }
+            ],
+            "resumen_didactico": "El PLE es tu ecosistema personal para aprender: incluye herramientas, personas, fuentes, plataformas, h\u00e1bitos y actividades que te ayudan a mantenerte actualizado.",
+            "ejemplo_practico": "Un estudiante de DAW puede tener como PLE la documentaci\u00f3n oficial de Angular, GitHub, cursos online, canales t\u00e9cnicos de YouTube, comunidades de Discord, ChatGPT, blogs especializados y su propio repositorio de apuntes.",
+            "conclusion_final": "El PLE se define como el conjunto de herramientas, fuentes de informaci\u00f3n, conexiones y actividades que una persona utiliza para aprender."
+        }
+    },
+    {
+        "id": "UT1-Q37",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfQu\u00e9 implica ser \"digitalmente competente\" seg\u00fan el marco europeo DigComp?",
+        "contexto": "La pregunta se refiere a la competencia digital entendida no solo como uso t\u00e9cnico de herramientas, sino tambi\u00e9n como capacidad cr\u00edtica, segura y responsable en entornos digitales.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Saber usar aplicaciones y, adem\u00e1s, evaluar la credibilidad de las fuentes y proteger la privacidad."
+            },
+            {
+                "clave": "b",
+                "texto": "Comprar siempre el hardware m\u00e1s avanzado disponible en cada momento."
+            },
+            {
+                "clave": "c",
+                "texto": "Tener perfiles activos en todas las redes sociales disponibles en el mercado."
+            },
+            {
+                "clave": "d",
+                "texto": "Saber programar en al menos dos lenguajes de alto nivel"
+            }
+        ],
+        "respuesta_correcta": [
+            "a"
+        ],
+        "explicacion": {
+            "temario": "Ser digitalmente competente implica utilizar herramientas digitales de forma eficaz, cr\u00edtica, segura y responsable. No basta con saber manejar aplicaciones; tambi\u00e9n hay que saber buscar informaci\u00f3n, evaluar la fiabilidad de las fuentes, proteger los datos personales, cuidar la privacidad y actuar de forma \u00e9tica en entornos digitales.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "b",
+                    "motivo": "Comprar hardware avanzado no define la competencia digital. Una persona puede tener dispositivos muy modernos y no saber evaluar fuentes, proteger su privacidad o usar correctamente las herramientas digitales."
+                },
+                {
+                    "clave": "c",
+                    "motivo": "Tener perfiles en muchas redes sociales no significa ser digitalmente competente. Lo importante no es estar en todas partes, sino usar los entornos digitales con criterio, seguridad y coherencia profesional."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Saber programar puede ser una competencia t\u00e9cnica valiosa, especialmente en ciclos como DAW o DAM, pero la competencia digital seg\u00fan DigComp es m\u00e1s amplia y no exige programar en varios lenguajes."
+                }
+            ],
+            "resumen_didactico": "La competencia digital no consiste solo en manejar tecnolog\u00eda, sino en usarla con criterio: buscar bien, contrastar informaci\u00f3n, proteger datos, comunicarse adecuadamente y actuar con responsabilidad.",
+            "ejemplo_practico": "Un estudiante que busca informaci\u00f3n para un trabajo no se queda con el primer resultado de Google: compara fuentes, comprueba si son fiables, evita compartir datos personales innecesarios y cita correctamente la informaci\u00f3n utilizada.",
+            "conclusion_final": "Ser digitalmente competente implica saber usar aplicaciones y, adem\u00e1s, evaluar la credibilidad de las fuentes y proteger la privacidad."
+        }
+    },
+    {
+        "id": "UT1-Q38",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "En el uso de la Inteligencia Artificial (IA) en el aprendizaje, \u00bfqu\u00e9 es una \"alucinaci\u00f3n\"?",
+        "contexto": "La pregunta se refiere a uno de los riesgos del uso de la IA como herramienta de apoyo al aprendizaje: la generaci\u00f3n de informaci\u00f3n falsa presentada con apariencia de verdad.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "El proceso por el cual la IA aprende los sesgos racistas o sexistas de los humanos."
+            },
+            {
+                "clave": "b",
+                "texto": "Un fallo del sistema que hace que el ordenador se apague de forma repentina."
+            },
+            {
+                "clave": "c",
+                "texto": "La generaci\u00f3n de respuestas que parecen coherentes pero que son falsas o inventadas por el algoritmo."
+            },
+            {
+                "clave": "d",
+                "texto": "El tiempo de espera que tarda el servidor en procesar una consulta compleja."
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "Una alucinaci\u00f3n en Inteligencia Artificial se produce cuando el sistema genera una respuesta que parece l\u00f3gica, bien redactada y coherente, pero que contiene informaci\u00f3n falsa, inventada o no verificada. En el aprendizaje, esto obliga al estudiante a contrastar la informaci\u00f3n con fuentes fiables y no aceptar autom\u00e1ticamente todo lo que responde una IA.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Esta opci\u00f3n se relaciona con el problema de los sesgos algor\u00edtmicos, no con las alucinaciones. Los sesgos aparecen cuando la IA reproduce desigualdades, estereotipos o prejuicios presentes en los datos con los que ha sido entrenada."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Un apagado repentino del ordenador ser\u00eda un fallo t\u00e9cnico o de hardware/software, pero no una alucinaci\u00f3n de IA."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "El tiempo de espera al procesar una consulta se relaciona con la latencia o rendimiento del sistema, no con la generaci\u00f3n de informaci\u00f3n falsa."
+                }
+            ],
+            "resumen_didactico": "Una alucinaci\u00f3n ocurre cuando la IA responde con seguridad, pero se inventa datos, citas, conceptos o explicaciones. Por eso debe usarse como apoyo, no como \u00fanica fuente de verdad.",
+            "ejemplo_practico": "Un estudiante pregunta a una IA por una ley laboral y la IA responde con el nombre de una norma que no existe o mezcla art\u00edculos reales con informaci\u00f3n inventada. Aunque suene convincente, ser\u00eda una alucinaci\u00f3n.",
+            "conclusion_final": "Una alucinaci\u00f3n es la generaci\u00f3n de respuestas aparentemente coherentes, pero falsas o inventadas por el algoritmo."
+        }
+    },
+    {
+        "id": "UT1-Q39",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfCu\u00e1l es el papel del profesional frente a la Inteligencia Artificial seg\u00fan los principios \u00e9ticos de la UNESCO?",
+        "contexto": "La pregunta se refiere al uso \u00e9tico de la Inteligencia Artificial como herramienta de apoyo al aprendizaje y al trabajo profesional, manteniendo siempre el criterio humano.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Evitar el uso de la IA por completo para no perder la esencia de la profesi\u00f3n."
+            },
+            {
+                "clave": "b",
+                "texto": "Utilizarla exclusivamente para tareas que no requieran ning\u00fan tipo de \u00e9tica o responsabilidad."
+            },
+            {
+                "clave": "c",
+                "texto": "Situar a la persona en el centro, usando la IA como soporte pero manteniendo el control y el juicio cr\u00edtico."
+            },
+            {
+                "clave": "d",
+                "texto": "Delegar la toma de decisiones finales en la capacidad de c\u00e1lculo de la m\u00e1quina"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "Seg\u00fan el enfoque \u00e9tico aplicado al uso de la Inteligencia Artificial, la persona debe permanecer en el centro de las decisiones. La IA puede utilizarse como herramienta de apoyo para organizar informaci\u00f3n, simular entrevistas, analizar datos o mejorar el aprendizaje, pero el profesional debe mantener siempre el control, el juicio cr\u00edtico, la responsabilidad y la capacidad de verificar los resultados.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "Evitar por completo el uso de la IA no es el planteamiento adecuado. El objetivo no es rechazar la tecnolog\u00eda, sino usarla de forma cr\u00edtica, \u00e9tica y responsable."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "Toda herramienta profesional puede tener implicaciones \u00e9ticas. La IA no debe usarse como si estuviera separada de la responsabilidad humana."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "Delegar las decisiones finales en la m\u00e1quina es incorrecto. La IA puede apoyar el an\u00e1lisis, pero la responsabilidad final debe seguir siendo humana."
+                }
+            ],
+            "resumen_didactico": "La IA debe funcionar como copiloto, no como sustituto del profesional. Puede ayudar, pero quien decide, contrasta y asume la responsabilidad es la persona.",
+            "ejemplo_practico": "Un estudiante puede usar IA para preparar una entrevista de trabajo o resumir informaci\u00f3n del sector, pero debe revisar las respuestas, contrastar los datos y decidir qu\u00e9 contenido es v\u00e1lido para su situaci\u00f3n profesional.",
+            "conclusion_final": "El papel correcto del profesional es situar a la persona en el centro, usando la IA como soporte pero manteniendo siempre el control y el juicio cr\u00edtico."
+        }
+    },
+    {
+        "id": "UT1-Q40",
+        "tema": "UT1 Autoorientaci\u00f3n y plan de carrera",
+        "pregunta": "\u00bfQu\u00e9 principio \u00e9tico se vulnera si un t\u00e9cnico utiliza una IA para realizar un informe y lo presenta como propio sin mencionar la asistencia tecnol\u00f3gica?",
+        "contexto": "La pregunta se refiere al uso \u00e9tico de la Inteligencia Artificial en contextos acad\u00e9micos y profesionales, especialmente a la obligaci\u00f3n de reconocer cu\u00e1ndo una herramienta tecnol\u00f3gica ha participado en la elaboraci\u00f3n de un trabajo.",
+        "tipo": "single",
+        "opciones": [
+            {
+                "clave": "a",
+                "texto": "Justicia y no discriminaci\u00f3n"
+            },
+            {
+                "clave": "b",
+                "texto": "Alfabetizaci\u00f3n medi\u00e1tica"
+            },
+            {
+                "clave": "c",
+                "texto": "Transparencia y honestidad"
+            },
+            {
+                "clave": "d",
+                "texto": "Privacidad y protecci\u00f3n de datos"
+            }
+        ],
+        "respuesta_correcta": [
+            "c"
+        ],
+        "explicacion": {
+            "temario": "Cuando un profesional utiliza una IA para elaborar un informe y lo presenta como si fuera completamente propio, sin declarar la asistencia tecnol\u00f3gica, est\u00e1 ocultando una parte relevante del proceso de creaci\u00f3n. Esto vulnera los principios de transparencia y honestidad, porque no se informa de manera clara sobre c\u00f3mo se ha producido el trabajo ni sobre qu\u00e9 herramientas han intervenido.",
+            "analisis_incorrectas": [
+                {
+                    "clave": "a",
+                    "motivo": "La justicia y no discriminaci\u00f3n se relacionan con evitar sesgos, tratos injustos o decisiones discriminatorias producidas o reforzadas por sistemas de IA. En este caso, el problema principal no es la discriminaci\u00f3n, sino ocultar el uso de la herramienta."
+                },
+                {
+                    "clave": "b",
+                    "motivo": "La alfabetizaci\u00f3n medi\u00e1tica se refiere a la capacidad de interpretar, evaluar y usar informaci\u00f3n y medios digitales de forma cr\u00edtica. Aunque es importante, el principio vulnerado directamente al no declarar el uso de IA es la transparencia y honestidad."
+                },
+                {
+                    "clave": "d",
+                    "motivo": "La privacidad y protecci\u00f3n de datos se vulnerar\u00eda si el t\u00e9cnico introdujera datos personales o confidenciales en una IA sin garant\u00edas. En la pregunta, el problema principal es presentar como propio un trabajo asistido por IA sin indicarlo."
+                }
+            ],
+            "resumen_didactico": "Usar IA no es necesariamente incorrecto. Lo incorrecto es ocultar su uso cuando ha tenido un papel relevante en la elaboraci\u00f3n de un trabajo acad\u00e9mico o profesional.",
+            "ejemplo_practico": "Un t\u00e9cnico puede apoyarse en IA para organizar ideas o mejorar la redacci\u00f3n de un informe, pero deber\u00eda indicar que ha utilizado asistencia tecnol\u00f3gica y revisar cr\u00edticamente el resultado antes de entregarlo.",
+            "conclusion_final": "El principio \u00e9tico vulnerado es la transparencia y honestidad, porque se oculta la participaci\u00f3n de la IA en la elaboraci\u00f3n del informe."
+        }
+    }
+]
